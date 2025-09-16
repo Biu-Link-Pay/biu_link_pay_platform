@@ -154,7 +154,7 @@
                 <div class="flex justify-between">
                   <span class="text-gray-600">Available Cards:</span>
                   <span class="font-medium text-gray-900">{{ selectedBinInfo.remainingAvailableCard || 'Unlimited'
-                    }}</span>
+                  }}</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-600">Address Update:</span>
