@@ -1,0 +1,362 @@
+# Vue 3 + TypeScript + Tailwind CSS + PrimeVue 项目开发规范
+
+## 项目技术栈
+- **框架**: Vue 3 (Composition API)
+- **语言**: TypeScript
+- **构建工具**: Vite + pnpm
+- **样式**: Tailwind CSS
+- **组件库**: PrimeVue + PrimeIcons
+- **状态管理**: Pinia (with persistence)
+- **路由**: Vue Router 4
+- **HTTP客户端**: Axios
+- **代码规范**: ESLint (@antfu/config)
+
+## 开发规范
+
+### 1. Vue 3 开发规范 (遵循官方最佳实践)
+
+#### 组件开发
+- **优先使用 Composition API** 而不是 Options API
+- **使用 `<script setup>` 语法糖** 编写组件
+- **组件命名**: 使用 PascalCase，如 `UserProfile.vue`
+- **Props 定义**: 使用 TypeScript 接口定义 props 类型
+```typescript
+interface Props {
+  title: string
+  count?: number
+}
+const props = withDefaults(defineProps<Props>(), {
+  count: 0
+})
+```
+
+#### 响应式数据
+- **优先使用 `ref()` 处理基本类型数据**
+- **使用 `reactive()` 处理对象数据**
+- **使用 `computed()` 创建计算属性**
+- **使用 `watch()` 和 `watchEffect()` 处理副作用**
+
+#### 生命周期
+- **使用组合式 API 生命周期钩子**: `onMounted`, `onUnmounted`, `onUpdated` 等
+- **在 `onMounted` 中进行数据初始化**
+- **在 `onUnmounted` 中清理资源** (定时器、事件监听器等)
+
+### 2. TypeScript 规范
+
+#### 类型定义
+- **所有 API 接口必须定义 TypeScript 类型**
+- **组件 Props 和 Emits 必须类型化**
+- **使用 `type` 定义简单类型，`interface` 定义复杂对象**
+- **API 响应使用统一的 `ApiResponse<T>` 类型**
+
+#### 文件组织
+```
+src/
+├── types/           # 全局类型定义
+│   ├── api.ts      # API 相关类型
+│   └── index.ts    # 导出所有类型
+├── api/            # API 接口
+├── stores/         # Pinia 状态管理
+├── components/     # 可复用组件
+├── views/          # 页面组件
+└── utils/          # 工具函数
+```
+
+### 3. Tailwind CSS 多端适配规范
+
+#### 响应式断点
+```css
+/* 移动端优先，逐步增强 */
+/* 默认: 移动端 (320px+) */
+.mobile-first
+
+/* 平板端 */
+.md:tablet-styles    /* 768px+ */
+
+/* 桌面端 */
+.lg:desktop-styles   /* 1024px+ */
+
+/* 大屏桌面 */
+.xl:large-desktop    /* 1280px+ */
+```
+
+#### 常用响应式模式
+```vue
+<!-- 移动端单列，桌面端多列 -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+<!-- 移动端隐藏，桌面端显示 -->
+<div class="hidden md:block">
+
+<!-- 移动端显示，桌面端隐藏 -->
+<div class="block md:hidden">
+
+<!-- 响应式字体大小 -->
+<h1 class="text-2xl md:text-3xl lg:text-4xl">
+
+<!-- 响应式间距 -->
+<div class="p-4 md:p-6 lg:p-8">
+```
+
+#### 暗色模式支持
+```vue
+<!-- 支持暗色模式 -->
+<div class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
+
+<!-- 组件库暗色模式 -->
+<div class="bg-white dark:bg-gray-800">
+```
+
+### 4. PrimeVue 组件库使用规范
+
+#### 组件导入和注册
+- **全局注册常用组件** (在 main.ts 中)
+- **按需导入特殊组件** (在组件中直接导入)
+- **使用 PrimeVue 主题系统** (Aura 主题)
+
+#### 常用组件模式
+```vue
+<!-- 表单组件 -->
+<InputText 
+  v-model="form.email" 
+  placeholder="Enter email"
+  class="w-full"
+  :class="{ 'p-invalid': errors.email }"
+/>
+
+<!-- 按钮组件 -->
+<Button 
+  label="Submit" 
+  icon="pi pi-check"
+  :loading="loading"
+  class="w-full"
+  severity="primary"
+/>
+
+<!-- 卡片组件 -->
+<Card>
+  <template #content>
+    <!-- 卡片内容 -->
+  </template>
+</Card>
+
+<!-- Toast 消息 -->
+<Toast />
+```
+
+#### 主题定制
+- **使用 CSS 变量定制主题**
+- **保持与设计系统一致**
+- **支持暗色模式切换**
+
+### 5. pnpm 包管理规范
+
+#### 依赖管理
+```bash
+# 安装生产依赖
+pnpm add <package>
+
+# 安装开发依赖
+pnpm add -D <package>
+
+# 全局安装
+pnpm add -g <package>
+
+# 更新依赖
+pnpm update
+
+# 检查依赖
+pnpm audit
+```
+
+#### 脚本命令
+```json
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "type-check": "vue-tsc --noEmit"
+  }
+}
+```
+
+### 6. 代码质量规范
+
+#### ESLint 配置
+- **使用 @antfu/eslint-config**
+- **自动修复可修复的问题**
+- **在提交前运行 lint 检查**
+
+#### Git 提交规范
+```bash
+# 功能开发
+git commit -m "feat: add user login functionality"
+
+# 修复问题
+git commit -m "fix: resolve authentication token issue"
+
+# 样式调整
+git commit -m "style: update button styles for mobile"
+
+# 重构代码
+git commit -m "refactor: optimize component structure"
+```
+
+### 7. 性能优化规范
+
+#### 组件优化
+- **使用 `v-memo` 优化列表渲染**
+- **合理使用 `v-once` 缓存静态内容**
+- **避免在模板中使用复杂计算**
+- **使用 `defineAsyncComponent` 懒加载组件**
+
+#### 状态管理
+- **使用 Pinia 持久化插件**
+- **合理分割 store 模块**
+- **避免在 store 中存储临时状态**
+
+### 8. 可访问性 (A11y) 规范
+
+#### 语义化 HTML
+```vue
+<!-- 使用语义化标签 -->
+<main>
+  <header>
+    <h1>Page Title</h1>
+  </header>
+  <section>
+    <h2>Section Title</h2>
+  </section>
+</main>
+```
+
+#### ARIA 属性
+```vue
+<!-- 添加适当的 ARIA 属性 -->
+<button 
+  aria-label="Close dialog"
+  aria-expanded="false"
+  @click="toggleDialog"
+>
+  <i class="pi pi-times" aria-hidden="true"></i>
+</button>
+```
+
+### 9. 错误处理规范
+
+#### 全局错误处理
+- **在 App.vue 中设置全局错误处理**
+- **使用 Toast 组件显示错误信息**
+- **API 错误统一处理** (在 axios 拦截器中)
+
+#### 组件错误边界
+```vue
+<script setup lang="ts">
+try {
+  // 可能出错的代码
+} catch (error) {
+  console.error('Component error:', error)
+  // 显示用户友好的错误信息
+}
+</script>
+```
+
+### 10. 测试规范
+
+#### 单元测试
+- **使用 Vitest 进行单元测试**
+- **测试组件的主要功能**
+- **测试工具函数的正确性**
+
+#### E2E 测试
+- **使用 Playwright 进行端到端测试**
+- **测试关键用户流程**
+
+## 开发工作流
+
+### 1. 新功能开发
+1. 创建功能分支
+2. 定义 TypeScript 类型
+3. 实现 API 接口
+4. 创建 Pinia store
+5. 开发 UI 组件
+6. 添加响应式支持
+7. 测试功能
+8. 提交代码
+
+### 2. 代码审查要点
+- [ ] 遵循 Vue 3 最佳实践
+- [ ] TypeScript 类型完整
+- [ ] 响应式设计正确
+- [ ] 组件可复用性
+- [ ] 性能优化合理
+- [ ] 可访问性支持
+- [ ] 错误处理完善
+
+### 3. 部署前检查
+- [ ] 代码通过 ESLint 检查
+- [ ] TypeScript 类型检查通过
+- [ ] 所有功能测试通过
+- [ ] 响应式设计验证
+- [ ] 性能测试通过
+- [ ] 可访问性测试通过
+
+## 常用代码片段
+
+### 响应式组件模板
+```vue
+<template>
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <!-- 移动端导航 -->
+    <nav class="md:hidden">
+      <!-- 移动端内容 -->
+    </nav>
+    
+    <!-- 桌面端导航 -->
+    <nav class="hidden md:block">
+      <!-- 桌面端内容 -->
+    </nav>
+    
+    <!-- 响应式内容 -->
+    <main class="container mx-auto px-4 py-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 内容 -->
+      </div>
+    </main>
+  </div>
+</template>
+```
+
+### 表单组件模式
+```vue
+<template>
+  <form @submit.prevent="handleSubmit" class="space-y-6">
+    <div>
+      <label class="block text-sm font-medium mb-2">
+        Email Address
+      </label>
+      <InputText
+        v-model="form.email"
+        type="email"
+        placeholder="Enter your email"
+        class="w-full"
+        :class="{ 'p-invalid': errors.email }"
+      />
+      <small v-if="errors.email" class="text-red-500">
+        {{ errors.email }}
+      </small>
+    </div>
+    
+    <Button
+      type="submit"
+      :loading="loading"
+      label="Submit"
+      class="w-full"
+    />
+  </form>
+</template>
+```
+
+遵循这些规范可以确保代码质量、可维护性和团队协作效率。
