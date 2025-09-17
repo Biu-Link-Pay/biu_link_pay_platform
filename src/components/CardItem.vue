@@ -25,7 +25,7 @@
         <div class="mb-4">
           <div
             class="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center">
-            <i class="pi pi-credit-card text-4xl text-gray-400"></i>
+            <img :src="card.cardPicture || ''" :alt="card.cardName" class="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -63,14 +63,11 @@
 
         <!-- Action Buttons -->
         <div class="space-y-3">
-          <Button :label="selected ? 'Selected' : 'Select Card'" :disabled="card.status !== 1"
-            :class="selected ? 'bg-green-600 hover:bg-green-700' : ''" class="w-full" @click="$emit('select', card)" />
-
           <div class="flex space-x-2">
-            <Button label="Order Now" severity="secondary" class="flex-1" :disabled="card.status !== 1"
-              @click="$emit('order', card)" />
-            <Button label="Activate" severity="success" class="flex-1" :disabled="card.status !== 1"
-              @click="$emit('activate', card)" />
+            <Button :label="`Order a ${card.cardPattern === 1 ? 'Virtual' : 'Physical'} Card`" severity="primary"
+              class="flex-1" :disabled="card.status !== 1" @click="$emit('order', card)" />
+            <Button v-if="card.cardPattern === 2" :label="`Activate my Physical Card`" severity="primary" class="flex-1"
+              :disabled="card.status !== 1" @click="$emit('activate', card)" />
           </div>
         </div>
       </div>

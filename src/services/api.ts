@@ -21,9 +21,12 @@ api.interceptors.request.use(
     // 添加认证 token
     const token = localStorage.getItem('token')
     if (token && config.headers) {
-      config.headers.Authorization = `Bearer ${token}`
+      config.headers.token = `${token}`
     }
-
+    const refreshToken = localStorage.getItem('refreshToken')
+    if (refreshToken && config.headers) {
+      config.headers.refresh_token = `${refreshToken}`
+    }
     // 添加 fingerprint-id（除了登录相关的请求）
     const isLoginRequest = config.url?.includes('/login') ||
       config.url?.includes('/sendEmailCode') ||
@@ -90,6 +93,32 @@ api.interceptors.response.use(
 
       switch (status) {
         case 401:
+          // 检查是否是刷新token请求本身返回401
+          const isRefreshTokenRequest = error.config?.url?.includes('/card/consume/login/refresh')
+
+          if (isRefreshTokenRequest) {
+            // 刷新token请求本身返回401，直接清空token信息并跳转登录页
+            console.error('刷新token请求返回401，直接跳转登录页')
+            const authStore = useAuthStore()
+
+            // 直接清空认证状态，不调用logout接口
+            authStore.isAuthenticated = false
+            authStore.user = null
+            authStore.token = null
+            authStore.refreshToken = null
+
+            // 清除本地存储
+            localStorage.removeItem('token')
+            localStorage.removeItem('refreshToken')
+            localStorage.removeItem('user')
+
+            // 跳转到登录页
+            if (typeof window !== 'undefined') {
+              window.location.href = '/login'
+            }
+            break
+          }
+
           // 未授权，尝试刷新 token
           if (!error.config._retry) {
             error.config._retry = true
@@ -104,7 +133,8 @@ api.interceptors.response.use(
 
               // 更新请求头中的token
               if (error.config.headers) {
-                error.config.headers.Authorization = `Bearer ${authStore.token}`
+                error.config.headers.token = authStore.token
+                error.config.headers.refresh_token = authStore.refreshToken
               }
 
               // 重新发送原始请求
@@ -112,21 +142,42 @@ api.interceptors.response.use(
             } catch (refreshError) {
               console.error('刷新 token 失败:', refreshError)
 
-              // 刷新失败，清除认证状态并跳转到登录页
+              // 刷新失败，直接清空认证状态并跳转到登录页
               const authStore = useAuthStore()
-              authStore.logout()
 
-              // 跳转到登录页（如果在浏览器环境中）
+              // 直接清空认证状态，不调用logout接口
+              authStore.isAuthenticated = false
+              authStore.user = null
+              authStore.token = null
+              authStore.refreshToken = null
+
+              // 清除本地存储
+              localStorage.removeItem('token')
+              localStorage.removeItem('refreshToken')
+              localStorage.removeItem('user')
+
+              // 跳转到登录页
               if (typeof window !== 'undefined') {
                 window.location.href = '/login'
               }
             }
           } else {
-            // 已经重试过，仍然401，直接跳转登录
+            // 已经重试过，仍然401，直接清空认证状态并跳转登录
             console.error('Token刷新后仍然401，跳转登录页')
             const authStore = useAuthStore()
-            authStore.logout()
 
+            // 直接清空认证状态，不调用logout接口
+            authStore.isAuthenticated = false
+            authStore.user = null
+            authStore.token = null
+            authStore.refreshToken = null
+
+            // 清除本地存储
+            localStorage.removeItem('token')
+            localStorage.removeItem('refreshToken')
+            localStorage.removeItem('user')
+
+            // 跳转到登录页
             if (typeof window !== 'undefined') {
               window.location.href = '/login'
             }

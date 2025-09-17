@@ -1,20 +1,10 @@
 <template>
   <div class="min-h-screen bg-white">
     <!-- Navigation Header -->
-    <nav class="bg-white border-b border-gray-200 px-6 py-4">
-      <div class="flex justify-between items-center">
-        <div class="flex items-center space-x-4">
-          <div
-            class="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center">
-            <span class="text-white font-bold text-lg">G+</span>
-          </div>
-        </div>
+    <AppHeader title="Card List" :show-title="true" />
 
-        <div class="flex items-center space-x-4">
-          <Button label="Logout" text class="text-gray-600 hover:text-gray-900" @click="handleLogout" />
-        </div>
-      </div>
-    </nav>
+    <!-- Confirm Dialog -->
+    <ConfirmDialog />
 
     <!-- Main Content -->
     <div class="max-w-7xl mx-auto px-6 py-12">
@@ -36,11 +26,50 @@
         </div>
       </div>
 
-      <!-- Card Selection Grid -->
-      <div v-else-if="cardConfigs.length > 0" class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        <CardItem v-for="card in cardConfigs" :key="card.cardName" :card="card"
-          :selected="selectedCard?.cardName === card.cardName" @select="selectCard" @order="orderCard"
-          @activate="activateCard" />
+      <!-- Card Selection -->
+      <div v-else-if="cardConfigs.length > 0">
+        <!-- Mobile: Card Carousel -->
+        <div class="md:hidden">
+          <div class="relative">
+            <div class="overflow-hidden">
+              <div class="flex transition-transform duration-300 ease-in-out"
+                :style="{ transform: `translateX(-${currentCardIndex * 100}%)` }">
+                <div v-for="(card, index) in cardConfigs" :key="index" class="w-full flex-shrink-0 px-4">
+                  <div class="relative">
+                    <CardItem :card="card" :selected="currentCardIndex === index" @select="selectCard(card)"
+                      @order="orderCard" @activate="activateCard" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button v-if="currentCardIndex > 0"
+              class="absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center z-10"
+              @click="currentCardIndex--; selectedCard = cardConfigs[currentCardIndex]">
+              <i class="pi pi-chevron-left text-gray-600"></i>
+            </button>
+
+            <button v-if="currentCardIndex < cardConfigs.length - 1"
+              class="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center z-10"
+              @click="currentCardIndex++; selectedCard = cardConfigs[currentCardIndex]">
+              <i class="pi pi-chevron-right text-gray-600"></i>
+            </button>
+          </div>
+
+          <!-- Dots Indicator -->
+          <div class="flex justify-center mt-4 space-x-2">
+            <div v-for="(card, index) in cardConfigs" :key="index" class="w-2 h-2 rounded-full transition-colors"
+              :class="currentCardIndex === index ? 'bg-blue-500' : 'bg-gray-300'"></div>
+          </div>
+        </div>
+
+        <!-- Desktop: Grid Layout -->
+        <div class="hidden md:grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <CardItem v-for="card in cardConfigs" :key="card.cardName" :card="card"
+            :selected="selectedCard?.cardName === card.cardName" @select="selectCard" @order="orderCard"
+            @activate="activateCard" />
+        </div>
       </div>
 
       <!-- Empty State -->
@@ -59,18 +88,18 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
-import { useAuthStore } from '@/stores/auth'
 import { useCardStore } from '@/stores/card'
+import AppHeader from '@/components/AppHeader.vue'
 import CardItem from '@/components/CardItem.vue'
 import type { CardConfig } from '@/api/card'
 
 const router = useRouter()
 const toast = useToast()
-const authStore = useAuthStore()
 const cardStore = useCardStore()
 
 // 响应式数据
 const selectedCard = ref<CardConfig | null>(null)
+const currentCardIndex = ref(0)
 
 // 计算属性
 const loading = computed(() => cardStore.loading)
@@ -101,6 +130,11 @@ const fetchCardConfigs = async () => {
 // Select card
 const selectCard = (card: CardConfig) => {
   selectedCard.value = card
+  // 在移动端轮播中，找到选中卡片的索引
+  const cardIndex = cardConfigs.value.findIndex(c => c.cardName === card.cardName)
+  if (cardIndex !== -1) {
+    currentCardIndex.value = cardIndex
+  }
   toast.add({
     severity: 'info',
     summary: 'Card Selected',
@@ -108,6 +142,7 @@ const selectCard = (card: CardConfig) => {
     life: 2000
   })
 }
+
 
 // Order card
 const orderCard = (card: CardConfig) => {
@@ -142,29 +177,70 @@ const activateCard = (card: CardConfig) => {
   })
 }
 
-// Logout handling
-const handleLogout = async () => {
-  try {
-    await authStore.logout()
-    toast.add({
-      severity: 'success',
-      summary: 'Logged Out',
-      detail: 'You have been logged out successfully',
-      life: 3000
-    })
-    router.push('/login')
-  } catch (error) {
-    toast.add({
-      severity: 'error',
-      summary: 'Logout Failed',
-      detail: 'Failed to logout. Please try again.',
-      life: 3000
-    })
-  }
-}
 
 // Fetch data when component mounts
 onMounted(() => {
   fetchCardConfigs()
 })
 </script>
+
+<style scoped>
+/* 轮播容器样式 */
+.overflow-hidden {
+  border-radius: 12px;
+}
+
+/* 轮播项样式 */
+.flex-shrink-0 {
+  min-width: 100%;
+}
+
+/* 导航按钮样式 */
+.absolute button {
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+}
+
+.absolute button:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 指示器样式 */
+.space-x-2>div {
+  transition: all 0.3s ease;
+}
+
+.space-x-2>div:hover {
+  transform: scale(1.2);
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mt-4 {
+    margin-top: 1rem;
+  }
+}
+
+/* 暗色模式支持 */
+.dark .bg-white\/80 {
+  background-color: rgba(31, 41, 55, 0.8);
+}
+
+.dark .text-gray-600 {
+  color: #d1d5db;
+}
+
+.dark .bg-gray-300 {
+  background-color: #4b5563;
+}
+
+.dark .bg-blue-500 {
+  background-color: #3b82f6;
+}
+</style>

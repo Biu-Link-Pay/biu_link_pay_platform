@@ -12,6 +12,9 @@ const __dirname = dirname(__filename)
 export default defineConfig({
   plugins: [
     vue(),
+    vueDevTools({
+      launchEditor: 'cursor',
+    }),
     tailwindcss(),
     vueDevTools(),
   ],

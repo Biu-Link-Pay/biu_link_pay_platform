@@ -1,112 +1,58 @@
 <template>
   <div class="min-h-screen bg-white">
-    <!-- Mobile Header -->
-    <div class="md:hidden">
-      <div class="flex items-center justify-between px-4 py-3 bg-white border-b border-gray-200">
-        <button class="w-10 h-10 flex items-center justify-center" @click="goBack">
-          <i class="pi pi-arrow-left text-gray-600"></i>
-        </button>
-        <h1 class="text-lg font-semibold text-gray-900">Apply for a Card</h1>
-        <div class="w-10"></div>
-      </div>
-
-      <!-- Mobile Status Bar -->
-      <div class="flex items-center justify-between px-4 py-2 bg-gray-50 text-xs text-gray-600">
-        <span>9:27</span>
-        <div class="flex items-center space-x-1">
-          <i class="pi pi-signal text-sm"></i>
-          <i class="pi pi-wifi text-sm"></i>
-          <i class="pi pi-battery-full text-sm"></i>
-        </div>
-      </div>
-    </div>
-
-    <!-- Desktop Header -->
-    <div class="hidden md:block">
-      <nav class="bg-white border-b border-gray-200 px-6 py-4">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center space-x-4">
-            <button class="w-10 h-10 flex items-center justify-center hover:bg-gray-100 rounded-lg transition-colors"
-              @click="goBack">
-              <i class="pi pi-arrow-left text-gray-600"></i>
-            </button>
-            <h1 class="text-xl font-semibold text-gray-900">Apply for a Card</h1>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <!-- Unified Header -->
+    <AppHeader title="Card Holder" :show-title="true" />
 
     <!-- Main Content -->
     <div class="max-w-2xl mx-auto px-4 py-6 md:px-6 md:py-8">
-      <!-- Step Indicator -->
-      <div class="mb-8">
-        <div class="flex items-center justify-center space-x-4 mb-4">
-          <div class="flex items-center">
-            <div
-              class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
-              1</div>
-            <span class="ml-2 text-sm font-medium text-gray-900">Card Selection</span>
+      <!-- Intro Banner -->
+      <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i class="pi pi-id-card text-white text-sm"></i>
           </div>
-          <div class="w-8 h-0.5 bg-blue-600"></div>
-          <div class="flex items-center">
-            <div
-              class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
-              2</div>
-            <span class="ml-2 text-sm font-medium text-gray-900">Personal Info</span>
-          </div>
-          <div class="w-8 h-0.5 bg-gray-300"></div>
-          <div class="flex items-center">
-            <div
-              class="w-8 h-8 bg-gray-300 text-gray-600 rounded-full flex items-center justify-center text-sm font-semibold">
-              3</div>
-            <span class="ml-2 text-sm font-medium text-gray-500">Confirmation</span>
-          </div>
+          <p class="text-sm text-gray-700">Manage your billing address for the card holder.</p>
         </div>
       </div>
 
-      <!-- Form Content -->
+      <!-- Content: view or edit billing address -->
       <div class="space-y-8">
-        <!-- Personal Information Section -->
-        <div>
-          <h2 class="text-xl font-bold text-gray-900 mb-6">Please enter your information</h2>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-            <!-- First Name -->
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">First name</label>
-              <InputText v-model="form.firstName" placeholder="Enter first name" class="w-full"
-                :class="{ 'p-invalid': errors.firstName }" />
-              <small v-if="errors.firstName" class="text-red-500 text-xs mt-1">{{ errors.firstName }}</small>
+        <!-- Readonly view -->
+        <div v-if="holder && !isEditing">
+          <h3 class="text-lg font-semibold text-gray-900 mb-4">Current Billing Address</h3>
+          <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+              <div class="flex justify-between py-2 border-b border-gray-100">
+                <span class="text-gray-600">Address:</span>
+                <span class="font-medium text-gray-900 ml-4 text-right">{{ holder.residentialAddress }}</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-gray-100">
+                <span class="text-gray-600">City:</span>
+                <span class="font-medium text-gray-900 ml-4 text-right">{{ holder.residentialCity }}</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-gray-100">
+                <span class="text-gray-600">State/Province:</span>
+                <span class="font-medium text-gray-900 ml-4 text-right">{{ holder.residentialState }}</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-gray-100">
+                <span class="text-gray-600">Postal Code:</span>
+                <span class="font-medium text-gray-900 ml-4 text-right">{{ holder.residentialPostalCode }}</span>
+              </div>
+              <div class="flex justify-between py-2">
+                <span class="text-gray-600">Country:</span>
+                <span class="font-medium text-gray-900 ml-4 text-right">{{ holder.residentialCountryCode }}</span>
+              </div>
             </div>
-
-            <!-- Last Name -->
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">Last name</label>
-              <InputText v-model="form.lastName" placeholder="Enter last name" class="w-full"
-                :class="{ 'p-invalid': errors.lastName }" />
-              <small v-if="errors.lastName" class="text-red-500 text-xs mt-1">{{ errors.lastName }}</small>
+            <div class="mt-6 flex justify-end">
+              <Button label="Edit" icon="pi pi-pencil" class="w-full sm:w-auto" @click="startEdit" />
             </div>
-          </div>
-
-          <!-- Phone Number -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-2">Phone number</label>
-            <div class="flex gap-2">
-              <Dropdown v-model="form.countryCode" :options="countryCodes" option-label="label" option-value="value"
-                placeholder="+1" class="w-24" />
-              <InputText v-model="form.phoneNumber" placeholder="Enter phone number" class="flex-1"
-                :class="{ 'p-invalid': errors.phoneNumber }" />
-            </div>
-            <small v-if="errors.phoneNumber" class="text-red-500 text-xs mt-1">{{ errors.phoneNumber }}</small>
           </div>
         </div>
 
-        <!-- Address Information Section -->
-        <div>
+        <!-- Edit form -->
+        <div v-if="isEditing">
           <h3 class="text-lg font-semibold text-gray-900 mb-4">Billing Address</h3>
-
           <div class="space-y-4">
-            <!-- Address -->
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Address</label>
               <InputText v-model="form.residentialAddress" placeholder="Enter your address" class="w-full"
@@ -114,9 +60,7 @@
               <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
               }}</small>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <!-- City -->
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">City</label>
                 <InputText v-model="form.residentialCity" placeholder="Enter city" class="w-full"
@@ -124,8 +68,6 @@
                 <small v-if="errors.residentialCity" class="text-red-500 text-xs mt-1">{{ errors.residentialCity
                 }}</small>
               </div>
-
-              <!-- State -->
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">State/Province</label>
                 <InputText v-model="form.residentialState" placeholder="Enter state/province" class="w-full"
@@ -134,9 +76,7 @@
                 }}</small>
               </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <!-- Postal Code -->
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">Postal Code</label>
                 <InputText v-model="form.residentialPostalCode" placeholder="Enter postal code" class="w-full"
@@ -144,8 +84,6 @@
                 <small v-if="errors.residentialPostalCode" class="text-red-500 text-xs mt-1">{{
                   errors.residentialPostalCode }}</small>
               </div>
-
-              <!-- Country -->
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">Country</label>
                 <Dropdown v-model="form.residentialCountryCode" :options="countries" option-label="name"
@@ -154,6 +92,13 @@
                 <small v-if="errors.residentialCountryCode" class="text-red-500 text-xs mt-1">{{
                   errors.residentialCountryCode }}</small>
               </div>
+            </div>
+            <!-- Edit form buttons -->
+            <div class="mt-6 flex gap-3">
+              <Button v-if="holder" label="Cancel" icon="pi pi-times" severity="secondary" class="flex-1"
+                @click="cancelEdit" />
+              <Button :label="holder ? 'Update' : 'Save'" icon="pi pi-check" :loading="loading"
+                :class="holder ? 'flex-1' : 'w-full'" @click="saveAddress" />
             </div>
           </div>
         </div>
@@ -165,7 +110,7 @@
           <div class="mb-4">
             <label class="block text-sm font-medium text-gray-700 mb-2">Recharge amount</label>
             <div class="flex items-center gap-2">
-              <InputText v-model.number="form.rechargeAmount" type="number" placeholder="10" class="w-32"
+              <InputText v-model="form.rechargeAmount" type="text" placeholder="20" class="w-32"
                 :class="{ 'p-invalid': errors.rechargeAmount }" />
               <span class="text-gray-600">USD</span>
             </div>
@@ -175,9 +120,9 @@
           <!-- Quick Amount Buttons -->
           <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
             <Button v-for="amount in quickAmounts" :key="amount" :label="`$${amount}`"
-              :class="form.rechargeAmount === amount ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700'"
+              :class="form.rechargeAmount === amount.toString() ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700'"
               class="w-full py-2 px-4 rounded-lg border border-gray-200 hover:bg-gray-200 transition-colors"
-              @click="form.rechargeAmount = amount" />
+              @click="form.rechargeAmount = amount.toString()" />
           </div>
         </div>
       </div>
@@ -185,45 +130,48 @@
       <!-- Action Buttons -->
       <div class="mt-8 flex flex-col sm:flex-row gap-4">
         <Button label="Back" icon="pi pi-arrow-left" severity="secondary" class="w-full sm:w-auto" @click="goBack" />
-        <Button label="Confirm" icon="pi pi-check" :loading="loading" class="w-full sm:flex-1" @click="handleConfirm" />
+        <Button :disabled="!canConfirm" :label="confirmButtonText" icon="pi pi-check" :loading="loading"
+          class="w-full sm:flex-1" @click="handleConfirm" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, onMounted } from 'vue'
+import { ref, reactive, computed, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useCardStore } from '@/stores/card'
+import { useAuthStore } from '@/stores/auth'
 import InputText from 'primevue/inputtext'
 import Button from 'primevue/button'
 import Dropdown from 'primevue/dropdown'
+import AppHeader from '@/components/AppHeader.vue'
+import { CardAPI } from '@/api/card'
+import type { CardHolderInfo as HolderInfo, CardHolderResponse } from '@/api/card'
 
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
 const cardStore = useCardStore()
+const authStore = useAuthStore()
 
-// Form data
-const form = reactive({
-  firstName: '',
-  lastName: '',
-  phoneNumber: '',
-  countryCode: '+1',
+// Holder + Editing state
+const holder = ref<CardHolderResponse | null>(null)
+const isEditing = ref(false)
+
+// Form data (billing address + recharge)
+const form = reactive<HolderInfo & { rechargeAmount: string }>({
   residentialAddress: '',
   residentialCity: '',
-  residentialState: '',
-  residentialPostalCode: '',
   residentialCountryCode: 'US',
-  rechargeAmount: 10
+  residentialPostalCode: '',
+  residentialState: '',
+  rechargeAmount: '20'
 })
 
 // Form validation errors
 const errors = reactive({
-  firstName: '',
-  lastName: '',
-  phoneNumber: '',
   residentialAddress: '',
   residentialCity: '',
   residentialState: '',
@@ -234,16 +182,6 @@ const errors = reactive({
 
 // Loading state
 const loading = ref(false)
-
-// Country codes for phone
-const countryCodes = ref([
-  { label: '+1', value: '+1' },
-  { label: '+44', value: '+44' },
-  { label: '+86', value: '+86' },
-  { label: '+81', value: '+81' },
-  { label: '+33', value: '+33' },
-  { label: '+49', value: '+49' }
-])
 
 // Countries
 const countries = ref([
@@ -258,9 +196,35 @@ const countries = ref([
 ])
 
 // Quick recharge amounts
-const quickAmounts = ref([10, 50, 100, 200])
+const quickAmounts = ref([20, 50, 100, 200])
 
-// Validation functions
+// Computed properties for button states
+const canConfirm = computed(() => {
+  return !isEditing.value && !!holder.value
+})
+
+const confirmButtonText = computed(() => {
+  if (isEditing.value) {
+    return 'Please save address first'
+  } else if (!holder.value) {
+    return 'Please add address first'
+  } else {
+    return 'Confirm'
+  }
+})
+
+// Build headers for API
+const buildHeaders = () => {
+  const token = authStore.token || localStorage.getItem('token') || ''
+  const refreshToken = authStore.refreshToken || localStorage.getItem('refreshToken') || ''
+  return {
+    token,
+    'fingerprint-id': 'default-fingerprint-id',
+    refresh_token: refreshToken
+  }
+}
+
+// Validation functions (now only for recharge since address validation is in saveAddress)
 const validateForm = () => {
   // Clear previous errors
   Object.keys(errors).forEach(key => {
@@ -269,48 +233,9 @@ const validateForm = () => {
 
   let isValid = true
 
-  // Validate required fields
-  if (!form.firstName.trim()) {
-    errors.firstName = 'First name is required'
-    isValid = false
-  }
-
-  if (!form.lastName.trim()) {
-    errors.lastName = 'Last name is required'
-    isValid = false
-  }
-
-  if (!form.phoneNumber.trim()) {
-    errors.phoneNumber = 'Phone number is required'
-    isValid = false
-  }
-
-  if (!form.residentialAddress.trim()) {
-    errors.residentialAddress = 'Address is required'
-    isValid = false
-  }
-
-  if (!form.residentialCity.trim()) {
-    errors.residentialCity = 'City is required'
-    isValid = false
-  }
-
-  if (!form.residentialState.trim()) {
-    errors.residentialState = 'State/Province is required'
-    isValid = false
-  }
-
-  if (!form.residentialPostalCode.trim()) {
-    errors.residentialPostalCode = 'Postal code is required'
-    isValid = false
-  }
-
-  if (!form.residentialCountryCode) {
-    errors.residentialCountryCode = 'Country is required'
-    isValid = false
-  }
-
-  if (!form.rechargeAmount || form.rechargeAmount <= 0) {
+  // Only validate recharge amount since address validation is handled separately
+  const rechargeAmount = parseFloat(form.rechargeAmount)
+  if (!form.rechargeAmount || isNaN(rechargeAmount) || rechargeAmount <= 0) {
     errors.rechargeAmount = 'Please enter a valid recharge amount'
     isValid = false
   }
@@ -318,13 +243,99 @@ const validateForm = () => {
   return isValid
 }
 
-// Handle form submission
-const handleConfirm = async () => {
-  if (!validateForm()) {
+// Load current holder info
+const loadHolder = async () => {
+  try {
+    loading.value = true
+    const response = await CardAPI.queryCardHolder(buildHeaders())
+    if (response.success && response.model) {
+      holder.value = response.model
+      // Prefill form from holder
+      form.residentialAddress = response.model.residentialAddress
+      form.residentialCity = response.model.residentialCity
+      form.residentialCountryCode = response.model.residentialCountryCode
+      form.residentialPostalCode = response.model.residentialPostalCode
+      form.residentialState = response.model.residentialState
+      isEditing.value = false
+    } else {
+      // Not found -> allow create directly
+      holder.value = null
+      isEditing.value = true
+    }
+  } catch (e) {
+    // Treat as not found
+    holder.value = null
+    isEditing.value = true
+  } finally {
+    loading.value = false
+  }
+}
+
+const startEdit = () => {
+  isEditing.value = true
+}
+
+const cancelEdit = () => {
+  // Reset form to original values
+  if (holder.value) {
+    form.residentialAddress = holder.value.residentialAddress
+    form.residentialCity = holder.value.residentialCity
+    form.residentialCountryCode = holder.value.residentialCountryCode
+    form.residentialPostalCode = holder.value.residentialPostalCode
+    form.residentialState = holder.value.residentialState
+  } else {
+    // Reset to empty if no holder
+    form.residentialAddress = ''
+    form.residentialCity = ''
+    form.residentialCountryCode = 'US'
+    form.residentialPostalCode = ''
+    form.residentialState = ''
+  }
+  isEditing.value = false
+}
+
+const saveAddress = async () => {
+  // Validate only address fields
+  const addressErrors = {
+    residentialAddress: '',
+    residentialCity: '',
+    residentialState: '',
+    residentialPostalCode: '',
+    residentialCountryCode: ''
+  }
+
+  let isValid = true
+
+  if (!form.residentialAddress.trim()) {
+    addressErrors.residentialAddress = 'Address is required'
+    isValid = false
+  }
+
+  if (!form.residentialCity.trim()) {
+    addressErrors.residentialCity = 'City is required'
+    isValid = false
+  }
+
+  if (!form.residentialState.trim()) {
+    addressErrors.residentialState = 'State/Province is required'
+    isValid = false
+  }
+
+  if (!form.residentialPostalCode.trim()) {
+    addressErrors.residentialPostalCode = 'Postal code is required'
+    isValid = false
+  }
+
+  if (!form.residentialCountryCode) {
+    addressErrors.residentialCountryCode = 'Country is required'
+    isValid = false
+  }
+
+  if (!isValid) {
     toast.add({
       severity: 'error',
       summary: 'Validation Error',
-      detail: 'Please fill in all required fields',
+      detail: 'Please fill in all required address fields',
       life: 3000
     })
     return
@@ -333,8 +344,7 @@ const handleConfirm = async () => {
   loading.value = true
 
   try {
-    // Prepare card holder info for API
-    const holderInfo = {
+    const holderInfo: HolderInfo = {
       residentialAddress: form.residentialAddress,
       residentialCity: form.residentialCity,
       residentialCountryCode: form.residentialCountryCode,
@@ -342,37 +352,105 @@ const handleConfirm = async () => {
       residentialState: form.residentialState
     }
 
-    // Save card holder information
-    const result = await cardStore.saveCardHolder(holderInfo)
+    let ok = false
+    if (holder.value) {
+      // Update
+      const resp = await CardAPI.updateCardHolder(holderInfo, buildHeaders())
+      ok = !!resp.success
+    } else {
+      // Create (use store helper)
+      const result = await cardStore.saveCardHolder(holderInfo)
+      ok = !!result.success
+    }
 
-    if (result.success) {
+    if (ok) {
       toast.add({
         severity: 'success',
-        summary: 'Information Saved',
-        detail: result.message || 'Your information has been saved successfully',
+        summary: 'Saved',
+        detail: 'Billing address saved successfully',
         life: 3000
       })
-
-      // Navigate to confirmation page or next step
-      setTimeout(() => {
-        router.push({
-          name: 'CardList',
-          query: {
-            success: 'true',
-            message: 'Card application submitted successfully'
-          }
-        })
-      }, 2000)
+      // Reload holder & exit edit mode
+      await loadHolder()
+      isEditing.value = false
     } else {
       toast.add({
         severity: 'error',
         summary: 'Save Failed',
-        detail: result.error || 'Failed to save your information. Please try again.',
+        detail: 'Failed to save your billing address. Please try again.',
         life: 3000
       })
     }
   } catch (error) {
-    console.error('Error saving card holder info:', error)
+    console.error('Error saving billing address:', error)
+    toast.add({
+      severity: 'error',
+      summary: 'Error',
+      detail: 'An unexpected error occurred. Please try again.',
+      life: 3000
+    })
+  } finally {
+    loading.value = false
+  }
+}
+
+// Handle form submission (only recharge confirmation now)
+const handleConfirm = async () => {
+  // Check if we can confirm (address must be saved and not in editing mode)
+  if (!canConfirm.value) {
+    if (isEditing.value) {
+      toast.add({
+        severity: 'warn',
+        summary: 'Please save address first',
+        detail: 'You need to save your billing address before confirming',
+        life: 3000
+      })
+    } else if (!holder.value) {
+      toast.add({
+        severity: 'warn',
+        summary: 'Please add address first',
+        detail: 'You need to add your billing address before confirming',
+        life: 3000
+      })
+    }
+    return
+  }
+
+  // Only validate recharge amount since address is handled separately
+  const rechargeAmount = parseFloat(form.rechargeAmount)
+  if (!form.rechargeAmount || isNaN(rechargeAmount) || rechargeAmount <= 0) {
+    toast.add({
+      severity: 'error',
+      summary: 'Validation Error',
+      detail: 'Please enter a valid recharge amount',
+      life: 3000
+    })
+    return
+  }
+
+  loading.value = true
+
+  try {
+    // Handle recharge confirmation
+    toast.add({
+      severity: 'success',
+      summary: 'Confirmed',
+      detail: `Recharge amount $${form.rechargeAmount} confirmed successfully`,
+      life: 3000
+    })
+
+    // Navigate to payment method selection page
+    setTimeout(() => {
+      router.push({
+        name: 'PaymentMethodSelection',
+        query: {
+          amount: form.rechargeAmount,
+          name: holder.value?.residentialAddress ? 'John Tan' : 'New User'
+        }
+      })
+    }, 2000)
+  } catch (error) {
+    console.error('Error confirming recharge:', error)
     toast.add({
       severity: 'error',
       summary: 'Error',
@@ -390,12 +468,8 @@ const goBack = () => {
 }
 
 
-// Initialize form with route params if available
+// Initialize: query holder
 onMounted(() => {
-  // Get card info from route query if available
-  const cardName = route.query.cardName as string
-  if (cardName) {
-    console.log('Applying for card:', cardName)
-  }
+  loadHolder()
 })
 </script>

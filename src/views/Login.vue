@@ -92,7 +92,8 @@
 
               <!-- Terms Agreement -->
               <div class="flex items-start space-x-3">
-                <Checkbox v-model="form.agreeTerms" :binary="true" class="mt-1" :disabled="isLoading" />
+                <Checkbox v-model="form.agreeTerms" :binary="true" class="mt-1 checkbox-enhanced"
+                  :disabled="isLoading" />
                 <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                   I have read and agree to Bit Store's
                   <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">
@@ -107,14 +108,9 @@
               <p v-if="errors.agreeTerms" class="text-sm text-red-500">
                 {{ errors.agreeTerms }}
               </p>
-
               <!-- Submit Button -->
               <Button type="submit" :label="buttonText" :loading="isLoading" :disabled="!form.agreeTerms"
                 class="w-full min-h-[48px] text-base font-medium transition-all duration-200" severity="primary" />
-
-              <!-- Debug Button -->
-              <Button type="button" label="Debug Fingerprint" icon="pi pi-bug"
-                class="w-full min-h-[48px] text-base font-medium mt-2" severity="secondary" @click="debugFingerprint" />
             </form>
           </div>
         </div>
@@ -330,34 +326,6 @@ const handleSubmit = async () => {
   }
 }
 
-// Debug fingerprint functionality
-const debugFingerprint = async () => {
-  try {
-    const cachedId = getCachedFingerprintId()
-    const fingerprintId = await getFingerprintId()
-
-    toast.add({
-      severity: 'info',
-      summary: 'Fingerprint Debug',
-      detail: `Cached: ${cachedId || 'None'}, Current: ${fingerprintId}`,
-      life: 5000
-    })
-
-    console.log('Fingerprint Debug:', {
-      cached: cachedId,
-      current: fingerprintId,
-      localStorage: localStorage.getItem('fingerprint-id')
-    })
-  } catch (error) {
-    toast.add({
-      severity: 'error',
-      summary: 'Fingerprint Error',
-      detail: `Failed to get fingerprint: ${error}`,
-      life: 5000
-    })
-  }
-}
-
 // Clean up timer when component unmounts
 onMounted(() => {
   return () => {
@@ -377,6 +345,100 @@ onMounted(() => {
 
 :deep(.p-button) {
   font-weight: 500;
+}
+
+/* Enhanced Checkbox styles */
+:deep(.checkbox-enhanced .p-checkbox-box) {
+  border: 2px solid #d1d5db !important;
+  background-color: #ffffff !important;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+}
+
+:deep(.checkbox-enhanced .p-checkbox-box:hover) {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* 选中状态 - 使用多种可能的类名 */
+:deep(.checkbox-enhanced .p-checkbox-box.p-highlight),
+:deep(.checkbox-enhanced .p-checkbox-box.p-checked),
+:deep(.checkbox-enhanced .p-checkbox-box[aria-checked="true"]),
+:deep(.checkbox-enhanced.p-checkbox-checked .p-checkbox-box) {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+}
+
+:deep(.checkbox-enhanced .p-checkbox-box.p-highlight .p-checkbox-icon),
+:deep(.checkbox-enhanced .p-checkbox-box.p-checked .p-checkbox-icon),
+:deep(.checkbox-enhanced .p-checkbox-box[aria-checked="true"] .p-checkbox-icon),
+:deep(.checkbox-enhanced.p-checkbox-checked .p-checkbox-box .p-checkbox-icon) {
+  color: #ffffff !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
+/* 确保选中状态在所有情况下都可见 */
+:deep(.checkbox-enhanced.p-checkbox-checked .p-checkbox-box) {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+}
+
+:deep(.checkbox-enhanced.p-checkbox-checked .p-checkbox-box .p-checkbox-icon) {
+  color: #ffffff !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
+/* 强制选中状态样式 - 最高优先级 */
+:deep(.checkbox-enhanced[data-p-checked="true"] .p-checkbox-box),
+:deep(.checkbox-enhanced[data-p-checked="true"] .p-checkbox-box *) {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+/* 使用更通用的选择器确保选中状态可见 */
+:deep(.checkbox-enhanced .p-checkbox-box:has(.p-checkbox-icon)) {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+}
+
+:deep(.checkbox-enhanced .p-checkbox-box:has(.p-checkbox-icon) .p-checkbox-icon) {
+  color: #ffffff !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
+:deep(.checkbox-enhanced .p-checkbox-box:focus) {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Dark mode checkbox styles */
+.dark :deep(.checkbox-enhanced .p-checkbox-box) {
+  border-color: #6b7280 !important;
+  background-color: #1f2937 !important;
+}
+
+.dark :deep(.checkbox-enhanced .p-checkbox-box:hover) {
+  border-color: #60a5fa !important;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.1) !important;
+}
+
+/* 暗色模式选中状态 */
+.dark :deep(.checkbox-enhanced .p-checkbox-box.p-highlight),
+.dark :deep(.checkbox-enhanced .p-checkbox-box.p-checked),
+.dark :deep(.checkbox-enhanced .p-checkbox-box[aria-checked="true"]),
+.dark :deep(.checkbox-enhanced.p-checkbox-checked .p-checkbox-box) {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+}
+
+.dark :deep(.checkbox-enhanced .p-checkbox-box:focus) {
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.3) !important;
 }
 
 /* Mobile optimization */

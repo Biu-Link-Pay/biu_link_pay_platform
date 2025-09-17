@@ -1,17 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Login from '@/views/Login.vue'
-import Home from '@/views/Home.vue'
 import { setupRouterGuards } from './guards'
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
-    meta: {
-      title: 'Home',
-      requiresAuth: true
-    }
+    redirect: '/card-list'
   },
   {
     path: '/login',
@@ -46,6 +40,33 @@ const routes = [
     component: () => import('@/views/CardHolderInfo.vue'),
     meta: {
       title: 'Card Holder Information',
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/payment-method-selection',
+    name: 'PaymentMethodSelection',
+    component: () => import('@/views/PaymentMethodSelection.vue'),
+    meta: {
+      title: 'Payment Method Selection',
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/payment-confirmation',
+    name: 'PaymentConfirmation',
+    component: () => import('@/views/PaymentConfirmation.vue'),
+    meta: {
+      title: 'Payment Confirmation',
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/my-cards',
+    name: 'MyCards',
+    component: () => import('@/views/MyCards.vue'),
+    meta: {
+      title: 'My Cards',
       requiresAuth: true
     }
   },
