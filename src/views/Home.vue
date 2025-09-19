@@ -14,7 +14,7 @@
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <Button label="Login" icon="pi pi-sign-in" @click="$router.push('/login')" class="w-full sm:w-auto px-8"
               size="large" />
-            <Button label="View Cards" icon="pi pi-credit-card" @click="$router.push('/card-list')"
+            <Button label="Apply Card" icon="pi pi-credit-card" @click="$router.push('/apply-card')"
               class="w-full sm:w-auto px-8" size="large" severity="secondary" />
           </div>
 

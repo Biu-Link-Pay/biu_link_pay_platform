@@ -33,11 +33,6 @@
             <div class="text-lg font-mono tracking-wider">{{ maskedCardNumber }}</div>
           </div>
         </div>
-
-        <!-- Dropdown Indicator -->
-        <div class="flex justify-center mt-2">
-          <i class="pi pi-chevron-down text-gray-400"></i>
-        </div>
       </div>
 
       <!-- Payment Token Selection -->
@@ -312,7 +307,7 @@ const handlePayment = () => {
   // Simulate payment processing
   setTimeout(() => {
     router.push({
-      name: 'CardList',
+      name: 'ApplyCardList',
       query: {
         success: 'true',
         message: 'Card application completed successfully'

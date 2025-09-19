@@ -29,11 +29,6 @@
           </div>
         </div>
 
-        <!-- Card Description -->
-        <div class="mb-4">
-          <p class="text-gray-600 leading-relaxed">{{ cardDescription }}</p>
-        </div>
-
         <!-- Card Details -->
         <div class="mb-6">
           <h4 class="text-sm font-semibold text-gray-900 mb-3">Card Details:</h4>
@@ -47,15 +42,15 @@
               <span class="font-medium">${{ card.rechargeFee }}</span>
             </li>
             <li class="flex items-center justify-between text-sm text-gray-600">
-              <span>Monthly Limit:</span>
+              <span>Max On Monthly:</span>
               <span class="font-medium">${{ card.maxOnMonthly }}</span>
             </li>
             <li class="flex items-center justify-between text-sm text-gray-600">
-              <span>Daily Limit:</span>
+              <span>Max On Daily:</span>
               <span class="font-medium">${{ card.maxOnDaily }}</span>
             </li>
             <li class="flex items-center justify-between text-sm text-gray-600">
-              <span>Max Single Transaction:</span>
+              <span>Max On Percent:</span>
               <span class="font-medium">${{ card.maxOnPercent }}</span>
             </li>
           </ul>
@@ -65,9 +60,7 @@
         <div class="space-y-3">
           <div class="flex space-x-2">
             <Button :label="`Order a ${card.cardPattern === 1 ? 'Virtual' : 'Physical'} Card`" severity="primary"
-              class="flex-1" :disabled="card.status !== 1" @click="$emit('order', card)" />
-            <Button v-if="card.cardPattern === 2" :label="`Activate my Physical Card`" severity="primary" class="flex-1"
-              :disabled="card.status !== 1" @click="$emit('activate', card)" />
+              class="flex-1" :disabled="card.cardPattern !== 1" @click="$emit('order', card)" />
           </div>
         </div>
       </div>
@@ -133,12 +126,4 @@ const cardTypeText = computed(() => {
   return props.card.cardPattern === 1 ? 'Virtual Card' : 'Physical Card'
 })
 
-const cardDescription = computed(() => {
-  if (props.card.cardPattern === 1) {
-    return 'A virtual card for online transactions, offering convenience and security.'
-  } else if (props.card.cardPattern === 2) {
-    return 'A physical card for in-store and online purchases, providing a tangible payment solution.'
-  }
-  return 'Flexible payment solution for various needs.'
-})
 </script>

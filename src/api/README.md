@@ -131,7 +131,7 @@ API 服务已配置自动拦截器：
 
 - `/` - 首页
 - `/login` - 登录页面
-- `/card-list` - 卡片列表页面
+- `/apply-card` - 申请卡片页面
 - `/card-bin-selection` - 卡片 BIN 选择页面
 
 ## 🎯 使用示例
@@ -166,7 +166,7 @@ if (loginResult.success) {
     detail: '欢迎回来！'
   })
   // 跳转到卡片列表页面
-  router.push('/card-list')
+  router.push('/apply-card')
 }
 ```
 

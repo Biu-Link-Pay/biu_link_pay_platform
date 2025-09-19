@@ -124,12 +124,14 @@ import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useAuthStore } from '@/stores/auth'
+import { useCardStore } from '@/stores/card'
 import { AuthUtils, RouteUtils } from '@/utils/auth'
 import { getFingerprintId, getCachedFingerprintId } from '@/utils/fingerprint'
 
 const router = useRouter()
 const toast = useToast()
 const authStore = useAuthStore()
+const cardStore = useCardStore()
 
 // App icons for showcase
 const apps = ref([
@@ -287,16 +289,8 @@ const login = async () => {
         life: 3000
       })
 
-      // Login successful, redirect to target page or home
-      const redirectPath = router.currentRoute.value.query.redirect as string ||
-        RouteUtils.getSavedRedirectPath() ||
-        '/'
-
-      // Clear saved redirect path
-      RouteUtils.clearRedirectPath()
-
-      console.log('Login successful, redirecting to:', redirectPath)
-      router.push(redirectPath)
+      // 登录成功后检查卡片列表
+      await checkCardListAndRedirect()
     } else {
       toast.add({
         severity: 'error',
@@ -314,6 +308,35 @@ const login = async () => {
     })
   } finally {
     isLoading.value = false
+  }
+}
+
+// 检查卡片列表并决定跳转
+const checkCardListAndRedirect = async () => {
+  try {
+    // 获取卡片列表
+    const result = await cardStore.fetchCardList()
+
+    if (result.success) {
+      // 检查是否有卡片
+      if (cardStore.hasCards) {
+        // 有卡片，跳转到我的卡片页面
+        console.log('User has cards, redirecting to MyCards')
+        router.push('/my-cards')
+      } else {
+        // 没有卡片，跳转到申请卡片页面
+        console.log('User has no cards, redirecting to ApplyCardList')
+        router.push('/apply-card')
+      }
+    } else {
+      // 获取卡片列表失败，默认跳转到申请卡片页面
+      console.log('Failed to fetch card list, redirecting to ApplyCardList')
+      router.push('/apply-card')
+    }
+  } catch (error) {
+    console.error('Error checking card list:', error)
+    // 出错时默认跳转到申请卡片页面
+    router.push('/apply-card')
   }
 }
 

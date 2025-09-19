@@ -5,7 +5,7 @@ import { setupRouterGuards } from './guards'
 const routes = [
   {
     path: '/',
-    redirect: '/card-list'
+    redirect: '/apply-card'
   },
   {
     path: '/login',
@@ -17,11 +17,11 @@ const routes = [
     }
   },
   {
-    path: '/card-list',
-    name: 'CardList',
-    component: () => import('@/views/CardList.vue'),
+    path: '/apply-card',
+    name: 'ApplyCardList',
+    component: () => import('@/views/ApplyCardList.vue'),
     meta: {
-      title: 'Card List',
+      title: 'Apply Card',
       requiresAuth: true
     }
   },
@@ -58,6 +58,15 @@ const routes = [
     component: () => import('@/views/PaymentConfirmation.vue'),
     meta: {
       title: 'Payment Confirmation',
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/crypto-payment',
+    name: 'CryptoPayment',
+    component: () => import('@/views/CryptoPayment.vue'),
+    meta: {
+      title: 'Crypto Payment',
       requiresAuth: true
     }
   },

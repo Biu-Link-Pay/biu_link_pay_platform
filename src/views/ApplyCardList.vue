@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-white">
     <!-- Navigation Header -->
-    <AppHeader title="Card List" :show-title="true" />
+    <AppHeader title="Apply Card" :show-title="true" />
 
     <!-- Confirm Dialog -->
     <ConfirmDialog />

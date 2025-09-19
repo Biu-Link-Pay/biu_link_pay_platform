@@ -147,6 +147,44 @@ export interface CardDetailResponse {
   expirationDate: string // 过期时间
 }
 
+// 卡列表相关类型
+export interface CardListItem {
+  cardId: string // 卡ID
+  cardNo: string // 卡号
+  maxOnMonthly: string // 月限额
+  maxOnDaily: string // 日限额
+  maxOnPercent: string // 单笔限额
+}
+
+// 消费记录分页查询相关类型
+export interface TransactionListQueryParams {
+  pageIndex: string // 第几页
+  pageSize: string // 每页多少条
+  cardId: string // 卡ID
+}
+
+export interface TransactionItem {
+  status: string // 状态
+  transactionType: string // 交易类型
+  transactionAmount: number // 交易金额
+  transactionCurrency: string // 交易币种
+  merchantNameLocation: string // 商家名字
+  merchantLocation: string // 商户所在国家
+  feeDeductionAmount: number // 手续费扣费金额
+  feeDeductionCurrency: string // 手续费扣费币种
+  cardId: string // 卡ID
+}
+
+export interface TransactionListResponse {
+  content: TransactionItem[] // 交易记录列表
+  page: {
+    size: number // 每页大小
+    number: number // 当前页码
+    totalElements: number // 总元素数
+    totalPages: number // 总页数
+  }
+}
+
 // 请求头参数（fingerprint-id 由拦截器自动添加）
 export interface CardRequestHeaders {
   token: string
@@ -319,6 +357,44 @@ export class CardAPI {
     })
     return response.data
   }
+
+  /**
+   * 查询卡列表
+   * @param headers 请求头参数（fingerprint-id 由拦截器自动添加）
+   * @returns Promise<ApiResponse<CardListItem[]>>
+   */
+  static async queryCardList(
+    headers: CardRequestHeaders
+  ): Promise<ApiResponse<CardListItem[]>> {
+    const response = await api.get('/card/consume/operator/queryCardList', {
+      headers: {
+        'token': headers.token,
+        'refresh_token': headers.refresh_token
+        // fingerprint-id 由请求拦截器自动添加
+      }
+    })
+    return response.data
+  }
+
+  /**
+   * 消费记录分页查询
+   * @param params 分页查询参数
+   * @param headers 请求头参数（fingerprint-id 由拦截器自动添加）
+   * @returns Promise<ApiResponse<TransactionListResponse>>
+   */
+  static async queryTransactionList(
+    params: TransactionListQueryParams,
+    headers: CardRequestHeaders
+  ): Promise<ApiResponse<TransactionListResponse>> {
+    const response = await api.post('/card/consume/operator/queryTransactionList', params, {
+      headers: {
+        'token': headers.token,
+        'refresh_token': headers.refresh_token
+        // fingerprint-id 由请求拦截器自动添加
+      }
+    })
+    return response.data
+  }
 }
 
 // 导出单个函数以便于使用
@@ -330,5 +406,7 @@ export const {
   getPaymentMethods,
   queryCardHolder,
   updateCardHolder,
-  queryCardDetail
+  queryCardDetail,
+  queryCardList,
+  queryTransactionList
 } = CardAPI

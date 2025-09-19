@@ -7,6 +7,9 @@ import type {
   CardBin,
   QueryCardBinParams,
   CardHolderInfo,
+  CardListItem,
+  TransactionListQueryParams,
+  TransactionListResponse,
   ApiResponse
 } from '@/api/card'
 
@@ -55,6 +58,7 @@ export const useCardStore = defineStore('card', () => {
     }
   ])
   const cardBins = ref<CardBin[]>([])
+  const cardList = ref<CardListItem[]>([])
   const loading = ref(false)
   const error = ref<string | null>(null)
 
@@ -74,6 +78,8 @@ export const useCardStore = defineStore('card', () => {
   const enabledCards = computed(() =>
     cardConfigs.value.filter(card => card.status === 1)
   )
+
+  const hasCards = computed(() => cardList.value.length > 0)
 
   // 获取请求头
   const getRequestHeaders = () => {
@@ -168,6 +174,33 @@ export const useCardStore = defineStore('card', () => {
     }
   }
 
+  // 获取卡片列表
+  const fetchCardList = async () => {
+    loading.value = true
+    error.value = null
+
+    try {
+      const headers = getRequestHeaders()
+      const response: ApiResponse<CardListItem[]> = await CardAPI.queryCardList(headers)
+
+      if (response.success && response.model) {
+        cardList.value = response.model
+        return { success: true, data: response.model }
+      } else {
+        throw new Error(response.msg || '获取卡片列表失败')
+      }
+    } catch (err) {
+      error.value = err instanceof Error ? err.message : '获取卡片列表失败'
+      console.error('获取卡片列表失败:', err)
+      return {
+        success: false,
+        error: error.value
+      }
+    } finally {
+      loading.value = false
+    }
+  }
+
   // 根据名称获取卡片配置
   const getCardConfigByName = (cardName: string): CardConfig | undefined => {
     return cardConfigs.value.find(card => card.cardName === cardName)
@@ -197,6 +230,7 @@ export const useCardStore = defineStore('card', () => {
   const reset = () => {
     cardConfigs.value = []
     cardBins.value = []
+    cardList.value = []
     loading.value = false
     error.value = null
   }
@@ -205,6 +239,7 @@ export const useCardStore = defineStore('card', () => {
     // 状态
     cardConfigs,
     cardBins,
+    cardList,
     loading,
     error,
 
@@ -213,11 +248,13 @@ export const useCardStore = defineStore('card', () => {
     virtualCards,
     physicalCards,
     enabledCards,
+    hasCards,
 
     // 方法
     fetchCardConfigs,
     fetchCardBins,
     saveCardHolder,
+    fetchCardList,
     getCardConfigByName,
     getCardConfigsByType,
     getCardConfigsByPattern,
