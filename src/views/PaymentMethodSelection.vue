@@ -80,7 +80,7 @@
                       Selected: {{ selectedCrypto ? `${selectedCrypto.crypto.name}-${selectedCrypto.network.name}` :
                         'None' }}
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div class="grid grid-cols-1 gap-3">
                       <div v-for="crypto in payType.cryptoNetworks"
                         :key="`${crypto.crypto.name}-${crypto.network.name}`"
                         class="flex items-center justify-between p-3 rounded-lg cursor-pointer transition-colors duration-200"
@@ -128,7 +128,8 @@
             <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Payment Details</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
               <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">USD Amount:</span>
+                <span class="text-gray-600 dark:text-gray-400"> {{ cardStore.selectedCardBin?.cardCurrency }}
+                  Amount:</span>
                 <span class="font-medium text-gray-900 dark:text-white">{{ formatCurrency(payAmount) }}</span>
               </div>
               <div class="flex justify-between">
@@ -300,7 +301,7 @@
             <h4 class="text-sm font-medium text-gray-700 mb-2">Payment Details</h4>
             <div class="space-y-2 text-sm">
               <div class="flex justify-between">
-                <span class="text-gray-600">USD Amount:</span>
+                <span class="text-gray-600"> {{ cardStore.selectedCardBin?.cardCurrency }} Amount:</span>
                 <span class="font-medium">{{ formatCurrency(payAmount) }}</span>
               </div>
               <div class="flex justify-between">
@@ -399,7 +400,7 @@ const actualCryptoAmount = ref<string>('')
 
 // Format currency
 const formatCurrency = (amount: number) => {
-  return `$${amount.toFixed(2)} USD`
+  return `$${amount.toFixed(2)} ${cardStore.selectedCardBin?.cardCurrency}`
 }
 
 
@@ -547,16 +548,23 @@ const handleContinue = async () => {
       detail: 'Creating deposit order...',
       life: 3000
     })
+    const payTypeDic = {
+      'BINANCE': '1',
+      'WALLET': '2'
+    }
+    // 判断是办卡还是充值操作
+    const isRecharge = route.query.action === 'recharge'
+    const orderType = isRecharge ? '2' : '1' // 1:办卡 2:充值
 
     // Create deposit order
     const orderResponse = await OrderAPI.createDepositOrder({
       cardPattern: cardStore.selectedCardConfig?.cardPattern.toString() || '1', // 1:虚拟卡 2:实体卡
-      type: '1', // 1:办卡 2:充值，这里需要根据实际业务逻辑确定
+      type: orderType, // 1:办卡 2:充值
       cardBin: cardStore.selectedCardBin?.cardBin || '', // 从 Pinia store 获取卡段
-      payType: selectedPayType.value.name, // 支付方式
+      payType: payTypeDic[selectedPayType.value.name as keyof typeof payTypeDic], // 支付方式
       amount: payAmount.value, // 订单金额
-      orderCurrency: selectedCrypto.value.crypto.name, // 订单币种
-      userCardId: route.query.userCardId as string || '', // 用户cardId，当类型为1时，cardBin必填,类型为2时，userCardId必填
+      orderCurrency: cardStore.selectedCardBin?.cardCurrency || 'USD', // 订单币种
+      userCardId: isRecharge ? (cardStore.selectedCardBin?.cardId || '') : (route.query.userCardId as string || ''), // 用户cardId，当类型为1时，cardBin必填,类型为2时，userCardId必填
       token: selectedCrypto.value.crypto.name, // token
       network: selectedCrypto.value.network.name, // 网络
       address: '' // 地址，这里需要根据实际业务逻辑获取
@@ -589,7 +597,10 @@ const handleContinue = async () => {
       // Navigate to crypto payment page
       setTimeout(() => {
         router.push({
-          name: 'CryptoPayment'
+          name: 'CryptoPayment',
+          query: {
+            orderNum: orderResponse.model.orderNum
+          }
         })
       }, 2000)
     } else {

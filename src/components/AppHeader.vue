@@ -1,5 +1,6 @@
 <template>
-  <nav class="bg-white border-b border-gray-200 px-6 py-4">
+  <nav
+    class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-6 py-4 transition-colors duration-200">
     <div class="flex justify-between items-center">
       <div class="flex items-center space-x-4">
         <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center">
@@ -13,6 +14,9 @@
       </div>
 
       <div class="flex items-center space-x-4">
+        <!-- 主题切换按钮 -->
+        <ThemeToggle />
+
         <slot name="actions">
           <!-- 用户头像和菜单 -->
           <div v-if="isLoggedIn" class="relative">
@@ -91,6 +95,7 @@ import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useConfirm } from 'primevue/useconfirm'
 import { useAuthStore } from '@/stores/auth'
+import ThemeToggle from './ThemeToggle.vue'
 
 interface Props {
   title?: string

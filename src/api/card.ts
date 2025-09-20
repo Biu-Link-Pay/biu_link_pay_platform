@@ -27,6 +27,7 @@ export interface CardBin {
   remainingAvailableCard: number | null // 剩余可开卡数量
   availableCard: number | null // 已开卡数量
   cardFormFactor: string | null // 虚拟卡or实体卡
+  cardId?: string | null // 卡片ID，用于充值操作
 }
 
 // 查询卡 BIN 参数

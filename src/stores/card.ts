@@ -304,7 +304,8 @@ export const useCardStore = defineStore('card', () => {
     clearCurrentOrder,
     clearSelectedCard,
     clearError,
-    reset
+    reset,
+    getRequestHeaders
   }
 }, {
   persist: {

@@ -12,9 +12,7 @@
     "type-check": "vue-tsc --noEmit",
     "clean": "rm -rf dist node_modules/.vite",
     "clean:all": "rm -rf dist node_modules pnpm-lock.yaml",
-    "reinstall": "pnpm clean:all && pnpm install",
-    "format": "prettier --write \"src/**/*.{js,ts,vue,css,scss,json,md}\"",
-    "format:check": "prettier --check \"src/**/*.{js,ts,vue,css,scss,json,md}\""
+    "reinstall": "pnpm clean:all && pnpm install"
   },
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "^4.6.2",
@@ -36,9 +34,6 @@
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/tsconfig": "^0.7.0",
     "autoprefixer": "^10.4.16",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.4",
-    "prettier": "^3.6.2",
     "tailwindcss-primeui": "^0.6.1",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",

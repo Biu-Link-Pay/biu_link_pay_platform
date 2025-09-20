@@ -146,13 +146,14 @@ export interface DepositOrderDetailItem {
   network: string | null // 网络
   address: string | null // 地址
   status: string // 订单状态 INIT：待支付，PENDING:处理中,SUCCESS：支付成功，FAIL：失败，CANCEL：已取消
+  webUrl: string // 支付链接
 }
 
 // 入金订单详情查询响应
 export interface DepositOrderDetailResponse {
   code: string
   msg: string
-  model: DepositOrderDetailItem[]
+  model: DepositOrderDetailItem
   success: boolean
   error: boolean
 }
@@ -231,6 +232,76 @@ export interface WithdrawOrderDetailResponse {
 // 出金订单详情查询参数
 export interface WithdrawOrderDetailParams {
   num: string // 订单号
+}
+
+// 出金订单分页查询参数
+export interface WithdrawOrderPageParams {
+  pageNo: number // 第几页
+  pageSize: number // 每页条数
+}
+
+// 出金订单列表项（分页查询）
+export interface WithdrawOrderListItem {
+  num: string | null // 订单号
+  type: string | null // 1:提现 2:退款
+  token: string | null // token
+  network: string | null // 网络
+  usdAmount: number | null // usd金额
+  networkFee: number | null // 网络费
+  address: string | null // 地址
+  hashId: string | null // hashId
+  createTime: string | null // 创建时间
+  status: string // 订单状态
+}
+
+// 出金订单分页查询响应数据
+export interface WithdrawOrderPageModel {
+  content: WithdrawOrderListItem[] // 出金订单列表
+  page: PageInfo // 分页信息
+}
+
+// 出金订单分页查询响应
+export interface WithdrawOrderPageResponse {
+  code: string
+  msg: string
+  model: WithdrawOrderPageModel
+  success: boolean
+  error: boolean
+}
+
+// 消费记录项
+export interface TransactionListItem {
+  status: string // 状态
+  transactionType: string // 交易类型
+  transactionAmount: number // 交易金额
+  transactionCurrency: string // 交易币种
+  merchantNameLocation: string // 商家名字
+  merchantLocation: string // 商户所在国家
+  feeDeductionAmount: number // 手续费扣费金额
+  feeDeductionCurrency: string // 手续费扣费币种
+  cardId: string // 卡ID
+}
+
+// 消费记录分页查询参数
+export interface TransactionListParams {
+  pageIndex: string // 第几页
+  pageSize: string // 每页多少条
+  cardId: string // 卡ID
+}
+
+// 消费记录分页查询响应数据
+export interface TransactionListModel {
+  content: TransactionListItem[] // 消费记录列表
+  page: PageInfo // 分页信息
+}
+
+// 消费记录分页查询响应
+export interface TransactionListResponse {
+  code: string
+  msg: string
+  model: TransactionListModel
+  success: boolean
+  error: boolean
 }
 
 // 订单相关 API
@@ -325,6 +396,42 @@ export class OrderAPI {
     const response = await api.get<WithdrawOrderDetailResponse>('/card/consume/order/queryWithdrawOrder', {
       params: {
         num: params.num
+      }
+    })
+    return response.data
+  }
+
+  /**
+   * 分页查询出金订单
+   * @param params 分页查询参数
+   * @returns 出金订单分页列表
+   */
+  static async getWithdrawOrderPage(params: WithdrawOrderPageParams): Promise<WithdrawOrderPageResponse> {
+    const response = await api.get<WithdrawOrderPageResponse>('/card/consume/order/queryPageWithdrawOrder', {
+      params: {
+        pageNo: params.pageNo,
+        pageSize: params.pageSize
+      }
+    })
+    return response.data
+  }
+
+  /**
+   * 消费记录分页查询
+   * @param params 查询参数
+   * @returns 消费记录分页列表
+   */
+  static async getTransactionList(params: TransactionListParams): Promise<TransactionListResponse> {
+    const response = await api.request<TransactionListResponse>({
+      method: 'GET',
+      url: '/card/consume/operator/queryTransactionList',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      params: {
+        pageIndex: params.pageIndex,
+        pageSize: params.pageSize,
+        cardId: params.cardId
       }
     })
     return response.data

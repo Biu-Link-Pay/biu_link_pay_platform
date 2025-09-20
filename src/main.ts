@@ -21,6 +21,7 @@ import './assets/styles/main.css'
 import './styles/button-styles.css'
 import './styles/layout-styles.css'
 import { getFingerprintId } from '@/utils/fingerprint'
+import { useThemeStore } from '@/stores/theme'
 
 // 初始化指纹识别
 getFingerprintId().then(fingerprintId => {
@@ -44,6 +45,11 @@ app.component('ConfirmDialog', ConfirmDialog)
 
 app.use(pinia)
 app.use(router)
+
+// 初始化主题
+const themeStore = useThemeStore()
+themeStore.initTheme()
+
 app.use(PrimeVue, {
   theme: {
     preset: MyPreset,

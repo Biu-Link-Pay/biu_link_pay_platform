@@ -7,7 +7,9 @@ export default {
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
     './app.vue',
+    './src/**/*.{js,vue,ts}',
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       'xs': '475px',

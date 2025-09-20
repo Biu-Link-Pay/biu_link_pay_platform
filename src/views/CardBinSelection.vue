@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white">
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Navigation Header -->
     <AppHeader title="Apply for a Card" :show-title="true" />
 
@@ -7,28 +7,31 @@
     <div
       class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
       <!-- Alert Banner -->
-      <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+      <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
         <div class="flex items-center space-x-3">
           <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
             <i class="pi pi-credit-card text-white text-sm"></i>
           </div>
-          <p class="text-sm text-gray-700">New Virtual Cards Added to Your List</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">New Virtual Cards Added to Your List</p>
         </div>
       </div>
 
       <!-- Fee Information -->
       <div class="grid grid-cols-3 gap-4 mb-8">
         <div class="text-center">
-          <div class="text-2xl font-bold text-gray-900">{{ formatCurrency(selectedCard?.applyFee || 0) }}</div>
-          <div class="text-sm text-gray-500">Apply fee</div>
+          <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.applyFee || 0)
+          }}</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">Apply fee</div>
         </div>
         <div class="text-center">
-          <div class="text-2xl font-bold text-gray-900">{{ formatPercentage(selectedCard?.rechargeFee || 0) }}</div>
-          <div class="text-sm text-gray-500">Recharge fee</div>
+          <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatPercentage(selectedCard?.rechargeFee ||
+            0) }}</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">Recharge fee</div>
         </div>
         <div class="text-center">
-          <div class="text-2xl font-bold text-gray-900">{{ formatCurrency(selectedCard?.monthlyFee || 0) }}</div>
-          <div class="text-sm text-gray-500">Consumption fee</div>
+          <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.monthlyFee || 0)
+          }}</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">Consumption fee</div>
         </div>
       </div>
 
@@ -38,16 +41,18 @@
         <div v-if="binLoading" class="flex justify-center py-12">
           <div class="flex items-center space-x-3">
             <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
-            <span class="text-gray-600">Loading card BINs...</span>
+            <span class="text-gray-600 dark:text-gray-400">Loading card BINs...</span>
           </div>
         </div>
 
         <!-- Error State -->
         <div v-else-if="binError" class="text-center py-8">
-          <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+          <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-6">
             <i class="pi pi-exclamation-triangle text-red-500 text-2xl mb-3"></i>
-            <p class="text-red-600 text-sm">{{ binError }}</p>
-            <button class="mt-3 text-blue-600 hover:text-blue-800 text-sm font-medium" @click="loadCardBins">
+            <p class="text-red-600 dark:text-red-400 text-sm">{{ binError }}</p>
+            <button
+              class="mt-3 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium"
+              @click="loadCardBins">
               Try Again
             </button>
           </div>
@@ -97,8 +102,8 @@
               <!-- Card Selection Header -->
               <div class="flex items-center justify-between mb-8">
                 <div class="flex items-center space-x-4">
-                  <h2 class="text-xl font-semibold text-gray-900">Select Card BIN</h2>
-                  <div class="text-sm text-gray-500">
+                  <h2 class="text-xl font-semibold text-gray-900 dark:text-white">Select Card BIN</h2>
+                  <div class="text-sm text-gray-500 dark:text-gray-400">
                     {{ currentBinIndex + 1 }} of {{ cardBins.length }} cards
                   </div>
                 </div>
@@ -106,15 +111,15 @@
                 <!-- Navigation Controls -->
                 <div class="flex items-center space-x-2">
                   <button :disabled="currentBinIndex === 0"
-                    class="p-2 rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                    class="p-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     @click="previousBin" title="Previous card">
-                    <i class="pi pi-chevron-left text-gray-600"></i>
+                    <i class="pi pi-chevron-left text-gray-600 dark:text-gray-400"></i>
                   </button>
 
                   <button :disabled="currentBinIndex === cardBins.length - 1"
-                    class="p-2 rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                    class="p-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     @click="nextBin" title="Next card">
-                    <i class="pi pi-chevron-right text-gray-600"></i>
+                    <i class="pi pi-chevron-right text-gray-600 dark:text-gray-400"></i>
                   </button>
                 </div>
               </div>
@@ -169,34 +174,40 @@
                         </div>
 
                         <!-- Card Details -->
-                        <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-                          <h3 class="text-lg font-semibold text-gray-900 mb-4">Card Details</h3>
+                        <div
+                          class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
+                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Card Details</h3>
                           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-sm">
-                            <div class="flex justify-between py-2 border-b border-gray-100">
-                              <span class="text-gray-600">Card BIN:</span>
-                              <span class="font-medium text-gray-900">{{ binInfo.cardBin || 'N/A' }}</span>
-                            </div>
-                            <div class="flex justify-between py-2 border-b border-gray-100">
-                              <span class="text-gray-600">Card Type:</span>
-                              <span class="font-medium text-gray-900">{{ binInfo.cardType || 'N/A' }}</span>
-                            </div>
-                            <div class="flex justify-between py-2 border-b border-gray-100">
-                              <span class="text-gray-600">Card Scheme:</span>
-                              <span class="font-medium text-gray-900">{{ binInfo.cardScheme || 'N/A' }}</span>
-                            </div>
-                            <div class="flex justify-between py-2 border-b border-gray-100">
-                              <span class="text-gray-600">Currency:</span>
-                              <span class="font-medium text-gray-900">{{ binInfo.cardCurrency || 'USD' }}</span>
-                            </div>
-                            <div class="flex justify-between py-2 border-b border-gray-100">
-                              <span class="text-gray-600">Available Cards:</span>
-                              <span class="font-medium text-gray-900">{{ binInfo.remainingAvailableCard || 'Unlimited'
+                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                              <span class="text-gray-600 dark:text-gray-400">Card BIN:</span>
+                              <span class="font-medium text-gray-900 dark:text-white">{{ binInfo.cardBin || 'N/A'
                               }}</span>
                             </div>
-                            <div class="flex justify-between py-2 border-b border-gray-100">
-                              <span class="text-gray-600">Address Update:</span>
+                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                              <span class="text-gray-600 dark:text-gray-400">Card Type:</span>
+                              <span class="font-medium text-gray-900 dark:text-white">{{ binInfo.cardType || 'N/A'
+                              }}</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                              <span class="text-gray-600 dark:text-gray-400">Card Scheme:</span>
+                              <span class="font-medium text-gray-900 dark:text-white">{{ binInfo.cardScheme || 'N/A'
+                              }}</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                              <span class="text-gray-600 dark:text-gray-400">Currency:</span>
+                              <span class="font-medium text-gray-900 dark:text-white">{{ binInfo.cardCurrency || 'USD'
+                              }}</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                              <span class="text-gray-600 dark:text-gray-400">Available Cards:</span>
+                              <span class="font-medium text-gray-900 dark:text-white">{{ binInfo.remainingAvailableCard
+                                || 'Unlimited'
+                              }}</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                              <span class="text-gray-600 dark:text-gray-400">Address Update:</span>
                               <span class="font-medium"
-                                :class="binInfo.billingAddressUpdatable === 'true' ? 'text-green-600' : 'text-gray-500'">
+                                :class="binInfo.billingAddressUpdatable === 'true' ? 'text-green-600 dark:text-green-400' : 'text-gray-500 dark:text-gray-400'">
                                 {{ binInfo.billingAddressUpdatable === 'true' ? 'Supported' : 'Not Supported' }}
                               </span>
                             </div>
@@ -222,10 +233,10 @@
 
         <!-- Empty State -->
         <div v-else class="text-center py-12">
-          <div class="bg-gray-50 rounded-lg p-8">
-            <i class="pi pi-credit-card text-gray-400 text-4xl mb-4"></i>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">No Card BINs Available</h3>
-            <p class="text-gray-600">No card BIN information found for this card type.</p>
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
+            <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-4xl mb-4"></i>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">No Card BINs Available</h3>
+            <p class="text-gray-600 dark:text-gray-400">No card BIN information found for this card type.</p>
           </div>
         </div>
       </div>

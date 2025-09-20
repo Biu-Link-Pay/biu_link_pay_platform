@@ -5,8 +5,8 @@
         <!-- Card Header -->
         <div class="flex items-start justify-between mb-4">
           <div class="flex-1">
-            <h3 class="text-xl font-bold text-gray-900 mb-1">{{ card.cardName }}</h3>
-            <p class="text-sm text-gray-500 mb-2">{{ cardTypeText }}</p>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">{{ card.cardName }}</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">{{ cardTypeText }}</p>
             <div class="flex items-center space-x-2">
               <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
                 :class="statusClasses">
@@ -16,40 +16,40 @@
             </div>
           </div>
           <div class="text-right">
-            <div class="text-2xl font-bold text-gray-900">${{ card.applyFee }}</div>
-            <div class="text-sm text-gray-500">Apply Fee</div>
+            <div class="text-2xl font-bold text-gray-900 dark:text-white">${{ card.applyFee }}</div>
+            <div class="text-sm text-gray-500 dark:text-gray-400">Apply Fee</div>
           </div>
         </div>
 
         <!-- Card Image -->
         <div class="mb-4">
           <div
-            class="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center">
+            class="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 rounded-lg flex items-center justify-center">
             <img :src="card.cardPicture || ''" :alt="card.cardName" class="w-full h-full object-cover" />
           </div>
         </div>
 
         <!-- Card Details -->
         <div class="mb-6">
-          <h4 class="text-sm font-semibold text-gray-900 mb-3">Card Details:</h4>
+          <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-3">Card Details:</h4>
           <ul class="space-y-2">
-            <li class="flex items-center justify-between text-sm text-gray-600">
+            <li class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
               <span>Monthly Fee:</span>
               <span class="font-medium">${{ card.monthlyFee }}</span>
             </li>
-            <li class="flex items-center justify-between text-sm text-gray-600">
+            <li class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
               <span>Recharge Fee:</span>
               <span class="font-medium">${{ card.rechargeFee }}</span>
             </li>
-            <li class="flex items-center justify-between text-sm text-gray-600">
+            <li class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
               <span>Max On Monthly:</span>
               <span class="font-medium">${{ card.maxOnMonthly }}</span>
             </li>
-            <li class="flex items-center justify-between text-sm text-gray-600">
+            <li class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
               <span>Max On Daily:</span>
               <span class="font-medium">${{ card.maxOnDaily }}</span>
             </li>
-            <li class="flex items-center justify-between text-sm text-gray-600">
+            <li class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
               <span>Max On Percent:</span>
               <span class="font-medium">${{ card.maxOnPercent }}</span>
             </li>

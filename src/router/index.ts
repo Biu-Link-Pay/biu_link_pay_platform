@@ -71,6 +71,15 @@ const routes = [
     }
   },
   {
+    path: '/payment-result',
+    name: 'PaymentResult',
+    component: () => import('@/views/PaymentResult.vue'),
+    meta: {
+      title: 'Payment Result',
+      requiresAuth: true
+    }
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     component: () => import('@/views/NotFound.vue'),

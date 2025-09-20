@@ -471,12 +471,6 @@ onMounted(() => {
   }
 }
 
-/* Dark mode optimization */
-@media (prefers-color-scheme: dark) {
-  .bg-gray-50 {
-    background-color: #111827;
-  }
-}
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {

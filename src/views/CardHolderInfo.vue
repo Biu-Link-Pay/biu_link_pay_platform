@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white">
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Unified Header -->
     <AppHeader title="Card Holder" :show-title="true" />
 
@@ -7,12 +7,12 @@
     <div
       class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
       <!-- Intro Banner -->
-      <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+      <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
         <div class="flex items-center space-x-3">
           <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
             <i class="pi pi-id-card text-white text-sm"></i>
           </div>
-          <p class="text-sm text-gray-700">Manage your billing address for the card holder.</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">Manage your billing address for the card holder.</p>
         </div>
       </div>
 
@@ -20,28 +20,33 @@
       <div class="space-y-8">
         <!-- Readonly view -->
         <div v-if="holder && !isEditing">
-          <h3 class="text-lg font-semibold text-gray-900 mb-4">Current Billing Address</h3>
-          <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Current Billing Address</h3>
+          <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-              <div class="flex justify-between py-2 border-b border-gray-100">
-                <span class="text-gray-600">Address:</span>
-                <span class="font-medium text-gray-900 ml-4 text-right">{{ holder.residentialAddress }}</span>
+              <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                <span class="text-gray-600 dark:text-gray-400">Address:</span>
+                <span class="font-medium text-gray-900 dark:text-white ml-4 text-right">{{ holder.residentialAddress
+                }}</span>
               </div>
-              <div class="flex justify-between py-2 border-b border-gray-100">
+              <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
                 <span class="text-gray-600">City:</span>
-                <span class="font-medium text-gray-900 ml-4 text-right">{{ holder.residentialCity }}</span>
+                <span class="font-medium text-gray-900 dark:text-white ml-4 text-right">{{ holder.residentialCity
+                }}</span>
               </div>
-              <div class="flex justify-between py-2 border-b border-gray-100">
+              <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
                 <span class="text-gray-600">State/Province:</span>
-                <span class="font-medium text-gray-900 ml-4 text-right">{{ holder.residentialState }}</span>
+                <span class="font-medium text-gray-900 dark:text-white ml-4 text-right">{{ holder.residentialState
+                }}</span>
               </div>
-              <div class="flex justify-between py-2 border-b border-gray-100">
+              <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
                 <span class="text-gray-600">Postal Code:</span>
-                <span class="font-medium text-gray-900 ml-4 text-right">{{ holder.residentialPostalCode }}</span>
+                <span class="font-medium text-gray-900 dark:text-white ml-4 text-right">{{ holder.residentialPostalCode
+                }}</span>
               </div>
               <div class="flex justify-between py-2">
                 <span class="text-gray-600">Country:</span>
-                <span class="font-medium text-gray-900 ml-4 text-right">{{ holder.residentialCountryCode }}</span>
+                <span class="font-medium text-gray-900 dark:text-white ml-4 text-right">{{ holder.residentialCountryCode
+                }}</span>
               </div>
             </div>
             <div class="mt-6 flex justify-end">
@@ -52,10 +57,10 @@
 
         <!-- Edit form -->
         <div v-if="isEditing">
-          <h3 class="text-lg font-semibold text-gray-900 mb-4">Billing Address</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Billing Address</h3>
           <div class="space-y-4">
             <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">Address</label>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Address</label>
               <InputText v-model="form.residentialAddress" placeholder="Enter your address" class="w-full"
                 :class="{ 'p-invalid': errors.residentialAddress }" />
               <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
@@ -63,14 +68,14 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">City</label>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">City</label>
                 <InputText v-model="form.residentialCity" placeholder="Enter city" class="w-full"
                   :class="{ 'p-invalid': errors.residentialCity }" />
                 <small v-if="errors.residentialCity" class="text-red-500 text-xs mt-1">{{ errors.residentialCity
                 }}</small>
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">State/Province</label>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">State/Province</label>
                 <InputText v-model="form.residentialState" placeholder="Enter state/province" class="w-full"
                   :class="{ 'p-invalid': errors.residentialState }" />
                 <small v-if="errors.residentialState" class="text-red-500 text-xs mt-1">{{ errors.residentialState
@@ -79,14 +84,14 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Postal Code</label>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Postal Code</label>
                 <InputText v-model="form.residentialPostalCode" placeholder="Enter postal code" class="w-full"
                   :class="{ 'p-invalid': errors.residentialPostalCode }" />
                 <small v-if="errors.residentialPostalCode" class="text-red-500 text-xs mt-1">{{
                   errors.residentialPostalCode }}</small>
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Country</label>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Country</label>
                 <Dropdown v-model="form.residentialCountryCode" :options="countries" option-label="name"
                   option-value="code" placeholder="Select country" class="w-full"
                   :class="{ 'p-invalid': errors.residentialCountryCode }" />
@@ -99,30 +104,31 @@
               <Button v-if="holder" label="Cancel" icon="pi pi-times" severity="secondary" class="flex-1"
                 @click="cancelEdit" />
               <Button :label="holder ? 'Update' : 'Save'" icon="pi pi-check" :loading="loading"
-                :class="holder ? 'flex-1' : 'w-full'" @click="saveAddress" />
+                :class="holder ? 'flex-1' : 'w-full'" severity="primary" @click="saveAddress" />
             </div>
           </div>
         </div>
 
         <!-- Recharge Section -->
         <div>
-          <h2 class="text-xl font-bold text-gray-900 mb-6">Please complete your first Recharge</h2>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Please complete your first Recharge</h2>
 
           <div class="mb-4">
-            <label class="block text-sm font-medium text-gray-700 mb-2">Recharge amount</label>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Recharge amount</label>
             <div class="flex items-center gap-2">
               <InputText v-model="form.rechargeAmount" type="text" placeholder="20" class="w-32"
                 :class="{ 'p-invalid': errors.rechargeAmount }" />
-              <span class="text-gray-600">USD</span>
+              <span class="text-gray-600 dark:text-gray-400">{{ cardStore.selectedCardBin?.cardCurrency }}</span>
             </div>
             <small v-if="errors.rechargeAmount" class="text-red-500 text-xs mt-1">{{ errors.rechargeAmount }}</small>
           </div>
 
           <!-- Quick Amount Buttons -->
           <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <Button v-for="amount in quickAmounts" :key="amount" :label="`$${amount}`"
-              :class="form.rechargeAmount === amount.toString() ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700'"
-              class="w-full py-2 px-4 rounded-lg border border-gray-200 hover:bg-gray-200 transition-colors"
+            <Button v-for="amount in quickAmounts" :key="amount" :label="`$${amount}`" :class="form.rechargeAmount === amount.toString()
+              ? 'bg-blue-600 text-white'
+              : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300'"
+              class="w-full py-2 px-4 rounded-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
               @click="form.rechargeAmount = amount.toString()" />
           </div>
         </div>
@@ -447,7 +453,8 @@ const handleConfirm = async () => {
         name: 'PaymentMethodSelection',
         query: {
           amount: form.rechargeAmount,
-          name: holder.value?.residentialAddress ? 'John Tan' : 'New User'
+          name: holder.value?.residentialAddress ? 'John Tan' : 'New User',
+          action: route.query.action || 'apply' // 传递操作类型：recharge 或 apply
         }
       })
     }, 2000)

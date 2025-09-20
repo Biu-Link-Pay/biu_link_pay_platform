@@ -50,9 +50,8 @@ api.interceptors.request.use(
         config.headers['fingerprint-id'] = fingerprintId
       }
     }
-
-    // 添加时间戳防止缓存
-    if (config.method === 'get') {
+    if (config.method === 'get' && !config.data) {
+      // 对于没有 data 和 params 的 GET 请求，添加时间戳防止缓存
       config.params = {
         ...config.params,
         _t: Date.now()

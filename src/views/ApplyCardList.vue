@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white">
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Navigation Header -->
     <AppHeader title="Apply Card" :show-title="true" />
 
@@ -12,16 +12,17 @@
       <div v-if="loading" class="flex justify-center py-20">
         <div class="flex items-center space-x-3">
           <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-          <span class="text-gray-600">Loading card configurations...</span>
+          <span class="text-gray-600 dark:text-gray-400">Loading card configurations...</span>
         </div>
       </div>
 
       <!-- Error State -->
       <div v-else-if="error" class="text-center py-20">
-        <div class="bg-red-50 border border-red-200 rounded-lg p-8 w-full max-w-md mx-auto">
+        <div
+          class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-8 w-full max-w-md mx-auto">
           <i class="pi pi-exclamation-triangle text-red-500 text-4xl mb-4"></i>
-          <h3 class="text-lg font-semibold text-red-800 mb-2">Loading Failed</h3>
-          <p class="text-red-600 mb-6">{{ error }}</p>
+          <h3 class="text-lg font-semibold text-red-800 dark:text-red-400 mb-2">Loading Failed</h3>
+          <p class="text-red-600 dark:text-red-400 mb-6">{{ error }}</p>
           <Button label="Retry" icon="pi pi-refresh" severity="secondary" @click="fetchCardConfigs" />
         </div>
       </div>
@@ -45,13 +46,13 @@
 
             <!-- Navigation Arrows -->
             <button v-if="currentCardIndex > 0"
-              class="absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center z-10"
+              class="absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 dark:bg-gray-800/80 rounded-full shadow-lg flex items-center justify-center z-10"
               @click="currentCardIndex--; selectedCard = cardConfigs[currentCardIndex]">
-              <i class="pi pi-chevron-left text-gray-600"></i>
+              <i class="pi pi-chevron-left text-gray-600 dark:text-gray-400"></i>
             </button>
 
             <button v-if="currentCardIndex < cardConfigs.length - 1"
-              class="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center z-10"
+              class="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 dark:bg-gray-800/80 rounded-full shadow-lg flex items-center justify-center z-10"
               @click="currentCardIndex++; selectedCard = cardConfigs[currentCardIndex]">
               <i class="pi pi-chevron-right text-gray-600"></i>
             </button>

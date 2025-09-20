@@ -73,7 +73,8 @@
           <!-- Right Column: Payment Address -->
           <div class="space-y-6">
             <!-- Payment Address Section -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+            <div v-if="isOrderPending"
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
               <div class="space-y-4">
                 <!-- Section Header -->
                 <div class="flex items-center justify-between">
@@ -109,16 +110,111 @@
                 <!-- QR Code -->
                 <div class="flex justify-center">
                   <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
-                    <div ref="qrCodeContainer" class="w-48 h-48 flex items-center justify-center">
-                      <!-- QR Code will be generated here -->
-                      <div v-if="qrCodeLoading" class="flex flex-col items-center space-y-2">
-                        <i class="pi pi-spin pi-spinner text-2xl text-blue-600"></i>
-                        <span class="text-sm text-gray-500">Generating QR Code...</span>
+                    <div class="w-48 h-48 flex items-center justify-center">
+                      <!-- Real QR Code from order -->
+                      <img v-if="cardStore.currentOrder?.qrcodeLink" :src="cardStore.currentOrder.qrcodeLink"
+                        alt="Payment QR Code" class="w-full h-full object-contain rounded"
+                        @error="qrCodeError = true" />
+                      <!-- Placeholder if no QR code link -->
+                      <div v-else
+                        class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-4xl mb-2">📱</div>
+                          <div class="text-xs text-gray-500 dark:text-gray-400">QR Code</div>
+                          <div class="text-xs text-gray-400 dark:text-gray-500 mt-1">{{ walletAddress.slice(0, 8) }}...
+                          </div>
+                        </div>
                       </div>
-                      <div v-else-if="qrCodeError" class="flex flex-col items-center space-y-2 text-red-500">
-                        <i class="pi pi-exclamation-triangle text-2xl"></i>
-                        <span class="text-sm">Failed to generate QR Code</span>
+                      <!-- Error state -->
+                      <div v-if="qrCodeError"
+                        class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
+                        <div class="text-center text-red-500">
+                          <i class="pi pi-exclamation-triangle text-2xl mb-2"></i>
+                          <div class="text-sm">Failed to load QR Code</div>
+                        </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Success Status Content -->
+            <div v-else-if="isOrderSuccess"
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+              <div class="text-center space-y-4">
+                <div
+                  class="w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto">
+                  <i class="pi pi-check text-green-600 dark:text-green-400 text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Successful!</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Your payment of {{ cryptoAmount }} {{ selectedCrypto }} has been confirmed.
+                  </p>
+                </div>
+                <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
+                  <div class="text-sm text-green-800 dark:text-green-200">
+                    <div class="font-medium mb-1">Transaction Details:</div>
+                    <div class="space-y-1 text-xs">
+                      <div>Amount: {{ formatCurrency(orderAmount) }}</div>
+                      <div>Currency: {{ selectedCrypto }}</div>
+                      <div>Network: {{ selectedNetwork }}</div>
+                      <div>Order: {{ orderNumber }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Failed Status Content -->
+            <div v-else-if="isOrderFailed"
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+              <div class="text-center space-y-4">
+                <div
+                  class="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto">
+                  <i class="pi pi-times text-red-600 dark:text-red-400 text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Failed</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Your payment could not be processed. Please try again.
+                  </p>
+                </div>
+                <div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-4">
+                  <div class="text-sm text-red-800 dark:text-red-200">
+                    <div class="font-medium mb-1">Order Details:</div>
+                    <div class="space-y-1 text-xs">
+                      <div>Amount: {{ formatCurrency(orderAmount) }}</div>
+                      <div>Currency: {{ selectedCrypto }}</div>
+                      <div>Order: {{ orderNumber }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cancelled Status Content -->
+            <div v-else-if="isOrderCancelled"
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+              <div class="text-center space-y-4">
+                <div
+                  class="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto">
+                  <i class="pi pi-ban text-gray-600 dark:text-gray-400 text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Cancelled</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    This payment has been cancelled.
+                  </p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                  <div class="text-sm text-gray-800 dark:text-gray-200">
+                    <div class="font-medium mb-1">Order Details:</div>
+                    <div class="space-y-1 text-xs">
+                      <div>Amount: {{ formatCurrency(orderAmount) }}</div>
+                      <div>Currency: {{ selectedCrypto }}</div>
+                      <div>Order: {{ orderNumber }}</div>
                     </div>
                   </div>
                 </div>
@@ -127,28 +223,8 @@
           </div>
         </div>
 
-        <!-- Wallet Connection Button - Desktop -->
-        <div class="mt-8">
-          <button @click="connectWallet"
-            class="w-full max-w-md mx-auto border-2 border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold py-4 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-3">
-            <span>Deposit by your Wallet</span>
-            <div class="flex items-center space-x-2">
-              <!-- Wallet Icons -->
-              <div class="w-6 h-6 bg-orange-500 rounded flex items-center justify-center">
-                <span class="text-white font-bold text-xs">M</span>
-              </div>
-              <div class="w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                <span class="text-white font-bold text-xs">W</span>
-              </div>
-              <div class="w-6 h-6 bg-gray-500 rounded flex items-center justify-center">
-                <span class="text-white font-bold text-xs">+</span>
-              </div>
-            </div>
-          </button>
-        </div>
-
-        <!-- Payment Status - Desktop -->
-        <div v-if="paymentStatus" class="mt-6">
+        <!-- Payment Status - Desktop (Legacy) -->
+        <div v-if="paymentStatus && !orderDetail" class="mt-6">
           <div
             class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4 max-w-md mx-auto">
             <div class="flex items-center space-x-3">
@@ -221,7 +297,8 @@
         </div>
 
         <!-- Payment Address Section -->
-        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+        <div v-if="isOrderPending"
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
           <div class="space-y-4">
             <!-- Section Header -->
             <div class="flex items-center justify-between">
@@ -257,15 +334,27 @@
             <!-- QR Code -->
             <div class="flex justify-center">
               <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
-                <div ref="qrCodeContainer" class="w-48 h-48 flex items-center justify-center">
-                  <!-- QR Code will be generated here -->
-                  <div v-if="qrCodeLoading" class="flex flex-col items-center space-y-2">
-                    <i class="pi pi-spin pi-spinner text-2xl text-blue-600"></i>
-                    <span class="text-sm text-gray-500">Generating QR Code...</span>
+                <div class="w-48 h-48 flex items-center justify-center">
+                  <!-- Real QR Code from order -->
+                  <img v-if="cardStore.currentOrder?.qrcodeLink" :src="cardStore.currentOrder.qrcodeLink"
+                    alt="Payment QR Code" class="w-full h-full object-contain rounded" @error="qrCodeError = true" />
+                  <!-- Placeholder if no QR code link -->
+                  <div v-else
+                    class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
+                    <div class="text-center">
+                      <div class="text-4xl mb-2">📱</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">QR Code</div>
+                      <div class="text-xs text-gray-400 dark:text-gray-500 mt-1">{{ walletAddress.slice(0, 8) }}...
+                      </div>
+                    </div>
                   </div>
-                  <div v-else-if="qrCodeError" class="flex flex-col items-center space-y-2 text-red-500">
-                    <i class="pi pi-exclamation-triangle text-2xl"></i>
-                    <span class="text-sm">Failed to generate QR Code</span>
+                  <!-- Error state -->
+                  <div v-if="qrCodeError"
+                    class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
+                    <div class="text-center text-red-500">
+                      <i class="pi pi-exclamation-triangle text-2xl mb-2"></i>
+                      <div class="text-sm">Failed to load QR Code</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -273,8 +362,88 @@
           </div>
         </div>
 
+        <!-- Success Status Content - Mobile -->
+        <div v-else-if="isOrderSuccess"
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+          <div class="text-center space-y-4">
+            <div
+              class="w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto">
+              <i class="pi pi-check text-green-600 dark:text-green-400 text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Successful!</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Your payment of {{ cryptoAmount }} {{ selectedCrypto }} has been confirmed.
+              </p>
+            </div>
+            <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
+              <div class="text-sm text-green-800 dark:text-green-200">
+                <div class="font-medium mb-1">Transaction Details:</div>
+                <div class="space-y-1 text-xs">
+                  <div>Amount: {{ formatCurrency(orderAmount) }}</div>
+                  <div>Currency: {{ selectedCrypto }}</div>
+                  <div>Network: {{ selectedNetwork }}</div>
+                  <div>Order: {{ orderNumber }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Failed Status Content - Mobile -->
+        <div v-else-if="isOrderFailed"
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+          <div class="text-center space-y-4">
+            <div class="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto">
+              <i class="pi pi-times text-red-600 dark:text-red-400 text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Failed</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Your payment could not be processed. Please try again.
+              </p>
+            </div>
+            <div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-4">
+              <div class="text-sm text-red-800 dark:text-red-200">
+                <div class="font-medium mb-1">Order Details:</div>
+                <div class="space-y-1 text-xs">
+                  <div>Amount: {{ formatCurrency(orderAmount) }}</div>
+                  <div>Currency: {{ selectedCrypto }}</div>
+                  <div>Order: {{ orderNumber }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cancelled Status Content - Mobile -->
+        <div v-else-if="isOrderCancelled"
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+          <div class="text-center space-y-4">
+            <div class="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto">
+              <i class="pi pi-ban text-gray-600 dark:text-gray-400 text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Cancelled</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                This payment has been cancelled.
+              </p>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+              <div class="text-sm text-gray-800 dark:text-gray-200">
+                <div class="font-medium mb-1">Order Details:</div>
+                <div class="space-y-1 text-xs">
+                  <div>Amount: {{ formatCurrency(orderAmount) }}</div>
+                  <div>Currency: {{ selectedCrypto }}</div>
+                  <div>Order: {{ orderNumber }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Wallet Connection Button -->
-        <div>
+        <div v-if="isOrderPending">
           <button @click="connectWallet"
             class="w-full border-2 border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold py-4 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-3">
             <span>Deposit by your Wallet</span>
@@ -292,9 +461,8 @@
             </div>
           </button>
         </div>
-
-        <!-- Payment Status -->
-        <div v-if="paymentStatus">
+        <!-- Payment Status (Legacy) -->
+        <div v-if="paymentStatus && !orderDetail">
           <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
             <div class="flex items-center space-x-3">
               <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
@@ -312,7 +480,8 @@
       <div class="bottom-buttons-container">
         <!-- Back Button -->
         <button @click="goBack" class="bottom-button-dual bottom-button-dual-secondary">
-          Back to Payment Method
+          <i class="pi pi-arrow-left"></i>
+          Back
         </button>
 
         <!-- Refresh Button -->
@@ -320,7 +489,7 @@
           class="bottom-button-dual bottom-button-dual-primary flex items-center justify-center space-x-2">
           <i v-if="refreshing" class="pi pi-spin pi-spinner text-sm"></i>
           <i v-else class="pi pi-refresh text-sm"></i>
-          <span>{{ refreshing ? 'Refreshing...' : 'Refresh Payment' }}</span>
+          <span>{{ refreshing ? 'Refreshing...' : 'Refresh' }}</span>
         </button>
       </div>
     </div>
@@ -333,6 +502,7 @@ import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { useCardStore } from '@/stores/card'
+import { OrderAPI, type DepositOrderDetailItem } from '@/api/order'
 
 const router = useRouter()
 const route = useRoute()
@@ -347,15 +517,21 @@ const selectedNetwork = ref('ERC20')
 const cryptoAmount = ref('0.263')
 const walletAddress = ref('0xe688b84b23f322a994A53dbF8E15FA82CDB71127')
 
+// Order status and polling
+const orderDetail = ref<DepositOrderDetailItem | null>(null)
+const orderStatus = ref<string>('INIT') // INIT, PENDING, SUCCESS, FAIL, CANCEL
+const pollingInterval = ref<NodeJS.Timeout | null>(null)
+const pollingEnabled = ref(true)
+const pollingCount = ref(0)
+
+// Component mount status
+const isMounted = ref(false)
+
 // UI state
 const countdown = ref(1461) // 24:21 in seconds
-const qrCodeLoading = ref(true)
 const qrCodeError = ref(false)
 const paymentStatus = ref(false)
 const refreshing = ref(false)
-
-// QR Code container ref
-const qrCodeContainer = ref<HTMLElement | null>(null)
 
 // Countdown timer
 let countdownInterval: NodeJS.Timeout | null = null
@@ -371,6 +547,46 @@ const formatTime = (seconds: number) => {
   const secs = seconds % 60
   return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`
 }
+
+// Order status computed properties
+const isOrderPending = computed(() => orderStatus.value === 'INIT' || orderStatus.value === 'PENDING')
+const isOrderSuccess = computed(() => orderStatus.value === 'SUCCESS')
+const isOrderFailed = computed(() => orderStatus.value === 'FAIL')
+const isOrderCancelled = computed(() => orderStatus.value === 'CANCEL')
+
+// Order status display
+const orderStatusText = computed(() => {
+  switch (orderStatus.value) {
+    case 'INIT': return '等待支付'
+    case 'PENDING': return '处理中'
+    case 'SUCCESS': return '支付成功'
+    case 'FAIL': return '支付失败'
+    case 'CANCEL': return '已取消'
+    default: return '未知状态'
+  }
+})
+
+const orderStatusColor = computed(() => {
+  switch (orderStatus.value) {
+    case 'INIT': return 'text-yellow-600'
+    case 'PENDING': return 'text-blue-600'
+    case 'SUCCESS': return 'text-green-600'
+    case 'FAIL': return 'text-red-600'
+    case 'CANCEL': return 'text-gray-600'
+    default: return 'text-gray-600'
+  }
+})
+
+const orderStatusBg = computed(() => {
+  switch (orderStatus.value) {
+    case 'INIT': return 'bg-yellow-50 border-yellow-200'
+    case 'PENDING': return 'bg-blue-50 border-blue-200'
+    case 'SUCCESS': return 'bg-green-50 border-green-200'
+    case 'FAIL': return 'bg-red-50 border-red-200'
+    case 'CANCEL': return 'bg-gray-50 border-gray-200'
+    default: return 'bg-gray-50 border-gray-200'
+  }
+})
 
 // Get crypto icon background color
 const getCryptoIconBg = (crypto: string) => {
@@ -417,62 +633,50 @@ const copyToClipboard = async (text: string) => {
   }
 }
 
-// Generate QR Code
-const generateQRCode = async () => {
-  try {
-    qrCodeLoading.value = true
-    qrCodeError.value = false
-
-    // Simulate QR code generation
-    await new Promise(resolve => setTimeout(resolve, 1000))
-
-    // Create a simple QR code placeholder
-    if (qrCodeContainer.value) {
-      qrCodeContainer.value.innerHTML = `
-        <div class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
-          <div class="text-center">
-            <div class="text-4xl mb-2">📱</div>
-            <div class="text-xs text-gray-500 dark:text-gray-400">QR Code</div>
-            <div class="text-xs text-gray-400 dark:text-gray-500 mt-1">${walletAddress.value.slice(0, 8)}...</div>
-          </div>
-        </div>
-      `
-    }
-
-    qrCodeLoading.value = false
-  } catch (error) {
-    console.error('Failed to generate QR code:', error)
-    qrCodeError.value = true
-    qrCodeLoading.value = false
-  }
-}
 
 // Start countdown timer
 const startCountdown = () => {
+  // Clear existing timer if any
+  if (countdownInterval) {
+    clearInterval(countdownInterval)
+    countdownInterval = null
+  }
+
   countdownInterval = setInterval(() => {
+    // Check if component is still mounted
+    if (!isMounted.value) {
+      if (countdownInterval) {
+        clearInterval(countdownInterval)
+        countdownInterval = null
+      }
+      return
+    }
+
     if (countdown.value > 0) {
       countdown.value--
     } else {
       // Time expired
-      toast.add({
-        severity: 'warn',
-        summary: 'Payment Expired',
-        detail: 'Payment time has expired. Please refresh to get a new payment address.',
-        life: 5000
-      })
-      clearInterval(countdownInterval!)
+      if (countdownInterval) {
+        clearInterval(countdownInterval)
+        countdownInterval = null
+      }
+      // Only show toast if component is still mounted
+      if (isMounted.value && toast) {
+        toast.add({
+          severity: 'warn',
+          summary: 'Payment Expired',
+          detail: 'Payment time has expired. Please refresh to get a new payment address.',
+          life: 5000
+        })
+      }
     }
   }, 1000)
 }
 
 // Connect wallet
 const connectWallet = () => {
-  toast.add({
-    severity: 'info',
-    summary: 'Wallet Connection',
-    detail: 'Wallet connection feature will be implemented soon',
-    life: 3000
-  })
+  // 使用相同的自动打开支付地址逻辑
+  autoOpenPaymentAddress()
 }
 
 // Go back
@@ -480,24 +684,133 @@ const goBack = () => {
   router.back()
 }
 
+// Fetch order detail
+const fetchOrderDetail = async (isInitialLoad = false) => {
+  // Use order number from route query if available, otherwise use current orderNumber
+  const orderNum = (route.query.orderNum as string) || orderNumber.value
+  if (!orderNum) return
+
+  try {
+    const response = await OrderAPI.getDepositOrderDetail({ num: orderNum })
+    if (response.success && response.model) {
+      const detail = response.model
+      orderDetail.value = detail
+
+      // Update order number if it's different from route
+      if (orderNumber.value !== orderNum) {
+        orderNumber.value = orderNum
+      }
+
+      // Only update order status, don't update other fields to avoid data inconsistency
+      const previousStatus = orderStatus.value
+      orderStatus.value = detail.status
+      // Handle status changes if status actually changed OR if this is initial load
+      if (previousStatus !== detail.status || isInitialLoad) {
+        handleOrderStatusChange(detail.status)
+      }
+    }
+  } catch (error) {
+    console.error('Error fetching order detail:', error)
+  }
+}
+
+// Handle order status change
+const handleOrderStatusChange = (status: string) => {
+  // Only handle status changes if component is still mounted
+  if (!isMounted.value) return
+
+  // Check if status is one of the final states that should redirect to payment result page
+  if (['SUCCESS', 'FAIL', 'CANCEL', 'PENDING'].includes(status)) {
+    stopPolling()
+
+    // Navigate to payment result page with the current status
+    setTimeout(() => {
+      if (isMounted.value) {
+        router.push({
+          name: 'PaymentResult',
+          query: {
+            orderNum: orderNumber.value,
+            status: status,
+            amount: orderAmount.value.toString(),
+            currency: selectedCrypto.value,
+            network: selectedNetwork.value,
+            cryptoAmount: cryptoAmount.value,
+            paymentMethod: cardStore.currentOrder?.payType || 'Crypto Payment'
+          }
+        })
+      }
+    }, 1000) // Short delay to show the status change
+  }
+}
+
+// Start polling order detail
+const startPolling = () => {
+  if (pollingInterval.value) return
+
+  pollingInterval.value = setInterval(async () => {
+    // Check if component is still mounted
+    if (!isMounted.value) {
+      stopPolling()
+      return
+    }
+
+    if (!pollingEnabled.value) {
+      stopPolling()
+      return
+    }
+
+    pollingCount.value++
+    await fetchOrderDetail()
+
+    // Stop polling if order is in final state
+    if (['SUCCESS', 'FAIL', 'CANCEL', 'PENDING'].includes(orderStatus.value)) {
+      stopPolling()
+    }
+  }, 5000) // Poll every 5 seconds
+}
+
+// Stop polling
+const stopPolling = () => {
+  pollingEnabled.value = false
+  if (pollingInterval.value) {
+    clearInterval(pollingInterval.value)
+    pollingInterval.value = null
+  }
+}
+
 // Refresh payment
 const refreshPayment = async () => {
   refreshing.value = true
 
   try {
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    // Stop and reset polling
+    stopPolling()
+    pollingCount.value = 0
+    pollingEnabled.value = true
 
-    // Reset countdown
+    // Stop and reset countdown timer
+    if (countdownInterval) {
+      clearInterval(countdownInterval)
+      countdownInterval = null
+    }
     countdown.value = 1461
 
-    // Generate new QR code
-    await generateQRCode()
+    // Reset QR code error state
+    qrCodeError.value = false
+
+    // Fetch latest order detail
+    await fetchOrderDetail()
+
+    // Restart countdown timer
+    startCountdown()
+
+    // Restart polling
+    startPolling()
 
     toast.add({
       severity: 'success',
       summary: 'Payment Refreshed',
-      detail: 'New payment details have been generated',
+      detail: 'Payment details have been refreshed',
       life: 3000
     })
   } catch (error) {
@@ -512,12 +825,37 @@ const refreshPayment = async () => {
   }
 }
 
+// Auto open payment address
+const autoOpenPaymentAddress = () => {
+  if (!cardStore.currentOrder) return
+
+  const order = cardStore.currentOrder
+  const isMobile = window.innerWidth < 768
+
+  // 移动端优先使用 deeplink，没有则使用 webUrl
+  if (isMobile) {
+    if (order.deeplink) {
+      // 移动端打开 deeplink
+      window.location.href = order.deeplink
+      return
+    }
+  }
+
+  // 桌面端或移动端没有 deeplink 时使用 webUrl
+  if (order.webUrl) {
+    window.open(order.webUrl, '_blank')
+  }
+}
+
 // Initialize data from Pinia store
 onMounted(async () => {
+  isMounted.value = true
+
   // Get payment data from Pinia store
   if (cardStore.currentOrder) {
     const order = cardStore.currentOrder
-    orderNumber.value = order.orderNum || '76782112321321047696'
+    // Use order number from route query if available, otherwise use store
+    orderNumber.value = (route.query.orderNum as string) || order.orderNum || '76782112321321047696'
     orderAmount.value = parseFloat(order.amount) || 1000.00
     selectedCrypto.value = order.currency || 'ETH'
     selectedNetwork.value = order.network || 'ERC20'
@@ -525,6 +863,11 @@ onMounted(async () => {
     walletAddress.value = order.webUrl || '0xe688b84b23f322a994A53dbF8E15FA82CDB71127'
   } else {
     // Fallback to route params if no order in store
+    const orderNum = route.query.orderNum as string
+    if (orderNum) {
+      orderNumber.value = orderNum
+    }
+
     const amount = route.query.amount as string
     if (amount) {
       orderAmount.value = parseFloat(amount)
@@ -547,17 +890,29 @@ onMounted(async () => {
     }
   }
 
-  // Generate QR code
-  await generateQRCode()
-
   // Start countdown
   startCountdown()
+
+  // Fetch initial order detail
+  await fetchOrderDetail(true)
+
+  // Start polling order detail
+  startPolling()
+
+  // Auto open payment address after a short delay
+  setTimeout(() => {
+    autoOpenPaymentAddress()
+  }, 1000)
 })
 
 // Cleanup on unmount
 onUnmounted(() => {
+  isMounted.value = false
+
   if (countdownInterval) {
     clearInterval(countdownInterval)
+    countdownInterval = null
   }
+  stopPolling()
 })
 </script>
