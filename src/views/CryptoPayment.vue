@@ -441,26 +441,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Wallet Connection Button -->
-        <div v-if="isOrderPending">
-          <button @click="connectWallet"
-            class="w-full border-2 border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold py-4 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-3">
-            <span>Deposit by your Wallet</span>
-            <div class="flex items-center space-x-2">
-              <!-- Wallet Icons -->
-              <div class="w-6 h-6 bg-orange-500 rounded flex items-center justify-center">
-                <span class="text-white font-bold text-xs">M</span>
-              </div>
-              <div class="w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                <span class="text-white font-bold text-xs">W</span>
-              </div>
-              <div class="w-6 h-6 bg-gray-500 rounded flex items-center justify-center">
-                <span class="text-white font-bold text-xs">+</span>
-              </div>
-            </div>
-          </button>
-        </div>
         <!-- Payment Status (Legacy) -->
         <div v-if="paymentStatus && !orderDetail">
           <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
@@ -699,6 +679,18 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
       // Update order number if it's different from route
       if (orderNumber.value !== orderNum) {
         orderNumber.value = orderNum
+      }
+
+      // Update store currentOrder with latest data from API
+      if (cardStore.currentOrder) {
+        const updatedOrder = {
+          ...cardStore.currentOrder,
+          orderNum: orderNum,
+          webUrl: detail.webUrl,
+          // Note: qrcodeLink is not available in getDepositOrderDetail response
+          // Keep the existing qrcodeLink from createDepositOrder if available
+        }
+        cardStore.setCurrentOrder(updatedOrder)
       }
 
       // Only update order status, don't update other fields to avoid data inconsistency

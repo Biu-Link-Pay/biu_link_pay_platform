@@ -106,12 +106,12 @@
                 <div class="flex items-center justify-between">
                   <span class="text-sm text-gray-600 dark:text-gray-400">月交易限额</span>
                   <span class="text-sm font-medium text-gray-900 dark:text-white">${{ selectedCard.maxOnMonthly
-                    }}</span>
+                  }}</span>
                 </div>
                 <div class="flex items-center justify-between">
                   <span class="text-sm text-gray-600 dark:text-gray-400">单笔限额</span>
                   <span class="text-sm font-medium text-gray-900 dark:text-white">${{ selectedCard.maxOnPercent
-                    }}</span>
+                  }}</span>
                 </div>
               </div>
             </div>
@@ -194,17 +194,17 @@
                     <div class="flex items-center justify-between">
                       <span class="text-sm text-gray-600 dark:text-gray-400">日交易限额</span>
                       <span class="text-lg font-semibold text-gray-900 dark:text-white">${{ selectedCard.maxOnDaily
-                        }}</span>
+                      }}</span>
                     </div>
                     <div class="flex items-center justify-between">
                       <span class="text-sm text-gray-600 dark:text-gray-400">月交易限额</span>
                       <span class="text-lg font-semibold text-gray-900 dark:text-white">${{ selectedCard.maxOnMonthly
-                        }}</span>
+                      }}</span>
                     </div>
                     <div class="flex items-center justify-between">
                       <span class="text-sm text-gray-600 dark:text-gray-400">单笔限额</span>
                       <span class="text-lg font-semibold text-gray-900 dark:text-white">${{ selectedCard.maxOnPercent
-                        }}</span>
+                      }}</span>
                     </div>
                   </div>
                 </div>
@@ -423,7 +423,7 @@
                 </div>
                 <div class="flex-1 min-w-0">
                   <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                    Recharge Order #{{ order.num }}
+                    {{ order.num }}
                   </div>
                   <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
                     {{ formatDate(order.createTime || '') }}
@@ -469,11 +469,8 @@
                           <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-sm"></i>
                         </div>
                         <div class="flex-1 min-w-0">
-                          <div class="font-medium text-gray-900 dark:text-white text-sm mb-1">
-                            Recharge
-                          </div>
                           <div class="text-xs text-gray-600 dark:text-gray-400 mb-1">
-                            #{{ order.num }}
+                            {{ order.num }}
                           </div>
                           <div class="text-xs text-gray-500 dark:text-gray-400">
                             {{ formatDate(order.createTime || '') }}
