@@ -5,7 +5,7 @@
 
     <!-- Main Content -->
     <div
-      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12">
+      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12 pb-24 md:pb-6 lg:pb-12">
       <!-- Desktop Layout -->
       <div class="hidden md:block">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -164,7 +164,7 @@
         </div>
 
         <!-- Action Buttons - Desktop -->
-        <div class="bottom-buttons-container">
+        <div class="bottom-buttons-container relative md:static">
           <!-- Back Button -->
           <button class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
             @click="goBack">
@@ -340,7 +340,7 @@
           </div>
 
           <!-- Action Buttons -->
-          <div class="bottom-buttons-container">
+          <div class="bottom-buttons-container relative md:static">
             <!-- Back Button -->
             <button class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
               @click="goBack">

@@ -5,7 +5,7 @@
 
     <!-- Main Content -->
     <div
-      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8 pb-24 md:pb-6 lg:pb-8">
       <!-- Alert Banner -->
       <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
         <div class="flex items-center space-x-3">
@@ -66,10 +66,49 @@
               <div class="overflow-hidden">
                 <div class="flex transition-transform duration-300 ease-in-out"
                   :style="{ transform: `translateX(-${currentBinIndex * 100}%)` }">
-                  <div v-for="(binInfo, index) in cardBins" :key="index" class="w-full flex-shrink-0 px-4">
-                    <div class="relative">
-                      <CardBinItem :bin-info="binInfo" :selected="currentBinIndex === index"
-                        @select="() => selectBin(index)" />
+                  <div v-for="(binInfo, index) in cardBins" :key="index" class="w-full flex-shrink-0 px-2">
+                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl p-6 text-white shadow-lg">
+                      <!-- Card Header -->
+                      <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-semibold opacity-75">BUI LINK PAY</span>
+                        <div class="w-4 h-4 bg-white/20 rounded-full"></div>
+                      </div>
+
+                      <!-- Card Details -->
+                      <div class="space-y-2 mb-4 text-sm">
+                        <!-- Card BIN -->
+                        <div class="text-base font-mono tracking-wider">
+                          {{ formatCardNumber(binInfo.cardBin) }}
+                        </div>
+
+                        <!-- Card Type and Currency -->
+                        <div class="flex justify-between items-center">
+                          <span class="font-semibold">
+                            {{ binInfo.cardType || 'Card' }}
+                          </span>
+                          <span>{{ binInfo.cardCurrency || 'USD' }}</span>
+                        </div>
+
+                        <!-- Card Scheme -->
+                        <div class="text-sm opacity-80">
+                          {{ binInfo.cardScheme || 'Card Scheme' }}
+                        </div>
+
+                        <!-- Available Cards -->
+                        <div class="text-xs opacity-75">
+                          Available: {{ binInfo.remainingAvailableCard || 'Unlimited' }}
+                        </div>
+                      </div>
+
+                      <!-- Card Footer -->
+                      <div class="flex items-center justify-between">
+                        <div class="text-sm opacity-80">
+                          {{ binInfo.billingAddressUpdatable === 'true' ? 'Address Update Supported' : 'Address Update Not Supported' }}
+                        </div>
+                        <div class="w-12 h-8 bg-white rounded flex items-center justify-center">
+                          <i class="pi pi-credit-card text-gray-600 text-lg"></i>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -77,22 +116,22 @@
 
               <!-- Navigation Arrows -->
               <button v-if="currentBinIndex > 0"
-                class="absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center"
                 @click="previousBin">
-                <i class="pi pi-chevron-left text-gray-600"></i>
+                <i class="pi pi-chevron-left text-gray-600 text-sm"></i>
               </button>
 
               <button v-if="currentBinIndex < cardBins.length - 1"
-                class="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full shadow-lg flex items-center justify-center"
+                class="absolute right-0 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center"
                 @click="nextBin">
-                <i class="pi pi-chevron-right text-gray-600"></i>
+                <i class="pi pi-chevron-right text-gray-600 text-sm"></i>
               </button>
             </div>
 
             <!-- Dots Indicator -->
             <div class="flex justify-center mt-4 space-x-2">
               <div v-for="(binInfo, index) in cardBins" :key="index" class="w-2 h-2 rounded-full transition-colors"
-                :class="currentBinIndex === index ? 'bg-blue-500' : 'bg-gray-300'"></div>
+                :class="currentBinIndex === index ? 'bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'"></div>
             </div>
           </div>
 
@@ -242,7 +281,7 @@
       </div>
 
       <!-- Action Buttons -->
-      <div class="bottom-buttons-container">
+      <div class="bottom-buttons-container relative md:static">
         <!-- Back Button -->
         <button class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
           @click="goBack">

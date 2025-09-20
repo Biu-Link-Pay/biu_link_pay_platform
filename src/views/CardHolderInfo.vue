@@ -5,7 +5,7 @@
 
     <!-- Main Content -->
     <div
-      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8 pb-24 md:pb-6 lg:pb-8">
       <!-- Intro Banner -->
       <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
         <div class="flex items-center space-x-3">
@@ -135,7 +135,7 @@
       </div>
 
       <!-- Action Buttons -->
-      <div class="bottom-buttons-container">
+      <div class="bottom-buttons-container relative md:static">
         <Button label="Back" icon="pi pi-arrow-left" severity="secondary"
           class="bottom-button-dual bottom-button-dual-secondary" @click="goBack" />
         <Button :disabled="!canConfirm" :label="confirmButtonText" icon="pi pi-check" :loading="loading"
