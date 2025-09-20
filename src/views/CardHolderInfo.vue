@@ -213,9 +213,9 @@ const canConfirm = computed(() => {
 
 const confirmButtonText = computed(() => {
   if (isEditing.value) {
-    return 'Please save address first'
+    return 'Save Address First'
   } else if (!holder.value) {
-    return 'Please add address first'
+    return 'Add Address First'
   } else {
     return 'Confirm'
   }
