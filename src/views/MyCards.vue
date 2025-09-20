@@ -4,7 +4,7 @@
     <AppHeader title="Virtual Cards" :show-title="true" />
 
     <!-- Main Content -->
-    <div class="max-w-7xl mx-auto px-6 py-8 lg:py-12">
+    <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
       <!-- Card Balance Section -->
       <div class="mb-8">
         <div class="flex items-center justify-between mb-2">
@@ -60,7 +60,7 @@
         </div>
 
         <!-- Desktop: Grid Layout -->
-        <div class="hidden md:grid md:grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="hidden md:grid md:grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-4xl mx-auto">
           <div v-for="(card, index) in cards" :key="index" class="w-full">
             <div
               class="bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl p-8 text-white shadow-lg hover:shadow-xl transition-shadow">
@@ -86,7 +86,7 @@
       </div>
 
       <!-- Quick Action Buttons -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 max-w-2xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 w-full max-w-2xl mx-auto">
         <button
           class="flex flex-col items-center space-y-2 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
           <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
@@ -121,7 +121,7 @@
       </div>
 
       <!-- Transaction History Section -->
-      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm max-w-4xl mx-auto">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm w-full max-w-4xl mx-auto">
         <!-- Tabs -->
         <div class="flex border-b border-gray-200 dark:border-gray-700">
           <button v-for="tab in tabs" :key="tab.key" @click="activeTab = tab.key"
@@ -171,7 +171,7 @@
       </div>
 
       <!-- Supported Payment Methods -->
-      <div class="mt-8 max-w-4xl mx-auto">
+      <div class="mt-8 w-full max-w-4xl mx-auto">
         <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-6 text-center">Overseas Mainstream Cases</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div v-for="method in paymentMethods" :key="method.name"

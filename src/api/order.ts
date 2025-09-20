@@ -102,6 +102,137 @@ export interface OrderRateResponse {
   error: boolean
 }
 
+// 创建入金订单请求参数
+export interface CreateDepositOrderParams {
+  cardPattern: string // 1:虚拟卡 2:实体卡
+  type: string // 1:办卡 2:充值
+  cardBin: string // 卡段
+  payType: string // 1:binancePay，2:wallet
+  amount: number // 订单金额
+  orderCurrency: string // 订单币种
+  userCardId: string // 用户cardId，当类型为1时，cardBin必填,类型为2时，userCardId必填
+  token?: string // token
+  network?: string // 网络
+  address?: string // 地址
+}
+
+// 创建入金订单响应数据
+export interface CreateDepositOrderModel {
+  orderNum: string // 订单号
+  webUrl: string // 支付链接
+  deeplink: string // 深度支付链接，跳转本地app
+  qrcodeLink: string // 二维码链接
+  exchange: string // 交易所,BINANCE OR WALLET
+}
+
+// 创建入金订单响应
+export interface CreateDepositOrderResponse {
+  code: string
+  msg: string
+  model: CreateDepositOrderModel
+  success: boolean
+  error: boolean
+}
+
+// 入金订单详情项
+export interface DepositOrderDetailItem {
+  cardPattern: string | null // 1:虚拟卡 2:实体卡
+  type: string | null // 1:办卡 2:充值
+  cardBin: string | null // 卡段
+  payType: string | null // 1:binancePay，2:wallet
+  amount: number | null // 订单金额
+  orderCurrency: string | null // 订单币种
+  token: string | null // token
+  network: string | null // 网络
+  address: string | null // 地址
+  status: string // 订单状态 INIT：待支付，PENDING:处理中,SUCCESS：支付成功，FAIL：失败，CANCEL：已取消
+}
+
+// 入金订单详情查询响应
+export interface DepositOrderDetailResponse {
+  code: string
+  msg: string
+  model: DepositOrderDetailItem[]
+  success: boolean
+  error: boolean
+}
+
+// 入金订单列表项
+export interface DepositOrderListItem {
+  num: string // 订单号
+  type: string // 1:办卡 2:充值
+  amount: number // 订单金额
+  orderCurrency: string // 订单币种
+  token: string // 币种
+  network: string // 网络
+  usdAmount: number // usd金额
+  networkFee: number // 网络费
+  address: string // 地址
+  createTime: string | null // 创建时间
+}
+
+// 分页信息
+export interface PageInfo {
+  size: number // 每页条数
+  number: number // 当前页码
+  totalElements: number // 总元素数
+  totalPages: number // 总页数
+}
+
+// 入金订单分页查询响应数据
+export interface DepositOrderPageModel {
+  content: DepositOrderListItem[] // 订单列表
+  page: PageInfo // 分页信息
+}
+
+// 入金订单分页查询响应
+export interface DepositOrderPageResponse {
+  code: string
+  msg: string
+  model: DepositOrderPageModel
+  success: boolean
+  error: boolean
+}
+
+// 入金订单分页查询参数
+export interface DepositOrderPageParams {
+  pageNo: number // 第几页
+  pageSize: number // 每页条数
+}
+
+// 入金订单详情查询参数
+export interface DepositOrderDetailParams {
+  num: string // 订单号
+}
+
+// 出金订单详情项
+export interface WithdrawOrderDetailItem {
+  num: string | null // 订单号
+  type: string | null // 1:提现 2:退款
+  token: string | null // token
+  network: string | null // 网络
+  usdAmount: number | null // usd金额
+  networkFee: number | null // 网络费
+  address: string | null // 地址
+  hashId: string | null // hashId
+  createTime: string | null // 创建时间
+  status: string // 订单状态 INIT：待支付，PENDING:处理中,SUCCESS：支付成功，FAIL：失败，CANCEL：已取消
+}
+
+// 出金订单详情查询响应
+export interface WithdrawOrderDetailResponse {
+  code: string
+  msg: string
+  model: WithdrawOrderDetailItem[]
+  success: boolean
+  error: boolean
+}
+
+// 出金订单详情查询参数
+export interface WithdrawOrderDetailParams {
+  num: string // 订单号
+}
+
 // 订单相关 API
 export class OrderAPI {
   /**
@@ -131,6 +262,70 @@ export class OrderAPI {
       saleDirection: params.saleDirection,
       exchange: params.exchange,
       fiatUnit: params.fiatUnit
+    })
+    return response.data
+  }
+
+  /**
+   * 创建入金订单
+   * @param params 创建订单参数
+   * @returns 创建订单响应
+   */
+  static async createDepositOrder(params: CreateDepositOrderParams): Promise<CreateDepositOrderResponse> {
+    const response = await api.post<CreateDepositOrderResponse>('/card/consume/order/createDepositOrder', {
+      cardPattern: params.cardPattern,
+      type: params.type,
+      cardBin: params.cardBin,
+      payType: params.payType,
+      amount: params.amount,
+      orderCurrency: params.orderCurrency,
+      userCardId: params.userCardId,
+      token: params.token,
+      network: params.network,
+      address: params.address
+    })
+    return response.data
+  }
+
+  /**
+   * 查询入金订单详情
+   * @param params 查询参数
+   * @returns 订单详情
+   */
+  static async getDepositOrderDetail(params: DepositOrderDetailParams): Promise<DepositOrderDetailResponse> {
+    const response = await api.get<DepositOrderDetailResponse>('/card/consume/order/queryDepositOrder', {
+      params: {
+        num: params.num
+      }
+    })
+    return response.data
+  }
+
+  /**
+   * 分页查询入金订单
+   * @param params 分页查询参数
+   * @returns 订单分页列表
+   */
+  static async getDepositOrderPage(params: DepositOrderPageParams): Promise<DepositOrderPageResponse> {
+    const response = await api.get<DepositOrderPageResponse>('/card/consume/order/queryPageDepositOrder', {
+      params: {
+        pageNo: params.pageNo,
+        pageSize: params.pageSize
+      }
+    })
+    return response.data
+  }
+
+  /**
+   * 查询出金订单详情
+   * @param params 查询参数
+   * @returns 出金订单详情
+   */
+  static async getWithdrawOrderDetail(params: WithdrawOrderDetailParams): Promise<WithdrawOrderDetailResponse> {
+    const response = await api.get<WithdrawOrderDetailResponse>('/card/consume/order/queryWithdrawOrder', {
+      params: {
+        num: params.num
+      }
     })
     return response.data
   }

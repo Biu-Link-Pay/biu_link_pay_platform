@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center p-4">
-    <div class="w-full max-w-6xl mx-auto">
+    <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-6xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[600px]">
         <!-- Left showcase area -->
         <div class="hidden lg:block lg:pr-8">
@@ -42,7 +42,7 @@
         <!-- Right content area -->
         <div class="w-full lg:pl-8">
           <!-- Login form -->
-          <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 lg:p-10 max-w-md mx-auto lg:mx-0">
+          <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 lg:p-10 w-full max-w-md mx-auto lg:mx-0">
             <!-- Title and Language Selection -->
             <div class="flex items-center justify-between mb-8">
               <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">
@@ -110,7 +110,7 @@
               </p>
               <!-- Submit Button -->
               <Button type="submit" :label="buttonText" :loading="isLoading" :disabled="!form.agreeTerms"
-                class="w-full min-h-[48px] text-base font-medium transition-all duration-200" severity="primary" />
+                class="bottom-button-primary text-base font-medium transition-all duration-200" severity="primary" />
             </form>
           </div>
         </div>

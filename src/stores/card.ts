@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { CardAPI } from '@/api/card'
 import { useAuthStore } from '@/stores/auth'
+import type { ApiResponse } from '@/types/api'
 import type {
   CardConfig,
   CardBin,
@@ -9,8 +10,7 @@ import type {
   CardHolderInfo,
   CardListItem,
   TransactionListQueryParams,
-  TransactionListResponse,
-  ApiResponse
+  TransactionListResponse
 } from '@/api/card'
 
 export const useCardStore = defineStore('card', () => {
@@ -61,6 +61,13 @@ export const useCardStore = defineStore('card', () => {
   const cardList = ref<CardListItem[]>([])
   const loading = ref(false)
   const error = ref<string | null>(null)
+
+  // 选中的卡片 BIN 信息
+  const selectedCardBin = ref<CardBin | null>(null)
+  const selectedCardConfig = ref<CardConfig | null>(null)
+
+  // 订单信息
+  const currentOrder = ref<any>(null)
 
   // 计算属性
   const availableCards = computed(() =>
@@ -221,6 +228,32 @@ export const useCardStore = defineStore('card', () => {
     return cardConfigs.value.filter(card => card.status === 1)
   }
 
+  // 设置选中的卡片 BIN
+  const setSelectedCardBin = (cardBin: CardBin | null) => {
+    selectedCardBin.value = cardBin
+  }
+
+  // 设置选中的卡片配置
+  const setSelectedCardConfig = (cardConfig: CardConfig | null) => {
+    selectedCardConfig.value = cardConfig
+  }
+
+  // 设置当前订单信息
+  const setCurrentOrder = (order: any) => {
+    currentOrder.value = order
+  }
+
+  // 清除当前订单信息
+  const clearCurrentOrder = () => {
+    currentOrder.value = null
+  }
+
+  // 清除选中的卡片信息
+  const clearSelectedCard = () => {
+    selectedCardBin.value = null
+    selectedCardConfig.value = null
+  }
+
   // 清除错误状态
   const clearError = () => {
     error.value = null
@@ -233,6 +266,9 @@ export const useCardStore = defineStore('card', () => {
     cardList.value = []
     loading.value = false
     error.value = null
+    selectedCardBin.value = null
+    selectedCardConfig.value = null
+    currentOrder.value = null
   }
 
   return {
@@ -242,6 +278,9 @@ export const useCardStore = defineStore('card', () => {
     cardList,
     loading,
     error,
+    selectedCardBin,
+    selectedCardConfig,
+    currentOrder,
 
     // 计算属性
     availableCards,
@@ -259,13 +298,17 @@ export const useCardStore = defineStore('card', () => {
     getCardConfigsByType,
     getCardConfigsByPattern,
     getEnabledCardConfigs,
+    setSelectedCardBin,
+    setSelectedCardConfig,
+    setCurrentOrder,
+    clearCurrentOrder,
+    clearSelectedCard,
     clearError,
     reset
   }
 }, {
   persist: {
     key: 'card-store',
-    storage: localStorage,
-    paths: ['cardConfigs', 'cardBins']
+    storage: localStorage
   }
 })

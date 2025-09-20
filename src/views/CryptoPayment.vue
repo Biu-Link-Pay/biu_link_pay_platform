@@ -4,7 +4,7 @@
     <AppHeader title="Crypto Payment" :show-title="true" />
 
     <!-- Main Content -->
-    <div class="max-w-md mx-auto px-4 py-6">
+    <div class="w-full max-w-md mx-auto px-4 py-6">
       <!-- Order Information -->
       <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-6">
         <div class="space-y-4">
@@ -148,16 +148,16 @@
       </div>
 
       <!-- Action Buttons -->
-      <div class="space-y-3">
+      <div class="bottom-buttons-container">
         <!-- Back Button -->
         <button @click="goBack"
-          class="w-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+          class="bottom-button-dual bottom-button-dual-secondary">
           Back to Payment Method
         </button>
 
         <!-- Refresh Button -->
         <button @click="refreshPayment" :disabled="refreshing"
-          class="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2">
+          class="bottom-button-dual bottom-button-dual-primary flex items-center justify-center space-x-2">
           <i v-if="refreshing" class="pi pi-spin pi-spinner text-sm"></i>
           <i v-else class="pi pi-refresh text-sm"></i>
           <span>{{ refreshing ? 'Refreshing...' : 'Refresh Payment' }}</span>

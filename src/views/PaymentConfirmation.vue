@@ -4,7 +4,7 @@
     <AppHeader title="Apply for a card" :show-title="true" />
 
     <!-- Main Content -->
-    <div class="max-w-md mx-auto px-4 py-6">
+    <div class="w-full max-w-md mx-auto px-4 py-6">
       <!-- Virtual Card Display -->
       <div class="mb-6">
         <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 text-white shadow-lg">
@@ -120,9 +120,9 @@
       </div>
 
       <!-- Payment Button -->
-      <div class="sticky bottom-4">
+      <div class="bottom-button-container">
         <button :disabled="countdown <= 0"
-          class="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-bold py-4 px-6 rounded-lg transition-colors duration-200 shadow-lg"
+          class="bottom-button-primary"
           @click="handlePayment">
           <span v-if="countdown <= 0">Session Expired</span>
           <span v-else>Pay {{ getCryptoAmount(selectedCurrency) }}</span>

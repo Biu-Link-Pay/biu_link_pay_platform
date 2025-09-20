@@ -4,7 +4,8 @@
     <AppHeader title="Payment Method" :show-title="true" />
 
     <!-- Main Content -->
-    <div class="max-w-7xl mx-auto px-4 py-6 lg:py-12">
+    <div
+      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12">
       <!-- Desktop Layout -->
       <div class="hidden md:block">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -127,7 +128,7 @@
             <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Payment Details</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
               <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Amount:</span>
+                <span class="text-gray-600 dark:text-gray-400">USD Amount:</span>
                 <span class="font-medium text-gray-900 dark:text-white">{{ formatCurrency(payAmount) }}</span>
               </div>
               <div class="flex justify-between">
@@ -137,6 +138,17 @@
               <div class="flex justify-between">
                 <span class="text-gray-600 dark:text-gray-400">Network:</span>
                 <span class="font-medium text-gray-900 dark:text-white">{{ selectedCrypto.network.fullName }}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600 dark:text-gray-400">Crypto Amount:</span>
+                <span class="font-medium text-blue-600 dark:text-blue-400">
+                  <span v-if="rateLoading" class="flex items-center space-x-1">
+                    <i class="pi pi-spin pi-spinner text-xs"></i>
+                    <span>Loading...</span>
+                  </span>
+                  <span v-else-if="actualCryptoAmount">{{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}</span>
+                  <span v-else>-</span>
+                </span>
               </div>
               <div class="flex justify-between">
                 <span class="text-gray-600 dark:text-gray-400">Min Limit:</span>
@@ -150,21 +162,37 @@
           </div>
         </div>
 
-        <!-- Continue Button - Desktop -->
-        <div class="mt-8">
-          <button :disabled="!selectedPayType || !selectedCrypto"
-            class="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white font-bold py-4 px-6 rounded-lg transition-colors duration-200 shadow-lg"
-            @click="handleContinue">
-            <span v-if="!selectedPayType">Select a payment method</span>
+        <!-- Action Buttons - Desktop -->
+        <div class="bottom-buttons-container">
+          <!-- Back Button -->
+          <button class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
+            @click="goBack">
+            <i class="pi pi-arrow-left"></i>
+            <span>Back</span>
+          </button>
+
+          <!-- Continue Button -->
+          <button :disabled="!selectedPayType || !selectedCrypto || rateLoading || creatingOrder"
+            class="bottom-button-dual bottom-button-dual-primary" @click="handleContinue">
+            <span v-if="creatingOrder" class="flex items-center space-x-2">
+              <i class="pi pi-spin pi-spinner text-sm"></i>
+              <span>Creating Order...</span>
+            </span>
+            <span v-else-if="rateLoading" class="flex items-center space-x-2">
+              <i class="pi pi-spin pi-spinner text-sm"></i>
+              <span>Loading rate...</span>
+            </span>
+            <span v-else-if="!selectedPayType">Select a payment method</span>
             <span v-else-if="!selectedCrypto">Select a cryptocurrency</span>
-            <span v-else>Continue with {{ selectedCrypto.crypto.name }}</span>
+            <span v-else-if="!actualCryptoAmount">Loading payment amount...</span>
+            <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}</span>
           </button>
         </div>
       </div>
 
       <!-- Mobile Layout -->
       <div class="md:hidden">
-        <div class="max-w-md mx-auto">
+        <div class="w-full max-w-md mx-auto">
           <!-- Pay Amount Section -->
           <div class="text-center mb-8">
             <h2 class="text-lg font-medium text-gray-600 mb-2">Pay Amount</h2>
@@ -272,7 +300,7 @@
             <h4 class="text-sm font-medium text-gray-700 mb-2">Payment Details</h4>
             <div class="space-y-2 text-sm">
               <div class="flex justify-between">
-                <span class="text-gray-600">Amount:</span>
+                <span class="text-gray-600">USD Amount:</span>
                 <span class="font-medium">{{ formatCurrency(payAmount) }}</span>
               </div>
               <div class="flex justify-between">
@@ -282,6 +310,17 @@
               <div class="flex justify-between">
                 <span class="text-gray-600">Network:</span>
                 <span class="font-medium">{{ selectedCrypto.network.fullName }}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Crypto Amount:</span>
+                <span class="font-medium text-blue-600">
+                  <span v-if="rateLoading" class="flex items-center space-x-1">
+                    <i class="pi pi-spin pi-spinner text-xs"></i>
+                    <span>Loading...</span>
+                  </span>
+                  <span v-else-if="actualCryptoAmount">{{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}</span>
+                  <span v-else>-</span>
+                </span>
               </div>
               <div class="flex justify-between">
                 <span class="text-gray-600">Min Limit:</span>
@@ -294,14 +333,30 @@
             </div>
           </div>
 
-          <!-- Continue Button -->
-          <div class="mt-8">
-            <button :disabled="!selectedPayType || !selectedCrypto"
-              class="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white font-bold py-4 px-6 rounded-lg transition-colors duration-200 shadow-lg"
-              @click="handleContinue">
-              <span v-if="!selectedPayType">Select a payment method</span>
+          <!-- Action Buttons -->
+          <div class="bottom-buttons-container">
+            <!-- Back Button -->
+            <button class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
+              @click="goBack">
+              <i class="pi pi-arrow-left"></i>
+              <span>Back</span>
+            </button>
+
+            <!-- Continue Button -->
+            <button :disabled="!selectedPayType || !selectedCrypto || rateLoading || creatingOrder"
+              class="bottom-button-dual bottom-button-dual-primary" @click="handleContinue">
+              <span v-if="creatingOrder" class="flex items-center space-x-2">
+                <i class="pi pi-spin pi-spinner text-sm"></i>
+                <span>Creating Order...</span>
+              </span>
+              <span v-else-if="rateLoading" class="flex items-center space-x-2">
+                <i class="pi pi-spin pi-spinner text-sm"></i>
+                <span>Loading rate...</span>
+              </span>
+              <span v-else-if="!selectedPayType">Select a payment method</span>
               <span v-else-if="!selectedCrypto">Select a cryptocurrency</span>
-              <span v-else>Continue with {{ selectedCrypto.crypto.name }}</span>
+              <span v-else-if="!actualCryptoAmount">Loading payment amount...</span>
+              <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}</span>
             </button>
           </div>
         </div>
@@ -316,10 +371,12 @@ import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI, type OrderPayType, type OrderCryptoNetwork } from '@/api/order'
+import { useCardStore } from '@/stores/card'
 
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
+const cardStore = useCardStore()
 
 // Payment amount and order info
 const payAmount = ref(1000.00)
@@ -333,6 +390,12 @@ const paymentMethods = ref<OrderPayType[]>([])
 
 // Loading state
 const loading = ref(false)
+const rateLoading = ref(false)
+const creatingOrder = ref(false)
+
+// Rate query result
+const rateResult = ref<any>(null)
+const actualCryptoAmount = ref<string>('')
 
 // Format currency
 const formatCurrency = (amount: number) => {
@@ -346,14 +409,63 @@ const selectPayType = (payType: OrderPayType) => {
   // Auto-select first crypto network if available
   if (payType.cryptoNetworks && payType.cryptoNetworks.length > 0) {
     selectedCrypto.value = payType.cryptoNetworks[0]
+    // Query rate after selecting crypto
+    queryRate()
   } else {
     selectedCrypto.value = null
+    rateResult.value = null
+    actualCryptoAmount.value = ''
   }
 }
 
 // Select crypto currency
 const selectCrypto = (crypto: OrderCryptoNetwork) => {
   selectedCrypto.value = crypto
+  // Query rate after selecting crypto
+  queryRate()
+}
+
+// Query exchange rate
+const queryRate = async () => {
+  if (!selectedCrypto.value || !selectedPayType.value) {
+    rateResult.value = null
+    actualCryptoAmount.value = ''
+    return
+  }
+
+  try {
+    rateLoading.value = true
+    const response = await OrderAPI.getRate({
+      cryptoUnit: selectedCrypto.value.crypto.name,
+      network: selectedCrypto.value.network.sortName,
+      number: payAmount.value.toString(),
+      saleDirection: 'BUY', // 入金方向
+      exchange: selectedPayType.value.name.toUpperCase() === 'BINANCEPAY' ? 'BINANCE' : 'WALLET',
+      fiatUnit: cardStore.selectedCardBin?.cardCurrency || 'USD',
+    })
+
+    if (response.success && response.model) {
+      rateResult.value = response.model
+      actualCryptoAmount.value = response.model.cryptoDetail.totalAmountCrypto
+    } else {
+      toast.add({
+        severity: 'error',
+        summary: 'Rate Query Failed',
+        detail: response.msg || 'Failed to get exchange rate',
+        life: 3000
+      })
+    }
+  } catch (error) {
+    console.error('Error querying rate:', error)
+    toast.add({
+      severity: 'error',
+      summary: 'Rate Query Error',
+      detail: 'Failed to get exchange rate',
+      life: 3000
+    })
+  } finally {
+    rateLoading.value = false
+  }
 }
 
 // Load payment methods from API
@@ -371,6 +483,8 @@ const loadPaymentMethods = async () => {
         // Auto-select first crypto network of the first payment method
         if (paymentMethods.value[0].cryptoNetworks && paymentMethods.value[0].cryptoNetworks.length > 0) {
           selectedCrypto.value = paymentMethods.value[0].cryptoNetworks[0]
+          // Auto-query rate after selecting crypto
+          await queryRate()
         }
       }
     }
@@ -388,7 +502,7 @@ const loadPaymentMethods = async () => {
 }
 
 // Handle continue
-const handleContinue = () => {
+const handleContinue = async () => {
   if (!selectedPayType.value) {
     toast.add({
       severity: 'warn',
@@ -409,27 +523,99 @@ const handleContinue = () => {
     return
   }
 
-  toast.add({
-    severity: 'success',
-    summary: 'Payment Method Selected',
-    detail: `Selected ${selectedCrypto.value!.crypto.name} via ${selectedPayType.value!.name}`,
-    life: 2000
-  })
+  if (!actualCryptoAmount.value) {
+    toast.add({
+      severity: 'warn',
+      summary: 'Rate Loading',
+      detail: 'Please wait for the exchange rate to load',
+      life: 3000
+    })
+    return
+  }
 
-  // Navigate to crypto payment page
-  setTimeout(() => {
-    router.push({
-      name: 'CryptoPayment',
-      query: {
+  if (creatingOrder.value) {
+    return // Prevent multiple submissions
+  }
+
+  try {
+    creatingOrder.value = true
+
+    // Show loading toast
+    toast.add({
+      severity: 'info',
+      summary: 'Creating Order',
+      detail: 'Creating deposit order...',
+      life: 3000
+    })
+
+    // Create deposit order
+    const orderResponse = await OrderAPI.createDepositOrder({
+      cardPattern: cardStore.selectedCardConfig?.cardPattern.toString() || '1', // 1:虚拟卡 2:实体卡
+      type: '1', // 1:办卡 2:充值，这里需要根据实际业务逻辑确定
+      cardBin: cardStore.selectedCardBin?.cardBin || '', // 从 Pinia store 获取卡段
+      payType: selectedPayType.value.name.toUpperCase() === 'BINANCEPAY' ? '1' : '2', // 1:binancePay，2:wallet
+      amount: payAmount.value, // 订单金额
+      orderCurrency: selectedCrypto.value.crypto.name, // 订单币种
+      userCardId: route.query.userCardId as string || '', // 用户cardId，当类型为1时，cardBin必填,类型为2时，userCardId必填
+      token: selectedCrypto.value.crypto.name, // token
+      network: selectedCrypto.value.network.name, // 网络
+      address: '' // 地址，这里需要根据实际业务逻辑获取
+    })
+
+    if (orderResponse.success && orderResponse.model) {
+      // Success toast
+      toast.add({
+        severity: 'success',
+        summary: 'Order Created',
+        detail: `Order ${orderResponse.model.orderNum} created successfully`,
+        life: 3000
+      })
+
+      // Store order info in Pinia store
+      cardStore.setCurrentOrder({
+        orderNum: orderResponse.model.orderNum,
+        webUrl: orderResponse.model.webUrl,
+        deeplink: orderResponse.model.deeplink,
+        qrcodeLink: orderResponse.model.qrcodeLink,
+        exchange: orderResponse.model.exchange,
         amount: payAmount.value.toString(),
         currency: selectedCrypto.value!.crypto.name,
-        network: selectedCrypto.value!.network.sortName,
+        network: selectedCrypto.value!.network.name,
         payType: selectedPayType.value!.name,
-        exchange: 'BINANCE', // 默认使用 BINANCE，可以根据实际需求调整
+        cryptoAmount: actualCryptoAmount.value,
         name: route.query.name || 'John Tan'
-      }
+      })
+
+      // Navigate to crypto payment page
+      setTimeout(() => {
+        router.push({
+          name: 'CryptoPayment'
+        })
+      }, 2000)
+    } else {
+      toast.add({
+        severity: 'error',
+        summary: 'Order Creation Failed',
+        detail: orderResponse.msg || 'Failed to create deposit order',
+        life: 5000
+      })
+    }
+  } catch (error) {
+    console.error('Error creating deposit order:', error)
+    toast.add({
+      severity: 'error',
+      summary: 'Order Creation Error',
+      detail: 'Failed to create deposit order',
+      life: 5000
     })
-  }, 2000)
+  } finally {
+    creatingOrder.value = false
+  }
+}
+
+// Go back to previous page
+const goBack = () => {
+  router.back()
 }
 
 // Initialize data from route params

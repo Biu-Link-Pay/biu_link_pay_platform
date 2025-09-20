@@ -43,42 +43,6 @@ export interface CardHolderInfo {
   residentialState: string // 账单州/省
 }
 
-// 汇率查询相关类型
-export interface RateQueryParams {
-  cryptoUnit: string // 币种单位
-  network: string // 网络
-  number: string // 数量
-  saleDirection: 'SELL' | 'BUY' // 方向，SELL=出金，BUY=入金
-  exchange: 'WALLET' | 'BINANCE' // 交易所
-  fiatUnit: string // 充值的法币单位
-}
-
-export interface FiatDetail {
-  fiatUnit: string | null // 法币单位
-  fiatFee: string // 法币手续费
-  fiatAmount: string // 法币金额
-  fiatToUsdRate: string // 法币汇率
-  totalAmountFiat: string // 法币总金额
-}
-
-export interface CryptoDetail {
-  cryptoUnit: string // 币种单位
-  cryptoFee: string // 数币手续费
-  cryptoAmount: string // 数币金额
-  cryptoToUsdTRate: string // 数币汇率
-  totalAmountCrypto: string // 数币总金额
-}
-
-export interface RateResponse {
-  currencyType: string // 币种类型
-  saleDirection: string // 方向
-  usdTFee: string // 手续费
-  number: string // 数量
-  totalAmountUsdT: string // 应付金额
-  fiatDetail: FiatDetail // 法币明细
-  cryptoDetail: CryptoDetail // 数币明细
-}
-
 // 支付方式相关类型
 export interface PaymentMethodQueryParams {
   orderType: 'IN' | 'OUT' // IN=入金，OUT=出金
@@ -255,26 +219,6 @@ export class CardAPI {
   }
 
   /**
-   * 查询汇率
-   * @param params 汇率查询参数
-   * @param headers 请求头参数（fingerprint-id 由拦截器自动添加）
-   * @returns Promise<ApiResponse<RateResponse>>
-   */
-  static async queryRate(
-    params: RateQueryParams,
-    headers: CardRequestHeaders
-  ): Promise<ApiResponse<RateResponse>> {
-    const response = await api.post('/card/consume/common/rate', params, {
-      headers: {
-        'token': headers.token,
-        'refresh_token': headers.refresh_token
-        // fingerprint-id 由请求拦截器自动添加
-      }
-    })
-    return response.data
-  }
-
-  /**
    * 查询支付方式
    * @param params 支付方式查询参数
    * @param headers 请求头参数（fingerprint-id 由拦截器自动添加）
@@ -402,7 +346,6 @@ export const {
   getCardConfig,
   queryCardBin,
   saveCardHolder,
-  queryRate,
   getPaymentMethods,
   queryCardHolder,
   updateCardHolder,

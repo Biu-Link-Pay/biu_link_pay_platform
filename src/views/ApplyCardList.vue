@@ -7,7 +7,7 @@
     <ConfirmDialog />
 
     <!-- Main Content -->
-    <div class="max-w-7xl mx-auto px-6 py-12">
+    <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <!-- Loading State -->
       <div v-if="loading" class="flex justify-center py-20">
         <div class="flex items-center space-x-3">
@@ -18,7 +18,7 @@
 
       <!-- Error State -->
       <div v-else-if="error" class="text-center py-20">
-        <div class="bg-red-50 border border-red-200 rounded-lg p-8 max-w-md mx-auto">
+        <div class="bg-red-50 border border-red-200 rounded-lg p-8 w-full max-w-md mx-auto">
           <i class="pi pi-exclamation-triangle text-red-500 text-4xl mb-4"></i>
           <h3 class="text-lg font-semibold text-red-800 mb-2">Loading Failed</h3>
           <p class="text-red-600 mb-6">{{ error }}</p>
@@ -65,7 +65,7 @@
         </div>
 
         <!-- Desktop: Grid Layout -->
-        <div class="hidden md:grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div class="hidden md:grid md:grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
           <CardItem v-for="card in cardConfigs" :key="card.cardName" :card="card"
             :selected="selectedCard?.cardName === card.cardName" @select="selectCard" @order="orderCard"
             @activate="activateCard" />
@@ -74,7 +74,7 @@
 
       <!-- Empty State -->
       <div v-else class="text-center py-20">
-        <div class="bg-gray-50 rounded-lg p-12 max-w-md mx-auto">
+        <div class="bg-gray-50 rounded-lg p-12 w-full max-w-md mx-auto">
           <i class="pi pi-credit-card text-gray-400 text-5xl mb-6"></i>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">No Cards Available</h3>
           <p class="text-gray-600">No card configurations found.</p>

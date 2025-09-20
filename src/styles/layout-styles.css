@@ -1,0 +1,261 @@
+/* 统一的页面布局样式规范 */
+
+/* 页面容器 - 统一的最大宽度和内边距 */
+.page-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem; /* py-6 px-4 */
+}
+
+/* 页面容器 - 大内边距版本 */
+.page-container-large {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem; /* py-8 px-6 */
+}
+
+/* 页面容器 - 超大内边距版本 */
+.page-container-extra {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem; /* py-12 px-6 */
+}
+
+/* 响应式最大宽度调整 */
+@media (min-width: 640px) {
+  .page-container,
+  .page-container-large,
+  .page-container-extra {
+    max-width: 640px; /* max-w-sm */
+  }
+}
+
+@media (min-width: 768px) {
+  .page-container,
+  .page-container-large,
+  .page-container-extra {
+    max-width: 768px; /* max-w-md */
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-container,
+  .page-container-large,
+  .page-container-extra {
+    max-width: 1024px; /* max-w-lg */
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-container,
+  .page-container-large,
+  .page-container-extra {
+    max-width: 1280px; /* max-w-7xl */
+  }
+}
+
+/* 内容区域 - 中等宽度 */
+.content-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem; /* py-6 px-4 */
+}
+
+/* 内容区域 - 大内边距版本 */
+.content-container-large {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem; /* py-8 px-6 */
+}
+
+/* 表单容器 - 较小宽度 */
+.form-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem; /* py-6 px-4 */
+}
+
+/* 表单容器 - 大内边距版本 */
+.form-container-large {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem; /* py-8 px-6 */
+}
+
+/* 卡片容器 - 最小宽度 */
+.card-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem; /* py-6 px-4 */
+}
+
+/* 内容区域响应式最大宽度 */
+@media (min-width: 640px) {
+  .content-container,
+  .content-container-large {
+    max-width: 640px; /* max-w-sm */
+  }
+}
+
+@media (min-width: 768px) {
+  .content-container,
+  .content-container-large {
+    max-width: 768px; /* max-w-md */
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-container,
+  .content-container-large {
+    max-width: 896px; /* max-w-4xl */
+  }
+}
+
+/* 表单容器响应式最大宽度 */
+@media (min-width: 640px) {
+  .form-container,
+  .form-container-large {
+    max-width: 640px; /* max-w-sm */
+  }
+}
+
+@media (min-width: 768px) {
+  .form-container,
+  .form-container-large {
+    max-width: 672px; /* max-w-2xl */
+  }
+}
+
+/* 卡片容器响应式最大宽度 */
+@media (min-width: 640px) {
+  .card-container {
+    max-width: 448px; /* max-w-md */
+  }
+}
+
+/* 响应式内边距调整 - 平板端 */
+@media (min-width: 768px) {
+  .page-container,
+  .page-container-large,
+  .page-container-extra,
+  .content-container,
+  .content-container-large,
+  .form-container,
+  .form-container-large,
+  .card-container,
+  .login-page-container,
+  .grid-container {
+    padding-left: 2rem; /* px-8 */
+    padding-right: 2rem; /* px-8 */
+  }
+}
+
+/* 响应式内边距调整 - 桌面端 */
+@media (min-width: 1024px) {
+  .page-container,
+  .page-container-large,
+  .page-container-extra {
+    padding-left: 3rem; /* px-12 */
+    padding-right: 3rem; /* px-12 */
+  }
+  
+  .content-container,
+  .content-container-large,
+  .form-container,
+  .form-container-large,
+  .card-container {
+    padding-left: 2rem; /* px-8 */
+    padding-right: 2rem; /* px-8 */
+  }
+
+  .login-page-container,
+  .grid-container {
+    padding-left: 3rem; /* px-12 */
+    padding-right: 3rem; /* px-12 */
+  }
+}
+
+/* 响应式内边距调整 - 大屏幕 */
+@media (min-width: 1280px) {
+  .page-container,
+  .page-container-large,
+  .page-container-extra {
+    padding-left: 4rem; /* px-16 */
+    padding-right: 4rem; /* px-16 */
+  }
+}
+
+/* 特殊布局 - 全屏登录页面 */
+.login-page-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem; /* p-4 */
+}
+
+/* 特殊布局 - 网格布局容器 */
+.grid-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem; /* py-6 px-4 */
+}
+
+/* 登录页面响应式最大宽度 */
+@media (min-width: 640px) {
+  .login-page-container {
+    max-width: 640px; /* max-w-sm */
+  }
+}
+
+@media (min-width: 768px) {
+  .login-page-container {
+    max-width: 768px; /* max-w-md */
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-page-container {
+    max-width: 1024px; /* max-w-lg */
+  }
+}
+
+@media (min-width: 1280px) {
+  .login-page-container {
+    max-width: 1152px; /* max-w-6xl */
+  }
+}
+
+/* 网格容器响应式最大宽度 */
+@media (min-width: 640px) {
+  .grid-container {
+    max-width: 640px; /* max-w-sm */
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    max-width: 768px; /* max-w-md */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    max-width: 1024px; /* max-w-lg */
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid-container {
+    max-width: 1152px; /* max-w-6xl */
+  }
+}
+

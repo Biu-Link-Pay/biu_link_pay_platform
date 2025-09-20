@@ -18,6 +18,8 @@ import Toast from 'primevue/toast'
 import ConfirmDialog from 'primevue/confirmdialog'
 
 import './assets/styles/main.css'
+import './styles/button-styles.css'
+import './styles/layout-styles.css'
 import { getFingerprintId } from '@/utils/fingerprint'
 
 // 初始化指纹识别

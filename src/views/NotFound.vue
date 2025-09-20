@@ -1,6 +1,6 @@
 <template>
   <div class="not-found-page min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 flex items-center justify-center p-4">
-    <Card class="w-full max-w-md text-center">
+    <Card class="w-full max-w-md mx-auto text-center">
       <template #content>
         <div class="p-8">
           <div class="mb-6">

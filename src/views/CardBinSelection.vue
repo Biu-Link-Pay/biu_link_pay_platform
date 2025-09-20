@@ -4,7 +4,8 @@
     <AppHeader title="Apply for a Card" :show-title="true" />
 
     <!-- Main Content -->
-    <div class="max-w-md mx-auto md:max-w-4xl px-4 py-6 md:py-8">
+    <div
+      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
       <!-- Alert Banner -->
       <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
         <div class="flex items-center space-x-3">
@@ -92,7 +93,7 @@
 
           <!-- Desktop: Card Switcher Layout -->
           <div class="hidden md:block">
-            <div class="max-w-6xl mx-auto">
+            <div class="w-full">
               <!-- Card Selection Header -->
               <div class="flex items-center justify-between mb-8">
                 <div class="flex items-center space-x-4">
@@ -230,25 +231,21 @@
       </div>
 
       <!-- Action Buttons -->
-      <div class="sticky bottom-4 md:relative md:bottom-auto">
-        <div class="flex gap-3">
-          <!-- Back Button -->
-          <button
-            class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-4 px-6 rounded-lg transition-colors duration-200 shadow-lg flex items-center justify-center space-x-2"
-            @click="goBack">
-            <i class="pi pi-arrow-left"></i>
-            <span>Back</span>
-          </button>
+      <div class="bottom-buttons-container">
+        <!-- Back Button -->
+        <button class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
+          @click="goBack">
+          <i class="pi pi-arrow-left"></i>
+          <span>Back</span>
+        </button>
 
-          <!-- Order Button -->
-          <button :disabled="!selectedBinInfo || binLoading"
-            class="flex-1 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200 shadow-lg"
-            @click="orderCard">
-            <span v-if="binLoading">Loading...</span>
-            <span v-else-if="selectedBinInfo">Order {{ selectedBinInfo.cardType || 'Card' }}</span>
-            <span v-else>Select a Card BIN</span>
-          </button>
-        </div>
+        <!-- Order Button -->
+        <button :disabled="!selectedBinInfo || binLoading" class="bottom-button-dual bottom-button-dual-primary"
+          @click="orderCard">
+          <span v-if="binLoading">Loading...</span>
+          <span v-else-if="selectedBinInfo">Order {{ selectedBinInfo.cardType || 'Card' }}</span>
+          <span v-else>Select a Card BIN</span>
+        </button>
       </div>
     </div>
   </div>
@@ -442,13 +439,16 @@ const goBack = () => {
 
 // 订购卡片
 const orderCard = () => {
-  if (selectedBinInfo.value) {
-    // 跳转到持卡人信息输入页面
+  if (selectedBinInfo.value && selectedCard.value) {
+    // 将选中的卡片信息存储到 Pinia store
+    cardStore.setSelectedCardBin(selectedBinInfo.value)
+    cardStore.setSelectedCardConfig(selectedCard.value)
+
+    // 跳转到持卡人信息输入页面，只传递必要的参数
     router.push({
       name: 'CardHolderInfo',
       query: {
-        cardName: route.query.cardName,
-        binInfo: JSON.stringify(selectedBinInfo.value)
+        cardName: route.query.cardName
       }
     })
   } else {
