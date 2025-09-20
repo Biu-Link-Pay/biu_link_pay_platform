@@ -140,7 +140,7 @@ export interface TransactionItem {
   cardId: string // 卡ID
 }
 
-export interface TransactionListResponse {
+export interface CardTransactionListResponse {
   content: TransactionItem[] // 交易记录列表
   page: {
     size: number // 每页大小
@@ -325,12 +325,12 @@ export class CardAPI {
    * 消费记录分页查询
    * @param params 分页查询参数
    * @param headers 请求头参数（fingerprint-id 由拦截器自动添加）
-   * @returns Promise<ApiResponse<TransactionListResponse>>
+   * @returns Promise<ApiResponse<CardTransactionListResponse>>
    */
   static async queryTransactionList(
     params: TransactionListQueryParams,
     headers: CardRequestHeaders
-  ): Promise<ApiResponse<TransactionListResponse>> {
+  ): Promise<ApiResponse<CardTransactionListResponse>> {
     const response = await api.post('/card/consume/operator/queryTransactionList', params, {
       headers: {
         'token': headers.token,

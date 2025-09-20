@@ -957,13 +957,13 @@ const goToRecharge = () => {
     cardBin: '-',
     cardType: '-',
     cardScheme: '-', // 默认卡种
-    cardCurrency: cardDetail.value.cardCurrency, // 默认币种
+    cardCurrency: cardDetail.value?.cardCurrency || 'USD', // 默认币种
     billingAddressUpdatable: 'false',
     expiryDateCustomization: 'false',
     remainingAvailableCard: 0,
     availableCard: 0,
     cardFormFactor: 'virtual_card',
-    cardId: cardDetail.value.cardId // 添加 cardId 用于充值
+    cardId: cardDetail.value?.cardId || '' // 添加 cardId 用于充值
   }
 
   // 设置到 Pinia store

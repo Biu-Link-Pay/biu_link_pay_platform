@@ -54,40 +54,14 @@ const MyPreset = definePreset(Lara, {
         light: {
           root: {
             background: '#ffffff',
-            borderColor: '#d1d5db',
-            color: '#374151'
+            borderColor: '#d1d5db'
           },
-          checked: {
-            background: '{primary.500}',
-            borderColor: '{primary.500}',
-            color: '#ffffff'
-          },
-          focus: {
-            ring: {
-              color: '{primary.500}',
-              width: '2px',
-              style: 'solid'
-            }
-          }
         },
         dark: {
           root: {
             background: '#1f2937',
-            borderColor: '#4b5563',
-            color: '#f9fafb'
+            borderColor: '#4b5563'
           },
-          checked: {
-            background: '{primary.500}',
-            borderColor: '{primary.500}',
-            color: '#ffffff'
-          },
-          focus: {
-            ring: {
-              color: '{primary.400}',
-              width: '2px',
-              style: 'solid'
-            }
-          }
         }
       }
     },

@@ -10,7 +10,7 @@ import type {
   CardHolderInfo,
   CardListItem,
   TransactionListQueryParams,
-  TransactionListResponse
+  CardTransactionListResponse
 } from '@/api/card'
 
 export const useCardStore = defineStore('card', () => {

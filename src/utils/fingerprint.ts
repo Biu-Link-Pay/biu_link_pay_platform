@@ -4,18 +4,15 @@ import FingerprintJS from '@fingerprintjs/fingerprintjs'
  * 指纹识别工具类
  */
 export class FingerprintUtils {
-  private static fpPromise: Promise<FingerprintJS.Agent> | null = null
+  private static fpPromise: Promise<any> | null = null
   private static fingerprintId: string | null = null
 
   /**
    * 初始化指纹识别
    */
-  private static async initFingerprint(): Promise<FingerprintJS.Agent> {
+  private static async initFingerprint(): Promise<any> {
     if (!this.fpPromise) {
-      this.fpPromise = FingerprintJS.load({
-        // 配置选项
-        monitoring: false, // 禁用监控
-      })
+      this.fpPromise = FingerprintJS.load()
     }
     return this.fpPromise
   }
@@ -38,9 +35,12 @@ export class FingerprintUtils {
       this.fingerprintId = result.visitorId
 
       // 将指纹ID存储到localStorage，避免重复计算
-      localStorage.setItem('fingerprint-id', this.fingerprintId)
-
-      return this.fingerprintId
+      if (this.fingerprintId) {
+        localStorage.setItem('fingerprint-id', this.fingerprintId)
+        return this.fingerprintId
+      }
+      
+      throw new Error('Failed to generate fingerprint ID')
     } catch (error) {
       console.error('Failed to get fingerprint:', error)
 
@@ -92,7 +92,7 @@ export class FingerprintUtils {
    * @returns boolean 是否有效
    */
   static isValidFingerprintId(fingerprintId: string): boolean {
-    return fingerprintId && fingerprintId.length > 0 && fingerprintId !== 'null' && fingerprintId !== 'undefined'
+    return Boolean(fingerprintId && fingerprintId.length > 0 && fingerprintId !== 'null' && fingerprintId !== 'undefined')
   }
 }
 
