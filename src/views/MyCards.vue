@@ -208,14 +208,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Loading State -->
-                <div v-if="loadingCardDetail"
-                  class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                  <div class="flex items-center justify-center space-x-3">
-                    <i class="pi pi-spin pi-spinner text-blue-600 dark:text-blue-400"></i>
-                    <span class="text-gray-600 dark:text-gray-400">加载卡片详情中...</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -303,37 +295,66 @@
               <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
             </div>
 
-            <!-- Desktop: List Layout -->
+            <!-- Desktop: Swipe Pagination -->
             <div v-else-if="transactions.length > 0 && !isMobile" class="space-y-4">
-              <div v-for="(transaction, index) in transactions" :key="index"
-                class="flex items-center space-x-4 p-4 lg:p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                <div
-                  class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                  <i class="pi pi-minus text-gray-600 dark:text-gray-400 text-base lg:text-lg"></i>
-                </div>
-                <div class="flex-1 min-w-0">
-                  <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg truncate">
-                    {{ transaction.merchantNameLocation || 'Unknown Merchant' }}
-                  </div>
-                  <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
-                    {{ transaction.merchantLocation || 'Unknown Location' }}
-                  </div>
-                </div>
-                <div class="text-right">
-                  <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                    {{ formatTransactionAmount(transaction.transactionAmount, transaction.transactionCurrency) }}
-                  </div>
-                  <div class="text-sm lg:text-base" :class="getStatusColor(transaction.status)">
-                    {{ transaction.status }}
+              <div class="relative overflow-hidden">
+                <div class="flex transition-transform duration-300"
+                  :style="{ transform: `translateX(-${mobilePagination.transaction.currentPage * 100}%)` }">
+                  <div v-for="(page, pageIndex) in mobileTransactionPages" :key="pageIndex"
+                    class="w-full flex-shrink-0 px-2">
+                    <div class="space-y-4">
+                      <div v-for="(transaction, index) in page" :key="index"
+                        class="flex items-center space-x-4 p-4 lg:p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <div
+                          class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
+                          <i class="pi pi-minus text-gray-600 dark:text-gray-400 text-base lg:text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg truncate">
+                            {{ transaction.merchantNameLocation || 'Unknown Merchant' }}
+                          </div>
+                          <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
+                            {{ transaction.merchantLocation || 'Unknown Location' }}
+                          </div>
+                        </div>
+                        <div class="text-right">
+                          <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                            {{ formatTransactionAmount(transaction.transactionAmount, transaction.transactionCurrency) }}
+                          </div>
+                          <div class="text-sm lg:text-base" :class="getStatusColor(transaction.status)">
+                            {{ transaction.status }}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Load More Button -->
-              <div v-if="pagination.transaction.hasMore && !loading.transaction" class="mt-6 text-center">
-                <button @click="loadMoreTransactions"
-                  class="text-blue-600 dark:text-blue-400 text-base lg:text-lg font-medium hover:underline px-6 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
-                  Load More
+              <!-- Desktop Navigation -->
+              <div class="flex items-center justify-between">
+                <button @click="prevDesktopPage('transaction')"
+                  :disabled="pagination.transaction.pageIndex === 0 || loading.transaction"
+                  class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                  <i class="pi pi-chevron-left"></i>
+                  <span>Previous</span>
+                </button>
+
+                <div class="flex items-center space-x-4">
+                  <span class="text-sm text-gray-600 dark:text-gray-400">
+                    Page {{ pagination.transaction.pageIndex + 1 }}
+                  </span>
+                  <div v-if="loading.transaction" class="flex items-center space-x-2">
+                    <i class="pi pi-spin pi-spinner text-blue-600"></i>
+                    <span class="text-sm text-gray-600 dark:text-gray-400">Loading...</span>
+                  </div>
+                </div>
+
+                <button @click="nextDesktopPage('transaction')"
+                  :disabled="!pagination.transaction.hasMore || loading.transaction"
+                  class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                  <span>Next</span>
+                  <i class="pi pi-chevron-right"></i>
                 </button>
               </div>
             </div>
@@ -376,22 +397,25 @@
               </div>
 
               <!-- Mobile Navigation -->
-              <div v-if="mobilePagination.transaction.totalPages > 1" class="flex items-center justify-between">
-                <button @click="prevMobilePage('transaction')"
-                  :disabled="mobilePagination.transaction.currentPage === 0"
+              <div class="flex items-center justify-between">
+                <button @click="prevDesktopPage('transaction')"
+                  :disabled="pagination.transaction.pageIndex === 0 || loading.transaction"
                   class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
                   <i class="pi pi-chevron-left text-sm"></i>
                   <span class="text-sm">Previous</span>
                 </button>
 
-                <div class="flex space-x-2">
-                  <div v-for="i in mobilePagination.transaction.totalPages" :key="i" class="w-2 h-2 rounded-full"
-                    :class="i - 1 === mobilePagination.transaction.currentPage ? 'bg-blue-600 dark:bg-blue-400' : 'bg-gray-300 dark:bg-gray-600'">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xs text-gray-600 dark:text-gray-400">
+                    Page {{ pagination.transaction.pageIndex + 1 }}
+                  </span>
+                  <div v-if="loading.transaction" class="flex items-center space-x-1">
+                    <i class="pi pi-spin pi-spinner text-blue-600 text-xs"></i>
                   </div>
                 </div>
 
-                <button @click="nextMobilePage('transaction')"
-                  :disabled="mobilePagination.transaction.currentPage === mobilePagination.transaction.totalPages - 1"
+                <button @click="nextDesktopPage('transaction')"
+                  :disabled="!pagination.transaction.hasMore || loading.transaction"
                   class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
                   <span class="text-sm">Next</span>
                   <i class="pi pi-chevron-right text-sm"></i>
@@ -413,43 +437,72 @@
               <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
             </div>
 
-            <!-- Desktop: List Layout -->
+            <!-- Desktop: Swipe Pagination -->
             <div v-else-if="rechargeOrders.length > 0 && !isMobile" class="space-y-4">
-              <div v-for="(order, index) in rechargeOrders" :key="index"
-                class="flex items-center space-x-4 p-4 lg:p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                <div
-                  class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
-                  <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-base lg:text-lg"></i>
-                </div>
-                <div class="flex-1 min-w-0">
-                  <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                    {{ order.num }}
-                  </div>
-                  <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
-                    {{ formatDate(order.createTime || '') }}
-                  </div>
-                  <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                    {{ order.token }} - {{ order.network }}
-                  </div>
-                </div>
-                <div class="text-right">
-                  <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                    {{ formatOrderAmount(order.amount, order.orderCurrency) }}
-                  </div>
-                  <div class="text-sm lg:text-base" :class="getStatusColor(order.type)">
-                    {{ order.type === '1' ? 'Card Creation' : 'Recharge' }}
-                  </div>
-                  <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                    USD: {{ order.usdAmount }}
+              <div class="relative overflow-hidden">
+                <div class="flex transition-transform duration-300"
+                  :style="{ transform: `translateX(-${mobilePagination.recharge.currentPage * 100}%)` }">
+                  <div v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
+                    class="w-full flex-shrink-0 px-2">
+                    <div class="space-y-4">
+                      <div v-for="(order, index) in page" :key="index"
+                        class="flex items-center space-x-4 p-4 lg:p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <div
+                          class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                          <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-base lg:text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                            {{ order.num }}
+                          </div>
+                          <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
+                            {{ formatDate(order.createTime || '') }}
+                          </div>
+                          <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
+                            {{ order.token }} - {{ order.network }}
+                          </div>
+                        </div>
+                        <div class="text-right">
+                          <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                            {{ formatOrderAmount(order.amount, order.orderCurrency) }}
+                          </div>
+                          <div class="text-sm lg:text-base" :class="getStatusColor(order.type)">
+                            {{ order.type === '1' ? 'Card Creation' : 'Recharge' }}
+                          </div>
+                          <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
+                            USD: {{ order.usdAmount }}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Load More Button -->
-              <div v-if="pagination.recharge.hasMore && !loading.recharge" class="mt-6 text-center">
-                <button @click="loadMoreRecharge"
-                  class="text-blue-600 dark:text-blue-400 text-base lg:text-lg font-medium hover:underline px-6 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
-                  Load More
+              <!-- Desktop Navigation -->
+              <div class="flex items-center justify-between">
+                <button @click="prevDesktopPage('recharge')"
+                  :disabled="pagination.recharge.pageNo === 0 || loading.recharge"
+                  class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                  <i class="pi pi-chevron-left"></i>
+                  <span>Previous</span>
+                </button>
+
+                <div class="flex items-center space-x-4">
+                  <span class="text-sm text-gray-600 dark:text-gray-400">
+                    Page {{ pagination.recharge.pageNo + 1 }}
+                  </span>
+                  <div v-if="loading.recharge" class="flex items-center space-x-2">
+                    <i class="pi pi-spin pi-spinner text-blue-600"></i>
+                    <span class="text-sm text-gray-600 dark:text-gray-400">Loading...</span>
+                  </div>
+                </div>
+
+                <button @click="nextDesktopPage('recharge')"
+                  :disabled="!pagination.recharge.hasMore || loading.recharge"
+                  class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                  <span>Next</span>
+                  <i class="pi pi-chevron-right"></i>
                 </button>
               </div>
             </div>
@@ -491,21 +544,25 @@
               </div>
 
               <!-- Mobile Navigation -->
-              <div v-if="mobilePagination.recharge.totalPages > 1" class="flex items-center justify-between">
-                <button @click="prevMobilePage('recharge')" :disabled="mobilePagination.recharge.currentPage === 0"
+              <div class="flex items-center justify-between">
+                <button @click="prevDesktopPage('recharge')"
+                  :disabled="pagination.recharge.pageNo === 0 || loading.recharge"
                   class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
                   <i class="pi pi-chevron-left text-sm"></i>
                   <span class="text-sm">Previous</span>
                 </button>
 
-                <div class="flex space-x-2">
-                  <div v-for="i in mobilePagination.recharge.totalPages" :key="i" class="w-2 h-2 rounded-full"
-                    :class="i - 1 === mobilePagination.recharge.currentPage ? 'bg-blue-600 dark:bg-blue-400' : 'bg-gray-300 dark:bg-gray-600'">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xs text-gray-600 dark:text-gray-400">
+                    Page {{ pagination.recharge.pageNo + 1 }}
+                  </span>
+                  <div v-if="loading.recharge" class="flex items-center space-x-1">
+                    <i class="pi pi-spin pi-spinner text-blue-600 text-xs"></i>
                   </div>
                 </div>
 
-                <button @click="nextMobilePage('recharge')"
-                  :disabled="mobilePagination.recharge.currentPage === mobilePagination.recharge.totalPages - 1"
+                <button @click="nextDesktopPage('recharge')"
+                  :disabled="!pagination.recharge.hasMore || loading.recharge"
                   class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
                   <span class="text-sm">Next</span>
                   <i class="pi pi-chevron-right text-sm"></i>
@@ -527,43 +584,72 @@
               <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
             </div>
 
-            <!-- Desktop: List Layout -->
+            <!-- Desktop: Swipe Pagination -->
             <div v-else-if="withdrawOrders.length > 0 && !isMobile" class="space-y-4">
-              <div v-for="(order, index) in withdrawOrders" :key="index"
-                class="flex items-center space-x-4 p-4 lg:p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                <div
-                  class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
-                  <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-base lg:text-lg"></i>
-                </div>
-                <div class="flex-1 min-w-0">
-                  <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                    Withdraw Order #{{ order.num || 'N/A' }}
-                  </div>
-                  <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
-                    {{ formatDate(order.createTime || '') }}
-                  </div>
-                  <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                    {{ order.address || 'N/A' }}
-                  </div>
-                </div>
-                <div class="text-right">
-                  <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                    {{ formatWithdrawAmount(order.usdAmount, order.token) }}
-                  </div>
-                  <div class="text-sm lg:text-base" :class="getStatusColor(order.status)">
-                    {{ order.status }}
-                  </div>
-                  <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                    Fee: {{ order.networkFee || 0 }}
+              <div class="relative overflow-hidden">
+                <div class="flex transition-transform duration-300"
+                  :style="{ transform: `translateX(-${mobilePagination.withdraw.currentPage * 100}%)` }">
+                  <div v-for="(page, pageIndex) in mobileWithdrawPages" :key="pageIndex"
+                    class="w-full flex-shrink-0 px-2">
+                    <div class="space-y-4">
+                      <div v-for="(order, index) in page" :key="index"
+                        class="flex items-center space-x-4 p-4 lg:p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <div
+                          class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
+                          <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-base lg:text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                            Withdraw Order #{{ order.num || 'N/A' }}
+                          </div>
+                          <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
+                            {{ formatDate(order.createTime || '') }}
+                          </div>
+                          <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
+                            {{ order.address || 'N/A' }}
+                          </div>
+                        </div>
+                        <div class="text-right">
+                          <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                            {{ formatWithdrawAmount(order.usdAmount, order.token) }}
+                          </div>
+                          <div class="text-sm lg:text-base" :class="getStatusColor(order.status)">
+                            {{ order.status }}
+                          </div>
+                          <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
+                            Fee: {{ order.networkFee || 0 }}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Load More Button -->
-              <div v-if="pagination.withdraw.hasMore && !loading.withdraw" class="mt-6 text-center">
-                <button @click="loadMoreWithdraw"
-                  class="text-blue-600 dark:text-blue-400 text-base lg:text-lg font-medium hover:underline px-6 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
-                  Load More
+              <!-- Desktop Navigation -->
+              <div class="flex items-center justify-between">
+                <button @click="prevDesktopPage('withdraw')"
+                  :disabled="pagination.withdraw.pageNo === 0 || loading.withdraw"
+                  class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                  <i class="pi pi-chevron-left"></i>
+                  <span>Previous</span>
+                </button>
+
+                <div class="flex items-center space-x-4">
+                  <span class="text-sm text-gray-600 dark:text-gray-400">
+                    Page {{ pagination.withdraw.pageNo + 1 }}
+                  </span>
+                  <div v-if="loading.withdraw" class="flex items-center space-x-2">
+                    <i class="pi pi-spin pi-spinner text-blue-600"></i>
+                    <span class="text-sm text-gray-600 dark:text-gray-400">Loading...</span>
+                  </div>
+                </div>
+
+                <button @click="nextDesktopPage('withdraw')"
+                  :disabled="!pagination.withdraw.hasMore || loading.withdraw"
+                  class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                  <span>Next</span>
+                  <i class="pi pi-chevron-right"></i>
                 </button>
               </div>
             </div>
@@ -608,21 +694,25 @@
               </div>
 
               <!-- Mobile Navigation -->
-              <div v-if="mobilePagination.withdraw.totalPages > 1" class="flex items-center justify-between">
-                <button @click="prevMobilePage('withdraw')" :disabled="mobilePagination.withdraw.currentPage === 0"
+              <div class="flex items-center justify-between">
+                <button @click="prevDesktopPage('withdraw')"
+                  :disabled="pagination.withdraw.pageNo === 0 || loading.withdraw"
                   class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
                   <i class="pi pi-chevron-left text-sm"></i>
                   <span class="text-sm">Previous</span>
                 </button>
 
-                <div class="flex space-x-2">
-                  <div v-for="i in mobilePagination.withdraw.totalPages" :key="i" class="w-2 h-2 rounded-full"
-                    :class="i - 1 === mobilePagination.withdraw.currentPage ? 'bg-blue-600 dark:bg-blue-400' : 'bg-gray-300 dark:bg-gray-600'">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xs text-gray-600 dark:text-gray-400">
+                    Page {{ pagination.withdraw.pageNo + 1 }}
+                  </span>
+                  <div v-if="loading.withdraw" class="flex items-center space-x-1">
+                    <i class="pi pi-spin pi-spinner text-blue-600 text-xs"></i>
                   </div>
                 </div>
 
-                <button @click="nextMobilePage('withdraw')"
-                  :disabled="mobilePagination.withdraw.currentPage === mobilePagination.withdraw.totalPages - 1"
+                <button @click="nextDesktopPage('withdraw')"
+                  :disabled="!pagination.withdraw.hasMore || loading.withdraw"
                   class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
                   <span class="text-sm">Next</span>
                   <i class="pi pi-chevron-right text-sm"></i>
@@ -710,9 +800,9 @@ const showCardDetails = ref(false)
 
 // Mobile swipe pagination states
 const mobilePagination = ref({
-  transaction: { currentPage: 0, totalPages: 0, itemsPerPage: 5 },
-  recharge: { currentPage: 0, totalPages: 0, itemsPerPage: 5 },
-  withdraw: { currentPage: 0, totalPages: 0, itemsPerPage: 5 }
+  transaction: { currentPage: 0, totalPages: 0, itemsPerPage: 10 }, // 改为 10，与 API pageSize 一致
+  recharge: { currentPage: 0, totalPages: 0, itemsPerPage: 10 }, // 改为 10，与 API pageSize 一致
+  withdraw: { currentPage: 0, totalPages: 0, itemsPerPage: 10 } // 改为 10，与 API pageSize 一致
 })
 
 // Mobile swipe data
@@ -736,7 +826,7 @@ const paymentMethods = ref([
 ])
 
 // API functions
-const fetchTransactions = async (loadMore = false) => {
+const fetchTransactions = async (pageIndex = 0) => {
   if (!selectedCard.value?.id) {
     console.log('No selected card ID available:', selectedCard.value)
     console.log('Cards available:', cards.value)
@@ -745,9 +835,8 @@ const fetchTransactions = async (loadMore = false) => {
 
   try {
     loading.value.transaction = true
-    console.log('Fetching transactions for card:', selectedCard.value.id)
+    console.log('Fetching transactions for card:', selectedCard.value.id, 'page:', pageIndex)
 
-    const pageIndex = loadMore ? pagination.value.transaction.pageIndex + 1 : 0
     const response = await OrderAPI.getTransactionList({
       pageIndex: pageIndex.toString(),
       pageSize: pagination.value.transaction.pageSize.toString(),
@@ -756,14 +845,10 @@ const fetchTransactions = async (loadMore = false) => {
 
     if (response.success && response.model) {
       const newTransactions = response.model.content || []
-
-      if (loadMore) {
-        transactions.value.push(...newTransactions)
-        pagination.value.transaction.pageIndex = pageIndex
-      } else {
-        transactions.value = newTransactions
-        pagination.value.transaction.pageIndex = 0
-      }
+      
+      // 每次调用都替换数据，实现真正的分页
+      transactions.value = newTransactions
+      pagination.value.transaction.pageIndex = pageIndex
 
       // Update mobile pagination
       updateMobilePagination('transaction', transactions.value)
@@ -784,11 +869,10 @@ const fetchTransactions = async (loadMore = false) => {
   }
 }
 
-const fetchRechargeOrders = async (loadMore = false) => {
+const fetchRechargeOrders = async (pageNo = 0) => {
   try {
     loading.value.recharge = true
 
-    const pageNo = loadMore ? pagination.value.recharge.pageNo + 1 : 0
     const response = await OrderAPI.getDepositOrderPage({
       pageNo,
       pageSize: pagination.value.recharge.pageSize
@@ -796,14 +880,10 @@ const fetchRechargeOrders = async (loadMore = false) => {
 
     if (response.success && response.model) {
       const newOrders = response.model.content || []
-
-      if (loadMore) {
-        rechargeOrders.value.push(...newOrders)
-        pagination.value.recharge.pageNo = pageNo
-      } else {
-        rechargeOrders.value = newOrders
-        pagination.value.recharge.pageNo = 0
-      }
+      
+      // 每次调用都替换数据，实现真正的分页
+      rechargeOrders.value = newOrders
+      pagination.value.recharge.pageNo = pageNo
 
       // Update mobile pagination
       updateMobilePagination('recharge', rechargeOrders.value)
@@ -824,11 +904,10 @@ const fetchRechargeOrders = async (loadMore = false) => {
   }
 }
 
-const fetchWithdrawOrders = async (loadMore = false) => {
+const fetchWithdrawOrders = async (pageNo = 0) => {
   try {
     loading.value.withdraw = true
 
-    const pageNo = loadMore ? pagination.value.withdraw.pageNo + 1 : 0
     const response = await OrderAPI.getWithdrawOrderPage({
       pageNo,
       pageSize: pagination.value.withdraw.pageSize
@@ -836,14 +915,10 @@ const fetchWithdrawOrders = async (loadMore = false) => {
 
     if (response.success && response.model) {
       const newOrders = response.model.content || []
-
-      if (loadMore) {
-        withdrawOrders.value.push(...newOrders)
-        pagination.value.withdraw.pageNo = pageNo
-      } else {
-        withdrawOrders.value = newOrders
-        pagination.value.withdraw.pageNo = 0
-      }
+      
+      // 每次调用都替换数据，实现真正的分页
+      withdrawOrders.value = newOrders
+      pagination.value.withdraw.pageNo = pageNo
 
       // Update mobile pagination
       updateMobilePagination('withdraw', withdrawOrders.value)
@@ -1074,46 +1149,73 @@ const prevMobilePage = (tabKey: string) => {
   }
 }
 
-// Load more functions
-const loadMoreTransactions = () => {
-  if (pagination.value.transaction.hasMore && !loading.value.transaction) {
-    fetchTransactions(true)
+// Desktop pagination navigation - 直接调用 API
+const nextDesktopPage = (tabKey: string) => {
+  switch (tabKey) {
+    case 'transaction':
+      if (pagination.value.transaction.hasMore && !loading.value.transaction) {
+        const nextPage = pagination.value.transaction.pageIndex + 1
+        fetchTransactions(nextPage)
+      }
+      break
+    case 'recharge':
+      if (pagination.value.recharge.hasMore && !loading.value.recharge) {
+        const nextPage = pagination.value.recharge.pageNo + 1
+        fetchRechargeOrders(nextPage)
+      }
+      break
+    case 'withdraw':
+      if (pagination.value.withdraw.hasMore && !loading.value.withdraw) {
+        const nextPage = pagination.value.withdraw.pageNo + 1
+        fetchWithdrawOrders(nextPage)
+      }
+      break
   }
 }
 
-const loadMoreRecharge = () => {
-  if (pagination.value.recharge.hasMore && !loading.value.recharge) {
-    fetchRechargeOrders(true)
+const prevDesktopPage = (tabKey: string) => {
+  switch (tabKey) {
+    case 'transaction':
+      if (pagination.value.transaction.pageIndex > 0 && !loading.value.transaction) {
+        const prevPage = pagination.value.transaction.pageIndex - 1
+        fetchTransactions(prevPage)
+      }
+      break
+    case 'recharge':
+      if (pagination.value.recharge.pageNo > 0 && !loading.value.recharge) {
+        const prevPage = pagination.value.recharge.pageNo - 1
+        fetchRechargeOrders(prevPage)
+      }
+      break
+    case 'withdraw':
+      if (pagination.value.withdraw.pageNo > 0 && !loading.value.withdraw) {
+        const prevPage = pagination.value.withdraw.pageNo - 1
+        fetchWithdrawOrders(prevPage)
+      }
+      break
   }
 }
 
-const loadMoreWithdraw = () => {
-  if (pagination.value.withdraw.hasMore && !loading.value.withdraw) {
-    fetchWithdrawOrders(true)
-  }
-}
+// Load more functions - 已移除，使用 Previous/Next 按钮实现分页
 
 // Tab change handler
 const handleTabChange = (tabKey: string) => {
   console.log('Tab changed to:', tabKey)
   activeTab.value = tabKey
 
-  // Load data for the selected tab
+  // 重置到第一页并刷新数据
   switch (tabKey) {
     case 'transaction':
-      // Always fetch transactions when switching to transaction tab
-      console.log('Switching to transaction tab, fetching transactions...')
-      fetchTransactions()
+      pagination.value.transaction.pageIndex = 0
+      fetchTransactions(0)
       break
     case 'recharge':
-      if (rechargeOrders.value.length === 0) {
-        fetchRechargeOrders()
-      }
+      pagination.value.recharge.pageNo = 0
+      fetchRechargeOrders(0)
       break
     case 'withdraw':
-      if (withdrawOrders.value.length === 0) {
-        fetchWithdrawOrders()
-      }
+      pagination.value.withdraw.pageNo = 0
+      fetchWithdrawOrders(0)
       break
   }
 }
@@ -1123,8 +1225,11 @@ watch(currentCardIndex, () => {
   // Reload transactions when card changes
   if (activeTab.value === 'transaction') {
     transactions.value = []
+    // 重置分页状态
     pagination.value.transaction.pageIndex = 0
-    fetchTransactions()
+    pagination.value.transaction.hasMore = true
+    mobilePagination.value.transaction.currentPage = 0
+    fetchTransactions(0)
   }
 
   // Reset card details visibility and fetch new card detail when card changes

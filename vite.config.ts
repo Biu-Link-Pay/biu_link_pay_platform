@@ -22,5 +22,15 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, 'src')
     }
-  }
+  },
+  build: {
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        // 生产环境移除 console.log
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+  },
 })

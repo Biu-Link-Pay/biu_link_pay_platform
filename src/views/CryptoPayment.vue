@@ -108,14 +108,12 @@
                 </div>
 
                 <!-- QR Code -->
-                <div class="flex justify-center">
+                <!-- <div class="flex justify-center">
                   <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
                     <div class="w-48 h-48 flex items-center justify-center">
-                      <!-- Real QR Code from order -->
                       <img v-if="cardStore.currentOrder?.qrcodeLink" :src="cardStore.currentOrder.qrcodeLink"
                         alt="Payment QR Code" class="w-full h-full object-contain rounded"
                         @error="qrCodeError = true" />
-                      <!-- Placeholder if no QR code link -->
                       <div v-else
                         class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
                         <div class="text-center">
@@ -125,7 +123,6 @@
                           </div>
                         </div>
                       </div>
-                      <!-- Error state -->
                       <div v-if="qrCodeError"
                         class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
                         <div class="text-center text-red-500">
@@ -135,7 +132,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -332,13 +329,11 @@
             </div>
 
             <!-- QR Code -->
-            <div class="flex justify-center">
+            <!-- <div class="flex justify-center">
               <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
                 <div class="w-48 h-48 flex items-center justify-center">
-                  <!-- Real QR Code from order -->
                   <img v-if="cardStore.currentOrder?.qrcodeLink" :src="cardStore.currentOrder.qrcodeLink"
                     alt="Payment QR Code" class="w-full h-full object-contain rounded" @error="qrCodeError = true" />
-                  <!-- Placeholder if no QR code link -->
                   <div v-else
                     class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
                     <div class="text-center">
@@ -348,7 +343,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Error state -->
                   <div v-if="qrCodeError"
                     class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
                     <div class="text-center text-red-500">
@@ -358,7 +352,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -819,24 +813,36 @@ const refreshPayment = async () => {
 
 // Auto open payment address
 const autoOpenPaymentAddress = () => {
-  if (!cardStore.currentOrder) return
+  if (!cardStore.currentOrder) {
+    console.log('No current order in store, skipping auto open')
+    return
+  }
 
   const order = cardStore.currentOrder
   const isMobile = window.innerWidth < 768
 
-  // 移动端优先使用 deeplink，没有则使用 webUrl
+
+  // 移动端：优先使用 deeplink，没有则使用 webUrl
   if (isMobile) {
     if (order.deeplink) {
-      // 移动端打开 deeplink
-      window.location.href = order.deeplink
+      console.log('Opening deeplink on mobile:', order.deeplink)
+      window.open(order.deeplink, '_blank')
+      return
+    } else if (order.webUrl) {
+      console.log('No deeplink available, opening webUrl on mobile:', order.webUrl)
+      window.open(order.webUrl, '_blank')
+      return
+    }
+  } else {
+    // 桌面端：直接使用 webUrl
+    if (order.webUrl) {
+      console.log('Opening webUrl on desktop:', order.webUrl)
+      window.open(order.webUrl, '_blank')
       return
     }
   }
 
-  // 桌面端或移动端没有 deeplink 时使用 webUrl
-  if (order.webUrl) {
-    window.open(order.webUrl, '_blank')
-  }
+  console.log('No payment address available for auto open')
 }
 
 // Initialize data from Pinia store
@@ -852,7 +858,7 @@ onMounted(async () => {
     selectedCrypto.value = order.currency || 'ETH'
     selectedNetwork.value = order.network || 'ERC20'
     cryptoAmount.value = order.cryptoAmount || '0.263'
-    walletAddress.value = order.webUrl || '0xe688b84b23f322a994A53dbF8E15FA82CDB71127'
+    walletAddress.value = order.address || order.webUrl || '0xe688b84b23f322a994A53dbF8E15FA82CDB71127'
   } else {
     // Fallback to route params if no order in store
     const orderNum = route.query.orderNum as string
@@ -882,6 +888,7 @@ onMounted(async () => {
     }
   }
 
+  autoOpenPaymentAddress()
   // Start countdown
   startCountdown()
 
@@ -890,11 +897,6 @@ onMounted(async () => {
 
   // Start polling order detail
   startPolling()
-
-  // Auto open payment address after a short delay
-  setTimeout(() => {
-    autoOpenPaymentAddress()
-  }, 1000)
 })
 
 // Cleanup on unmount
