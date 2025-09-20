@@ -53,15 +53,6 @@ const routes = [
     }
   },
   {
-    path: '/payment-confirmation',
-    name: 'PaymentConfirmation',
-    component: () => import('@/views/PaymentConfirmation.vue'),
-    meta: {
-      title: 'Payment Confirmation',
-      requiresAuth: true
-    }
-  },
-  {
     path: '/crypto-payment',
     name: 'CryptoPayment',
     component: () => import('@/views/CryptoPayment.vue'),

@@ -4,144 +4,305 @@
     <AppHeader title="Crypto Payment" :show-title="true" />
 
     <!-- Main Content -->
-    <div class="w-full max-w-md mx-auto px-4 py-6">
-      <!-- Order Information -->
-      <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-6">
-        <div class="space-y-4">
-          <!-- Order Number -->
-          <div class="flex items-center justify-between">
-            <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order NO.</span>
-            <div class="flex items-center space-x-2">
-              <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
-              <button @click="copyToClipboard(orderNumber)"
-                class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
-                title="Copy order number">
-                <i class="pi pi-copy text-gray-500 text-xs"></i>
-              </button>
-            </div>
-          </div>
+    <div
+      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+      <!-- Desktop Layout -->
+      <div class="hidden md:block">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Left Column: Order Information -->
+          <div class="space-y-6">
+            <!-- Order Information -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Order Information</h3>
+              <div class="space-y-4">
+                <!-- Order Number -->
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order NO.</span>
+                  <div class="flex items-center space-x-2">
+                    <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
+                    <button @click="copyToClipboard(orderNumber)"
+                      class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
+                      title="Copy order number">
+                      <i class="pi pi-copy text-gray-500 text-xs"></i>
+                    </button>
+                  </div>
+                </div>
 
-          <!-- Order Amount -->
-          <div class="flex items-center justify-between">
-            <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order amount</span>
-            <span class="text-lg font-bold text-gray-900 dark:text-white">{{ formatCurrency(orderAmount) }}</span>
-          </div>
+                <!-- Order Amount -->
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order amount</span>
+                  <span class="text-lg font-bold text-gray-900 dark:text-white">{{ formatCurrency(orderAmount) }}</span>
+                </div>
 
-          <!-- You need to pay -->
-          <div class="flex items-center justify-between">
-            <span class="text-sm font-medium text-gray-600 dark:text-gray-400">You need to pay</span>
-            <div class="flex items-center space-x-2">
-              <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
-                }}</span>
-              <div class="w-6 h-6 rounded-full flex items-center justify-center"
-                :class="getCryptoIconBg(selectedCrypto)">
-                <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
+                <!-- You need to pay -->
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">You need to pay</span>
+                  <div class="flex items-center space-x-2">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
+                    }}</span>
+                    <div class="w-6 h-6 rounded-full flex items-center justify-center"
+                      :class="getCryptoIconBg(selectedCrypto)">
+                      <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
+                    </div>
+                    <button @click="copyToClipboard(cryptoAmount)"
+                      class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
+                      title="Copy amount">
+                      <i class="pi pi-copy text-gray-500 text-xs"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <button @click="copyToClipboard(cryptoAmount)"
-                class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors" title="Copy amount">
-                <i class="pi pi-copy text-gray-500 text-xs"></i>
-              </button>
+            </div>
+
+            <!-- Network Fee Warning -->
+            <div
+              class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
+              <div class="flex items-start space-x-3">
+                <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="pi pi-exclamation-triangle text-white text-xs"></i>
+                </div>
+                <div class="text-sm text-orange-800 dark:text-orange-200">
+                  <span class="font-semibold">DON'T forget to add the Network Fee</span> when transferring, so as not to
+                  fail
+                  due to insufficient transfer amount.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Payment Address -->
+          <div class="space-y-6">
+            <!-- Payment Address Section -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+              <div class="space-y-4">
+                <!-- Section Header -->
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Payment Address</h3>
+                  <div class="flex items-center space-x-2 text-red-500">
+                    <i class="pi pi-clock text-sm"></i>
+                    <span class="text-sm font-medium">{{ formatTime(countdown) }}</span>
+                  </div>
+                </div>
+
+                <!-- Network Type -->
+                <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
+                  <div class="text-sm font-medium text-blue-800 dark:text-blue-200">
+                    {{ selectedCrypto }}({{ selectedNetwork }}) only
+                  </div>
+                </div>
+
+                <!-- Wallet Address -->
+                <div class="space-y-2">
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Wallet Address:</div>
+                  <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 border border-gray-200 dark:border-gray-600">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>
+                      <button @click="copyToClipboard(walletAddress)"
+                        class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                        title="Copy address">
+                        <i class="pi pi-copy text-gray-500 text-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- QR Code -->
+                <div class="flex justify-center">
+                  <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
+                    <div ref="qrCodeContainer" class="w-48 h-48 flex items-center justify-center">
+                      <!-- QR Code will be generated here -->
+                      <div v-if="qrCodeLoading" class="flex flex-col items-center space-y-2">
+                        <i class="pi pi-spin pi-spinner text-2xl text-blue-600"></i>
+                        <span class="text-sm text-gray-500">Generating QR Code...</span>
+                      </div>
+                      <div v-else-if="qrCodeError" class="flex flex-col items-center space-y-2 text-red-500">
+                        <i class="pi pi-exclamation-triangle text-2xl"></i>
+                        <span class="text-sm">Failed to generate QR Code</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wallet Connection Button - Desktop -->
+        <div class="mt-8">
+          <button @click="connectWallet"
+            class="w-full max-w-md mx-auto border-2 border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold py-4 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-3">
+            <span>Deposit by your Wallet</span>
+            <div class="flex items-center space-x-2">
+              <!-- Wallet Icons -->
+              <div class="w-6 h-6 bg-orange-500 rounded flex items-center justify-center">
+                <span class="text-white font-bold text-xs">M</span>
+              </div>
+              <div class="w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
+                <span class="text-white font-bold text-xs">W</span>
+              </div>
+              <div class="w-6 h-6 bg-gray-500 rounded flex items-center justify-center">
+                <span class="text-white font-bold text-xs">+</span>
+              </div>
+            </div>
+          </button>
+        </div>
+
+        <!-- Payment Status - Desktop -->
+        <div v-if="paymentStatus" class="mt-6">
+          <div
+            class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4 max-w-md mx-auto">
+            <div class="flex items-center space-x-3">
+              <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                <i class="pi pi-check text-white text-xs"></i>
+              </div>
+              <div class="text-sm text-green-800 dark:text-green-200">
+                <span class="font-semibold">Payment Detected!</span> We are processing your payment...
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Network Fee Warning -->
-      <div
-        class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4 mb-6">
-        <div class="flex items-start space-x-3">
-          <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-            <i class="pi pi-exclamation-triangle text-white text-xs"></i>
-          </div>
-          <div class="text-sm text-orange-800 dark:text-orange-200">
-            <span class="font-semibold">DON'T forget to add the Network Fee</span> when transferring, so as not to fail
-            due to insufficient transfer amount.
-          </div>
-        </div>
-      </div>
-
-      <!-- Payment Address Section -->
-      <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-6">
-        <div class="space-y-4">
-          <!-- Section Header -->
-          <div class="flex items-center justify-between">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Please send to this address</h3>
-            <div class="flex items-center space-x-2 text-red-500">
-              <i class="pi pi-clock text-sm"></i>
-              <span class="text-sm font-medium">{{ formatTime(countdown) }}</span>
+      <!-- Mobile Layout -->
+      <div class="md:hidden space-y-6">
+        <!-- Order Information -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+          <div class="space-y-4">
+            <!-- Order Number -->
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order NO.</span>
+              <div class="flex items-center space-x-2">
+                <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
+                <button @click="copyToClipboard(orderNumber)"
+                  class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
+                  title="Copy order number">
+                  <i class="pi pi-copy text-gray-500 text-xs"></i>
+                </button>
+              </div>
             </div>
-          </div>
 
-          <!-- Network Type -->
-          <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
-            <div class="text-sm font-medium text-blue-800 dark:text-blue-200">
-              {{ selectedCrypto }}({{ selectedNetwork }}) only
+            <!-- Order Amount -->
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order amount</span>
+              <span class="text-lg font-bold text-gray-900 dark:text-white">{{ formatCurrency(orderAmount) }}</span>
             </div>
-          </div>
 
-          <!-- Wallet Address -->
-          <div class="space-y-2">
-            <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Wallet Address:</div>
-            <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 border border-gray-200 dark:border-gray-600">
-              <div class="flex items-center justify-between">
-                <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>
-                <button @click="copyToClipboard(walletAddress)"
-                  class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                  title="Copy address">
-                  <i class="pi pi-copy text-gray-500 text-sm"></i>
+            <!-- You need to pay -->
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">You need to pay</span>
+              <div class="flex items-center space-x-2">
+                <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
+                }}</span>
+                <div class="w-6 h-6 rounded-full flex items-center justify-center"
+                  :class="getCryptoIconBg(selectedCrypto)">
+                  <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
+                </div>
+                <button @click="copyToClipboard(cryptoAmount)"
+                  class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors" title="Copy amount">
+                  <i class="pi pi-copy text-gray-500 text-xs"></i>
                 </button>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- QR Code -->
-          <div class="flex justify-center">
-            <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
-              <div ref="qrCodeContainer" class="w-48 h-48 flex items-center justify-center">
-                <!-- QR Code will be generated here -->
-                <div v-if="qrCodeLoading" class="flex flex-col items-center space-y-2">
-                  <i class="pi pi-spin pi-spinner text-2xl text-blue-600"></i>
-                  <span class="text-sm text-gray-500">Generating QR Code...</span>
+        <!-- Network Fee Warning -->
+        <div class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
+          <div class="flex items-start space-x-3">
+            <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="pi pi-exclamation-triangle text-white text-xs"></i>
+            </div>
+            <div class="text-sm text-orange-800 dark:text-orange-200">
+              <span class="font-semibold">DON'T forget to add the Network Fee</span> when transferring, so as not to
+              fail
+              due to insufficient transfer amount.
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Address Section -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+          <div class="space-y-4">
+            <!-- Section Header -->
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Payment Address</h3>
+              <div class="flex items-center space-x-2 text-red-500">
+                <i class="pi pi-clock text-sm"></i>
+                <span class="text-sm font-medium">{{ formatTime(countdown) }}</span>
+              </div>
+            </div>
+
+            <!-- Network Type -->
+            <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
+              <div class="text-sm font-medium text-blue-800 dark:text-blue-200">
+                {{ selectedCrypto }}({{ selectedNetwork }}) only
+              </div>
+            </div>
+
+            <!-- Wallet Address -->
+            <div class="space-y-2">
+              <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Wallet Address:</div>
+              <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 border border-gray-200 dark:border-gray-600">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>
+                  <button @click="copyToClipboard(walletAddress)"
+                    class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                    title="Copy address">
+                    <i class="pi pi-copy text-gray-500 text-sm"></i>
+                  </button>
                 </div>
-                <div v-else-if="qrCodeError" class="flex flex-col items-center space-y-2 text-red-500">
-                  <i class="pi pi-exclamation-triangle text-2xl"></i>
-                  <span class="text-sm">Failed to generate QR Code</span>
+              </div>
+            </div>
+
+            <!-- QR Code -->
+            <div class="flex justify-center">
+              <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
+                <div ref="qrCodeContainer" class="w-48 h-48 flex items-center justify-center">
+                  <!-- QR Code will be generated here -->
+                  <div v-if="qrCodeLoading" class="flex flex-col items-center space-y-2">
+                    <i class="pi pi-spin pi-spinner text-2xl text-blue-600"></i>
+                    <span class="text-sm text-gray-500">Generating QR Code...</span>
+                  </div>
+                  <div v-else-if="qrCodeError" class="flex flex-col items-center space-y-2 text-red-500">
+                    <i class="pi pi-exclamation-triangle text-2xl"></i>
+                    <span class="text-sm">Failed to generate QR Code</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Wallet Connection Button -->
-      <div class="mb-6">
-        <button @click="connectWallet"
-          class="w-full border-2 border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold py-4 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-3">
-          <span>Deposit by your Wallet</span>
-          <div class="flex items-center space-x-2">
-            <!-- Wallet Icons -->
-            <div class="w-6 h-6 bg-orange-500 rounded flex items-center justify-center">
-              <span class="text-white font-bold text-xs">M</span>
+        <!-- Wallet Connection Button -->
+        <div>
+          <button @click="connectWallet"
+            class="w-full border-2 border-blue-200 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold py-4 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-3">
+            <span>Deposit by your Wallet</span>
+            <div class="flex items-center space-x-2">
+              <!-- Wallet Icons -->
+              <div class="w-6 h-6 bg-orange-500 rounded flex items-center justify-center">
+                <span class="text-white font-bold text-xs">M</span>
+              </div>
+              <div class="w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
+                <span class="text-white font-bold text-xs">W</span>
+              </div>
+              <div class="w-6 h-6 bg-gray-500 rounded flex items-center justify-center">
+                <span class="text-white font-bold text-xs">+</span>
+              </div>
             </div>
-            <div class="w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-              <span class="text-white font-bold text-xs">W</span>
-            </div>
-            <div class="w-6 h-6 bg-gray-500 rounded flex items-center justify-center">
-              <span class="text-white font-bold text-xs">+</span>
-            </div>
-          </div>
-        </button>
-      </div>
+          </button>
+        </div>
 
-      <!-- Payment Status -->
-      <div v-if="paymentStatus" class="mb-6">
-        <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
-          <div class="flex items-center space-x-3">
-            <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-              <i class="pi pi-check text-white text-xs"></i>
-            </div>
-            <div class="text-sm text-green-800 dark:text-green-200">
-              <span class="font-semibold">Payment Detected!</span> We are processing your payment...
+        <!-- Payment Status -->
+        <div v-if="paymentStatus">
+          <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                <i class="pi pi-check text-white text-xs"></i>
+              </div>
+              <div class="text-sm text-green-800 dark:text-green-200">
+                <span class="font-semibold">Payment Detected!</span> We are processing your payment...
+              </div>
             </div>
           </div>
         </div>
@@ -150,8 +311,7 @@
       <!-- Action Buttons -->
       <div class="bottom-buttons-container">
         <!-- Back Button -->
-        <button @click="goBack"
-          class="bottom-button-dual bottom-button-dual-secondary">
+        <button @click="goBack" class="bottom-button-dual bottom-button-dual-secondary">
           Back to Payment Method
         </button>
 
@@ -172,10 +332,12 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
+import { useCardStore } from '@/stores/card'
 
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
+const cardStore = useCardStore()
 
 // Payment data
 const orderNumber = ref('76782112321321047696')
@@ -350,28 +512,39 @@ const refreshPayment = async () => {
   }
 }
 
-// Initialize data from route params
+// Initialize data from Pinia store
 onMounted(async () => {
-  // Get payment data from route query
-  const amount = route.query.amount as string
-  if (amount) {
-    orderAmount.value = parseFloat(amount)
-  }
+  // Get payment data from Pinia store
+  if (cardStore.currentOrder) {
+    const order = cardStore.currentOrder
+    orderNumber.value = order.orderNum || '76782112321321047696'
+    orderAmount.value = parseFloat(order.amount) || 1000.00
+    selectedCrypto.value = order.currency || 'ETH'
+    selectedNetwork.value = order.network || 'ERC20'
+    cryptoAmount.value = order.cryptoAmount || '0.263'
+    walletAddress.value = order.webUrl || '0xe688b84b23f322a994A53dbF8E15FA82CDB71127'
+  } else {
+    // Fallback to route params if no order in store
+    const amount = route.query.amount as string
+    if (amount) {
+      orderAmount.value = parseFloat(amount)
+    }
 
-  const currency = route.query.currency as string
-  if (currency) {
-    selectedCrypto.value = currency
-  }
+    const currency = route.query.currency as string
+    if (currency) {
+      selectedCrypto.value = currency
+    }
 
-  const network = route.query.network as string
-  if (network) {
-    selectedNetwork.value = network
-  }
+    const network = route.query.network as string
+    if (network) {
+      selectedNetwork.value = network
+    }
 
-  const payType = route.query.payType as string
-  if (payType) {
-    // Update order number based on pay type
-    orderNumber.value = `${Date.now()}${Math.floor(Math.random() * 1000)}`
+    const payType = route.query.payType as string
+    if (payType) {
+      // Update order number based on pay type
+      orderNumber.value = `${Date.now()}${Math.floor(Math.random() * 1000)}`
+    }
   }
 
   // Generate QR code

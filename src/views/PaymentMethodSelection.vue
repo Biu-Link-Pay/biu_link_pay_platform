@@ -553,7 +553,7 @@ const handleContinue = async () => {
       cardPattern: cardStore.selectedCardConfig?.cardPattern.toString() || '1', // 1:虚拟卡 2:实体卡
       type: '1', // 1:办卡 2:充值，这里需要根据实际业务逻辑确定
       cardBin: cardStore.selectedCardBin?.cardBin || '', // 从 Pinia store 获取卡段
-      payType: selectedPayType.value.name.toUpperCase() === 'BINANCEPAY' ? '1' : '2', // 1:binancePay，2:wallet
+      payType: selectedPayType.value.name, // 支付方式
       amount: payAmount.value, // 订单金额
       orderCurrency: selectedCrypto.value.crypto.name, // 订单币种
       userCardId: route.query.userCardId as string || '', // 用户cardId，当类型为1时，cardBin必填,类型为2时，userCardId必填
