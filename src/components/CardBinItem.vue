@@ -77,7 +77,7 @@
 import { computed } from 'vue'
 import type { CardBin } from '@/api/card'
 
-// 定义 props
+// Define props
 interface Props {
   binInfo: CardBin
   selected: boolean
@@ -85,12 +85,12 @@ interface Props {
 
 const props = defineProps<Props>()
 
-// 定义 emits
+// Define emits
 const emit = defineEmits<{
   select: []
 }>()
 
-// 获取可用性文本
+// Get availability text
 const getAvailabilityText = () => {
   const available = props.binInfo.remainingAvailableCard
   if (available === null || available === undefined) {
@@ -99,7 +99,7 @@ const getAvailabilityText = () => {
   return available > 0 ? available.toString() : 'Out of Stock'
 }
 
-// 获取可用性样式类
+// Get availability style classes
 const getAvailabilityClass = () => {
   const available = props.binInfo.remainingAvailableCard
   if (available === null || available === undefined || available > 0) {

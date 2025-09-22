@@ -24,8 +24,8 @@
         <!-- Card Image -->
         <div class="mb-4">
           <div
-            class="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 rounded-lg flex items-center justify-center">
-            <img :src="card.cardPicture || ''" :alt="card.cardName" class="w-full h-full object-cover" />
+            class="w-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 rounded-lg flex items-center justify-center">
+            <img :src="card.cardPicture || ''" :alt="card.cardName" class="w-full h-auto object-contain rounded-lg" />
           </div>
         </div>
 
@@ -73,7 +73,7 @@ import { computed } from 'vue'
 
 import type { CardConfig } from '@/api/card'
 
-// 定义 props
+// Define props
 interface Props {
   card: CardConfig
   selected: boolean
@@ -81,19 +81,19 @@ interface Props {
 
 const props = defineProps<Props>()
 
-// 定义 emits
+// Define emits
 const emit = defineEmits<{
   select: [card: Props['card']]
   order: [card: Props['card']]
   activate: [card: Props['card']]
 }>()
 
-// 计算属性
+// Computed properties
 const statusClasses = computed(() => {
   switch (props.card.status) {
-    case 1: // 启用
+    case 1: // Enabled
       return 'bg-green-100 text-green-800'
-    case 2: // 禁用
+    case 2: // Disabled
       return 'bg-red-100 text-red-800'
     default:
       return 'bg-gray-100 text-gray-800'
@@ -102,9 +102,9 @@ const statusClasses = computed(() => {
 
 const statusIcon = computed(() => {
   switch (props.card.status) {
-    case 1: // 启用
+    case 1: // Enabled
       return 'pi pi-check-circle'
-    case 2: // 禁用
+    case 2: // Disabled
       return 'pi pi-times-circle'
     default:
       return 'pi pi-info-circle'
@@ -113,9 +113,9 @@ const statusIcon = computed(() => {
 
 const statusText = computed(() => {
   switch (props.card.status) {
-    case 1: // 启用
+    case 1: // Enabled
       return 'Available'
-    case 2: // 禁用
+    case 2: // Disabled
       return 'Unavailable'
     default:
       return 'Unknown'

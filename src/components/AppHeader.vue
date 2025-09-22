@@ -14,13 +14,13 @@
       </div>
 
       <div class="flex items-center space-x-4">
-        <!-- 主题切换按钮 -->
+        <!-- Theme toggle button -->
         <ThemeToggle />
 
         <slot name="actions">
-          <!-- 用户头像和菜单 -->
+          <!-- User avatar and menu -->
           <div v-if="isLoggedIn" class="relative">
-            <!-- PC 端：头像 + 用户名 + 浮框菜单 -->
+            <!-- PC: Avatar + Username + Floating Menu -->
             <div
               class="hidden md:flex items-center space-x-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg px-3 py-2 transition-colors"
               @click="toggleUserMenu">
@@ -38,7 +38,7 @@
                 :class="{ 'rotate-180': showUserMenu }"></i>
             </div>
 
-            <!-- 移动端：只显示头像，点击跳转个人中心 -->
+            <!-- Mobile: Only show avatar, click to go to profile -->
             <div class="md:hidden w-8 h-8 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-600 cursor-pointer"
               @click="goToProfile">
               <img v-if="userAvatar" :src="userAvatar" :alt="userName" class="w-full h-full object-cover" />
@@ -48,7 +48,7 @@
               </div>
             </div>
 
-            <!-- PC 端用户菜单浮框 -->
+            <!-- PC user menu floating box -->
             <div v-if="showUserMenu"
               class="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50"
               @click.stop>
@@ -61,26 +61,26 @@
                 class="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center space-x-2"
                 @click="goToMyCards">
                 <i class="pi pi-credit-card text-gray-500"></i>
-                <span>我的卡片</span>
+                <span>My Cards</span>
               </button>
 
               <button
                 class="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center space-x-2"
                 @click="goToProfile">
                 <i class="pi pi-user text-gray-500"></i>
-                <span>个人中心</span>
+                <span>Profile</span>
               </button>
 
               <button
                 class="w-full px-4 py-2 text-left text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors flex items-center space-x-2"
                 @click="confirmLogout">
                 <i class="pi pi-sign-out text-red-500"></i>
-                <span>退出登录</span>
+                <span>Logout</span>
               </button>
             </div>
           </div>
 
-          <!-- 未登录状态显示登录按钮 -->
+          <!-- Show login button when not logged in -->
           <Button v-else-if="showLogin" label="Login" text class="text-gray-600 hover:text-gray-900"
             @click="goToLogin" />
         </slot>
@@ -114,10 +114,10 @@ const toast = useToast()
 const confirm = useConfirm()
 const authStore = useAuthStore()
 
-// 响应式数据
+// Reactive data
 const showUserMenu = ref(false)
 
-// 计算属性
+// Computed properties
 const isLoggedIn = computed(() => authStore.isLoggedIn)
 const currentUser = computed(() => authStore.currentUser)
 const userName = computed(() => {
@@ -127,55 +127,55 @@ const userName = computed(() => {
   if (currentUser.value?.email) {
     return currentUser.value.email.split('@')[0]
   }
-  return '用户'
+  return 'User'
 })
 const userEmail = computed(() => currentUser.value?.email || '')
 const userAvatar = computed(() => currentUser.value?.avatar)
 
-// 切换用户菜单
+// Toggle user menu
 const toggleUserMenu = () => {
   showUserMenu.value = !showUserMenu.value
 }
 
-// 跳转到我的卡片
+// Navigate to my cards
 const goToMyCards = () => {
   showUserMenu.value = false
   router.push('/my-cards')
 }
 
-// 跳转到个人中心
+// Navigate to profile
 const goToProfile = () => {
   showUserMenu.value = false
-  // 这里可以跳转到个人中心页面
+  // Here you can navigate to profile page
   toast.add({
     severity: 'info',
-    summary: '个人中心',
-    detail: '个人中心功能开发中...',
+    summary: 'Profile',
+    detail: 'Profile feature is under development...',
     life: 2000
   })
 }
 
-// 跳转到登录页
+// Navigate to login page
 const goToLogin = () => {
   router.push('/login')
 }
 
-// 确认登出
+// Confirm logout
 const confirmLogout = () => {
   showUserMenu.value = false
   confirm.require({
-    message: '确定要退出登录吗？',
-    header: '确认退出',
+    message: 'Are you sure you want to logout?',
+    header: 'Confirm Logout',
     icon: 'pi pi-exclamation-triangle',
-    rejectLabel: '取消',
-    acceptLabel: '确定',
+    rejectLabel: 'Cancel',
+    acceptLabel: 'Confirm',
     accept: () => {
       handleLogout()
     }
   })
 }
 
-// 登出处理
+// Logout handling
 const handleLogout = async () => {
   try {
     await authStore.logout()
@@ -196,7 +196,7 @@ const handleLogout = async () => {
   }
 }
 
-// 点击外部关闭菜单
+// Click outside to close menu
 const handleClickOutside = (event: Event) => {
   const target = event.target as HTMLElement
   if (!target.closest('.relative')) {
@@ -204,7 +204,7 @@ const handleClickOutside = (event: Event) => {
   }
 }
 
-// 生命周期
+// Lifecycle
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
 })
@@ -215,7 +215,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* 响应式设计 */
+/* Responsive design */
 @media (max-width: 640px) {
   .px-6 {
     padding-left: 1rem;
@@ -228,7 +228,7 @@ onUnmounted(() => {
   }
 }
 
-/* 暗色模式支持 */
+/* Dark mode support */
 .dark .bg-white {
   background-color: #1f2937;
 }
@@ -241,23 +241,23 @@ onUnmounted(() => {
   color: #f9fafb;
 }
 
-/* 用户菜单动画 */
+/* User menu animation */
 .rotate-180 {
   transform: rotate(180deg);
 }
 
-/* 头像样式 */
+/* Avatar styles */
 .w-8.h-8 {
   min-width: 2rem;
   min-height: 2rem;
 }
 
-/* 菜单项悬停效果 */
+/* Menu item hover effects */
 button:hover {
   transform: translateX(2px);
 }
 
-/* 菜单阴影效果 */
+/* Menu shadow effects */
 .shadow-lg {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }

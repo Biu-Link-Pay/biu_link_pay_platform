@@ -289,7 +289,7 @@ const login = async () => {
         life: 3000
       })
 
-      // 登录成功后检查卡片列表
+      // Check card list after successful login
       await checkCardListAndRedirect()
     } else {
       toast.add({
@@ -311,31 +311,31 @@ const login = async () => {
   }
 }
 
-// 检查卡片列表并决定跳转
+// Check card list and decide navigation
 const checkCardListAndRedirect = async () => {
   try {
-    // 获取卡片列表
+    // Get card list
     const result = await cardStore.fetchCardList()
 
     if (result.success) {
-      // 检查是否有卡片
+      // Check if there are cards
       if (cardStore.hasCards) {
-        // 有卡片，跳转到我的卡片页面
+        // Has cards, navigate to my cards page
         console.log('User has cards, redirecting to MyCards')
         router.push('/my-cards')
       } else {
-        // 没有卡片，跳转到申请卡片页面
+        // No cards, navigate to apply card page
         console.log('User has no cards, redirecting to ApplyCardList')
         router.push('/apply-card')
       }
     } else {
-      // 获取卡片列表失败，默认跳转到申请卡片页面
+      // Failed to get card list, default to apply card page
       console.log('Failed to fetch card list, redirecting to ApplyCardList')
       router.push('/apply-card')
     }
   } catch (error) {
     console.error('Error checking card list:', error)
-    // 出错时默认跳转到申请卡片页面
+    // On error, default to apply card page
     router.push('/apply-card')
   }
 }
@@ -385,7 +385,7 @@ onMounted(() => {
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1) !important;
 }
 
-/* 选中状态 - 使用多种可能的类名 */
+/* Selected state - using multiple possible class names */
 :deep(.checkbox-enhanced .p-checkbox-box.p-highlight),
 :deep(.checkbox-enhanced .p-checkbox-box.p-checked),
 :deep(.checkbox-enhanced .p-checkbox-box[aria-checked="true"]),
@@ -403,7 +403,7 @@ onMounted(() => {
   font-weight: bold !important;
 }
 
-/* 确保选中状态在所有情况下都可见 */
+/* Ensure selected state is visible in all cases */
 :deep(.checkbox-enhanced.p-checkbox-checked .p-checkbox-box) {
   background-color: #3b82f6 !important;
   border-color: #3b82f6 !important;
@@ -415,7 +415,7 @@ onMounted(() => {
   font-weight: bold !important;
 }
 
-/* 强制选中状态样式 - 最高优先级 */
+/* Force selected state styles - highest priority */
 :deep(.checkbox-enhanced[data-p-checked="true"] .p-checkbox-box),
 :deep(.checkbox-enhanced[data-p-checked="true"] .p-checkbox-box *) {
   background-color: #3b82f6 !important;
@@ -423,7 +423,7 @@ onMounted(() => {
   color: #ffffff !important;
 }
 
-/* 使用更通用的选择器确保选中状态可见 */
+/* Use more generic selectors to ensure selected state is visible */
 :deep(.checkbox-enhanced .p-checkbox-box:has(.p-checkbox-icon)) {
   background-color: #3b82f6 !important;
   border-color: #3b82f6 !important;
@@ -451,7 +451,7 @@ onMounted(() => {
   box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.1) !important;
 }
 
-/* 暗色模式选中状态 */
+/* Dark mode selected state */
 .dark :deep(.checkbox-enhanced .p-checkbox-box.p-highlight),
 .dark :deep(.checkbox-enhanced .p-checkbox-box.p-checked),
 .dark :deep(.checkbox-enhanced .p-checkbox-box[aria-checked="true"]),

@@ -531,12 +531,12 @@ const isOrderCancelled = computed(() => orderStatus.value === 'CANCEL')
 // Order status display
 const orderStatusText = computed(() => {
   switch (orderStatus.value) {
-    case 'INIT': return '等待支付'
-    case 'PENDING': return '处理中'
-    case 'SUCCESS': return '支付成功'
-    case 'FAIL': return '支付失败'
-    case 'CANCEL': return '已取消'
-    default: return '未知状态'
+    case 'INIT': return 'Waiting for Payment'
+    case 'PENDING': return 'Processing'
+    case 'SUCCESS': return 'Payment Success'
+    case 'FAIL': return 'Payment Failed'
+    case 'CANCEL': return 'Cancelled'
+    default: return 'Unknown Status'
   }
 })
 

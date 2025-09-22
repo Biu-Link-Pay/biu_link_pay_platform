@@ -454,7 +454,7 @@ const handleConfirm = async () => {
         query: {
           amount: form.rechargeAmount,
           name: holder.value?.residentialAddress ? 'John Tan' : 'New User',
-          action: route.query.action || 'apply' // 传递操作类型：recharge 或 apply
+          action: route.query.action || 'apply' // Pass operation type: recharge or apply
         }
       })
     }, 2000)

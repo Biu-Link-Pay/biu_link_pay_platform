@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <!-- 主题切换按钮 -->
+    <!-- Theme toggle button -->
     <button @click="handleToggleTheme"
       class="flex items-center justify-center w-10 h-10 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 group"
       :title="`Current: ${getThemeLabel()}`">
@@ -8,7 +8,7 @@
         class="text-lg text-gray-700 dark:text-gray-300 transition-all duration-200 group-hover:scale-110"></i>
     </button>
 
-    <!-- 主题选择下拉菜单 -->
+    <!-- Theme selection dropdown menu -->
     <div v-if="showDropdown"
       class="absolute right-0 top-12 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50"
       @click.stop>
@@ -46,10 +46,10 @@ import { useThemeStore } from '@/stores/theme'
 const themeStore = useThemeStore()
 const showDropdown = ref(false)
 
-// 解构 store 方法
+// Destructure store methods
 const { currentTheme, setTheme, toggleTheme, getThemeIcon, getThemeLabel } = themeStore
 
-// 点击外部关闭下拉菜单
+// Click outside to close dropdown menu
 const handleClickOutside = (event: Event) => {
   const target = event.target as HTMLElement
   if (!target.closest('.relative')) {
@@ -57,13 +57,13 @@ const handleClickOutside = (event: Event) => {
   }
 }
 
-// 处理主题切换
+// Handle theme toggle
 const handleToggleTheme = () => {
   toggleTheme()
   showDropdown.value = false
 }
 
-// 处理主题选择
+// Handle theme selection
 const handleSetTheme = (theme: 'light' | 'dark' | 'system') => {
   setTheme(theme)
   showDropdown.value = false
@@ -79,17 +79,17 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* 确保下拉菜单在正确的层级 */
+/* Ensure dropdown menu is at correct z-index */
 .relative {
   position: relative;
 }
 
-/* 平滑过渡动画 */
+/* Smooth transition animation */
 .transition-all {
   transition: all 0.2s ease-in-out;
 }
 
-/* 悬停效果 */
+/* Hover effects */
 .group:hover .group-hover\:scale-110 {
   transform: scale(1.1);
 }

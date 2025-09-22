@@ -98,16 +98,16 @@ const router = useRouter()
 const toast = useToast()
 const cardStore = useCardStore()
 
-// 响应式数据
+// Reactive data
 const selectedCard = ref<CardConfig | null>(null)
 const currentCardIndex = ref(0)
 
-// 计算属性
+// Computed properties
 const loading = computed(() => cardStore.loading)
 const error = computed(() => cardStore.error)
 const cardConfigs = computed(() => cardStore.enabledCards)
 
-// 获取卡片配置
+// Get card configuration
 const fetchCardConfigs = async () => {
   const result = await cardStore.fetchCardConfigs()
 
@@ -131,7 +131,7 @@ const fetchCardConfigs = async () => {
 // Select card
 const selectCard = (card: CardConfig) => {
   selectedCard.value = card
-  // 在移动端轮播中，找到选中卡片的索引
+  // Find the index of the selected card in mobile carousel
   const cardIndex = cardConfigs.value.findIndex(c => c.cardName === card.cardName)
   if (cardIndex !== -1) {
     currentCardIndex.value = cardIndex
@@ -186,17 +186,17 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* 轮播容器样式 */
+/* Carousel container styles */
 .overflow-hidden {
   border-radius: 12px;
 }
 
-/* 轮播项样式 */
+/* Carousel item styles */
 .flex-shrink-0 {
   min-width: 100%;
 }
 
-/* 导航按钮样式 */
+/* Navigation button styles */
 .absolute button {
   backdrop-filter: blur(4px);
   transition: all 0.2s ease;
@@ -207,7 +207,7 @@ onMounted(() => {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* 指示器样式 */
+/* Indicator styles */
 .space-x-2>div {
   transition: all 0.3s ease;
 }
@@ -216,7 +216,7 @@ onMounted(() => {
   transform: scale(1.2);
 }
 
-/* 移动端优化 */
+/* Mobile optimization */
 @media (max-width: 768px) {
   .px-4 {
     padding-left: 1rem;
@@ -228,7 +228,7 @@ onMounted(() => {
   }
 }
 
-/* 暗色模式支持 */
+/* Dark mode support */
 .dark .bg-white\/80 {
   background-color: rgba(31, 41, 55, 0.8);
 }

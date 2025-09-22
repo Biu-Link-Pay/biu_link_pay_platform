@@ -315,29 +315,29 @@ const route = useRoute()
 const toast = useToast()
 const cardStore = useCardStore()
 
-// 响应式数据
+// Reactive data
 const currentBinIndex = ref(0)
 const selectedBinIndex = ref<number | null>(null)
 const binLoading = ref(false)
 const binError = ref<string | null>(null)
 
-// 鼠标滑动相关状态
+// Mouse drag related state
 const carouselContainer = ref<HTMLElement | null>(null)
 const isDragging = ref(false)
 const startX = ref(0)
 const currentX = ref(0)
-const dragThreshold = 50 // 滑动阈值，超过此距离才切换卡片
+const dragThreshold = 50 // Drag threshold, switch card only when exceeding this distance
 
-// 获取卡片配置
+// Get card configuration
 const selectedCard = computed<CardConfig | null>(() => {
   const cardName = route.query.cardName as string
   return cardStore.getCardConfigByName(cardName || '') || null
 })
 
-// 获取卡片 BIN 列表
+// Get card BIN list
 const cardBins = computed(() => cardStore.cardBins)
 
-// 选中的 BIN 信息
+// Selected BIN information
 const selectedBinInfo = computed<CardBin | null>(() => {
   if (selectedBinIndex.value !== null && cardBins.value[selectedBinIndex.value]) {
     return cardBins.value[selectedBinIndex.value]
@@ -345,7 +345,7 @@ const selectedBinInfo = computed<CardBin | null>(() => {
   return null
 })
 
-// 加载卡片 BIN 信息
+// Load card BIN information
 const loadCardBins = async () => {
   if (!selectedCard.value) {
     binError.value = 'No card selected'
@@ -360,7 +360,7 @@ const loadCardBins = async () => {
     const result = await cardStore.fetchCardBins({ cardFormFactor })
 
     if (result.success && cardStore.cardBins.length > 0) {
-      // 默认选中第一个 BIN
+      // Select first BIN by default
       selectedBinIndex.value = 0
       currentBinIndex.value = 0
     } else {
@@ -373,7 +373,7 @@ const loadCardBins = async () => {
   }
 }
 
-// 选择 BIN
+// Select BIN
 const selectBin = (index: number | null) => {
   if (index !== null && index >= 0 && index < cardBins.value.length) {
     selectedBinIndex.value = index
@@ -381,14 +381,14 @@ const selectBin = (index: number | null) => {
   }
 }
 
-// 处理下拉选择变化
+// Handle dropdown selection change
 const handleSelectChange = () => {
   if (selectedBinIndex.value !== null) {
     selectBin(selectedBinIndex.value)
   }
 }
 
-// 上一个 BIN
+// Previous BIN
 const previousBin = () => {
   if (currentBinIndex.value > 0) {
     currentBinIndex.value--
@@ -396,7 +396,7 @@ const previousBin = () => {
   }
 }
 
-// 下一个 BIN
+// Next BIN
 const nextBin = () => {
   if (currentBinIndex.value < cardBins.value.length - 1) {
     currentBinIndex.value++
@@ -404,16 +404,16 @@ const nextBin = () => {
   }
 }
 
-// 鼠标滑动处理函数
+// Mouse drag handler
 const handleMouseDown = (event: MouseEvent) => {
   isDragging.value = true
   startX.value = event.clientX
   currentX.value = event.clientX
 
-  // 防止文本选择
+  // Prevent text selection
   event.preventDefault()
 
-  // 设置焦点以便键盘导航
+  // Set focus for keyboard navigation
   if (carouselContainer.value) {
     carouselContainer.value.focus()
   }
@@ -431,13 +431,13 @@ const handleMouseUp = () => {
 
   const deltaX = startX.value - currentX.value
 
-  // 根据滑动距离和方向切换卡片
+  // Switch card based on drag distance and direction
   if (Math.abs(deltaX) > dragThreshold) {
     if (deltaX > 0) {
-      // 向左滑动，显示下一张卡片
+      // Swipe left, show next card
       nextBin()
     } else {
-      // 向右滑动，显示上一张卡片
+      // Swipe right, show previous card
       previousBin()
     }
   }
@@ -447,20 +447,20 @@ const handleMouseUp = () => {
   currentX.value = 0
 }
 
-// 鼠标滚轮处理
+// Mouse wheel handler
 const handleWheel = (event: WheelEvent) => {
   event.preventDefault()
 
   if (event.deltaY > 0) {
-    // 向下滚动，显示下一张卡片
+    // Scroll down, show next card
     nextBin()
   } else {
-    // 向上滚动，显示上一张卡片
+    // Scroll up, show previous card
     previousBin()
   }
 }
 
-// 键盘导航处理
+// Keyboard navigation handler
 const handleKeyDown = (event: KeyboardEvent) => {
   switch (event.key) {
     case 'ArrowLeft':
@@ -482,19 +482,19 @@ const handleKeyDown = (event: KeyboardEvent) => {
   }
 }
 
-// 返回上一页
+// Go back to previous page
 const goBack = () => {
   router.back()
 }
 
-// 订购卡片
+// Order card
 const orderCard = () => {
   if (selectedBinInfo.value && selectedCard.value) {
-    // 将选中的卡片信息存储到 Pinia store
+    // Store selected card information to Pinia store
     cardStore.setSelectedCardBin(selectedBinInfo.value)
     cardStore.setSelectedCardConfig(selectedCard.value)
 
-    // 跳转到持卡人信息输入页面，只传递必要的参数
+    // Navigate to cardholder info input page, only pass necessary parameters
     router.push({
       name: 'CardHolderInfo',
       query: {
@@ -511,42 +511,42 @@ const orderCard = () => {
   }
 }
 
-// 格式化货币
+// Format currency
 const formatCurrency = (amount: number) => {
   return `$${amount}`
 }
 
-// 格式化百分比
+// Format percentage
 const formatPercentage = (percentage: number) => {
   return `${percentage}%`
 }
 
-// 格式化卡片号码
+// Format card number
 const formatCardNumber = (cardBin: string | null) => {
   if (!cardBin) {
     return '**** **** **** ****'
   }
 
-  // 移除所有空格和特殊字符，只保留数字
+  // Remove all spaces and special characters, keep only numbers
   const cleanBin = cardBin.replace(/\D/g, '')
 
-  // 如果 BIN 长度大于等于 19 位，直接截取前 19 位
+  // If BIN length is >= 19 digits, directly take first 19 digits
   if (cleanBin.length >= 19) {
     return cleanBin.slice(0, 19).replace(/(.{4})/g, '$1 ').trim()
   }
 
-  // 如果 BIN 长度小于 19 位，用 * 补全到 19 位
+  // If BIN length is < 19 digits, pad with * to 19 digits
   const paddedNumber = cleanBin + '*'.repeat(19 - cleanBin.length)
 
-  // 每 4 位添加一个空格
+  // Add a space every 4 digits
   return paddedNumber.replace(/(.{4})/g, '$1 ').trim()
 }
 
-// 组件挂载时加载数据
+// Load data when component mounts
 onMounted(async () => {
   await loadCardBins()
 
-  // 等待 DOM 更新后设置焦点
+  // Wait for DOM update then set focus
   await nextTick()
   if (carouselContainer.value) {
     carouselContainer.value.focus()

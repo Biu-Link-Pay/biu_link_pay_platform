@@ -445,7 +445,7 @@ const queryRate = async () => {
       cryptoUnit: selectedCrypto.value.crypto.name,
       network: selectedCrypto.value.network.sortName,
       number: payAmount.value.toString(),
-      saleDirection: 'BUY', // 入金方向
+      saleDirection: 'BUY', // Deposit direction
       exchange: selectedPayType.value.name.toUpperCase() === 'BINANCEPAY' ? 'BINANCE' : 'WALLET',
       fiatUnit: cardStore.selectedCardBin?.cardCurrency || 'USD',
     })
@@ -557,22 +557,22 @@ const handleContinue = async () => {
       'BINANCE': '1',
       'WALLET': '2'
     }
-    // 判断是办卡还是充值操作
+    // Determine if it's card application or recharge operation
     const isRecharge = route.query.action === 'recharge'
-    const orderType = isRecharge ? '2' : '1' // 1:办卡 2:充值
+    const orderType = isRecharge ? '2' : '1' // 1: Card Application 2: Recharge
 
     // Create deposit order
     const orderResponse = await OrderAPI.createDepositOrder({
-      cardPattern: cardStore.selectedCardConfig?.cardPattern.toString() || '1', // 1:虚拟卡 2:实体卡
-      type: orderType, // 1:办卡 2:充值
-      cardBin: cardStore.selectedCardBin?.cardBin || '', // 从 Pinia store 获取卡段
-      payType: payTypeDic[selectedPayType.value.name as keyof typeof payTypeDic], // 支付方式
-      amount: payAmount.value, // 订单金额
-      orderCurrency: cardStore.selectedCardBin?.cardCurrency || 'USD', // 订单币种
-      userCardId: isRecharge ? (cardStore.selectedCardBin?.cardId || '') : (route.query.userCardId as string || ''), // 用户cardId，当类型为1时，cardBin必填,类型为2时，userCardId必填
+      cardPattern: cardStore.selectedCardConfig?.cardPattern.toString() || '1', // 1: Virtual Card 2: Physical Card
+      type: orderType, // 1: Card Application 2: Recharge
+      cardBin: cardStore.selectedCardBin?.cardBin || '', // Get card bin from Pinia store
+      payType: payTypeDic[selectedPayType.value.name as keyof typeof payTypeDic], // Payment method
+      amount: payAmount.value, // Order amount
+      orderCurrency: cardStore.selectedCardBin?.cardCurrency || 'USD', // Order currency
+      userCardId: isRecharge ? (cardStore.selectedCardBin?.cardId || '') : (route.query.userCardId as string || ''), // User cardId, when type is 1, cardBin is required, when type is 2, userCardId is required
       token: selectedCrypto.value.crypto.name, // token
-      network: selectedCrypto.value.network.name, // 网络
-      address: '' // 地址，这里需要根据实际业务逻辑获取
+      network: selectedCrypto.value.network.name, // Network
+      address: '' // Address, needs to be obtained based on actual business logic
     })
 
     if (orderResponse.success && orderResponse.model) {

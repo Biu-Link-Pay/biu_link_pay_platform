@@ -143,7 +143,7 @@
 
               <div class="text-center lg:text-left my-6 lg:my-8">
                 <p class="text-blue-600 dark:text-blue-400 font-medium text-sm sm:text-base lg:text-base xl:text-lg">
-                  安全支付验证中...</p>
+                  Secure payment verification in progress...</p>
               </div>
 
               <div class="bg-gray-200 dark:bg-gray-600 rounded-full h-2.5 lg:h-3 xl:h-4 mb-4 lg:mb-6 overflow-hidden">
@@ -154,9 +154,9 @@
 
               <div
                 class="flex justify-between text-xs sm:text-sm lg:text-sm xl:text-base text-gray-500 dark:text-gray-400">
-                <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 1 }">连接中</span>
-                <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 2 }">验证支付信息</span>
-                <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 3 }">完成</span>
+                <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 1 }">Connecting</span>
+                <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 2 }">Verifying Payment</span>
+                <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 3 }">Complete</span>
               </div>
             </div>
 
@@ -182,12 +182,12 @@
                 <div
                   class="inline-flex items-center gap-2 lg:gap-3 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-base xl:text-lg animate-pulse">
                   <i class="pi pi-clock text-lg lg:text-xl xl:text-xl"></i>
-                  <span>支付超时: 15分钟</span>
+                  <span>Payment Timeout: 15 minutes</span>
                 </div>
                 <div
                   class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-orange-700 dark:text-orange-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-start gap-2 lg:gap-3">
                   <i class="pi pi-info-circle text-lg lg:text-xl xl:text-xl mt-0.5"></i>
-                  <span>出于安全原因，支付页面仅在15分钟内有效，请及时完成支付</span>
+                  <span>For security reasons, the payment page is only valid for 15 minutes. Please complete the payment promptly.</span>
                 </div>
               </div>
             </div>

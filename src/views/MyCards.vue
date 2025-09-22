@@ -15,19 +15,19 @@
               class="w-20 h-20 mx-auto mb-6 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
               <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-3xl"></i>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">暂无虚拟卡片</h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-6">您还没有申请任何虚拟卡片，点击下方按钮开始申请您的第一张卡片</p>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">No Virtual Cards</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-6">You haven't applied for any virtual cards yet. Click the button below to apply for your first card</p>
             <button @click="goToApplyCard"
               class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
               <i class="pi pi-plus mr-2"></i>
-              申请虚拟卡片
+              Apply Virtual Card
             </button>
           </div>
         </div>
 
         <!-- Cards Display -->
         <div v-else>
-          <!-- Mobile: Card Carousel (上下布局) -->
+          <!-- Mobile: Card Carousel (Vertical Layout) -->
           <div class="md:hidden">
             <div class="relative">
               <div class="overflow-hidden">
@@ -40,7 +40,7 @@
                         <span class="text-xs font-semibold opacity-75">BUI LINK PAY</span>
                         <button v-if="cardDetail" @click="toggleCardDetailsVisibility"
                           class="text-white/80 hover:text-white transition-colors">
-                          <i :class="showCardDetails ? 'pi pi-eye-slash' : 'pi pi-eye'" class="text-sm"></i>
+                          <i :class="showCardDetails ? 'pi pi-eye' : 'pi pi-eye-slash'" class="text-sm"></i>
                         </button>
                       </div>
 
@@ -97,19 +97,19 @@
             <!-- Mobile Card Limits -->
             <div v-if="selectedCard"
               class="mt-6 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">交易限额</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Transaction Limits</h3>
               <div class="space-y-3">
                 <div class="flex items-center justify-between">
-                  <span class="text-sm text-gray-600 dark:text-gray-400">日交易限额</span>
+                  <span class="text-sm text-gray-600 dark:text-gray-400">Daily Limit</span>
                   <span class="text-sm font-medium text-gray-900 dark:text-white">${{ selectedCard.maxOnDaily }}</span>
                 </div>
                 <div class="flex items-center justify-between">
-                  <span class="text-sm text-gray-600 dark:text-gray-400">月交易限额</span>
+                  <span class="text-sm text-gray-600 dark:text-gray-400">Monthly Limit</span>
                   <span class="text-sm font-medium text-gray-900 dark:text-white">${{ selectedCard.maxOnMonthly
                   }}</span>
                 </div>
                 <div class="flex items-center justify-between">
-                  <span class="text-sm text-gray-600 dark:text-gray-400">单笔限额</span>
+                  <span class="text-sm text-gray-600 dark:text-gray-400">Single Transaction Limit</span>
                   <span class="text-sm font-medium text-gray-900 dark:text-white">${{ selectedCard.maxOnPercent
                   }}</span>
                 </div>
@@ -117,7 +117,7 @@
             </div>
           </div>
 
-          <!-- Desktop: Card and Details Side by Side (左右布局) -->
+          <!-- Desktop: Card and Details Side by Side (Horizontal Layout) -->
           <div class="hidden md:block">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
               <!-- Left Side: Card Display -->
@@ -131,7 +131,7 @@
                       <span class="text-sm font-semibold opacity-75">BUI LINK PAY</span>
                       <button v-if="cardDetail" @click="toggleCardDetailsVisibility"
                         class="text-white/80 hover:text-white transition-colors">
-                        <i :class="showCardDetails ? 'pi pi-eye-slash' : 'pi pi-eye'" class="text-sm"></i>
+                        <i :class="showCardDetails ? 'pi pi-eye' : 'pi pi-eye-slash'" class="text-sm"></i>
                       </button>
                     </div>
 
@@ -189,20 +189,20 @@
                 <!-- Card Limits Panel -->
                 <div v-if="selectedCard"
                   class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">交易限额</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Transaction Limits</h3>
                   <div class="space-y-4">
                     <div class="flex items-center justify-between">
-                      <span class="text-sm text-gray-600 dark:text-gray-400">日交易限额</span>
+                      <span class="text-sm text-gray-600 dark:text-gray-400">Daily Limit</span>
                       <span class="text-lg font-semibold text-gray-900 dark:text-white">${{ selectedCard.maxOnDaily
                       }}</span>
                     </div>
                     <div class="flex items-center justify-between">
-                      <span class="text-sm text-gray-600 dark:text-gray-400">月交易限额</span>
+                      <span class="text-sm text-gray-600 dark:text-gray-400">Monthly Limit</span>
                       <span class="text-lg font-semibold text-gray-900 dark:text-white">${{ selectedCard.maxOnMonthly
                       }}</span>
                     </div>
                     <div class="flex items-center justify-between">
-                      <span class="text-sm text-gray-600 dark:text-gray-400">单笔限额</span>
+                      <span class="text-sm text-gray-600 dark:text-gray-400">Single Transaction Limit</span>
                       <span class="text-lg font-semibold text-gray-900 dark:text-white">${{ selectedCard.maxOnPercent
                       }}</span>
                     </div>
@@ -244,13 +244,13 @@
           <span class="text-sm lg:text-base font-medium text-gray-700 dark:text-gray-300">Details</span>
         </button>
 
-        <button
+        <button @click="goToApplyCard"
           class="flex flex-col items-center space-y-2 lg:space-y-3 p-4 lg:p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow">
           <div
-            class="w-12 h-12 lg:w-14 lg:h-14 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center">
-            <i class="pi pi-qrcode text-orange-600 dark:text-orange-400 text-lg lg:text-xl"></i>
+            class="w-12 h-12 lg:w-14 lg:h-14 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
+            <i class="pi pi-plus text-blue-600 dark:text-blue-400 text-lg lg:text-xl"></i>
           </div>
-          <span class="text-sm lg:text-base font-medium text-gray-700 dark:text-gray-300">Scan</span>
+          <span class="text-sm lg:text-base font-medium text-gray-700 dark:text-gray-300">Apply Card</span>
         </button>
       </div>
 
@@ -274,17 +274,17 @@
               class="w-16 h-16 mx-auto mb-4 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
               <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-2xl"></i>
             </div>
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">暂无卡片</h3>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">No Cards</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">
-              <span v-if="activeTab === 'transaction'">请先申请虚拟卡片以查看交易记录</span>
-              <span v-else-if="activeTab === 'recharge'">请先申请虚拟卡片以查看入金订单</span>
-              <span v-else-if="activeTab === 'withdraw'">请先申请虚拟卡片以查看出金订单</span>
-              <span v-else>请先申请虚拟卡片以查看相关信息</span>
+              <span v-if="activeTab === 'transaction'">Please apply for a virtual card first to view transaction history</span>
+              <span v-else-if="activeTab === 'recharge'">Please apply for a virtual card first to view deposit orders</span>
+              <span v-else-if="activeTab === 'withdraw'">Please apply for a virtual card first to view withdrawal orders</span>
+              <span v-else>Please apply for a virtual card first to view related information</span>
             </p>
             <button @click="goToApplyCard"
               class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
               <i class="pi pi-plus mr-2"></i>
-              申请卡片
+              Apply Card
             </button>
           </div>
 
@@ -749,7 +749,7 @@ const toast = useToast()
 // Card data
 const currentCardIndex = ref(0)
 
-// 使用真实的卡片列表数据
+// Use real card list data
 const cards = computed(() => {
   return cardStore.cardList.map((card, index) => ({
     id: card.cardId,
@@ -793,16 +793,16 @@ const selectedCard = computed(() => {
   return cards.value[currentCardIndex.value] || cards.value[0]
 })
 
-// 卡片详情
+// Card details
 const cardDetail = ref<CardDetailResponse | null>(null)
 const loadingCardDetail = ref(false)
 const showCardDetails = ref(false)
 
 // Mobile swipe pagination states
 const mobilePagination = ref({
-  transaction: { currentPage: 0, totalPages: 0, itemsPerPage: 10 }, // 改为 10，与 API pageSize 一致
-  recharge: { currentPage: 0, totalPages: 0, itemsPerPage: 10 }, // 改为 10，与 API pageSize 一致
-  withdraw: { currentPage: 0, totalPages: 0, itemsPerPage: 10 } // 改为 10，与 API pageSize 一致
+  transaction: { currentPage: 0, totalPages: 0, itemsPerPage: 10 }, // Changed to 10, consistent with API pageSize
+  recharge: { currentPage: 0, totalPages: 0, itemsPerPage: 10 }, // Changed to 10, consistent with API pageSize
+  withdraw: { currentPage: 0, totalPages: 0, itemsPerPage: 10 } // Changed to 10, consistent with API pageSize
 })
 
 // Mobile swipe data
@@ -846,7 +846,7 @@ const fetchTransactions = async (pageIndex = 0) => {
     if (response.success && response.model) {
       const newTransactions = response.model.content || []
       
-      // 每次调用都替换数据，实现真正的分页
+      // Replace data on each call to achieve true pagination
       transactions.value = newTransactions
       pagination.value.transaction.pageIndex = pageIndex
 
@@ -881,7 +881,7 @@ const fetchRechargeOrders = async (pageNo = 0) => {
     if (response.success && response.model) {
       const newOrders = response.model.content || []
       
-      // 每次调用都替换数据，实现真正的分页
+      // Replace data on each call to achieve true pagination
       rechargeOrders.value = newOrders
       pagination.value.recharge.pageNo = pageNo
 
@@ -916,7 +916,7 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
     if (response.success && response.model) {
       const newOrders = response.model.content || []
       
-      // 每次调用都替换数据，实现真正的分页
+      // Replace data on each call to achieve true pagination
       withdrawOrders.value = newOrders
       pagination.value.withdraw.pageNo = pageNo
 
@@ -939,7 +939,7 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
   }
 }
 
-// 获取卡片详情
+// Get card details
 const fetchCardDetail = async (cardId: string) => {
   if (!cardId) return
 
@@ -966,19 +966,19 @@ const fetchCardDetail = async (cardId: string) => {
   }
 }
 
-// 切换卡片详情显示/隐藏
+// Toggle card details visibility
 const toggleCardDetailsVisibility = () => {
   showCardDetails.value = !showCardDetails.value
 }
 
-// 复制到剪贴板
+// Copy to clipboard
 const copyToClipboard = async (text: string) => {
   try {
     await navigator.clipboard.writeText(text)
     toast.add({
       severity: 'success',
       summary: 'Copied',
-      detail: '已复制到剪贴板',
+      detail: 'Copied to clipboard',
       life: 2000
     })
   } catch (error) {
@@ -986,7 +986,7 @@ const copyToClipboard = async (text: string) => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: '复制失败',
+      detail: 'Copy failed',
       life: 3000
     })
   }
@@ -1005,7 +1005,7 @@ const nextCard = () => {
   }
 }
 
-// 选择卡片
+// Select card
 const selectCard = (index: number) => {
   currentCardIndex.value = index
 }
@@ -1020,32 +1020,32 @@ const goToRecharge = () => {
     toast.add({
       severity: 'warn',
       summary: 'Warning',
-      detail: '请先选择一张卡片',
+      detail: 'Please select a card first',
       life: 3000
     })
     return
   }
 
-  // 为充值操作设置卡片信息到 Pinia store
-  // 创建一个包含 cardId 的 CardBin 对象用于充值
+  // Set card information to Pinia store for recharge operation
+  // Create a CardBin object containing cardId for recharge
   const rechargeCardBin = {
     cardBin: '-',
     cardType: '-',
-    cardScheme: '-', // 默认卡种
-    cardCurrency: cardDetail.value?.cardCurrency || 'USD', // 默认币种
+    cardScheme: '-', // Default card type
+    cardCurrency: cardDetail.value?.cardCurrency || 'USD', // Default currency
     billingAddressUpdatable: 'false',
     expiryDateCustomization: 'false',
     remainingAvailableCard: 0,
     availableCard: 0,
     cardFormFactor: 'virtual_card',
-    cardId: cardDetail.value?.cardId || '' // 添加 cardId 用于充值
+    cardId: cardDetail.value?.cardId || '' // Add cardId for recharge
   }
 
-  // 设置到 Pinia store
+  // Set to Pinia store
   cardStore.setSelectedCardBin(rechargeCardBin)
-  cardStore.setSelectedCardConfig(null) // 充值不需要卡片配置
+  cardStore.setSelectedCardConfig(null) // Recharge does not need card configuration
 
-  // 跳转到 card-holder-info 页面
+  // Navigate to card-holder-info page
   router.push({
     name: 'CardHolderInfo',
     query: {
@@ -1149,7 +1149,7 @@ const prevMobilePage = (tabKey: string) => {
   }
 }
 
-// Desktop pagination navigation - 直接调用 API
+// Desktop pagination navigation - directly call API
 const nextDesktopPage = (tabKey: string) => {
   switch (tabKey) {
     case 'transaction':
@@ -1196,14 +1196,14 @@ const prevDesktopPage = (tabKey: string) => {
   }
 }
 
-// Load more functions - 已移除，使用 Previous/Next 按钮实现分页
+// Load more functions - removed, using Previous/Next buttons for pagination
 
 // Tab change handler
 const handleTabChange = (tabKey: string) => {
   console.log('Tab changed to:', tabKey)
   activeTab.value = tabKey
 
-  // 重置到第一页并刷新数据
+  // Reset to first page and refresh data
   switch (tabKey) {
     case 'transaction':
       pagination.value.transaction.pageIndex = 0
@@ -1225,7 +1225,7 @@ watch(currentCardIndex, () => {
   // Reload transactions when card changes
   if (activeTab.value === 'transaction') {
     transactions.value = []
-    // 重置分页状态
+    // Reset pagination state
     pagination.value.transaction.pageIndex = 0
     pagination.value.transaction.hasMore = true
     mobilePagination.value.transaction.currentPage = 0
@@ -1239,19 +1239,19 @@ watch(currentCardIndex, () => {
   }
 })
 
-// 组件挂载时获取卡片列<
+// Get card list when component mounts
 onMounted(async () => {
   console.log('MyCards component mounted')
   console.log('Initial card list length:', cardStore.cardList.length)
 
-  // 如果卡片列表为空，则重新获取
+  // If card list is empty, fetch again
   if (cardStore.cardList.length === 0) {
     console.log('Fetching card list...')
     await cardStore.fetchCardList()
     console.log('Card list fetched, length:', cardStore.cardList.length)
   }
 
-  // 加载初始数据
+  // Load initial data
   console.log('Cards computed length:', cards.value.length)
   if (cards.value.length > 0) {
     console.log('Loading initial transactions and card detail...')
@@ -1263,7 +1263,7 @@ onMounted(async () => {
     console.log('No cards available, skipping transaction fetch')
   }
 
-  // 检查是否有支付成功的查询参<
+  // Check if there are payment success query parameters
   if (route.query.success === 'true') {
     const message = route.query.message as string || 'Payment completed successfully'
     toast.add({
@@ -1273,7 +1273,7 @@ onMounted(async () => {
       life: 5000
     })
 
-    // 清除查询参数，避免刷新页面时重复显示
+    // Clear query parameters to avoid duplicate display on page refresh
     router.replace({ name: 'MyCards' })
   }
 })
