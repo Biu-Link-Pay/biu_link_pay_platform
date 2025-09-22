@@ -67,11 +67,24 @@
                 <div class="flex transition-transform duration-300 ease-in-out"
                   :style="{ transform: `translateX(-${currentBinIndex * 100}%)` }">
                   <div v-for="(binInfo, index) in cardBins" :key="index" class="w-full flex-shrink-0 px-2">
-                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl p-6 text-white shadow-lg">
-                      <!-- Card Header -->
-                      <div class="flex items-center justify-between mb-2">
-                        <span class="text-xs font-semibold opacity-75">BUI LINK PAY</span>
-                        <div class="w-4 h-4 bg-white/20 rounded-full"></div>
+                    <div 
+                      class="rounded-xl p-6 text-white shadow-lg relative overflow-hidden"
+                      :style="{ 
+                        backgroundImage: `url(${getCardBackgroundImage(binInfo.cardScheme)})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                        aspectRatio: '1035/582',
+                        maxWidth: '100%',
+                        width: '100%'
+                      }">
+                      <!-- Semi-transparent overlay for better text readability -->
+                      <div class="absolute inset-0 bg-black/20 rounded-xl"></div>
+                      
+                      <!-- Card content -->
+                      <div class="relative z-10">
+                        <!-- Card Header -->
+                        <div class="flex items-center justify-between mb-2 mt-18">
                       </div>
 
                       <!-- Card Details -->
@@ -83,15 +96,7 @@
 
                         <!-- Card Type and Currency -->
                         <div class="flex justify-between items-center">
-                          <span class="font-semibold">
-                            {{ binInfo.cardType || 'Card' }}
-                          </span>
                           <span>{{ binInfo.cardCurrency || 'USD' }}</span>
-                        </div>
-
-                        <!-- Card Scheme -->
-                        <div class="text-sm opacity-80">
-                          {{ binInfo.cardScheme || 'Card Scheme' }}
                         </div>
 
                         <!-- Available Cards -->
@@ -100,13 +105,11 @@
                         </div>
                       </div>
 
-                      <!-- Card Footer -->
-                      <div class="flex items-center justify-between">
-                        <div class="text-sm opacity-80">
-                          {{ binInfo.billingAddressUpdatable === 'true' ? 'Address Update Supported' : 'Address Update Not Supported' }}
-                        </div>
-                        <div class="w-12 h-8 bg-white rounded flex items-center justify-center">
-                          <i class="pi pi-credit-card text-gray-600 text-lg"></i>
+                        <!-- Card Footer -->
+                        <div class="flex items-center justify-between">
+                          <div class="text-sm opacity-80">
+                            {{ binInfo.billingAddressUpdatable === 'true' ? 'Address Update Supported' : 'Address Update Not Supported' }}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -133,6 +136,43 @@
               <div v-for="(binInfo, index) in cardBins" :key="index" class="w-2 h-2 rounded-full transition-colors"
                 :class="currentBinIndex === index ? 'bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'"></div>
             </div>
+
+            <!-- Mobile Card Details -->
+            <div class="mt-6">
+              <div
+                class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Card Details</h3>
+                <div class="grid grid-cols-1 gap-4 text-sm">
+                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                    <span class="text-gray-600 dark:text-gray-400">Card BIN:</span>
+                    <span class="font-medium text-gray-900 dark:text-white">{{ cardBins[currentBinIndex]?.cardBin || 'N/A' }}</span>
+                  </div>
+                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                    <span class="text-gray-600 dark:text-gray-400">Card Type:</span>
+                    <span class="font-medium text-gray-900 dark:text-white">{{ cardBins[currentBinIndex]?.cardType || 'N/A' }}</span>
+                  </div>
+                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                    <span class="text-gray-600 dark:text-gray-400">Card Scheme:</span>
+                    <span class="font-medium text-gray-900 dark:text-white">{{ cardBins[currentBinIndex]?.cardScheme || 'N/A' }}</span>
+                  </div>
+                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                    <span class="text-gray-600 dark:text-gray-400">Currency:</span>
+                    <span class="font-medium text-gray-900 dark:text-white">{{ cardBins[currentBinIndex]?.cardCurrency || 'USD' }}</span>
+                  </div>
+                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                    <span class="text-gray-600 dark:text-gray-400">Available Cards:</span>
+                    <span class="font-medium text-gray-900 dark:text-white">{{ cardBins[currentBinIndex]?.remainingAvailableCard || 'Unlimited' }}</span>
+                  </div>
+                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
+                    <span class="text-gray-600 dark:text-gray-400">Address Update:</span>
+                    <span class="font-medium"
+                      :class="cardBins[currentBinIndex]?.billingAddressUpdatable === 'true' ? 'text-green-600 dark:text-green-400' : 'text-gray-500 dark:text-gray-400'">
+                      {{ cardBins[currentBinIndex]?.billingAddressUpdatable === 'true' ? 'Supported' : 'Not Supported' }}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Desktop: Card Switcher Layout -->
@@ -147,66 +187,73 @@
                   </div>
                 </div>
 
-                <!-- Navigation Controls -->
-                <div class="flex items-center space-x-2">
-                  <button :disabled="currentBinIndex === 0"
-                    class="p-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                    @click="previousBin" title="Previous card">
-                    <i class="pi pi-chevron-left text-gray-600 dark:text-gray-400"></i>
-                  </button>
-
-                  <button :disabled="currentBinIndex === cardBins.length - 1"
-                    class="p-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                    @click="nextBin" title="Next card">
-                    <i class="pi pi-chevron-right text-gray-600 dark:text-gray-400"></i>
-                  </button>
-                </div>
               </div>
 
-              <!-- Card Carousel Container -->
-              <div class="relative">
-                <div ref="carouselContainer" class="overflow-hidden rounded-xl" @mousedown="handleMouseDown"
-                  @mousemove="handleMouseMove" @mouseup="handleMouseUp" @mouseleave="handleMouseUp" @wheel="handleWheel"
-                  @keydown="handleKeyDown" tabindex="0" style="outline: none;">
+              <!-- Card Carousel Container with Side Navigation -->
+              <div class="flex items-center justify-center space-x-8">
+                <!-- Left Navigation Button -->
+                <button :disabled="currentBinIndex === 0"
+                  class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 flex items-center justify-center"
+                  @click="previousBin" title="Previous card">
+                  <i class="pi pi-chevron-left text-gray-600 dark:text-gray-400 text-lg"></i>
+                </button>
+
+                <!-- Main Content Area -->
+                <div class="flex-1 max-w-4xl">
+                  <div ref="carouselContainer" class="overflow-hidden rounded-xl" @mousedown="handleMouseDown"
+                    @mousemove="handleMouseMove" @mouseup="handleMouseUp" @mouseleave="handleMouseUp" @wheel="handleWheel"
+                    @keydown="handleKeyDown" tabindex="0" style="outline: none;">
 
                   <!-- Card Carousel -->
                   <div class="flex transition-transform duration-300 ease-in-out"
                     :style="{ transform: `translateX(-${currentBinIndex * 100}%)` }">
                     <div v-for="(binInfo, index) in cardBins" :key="index" class="w-full flex-shrink-0 px-4">
-                      <div class="space-y-6">
+                      <div class="space-y-6 flex flex-col items-center">
                         <!-- Card Preview -->
                         <div
-                          class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl p-8 text-white shadow-lg cursor-grab active:cursor-grabbing"
-                          :class="{ 'ring-2 ring-blue-300': currentBinIndex === index }">
-                          <div class="flex items-center justify-between mb-6">
-                            <div class="flex items-center space-x-3">
-                              <div class="w-12 h-8 bg-yellow-400 rounded-sm"></div>
-                              <div class="text-lg font-semibold">{{ binInfo.cardType || 'Card' }}</div>
-                            </div>
-                            <div class="text-right">
-                              <div class="text-sm opacity-80">{{ binInfo.cardCurrency || 'USD' }}</div>
-                              <div class="text-xs opacity-60">{{ binInfo.cardScheme || 'Card Scheme' }}</div>
-                            </div>
-                          </div>
-
-                          <div class="mb-6">
-                            <div class="text-2xl font-mono tracking-wider mb-2">
-                              {{ formatCardNumber(binInfo.cardBin) }}
-                            </div>
-                          </div>
-
-                          <div class="flex justify-between items-end">
-                            <div>
-                              <div class="text-xs opacity-60 mb-1">Available Cards</div>
-                              <div class="text-lg font-semibold">
-                                {{ binInfo.remainingAvailableCard || 'Unlimited' }}
+                          class="rounded-xl p-4 md:p-6 text-white cursor-grab active:cursor-grabbing relative overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600"
+                          :style="{ 
+                            backgroundImage: `url(${getCardBackgroundImage(binInfo.cardScheme)})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            aspectRatio: '1035/582',
+                            maxWidth: '400px',
+                            width: '100%'
+                          }">
+                          
+                          <!-- Card content -->
+                          <div class="relative z-10 h-full flex flex-col justify-between">
+                            <!-- Top section -->
+                            <div class="flex items-center justify-between mb-4 mt-18">
+                              <div class="flex items-center space-x-2">
+                              </div>
+                              <div class="text-right">
+                                <div class="text-xs md:text-sm opacity-80">{{ binInfo.cardCurrency || 'USD' }}</div>
                               </div>
                             </div>
-                            <div class="text-right">
-                              <div class="text-xs opacity-60 mb-1">Address Update</div>
-                              <div class="text-sm font-medium"
-                                :class="binInfo.billingAddressUpdatable === 'true' ? 'text-green-300' : 'text-gray-300'">
-                                {{ binInfo.billingAddressUpdatable === 'true' ? 'Supported' : 'Not Supported' }}
+
+                            <!-- Middle section - Card number -->
+                            <div class="mb-4">
+                              <div class="text-lg md:text-xl font-mono tracking-wider">
+                                {{ formatCardNumber(binInfo.cardBin) }}
+                              </div>
+                            </div>
+
+                            <!-- Bottom section -->
+                            <div class="flex justify-between items-end">
+                              <div>
+                                <div class="text-xs opacity-60 mb-1">Available Cards</div>
+                                <div class="text-sm md:text-base font-semibold">
+                                  {{ binInfo.remainingAvailableCard || 'Unlimited' }}
+                                </div>
+                              </div>
+                              <div class="text-right">
+                                <div class="text-xs opacity-60 mb-1">Address Update</div>
+                                <div class="text-xs md:text-sm font-medium"
+                                  :class="binInfo.billingAddressUpdatable === 'true' ? 'text-green-300' : 'text-gray-300'">
+                                  {{ binInfo.billingAddressUpdatable === 'true' ? 'Supported' : 'Not Supported' }}
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -256,15 +303,23 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- Dots Indicator -->
-                <div class="flex justify-center mt-6 space-x-2">
-                  <button v-for="(binInfo, index) in cardBins" :key="index"
-                    class="w-3 h-3 rounded-full transition-all duration-200 hover:scale-110"
-                    :class="currentBinIndex === index ? 'bg-blue-500' : 'bg-gray-300 hover:bg-gray-400'"
-                    @click="selectBin(index)" :title="`Go to card ${index + 1}`">
-                  </button>
                 </div>
+
+                <!-- Right Navigation Button -->
+                <button :disabled="currentBinIndex === cardBins.length - 1"
+                  class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 flex items-center justify-center"
+                  @click="nextBin" title="Next card">
+                  <i class="pi pi-chevron-right text-gray-600 dark:text-gray-400 text-lg"></i>
+                </button>
+              </div>
+
+              <!-- Dots Indicator -->
+              <div class="flex justify-center mt-6 space-x-2">
+                <button v-for="(binInfo, index) in cardBins" :key="index"
+                  class="w-3 h-3 rounded-full transition-all duration-200 hover:scale-110"
+                  :class="currentBinIndex === index ? 'bg-blue-500' : 'bg-gray-300 hover:bg-gray-400'"
+                  @click="selectBin(index)" :title="`Go to card ${index + 1}`">
+                </button>
               </div>
             </div>
           </div>
@@ -540,6 +595,34 @@ const formatCardNumber = (cardBin: string | null) => {
 
   // Add a space every 4 digits
   return paddedNumber.replace(/(.{4})/g, '$1 ').trim()
+}
+
+// Get card background image based on card scheme
+const getCardBackgroundImage = (cardScheme: string | null) => {
+  console.log('Card Scheme:', cardScheme) // Debug log
+  
+  if (!cardScheme) {
+    console.log('No card scheme, using default Mastercard')
+    return 'https://static.biulinkpay.online/images/master.png' // Default to Mastercard
+  }
+
+  const scheme = cardScheme.toLowerCase()
+  console.log('Normalized scheme:', scheme) // Debug log
+  
+  if (scheme.includes('master') || scheme.includes('mastercard')) {
+    console.log('Using Mastercard background')
+    return 'https://static.biulinkpay.online/images/master.png'
+  } else if (scheme.includes('visa')) {
+    console.log('Using Visa background')
+    return 'https://static.biulinkpay.online/images/visa.png'
+  } else if (scheme.includes('discover')) {
+    console.log('Using Discover background')
+    return 'https://static.biulinkpay.online/images/discover.png'
+  } else {
+    console.log('Unknown scheme, using default Mastercard')
+    // Default to Mastercard for unknown schemes
+    return 'https://static.biulinkpay.online/images/master.png'
+  }
 }
 
 // Load data when component mounts

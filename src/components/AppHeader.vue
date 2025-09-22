@@ -15,7 +15,9 @@
 
       <div class="flex items-center space-x-4">
         <!-- Theme toggle button -->
-        <ThemeToggle />
+        <div data-theme-toggle>
+          <ThemeToggle />
+        </div>
 
         <slot name="actions">
           <!-- User avatar and menu -->
@@ -199,7 +201,8 @@ const handleLogout = async () => {
 // Click outside to close menu
 const handleClickOutside = (event: Event) => {
   const target = event.target as HTMLElement
-  if (!target.closest('.relative')) {
+  // 检查是否点击了用户菜单区域，而不是主题切换按钮
+  if (!target.closest('.relative') && !target.closest('[data-theme-toggle]')) {
     showUserMenu.value = false
   }
 }

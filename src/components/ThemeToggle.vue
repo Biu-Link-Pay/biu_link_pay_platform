@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative" data-theme-toggle>
     <!-- Theme toggle button -->
     <button @click="handleToggleTheme"
       class="flex items-center justify-center w-10 h-10 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 group"
@@ -52,13 +52,16 @@ const { currentTheme, setTheme, toggleTheme, getThemeIcon, getThemeLabel } = the
 // Click outside to close dropdown menu
 const handleClickOutside = (event: Event) => {
   const target = event.target as HTMLElement
-  if (!target.closest('.relative')) {
+  // 只处理主题切换下拉菜单的点击外部事件
+  if (!target.closest('[data-theme-toggle]')) {
     showDropdown.value = false
   }
 }
 
 // Handle theme toggle
-const handleToggleTheme = () => {
+const handleToggleTheme = (event: Event) => {
+  event.preventDefault()
+  event.stopPropagation()
   toggleTheme()
   showDropdown.value = false
 }

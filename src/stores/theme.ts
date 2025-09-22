@@ -44,6 +44,7 @@ export const useThemeStore = defineStore('theme', () => {
       themeToApply = currentTheme.value
     }
 
+    console.log('Applying theme:', themeToApply)
     appliedTheme.value = themeToApply
 
     // 更新 HTML 类名
@@ -56,6 +57,11 @@ export const useThemeStore = defineStore('theme', () => {
 
     // 更新 PrimeVue 主题
     updatePrimeVueTheme(themeToApply)
+    
+    // 强制触发重新渲染
+    setTimeout(() => {
+      console.log('Theme applied, HTML classes:', html.className)
+    }, 0)
   }
 
   // 更新 PrimeVue 主题
@@ -70,17 +76,17 @@ export const useThemeStore = defineStore('theme', () => {
 
   // 设置主题
   const setTheme = (theme: Theme) => {
+    console.log('Setting theme to:', theme)
     currentTheme.value = theme
     localStorage.setItem('theme', theme)
     applyTheme()
   }
 
-  // 切换主题
+  // 切换主题（简单亮暗切换）
   const toggleTheme = () => {
+    console.log('Toggle theme called, current theme:', currentTheme.value)
     if (currentTheme.value === 'light') {
       setTheme('dark')
-    } else if (currentTheme.value === 'dark') {
-      setTheme('system')
     } else {
       setTheme('light')
     }
@@ -130,6 +136,7 @@ export const useThemeStore = defineStore('theme', () => {
 }, {
   persist: {
     key: 'theme-store',
-    storage: localStorage
+    storage: localStorage,
+    paths: ['currentTheme'] // 只持久化 currentTheme，避免其他状态冲突
   }
 })

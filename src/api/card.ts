@@ -119,6 +119,7 @@ export interface CardListItem {
   maxOnMonthly: string // 月限额
   maxOnDaily: string // 日限额
   maxOnPercent: string // 单笔限额
+  cardCurrency: string // 卡币种
 }
 
 // 消费记录分页查询相关类型
