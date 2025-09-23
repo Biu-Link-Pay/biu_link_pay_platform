@@ -43,6 +43,16 @@ export function setupRouterGuards(router: Router) {
             return
           }
         } else {
+          // 检查是否需要 KYC 验证
+          if (to.name !== 'KycVerification' && authStore.needsKyc) {
+            console.log('User needs KYC verification, redirecting to KYC page')
+            next({
+              path: '/kyc-verification',
+              query: { returnTo: to.fullPath }
+            })
+            return
+          }
+          
           next()
         }
       } else {

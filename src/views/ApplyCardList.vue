@@ -90,6 +90,8 @@ import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useCardStore } from '@/stores/card'
+import { useAuthStore } from '@/stores/auth'
+import { useErrorHandler } from '@/utils/errorHandler'
 import AppHeader from '@/components/AppHeader.vue'
 import CardItem from '@/components/CardItem.vue'
 import type { CardConfig } from '@/api/card'
@@ -97,6 +99,8 @@ import type { CardConfig } from '@/api/card'
 const router = useRouter()
 const toast = useToast()
 const cardStore = useCardStore()
+const authStore = useAuthStore()
+const { handleError, handleSuccess } = useErrorHandler()
 
 // Reactive data
 const selectedCard = ref<CardConfig | null>(null)
@@ -146,26 +150,87 @@ const selectCard = (card: CardConfig) => {
 
 
 // Order card
-const orderCard = (card: CardConfig) => {
+const orderCard = async (card: CardConfig) => {
   console.log('Order card clicked:', card)
 
-  if (card.status === 1) {
-    // Navigate to BIN selection page
-    console.log('Navigating to CardBinSelection with card:', card.cardName)
-    router.push({
-      name: 'CardBinSelection',
-      query: {
-        cardName: card.cardName
-      }
-    })
-  } else {
+  if (card.status !== 1) {
     toast.add({
       severity: 'warn',
       summary: 'Not Available',
       detail: `${card.cardName} is currently not available`,
       life: 3000
     })
+    return
   }
+
+  // Check if user has cards
+  const hasCards = cardStore.hasCards
+  
+  if (!hasCards) {
+    // No cards, need to check KYC status first
+    console.log('User has no cards, checking KYC status...')
+    await checkKycAndNavigate(card)
+  } else {
+    // Has cards, navigate directly to BIN selection
+    console.log('User has cards, navigating directly to CardBinSelection')
+    navigateToCardBinSelection(card)
+  }
+}
+
+// Check KYC status and navigate accordingly
+const checkKycAndNavigate = async (card: CardConfig) => {
+  try {
+    // Check KYC status
+    const kycStatus = await authStore.checkKycStatus()
+    console.log('KYC status:', kycStatus)
+
+    switch (kycStatus) {
+      case 1: // KYC通过
+        console.log('KYC approved, navigating to CardBinSelection')
+        navigateToCardBinSelection(card)
+        break
+        
+      case 0: // 未做KYC
+      case 2: // KYC临时拒绝
+        console.log('KYC not completed or temporarily rejected, navigating to KYC verification')
+        router.push({
+          name: 'KycVerification',
+          query: {
+            returnTo: `/card-bin-selection?cardName=${encodeURIComponent(card.cardName)}`
+          }
+        })
+        break
+        
+      case 3: // KYC拒绝
+        console.log('KYC rejected, showing error message')
+        handleError('KYC验证被拒绝，请联系客服获取更多信息', {
+          fallbackMessage: 'KYC验证被拒绝，请联系客服获取更多信息'
+        })
+        break
+        
+      default:
+        console.log('Unknown KYC status:', kycStatus)
+        handleError('KYC状态未知，请重试', {
+          fallbackMessage: 'KYC状态未知，请重试'
+        })
+    }
+  } catch (error) {
+    console.error('Error checking KYC status:', error)
+    handleError(error, {
+      fallbackMessage: '检查KYC状态失败，请重试'
+    })
+  }
+}
+
+// Navigate to card BIN selection page
+const navigateToCardBinSelection = (card: CardConfig) => {
+  console.log('Navigating to CardBinSelection with card:', card.cardName)
+  router.push({
+    name: 'CardBinSelection',
+    query: {
+      cardName: card.cardName
+    }
+  })
 }
 
 // Activate card

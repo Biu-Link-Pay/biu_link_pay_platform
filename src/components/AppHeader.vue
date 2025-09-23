@@ -164,6 +164,7 @@ const goToLogin = () => {
 
 // Confirm logout
 const confirmLogout = () => {
+  console.log('显示登出确认对话框')
   showUserMenu.value = false
   confirm.require({
     message: 'Are you sure you want to logout?',
@@ -172,7 +173,11 @@ const confirmLogout = () => {
     rejectLabel: 'Cancel',
     acceptLabel: 'Confirm',
     accept: () => {
+      console.log('用户确认登出')
       handleLogout()
+    },
+    reject: () => {
+      console.log('用户取消登出')
     }
   })
 }
@@ -180,15 +185,23 @@ const confirmLogout = () => {
 // Logout handling
 const handleLogout = async () => {
   try {
+    console.log('开始登出流程...')
     await authStore.logout()
+    console.log('登出成功')
+    
     toast.add({
       severity: 'success',
       summary: 'Logged Out',
       detail: 'You have been logged out successfully',
       life: 3000
     })
-    router.push('/login')
+    
+    // 延迟跳转，让用户看到成功消息
+    setTimeout(() => {
+      router.push('/login')
+    }, 1000)
   } catch (error) {
+    console.error('登出失败:', error)
     toast.add({
       severity: 'error',
       summary: 'Logout Failed',

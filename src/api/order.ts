@@ -1,61 +1,61 @@
 import { api } from '@/services/api'
 
-// 支付方式查询参数
+// Payment method query parameters
 export interface PaymentMethodsQueryParams {
-  orderType: 'IN' | 'OUT' // IN=入金，OUT=出金
+  orderType: 'IN' | 'OUT' // IN=deposit, OUT=withdrawal
 }
 
-// 汇率查询参数
+// Exchange rate query parameters
 export interface RateQueryParams {
-  cryptoUnit: string // 币种单位
-  network: string // 网络
-  number: string // 数量
-  saleDirection: 'SELL' | 'BUY' // 方向，SELL=出金，BUY=入金
-  exchange: 'WALLET' | 'BINANCE' // 交易所，目前 WALLET OR BINANCE
-  fiatUnit: string // 充值的法币单位
+  cryptoUnit: string // Currency unit
+  network: string // Network
+  number: string // Amount
+  saleDirection: 'SELL' | 'BUY' // Direction, SELL=withdrawal, BUY=deposit
+  exchange: 'WALLET' | 'BINANCE' // Exchange, currently WALLET OR BINANCE
+  fiatUnit: string // Fiat currency unit for recharge
 }
 
-// 订单币种信息
+// Order currency information
 export interface OrderCrypto {
-  name: string // 币种名称
-  fullName: string // 币种全名
-  logoUrl: string // 图片
+  name: string // Currency name
+  fullName: string // Currency full name
+  logoUrl: string // Logo image
 }
 
-// 订单网络信息
+// Order network information
 export interface OrderNetwork {
-  name: string // 网络名称
-  addressRegex: string // 地址规则
-  fullName: string // 全面
-  sortName: string // 别名
-  logoUrl: string // 图片
+  name: string // Network name
+  addressRegex: string // Address regex
+  fullName: string // Full name
+  sortName: string // Alias
+  logoUrl: string // Logo image
 }
 
-// 订单币种网络信息
+// Order currency network information
 export interface OrderCryptoNetwork {
-  minLimit: number // 最小值
-  maxLimit: number // 最大值
-  sorts: number // 排序
-  type: 'IN' | 'OUT' // 类型，IN=入金，OUT=出金
-  crypto: OrderCrypto // 币种
-  network: OrderNetwork // 网络
+  minLimit: number // Minimum limit
+  maxLimit: number // Maximum limit
+  sorts: number // Sort order
+  type: 'IN' | 'OUT' // Type, IN=deposit, OUT=withdrawal
+  crypto: OrderCrypto // Currency
+  network: OrderNetwork // Network
 }
 
-// 订单支付方式
+// Order payment method
 export interface OrderPayType {
-  name: string // 支付方式名称
-  img: string | null // 图片
-  detailsImg: string | null // 详细图片
-  sorts: number // 排序
-  cryptoNetworks: OrderCryptoNetwork[] // 币种网络
+  name: string // Payment method name
+  img: string | null // Image
+  detailsImg: string | null // Detail image
+  sorts: number // Sort order
+  cryptoNetworks: OrderCryptoNetwork[] // Currency networks
 }
 
-// 订单支付方式响应数据
+// Order payment method response data
 export interface OrderPaymentMethodsModel {
   payTypes: OrderPayType[]
 }
 
-// 订单支付方式响应
+// Order payment method response
 export interface OrderPaymentMethodsResponse {
   code: string
   msg: string
@@ -64,36 +64,36 @@ export interface OrderPaymentMethodsResponse {
   error: boolean
 }
 
-// 法币明细
+// Fiat currency details
 export interface OrderFiatDetail {
-  fiatUnit: string | null // 法币单位
-  fiatFee: string // 法币手续费
-  fiatAmount: string // 法币金额
-  fiatToUsdRate: string // 法币对USDT汇率
-  totalAmountFiat: string // 法币总金额
+  fiatUnit: string | null // Fiat currency unit
+  fiatFee: string // Fiat currency fee
+  fiatAmount: string // Fiat currency amount
+  fiatToUsdRate: string // Fiat currency to USDT exchange rate
+  totalAmountFiat: string // Total fiat currency amount
 }
 
-// 数币明细
+// Digital currency details
 export interface OrderCryptoDetail {
-  cryptoUnit: string // 币种单位
-  cryptoFee: string // 数币手续费
-  cryptoAmount: string // 数币金额
-  cryptoToUsdTRate: string // 数币汇率
-  totalAmountCrypto: string // 数币总金额
+  cryptoUnit: string // Currency unit
+  cryptoFee: string // Digital currency fee
+  cryptoAmount: string // Digital currency amount
+  cryptoToUsdTRate: string // Digital currency exchange rate
+  totalAmountCrypto: string // Total digital currency amount
 }
 
-// 汇率查询响应数据
+// Exchange rate query response data
 export interface OrderRateModel {
-  currencyType: string // 币种类型
-  saleDirection: string // 方向
-  usdTFee: string // 手续费
-  number: string // 数量
-  totalAmountUsdT: string // 应付金额
-  fiatDetail: OrderFiatDetail // 法币明细
-  cryptoDetail: OrderCryptoDetail // 数币明细
+  currencyType: string // Currency type
+  saleDirection: string // Direction
+  usdTFee: string // Fee
+  number: string // Amount
+  totalAmountUsdT: string // Total amount to pay
+  fiatDetail: OrderFiatDetail // Fiat currency details
+  cryptoDetail: OrderCryptoDetail // Digital currency details
 }
 
-// 汇率查询响应
+// Exchange rate query response
 export interface OrderRateResponse {
   code: string
   msg: string
@@ -102,30 +102,30 @@ export interface OrderRateResponse {
   error: boolean
 }
 
-// 创建入金订单请求参数
+// Create deposit order request parameters
 export interface CreateDepositOrderParams {
-  cardPattern: string // 1:虚拟卡 2:实体卡
-  type: string // 1:办卡 2:充值
-  cardBin: string // 卡段
-  payType: string // 1:binancePay，2:wallet
-  amount: number // 订单金额
-  orderCurrency: string // 订单币种
-  userCardId: string // 用户cardId，当类型为1时，cardBin必填,类型为2时，userCardId必填
-  token?: string // token
-  network?: string // 网络
-  address?: string // 地址
+  cardPattern: string // 1:virtual card 2:physical card
+  type: string // 1:apply card 2:recharge
+  cardBin: string // Card BIN
+  payType: string // 1:binancePay, 2:wallet
+  amount: number // Order amount
+  orderCurrency: string // Order currency
+  userCardId: string // User cardId, when type is 1, cardBin is required, when type is 2, userCardId is required
+  token?: string // Token
+  network?: string // Network
+  address?: string // Address
 }
 
-// 创建入金订单响应数据
+// Create deposit order response data
 export interface CreateDepositOrderModel {
-  orderNum: string // 订单号
-  webUrl: string // 支付链接
-  deeplink: string // 深度支付链接，跳转本地app
-  qrcodeLink: string // 二维码链接
-  exchange: string // 交易所,BINANCE OR WALLET
+  orderNum: string // Order number
+  webUrl: string // Payment link
+  deeplink: string // Deep payment link, redirect to local app
+  qrcodeLink: string // QR code link
+  exchange: string // Exchange, BINANCE OR WALLET
 }
 
-// 创建入金订单响应
+// Create deposit order response
 export interface CreateDepositOrderResponse {
   code: string
   msg: string
@@ -304,12 +304,12 @@ export interface TransactionListResponse {
   error: boolean
 }
 
-// 订单相关 API
+// Order related API
 export class OrderAPI {
   /**
-   * 查询支付方式
-   * @param params 查询参数
-   * @returns 支付方式列表
+   * Query payment methods
+   * @param params Query parameters
+   * @returns Payment methods list
    */
   static async getPaymentMethods(params: PaymentMethodsQueryParams): Promise<OrderPaymentMethodsResponse> {
     const response = await api.get<OrderPaymentMethodsResponse>('/card/consume/common/paymentMethods', {
@@ -321,9 +321,9 @@ export class OrderAPI {
   }
 
   /**
-   * 查询汇率
-   * @param params 查询参数
-   * @returns 汇率信息
+   * Query exchange rate
+   * @param params Query parameters
+   * @returns Exchange rate information
    */
   static async getRate(params: RateQueryParams): Promise<OrderRateResponse> {
     const response = await api.post<OrderRateResponse>('/card/consume/common/rate', {
@@ -338,9 +338,9 @@ export class OrderAPI {
   }
 
   /**
-   * 创建入金订单
-   * @param params 创建订单参数
-   * @returns 创建订单响应
+   * Create deposit order
+   * @param params Create order parameters
+   * @returns Create order response
    */
   static async createDepositOrder(params: CreateDepositOrderParams): Promise<CreateDepositOrderResponse> {
     const response = await api.post<CreateDepositOrderResponse>('/card/consume/order/createDepositOrder', {
@@ -359,9 +359,9 @@ export class OrderAPI {
   }
 
   /**
-   * 查询入金订单详情
-   * @param params 查询参数
-   * @returns 订单详情
+   * Query deposit order details
+   * @param params Query parameters
+   * @returns Order details
    */
   static async getDepositOrderDetail(params: DepositOrderDetailParams): Promise<DepositOrderDetailResponse> {
     const response = await api.get<DepositOrderDetailResponse>('/card/consume/order/queryDepositOrder', {
@@ -373,9 +373,9 @@ export class OrderAPI {
   }
 
   /**
-   * 分页查询入金订单
-   * @param params 分页查询参数
-   * @returns 订单分页列表
+   * Paginated query deposit orders
+   * @param params Pagination query parameters
+   * @returns Order pagination list
    */
   static async getDepositOrderPage(params: DepositOrderPageParams): Promise<DepositOrderPageResponse> {
     const response = await api.get<DepositOrderPageResponse>('/card/consume/order/queryPageDepositOrder', {
@@ -388,9 +388,9 @@ export class OrderAPI {
   }
 
   /**
-   * 查询出金订单详情
-   * @param params 查询参数
-   * @returns 出金订单详情
+   * Query withdrawal order details
+   * @param params Query parameters
+   * @returns Withdrawal order details
    */
   static async getWithdrawOrderDetail(params: WithdrawOrderDetailParams): Promise<WithdrawOrderDetailResponse> {
     const response = await api.get<WithdrawOrderDetailResponse>('/card/consume/order/queryWithdrawOrder', {
@@ -402,9 +402,9 @@ export class OrderAPI {
   }
 
   /**
-   * 分页查询出金订单
-   * @param params 分页查询参数
-   * @returns 出金订单分页列表
+   * Paginated query withdrawal orders
+   * @param params Pagination query parameters
+   * @returns Withdrawal order pagination list
    */
   static async getWithdrawOrderPage(params: WithdrawOrderPageParams): Promise<WithdrawOrderPageResponse> {
     const response = await api.get<WithdrawOrderPageResponse>('/card/consume/order/queryPageWithdrawOrder', {
@@ -417,9 +417,9 @@ export class OrderAPI {
   }
 
   /**
-   * 消费记录分页查询
-   * @param params 查询参数
-   * @returns 消费记录分页列表
+   * Transaction records pagination query
+   * @param params Query parameters
+   * @returns Transaction records pagination list
    */
   static async getTransactionList(params: TransactionListParams): Promise<TransactionListResponse> {
     const response = await api.request<TransactionListResponse>({
@@ -438,5 +438,5 @@ export class OrderAPI {
   }
 }
 
-// 导出所有类型和 API
+// Export all types and API
 export default OrderAPI

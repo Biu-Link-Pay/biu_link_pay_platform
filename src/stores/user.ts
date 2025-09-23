@@ -9,41 +9,41 @@ export interface User {
 }
 
 export const useUserStore = defineStore('user', () => {
-  // 状态
+  // State
   const user = ref<User | null>(null)
   const isLoggedIn = ref(false)
   const loading = ref(false)
   
-  // 计算属性
+  // Computed properties
   const userName = computed(() => user.value?.name || '游客')
   const userEmail = computed(() => user.value?.email || '')
   const userAvatar = computed(() => user.value?.avatar || '')
   
-  // 方法
+  // Methods
   const login = async (email: string, password: string) => {
     loading.value = true
     
     try {
-      // 模拟登录 API 调用
+      // Simulate login API call
       await new Promise(resolve => setTimeout(resolve, 1000))
       
-      // 模拟用户数据
+      // Simulate user data
       user.value = {
         id: 1,
-        name: '测试用户',
+        name: 'Test User',
         email: email,
         avatar: 'https://via.placeholder.com/100'
       }
       
       isLoggedIn.value = true
       
-      // 保存到本地存储
+      // Save to local storage
       localStorage.setItem('user', JSON.stringify(user.value))
       localStorage.setItem('isLoggedIn', 'true')
       
-      return { success: true, message: '登录成功' }
+      return { success: true, message: 'Login successful' }
     } catch (error) {
-      return { success: false, message: '登录失败' }
+      return { success: false, message: 'Login failed' }
     } finally {
       loading.value = false
     }
@@ -53,7 +53,7 @@ export const useUserStore = defineStore('user', () => {
     user.value = null
     isLoggedIn.value = false
     
-    // 清除本地存储
+    // Clear local storage
     localStorage.removeItem('user')
     localStorage.removeItem('isLoggedIn')
   }
@@ -76,17 +76,17 @@ export const useUserStore = defineStore('user', () => {
   }
   
   return {
-    // 状态
+    // State
     user,
     isLoggedIn,
     loading,
     
-    // 计算属性
+    // Computed properties
     userName,
     userEmail,
     userAvatar,
     
-    // 方法
+    // Methods
     login,
     logout,
     updateProfile,

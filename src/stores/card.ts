@@ -14,9 +14,9 @@ import type {
 } from '@/api/card'
 
 export const useCardStore = defineStore('card', () => {
-  // 状态
+  // State
   const cardConfigs = ref<CardConfig[]>([
-    // 测试数据
+    // Test data
     {
       cardPattern: 1,
       cardName: 'Virtual Mastercard',
@@ -27,7 +27,7 @@ export const useCardStore = defineStore('card', () => {
       maxOnMonthly: 10000,
       maxOnDaily: 1000,
       maxOnPercent: 500,
-      status: 1, // 启用
+      status: 1, // Enabled
       cardPicture: null
     },
     {
@@ -40,7 +40,7 @@ export const useCardStore = defineStore('card', () => {
       maxOnMonthly: 20000,
       maxOnDaily: 2000,
       maxOnPercent: 1000,
-      status: 1, // 启用
+      status: 1, // Enabled
       cardPicture: null
     },
     {
@@ -53,7 +53,7 @@ export const useCardStore = defineStore('card', () => {
       maxOnMonthly: 15000,
       maxOnDaily: 1500,
       maxOnPercent: 750,
-      status: 2, // 禁用
+      status: 2, // Disabled
       cardPicture: null
     }
   ])
@@ -62,14 +62,14 @@ export const useCardStore = defineStore('card', () => {
   const loading = ref(false)
   const error = ref<string | null>(null)
 
-  // 选中的卡片 BIN 信息
+  // Selected card BIN info
   const selectedCardBin = ref<CardBin | null>(null)
   const selectedCardConfig = ref<CardConfig | null>(null)
 
-  // 订单信息
+  // Order info
   const currentOrder = ref<any>(null)
 
-  // 计算属性
+  // Computed properties
   const availableCards = computed(() =>
     cardConfigs.value.filter(card => card.status === 1)
   )
@@ -88,7 +88,7 @@ export const useCardStore = defineStore('card', () => {
 
   const hasCards = computed(() => cardList.value.length > 0)
 
-  // 获取请求头
+  // Get request headers
   const getRequestHeaders = () => {
     const authStore = useAuthStore()
     const token = authStore.token || localStorage.getItem('token') || ''
@@ -96,12 +96,12 @@ export const useCardStore = defineStore('card', () => {
 
     return {
       token,
-      'fingerprint-id': 'default-fingerprint-id', // 这里可以从设备指纹获取
+      'fingerprint-id': 'default-fingerprint-id', // Can be obtained from device fingerprint
       refresh_token: refreshToken
     }
   }
 
-  // 获取卡片配置
+  // Get card configuration
   const fetchCardConfigs = async () => {
     loading.value = true
     error.value = null
@@ -114,11 +114,11 @@ export const useCardStore = defineStore('card', () => {
         cardConfigs.value = response.model
         return { success: true, data: response.model }
       } else {
-        throw new Error(response.msg || '获取卡片配置失败')
+        throw new Error(response.msg || 'Failed to get card configuration')
       }
     } catch (err) {
-      error.value = err instanceof Error ? err.message : '获取卡片配置失败'
-      console.error('获取卡片配置失败:', err)
+      error.value = err instanceof Error ? err.message : 'Failed to get card configuration'
+      console.error('Failed to get card configuration:', err)
       return {
         success: false,
         error: error.value
@@ -128,7 +128,7 @@ export const useCardStore = defineStore('card', () => {
     }
   }
 
-  // 查询卡片 BIN
+  // Query card BIN
   const fetchCardBins = async (params: QueryCardBinParams) => {
     loading.value = true
     error.value = null
@@ -141,11 +141,11 @@ export const useCardStore = defineStore('card', () => {
         cardBins.value = response.model
         return { success: true, data: response.model }
       } else {
-        throw new Error(response.msg || '查询卡片 BIN 失败')
+        throw new Error(response.msg || 'Failed to query card BIN')
       }
     } catch (err) {
-      error.value = err instanceof Error ? err.message : '查询卡片 BIN 失败'
-      console.error('查询卡片 BIN 失败:', err)
+      error.value = err instanceof Error ? err.message : 'Failed to query card BIN'
+      console.error('Failed to query card BIN:', err)
       return {
         success: false,
         error: error.value
@@ -155,7 +155,7 @@ export const useCardStore = defineStore('card', () => {
     }
   }
 
-  // 保存持卡人信息
+  // Save cardholder info
   const saveCardHolder = async (holderInfo: CardHolderInfo) => {
     loading.value = true
     error.value = null
@@ -165,13 +165,13 @@ export const useCardStore = defineStore('card', () => {
       const response: ApiResponse<null> = await CardAPI.saveCardHolder(holderInfo, headers)
 
       if (response.success) {
-        return { success: true, message: '持卡人信息保存成功' }
+        return { success: true, message: 'Cardholder info saved successfully' }
       } else {
-        throw new Error(response.msg || '保存持卡人信息失败')
+        throw new Error(response.msg || 'Failed to save cardholder info')
       }
     } catch (err) {
-      error.value = err instanceof Error ? err.message : '保存持卡人信息失败'
-      console.error('保存持卡人信息失败:', err)
+      error.value = err instanceof Error ? err.message : 'Failed to save cardholder info'
+      console.error('Failed to save cardholder info:', err)
       return {
         success: false,
         error: error.value
@@ -181,7 +181,7 @@ export const useCardStore = defineStore('card', () => {
     }
   }
 
-  // 获取卡片列表
+  // Get card list
   const fetchCardList = async () => {
     loading.value = true
     error.value = null
@@ -194,11 +194,11 @@ export const useCardStore = defineStore('card', () => {
         cardList.value = response.model
         return { success: true, data: response.model }
       } else {
-        throw new Error(response.msg || '获取卡片列表失败')
+        throw new Error(response.msg || 'Failed to get card list')
       }
     } catch (err) {
-      error.value = err instanceof Error ? err.message : '获取卡片列表失败'
-      console.error('获取卡片列表失败:', err)
+      error.value = err instanceof Error ? err.message : 'Failed to get card list'
+      console.error('Failed to get card list:', err)
       return {
         success: false,
         error: error.value
@@ -208,58 +208,58 @@ export const useCardStore = defineStore('card', () => {
     }
   }
 
-  // 根据名称获取卡片配置
+  // Get card configuration by name
   const getCardConfigByName = (cardName: string): CardConfig | undefined => {
     return cardConfigs.value.find(card => card.cardName === cardName)
   }
 
-  // 根据类型获取卡片配置
+  // Get card configurations by type
   const getCardConfigsByType = (cardType: string): CardConfig[] => {
     return cardConfigs.value.filter(card => card.cardType === cardType)
   }
 
-  // 根据模式获取卡片配置
+  // Get card configurations by pattern
   const getCardConfigsByPattern = (cardPattern: number): CardConfig[] => {
     return cardConfigs.value.filter(card => card.cardPattern === cardPattern)
   }
 
-  // 获取启用的卡片配置
+  // Get enabled card configurations
   const getEnabledCardConfigs = (): CardConfig[] => {
     return cardConfigs.value.filter(card => card.status === 1)
   }
 
-  // 设置选中的卡片 BIN
+  // Set selected card BIN
   const setSelectedCardBin = (cardBin: CardBin | null) => {
     selectedCardBin.value = cardBin
   }
 
-  // 设置选中的卡片配置
+  // Set selected card configuration
   const setSelectedCardConfig = (cardConfig: CardConfig | null) => {
     selectedCardConfig.value = cardConfig
   }
 
-  // 设置当前订单信息
+  // Set current order info
   const setCurrentOrder = (order: any) => {
     currentOrder.value = order
   }
 
-  // 清除当前订单信息
+  // Clear current order info
   const clearCurrentOrder = () => {
     currentOrder.value = null
   }
 
-  // 清除选中的卡片信息
+  // Clear selected card info
   const clearSelectedCard = () => {
     selectedCardBin.value = null
     selectedCardConfig.value = null
   }
 
-  // 清除错误状态
+  // Clear error state
   const clearError = () => {
     error.value = null
   }
 
-  // 重置状态
+  // Reset state
   const reset = () => {
     cardConfigs.value = []
     cardBins.value = []
@@ -272,7 +272,7 @@ export const useCardStore = defineStore('card', () => {
   }
 
   return {
-    // 状态
+    // State
     cardConfigs,
     cardBins,
     cardList,
@@ -282,14 +282,14 @@ export const useCardStore = defineStore('card', () => {
     selectedCardConfig,
     currentOrder,
 
-    // 计算属性
+    // Computed properties
     availableCards,
     virtualCards,
     physicalCards,
     enabledCards,
     hasCards,
 
-    // 方法
+    // Methods
     fetchCardConfigs,
     fetchCardBins,
     saveCardHolder,

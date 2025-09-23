@@ -10,12 +10,12 @@ import type {
 import { api } from '@/services/api'
 
 /**
- * 认证相关 API
+ * Authentication related API
  */
 export class AuthAPI {
   /**
-   * 发送邮件验证码
-   * @param params 邮件参数
+   * Send email verification code
+   * @param params Email parameters
    * @returns Promise<ApiResponse<null>>
    */
   static async sendEmail(params: SendEmailParams): Promise<ApiResponse<null>> {
@@ -28,8 +28,8 @@ export class AuthAPI {
   }
 
   /**
-   * 用户登录
-   * @param params 登录参数
+   * User login
+   * @param params Login parameters
    * @returns Promise<ApiResponse<LoginResponse>>
    */
   static async login(params: LoginParams): Promise<ApiResponse<LoginResponse>> {
@@ -43,8 +43,8 @@ export class AuthAPI {
   }
 
   /**
-   * 刷新 token
-   * @param params 刷新 token 参数
+   * Refresh token
+   * @param params Refresh token parameters
    * @returns Promise<ApiResponse<RefreshTokenResponse>>
    */
   static async refreshToken(params: RefreshTokenParams): Promise<ApiResponse<RefreshTokenResponse>> {
@@ -57,8 +57,8 @@ export class AuthAPI {
   }
 
   /**
-   * 用户登出
-   * @param params 登出参数
+   * User logout
+   * @param params Logout parameters
    * @returns Promise<ApiResponse<null>>
    */
   static async logout(params: LogoutParams): Promise<ApiResponse<null>> {
@@ -69,12 +69,46 @@ export class AuthAPI {
     })
     return response.data
   }
+
+  /**
+   * Get KYC access token
+   * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
+   * @returns Promise<ApiResponse<string>>
+   */
+  static async getKycAccessToken(headers: { token: string; refresh_token: string }): Promise<ApiResponse<string>> {
+    const response = await api.get('/card/consume/common/kycAccessToken', {
+      headers: {
+        'token': headers.token,
+        'refresh_token': headers.refresh_token
+        // fingerprint-id is automatically added by request interceptor
+      }
+    })
+    return response.data
+  }
+
+  /**
+   * Check KYC result status
+   * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
+   * @returns Promise<ApiResponse<number>>
+   */
+  static async checkKycStatus(headers: { token: string; refresh_token: string }): Promise<ApiResponse<number>> {
+    const response = await api.get('/card/consume/common/kycResult', {
+      headers: {
+        'token': headers.token,
+        'refresh_token': headers.refresh_token
+        // fingerprint-id is automatically added by request interceptor
+      }
+    })
+    return response.data
+  }
 }
 
-// 导出单个函数以便于使用
+// Export individual functions for easy use
 export const {
   sendEmail,
   login,
   refreshToken,
-  logout
+  logout,
+  getKycAccessToken,
+  checkKycStatus
 } = AuthAPI

@@ -80,6 +80,15 @@ const routes = [
     }
   },
   {
+    path: '/kyc-verification',
+    name: 'KycVerification',
+    component: () => import('@/views/KycVerification.vue'),
+    meta: {
+      title: 'KYC Verification',
+      requiresAuth: true
+    }
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     component: () => import('@/views/NotFound.vue'),

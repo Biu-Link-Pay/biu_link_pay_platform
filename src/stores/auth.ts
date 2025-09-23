@@ -11,23 +11,33 @@ import type {
 } from '@/types/api'
 
 export const useAuthStore = defineStore('auth', () => {
-  // 状态
+  // State
   const isAuthenticated = ref(false)
   const user = ref<UserInfo | null>(null)
   const token = ref<string | null>(null)
   const refreshToken = ref<string | null>(null)
   const loading = ref(false)
+  
+  // KYC related state
+  const kycStatus = ref<number | null>(null) // 0=not done, 1=approved, 2=temporarily rejected, 3=rejected
+  const kycChecked = ref(false) // Whether KYC status has been checked
 
-  // 计算属性
+  // Computed properties
   const isLoggedIn = computed(() => isAuthenticated.value && !!token.value)
   const currentUser = computed(() => user.value)
   const authToken = computed(() => token.value)
+  
+  // KYC related computed properties
+  const isKycApproved = computed(() => kycStatus.value === 1)
+  const needsKyc = computed(() => kycStatus.value === 0 || kycStatus.value === 2 || kycStatus.value === 3)
 
-  // 初始化认证状态
+  // Initialize authentication state
   const initializeAuth = () => {
     const savedToken = localStorage.getItem('token')
     const savedRefreshToken = localStorage.getItem('refreshToken')
     const savedUser = localStorage.getItem('user')
+    const savedKycStatus = localStorage.getItem('kycStatus')
+    const savedKycChecked = localStorage.getItem('kycChecked')
 
     if (savedToken && savedRefreshToken) {
       token.value = savedToken
@@ -38,71 +48,79 @@ export const useAuthStore = defineStore('auth', () => {
         user.value = JSON.parse(savedUser)
       }
     }
+
+    // Restore KYC status
+    if (savedKycStatus) {
+      kycStatus.value = parseInt(savedKycStatus)
+    }
+    if (savedKycChecked) {
+      kycChecked.value = savedKycChecked === 'true'
+    }
   }
 
-  // 发送邮件验证码
+  // Send email verification code
   const sendEmailCode = async (params: SendEmailParams) => {
     loading.value = true
     try {
       const response: ApiResponse<null> = await AuthAPI.sendEmail(params)
       if (response.success) {
-        return { success: true, message: '验证码发送成功' }
+        return { success: true, message: 'Verification code sent successfully' }
       } else {
-        return { success: false, message: response.msg || '发送失败' }
+        return { success: false, message: response.msg || 'Send failed' }
       }
     } catch (error) {
-      console.error('发送邮件验证码失败:', error)
+      console.error('Failed to send email verification code:', error)
       return {
         success: false,
-        message: error instanceof Error ? error.message : '发送失败'
+        message: error instanceof Error ? error.message : 'Send failed'
       }
     } finally {
       loading.value = false
     }
   }
 
-  // 用户登录
+  // User login
   const login = async (params: LoginParams) => {
     loading.value = true
     try {
       const response: ApiResponse<LoginResponse> = await AuthAPI.login(params)
 
       if (response.success && response.model) {
-        // 保存认证信息
+        // Save authentication info
         token.value = response.model.token
         refreshToken.value = response.model.refreshToken
         isAuthenticated.value = true
 
-        // 保存到本地存储
+        // Save to local storage
         localStorage.setItem('token', response.model.token)
         localStorage.setItem('refreshToken', response.model.refreshToken)
 
-        // 设置用户信息
+        // Set user info
         user.value = {
           email: params.email,
-          id: params.email // 使用邮箱作为 ID
+          id: params.email // Use email as ID
         }
         localStorage.setItem('user', JSON.stringify(user.value))
 
-        return { success: true, message: '登录成功' }
+        return { success: true, message: 'Login successful' }
       } else {
-        return { success: false, message: response.msg || '登录失败' }
+        return { success: false, message: response.msg || 'Login failed' }
       }
     } catch (error) {
-      console.error('登录失败:', error)
+      console.error('Login failed:', error)
       return {
         success: false,
-        message: error instanceof Error ? error.message : '登录失败'
+        message: error instanceof Error ? error.message : 'Login failed'
       }
     } finally {
       loading.value = false
     }
   }
 
-  // 刷新 token
+  // Refresh token
   const refreshAuthToken = async () => {
     if (!refreshToken.value) {
-      throw new Error('没有刷新 token')
+      throw new Error('No refresh token')
     }
 
     try {
@@ -114,49 +132,61 @@ export const useAuthStore = defineStore('auth', () => {
         token.value = response.model.token
         refreshToken.value = response.model.refreshToken
 
-        // 更新本地存储
+        // Update local storage
         localStorage.setItem('token', response.model.token)
         localStorage.setItem('refreshToken', response.model.refreshToken)
 
         return true
       } else {
-        throw new Error(response.msg || '刷新 token 失败')
+        throw new Error(response.msg || 'Token refresh failed')
       }
     } catch (error) {
-      console.error('刷新 token 失败:', error)
-      // 刷新失败，清除认证状态
+      console.error('Token refresh failed:', error)
+      // Refresh failed, clear authentication state
       logout()
       throw error
     }
   }
 
-  // 用户登出
-  const logout = async () => {
+  // User logout
+  const logout = async (): Promise<void> => {
     loading.value = true
     try {
-      // 如果有刷新 token，调用登出接口
+      console.log('开始登出，当前token:', !!token.value)
+      
+      // If refresh token exists, call logout API
       if (refreshToken.value) {
+        console.log('调用登出API...')
         await AuthAPI.logout({ refresh_token: refreshToken.value })
+        console.log('登出API调用成功')
+      } else {
+        console.log('没有refresh token，跳过API调用')
       }
     } catch (error) {
-      console.error('登出请求失败:', error)
+      console.error('Logout request failed:', error)
+      // 即使API调用失败，也要清除本地状态
     } finally {
-      // 清除所有认证信息
+      console.log('清除认证状态...')
+      
+      // Clear all authentication info
       isAuthenticated.value = false
       user.value = null
       token.value = null
       refreshToken.value = null
 
-      // 清除本地存储
+      // Clear local storage
       localStorage.removeItem('token')
       localStorage.removeItem('refreshToken')
       localStorage.removeItem('user')
+      localStorage.removeItem('kycStatus')
+      localStorage.removeItem('kycChecked')
 
       loading.value = false
+      console.log('登出完成')
     }
   }
 
-  // 更新用户信息
+  // Update user info
   const updateUserInfo = (userInfo: Partial<UserInfo>) => {
     if (user.value) {
       user.value = { ...user.value, ...userInfo }
@@ -164,35 +194,94 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
-  // 检查 token 是否过期
+  // Check if token is expired
   const isTokenExpired = () => {
-    // 这里可以添加 token 过期检查逻辑
-    // 目前简单返回 false
+    // Token expiration check logic can be added here
+    // Currently simply return false
     return false
+  }
+
+  // Get KYC access token
+  const getKycAccessToken = async (): Promise<string> => {
+    if (!token.value || !refreshToken.value) {
+      throw new Error('User not logged in')
+    }
+
+    try {
+      const response: ApiResponse<string> = await AuthAPI.getKycAccessToken({
+        token: token.value,
+        refresh_token: refreshToken.value
+      })
+
+      if (response.success && response.model) {
+        return response.model
+      } else {
+        throw new Error(response.msg || 'Failed to get KYC access token')
+      }
+    } catch (error) {
+      console.error('Failed to get KYC access token:', error)
+      throw error
+    }
+  }
+
+  // Check KYC status
+  const checkKycStatus = async (): Promise<number> => {
+    if (!token.value || !refreshToken.value) {
+      throw new Error('User not logged in')
+    }
+
+    try {
+      const response: ApiResponse<number> = await AuthAPI.checkKycStatus({
+        token: token.value,
+        refresh_token: refreshToken.value
+      })
+
+      if (response.success && response.model !== null && response.model !== undefined) {
+        kycStatus.value = response.model
+        kycChecked.value = true
+        
+        // Save to local storage
+        localStorage.setItem('kycStatus', response.model.toString())
+        localStorage.setItem('kycChecked', 'true')
+        
+        return response.model
+      } else {
+        throw new Error(response.msg || 'Failed to check KYC status')
+      }
+    } catch (error) {
+      console.error('Failed to check KYC status:', error)
+      throw error
+    }
   }
 
 
   return {
-    // 状态
+    // State
     isAuthenticated,
     user,
     token,
     refreshToken,
     loading,
+    kycStatus,
+    kycChecked,
 
-    // 计算属性
+    // Computed properties
     isLoggedIn,
     currentUser,
     authToken,
+    isKycApproved,
+    needsKyc,
 
-    // 方法
+    // Methods
     initializeAuth,
     sendEmailCode,
     login,
     refreshAuthToken,
     logout,
     updateUserInfo,
-    isTokenExpired
+    isTokenExpired,
+    getKycAccessToken,
+    checkKycStatus
   }
 }, {
   persist: {
