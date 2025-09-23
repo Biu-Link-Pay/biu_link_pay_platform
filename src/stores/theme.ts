@@ -136,7 +136,6 @@ export const useThemeStore = defineStore('theme', () => {
 }, {
   persist: {
     key: 'theme-store',
-    storage: localStorage,
-    paths: ['currentTheme'] // 只持久化 currentTheme，避免其他状态冲突
+    storage: localStorage
   }
 })
