@@ -181,6 +181,16 @@ export const useAuthStore = defineStore('auth', () => {
       localStorage.removeItem('kycStatus')
       localStorage.removeItem('kycChecked')
 
+      // Clear card store cache
+      try {
+        const { useCardStore } = await import('@/stores/card')
+        const cardStore = useCardStore()
+        cardStore.reset()
+        console.log('Card store cache cleared on logout')
+      } catch (error) {
+        console.warn('Failed to clear card store on logout:', error)
+      }
+
       loading.value = false
       console.log('登出完成')
     }

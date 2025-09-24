@@ -43,16 +43,9 @@ export function setupRouterGuards(router: Router) {
             return
           }
         } else {
-          // 检查是否需要 KYC 验证
-          if (to.name !== 'KycVerification' && authStore.needsKyc) {
-            console.log('User needs KYC verification, redirecting to KYC page')
-            next({
-              path: '/kyc-verification',
-              query: { returnTo: to.fullPath }
-            })
-            return
-          }
-          
+          // KYC验证现在通过dialog进行，不再需要路由跳转
+          // 允许用户访问所有页面，KYC验证在具体功能中处理
+          console.log('User authenticated, allowing access to all pages')
           next()
         }
       } else {

@@ -5,23 +5,23 @@
 
     <!-- Main Content -->
     <div
-      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+      class="w-full max-w-2xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
       <!-- Desktop Layout -->
       <div class="hidden md:block">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="space-y-8">
           <!-- Left Column: Order Information -->
           <div class="space-y-6">
             <!-- Order Information -->
             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Order Information</h3>
-              <div class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Order Number -->
-                <div class="flex items-center justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order NO.</span>
+                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Order NO.</div>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
                     <button @click="copyToClipboard(orderNumber)"
-                      class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
                       title="Copy order number">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
@@ -29,14 +29,14 @@
                 </div>
 
                 <!-- Order Amount -->
-                <div class="flex items-center justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order amount</span>
-                  <span class="text-lg font-bold text-gray-900 dark:text-white">{{ formatCurrency(orderAmount) }}</span>
+                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Order amount</div>
+                  <div class="text-lg font-bold text-gray-900 dark:text-white">{{ formatCurrency(orderAmount) }}</div>
                 </div>
 
                 <!-- You need to pay -->
-                <div class="flex items-center justify-between">
-                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">You need to pay</span>
+                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">You need to pay</div>
                   <div class="flex items-center space-x-2">
                     <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
                     }}</span>
@@ -45,7 +45,7 @@
                       <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
                     </div>
                     <button @click="copyToClipboard(cryptoAmount)"
-                      class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
                       title="Copy amount">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
@@ -70,39 +70,54 @@
             </div>
           </div>
 
-          <!-- Right Column: Payment Address -->
+          <!-- Right Column: Payment Information -->
           <div class="space-y-6">
-            <!-- Payment Address Section -->
+            <!-- Payment Information Section -->
             <div v-if="isOrderPending"
               class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <div class="space-y-4">
+              <div class="space-y-6">
                 <!-- Section Header -->
                 <div class="flex items-center justify-between">
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Payment Address</h3>
-                  <div class="flex items-center space-x-2 text-red-500">
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Payment Information</h3>
+                  <div class="flex items-center space-x-2">
                     <i class="pi pi-clock text-sm"></i>
-                    <span class="text-sm font-medium">{{ formatTime(countdown) }}</span>
+                    <div class="flex items-center space-x-1">
+                      <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
+                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[0] }}</span>
+                      </div>
+                      <span class="text-gray-600 dark:text-gray-400 font-bold">:</span>
+                      <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
+                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[1] }}</span>
+                      </div>
+                      <span class="text-gray-600 dark:text-gray-400 font-bold">:</span>
+                      <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
+                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[2] }}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <!-- Network Type -->
-                <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
-                  <div class="text-sm font-medium text-blue-800 dark:text-blue-200">
-                    {{ selectedCrypto }}({{ selectedNetwork }}) only
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <!-- Network Type -->
+                  <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                    <div class="text-sm font-medium text-blue-800 dark:text-blue-200 mb-2">Network Type</div>
+                    <div class="text-lg font-semibold text-blue-900 dark:text-blue-100">
+                      {{ selectedCrypto }}({{ selectedNetwork }}) only
+                    </div>
                   </div>
-                </div>
 
-                <!-- Wallet Address -->
-                <div class="space-y-2">
-                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Wallet Address:</div>
-                  <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 border border-gray-200 dark:border-gray-600">
-                    <div class="flex items-center justify-between">
-                      <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>
-                      <button @click="copyToClipboard(walletAddress)"
-                        class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                        title="Copy address">
-                        <i class="pi pi-copy text-gray-500 text-sm"></i>
-                      </button>
+                  <!-- Payment Address -->
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Payment Address:</div>
+                    <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>
+                        <button @click="copyToClipboard(walletAddress)"
+                          class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                          title="Copy address">
+                          <i class="pi pi-copy text-gray-500 text-sm"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -139,12 +154,12 @@
             <!-- Success Status Content -->
             <div v-else-if="isOrderSuccess"
               class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <div class="text-center space-y-4">
-                <div
-                  class="w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto">
-                  <i class="pi pi-check text-green-600 dark:text-green-400 text-2xl"></i>
-                </div>
-                <div>
+              <div class="space-y-6">
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="pi pi-check text-green-600 dark:text-green-400 text-2xl"></i>
+                  </div>
                   <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Successful!</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
                     Your payment of {{ cryptoAmount }} {{ selectedCrypto }} has been confirmed.
@@ -152,8 +167,8 @@
                 </div>
                 <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
                   <div class="text-sm text-green-800 dark:text-green-200">
-                    <div class="font-medium mb-1">Transaction Details:</div>
-                    <div class="space-y-1 text-xs">
+                    <div class="font-medium mb-3">Transaction Details:</div>
+                    <div class="grid grid-cols-2 gap-4 text-xs">
                       <div>Amount: {{ formatCurrency(orderAmount) }}</div>
                       <div>Currency: {{ selectedCrypto }}</div>
                       <div>Network: {{ selectedNetwork }}</div>
@@ -167,12 +182,12 @@
             <!-- Failed Status Content -->
             <div v-else-if="isOrderFailed"
               class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <div class="text-center space-y-4">
-                <div
-                  class="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto">
-                  <i class="pi pi-times text-red-600 dark:text-red-400 text-2xl"></i>
-                </div>
-                <div>
+              <div class="space-y-6">
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="pi pi-times text-red-600 dark:text-red-400 text-2xl"></i>
+                  </div>
                   <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Failed</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
                     Your payment could not be processed. Please try again.
@@ -180,8 +195,8 @@
                 </div>
                 <div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-4">
                   <div class="text-sm text-red-800 dark:text-red-200">
-                    <div class="font-medium mb-1">Order Details:</div>
-                    <div class="space-y-1 text-xs">
+                    <div class="font-medium mb-3">Order Details:</div>
+                    <div class="grid grid-cols-2 gap-4 text-xs">
                       <div>Amount: {{ formatCurrency(orderAmount) }}</div>
                       <div>Currency: {{ selectedCrypto }}</div>
                       <div>Order: {{ orderNumber }}</div>
@@ -194,12 +209,12 @@
             <!-- Cancelled Status Content -->
             <div v-else-if="isOrderCancelled"
               class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <div class="text-center space-y-4">
-                <div
-                  class="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto">
-                  <i class="pi pi-ban text-gray-600 dark:text-gray-400 text-2xl"></i>
-                </div>
-                <div>
+              <div class="space-y-6">
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="pi pi-ban text-gray-600 dark:text-gray-400 text-2xl"></i>
+                  </div>
                   <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Cancelled</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
                     This payment has been cancelled.
@@ -207,8 +222,8 @@
                 </div>
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
                   <div class="text-sm text-gray-800 dark:text-gray-200">
-                    <div class="font-medium mb-1">Order Details:</div>
-                    <div class="space-y-1 text-xs">
+                    <div class="font-medium mb-3">Order Details:</div>
+                    <div class="grid grid-cols-2 gap-4 text-xs">
                       <div>Amount: {{ formatCurrency(orderAmount) }}</div>
                       <div>Currency: {{ selectedCrypto }}</div>
                       <div>Order: {{ orderNumber }}</div>
@@ -293,16 +308,28 @@
           </div>
         </div>
 
-        <!-- Payment Address Section -->
+        <!-- Payment Information Section -->
         <div v-if="isOrderPending"
           class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
           <div class="space-y-4">
             <!-- Section Header -->
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Payment Address</h3>
-              <div class="flex items-center space-x-2 text-red-500">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Payment Information</h3>
+              <div class="flex items-center space-x-2">
                 <i class="pi pi-clock text-sm"></i>
-                <span class="text-sm font-medium">{{ formatTime(countdown) }}</span>
+                <div class="flex items-center space-x-1">
+                  <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
+                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[0] }}</span>
+                  </div>
+                  <span class="text-gray-600 dark:text-gray-400 font-bold text-sm">:</span>
+                  <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
+                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[1] }}</span>
+                  </div>
+                  <span class="text-gray-600 dark:text-gray-400 font-bold text-sm">:</span>
+                  <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
+                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[2] }}</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -313,9 +340,9 @@
               </div>
             </div>
 
-            <!-- Wallet Address -->
+            <!-- Payment Address -->
             <div class="space-y-2">
-              <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Wallet Address:</div>
+              <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Payment Address:</div>
               <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 border border-gray-200 dark:border-gray-600">
                 <div class="flex items-center justify-between">
                   <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>

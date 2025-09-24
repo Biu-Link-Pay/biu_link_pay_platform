@@ -289,6 +289,10 @@ const login = async () => {
         life: 3000
       })
 
+      // Clear card store cache to prevent showing previous user's data
+      cardStore.reset()
+      console.log('Card store cache cleared for new user')
+
       // Check card list after successful login
       await checkCardListAndRedirect()
     } else {

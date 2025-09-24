@@ -24,8 +24,8 @@
         <!-- Card Image -->
         <div class="mb-4">
           <div
-            class="w-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 rounded-lg flex items-center justify-center">
-            <img :src="card.cardPicture || ''" :alt="card.cardName" class="w-full h-auto object-contain rounded-lg" />
+            class="w-full rounded-3xl bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
+            <img :src="card.cardPicture || ''" :alt="card.cardName" class="w-full h-auto object-contain" />
           </div>
         </div>
 

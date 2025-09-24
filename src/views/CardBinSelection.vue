@@ -63,7 +63,10 @@
           <!-- Mobile: Card Carousel -->
           <div class="md:hidden">
             <div class="relative">
-              <div class="overflow-hidden">
+              <div class="overflow-hidden" 
+                @touchstart="handleTouchStart"
+                @touchmove="handleTouchMove"
+                @touchend="handleTouchEnd">
                 <div class="flex transition-transform duration-300 ease-in-out"
                   :style="{ transform: `translateX(-${currentBinIndex * 100}%)` }">
                   <div v-for="(binInfo, index) in cardBins" :key="index" class="w-full flex-shrink-0 px-2">
@@ -88,14 +91,14 @@
                       </div>
 
                       <!-- Card Details -->
-                      <div class="space-y-2 mb-4 text-sm">
+                      <div class="space-y-1 mb-4 text-sm">
                         <!-- Card BIN -->
                         <div class="text-base font-mono tracking-wider">
                           {{ formatCardNumber(binInfo.cardBin) }}
                         </div>
 
                         <!-- Card Type and Currency -->
-                        <div class="flex justify-between items-center">
+                        <div class="flex justify-between items-center mt-4">
                           <span>{{ binInfo.cardCurrency || 'USD' }}</span>
                         </div>
 
@@ -117,18 +120,6 @@
                 </div>
               </div>
 
-              <!-- Navigation Arrows -->
-              <button v-if="currentBinIndex > 0"
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center"
-                @click="previousBin">
-                <i class="pi pi-chevron-left text-gray-600 text-sm"></i>
-              </button>
-
-              <button v-if="currentBinIndex < cardBins.length - 1"
-                class="absolute right-0 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center"
-                @click="nextBin">
-                <i class="pi pi-chevron-right text-gray-600 text-sm"></i>
-              </button>
             </div>
 
             <!-- Dots Indicator -->
@@ -260,7 +251,7 @@
                         </div>
 
                         <!-- Card Details -->
-                        <div
+                        <!-- <div
                           class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
                           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Card Details</h3>
                           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-sm">
@@ -298,7 +289,7 @@
                               </span>
                             </div>
                           </div>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
@@ -487,6 +478,44 @@ const handleMouseUp = () => {
   const deltaX = startX.value - currentX.value
 
   // Switch card based on drag distance and direction
+  if (Math.abs(deltaX) > dragThreshold) {
+    if (deltaX > 0) {
+      // Swipe left, show next card
+      nextBin()
+    } else {
+      // Swipe right, show previous card
+      previousBin()
+    }
+  }
+
+  isDragging.value = false
+  startX.value = 0
+  currentX.value = 0
+}
+
+// Touch event handlers for mobile
+const handleTouchStart = (event: TouchEvent) => {
+  if (event.touches.length === 1) {
+    isDragging.value = true
+    startX.value = event.touches[0].clientX
+    currentX.value = event.touches[0].clientX
+    event.preventDefault()
+  }
+}
+
+const handleTouchMove = (event: TouchEvent) => {
+  if (!isDragging.value || event.touches.length !== 1) return
+  
+  currentX.value = event.touches[0].clientX
+  event.preventDefault()
+}
+
+const handleTouchEnd = () => {
+  if (!isDragging.value) return
+
+  const deltaX = startX.value - currentX.value
+
+  // Switch card based on swipe distance and direction
   if (Math.abs(deltaX) > dragThreshold) {
     if (deltaX > 0) {
       // Swipe left, show next card

@@ -372,7 +372,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
@@ -415,20 +415,24 @@ const selectPayType = (payType: OrderPayType) => {
   // Auto-select first crypto network if available
   if (payType.cryptoNetworks && payType.cryptoNetworks.length > 0) {
     selectedCrypto.value = payType.cryptoNetworks[0]
-    // Query rate after selecting crypto
-    queryRate()
+    // Start rate polling when both payment type and crypto are selected
+    startRatePolling()
   } else {
     selectedCrypto.value = null
     rateResult.value = null
     actualCryptoAmount.value = ''
+    // Stop polling if no crypto networks available
+    stopRatePolling()
   }
 }
 
 // Select crypto currency
 const selectCrypto = (crypto: OrderCryptoNetwork) => {
   selectedCrypto.value = crypto
-  // Query rate after selecting crypto
-  queryRate()
+  // Start rate polling when crypto is selected
+  if (selectedPayType.value) {
+    startRatePolling()
+  }
 }
 
 // Query exchange rate
@@ -474,6 +478,53 @@ const queryRate = async () => {
   }
 }
 
+// Rate polling state
+const ratePollingInterval = ref<NodeJS.Timeout | null>(null)
+const isRatePolling = ref(false)
+
+// Start rate polling
+const startRatePolling = () => {
+  if (isRatePolling.value) {
+    console.log('Rate polling already active, skipping')
+    return
+  }
+  
+  // Check if we have required data
+  if (!selectedCrypto.value || !selectedPayType.value) {
+    console.log('Cannot start polling: missing crypto or payment type', {
+      crypto: selectedCrypto.value,
+      payType: selectedPayType.value
+    })
+    return
+  }
+  
+  isRatePolling.value = true
+  console.log('Starting rate polling every 15 seconds', {
+    crypto: selectedCrypto.value.crypto.name,
+    network: selectedCrypto.value.network.sortName,
+    payType: selectedPayType.value.name
+  })
+  
+  // Initial query
+  queryRate()
+  
+  // Set up polling
+  ratePollingInterval.value = setInterval(() => {
+    console.log('Polling exchange rate...')
+    queryRate()
+  }, 15000) // Poll every 15 seconds
+}
+
+// Stop rate polling
+const stopRatePolling = () => {
+  if (ratePollingInterval.value) {
+    clearInterval(ratePollingInterval.value)
+    ratePollingInterval.value = null
+  }
+  isRatePolling.value = false
+  console.log('Rate polling stopped')
+}
+
 // Load payment methods from API
 const loadPaymentMethods = async () => {
   try {
@@ -486,12 +537,21 @@ const loadPaymentMethods = async () => {
       // Auto-select first payment method if available
       if (paymentMethods.value.length > 0) {
         selectedPayType.value = paymentMethods.value[0]
+        console.log('Auto-selected payment method:', paymentMethods.value[0].name)
+        
         // Auto-select first crypto network of the first payment method
         if (paymentMethods.value[0].cryptoNetworks && paymentMethods.value[0].cryptoNetworks.length > 0) {
           selectedCrypto.value = paymentMethods.value[0].cryptoNetworks[0]
-          // Auto-query rate after selecting crypto
-          await queryRate()
+          console.log('Auto-selected crypto network:', paymentMethods.value[0].cryptoNetworks[0].crypto.name)
+          
+          // Start rate polling after auto-selecting payment method and crypto
+          console.log('Attempting to start rate polling...')
+          startRatePolling()
+        } else {
+          console.log('No crypto networks available for selected payment method')
         }
+      } else {
+        console.log('No payment methods available')
       }
     }
   } catch (error) {
@@ -643,5 +703,10 @@ onMounted(async () => {
   }
   // Load payment methods from API
   await loadPaymentMethods()
+})
+
+// Clean up polling on unmount
+onUnmounted(() => {
+  stopRatePolling()
 })
 </script>
