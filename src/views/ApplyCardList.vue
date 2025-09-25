@@ -58,9 +58,12 @@
 
         <!-- Desktop: Grid Layout -->
         <div class="hidden md:grid md:grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
-          <CardItem v-for="card in cardConfigs" :key="card.cardName" :card="card"
-            :selected="selectedCard?.cardName === card.cardName" @select="selectCard" @order="orderCard"
-            @activate="activateCard" />
+          <div v-for="card in cardConfigs" :key="card.cardName" 
+            class="card-hover-container transition-all duration-300 ease-in-out hover:scale-102 hover:shadow-lg hover:-translate-y-1">
+            <CardItem :card="card"
+              :selected="selectedCard?.cardName === card.cardName" @select="selectCard" @order="orderCard"
+              @activate="activateCard" />
+          </div>
         </div>
       </div>
 
@@ -75,7 +78,7 @@
     </div>
 
     <!-- KYC Verification Dialog -->
-    <Dialog v-model:visible="showKycDialog" modal :closable="false" :style="{ width: '95vw', maxWidth: '800px' }" class="kyc-dialog">
+    <Dialog v-model:visible="showKycDialog" modal :closable="false" :style="{ width: '100vw', height: '100vh', maxWidth: 'none', maxHeight: 'none' }" class="kyc-dialog-fullscreen">
       <template #header>
         <div class="flex items-center justify-between w-full">
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">KYC Identity Verification</h3>
@@ -92,7 +95,7 @@
 
       <div class="space-y-6">
         <!-- KYC SDK Container -->
-        <div v-if="showKycSDK" class="relative !mb-0 h-108 w-full sm:h-80 md:h-96 lg:h-156 lg:w-320 overflow-auto">
+        <div v-if="showKycSDK" class="relative !mb-0 h-[calc(100vh-200px)] w-full overflow-auto">
           <div id="sumsub-websdk-container" class="h-full w-full rounded-lg border border-gray-200 dark:border-gray-700"></div>
         </div>
 
@@ -162,12 +165,12 @@ const fetchCardConfigs = async () => {
   const result = await cardStore.fetchCardConfigs()
 
   if (result.success) {
-    toast.add({
-      severity: 'success',
-      summary: 'Load Successful',
-      detail: 'Card configurations loaded successfully',
-      life: 2000
-    })
+    // toast.add({
+    //   severity: 'success',
+    //   summary: 'Load Successful',
+    //   detail: 'Card configurations loaded successfully',
+    //   life: 2000
+    // })
   } else {
     toast.add({
       severity: 'error',
@@ -678,36 +681,105 @@ onMounted(() => {
   overflow-y: auto;
 }
 
-/* Mobile optimizations */
-@media (max-width: 640px) {
-  .kyc-dialog {
-    width: 95vw !important;
-    max-width: 95vw !important;
-    margin: 0.5rem !important;
-  }
-  
-  .kyc-dialog .p-dialog-content {
-    padding: 1rem !important;
-  }
-  
-  .kyc-dialog .p-dialog-header {
-    padding: 1rem !important;
-  }
+/* Fullscreen KYC Dialog */
+.kyc-dialog-fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
 }
 
-/* Tablet optimizations */
-@media (min-width: 641px) and (max-width: 1024px) {
-  .kyc-dialog {
-    width: 90vw !important;
-    max-width: 90vw !important;
-  }
+.kyc-dialog-fullscreen .p-dialog {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
 }
 
-/* Desktop optimizations */
-@media (min-width: 1025px) {
-  .kyc-dialog {
-    width: 800px !important;
-    max-width: 800px !important;
-  }
+.kyc-dialog-fullscreen .p-dialog-content {
+  height: calc(100vh - 80px) !important;
+  padding: 1rem !important;
+  overflow-y: auto !important;
+}
+
+.kyc-dialog-fullscreen .p-dialog-header {
+  padding: 1rem !important;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dark .kyc-dialog-fullscreen .p-dialog-header {
+  border-bottom-color: #374151;
+}
+
+/* Fullscreen dialog overrides for all screen sizes */
+.kyc-dialog-fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+.kyc-dialog-fullscreen .p-dialog {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Card hover effects for desktop */
+.card-hover-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.card-hover-container:hover {
+  transform: scale(1.02) translateY(-4px);
+  box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05),
+    0 0 0 1px rgba(59, 130, 246, 0.1);
+  z-index: 10;
+}
+
+.card-hover-container:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(147, 51, 234, 0.05) 100%);
+  border-radius: 12px;
+  z-index: -1;
+}
+
+/* Dark mode hover effects */
+.dark .card-hover-container:hover {
+  box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(59, 130, 246, 0.2);
+}
+
+.dark .card-hover-container:hover::before {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
+}
+
+/* Smooth transitions */
+.card-hover-container {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover-container * {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 </style>

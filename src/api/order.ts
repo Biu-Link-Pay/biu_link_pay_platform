@@ -273,7 +273,7 @@ export interface WithdrawOrderPageResponse {
 export interface TransactionListItem {
   status: string // 状态
   transactionType: string // 交易类型
-  transactionAmount: number // 交易金额
+  arrivalAmount: number // 交易金额
   transactionCurrency: string // 交易币种
   merchantNameLocation: string // 商家名字
   merchantLocation: string // 商户所在国家

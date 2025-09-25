@@ -75,7 +75,6 @@
                   <!-- Crypto Networks Selection -->
                   <div v-if="selectedPayType?.name === payType.name"
                     class="mt-3 pt-3 border-t border-gray-200 dark:border-gray-600">
-                    <div class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Select Cryptocurrency:</div>
                     <div class="text-xs text-gray-500 dark:text-gray-400 mb-2">
                       Selected: {{ selectedCrypto ? `${selectedCrypto.crypto.name}-${selectedCrypto.network.name}` :
                         'None' }}
@@ -103,6 +102,7 @@
                             <div class="font-semibold text-gray-900 dark:text-white">{{ crypto.crypto.name }}</div>
                             <div class="text-sm text-gray-500 dark:text-gray-400">{{ crypto.crypto.fullName }}</div>
                             <div class="text-xs text-gray-400 dark:text-gray-500">{{ crypto.network.fullName }}</div>
+                            <div class="text-xs text-gray-400 dark:text-gray-500">Limit：{{ crypto.minLimit }} - {{ crypto.maxLimit }}</div>
                           </div>
                         </div>
 
@@ -123,7 +123,7 @@
         </div>
 
         <!-- Selected Crypto Details - Desktop -->
-        <div v-if="selectedCrypto" class="mt-8">
+        <!-- <div v-if="selectedCrypto" class="mt-8">
           <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-sm">
             <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Payment Details</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
@@ -161,7 +161,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Action Buttons - Desktop -->
         <div class="bottom-buttons-container relative md:static">
@@ -186,7 +186,7 @@
             <span v-else-if="!selectedPayType">Select Payment</span>
             <span v-else-if="!selectedCrypto">Select Crypto</span>
             <span v-else-if="!actualCryptoAmount">Loading payment amount...</span>
-            <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}</span>
+            <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}<span v-if="countdown > 0" class="text-xs opacity-75"> ({{ countdown }}s)</span></span>
           </button>
         </div>
       </div>
@@ -256,7 +256,6 @@
                 <!-- Crypto Networks Selection -->
                 <div v-if="selectedPayType?.name === payType.name"
                   class="mt-3 pt-3 border-t border-gray-200 dark:border-gray-600">
-                  <div class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Select Cryptocurrency:</div>
                   <div class="text-xs text-gray-500 dark:text-gray-400 mb-2">
                     Selected: {{ selectedCrypto ? `${selectedCrypto.crypto.name}-${selectedCrypto.network.name}` :
                       'None' }}
@@ -301,7 +300,7 @@
 
 
           <!-- Selected Crypto Details -->
-          <div v-if="selectedCrypto" class="mt-6 bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+          <!-- <div v-if="selectedCrypto" class="mt-6 bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
             <h4 class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Payment Details</h4>
             <div class="space-y-2 text-sm">
               <div class="flex justify-between">
@@ -337,7 +336,7 @@
                 <span class="font-medium text-gray-900 dark:text-white">${{ selectedCrypto.maxLimit }}</span>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Action Buttons -->
           <div class="bottom-buttons-container relative md:static">
@@ -362,7 +361,7 @@
               <span v-else-if="!selectedPayType">Select Payment</span>
               <span v-else-if="!selectedCrypto">Select Crypto</span>
               <span v-else-if="!actualCryptoAmount">Loading payment amount...</span>
-              <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}</span>
+              <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}<span v-if="countdown > 0" class="text-xs opacity-75"> ({{ countdown }}s)</span></span>
             </button>
           </div>
         </div>
@@ -403,9 +402,29 @@ const creatingOrder = ref(false)
 const rateResult = ref<any>(null)
 const actualCryptoAmount = ref<string>('')
 
+// Currency symbol mapping
+const currencySymbols: Record<string, string> = {
+  'USD': '$',
+  'EUR': '€',
+  'CNH': '¥',
+  'GBP': '£',
+  'JPY': '¥',
+  'CAD': 'C$',
+  'AUD': 'A$',
+  'CHF': 'CHF',
+  'SGD': 'S$',
+  'HKD': 'HK$'
+}
+
+// Get current currency symbol
+const currentCurrencySymbol = computed(() => {
+  const currency = cardStore.selectedCardBin?.cardCurrency || 'USD'
+  return currencySymbols[currency] || '$'
+})
+
 // Format currency
 const formatCurrency = (amount: number) => {
-  return `$${amount.toFixed(2)} ${cardStore.selectedCardBin?.cardCurrency}`
+  return `${currentCurrencySymbol.value}${amount.toFixed(2)}`
 }
 
 
@@ -482,6 +501,10 @@ const queryRate = async () => {
 const ratePollingInterval = ref<NodeJS.Timeout | null>(null)
 const isRatePolling = ref(false)
 
+// Countdown state
+const countdown = ref(0)
+const countdownInterval = ref<NodeJS.Timeout | null>(null)
+
 // Start rate polling
 const startRatePolling = () => {
   if (isRatePolling.value) {
@@ -508,10 +531,15 @@ const startRatePolling = () => {
   // Initial query
   queryRate()
   
+  // Start countdown
+  startCountdown()
+  
   // Set up polling
   ratePollingInterval.value = setInterval(() => {
     console.log('Polling exchange rate...')
     queryRate()
+    // Restart countdown after each poll
+    startCountdown()
   }, 15000) // Poll every 15 seconds
 }
 
@@ -522,7 +550,33 @@ const stopRatePolling = () => {
     ratePollingInterval.value = null
   }
   isRatePolling.value = false
+  stopCountdown()
   console.log('Rate polling stopped')
+}
+
+// Start countdown
+const startCountdown = () => {
+  countdown.value = 15
+  if (countdownInterval.value) {
+    clearInterval(countdownInterval.value)
+  }
+  
+  countdownInterval.value = setInterval(() => {
+    countdown.value--
+    if (countdown.value <= 0) {
+      clearInterval(countdownInterval.value!)
+      countdownInterval.value = null
+    }
+  }, 1000)
+}
+
+// Stop countdown
+const stopCountdown = () => {
+  if (countdownInterval.value) {
+    clearInterval(countdownInterval.value)
+    countdownInterval.value = null
+  }
+  countdown.value = 0
 }
 
 // Load payment methods from API
@@ -652,6 +706,7 @@ const handleContinue = async () => {
         qrcodeLink: orderResponse.model.qrcodeLink,
         exchange: orderResponse.model.exchange,
         amount: payAmount.value.toString(),
+        orderCurrency: cardStore.selectedCardBin?.cardCurrency || 'USD',
         currency: selectedCrypto.value!.crypto.name,
         network: selectedCrypto.value!.network.name,
         payType: selectedPayType.value!.name,
@@ -708,5 +763,6 @@ onMounted(async () => {
 // Clean up polling on unmount
 onUnmounted(() => {
   stopRatePolling()
+  stopCountdown()
 })
 </script>

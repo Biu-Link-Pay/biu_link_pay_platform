@@ -132,7 +132,7 @@ export interface TransactionListQueryParams {
 export interface TransactionItem {
   status: string // Status
   transactionType: string // Transaction type
-  transactionAmount: number // Transaction amount
+  arrivalAmount: number // Transaction amount
   transactionCurrency: string // Transaction currency
   merchantNameLocation: string // Merchant name
   merchantLocation: string // Merchant country

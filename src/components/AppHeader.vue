@@ -3,8 +3,8 @@
     class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-6 py-4 transition-colors duration-200">
     <div class="flex justify-between items-center">
       <div class="flex items-center space-x-4">
-        <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center">
-          <span class="text-white font-bold text-lg">G+</span>
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+          <img src="https://static.biulinkpay.online/logo/biu_blue.png" alt="BiuLinkPay" class="w-full h-full object-contain" />
         </div>
         <div v-if="showTitle" class="hidden sm:block">
           <h1 class="text-xl font-semibold text-gray-900 dark:text-white">

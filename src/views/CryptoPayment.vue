@@ -513,6 +513,7 @@ const cardStore = useCardStore()
 // Payment data
 const orderNumber = ref('76782112321321047696')
 const orderAmount = ref(1000.00)
+const orderCurrency = ref('USD')
 const selectedCrypto = ref('ETH')
 const selectedNetwork = ref('ERC20')
 const cryptoAmount = ref('0.263')
@@ -537,9 +538,29 @@ const refreshing = ref(false)
 // Countdown timer
 let countdownInterval: NodeJS.Timeout | null = null
 
+// Currency symbol mapping
+const currencySymbols: Record<string, string> = {
+  'USD': '$',
+  'EUR': '€',
+  'CNH': '¥',
+  'GBP': '£',
+  'JPY': '¥',
+  'CAD': 'C$',
+  'AUD': 'A$',
+  'CHF': 'CHF',
+  'SGD': 'S$',
+  'HKD': 'HK$'
+}
+
+// Get current currency symbol
+const currentCurrencySymbol = computed(() => {
+  const currency = orderCurrency.value || 'USD'
+  return currencySymbols[currency] || '$'
+})
+
 // Computed properties
 const formatCurrency = (amount: number) => {
-  return `$${amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+  return `${currentCurrencySymbol.value}${amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 }
 
 const formatTime = (seconds: number) => {
@@ -882,6 +903,7 @@ onMounted(async () => {
     // Use order number from route query if available, otherwise use store
     orderNumber.value = (route.query.orderNum as string) || order.orderNum || '76782112321321047696'
     orderAmount.value = parseFloat(order.amount) || 1000.00
+    orderCurrency.value = order.orderCurrency || cardStore.selectedCardBin?.cardCurrency || 'USD'
     selectedCrypto.value = order.currency || 'ETH'
     selectedNetwork.value = order.network || 'ERC20'
     cryptoAmount.value = order.cryptoAmount || '0.263'

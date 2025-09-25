@@ -87,31 +87,35 @@
                       <!-- Card content -->
                       <div class="relative z-10">
                         <!-- Card Header -->
-                        <div class="flex items-center justify-between mb-2 mt-18">
+                        <div class="flex items-center justify-between mb-2 mt-12">
                       </div>
 
                       <!-- Card Details -->
-                      <div class="space-y-1 mb-4 text-sm">
+                      <div class="space-y-1 mb-2 text-sm">
+                        <!-- Card Type and Currency -->
+                        <div class="mt-4 text-right">
+                          {{ binInfo.cardCurrency || 'USD' }}
+                        </div>
                         <!-- Card BIN -->
                         <div class="text-base font-mono tracking-wider">
                           {{ formatCardNumber(binInfo.cardBin) }}
                         </div>
-
-                        <!-- Card Type and Currency -->
-                        <div class="flex justify-between items-center mt-4">
-                          <span>{{ binInfo.cardCurrency || 'USD' }}</span>
-                        </div>
-
                         <!-- Available Cards -->
-                        <div class="text-xs opacity-75">
-                          Available: {{ binInfo.remainingAvailableCard || 'Unlimited' }}
-                        </div>
                       </div>
-
                         <!-- Card Footer -->
                         <div class="flex items-center justify-between">
-                          <div class="text-sm opacity-80">
-                            {{ binInfo.billingAddressUpdatable === 'true' ? 'Address Update Supported' : 'Address Update Not Supported' }}
+                          <div>
+                            <div class="text-xs opacity-60 mb-1">Available Cards</div>
+                            <div class="text-sm md:text-base font-semibold">
+                              {{ binInfo.remainingAvailableCard || 'Unlimited' }}
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="text-xs opacity-60 mb-1">Address Update</div>
+                            <div class="text-xs md:text-sm font-medium"
+                              :class="binInfo.billingAddressUpdatable === 'true' ? 'text-green-300' : 'text-gray-300'">
+                              {{ binInfo.billingAddressUpdatable === 'true' ? 'Supported' : 'Not Supported' }}
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -119,7 +123,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
 
             <!-- Dots Indicator -->
@@ -129,7 +132,7 @@
             </div>
 
             <!-- Mobile Card Details -->
-            <div class="mt-6">
+            <!-- <div class="mt-6">
               <div
                 class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Card Details</h3>
@@ -163,7 +166,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <!-- Desktop: Card Switcher Layout -->

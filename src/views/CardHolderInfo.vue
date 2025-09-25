@@ -16,6 +16,34 @@
         </div>
       </div>
 
+      <!-- Card Information (only for recharge action) -->
+      <div v-if="route.query.action === 'recharge'" class="mb-8">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Your Card</h3>
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-8 bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
+                <div class="w-6 h-4 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-sm flex items-center justify-center">
+                  <div class="w-3 h-2 bg-white rounded-sm"></div>
+                </div>
+              </div>
+              <div>
+                <!-- <div class="text-sm text-gray-600 dark:text-gray-400">Balance</div>
+                <div class="text-lg font-semibold text-gray-900 dark:text-white">
+                  {{ currentCurrencySymbol }}{{ cardBalance.toFixed(2) }}
+                </div> -->
+              </div>
+            </div>
+            <div class="text-right">
+              <div class="text-sm text-gray-600 dark:text-gray-400">Card Number</div>
+              <div class="text-lg font-mono font-semibold text-gray-900 dark:text-white">
+                **** {{ maskedCardNumber }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Content: view or edit billing address -->
       <div class="space-y-8">
         <!-- Readonly view -->
@@ -125,7 +153,7 @@
 
           <!-- Quick Amount Buttons -->
           <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <Button v-for="amount in quickAmounts" :key="amount" :label="`$${amount}`" :class="form.rechargeAmount === amount.toString()
+            <Button v-for="amount in quickAmounts" :key="amount" :label="`${currentCurrencySymbol}${amount}`" :class="form.rechargeAmount === amount.toString()
               ? 'bg-blue-600 text-white'
               : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300'"
               class="w-full py-2 px-4 rounded-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
@@ -205,6 +233,38 @@ const countries = ref([
 
 // Quick recharge amounts
 const quickAmounts = ref([20, 50, 100, 200])
+
+// Currency symbol mapping
+const currencySymbols: Record<string, string> = {
+  'USD': '$',
+  'EUR': '€',
+  'CNH': '¥',
+  'GBP': '£',
+  'JPY': '¥',
+  'CAD': 'C$',
+  'AUD': 'A$',
+  'CHF': 'CHF',
+  'SGD': 'S$',
+  'HKD': 'HK$'
+}
+
+// Get current currency symbol
+const currentCurrencySymbol = computed(() => {
+  const currency = cardStore.selectedCardBin?.cardCurrency || 'USD'
+  return currencySymbols[currency] || '$'
+})
+
+// Card information for recharge
+const cardBalance = ref(0.00)
+const cardNumber = ref('1234567890123456') // This would come from API in real implementation
+
+// Masked card number (show only last 4 digits)
+const maskedCardNumber = computed(() => {
+  if (cardNumber.value && cardNumber.value.length >= 4) {
+    return cardNumber.value.slice(-4)
+  }
+  return '****'
+})
 
 // Computed properties for button states
 const canConfirm = computed(() => {
@@ -477,8 +537,31 @@ const goBack = () => {
 }
 
 
-// Initialize: query holder
-onMounted(() => {
-  loadHolder()
+// Load card information for recharge
+const loadCardInfo = async () => {
+  if (route.query.action === 'recharge') {
+    try {
+      // In real implementation, this would call an API to get card details
+      // For now, we'll use mock data
+      cardBalance.value = 125.50
+      cardNumber.value = '1234567890123456'
+      
+      // You could also get this from cardStore if available
+      // const cardDetails = await CardAPI.getCardDetails(cardId)
+      // cardBalance.value = cardDetails.balance
+      // cardNumber.value = cardDetails.cardNumber
+    } catch (error) {
+      console.error('Error loading card info:', error)
+      // Set default values on error
+      cardBalance.value = 0.00
+      cardNumber.value = '****'
+    }
+  }
+}
+
+// Initialize: query holder and card info
+onMounted(async () => {
+  await loadHolder()
+  await loadCardInfo()
 })
 </script>

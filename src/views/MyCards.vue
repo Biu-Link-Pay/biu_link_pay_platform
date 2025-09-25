@@ -237,8 +237,7 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                                {{ formatTransactionAmount(transaction.transactionAmount,
-                                transaction.transactionCurrency) }}
+                                {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency) }}
                               </div>
                               <div class="text-sm lg:text-base" :class="getStatusColor(transaction.status)">
                                 {{ transaction.status }}
@@ -302,8 +301,7 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-sm">
-                                {{ formatTransactionAmount(transaction.transactionAmount,
-                                  transaction.transactionCurrency)
+                                {{ formatTransactionAmount(transaction.arrivalAmount,transaction.transactionCurrency)
                                 }}
                               </div>
                               <div class="text-xs" :class="getStatusColor(transaction.status)">
@@ -659,7 +657,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted, onActivated, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useCardStore } from '@/stores/card'
 import { useToast } from 'primevue/usetoast'
@@ -1248,13 +1246,20 @@ watch(currentCardIndex, () => {
 // Get card list when component mounts
 onMounted(async () => {
   console.log('MyCards component mounted')
-  console.log('Initial card list length:', cardStore.cardList.length)
-
-  // If card list is empty, fetch again
-  if (cardStore.cardList.length === 0) {
-    console.log('Fetching card list...')
+  
+  // Always fetch fresh card list data on page entry
+  console.log('Fetching fresh card list...')
+  try {
     await cardStore.fetchCardList()
     console.log('Card list fetched, length:', cardStore.cardList.length)
+  } catch (error) {
+    console.error('Error fetching card list:', error)
+    toast.add({
+      severity: 'error',
+      summary: 'Error',
+      detail: 'Failed to load card list',
+      life: 3000
+    })
   }
 
   // Load initial data
@@ -1278,6 +1283,31 @@ onMounted(async () => {
 
     // Clear query parameters to avoid duplicate display on page refresh
     router.replace({ name: 'MyCards' })
+  }
+})
+
+// Refresh data when page is activated (e.g., returning from other pages)
+onActivated(async () => {
+  console.log('MyCards page activated, refreshing data...')
+  
+  // Always fetch fresh card list data when page is activated
+  try {
+    await cardStore.fetchCardList()
+    console.log('Card list refreshed, length:', cardStore.cardList.length)
+    
+    // If we have cards and we're on transaction tab, refresh transactions
+    if (cards.value.length > 0 && activeTab.value === 'transaction') {
+      console.log('Refreshing transactions...')
+      await fetchTransactions()
+    }
+  } catch (error) {
+    console.error('Error refreshing card list:', error)
+    toast.add({
+      severity: 'error',
+      summary: 'Error',
+      detail: 'Failed to refresh card list',
+      life: 3000
+    })
   }
 })
 </script>
