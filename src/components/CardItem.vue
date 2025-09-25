@@ -31,29 +31,39 @@
 
         <!-- Card Details -->
         <div class="mb-6">
-          <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-3">Card Details:</h4>
-          <ul class="space-y-2">
-            <li class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
-              <span>Monthly Fee:</span>
-              <span class="font-medium">${{ card.monthlyFee }}</span>
-            </li>
-            <li class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
-              <span>Recharge Fee:</span>
-              <span class="font-medium">${{ card.rechargeFee }}</span>
-            </li>
-            <li class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
-              <span>Max On Monthly:</span>
-              <span class="font-medium">${{ card.maxOnMonthly }}</span>
-            </li>
-            <li class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
-              <span>Max On Daily:</span>
-              <span class="font-medium">${{ card.maxOnDaily }}</span>
-            </li>
-            <li class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
-              <span>Max On Percent:</span>
-              <span class="font-medium">${{ card.maxOnPercent }}</span>
-            </li>
-          </ul>
+          <div
+            class="rounded-2xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-900 sm:p-6">
+            <h4 class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+              Card Details
+            </h4>
+            <div class="mt-4 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 xl:grid-cols-3">
+              <div class="flex flex-col">
+                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Monthly
+                  Fee</span>
+                <span class="text-base font-semibold text-gray-900 dark:text-white">${{ card.monthlyFee }}</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Recharge
+                  Fee</span>
+                <span class="text-base font-semibold text-gray-900 dark:text-white">${{ card.rechargeFee }}</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Max On
+                  Monthly</span>
+                <span class="text-base font-semibold text-gray-900 dark:text-white">${{ card.maxOnMonthly }}</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Max On
+                  Daily</span>
+                <span class="text-base font-semibold text-gray-900 dark:text-white">${{ card.maxOnDaily }}</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Max On
+                  Percent</span>
+                <span class="text-base font-semibold text-gray-900 dark:text-white">${{ card.maxOnPercent }}</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Action Buttons -->
