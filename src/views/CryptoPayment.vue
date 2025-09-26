@@ -68,6 +68,18 @@
                 </div>
               </div>
             </div>
+            <!-- Payment Expiration Warning -->
+            <div
+              class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
+              <div class="flex items-start space-x-3">
+                <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="pi pi-info-circle text-white text-xs"></i>
+                </div>
+                <div class="text-sm text-orange-800 dark:text-orange-200">
+                  <span class="font-semibold">For security reasons, the payment page has expired.</span> Please complete the payment promptly.
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Right Column: Payment Information -->
@@ -252,7 +264,7 @@
       </div>
 
       <!-- Mobile Layout -->
-      <div class="md:hidden space-y-6">
+      <div class="md:hidden space-y-6 pb-32">
         <!-- Order Information -->
         <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
           <div class="space-y-4">
@@ -307,7 +319,18 @@
             </div>
           </div>
         </div>
-
+        <!-- Payment Expiration Warning - Mobile -->
+        <div
+          class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
+          <div class="flex items-start space-x-3">
+            <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="pi pi-info-circle text-white text-xs"></i>
+            </div>
+            <div class="text-sm text-orange-800 dark:text-orange-200">
+              <span class="font-semibold">For security reasons, the payment page has expired.</span> Please complete the payment promptly.
+            </div>
+          </div>
+        </div>
         <!-- Payment Information Section -->
         <div v-if="isOrderPending"
           class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
