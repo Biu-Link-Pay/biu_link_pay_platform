@@ -281,9 +281,9 @@ const toast = useToast()
 const orderNumber = ref('')
 const orderAmount = ref(0)
 const orderStatus = ref<'PENDING' | 'SUCCESS' | 'FAIL' | 'CANCEL'>('PENDING')
-const paymentTime = ref<string>('')
-const transactionId = ref<string>('')
-const errorReason = ref<string>('')
+const paymentTime = ref<string | null>('')
+const transactionId = ref<string | null>('')
+const errorReason = ref<string | null>('')
 
 // UI state
 const refreshing = ref(false)
