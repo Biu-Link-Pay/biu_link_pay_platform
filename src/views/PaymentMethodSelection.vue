@@ -57,7 +57,7 @@
                 :class="selectedPayType?.name === payType.name ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-300 dark:border-blue-600 shadow-md ring-2 ring-blue-100 dark:ring-blue-800/60' : 'hover:bg-gray-50 dark:hover:bg-gray-700 hover:shadow-sm'"
                 @click="selectPayType(payType)"
               >
-                <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+                <div class="flex flex-col gap-4">
                   <div class="flex items-center space-x-4">
                     <div class="w-14 h-14 rounded-xl flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
                       <img
@@ -76,8 +76,8 @@
                     </div>
                   </div>
 
-                  <div v-if="selectedPayType?.name === payType.name" class="flex items-center gap-3 text-blue-600">
-                    <span class="hidden lg:inline text-sm font-medium">Currently selected</span>
+                  <div v-if="selectedPayType?.name === payType.name" class="flex items-center gap-3 text-blue-600 self-start">
+                    <span class="text-sm font-medium">Currently selected</span>
                     <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center">
                       <i class="pi pi-check text-white text-xs"></i>
                     </div>

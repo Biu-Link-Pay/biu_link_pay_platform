@@ -192,7 +192,9 @@ import Dropdown from 'primevue/dropdown'
 import AppHeader from '@/components/AppHeader.vue'
 import { CardAPI } from '@/api/card'
 import type { CardHolderInfo as HolderInfo, CardHolderResponse } from '@/api/card'
-import { Country, State, City } from 'country-state-city'
+import * as CSC from 'country-state-city'
+
+const { Country, State, City } = CSC
 
 const router = useRouter()
 const route = useRoute()
@@ -585,6 +587,12 @@ const saveAddress = async () => {
     addressErrors.residentialCountryCode = 'Country is required'
     isValid = false
   }
+
+  errors.residentialAddress = addressErrors.residentialAddress
+  errors.residentialCity = addressErrors.residentialCity
+  errors.residentialState = addressErrors.residentialState
+  errors.residentialPostalCode = addressErrors.residentialPostalCode
+  errors.residentialCountryCode = addressErrors.residentialCountryCode
 
   if (!isValid) {
     toast.add({

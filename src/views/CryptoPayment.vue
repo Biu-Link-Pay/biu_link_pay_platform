@@ -498,7 +498,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
@@ -543,10 +543,28 @@ const FALLBACK_COUNTDOWN_SECONDS = 1461
 
 const parseExpirationSeconds = (value: unknown): number | null => {
   const parsed = Number(value)
-  if (Number.isFinite(parsed) && parsed > 0) {
-    return Math.floor(parsed)
+  if (!Number.isFinite(parsed) || parsed <= 0) {
+    return null
   }
-  return null
+
+  const nowSeconds = Math.floor(Date.now() / 1000)
+
+  // Treat very large numbers as millisecond timestamps
+  if (parsed > 1e12) {
+    const remainingMs = Math.floor(parsed) - Date.now()
+    if (remainingMs <= 0) {
+      return null
+    }
+    return Math.floor(remainingMs / 1000)
+  }
+
+  // Treat large numbers as second-based unix timestamps
+  if (parsed > 1e9) {
+    const remainingSeconds = Math.floor(parsed) - nowSeconds
+    return remainingSeconds > 0 ? remainingSeconds : null
+  }
+
+  return Math.floor(parsed)
 }
 
 const applyExpirationSeconds = (value?: unknown) => {
@@ -554,6 +572,18 @@ const applyExpirationSeconds = (value?: unknown) => {
   defaultCountdownSeconds.value = parsed ?? FALLBACK_COUNTDOWN_SECONDS
   countdown.value = defaultCountdownSeconds.value
 }
+
+watch(
+  () => cardStore.currentOrder?.expires,
+  newExpires => {
+    if (newExpires === undefined || newExpires === null) {
+      return
+    }
+
+    applyExpirationSeconds(newExpires)
+    startCountdown()
+  }
+)
 
 // Currency symbol mapping
 const currencySymbols: Record<string, string> = {
@@ -926,6 +956,8 @@ const autoOpenPaymentAddress = () => {
 onMounted(async () => {
   isMounted.value = true
 
+  let expiresSource: unknown = undefined
+
   // Get payment data from Pinia store
   if (cardStore.currentOrder) {
     const order = cardStore.currentOrder
@@ -937,6 +969,8 @@ onMounted(async () => {
     selectedNetwork.value = order.network || 'ERC20'
     cryptoAmount.value = order.cryptoAmount || '0.263'
     walletAddress.value = order.address || order.webUrl || '0xe688b84b23f322a994A53dbF8E15FA82CDB71127'
+
+    expiresSource = order.expires ?? route.query.expires
   } else {
     // Fallback to route params if no order in store
     const orderNum = route.query.orderNum as string
@@ -964,7 +998,11 @@ onMounted(async () => {
       // Update order number based on pay type
       orderNumber.value = `${Date.now()}${Math.floor(Math.random() * 1000)}`
     }
+
+    expiresSource = route.query.expires ?? expiresSource
   }
+
+  applyExpirationSeconds(expiresSource)
 
   autoOpenPaymentAddress()
   // Start countdown
@@ -976,6 +1014,7 @@ onMounted(async () => {
   // Start polling order detail
   startPolling()
 })
+
 
 // Cleanup on unmount
 onUnmounted(() => {

@@ -1,11 +1,5 @@
 <template>
-  <div class="min-h-screen relative overflow-hidden" :class="containerClass">
-    <!-- Background Pattern -->
-    <div class="fixed inset-0 opacity-30 -z-10">
-      <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/10"
-        style="background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,0.1) 25px, rgba(255,255,255,0.1) 50px); background-size: 50px 50px; animation: animateBackground 20s linear infinite;">
-      </div>
-    </div>
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
 
     <!-- Unified Header -->
     <AppHeader title="Payment Result" :show-title="true" />
@@ -16,7 +10,7 @@
       <!-- Payment Result Card -->
       <div
         class="bg-white dark:bg-gray-800 rounded-3xl p-6 sm:p-8 lg:p-12 xl:p-16 shadow-2xl transition-all duration-300 hover:-translate-y-1 max-w-lg lg:max-w-none mx-auto relative overflow-hidden"
-        :class="[statusCardClass, cardAnimationClass]">
+        :class="[cardAnimationClass]">
 
         <!-- Desktop Layout: Two Column -->
         <div class="lg:grid lg:grid-cols-2 lg:gap-12 xl:gap-16">
@@ -255,7 +249,7 @@
 
             <!-- Support Information -->
             <div class="text-center lg:text-left text-sm lg:text-base xl:text-lg text-gray-500 dark:text-gray-400">
-              <p>Need help? <a href="#" @click="contactSupport"
+              <p>Need help? <a href="#" 
                   class="text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-200">Contact
                   Support</a></p>
             </div>
@@ -294,26 +288,6 @@ const progressStep = ref(0)
 let pollingInterval: NodeJS.Timeout | null = null
 const isMounted = ref(false)
 
-// Computed properties
-const containerClass = computed(() => {
-  switch (orderStatus.value) {
-    case 'PENDING': return 'bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800'
-    case 'SUCCESS': return 'bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900 dark:to-green-800'
-    case 'FAIL': return 'bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900 dark:to-red-800'
-    case 'CANCEL': return 'bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900 dark:to-orange-800'
-    default: return 'bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800'
-  }
-})
-
-const statusCardClass = computed(() => {
-  switch (orderStatus.value) {
-    case 'PENDING': return 'border-2 border-blue-200 dark:border-blue-700'
-    case 'SUCCESS': return 'border-2 border-green-200 dark:border-green-700'
-    case 'FAIL': return 'border-2 border-red-200 dark:border-red-700'
-    case 'CANCEL': return 'border-2 border-orange-200 dark:border-orange-700'
-    default: return 'border-2 border-blue-200 dark:border-blue-700'
-  }
-})
 
 const statusIconClass = computed(() => {
   switch (orderStatus.value) {
@@ -574,15 +548,6 @@ const createNewOrder = () => {
   router.push({ name: 'ApplyCardList' })
 }
 
-const contactSupport = () => {
-  toast.add({
-    severity: 'info',
-    summary: 'Contact Support',
-    detail: 'Support contact feature will be implemented soon',
-    life: 3000
-  })
-}
-
 // Initialize data
 onMounted(async () => {
   isMounted.value = true
@@ -622,17 +587,6 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* Background Animation */
-@keyframes animateBackground {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 500px 500px;
-  }
-}
-
 /* Success Checkmark Animation */
 .checkmark-path {
   stroke-dasharray: 100;

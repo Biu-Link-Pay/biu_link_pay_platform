@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Navigation Header -->
     <AppHeader title="Virtual Cards" :show-title="true" />
@@ -24,7 +24,7 @@
       </div>
 
       <!-- Cards Display with Features -->
-      <div v-else class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 mb-8">
+      <div v-else class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-20 mb-8">
         <!-- Left Side: Card Display -->
         <div class="space-y-6 order-1 lg:order-1">
           <!-- Card Display Area with Navigation -->
@@ -172,13 +172,13 @@
         </div>
 
         <!-- Right Side: Features and Actions -->
-        <div class="space-y-6 order-2 lg:order-2">
+        <div class="space-y-8 order-2 lg:order-2">
           <!-- Features Section -->
-          <div v-if="cards.length > 0" class="bg-white dark:bg-gray-800 rounded-lg shadow-sm w-full">
+          <div v-if="cards.length > 0" class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm w-full border border-gray-200 dark:border-gray-700">
             <!-- Tabs -->
-            <div class="flex flex-wrap gap-2 md:gap-4 border-b border-gray-200 dark:border-gray-700 px-1 md:px-2">
+            <div class="flex flex-wrap gap-2 md:gap-4 border-b border-gray-200 dark:border-gray-700 px-2 md:px-4 lg:px-6">
               <button v-for="tab in tabs" :key="tab.key" @click="handleTabChange(tab.key)"
-                class="flex-1 px-4 py-3 text-sm md:text-base lg:text-lg font-medium md:font-semibold transition-colors md:px-6 md:py-4 rounded-t-md" :class="activeTab === tab.key
+                class="flex-1 lg:flex-none px-4 py-3 text-sm md:text-lg lg:text-xl font-semibold transition-colors md:px-6 md:py-4 lg:px-8 lg:py-5 rounded-t-md" :class="activeTab === tab.key
                   ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
                   : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'">
                 {{ tab.label }}
@@ -186,7 +186,7 @@
             </div>
 
             <!-- Transaction List -->
-            <div class="p-4 md:p-8 lg:p-10">
+            <div class="p-4 md:p-8 lg:p-12 xl:p-14">
               <!-- No Cards State -->
               <div v-if="cards.length === 0" class="text-center py-12">
                 <div
