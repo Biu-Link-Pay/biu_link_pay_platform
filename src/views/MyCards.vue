@@ -38,54 +38,58 @@
 
             <!-- Card Container -->
             <div class="flex-1 max-w-xs md:max-w-sm relative overflow-hidden">
-              <div
-                class="bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl p-4 md:p-6 text-white shadow-lg min-h-[200px] md:min-h-[240px] flex flex-col justify-between cursor-grab active:cursor-grabbing"
-                @mousedown="handleMouseDown" @mousemove="handleMouseMove" @mouseup="handleMouseUp"
-                @mouseleave="handleMouseUp" @wheel="handleWheel" @keydown="handleKeyDown" tabindex="0"
-                style="outline: none;">
-                <!-- Card Header -->
-                <div class="flex items-center justify-between">
-                  <span class="text-sm font-semibold opacity-75">BUI LINK PAY</span>
-                  <button v-if="selectedCard" @click="toggleCardDetailsVisibility"
-                    class="text-white/80 hover:text-white transition-colors">
-                    <i :class="showCardDetails ? 'pi pi-eye' : 'pi pi-eye-slash'" class="text-sm"></i>
-                  </button>
-                </div>
-
-                <!-- Card Details -->
-                <div v-if="selectedCard" class="space-y-3 text-sm">
-                  <!-- Card Number -->
-                  <div class="text-xl font-mono tracking-wider">
-                    {{ showCardDetails ? selectedCard.cardNo : '•••• •••• •••• ••••' }}
-                  </div>
-
-                  <!-- Card Info -->
-                  <div class="flex justify-between items-center">
-                    <span class="font-mono">
-                      {{ showCardDetails ? '•••' : '•••' }}
+              <Transition :name="cardTransitionName" mode="out-in">
+                <div v-if="selectedCard" :key="selectedCard.id || selectedCard.cardNo || currentCardIndex"
+                  class="bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl p-4 md:p-6 text-white shadow-lg min-h-[200px] md:min-h-[240px] flex flex-col justify-between cursor-grab active:cursor-grabbing"
+                  @mousedown="handleMouseDown" @mousemove="handleMouseMove" @mouseup="handleMouseUp"
+                  @mouseleave="handleMouseUp" @wheel="handleWheel" @keydown="handleKeyDown"
+                  @touchstart.passive="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd"
+                  @touchcancel="handleTouchEnd" tabindex="0" style="outline: none;">
+                  <!-- Card Header -->
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm font-semibold opacity-75">BUI LINK PAY</span>
+                    <span v-if="selectedCard" class="text-xs font-medium uppercase tracking-wide text-white/80">
+                      {{ selectedCard.cardCurrency || 'N/A' }}
                     </span>
-                    <span>{{ showCardDetails ? 'MM/YY' : '••/••' }}</span>
                   </div>
 
-                  <!-- Cardholder Name -->
-                  <div class="text-sm">
-                    {{ showCardDetails ? 'CARD HOLDER' : '••••••••••••' }}
-                  </div>
+                  <!-- Card Details -->
+                  <div v-if="selectedCard" class="space-y-5 text-sm">
+                    <!-- Card Number -->
+                    <div class="text-lg md:text-xl font-mono tracking-[0.35em]">
+                      {{ selectedCard.cardNo }}
+                    </div>
 
-                  <!-- Currency -->
-                  <div class="text-xs opacity-75">
-                    USD
+                    <!-- Card Info -->
+                    <div class="grid grid-cols-2 gap-4 text-xs uppercase text-white/70">
+                      <div class="space-y-1">
+                        <span>Currency</span>
+                        <span class="block text-sm md:text-base font-semibold text-white normal-case">
+                          {{ selectedCard.cardCurrency || 'N/A' }}
+                        </span>
+                      </div>
+                      <div class="space-y-1">
+                        <span>Daily Limit</span>
+                        <span class="block text-sm md:text-base font-semibold text-white normal-case">
+                          {{ selectedCard.maxOnDaily || 'N/A' }}
+                        </span>
+                      </div>
+                      <div class="space-y-1">
+                        <span>Monthly Limit</span>
+                        <span class="block text-sm md:text-base font-semibold text-white normal-case">
+                          {{ selectedCard.maxOnMonthly || 'N/A' }}
+                        </span>
+                      </div>
+                      <div class="space-y-1">
+                        <span>Single Transaction</span>
+                        <span class="block text-sm md:text-base font-semibold text-white normal-case">
+                          {{ selectedCard.maxOnPercent || 'N/A' }}
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <!-- Card Footer -->
-                <div class="flex items-center justify-between">
-                  <div class="text-base opacity-80">{{ showCardDetails ? 'CARD HOLDER' : '••••••••••••' }}</div>
-                  <div class="w-16 h-10 bg-white rounded flex items-center justify-center">
-                    <i class="pi pi-credit-card text-gray-600 text-xl"></i>
-                  </div>
-                </div>
-              </div>
+              </Transition>
             </div>
 
             <!-- Right Navigation Button -->
@@ -237,7 +241,8 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                                {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency) }}
+                                {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency)
+                                }}
                               </div>
                               <div class="text-sm lg:text-base" :class="getStatusColor(transaction.status)">
                                 {{ transaction.status }}
@@ -301,7 +306,7 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-sm">
-                                {{ formatTransactionAmount(transaction.arrivalAmount,transaction.transactionCurrency)
+                                {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency)
                                 }}
                               </div>
                               <div class="text-xs" :class="getStatusColor(transaction.status)">
@@ -362,35 +367,35 @@
                       :style="{ transform: `translateX(-${mobilePagination.recharge.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
                         class="w-full flex-shrink-0 px-2">
-                          <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-4 p-2 lg:p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                            <div
-                              class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
-                              <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-base lg:text-lg"></i>
+                        <div v-for="(order, index) in page" :key="index"
+                          class="flex items-center space-x-4 p-2 lg:p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                          <div
+                            class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                            <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-base lg:text-lg"></i>
+                          </div>
+                          <div class="flex-1 min-w-0">
+                            <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                              {{ order.num }}
                             </div>
-                            <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                                {{ order.num }}
-                              </div>
-                              <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
-                                {{ formatDate(order.createTime || '') }}
-                              </div>
-                              <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                                {{ order.token }} - {{ order.network }}
-                              </div>
+                            <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
+                              {{ formatDate(order.createTime || '') }}
                             </div>
-                            <div class="text-right">
-                              <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                                {{ formatOrderAmount(order.amount, order.orderCurrency) }}
-                              </div>
-                              <div class="text-sm lg:text-base" :class="getStatusColor(order.type)">
-                                {{ order.type === '1' ? 'Card Creation' : 'Recharge' }}
-                              </div>
-                              <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                                USD: {{ order.usdAmount }}
-                              </div>
+                            <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
+                              {{ order.token }} - {{ order.network }}
                             </div>
                           </div>
+                          <div class="text-right">
+                            <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                              {{ formatOrderAmount(order.amount, order.orderCurrency) }}
+                            </div>
+                            <div class="text-sm lg:text-base" :class="getStatusColor(order.type)">
+                              {{ order.type === '1' ? 'Card Creation' : 'Recharge' }}
+                            </div>
+                            <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
+                              USD: {{ order.usdAmount }}
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -674,12 +679,13 @@ const currentCardIndex = ref(0)
 
 // Use real card list data
 const cards = computed(() => {
-  return cardStore.cardList.map((card, index) => ({
+  return cardStore.cardList.map(card => ({
     id: card.cardId,
     cardNo: card.cardNo, // Use the card number from list
     maxOnMonthly: card.maxOnMonthly,
     maxOnDaily: card.maxOnDaily,
-    maxOnPercent: card.maxOnPercent
+    maxOnPercent: card.maxOnPercent,
+    cardCurrency: card.cardCurrency
   }))
 })
 
@@ -716,8 +722,11 @@ const selectedCard = computed(() => {
   return cards.value[currentCardIndex.value] || cards.value[0]
 })
 
-// Card display state
-const showCardDetails = ref(false)
+// Card transition animation state
+const transitionDirection = ref<'next' | 'prev'>('next')
+const cardTransitionName = computed(() =>
+  transitionDirection.value === 'next' ? 'card-slide-left' : 'card-slide-right'
+)
 
 // Mobile swipe pagination states
 const mobilePagination = ref({
@@ -867,11 +876,6 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
 }
 
 
-// Toggle card details visibility
-const toggleCardDetailsVisibility = () => {
-  showCardDetails.value = !showCardDetails.value
-}
-
 // Copy to clipboard
 const copyToClipboard = async (text: string) => {
   try {
@@ -896,18 +900,25 @@ const copyToClipboard = async (text: string) => {
 // Card navigation
 const previousCard = () => {
   if (currentCardIndex.value > 0) {
+    transitionDirection.value = 'prev'
     currentCardIndex.value--
   }
 }
 
 const nextCard = () => {
   if (currentCardIndex.value < cards.value.length - 1) {
+    transitionDirection.value = 'next'
     currentCardIndex.value++
   }
 }
 
 // Select card
 const selectCard = (index: number) => {
+  if (index === currentCardIndex.value) {
+    return
+  }
+
+  transitionDirection.value = index > currentCardIndex.value ? 'next' : 'prev'
   currentCardIndex.value = index
 }
 
@@ -926,7 +937,7 @@ const goToWithdraw = () => {
     })
     return
   }
-  
+
   // Navigate to withdraw page or show withdraw modal
   toast.add({
     severity: 'info',
@@ -946,7 +957,7 @@ const goToDetails = () => {
     })
     return
   }
-  
+
   // Navigate to card details page or show details modal
   toast.add({
     severity: 'info',
@@ -974,7 +985,7 @@ const goToRecharge = () => {
     cardBin: '-',
     cardType: '-',
     cardScheme: '-', // Default card type
-    cardCurrency: 'USD', // Default currency
+    cardCurrency: selectedCard.value?.cardCurrency || 'USD',
     billingAddressUpdatable: 'false',
     expiryDateCustomization: 'false',
     remainingAvailableCard: 0,
@@ -997,6 +1008,20 @@ const goToRecharge = () => {
 }
 
 // Data formatters
+const formatCardNumber = (cardNo?: string) => {
+  if (!cardNo) return 'N/A'
+  const digits = cardNo.replace(/\D/g, '')
+  if (!digits) return 'N/A'
+  return digits.replace(/(.{4})/g, '$1 ').trim()
+}
+
+const cardLastFour = (cardNo?: string) => {
+  if (!cardNo) return 'N/A'
+  const digits = cardNo.replace(/\D/g, '')
+  if (!digits) return 'N/A'
+  return digits.length <= 4 ? digits : digits.slice(-4)
+}
+
 const formatTransactionAmount = (amount: number, currency: string) => {
   const sign = amount < 0 ? '-' : '+'
   return `${sign}${Math.abs(amount).toFixed(2)} ${currency}`
@@ -1047,24 +1072,18 @@ const getStatusColor = (status: string) => {
   }
 }
 
-// Drag and drop handlers
-const handleMouseDown = (event: MouseEvent) => {
+const startDrag = (position: number) => {
   isDragging.value = true
-  startX.value = event.clientX
-  currentX.value = event.clientX
-
-  // Prevent text selection
-  event.preventDefault()
+  startX.value = position
+  currentX.value = position
 }
 
-const handleMouseMove = (event: MouseEvent) => {
+const updateDrag = (position: number) => {
   if (!isDragging.value) return
-
-  currentX.value = event.clientX
-  event.preventDefault()
+  currentX.value = position
 }
 
-const handleMouseUp = () => {
+const endDrag = () => {
   if (!isDragging.value) return
 
   const deltaX = startX.value - currentX.value
@@ -1083,6 +1102,44 @@ const handleMouseUp = () => {
   isDragging.value = false
   startX.value = 0
   currentX.value = 0
+}
+
+// Drag and drop handlers
+const handleMouseDown = (event: MouseEvent) => {
+  startDrag(event.clientX)
+
+  // Prevent text selection
+  event.preventDefault()
+}
+
+const handleMouseMove = (event: MouseEvent) => {
+  updateDrag(event.clientX)
+
+  if (isDragging.value) {
+    event.preventDefault()
+  }
+}
+
+const handleMouseUp = () => {
+  endDrag()
+}
+
+const handleTouchStart = (event: TouchEvent) => {
+  if (event.touches.length === 0) return
+  startDrag(event.touches[0].clientX)
+}
+
+const handleTouchMove = (event: TouchEvent) => {
+  if (event.touches.length === 0) return
+  updateDrag(event.touches[0].clientX)
+
+  if (isDragging.value && event.cancelable) {
+    event.preventDefault()
+  }
+}
+
+const handleTouchEnd = () => {
+  endDrag()
 }
 
 // Mouse wheel handler
@@ -1239,14 +1296,12 @@ watch(currentCardIndex, () => {
     fetchTransactions(0)
   }
 
-  // Reset card details visibility when card changes
-  showCardDetails.value = false
 })
 
 // Get card list when component mounts
 onMounted(async () => {
   console.log('MyCards component mounted')
-  
+
   // Always fetch fresh card list data on page entry
   console.log('Fetching fresh card list...')
   try {
@@ -1289,12 +1344,12 @@ onMounted(async () => {
 // Refresh data when page is activated (e.g., returning from other pages)
 onActivated(async () => {
   console.log('MyCards page activated, refreshing data...')
-  
+
   // Always fetch fresh card list data when page is activated
   try {
     await cardStore.fetchCardList()
     console.log('Card list refreshed, length:', cardStore.cardList.length)
-    
+
     // If we have cards and we're on transaction tab, refresh transactions
     if (cards.value.length > 0 && activeTab.value === 'transaction') {
       console.log('Refreshing transactions...')
@@ -1316,6 +1371,25 @@ onActivated(async () => {
 /* Card carousel styles */
 .transition-transform {
   transition: transform 0.3s ease-in-out;
+}
+
+.card-slide-left-enter-active,
+.card-slide-left-leave-active,
+.card-slide-right-enter-active,
+.card-slide-right-leave-active {
+  transition: all 0.35s ease;
+}
+
+.card-slide-left-enter-from,
+.card-slide-right-leave-to {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.card-slide-left-leave-to,
+.card-slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(-40px);
 }
 
 /* Custom scrollbar for transaction list */
@@ -1377,6 +1451,13 @@ onActivated(async () => {
   }
 
   .transition-shadow {
+    transition: none;
+  }
+
+  .card-slide-left-enter-active,
+  .card-slide-left-leave-active,
+  .card-slide-right-enter-active,
+  .card-slide-right-leave-active {
     transition: none;
   }
 }
