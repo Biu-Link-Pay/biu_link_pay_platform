@@ -460,7 +460,7 @@ const startKycPolling = () => {
     } catch (error) {
       console.error('KYC polling error:', error)
     }
-  }, 100) // Poll every 5 seconds
+  }, 1000) // Poll every 5 seconds
 }
 
 // Stop KYC polling
