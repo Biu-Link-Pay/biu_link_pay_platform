@@ -88,44 +88,51 @@
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Billing Address</h3>
           <div class="space-y-4">
             <div>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Country</label>
+              <Dropdown v-model="form.residentialCountryCode" :options="countries" option-label="name"
+                option-value="code" placeholder="Select country" class="w-full" filter show-clear
+                :class="{ 'p-invalid': errors.residentialCountryCode }" />
+              <small v-if="errors.residentialCountryCode" class="text-red-500 text-xs mt-1">{{
+                errors.residentialCountryCode }}</small>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">State/Province</label>
+                <Dropdown v-if="hasStateOptions" v-model="selectedStateCode" :options="states" option-label="name"
+                  option-value="isoCode" placeholder="Select state or province" class="w-full" filter show-clear
+                  :class="{ 'p-invalid': errors.residentialState }" />
+                <InputText v-else v-model="form.residentialState" placeholder="Enter state/province" class="w-full"
+                  :class="{ 'p-invalid': errors.residentialState }" />
+                <small v-if="errors.residentialState" class="text-red-500 text-xs mt-1">{{ errors.residentialState
+                }}</small>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">City</label>
+                <Dropdown v-if="hasCityOptions" v-model="selectedCityName" :options="cities" option-label="name"
+                  option-value="name" placeholder="Select city" class="w-full" filter show-clear
+                  :class="{ 'p-invalid': errors.residentialCity }" />
+                <InputText v-else v-model="form.residentialCity" placeholder="Enter city" class="w-full"
+                  :class="{ 'p-invalid': errors.residentialCity }" />
+                <small v-if="errors.residentialCity" class="text-red-500 text-xs mt-1">{{ errors.residentialCity
+                }}</small>
+              </div>
+            </div>
+
+            <div>
               <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Address</label>
               <InputText v-model="form.residentialAddress" placeholder="Enter your address" class="w-full"
                 :class="{ 'p-invalid': errors.residentialAddress }" />
               <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
               }}</small>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">City</label>
-                <InputText v-model="form.residentialCity" placeholder="Enter city" class="w-full"
-                  :class="{ 'p-invalid': errors.residentialCity }" />
-                <small v-if="errors.residentialCity" class="text-red-500 text-xs mt-1">{{ errors.residentialCity
-                }}</small>
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">State/Province</label>
-                <InputText v-model="form.residentialState" placeholder="Enter state/province" class="w-full"
-                  :class="{ 'p-invalid': errors.residentialState }" />
-                <small v-if="errors.residentialState" class="text-red-500 text-xs mt-1">{{ errors.residentialState
-                }}</small>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Postal Code</label>
-                <InputText v-model="form.residentialPostalCode" placeholder="Enter postal code" class="w-full"
-                  :class="{ 'p-invalid': errors.residentialPostalCode }" />
-                <small v-if="errors.residentialPostalCode" class="text-red-500 text-xs mt-1">{{
-                  errors.residentialPostalCode }}</small>
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Country</label>
-                <Dropdown v-model="form.residentialCountryCode" :options="countries" option-label="name"
-                  option-value="code" placeholder="Select country" class="w-full"
-                  :class="{ 'p-invalid': errors.residentialCountryCode }" />
-                <small v-if="errors.residentialCountryCode" class="text-red-500 text-xs mt-1">{{
-                  errors.residentialCountryCode }}</small>
-              </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Postal Code</label>
+              <InputText v-model="form.residentialPostalCode" placeholder="Enter postal code" class="w-full"
+                :class="{ 'p-invalid': errors.residentialPostalCode }" />
+              <small v-if="errors.residentialPostalCode" class="text-red-500 text-xs mt-1">{{
+                errors.residentialPostalCode }}</small>
             </div>
             <!-- Edit form buttons -->
             <div class="mt-6 flex gap-3">
@@ -174,7 +181,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, computed, onMounted } from 'vue'
+import { ref, reactive, computed, onMounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useCardStore } from '@/stores/card'
@@ -185,6 +192,7 @@ import Dropdown from 'primevue/dropdown'
 import AppHeader from '@/components/AppHeader.vue'
 import { CardAPI } from '@/api/card'
 import type { CardHolderInfo as HolderInfo, CardHolderResponse } from '@/api/card'
+import { Country, State, City } from 'country-state-city'
 
 const router = useRouter()
 const route = useRoute()
@@ -219,18 +227,174 @@ const errors = reactive({
 // Loading state
 const loading = ref(false)
 
-// Countries
-const countries = ref([
-  { name: 'United States', code: 'US' },
-  { name: 'United Kingdom', code: 'GB' },
-  { name: 'Canada', code: 'CA' },
-  { name: 'Australia', code: 'AU' },
-  { name: 'Germany', code: 'DE' },
-  { name: 'France', code: 'FR' },
-  { name: 'Japan', code: 'JP' },
-  { name: 'China', code: 'CN' }
-])
+// Location data sourced from country-state-city library (Country / State / City)
+interface CountryOption {
+  name: string
+  code: string
+}
 
+interface StateOption {
+  name: string
+  isoCode: string
+}
+
+interface CityOption {
+  name: string
+}
+
+const countries = ref<CountryOption[]>(
+  Country.getAllCountries()
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map(country => ({
+      name: country.name,
+      code: country.isoCode
+    }))
+)
+
+const states = ref<StateOption[]>([])
+const cities = ref<CityOption[]>([])
+const selectedStateCode = ref<string | null>(null)
+const selectedCityName = ref<string | null>(null)
+
+// Helper functions for cascading selects
+const loadCitiesForState = (
+  countryCode: string | null | undefined,
+  stateIsoCode: string | null | undefined,
+  preserveExisting = false
+) => {
+  if (!countryCode || !stateIsoCode) {
+    cities.value = []
+    selectedCityName.value = null
+    if (!preserveExisting) {
+      form.residentialCity = ''
+    }
+    return
+  }
+
+  const cityList = (City.getCitiesOfState(countryCode, stateIsoCode) || []).sort((a, b) => a.name.localeCompare(b.name))
+  cities.value = cityList.map(city => ({ name: city.name }))
+
+  if (preserveExisting && form.residentialCity) {
+    const matchedCity = cityList.find(city => city.name === form.residentialCity)
+    if (matchedCity) {
+      selectedCityName.value = matchedCity.name
+      return
+    }
+  }
+
+  selectedCityName.value = null
+  form.residentialCity = ''
+}
+
+const loadCitiesForCountry = (
+  countryCode: string | null | undefined,
+  preserveExisting = false
+) => {
+  if (!countryCode) {
+    cities.value = []
+    selectedCityName.value = null
+    if (!preserveExisting) {
+      form.residentialCity = ''
+    }
+    return
+  }
+
+  const cityList = (City.getCitiesOfCountry(countryCode) || []).sort((a, b) => a.name.localeCompare(b.name))
+  cities.value = cityList.map(city => ({ name: city.name }))
+
+  if (preserveExisting && form.residentialCity) {
+    const matchedCity = cityList.find(city => city.name === form.residentialCity)
+    if (matchedCity) {
+      selectedCityName.value = matchedCity.name
+      return
+    }
+  }
+
+  selectedCityName.value = null
+  form.residentialCity = ''
+}
+
+const loadStatesForCountry = (countryCode: string | null | undefined, preserveExisting = false) => {
+  if (!countryCode) {
+    states.value = []
+    selectedStateCode.value = null
+    loadCitiesForState(undefined, undefined, preserveExisting)
+    if (!preserveExisting) {
+      form.residentialState = ''
+    }
+    return
+  }
+
+  const stateList = (State.getStatesOfCountry(countryCode) || []).sort((a, b) => a.name.localeCompare(b.name))
+
+  if (stateList.length === 0) {
+    states.value = []
+    selectedStateCode.value = null
+    if (!preserveExisting) {
+      form.residentialState = ''
+    }
+    loadCitiesForCountry(countryCode, preserveExisting)
+    return
+  }
+
+  states.value = stateList.map(state => ({ name: state.name, isoCode: state.isoCode }))
+
+  if (preserveExisting && form.residentialState) {
+    const matchedState = stateList.find(state => state.name === form.residentialState)
+    if (matchedState) {
+      selectedStateCode.value = matchedState.isoCode
+      return
+    }
+  }
+
+  selectedStateCode.value = null
+  form.residentialState = ''
+  loadCitiesForState(countryCode, undefined, false)
+}
+
+watch(
+  () => form.residentialCountryCode,
+  (newCode, oldCode) => {
+    if (oldCode == null) {
+      loadStatesForCountry(newCode, true)
+    } else if (newCode !== oldCode) {
+      loadStatesForCountry(newCode, false)
+    }
+  }
+)
+
+watch(
+  selectedStateCode,
+  (newCode, oldCode) => {
+    if (!newCode) {
+      form.residentialState = ''
+      if (states.value.length === 0) {
+        loadCitiesForCountry(form.residentialCountryCode, !oldCode)
+      } else {
+        loadCitiesForState(form.residentialCountryCode, undefined, false)
+      }
+      return
+    }
+
+    const stateEntry = states.value.find(state => state.isoCode === newCode)
+    form.residentialState = stateEntry?.name || ''
+    loadCitiesForState(form.residentialCountryCode, newCode, !oldCode)
+  }
+)
+
+watch(
+  selectedCityName,
+  newCity => {
+    form.residentialCity = newCity || ''
+  }
+)
+
+const hasStateOptions = computed(() => states.value.length > 0)
+const hasCityOptions = computed(() => cities.value.length > 0)
+
+const initializeLocationSelections = () => {
+  loadStatesForCountry(form.residentialCountryCode, true)
+}
 // Quick recharge amounts
 const quickAmounts = ref([20, 50, 100, 200])
 
@@ -325,15 +489,32 @@ const loadHolder = async () => {
       form.residentialPostalCode = response.model.residentialPostalCode
       form.residentialState = response.model.residentialState
       isEditing.value = false
+      selectedStateCode.value = null
+      selectedCityName.value = null
+      initializeLocationSelections()
     } else {
-      // Not found -> allow create directly
       holder.value = null
       isEditing.value = true
+      form.residentialAddress = ''
+      form.residentialCity = ''
+      form.residentialCountryCode = 'US'
+      form.residentialPostalCode = ''
+      form.residentialState = ''
+      selectedStateCode.value = null
+      selectedCityName.value = null
+      initializeLocationSelections()
     }
   } catch (e) {
-    // Treat as not found
     holder.value = null
     isEditing.value = true
+    form.residentialAddress = ''
+    form.residentialCity = ''
+    form.residentialCountryCode = 'US'
+    form.residentialPostalCode = ''
+    form.residentialState = ''
+    selectedStateCode.value = null
+    selectedCityName.value = null
+    initializeLocationSelections()
   } finally {
     loading.value = false
   }
@@ -341,6 +522,9 @@ const loadHolder = async () => {
 
 const startEdit = () => {
   isEditing.value = true
+  selectedStateCode.value = null
+  selectedCityName.value = null
+  initializeLocationSelections()
 }
 
 const cancelEdit = () => {
@@ -359,6 +543,9 @@ const cancelEdit = () => {
     form.residentialPostalCode = ''
     form.residentialState = ''
   }
+  selectedStateCode.value = null
+  selectedCityName.value = null
+  initializeLocationSelections()
   isEditing.value = false
 }
 
