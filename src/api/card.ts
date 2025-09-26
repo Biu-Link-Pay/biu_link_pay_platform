@@ -110,6 +110,12 @@ export interface CardDetailResponse {
   lastName: string // Last name
   cvv: string // CVV
   expirationDate: string // Expiration date
+  billingCountry: string // Billing country
+  billingState: string // Billing state/province
+  billingCity: string // Billing city
+  billingAddress: string // Billing address
+  billingPostalCode: string // Billing postal code
+  billingAddressUpdatable: string // Y=updatable, N=not updatable
 }
 
 // Card list related types
