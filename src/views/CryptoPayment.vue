@@ -530,13 +530,30 @@ const pollingCount = ref(0)
 const isMounted = ref(false)
 
 // UI state
-const countdown = ref(1461) // 24:21 in seconds
+const defaultCountdownSeconds = ref<number>(0)
+const countdown = ref(0)
 const qrCodeError = ref(false)
 const paymentStatus = ref(false)
 const refreshing = ref(false)
 
 // Countdown timer
 let countdownInterval: NodeJS.Timeout | null = null
+
+const FALLBACK_COUNTDOWN_SECONDS = 1461
+
+const parseExpirationSeconds = (value: unknown): number | null => {
+  const parsed = Number(value)
+  if (Number.isFinite(parsed) && parsed > 0) {
+    return Math.floor(parsed)
+  }
+  return null
+}
+
+const applyExpirationSeconds = (value?: unknown) => {
+  const parsed = parseExpirationSeconds(value)
+  defaultCountdownSeconds.value = parsed ?? FALLBACK_COUNTDOWN_SECONDS
+  countdown.value = defaultCountdownSeconds.value
+}
 
 // Currency symbol mapping
 const currencySymbols: Record<string, string> = {
@@ -657,11 +674,25 @@ const copyToClipboard = async (text: string) => {
 
 
 // Start countdown timer
-const startCountdown = () => {
+const startCountdown = (initialSeconds?: number) => {
   // Clear existing timer if any
   if (countdownInterval) {
     clearInterval(countdownInterval)
     countdownInterval = null
+  }
+
+  const effectiveSeconds = typeof initialSeconds === 'number' && initialSeconds > 0
+    ? Math.floor(initialSeconds)
+    : defaultCountdownSeconds.value > 0
+      ? Math.floor(defaultCountdownSeconds.value)
+      : countdown.value > 0
+        ? countdown.value
+        : 0
+
+  countdown.value = Math.max(effectiveSeconds, 0)
+
+  if (countdown.value <= 0) {
+    return
   }
 
   countdownInterval = setInterval(() => {
@@ -729,8 +760,6 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
           ...cardStore.currentOrder,
           orderNum: orderNum,
           webUrl: detail.webUrl,
-          // Note: qrcodeLink is not available in getDepositOrderDetail response
-          // Keep the existing qrcodeLink from createDepositOrder if available
         }
         cardStore.setCurrentOrder(updatedOrder)
       }
@@ -827,7 +856,7 @@ const refreshPayment = async () => {
       clearInterval(countdownInterval)
       countdownInterval = null
     }
-    countdown.value = 1461
+    countdown.value = defaultCountdownSeconds.value > 0 ? Math.floor(defaultCountdownSeconds.value) : 0
 
     // Reset QR code error state
     qrCodeError.value = false

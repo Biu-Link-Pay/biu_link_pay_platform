@@ -662,7 +662,8 @@ const handleContinue = async () => {
         network: selectedCrypto.value!.network.name,
         payType: selectedPayType.value!.name,
         cryptoAmount: actualCryptoAmount.value,
-        name: route.query.name || 'John Tan'
+        name: route.query.name || 'John Tan',
+        expires: selectedPayType.value?.expires ?? null
       })
 
       // Navigate to crypto payment page

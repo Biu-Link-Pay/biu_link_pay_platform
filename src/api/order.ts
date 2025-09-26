@@ -47,6 +47,7 @@ export interface OrderPayType {
   img: string | null // Image
   detailsImg: string | null // Detail image
   sorts: number // Sort order
+  expires: number // Expiration time
   cryptoNetworks: OrderCryptoNetwork[] // Currency networks
 }
 
@@ -147,6 +148,9 @@ export interface DepositOrderDetailItem {
   address: string | null // 地址
   status: string // 订单状态 INIT：待支付，PENDING:处理中,SUCCESS：支付成功，FAIL：失败，CANCEL：已取消
   webUrl: string // 支付链接
+  createTime?: string | null // 创建时间
+  hashId?: string | null // 交易哈希
+  errorMessage?: string | null // 错误信息
 }
 
 // 入金订单详情查询响应

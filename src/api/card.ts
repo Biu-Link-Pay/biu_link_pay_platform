@@ -227,29 +227,6 @@ export class CardAPI {
   }
 
   /**
-   * Query payment methods
-   * @param params Payment method query parameters
-   * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
-   * @returns Promise<ApiResponse<PaymentMethodsResponse>>
-   */
-  static async getPaymentMethods(
-    params: PaymentMethodQueryParams,
-    headers: CardRequestHeaders
-  ): Promise<ApiResponse<PaymentMethodsResponse>> {
-    const response = await api.get('/card/consume/common/paymentMethods', {
-      params: {
-        orderType: params.orderType
-      },
-      headers: {
-        'token': headers.token,
-        'refresh_token': headers.refresh_token
-        // fingerprint-id 由请求拦截器自动添加
-      }
-    })
-    return response.data
-  }
-
-  /**
    * Query cardholder information
    * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
    * @returns Promise<ApiResponse<CardHolderResponse>>
@@ -354,7 +331,6 @@ export const {
   getCardConfig,
   queryCardBin,
   saveCardHolder,
-  getPaymentMethods,
   queryCardHolder,
   updateCardHolder,
   queryCardDetail,

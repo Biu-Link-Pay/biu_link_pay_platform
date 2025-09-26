@@ -107,11 +107,6 @@
                 <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Payment Time</span>
                 <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ paymentTime }}</span>
               </div>
-              <div
-                class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
-                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Payment Method</span>
-                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ paymentMethod }}</span>
-              </div>
               <div v-if="orderStatus === 'SUCCESS'" class="flex justify-between items-center py-2 lg:py-3">
                 <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Transaction ID</span>
                 <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ transactionId }}</span>
@@ -182,12 +177,13 @@
                 <div
                   class="inline-flex items-center gap-2 lg:gap-3 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-base xl:text-lg animate-pulse">
                   <i class="pi pi-clock text-lg lg:text-xl xl:text-xl"></i>
-                  <span>Payment Timeout: 15 minutes</span>
+                  <span>Payment Timeout</span>
                 </div>
                 <div
+                  v-if="!isPaymentExpired"
                   class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-orange-700 dark:text-orange-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-start gap-2 lg:gap-3">
                   <i class="pi pi-info-circle text-lg lg:text-xl xl:text-xl mt-0.5"></i>
-                  <span>For security reasons, the payment page is only valid for 15 minutes. Please complete the payment promptly.</span>
+                  <span>For security reasons, the payment page has expired. Please complete the payment promptly.</span>
                 </div>
               </div>
             </div>
@@ -285,10 +281,9 @@ const toast = useToast()
 const orderNumber = ref('')
 const orderAmount = ref(0)
 const orderStatus = ref<'PENDING' | 'SUCCESS' | 'FAIL' | 'CANCEL'>('PENDING')
-const paymentTime = ref('')
-const paymentMethod = ref('')
-const transactionId = ref('')
-const errorReason = ref('')
+const paymentTime = ref<string>('')
+const transactionId = ref<string>('')
+const errorReason = ref<string>('')
 
 // UI state
 const refreshing = ref(false)
@@ -388,6 +383,17 @@ const formatCurrency = (amount: number) => {
   })
 }
 
+// Check if payment is expired (15 minutes)
+const isPaymentExpired = computed(() => {
+  if (!paymentTime.value) return false
+  
+  const createTime = new Date(paymentTime.value).getTime()
+  const currentTime = new Date().getTime()
+  const fifteenMinutes = 15 * 60 * 1000 // 15 minutes in milliseconds
+  
+  return (currentTime - createTime) >= fifteenMinutes
+})
+
 // Simulate progress for PENDING status
 const simulateProgress = () => {
   if (orderStatus.value !== 'PENDING') return
@@ -419,7 +425,9 @@ const fetchOrderStatus = async () => {
       const detail = response.model
       const previousStatus = orderStatus.value
       orderStatus.value = detail.status as any
-
+      paymentTime.value = detail.createTime
+      transactionId.value = detail.hashId
+      errorReason.value = detail.errorMessage
       // Update other fields if needed
       if (detail.amount) {
         orderAmount.value = parseFloat(detail.amount.toString())
@@ -595,12 +603,6 @@ onMounted(async () => {
   if (status && ['PENDING', 'SUCCESS', 'FAIL', 'CANCEL'].includes(status)) {
     orderStatus.value = status as any
   }
-
-  // Set default values
-  paymentTime.value = new Date().toLocaleString()
-  paymentMethod.value = 'Crypto Payment'
-  transactionId.value = `TXN${Date.now()}`
-  errorReason.value = 'Insufficient balance or network error'
 
   // Start progress simulation for PENDING status
   if (orderStatus.value === 'PENDING') {
