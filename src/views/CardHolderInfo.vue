@@ -50,31 +50,31 @@
         <div v-if="holder && !isEditing">
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Current Billing Address</h3>
           <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-              <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                <span class="text-gray-600 dark:text-gray-400">Address:</span>
-                <span class="font-medium text-gray-900 dark:text-white ml-4 text-right">{{ holder.residentialAddress
-                }}</span>
+            <div class="space-y-4">
+              <div>
+                <span class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Country</span>
+                <span class="text-base text-gray-900 dark:text-white">{{ getCountryName(holder.residentialCountryCode) }}</span>
               </div>
-              <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                <span class="text-gray-600">City:</span>
-                <span class="font-medium text-gray-900 dark:text-white ml-4 text-right">{{ holder.residentialCity
-                }}</span>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <span class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">State/Province</span>
+                  <span class="text-base text-gray-900 dark:text-white">{{ holder.residentialState }}</span>
+                </div>
+                <div>
+                  <span class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">City</span>
+                  <span class="text-base text-gray-900 dark:text-white">{{ holder.residentialCity }}</span>
+                </div>
               </div>
-              <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                <span class="text-gray-600">State/Province:</span>
-                <span class="font-medium text-gray-900 dark:text-white ml-4 text-right">{{ holder.residentialState
-                }}</span>
+
+              <div>
+                <span class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Address</span>
+                <span class="text-base text-gray-900 dark:text-white">{{ holder.residentialAddress }}</span>
               </div>
-              <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                <span class="text-gray-600">Postal Code:</span>
-                <span class="font-medium text-gray-900 dark:text-white ml-4 text-right">{{ holder.residentialPostalCode
-                }}</span>
-              </div>
-              <div class="flex justify-between py-2">
-                <span class="text-gray-600">Country:</span>
-                <span class="font-medium text-gray-900 dark:text-white ml-4 text-right">{{ holder.residentialCountryCode
-                }}</span>
+
+              <div>
+                <span class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Postal Code</span>
+                <span class="text-base text-gray-900 dark:text-white">{{ holder.residentialPostalCode }}</span>
               </div>
             </div>
             <div class="mt-6 flex justify-end">
@@ -181,7 +181,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, computed, onMounted, watch } from 'vue'
+import { ref, reactive, computed, onMounted, watch, nextTick } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useCardStore } from '@/stores/card'
@@ -257,6 +257,12 @@ const states = ref<StateOption[]>([])
 const cities = ref<CityOption[]>([])
 const selectedStateCode = ref<string | null>(null)
 const selectedCityName = ref<string | null>(null)
+
+// Helper to get country name from code
+const getCountryName = (countryCode: string) => {
+  const country = countries.value.find(c => c.code === countryCode)
+  return country?.name || countryCode
+}
 
 // Helper functions for cascading selects
 const loadCitiesForState = (
@@ -397,6 +403,51 @@ const hasCityOptions = computed(() => cities.value.length > 0)
 const initializeLocationSelections = () => {
   loadStatesForCountry(form.residentialCountryCode, true)
 }
+
+// Enhanced location initialization for edit mode  
+const initializeLocationForEdit = async () => {
+  if (!form.residentialCountryCode) return
+  
+  // Store original form values
+  const originalState = form.residentialState
+  const originalCity = form.residentialCity
+  
+  // First load states data to get available choices
+  const stateList = State.getStatesOfCountry(form.residentialCountryCode) || []
+  states.value = stateList.map(state => ({ name: state.name, isoCode: state.isoCode }))
+  
+  // Reset selections first
+  selectedStateCode.value = null
+  selectedCityName.value = null
+  cities.value = []
+  
+  // Find and select matching state
+  if (originalState && originalState.trim()) {
+    const matchedState = stateList.find(s => s.name.trim() === originalState.trim())
+    if (matchedState) {
+      selectedStateCode.value = matchedState.isoCode
+      
+      // Load cities for this state
+      const cityOptions = City.getCitiesOfState(form.residentialCountryCode, matchedState.isoCode) || []
+      cities.value = cityOptions
+        .slice()
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map(city => ({ name: city.name }))
+      
+      // Set city if available
+      if (originalCity && originalCity.trim() && cityOptions.length > 0) {
+        const matchedCity = cityOptions.find(city => city.name.trim() === originalCity.trim())
+        if (matchedCity) {
+          selectedCityName.value = matchedCity.name
+        }
+      }
+      return
+    }
+  }
+  
+  // If no state match found, load country-wide cities as fallback
+  loadCitiesForCountry(form.residentialCountryCode, true)
+}
 // Quick recharge amounts
 const quickAmounts = ref([20, 50, 100, 200])
 
@@ -491,9 +542,8 @@ const loadHolder = async () => {
       form.residentialPostalCode = response.model.residentialPostalCode
       form.residentialState = response.model.residentialState
       isEditing.value = false
-      selectedStateCode.value = null
-      selectedCityName.value = null
-      initializeLocationSelections()
+      // Use enhanced initialization for proper display
+      await initializeLocationForEdit()
     } else {
       holder.value = null
       isEditing.value = true
@@ -522,14 +572,23 @@ const loadHolder = async () => {
   }
 }
 
-const startEdit = () => {
+const startEdit = async () => {
   isEditing.value = true
-  selectedStateCode.value = null
-  selectedCityName.value = null
-  initializeLocationSelections()
+  
+  // Always update form from holder to ensure we have latest values  
+  if (holder.value) {
+    form.residentialAddress = holder.value.residentialAddress
+    form.residentialCity = holder.value.residentialCity  
+    form.residentialCountryCode = holder.value.residentialCountryCode
+    form.residentialPostalCode = holder.value.residentialPostalCode
+    form.residentialState = holder.value.residentialState
+  }
+  
+  // Use enhanced initialization to properly set selections  
+  await initializeLocationForEdit()
 }
 
-const cancelEdit = () => {
+const cancelEdit = async () => {
   // Reset form to original values
   if (holder.value) {
     form.residentialAddress = holder.value.residentialAddress
@@ -537,6 +596,8 @@ const cancelEdit = () => {
     form.residentialCountryCode = holder.value.residentialCountryCode
     form.residentialPostalCode = holder.value.residentialPostalCode
     form.residentialState = holder.value.residentialState
+    // Use enhanced initialization to properly display loaded values
+    await initializeLocationForEdit()
   } else {
     // Reset to empty if no holder
     form.residentialAddress = ''
@@ -544,10 +605,10 @@ const cancelEdit = () => {
     form.residentialCountryCode = 'US'
     form.residentialPostalCode = ''
     form.residentialState = ''
+    selectedStateCode.value = null
+    selectedCityName.value = null
+    initializeLocationSelections()
   }
-  selectedStateCode.value = null
-  selectedCityName.value = null
-  initializeLocationSelections()
   isEditing.value = false
 }
 
