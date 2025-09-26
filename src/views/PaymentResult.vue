@@ -399,9 +399,9 @@ const fetchOrderStatus = async () => {
       const detail = response.model
       const previousStatus = orderStatus.value
       orderStatus.value = detail.status as any
-      paymentTime.value = detail.createTime
-      transactionId.value = detail.hashId
-      errorReason.value = detail.errorMessage
+      paymentTime.value = detail.createTime || null
+      transactionId.value = detail.hashId || null
+      errorReason.value = detail.errorMessage || null
       // Update other fields if needed
       if (detail.amount) {
         orderAmount.value = parseFloat(detail.amount.toString())
