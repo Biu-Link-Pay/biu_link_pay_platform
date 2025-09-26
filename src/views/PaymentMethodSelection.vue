@@ -8,186 +8,131 @@
       class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12 pb-24 md:pb-6 lg:pb-12">
       <!-- Desktop Layout -->
       <div class="hidden md:block">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <!-- Left Column: Payment Amount -->
-          <div class="lg:col-span-1">
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <div class="text-center">
-                <h2 class="text-lg font-medium text-gray-600 dark:text-gray-400 mb-2">Pay Amount</h2>
-                <div class="text-4xl font-bold text-gray-900 dark:text-white mb-4">{{ formatCurrency(payAmount) }}</div>
+        <div class="max-w-4xl xl:max-w-5xl mx-auto space-y-10">
+          <!-- Pay Summary -->
+          <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 text-white shadow-xl">
+            <div class="absolute -top-16 -right-20 w-56 h-56 bg-white/15 blur-3xl rounded-full"></div>
+            <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
+            <div class="relative px-10 py-12 text-center flex flex-col items-center space-y-4">
+              <span class="text-sm uppercase tracking-widest text-white/80">Pay Amount</span>
+              <div class="text-5xl font-extrabold tracking-tight">{{ formatCurrency(payAmount) }}</div>
+              <div v-if="cardStore.selectedCardBin?.cardCurrency" class="text-sm text-white/80">
+                {{ cardStore.selectedCardBin?.cardCurrency }} total for your card
+              </div>
+              <div class="mt-6 inline-flex items-center px-4 py-2 rounded-full text-sm text-white/90 bg-white/15 backdrop-blur-sm">
+                <i class="pi pi-shield mr-2 text-white/90"></i>
+                Secure crypto payment powered by {{ selectedPayType?.name || 'our partners' }}
               </div>
             </div>
           </div>
 
-          <!-- Right Column: Payment Methods -->
-          <div class="lg:col-span-2">
-            <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-sm">
-              <!-- Section Header -->
-              <div class="flex items-center justify-between mb-6">
-                <div class="flex items-center space-x-3">
-                  <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
-                    <i class="pi pi-credit-card text-blue-600 dark:text-blue-400 text-sm"></i>
-                  </div>
-                  <div>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Select Payment Method</h3>
-                  </div>
+          <!-- Payment Methods -->
+          <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-lg p-8">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-6">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
+                  <i class="pi pi-credit-card text-blue-600 dark:text-blue-400 text-base"></i>
                 </div>
-                <div class="w-4 h-4 bg-blue-600 rounded-full"></div>
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Select Payment Method</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Choose a provider and network to continue</p>
+                </div>
               </div>
+              <span class="inline-flex items-center text-xs font-medium uppercase tracking-wide text-blue-600">
+                <span class="w-2 h-2 mr-2 rounded-full bg-blue-500 animate-pulse"></span>
+                {{ paymentMethods.length }} available
+              </span>
+            </div>
 
-              <!-- Payment Methods Options -->
-              <div v-if="loading" class="flex justify-center items-center py-8">
-                <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
-                <span class="ml-2 text-gray-600 dark:text-gray-400">Loading payment methods...</span>
-              </div>
+            <div v-if="loading" class="flex flex-col items-center justify-center gap-3 py-12 text-center">
+              <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
+              <span class="text-gray-600 dark:text-gray-400">Loading payment methods...</span>
+            </div>
 
-              <div v-else class="space-y-4">
-                <div v-for="payType in paymentMethods" :key="payType.name"
-                  class="border border-gray-200 dark:border-gray-600 rounded-lg p-4 cursor-pointer transition-all duration-200"
-                  :class="selectedPayType?.name === payType.name ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-300 dark:border-blue-600 shadow-md' : 'hover:bg-gray-50 dark:hover:bg-gray-700 hover:shadow-sm'"
-                  @click="selectPayType(payType)">
-
-                  <!-- Payment Method Header -->
-                  <div class="flex items-center justify-between mb-3">
-                    <div class="flex items-center space-x-3">
-                      <div
-                        class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
-                        <img v-if="payType.img" :src="payType.img" :alt="payType.name"
-                          class="w-full h-full object-cover" />
-                        <div v-else class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
-                          <span class="text-white font-bold text-lg">{{ payType.name.charAt(0) }}</span>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="font-semibold text-gray-900 dark:text-white">{{ payType.name }}</div>
-                        <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks.length }} crypto
-                          options</div>
+            <div v-else class="space-y-4">
+              <div
+                v-for="payType in paymentMethods"
+                :key="payType.name"
+                class="border border-gray-200 dark:border-gray-600 rounded-xl p-5 cursor-pointer transition-all duration-200"
+                :class="selectedPayType?.name === payType.name ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-300 dark:border-blue-600 shadow-md ring-2 ring-blue-100 dark:ring-blue-800/60' : 'hover:bg-gray-50 dark:hover:bg-gray-700 hover:shadow-sm'"
+                @click="selectPayType(payType)"
+              >
+                <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+                  <div class="flex items-center space-x-4">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
+                      <img
+                        v-if="payType.img"
+                        :src="payType.img"
+                        :alt="payType.name"
+                        class="w-full h-full object-cover"
+                      />
+                      <div v-else class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">{{ payType.name.charAt(0) }}</span>
                       </div>
                     </div>
+                    <div>
+                      <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
+                      <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks.length }} crypto options</div>
+                    </div>
+                  </div>
 
-                    <!-- Selection Indicator -->
-                    <div v-if="selectedPayType?.name === payType.name"
-                      class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                  <div v-if="selectedPayType?.name === payType.name" class="flex items-center gap-3 text-blue-600">
+                    <span class="hidden lg:inline text-sm font-medium">Currently selected</span>
+                    <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center">
                       <i class="pi pi-check text-white text-xs"></i>
                     </div>
                   </div>
+                </div>
 
-                  <!-- Crypto Networks Selection -->
-                  <div v-if="selectedPayType?.name === payType.name"
-                    class="mt-3 pt-3 border-t border-gray-200 dark:border-gray-600">
-                    <div class="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                      Selected: {{ selectedCrypto ? `${selectedCrypto.crypto.name}-${selectedCrypto.network.name}` :
-                        'None' }}
-                    </div>
-                    <div class="grid grid-cols-1 gap-3">
-                      <div v-for="crypto in payType.cryptoNetworks"
-                        :key="`${crypto.crypto.name}-${crypto.network.name}`"
-                        class="flex items-center justify-between p-3 rounded-lg cursor-pointer transition-colors duration-200"
-                        :class="[
-                          selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name ? 'bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-600' : 'hover:bg-gray-50 dark:hover:bg-gray-700',
-                          'border border-transparent'
-                        ]" @click.stop="selectCrypto(crypto)">
-
-                        <!-- Crypto Icon and Info -->
-                        <div class="flex items-center space-x-3">
-                          <div class="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden">
-                            <img v-if="crypto.crypto.logoUrl" :src="crypto.crypto.logoUrl" :alt="crypto.crypto.name"
-                              class="w-full h-full object-cover" />
-                            <div v-else
-                              class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
-                              <span class="text-white font-bold text-sm">{{ crypto.crypto.name.charAt(0) }}</span>
-                            </div>
-                          </div>
-                          <div>
-                            <div class="font-semibold text-gray-900 dark:text-white">{{ crypto.crypto.name }}</div>
-                            <div class="text-sm text-gray-500 dark:text-gray-400">{{ crypto.crypto.fullName }}</div>
-                            <div class="text-xs text-gray-400 dark:text-gray-500">{{ crypto.network.fullName }}</div>
-                            <div class="text-xs text-gray-400 dark:text-gray-500">Limit：{{ crypto.minLimit }} - {{ crypto.maxLimit }}</div>
+                <div
+                  v-if="selectedPayType?.name === payType.name"
+                  class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600"
+                >
+                  <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-3">
+                    <span class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">Available Networks</span>
+                    <span class="text-xs text-gray-500 dark:text-gray-400">Selected: {{ selectedCrypto ? selectedCrypto.crypto.name + '-' + selectedCrypto.network.name : 'None' }}</span>
+                  </div>
+                  <div class="grid grid-cols-1 gap-3">
+                    <div
+                      v-for="crypto in payType.cryptoNetworks"
+                      :key="crypto.crypto.name + '-' + crypto.network.name"
+                      class="flex items-center justify-between p-3 rounded-lg cursor-pointer transition-colors duration-200 border border-transparent"
+                      :class="[
+                        selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name ? 'bg-blue-50 dark:bg-blue-900/30 border-blue-200 dark:border-blue-600 shadow-sm' : 'hover:bg-gray-50 dark:hover:bg-gray-700'
+                      ]"
+                      @click.stop="selectCrypto(crypto)"
+                    >
+                      <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
+                          <img
+                            v-if="crypto.crypto.logoUrl"
+                            :src="crypto.crypto.logoUrl"
+                            :alt="crypto.crypto.name"
+                            class="w-full h-full object-cover"
+                          />
+                          <div v-else class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">{{ crypto.crypto.name.charAt(0) }}</span>
                           </div>
                         </div>
-
-                        <!-- Selection Indicator -->
-                        <div
-                          v-if="selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name"
-                          class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
-                          <i class="pi pi-check text-white text-xs"></i>
+                        <div>
+                          <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName }}</div>
+                          <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                         </div>
-                        <div v-else class="w-6 h-6 border-2 border-gray-300 dark:border-gray-600 rounded-full"></div>
                       </div>
+
+                      <div
+                        v-if="selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name"
+                        class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center"
+                      >
+                        <i class="pi pi-check text-white text-xs"></i>
+                      </div>
+                      <div v-else class="w-7 h-7 border-2 border-gray-300 dark:border-gray-600 rounded-full"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- Selected Crypto Details - Desktop -->
-        <!-- <div v-if="selectedCrypto" class="mt-8">
-          <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-sm">
-            <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Payment Details</h4>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-              <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400"> {{ cardStore.selectedCardBin?.cardCurrency }}
-                  Amount:</span>
-                <span class="font-medium text-gray-900 dark:text-white">{{ formatCurrency(payAmount) }}</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Currency:</span>
-                <span class="font-medium text-gray-900 dark:text-white">{{ selectedCrypto.crypto.name }}</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Network:</span>
-                <span class="font-medium text-gray-900 dark:text-white">{{ selectedCrypto.network.fullName }}</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Crypto Amount:</span>
-                <span class="font-medium text-blue-600 dark:text-blue-400">
-                  <span v-if="rateLoading" class="flex items-center space-x-1">
-                    <i class="pi pi-spin pi-spinner text-xs"></i>
-                    <span>Loading...</span>
-                  </span>
-                  <span v-else-if="actualCryptoAmount">{{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}</span>
-                  <span v-else>-</span>
-                </span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Min Limit:</span>
-                <span class="font-medium text-gray-900 dark:text-white">${{ selectedCrypto.minLimit }}</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Max Limit:</span>
-                <span class="font-medium text-gray-900 dark:text-white">${{ selectedCrypto.maxLimit }}</span>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- Action Buttons - Desktop -->
-        <div class="bottom-buttons-container relative md:static">
-          <!-- Back Button -->
-          <button class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
-            @click="goBack">
-            <i class="pi pi-arrow-left"></i>
-            <span>Back</span>
-          </button>
-
-          <!-- Continue Button -->
-          <button :disabled="!selectedPayType || !selectedCrypto || rateLoading || creatingOrder"
-            class="bottom-button-dual bottom-button-dual-primary" @click="handleContinue">
-            <span v-if="creatingOrder" class="flex items-center space-x-2">
-              <i class="pi pi-spin pi-spinner text-sm"></i>
-              <span>Creating...</span>
-            </span>
-            <span v-else-if="rateLoading" class="flex items-center space-x-2">
-              <i class="pi pi-spin pi-spinner text-sm"></i>
-              <span>Loading rate...</span>
-            </span>
-            <span v-else-if="!selectedPayType">Select Payment</span>
-            <span v-else-if="!selectedCrypto">Select Crypto</span>
-            <span v-else-if="!actualCryptoAmount">Loading payment amount...</span>
-            <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}<span v-if="countdown > 0" class="text-xs opacity-75"> ({{ countdown }}s)</span></span>
-          </button>
         </div>
       </div>
 
@@ -338,33 +283,39 @@
             </div>
           </div> -->
 
-          <!-- Action Buttons -->
-          <div class="bottom-buttons-container relative md:static">
-            <!-- Back Button -->
-            <button class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
-              @click="goBack">
-              <i class="pi pi-arrow-left"></i>
-              <span>Back</span>
-            </button>
-
-            <!-- Continue Button -->
-            <button :disabled="!selectedPayType || !selectedCrypto || rateLoading || creatingOrder"
-              class="bottom-button-dual bottom-button-dual-primary" @click="handleContinue">
-              <span v-if="creatingOrder" class="flex items-center space-x-2">
-                <i class="pi pi-spin pi-spinner text-sm"></i>
-                <span>Creating...</span>
-              </span>
-              <span v-else-if="rateLoading" class="flex items-center space-x-2">
-                <i class="pi pi-spin pi-spinner text-sm"></i>
-                <span>Loading rate...</span>
-              </span>
-              <span v-else-if="!selectedPayType">Select Payment</span>
-              <span v-else-if="!selectedCrypto">Select Crypto</span>
-              <span v-else-if="!actualCryptoAmount">Loading payment amount...</span>
-              <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}<span v-if="countdown > 0" class="text-xs opacity-75"> ({{ countdown }}s)</span></span>
-            </button>
-          </div>
         </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="bottom-buttons-container relative md:static">
+        <!-- Back Button -->
+        <button
+          class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
+          @click="goBack"
+        >
+          <i class="pi pi-arrow-left"></i>
+          <span>Back</span>
+        </button>
+
+        <!-- Continue Button -->
+        <button
+          :disabled="!selectedPayType || !selectedCrypto || rateLoading || creatingOrder"
+          class="bottom-button-dual bottom-button-dual-primary"
+          @click="handleContinue"
+        >
+          <span v-if="creatingOrder" class="flex items-center space-x-2">
+            <i class="pi pi-spin pi-spinner text-sm"></i>
+            <span>Creating...</span>
+          </span>
+          <span v-else-if="rateLoading" class="flex items-center space-x-2">
+            <i class="pi pi-spin pi-spinner text-sm"></i>
+            <span>Loading rate...</span>
+          </span>
+          <span v-else-if="!selectedPayType">Select Payment</span>
+          <span v-else-if="!selectedCrypto">Select Crypto</span>
+          <span v-else-if="!actualCryptoAmount">Loading payment amount...</span>
+          <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}<span v-if="countdown > 0" class="text-xs opacity-75"> ({{ countdown }}s)</span></span>
+        </button>
       </div>
     </div>
   </div>

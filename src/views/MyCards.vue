@@ -151,7 +151,7 @@
           <div v-if="selectedCard"
             class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Transaction Limits</h3>
-            <div class="space-y-4">
+            <div class="space-y-4 lg:space-y-6">
               <div class="flex items-center justify-between">
                 <span class="text-sm text-gray-600 dark:text-gray-400">Daily Limit</span>
                 <span class="text-lg font-semibold text-gray-900 dark:text-white">${{ selectedCard.maxOnDaily
@@ -176,9 +176,9 @@
           <!-- Features Section -->
           <div v-if="cards.length > 0" class="bg-white dark:bg-gray-800 rounded-lg shadow-sm w-full">
             <!-- Tabs -->
-            <div class="flex border-b border-gray-200 dark:border-gray-700">
+            <div class="flex flex-wrap gap-2 md:gap-4 border-b border-gray-200 dark:border-gray-700 px-1 md:px-2">
               <button v-for="tab in tabs" :key="tab.key" @click="handleTabChange(tab.key)"
-                class="flex-1 px-4 py-3 text-sm font-medium transition-colors" :class="activeTab === tab.key
+                class="flex-1 px-4 py-3 text-sm md:text-base lg:text-lg font-medium md:font-semibold transition-colors md:px-6 md:py-4 rounded-t-md" :class="activeTab === tab.key
                   ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
                   : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'">
                 {{ tab.label }}
@@ -186,7 +186,7 @@
             </div>
 
             <!-- Transaction List -->
-            <div class="p-4 md:p-6">
+            <div class="p-4 md:p-8 lg:p-10">
               <!-- No Cards State -->
               <div v-if="cards.length === 0" class="text-center py-12">
                 <div
@@ -211,22 +211,22 @@
               </div>
 
               <!-- Transaction Tab -->
-              <div v-else-if="activeTab === 'transaction'" class="space-y-4">
+              <div v-else-if="activeTab === 'transaction'" class="space-y-4 lg:space-y-6">
                 <!-- Loading State -->
                 <div v-if="loading.transaction" class="flex justify-center py-8">
                   <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
                 </div>
 
                 <!-- Desktop: Swipe Pagination -->
-                <div v-else-if="transactions.length > 0 && !isMobile" class="space-y-4">
+                <div v-else-if="transactions.length > 0 && !isMobile" class="space-y-4 lg:space-y-6">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.transaction.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileTransactionPages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2">
-                        <div class="space-y-4">
+                        class="w-full flex-shrink-0 px-2 lg:px-4">
+                        <div class="space-y-4 lg:space-y-6">
                           <div v-for="(transaction, index) in page" :key="index"
-                            class="flex items-center space-x-4 p-4 lg:p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            class="flex items-center space-x-4 md:space-x-6 p-4 md:p-5 lg:p-7 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                             <div
                               class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
                               <i class="pi pi-minus text-gray-600 dark:text-gray-400 text-base lg:text-lg"></i>
@@ -283,13 +283,13 @@
                 </div>
 
                 <!-- Mobile: Swipe Pagination -->
-                <div v-else-if="transactions.length > 0 && isMobile" class="space-y-4">
+                <div v-else-if="transactions.length > 0 && isMobile" class="space-y-4 lg:space-y-6">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.transaction.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileTransactionPages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2">
-                        <div class="space-y-3">
+                        class="w-full flex-shrink-0 px-2 lg:px-4">
+                        <div class="space-y-3 lg:space-y-4">
                           <div v-for="(transaction, index) in page" :key="index"
                             class="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700">
                             <div
@@ -354,21 +354,21 @@
               </div>
 
               <!-- Recharge Tab -->
-              <div v-else-if="activeTab === 'recharge'" class="space-y-4">
+              <div v-else-if="activeTab === 'recharge'" class="space-y-4 lg:space-y-6">
                 <!-- Loading State -->
                 <div v-if="loading.recharge" class="flex justify-center py-8">
                   <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
                 </div>
 
                 <!-- Desktop: Swipe Pagination -->
-                <div v-else-if="rechargeOrders.length > 0 && !isMobile" class="space-y-2">
+                <div v-else-if="rechargeOrders.length > 0 && !isMobile" class="space-y-2 lg:space-y-5">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.recharge.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2">
+                        class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div v-for="(order, index) in page" :key="index"
-                          class="flex items-center space-x-4 p-2 lg:p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                          class="flex items-center space-x-4 md:space-x-6 p-3 md:p-5 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                           <div
                             class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
                             <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-base lg:text-lg"></i>
@@ -429,13 +429,13 @@
                 </div>
 
                 <!-- Mobile: Swipe Pagination -->
-                <div v-else-if="rechargeOrders.length > 0 && isMobile" class="space-y-2">
+                <div v-else-if="rechargeOrders.length > 0 && isMobile" class="space-y-2 lg:space-y-5">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.recharge.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2">
-                        <div class="space-y-3">
+                        class="w-full flex-shrink-0 px-2 lg:px-4">
+                        <div class="space-y-3 lg:space-y-4">
                           <div v-for="(order, index) in page" :key="index"
                             class="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700">
                             <div
@@ -499,29 +499,29 @@
               </div>
 
               <!-- Withdraw Tab -->
-              <div v-else-if="activeTab === 'withdraw'" class="space-y-4">
+              <div v-else-if="activeTab === 'withdraw'" class="space-y-4 lg:space-y-6">
                 <!-- Loading State -->
                 <div v-if="loading.withdraw" class="flex justify-center py-8">
                   <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
                 </div>
 
                 <!-- Desktop: Swipe Pagination -->
-                <div v-else-if="withdrawOrders.length > 0 && !isMobile" class="space-y-4">
+                <div v-else-if="withdrawOrders.length > 0 && !isMobile" class="space-y-4 lg:space-y-6">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.withdraw.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileWithdrawPages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2">
-                        <div class="space-y-4">
+                        class="w-full flex-shrink-0 px-2 lg:px-4">
+                        <div class="space-y-4 lg:space-y-6">
                           <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-4 p-4 lg:p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            class="flex items-center space-x-4 md:space-x-6 p-4 md:p-5 lg:p-7 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                             <div
                               class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
                               <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-base lg:text-lg"></i>
                             </div>
                             <div class="flex-1 min-w-0">
                               <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                                Withdraw Order #{{ order.num || 'N/A' }}
+                                {{ order.num || 'N/A' }}
                               </div>
                               <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
                                 {{ formatDate(order.createTime || '') }}
@@ -576,13 +576,13 @@
                 </div>
 
                 <!-- Mobile: Swipe Pagination -->
-                <div v-else-if="withdrawOrders.length > 0 && isMobile" class="space-y-4">
+                <div v-else-if="withdrawOrders.length > 0 && isMobile" class="space-y-4 lg:space-y-6">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.withdraw.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileWithdrawPages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2">
-                        <div class="space-y-3">
+                        class="w-full flex-shrink-0 px-2 lg:px-4">
+                        <div class="space-y-3 lg:space-y-4">
                           <div v-for="(order, index) in page" :key="index"
                             class="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700">
                             <div
@@ -680,7 +680,7 @@
         </button>
       </div>
       <div v-else-if="cardDetail" class="space-y-4 text-sm text-gray-700 dark:text-gray-200">
-        <div class="space-y-2">
+        <div class="space-y-2 lg:space-y-5">
           <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Card Number</div>
           <div class="text-lg font-mono text-gray-900 dark:text-white tracking-[0.35em]">
             {{ formatCardNumber(cardDetail.cardNo) }}
@@ -712,7 +712,7 @@
             </div>
           </div>
         </div>
-        <div class="space-y-2">
+        <div class="space-y-2 lg:space-y-5">
           <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Billing Address</div>
           <div class="space-y-1 text-sm text-gray-700 dark:text-gray-300">
             <div>{{ cardDetail.billingAddress }}</div>

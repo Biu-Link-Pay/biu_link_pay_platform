@@ -41,8 +41,10 @@
             </div>
 
             <!-- Mobile: Only show avatar, click to go to profile -->
-            <div class="md:hidden w-8 h-8 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-600 cursor-pointer"
-              @click="goToProfile">
+            <div
+              class="md:hidden w-8 h-8 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-600 cursor-pointer"
+              @click="toggleMobileMenu"
+            >
               <img v-if="userAvatar" :src="userAvatar" :alt="userName" class="w-full h-full object-cover" />
               <div v-else
                 class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white text-sm font-medium">
@@ -89,10 +91,86 @@
       </div>
     </div>
   </nav>
+
+  <!-- Mobile slide-out menu -->
+  <Transition name="fade">
+    <div
+      v-if="showMobileMenu"
+      class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 md:hidden"
+      @click="closeMobileMenu"
+    ></div>
+  </Transition>
+  <Transition name="slide-in-right">
+    <div
+      v-if="showMobileMenu"
+      class="fixed inset-y-0 right-0 z-50 w-72 max-w-[18rem] md:hidden bg-white dark:bg-gray-900 shadow-2xl border-l border-gray-200 dark:border-gray-700 flex flex-col"
+      @click.stop
+    >
+      <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200 dark:border-gray-700">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+            <img v-if="userAvatar" :src="userAvatar" :alt="userName" class="w-full h-full object-cover" />
+            <div v-else
+              class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white text-sm font-medium">
+              {{ userName.charAt(0).toUpperCase() }}
+            </div>
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-gray-900 dark:text-white">{{ userName }}</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400">{{ userEmail }}</p>
+          </div>
+        </div>
+        <button class="p-2 text-gray-500 hover:text-gray-900 dark:hover:text-white" @click="closeMobileMenu">
+          <i class="pi pi-times text-lg"></i>
+        </button>
+      </div>
+
+      <div class="px-5 py-3 border-b border-gray-200 dark:border-gray-700">
+        <div class="inline-flex items-center space-x-3">
+          <span class="text-xs font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400">Theme</span>
+          <div data-theme-toggle>
+            <ThemeToggle />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-1 overflow-y-auto py-4">
+        <div v-if="isLoggedIn" class="space-y-2 px-4">
+          <button
+            class="w-full flex items-center space-x-3 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            @click="handleMobileNavigate(goToMyCards)"
+          >
+            <i class="pi pi-credit-card text-gray-500"></i>
+            <span>My Cards</span>
+          </button>
+          <button
+            class="w-full flex items-center space-x-3 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            @click="handleMobileNavigate(goToProfile)"
+          >
+            <i class="pi pi-user text-gray-500"></i>
+            <span>Profile</span>
+          </button>
+          <button
+            class="w-full flex items-center space-x-3 rounded-lg px-3 py-2 text-sm font-medium text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors"
+            @click="handleMobileNavigate(confirmLogout)"
+          >
+            <i class="pi pi-sign-out text-red-500"></i>
+            <span>Logout</span>
+          </button>
+        </div>
+        <div v-else-if="showLogin" class="px-5 py-4">
+          <Button label="Login" class="w-full" @click="handleMobileNavigate(goToLogin)" />
+        </div>
+        <div v-else class="px-5 py-4">
+          <p class="text-sm text-gray-500 dark:text-gray-400">Welcome to BiuLinkPay</p>
+        </div>
+      </div>
+    </div>
+  </Transition>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useConfirm } from 'primevue/useconfirm'
@@ -134,6 +212,22 @@ const userName = computed(() => {
 const userEmail = computed(() => currentUser.value?.email || '')
 const userAvatar = computed(() => currentUser.value?.avatar)
 
+const showMobileMenu = ref(false)
+let previousBodyOverflow: string | null = null
+
+const toggleMobileMenu = () => {
+  showMobileMenu.value = !showMobileMenu.value
+}
+
+const closeMobileMenu = () => {
+  showMobileMenu.value = false
+}
+
+const handleMobileNavigate = (callback: () => void) => {
+  closeMobileMenu()
+  callback()
+}
+
 // Toggle user menu
 const toggleUserMenu = () => {
   showUserMenu.value = !showUserMenu.value
@@ -142,12 +236,14 @@ const toggleUserMenu = () => {
 // Navigate to my cards
 const goToMyCards = () => {
   showUserMenu.value = false
+  closeMobileMenu()
   router.push('/my-cards')
 }
 
 // Navigate to profile
 const goToProfile = () => {
   showUserMenu.value = false
+  closeMobileMenu()
   // Here you can navigate to profile page
   toast.add({
     severity: 'info',
@@ -159,6 +255,7 @@ const goToProfile = () => {
 
 // Navigate to login page
 const goToLogin = () => {
+  closeMobileMenu()
   router.push('/login')
 }
 
@@ -166,6 +263,7 @@ const goToLogin = () => {
 const confirmLogout = () => {
   console.log('显示登出确认对话框')
   showUserMenu.value = false
+  closeMobileMenu()
   confirm.require({
     message: 'Are you sure you want to logout?',
     header: 'Confirm Logout',
@@ -220,13 +318,43 @@ const handleClickOutside = (event: Event) => {
   }
 }
 
+const handleEscapeKey = (event: KeyboardEvent) => {
+  if (event.key === 'Escape' && showMobileMenu.value) {
+    closeMobileMenu()
+  }
+}
+
+watch(showMobileMenu, value => {
+  if (value) {
+    previousBodyOverflow = document.body.style.overflow ? document.body.style.overflow : null
+    document.body.style.overflow = 'hidden'
+  } else {
+    if (previousBodyOverflow !== null) {
+      document.body.style.overflow = previousBodyOverflow
+      previousBodyOverflow = null
+    } else {
+      document.body.style.removeProperty('overflow')
+    }
+  }
+})
+
 // Lifecycle
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
+  document.addEventListener('keydown', handleEscapeKey)
 })
 
 onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside)
+  document.removeEventListener('keydown', handleEscapeKey)
+  if (showMobileMenu.value) {
+    showMobileMenu.value = false
+  } else if (previousBodyOverflow !== null) {
+    document.body.style.overflow = previousBodyOverflow
+    previousBodyOverflow = null
+  } else {
+    document.body.style.removeProperty('overflow')
+  }
 })
 </script>
 
@@ -281,4 +409,26 @@ button:hover {
 .dark .shadow-lg {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
+
+/* Mobile menu transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-in-right-enter-active,
+.slide-in-right-leave-active {
+  transition: transform 0.25s ease;
+}
+
+.slide-in-right-enter-from,
+.slide-in-right-leave-to {
+  transform: translateX(100%);
+}
+
 </style>
