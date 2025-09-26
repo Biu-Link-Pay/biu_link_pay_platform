@@ -233,10 +233,10 @@
                             </div>
                             <div class="flex-1 min-w-0">
                               <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg truncate">
-                                {{ transaction.merchantNameLocation || 'Unknown Merchant' }}
+                                {{ transaction.merchantNameLocation || '' }}
                               </div>
                               <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
-                                {{ transaction.merchantLocation || 'Unknown Location' }}
+                                {{ transaction.merchantLocation || '' }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -298,10 +298,10 @@
                             </div>
                             <div class="flex-1 min-w-0">
                               <div class="font-medium text-gray-900 dark:text-white text-sm truncate">
-                                {{ transaction.merchantNameLocation || 'Unknown Merchant' }}
+                                {{ transaction.merchantNameLocation || '' }}
                               </div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">
-                                {{ transaction.merchantLocation || 'Unknown Location' }}
+                                {{ transaction.merchantLocation || '' }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -657,6 +657,79 @@
 
       <!-- Transaction History Section -->
 
+    <Dialog
+      v-model:visible="showDetailDialog"
+      modal
+      header="Card Details"
+      :style="{ width: '90vw', maxWidth: '520px' }"
+      :breakpoints="{ '960px': '75vw', '640px': '95vw' }"
+      :draggable="false"
+    >
+      <div v-if="detailLoading" class="flex justify-center py-10">
+        <i class="pi pi-spin pi-spinner text-2xl text-blue-600"></i>
+      </div>
+      <div v-else-if="detailError" class="space-y-4 text-center">
+        <p class="text-sm text-red-500">{{ detailError }}</p>
+        <button
+          @click="retryCardDetail"
+          class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors"
+          :disabled="detailLoading"
+        >
+          <i class="pi pi-refresh mr-2"></i>
+          Retry
+        </button>
+      </div>
+      <div v-else-if="cardDetail" class="space-y-4 text-sm text-gray-700 dark:text-gray-200">
+        <div class="space-y-2">
+          <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Card Number</div>
+          <div class="text-lg font-mono text-gray-900 dark:text-white tracking-[0.35em]">
+            {{ formatCardNumber(cardDetail.cardNo) }}
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Cardholder</div>
+            <div class="text-sm font-medium text-gray-900 dark:text-white">
+              {{ cardDetail.firstName }} {{ cardDetail.lastName }}
+            </div>
+          </div>
+          <div>
+            <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Currency</div>
+            <div class="text-sm font-medium text-gray-900 dark:text-white">
+              {{ cardDetail.cardCurrency }}
+            </div>
+          </div>
+          <div>
+            <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Expiration</div>
+            <div class="text-sm font-medium text-gray-900 dark:text-white">
+              {{ cardDetail.expirationDate }}
+            </div>
+          </div>
+          <div>
+            <div class="text-xs uppercase text-gray-500 dark:text-gray-400">CVV</div>
+            <div class="text-sm font-medium text-gray-900 dark:text-white">
+              {{ cardDetail.cvv }}
+            </div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Billing Address</div>
+          <div class="space-y-1 text-sm text-gray-700 dark:text-gray-300">
+            <div>{{ cardDetail.billingAddress }}</div>
+            <div>{{ cardDetail.billingCity }}, {{ cardDetail.billingState }} {{ cardDetail.billingPostalCode }}</div>
+            <div>{{ cardDetail.billingCountry }}</div>
+          </div>
+        </div>
+        <div class="text-xs text-gray-500 dark:text-gray-400">
+          {{ isAddressUpdatable(cardDetail.billingAddressUpdatable) ? 'Billing address can be updated.' : 'Billing address cannot be updated.' }}
+        </div>
+      </div>
+      <div v-else class="text-sm text-gray-500 dark:text-gray-400">
+        No card details available.
+      </div>
+    </Dialog>
+
+
     </div>
   </div>
 </template>
@@ -667,6 +740,8 @@ import { useRouter, useRoute } from 'vue-router'
 import { useCardStore } from '@/stores/card'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
+import Dialog from 'primevue/dialog'
+import { CardAPI, type CardDetailResponse } from '@/api/card'
 import { OrderAPI, type TransactionListItem, type DepositOrderListItem, type WithdrawOrderListItem, type WithdrawOrderPageResponse } from '@/api/order'
 
 const router = useRouter()
@@ -721,6 +796,12 @@ const withdrawOrders = ref<WithdrawOrderListItem[]>([])
 const selectedCard = computed(() => {
   return cards.value[currentCardIndex.value] || cards.value[0]
 })
+
+const showDetailDialog = ref(false)
+const detailLoading = ref(false)
+const detailError = ref<string | null>(null)
+const cardDetail = ref<CardDetailResponse | null>(null)
+
 
 // Card transition animation state
 const transitionDirection = ref<'next' | 'prev'>('next')
@@ -947,7 +1028,42 @@ const goToWithdraw = () => {
   })
 }
 
-const goToDetails = () => {
+const handleCardDetailError = (message: string) => {
+  detailError.value = message
+  toast.add({
+    severity: 'error',
+    summary: 'Error',
+    detail: message,
+    life: 3000
+  })
+}
+
+const loadCardDetail = async (cardId: string) => {
+  detailLoading.value = true
+  detailError.value = null
+  cardDetail.value = null
+
+  try {
+    const headers = cardStore.getRequestHeaders()
+    const response = await CardAPI.queryCardDetail({ cardId }, headers)
+
+    if (response.success && response.model) {
+      if (!showDetailDialog.value) {
+        return
+      }
+      cardDetail.value = response.model
+    } else {
+      handleCardDetailError(response.msg || 'Failed to load card details')
+    }
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'Failed to load card details'
+    handleCardDetailError(message)
+  } finally {
+    detailLoading.value = false
+  }
+}
+
+const goToDetails = async () => {
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'warn',
@@ -958,15 +1074,34 @@ const goToDetails = () => {
     return
   }
 
-  // Navigate to card details page or show details modal
-  toast.add({
-    severity: 'info',
-    summary: 'Card Details',
-    detail: 'Card details functionality coming soon',
-    life: 3000
-  })
+  showDetailDialog.value = true
+  await loadCardDetail(selectedCard.value.id)
 }
 
+const retryCardDetail = async () => {
+  if (!selectedCard.value?.id) {
+    return
+  }
+
+  await loadCardDetail(selectedCard.value.id)
+}
+
+watch(showDetailDialog, visible => {
+  if (!visible) {
+    detailLoading.value = false
+    detailError.value = null
+    cardDetail.value = null
+  }
+})
+
+watch(
+  () => selectedCard.value?.id,
+  newId => {
+    if (showDetailDialog.value && newId) {
+      loadCardDetail(newId)
+    }
+  }
+)
 
 const goToRecharge = () => {
   if (!selectedCard.value?.id) {
@@ -1013,6 +1148,14 @@ const formatCardNumber = (cardNo?: string) => {
   const digits = cardNo.replace(/\D/g, '')
   if (!digits) return 'N/A'
   return digits.replace(/(.{4})/g, '$1 ').trim()
+}
+
+const isAddressUpdatable = (value?: string | null) => {
+  if (!value) {
+    return false
+  }
+  const normalized = value.toString().trim().toLowerCase()
+  return normalized === 'y' || normalized === 'true' || normalized === '1'
 }
 
 const cardLastFour = (cardNo?: string) => {
