@@ -125,15 +125,6 @@
         </button>
       </div>
 
-      <div class="px-5 py-3 border-b border-gray-200 dark:border-gray-700">
-        <div class="inline-flex items-center space-x-3">
-          <span class="text-xs font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400">Theme</span>
-          <div data-theme-toggle>
-            <ThemeToggle />
-          </div>
-        </div>
-      </div>
-
       <div class="flex-1 overflow-y-auto py-4">
         <div v-if="isLoggedIn" class="space-y-2 px-4">
           <button
