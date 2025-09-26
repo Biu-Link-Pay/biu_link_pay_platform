@@ -249,7 +249,7 @@
 
             <!-- Support Information -->
             <div class="text-center lg:text-left text-sm lg:text-base xl:text-lg text-gray-500 dark:text-gray-400">
-              <p>Need help? <a href="#" 
+              <p>Need help? <a href="mailto:support@biulinkpay.org" 
                   class="text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-200">Contact
                   Support</a></p>
             </div>
