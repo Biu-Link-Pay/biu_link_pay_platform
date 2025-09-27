@@ -774,6 +774,7 @@ import AppHeader from '@/components/AppHeader.vue'
 import Dialog from 'primevue/dialog'
 import { CardAPI, type CardDetailResponse } from '@/api/card'
 import { OrderAPI, type TransactionListItem, type DepositOrderListItem, type WithdrawOrderListItem, type WithdrawOrderPageResponse } from '@/api/order'
+import { copyWithToast } from '@/utils'
 
 const router = useRouter()
 const route = useRoute()
@@ -989,25 +990,9 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
 }
 
 
-// Copy to clipboard
+// Copy to clipboard using utility function
 const copyToClipboard = async (text: string) => {
-  try {
-    await navigator.clipboard.writeText(text)
-    toast.add({
-      severity: 'success',
-      summary: 'Copied',
-      detail: 'Copied to clipboard',
-      life: 2000
-    })
-  } catch (error) {
-    console.error('Failed to copy to clipboard:', error)
-    toast.add({
-      severity: 'error',
-      summary: 'Error',
-      detail: 'Copy failed',
-      life: 3000
-    })
-  }
+  await copyWithToast(text, toast)
 }
 
 // Card navigation

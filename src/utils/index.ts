@@ -182,6 +182,94 @@ export const kebabToCamel = (str: string): string => {
   return str.replace(/-([a-z])/g, (match, letter) => letter.toUpperCase())
 }
 
+// 复制到剪贴板的兼容性工具函数
+export interface CopyOptions {
+  onSuccess?: (text: string) => void
+  onError?: (error: Error) => void
+  successMessage?: string
+  errorMessage?: string
+}
+export const copyToClipboard = async (text: string, options?: CopyOptions): Promise<boolean> => {
+  const {
+    onSuccess,
+    onError,
+    successMessage = 'Text copied to clipboard',
+    errorMessage = 'Failed to copy to clipboard'
+  } = options || {}
+
+  try {
+    // 优先使用现代 Clipboard API
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text)
+      onSuccess?.(text)
+      return true
+    }
+
+    // 降级使用 document.execCommand (适用于旧浏览器或非 HTTPS 环境)
+    const textArea = document.createElement('textarea')
+    textArea.value = text
+    textArea.style.position = 'fixed'
+    textArea.style.left = '-999999px'
+    textArea.style.top = '-999999px'
+    textArea.style.opacity = '0'
+    textArea.setAttribute('readonly', '')
+    textArea.setAttribute('aria-hidden', 'true')
+
+    document.body.appendChild(textArea)
+
+    // 确保元素获得焦点
+    textArea.focus()
+    textArea.select()
+    textArea.setSelectionRange(0, text.length)
+
+    const successful = document.execCommand('copy')
+    document.body.removeChild(textArea)
+
+    if (successful) {
+      onSuccess?.(text)
+      return true
+    } else {
+      throw new Error('execCommand copy failed')
+    }
+  } catch (error) {
+    const err = error instanceof Error ? error : new Error(errorMessage)
+    onError?.(err)
+    return false
+  }
+}
+
+// 带 Toast 提示的复制函数（用于 Vue 组件）
+export const copyWithToast = async (
+  text: string,
+  toast: any,
+  options?: Partial<CopyOptions>
+): Promise<boolean> => {
+  const {
+    successMessage = 'Copied to clipboard',
+    errorMessage = 'Failed to copy to clipboard'
+  } = options || {}
+
+  return copyToClipboard(text, {
+    onSuccess: () => {
+      toast.add({
+        severity: 'success',
+        summary: 'Copied!',
+        detail: successMessage,
+        life: 2000
+      })
+    },
+    onError: (error) => {
+      console.error('Copy error:', error)
+      toast.add({
+        severity: 'error',
+        summary: 'Copy Failed',
+        detail: errorMessage,
+        life: 3000
+      })
+    },
+    ...options
+  })
+}
 // 导出其他工具模块
 export * from './auth'
 export * from './fingerprint'
