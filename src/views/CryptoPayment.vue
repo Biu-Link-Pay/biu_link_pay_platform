@@ -840,22 +840,20 @@ const handleOrderStatusChange = (status: string) => {
     stopPolling()
 
     // Navigate to payment result page with the current status
-    setTimeout(() => {
-      if (isMounted.value) {
-        router.push({
-          name: 'PaymentResult',
-          query: {
-            orderNum: orderNumber.value,
-            status: status,
-            amount: orderAmount.value.toString(),
-            currency: selectedCrypto.value,
-            network: selectedNetwork.value,
-            cryptoAmount: cryptoAmount.value,
-            paymentMethod: cardStore.currentOrder?.payType || 'Crypto Payment'
-          }
-        })
-      }
-    }, 1000) // Short delay to show the status change
+    if (isMounted.value) {
+      router.push({
+        name: 'PaymentResult',
+        query: {
+          orderNum: orderNumber.value,
+          status: status,
+          amount: orderAmount.value.toString(),
+          currency: selectedCrypto.value,
+          network: selectedNetwork.value,
+          cryptoAmount: cryptoAmount.value,
+          paymentMethod: cardStore.currentOrder?.payType || 'Crypto Payment'
+        }
+      })
+    }
   }
 }
 

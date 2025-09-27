@@ -117,6 +117,9 @@
                         <div>
                           <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName }}</div>
                           <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
+                          <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
+                            Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
+                          </div>
                         </div>
                       </div>
 
@@ -237,6 +240,9 @@
                         <div>
                           <div class="text-sm text-gray-500 dark:text-gray-400">{{ crypto.crypto.fullName }}</div>
                           <div class="text-xs text-gray-400 dark:text-gray-500">{{ crypto.network.fullName }}</div>
+                          <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
+                            Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
+                          </div>
                         </div>
                       </div>
 

@@ -6,10 +6,10 @@
 
     <!-- Main Content -->
     <div
-      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-7xl xl:max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12">
+      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-7xl xl:max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12 min-h-[calc(100vh-120px)] lg:flex lg:items-center lg:justify-center">
       <!-- Payment Result Card -->
       <div
-        class="bg-white dark:bg-gray-800 rounded-3xl p-6 sm:p-8 lg:p-12 xl:p-16 shadow-2xl transition-all duration-300 hover:-translate-y-1 max-w-lg lg:max-w-none mx-auto relative overflow-hidden"
+        class="bg-white dark:bg-gray-800 rounded-3xl p-6 sm:p-8 lg:p-12 xl:p-16 shadow-2xl transition-all duration-300 hover:-translate-y-1 max-w-lg lg:max-w-none mx-auto relative overflow-hidden w-full"
         :class="[cardAnimationClass]">
 
         <!-- Desktop Layout: Two Column -->

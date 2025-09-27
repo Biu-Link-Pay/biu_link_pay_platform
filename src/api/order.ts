@@ -149,6 +149,7 @@ export interface DepositOrderDetailItem {
   status: string // 订单状态 INIT：待支付，PENDING:处理中,SUCCESS：支付成功，FAIL：失败，CANCEL：已取消
   webUrl: string // 支付链接
   createTime?: string | null // 创建时间
+  currentTime?: string | null // 当前时间
   hashId?: string | null // 交易哈希
   errorMessage?: string | null // 错误信息
 }
