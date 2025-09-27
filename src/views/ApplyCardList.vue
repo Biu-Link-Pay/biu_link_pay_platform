@@ -4,7 +4,7 @@
     <AppHeader title="Apply Card" :show-title="true" />
 
     <!-- Confirm Dialog -->
-    <ConfirmDialog />
+    <!-- <ConfirmDialog /> -->
 
     <!-- Main Content -->
     <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
