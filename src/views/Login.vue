@@ -1,41 +1,22 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center p-4">
+  <div class="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-indigo-200 dark:from-gray-800 dark:via-blue-800 dark:to-purple-800 flex items-center justify-center p-4">
     <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-6xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[600px]">
         <!-- Left showcase area -->
-        <div class="hidden lg:block lg:pr-8">
-          <div class="space-y-8">
-            <div class="text-center lg:text-left">
-              <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                Multiple Card Type Options
-              </h2>
-              <p class="text-lg text-gray-600 dark:text-gray-400">
-                Rich Consumption Scenarios
-              </p>
-            </div>
-
-            <!-- Card showcase -->
-            <div class="relative">
-              <div class="grid grid-cols-2 gap-6">
-                <div v-for="i in 4" :key="i"
-                  class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl p-6 text-white shadow-lg hover:shadow-xl cursor-pointer transform hover:scale-105 transition-all duration-300">
-                  <div class="flex items-center justify-between mb-3">
-                    <div class="w-8 h-6 bg-yellow-400 rounded-sm"></div>
-                    <div class="text-sm font-medium">Bit Seven</div>
-                  </div>
-                  <div class="text-sm mb-3">United States - USD</div>
-                  <div class="w-10 h-10 bg-yellow-400 rounded-full mx-auto"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- App icons -->
-            <div class="flex justify-center lg:justify-start space-x-3">
-              <div v-for="app in apps" :key="app"
-                class="w-14 h-14 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer hover:scale-110">
-                <i :class="app" class="text-xl text-gray-600 dark:text-gray-400"></i>
-              </div>
-            </div>
+        <div class="hidden lg:block lg:pr-8 relative h-full">
+          <!-- 服务Logo区域 -->
+          <div class="relative h-full">
+            <!-- 服务Logo -->
+            <img
+              v-for="(service, index) in services" :key="index"
+              :src="service.image"
+              :alt="service.name"
+              class="absolute hover:opacity-100 transition-all duration-500 ease-out service-logo"
+              :class="[service.size, service.position, `surf-animation-${index}`]"
+              :style="{
+                opacity: 1,
+              }"
+            />
           </div>
         </div>
 
@@ -133,13 +114,71 @@ const toast = useToast()
 const authStore = useAuthStore()
 const cardStore = useCardStore()
 
-// App icons for showcase
-const apps = ref([
-  'pi pi-apple',
-  'pi pi-google',
-  'pi pi-amazon',
-  'pi pi-paypal',
-  'pi pi-visa'
+// 服务Logo数据 - 根据设计稿重新定位
+const services = ref([
+  {
+    name: 'PayPal',
+    image: 'https://static.biulinkpay.online/images/paypal.png',
+    // 移动端：围绕中心卡片分布
+    position: 'top-1/5 right-1/6 lg:top-1/5 lg:left-1/5',
+    size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14',
+  },
+  {
+    name: 'YouTube',
+    image: 'https://static.biulinkpay.online/images/youtube.png',
+    // 移动端：围绕中心卡片分布
+    position: 'top-1/6 left-1/8 lg:top-1/4 lg:left-7/10',
+    size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14',
+  },
+  {
+    name: 'TikTok',
+    image: 'https://static.biulinkpay.online/images/tiktok.png',
+    // 移动端：围绕中心卡片分布
+    position: 'top-1/8 left-1/2 lg:top-1/2 lg:left-0',
+    size: 'w-16 h-16 sm:w-16 sm:h-16 lg:w-20 lg:h-20',
+  },
+  {
+    name: 'Apple',
+    image: 'https://static.biulinkpay.online/images/apple.png',
+    // 移动端：围绕中心卡片分布
+    position: 'top-1/2 right-1/10 lg:top-2/5 lg:left-2/5',
+    size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14',
+  },
+  {
+    name: 'eBay',
+    image: 'https://static.biulinkpay.online/images/ebay.png',
+    // 移动端：围绕中心卡片分布
+    position: 'bottom-1/5 right-1/6 lg:top-[42%] lg:left-7/8',
+    size: 'w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12',
+  },
+  {
+    name: 'ChatGPT',
+    image: 'https://static.biulinkpay.online/images/chatgpt.png',
+    // 移动端：围绕中心卡片分布
+    position: 'bottom-[5%] right-1/5 lg:top-[62%] lg:left-[56%]',
+    size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14',
+  },
+  {
+    name: 'Facebook',
+    image: 'https://static.biulinkpay.online/images/facebook.png',
+    // 移动端：围绕中心卡片分布
+    position: 'bottom-1/5 left-1/6 lg:top-[75%] lg:left-[10%]',
+    size: 'w-12 h-12 sm:w-14 sm:h-14 lg:w-20 lg:h-20',
+  },
+  {
+    name: 'Google',
+    image: 'https://static.biulinkpay.online/images/google.png',
+    // 移动端：围绕中心卡片分布
+    position: 'top-1/2 left-1/10 lg:top-[55%] lg:left-[90%]',
+    size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14',
+  },
+  {
+    name: 'Amazon',
+    image: 'https://static.biulinkpay.online/images/amazon.png',
+    // 移动端：围绕中心卡片分布
+    position: 'bottom-1/10 left-1/8 lg:top-[75%] lg:left-[95%]',
+    size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-20 lg:h-20',
+  },
 ])
 
 // Form data
@@ -493,6 +532,211 @@ onMounted(() => {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* 服务Logo冒泡动效 - 通过CSS类应用 */
+
+/* 冒泡浮动动画 - 气泡上升效果 */
+@keyframes bubbleFloat {
+  0% {
+    transform: translateY(0px) scale(0.7);
+    opacity: 0;
+  }
+  5% {
+    transform: translateY(-3px) scale(0.72);
+    opacity: 0.05;
+  }
+  10% {
+    transform: translateY(-6px) scale(0.74);
+    opacity: 0.1;
+  }
+  15% {
+    transform: translateY(-9px) scale(0.76);
+    opacity: 0.15;
+  }
+  20% {
+    transform: translateY(-12px) scale(0.78);
+    opacity: 0.2;
+  }
+  25% {
+    transform: translateY(-15px) scale(0.8);
+    opacity: 0.25;
+  }
+  30% {
+    transform: translateY(-18px) scale(0.82);
+    opacity: 0.3;
+  }
+  35% {
+    transform: translateY(-21px) scale(0.84);
+    opacity: 0.35;
+  }
+  40% {
+    transform: translateY(-24px) scale(0.86);
+    opacity: 0.4;
+  }
+  45% {
+    transform: translateY(-27px) scale(0.88);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateY(-30px) scale(0.9);
+    opacity: 0.5;
+  }
+  55% {
+    transform: translateY(-33px) scale(0.92);
+    opacity: 0.55;
+  }
+  60% {
+    transform: translateY(-36px) scale(0.94);
+    opacity: 0.6;
+  }
+  65% {
+    transform: translateY(-39px) scale(0.96);
+    opacity: 0.65;
+  }
+  70% {
+    transform: translateY(-42px) scale(0.98);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translateY(-45px) scale(1.0);
+    opacity: 0.75;
+  }
+  80% {
+    transform: translateY(-48px) scale(1.02);
+    opacity: 0.8;
+  }
+  85% {
+    transform: translateY(-51px) scale(1.04);
+    opacity: 0.85;
+  }
+  90% {
+    transform: translateY(-54px) scale(1.06);
+    opacity: 0.9;
+  }
+  95% {
+    transform: translateY(-57px) scale(1.08);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(-60px) scale(1.1);
+    opacity: 1.0;
+  }
+}
+
+/* 随机冒泡效果 - 无序执行 */
+.surf-animation-2 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.1s; }    /* TikTok */
+.surf-animation-6 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.6s; }  /* Facebook */
+.surf-animation-0 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.3s; }  /* PayPal */
+.surf-animation-3 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 1.1s; }  /* Apple */
+.surf-animation-5 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.2s; }  /* ChatGPT */
+.surf-animation-1 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.9s; }  /* YouTube */
+.surf-animation-4 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 1.5s; }  /* eBay */
+.surf-animation-7 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.4s; }  /* Google */
+.surf-animation-8 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 1.3s; }  /* Amazon */
+
+/* 冒泡涟漪效果 - 气泡扩散 */
+.service-logo::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, rgba(147, 51, 234, 0.2) 40%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: bubbleRipple 3s ease-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* 冒泡涟漪动画 - 气泡扩散同步 */
+@keyframes bubbleRipple {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+  }
+  5% {
+    transform: translate(-50%, -50%) scale(0.25);
+    opacity: 0.1;
+  }
+  10% {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0.2;
+  }
+  15% {
+    transform: translate(-50%, -50%) scale(0.35);
+    opacity: 0.3;
+  }
+  20% {
+    transform: translate(-50%, -50%) scale(0.4);
+    opacity: 0.4;
+  }
+  25% {
+    transform: translate(-50%, -50%) scale(0.45);
+    opacity: 0.5;
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.6;
+  }
+  35% {
+    transform: translate(-50%, -50%) scale(0.55);
+    opacity: 0.7;
+  }
+  40% {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0.8;
+  }
+  45% {
+    transform: translate(-50%, -50%) scale(0.65);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 1.0;
+  }
+  55% {
+    transform: translate(-50%, -50%) scale(0.75);
+    opacity: 0.9;
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.8;
+  }
+  65% {
+    transform: translate(-50%, -50%) scale(0.85);
+    opacity: 0.7;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translate(-50%, -50%) scale(0.95);
+    opacity: 0.5;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(1.0);
+    opacity: 0.4;
+  }
+  85% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 0.3;
+  }
+  90% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.2;
+  }
+  95% {
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0;
   }
 }
 </style>

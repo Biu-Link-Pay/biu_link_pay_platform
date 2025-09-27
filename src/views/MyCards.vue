@@ -63,18 +63,19 @@
                     <!-- Card Header -->
                     <!-- Card Details -->
                     <div v-if="selectedCard" class="space-y-5 text-sm">
-                    <!-- Card Number -->
-                      <div class="text-lg md:text-xl md:mt-26 mt-20 font-mono tracking-[0.35em]">
-                        {{ selectedCard.cardNo }}
-                      </div>
-
-                      <!-- Card Info -->
-                      <div class="space-y-1 w-full flex justify-between items-center">
-                        <span>Currency</span>
+                      <div class="space-y-1 md:mt-14 mt-20 w-full flex justify-between items-center">
+                        <span></span>
                         <span class="block text-sm md:text-base font-semibold text-white normal-case">
                           {{ selectedCard.cardCurrency || 'N/A' }}
                         </span>
                       </div>
+                    <!-- Card Number -->
+                      <div class="text-lg md:text-xl font-mono tracking-[0.35em]">
+                        {{ selectedCard.cardNo }}
+                      </div>
+
+                      <!-- Card Info -->
+                      
                     </div>
                   </div>
                 </div>

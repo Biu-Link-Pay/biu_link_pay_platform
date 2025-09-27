@@ -102,10 +102,10 @@
         <!-- Action Buttons -->
         <div class="flex justify-end space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
           <Button 
+            v-if="!isKycPolling"
             label="Cancel" 
             severity="secondary" 
             @click="closeKycDialog"
-            :disabled="isKycPolling"
           />
           <Button 
             v-if="!showKycSDK && !isKycPolling"
@@ -351,9 +351,7 @@ const launchKycSDK = async () => {
     
     // Initialize Sumsub Web SDK with delay to ensure SDK is loaded
     await nextTick()
-    setTimeout(() => {
-      initializeSumsubSDK()
-    }, 5000)
+    initializeSumsubSDK()
     
     // Start polling for KYC status
     startKycPolling()

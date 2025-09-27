@@ -284,11 +284,7 @@ const handleLogout = async () => {
       detail: 'You have been logged out successfully',
       life: 3000
     })
-    
-    // 延迟跳转，让用户看到成功消息
-    setTimeout(() => {
-      router.push('/login')
-    }, 1000)
+    router.push('/login')
   } catch (error) {
     console.error('登出失败:', error)
     toast.add({
