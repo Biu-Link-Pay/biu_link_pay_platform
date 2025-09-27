@@ -48,37 +48,73 @@
       <div class="space-y-8">
         <!-- Readonly view -->
         <div v-if="holder && !isEditing">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Current Billing Address</h3>
-          <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
-            <div class="space-y-4">
-              <div>
-                <span class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Country</span>
-                <span class="text-base text-gray-900 dark:text-white">{{ getCountryName(holder.residentialCountryCode) }}</span>
+          <div class="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+            <!-- Address Header -->
+            <div class="flex items-center space-x-3 mb-6">
+              <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
+                <i class="pi pi-map-marker text-blue-600 dark:text-blue-400 text-lg"></i>
               </div>
-
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <span class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">State/Province</span>
-                  <span class="text-base text-gray-900 dark:text-white">{{ holder.residentialState }}</span>
-                </div>
-                <div>
-                  <span class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">City</span>
-                  <span class="text-base text-gray-900 dark:text-white">{{ holder.residentialCity }}</span>
-                </div>
-              </div>
-
               <div>
-                <span class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Address</span>
-                <span class="text-base text-gray-900 dark:text-white">{{ holder.residentialAddress }}</span>
-              </div>
-
-              <div>
-                <span class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Postal Code</span>
-                <span class="text-base text-gray-900 dark:text-white">{{ holder.residentialPostalCode }}</span>
+                <h4 class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Billing Address</h4>
+                <p class="text-xs text-gray-400 dark:text-gray-500">Primary address for card transactions</p>
               </div>
             </div>
-            <div class="mt-6 flex justify-end">
-              <Button label="Edit" icon="pi pi-pencil" class="w-full sm:w-auto" @click="startEdit" />
+
+            <!-- Address Content -->
+            <div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-5 space-y-4">
+              <!-- Country and Postal Code Row -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="space-y-1">
+                  <div class="flex items-center space-x-2">
+                    <i class="pi pi-globe text-sm text-blue-600 dark:text-blue-400"></i>
+                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Country</span>
+                  </div>
+                  <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ getCountryName(holder.residentialCountryCode) }}</p>
+                </div>
+                <div class="space-y-1">
+                  <div class="flex items-center space-x-2">
+                    <i class="pi pi-tag text-sm text-blue-600 dark:text-blue-400"></i>
+                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Postal Code</span>
+                  </div>
+                  <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialPostalCode }}</p>
+                </div>
+              </div>
+
+              <!-- State and City Row -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="space-y-1">
+                  <div class="flex items-center space-x-2">
+                    <i class="pi pi-building text-sm text-blue-600 dark:text-blue-400"></i>
+                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">State/Province</span>
+                  </div>
+                  <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialState }}</p>
+                </div>
+                <div class="space-y-1">
+                  <div class="flex items-center space-x-2">
+                    <i class="pi pi-home text-sm text-blue-600 dark:text-blue-400"></i>
+                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">City</span>
+                  </div>
+                  <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialCity }}</p>
+                </div>
+              </div>
+
+              <!-- Address Row -->
+              <div class="space-y-1">
+                <div class="flex items-center space-x-2">
+                  <i class="pi pi-map text-sm text-blue-600 dark:text-blue-400"></i>
+                  <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Address</span>
+                </div>
+                <p class="text-base font-semibold text-gray-900 dark:text-white ml-6 leading-relaxed">{{ holder.residentialAddress }}</p>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700 text-right">
+              <Button 
+                label="Edit Address" 
+                icon="pi pi-pencil" 
+                @click="startEdit" 
+              />
             </div>
           </div>
         </div>
