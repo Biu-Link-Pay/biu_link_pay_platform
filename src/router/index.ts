@@ -26,6 +26,15 @@ const routes = [
     }
   },
   {
+    path: '/sumsub-demo',
+    name: 'SumsubDemo',
+    component: () => import('@/views/SumsubDemo.vue'),
+    meta: {
+      title: 'Sumsub Demo',
+      requiresAuth: false
+    }
+  },
+  {
     path: '/card-bin-selection',
     name: 'CardBinSelection',
     component: () => import('@/views/CardBinSelection.vue'),

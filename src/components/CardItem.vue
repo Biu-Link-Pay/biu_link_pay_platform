@@ -57,8 +57,12 @@
         <!-- Action Buttons -->
         <div class="space-y-3">
           <div class="flex space-x-2">
-            <Button :label="`Order a ${card.cardPattern === 1 ? 'Virtual' : 'Physical'} Card`" severity="primary"
-              class="flex-1" :disabled="card.cardPattern !== 1" @click="$emit('order', card)" />
+            <!-- <Button :label="`Order a ${card.cardPattern === 1 ? 'Virtual' : 'Physical'} Card`" severity="primary"
+              class="flex-1" :disabled="card.cardPattern !== 1" @click="$emit('order', card)" /> -->
+              <router-link :to="`/sumsub-demo?card=${card.cardName}`">
+                <Button :label="`Order a ${card.cardPattern === 1 ? 'Virtual' : 'Physical'} Card`" severity="primary"
+                  class="flex-1" :disabled="card.cardPattern !== 1" />
+              </router-link>
           </div>
         </div>
       </div>
