@@ -663,67 +663,107 @@
       v-model:visible="showDetailDialog"
       modal
       header="Card Details"
-      :style="{ width: '90vw', maxWidth: '520px' }"
+      :style="{ width: '90vw', maxWidth: '600px' }"
       :breakpoints="{ '960px': '75vw', '640px': '95vw' }"
       :draggable="false"
+      class="card-detail-dialog"
     >
-      <div v-if="detailLoading" class="flex justify-center py-10">
-        <i class="pi pi-spin pi-spinner text-2xl text-blue-600"></i>
+      <div v-if="detailLoading" class="flex justify-center py-12">
+        <div class="text-center">
+          <i class="pi pi-spin pi-spinner text-3xl text-blue-600 mb-3"></i>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Loading card details...</p>
+        </div>
       </div>
-      <div v-else-if="detailError" class="space-y-4 text-center">
-        <p class="text-sm text-red-500">{{ detailError }}</p>
+      <div v-else-if="detailError" class="text-center py-8">
+        <div class="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-2xl"></i>
+        </div>
+        <p class="text-sm text-red-600 dark:text-red-400 mb-4">{{ detailError }}</p>
         <button
           @click="retryCardDetail"
-          class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors"
+          class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
           :disabled="detailLoading"
         >
           <i class="pi pi-refresh mr-2"></i>
           Retry
         </button>
       </div>
-      <div v-else-if="cardDetail" class="space-y-4 text-sm text-gray-700 dark:text-gray-200">
-        <div class="space-y-2 lg:space-y-5">
-          <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Card Number</div>
-          <div class="text-lg font-mono text-gray-900 dark:text-white tracking-[0.35em]">
+      <div v-else-if="cardDetail" class="space-y-6">
+        <!-- Card Number Section -->
+        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-xl p-4 border border-blue-200 dark:border-blue-800">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-xs font-semibold uppercase text-blue-600 dark:text-blue-400 tracking-wide">Card Number</div>
+            <button @click="copyToClipboard(formatCardNumber(cardDetail.cardNo))" 
+              class="p-1.5 hover:bg-blue-100 dark:hover:bg-blue-800 rounded-lg transition-colors"
+              title="Copy card number">
+              <i class="pi pi-copy text-blue-600 dark:text-blue-400 text-sm"></i>
+            </button>
+          </div>
+          <div class="text-xl font-mono text-gray-900 dark:text-white tracking-[0.3em] font-bold">
             {{ formatCardNumber(cardDetail.cardNo) }}
           </div>
         </div>
+
+        <!-- Card Information Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Cardholder</div>
-            <div class="text-sm font-medium text-gray-900 dark:text-white">
+          <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+            <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Cardholder</div>
+            <div class="text-base font-semibold text-gray-900 dark:text-white">
               {{ cardDetail.firstName }} {{ cardDetail.lastName }}
             </div>
           </div>
-          <div>
-            <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Currency</div>
-            <div class="text-sm font-medium text-gray-900 dark:text-white">
+          <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+            <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Currency</div>
+            <div class="text-base font-semibold text-gray-900 dark:text-white">
               {{ cardDetail.cardCurrency }}
             </div>
           </div>
-          <div>
-            <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Expiration</div>
-            <div class="text-sm font-medium text-gray-900 dark:text-white">
+          <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+            <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Expiration</div>
+            <div class="text-base font-semibold text-gray-900 dark:text-white">
               {{ cardDetail.expirationDate }}
             </div>
           </div>
-          <div>
-            <div class="text-xs uppercase text-gray-500 dark:text-gray-400">CVV</div>
-            <div class="text-sm font-medium text-gray-900 dark:text-white">
+          <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+            <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">CVV</div>
+            <div class="text-base font-semibold text-gray-900 dark:text-white">
               {{ cardDetail.cvv }}
             </div>
           </div>
         </div>
-        <div class="space-y-2 lg:space-y-5">
-          <div class="text-xs uppercase text-gray-500 dark:text-gray-400">Billing Address</div>
+
+        <!-- Billing Address Section -->
+        <div class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-4">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 tracking-wide">Billing Address</div>
+            <button @click="copyToClipboard(`${cardDetail.billingAddress}, ${cardDetail.billingCity}, ${cardDetail.billingState} ${cardDetail.billingPostalCode}, ${cardDetail.billingCountry}`)" 
+              class="p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition-colors"
+              title="Copy address">
+              <i class="pi pi-copy text-gray-600 dark:text-gray-400 text-sm"></i>
+            </button>
+          </div>
           <div class="space-y-1 text-sm text-gray-700 dark:text-gray-300">
-            <div>{{ cardDetail.billingAddress }}</div>
+            <div class="font-medium">{{ cardDetail.billingAddress }}</div>
             <div>{{ cardDetail.billingCity }}, {{ cardDetail.billingState }} {{ cardDetail.billingPostalCode }}</div>
             <div>{{ cardDetail.billingCountry }}</div>
           </div>
         </div>
-        <div class="text-xs text-gray-500 dark:text-gray-400">
-          {{ isAddressUpdatable(cardDetail.billingAddressUpdatable) ? 'Billing address can be updated.' : 'Billing address cannot be updated.' }}
+
+        <!-- Address Update Status -->
+        <div class="flex items-center gap-2 p-3 rounded-lg"
+          :class="isAddressUpdatable(cardDetail.billingAddressUpdatable) 
+            ? 'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800' 
+            : 'bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800'">
+          <i :class="isAddressUpdatable(cardDetail.billingAddressUpdatable) 
+            ? 'pi pi-check-circle text-green-600 dark:text-green-400' 
+            : 'pi pi-info-circle text-orange-600 dark:text-orange-400'"></i>
+          <span :class="isAddressUpdatable(cardDetail.billingAddressUpdatable) 
+            ? 'text-green-700 dark:text-green-300 text-sm' 
+            : 'text-orange-700 dark:text-orange-300 text-sm'">
+            {{ isAddressUpdatable(cardDetail.billingAddressUpdatable) 
+              ? 'Billing address can be updated' 
+              : 'Billing address cannot be updated' }}
+          </span>
         </div>
       </div>
       <div v-else class="text-sm text-gray-500 dark:text-gray-400">
@@ -1159,6 +1199,7 @@ const goToPaymentResult = (order: DepositOrderListItem) => {
     }
   })
 }
+
 
 // Data formatters
 const formatCardNumber = (cardNo?: string) => {
@@ -1621,5 +1662,48 @@ onActivated(async () => {
   .card-slide-right-leave-active {
     transition: none;
   }
+}
+
+/* Card Detail Dialog Styles */
+:deep(.card-detail-dialog .p-dialog-header) {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1.5rem 2rem;
+}
+
+:deep(.card-detail-dialog .p-dialog-header .p-dialog-title) {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+:deep(.card-detail-dialog .p-dialog-content) {
+  padding: 2rem;
+  background: #ffffff;
+}
+
+:deep(.card-detail-dialog .p-dialog-footer) {
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  padding: 1rem 2rem;
+}
+
+/* Dark mode dialog styles */
+:deep(.dark .card-detail-dialog .p-dialog-header) {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-bottom: 1px solid #334155;
+}
+
+:deep(.dark .card-detail-dialog .p-dialog-header .p-dialog-title) {
+  color: #f1f5f9;
+}
+
+:deep(.dark .card-detail-dialog .p-dialog-content) {
+  background: #1e293b;
+}
+
+:deep(.dark .card-detail-dialog .p-dialog-footer) {
+  background: #1e293b;
+  border-top: 1px solid #334155;
 }
 </style>
