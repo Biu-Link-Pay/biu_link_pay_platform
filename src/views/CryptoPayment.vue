@@ -817,6 +817,26 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
         cardStore.setCurrentOrder(updatedOrder)
       }
 
+      // Calculate countdown based on server current time and order creation time
+      if (detail.createTime && detail.currentTime) {
+        const createTime = new Date(detail.createTime).getTime()
+        const serverCurrentTime = new Date(detail.currentTime).getTime()
+        const elapsedMs = serverCurrentTime - createTime
+        
+        // Assuming 15 minutes (900 seconds) total payment window
+        const totalDurationMs = 15 * 60 * 1000
+        const remainingMs = Math.max(0, totalDurationMs - elapsedMs)
+        const remainingSeconds = Math.floor(remainingMs / 1000)
+        
+        if (remainingSeconds > 0) {
+          countdown.value = remainingSeconds
+          defaultCountdownSeconds.value = remainingSeconds
+        } else {
+          countdown.value = 0
+          defaultCountdownSeconds.value = 0
+        }
+      }
+
       // Only update order status, don't update other fields to avoid data inconsistency
       const previousStatus = orderStatus.value
       orderStatus.value = detail.status
@@ -902,20 +922,19 @@ const refreshPayment = async () => {
     pollingCount.value = 0
     pollingEnabled.value = true
 
-    // Stop and reset countdown timer
+    // Stop countdown timer (but don't reset the countdown value)
     if (countdownInterval) {
       clearInterval(countdownInterval)
       countdownInterval = null
     }
-    countdown.value = defaultCountdownSeconds.value > 0 ? Math.floor(defaultCountdownSeconds.value) : 0
 
     // Reset QR code error state
     qrCodeError.value = false
 
-    // Fetch latest order detail
+    // Fetch latest order detail (this will update countdown based on server time)
     await fetchOrderDetail()
 
-    // Restart countdown timer
+    // Restart countdown timer with updated value
     startCountdown()
 
     // Restart polling
@@ -1023,14 +1042,17 @@ onMounted(async () => {
     expiresSource = route.query.expires ?? expiresSource
   }
 
-  applyExpirationSeconds(expiresSource)
+  // Fetch initial order detail first to get accurate timing
+  await fetchOrderDetail(true)
+
+  // If no server time available, fallback to expires source
+  if (!orderDetail.value?.createTime || !orderDetail.value?.currentTime) {
+    applyExpirationSeconds(expiresSource)
+  }
 
   autoOpenPaymentAddress()
-  // Start countdown
+  // Start countdown with calculated value
   startCountdown()
-
-  // Fetch initial order detail
-  await fetchOrderDetail(true)
 
   // Start polling order detail
   startPolling()
