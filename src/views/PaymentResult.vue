@@ -94,7 +94,16 @@
               <div
                 class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
                 <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
-                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber }}</span>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber }}</span>
+                  <button
+                    @click="copyOrderNumber"
+                    class="p-1 text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200"
+                    :title="copyOrderNumberTooltip"
+                  >
+                    <i :class="copyOrderNumberIcon" class="text-sm"></i>
+                  </button>
+                </div>
               </div>
               <div
                 class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
@@ -266,6 +275,7 @@ import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI } from '@/api/order'
+import { copyWithToast } from '@/utils'
 
 const router = useRouter()
 const route = useRoute()
@@ -283,6 +293,11 @@ const errorReason = ref<string | null>('')
 const refreshing = ref(false)
 const progressWidth = ref(0)
 const progressStep = ref(0)
+
+// Copy functionality
+const orderNumberCopied = ref(false)
+const copyOrderNumberIcon = computed(() => orderNumberCopied.value ? 'pi pi-check' : 'pi pi-copy')
+const copyOrderNumberTooltip = computed(() => orderNumberCopied.value ? 'Copied!' : 'Copy order number')
 
 // Polling for PENDING status
 let pollingInterval: NodeJS.Timeout | null = null
@@ -469,6 +484,22 @@ const stopPolling = () => {
   if (pollingInterval) {
     clearInterval(pollingInterval)
     pollingInterval = null
+  }
+}
+
+// Copy functionality
+const copyOrderNumber = async () => {
+  const success = await copyWithToast(orderNumber.value, toast, {
+    successMessage: 'Order number copied to clipboard',
+    errorMessage: 'Unable to copy to clipboard'
+  })
+
+  if (success) {
+    orderNumberCopied.value = true
+    // Reset copy status after 2 seconds
+    setTimeout(() => {
+      orderNumberCopied.value = false
+    }, 2000)
   }
 }
 

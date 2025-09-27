@@ -527,6 +527,7 @@ import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { useCardStore } from '@/stores/card'
 import { OrderAPI, type DepositOrderDetailItem } from '@/api/order'
+import { copyWithToast } from '@/utils'
 
 const router = useRouter()
 const route = useRoute()
@@ -704,25 +705,12 @@ const getCryptoIcon = (crypto: string) => {
   }
 }
 
-// Copy to clipboard
+// Copy to clipboard using utility function
 const copyToClipboard = async (text: string) => {
-  try {
-    await navigator.clipboard.writeText(text)
-    toast.add({
-      severity: 'success',
-      summary: 'Copied',
-      detail: 'Text copied to clipboard',
-      life: 2000
-    })
-  } catch (error) {
-    console.error('Failed to copy:', error)
-    toast.add({
-      severity: 'error',
-      summary: 'Copy Failed',
-      detail: 'Failed to copy to clipboard',
-      life: 3000
-    })
-  }
+  await copyWithToast(text, toast, {
+    successMessage: 'Text copied to clipboard',
+    errorMessage: 'Failed to copy to clipboard'
+  })
 }
 
 
