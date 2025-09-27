@@ -95,7 +95,7 @@
                 <Checkbox v-model="form.agreeTerms" :binary="true" class="mt-1 checkbox-enhanced"
                   :disabled="isLoading" />
                 <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  I have read and agree to Bit Store's
+                  I have read and agree to BiuLinkPay
                   <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">
                     Terms of service
                   </a>

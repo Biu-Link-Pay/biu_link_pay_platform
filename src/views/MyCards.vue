@@ -176,7 +176,7 @@
           <!-- Features Section -->
           <div v-if="cards.length > 0" class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm w-full border border-gray-200 dark:border-gray-700">
             <!-- Tabs -->
-            <div class="flex flex-wrap gap-2 md:gap-4 border-b border-gray-200 dark:border-gray-700 px-2 md:px-4 lg:px-6">
+            <div class="flex flex-wrap gap-2 md:gap-4 border-b border-gray-200 dark:border-gray-700 px-2 md:px-3 lg:px-4">
               <button v-for="tab in tabs" :key="tab.key" @click="handleTabChange(tab.key)"
                 class="flex-1 lg:flex-none px-4 py-3 text-sm md:text-lg lg:text-xl font-semibold transition-colors md:px-6 md:py-4 lg:px-8 lg:py-5 rounded-t-md" :class="activeTab === tab.key
                   ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
@@ -186,7 +186,7 @@
             </div>
 
             <!-- Transaction List -->
-            <div class="p-4 md:p-8 lg:p-12 xl:p-14">
+            <div class="p-2 md:p-4 lg:p-6 xl:p-8">
               <!-- No Cards State -->
               <div v-if="cards.length === 0" class="text-center py-12">
                 <div
@@ -368,7 +368,8 @@
                       <div v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div v-for="(order, index) in page" :key="index"
-                          class="flex items-center space-x-4 md:space-x-6 p-3 md:p-5 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                          class="flex items-center space-x-4 md:space-x-6 p-3 md:p-5 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors cursor-pointer"
+                          @click="goToPaymentResult(order)">
                           <div
                             class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
                             <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-base lg:text-lg"></i>
@@ -437,7 +438,8 @@
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div class="space-y-3 lg:space-y-4">
                           <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700">
+                            class="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                            @click="goToPaymentResult(order)">
                             <div
                               class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
                               <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-sm"></i>
@@ -1138,6 +1140,22 @@ const goToRecharge = () => {
     name: 'CardHolderInfo',
     query: {
       action: 'recharge'
+    }
+  })
+}
+
+// Navigate to payment result page
+const goToPaymentResult = (order: DepositOrderListItem) => {
+  router.push({
+    name: 'PaymentResult',
+    query: {
+      orderNum: order.num,
+      status: 'SUCCESS', // Assuming completed orders are successful
+      amount: order.amount.toString(),
+      currency: order.token,
+      network: order.network,
+      cryptoAmount: order.usdAmount.toString(),
+      paymentMethod: 'Crypto Payment'
     }
   })
 }

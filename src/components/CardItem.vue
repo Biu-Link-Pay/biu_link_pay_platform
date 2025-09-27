@@ -7,13 +7,6 @@
           <div class="flex-1">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">{{ card.cardName }}</h3>
             <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">{{ cardTypeText }}</p>
-            <div class="flex items-center space-x-2">
-              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-                :class="statusClasses">
-                <i :class="statusIcon" class="mr-1"></i>
-                {{ statusText }}
-              </span>
-            </div>
           </div>
           <div class="text-right">
             <div class="text-2xl font-bold text-gray-900 dark:text-white">${{ card.applyFee }}</div>
@@ -38,28 +31,23 @@
             </h4>
             <div class="mt-4 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 xl:grid-cols-3">
               <div class="flex flex-col">
-                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Monthly
-                  Fee</span>
+                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap">Monthly Fee</span>
                 <span class="text-base font-semibold text-gray-900 dark:text-white">${{ card.monthlyFee }}</span>
               </div>
               <div class="flex flex-col">
-                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Recharge
-                  Fee</span>
+                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap">Recharge Fee</span>
                 <span class="text-base font-semibold text-gray-900 dark:text-white">${{ card.rechargeFee }}</span>
               </div>
               <div class="flex flex-col">
-                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Max On
-                  Monthly</span>
+                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap">Max On Monthly</span>
                 <span class="text-base font-semibold text-gray-900 dark:text-white">${{ card.maxOnMonthly }}</span>
               </div>
               <div class="flex flex-col">
-                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Max On
-                  Daily</span>
+                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap">Max On Daily</span>
                 <span class="text-base font-semibold text-gray-900 dark:text-white">${{ card.maxOnDaily }}</span>
               </div>
               <div class="flex flex-col">
-                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Max On
-                  Percent</span>
+                <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap">Max On Percent</span>
                 <span class="text-base font-semibold text-gray-900 dark:text-white">${{ card.maxOnPercent }}</span>
               </div>
             </div>
@@ -121,16 +109,6 @@ const statusIcon = computed(() => {
   }
 })
 
-const statusText = computed(() => {
-  switch (props.card.status) {
-    case 1: // Enabled
-      return 'Available'
-    case 2: // Disabled
-      return 'Unavailable'
-    default:
-      return 'Unknown'
-  }
-})
 
 const cardTypeText = computed(() => {
   return props.card.cardPattern === 1 ? 'Virtual Card' : 'Physical Card'
