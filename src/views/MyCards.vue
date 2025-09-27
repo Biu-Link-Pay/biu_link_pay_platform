@@ -29,61 +29,50 @@
         <div class="space-y-6 order-1 lg:order-1">
           <!-- Card Display Area with Navigation -->
           <div class="flex items-center justify-center gap-3 md:gap-6">
-            <!-- Left Navigation Button -->
+            <!-- Left Navigation Button - Hidden on mobile -->
             <button v-if="cards.length > 1" @click="previousCard" :disabled="currentCardIndex === 0"
-              class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center"
+              class="hidden md:flex flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 items-center justify-center"
               title="Previous card">
               <i class="pi pi-chevron-left text-gray-600 dark:text-gray-400 text-sm md:text-lg"></i>
             </button>
 
             <!-- Card Container -->
-            <div class="flex-1 max-w-xs md:max-w-sm relative overflow-hidden">
+            <div class="flex-1 max-w-xs md:max-w-sm relative overflow-hidden md:flex-1">
               <Transition :name="cardTransitionName" mode="out-in">
                 <div v-if="selectedCard" :key="selectedCard.id || selectedCard.cardNo || currentCardIndex"
-                  class="bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl p-4 md:p-6 text-white shadow-lg min-h-[200px] md:min-h-[240px] flex flex-col justify-between cursor-grab active:cursor-grabbing"
+                  class="rounded-xl p-4 md:p-6 text-white shadow-lg cursor-grab active:cursor-grabbing relative overflow-hidden"
+                  :style="{ 
+                    backgroundImage: `url(${getCardBackgroundImage(selectedCard.cardScheme)})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    aspectRatio: '1035/582',
+                    maxWidth: '400px',
+                    width: '100%'
+                  }"
                   @mousedown="handleMouseDown" @mousemove="handleMouseMove" @mouseup="handleMouseUp"
                   @mouseleave="handleMouseUp" @wheel="handleWheel" @keydown="handleKeyDown"
                   @touchstart.passive="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd"
                   @touchcancel="handleTouchEnd" tabindex="0" style="outline: none;">
-                  <!-- Card Header -->
-                  <div class="flex items-center justify-between">
-                    <span class="text-sm font-semibold opacity-75">BUI LINK PAY</span>
-                    <span v-if="selectedCard" class="text-xs font-medium uppercase tracking-wide text-white/80">
-                      {{ selectedCard.cardCurrency || 'N/A' }}
-                    </span>
-                  </div>
-
-                  <!-- Card Details -->
-                  <div v-if="selectedCard" class="space-y-5 text-sm">
+                  
+                  <!-- Semi-transparent overlay for better text readability -->
+                  <div class="absolute inset-0 bg-black/20 rounded-xl"></div>
+                  
+                  <!-- Card content -->
+                  <div class="relative z-10 h-full flex flex-col justify-between">
+                    <!-- Card Header -->
+                    <!-- Card Details -->
+                    <div v-if="selectedCard" class="space-y-5 text-sm">
                     <!-- Card Number -->
-                    <div class="text-lg md:text-xl font-mono tracking-[0.35em]">
-                      {{ selectedCard.cardNo }}
-                    </div>
+                      <div class="text-lg md:text-xl md:mt-26 mt-20 font-mono tracking-[0.35em]">
+                        {{ selectedCard.cardNo }}
+                      </div>
 
-                    <!-- Card Info -->
-                    <div class="grid grid-cols-2 gap-4 text-xs uppercase text-white/70">
-                      <div class="space-y-1">
+                      <!-- Card Info -->
+                      <div class="space-y-1 w-full flex justify-between items-center">
                         <span>Currency</span>
                         <span class="block text-sm md:text-base font-semibold text-white normal-case">
                           {{ selectedCard.cardCurrency || 'N/A' }}
-                        </span>
-                      </div>
-                      <div class="space-y-1">
-                        <span>Daily Limit</span>
-                        <span class="block text-sm md:text-base font-semibold text-white normal-case">
-                          {{ selectedCard.maxOnDaily || 'N/A' }}
-                        </span>
-                      </div>
-                      <div class="space-y-1">
-                        <span>Monthly Limit</span>
-                        <span class="block text-sm md:text-base font-semibold text-white normal-case">
-                          {{ selectedCard.maxOnMonthly || 'N/A' }}
-                        </span>
-                      </div>
-                      <div class="space-y-1">
-                        <span>Single Transaction</span>
-                        <span class="block text-sm md:text-base font-semibold text-white normal-case">
-                          {{ selectedCard.maxOnPercent || 'N/A' }}
                         </span>
                       </div>
                     </div>
@@ -92,9 +81,9 @@
               </Transition>
             </div>
 
-            <!-- Right Navigation Button -->
+            <!-- Right Navigation Button - Hidden on mobile -->
             <button v-if="cards.length > 1" @click="nextCard" :disabled="currentCardIndex === cards.length - 1"
-              class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center"
+              class="hidden md:flex flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 items-center justify-center"
               title="Next card">
               <i class="pi pi-chevron-right text-gray-600 dark:text-gray-400 text-sm md:text-lg"></i>
             </button>
@@ -802,7 +791,8 @@ const cards = computed(() => {
     maxOnMonthly: card.maxOnMonthly,
     maxOnDaily: card.maxOnDaily,
     maxOnPercent: card.maxOnPercent,
-    cardCurrency: card.cardCurrency
+    cardCurrency: card.cardCurrency,
+    cardScheme: 'mastercard' // Default card scheme since it's not available in CardListItem
   }))
 })
 
@@ -1249,6 +1239,34 @@ const formatDate = (dateString: string) => {
     minute: '2-digit',
     second: '2-digit'
   })
+}
+
+// Get card background image based on card scheme
+const getCardBackgroundImage = (cardScheme: string | null) => {
+  console.log('Card Scheme:', cardScheme) // Debug log
+  
+  if (!cardScheme) {
+    console.log('No card scheme, using default Mastercard')
+    return 'https://static.biulinkpay.online/images/master.png' // Default to Mastercard
+  }
+
+  const scheme = cardScheme.toLowerCase()
+  console.log('Normalized scheme:', scheme) // Debug log
+  
+  if (scheme.includes('master') || scheme.includes('mastercard')) {
+    console.log('Using Mastercard background')
+    return 'https://static.biulinkpay.online/images/master.png'
+  } else if (scheme.includes('visa')) {
+    console.log('Using Visa background')
+    return 'https://static.biulinkpay.online/images/visa.png'
+  } else if (scheme.includes('discover')) {
+    console.log('Using Discover background')
+    return 'https://static.biulinkpay.online/images/discover.png'
+  } else {
+    console.log('Unknown scheme, using default Mastercard')
+    // Default to Mastercard for unknown schemes
+    return 'https://static.biulinkpay.online/images/master.png'
+  }
 }
 
 // Status color helper

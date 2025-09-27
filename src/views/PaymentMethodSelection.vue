@@ -138,11 +138,22 @@
 
       <!-- Mobile Layout -->
       <div class="md:hidden">
-        <div class="w-full max-w-md mx-auto">
-          <!-- Pay Amount Section -->
-          <div class="text-center mb-8">
-            <h2 class="text-lg font-medium text-gray-600 dark:text-gray-400 mb-2">Pay Amount</h2>
-            <div class="text-4xl font-bold text-gray-900 mb-4 dark:text-white">{{ formatCurrency(payAmount) }}</div>
+        <div class="w-full max-w-md mx-auto space-y-6">
+          <!-- Pay Summary -->
+          <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 text-white shadow-xl">
+            <div class="absolute -top-16 -right-20 w-56 h-56 bg-white/15 blur-3xl rounded-full"></div>
+            <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
+            <div class="relative px-6 py-8 text-center flex flex-col items-center space-y-3">
+              <span class="text-sm uppercase tracking-widest text-white/80">Pay Amount</span>
+              <div class="text-4xl font-extrabold tracking-tight">{{ formatCurrency(payAmount) }}</div>
+              <div v-if="cardStore.selectedCardBin?.cardCurrency" class="text-sm text-white/80">
+                {{ cardStore.selectedCardBin?.cardCurrency }} total for your card
+              </div>
+              <div class="mt-4 inline-flex items-center px-3 py-2 rounded-full text-xs text-white/90 bg-white/15 backdrop-blur-sm">
+                <i class="pi pi-shield mr-2 text-white/90"></i>
+                Secure crypto payment powered by {{ selectedPayType?.name || 'our partners' }}
+              </div>
+            </div>
           </div>
 
           <!-- Payment Methods Section -->
