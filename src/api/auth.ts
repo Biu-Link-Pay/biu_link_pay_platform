@@ -5,7 +5,9 @@ import type {
   RefreshTokenParams, 
   RefreshTokenResponse,
   SendEmailParams,
-  LogoutParams
+  LogoutParams,
+  UserProfile,
+  UserProfileParams
 } from '@/types/api'
 import { api } from '@/services/api'
 
@@ -101,6 +103,22 @@ export class AuthAPI {
     })
     return response.data
   }
+
+  /**
+   * Get user profile
+   * @param params Request header parameters (fingerprint-id is automatically added by interceptor)
+   * @returns Promise<ApiResponse<UserProfile>>
+   */
+  static async getUserProfile(params: UserProfileParams): Promise<ApiResponse<UserProfile>> {
+    const response = await api.get('/card/consume/common/userProfile', {
+      headers: {
+        'token': params.token,
+        'refresh_token': params.refresh_token
+        // fingerprint-id is automatically added by request interceptor
+      }
+    })
+    return response.data
+  }
 }
 
 // Export individual functions for easy use
@@ -110,5 +128,6 @@ export const {
   refreshToken,
   logout,
   getKycAccessToken,
-  checkKycStatus
+  checkKycStatus,
+  getUserProfile
 } = AuthAPI

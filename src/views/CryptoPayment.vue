@@ -802,14 +802,37 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
         cardStore.setCurrentOrder(updatedOrder)
       }
 
-      // Calculate countdown based on server current time and order creation time
+      // Calculate countdown based on server current time, order creation time, and expires time
       if (detail.createTime && detail.currentTime) {
         const createTime = new Date(detail.createTime).getTime()
         const serverCurrentTime = new Date(detail.currentTime).getTime()
         const elapsedMs = serverCurrentTime - createTime
         
-        // Assuming 15 minutes (900 seconds) total payment window
-        const totalDurationMs = 15 * 60 * 1000
+        // Get expires time from payment type or order detail
+        let totalDurationMs = 15 * 60 * 1000 // Default 15 minutes
+        
+        // Try to get expires time from payment type or order
+        const expiresTime = cardStore.currentOrder?.expires
+        if (expiresTime) {
+          const parsedExpires = parseExpirationSeconds(expiresTime)
+          if (parsedExpires !== null && parsedExpires > 0) {
+            // If expires is a duration in seconds, use it as total duration
+            if (parsedExpires <= 3600) { // Less than 1 hour, treat as duration
+              totalDurationMs = parsedExpires * 1000
+            } else {
+              // If expires is a timestamp, calculate remaining time
+              const expiresTimestamp = parsedExpires > 1e12 ? parsedExpires : parsedExpires * 1000
+              const remainingMs = expiresTimestamp - serverCurrentTime
+              if (remainingMs > 0) {
+                countdown.value = Math.floor(remainingMs / 1000)
+                defaultCountdownSeconds.value = countdown.value
+                return // Use timestamp-based calculation
+              }
+            }
+          }
+        }
+        
+        // Calculate remaining time based on creation time and duration
         const remainingMs = Math.max(0, totalDurationMs - elapsedMs)
         const remainingSeconds = Math.floor(remainingMs / 1000)
         
@@ -1028,6 +1051,7 @@ onMounted(async () => {
   }
 
   // Fetch initial order detail first to get accurate timing
+  // This will calculate countdown based on server current time, order creation time, and expires time
   await fetchOrderDetail(true)
 
   // If no server time available, fallback to expires source

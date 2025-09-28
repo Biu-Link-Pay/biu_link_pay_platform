@@ -274,6 +274,25 @@ export interface WithdrawOrderPageResponse {
   error: boolean
 }
 
+// 创建出金订单请求参数
+export interface CreateWithdrawOrderParams {
+  cardPattern: string // 1:虚拟卡 2:实体卡
+  type: string // 1:提现 2:退款
+  cardId: string // 卡ID
+  token: string // token
+  network: string // 网络
+  address: string // 地址
+}
+
+// 创建出金订单响应
+export interface CreateWithdrawOrderResponse {
+  code: string
+  msg: string
+  model: string // 订单号
+  success: boolean
+  error: boolean
+}
+
 // 消费记录项
 export interface TransactionListItem {
   status: string // 状态
@@ -356,6 +375,23 @@ export class OrderAPI {
       amount: params.amount,
       orderCurrency: params.orderCurrency,
       userCardId: params.userCardId,
+      token: params.token,
+      network: params.network,
+      address: params.address
+    })
+    return response.data
+  }
+
+  /**
+   * Create withdraw order
+   * @param params Create withdraw order parameters
+   * @returns Create withdraw order response
+   */
+  static async createWithdrawOrder(params: CreateWithdrawOrderParams): Promise<CreateWithdrawOrderResponse> {
+    const response = await api.post<CreateWithdrawOrderResponse>('/card/consume/order/createWithdrawOrder', {
+      cardPattern: params.cardPattern,
+      type: params.type,
+      cardId: params.cardId,
       token: params.token,
       network: params.network,
       address: params.address

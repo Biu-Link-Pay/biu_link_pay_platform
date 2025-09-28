@@ -235,13 +235,7 @@ const goToMyCards = () => {
 const goToProfile = () => {
   showUserMenu.value = false
   closeMobileMenu()
-  // Here you can navigate to profile page
-  toast.add({
-    severity: 'info',
-    summary: 'Profile',
-    detail: 'Profile feature is under development...',
-    life: 2000
-  })
+  router.push('/personal-center')
 }
 
 // Navigate to login page

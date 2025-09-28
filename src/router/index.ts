@@ -89,6 +89,24 @@ const routes = [
     }
   },
   {
+    path: '/personal-center',
+    name: 'PersonalCenter',
+    component: () => import('@/views/PersonalCenter.vue'),
+    meta: {
+      title: 'Personal Center',
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/withdraw',
+    name: 'WithdrawOrder',
+    component: () => import('@/views/WithdrawOrder.vue'),
+    meta: {
+      title: 'Withdraw',
+      requiresAuth: true
+    }
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     component: () => import('@/views/NotFound.vue'),

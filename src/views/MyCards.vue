@@ -1037,12 +1037,17 @@ const goToWithdraw = () => {
     return
   }
 
-  // Navigate to withdraw page or show withdraw modal
-  toast.add({
-    severity: 'info',
-    summary: 'Withdraw',
-    detail: 'Withdraw functionality coming soon',
-    life: 3000
+  // Navigate to withdraw page with card information
+  router.push({
+    name: 'WithdrawOrder',
+    query: {
+      cardId: selectedCard.value.id,
+      cardNo: selectedCard.value.cardNo,
+      cardCurrency: selectedCard.value.cardCurrency,
+      maxOnDaily: selectedCard.value.maxOnDaily?.toString(),
+      maxOnMonthly: selectedCard.value.maxOnMonthly?.toString(),
+      maxOnPercent: selectedCard.value.maxOnPercent?.toString()
+    }
   })
 }
 

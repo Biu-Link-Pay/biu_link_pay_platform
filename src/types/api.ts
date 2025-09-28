@@ -35,6 +35,21 @@ export interface LogoutParams {
   refresh_token: string
 }
 
+// 用户详情相关类型
+export interface UserProfile {
+  userNum: string
+  userEmail: string
+  kycStatus: number // 0=未做kyc，1=kyc通过，2=kyc临时拒绝，3=kyc拒绝
+  firstName: string
+  googleAuthStatus: number // 0:未认证,1:已认证
+}
+
+export interface UserProfileParams {
+  token: string
+  refresh_token: string
+  // fingerprint-id is automatically added by request interceptor
+}
+
 // KYC 相关类型
 // 注意：根据API规范，KYC访问令牌直接返回字符串，KYC状态直接返回数字
 // 0=未做kyc，1=kyc通过，2=kyc临时拒绝，3=kyc拒绝，临时拒绝可以再次申请kyc
