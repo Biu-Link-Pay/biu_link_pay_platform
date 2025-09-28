@@ -180,7 +180,6 @@ const authStatus = ref<'unbound' | 'ready' | 'verifying' | 'success' | 'failed'>
 const authCode = ref('')
 const error = ref('')
 const loading = ref(false)
-const currentServerCode = ref('') // 存储服务器返回的当前验证码
 
 // 计算属性
 const visible = computed({
@@ -202,13 +201,7 @@ const checkAuthStatus = async () => {
     console.log('Auth status response:', response)
     
     if (response.success) {
-      if (response.model === 1) {
-        // 已绑定，获取当前验证码
-        authStatus.value = 'ready'
-        await getCurrentCode()
-      } else {
-        authStatus.value = 'unbound'
-      }
+      authStatus.value = response.model === 1 ? 'ready' : 'unbound'
       console.log('Auth status set to:', authStatus.value)
     } else {
       authStatus.value = 'unbound'
@@ -218,24 +211,6 @@ const checkAuthStatus = async () => {
     console.error('Check auth status error:', error)
     authStatus.value = 'unbound'
     console.log('Auth status set to unbound due to error')
-  }
-}
-
-const getCurrentCode = async () => {
-  try {
-    const response = await AuthAPI.googleAuthCode()
-    console.log('Current code response:', response)
-    
-    if (response.success) {
-      currentServerCode.value = response.model
-      console.log('Current server code:', currentServerCode.value)
-    } else {
-      console.error('Failed to get current code:', response.msg)
-      error.value = '获取验证码失败'
-    }
-  } catch (error) {
-    console.error('Get current code error:', error)
-    error.value = '网络错误，请稍后重试'
   }
 }
 
@@ -261,15 +236,7 @@ const handleVerify = async () => {
   error.value = ''
 
   try {
-    // 先获取当前服务器验证码
-    const codeResponse = await AuthAPI.googleAuthCode()
-    
-    if (!codeResponse.success) {
-      throw new Error(codeResponse.msg || '获取验证码失败')
-    }
-    
-    // 然后验证用户输入的验证码
-    const response = await AuthAPI.googleAuthValid(authCode.value, codeResponse.model)
+    const response = await AuthAPI.googleAuthValid(authCode.value, '') // 这里需要从服务器获取或存储的密钥
 
     if (response.success && response.model) {
       authStatus.value = 'success'
@@ -293,12 +260,6 @@ const handleVerify = async () => {
     console.error('Verify auth code error:', err)
     authStatus.value = 'failed'
     error.value = '验证失败，请重试'
-    toast.add({
-      severity: 'error',
-      summary: '验证失败',
-      detail: '网络错误，请稍后重试',
-      life: 3000
-    })
   } finally {
     loading.value = false
   }
