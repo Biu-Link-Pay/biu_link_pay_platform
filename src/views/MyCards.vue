@@ -746,6 +746,14 @@
       </div>
     </Dialog>
 
+    <!-- Google Auth Dialog -->
+    <GoogleAuthDialog
+      v-model:visible="showGoogleAuthDialog"
+      title="安全验证"
+      @success="onGoogleAuthSuccess"
+      @cancel="onGoogleAuthCancel"
+    />
+
 
     </div>
   </div>
@@ -758,14 +766,17 @@ import { useCardStore } from '@/stores/card'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import Dialog from 'primevue/dialog'
+import GoogleAuthDialog from '@/components/GoogleAuthDialog.vue'
 import { CardAPI, type CardDetailResponse } from '@/api/card'
 import { OrderAPI, type TransactionListItem, type DepositOrderListItem, type WithdrawOrderListItem, type WithdrawOrderPageResponse } from '@/api/order'
 import { copyWithToast } from '@/utils'
+import { useGoogleAuth } from '@/composables/useGoogleAuth'
 
 const router = useRouter()
 const route = useRoute()
 const cardStore = useCardStore()
 const toast = useToast()
+const { executeWithAuth } = useGoogleAuth()
 
 // Card data
 const currentCardIndex = ref(0)
@@ -820,6 +831,59 @@ const showDetailDialog = ref(false)
 const detailLoading = ref(false)
 const detailError = ref<string | null>(null)
 const cardDetail = ref<CardDetailResponse | null>(null)
+
+// Google Auth Dialog state
+const showGoogleAuthDialog = ref(false)
+const pendingAction = ref<'withdraw' | 'details' | null>(null)
+
+// Google Auth callbacks
+const onGoogleAuthSuccess = async (result: boolean) => {
+  console.log('Google Auth success:', result)
+  showGoogleAuthDialog.value = false
+  
+  if (result && pendingAction.value) {
+    // Execute the pending action after successful verification
+    if (pendingAction.value === 'withdraw') {
+      await executeWithdrawAction()
+    } else if (pendingAction.value === 'details') {
+      await executeDetailsAction()
+    }
+  }
+  
+  // Reset pending action
+  pendingAction.value = null
+}
+
+const onGoogleAuthCancel = () => {
+  console.log('Google Auth cancelled')
+  showGoogleAuthDialog.value = false
+  pendingAction.value = null
+}
+
+// Execute actions after Google Auth verification
+const executeWithdrawAction = async () => {
+  if (!selectedCard.value?.id) return
+  
+  // Navigate to withdraw page with card information
+  router.push({
+    name: 'WithdrawOrder',
+    query: {
+      cardId: selectedCard.value.id,
+      cardNo: selectedCard.value.cardNo,
+      cardCurrency: selectedCard.value.cardCurrency,
+      maxOnDaily: selectedCard.value.maxOnDaily?.toString(),
+      maxOnMonthly: selectedCard.value.maxOnMonthly?.toString(),
+      maxOnPercent: selectedCard.value.maxOnPercent?.toString()
+    }
+  })
+}
+
+const executeDetailsAction = async () => {
+  if (!selectedCard.value?.id) return
+  
+  showDetailDialog.value = true
+  await loadCardDetail(selectedCard.value.id)
+}
 
 
 // Card transition animation state
@@ -1011,7 +1075,9 @@ const goToApplyCard = () => {
   router.push('/apply-card')
 }
 
-const goToWithdraw = () => {
+const goToWithdraw = async () => {
+  console.log('goToWithdraw called')
+  
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'warn',
@@ -1022,18 +1088,11 @@ const goToWithdraw = () => {
     return
   }
 
-  // Navigate to withdraw page with card information
-  router.push({
-    name: 'WithdrawOrder',
-    query: {
-      cardId: selectedCard.value.id,
-      cardNo: selectedCard.value.cardNo,
-      cardCurrency: selectedCard.value.cardCurrency,
-      maxOnDaily: selectedCard.value.maxOnDaily?.toString(),
-      maxOnMonthly: selectedCard.value.maxOnMonthly?.toString(),
-      maxOnPercent: selectedCard.value.maxOnPercent?.toString()
-    }
-  })
+  // Set pending action and show Google Auth dialog
+  console.log('Setting pending action to withdraw and showing dialog')
+  pendingAction.value = 'withdraw'
+  showGoogleAuthDialog.value = true
+  console.log('showGoogleAuthDialog.value:', showGoogleAuthDialog.value)
 }
 
 const handleCardDetailError = (message: string) => {
@@ -1072,6 +1131,8 @@ const loadCardDetail = async (cardId: string) => {
 }
 
 const goToDetails = async () => {
+  console.log('goToDetails called')
+  
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'warn',
@@ -1082,8 +1143,11 @@ const goToDetails = async () => {
     return
   }
 
-  showDetailDialog.value = true
-  await loadCardDetail(selectedCard.value.id)
+  // Set pending action and show Google Auth dialog
+  console.log('Setting pending action to details and showing dialog')
+  pendingAction.value = 'details'
+  showGoogleAuthDialog.value = true
+  console.log('showGoogleAuthDialog.value:', showGoogleAuthDialog.value)
 }
 
 const retryCardDetail = async () => {

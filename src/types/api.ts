@@ -50,6 +50,12 @@ export interface UserProfileParams {
   // fingerprint-id is automatically added by request interceptor
 }
 
+// Google Auth 相关类型
+export interface GoogleAuthGeneralResponse {
+  secretKey: string
+  qrCode: string
+}
+
 // KYC 相关类型
 // 注意：根据API规范，KYC访问令牌直接返回字符串，KYC状态直接返回数字
 // 0=未做kyc，1=kyc通过，2=kyc临时拒绝，3=kyc拒绝，临时拒绝可以再次申请kyc

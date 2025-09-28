@@ -14,7 +14,10 @@
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
             <div class="relative px-10 py-12 text-center flex flex-col items-center space-y-4">
               <span class="text-sm uppercase tracking-widest text-white/80">Withdraw Amount</span>
-              <div class="text-5xl font-extrabold tracking-tight">{{ formatCurrency(withdrawAmount) }}</div>
+              <div v-if="cardDetailLoading" class="text-5xl font-extrabold tracking-tight">
+                <i class="pi pi-spin pi-spinner mr-2"></i>Loading...
+              </div>
+              <div v-else class="text-5xl font-extrabold tracking-tight">{{ formatCurrency(withdrawAmount) }}</div>
               <div class="text-sm text-white/80">
                 From card ending in {{ cardInfo.cardNo ? cardInfo.cardNo.slice(-4) : '****' }}
               </div>
@@ -53,11 +56,12 @@
                 <div class="flex items-center space-x-3">
                   <div class="flex-1">
                     <InputText
-                      v-model="withdrawAmount"
                       type="number"
                       placeholder="0.00"
                       class="w-full text-lg"
                       :class="{ 'p-invalid': errors.withdrawAmount }"
+                      :model-value="withdrawAmount.toString()"
+                      @update:model-value="(value: string) => withdrawAmount = parseFloat(value) || 0"
                     />
                   </div>
                   <Button
@@ -77,9 +81,15 @@
                 <small v-if="errors.withdrawAmount" class="text-red-500">{{ errors.withdrawAmount }}</small>
                 
                 <!-- Balance Info -->
-                <div class="mt-3 flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
-                  <span>Available: {{ formatCurrency(balance) }}</span>
-                  <span>Min: {{ formatCurrency(minimumBalance) }}</span>
+                <div class="mt-3 space-y-2">
+                  <div class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
+                    <span>Available: {{ formatCurrency(balance) }}</span>
+                    <span>Min: {{ formatCurrency(minimumBalance) }}</span>
+                  </div>
+                  <div class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
+                    <span>Max withdraw: {{ formatCurrency(getMaxWithdrawAmount()) }}</span>
+                    <span v-if="cardInfo.maxOnDaily > 0" class="text-xs">Daily limit: {{ formatCurrency(cardInfo.maxOnDaily) }}</span>
+                  </div>
                 </div>
               </div>
 
@@ -140,11 +150,11 @@
                 <div class="mt-4 flex items-center space-x-3">
                   <div class="flex-1">
                     <InputText
-                      v-model="receiveAmount"
                       type="number"
                       placeholder="0.00"
                       readonly
                       class="w-full text-lg bg-white dark:bg-gray-800"
+                      :model-value="receiveAmount.toString()"
                     />
                   </div>
                   <div class="text-sm text-gray-500 dark:text-gray-400">
@@ -236,7 +246,10 @@
               </div>
               <div>
                 <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Balance</div>
-                <div class="text-lg font-bold text-gray-900 dark:text-white">{{ formatCurrency(balance) }}</div>
+                <div v-if="cardDetailLoading" class="text-lg font-bold text-gray-900 dark:text-white">
+                  <i class="pi pi-spin pi-spinner mr-2"></i>Loading...
+                </div>
+                <div v-else class="text-lg font-bold text-gray-900 dark:text-white">{{ formatCurrency(balance) }}</div>
               </div>
             </div>
             <div class="text-right">
@@ -266,11 +279,12 @@
           <div class="flex items-center space-x-2">
             <div class="flex-1">
               <InputText
-                v-model="withdrawAmount"
                 type="number"
                 placeholder="0.00"
                 class="w-full"
                 :class="{ 'p-invalid': errors.withdrawAmount }"
+                :model-value="withdrawAmount.toString()"
+                @update:model-value="(value: string) => withdrawAmount = parseFloat(value) || 0"
               />
             </div>
             <Button
@@ -296,11 +310,11 @@
           <div class="flex items-center space-x-2">
             <div class="flex-1">
               <InputText
-                v-model="receiveAmount"
                 type="number"
                 placeholder="0.00"
                 readonly
                 class="w-full"
+                :model-value="receiveAmount.toString()"
               />
             </div>
             <Button
@@ -437,6 +451,7 @@ import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI } from '@/api/order'
 import { useCardStore } from '@/stores/card'
+import { CardAPI } from '@/api/card'
 
 const router = useRouter()
 const route = useRoute()
@@ -458,15 +473,19 @@ const paymentMethods = ref<any[]>([])
 const loading = ref(false)
 
 // Form data
-const balance = ref(10.00)
+const balance = ref(0.00)
 const minimumBalance = ref(1.00)
-const withdrawAmount = ref(10)
-const receiveAmount = ref(1014)
+const withdrawAmount = ref(0)
+const receiveAmount = ref(0)
 const recipientAddress = ref('')
 const selectedCurrency = ref('USD')
 const selectedToken = ref('TPT')
 const selectedNetwork = ref('BNB Chain (BEP20)')
 const networkFee = ref(12)
+
+// Card detail loading
+const cardDetailLoading = ref(false)
+const cardDetail = ref<any>(null)
 
 // UI state
 const showCurrencySelector = ref(false)
@@ -490,8 +509,21 @@ const isFormValid = computed(() => {
   return withdrawAmount.value > 0 && 
          recipientAddress.value.length > 0 && 
          withdrawAmount.value >= minimumBalance.value &&
-         withdrawAmount.value <= balance.value
+         withdrawAmount.value <= balance.value &&
+         withdrawAmount.value <= getMaxWithdrawAmount()
 })
+
+// Calculate maximum withdraw amount based on card limits
+const getMaxWithdrawAmount = () => {
+  if (!cardDetail.value) return balance.value
+  
+  const maxDaily = cardInfo.value.maxOnDaily || 0
+  const maxPercent = cardInfo.value.maxOnPercent || 0
+  const availableBalance = balance.value
+  
+  // Return the minimum of available balance, daily limit, and single transaction limit
+  return Math.min(availableBalance, maxDaily, maxPercent > 0 ? maxPercent : availableBalance)
+}
 
 // Methods
 const formatCurrency = (amount: number) => {
@@ -499,7 +531,7 @@ const formatCurrency = (amount: number) => {
 }
 
 const setMaxAmount = () => {
-  withdrawAmount.value = balance.value
+  withdrawAmount.value = getMaxWithdrawAmount()
 }
 
 const selectCurrency = (currency: string) => {
@@ -551,6 +583,8 @@ const validateForm = () => {
     errors.value.withdrawAmount = `Amount must be at least ${formatCurrency(minimumBalance.value)}`
   } else if (withdrawAmount.value > balance.value) {
     errors.value.withdrawAmount = 'Amount exceeds available balance'
+  } else if (withdrawAmount.value > getMaxWithdrawAmount()) {
+    errors.value.withdrawAmount = `Amount exceeds maximum withdraw limit of ${formatCurrency(getMaxWithdrawAmount())}`
   } else if (cardInfo.value.maxOnDaily && withdrawAmount.value > cardInfo.value.maxOnDaily) {
     errors.value.withdrawAmount = `Amount exceeds daily limit of ${formatCurrency(cardInfo.value.maxOnDaily)}`
   } else if (cardInfo.value.maxOnPercent && withdrawAmount.value > cardInfo.value.maxOnPercent) {
@@ -640,10 +674,62 @@ const initializeCardInfo = () => {
     
     // Set currency based on card currency
     selectedCurrency.value = cardInfo.value.cardCurrency
-    
-    // Set balance based on card limits (mock data for now)
-    balance.value = cardInfo.value.maxOnDaily || 10.00
     minimumBalance.value = 1.00
+  }
+}
+
+// Fetch card details to get actual balance
+const fetchCardDetails = async () => {
+  if (!cardInfo.value.cardId) {
+    console.warn('No card ID available for fetching details')
+    return
+  }
+
+  cardDetailLoading.value = true
+  try {
+    const headers = cardStore.getRequestHeaders()
+    const response = await CardAPI.queryCardDetail({ cardId: cardInfo.value.cardId }, headers)
+    
+    if (response.success && response.model) {
+      cardDetail.value = response.model
+      
+      // Extract balance from card details
+      // Check for various possible balance fields in the response
+      const cardBalance = (response.model as any).balance || 
+                         (response.model as any).availableBalance || 
+                         (response.model as any).cardBalance || 
+                         (response.model as any).amount || 0
+      balance.value = parseFloat(cardBalance.toString()) || 0
+      
+      // Update withdraw amount if it exceeds the actual balance
+      if (withdrawAmount.value > balance.value) {
+        withdrawAmount.value = 0
+      }
+      
+      console.log('Card details loaded:', {
+        balance: balance.value,
+        maxDaily: cardInfo.value.maxOnDaily,
+        maxPercent: cardInfo.value.maxOnPercent
+      })
+    } else {
+      console.error('Failed to fetch card details:', response.msg)
+      toast.add({
+        severity: 'warn',
+        summary: 'Warning',
+        detail: 'Failed to load card balance, using default values',
+        life: 3000
+      })
+    }
+  } catch (error) {
+    console.error('Error fetching card details:', error)
+    toast.add({
+      severity: 'error',
+      summary: 'Error',
+      detail: 'Failed to load card details',
+      life: 3000
+    })
+  } finally {
+    cardDetailLoading.value = false
   }
 }
 
@@ -659,7 +745,7 @@ const fetchPaymentMethods = async () => {
   loading.value = true
   try {
     // Use the same API as PaymentMethodSelection
-    const response = await cardStore.fetchPaymentMethods()
+    const response = await (cardStore as any).fetchPaymentMethods()
     if (response && response.length > 0) {
       paymentMethods.value = response
       // Set default selection
@@ -696,6 +782,7 @@ const fetchPaymentMethods = async () => {
 // Initialize on mount
 onMounted(async () => {
   initializeCardInfo()
+  await fetchCardDetails()
   await fetchPaymentMethods()
 })
 </script>

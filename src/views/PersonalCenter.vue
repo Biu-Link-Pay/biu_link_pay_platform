@@ -305,6 +305,96 @@
       </div>
     </div>
   </div>
+
+  <!-- Google Auth Binding Dialog -->
+  <Dialog 
+    v-model:visible="showGoogleAuthBindDialog" 
+    modal 
+    header="绑定 Google Authenticator"
+    :style="{ width: '500px' }"
+    :closable="!bindLoading"
+    :close-on-escape="!bindLoading"
+  >
+    <div class="space-y-6">
+      <!-- 步骤1: 扫描二维码 -->
+      <div class="text-center space-y-4">
+        <div class="w-20 h-20 mx-auto bg-blue-100 dark:bg-blue-900/20 rounded-lg flex items-center justify-center">
+          <i class="pi pi-qrcode text-blue-600 dark:text-blue-400 text-3xl"></i>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">步骤 1: 扫描二维码</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            使用 Google Authenticator 应用扫描下方二维码
+          </p>
+        </div>
+        
+        <!-- 二维码显示 -->
+        <div v-if="bindQrCode" class="flex justify-center">
+          <img 
+            :src="`data:image/png;base64,${bindQrCode}`" 
+            alt="Google Auth QR Code"
+            class="w-48 h-48 border border-gray-200 dark:border-gray-700 rounded-lg"
+          />
+        </div>
+        
+        <!-- 密钥显示 -->
+        <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">或者手动输入密钥：</p>
+          <div class="flex items-center space-x-2">
+            <InputText 
+              :model-value="bindSecretKey"
+              readonly
+              class="flex-1 font-mono text-sm"
+            />
+            <Button 
+              icon="pi pi-copy"
+              severity="secondary"
+              size="small"
+              @click="copySecretKey"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- 步骤2: 输入验证码 -->
+      <div class="space-y-4">
+        <div class="text-center">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">步骤 2: 输入验证码</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            在 Google Authenticator 中输入 6 位数字验证码
+          </p>
+        </div>
+        
+        <div class="flex justify-center">
+          <InputText
+            v-model="bindAuthCode"
+            placeholder="输入 6 位验证码"
+            maxlength="6"
+            class="w-48 text-center text-lg font-mono tracking-widest"
+            :disabled="bindLoading"
+            @input="onBindCodeInput"
+          />
+        </div>
+      </div>
+
+      <!-- 操作按钮 -->
+      <div class="flex justify-end space-x-3">
+        <Button 
+          label="取消" 
+          severity="secondary"
+          :disabled="bindLoading"
+          @click="cancelBind"
+        />
+        <Button 
+          label="确认绑定" 
+          icon="pi pi-check"
+          :loading="bindLoading"
+          :disabled="!bindAuthCode || bindAuthCode.length !== 6"
+          @click="confirmBind"
+        />
+      </div>
+    </div>
+  </Dialog>
 </template>
 
 <script setup lang="ts">
@@ -312,8 +402,12 @@ import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
+import Dialog from 'primevue/dialog'
+import Button from 'primevue/button'
+import InputText from 'primevue/inputtext'
 import { useAuthStore } from '@/stores/auth'
-import { AuthAPI, type UserProfile } from '@/api/auth'
+import { AuthAPI } from '@/api/auth'
+import type { UserProfile } from '@/types/api'
 
 const router = useRouter()
 const toast = useToast()
@@ -322,6 +416,13 @@ const authStore = useAuthStore()
 // User profile data
 const userProfile = ref<UserProfile | null>(null)
 const loading = ref(false)
+
+// Google Auth binding dialog state
+const showGoogleAuthBindDialog = ref(false)
+const bindSecretKey = ref('')
+const bindQrCode = ref('')
+const bindAuthCode = ref('')
+const bindLoading = ref(false)
 
 // Computed properties
 const maskedEmail = computed(() => {
@@ -378,10 +479,7 @@ const fetchUserProfile = async () => {
 
   loading.value = true
   try {
-    const response = await AuthAPI.getUserProfile({
-      token: authStore.token,
-      refresh_token: authStore.refreshToken
-    })
+    const response = await AuthAPI.getUserProfile()
 
     if (response.success && response.model) {
       userProfile.value = response.model
@@ -408,22 +506,49 @@ const fetchUserProfile = async () => {
 }
 
 // Navigation methods
-const navigateToGoogleAuth = () => {
-  // TODO: Implement Google authentication binding/unbinding
+const navigateToGoogleAuth = async () => {
   if (googleAuthStatus.value === 1) {
-    toast.add({
-      severity: 'info',
-      summary: 'Google Connected',
-      detail: 'Your Google account is already connected',
-      life: 3000
-    })
+    // 已绑定，显示解绑选项
+    const confirmed = confirm('您已绑定 Google Authenticator，是否要解绑？')
+    if (confirmed) {
+      // TODO: 实现解绑逻辑
+      toast.add({
+        severity: 'info',
+        summary: '解绑功能',
+        detail: '解绑功能正在开发中',
+        life: 3000
+      })
+    }
   } else {
-    toast.add({
-      severity: 'info',
-      summary: 'Connect Google',
-      detail: 'Google authentication binding is under development',
-      life: 3000
-    })
+    // 未绑定，开始绑定流程
+    try {
+      loading.value = true
+      const response = await AuthAPI.googleAuthGeneral()
+      
+      if (response.success && response.model) {
+        // 显示绑定弹框
+        showGoogleAuthBindDialog.value = true
+        bindSecretKey.value = response.model.secretKey
+        bindQrCode.value = response.model.qrCode
+      } else {
+        toast.add({
+          severity: 'error',
+          summary: '绑定失败',
+          detail: response.msg || '获取绑定信息失败',
+          life: 3000
+        })
+      }
+    } catch (error) {
+      console.error('Google Auth bind error:', error)
+      toast.add({
+        severity: 'error',
+        summary: '绑定失败',
+        detail: '网络错误，请稍后重试',
+        life: 3000
+      })
+    } finally {
+      loading.value = false
+    }
   }
 }
 
@@ -496,6 +621,93 @@ const handleLogout = async () => {
       detail: 'Failed to logout. Please try again.',
       life: 3000
     })
+  }
+}
+
+// Google Auth binding methods
+const onBindCodeInput = (event: Event) => {
+  const target = event.target as HTMLInputElement
+  const value = target.value.replace(/\D/g, '') // 只保留数字
+  bindAuthCode.value = value.slice(0, 6) // 最多6位
+}
+
+const copySecretKey = async () => {
+  try {
+    await navigator.clipboard.writeText(bindSecretKey.value)
+    toast.add({
+      severity: 'success',
+      summary: '复制成功',
+      detail: '密钥已复制到剪贴板',
+      life: 2000
+    })
+  } catch (error) {
+    console.error('Copy failed:', error)
+    toast.add({
+      severity: 'error',
+      summary: '复制失败',
+      detail: '请手动复制密钥',
+      life: 3000
+    })
+  }
+}
+
+const cancelBind = () => {
+  showGoogleAuthBindDialog.value = false
+  bindAuthCode.value = ''
+  bindSecretKey.value = ''
+  bindQrCode.value = ''
+}
+
+const confirmBind = async () => {
+  if (!bindAuthCode.value || bindAuthCode.value.length !== 6) {
+    toast.add({
+      severity: 'warn',
+      summary: '验证码错误',
+      detail: '请输入 6 位数字验证码',
+      life: 3000
+    })
+    return
+  }
+
+  try {
+    bindLoading.value = true
+    
+    // 验证验证码
+    const response = await AuthAPI.googleAuthValid(bindAuthCode.value, bindSecretKey.value)
+    
+    if (response.success && response.model) {
+      // 验证成功，刷新用户信息
+      await fetchUserProfile()
+      
+      toast.add({
+        severity: 'success',
+        summary: '绑定成功',
+        detail: 'Google Authenticator 绑定成功',
+        life: 3000
+      })
+      
+      showGoogleAuthBindDialog.value = false
+      bindAuthCode.value = ''
+      bindSecretKey.value = ''
+      bindQrCode.value = ''
+    } else {
+      toast.add({
+        severity: 'error',
+        summary: '验证失败',
+        detail: response.msg || '验证码错误，请重试',
+        life: 3000
+      })
+    }
+  } catch (error) {
+    console.error('Google Auth bind error:', error)
+    toast.add({
+      severity: 'error',
+      summary: '绑定失败',
+      detail: '网络错误，请稍后重试',
+      life: 3000
+    })
+  } finally {
+    bindLoading.value = false
   }
 }
 
