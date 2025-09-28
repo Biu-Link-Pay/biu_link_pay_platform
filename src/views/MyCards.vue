@@ -358,7 +358,7 @@
                       <div v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div v-for="(order, index) in page" :key="index"
-                          class="flex items-center space-x-4 md:space-x-6 p-3 md:p-5 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors cursor-pointer"
+                          class="flex items-center space-x-4 md:space-x-6 p-4 md:p-6 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors cursor-pointer"
                           @click="goToPaymentResult(order)">
                           <div
                             class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
@@ -366,13 +366,10 @@
                           </div>
                           <div class="flex-1 min-w-0">
                             <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                              {{ order.num }}
+                              #{{ order.num }}
                             </div>
                             <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
                               {{ formatDate(order.createTime || '') }}
-                            </div>
-                            <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                              {{ order.token }} - {{ order.network }}
                             </div>
                           </div>
                           <div class="text-right">
@@ -381,9 +378,6 @@
                             </div>
                             <div class="text-sm lg:text-base" :class="getStatusColor(order.type)">
                               {{ order.type === '1' ? 'Card Creation' : 'Recharge' }}
-                            </div>
-                            <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                              USD: {{ order.usdAmount }}
                             </div>
                           </div>
                         </div>
@@ -428,15 +422,15 @@
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div class="space-y-3 lg:space-y-4">
                           <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                            class="flex items-center space-x-3 p-4 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
                             @click="goToPaymentResult(order)">
                             <div
                               class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
                               <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-sm"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                              <div class="text-xs text-gray-600 dark:text-gray-400 mb-1">
-                                {{ order.num }}
+                              <div class="font-medium text-gray-900 dark:text-white text-sm">
+                                #{{ order.num }}
                               </div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">
                                 {{ formatDate(order.createTime || '') }}
@@ -506,20 +500,17 @@
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div class="space-y-4 lg:space-y-6">
                           <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-4 md:space-x-6 p-4 md:p-5 lg:p-7 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            class="flex items-center space-x-4 md:space-x-6 p-4 md:p-6 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                             <div
                               class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
                               <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-base lg:text-lg"></i>
                             </div>
                             <div class="flex-1 min-w-0">
                               <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
-                                {{ order.num || 'N/A' }}
+                                #{{ order.num || 'N/A' }}
                               </div>
                               <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
                                 {{ formatDate(order.createTime || '') }}
-                              </div>
-                              <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                                {{ order.address || 'N/A' }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -528,9 +519,6 @@
                               </div>
                               <div class="text-sm lg:text-base" :class="getStatusColor(order.status)">
                                 {{ order.status }}
-                              </div>
-                              <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                                Fee: {{ order.networkFee || 0 }}
                               </div>
                             </div>
                           </div>
@@ -576,16 +564,13 @@
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div class="space-y-3 lg:space-y-4">
                           <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700">
+                            class="flex items-center space-x-3 p-4 rounded-lg bg-gray-50 dark:bg-gray-700">
                             <div
                               class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
                               <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-sm"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-sm mb-1">
-                                Withdraw
-                              </div>
-                              <div class="text-xs text-gray-600 dark:text-gray-400 mb-1">
+                              <div class="font-medium text-gray-900 dark:text-white text-sm">
                                 #{{ order.num || 'N/A' }}
                               </div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">
