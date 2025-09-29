@@ -100,6 +100,7 @@ export interface CardHolderResponse {
 // Card detail related types
 export interface CardDetailQueryParams {
   cardId: string // Card ID
+  faCode: string // Google Auth code
 }
 
 export interface CardDetailResponse {
@@ -157,11 +158,7 @@ export interface CardTransactionListResponse {
   }
 }
 
-// Request header parameters (fingerprint-id is automatically added by interceptor)
-export interface CardRequestHeaders {
-  token: string
-  refresh_token: string
-}
+// Note: token, refresh_token, and fingerprint-id are automatically added by request interceptor
 
 /**
  * Card related API
@@ -169,38 +166,22 @@ export interface CardRequestHeaders {
 export class CardAPI {
   /**
    * Query card configuration
-   * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
    * @returns Promise<ApiResponse<CardConfig[]>>
    */
-  static async getCardConfig(headers: CardRequestHeaders): Promise<ApiResponse<CardConfig[]>> {
-    const response = await api.get('/card/consume/common/cardConfig', {
-      headers: {
-        'token': headers.token,
-        'refresh_token': headers.refresh_token
-        // fingerprint-id 由请求拦截器自动添加
-      }
-    })
+  static async getCardConfig(): Promise<ApiResponse<CardConfig[]>> {
+    const response = await api.get('/card/consume/common/cardConfig')
     return response.data
   }
 
   /**
    * Query card BIN
    * @param params Query parameters
-   * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
    * @returns Promise<ApiResponse<CardBin[]>>
    */
-  static async queryCardBin(
-    params: QueryCardBinParams,
-    headers: CardRequestHeaders
-  ): Promise<ApiResponse<CardBin[]>> {
+  static async queryCardBin(params: QueryCardBinParams): Promise<ApiResponse<CardBin[]>> {
     const response = await api.get('/card/consume/operator/queryCardBin', {
       params: {
         cardFormFactor: params.cardFormFactor
-      },
-      headers: {
-        'token': headers.token,
-        'refresh_token': headers.refresh_token
-        // fingerprint-id 由请求拦截器自动添加
       }
     })
     return response.data
@@ -209,79 +190,42 @@ export class CardAPI {
   /**
    * Save cardholder information
    * @param holderInfo Cardholder information
-   * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
    * @returns Promise<ApiResponse<null>>
    */
-  static async saveCardHolder(
-    holderInfo: CardHolderInfo,
-    headers: CardRequestHeaders
-  ): Promise<ApiResponse<null>> {
-    const response = await api.post('/card/consume/operator/saveHolder', holderInfo, {
-      headers: {
-        'token': headers.token,
-        'refresh_token': headers.refresh_token
-        // fingerprint-id 由请求拦截器自动添加
-      }
-    })
+  static async saveCardHolder(holderInfo: CardHolderInfo): Promise<ApiResponse<null>> {
+    const response = await api.post('/card/consume/operator/saveHolder', holderInfo)
     return response.data
   }
 
   /**
    * Query cardholder information
-   * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
    * @returns Promise<ApiResponse<CardHolderResponse>>
    */
-  static async queryCardHolder(
-    headers: CardRequestHeaders
-  ): Promise<ApiResponse<CardHolderResponse>> {
-    const response = await api.get('/card/consume/operator/queryHolder', {
-      headers: {
-        'token': headers.token,
-        'refresh_token': headers.refresh_token
-        // fingerprint-id 由请求拦截器自动添加
-      }
-    })
+  static async queryCardHolder(): Promise<ApiResponse<CardHolderResponse>> {
+    const response = await api.get('/card/consume/operator/queryHolder')
     return response.data
   }
 
   /**
    * Update cardholder information
    * @param holderInfo Cardholder information
-   * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
    * @returns Promise<ApiResponse<null>>
    */
-  static async updateCardHolder(
-    holderInfo: CardHolderInfo,
-    headers: CardRequestHeaders
-  ): Promise<ApiResponse<null>> {
-    const response = await api.post('/card/consume/operator/updateHolder', holderInfo, {
-      headers: {
-        'token': headers.token,
-        'refresh_token': headers.refresh_token
-        // fingerprint-id 由请求拦截器自动添加
-      }
-    })
+  static async updateCardHolder(holderInfo: CardHolderInfo): Promise<ApiResponse<null>> {
+    const response = await api.post('/card/consume/operator/updateHolder', holderInfo)
     return response.data
   }
 
   /**
    * Query card details
    * @param params Card detail query parameters
-   * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
    * @returns Promise<ApiResponse<CardDetailResponse>>
    */
-  static async queryCardDetail(
-    params: CardDetailQueryParams,
-    headers: CardRequestHeaders
-  ): Promise<ApiResponse<CardDetailResponse>> {
+  static async queryCardDetail(params: CardDetailQueryParams): Promise<ApiResponse<CardDetailResponse>> {
     const response = await api.get('/card/consume/operator/queryCardDetailInfo', {
       params: {
-        cardId: params.cardId
-      },
-      headers: {
-        'token': headers.token,
-        'refresh_token': headers.refresh_token
-        // fingerprint-id 由请求拦截器自动添加
+        cardId: params.cardId,
+        faCode: params.faCode
       }
     })
     return response.data
@@ -289,39 +233,20 @@ export class CardAPI {
 
   /**
    * Query card list
-   * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
    * @returns Promise<ApiResponse<CardListItem[]>>
    */
-  static async queryCardList(
-    headers: CardRequestHeaders
-  ): Promise<ApiResponse<CardListItem[]>> {
-    const response = await api.get('/card/consume/operator/queryCardList', {
-      headers: {
-        'token': headers.token,
-        'refresh_token': headers.refresh_token
-        // fingerprint-id 由请求拦截器自动添加
-      }
-    })
+  static async queryCardList(): Promise<ApiResponse<CardListItem[]>> {
+    const response = await api.get('/card/consume/operator/queryCardList')
     return response.data
   }
 
   /**
    * Transaction records pagination query
    * @param params Pagination query parameters
-   * @param headers Request header parameters (fingerprint-id is automatically added by interceptor)
    * @returns Promise<ApiResponse<CardTransactionListResponse>>
    */
-  static async queryTransactionList(
-    params: TransactionListQueryParams,
-    headers: CardRequestHeaders
-  ): Promise<ApiResponse<CardTransactionListResponse>> {
-    const response = await api.post('/card/consume/operator/queryTransactionList', params, {
-      headers: {
-        'token': headers.token,
-        'refresh_token': headers.refresh_token
-        // fingerprint-id 由请求拦截器自动添加
-      }
-    })
+  static async queryTransactionList(params: TransactionListQueryParams): Promise<ApiResponse<CardTransactionListResponse>> {
+    const response = await api.post('/card/consume/operator/queryTransactionList', params)
     return response.data
   }
 }

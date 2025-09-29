@@ -395,12 +395,77 @@
       </div>
     </div>
   </Dialog>
+
+  <!-- Google Auth Unbind Dialog -->
+  <Dialog 
+    v-model:visible="showGoogleAuthUnbindDialog" 
+    modal 
+    header="解绑 Google Authenticator"
+    :style="{ width: '400px' }"
+    :closable="!unbindLoading"
+    :close-on-escape="!unbindLoading"
+  >
+    <div class="space-y-6">
+      <!-- 警告图标和消息 -->
+      <div class="text-center space-y-4">
+        <div class="w-16 h-16 mx-auto bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center">
+          <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">确认解绑</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+            解绑后您将无法使用 Google Authenticator 进行二次验证，请确认是否继续？
+          </p>
+        </div>
+      </div>
+
+      <!-- 输入验证码 -->
+      <div class="space-y-4">
+        <div class="text-center">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">输入验证码</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            请输入 Google Authenticator 中的 6 位验证码
+          </p>
+        </div>
+        
+        <div class="flex justify-center">
+          <InputText
+            v-model="unbindAuthCode"
+            placeholder="输入 6 位验证码"
+            maxlength="6"
+            class="w-48 text-center text-lg font-mono tracking-widest"
+            :disabled="unbindLoading"
+            @input="onUnbindCodeInput"
+          />
+        </div>
+      </div>
+
+      <!-- 操作按钮 -->
+      <div class="flex justify-end space-x-3">
+        <Button 
+          label="取消" 
+          severity="secondary"
+          :disabled="unbindLoading"
+          @click="cancelUnbind"
+        />
+        <Button 
+          label="确认解绑" 
+          icon="pi pi-times"
+          severity="danger"
+          :loading="unbindLoading"
+          :disabled="!unbindAuthCode || unbindAuthCode.length !== 6"
+          @click="handleUnbindGoogleAuth"
+        />
+      </div>
+    </div>
+  </Dialog>
 </template>
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useConfirm } from 'primevue/useconfirm'
 import AppHeader from '@/components/AppHeader.vue'
 import Dialog from 'primevue/dialog'
 import Button from 'primevue/button'
@@ -411,6 +476,7 @@ import type { UserProfile } from '@/types/api'
 
 const router = useRouter()
 const toast = useToast()
+const confirm = useConfirm()
 const authStore = useAuthStore()
 
 // User profile data
@@ -423,6 +489,11 @@ const bindSecretKey = ref('')
 const bindQrCode = ref('')
 const bindAuthCode = ref('')
 const bindLoading = ref(false)
+
+// Google Auth unbind dialog state
+const showGoogleAuthUnbindDialog = ref(false)
+const unbindAuthCode = ref('')
+const unbindLoading = ref(false)
 
 // Computed properties
 const maskedEmail = computed(() => {
@@ -508,17 +579,8 @@ const fetchUserProfile = async () => {
 // Navigation methods
 const navigateToGoogleAuth = async () => {
   if (googleAuthStatus.value === 1) {
-    // 已绑定，显示解绑选项
-    const confirmed = confirm('您已绑定 Google Authenticator，是否要解绑？')
-    if (confirmed) {
-      // TODO: 实现解绑逻辑
-      toast.add({
-        severity: 'info',
-        summary: '解绑功能',
-        detail: '解绑功能正在开发中',
-        life: 3000
-      })
-    }
+    // 已绑定，显示解绑对话框
+    showGoogleAuthUnbindDialog.value = true
   } else {
     // 未绑定，开始绑定流程
     try {
@@ -709,6 +771,69 @@ const confirmBind = async () => {
   } finally {
     bindLoading.value = false
   }
+}
+
+// Google Auth unbind handler
+const handleUnbindGoogleAuth = async () => {
+  if (!unbindAuthCode.value || unbindAuthCode.value.length !== 6) {
+    toast.add({
+      severity: 'warn',
+      summary: '验证码错误',
+      detail: '请输入 6 位数字验证码',
+      life: 3000
+    })
+    return
+  }
+
+  try {
+    unbindLoading.value = true
+    
+    const response = await AuthAPI.googleAuthUnbind(unbindAuthCode.value)
+    
+    if (response.success && response.model) {
+      // 解绑成功，刷新用户信息
+      await fetchUserProfile()
+      
+      toast.add({
+        severity: 'success',
+        summary: '解绑成功',
+        detail: 'Google Authenticator 解绑成功',
+        life: 3000
+      })
+      
+      showGoogleAuthUnbindDialog.value = false
+      unbindAuthCode.value = ''
+    } else {
+      toast.add({
+        severity: 'error',
+        summary: '解绑失败',
+        detail: response.msg || '验证码错误，请重试',
+        life: 3000
+      })
+    }
+  } catch (error) {
+    console.error('Google Auth unbind error:', error)
+    toast.add({
+      severity: 'error',
+      summary: '解绑失败',
+      detail: '网络错误，请稍后重试',
+      life: 3000
+    })
+  } finally {
+    unbindLoading.value = false
+  }
+}
+
+// Unbind dialog methods
+const onUnbindCodeInput = (event: Event) => {
+  const target = event.target as HTMLInputElement
+  const value = target.value.replace(/\D/g, '') // 只保留数字
+  unbindAuthCode.value = value.slice(0, 6) // 最多6位
+}
+
+const cancelUnbind = () => {
+  showGoogleAuthUnbindDialog.value = false
+  unbindAuthCode.value = ''
 }
 
 // Initialize

@@ -568,7 +568,7 @@ const validateForm = () => {
 const loadHolder = async () => {
   try {
     loading.value = true
-    const response = await CardAPI.queryCardHolder(buildHeaders())
+    const response = await CardAPI.queryCardHolder()
     if (response.success && response.model) {
       holder.value = response.model
       // Prefill form from holder
@@ -715,7 +715,7 @@ const saveAddress = async () => {
     let ok = false
     if (holder.value) {
       // Update
-      const resp = await CardAPI.updateCardHolder(holderInfo, buildHeaders())
+      const resp = await CardAPI.updateCardHolder(holderInfo)
       ok = !!resp.success
     } else {
       // Create (use store helper)

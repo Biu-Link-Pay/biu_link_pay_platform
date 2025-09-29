@@ -147,6 +147,20 @@ export class AuthAPI {
     const response = await api.get('/card/consume/common/googleAuthResult')
     return response.data
   }
+
+  /**
+   * Unbind Google Auth
+   * @param code 2FA verification code
+   * @returns Promise<ApiResponse<boolean>>
+   */
+  static async googleAuthUnbind(code: string): Promise<ApiResponse<boolean>> {
+    const response = await api.get('/card/consume/common/googleAuthUnbind', {
+      params: {
+        code
+      }
+    })
+    return response.data
+  }
 }
 
 // Export individual functions for easy use
@@ -161,5 +175,6 @@ export const {
   googleAuthGeneral,
   googleAuthCode,
   googleAuthValid,
-  googleAuthResult
+  googleAuthResult,
+  googleAuthUnbind
 } = AuthAPI
