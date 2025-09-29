@@ -218,10 +218,7 @@ export const useAuthStore = defineStore('auth', () => {
     }
 
     try {
-      const response: ApiResponse<string> = await AuthAPI.getKycAccessToken({
-        token: token.value,
-        refresh_token: refreshToken.value
-      })
+      const response: ApiResponse<string> = await AuthAPI.getKycAccessToken()
 
       if (response.success && response.model) {
         return response.model
@@ -241,10 +238,7 @@ export const useAuthStore = defineStore('auth', () => {
     }
 
     try {
-      const response: ApiResponse<number> = await AuthAPI.checkKycStatus({
-        token: token.value,
-        refresh_token: refreshToken.value
-      })
+      const response: ApiResponse<number> = await AuthAPI.checkKycStatus()
 
       if (response.success && response.model !== null && response.model !== undefined) {
         kycStatus.value = response.model
