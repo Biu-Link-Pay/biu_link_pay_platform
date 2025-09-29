@@ -642,7 +642,7 @@ const handleContinue = async () => {
     // Determine if it's card application or recharge operation
     const isRecharge = route.query.action === 'recharge'
     const orderType = isRecharge ? '2' : '1' // 1: Card Application 2: Recharge
-
+    
     // Create deposit order
     const orderResponse = await OrderAPI.createDepositOrder({
       cardPattern: cardStore.selectedCardConfig?.cardPattern.toString() || '1', // 1: Virtual Card 2: Physical Card

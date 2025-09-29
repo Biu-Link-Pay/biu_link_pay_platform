@@ -152,6 +152,7 @@ export interface DepositOrderDetailItem {
   currentTime?: string | null // 当前时间
   hashId?: string | null // 交易哈希
   errorMessage?: string | null // 错误信息
+  expires?: number // 过期时间
 }
 
 // 入金订单详情查询响应

@@ -1,5 +1,18 @@
 <template>
   <div class="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-indigo-200 dark:from-gray-800 dark:via-blue-800 dark:to-purple-800 flex items-center justify-center p-4">
+    <!-- Logo -->
+    <div class="absolute left-4 top-4 lg:left-8 lg:top-8 z-10 flex items-center gap-2">
+      <img
+        src="https://static.biulinkpay.online/logo/biu_big_white.png"
+        alt="BiulinkPay"
+        class="w-10 lg:w-12"
+        loading="eager"
+      />
+      <span class="text-white text-xl lg:text-2xl font-bold" style="font-family: Alimama ShuHeiTi, Alimama ShuHeiTi;">
+        BiulinkPay
+      </span>
+    </div>
+    
     <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-6xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[600px]">
         <!-- Left showcase area -->
@@ -106,6 +119,7 @@ import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useAuthStore } from '@/stores/auth'
 import { useCardStore } from '@/stores/card'
+import { useUserStore } from '@/stores/user'
 import { AuthUtils, RouteUtils } from '@/utils/auth'
 import { getFingerprintId, getCachedFingerprintId } from '@/utils/fingerprint'
 
@@ -113,6 +127,7 @@ const router = useRouter()
 const toast = useToast()
 const authStore = useAuthStore()
 const cardStore = useCardStore()
+const userStore = useUserStore()
 
 // 服务Logo数据 - 根据设计稿重新定位
 const services = ref([
@@ -332,8 +347,8 @@ const login = async () => {
       cardStore.reset()
       console.log('Card store cache cleared for new user')
 
-      // Check card list after successful login
-      await checkCardListAndRedirect()
+      // Fetch user profile details after successful login
+      await fetchUserProfileAndRedirect()
     } else {
       toast.add({
         severity: 'error',
@@ -351,6 +366,29 @@ const login = async () => {
     })
   } finally {
     isLoading.value = false
+  }
+}
+
+// Fetch user profile and then check card list
+const fetchUserProfileAndRedirect = async () => {
+  try {
+    // First, fetch user profile details
+    console.log('Fetching user profile details...')
+    const profileResult = await userStore.fetchUserProfile()
+    
+    if (profileResult.success) {
+      console.log('User profile fetched successfully:', profileResult.data)
+    } else {
+      console.warn('Failed to fetch user profile:', profileResult.message)
+      // Continue with navigation even if profile fetch fails
+    }
+
+    // Then check card list and decide navigation
+    await checkCardListAndRedirect()
+  } catch (error) {
+    console.error('Error fetching user profile:', error)
+    // Continue with card list check even if profile fetch fails
+    await checkCardListAndRedirect()
   }
 }
 

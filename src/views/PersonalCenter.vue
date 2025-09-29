@@ -471,6 +471,7 @@ import Dialog from 'primevue/dialog'
 import Button from 'primevue/button'
 import InputText from 'primevue/inputtext'
 import { useAuthStore } from '@/stores/auth'
+import { useUserStore } from '@/stores/user'
 import { AuthAPI } from '@/api/auth'
 import type { UserProfile } from '@/types/api'
 
@@ -478,6 +479,7 @@ const router = useRouter()
 const toast = useToast()
 const confirm = useConfirm()
 const authStore = useAuthStore()
+const userStore = useUserStore()
 
 // User profile data
 const userProfile = ref<UserProfile | null>(null)
@@ -554,6 +556,18 @@ const fetchUserProfile = async () => {
 
     if (response.success && response.model) {
       userProfile.value = response.model
+      
+      // 同时更新 Pinia 用户详情
+      const profile = response.model
+      userStore.updateProfile({
+        userNum: profile.userNum,
+        email: profile.userEmail,
+        firstName: profile.firstName,
+        kycStatus: profile.kycStatus,
+        googleAuthStatus: profile.googleAuthStatus
+      })
+      
+      console.log('User profile updated in Pinia store:', profile)
     } else {
       console.error('Failed to fetch user profile:', response.msg)
       toast.add({

@@ -67,11 +67,7 @@
                   due to insufficient transfer amount.
                 </div>
               </div>
-            </div>
-            <!-- Payment Expiration Warning -->
-            <div
-              class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
-              <div class="flex items-start space-x-3">
+              <div class="flex items-start space-x-3 mt-2">
                 <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <i class="pi pi-info-circle text-white text-xs"></i>
                 </div>
@@ -318,11 +314,7 @@
               due to insufficient transfer amount.
             </div>
           </div>
-        </div>
-        <!-- Payment Expiration Warning - Mobile -->
-        <div
-          class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
-          <div class="flex items-start space-x-3">
+          <div class="flex items-start space-x-3 mt-2">
             <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <i class="pi pi-info-circle text-white text-xs"></i>
             </div>
@@ -806,43 +798,48 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
       if (detail.createTime && detail.currentTime) {
         const createTime = new Date(detail.createTime).getTime()
         const serverCurrentTime = new Date(detail.currentTime).getTime()
-        const elapsedMs = serverCurrentTime - createTime
         
-        // Get expires time from payment type or order detail
-        let totalDurationMs = 15 * 60 * 1000 // Default 15 minutes
+        // 优先使用接口返回的expires字段
+        let remainingSeconds = 0
         
-        // Try to get expires time from payment type or order
-        const expiresTime = cardStore.currentOrder?.expires
-        if (expiresTime) {
-          const parsedExpires = parseExpirationSeconds(expiresTime)
-          if (parsedExpires !== null && parsedExpires > 0) {
-            // If expires is a duration in seconds, use it as total duration
-            if (parsedExpires <= 3600) { // Less than 1 hour, treat as duration
-              totalDurationMs = parsedExpires * 1000
-            } else {
-              // If expires is a timestamp, calculate remaining time
-              const expiresTimestamp = parsedExpires > 1e12 ? parsedExpires : parsedExpires * 1000
-              const remainingMs = expiresTimestamp - serverCurrentTime
-              if (remainingMs > 0) {
-                countdown.value = Math.floor(remainingMs / 1000)
-                defaultCountdownSeconds.value = countdown.value
-                return // Use timestamp-based calculation
-              }
-            }
+        if (detail.expires) {
+          // 如果expires是时间戳（大于1e12表示毫秒时间戳）
+          if (detail.expires > 1e12) {
+            const expiresTimestamp = detail.expires
+            const remainingMs = expiresTimestamp - serverCurrentTime
+            remainingSeconds = Math.max(0, Math.floor(remainingMs / 1000))
+          } else {
+            // 如果expires是秒数，计算从创建时间开始的剩余时间
+            const totalDurationMs = detail.expires * 1000
+            const elapsedMs = serverCurrentTime - createTime
+            const remainingMs = Math.max(0, totalDurationMs - elapsedMs)
+            remainingSeconds = Math.floor(remainingMs / 1000)
           }
-        }
-        
-        // Calculate remaining time based on creation time and duration
-        const remainingMs = Math.max(0, totalDurationMs - elapsedMs)
-        const remainingSeconds = Math.floor(remainingMs / 1000)
-        
-        if (remainingSeconds > 0) {
-          countdown.value = remainingSeconds
-          defaultCountdownSeconds.value = remainingSeconds
         } else {
-          countdown.value = 0
-          defaultCountdownSeconds.value = 0
+          // 如果没有expires字段，使用默认的15分钟
+          const totalDurationMs = 15 * 60 * 1000 // Default 15 minutes
+          const elapsedMs = serverCurrentTime - createTime
+          const remainingMs = Math.max(0, totalDurationMs - elapsedMs)
+          remainingSeconds = Math.floor(remainingMs / 1000)
         }
+        
+        // 确保倒计时不会超过expires时间
+        if (detail.expires && detail.expires <= 1e12) {
+          // 如果expires是秒数，确保剩余时间不超过expires
+          const maxRemainingSeconds = detail.expires
+          remainingSeconds = Math.min(remainingSeconds, maxRemainingSeconds)
+        }
+        
+        // 更新倒计时
+        countdown.value = remainingSeconds
+        defaultCountdownSeconds.value = remainingSeconds
+        
+        console.log('Countdown calculation:', {
+          createTime: new Date(createTime).toISOString(),
+          serverCurrentTime: new Date(serverCurrentTime).toISOString(),
+          expires: detail.expires,
+          remainingSeconds
+        })
       }
 
       // Only update order status, don't update other fields to avoid data inconsistency

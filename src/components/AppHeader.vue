@@ -166,6 +166,7 @@ import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useConfirm } from 'primevue/useconfirm'
 import { useAuthStore } from '@/stores/auth'
+import { useUserStore } from '@/stores/user'
 import ThemeToggle from './ThemeToggle.vue'
 
 interface Props {
@@ -184,6 +185,7 @@ const router = useRouter()
 const toast = useToast()
 const confirm = useConfirm()
 const authStore = useAuthStore()
+const userStore = useUserStore()
 
 // Reactive data
 const showUserMenu = ref(false)
@@ -192,9 +194,15 @@ const showUserMenu = ref(false)
 const isLoggedIn = computed(() => authStore.isLoggedIn)
 const currentUser = computed(() => authStore.currentUser)
 const userName = computed(() => {
+  // 优先使用 userStore 中的 firstName (接口返回的字段)
+  if (userStore.user && userStore.user.firstName) {
+    return userStore.user.firstName
+  }
+  // 然后使用 authStore 中的 name
   if (currentUser.value?.name) {
     return currentUser.value.name
   }
+  // 最后使用 email 的用户名部分
   if (currentUser.value?.email) {
     return currentUser.value.email.split('@')[0]
   }

@@ -22,6 +22,7 @@ import './styles/button-styles.css'
 import './styles/layout-styles.css'
 import { getFingerprintId } from '@/utils/fingerprint'
 import { useThemeStore } from '@/stores/theme'
+import { useUserStore } from '@/stores/user'
 
 // 初始化指纹识别
 getFingerprintId().then(fingerprintId => {
@@ -49,6 +50,10 @@ app.use(router)
 // 初始化主题
 const themeStore = useThemeStore()
 themeStore.initTheme()
+
+// 初始化用户store
+const userStore = useUserStore()
+userStore.initializeAuth()
 
 app.use(PrimeVue, {
   theme: {
