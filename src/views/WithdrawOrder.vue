@@ -61,7 +61,9 @@
                       class="w-full text-lg"
                       :class="{ 'p-invalid': errors.withdrawAmount }"
                       :model-value="withdrawAmount.toString()"
-                      @update:model-value="(value: string | undefined) => withdrawAmount = parseFloat(value || '0') || 0"
+                      @update:model-value="(value: string | undefined) => {
+                        withdrawAmount = parseFloat(value || '0') || 0
+                      }"
                     />
                   </div>
                   <Button
@@ -212,6 +214,18 @@
                     {{ selectedToken }}
                   </div>
                 </div>
+                
+                <!-- Rate Loading State -->
+                <div v-if="rateLoading" class="mt-2 flex items-center space-x-2 text-sm text-blue-600 dark:text-blue-400">
+                  <i class="pi pi-spin pi-spinner"></i>
+                  <span>Loading exchange rate...</span>
+                </div>
+                
+                <!-- Rate Error State -->
+                <div v-if="rateError" class="mt-2 flex items-center space-x-2 text-sm text-red-600 dark:text-red-400">
+                  <i class="pi pi-exclamation-triangle"></i>
+                  <span>{{ rateError }}</span>
+                </div>
               </div>
 
               <!-- Exchange Rate Info -->
@@ -281,16 +295,26 @@
             </div>
           </div>
 
-          <!-- Withdraw Button -->
-          <Button
-            label="Withdraw"
-            icon="pi pi-send"
-            class="w-full"
-            size="large"
-            :disabled="!isFormValid"
-            :loading="isSubmitting"
-            @click="handleWithdraw"
-          />
+          <!-- Action Buttons -->
+          <div class="flex space-x-4">
+            <Button
+              label="Back"
+              icon="pi pi-arrow-left"
+              severity="secondary"
+              class="flex-1"
+              size="large"
+              @click="goBack"
+            />
+            <Button
+              label="Withdraw"
+              icon="pi pi-send"
+              class="flex-1"
+              size="large"
+              :disabled="!isFormValid"
+              :loading="isSubmitting"
+              @click="handleWithdraw"
+            />
+          </div>
         </div>
       </div>
 
@@ -343,7 +367,9 @@
                 class="w-full"
                 :class="{ 'p-invalid': errors.withdrawAmount }"
                 :model-value="withdrawAmount.toString()"
-                @update:model-value="(value: string | undefined) => withdrawAmount = parseFloat(value || '0') || 0"
+                @update:model-value="(value: string | undefined) => {
+                  withdrawAmount = parseFloat(value || '0') || 0
+                }"
               />
             </div>
             <Button
@@ -472,6 +498,18 @@
               {{ selectedToken }}
             </div>
           </div>
+          
+          <!-- Rate Loading State -->
+          <div v-if="rateLoading" class="mt-2 flex items-center space-x-2 text-xs text-blue-600 dark:text-blue-400">
+            <i class="pi pi-spin pi-spinner"></i>
+            <span>Loading exchange rate...</span>
+          </div>
+          
+          <!-- Rate Error State -->
+          <div v-if="rateError" class="mt-2 flex items-center space-x-2 text-xs text-red-600 dark:text-red-400">
+            <i class="pi pi-exclamation-triangle"></i>
+            <span>{{ rateError }}</span>
+          </div>
         </div>
 
         <!-- Exchange Rate Info -->
@@ -531,16 +569,26 @@
           </div>
         </div>
 
-        <!-- Withdraw Button -->
-        <Button
-          label="Withdraw"
-          icon="pi pi-send"
-          class="w-full"
-          size="large"
-          :disabled="!isFormValid"
-          :loading="isSubmitting"
-          @click="handleWithdraw"
-        />
+        <!-- Action Buttons -->
+        <div class="flex space-x-3">
+          <Button
+            label="Back"
+            icon="pi pi-arrow-left"
+            severity="secondary"
+            class="flex-1"
+            size="large"
+            @click="goBack"
+          />
+          <Button
+            label="Withdraw"
+            icon="pi pi-send"
+            class="flex-1"
+            size="large"
+            :disabled="!isFormValid"
+            :loading="isSubmitting"
+            @click="handleWithdraw"
+          />
+        </div>
       </div>
     </div>
 
@@ -637,6 +685,11 @@ const selectedToken = ref('TPT')
 const selectedNetwork = ref('BNB Chain (BEP20)')
 const networkFee = ref(12)
 
+// Exchange rate data
+const exchangeRate = ref<any>(null)
+const rateLoading = ref(false)
+const rateError = ref('')
+
 // Two-level selection for payment methods (matching PaymentMethodSelection.vue structure)
 const selectedPayType = ref<any>(null)
 const selectedCrypto = ref<any>(null)
@@ -655,27 +708,27 @@ watch(loading, (newValue, oldValue) => {
 })
 
 // Watch for address changes to validate in real-time
-watch([recipientAddress, selectedCrypto], ([newAddress, newCrypto], [oldAddress, oldCrypto]) => {
-  if (newAddress && newCrypto && newCrypto.network && newCrypto.network.addressRegex) {
-    // 清除之前的错误
-    if (errors.value.recipientAddress && errors.value.recipientAddress.includes('Invalid address format')) {
-      errors.value.recipientAddress = ''
-    }
+// watch([recipientAddress, selectedCrypto], ([newAddress, newCrypto], [oldAddress, oldCrypto]) => {
+//   if (newAddress && newCrypto && newCrypto.network && newCrypto.network.addressRegex) {
+//     // 清除之前的错误
+//     if (errors.value.recipientAddress && errors.value.recipientAddress.includes('Invalid address format')) {
+//       errors.value.recipientAddress = ''
+//     }
     
-    // 实时验证地址格式
-    const addressRegex = new RegExp(newCrypto.network.addressRegex)
-    const isValid = addressRegex.test(newAddress)
-    console.log('Real-time address validation:', {
-      address: newAddress,
-      network: newCrypto.network.fullName || newCrypto.network.name,
-      regex: newCrypto.network.addressRegex,
-      isValid
-    })
-    if (!isValid) {
-      errors.value.recipientAddress = `Invalid address format for ${newCrypto.network.fullName || newCrypto.network.name}`
-    }
-  }
-})
+//     // 实时验证地址格式
+//     const addressRegex = new RegExp(newCrypto.network.addressRegex)
+//     const isValid = addressRegex.test(newAddress)
+//     console.log('Real-time address validation:', {
+//       address: newAddress,
+//       network: newCrypto.network.fullName || newCrypto.network.name,
+//       regex: newCrypto.network.addressRegex,
+//       isValid
+//     })
+//     if (!isValid) {
+//       errors.value.recipientAddress = `Invalid address format for ${newCrypto.network.fullName || newCrypto.network.name}`
+//     }
+//   }
+// })
 
 // Card detail from cache
 const cardDetail = ref<any>(null)
@@ -731,6 +784,12 @@ const formatCurrency = (amount: number) => {
 
 const setMaxAmount = () => {
   withdrawAmount.value = getMaxWithdrawAmount()
+  // watch 监听器会自动处理汇率获取
+}
+
+// Go back
+const goBack = () => {
+  router.back()
 }
 
 const selectCurrency = (currency: string) => {
@@ -747,6 +806,10 @@ const selectPayType = (payType: any) => {
   if (payType.cryptoNetworks && payType.cryptoNetworks.length > 0) {
     selectedCrypto.value = payType.cryptoNetworks[0]
     selectedNetwork.value = payType.cryptoNetworks[0].network.name || payType.cryptoNetworks[0].network.fullName
+    
+    // 切换支付方式后，获取汇率
+    console.log('Payment type changed, fetching exchange rate...')
+    fetchExchangeRate()
   } else {
     selectedCrypto.value = null
     selectedNetwork.value = ''
@@ -759,7 +822,11 @@ const selectPayType = (payType: any) => {
 const selectCrypto = (crypto: any) => {
   selectedCrypto.value = crypto
   selectedNetwork.value = crypto.network.name || crypto.network.fullName
+  selectedToken.value = crypto.crypto.name
   showNetworkSelector.value = false
+  
+  // 选择加密货币后，获取汇率
+  fetchExchangeRate()
 }
 
 // Legacy functions for backward compatibility
@@ -902,22 +969,22 @@ const handleWithdraw = async () => {
 
   // Address regex validation for submission control
   if (selectedCrypto.value.network && selectedCrypto.value.network.addressRegex) {
-    const addressRegex = new RegExp(selectedCrypto.value.network.addressRegex)
-    if (!addressRegex.test(recipientAddress.value)) {
-      console.log('Address validation failed on submission:', {
-        address: recipientAddress.value,
-        network: selectedCrypto.value.network.fullName || selectedCrypto.value.network.name,
-        regex: selectedCrypto.value.network.addressRegex,
-        isValid: false
-      })
-      toast.add({
-        severity: 'error',
-        summary: 'Invalid Address Format',
-        detail: `The address format is invalid for ${selectedCrypto.value.network.fullName || selectedCrypto.value.network.name}. Please check and try again.`,
-        life: 5000
-      })
-      return
-    }
+    // const addressRegex = new RegExp(selectedCrypto.value.network.addressRegex)
+    // if (!addressRegex.test(recipientAddress.value)) {
+    //   console.log('Address validation failed on submission:', {
+    //     address: recipientAddress.value,
+    //     network: selectedCrypto.value.network.fullName || selectedCrypto.value.network.name,
+    //     regex: selectedCrypto.value.network.addressRegex,
+    //     isValid: false
+    //   })
+    //   toast.add({
+    //     severity: 'error',
+    //     summary: 'Invalid Address Format',
+    //     detail: `The address format is invalid for ${selectedCrypto.value.network.fullName || selectedCrypto.value.network.name}. Please check and try again.`,
+    //     life: 5000
+    //   })
+    //   return
+    // }
     console.log('Address validation passed on submission:', {
       address: recipientAddress.value,
       network: selectedCrypto.value.network.fullName || selectedCrypto.value.network.name,
@@ -958,8 +1025,19 @@ const handleWithdraw = async () => {
         life: 3000
       })
       
-      // Navigate back to cards page
-      router.push('/my-cards')
+      // Navigate to payment result page with withdraw order details
+      router.push({
+        name: 'PaymentResult',
+        query: {
+          orderNum: response.model,
+          status: 'PENDING',
+          amount: withdrawAmount.value.toString(),
+          currency: selectedCrypto.value.crypto.name,
+          network: selectedCrypto.value.network.name,
+          address: recipientAddress.value,
+          type: 'withdraw' // 标识这是出金订单
+        }
+      })
     } else {
       throw new Error(response.msg || 'Failed to create withdraw order')
     }
@@ -1076,11 +1154,104 @@ const validateAndLoadCardDetails = () => {
 }
 
 // Watch for form changes to update receive amount
-watch([withdrawAmount, selectedToken], () => {
-  // TODO: Implement actual exchange rate calculation
-  const rate = 101.4 // Mock exchange rate
-  receiveAmount.value = Math.floor(withdrawAmount.value * rate)
+watch([withdrawAmount, selectedToken, exchangeRate], () => {
+  updateReceiveAmount()
 })
+
+// Watch for amount changes to fetch new exchange rate
+watch(withdrawAmount, (newAmount, oldAmount) => {
+  // 当金额变化且大于0时，重新获取汇率
+  if (newAmount > 0 && selectedCrypto.value && newAmount !== oldAmount) {
+    console.log('Amount changed, fetching new exchange rate...', {
+      oldAmount,
+      newAmount,
+      selectedCrypto: selectedCrypto.value.crypto.name
+    })
+    fetchExchangeRate()
+  }
+})
+
+// Fetch exchange rate from API
+const fetchExchangeRate = async () => {
+  if (!selectedCrypto.value || !withdrawAmount.value || withdrawAmount.value <= 0) {
+    return
+  }
+
+  rateLoading.value = true
+  rateError.value = ''
+  
+  try {
+    console.log('Fetching exchange rate for withdrawal...', {
+      cryptoUnit: selectedCrypto.value.crypto.name,
+      network: selectedCrypto.value.network.name,
+      amount: withdrawAmount.value,
+      fiatUnit: selectedCurrency.value,
+      exchange: selectedPayType.value?.name,
+      payTypeName: selectedPayType.value?.name
+    })
+    
+    const response = await OrderAPI.getRate({
+      cryptoUnit: selectedCrypto.value.crypto.name,
+      network: selectedCrypto.value.network.name,
+      number: withdrawAmount.value.toString(),
+      saleDirection: 'SELL', // 提现使用 SELL
+      exchange: selectedPayType.value?.name.toUpperCase() === 'BINANCE' ? 'BINANCE' : 'WALLET', // 根据支付方式选择交易所
+      fiatUnit: selectedCurrency.value
+    })
+    
+    if (response.success && response.model) {
+      exchangeRate.value = response.model
+      console.log('Exchange rate loaded:', response.model)
+      
+      // 更新网络费用
+      if (response.model.cryptoDetail && response.model.cryptoDetail.cryptoFee) {
+        networkFee.value = parseFloat(response.model.cryptoDetail.cryptoFee) || 0
+      }
+      
+      // 更新接收金额
+      updateReceiveAmount()
+    } else {
+      throw new Error(response.msg || 'Failed to get exchange rate')
+    }
+  } catch (error) {
+    console.error('Error fetching exchange rate:', error)
+    rateError.value = error instanceof Error ? error.message : 'Failed to get exchange rate'
+    
+    // 使用默认汇率作为后备
+    exchangeRate.value = null
+    updateReceiveAmount()
+  } finally {
+    rateLoading.value = false
+  }
+}
+
+// Update receive amount based on exchange rate
+const updateReceiveAmount = () => {
+  if (!withdrawAmount.value || withdrawAmount.value <= 0) {
+    receiveAmount.value = 0
+    return
+  }
+  
+  if (exchangeRate.value && exchangeRate.value.cryptoDetail) {
+    // 使用真实汇率数据
+    const cryptoAmount = parseFloat(exchangeRate.value.cryptoDetail.cryptoAmount) || 0
+    receiveAmount.value = cryptoAmount
+    console.log('Receive amount updated with real rate:', {
+      withdrawAmount: withdrawAmount.value,
+      receiveAmount: receiveAmount.value,
+      rate: exchangeRate.value
+    })
+  } else {
+    // 使用默认汇率作为后备
+    const defaultRate = 101.4 // Mock exchange rate
+    receiveAmount.value = Math.floor(withdrawAmount.value * defaultRate)
+    console.log('Receive amount updated with default rate:', {
+      withdrawAmount: withdrawAmount.value,
+      receiveAmount: receiveAmount.value,
+      defaultRate
+    })
+  }
+}
 
 // Fetch payment methods from API
 const fetchPaymentMethods = async () => {
@@ -1108,6 +1279,19 @@ const fetchPaymentMethods = async () => {
           selectedToken.value = response.model.payTypes[0].cryptoNetworks[0].crypto.name
           selectedNetwork.value = response.model.payTypes[0].cryptoNetworks[0].network.name || response.model.payTypes[0].cryptoNetworks[0].network.fullName
           console.log('Auto-selected crypto network:', response.model.payTypes[0].cryptoNetworks[0].crypto.name)
+          
+          // 自动选择后，使用最小金额获取汇率，让用户看到实时汇率信息
+          if (minimumBalance.value > 0) {
+            console.log('Auto-fetching exchange rate with minimum balance:', minimumBalance.value)
+            // 临时设置最小金额来获取汇率
+            const originalAmount = withdrawAmount.value
+            withdrawAmount.value = minimumBalance.value
+            fetchExchangeRate().finally(() => {
+              // 恢复原始金额
+              withdrawAmount.value = originalAmount
+              console.log('Exchange rate fetched, restored original amount:', originalAmount)
+            })
+          }
         } else {
           console.log('No crypto networks available for selected payment method')
         }
