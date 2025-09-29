@@ -14,7 +14,7 @@
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
             <div class="relative px-10 py-12 text-center flex flex-col items-center space-y-4">
               <span class="text-sm uppercase tracking-widest text-white/80">Withdraw Amount</span>
-              <div v-if="cardDetailLoading" class="text-5xl font-extrabold tracking-tight">
+              <div v-if="!cardDetail" class="text-5xl font-extrabold tracking-tight">
                 <i class="pi pi-spin pi-spinner mr-2"></i>Loading...
               </div>
               <div v-else class="text-5xl font-extrabold tracking-tight">{{ formatCurrency(withdrawAmount) }}</div>
@@ -61,7 +61,7 @@
                       class="w-full text-lg"
                       :class="{ 'p-invalid': errors.withdrawAmount }"
                       :model-value="withdrawAmount.toString()"
-                      @update:model-value="(value: string) => withdrawAmount = parseFloat(value) || 0"
+                      @update:model-value="(value: string | undefined) => withdrawAmount = parseFloat(value || '0') || 0"
                     />
                   </div>
                   <Button
@@ -112,10 +112,10 @@
                     v-for="payType in paymentMethods"
                     :key="payType.name"
                     class="border border-gray-200 dark:border-gray-600 rounded-xl p-5 cursor-pointer transition-all duration-200"
-                    :class="selectedToken === payType.name 
+                    :class="selectedPayType?.name === payType.name 
                       ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-300 dark:border-blue-600 shadow-md ring-2 ring-blue-100 dark:ring-blue-800/60' 
                       : 'hover:bg-gray-50 dark:hover:bg-gray-600 hover:shadow-sm'"
-                    @click="selectToken(payType.name)"
+                    @click="selectPayType(payType)"
                   >
                     <div class="flex flex-col gap-4">
                       <div class="flex items-center space-x-4">
@@ -127,19 +127,70 @@
                             class="w-full h-full object-cover"
                           />
                           <div v-else class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
-                            <span class="text-white font-bold text-lg">{{ payType.name.charAt(0) }}</span>
+                            <span class="text-white font-bold text-lg">{{ payType.name }}</span>
                           </div>
                         </div>
                         <div>
                           <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
-                          <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0 }} crypto options</div>
+                          <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0 }} crypto networks</div>
                         </div>
                       </div>
 
-                      <div v-if="selectedToken === payType.name" class="flex items-center gap-3 text-blue-600 self-start">
+                      <div v-if="selectedPayType?.name === payType.name" class="flex items-center gap-3 text-blue-600 self-start">
                         <span class="text-sm font-medium">Currently selected</span>
                         <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center">
                           <i class="pi pi-check text-white text-xs"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Network Selection (Second Level) - matching PaymentMethodSelection.vue structure -->
+                    <div
+                      v-if="selectedPayType?.name === payType.name"
+                      class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600"
+                    >
+                      <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-3">
+                        <span class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">Available Networks</span>
+                        <span class="text-xs text-gray-500 dark:text-gray-400">Selected: {{ selectedCrypto ? selectedCrypto.crypto.name + '-' + selectedCrypto.network.name : 'None' }}</span>
+                      </div>
+                      <div class="grid grid-cols-1 gap-3">
+                        <div
+                          v-for="crypto in payType.cryptoNetworks"
+                          :key="crypto.crypto.name + '-' + crypto.network.name"
+                          class="flex items-center justify-between p-3 rounded-lg cursor-pointer transition-colors duration-200 border border-transparent"
+                          :class="[
+                            selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name ? 'bg-blue-50 dark:bg-blue-900/30 border-blue-200 dark:border-blue-600 shadow-sm' : 'hover:bg-gray-50 dark:hover:bg-gray-700'
+                          ]"
+                          @click.stop="selectCrypto(crypto)"
+                        >
+                          <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
+                              <img
+                                v-if="crypto.crypto.logoUrl"
+                                :src="crypto.crypto.logoUrl"
+                                :alt="crypto.crypto.name"
+                                class="w-full h-full object-cover"
+                              />
+                              <div v-else class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
+                                <span class="text-white font-bold text-sm">{{ crypto.crypto.name.charAt(0) }}</span>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName }}</div>
+                              <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
+                              <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
+                                Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            v-if="selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name"
+                            class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center"
+                          >
+                            <i class="pi pi-check text-white text-xs"></i>
+                          </div>
+                          <div v-else class="w-7 h-7 border-2 border-gray-300 dark:border-gray-600 rounded-full"></div>
                         </div>
                       </div>
                     </div>
@@ -190,14 +241,22 @@
 
               <!-- Send To Address -->
               <div>
-                <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">Send to</label>
+                <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">
+                  Send to
+                  <span v-if="selectedCrypto" class="text-xs text-gray-500 ml-2">
+                    {{ selectedCrypto.network.fullName || selectedCrypto.network.name }} address
+                  </span>
+                </label>
                 <InputText
                   v-model="recipientAddress"
-                  placeholder="Enter recipient wallet address"
+                  :placeholder="selectedCrypto ? `Enter ${selectedCrypto.network.fullName || selectedCrypto.network.name} address` : 'Enter recipient wallet address'"
                   class="w-full"
                   :class="{ 'p-invalid': errors.recipientAddress }"
                 />
                 <small v-if="errors.recipientAddress" class="text-red-500">{{ errors.recipientAddress }}</small>
+                <small v-else-if="selectedCrypto && selectedCrypto.network && selectedCrypto.network.addressRegex" class="text-gray-500 text-xs mt-1 block">
+                  Address must match {{ selectedCrypto.network.fullName || selectedCrypto.network.name }} format
+                </small>
               </div>
 
               <!-- Network Selection -->
@@ -246,7 +305,7 @@
               </div>
               <div>
                 <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Balance</div>
-                <div v-if="cardDetailLoading" class="text-lg font-bold text-gray-900 dark:text-white">
+                <div v-if="!cardDetail" class="text-lg font-bold text-gray-900 dark:text-white">
                   <i class="pi pi-spin pi-spinner mr-2"></i>Loading...
                 </div>
                 <div v-else class="text-lg font-bold text-gray-900 dark:text-white">{{ formatCurrency(balance) }}</div>
@@ -284,7 +343,7 @@
                 class="w-full"
                 :class="{ 'p-invalid': errors.withdrawAmount }"
                 :model-value="withdrawAmount.toString()"
-                @update:model-value="(value: string) => withdrawAmount = parseFloat(value) || 0"
+                @update:model-value="(value: string | undefined) => withdrawAmount = parseFloat(value || '0') || 0"
               />
             </div>
             <Button
@@ -325,6 +384,21 @@
               @click="showTokenSelector = true"
             />
           </div>
+          
+          <!-- Mobile Network Selection -->
+          <div v-if="selectedPayType && selectedPayType.cryptoNetworks && selectedPayType.cryptoNetworks.length > 0" class="mt-3">
+            <label class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2 block">Network</label>
+            <div class="flex flex-wrap gap-2">
+              <Button
+                v-for="crypto in selectedPayType.cryptoNetworks"
+                :key="crypto.crypto.name + '-' + crypto.network.name"
+                :label="crypto.crypto.name + '-' + crypto.network.name"
+                size="small"
+                :severity="selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name ? 'primary' : 'secondary'"
+                @click="selectCrypto(crypto)"
+              />
+            </div>
+          </div>
         </div>
 
         <!-- Exchange Rate Info -->
@@ -346,14 +420,22 @@
 
         <!-- Send To Address -->
         <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
-          <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">Send to</label>
+          <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">
+            Send to
+            <span v-if="selectedCrypto" class="text-xs text-gray-500 ml-2">
+              {{ selectedCrypto.network.fullName || selectedCrypto.network.name }} address
+            </span>
+          </label>
           <InputText
             v-model="recipientAddress"
-            placeholder="Address required"
+            :placeholder="selectedCrypto ? `Enter ${selectedCrypto.network.fullName || selectedCrypto.network.name} address` : 'Address required'"
             class="w-full"
             :class="{ 'p-invalid': errors.recipientAddress }"
           />
           <small v-if="errors.recipientAddress" class="text-red-500 text-xs">{{ errors.recipientAddress }}</small>
+          <small v-else-if="selectedCrypto && selectedCrypto.network && selectedCrypto.network.addressRegex" class="text-gray-500 text-xs mt-1 block">
+            Address must match {{ selectedCrypto.network.fullName || selectedCrypto.network.name }} format
+          </small>
         </div>
 
         <!-- Network Selection -->
@@ -451,7 +533,6 @@ import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI } from '@/api/order'
 import { useCardStore } from '@/stores/card'
-import { CardAPI } from '@/api/card'
 
 const router = useRouter()
 const route = useRoute()
@@ -483,8 +564,47 @@ const selectedToken = ref('TPT')
 const selectedNetwork = ref('BNB Chain (BEP20)')
 const networkFee = ref(12)
 
-// Card detail loading
-const cardDetailLoading = ref(false)
+// Two-level selection for payment methods (matching PaymentMethodSelection.vue structure)
+const selectedPayType = ref<any>(null)
+const selectedCrypto = ref<any>(null)
+
+// Debug: Watch payment selection changes
+watch([selectedPayType, selectedCrypto], ([newPayType, newCrypto], [oldPayType, oldCrypto]) => {
+  console.log('Payment selection changed:', {
+    payType: { from: oldPayType?.name, to: newPayType?.name },
+    crypto: { from: oldCrypto?.crypto?.name, to: newCrypto?.crypto?.name }
+  })
+})
+
+// Debug: Watch loading state changes
+watch(loading, (newValue, oldValue) => {
+  console.log('Loading state changed:', { from: oldValue, to: newValue })
+})
+
+// Watch for address changes to validate in real-time
+watch([recipientAddress, selectedCrypto], ([newAddress, newCrypto], [oldAddress, oldCrypto]) => {
+  if (newAddress && newCrypto && newCrypto.network && newCrypto.network.addressRegex) {
+    // 清除之前的错误
+    if (errors.value.recipientAddress && errors.value.recipientAddress.includes('Invalid address format')) {
+      errors.value.recipientAddress = ''
+    }
+    
+    // 实时验证地址格式
+    const addressRegex = new RegExp(newCrypto.network.addressRegex)
+    const isValid = addressRegex.test(newAddress)
+    console.log('Real-time address validation:', {
+      address: newAddress,
+      network: newCrypto.network.fullName || newCrypto.network.name,
+      regex: newCrypto.network.addressRegex,
+      isValid
+    })
+    if (!isValid) {
+      errors.value.recipientAddress = `Invalid address format for ${newCrypto.network.fullName || newCrypto.network.name}`
+    }
+  }
+})
+
+// Card detail from cache
 const cardDetail = ref<any>(null)
 
 // UI state
@@ -510,19 +630,25 @@ const isFormValid = computed(() => {
          recipientAddress.value.length > 0 && 
          withdrawAmount.value >= minimumBalance.value &&
          withdrawAmount.value <= balance.value &&
-         withdrawAmount.value <= getMaxWithdrawAmount()
+         withdrawAmount.value <= getMaxWithdrawAmount() &&
+         selectedPayType.value !== null &&
+         selectedCrypto.value !== null
 })
 
-// Calculate maximum withdraw amount based on card limits
+// Calculate maximum withdraw amount based on card balance
 const getMaxWithdrawAmount = () => {
   if (!cardDetail.value) return balance.value
   
-  const maxDaily = cardInfo.value.maxOnDaily || 0
-  const maxPercent = cardInfo.value.maxOnPercent || 0
-  const availableBalance = balance.value
+  // 最大提现金额应该等于卡片余额
+  const cardBalance = (cardDetail.value as any).cardBalance || 0
+  const availableBalance = parseFloat(cardBalance.toString()) || 0
   
-  // Return the minimum of available balance, daily limit, and single transaction limit
-  return Math.min(availableBalance, maxDaily, maxPercent > 0 ? maxPercent : availableBalance)
+  // 考虑日限额和单笔限额，但最大不超过卡片余额
+  const maxDaily = cardInfo.value.maxOnDaily || availableBalance
+  const maxPercent = cardInfo.value.maxOnPercent || availableBalance
+  
+  // 返回可用余额、日限额、单笔限额中的最小值，但不超过卡片余额
+  return Math.min(availableBalance, maxDaily, maxPercent)
 }
 
 // Methods
@@ -539,14 +665,47 @@ const selectCurrency = (currency: string) => {
   showCurrencySelector.value = false
 }
 
-const selectToken = (token: string) => {
-  selectedToken.value = token
+// Select payment method (matching PaymentMethodSelection.vue)
+const selectPayType = (payType: any) => {
+  selectedPayType.value = payType
+  selectedToken.value = payType.name
+  
+  // Auto-select first crypto network if available
+  if (payType.cryptoNetworks && payType.cryptoNetworks.length > 0) {
+    selectedCrypto.value = payType.cryptoNetworks[0]
+    selectedNetwork.value = payType.cryptoNetworks[0].network.name || payType.cryptoNetworks[0].network.fullName
+  } else {
+    selectedCrypto.value = null
+    selectedNetwork.value = ''
+  }
+  
   showTokenSelector.value = false
 }
 
-const selectNetwork = (network: string) => {
-  selectedNetwork.value = network
+// Select crypto currency (matching PaymentMethodSelection.vue)
+const selectCrypto = (crypto: any) => {
+  selectedCrypto.value = crypto
+  selectedNetwork.value = crypto.network.name || crypto.network.fullName
   showNetworkSelector.value = false
+}
+
+// Legacy functions for backward compatibility
+const selectToken = (token: string) => {
+  const paymentType = paymentMethods.value.find(pt => pt.name === token)
+  if (paymentType) {
+    selectPayType(paymentType)
+  }
+}
+
+const selectNetwork = (network: string) => {
+  if (selectedPayType.value && selectedPayType.value.cryptoNetworks) {
+    const cryptoNetwork = selectedPayType.value.cryptoNetworks.find((crypto: any) => 
+      crypto.network.name === network || crypto.network.fullName === network
+    )
+    if (cryptoNetwork) {
+      selectCrypto(cryptoNetwork)
+    }
+  }
 }
 
 const getTokenIcon = (token: string) => {
@@ -593,8 +752,23 @@ const validateForm = () => {
 
   if (!recipientAddress.value) {
     errors.value.recipientAddress = 'Recipient address is required'
-  } else if (recipientAddress.value.length < 10) {
-    errors.value.recipientAddress = 'Invalid address format'
+  } else {
+    // 使用 network.addressRegex 进行地址格式验证
+    if (selectedCrypto.value && selectedCrypto.value.network && selectedCrypto.value.network.addressRegex) {
+      const addressRegex = new RegExp(selectedCrypto.value.network.addressRegex)
+      console.log('Validating address:', {
+        address: recipientAddress.value,
+        network: selectedCrypto.value.network.fullName || selectedCrypto.value.network.name,
+        regex: selectedCrypto.value.network.addressRegex,
+        isValid: addressRegex.test(recipientAddress.value)
+      })
+      if (!addressRegex.test(recipientAddress.value)) {
+        errors.value.recipientAddress = `Invalid address format for ${selectedCrypto.value.network.fullName || selectedCrypto.value.network.name}`
+      }
+    } else if (recipientAddress.value.length < 10) {
+      // 如果没有正则表达式，使用基本的长度验证
+      errors.value.recipientAddress = 'Invalid address format'
+    }
   }
 }
 
@@ -621,16 +795,85 @@ const handleWithdraw = async () => {
     return
   }
 
+  // Validate two-level selection
+  if (!selectedPayType.value) {
+    toast.add({
+      severity: 'error',
+      summary: 'Selection Error',
+      detail: 'Please select a payment type.',
+      life: 3000
+    })
+    return
+  }
+
+  if (!selectedCrypto.value) {
+    toast.add({
+      severity: 'error',
+      summary: 'Selection Error',
+      detail: 'Please select a crypto network.',
+      life: 3000
+    })
+    return
+  }
+
+  // Validate address format using network regex before submission
+  if (!recipientAddress.value) {
+    toast.add({
+      severity: 'error',
+      summary: 'Address Required',
+      detail: 'Please enter a recipient address.',
+      life: 3000
+    })
+    return
+  }
+
+  // Address regex validation for submission control
+  if (selectedCrypto.value.network && selectedCrypto.value.network.addressRegex) {
+    const addressRegex = new RegExp(selectedCrypto.value.network.addressRegex)
+    if (!addressRegex.test(recipientAddress.value)) {
+      console.log('Address validation failed on submission:', {
+        address: recipientAddress.value,
+        network: selectedCrypto.value.network.fullName || selectedCrypto.value.network.name,
+        regex: selectedCrypto.value.network.addressRegex,
+        isValid: false
+      })
+      toast.add({
+        severity: 'error',
+        summary: 'Invalid Address Format',
+        detail: `The address format is invalid for ${selectedCrypto.value.network.fullName || selectedCrypto.value.network.name}. Please check and try again.`,
+        life: 5000
+      })
+      return
+    }
+    console.log('Address validation passed on submission:', {
+      address: recipientAddress.value,
+      network: selectedCrypto.value.network.fullName || selectedCrypto.value.network.name,
+      regex: selectedCrypto.value.network.addressRegex,
+      isValid: true
+    })
+  } else {
+    // Fallback validation if no regex is available
+    if (recipientAddress.value.length < 10) {
+      toast.add({
+        severity: 'error',
+        summary: 'Invalid Address',
+        detail: 'The address format appears to be invalid. Please check and try again.',
+        life: 3000
+      })
+      return
+    }
+  }
+
   isSubmitting.value = true
   
   try {
-    // Create withdraw order using OrderAPI
+    // Create withdraw order using OrderAPI with two-level selection data
     const response = await OrderAPI.createWithdrawOrder({
       cardPattern: '1', // 1:虚拟卡 2:实体卡 - assuming virtual card
       type: '1', // 1:提现 2:退款
       cardId: cardInfo.value.cardId,
-      token: selectedToken.value,
-      network: selectedNetwork.value,
+      token: selectedCrypto.value.crypto.name, // token
+      network: selectedCrypto.value.network.name, // Network
       address: recipientAddress.value
     })
     
@@ -678,59 +921,85 @@ const initializeCardInfo = () => {
   }
 }
 
-// Fetch card details to get actual balance
-const fetchCardDetails = async () => {
-  if (!cardInfo.value.cardId) {
-    console.warn('No card ID available for fetching details')
-    return
-  }
-
-  cardDetailLoading.value = true
-  try {
-    const headers = cardStore.getRequestHeaders()
-    const response = await CardAPI.queryCardDetail({ cardId: cardInfo.value.cardId }, headers)
-    
-    if (response.success && response.model) {
-      cardDetail.value = response.model
-      
-      // Extract balance from card details
-      // Check for various possible balance fields in the response
-      const cardBalance = (response.model as any).balance || 
-                         (response.model as any).availableBalance || 
-                         (response.model as any).cardBalance || 
-                         (response.model as any).amount || 0
-      balance.value = parseFloat(cardBalance.toString()) || 0
-      
-      // Update withdraw amount if it exceeds the actual balance
-      if (withdrawAmount.value > balance.value) {
-        withdrawAmount.value = 0
-      }
-      
-      console.log('Card details loaded:', {
-        balance: balance.value,
-        maxDaily: cardInfo.value.maxOnDaily,
-        maxPercent: cardInfo.value.maxOnPercent
-      })
-    } else {
-      console.error('Failed to fetch card details:', response.msg)
-      toast.add({
-        severity: 'warn',
-        summary: 'Warning',
-        detail: 'Failed to load card balance, using default values',
-        life: 3000
-      })
-    }
-  } catch (error) {
-    console.error('Error fetching card details:', error)
+// Validate and get card details from Pinia store
+const validateAndLoadCardDetails = () => {
+  // 从 Pinia store 获取缓存的当前卡片详情
+  const cachedCardDetail = cardStore.getCachedCurrentCardDetail()
+  
+  if (!cachedCardDetail) {
+    console.warn('No cached card detail found, redirecting to MyCards')
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: 'Failed to load card details',
+      summary: '验证失败',
+      detail: '未经过安全验证，请返回重新操作',
       life: 3000
     })
-  } finally {
-    cardDetailLoading.value = false
+    router.push('/my-cards')
+    return false
   }
+  
+  // 验证路由参数中的卡号是否与缓存的卡片详情匹配
+  const routeCardNo = route.query.cardNo as string
+  const cachedCardNo = cachedCardDetail.cardNo
+  
+  if (!routeCardNo || !cachedCardNo || routeCardNo !== cachedCardNo) {
+    console.warn('Card number mismatch:', { routeCardNo, cachedCardNo })
+    toast.add({
+      severity: 'error',
+      summary: '验证失败',
+      detail: '卡片信息不匹配，请返回重新操作',
+      life: 3000
+    })
+    router.push('/my-cards')
+    return false
+  }
+  
+  // 验证卡片 ID 是否匹配
+  const routeCardId = route.query.cardId as string
+  const cachedCardId = cachedCardDetail.cardId
+  
+  if (!routeCardId || !cachedCardId || routeCardId !== cachedCardId) {
+    console.warn('Card ID mismatch:', { routeCardId, cachedCardId })
+    toast.add({
+      severity: 'error',
+      summary: '验证失败',
+      detail: '卡片信息不匹配，请返回重新操作',
+      life: 3000
+    })
+    router.push('/my-cards')
+    return false
+  }
+  
+  // 验证通过，设置卡片详情
+  cardDetail.value = cachedCardDetail
+  
+  // 从缓存的卡片详情中提取余额信息 (使用 cardBalance 字段)
+  const cardBalance = (cachedCardDetail as any).cardBalance || 0
+  balance.value = parseFloat(cardBalance.toString()) || 0
+  
+  // 更新卡片信息为缓存中的详细信息
+  cardInfo.value = {
+    cardId: cachedCardDetail.cardId,
+    cardNo: cachedCardDetail.cardNo,
+    cardCurrency: cachedCardDetail.cardCurrency,
+    maxOnDaily: cardInfo.value.maxOnDaily, // 保留路由中的限制信息
+    maxOnMonthly: cardInfo.value.maxOnMonthly,
+    maxOnPercent: cardInfo.value.maxOnPercent
+  }
+  
+  // 设置货币
+  selectedCurrency.value = cachedCardDetail.cardCurrency
+  
+  console.log('Card details loaded from cache:', {
+    cardId: cachedCardDetail.cardId,
+    cardNo: cachedCardDetail.cardNo,
+    cardBalance: cardBalance,
+    balance: balance.value,
+    currency: cachedCardDetail.cardCurrency,
+    maxWithdrawAmount: getMaxWithdrawAmount()
+  })
+  
+  return true
 }
 
 // Watch for form changes to update receive amount
@@ -744,23 +1013,40 @@ watch([withdrawAmount, selectedToken], () => {
 const fetchPaymentMethods = async () => {
   loading.value = true
   try {
-    // Use the same API as PaymentMethodSelection
-    const response = await (cardStore as any).fetchPaymentMethods()
-    if (response && response.length > 0) {
-      paymentMethods.value = response
-      // Set default selection
-      if (response.length > 0) {
-        selectedToken.value = response[0].name
+    console.log('Fetching payment methods for withdrawal...')
+    
+    // 调用 OrderAPI 获取提现支付方式 (orderType: 'OUT' 表示提现)
+    const response = await OrderAPI.getPaymentMethods({
+      orderType: 'OUT'
+    })
+    
+    loading.value = false
+    if (response.success && response.model && response.model.payTypes) {
+      paymentMethods.value = response.model.payTypes
+      console.log('Payment methods loaded:', response.model.payTypes)
+      // Auto-select first payment method if available (matching PaymentMethodSelection.vue)
+      if (response.model.payTypes.length > 0) {
+        selectedPayType.value = response.model.payTypes[0]
+        console.log('Auto-selected payment method:', response.model.payTypes[0].name)
+        
+        // Auto-select first crypto network of the first payment method
+        if (response.model.payTypes[0].cryptoNetworks && response.model.payTypes[0].cryptoNetworks.length > 0) {
+          selectedCrypto.value = response.model.payTypes[0].cryptoNetworks[0]
+          selectedToken.value = response.model.payTypes[0].cryptoNetworks[0].crypto.name
+          selectedNetwork.value = response.model.payTypes[0].cryptoNetworks[0].network.name || response.model.payTypes[0].cryptoNetworks[0].network.fullName
+          console.log('Auto-selected crypto network:', response.model.payTypes[0].cryptoNetworks[0].crypto.name)
+        } else {
+          console.log('No crypto networks available for selected payment method')
+        }
+      } else {
+        console.log('No payment methods available')
       }
     } else {
-      // Fallback to default tokens if API fails
-      paymentMethods.value = tokens.map(token => ({
-        name: token,
-        img: null,
-        cryptoNetworks: []
-      }))
+      console.warn('No payment methods returned from API')
+      throw new Error(response.msg || 'No payment methods available')
     }
   } catch (error) {
+    loading.value = false
     console.error('Error fetching payment methods:', error)
     toast.add({
       severity: 'warn',
@@ -768,12 +1054,20 @@ const fetchPaymentMethods = async () => {
       detail: 'Failed to load payment methods, using defaults',
       life: 3000
     })
-    // Fallback to default tokens
+    
+    // Fallback to default tokens if API fails
     paymentMethods.value = tokens.map(token => ({
       name: token,
       img: null,
       cryptoNetworks: []
     }))
+    
+    // Initialize with first fallback token
+    if (tokens.length > 0) {
+      selectedPayType.value = paymentMethods.value[0]
+      selectedToken.value = paymentMethods.value[0].name
+      console.log('Fallback token initialized:', paymentMethods.value[0].name)
+    }
   } finally {
     loading.value = false
   }
@@ -781,8 +1075,22 @@ const fetchPaymentMethods = async () => {
 
 // Initialize on mount
 onMounted(async () => {
+  console.log('WithdrawOrder mounted, starting initialization...')
+  
   initializeCardInfo()
-  await fetchCardDetails()
-  await fetchPaymentMethods()
+  
+  // 验证并加载卡片详情（从 Pinia store）
+  const isValid = validateAndLoadCardDetails()
+  console.log('Card validation result:', isValid)
+  
+  // 只有验证通过才继续加载其他数据
+  if (isValid) {
+    console.log('Card validation passed, fetching payment methods...')
+    await fetchPaymentMethods()
+  } else {
+    console.log('Card validation failed, skipping payment methods fetch')
+    // 确保loading状态被正确重置
+    loading.value = false
+  }
 })
 </script>

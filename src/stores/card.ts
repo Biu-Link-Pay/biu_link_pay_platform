@@ -10,7 +10,8 @@ import type {
   CardHolderInfo,
   CardListItem,
   TransactionListQueryParams,
-  CardTransactionListResponse
+  CardTransactionListResponse,
+  CardDetailResponse
 } from '@/api/card'
 
 export const useCardStore = defineStore('card', () => {
@@ -69,6 +70,9 @@ export const useCardStore = defineStore('card', () => {
   // Order info
   const currentOrder = ref<any>(null)
 
+  // Current card detail cache (only store one current card detail)
+  const currentCardDetail = ref<CardDetailResponse | null>(null)
+
   // Computed properties
   const availableCards = computed(() =>
     cardConfigs.value.filter(card => card.status === 1)
@@ -107,8 +111,7 @@ export const useCardStore = defineStore('card', () => {
     error.value = null
 
     try {
-      const headers = getRequestHeaders()
-      const response: ApiResponse<CardConfig[]> = await CardAPI.getCardConfig(headers)
+      const response: ApiResponse<CardConfig[]> = await CardAPI.getCardConfig()
 
       if (response.success && response.model) {
         cardConfigs.value = response.model
@@ -134,8 +137,7 @@ export const useCardStore = defineStore('card', () => {
     error.value = null
 
     try {
-      const headers = getRequestHeaders()
-      const response: ApiResponse<CardBin[]> = await CardAPI.queryCardBin(params, headers)
+      const response: ApiResponse<CardBin[]> = await CardAPI.queryCardBin(params)
 
       if (response.success && response.model) {
         cardBins.value = response.model
@@ -161,8 +163,7 @@ export const useCardStore = defineStore('card', () => {
     error.value = null
 
     try {
-      const headers = getRequestHeaders()
-      const response: ApiResponse<null> = await CardAPI.saveCardHolder(holderInfo, headers)
+      const response: ApiResponse<null> = await CardAPI.saveCardHolder(holderInfo)
 
       if (response.success) {
         return { success: true, message: 'Cardholder info saved successfully' }
@@ -187,8 +188,7 @@ export const useCardStore = defineStore('card', () => {
     error.value = null
 
     try {
-      const headers = getRequestHeaders()
-      const response: ApiResponse<CardListItem[]> = await CardAPI.queryCardList(headers)
+      const response: ApiResponse<CardListItem[]> = await CardAPI.queryCardList()
 
       if (response.success && response.model) {
         cardList.value = response.model
@@ -248,6 +248,21 @@ export const useCardStore = defineStore('card', () => {
     currentOrder.value = null
   }
 
+  // Cache current card detail
+  const cacheCurrentCardDetail = (cardDetail: CardDetailResponse) => {
+    currentCardDetail.value = cardDetail
+  }
+
+  // Get cached current card detail
+  const getCachedCurrentCardDetail = (): CardDetailResponse | null => {
+    return currentCardDetail.value
+  }
+
+  // Clear current card detail cache
+  const clearCurrentCardDetailCache = () => {
+    currentCardDetail.value = null
+  }
+
   // Clear selected card info
   const clearSelectedCard = () => {
     selectedCardBin.value = null
@@ -269,6 +284,7 @@ export const useCardStore = defineStore('card', () => {
     selectedCardBin.value = null
     selectedCardConfig.value = null
     currentOrder.value = null
+    currentCardDetail.value = null
   }
 
   return {
@@ -281,6 +297,7 @@ export const useCardStore = defineStore('card', () => {
     selectedCardBin,
     selectedCardConfig,
     currentOrder,
+    currentCardDetail,
 
     // Computed properties
     availableCards,
@@ -305,7 +322,10 @@ export const useCardStore = defineStore('card', () => {
     clearSelectedCard,
     clearError,
     reset,
-    getRequestHeaders
+    getRequestHeaders,
+    cacheCurrentCardDetail,
+    getCachedCurrentCardDetail,
+    clearCurrentCardDetailCache
   }
 }, {
   persist: {

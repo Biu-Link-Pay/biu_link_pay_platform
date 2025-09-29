@@ -748,9 +748,11 @@
 
     <!-- Google Auth Dialog -->
     <GoogleAuthDialog
+      ref="googleAuthDialogRef"
       v-model:visible="showGoogleAuthDialog"
       title="安全验证"
-      @success="onGoogleAuthSuccess"
+      :identifier="pendingAction || 'default'"
+      @submit="onGoogleAuthSubmit"
       @cancel="onGoogleAuthCancel"
     />
 
@@ -776,10 +778,90 @@ const router = useRouter()
 const route = useRoute()
 const cardStore = useCardStore()
 const toast = useToast()
-const { executeWithAuth } = useGoogleAuth()
 
 // Card data
 const currentCardIndex = ref(0)
+
+// Google Auth Dialog state
+const showGoogleAuthDialog = ref(false)
+const pendingAction = ref<'withdraw' | 'details' | null>(null)
+const googleAuthDialogRef = ref()
+
+
+// Google Auth callbacks
+const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<void> => {
+  console.log('Google Auth submit:', code, 'identifier:', identifier)
+  
+  if (!selectedCard.value?.id) {
+    toast.add({
+      severity: 'error',
+      summary: '错误',
+      detail: '请先选择一张卡片',
+      life: 3000
+    })
+    return
+  }
+  
+  try {
+    // 首先通过获取卡片详情接口验证验证码
+    console.log('验证验证码，调用获取卡片详情接口...')
+    const response = await CardAPI.queryCardDetail({ 
+      cardId: selectedCard.value.id, 
+      faCode: code 
+    })
+    
+    if (response.success && response.model) {
+      // 验证成功，缓存当前卡片详情
+      cardStore.cacheCurrentCardDetail(response.model)
+      console.log('验证码验证成功，当前卡片详情已缓存')
+      
+      // 关闭验证对话框并重置验证码
+      showGoogleAuthDialog.value = false
+      googleAuthDialogRef.value?.resetCode()
+      
+      // 根据标识符执行后续操作
+      if (identifier === 'withdraw') {
+        await executeWithdrawAction(response.model)
+      } else if (identifier === 'details') {
+        await executeDetailsAction(response.model)
+      }
+      
+      // Reset pending action
+      pendingAction.value = null
+      
+      // 显示成功消息
+      toast.add({
+        severity: 'success',
+        summary: '验证成功',
+        detail: 'Google Auth 验证通过，操作已完成',
+        life: 3000
+      })
+      
+    } else {
+      // 验证失败
+      throw new Error(response.msg || '验证码错误')
+    }
+    
+  } catch (error) {
+    console.error('验证失败:', error)
+    
+    // 如果验证失败，重置验证码但不关闭对话框，让用户重试
+    googleAuthDialogRef.value?.resetCode()
+    
+    toast.add({
+      severity: 'error',
+      summary: '验证失败',
+      detail: error instanceof Error ? error.message : '验证码错误，请重试',
+      life: 3000
+    })
+  }
+}
+
+const onGoogleAuthCancel = (identifier: string): void => {
+  console.log('Google Auth cancelled for:', identifier)
+  showGoogleAuthDialog.value = false
+  pendingAction.value = null
+}
 
 // Use real card list data
 const cards = computed(() => {
@@ -832,57 +914,29 @@ const detailLoading = ref(false)
 const detailError = ref<string | null>(null)
 const cardDetail = ref<CardDetailResponse | null>(null)
 
-// Google Auth Dialog state
-const showGoogleAuthDialog = ref(false)
-const pendingAction = ref<'withdraw' | 'details' | null>(null)
-
-// Google Auth callbacks
-const onGoogleAuthSuccess = async (result: boolean) => {
-  console.log('Google Auth success:', result)
-  showGoogleAuthDialog.value = false
-  
-  if (result && pendingAction.value) {
-    // Execute the pending action after successful verification
-    if (pendingAction.value === 'withdraw') {
-      await executeWithdrawAction()
-    } else if (pendingAction.value === 'details') {
-      await executeDetailsAction()
-    }
-  }
-  
-  // Reset pending action
-  pendingAction.value = null
-}
-
-const onGoogleAuthCancel = () => {
-  console.log('Google Auth cancelled')
-  showGoogleAuthDialog.value = false
-  pendingAction.value = null
-}
-
 // Execute actions after Google Auth verification
-const executeWithdrawAction = async () => {
-  if (!selectedCard.value?.id) return
+const executeWithdrawAction = async (cardDetail: CardDetailResponse) => {
+  console.log('执行提现操作，卡片详情:', cardDetail)
   
   // Navigate to withdraw page with card information
+  // 卡片详情已经在 Pinia store 中缓存，不需要传递验证码
   router.push({
     name: 'WithdrawOrder',
     query: {
-      cardId: selectedCard.value.id,
-      cardNo: selectedCard.value.cardNo,
-      cardCurrency: selectedCard.value.cardCurrency,
-      maxOnDaily: selectedCard.value.maxOnDaily?.toString(),
-      maxOnMonthly: selectedCard.value.maxOnMonthly?.toString(),
-      maxOnPercent: selectedCard.value.maxOnPercent?.toString()
+      cardId: cardDetail.cardId,
+      cardNo: cardDetail.cardNo,
+      cardCurrency: cardDetail.cardCurrency
+      // 不再需要传递 faCode，因为验证已经完成
     }
   })
 }
 
-const executeDetailsAction = async () => {
-  if (!selectedCard.value?.id) return
+const executeDetailsAction = async (cardDetailData: CardDetailResponse) => {
+  console.log('显示卡片详情:', cardDetailData)
   
+  // 直接使用缓存的卡片详情显示详情对话框
   showDetailDialog.value = true
-  await loadCardDetail(selectedCard.value.id)
+  cardDetail.value = cardDetailData
 }
 
 
@@ -1105,26 +1159,42 @@ const handleCardDetailError = (message: string) => {
   })
 }
 
-const loadCardDetail = async (cardId: string) => {
+const loadCardDetail = async (cardId: string, faCode: string = '') => {
   detailLoading.value = true
   detailError.value = null
   cardDetail.value = null
 
   try {
-    const headers = cardStore.getRequestHeaders()
-    const response = await CardAPI.queryCardDetail({ cardId }, headers)
+    // 如果没有验证码，先尝试从缓存获取当前卡片详情
+    if (!faCode) {
+      const cachedDetail = cardStore.getCachedCurrentCardDetail()
+      if (cachedDetail) {
+        console.log('从缓存获取当前卡片详情:', cachedDetail)
+        cardDetail.value = cachedDetail
+        detailLoading.value = false
+        return
+      }
+    }
 
+    // 如果缓存中没有或需要验证码，则调用 API
+    const response = await CardAPI.queryCardDetail({ cardId, faCode })
     if (response.success && response.model) {
       if (!showDetailDialog.value) {
         return
       }
+      
+      // 缓存当前卡片详情
+      cardStore.cacheCurrentCardDetail(response.model)
       cardDetail.value = response.model
     } else {
-      handleCardDetailError(response.msg || 'Failed to load card details')
+      // 抛出错误，让上层处理
+      throw new Error(response.msg || 'Failed to load card details')
     }
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Failed to load card details'
     handleCardDetailError(message)
+    // 重新抛出错误，让上层处理
+    throw error
   } finally {
     detailLoading.value = false
   }
@@ -1155,7 +1225,7 @@ const retryCardDetail = async () => {
     return
   }
 
-  await loadCardDetail(selectedCard.value.id)
+  await loadCardDetail(selectedCard.value.id, '')
 }
 
 watch(showDetailDialog, visible => {
@@ -1170,7 +1240,7 @@ watch(
   () => selectedCard.value?.id,
   newId => {
     if (showDetailDialog.value && newId) {
-      loadCardDetail(newId)
+      loadCardDetail(newId, '')
     }
   }
 )
