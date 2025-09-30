@@ -17,9 +17,9 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[600px]">
         <!-- Left showcase area -->
         <div class="hidden lg:block lg:pr-8 relative h-full">
-          <!-- 服务Logo区域 -->
+          <!-- Service Logo Area -->
           <div class="relative h-full">
-            <!-- 服务Logo -->
+            <!-- Service Logo -->
             <img
               v-for="(service, index) in services" :key="index"
               :src="service.image"
@@ -129,7 +129,7 @@ const authStore = useAuthStore()
 const cardStore = useCardStore()
 const userStore = useUserStore()
 
-// 服务Logo数据 - 根据设计稿重新定位
+// Service Logo Data - Repositioned according to design
 const services = ref([
   {
     name: 'PayPal',

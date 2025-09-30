@@ -35,14 +35,6 @@
             @keyup.enter="handleSubmit"
           />
         </div>
-
-        <!-- 提示信息 -->
-        <div class="text-center">
-          <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-sm">
-            <i class="pi pi-info-circle mr-2"></i>
-            验证码每 30 秒自动更新
-          </div>
-        </div>
       </div>
     </div>
 

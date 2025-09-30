@@ -680,12 +680,12 @@ watch(loading, (newValue, oldValue) => {
 // Watch for address changes to validate in real-time
 // watch([recipientAddress, selectedCrypto], ([newAddress, newCrypto], [oldAddress, oldCrypto]) => {
 //   if (newAddress && newCrypto && newCrypto.network && newCrypto.network.addressRegex) {
-//     // 清除之前的错误
+//     // Clear previous errors
 //     if (errors.value.recipientAddress && errors.value.recipientAddress.includes('Invalid address format')) {
 //       errors.value.recipientAddress = ''
 //     }
     
-//     // 实时验证地址格式
+//     // Real-time address format validation
 //     const addressRegex = new RegExp(newCrypto.network.addressRegex)
 //     const isValid = addressRegex.test(newAddress)
 //     console.log('Real-time address validation:', {

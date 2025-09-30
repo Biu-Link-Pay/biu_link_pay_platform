@@ -6,12 +6,12 @@ import { useErrorHandler } from '@/utils/errorHandler'
 import Button from 'primevue/button'
 import Toast from 'primevue/toast'
 
-// 页面元信息
+// Page metadata
 defineOptions({
   name: 'KycVerification'
 })
 
-// 响应式数据
+// Reactive data
 const authStore = useAuthStore()
 const route = useRoute()
 const router = useRouter()

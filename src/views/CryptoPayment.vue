@@ -758,7 +758,7 @@ const startCountdown = (initialSeconds?: number) => {
 
 // Connect wallet
 const connectWallet = () => {
-  // 使用相同的自动打开支付地址逻辑
+  // Use the same auto-open payment address logic
   autoOpenPaymentAddress()
 }
 

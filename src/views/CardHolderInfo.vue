@@ -824,16 +824,16 @@ const goBack = () => {
   router.back()
 }
 
-// 验证充值金额（失去焦点时）
+// Validate recharge amount (on blur)
 const validateRechargeAmount = () => {
   const amount = parseFloat(form.rechargeAmount)
   
-  // 如果为空或无效数字，不处理
+  // If empty or invalid number, don't process
   if (!form.rechargeAmount || isNaN(amount)) {
     return
   }
   
-  // 如果小于20，重置为20并提示
+  // If less than 20, reset to 20 and show prompt
   if (amount < 20) {
     form.rechargeAmount = '20'
     toast.add({

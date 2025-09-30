@@ -722,6 +722,16 @@
           </div>
         </div>
 
+        <!-- Card Balance Section -->
+        <div class="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl p-4 border border-green-200 dark:border-green-800">
+          <div class="mb-3">
+            <div class="text-xs font-semibold uppercase text-green-600 dark:text-green-400 tracking-wide">Available Balance</div>
+          </div>
+          <div class="text-2xl font-bold text-gray-900 dark:text-white">
+            {{ formatBalance(cardDetail.cardBalance) }} {{ cardDetail.cardCurrency }}
+          </div>
+        </div>
+
         <!-- Card Information Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
@@ -793,7 +803,7 @@
     <GoogleAuthDialog
       ref="googleAuthDialogRef"
       v-model:visible="showGoogleAuthDialog"
-      title="安全验证"
+      title="Security Verification"
       :identifier="pendingAction || 'default'"
       @submit="onGoogleAuthSubmit"
       @cancel="onGoogleAuthCancel"
@@ -837,31 +847,31 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'error',
-      summary: '错误',
-      detail: '请先选择一张卡片',
+      summary: 'Error',
+      detail: 'Please select a card first',
       life: 3000
     })
     return
   }
   
   try {
-    // 首先通过获取卡片详情接口验证验证码
-    console.log('验证验证码，调用获取卡片详情接口...')
+    // Verify code by calling card detail API
+    console.log('Verifying code, calling card detail API...')
     const response = await CardAPI.queryCardDetail({ 
       cardId: selectedCard.value.id, 
       faCode: code 
     })
     
     if (response.success && response.model) {
-      // 验证成功，缓存当前卡片详情
+      // Verification successful, cache current card details
       cardStore.cacheCurrentCardDetail(response.model)
-      console.log('验证码验证成功，当前卡片详情已缓存')
+      console.log('Code verification successful, current card details cached')
       
-      // 关闭验证对话框并重置验证码
+      // Close verification dialog and reset code
       showGoogleAuthDialog.value = false
       googleAuthDialogRef.value?.resetCode()
       
-      // 根据标识符执行后续操作
+      // Execute subsequent operations based on identifier
       if (identifier === 'withdraw') {
         await executeWithdrawAction(response.model)
       } else if (identifier === 'details') {
@@ -871,29 +881,29 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
       // Reset pending action
       pendingAction.value = null
       
-      // 显示成功消息
+      // Show success message
       toast.add({
         severity: 'success',
-        summary: '验证成功',
-        detail: 'Google Auth 验证通过，操作已完成',
+        summary: 'Verification Successful',
+        detail: 'Google Auth verification passed, operation completed',
         life: 3000
       })
       
     } else {
-      // 验证失败
-      throw new Error(response.msg || '验证码错误')
+      // Verification failed
+      throw new Error(response.msg || 'Invalid verification code')
     }
     
   } catch (error) {
-    console.error('验证失败:', error)
+    console.error('Verification failed:', error)
     
-    // 如果验证失败，重置验证码但不关闭对话框，让用户重试
+    // If verification fails, reset code but don't close dialog, let user retry
     googleAuthDialogRef.value?.resetCode()
     
     toast.add({
       severity: 'error',
-      summary: '验证失败',
-      detail: error instanceof Error ? error.message : '验证码错误，请重试',
+      summary: 'Verification Failed',
+      detail: error instanceof Error ? error.message : 'Invalid verification code, please try again',
       life: 3000
     })
   }
@@ -958,25 +968,25 @@ const cardDetail = ref<CardDetailResponse | null>(null)
 
 // Execute actions after Google Auth verification
 const executeWithdrawAction = async (cardDetail: CardDetailResponse) => {
-  console.log('执行提现操作，卡片详情:', cardDetail)
+  console.log('Executing withdraw operation, card details:', cardDetail)
   
   // Navigate to withdraw page with card information
-  // 卡片详情已经在 Pinia store 中缓存，不需要传递验证码
+  // Card details are already cached in Pinia store, no need to pass verification code
   router.push({
     name: 'WithdrawOrder',
     query: {
       cardId: cardDetail.cardId,
       cardNo: cardDetail.cardNo,
       cardCurrency: cardDetail.cardCurrency
-      // 不再需要传递 faCode，因为验证已经完成
+      // No need to pass faCode anymore as verification is completed
     }
   })
 }
 
 const executeDetailsAction = async (cardDetailData: CardDetailResponse) => {
-  console.log('显示卡片详情:', cardDetailData)
+  console.log('Displaying card details:', cardDetailData)
   
-  // 直接使用缓存的卡片详情显示详情对话框
+  // Directly use cached card details to show detail dialog
   showDetailDialog.value = true
   cardDetail.value = cardDetailData
 }
@@ -1141,6 +1151,12 @@ const copyToClipboard = async (text: string) => {
   await copyWithToast(text, toast)
 }
 
+// Balance related functions
+const formatBalance = (balance: number) => {
+  return balance.toFixed(2)
+}
+
+
 // Card navigation
 const previousCard = () => {
   if (currentCardIndex.value > 0) {
@@ -1207,35 +1223,35 @@ const loadCardDetail = async (cardId: string, faCode: string = '') => {
   cardDetail.value = null
 
   try {
-    // 如果没有验证码，先尝试从缓存获取当前卡片详情
+    // If no verification code, try to get current card details from cache first
     if (!faCode) {
       const cachedDetail = cardStore.getCachedCurrentCardDetail()
       if (cachedDetail) {
-        console.log('从缓存获取当前卡片详情:', cachedDetail)
+        console.log('Getting current card details from cache:', cachedDetail)
         cardDetail.value = cachedDetail
         detailLoading.value = false
         return
       }
     }
 
-    // 如果缓存中没有或需要验证码，则调用 API
+    // If not in cache or verification code needed, call API
     const response = await CardAPI.queryCardDetail({ cardId, faCode })
     if (response.success && response.model) {
       if (!showDetailDialog.value) {
         return
       }
       
-      // 缓存当前卡片详情
+      // Cache current card details
       cardStore.cacheCurrentCardDetail(response.model)
       cardDetail.value = response.model
     } else {
-      // 抛出错误，让上层处理
+      // Throw error for upper level handling
       throw new Error(response.msg || 'Failed to load card details')
     }
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Failed to load card details'
     handleCardDetailError(message)
-    // 重新抛出错误，让上层处理
+    // Re-throw error for upper level handling
     throw error
   } finally {
     detailLoading.value = false

@@ -112,6 +112,7 @@ export interface CardDetailResponse {
   cvv: string // CVV
   expirationDate: string // Expiration date
   billingCountry: string // Billing country
+  cardBalance: number // Balance
   billingState: string // Billing state/province
   billingCity: string // Billing city
   billingAddress: string // Billing address

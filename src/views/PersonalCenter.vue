@@ -304,25 +304,25 @@
   <Dialog 
     v-model:visible="showGoogleAuthBindDialog" 
     modal 
-    header="绑定 Google Authenticator"
+    header="Bind Google Authenticator"
     :style="{ width: '500px' }"
     :closable="!bindLoading"
     :close-on-escape="!bindLoading"
   >
     <div class="space-y-6">
-      <!-- 步骤1: 扫描二维码 -->
+      <!-- Step 1: Scan QR Code -->
       <div class="text-center space-y-4">
         <div class="w-20 h-20 mx-auto bg-blue-100 dark:bg-blue-900/20 rounded-lg flex items-center justify-center">
           <i class="pi pi-qrcode text-blue-600 dark:text-blue-400 text-3xl"></i>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">步骤 1: 扫描二维码</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Step 1: Scan QR Code</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            使用 Google Authenticator 应用扫描下方二维码
+            Use Google Authenticator app to scan the QR code below
           </p>
         </div>
         
-        <!-- 二维码显示 -->
+        <!-- QR Code Display -->
         <div v-if="bindQrCode" class="flex justify-center">
           <img 
             :src="`data:image/png;base64,${bindQrCode}`" 
@@ -331,9 +331,9 @@
           />
         </div>
         
-        <!-- 密钥显示 -->
+        <!-- Secret Key Display -->
         <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">或者手动输入密钥：</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Or manually enter the secret key:</p>
           <div class="flex items-center space-x-2">
             <InputText 
               :model-value="bindSecretKey"
@@ -350,19 +350,19 @@
         </div>
       </div>
 
-      <!-- 步骤2: 输入验证码 -->
+      <!-- Step 2: Enter Verification Code -->
       <div class="space-y-4">
         <div class="text-center">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">步骤 2: 输入验证码</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Step 2: Enter Verification Code</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            在 Google Authenticator 中输入 6 位数字验证码
+            Enter the 6-digit verification code from Google Authenticator
           </p>
         </div>
         
         <div class="flex justify-center">
           <InputText
             v-model="bindAuthCode"
-            placeholder="输入 6 位验证码"
+            placeholder="Enter 6-digit code"
             maxlength="6"
             class="w-48 text-center text-lg font-mono tracking-widest"
             :disabled="bindLoading"
@@ -374,13 +374,13 @@
       <!-- 操作按钮 -->
       <div class="flex justify-end space-x-3">
         <Button 
-          label="取消" 
+          label="Cancel" 
           severity="secondary"
           :disabled="bindLoading"
           @click="cancelBind"
         />
         <Button 
-          label="确认绑定" 
+          label="Confirm Binding" 
           icon="pi pi-check"
           :loading="bindLoading"
           :disabled="!bindAuthCode || bindAuthCode.length !== 6"
@@ -394,7 +394,7 @@
   <Dialog 
     v-model:visible="showGoogleAuthUnbindDialog" 
     modal 
-    header="解绑 Google Authenticator"
+    header="Unbind Google Authenticator"
     :style="{ width: '400px' }"
     :closable="!unbindLoading"
     :close-on-escape="!unbindLoading"
@@ -406,26 +406,26 @@
           <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-2xl"></i>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">确认解绑</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Confirm Unbind</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-            解绑后您将无法使用 Google Authenticator 进行二次验证，请确认是否继续？
+            After unbinding, you will not be able to use Google Authenticator for two-factor authentication. Are you sure you want to continue?
           </p>
         </div>
       </div>
 
-      <!-- 输入验证码 -->
+      <!-- Enter Verification Code -->
       <div class="space-y-4">
         <div class="text-center">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">输入验证码</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Enter Verification Code</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            请输入 Google Authenticator 中的 6 位验证码
+            Please enter the 6-digit verification code from Google Authenticator
           </p>
         </div>
         
         <div class="flex justify-center">
           <InputText
             v-model="unbindAuthCode"
-            placeholder="输入 6 位验证码"
+            placeholder="Enter 6-digit code"
             maxlength="6"
             class="w-48 text-center text-lg font-mono tracking-widest"
             :disabled="unbindLoading"
@@ -437,13 +437,13 @@
       <!-- 操作按钮 -->
       <div class="flex justify-end space-x-3">
         <Button 
-          label="取消" 
+          label="Cancel" 
           severity="secondary"
           :disabled="unbindLoading"
           @click="cancelUnbind"
         />
         <Button 
-          label="确认解绑" 
+          label="Confirm Unbind" 
           icon="pi pi-times"
           severity="danger"
           :loading="unbindLoading"
@@ -603,8 +603,8 @@ const navigateToGoogleAuth = async () => {
       } else {
         toast.add({
           severity: 'error',
-          summary: '绑定失败',
-          detail: response.msg || '获取绑定信息失败',
+        summary: 'Binding Failed',
+        detail: response.msg || 'Failed to get binding information',
           life: 3000
         })
       }
@@ -612,8 +612,8 @@ const navigateToGoogleAuth = async () => {
       console.error('Google Auth bind error:', error)
       toast.add({
         severity: 'error',
-        summary: '绑定失败',
-        detail: '网络错误，请稍后重试',
+        summary: 'Binding Failed',
+        detail: 'Network error, please try again later',
         life: 3000
       })
     } finally {
@@ -706,16 +706,16 @@ const copySecretKey = async () => {
     await navigator.clipboard.writeText(bindSecretKey.value)
     toast.add({
       severity: 'success',
-      summary: '复制成功',
-      detail: '密钥已复制到剪贴板',
+      summary: 'Copy Successful',
+      detail: 'Secret key copied to clipboard',
       life: 2000
     })
   } catch (error) {
     console.error('Copy failed:', error)
     toast.add({
       severity: 'error',
-      summary: '复制失败',
-      detail: '请手动复制密钥',
+      summary: 'Copy Failed',
+      detail: 'Please copy the secret key manually',
       life: 3000
     })
   }
@@ -732,8 +732,8 @@ const confirmBind = async () => {
   if (!bindAuthCode.value || bindAuthCode.value.length !== 6) {
     toast.add({
       severity: 'warn',
-      summary: '验证码错误',
-      detail: '请输入 6 位数字验证码',
+      summary: 'Invalid Code',
+      detail: 'Please enter a 6-digit verification code',
       life: 3000
     })
     return
@@ -751,8 +751,8 @@ const confirmBind = async () => {
       
       toast.add({
         severity: 'success',
-        summary: '绑定成功',
-        detail: 'Google Authenticator 绑定成功',
+        summary: 'Binding Successful',
+        detail: 'Google Authenticator bound successfully',
         life: 3000
       })
       
@@ -763,8 +763,8 @@ const confirmBind = async () => {
     } else {
       toast.add({
         severity: 'error',
-        summary: '验证失败',
-        detail: response.msg || '验证码错误，请重试',
+        summary: 'Verification Failed',
+        detail: response.msg || 'Invalid verification code, please try again',
         life: 3000
       })
     }
@@ -786,8 +786,8 @@ const handleUnbindGoogleAuth = async () => {
   if (!unbindAuthCode.value || unbindAuthCode.value.length !== 6) {
     toast.add({
       severity: 'warn',
-      summary: '验证码错误',
-      detail: '请输入 6 位数字验证码',
+      summary: 'Invalid Code',
+      detail: 'Please enter a 6-digit verification code',
       life: 3000
     })
     return
@@ -804,8 +804,8 @@ const handleUnbindGoogleAuth = async () => {
       
       toast.add({
         severity: 'success',
-        summary: '解绑成功',
-        detail: 'Google Authenticator 解绑成功',
+        summary: 'Unbind Successful',
+        detail: 'Google Authenticator unbound successfully',
         life: 3000
       })
       
@@ -814,8 +814,8 @@ const handleUnbindGoogleAuth = async () => {
     } else {
       toast.add({
         severity: 'error',
-        summary: '解绑失败',
-        detail: response.msg || '验证码错误，请重试',
+        summary: 'Unbind Failed',
+        detail: response.msg || 'Invalid verification code, please try again',
         life: 3000
       })
     }
@@ -823,8 +823,8 @@ const handleUnbindGoogleAuth = async () => {
     console.error('Google Auth unbind error:', error)
     toast.add({
       severity: 'error',
-      summary: '解绑失败',
-      detail: '网络错误，请稍后重试',
+        summary: 'Unbind Failed',
+        detail: error instanceof Error ? error.message : 'Network error, please try again later',
       life: 3000
     })
   } finally {

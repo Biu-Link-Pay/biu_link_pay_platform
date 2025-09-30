@@ -283,13 +283,13 @@ const checkKycAndNavigate = async (card: CardConfig) => {
     console.log('KYC status:', kycStatus)
 
     switch (kycStatus) {
-      case 1: // KYC通过
+      case 1: // KYC approved
         console.log('KYC approved, navigating to CardBinSelection')
         navigateToCardBinSelection(card)
         break
         
-      case 0: // 未做KYC
-      case 2: // KYC临时拒绝
+      case 0: // KYC not done
+      case 2: // KYC temporarily rejected
         console.log('KYC not completed or temporarily rejected, opening KYC dialog')
         pendingCard.value = card
         showKycDialog.value = true

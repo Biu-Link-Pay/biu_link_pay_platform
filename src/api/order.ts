@@ -176,6 +176,7 @@ export interface DepositOrderListItem {
   networkFee: number // 网络费
   address: string // 地址
   createTime: string | null // 创建时间
+  status: string // 订单状态
 }
 
 // 分页信息
