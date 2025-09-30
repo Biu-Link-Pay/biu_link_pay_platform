@@ -194,15 +194,15 @@ const showUserMenu = ref(false)
 const isLoggedIn = computed(() => authStore.isLoggedIn)
 const currentUser = computed(() => authStore.currentUser)
 const userName = computed(() => {
-  // 优先使用 userStore 中的 firstName (接口返回的字段)
+  // Prefer firstName from userStore (field returned by API)
   if (userStore.user && userStore.user.firstName) {
     return userStore.user.firstName
   }
-  // 然后使用 authStore 中的 name
+  // Then use name from authStore
   if (currentUser.value?.name) {
     return currentUser.value.name
   }
-  // 最后使用 email 的用户名部分
+  // Finally use the username part of email
   if (userStore.user?.email) {
     return userStore.user?.email.split('@')[0]
   }
@@ -254,7 +254,7 @@ const goToLogin = () => {
 
 // Confirm logout
 const confirmLogout = () => {
-  console.log('显示登出确认对话框')
+  console.log('Showing logout confirmation dialog')
   showUserMenu.value = false
   closeMobileMenu()
   confirm.require({
@@ -264,11 +264,11 @@ const confirmLogout = () => {
     rejectLabel: 'Cancel',
     acceptLabel: 'Confirm',
     accept: () => {
-      console.log('用户确认登出')
+      console.log('User confirmed logout')
       handleLogout()
     },
     reject: () => {
-      console.log('用户取消登出')
+      console.log('User cancelled logout')
     }
   })
 }
@@ -276,9 +276,9 @@ const confirmLogout = () => {
 // Logout handling
 const handleLogout = async () => {
   try {
-    console.log('开始登出流程...')
+    console.log('Starting logout process...')
     await authStore.logout()
-    console.log('登出成功')
+    console.log('Logout successful')
     
     toast.add({
       severity: 'success',
@@ -288,7 +288,7 @@ const handleLogout = async () => {
     })
     router.push('/login')
   } catch (error) {
-    console.error('登出失败:', error)
+    console.error('Logout failed:', error)
     toast.add({
       severity: 'error',
       summary: 'Logout Failed',
@@ -301,7 +301,7 @@ const handleLogout = async () => {
 // Click outside to close menu
 const handleClickOutside = (event: Event) => {
   const target = event.target as HTMLElement
-  // 检查是否点击了用户菜单区域，而不是主题切换按钮
+  // Check if clicked on user menu area, not theme toggle button
   if (!target.closest('.relative') && !target.closest('[data-theme-toggle]')) {
     showUserMenu.value = false
   }

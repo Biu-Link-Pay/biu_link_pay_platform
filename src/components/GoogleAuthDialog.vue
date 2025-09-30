@@ -8,22 +8,22 @@
     :close-on-escape="true"
   >
     <div class="space-y-6">
-      <!-- 验证码输入界面 -->
+      <!-- Verification Code Input Interface -->
       <div class="space-y-4">
         <div class="text-center">
           <div class="w-16 h-16 mx-auto bg-blue-100 dark:bg-blue-900/20 rounded-full flex items-center justify-center">
             <i class="pi pi-shield text-blue-600 dark:text-blue-400 text-2xl"></i>
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mt-3">Google Auth 验证</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mt-3">Google Auth Verification</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            请输入 Google Authenticator 中的 6 位验证码
+            Please enter the 6-digit verification code from Google Authenticator
           </p>
         </div>
 
-        <!-- 验证码输入框 -->
+        <!-- Verification Code Input -->
         <div class="space-y-3">
           <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-            验证码
+            Verification Code
           </label>
           <InputText
             v-model="authCode"
@@ -38,16 +38,16 @@
       </div>
     </div>
 
-    <!-- 底部按钮 -->
+    <!-- Footer Buttons -->
     <template #footer>
       <div class="flex justify-end space-x-3">
         <Button 
-          label="取消" 
+          label="Cancel" 
           severity="secondary"
           @click="handleCancel"
         />
         <Button 
-          label="确定" 
+          label="Confirm" 
           icon="pi pi-check"
           :disabled="!authCode || authCode.length !== 6"
           @click="handleSubmit"
@@ -70,7 +70,7 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  title: 'Google Auth 验证',
+  title: 'Google Auth Verification',
   identifier: 'default'
 })
 
@@ -80,20 +80,20 @@ const emit = defineEmits<{
   'cancel': [identifier: string]
 }>()
 
-// 状态管理
+// State management
 const authCode = ref('')
 
-// 计算属性
+// Computed properties
 const visible = computed({
   get: () => props.visible,
   set: (value) => emit('update:visible', value)
 })
 
-// 方法
+// Methods
 const onCodeInput = (event: Event) => {
   const target = event.target as HTMLInputElement
-  const value = target.value.replace(/\D/g, '') // 只保留数字
-  authCode.value = value.slice(0, 6) // 最多6位
+  const value = target.value.replace(/\D/g, '') // Only keep numbers
+  authCode.value = value.slice(0, 6) // Maximum 6 digits
 }
 
 const handleSubmit = () => {
@@ -108,7 +108,7 @@ const handleCancel = () => {
   emit('cancel', props.identifier)
 }
 
-// 暴露方法供父组件调用
+// Expose methods for parent component to call
 defineExpose({
   resetCode: () => {
     authCode.value = ''

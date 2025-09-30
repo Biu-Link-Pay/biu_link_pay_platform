@@ -52,7 +52,7 @@ const { currentTheme, setTheme, toggleTheme, getThemeIcon, getThemeLabel } = the
 // Click outside to close dropdown menu
 const handleClickOutside = (event: Event) => {
   const target = event.target as HTMLElement
-  // 只处理主题切换下拉菜单的点击外部事件
+  // Only handle click outside events for theme toggle dropdown
   if (!target.closest('[data-theme-toggle]')) {
     showDropdown.value = false
   }
