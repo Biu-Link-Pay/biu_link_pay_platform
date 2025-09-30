@@ -1425,6 +1425,7 @@ const getCardBackgroundImage = (cardScheme: string | null) => {
 // Status color helper
 const getStatusColor = (status: string) => {
   switch (status?.toLowerCase()) {
+    case 'succeed':
     case 'completed':
     case 'success':
       return 'text-green-600 dark:text-green-400'
