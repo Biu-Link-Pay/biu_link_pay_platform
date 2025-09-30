@@ -211,7 +211,7 @@
             <!-- Tabs -->
             <div class="flex flex-wrap gap-2 md:gap-4 border-b border-gray-200 dark:border-gray-700 px-2 md:px-3 lg:px-4">
               <button v-for="tab in tabs" :key="tab.key" @click="handleTabChange(tab.key)"
-                class="flex-1 lg:flex-none px-4 py-3 text-sm md:text-lg lg:text-xl font-semibold transition-colors md:px-6 md:py-4 lg:px-8 lg:py-5 rounded-t-md" :class="activeTab === tab.key
+                class="flex-1 basis-0 px-3 py-2 text-center text-sm md:text-base lg:text-base font-semibold transition-colors md:px-4 md:py-3 lg:px-6 lg:py-3 rounded-t-md" :class="activeTab === tab.key
                   ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
                   : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'">
                 {{ tab.label }}
@@ -219,15 +219,15 @@
             </div>
 
             <!-- Transaction List -->
-            <div class="p-2 md:p-4 lg:p-6 xl:p-8">
+            <div class="p-3 md:p-4 lg:p-5">
               <!-- No Cards State -->
-              <div v-if="cards.length === 0" class="text-center py-12">
+              <div v-if="cards.length === 0" class="text-center py-8">
                 <div
                   class="w-16 h-16 mx-auto mb-4 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
                   <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-2xl"></i>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">No Cards</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-2">No Cards</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
                   <span v-if="activeTab === 'transaction'">Please apply for a virtual card first to view transaction
                     history</span>
                   <span v-else-if="activeTab === 'recharge'">Please apply for a virtual card first to view deposit
@@ -246,38 +246,38 @@
               <!-- Transaction Tab -->
               <div v-else-if="activeTab === 'transaction'" class="space-y-4 lg:space-y-6">
                 <!-- Loading State -->
-                <div v-if="loading.transaction" class="flex justify-center py-8">
+                <div v-if="loading.transaction" class="flex justify-center py-6">
                   <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
                 </div>
 
                 <!-- Desktop: Swipe Pagination -->
-                <div v-else-if="transactions.length > 0 && !isMobile" class="space-y-4 lg:space-y-6">
+                <div v-else-if="transactions.length > 0 && !isMobile" class="space-y-3 lg:space-y-4">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.transaction.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileTransactionPages" :key="pageIndex"
                         class="w-full flex-shrink-0 px-2 lg:px-4">
-                        <div class="space-y-4 lg:space-y-6">
+                        <div class="space-y-3 lg:space-y-4">
                           <div v-for="(transaction, index) in page" :key="index"
-                            class="flex items-center space-x-4 md:space-x-6 p-4 md:p-5 lg:p-7 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                             <div
                               class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
                               <i class="pi pi-minus text-gray-600 dark:text-gray-400 text-base lg:text-lg"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg truncate">
+                              <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base truncate">
                                 {{ transaction.merchantNameLocation || '' }}
                               </div>
-                              <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
+                              <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
                                 {{ transaction.merchantLocation || '' }}
                               </div>
                             </div>
                             <div class="text-right">
-                              <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                              <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
                                 {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency)
                                 }}
                               </div>
-                              <div class="text-sm lg:text-base" :class="getStatusColor(transaction.status)">
+                              <div class="text-xs lg:text-sm" :class="getStatusColor(transaction.status)">
                                 {{ transaction.status }}
                               </div>
                             </div>
@@ -291,46 +291,46 @@
                   <div class="flex items-center justify-between">
                     <button @click="prevDesktopPage('transaction')"
                       :disabled="pagination.transaction.pageIndex === 0 || loading.transaction"
-                      class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <i class="pi pi-chevron-left"></i>
-                      <span>Previous</span>
+                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                      <i class="pi pi-chevron-left text-sm"></i>
+                      <span class="text-sm">Previous</span>
                     </button>
 
-                    <div class="flex items-center space-x-4">
-                      <span class="text-sm text-gray-600 dark:text-gray-400">
+                    <div class="flex items-center space-x-3">
+                      <span class="text-xs text-gray-600 dark:text-gray-400">
                         Page {{ pagination.transaction.pageIndex + 1 }}
                       </span>
-                      <div v-if="loading.transaction" class="flex items-center space-x-2">
-                        <i class="pi pi-spin pi-spinner text-blue-600"></i>
-                        <span class="text-sm text-gray-600 dark:text-gray-400">Loading...</span>
+                      <div v-if="loading.transaction" class="flex items-center space-x-1">
+                        <i class="pi pi-spin pi-spinner text-blue-600 text-xs"></i>
+                        <span class="text-xs text-gray-600 dark:text-gray-400">Loading...</span>
                       </div>
                     </div>
 
                     <button @click="nextDesktopPage('transaction')"
                       :disabled="!pagination.transaction.hasMore || loading.transaction"
-                      class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <span>Next</span>
-                      <i class="pi pi-chevron-right"></i>
+                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                      <span class="text-sm">Next</span>
+                      <i class="pi pi-chevron-right text-sm"></i>
                     </button>
                   </div>
                 </div>
 
                 <!-- Mobile: Swipe Pagination -->
-                <div v-else-if="transactions.length > 0 && isMobile" class="space-y-4 lg:space-y-6">
+                <div v-else-if="transactions.length > 0 && isMobile" class="space-y-3 lg:space-y-4">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.transaction.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileTransactionPages" :key="pageIndex"
                         class="w-full flex-shrink-0 px-2 lg:px-4">
-                        <div class="space-y-3 lg:space-y-4">
+                        <div class="space-y-2 lg:space-y-3">
                           <div v-for="(transaction, index) in page" :key="index"
-                            class="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700">
+                            class="flex items-center space-x-3 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700">
                             <div
-                              class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-600 flex items-center justify-center">
-                              <i class="pi pi-minus text-gray-600 dark:text-gray-400 text-sm"></i>
+                              class="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-600 flex items-center justify-center">
+                              <i class="pi pi-minus text-gray-600 dark:text-gray-400 text-xs"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-sm truncate">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs truncate">
                                 {{ transaction.merchantNameLocation || '' }}
                               </div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">
@@ -338,7 +338,7 @@
                               </div>
                             </div>
                             <div class="text-right">
-                              <div class="font-medium text-gray-900 dark:text-white text-sm">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs">
                                 {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency)
                                 }}
                               </div>
@@ -356,9 +356,9 @@
                   <div class="flex items-center justify-between">
                     <button @click="prevDesktopPage('transaction')"
                       :disabled="pagination.transaction.pageIndex === 0 || loading.transaction"
-                      class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <i class="pi pi-chevron-left text-sm"></i>
-                      <span class="text-sm">Previous</span>
+                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                      <i class="pi pi-chevron-left text-xs"></i>
+                      <span class="text-xs">Previous</span>
                     </button>
 
                     <div class="flex items-center space-x-2">
@@ -372,55 +372,55 @@
 
                     <button @click="nextDesktopPage('transaction')"
                       :disabled="!pagination.transaction.hasMore || loading.transaction"
-                      class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <span class="text-sm">Next</span>
-                      <i class="pi pi-chevron-right text-sm"></i>
+                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                      <span class="text-xs">Next</span>
+                      <i class="pi pi-chevron-right text-xs"></i>
                     </button>
                   </div>
                 </div>
 
                 <!-- Empty State -->
-                <div v-else class="text-center py-8">
-                  <i class="pi pi-list text-gray-400 dark:text-gray-500 text-4xl mb-4"></i>
-                  <p class="text-gray-500 dark:text-gray-400 text-sm lg:text-base">No transaction history</p>
+                <div v-else class="text-center py-6">
+                  <i class="pi pi-list text-gray-400 dark:text-gray-500 text-3xl mb-4"></i>
+                  <p class="text-gray-500 dark:text-gray-400 text-sm">No transaction history</p>
                 </div>
               </div>
 
               <!-- Recharge Tab -->
-              <div v-else-if="activeTab === 'recharge'" class="space-y-4 lg:space-y-6">
+              <div v-else-if="activeTab === 'recharge'" class="space-y-3 lg:space-y-4">
                 <!-- Loading State -->
-                <div v-if="loading.recharge" class="flex justify-center py-8">
+                <div v-if="loading.recharge" class="flex justify-center py-6">
                   <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
                 </div>
 
                 <!-- Desktop: Swipe Pagination -->
-                <div v-else-if="rechargeOrders.length > 0 && !isMobile" class="space-y-2 lg:space-y-5">
+                <div v-else-if="rechargeOrders.length > 0 && !isMobile" class="space-y-2 lg:space-y-3">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.recharge.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div v-for="(order, index) in page" :key="index"
-                          class="flex items-center space-x-4 md:space-x-6 p-4 md:p-6 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors cursor-pointer"
+                          class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors cursor-pointer"
                           @click="goToPaymentResult(order)">
                           <div
                             class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
                             <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-base lg:text-lg"></i>
                           </div>
                           <div class="flex-1 min-w-0">
-                            <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                            <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
                               #{{ order.num }}
                             </div>
-                            <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
+                            <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
                               {{ formatDate(order.createTime || '') }}
                             </div>
                           </div>
-                          <div class="text-right">
-                            <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                            <div class="text-right">
+                            <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
                               {{ formatOrderAmount(order.amount, order.orderCurrency) }}
                             </div>
-                            <div class="text-sm lg:text-base" :class="getStatusColor(order.type)">
-                              {{ order.type === '1' ? 'Card Creation' : 'Recharge' }}
+                            <div class="text-xs lg:text-sm" :class="getStatusColor(order.status)">
+                              {{ order.status }}
                             </div>
                           </div>
                         </div>
@@ -432,47 +432,47 @@
                   <div class="flex items-center justify-between">
                     <button @click="prevDesktopPage('recharge')"
                       :disabled="pagination.recharge.pageNo === 0 || loading.recharge"
-                      class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <i class="pi pi-chevron-left"></i>
-                      <span>Previous</span>
+                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                      <i class="pi pi-chevron-left text-sm"></i>
+                      <span class="text-sm">Previous</span>
                     </button>
 
-                    <div class="flex items-center space-x-4">
-                      <span class="text-sm text-gray-600 dark:text-gray-400">
+                    <div class="flex items-center space-x-3">
+                      <span class="text-xs text-gray-600 dark:text-gray-400">
                         Page {{ pagination.recharge.pageNo + 1 }}
                       </span>
-                      <div v-if="loading.recharge" class="flex items-center space-x-2">
-                        <i class="pi pi-spin pi-spinner text-blue-600"></i>
-                        <span class="text-sm text-gray-600 dark:text-gray-400">Loading...</span>
+                      <div v-if="loading.recharge" class="flex items-center space-x-1">
+                        <i class="pi pi-spin pi-spinner text-blue-600 text-xs"></i>
+                        <span class="text-xs text-gray-600 dark:text-gray-400">Loading...</span>
                       </div>
                     </div>
 
                     <button @click="nextDesktopPage('recharge')"
                       :disabled="!pagination.recharge.hasMore || loading.recharge"
-                      class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <span>Next</span>
-                      <i class="pi pi-chevron-right"></i>
+                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                      <span class="text-sm">Next</span>
+                      <i class="pi pi-chevron-right text-sm"></i>
                     </button>
                   </div>
                 </div>
 
                 <!-- Mobile: Swipe Pagination -->
-                <div v-else-if="rechargeOrders.length > 0 && isMobile" class="space-y-2 lg:space-y-5">
+                <div v-else-if="rechargeOrders.length > 0 && isMobile" class="space-y-2 lg:space-y-3">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.recharge.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
                         class="w-full flex-shrink-0 px-2 lg:px-4">
-                        <div class="space-y-3 lg:space-y-4">
+                        <div class="space-y-2 lg:space-y-3">
                           <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-3 p-4 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                            class="flex items-center space-x-3 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
                             @click="goToPaymentResult(order)">
                             <div
                               class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
                               <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-sm"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-sm">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs">
                                 #{{ order.num }}
                               </div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">
@@ -480,11 +480,11 @@
                               </div>
                             </div>
                             <div class="text-right">
-                              <div class="font-medium text-gray-900 dark:text-white text-sm">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs">
                                 {{ formatOrderAmount(order.amount, order.orderCurrency) }}
                               </div>
-                              <div class="text-xs" :class="getStatusColor(order.type)">
-                                {{ order.type === '1' ? 'Card Creation' : 'Recharge' }}
+                              <div class="text-xs" :class="getStatusColor(order.status)">
+                                {{ order.status }}
                               </div>
                             </div>
                           </div>
@@ -497,9 +497,9 @@
                   <div class="flex items-center justify-between">
                     <button @click="prevDesktopPage('recharge')"
                       :disabled="pagination.recharge.pageNo === 0 || loading.recharge"
-                      class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <i class="pi pi-chevron-left text-sm"></i>
-                      <span class="text-sm">Previous</span>
+                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                      <i class="pi pi-chevron-left text-xs"></i>
+                      <span class="text-xs">Previous</span>
                     </button>
 
                     <div class="flex items-center space-x-2">
@@ -513,54 +513,54 @@
 
                     <button @click="nextDesktopPage('recharge')"
                       :disabled="!pagination.recharge.hasMore || loading.recharge"
-                      class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <span class="text-sm">Next</span>
-                      <i class="pi pi-chevron-right text-sm"></i>
+                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                      <span class="text-xs">Next</span>
+                      <i class="pi pi-chevron-right text-xs"></i>
                     </button>
                   </div>
                 </div>
 
                 <!-- Empty State -->
-                <div v-else class="text-center py-8">
-                  <i class="pi pi-arrow-up text-gray-400 dark:text-gray-500 text-4xl mb-4"></i>
-                  <p class="text-gray-500 dark:text-gray-400 text-sm lg:text-base">No recharge history</p>
+                <div v-else class="text-center py-6">
+                  <i class="pi pi-arrow-up text-gray-400 dark:text-gray-500 text-3xl mb-4"></i>
+                  <p class="text-gray-500 dark:text-gray-400 text-sm">No recharge history</p>
                 </div>
               </div>
 
               <!-- Withdraw Tab -->
-              <div v-else-if="activeTab === 'withdraw'" class="space-y-4 lg:space-y-6">
+              <div v-else-if="activeTab === 'withdraw'" class="space-y-3 lg:space-y-4">
                 <!-- Loading State -->
-                <div v-if="loading.withdraw" class="flex justify-center py-8">
+                <div v-if="loading.withdraw" class="flex justify-center py-6">
                   <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
                 </div>
 
                 <!-- Desktop: Swipe Pagination -->
-                <div v-else-if="withdrawOrders.length > 0 && !isMobile" class="space-y-4 lg:space-y-6">
+                <div v-else-if="withdrawOrders.length > 0 && !isMobile" class="space-y-3 lg:space-y-4">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.withdraw.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileWithdrawPages" :key="pageIndex"
                         class="w-full flex-shrink-0 px-2 lg:px-4">
-                        <div class="space-y-4 lg:space-y-6">
+                        <div class="space-y-3 lg:space-y-4">
                           <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-4 md:space-x-6 p-4 md:p-6 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                             <div
                               class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
                               <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-base lg:text-lg"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                              <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
                                 #{{ order.num || 'N/A' }}
                               </div>
-                              <div class="text-sm lg:text-base text-gray-500 dark:text-gray-400">
+                              <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
                                 {{ formatDate(order.createTime || '') }}
                               </div>
                             </div>
                             <div class="text-right">
-                              <div class="font-medium text-gray-900 dark:text-white text-base lg:text-lg">
+                              <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
                                 {{ formatWithdrawAmount(order.usdAmount, order.token) }}
                               </div>
-                              <div class="text-sm lg:text-base" :class="getStatusColor(order.status)">
+                              <div class="text-xs lg:text-sm" :class="getStatusColor(order.status)">
                                 {{ order.status }}
                               </div>
                             </div>
@@ -574,46 +574,46 @@
                   <div class="flex items-center justify-between">
                     <button @click="prevDesktopPage('withdraw')"
                       :disabled="pagination.withdraw.pageNo === 0 || loading.withdraw"
-                      class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <i class="pi pi-chevron-left"></i>
-                      <span>Previous</span>
+                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                      <i class="pi pi-chevron-left text-sm"></i>
+                      <span class="text-sm">Previous</span>
                     </button>
 
-                    <div class="flex items-center space-x-4">
-                      <span class="text-sm text-gray-600 dark:text-gray-400">
+                    <div class="flex items-center space-x-3">
+                      <span class="text-xs text-gray-600 dark:text-gray-400">
                         Page {{ pagination.withdraw.pageNo + 1 }}
                       </span>
-                      <div v-if="loading.withdraw" class="flex items-center space-x-2">
-                        <i class="pi pi-spin pi-spinner text-blue-600"></i>
-                        <span class="text-sm text-gray-600 dark:text-gray-400">Loading...</span>
+                      <div v-if="loading.withdraw" class="flex items-center space-x-1">
+                        <i class="pi pi-spin pi-spinner text-blue-600 text-xs"></i>
+                        <span class="text-xs text-gray-600 dark:text-gray-400">Loading...</span>
                       </div>
                     </div>
 
                     <button @click="nextDesktopPage('withdraw')"
                       :disabled="!pagination.withdraw.hasMore || loading.withdraw"
-                      class="flex items-center space-x-2 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <span>Next</span>
-                      <i class="pi pi-chevron-right"></i>
+                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                      <span class="text-sm">Next</span>
+                      <i class="pi pi-chevron-right text-sm"></i>
                     </button>
                   </div>
                 </div>
 
                 <!-- Mobile: Swipe Pagination -->
-                <div v-else-if="withdrawOrders.length > 0 && isMobile" class="space-y-4 lg:space-y-6">
+                <div v-else-if="withdrawOrders.length > 0 && isMobile" class="space-y-3 lg:space-y-4">
                   <div class="relative overflow-hidden">
                     <div class="flex transition-transform duration-300"
                       :style="{ transform: `translateX(-${mobilePagination.withdraw.currentPage * 100}%)` }">
                       <div v-for="(page, pageIndex) in mobileWithdrawPages" :key="pageIndex"
                         class="w-full flex-shrink-0 px-2 lg:px-4">
-                        <div class="space-y-3 lg:space-y-4">
+                        <div class="space-y-2 lg:space-y-3">
                           <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-3 p-4 rounded-lg bg-gray-50 dark:bg-gray-700">
+                            class="flex items-center space-x-3 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700">
                             <div
                               class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
                               <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-sm"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-sm">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs">
                                 #{{ order.num || 'N/A' }}
                               </div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">
@@ -621,7 +621,7 @@
                               </div>
                             </div>
                             <div class="text-right">
-                              <div class="font-medium text-gray-900 dark:text-white text-sm">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs">
                                 {{ formatWithdrawAmount(order.usdAmount, order.token) }}
                               </div>
                               <div class="text-xs" :class="getStatusColor(order.status)">
@@ -638,9 +638,9 @@
                   <div class="flex items-center justify-between">
                     <button @click="prevDesktopPage('withdraw')"
                       :disabled="pagination.withdraw.pageNo === 0 || loading.withdraw"
-                      class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <i class="pi pi-chevron-left text-sm"></i>
-                      <span class="text-sm">Previous</span>
+                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                      <i class="pi pi-chevron-left text-xs"></i>
+                      <span class="text-xs">Previous</span>
                     </button>
 
                     <div class="flex items-center space-x-2">
@@ -654,17 +654,17 @@
 
                     <button @click="nextDesktopPage('withdraw')"
                       :disabled="!pagination.withdraw.hasMore || loading.withdraw"
-                      class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <span class="text-sm">Next</span>
-                      <i class="pi pi-chevron-right text-sm"></i>
+                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                      <span class="text-xs">Next</span>
+                      <i class="pi pi-chevron-right text-xs"></i>
                     </button>
                   </div>
                 </div>
 
                 <!-- Empty State -->
-                <div v-else class="text-center py-8">
-                  <i class="pi pi-arrow-down text-gray-400 dark:text-gray-500 text-4xl mb-4"></i>
-                  <p class="text-gray-500 dark:text-gray-400 text-sm lg:text-base">No withdraw history</p>
+                <div v-else class="text-center py-6">
+                  <i class="pi pi-arrow-down text-gray-400 dark:text-gray-500 text-3xl mb-4"></i>
+                  <p class="text-gray-500 dark:text-gray-400 text-sm">No withdraw history</p>
                 </div>
               </div>
             </div>

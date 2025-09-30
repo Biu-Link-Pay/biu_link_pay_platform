@@ -152,7 +152,6 @@ const showKycDialog = ref(false)
 const kycAccessToken = ref('')
 const showKycSDK = ref(false)
 const isKycPolling = ref(false)
-const kycPollingInterval = ref<NodeJS.Timeout | null>(null)
 const pendingCard = ref<CardConfig | null>(null)
 
 // Computed properties
@@ -432,7 +431,9 @@ const startKycPolling = () => {
   isKycPolling.value = true
   console.log('Starting KYC status polling')
   
-  kycPollingInterval.value = setInterval(async () => {
+  const pollKycStatus = async () => {
+    if (!isKycPolling.value) return
+    
     try {
       const result = await authStore.checkKycStatus()
       console.log('KYC polling result:', result)
@@ -453,20 +454,23 @@ const startKycPolling = () => {
           fallbackMessage: 'KYC验证被拒绝，请联系客服获取更多信息'
         })
         pendingCard.value = null
+      } else {
+        // Status 0 and 2 continue polling after a delay
+        setTimeout(pollKycStatus, 1000) // Wait 5 seconds before next poll
       }
-      // Status 0 and 2 continue polling
     } catch (error) {
       console.error('KYC polling error:', error)
+      // On error, wait before retrying
+      setTimeout(pollKycStatus, 1000) // Wait 5 seconds before retry
     }
-  }, 1000) // Poll every 5 seconds
+  }
+  
+  // Start the first poll immediately
+  pollKycStatus()
 }
 
 // Stop KYC polling
 const stopKycPolling = () => {
-  if (kycPollingInterval.value) {
-    clearInterval(kycPollingInterval.value)
-    kycPollingInterval.value = null
-  }
   isKycPolling.value = false
   console.log('KYC polling stopped')
 }

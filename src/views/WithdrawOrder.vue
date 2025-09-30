@@ -268,26 +268,6 @@
                   Address must match {{ selectedCrypto.network.fullName || selectedCrypto.network.name }} format
                 </small>
               </div>
-
-              <!-- Network Selection -->
-              <div>
-                <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">Network</label>
-                <div class="flex items-center space-x-3">
-                  <div class="flex-1">
-                    <InputText
-                      v-model="selectedNetwork"
-                      readonly
-                      class="w-full"
-                    />
-                  </div>
-                  <Button
-                    icon="pi pi-chevron-down"
-                    size="small"
-                    severity="secondary"
-                    @click="showNetworkSelector = true"
-                  />
-                </div>
-              </div>
             </div>
           </div>
 
@@ -549,26 +529,6 @@
           <small v-else-if="selectedCrypto && selectedCrypto.network && selectedCrypto.network.addressRegex" class="text-gray-500 text-xs mt-1 block">
             Address must match {{ selectedCrypto.network.fullName || selectedCrypto.network.name }} format
           </small>
-        </div>
-
-        <!-- Network Selection -->
-        <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
-          <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">Network</label>
-          <div class="flex items-center space-x-2">
-            <div class="flex-1">
-              <InputText
-                v-model="selectedNetwork"
-                readonly
-                class="w-full"
-              />
-            </div>
-            <Button
-              icon="pi pi-chevron-down"
-              size="small"
-              severity="secondary"
-              @click="showNetworkSelector = true"
-            />
-          </div>
         </div>
 
         <!-- Action Buttons -->
