@@ -28,10 +28,6 @@
                 </div>
               </div>
               <div>
-                <!-- <div class="text-sm text-gray-600 dark:text-gray-400">Balance</div>
-                <div class="text-lg font-semibold text-gray-900 dark:text-white">
-                  {{ currentCurrencySymbol }}{{ cardBalance.toFixed(2) }}
-                </div> -->
               </div>
             </div>
             <div class="text-right">
@@ -63,7 +59,7 @@
             <!-- Address Content -->
             <div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-5 space-y-4">
               <!-- Country and Postal Code Row -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
                 <div class="space-y-1">
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-globe text-sm text-blue-600 dark:text-blue-400"></i>
@@ -81,7 +77,7 @@
               </div>
 
               <!-- State and City Row -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
                 <div class="space-y-1">
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-building text-sm text-blue-600 dark:text-blue-400"></i>
@@ -188,7 +184,7 @@
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Recharge amount</label>
             <div class="flex items-center gap-2">
               <InputText v-model="form.rechargeAmount" type="text" placeholder="20" class="w-32"
-                :class="{ 'p-invalid': errors.rechargeAmount }" />
+                :class="{ 'p-invalid': errors.rechargeAmount }" @blur="validateRechargeAmount" />
               <span class="text-gray-600 dark:text-gray-400">{{ cardStore.selectedCardBin?.cardCurrency }}</span>
             </div>
             <small v-if="errors.rechargeAmount" class="text-red-500 text-xs mt-1">{{ errors.rechargeAmount }}</small>
@@ -828,6 +824,26 @@ const goBack = () => {
   router.back()
 }
 
+// 验证充值金额（失去焦点时）
+const validateRechargeAmount = () => {
+  const amount = parseFloat(form.rechargeAmount)
+  
+  // 如果为空或无效数字，不处理
+  if (!form.rechargeAmount || isNaN(amount)) {
+    return
+  }
+  
+  // 如果小于20，重置为20并提示
+  if (amount < 20) {
+    form.rechargeAmount = '20'
+    toast.add({
+      severity: 'info',
+      summary: 'Amount Adjusted',
+      detail: 'Minimum recharge amount is 20',
+      life: 2000
+    })
+  }
+}
 
 // Load card information for recharge
 const loadCardInfo = async () => {

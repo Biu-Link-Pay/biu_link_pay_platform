@@ -203,12 +203,12 @@ const userName = computed(() => {
     return currentUser.value.name
   }
   // 最后使用 email 的用户名部分
-  if (currentUser.value?.email) {
-    return currentUser.value.email.split('@')[0]
+  if (userStore.user?.email) {
+    return userStore.user?.email.split('@')[0]
   }
   return 'User'
 })
-const userEmail = computed(() => currentUser.value?.email || '')
+const userEmail = computed(() => userStore.user?.email || '')
 const userAvatar = computed(() => currentUser.value?.avatar)
 
 const showMobileMenu = ref(false)

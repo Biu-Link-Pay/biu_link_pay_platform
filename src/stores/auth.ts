@@ -96,11 +96,11 @@ export const useAuthStore = defineStore('auth', () => {
         localStorage.setItem('refreshToken', response.model.refreshToken)
 
         // Set user info
-        user.value = {
-          email: params.email,
-          id: params.email // Use email as ID
-        }
-        localStorage.setItem('user', JSON.stringify(user.value))
+        // user.value = {
+        //   email: params.email,
+        //   id: params.email // Use email as ID
+        // }
+        // localStorage.setItem('user', JSON.stringify(user.value))
 
         return { success: true, message: 'Login successful' }
       } else {

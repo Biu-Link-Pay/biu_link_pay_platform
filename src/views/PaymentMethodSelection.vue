@@ -434,7 +434,7 @@ const queryRate = async () => {
     rateLoading.value = true
     const response = await OrderAPI.getRate({
       cryptoUnit: selectedCrypto.value.crypto.name,
-      network: selectedCrypto.value.network.sortName,
+      network: selectedCrypto.value.network.name,
       number: payAmount.value.toString(),
       saleDirection: 'BUY', // Deposit direction
       exchange: selectedPayType.value.name.toUpperCase() === 'BINANCEPAY' ? 'BINANCE' : 'WALLET',
@@ -635,10 +635,6 @@ const handleContinue = async () => {
       detail: 'Creating deposit order...',
       life: 3000
     })
-    const payTypeDic = {
-      'BINANCE': '1',
-      'WALLET': '2'
-    }
     // Determine if it's card application or recharge operation
     const isRecharge = route.query.action === 'recharge'
     const orderType = isRecharge ? '2' : '1' // 1: Card Application 2: Recharge
@@ -648,7 +644,7 @@ const handleContinue = async () => {
       cardPattern: cardStore.selectedCardConfig?.cardPattern.toString() || '1', // 1: Virtual Card 2: Physical Card
       type: orderType, // 1: Card Application 2: Recharge
       cardBin: cardStore.selectedCardBin?.cardBin || '', // Get card bin from Pinia store
-      payType: payTypeDic[selectedPayType.value.name as keyof typeof payTypeDic], // Payment method
+      payType: selectedPayType.value.name, // Payment method
       amount: payAmount.value, // Order amount
       orderCurrency: cardStore.selectedCardBin?.cardCurrency || 'USD', // Order currency
       userCardId: isRecharge ? (cardStore.selectedCardBin?.cardId || '') : (route.query.userCardId as string || ''), // User cardId, when type is 1, cardBin is required, when type is 2, userCardId is required

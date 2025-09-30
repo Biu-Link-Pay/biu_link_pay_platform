@@ -61,7 +61,7 @@
         <!-- Card BIN Selection -->
         <div v-else-if="cardBins.length > 0" class="space-y-4">
           <!-- Mobile: Card Carousel -->
-          <div class="md:hidden">
+          <div class="md:hidden pt-16">
             <div class="relative">
               <div class="overflow-hidden" 
                 @touchstart="handleTouchStart"
@@ -170,7 +170,7 @@
           </div>
 
           <!-- Desktop: Card Switcher Layout -->
-          <div class="hidden md:block">
+          <div class="hidden md:block pt-16">
             <div class="w-full">
               <!-- Card Selection Header -->
               <div class="flex items-center justify-between mb-8">

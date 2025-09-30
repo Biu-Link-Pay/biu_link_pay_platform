@@ -3,12 +3,12 @@
     <!-- Logo -->
     <div class="absolute left-4 top-4 lg:left-8 lg:top-8 z-10 flex items-center gap-2">
       <img
-        src="https://static.biulinkpay.online/logo/biu_big_white.png"
+        src="https://static.biulinkpay.online/logo/biu_blue.png"
         alt="BiulinkPay"
         class="w-10 lg:w-12"
         loading="eager"
       />
-      <span class="text-white text-xl lg:text-2xl font-bold" style="font-family: Alimama ShuHeiTi, Alimama ShuHeiTi;">
+      <span class="text-[#007cc3] text-xl lg:text-2xl font-bold" style="font-family: Alimama ShuHeiTi, Alimama ShuHeiTi;">
         BiulinkPay
       </span>
     </div>
