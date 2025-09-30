@@ -136,6 +136,28 @@
               </div>
             </div>
           </div>
+
+          <!-- Exchange Rate Info (Desktop) -->
+          <div v-if="selectedCrypto && actualCryptoAmount" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg p-4">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center space-x-2">
+                <span class="text-gray-700 dark:text-gray-300">You will receive</span>
+                <span class="font-bold text-gray-900 dark:text-white">{{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}</span>
+                <span class="text-gray-700 dark:text-gray-300">from</span>
+                <span class="font-bold text-gray-900 dark:text-white">{{ formatCurrency(payAmount) }}</span>
+              </div>
+              <div v-if="countdown > 0" class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
+                <i class="pi pi-clock"></i>
+                <span>{{ countdown }}s</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-gray-700 dark:text-gray-300">Network fee</span>
+              <span class="text-gray-700 dark:text-gray-300">
+                {{ rateResult?.cryptoDetail?.cryptoFee || '0' }} {{ selectedCrypto.crypto.name }}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -300,6 +322,31 @@
             </div>
           </div> -->
 
+          <!-- Exchange Rate Info (Mobile) -->
+          <div v-if="selectedCrypto && actualCryptoAmount" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg p-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-1">
+                <span class="text-xs text-gray-600 dark:text-gray-400">You will receive</span>
+                <div class="flex">
+                  <span class="text-xs font-bold text-gray-900 dark:text-white">{{ actualCryptoAmount }}</span>
+                  <span class="text-xs font-bold text-gray-900 dark:text-white">{{ selectedCrypto.crypto.name }}</span>
+                </div>
+                <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(payAmount) }}</span>
+              </div>
+              <div v-if="countdown > 0" class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
+                <i class="pi pi-clock"></i>
+                <span>{{ countdown }}s</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between text-xs mt-2">
+              <span class="text-gray-600 dark:text-gray-400">Network fee</span>
+              <span class="text-gray-600 dark:text-gray-400">
+                {{ rateResult?.cryptoDetail?.cryptoFee || '0' }} {{ selectedCrypto.crypto.name }}
+              </span>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -443,7 +490,7 @@ const queryRate = async () => {
 
     if (response.success && response.model) {
       rateResult.value = response.model
-      actualCryptoAmount.value = response.model.cryptoDetail.totalAmountCrypto
+      actualCryptoAmount.value = response.model.cryptoDetail?.totalAmountCrypto || ''
     } else {
       toast.add({
         severity: 'error',
