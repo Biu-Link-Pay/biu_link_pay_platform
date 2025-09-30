@@ -815,7 +815,6 @@ import GoogleAuthDialog from '@/components/GoogleAuthDialog.vue'
 import { CardAPI, type CardDetailResponse } from '@/api/card'
 import { OrderAPI, type TransactionListItem, type DepositOrderListItem, type WithdrawOrderListItem, type WithdrawOrderPageResponse } from '@/api/order'
 import { copyWithToast } from '@/utils'
-import { useGoogleAuth } from '@/composables/useGoogleAuth'
 
 const router = useRouter()
 const route = useRoute()
