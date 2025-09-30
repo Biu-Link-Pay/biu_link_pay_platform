@@ -140,22 +140,65 @@
           <!-- Card Limits Panel -->
           <div v-if="selectedCard"
             class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Transaction Limits</h3>
-            <div class="space-y-4 lg:space-y-6">
-              <div class="flex items-center justify-between">
-                <span class="text-sm text-gray-600 dark:text-gray-400">Daily Limit</span>
-                <span class="text-lg font-semibold text-gray-900 dark:text-white">${{ selectedCard.maxOnDaily
-                  }}</span>
+            <div class="flex items-center space-x-3 mb-6">
+              <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
+                <i class="pi pi-shield text-blue-600 dark:text-blue-400 text-lg"></i>
               </div>
-              <div class="flex items-center justify-between">
-                <span class="text-sm text-gray-600 dark:text-gray-400">Monthly Limit</span>
-                <span class="text-lg font-semibold text-gray-900 dark:text-white">${{ selectedCard.maxOnMonthly
-                  }}</span>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Transaction Limits</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Your card spending limits</p>
               </div>
-              <div class="flex items-center justify-between">
-                <span class="text-sm text-gray-600 dark:text-gray-400">Single Transaction Limit</span>
-                <span class="text-lg font-semibold text-gray-900 dark:text-white">${{ selectedCard.maxOnPercent
-                  }}</span>
+            </div>
+            <div class="space-y-4">
+              <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center">
+                      <i class="pi pi-calendar text-green-600 dark:text-green-400 text-sm"></i>
+                    </div>
+                    <div>
+                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">Daily Limit</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">Maximum per day</div>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-lg font-bold text-gray-900 dark:text-white">${{ selectedCard.maxOnDaily }}</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
+                      <i class="pi pi-calendar-plus text-blue-600 dark:text-blue-400 text-sm"></i>
+                    </div>
+                    <div>
+                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">Monthly Limit</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">Maximum per month</div>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-lg font-bold text-gray-900 dark:text-white">${{ selectedCard.maxOnMonthly }}</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center">
+                      <i class="pi pi-credit-card text-orange-600 dark:text-orange-400 text-sm"></i>
+                    </div>
+                    <div>
+                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">Single Transaction</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">Maximum per transaction</div>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-lg font-bold text-gray-900 dark:text-white">${{ selectedCard.maxOnPercent }}</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
