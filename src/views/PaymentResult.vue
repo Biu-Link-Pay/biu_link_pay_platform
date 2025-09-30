@@ -94,7 +94,14 @@
               <div
                 class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
                 <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
-                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber }}</span>
+                <div class="flex items-center space-x-2">
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber }}</span>
+                  <button @click="copyToClipboard(orderNumber)"
+                    class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
+                    title="Copy order number">
+                    <i class="pi pi-copy text-gray-500 text-xs"></i>
+                  </button>
+                </div>
               </div>
               <div
                 class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
@@ -201,11 +208,11 @@
 
               <!-- SUCCESS Actions -->
               <template v-if="orderStatus === 'SUCCESS'">
-                <button @click="viewOrder"
+                <!-- <button @click="viewOrder"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                   <i class="pi pi-eye"></i>
                   <span>View Order</span>
-                </button>
+                </button> -->
                 <button @click="goHome"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-credit-card"></i>
@@ -266,6 +273,7 @@ import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI } from '@/api/order'
+import { copyWithToast } from '@/utils'
 
 const router = useRouter()
 const route = useRoute()
@@ -287,6 +295,11 @@ const progressStep = ref(0)
 // Polling for PENDING status
 let pollingInterval: NodeJS.Timeout | null = null
 const isMounted = ref(false)
+
+// Copy to clipboard function
+const copyToClipboard = async (text: string) => {
+  await copyWithToast(text, toast)
+}
 
 
 const statusIconClass = computed(() => {

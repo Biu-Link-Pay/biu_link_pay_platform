@@ -229,27 +229,23 @@
               </div>
 
               <!-- Exchange Rate Info -->
-              <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-4">
+              <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4">
                 <div class="flex items-center justify-between mb-3">
-                  <span class="text-sm font-medium text-blue-800 dark:text-blue-200">Exchange Summary</span>
-                  <div class="flex items-center space-x-1 text-xs text-blue-600 dark:text-blue-400">
+                  <div class="flex items-center space-x-2">
+                    <span class="text-sm text-gray-600 dark:text-gray-400">You will receive</span>
+                    <span class="text-base font-bold text-gray-900 dark:text-white">{{ receiveAmount }}</span>
+                    <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
+                    <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
+                    <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount) }}</span>
+                  </div>
+                  <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                     <i class="pi pi-clock"></i>
-                    <span>Rate expires in 15s</span>
+                    <span>15s</span>
                   </div>
                 </div>
-                <div class="space-y-2">
-                  <div class="flex items-center justify-between text-sm">
-                    <span class="text-blue-700 dark:text-blue-300">You will receive</span>
-                    <span class="font-semibold text-blue-900 dark:text-blue-100">{{ receiveAmount }} {{ selectedToken }}</span>
-                  </div>
-                  <div class="flex items-center justify-between text-sm">
-                    <span class="text-blue-700 dark:text-blue-300">From</span>
-                    <span class="font-semibold text-blue-900 dark:text-blue-100">{{ formatCurrency(withdrawAmount) }}</span>
-                  </div>
-                  <div class="flex items-center justify-between text-sm">
-                    <span class="text-blue-700 dark:text-blue-300">Network fee</span>
-                    <span class="font-semibold text-blue-900 dark:text-blue-100">{{ networkFee }} {{ selectedToken }}</span>
-                  </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 dark:text-gray-300">Network fee</span>
+                  <span class="text-gray-700 dark:text-gray-300">{{ networkFee }} {{ selectedToken }}</span>
                 </div>
               </div>
 
@@ -512,20 +508,26 @@
           </div>
         </div>
 
-        <!-- Exchange Rate Info -->
-        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-xs text-gray-600 dark:text-gray-400">
-              You will receive <span class="font-semibold">{{ receiveAmount }} {{ selectedToken }}</span> from <span class="font-semibold">{{ formatCurrency(withdrawAmount) }}</span>
-            </span>
+        <!-- Exchange Rate Info (Mobile) -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-1">
+              <span class="text-xs text-gray-600 dark:text-gray-400">You will receive</span>
+              <div class="flex">
+                <span class="text-xs font-bold text-gray-900 dark:text-white">{{ receiveAmount }}</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
+              </div>
+              <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
+              <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount) }}</span>
+            </div>
             <div class="flex items-center space-x-1 text-xs text-gray-500">
               <i class="pi pi-clock"></i>
               <span>15s</span>
             </div>
           </div>
-          <div class="flex items-center justify-between text-xs">
+          <div class="flex items-center justify-between text-xs mt-2">
             <span class="text-gray-600 dark:text-gray-400">Network fee</span>
-            <span class="font-medium text-gray-900 dark:text-white">{{ networkFee }} {{ selectedToken }}</span>
+            <span class="text-gray-600 dark:text-gray-400">{{ networkFee }} {{ selectedToken }}</span>
           </div>
         </div>
 
@@ -648,7 +650,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, onMounted } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
@@ -689,6 +691,14 @@ const networkFee = ref(12)
 const exchangeRate = ref<any>(null)
 const rateLoading = ref(false)
 const rateError = ref('')
+
+// Rate polling state (align with deposit page)
+const ratePollingInterval = ref<NodeJS.Timeout | null>(null)
+const isRatePolling = ref(false)
+
+// Countdown state
+const countdown = ref(0)
+const countdownInterval = ref<NodeJS.Timeout | null>(null)
 
 // Two-level selection for payment methods (matching PaymentMethodSelection.vue structure)
 const selectedPayType = ref<any>(null)
@@ -816,6 +826,14 @@ const selectPayType = (payType: any) => {
   }
   
   showTokenSelector.value = false
+
+  // restart polling when pay type changes
+  if (selectedCrypto.value) {
+    stopRatePolling()
+    startRatePolling()
+  } else {
+    stopRatePolling()
+  }
 }
 
 // Select crypto currency (matching PaymentMethodSelection.vue)
@@ -826,7 +844,8 @@ const selectCrypto = (crypto: any) => {
   showNetworkSelector.value = false
   
   // 选择加密货币后，获取汇率
-  fetchExchangeRate()
+  stopRatePolling()
+  startRatePolling()
 }
 
 // Legacy functions for backward compatibility
@@ -1167,7 +1186,9 @@ watch(withdrawAmount, (newAmount, oldAmount) => {
       newAmount,
       selectedCrypto: selectedCrypto.value.crypto.name
     })
-    fetchExchangeRate()
+    // restart polling to refresh immediately
+    stopRatePolling()
+    startRatePolling()
   }
 })
 
@@ -1223,6 +1244,49 @@ const fetchExchangeRate = async () => {
   } finally {
     rateLoading.value = false
   }
+}
+
+// Start countdown timer
+const startCountdown = () => {
+  countdown.value = 15
+  if (countdownInterval.value) {
+    clearInterval(countdownInterval.value)
+  }
+  countdownInterval.value = setInterval(() => {
+    countdown.value--
+    if (countdown.value <= 0) {
+      clearInterval(countdownInterval.value!)
+      countdownInterval.value = null
+    }
+  }, 1000)
+}
+
+// Start rate polling every 15s
+const startRatePolling = () => {
+  if (isRatePolling.value) return
+  if (!selectedCrypto.value) return
+  isRatePolling.value = true
+  // initial fetch
+  fetchExchangeRate()
+  startCountdown()
+  ratePollingInterval.value = setInterval(() => {
+    fetchExchangeRate()
+    startCountdown()
+  }, 15000)
+}
+
+// Stop rate polling
+const stopRatePolling = () => {
+  if (ratePollingInterval.value) {
+    clearInterval(ratePollingInterval.value)
+    ratePollingInterval.value = null
+  }
+  isRatePolling.value = false
+  if (countdownInterval.value) {
+    clearInterval(countdownInterval.value)
+    countdownInterval.value = null
+  }
+  countdown.value = 0
 }
 
 // Update receive amount based on exchange rate
@@ -1344,10 +1408,19 @@ onMounted(async () => {
   if (isValid) {
     console.log('Card validation passed, fetching payment methods...')
     await fetchPaymentMethods()
+    // start polling if crypto already selected after loading methods
+    if (selectedCrypto.value) {
+      startRatePolling()
+    }
   } else {
     console.log('Card validation failed, skipping payment methods fetch')
     // 确保loading状态被正确重置
     loading.value = false
   }
+})
+
+// Clean up
+onUnmounted(() => {
+  stopRatePolling()
 })
 </script>

@@ -1,19 +1,13 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Unified Header -->
-    <AppHeader title="Personal Center" :show-title="false" />
+    <AppHeader title="Personal Center" :show-title="true" />
 
     <!-- Main Content -->
     <div class="w-full max-w-2xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
       <!-- Desktop Layout -->
       <div class="hidden md:block">
         <div class="max-w-4xl mx-auto">
-          <!-- Page Title -->
-          <div class="mb-8">
-            <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Personal Center</h1>
-            <p class="text-gray-600 dark:text-gray-400 mt-2">Manage your account settings and preferences</p>
-          </div>
-
           <!-- User Information Card -->
           <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
             <div class="flex items-center space-x-6">
@@ -71,7 +65,7 @@
             </div>
 
             <!-- Language -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
+            <!-- <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
                  @click="navigateToLanguage">
               <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
@@ -88,7 +82,7 @@
                   <i class="pi pi-chevron-right text-gray-400"></i>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <!-- Terms of Service -->
             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
@@ -142,7 +136,7 @@
             </div>
 
             <!-- Referral Code -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
+            <!-- <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
                  @click="navigateToReferral">
               <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
@@ -156,7 +150,7 @@
                 </div>
                 <i class="pi pi-chevron-right text-gray-400"></i>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <!-- Log Out Button -->
@@ -228,7 +222,7 @@
           </div>
 
           <!-- Language -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
+          <!-- <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
                @click="navigateToLanguage">
             <div class="flex items-center space-x-3">
               <div class="w-10 h-10 bg-green-100 dark:bg-green-900/20 rounded-lg flex items-center justify-center">
@@ -240,7 +234,7 @@
               <span class="text-sm text-gray-600 dark:text-gray-400">EN-US</span>
               <i class="pi pi-chevron-right text-gray-400"></i>
             </div>
-          </div>
+          </div> -->
 
           <!-- Terms of Service -->
           <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
@@ -279,7 +273,7 @@
           </div>
 
           <!-- Referral Code -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
+          <!-- <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
                @click="navigateToReferral">
             <div class="flex items-center space-x-3">
               <div class="w-10 h-10 bg-pink-100 dark:bg-pink-900/20 rounded-lg flex items-center justify-center">
@@ -288,7 +282,7 @@
               <span class="font-medium text-gray-900 dark:text-white">Referral code</span>
             </div>
             <i class="pi pi-chevron-right text-gray-400"></i>
-          </div>
+          </div> -->
 
           <!-- Log Out -->
           <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
