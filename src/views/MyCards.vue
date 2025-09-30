@@ -99,41 +99,50 @@
           </div>
 
           <!-- Action Buttons Row -->
-          <div class="flex justify-center mt-6 space-x-6 md:space-x-8">
+          <div class="flex justify-center mt-6 space-x-4 md:space-x-6">
             <!-- Recharge Button -->
             <div class="flex flex-col items-center">
               <button @click="goToRecharge"
-                class="w-14 h-14 md:w-16 md:h-16 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
-                <i class="pi pi-arrow-down text-gray-600 dark:text-gray-400 text-lg md:text-xl"></i>
+                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
+                <i class="pi pi-arrow-down text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
               </button>
-              <span class="text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">Recharge</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">Recharge</span>
             </div>
 
             <!-- Withdraw Button -->
             <div class="flex flex-col items-center">
               <button @click="goToWithdraw"
-                class="w-14 h-14 md:w-16 md:h-16 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
-                <i class="pi pi-arrow-up text-gray-600 dark:text-gray-400 text-lg md:text-xl"></i>
+                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
+                <i class="pi pi-arrow-up text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
               </button>
-              <span class="text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">Withdraw</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">Withdraw</span>
             </div>
 
             <!-- Details Button -->
             <div class="flex flex-col items-center">
               <button @click="goToDetails"
-                class="w-14 h-14 md:w-16 md:h-16 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
-                <i class="pi pi-calendar text-gray-600 dark:text-gray-400 text-lg md:text-xl"></i>
+                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
+                <i class="pi pi-calendar text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
               </button>
-              <span class="text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">Details</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">Details</span>
+            </div>
+
+            <!-- Delete Card Button -->
+            <div class="flex flex-col items-center">
+              <button @click="goToDeleteCard"
+                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-red-50 dark:hover:bg-red-900/20 hover:border-red-200 dark:hover:border-red-800 transition-colors flex items-center justify-center mb-2">
+                <i class="pi pi-trash text-red-600 dark:text-red-400 text-base md:text-lg"></i>
+              </button>
+              <span class="text-xs text-red-600 dark:text-red-400 font-medium">Delete</span>
             </div>
 
             <!-- Add Card Button -->
             <div class="flex flex-col items-center">
               <button @click="goToApplyCard"
-                class="w-14 h-14 md:w-16 md:h-16 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
-                <i class="pi pi-plus text-gray-600 dark:text-gray-400 text-lg md:text-xl"></i>
+                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
+                <i class="pi pi-plus text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
               </button>
-              <span class="text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">Add Card</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">Add Card</span>
             </div>
           </div>
 
@@ -669,7 +678,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -836,7 +844,7 @@ const currentCardIndex = ref(0)
 
 // Google Auth Dialog state
 const showGoogleAuthDialog = ref(false)
-const pendingAction = ref<'withdraw' | 'details' | null>(null)
+const pendingAction = ref<'withdraw' | 'details' | 'delete' | null>(null)
 const googleAuthDialogRef = ref()
 
 
@@ -876,6 +884,8 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
         await executeWithdrawAction(response.model)
       } else if (identifier === 'details') {
         await executeDetailsAction(response.model)
+      } else if (identifier === 'delete') {
+        await executeDeleteAction(response.model)
       }
       
       // Reset pending action
@@ -989,6 +999,22 @@ const executeDetailsAction = async (cardDetailData: CardDetailResponse) => {
   // Directly use cached card details to show detail dialog
   showDetailDialog.value = true
   cardDetail.value = cardDetailData
+}
+
+const executeDeleteAction = async (cardDetail: CardDetailResponse) => {
+  console.log('Executing delete operation, card details:', cardDetail)
+  
+  // Navigate to delete card page with card information
+  // Card details are already cached in Pinia store, no need to pass verification code
+  router.push({
+    name: 'DeleteCard',
+    query: {
+      cardId: cardDetail.cardId,
+      cardNo: cardDetail.cardNo,
+      cardCurrency: cardDetail.cardCurrency
+      // No need to pass faCode anymore as verification is completed
+    }
+  })
 }
 
 
@@ -1274,6 +1300,26 @@ const goToDetails = async () => {
   // Set pending action and show Google Auth dialog
   console.log('Setting pending action to details and showing dialog')
   pendingAction.value = 'details'
+  showGoogleAuthDialog.value = true
+  console.log('showGoogleAuthDialog.value:', showGoogleAuthDialog.value)
+}
+
+const goToDeleteCard = async () => {
+  console.log('goToDeleteCard called')
+  
+  if (!selectedCard.value?.id) {
+    toast.add({
+      severity: 'warn',
+      summary: 'Warning',
+      detail: 'Please select a card first',
+      life: 3000
+    })
+    return
+  }
+
+  // Set pending action and show Google Auth dialog
+  console.log('Setting pending action to delete and showing dialog')
+  pendingAction.value = 'delete'
   showGoogleAuthDialog.value = true
   console.log('showGoogleAuthDialog.value:', showGoogleAuthDialog.value)
 }

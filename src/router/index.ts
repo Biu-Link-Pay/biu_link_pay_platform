@@ -107,6 +107,15 @@ const routes = [
     }
   },
   {
+    path: '/delete-card',
+    name: 'DeleteCard',
+    component: () => import('@/views/DeleteCard.vue'),
+    meta: {
+      title: 'Delete Card',
+      requiresAuth: true
+    }
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     component: () => import('@/views/NotFound.vue'),
