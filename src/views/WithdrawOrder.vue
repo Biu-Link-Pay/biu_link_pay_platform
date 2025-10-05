@@ -504,6 +504,7 @@ import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI } from '@/api/order'
 import { useCardStore } from '@/stores/card'
+import Dialog from 'primevue/dialog'
 
 const router = useRouter()
 const route = useRoute()
