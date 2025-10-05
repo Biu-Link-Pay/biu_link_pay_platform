@@ -7,7 +7,8 @@
     <div
       class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8 pb-24 md:pb-6 lg:pb-8">
       <!-- Intro Banner -->
-      <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
+      <div v-if="!hasCards"
+        class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
         <div class="flex items-center space-x-3">
           <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
             <i class="pi pi-id-card text-white text-sm"></i>
@@ -23,7 +24,8 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-4">
               <div class="w-12 h-8 bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
-                <div class="w-6 h-4 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-sm flex items-center justify-center">
+                <div
+                  class="w-6 h-4 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-sm flex items-center justify-center">
                   <div class="w-3 h-2 bg-white rounded-sm"></div>
                 </div>
               </div>
@@ -43,15 +45,17 @@
       <!-- Content: view or edit billing address -->
       <div class="space-y-8">
         <!-- Readonly view -->
-        <div v-if="holder && !isEditing">
-          <div class="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div v-if="!hasCards && holder && !isEditing">
+          <div
+            class="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <!-- Address Header -->
             <div class="flex items-center space-x-3 mb-6">
               <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
                 <i class="pi pi-map-marker text-blue-600 dark:text-blue-400 text-lg"></i>
               </div>
               <div>
-                <h4 class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Billing Address</h4>
+                <h4 class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Billing Address
+                </h4>
                 <p class="text-xs text-gray-400 dark:text-gray-500">Primary address for card transactions</p>
               </div>
             </div>
@@ -63,16 +67,20 @@
                 <div class="space-y-1">
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-globe text-sm text-blue-600 dark:text-blue-400"></i>
-                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Country</span>
+                    <span
+                      class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Country</span>
                   </div>
-                  <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ getCountryName(holder.residentialCountryCode) }}</p>
+                  <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{
+                    getCountryName(holder.residentialCountryCode) }}</p>
                 </div>
                 <div class="space-y-1">
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-tag text-sm text-blue-600 dark:text-blue-400"></i>
-                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Postal Code</span>
+                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Postal
+                      Code</span>
                   </div>
-                  <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialPostalCode }}</p>
+                  <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialPostalCode
+                  }}</p>
                 </div>
               </div>
 
@@ -81,14 +89,17 @@
                 <div class="space-y-1">
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-building text-sm text-blue-600 dark:text-blue-400"></i>
-                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">State/Province</span>
+                    <span
+                      class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">State/Province</span>
                   </div>
-                  <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialState }}</p>
+                  <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialState }}
+                  </p>
                 </div>
                 <div class="space-y-1">
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-home text-sm text-blue-600 dark:text-blue-400"></i>
-                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">City</span>
+                    <span
+                      class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">City</span>
                   </div>
                   <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialCity }}</p>
                 </div>
@@ -98,25 +109,23 @@
               <div class="space-y-1">
                 <div class="flex items-center space-x-2">
                   <i class="pi pi-map text-sm text-blue-600 dark:text-blue-400"></i>
-                  <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Address</span>
+                  <span
+                    class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Address</span>
                 </div>
-                <p class="text-base font-semibold text-gray-900 dark:text-white ml-6 leading-relaxed">{{ holder.residentialAddress }}</p>
+                <p class="text-base font-semibold text-gray-900 dark:text-white ml-6 leading-relaxed">{{
+                  holder.residentialAddress }}</p>
               </div>
             </div>
 
             <!-- Action Button -->
             <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700 text-right">
-              <Button 
-                label="Edit Address" 
-                icon="pi pi-pencil" 
-                @click="startEdit" 
-              />
+              <Button label="Edit Address" icon="pi pi-pencil" @click="startEdit" />
             </div>
           </div>
         </div>
 
         <!-- Edit form -->
-        <div v-if="isEditing">
+        <div v-if="!hasCards && isEditing">
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Billing Address</h3>
           <div class="space-y-4">
             <div>
@@ -233,6 +242,9 @@ const route = useRoute()
 const toast = useToast()
 const cardStore = useCardStore()
 const authStore = useAuthStore()
+// Has cards state
+const hasCards = computed(() => (cardStore.cardList?.length || 0) > 0)
+
 
 // Holder + Editing state
 const holder = ref<CardHolderResponse | null>(null)
@@ -439,33 +451,33 @@ const initializeLocationSelections = () => {
 // Enhanced location initialization for edit mode  
 const initializeLocationForEdit = async () => {
   if (!form.residentialCountryCode) return
-  
+
   // Store original form values
   const originalState = form.residentialState
   const originalCity = form.residentialCity
-  
+
   // First load states data to get available choices
   const stateList = State.getStatesOfCountry(form.residentialCountryCode) || []
   states.value = stateList.map(state => ({ name: state.name, isoCode: state.isoCode }))
-  
+
   // Reset selections first
   selectedStateCode.value = null
   selectedCityName.value = null
   cities.value = []
-  
+
   // Find and select matching state
   if (originalState && originalState.trim()) {
     const matchedState = stateList.find(s => s.name.trim() === originalState.trim())
     if (matchedState) {
       selectedStateCode.value = matchedState.isoCode
-      
+
       // Load cities for this state
       const cityOptions = City.getCitiesOfState(form.residentialCountryCode, matchedState.isoCode) || []
       cities.value = cityOptions
         .slice()
         .sort((a, b) => a.name.localeCompare(b.name))
         .map(city => ({ name: city.name }))
-      
+
       // Set city if available
       if (originalCity && originalCity.trim() && cityOptions.length > 0) {
         const matchedCity = cityOptions.find(city => city.name.trim() === originalCity.trim())
@@ -476,7 +488,7 @@ const initializeLocationForEdit = async () => {
       return
     }
   }
-  
+
   // If no state match found, load country-wide cities as fallback
   loadCitiesForCountry(form.residentialCountryCode, true)
 }
@@ -606,16 +618,16 @@ const loadHolder = async () => {
 
 const startEdit = async () => {
   isEditing.value = true
-  
+
   // Always update form from holder to ensure we have latest values  
   if (holder.value) {
     form.residentialAddress = holder.value.residentialAddress
-    form.residentialCity = holder.value.residentialCity  
+    form.residentialCity = holder.value.residentialCity
     form.residentialCountryCode = holder.value.residentialCountryCode
     form.residentialPostalCode = holder.value.residentialPostalCode
     form.residentialState = holder.value.residentialState
   }
-  
+
   // Use enhanced initialization to properly set selections  
   await initializeLocationForEdit()
 }
@@ -827,12 +839,12 @@ const goBack = () => {
 // Validate recharge amount (on blur)
 const validateRechargeAmount = () => {
   const amount = parseFloat(form.rechargeAmount)
-  
+
   // If empty or invalid number, don't process
   if (!form.rechargeAmount || isNaN(amount)) {
     return
   }
-  
+
   // If less than 20, reset to 20 and show prompt
   if (amount < 20) {
     form.rechargeAmount = '20'
@@ -853,7 +865,7 @@ const loadCardInfo = async () => {
       // For now, we'll use mock data
       cardBalance.value = 125.50
       cardNumber.value = '1234567890123456'
-      
+
       // You could also get this from cardStore if available
       // const cardDetails = await CardAPI.getCardDetails(cardId)
       // cardBalance.value = cardDetails.balance
@@ -870,6 +882,12 @@ const loadCardInfo = async () => {
 // Initialize: query holder and card info
 onMounted(async () => {
   await loadHolder()
+  // Ensure card list is up to date
+  try {
+    await cardStore.fetchCardList()
+  } catch (error) {
+    console.warn('Failed to fetch card list:', error)
+  }
   await loadCardInfo()
 })
 </script>
