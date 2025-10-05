@@ -41,7 +41,7 @@
               <Transition :name="cardTransitionName" mode="out-in">
                 <div v-if="selectedCard" :key="selectedCard.id || selectedCard.cardNo || currentCardIndex"
                   class="rounded-xl p-4 md:p-6 text-white shadow-lg cursor-grab active:cursor-grabbing relative overflow-hidden"
-                  :style="{ 
+                  :style="{
                     backgroundImage: `url(${getCardBackgroundImage(selectedCard.cardScheme)})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -49,15 +49,14 @@
                     aspectRatio: '1035/582',
                     maxWidth: '400px',
                     width: '100%'
-                  }"
-                  @mousedown="handleMouseDown" @mousemove="handleMouseMove" @mouseup="handleMouseUp"
+                  }" @mousedown="handleMouseDown" @mousemove="handleMouseMove" @mouseup="handleMouseUp"
                   @mouseleave="handleMouseUp" @wheel="handleWheel" @keydown="handleKeyDown"
                   @touchstart.passive="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd"
                   @touchcancel="handleTouchEnd" tabindex="0" style="outline: none;">
-                  
+
                   <!-- Semi-transparent overlay for better text readability -->
                   <div class="absolute inset-0 bg-black/20 rounded-xl"></div>
-                  
+
                   <!-- Card content -->
                   <div class="relative z-10 h-full flex flex-col justify-between">
                     <!-- Card Header -->
@@ -69,13 +68,13 @@
                           {{ selectedCard.cardCurrency || 'N/A' }}
                         </span>
                       </div>
-                    <!-- Card Number -->
+                      <!-- Card Number -->
                       <div class="text-lg md:text-xl font-mono tracking-[0.35em]">
                         {{ selectedCard.cardNo }}
                       </div>
 
                       <!-- Card Info -->
-                      
+
                     </div>
                   </div>
                 </div>
@@ -175,7 +174,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center space-x-3">
@@ -192,11 +191,12 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center">
+                    <div
+                      class="w-8 h-8 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center">
                       <i class="pi pi-credit-card text-orange-600 dark:text-orange-400 text-sm"></i>
                     </div>
                     <div>
@@ -216,11 +216,14 @@
         <!-- Right Side: Features and Actions -->
         <div class="space-y-8 order-2 lg:order-2">
           <!-- Features Section -->
-          <div v-if="cards.length > 0" class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm w-full border border-gray-200 dark:border-gray-700">
+          <div v-if="cards.length > 0"
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm w-full border border-gray-200 dark:border-gray-700">
             <!-- Tabs -->
-            <div class="flex flex-wrap gap-2 md:gap-4 border-b border-gray-200 dark:border-gray-700 px-2 md:px-3 lg:px-4">
+            <div
+              class="flex flex-wrap gap-2 md:gap-4 border-b border-gray-200 dark:border-gray-700 px-2 md:px-3 lg:px-4">
               <button v-for="tab in tabs" :key="tab.key" @click="handleTabChange(tab.key)"
-                class="flex-1 basis-0 px-3 py-2 text-center text-sm md:text-base lg:text-base font-semibold transition-colors md:px-4 md:py-3 lg:px-6 lg:py-3 rounded-t-md" :class="activeTab === tab.key
+                class="flex-1 basis-0 px-3 py-2 text-center text-sm md:text-base lg:text-base font-semibold transition-colors md:px-4 md:py-3 lg:px-6 lg:py-3 rounded-t-md"
+                :class="activeTab === tab.key
                   ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
                   : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'">
                 {{ tab.label }}
@@ -424,7 +427,7 @@
                               {{ formatDate(order.createTime || '') }}
                             </div>
                           </div>
-                            <div class="text-right">
+                          <div class="text-right">
                             <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
                               {{ formatOrderAmount(order.amount, order.orderCurrency) }}
                             </div>
@@ -685,137 +688,12 @@
 
       <!-- Transaction History Section -->
 
-    <Dialog
-      v-model:visible="showDetailDialog"
-      modal
-      header="Card Details"
-      :style="{ width: '90vw', maxWidth: '600px' }"
-      :breakpoints="{ '960px': '75vw', '640px': '95vw' }"
-      :draggable="false"
-      class="card-detail-dialog"
-    >
-      <div v-if="detailLoading" class="flex justify-center py-12">
-        <div class="text-center">
-          <i class="pi pi-spin pi-spinner text-3xl text-blue-600 mb-3"></i>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Loading card details...</p>
-        </div>
-      </div>
-      <div v-else-if="detailError" class="text-center py-8">
-        <div class="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
-          <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-2xl"></i>
-        </div>
-        <p class="text-sm text-red-600 dark:text-red-400 mb-4">{{ detailError }}</p>
-        <button
-          @click="retryCardDetail"
-          class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
-          :disabled="detailLoading"
-        >
-          <i class="pi pi-refresh mr-2"></i>
-          Retry
-        </button>
-      </div>
-      <div v-else-if="cardDetail" class="space-y-6">
-        <!-- Card Number Section -->
-        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-xl p-4 border border-blue-200 dark:border-blue-800">
-          <div class="flex items-center justify-between mb-3">
-            <div class="text-xs font-semibold uppercase text-blue-600 dark:text-blue-400 tracking-wide">Card Number</div>
-            <button @click="copyToClipboard(formatCardNumber(cardDetail.cardNo))" 
-              class="p-1.5 hover:bg-blue-100 dark:hover:bg-blue-800 rounded-lg transition-colors"
-              title="Copy card number">
-              <i class="pi pi-copy text-blue-600 dark:text-blue-400 text-sm"></i>
-            </button>
-          </div>
-          <div class="text-xl font-mono text-gray-900 dark:text-white tracking-[0.3em] font-bold">
-            {{ formatCardNumber(cardDetail.cardNo) }}
-          </div>
-        </div>
+      <CardDetailDialog v-model:visible="showDetailDialog" :loading="detailLoading" :error="detailError"
+        :card-detail="cardDetail" @retry="retryCardDetail" />
 
-        <!-- Card Balance Section -->
-        <div class="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl p-4 border border-green-200 dark:border-green-800">
-          <div class="mb-3">
-            <div class="text-xs font-semibold uppercase text-green-600 dark:text-green-400 tracking-wide">Available Balance</div>
-          </div>
-          <div class="text-2xl font-bold text-gray-900 dark:text-white">
-            {{ formatBalance(cardDetail.cardBalance) }} {{ cardDetail.cardCurrency }}
-          </div>
-        </div>
-
-        <!-- Card Information Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
-            <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Cardholder</div>
-            <div class="text-base font-semibold text-gray-900 dark:text-white">
-              {{ cardDetail.firstName }} {{ cardDetail.lastName }}
-            </div>
-          </div>
-          <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
-            <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Currency</div>
-            <div class="text-base font-semibold text-gray-900 dark:text-white">
-              {{ cardDetail.cardCurrency }}
-            </div>
-          </div>
-          <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
-            <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Expiration</div>
-            <div class="text-base font-semibold text-gray-900 dark:text-white">
-              {{ cardDetail.expirationDate }}
-            </div>
-          </div>
-          <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
-            <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">CVV</div>
-            <div class="text-base font-semibold text-gray-900 dark:text-white">
-              {{ cardDetail.cvv }}
-            </div>
-          </div>
-        </div>
-
-        <!-- Billing Address Section -->
-        <div class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-4">
-          <div class="flex items-center justify-between mb-3">
-            <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 tracking-wide">Billing Address</div>
-            <button @click="copyToClipboard(`${cardDetail.billingAddress}, ${cardDetail.billingCity}, ${cardDetail.billingState} ${cardDetail.billingPostalCode}, ${cardDetail.billingCountry}`)" 
-              class="p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition-colors"
-              title="Copy address">
-              <i class="pi pi-copy text-gray-600 dark:text-gray-400 text-sm"></i>
-            </button>
-          </div>
-          <div class="space-y-1 text-sm text-gray-700 dark:text-gray-300">
-            <div class="font-medium">{{ cardDetail.billingAddress }}</div>
-            <div>{{ cardDetail.billingCity }}, {{ cardDetail.billingState }} {{ cardDetail.billingPostalCode }}</div>
-            <div>{{ cardDetail.billingCountry }}</div>
-          </div>
-        </div>
-
-        <!-- Address Update Status -->
-        <div class="flex items-center gap-2 p-3 rounded-lg"
-          :class="isAddressUpdatable(cardDetail.billingAddressUpdatable) 
-            ? 'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800' 
-            : 'bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800'">
-          <i :class="isAddressUpdatable(cardDetail.billingAddressUpdatable) 
-            ? 'pi pi-check-circle text-green-600 dark:text-green-400' 
-            : 'pi pi-info-circle text-orange-600 dark:text-orange-400'"></i>
-          <span :class="isAddressUpdatable(cardDetail.billingAddressUpdatable) 
-            ? 'text-green-700 dark:text-green-300 text-sm' 
-            : 'text-orange-700 dark:text-orange-300 text-sm'">
-            {{ isAddressUpdatable(cardDetail.billingAddressUpdatable) 
-              ? 'Billing address can be updated' 
-              : 'Billing address cannot be updated' }}
-          </span>
-        </div>
-      </div>
-      <div v-else class="text-sm text-gray-500 dark:text-gray-400">
-        No card details available.
-      </div>
-    </Dialog>
-
-    <!-- Google Auth Dialog -->
-    <GoogleAuthDialog
-      ref="googleAuthDialogRef"
-      v-model:visible="showGoogleAuthDialog"
-      title="Security Verification"
-      :identifier="pendingAction || 'default'"
-      @submit="onGoogleAuthSubmit"
-      @cancel="onGoogleAuthCancel"
-    />
+      <!-- Google Auth Dialog -->
+      <GoogleAuthDialog ref="googleAuthDialogRef" v-model:visible="showGoogleAuthDialog" title="Security Verification"
+        :identifier="pendingAction || 'default'" @submit="onGoogleAuthSubmit" @cancel="onGoogleAuthCancel" />
 
 
     </div>
@@ -828,7 +706,7 @@ import { useRouter, useRoute } from 'vue-router'
 import { useCardStore } from '@/stores/card'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
-import Dialog from 'primevue/dialog'
+import CardDetailDialog from '@/components/CardDetailDialog.vue'
 import GoogleAuthDialog from '@/components/GoogleAuthDialog.vue'
 import { CardAPI, type CardDetailResponse } from '@/api/card'
 import { OrderAPI, type TransactionListItem, type DepositOrderListItem, type WithdrawOrderListItem, type WithdrawOrderPageResponse } from '@/api/order'
@@ -851,7 +729,7 @@ const googleAuthDialogRef = ref()
 // Google Auth callbacks
 const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<void> => {
   console.log('Google Auth submit:', code, 'identifier:', identifier)
-  
+
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'error',
@@ -861,24 +739,24 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
     })
     return
   }
-  
+
   try {
     // Verify code by calling card detail API
     console.log('Verifying code, calling card detail API...')
-    const response = await CardAPI.queryCardDetail({ 
-      cardId: selectedCard.value.id, 
-      faCode: code 
+    const response = await CardAPI.queryCardDetail({
+      cardId: selectedCard.value.id,
+      faCode: code
     })
-    
+
     if (response.success && response.model) {
       // Verification successful, cache current card details
       cardStore.cacheCurrentCardDetail(response.model)
       console.log('Code verification successful, current card details cached')
-      
+
       // Close verification dialog and reset code
       showGoogleAuthDialog.value = false
       googleAuthDialogRef.value?.resetCode()
-      
+
       // Execute subsequent operations based on identifier
       if (identifier === 'withdraw') {
         await executeWithdrawAction(response.model)
@@ -887,10 +765,10 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
       } else if (identifier === 'delete') {
         await executeDeleteAction(response.model)
       }
-      
+
       // Reset pending action
       pendingAction.value = null
-      
+
       // Show success message
       toast.add({
         severity: 'success',
@@ -898,18 +776,18 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
         detail: 'Google Auth verification passed, operation completed',
         life: 3000
       })
-      
+
     } else {
       // Verification failed
       throw new Error(response.msg || 'Invalid verification code')
     }
-    
+
   } catch (error) {
     console.error('Verification failed:', error)
-    
+
     // If verification fails, reset code but don't close dialog, let user retry
     googleAuthDialogRef.value?.resetCode()
-    
+
     toast.add({
       severity: 'error',
       summary: 'Verification Failed',
@@ -979,7 +857,7 @@ const cardDetail = ref<CardDetailResponse | null>(null)
 // Execute actions after Google Auth verification
 const executeWithdrawAction = async (cardDetail: CardDetailResponse) => {
   console.log('Executing withdraw operation, card details:', cardDetail)
-  
+
   // Navigate to withdraw page with card information
   // Card details are already cached in Pinia store, no need to pass verification code
   router.push({
@@ -995,7 +873,7 @@ const executeWithdrawAction = async (cardDetail: CardDetailResponse) => {
 
 const executeDetailsAction = async (cardDetailData: CardDetailResponse) => {
   console.log('Displaying card details:', cardDetailData)
-  
+
   // Directly use cached card details to show detail dialog
   showDetailDialog.value = true
   cardDetail.value = cardDetailData
@@ -1003,7 +881,7 @@ const executeDetailsAction = async (cardDetailData: CardDetailResponse) => {
 
 const executeDeleteAction = async (cardDetail: CardDetailResponse) => {
   console.log('Executing delete operation, card details:', cardDetail)
-  
+
   // Navigate to delete card page with card information
   // Card details are already cached in Pinia store, no need to pass verification code
   router.push({
@@ -1215,7 +1093,7 @@ const goToApplyCard = () => {
 
 const goToWithdraw = async () => {
   console.log('goToWithdraw called')
-  
+
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'warn',
@@ -1266,7 +1144,7 @@ const loadCardDetail = async (cardId: string, faCode: string = '') => {
       if (!showDetailDialog.value) {
         return
       }
-      
+
       // Cache current card details
       cardStore.cacheCurrentCardDetail(response.model)
       cardDetail.value = response.model
@@ -1286,7 +1164,7 @@ const loadCardDetail = async (cardId: string, faCode: string = '') => {
 
 const goToDetails = async () => {
   console.log('goToDetails called')
-  
+
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'warn',
@@ -1306,7 +1184,7 @@ const goToDetails = async () => {
 
 const goToDeleteCard = async () => {
   console.log('goToDeleteCard called')
-  
+
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'warn',
@@ -1458,7 +1336,7 @@ const formatDate = (dateString: string) => {
 // Get card background image based on card scheme
 const getCardBackgroundImage = (cardScheme: string | null) => {
   console.log('Card Scheme:', cardScheme) // Debug log
-  
+
   if (!cardScheme) {
     console.log('No card scheme, using default Mastercard')
     return 'https://static.biulinkpay.online/images/master.png' // Default to Mastercard
@@ -1466,7 +1344,7 @@ const getCardBackgroundImage = (cardScheme: string | null) => {
 
   const scheme = cardScheme.toLowerCase()
   console.log('Normalized scheme:', scheme) // Debug log
-  
+
   if (scheme.includes('master') || scheme.includes('mastercard')) {
     console.log('Using Mastercard background')
     return 'https://static.biulinkpay.online/images/master.png'
@@ -1897,46 +1775,5 @@ onActivated(async () => {
   }
 }
 
-/* Card Detail Dialog Styles */
-:deep(.card-detail-dialog .p-dialog-header) {
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-  border-bottom: 1px solid #e2e8f0;
-  padding: 1.5rem 2rem;
-}
-
-:deep(.card-detail-dialog .p-dialog-header .p-dialog-title) {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #1e293b;
-}
-
-:deep(.card-detail-dialog .p-dialog-content) {
-  padding: 2rem;
-  background: #ffffff;
-}
-
-:deep(.card-detail-dialog .p-dialog-footer) {
-  background: #f8fafc;
-  border-top: 1px solid #e2e8f0;
-  padding: 1rem 2rem;
-}
-
-/* Dark mode dialog styles */
-:deep(.dark .card-detail-dialog .p-dialog-header) {
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-  border-bottom: 1px solid #334155;
-}
-
-:deep(.dark .card-detail-dialog .p-dialog-header .p-dialog-title) {
-  color: #f1f5f9;
-}
-
-:deep(.dark .card-detail-dialog .p-dialog-content) {
-  background: #1e293b;
-}
-
-:deep(.dark .card-detail-dialog .p-dialog-footer) {
-  background: #1e293b;
-  border-top: 1px solid #334155;
-}
+/* Dialog styles moved into CardDetailDialog.vue */
 </style>
