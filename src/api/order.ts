@@ -284,6 +284,8 @@ export interface CreateWithdrawOrderParams {
   token: string // token
   network: string // 网络
   address: string // 地址
+  delFlag: boolean // true=删卡，false=不删卡
+  withdrawAmount: string // 提现金额
 }
 
 // 创建出金订单响应
@@ -396,7 +398,9 @@ export class OrderAPI {
       cardId: params.cardId,
       token: params.token,
       network: params.network,
-      address: params.address
+      address: params.address,
+      delFlag: params.delFlag,
+      withdrawAmount: params.withdrawAmount
     })
     return response.data
   }

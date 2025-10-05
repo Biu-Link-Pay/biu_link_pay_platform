@@ -1,13 +1,11 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900 overflow-y-auto"
+    :style="{ minHeight: `calc(var(--app-vh, 1vh) * 100)` }">
     <!-- Navigation Header -->
     <AppHeader title="Apply Card" :show-title="true" />
 
-    <!-- Confirm Dialog -->
-    <!-- <ConfirmDialog /> -->
-
     <!-- Main Content -->
-    <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto py-6">
       <!-- Loading State -->
       <div v-if="loading" class="flex justify-center py-20">
         <div class="flex items-center space-x-3">
@@ -32,9 +30,7 @@
         <!-- Mobile: Card Carousel -->
         <div class="md:hidden">
           <div class="relative">
-            <div class="overflow-hidden" 
-              @touchstart="handleTouchStart"
-              @touchmove="handleTouchMove"
+            <div class="overflow-hidden" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
               @touchend="handleTouchEnd">
               <div class="flex transition-transform duration-300 ease-in-out"
                 :style="{ transform: `translateX(-${currentCardIndex * 100}%)` }">
@@ -58,11 +54,10 @@
 
         <!-- Desktop: Grid Layout -->
         <div class="hidden md:grid md:grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
-          <div v-for="card in cardConfigs" :key="card.cardName" 
+          <div v-for="card in cardConfigs" :key="card.cardName"
             class="card-hover-container transition-all duration-300 ease-in-out hover:scale-102 hover:shadow-lg hover:-translate-y-1">
-            <CardItem :card="card"
-              :selected="selectedCard?.cardName === card.cardName" @select="selectCard" @order="orderCard"
-              @activate="activateCard" />
+            <CardItem :card="card" :selected="selectedCard?.cardName === card.cardName" @select="selectCard"
+              @order="orderCard" @activate="activateCard" />
           </div>
         </div>
       </div>
@@ -78,49 +73,33 @@
     </div>
 
     <!-- KYC Verification Dialog -->
-    <Dialog v-model:visible="showKycDialog" modal :closable="false" :style="{ width: '100vw', height: '100vh', maxWidth: 'none', maxHeight: 'none' }" class="kyc-dialog-fullscreen">
+    <Dialog v-model:visible="showKycDialog" modal :closable="false"
+      :style="{ width: '100vw', height: 'calc(var(--app-vh, 1vh) * 100)', maxWidth: 'none', maxHeight: 'none' }"
+      class="kyc-dialog-fullscreen">
       <template #header>
         <div class="flex items-center justify-between w-full">
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">KYC Identity Verification</h3>
-          <Button 
-            icon="pi pi-times" 
-            text 
-            rounded 
-            severity="secondary" 
-            @click="closeKycDialog"
-            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-          />
+          <Button icon="pi pi-times" text rounded severity="secondary" @click="closeKycDialog"
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" />
         </div>
       </template>
 
       <div class="space-y-6">
         <!-- KYC SDK Container -->
-        <div v-if="showKycSDK" class="relative !mb-0 h-[calc(100vh-200px)] w-full overflow-auto">
-          <div id="sumsub-websdk-container" class="h-full w-full rounded-lg border border-gray-200 dark:border-gray-700"></div>
+        <div v-if="showKycSDK" class="relative !mb-0 h-[calc(var(--app-vh,1vh)*100-200px)] w-full overflow-auto">
+          <div id="sumsub-websdk-container"
+            class="h-full w-full rounded-lg border border-gray-200 dark:border-gray-700">
+          </div>
         </div>
 
-        <!-- Action Buttons -->
-        <div class="flex justify-end space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
-          <Button 
-            v-if="!isKycPolling"
-            label="Cancel" 
-            severity="secondary" 
-            @click="closeKycDialog"
-          />
-          <Button 
-            v-if="!showKycSDK && !isKycPolling"
-            label="Start Verification" 
-            severity="primary"
-            @click="launchKycSDK"
-          />
-        </div>
+
       </div>
     </Dialog>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted, watch, nextTick } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useCardStore } from '@/stores/card'
@@ -203,7 +182,7 @@ const handleTouchStart = (event: TouchEvent) => {
   if (target.closest('button') || target.closest('[role="button"]') || target.closest('a')) {
     return // Don't handle touch events on buttons
   }
-  
+
   if (event.touches.length === 1) {
     isDragging.value = true
     startX.value = event.touches[0].clientX
@@ -214,7 +193,7 @@ const handleTouchStart = (event: TouchEvent) => {
 
 const handleTouchMove = (event: TouchEvent) => {
   if (!isDragging.value || event.touches.length !== 1) return
-  
+
   currentX.value = event.touches[0].clientX
   event.preventDefault()
 }
@@ -263,7 +242,7 @@ const orderCard = async (card: CardConfig) => {
 
   // Check if user has cards
   const hasCards = cardStore.hasCards
-  
+
   if (!hasCards) {
     // No cards, need to check KYC status first
     console.log('User has no cards, checking KYC status...')
@@ -287,7 +266,7 @@ const checkKycAndNavigate = async (card: CardConfig) => {
         console.log('KYC approved, navigating to CardBinSelection')
         navigateToCardBinSelection(card)
         break
-        
+
       case 0: // KYC not done
       case 2: // KYC temporarily rejected
         console.log('KYC not completed or temporarily rejected, opening KYC dialog')
@@ -295,24 +274,24 @@ const checkKycAndNavigate = async (card: CardConfig) => {
         showKycDialog.value = true
         await launchKycSDK()
         break
-        
-      case 3: // KYC拒绝
+
+      case 3: // KYC rejected
         console.log('KYC rejected, showing error message')
-        handleError('KYC验证被拒绝，请联系客服获取更多信息', {
-          fallbackMessage: 'KYC验证被拒绝，请联系客服获取更多信息'
+        handleError('KYC verification was rejected. Please contact support for more information.', {
+          fallbackMessage: 'KYC verification was rejected. Please contact support for more information.'
         })
         break
-        
+
       default:
         console.log('Unknown KYC status:', kycStatus)
-        handleError('KYC状态未知，请重试', {
-          fallbackMessage: 'KYC状态未知，请重试'
+        handleError('Unknown KYC status, please try again.', {
+          fallbackMessage: 'Unknown KYC status, please try again.'
         })
     }
   } catch (error) {
     console.error('Error checking KYC status:', error)
     handleError(error, {
-      fallbackMessage: '检查KYC状态失败，请重试'
+      fallbackMessage: 'Failed to check KYC status, please try again.'
     })
   }
 }
@@ -342,22 +321,22 @@ const activateCard = (card: CardConfig) => {
 const launchKycSDK = async () => {
   try {
     console.log('Launching KYC SDK...')
-    
+
     // Get KYC access token
     const token = await authStore.getKycAccessToken()
     kycAccessToken.value = token
     showKycSDK.value = true
-    
+
     // Initialize Sumsub Web SDK with delay to ensure SDK is loaded
     await nextTick()
     initializeSumsubSDK()
-    
+
     // Start polling for KYC status
     startKycPolling()
   } catch (error) {
     console.error('Failed to launch KYC SDK:', error)
     handleError(error, {
-      fallbackMessage: '启动KYC验证失败，请重试'
+      fallbackMessage: 'Failed to start KYC verification, please try again.'
     })
   }
 }
@@ -368,19 +347,19 @@ const initializeSumsubSDK = () => {
     // Check if snsWebSdk is available
     if (typeof (window as any).snsWebSdk === 'undefined') {
       console.error('snsWebSdk is not loaded')
-      handleError('KYC验证组件未加载，请刷新页面重试', {
-        fallbackMessage: 'KYC验证组件未加载，请刷新页面重试'
+      handleError('KYC verification component is not loaded. Please refresh the page and try again.', {
+        fallbackMessage: 'KYC verification component is not loaded. Please refresh the page and try again.'
       })
       return
     }
 
     console.log('Initializing Sumsub SDK with token:', kycAccessToken.value)
-    
+
     // Use the same initialization method as KycVerification.vue
     const snsWebSdkInstance = (window as any).snsWebSdk
       .init(kycAccessToken.value, () => getNewAccessToken())
       .withConf({ lang: 'en' })
-      .withOptions({ 
+      .withOptions({
         adaptIframeHeight: true,
         scrollIntoView: true,
       })
@@ -389,25 +368,19 @@ const initializeSumsubSDK = () => {
       })
       .on('idCheck.onError', (error: any) => {
         console.error('Sumsub SDK error:', error)
-        handleError('KYC验证过程中出现错误', {
-          fallbackMessage: 'KYC验证过程中出现错误，请重试'
+        handleError('An error occurred during KYC verification', {
+          fallbackMessage: 'An error occurred during KYC verification, please try again.'
         })
-      })
-      .on('idCheck.onFinished', (payload: any) => {
-        console.log('KYC verification finished:', payload)
-        showKycSDK.value = false
-        // Check KYC status after completion
-        checkKycStatusAfterCompletion()
       })
       .build()
 
     snsWebSdkInstance.launch('#sumsub-websdk-container')
-    
-    handleSuccess('请按照提示完成身份验证流程')
+
+    handleSuccess('Please follow the instructions to complete identity verification.')
   } catch (error) {
     console.error('Failed to initialize Sumsub SDK:', error)
-    handleError('初始化KYC验证失败', {
-      fallbackMessage: '初始化KYC验证失败，请重试'
+    handleError('Failed to initialize KYC verification', {
+      fallbackMessage: 'Failed to initialize KYC verification, please try again.'
     })
   }
 }
@@ -427,31 +400,31 @@ const getNewAccessToken = async (): Promise<string> => {
 // Start KYC polling
 const startKycPolling = () => {
   if (isKycPolling.value) return
-  
+
   isKycPolling.value = true
   console.log('Starting KYC status polling')
-  
+
   const pollKycStatus = async () => {
     if (!isKycPolling.value) return
-    
+
     try {
       const result = await authStore.checkKycStatus()
       console.log('KYC polling result:', result)
-      
+
       if (result === 1) {
         // KYC approved
         stopKycPolling()
         showKycDialog.value = false
-        handleSuccess('KYC验证通过，您现在可以申请卡片了')
-        
+        handleSuccess('KYC verification approved. You can now apply for a card.')
+
         // Clear pending card
         pendingCard.value = null
       } else if (result === 3) {
         // KYC rejected
         stopKycPolling()
         showKycDialog.value = false
-        handleError('KYC验证被拒绝，请联系客服获取更多信息', {
-          fallbackMessage: 'KYC验证被拒绝，请联系客服获取更多信息'
+        handleError('KYC verification was rejected. Please contact support for more information.', {
+          fallbackMessage: 'KYC verification was rejected. Please contact support for more information.'
         })
         pendingCard.value = null
       } else {
@@ -464,7 +437,7 @@ const startKycPolling = () => {
       setTimeout(pollKycStatus, 1000) // Wait 5 seconds before retry
     }
   }
-  
+
   // Start the first poll immediately
   pollKycStatus()
 }
@@ -475,21 +448,18 @@ const stopKycPolling = () => {
   console.log('KYC polling stopped')
 }
 
-// Check KYC status after completion
-const checkKycStatusAfterCompletion = async () => {
-  try {
-    const result = await authStore.checkKycStatus()
-    if (result === 1) {
-      showKycDialog.value = false
-      handleSuccess('KYC验证通过，您现在可以申请卡片了')
-      
-      // Clear pending card
-      pendingCard.value = null
-    }
-  } catch (error) {
-    console.error('Error checking KYC status after completion:', error)
-  }
+// Viewport height fix for mobile browsers
+const setAppViewportHeight = () => {
+  const vhUnit = window.innerHeight * 0.01
+  document.documentElement.style.setProperty('--app-vh', `${vhUnit}px`)
 }
+
+const handleResize = () => setAppViewportHeight()
+const handleOrientationChange = () => {
+  // Delay to wait for address bar/UI to settle
+  setTimeout(setAppViewportHeight, 200)
+}
+
 
 // Close KYC dialog
 const closeKycDialog = () => {
@@ -500,35 +470,21 @@ const closeKycDialog = () => {
   kycAccessToken.value = ''
 }
 
-// Watch KYC status changes
-watch(() => authStore.kycStatus, (newStatus) => {
-  if (newStatus === 1 && showKycDialog.value) {
-    // KYC approved while dialog is open
-    stopKycPolling()
-    showKycDialog.value = false
-    handleSuccess('KYC验证通过，您现在可以申请卡片了')
-    
-    // Clear pending card
-    pendingCard.value = null
-  } else if (newStatus === 3 && showKycDialog.value) {
-    // KYC rejected while dialog is open
-    stopKycPolling()
-    showKycDialog.value = false
-    handleError('KYC验证被拒绝，请联系客服获取更多信息', {
-      fallbackMessage: 'KYC验证被拒绝，请联系客服获取更多信息'
-    })
-    pendingCard.value = null
-  }
-})
+// Removed watch on authStore.kycStatus to avoid duplicate handling with polling
 
 
 // Clean up on unmount
 onUnmounted(() => {
   stopKycPolling()
+  window.removeEventListener('resize', handleResize)
+  window.removeEventListener('orientationchange', handleOrientationChange)
 })
 
 // Fetch data when component mounts
 onMounted(() => {
+  setAppViewportHeight()
+  window.addEventListener('resize', handleResize, { passive: true })
+  window.addEventListener('orientationchange', handleOrientationChange)
   fetchCardConfigs()
 })
 </script>
@@ -686,7 +642,7 @@ onMounted(() => {
 /* Fullscreen KYC Dialog */
 .kyc-dialog-fullscreen {
   width: 100vw !important;
-  height: 100vh !important;
+  height: calc(var(--app-vh, 1vh) * 100) !important;
   max-width: none !important;
   max-height: none !important;
   margin: 0 !important;
@@ -695,7 +651,7 @@ onMounted(() => {
 
 .kyc-dialog-fullscreen .p-dialog {
   width: 100vw !important;
-  height: 100vh !important;
+  height: calc(var(--app-vh, 1vh) * 100) !important;
   max-width: none !important;
   max-height: none !important;
   margin: 0 !important;
@@ -703,7 +659,7 @@ onMounted(() => {
 }
 
 .kyc-dialog-fullscreen .p-dialog-content {
-  height: calc(100vh - 80px) !important;
+  height: calc((var(--app-vh, 1vh) * 100) - 80px) !important;
   padding: 1rem !important;
   overflow-y: auto !important;
 }
@@ -717,24 +673,7 @@ onMounted(() => {
   border-bottom-color: #374151;
 }
 
-/* Fullscreen dialog overrides for all screen sizes */
-.kyc-dialog-fullscreen {
-  width: 100vw !important;
-  height: 100vh !important;
-  max-width: none !important;
-  max-height: none !important;
-  margin: 0 !important;
-  border-radius: 0 !important;
-}
-
-.kyc-dialog-fullscreen .p-dialog {
-  width: 100vw !important;
-  height: 100vh !important;
-  max-width: none !important;
-  max-height: none !important;
-  margin: 0 !important;
-  border-radius: 0 !important;
-}
+/* Remove legacy 100vh overrides to rely on --app-vh */
 
 /* Card hover effects for desktop */
 .card-hover-container {
@@ -745,7 +684,7 @@ onMounted(() => {
 
 .card-hover-container:hover {
   transform: scale(1.02) translateY(-4px);
-  box-shadow: 
+  box-shadow:
     0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05),
     0 0 0 1px rgba(59, 130, 246, 0.1);
@@ -766,7 +705,7 @@ onMounted(() => {
 
 /* Dark mode hover effects */
 .dark .card-hover-container:hover {
-  box-shadow: 
+  box-shadow:
     0 10px 15px -3px rgba(0, 0, 0, 0.3),
     0 4px 6px -2px rgba(0, 0, 0, 0.2),
     0 0 0 1px rgba(59, 130, 246, 0.2);

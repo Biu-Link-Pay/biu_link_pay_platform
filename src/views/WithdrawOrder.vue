@@ -4,12 +4,14 @@
     <AppHeader title="Withdraw" :show-title="true" />
 
     <!-- Main Content -->
-    <div class="w-full max-w-2xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+    <div
+      class="w-full max-w-2xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
       <!-- Desktop Layout -->
       <div class="hidden md:block">
         <div class="max-w-4xl xl:max-w-5xl mx-auto space-y-8">
           <!-- Withdraw Summary -->
-          <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 text-white shadow-xl">
+          <div
+            class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 text-white shadow-xl">
             <div class="absolute -top-16 -right-20 w-56 h-56 bg-white/15 blur-3xl rounded-full"></div>
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
             <div class="relative px-10 py-12 text-center flex flex-col items-center space-y-4">
@@ -21,7 +23,8 @@
               <div class="text-sm text-white/80">
                 From card ending in {{ cardInfo.cardNo ? cardInfo.cardNo.slice(-4) : '****' }}
               </div>
-              <div class="mt-6 inline-flex items-center px-4 py-2 rounded-full text-sm text-white/90 bg-white/15 backdrop-blur-sm">
+              <div
+                class="mt-6 inline-flex items-center px-4 py-2 rounded-full text-sm text-white/90 bg-white/15 backdrop-blur-sm">
                 <i class="pi pi-shield mr-2 text-white/90"></i>
                 Secure withdrawal to {{ selectedToken }} network
               </div>
@@ -55,33 +58,18 @@
                 </div>
                 <div class="flex items-center space-x-3">
                   <div class="flex-1">
-                    <InputText
-                      type="number"
-                      placeholder="0.00"
-                      class="w-full text-lg"
-                      :class="{ 'p-invalid': errors.withdrawAmount }"
-                      :model-value="withdrawAmount.toString()"
+                    <InputText type="number" placeholder="0.00" class="w-full text-lg"
+                      :class="{ 'p-invalid': errors.withdrawAmount }" :model-value="withdrawAmount.toString()"
                       @update:model-value="(value: string | undefined) => {
                         withdrawAmount = parseFloat(value || '0') || 0
-                      }"
-                    />
+                      }" />
                   </div>
-                  <Button
-                    label="Max"
-                    size="small"
-                    severity="secondary"
-                    @click="setMaxAmount"
-                  />
-                  <Button
-                    :label="selectedCurrency"
-                    icon="pi pi-dollar"
-                    size="small"
-                    severity="secondary"
-                    @click="showCurrencySelector = true"
-                  />
+                  <Button label="Max" size="small" severity="secondary" @click="setMaxAmount" />
+                  <Button :label="selectedCurrency" icon="pi pi-dollar" size="small" severity="secondary"
+                    @click="showCurrencySelector = true" />
                 </div>
                 <small v-if="errors.withdrawAmount" class="text-red-500">{{ errors.withdrawAmount }}</small>
-                
+
                 <!-- Balance Info -->
                 <div class="mt-3 space-y-2">
                   <div class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
@@ -90,7 +78,8 @@
                   </div>
                   <div class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
                     <span>Max withdraw: {{ formatCurrency(getMaxWithdrawAmount()) }}</span>
-                    <span v-if="cardInfo.maxOnDaily > 0" class="text-xs">Daily limit: {{ formatCurrency(cardInfo.maxOnDaily) }}</span>
+                    <span v-if="cardInfo.maxOnDaily > 0" class="text-xs">Daily limit: {{
+                      formatCurrency(cardInfo.maxOnDaily) }}</span>
                   </div>
                 </div>
               </div>
@@ -101,7 +90,7 @@
                   <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Receive amount</label>
                   <i class="pi pi-info-circle text-gray-400 text-sm"></i>
                 </div>
-                
+
                 <!-- Loading State -->
                 <div v-if="loading" class="flex flex-col items-center justify-center gap-3 py-8 text-center">
                   <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
@@ -110,35 +99,31 @@
 
                 <!-- Payment Methods Grid -->
                 <div v-else class="space-y-4">
-                  <div
-                    v-for="payType in paymentMethods"
-                    :key="payType.name"
+                  <div v-for="payType in paymentMethods" :key="payType.name"
                     class="border border-gray-200 dark:border-gray-600 rounded-xl p-5 cursor-pointer transition-all duration-200"
-                    :class="selectedPayType?.name === payType.name 
-                      ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-300 dark:border-blue-600 shadow-md ring-2 ring-blue-100 dark:ring-blue-800/60' 
-                      : 'hover:bg-gray-50 dark:hover:bg-gray-600 hover:shadow-sm'"
-                    @click="selectPayType(payType)"
-                  >
+                    :class="selectedPayType?.name === payType.name
+                      ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-300 dark:border-blue-600 shadow-md ring-2 ring-blue-100 dark:ring-blue-800/60'
+                      : 'hover:bg-gray-50 dark:hover:bg-gray-600 hover:shadow-sm'" @click="selectPayType(payType)">
                     <div class="flex flex-col gap-4">
                       <div class="flex items-center space-x-4">
-                        <div class="w-14 h-14 rounded-xl flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
-                          <img
-                            v-if="payType.img"
-                            :src="payType.img"
-                            :alt="payType.name"
-                            class="w-full h-full object-cover"
-                          />
-                          <div v-else class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
+                        <div
+                          class="w-14 h-14 rounded-xl flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
+                          <img v-if="payType.img" :src="payType.img" :alt="payType.name"
+                            class="w-full h-full object-cover" />
+                          <div v-else
+                            class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
                             <span class="text-white font-bold text-lg">{{ payType.name }}</span>
                           </div>
                         </div>
                         <div>
                           <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
-                          <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0 }} crypto networks</div>
+                          <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0
+                          }} crypto networks</div>
                         </div>
                       </div>
 
-                      <div v-if="selectedPayType?.name === payType.name" class="flex items-center gap-3 text-blue-600 self-start">
+                      <div v-if="selectedPayType?.name === payType.name"
+                        class="flex items-center gap-3 text-blue-600 self-start">
                         <span class="text-sm font-medium">Currently selected</span>
                         <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center">
                           <i class="pi pi-check text-white text-xs"></i>
@@ -147,38 +132,35 @@
                     </div>
 
                     <!-- Network Selection (Second Level) - matching PaymentMethodSelection.vue structure -->
-                    <div
-                      v-if="selectedPayType?.name === payType.name"
-                      class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600"
-                    >
+                    <div v-if="selectedPayType?.name === payType.name"
+                      class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
                       <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-3">
-                        <span class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">Available Networks</span>
-                        <span class="text-xs text-gray-500 dark:text-gray-400">Selected: {{ selectedCrypto ? selectedCrypto.crypto.name + '-' + selectedCrypto.network.name : 'None' }}</span>
+                        <span
+                          class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">Available
+                          Networks</span>
+                        <span class="text-xs text-gray-500 dark:text-gray-400">Selected: {{ selectedCrypto ?
+                          selectedCrypto.crypto.name + '-' + selectedCrypto.network.name : 'None' }}</span>
                       </div>
                       <div class="grid grid-cols-1 gap-3">
-                        <div
-                          v-for="crypto in payType.cryptoNetworks"
+                        <div v-for="crypto in payType.cryptoNetworks"
                           :key="crypto.crypto.name + '-' + crypto.network.name"
                           class="flex items-center justify-between p-3 rounded-lg cursor-pointer transition-colors duration-200 border border-transparent"
                           :class="[
                             selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name ? 'bg-blue-50 dark:bg-blue-900/30 border-blue-200 dark:border-blue-600 shadow-sm' : 'hover:bg-gray-50 dark:hover:bg-gray-700'
-                          ]"
-                          @click.stop="selectCrypto(crypto)"
-                        >
+                          ]" @click.stop="selectCrypto(crypto)">
                           <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
-                              <img
-                                v-if="crypto.crypto.logoUrl"
-                                :src="crypto.crypto.logoUrl"
-                                :alt="crypto.crypto.name"
-                                class="w-full h-full object-cover"
-                              />
-                              <div v-else class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
+                            <div
+                              class="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
+                              <img v-if="crypto.crypto.logoUrl" :src="crypto.crypto.logoUrl" :alt="crypto.crypto.name"
+                                class="w-full h-full object-cover" />
+                              <div v-else
+                                class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
                                 <span class="text-white font-bold text-sm">{{ crypto.crypto.name.charAt(0) }}</span>
                               </div>
                             </div>
                             <div>
-                              <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName }}</div>
+                              <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName
+                              }}</div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                               <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
                                 Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
@@ -188,8 +170,7 @@
 
                           <div
                             v-if="selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name"
-                            class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center"
-                          >
+                            class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center">
                             <i class="pi pi-check text-white text-xs"></i>
                           </div>
                           <div v-else class="w-7 h-7 border-2 border-gray-300 dark:border-gray-600 rounded-full"></div>
@@ -199,28 +180,6 @@
                   </div>
                 </div>
 
-                <!-- Receive Amount Display -->
-                <div class="mt-4 flex items-center space-x-3">
-                  <div class="flex-1">
-                    <InputText
-                      type="number"
-                      placeholder="0.00"
-                      readonly
-                      class="w-full text-lg bg-white dark:bg-gray-800"
-                      :model-value="receiveAmount.toString()"
-                    />
-                  </div>
-                  <div class="text-sm text-gray-500 dark:text-gray-400">
-                    {{ selectedToken }}
-                  </div>
-                </div>
-                
-                <!-- Rate Loading State -->
-                <div v-if="rateLoading" class="mt-2 flex items-center space-x-2 text-sm text-blue-600 dark:text-blue-400">
-                  <i class="pi pi-spin pi-spinner"></i>
-                  <span>Loading exchange rate...</span>
-                </div>
-                
                 <!-- Rate Error State -->
                 <div v-if="rateError" class="mt-2 flex items-center space-x-2 text-sm text-red-600 dark:text-red-400">
                   <i class="pi pi-exclamation-triangle"></i>
@@ -236,11 +195,12 @@
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ receiveAmount }}</span>
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
                     <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
-                    <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount) }}</span>
+                    <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
+                    }}</span>
                   </div>
                   <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                     <i class="pi pi-clock"></i>
-                    <span>15s</span>
+                    <span>{{ countdown }}s</span>
                   </div>
                 </div>
                 <div class="flex items-center justify-between text-sm">
@@ -257,14 +217,12 @@
                     {{ selectedCrypto.network.fullName || selectedCrypto.network.name }} address
                   </span>
                 </label>
-                <InputText
-                  v-model="recipientAddress"
+                <InputText v-model="recipientAddress"
                   :placeholder="selectedCrypto ? `Enter ${selectedCrypto.network.fullName || selectedCrypto.network.name} address` : 'Enter recipient wallet address'"
-                  class="w-full"
-                  :class="{ 'p-invalid': errors.recipientAddress }"
-                />
+                  class="w-full" :class="{ 'p-invalid': errors.recipientAddress }" />
                 <small v-if="errors.recipientAddress" class="text-red-500">{{ errors.recipientAddress }}</small>
-                <small v-else-if="selectedCrypto && selectedCrypto.network && selectedCrypto.network.addressRegex" class="text-gray-500 text-xs mt-1 block">
+                <small v-else-if="selectedCrypto && selectedCrypto.network && selectedCrypto.network.addressRegex"
+                  class="text-gray-500 text-xs mt-1 block">
                   Address must match {{ selectedCrypto.network.fullName || selectedCrypto.network.name }} format
                 </small>
               </div>
@@ -273,23 +231,10 @@
 
           <!-- Action Buttons -->
           <div class="flex space-x-4">
-            <Button
-              label="Back"
-              icon="pi pi-arrow-left"
-              severity="secondary"
-              class="flex-1"
-              size="large"
-              @click="goBack"
-            />
-            <Button
-              label="Withdraw"
-              icon="pi pi-send"
-              class="flex-1"
-              size="large"
-              :disabled="!isFormValid"
-              :loading="isSubmitting"
-              @click="handleWithdraw"
-            />
+            <Button label="Back" icon="pi pi-arrow-left" severity="secondary" class="flex-1" size="large"
+              @click="goBack" />
+            <Button label="Withdraw" icon="pi pi-send" class="flex-1" size="large" :disabled="!isFormValid"
+              :loading="isSubmitting" @click="handleWithdraw" />
           </div>
         </div>
       </div>
@@ -312,7 +257,8 @@
               </div>
             </div>
             <div class="text-right">
-              <div class="text-sm text-gray-500 dark:text-gray-400">{{ cardInfo.cardNo ? cardInfo.cardNo.slice(-4) : '**** 3683' }}</div>
+              <div class="text-sm text-gray-500 dark:text-gray-400">{{ cardInfo.cardNo ? cardInfo.cardNo.slice(-4) :
+                '**** 3683' }}</div>
             </div>
           </div>
         </div>
@@ -337,30 +283,14 @@
           </div>
           <div class="flex items-center space-x-2">
             <div class="flex-1">
-              <InputText
-                type="number"
-                placeholder="0.00"
-                class="w-full"
-                :class="{ 'p-invalid': errors.withdrawAmount }"
-                :model-value="withdrawAmount.toString()"
-                @update:model-value="(value: string | undefined) => {
+              <InputText type="number" placeholder="0.00" class="w-full" :class="{ 'p-invalid': errors.withdrawAmount }"
+                :model-value="withdrawAmount.toString()" @update:model-value="(value: string | undefined) => {
                   withdrawAmount = parseFloat(value || '0') || 0
-                }"
-              />
+                }" />
             </div>
-            <Button
-              label="Max"
-              size="small"
-              severity="secondary"
-              @click="setMaxAmount"
-            />
-            <Button
-              :label="selectedCurrency"
-              icon="pi pi-dollar"
-              size="small"
-              severity="secondary"
-              @click="showCurrencySelector = true"
-            />
+            <Button label="Max" size="small" severity="secondary" @click="setMaxAmount" />
+            <Button :label="selectedCurrency" icon="pi pi-dollar" size="small" severity="secondary"
+              @click="showCurrencySelector = true" />
           </div>
           <small v-if="errors.withdrawAmount" class="text-red-500 text-xs">{{ errors.withdrawAmount }}</small>
         </div>
@@ -396,7 +326,8 @@
               <!-- Payment Method Header -->
               <div class="flex items-center justify-between mb-3">
                 <div class="flex items-center space-x-3">
-                  <div class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
+                  <div
+                    class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
                     <img v-if="payType.img" :src="payType.img" :alt="payType.name" class="w-full h-full object-cover" />
                     <div v-else class="w-full h-full bg-gray-400 flex items-center justify-center">
                       <span class="text-white font-bold text-lg">{{ payType.name.charAt(0) }}</span>
@@ -404,20 +335,24 @@
                   </div>
                   <div>
                     <div class="font-semibold text-gray-900 dark:text-white">{{ payType.name }}</div>
-                    <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0 }} crypto options</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0 }}
+                      crypto options</div>
                   </div>
                 </div>
 
                 <!-- Selection Indicator -->
-                <div v-if="selectedPayType?.name === payType.name" class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                <div v-if="selectedPayType?.name === payType.name"
+                  class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
                   <i class="pi pi-check text-white text-xs"></i>
                 </div>
               </div>
 
               <!-- Crypto Networks Selection -->
-              <div v-if="selectedPayType?.name === payType.name" class="mt-3 pt-3 border-t border-gray-200 dark:border-gray-600">
+              <div v-if="selectedPayType?.name === payType.name"
+                class="mt-3 pt-3 border-t border-gray-200 dark:border-gray-600">
                 <div class="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                  Selected: {{ selectedCrypto ? `${selectedCrypto.crypto.name}-${selectedCrypto.network.name}` : 'None' }}
+                  Selected: {{ selectedCrypto ? `${selectedCrypto.crypto.name}-${selectedCrypto.network.name}` : 'None'
+                  }}
                 </div>
                 <div class="space-y-2">
                   <div v-for="crypto in payType.cryptoNetworks" :key="`${crypto.crypto.name}-${crypto.network.name}`"
@@ -430,7 +365,8 @@
                     <!-- Crypto Icon and Info -->
                     <div class="flex items-center space-x-3">
                       <div class="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden">
-                        <img v-if="crypto.crypto.logoUrl" :src="crypto.crypto.logoUrl" :alt="crypto.crypto.name" class="w-full h-full object-cover" />
+                        <img v-if="crypto.crypto.logoUrl" :src="crypto.crypto.logoUrl" :alt="crypto.crypto.name"
+                          class="w-full h-full object-cover" />
                         <div v-else class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
                           <span class="text-white font-bold text-sm">{{ crypto.crypto.name.charAt(0) }}</span>
                         </div>
@@ -445,7 +381,8 @@
                     </div>
 
                     <!-- Selection Indicator -->
-                    <div v-if="selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name"
+                    <div
+                      v-if="selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name"
                       class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
                       <i class="pi pi-check text-white text-xs"></i>
                     </div>
@@ -457,42 +394,17 @@
           </div>
         </div>
 
-        <!-- Receive Amount -->
-        <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
-          <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">Receive amount</label>
-          <div class="flex items-center space-x-2">
-            <div class="flex-1">
-              <InputText
-                type="number"
-                placeholder="0.00"
-                readonly
-                class="w-full"
-                :model-value="receiveAmount.toString()"
-              />
-            </div>
-            <div class="text-sm text-gray-500 dark:text-gray-400">
-              {{ selectedToken }}
-            </div>
-          </div>
-          
-          <!-- Rate Loading State -->
-          <div v-if="rateLoading" class="mt-2 flex items-center space-x-2 text-xs text-blue-600 dark:text-blue-400">
-            <i class="pi pi-spin pi-spinner"></i>
-            <span>Loading exchange rate...</span>
-          </div>
-          
-          <!-- Rate Error State -->
-          <div v-if="rateError" class="mt-2 flex items-center space-x-2 text-xs text-red-600 dark:text-red-400">
-            <i class="pi pi-exclamation-triangle"></i>
-            <span>{{ rateError }}</span>
-          </div>
+        <!-- Rate Error State -->
+        <div v-if="rateError" class="mt-2 flex items-center space-x-2 text-xs text-red-600 dark:text-red-400">
+          <i class="pi pi-exclamation-triangle"></i>
+          <span>{{ rateError }}</span>
         </div>
 
         <!-- Exchange Rate Info (Mobile) -->
         <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-1">
-              <span class="text-xs text-gray-600 dark:text-gray-400">You will receive</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400 whitespace-nowrap">You will receive</span>
               <div class="flex">
                 <span class="text-xs font-bold text-gray-900 dark:text-white">{{ receiveAmount }}</span>
                 <span class="text-xs font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
@@ -502,7 +414,7 @@
             </div>
             <div class="flex items-center space-x-1 text-xs text-gray-500">
               <i class="pi pi-clock"></i>
-              <span>15s</span>
+              <span>{{ countdown }}s</span>
             </div>
           </div>
           <div class="flex items-center justify-between text-xs mt-2">
@@ -519,37 +431,22 @@
               {{ selectedCrypto.network.fullName || selectedCrypto.network.name }} address
             </span>
           </label>
-          <InputText
-            v-model="recipientAddress"
+          <InputText v-model="recipientAddress"
             :placeholder="selectedCrypto ? `Enter ${selectedCrypto.network.fullName || selectedCrypto.network.name} address` : 'Address required'"
-            class="w-full"
-            :class="{ 'p-invalid': errors.recipientAddress }"
-          />
+            class="w-full" :class="{ 'p-invalid': errors.recipientAddress }" />
           <small v-if="errors.recipientAddress" class="text-red-500 text-xs">{{ errors.recipientAddress }}</small>
-          <small v-else-if="selectedCrypto && selectedCrypto.network && selectedCrypto.network.addressRegex" class="text-gray-500 text-xs mt-1 block">
+          <small v-else-if="selectedCrypto && selectedCrypto.network && selectedCrypto.network.addressRegex"
+            class="text-gray-500 text-xs mt-1 block">
             Address must match {{ selectedCrypto.network.fullName || selectedCrypto.network.name }} format
           </small>
         </div>
 
         <!-- Action Buttons -->
         <div class="flex space-x-3">
-          <Button
-            label="Back"
-            icon="pi pi-arrow-left"
-            severity="secondary"
-            class="flex-1"
-            size="large"
-            @click="goBack"
-          />
-          <Button
-            label="Withdraw"
-            icon="pi pi-send"
-            class="flex-1"
-            size="large"
-            :disabled="!isFormValid"
-            :loading="isSubmitting"
-            @click="handleWithdraw"
-          />
+          <Button label="Back" icon="pi pi-arrow-left" severity="secondary" class="flex-1" size="large"
+            @click="goBack" />
+          <Button label="Withdraw" icon="pi pi-send" class="flex-1" size="large" :disabled="!isFormValid"
+            :loading="isSubmitting" @click="handleWithdraw" />
         </div>
       </div>
     </div>
@@ -557,13 +454,10 @@
     <!-- Currency Selector Dialog -->
     <Dialog v-model:visible="showCurrencySelector" modal header="Select Currency" class="w-96">
       <div class="space-y-2">
-        <div
-          v-for="currency in currencies"
-          :key="currency"
+        <div v-for="currency in currencies" :key="currency"
           class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer"
           :class="{ 'bg-blue-50 dark:bg-blue-900/20': selectedCurrency === currency }"
-          @click="selectCurrency(currency)"
-        >
+          @click="selectCurrency(currency)">
           <span class="font-medium">{{ currency }}</span>
           <i v-if="selectedCurrency === currency" class="pi pi-check text-blue-600"></i>
         </div>
@@ -573,13 +467,9 @@
     <!-- Token Selector Dialog -->
     <Dialog v-model:visible="showTokenSelector" modal header="Select Token" class="w-96">
       <div class="space-y-2">
-        <div
-          v-for="token in tokens"
-          :key="token"
+        <div v-for="token in tokens" :key="token"
           class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer"
-          :class="{ 'bg-blue-50 dark:bg-blue-900/20': selectedToken === token }"
-          @click="selectToken(token)"
-        >
+          :class="{ 'bg-blue-50 dark:bg-blue-900/20': selectedToken === token }" @click="selectToken(token)">
           <div class="flex items-center space-x-3">
             <div class="w-8 h-8 rounded-full flex items-center justify-center" :class="getTokenBg(token)">
               <span class="text-white font-bold text-sm">{{ getTokenIcon(token) }}</span>
@@ -594,13 +484,9 @@
     <!-- Network Selector Dialog -->
     <Dialog v-model:visible="showNetworkSelector" modal header="Select Network" class="w-96">
       <div class="space-y-2">
-        <div
-          v-for="network in networks"
-          :key="network"
+        <div v-for="network in networks" :key="network"
           class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer"
-          :class="{ 'bg-blue-50 dark:bg-blue-900/20': selectedNetwork === network }"
-          @click="selectNetwork(network)"
-        >
+          :class="{ 'bg-blue-50 dark:bg-blue-900/20': selectedNetwork === network }" @click="selectNetwork(network)">
           <span class="font-medium">{{ network }}</span>
           <i v-if="selectedNetwork === network" class="pi pi-check text-blue-600"></i>
         </div>
@@ -684,7 +570,7 @@ watch(loading, (newValue, oldValue) => {
 //     if (errors.value.recipientAddress && errors.value.recipientAddress.includes('Invalid address format')) {
 //       errors.value.recipientAddress = ''
 //     }
-    
+
 //     // Real-time address format validation
 //     const addressRegex = new RegExp(newCrypto.network.addressRegex)
 //     const isValid = addressRegex.test(newAddress)
@@ -722,27 +608,27 @@ const networks = ['BNB Chain (BEP20)', 'Ethereum (ERC20)', 'Polygon (MATIC)', 'A
 
 // Computed properties
 const isFormValid = computed(() => {
-  return withdrawAmount.value > 0 && 
-         recipientAddress.value.length > 0 && 
-         withdrawAmount.value >= minimumBalance.value &&
-         withdrawAmount.value <= balance.value &&
-         withdrawAmount.value <= getMaxWithdrawAmount() &&
-         selectedPayType.value !== null &&
-         selectedCrypto.value !== null
+  return withdrawAmount.value > 0 &&
+    recipientAddress.value.length > 0 &&
+    withdrawAmount.value >= minimumBalance.value &&
+    withdrawAmount.value <= balance.value &&
+    withdrawAmount.value <= getMaxWithdrawAmount() &&
+    selectedPayType.value !== null &&
+    selectedCrypto.value !== null
 })
 
 // Calculate maximum withdraw amount based on card balance
 const getMaxWithdrawAmount = () => {
   if (!cardDetail.value) return balance.value
-  
+
   // 最大提现金额应该等于卡片余额
   const cardBalance = (cardDetail.value as any).cardBalance || 0
   const availableBalance = parseFloat(cardBalance.toString()) || 0
-  
+
   // 考虑日限额和单笔限额，但最大不超过卡片余额
   const maxDaily = cardInfo.value.maxOnDaily || availableBalance
   const maxPercent = cardInfo.value.maxOnPercent || availableBalance
-  
+
   // 返回可用余额、日限额、单笔限额中的最小值，但不超过卡片余额
   return Math.min(availableBalance, maxDaily, maxPercent)
 }
@@ -771,12 +657,12 @@ const selectCurrency = (currency: string) => {
 const selectPayType = (payType: any) => {
   selectedPayType.value = payType
   selectedToken.value = payType.name
-  
+
   // Auto-select first crypto network if available
   if (payType.cryptoNetworks && payType.cryptoNetworks.length > 0) {
     selectedCrypto.value = payType.cryptoNetworks[0]
     selectedNetwork.value = payType.cryptoNetworks[0].network.name || payType.cryptoNetworks[0].network.fullName
-    
+
     // 切换支付方式后，获取汇率
     console.log('Payment type changed, fetching exchange rate...')
     fetchExchangeRate()
@@ -784,7 +670,7 @@ const selectPayType = (payType: any) => {
     selectedCrypto.value = null
     selectedNetwork.value = ''
   }
-  
+
   showTokenSelector.value = false
 
   // restart polling when pay type changes
@@ -802,7 +688,7 @@ const selectCrypto = (crypto: any) => {
   selectedNetwork.value = crypto.network.name || crypto.network.fullName
   selectedToken.value = crypto.crypto.name
   showNetworkSelector.value = false
-  
+
   // 选择加密货币后，获取汇率
   stopRatePolling()
   startRatePolling()
@@ -818,7 +704,7 @@ const selectToken = (token: string) => {
 
 const selectNetwork = (network: string) => {
   if (selectedPayType.value && selectedPayType.value.cryptoNetworks) {
-    const cryptoNetwork = selectedPayType.value.cryptoNetworks.find((crypto: any) => 
+    const cryptoNetwork = selectedPayType.value.cryptoNetworks.find((crypto: any) =>
       crypto.network.name === network || crypto.network.fullName === network
     )
     if (cryptoNetwork) {
@@ -893,7 +779,7 @@ const validateForm = () => {
 
 const handleWithdraw = async () => {
   validateForm()
-  
+
   if (!isFormValid.value) {
     toast.add({
       severity: 'warn',
@@ -984,7 +870,7 @@ const handleWithdraw = async () => {
   }
 
   isSubmitting.value = true
-  
+
   try {
     // Create withdraw order using OrderAPI with two-level selection data
     const response = await OrderAPI.createWithdrawOrder({
@@ -993,9 +879,11 @@ const handleWithdraw = async () => {
       cardId: cardInfo.value.cardId,
       token: selectedCrypto.value.crypto.name, // token
       network: selectedCrypto.value.network.name, // Network
-      address: recipientAddress.value
+      address: recipientAddress.value,
+      delFlag: false,
+      withdrawAmount: withdrawAmount.value.toString()
     })
-    
+
     if (response.success) {
       toast.add({
         severity: 'success',
@@ -1003,7 +891,7 @@ const handleWithdraw = async () => {
         detail: `Order #${response.model} has been submitted successfully`,
         life: 3000
       })
-      
+
       // Navigate to payment result page with withdraw order details
       router.push({
         name: 'PaymentResult',
@@ -1044,7 +932,7 @@ const initializeCardInfo = () => {
       maxOnMonthly: parseFloat(route.query.maxOnMonthly as string) || 0,
       maxOnPercent: parseFloat(route.query.maxOnPercent as string) || 0
     }
-    
+
     // Set currency based on card currency
     selectedCurrency.value = cardInfo.value.cardCurrency
     minimumBalance.value = 1.00
@@ -1055,7 +943,7 @@ const initializeCardInfo = () => {
 const validateAndLoadCardDetails = () => {
   // 从 Pinia store 获取缓存的当前卡片详情
   const cachedCardDetail = cardStore.getCachedCurrentCardDetail()
-  
+
   if (!cachedCardDetail) {
     console.warn('No cached card detail found, redirecting to MyCards')
     toast.add({
@@ -1067,11 +955,11 @@ const validateAndLoadCardDetails = () => {
     router.push('/my-cards')
     return false
   }
-  
+
   // 验证路由参数中的卡号是否与缓存的卡片详情匹配
   const routeCardNo = route.query.cardNo as string
   const cachedCardNo = cachedCardDetail.cardNo
-  
+
   if (!routeCardNo || !cachedCardNo || routeCardNo !== cachedCardNo) {
     console.warn('Card number mismatch:', { routeCardNo, cachedCardNo })
     toast.add({
@@ -1083,11 +971,11 @@ const validateAndLoadCardDetails = () => {
     router.push('/my-cards')
     return false
   }
-  
+
   // 验证卡片 ID 是否匹配
   const routeCardId = route.query.cardId as string
   const cachedCardId = cachedCardDetail.cardId
-  
+
   if (!routeCardId || !cachedCardId || routeCardId !== cachedCardId) {
     console.warn('Card ID mismatch:', { routeCardId, cachedCardId })
     toast.add({
@@ -1099,14 +987,14 @@ const validateAndLoadCardDetails = () => {
     router.push('/my-cards')
     return false
   }
-  
+
   // 验证通过，设置卡片详情
   cardDetail.value = cachedCardDetail
-  
+
   // 从缓存的卡片详情中提取余额信息 (使用 cardBalance 字段)
   const cardBalance = (cachedCardDetail as any).cardBalance || 0
   balance.value = parseFloat(cardBalance.toString()) || 0
-  
+
   // 更新卡片信息为缓存中的详细信息
   cardInfo.value = {
     cardId: cachedCardDetail.cardId,
@@ -1116,10 +1004,10 @@ const validateAndLoadCardDetails = () => {
     maxOnMonthly: cardInfo.value.maxOnMonthly,
     maxOnPercent: cardInfo.value.maxOnPercent
   }
-  
+
   // 设置货币
   selectedCurrency.value = cachedCardDetail.cardCurrency
-  
+
   console.log('Card details loaded from cache:', {
     cardId: cachedCardDetail.cardId,
     cardNo: cachedCardDetail.cardNo,
@@ -1128,7 +1016,7 @@ const validateAndLoadCardDetails = () => {
     currency: cachedCardDetail.cardCurrency,
     maxWithdrawAmount: getMaxWithdrawAmount()
   })
-  
+
   return true
 }
 
@@ -1160,7 +1048,7 @@ const fetchExchangeRate = async () => {
 
   rateLoading.value = true
   rateError.value = ''
-  
+
   try {
     console.log('Fetching exchange rate for withdrawal...', {
       cryptoUnit: selectedCrypto.value.crypto.name,
@@ -1170,7 +1058,7 @@ const fetchExchangeRate = async () => {
       exchange: selectedPayType.value?.name,
       payTypeName: selectedPayType.value?.name
     })
-    
+
     const response = await OrderAPI.getRate({
       cryptoUnit: selectedCrypto.value.crypto.name,
       network: selectedCrypto.value.network.name,
@@ -1179,16 +1067,16 @@ const fetchExchangeRate = async () => {
       exchange: selectedPayType.value?.name.toUpperCase() === 'BINANCE' ? 'BINANCE' : 'WALLET', // 根据支付方式选择交易所
       fiatUnit: selectedCurrency.value
     })
-    
+
     if (response.success && response.model) {
       exchangeRate.value = response.model
       console.log('Exchange rate loaded:', response.model)
-      
+
       // 更新网络费用
       if (response.model.cryptoDetail && response.model.cryptoDetail.cryptoFee) {
         networkFee.value = parseFloat(response.model.cryptoDetail.cryptoFee) || 0
       }
-      
+
       // 更新接收金额
       updateReceiveAmount()
     } else {
@@ -1197,7 +1085,7 @@ const fetchExchangeRate = async () => {
   } catch (error) {
     console.error('Error fetching exchange rate:', error)
     rateError.value = error instanceof Error ? error.message : 'Failed to get exchange rate'
-    
+
     // 使用默认汇率作为后备
     exchangeRate.value = null
     updateReceiveAmount()
@@ -1255,7 +1143,7 @@ const updateReceiveAmount = () => {
     receiveAmount.value = 0
     return
   }
-  
+
   if (exchangeRate.value && exchangeRate.value.cryptoDetail) {
     // 使用真实汇率数据
     const cryptoAmount = parseFloat(exchangeRate.value.cryptoDetail.cryptoAmount) || 0
@@ -1282,12 +1170,12 @@ const fetchPaymentMethods = async () => {
   loading.value = true
   try {
     console.log('Fetching payment methods for withdrawal...')
-    
+
     // 调用 OrderAPI 获取提现支付方式 (orderType: 'OUT' 表示提现)
     const response = await OrderAPI.getPaymentMethods({
       orderType: 'OUT'
     })
-    
+
     loading.value = false
     if (response.success && response.model && response.model.payTypes) {
       paymentMethods.value = response.model.payTypes
@@ -1296,14 +1184,14 @@ const fetchPaymentMethods = async () => {
       if (response.model.payTypes.length > 0) {
         selectedPayType.value = response.model.payTypes[0]
         console.log('Auto-selected payment method:', response.model.payTypes[0].name)
-        
+
         // Auto-select first crypto network of the first payment method
         if (response.model.payTypes[0].cryptoNetworks && response.model.payTypes[0].cryptoNetworks.length > 0) {
           selectedCrypto.value = response.model.payTypes[0].cryptoNetworks[0]
           selectedToken.value = response.model.payTypes[0].cryptoNetworks[0].crypto.name
           selectedNetwork.value = response.model.payTypes[0].cryptoNetworks[0].network.name || response.model.payTypes[0].cryptoNetworks[0].network.fullName
           console.log('Auto-selected crypto network:', response.model.payTypes[0].cryptoNetworks[0].crypto.name)
-          
+
           // 自动选择后，使用最小金额获取汇率，让用户看到实时汇率信息
           if (minimumBalance.value > 0) {
             console.log('Auto-fetching exchange rate with minimum balance:', minimumBalance.value)
@@ -1335,14 +1223,14 @@ const fetchPaymentMethods = async () => {
       detail: 'Failed to load payment methods, using defaults',
       life: 3000
     })
-    
+
     // Fallback to default tokens if API fails
     paymentMethods.value = tokens.map(token => ({
       name: token,
       img: null,
       cryptoNetworks: []
     }))
-    
+
     // Initialize with first fallback token
     if (tokens.length > 0) {
       selectedPayType.value = paymentMethods.value[0]
@@ -1357,13 +1245,13 @@ const fetchPaymentMethods = async () => {
 // Initialize on mount
 onMounted(async () => {
   console.log('WithdrawOrder mounted, starting initialization...')
-  
+
   initializeCardInfo()
-  
+
   // 验证并加载卡片详情（从 Pinia store）
   const isValid = validateAndLoadCardDetails()
   console.log('Card validation result:', isValid)
-  
+
   // 只有验证通过才继续加载其他数据
   if (isValid) {
     console.log('Card validation passed, fetching payment methods...')
