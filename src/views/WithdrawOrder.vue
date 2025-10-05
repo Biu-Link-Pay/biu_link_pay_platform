@@ -58,13 +58,14 @@
                 </div>
                 <div class="flex items-center space-x-3">
                   <div class="flex-1">
-                    <InputText type="number" placeholder="0.00" class="w-full text-lg"
+                    <InputText type="number" placeholder="0.00" class="w-full text-lg" :disabled="isDeleteAction"
                       :class="{ 'p-invalid': errors.withdrawAmount }" :model-value="withdrawAmount.toString()"
                       @update:model-value="(value: string | undefined) => {
                         withdrawAmount = parseFloat(value || '0') || 0
                       }" />
                   </div>
-                  <Button label="Max" size="small" severity="secondary" @click="setMaxAmount" />
+                  <Button label="Max" size="small" severity="secondary" @click="setMaxAmount"
+                    :disabled="isDeleteAction" />
                   <Button :label="selectedCurrency" icon="pi pi-dollar" size="small" severity="secondary"
                     @click="showCurrencySelector = true" />
                 </div>
@@ -283,12 +284,13 @@
           </div>
           <div class="flex items-center space-x-2">
             <div class="flex-1">
-              <InputText type="number" placeholder="0.00" class="w-full" :class="{ 'p-invalid': errors.withdrawAmount }"
-                :model-value="withdrawAmount.toString()" @update:model-value="(value: string | undefined) => {
+              <InputText type="number" placeholder="0.00" class="w-full" :disabled="isDeleteAction"
+                :class="{ 'p-invalid': errors.withdrawAmount }" :model-value="withdrawAmount.toString()"
+                @update:model-value="(value: string | undefined) => {
                   withdrawAmount = parseFloat(value || '0') || 0
                 }" />
             </div>
-            <Button label="Max" size="small" severity="secondary" @click="setMaxAmount" />
+            <Button label="Max" size="small" severity="secondary" @click="setMaxAmount" :disabled="isDeleteAction" />
             <Button :label="selectedCurrency" icon="pi pi-dollar" size="small" severity="secondary"
               @click="showCurrencySelector = true" />
           </div>
@@ -526,6 +528,7 @@ const loading = ref(false)
 const balance = ref(0.00)
 const minimumBalance = ref(1.00)
 const withdrawAmount = ref(0)
+const isDeleteAction = computed(() => (route.query.action as string) === 'delete')
 const receiveAmount = ref(0)
 const recipientAddress = ref('')
 const selectedCurrency = ref('USD')
@@ -608,13 +611,13 @@ const networks = ['BNB Chain (BEP20)', 'Ethereum (ERC20)', 'Polygon (MATIC)', 'A
 
 // Computed properties
 const isFormValid = computed(() => {
-  return withdrawAmount.value > 0 &&
-    recipientAddress.value.length > 0 &&
+  const base = recipientAddress.value.length > 0 && selectedPayType.value !== null && selectedCrypto.value !== null
+  if (isDeleteAction.value) return base
+  return base &&
+    withdrawAmount.value > 0 &&
     withdrawAmount.value >= minimumBalance.value &&
     withdrawAmount.value <= balance.value &&
-    withdrawAmount.value <= getMaxWithdrawAmount() &&
-    selectedPayType.value !== null &&
-    selectedCrypto.value !== null
+    withdrawAmount.value <= getMaxWithdrawAmount()
 })
 
 // Calculate maximum withdraw amount based on card balance
@@ -741,18 +744,20 @@ const validateForm = () => {
     recipientAddress: ''
   }
 
-  if (withdrawAmount.value <= 0) {
-    errors.value.withdrawAmount = 'Amount must be greater than 0'
-  } else if (withdrawAmount.value < minimumBalance.value) {
-    errors.value.withdrawAmount = `Amount must be at least ${formatCurrency(minimumBalance.value)}`
-  } else if (withdrawAmount.value > balance.value) {
-    errors.value.withdrawAmount = 'Amount exceeds available balance'
-  } else if (withdrawAmount.value > getMaxWithdrawAmount()) {
-    errors.value.withdrawAmount = `Amount exceeds maximum withdraw limit of ${formatCurrency(getMaxWithdrawAmount())}`
-  } else if (cardInfo.value.maxOnDaily && withdrawAmount.value > cardInfo.value.maxOnDaily) {
-    errors.value.withdrawAmount = `Amount exceeds daily limit of ${formatCurrency(cardInfo.value.maxOnDaily)}`
-  } else if (cardInfo.value.maxOnPercent && withdrawAmount.value > cardInfo.value.maxOnPercent) {
-    errors.value.withdrawAmount = `Amount exceeds single transaction limit of ${formatCurrency(cardInfo.value.maxOnPercent)}`
+  if (!isDeleteAction.value) {
+    if (withdrawAmount.value <= 0) {
+      errors.value.withdrawAmount = 'Amount must be greater than 0'
+    } else if (withdrawAmount.value < minimumBalance.value) {
+      errors.value.withdrawAmount = `Amount must be at least ${formatCurrency(minimumBalance.value)}`
+    } else if (withdrawAmount.value > balance.value) {
+      errors.value.withdrawAmount = 'Amount exceeds available balance'
+    } else if (withdrawAmount.value > getMaxWithdrawAmount()) {
+      errors.value.withdrawAmount = `Amount exceeds maximum withdraw limit of ${formatCurrency(getMaxWithdrawAmount())}`
+    } else if (cardInfo.value.maxOnDaily && withdrawAmount.value > cardInfo.value.maxOnDaily) {
+      errors.value.withdrawAmount = `Amount exceeds daily limit of ${formatCurrency(cardInfo.value.maxOnDaily)}`
+    } else if (cardInfo.value.maxOnPercent && withdrawAmount.value > cardInfo.value.maxOnPercent) {
+      errors.value.withdrawAmount = `Amount exceeds single transaction limit of ${formatCurrency(cardInfo.value.maxOnPercent)}`
+    }
   }
 
   if (!recipientAddress.value) {
@@ -780,7 +785,7 @@ const validateForm = () => {
 const handleWithdraw = async () => {
   validateForm()
 
-  if (!isFormValid.value) {
+  if (!isDeleteAction.value && !isFormValid.value) {
     toast.add({
       severity: 'warn',
       summary: 'Validation Error',
@@ -880,8 +885,8 @@ const handleWithdraw = async () => {
       token: selectedCrypto.value.crypto.name, // token
       network: selectedCrypto.value.network.name, // Network
       address: recipientAddress.value,
-      delFlag: false,
-      withdrawAmount: withdrawAmount.value.toString()
+      delFlag: isDeleteAction.value,
+      withdrawAmount: (isDeleteAction.value ? getMaxWithdrawAmount() : withdrawAmount.value).toString()
     })
 
     if (response.success) {
@@ -1254,6 +1259,10 @@ onMounted(async () => {
 
   // 只有验证通过才继续加载其他数据
   if (isValid) {
+    // If delete action, set amount to maximum upfront
+    if (isDeleteAction.value) {
+      withdrawAmount.value = getMaxWithdrawAmount()
+    }
     console.log('Card validation passed, fetching payment methods...')
     await fetchPaymentMethods()
     // start polling if crypto already selected after loading methods

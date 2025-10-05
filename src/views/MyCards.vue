@@ -865,7 +865,8 @@ const executeWithdrawAction = async (cardDetail: CardDetailResponse) => {
     query: {
       cardId: cardDetail.cardId,
       cardNo: cardDetail.cardNo,
-      cardCurrency: cardDetail.cardCurrency
+      cardCurrency: cardDetail.cardCurrency,
+      action: 'withdraw'
       // No need to pass faCode anymore as verification is completed
     }
   })
@@ -882,14 +883,14 @@ const executeDetailsAction = async (cardDetailData: CardDetailResponse) => {
 const executeDeleteAction = async (cardDetail: CardDetailResponse) => {
   console.log('Executing delete operation, card details:', cardDetail)
 
-  // Navigate to delete card page with card information
-  // Card details are already cached in Pinia store, no need to pass verification code
+  // Navigate to WithdrawOrder with delete action
   router.push({
-    name: 'DeleteCard',
+    name: 'WithdrawOrder',
     query: {
       cardId: cardDetail.cardId,
       cardNo: cardDetail.cardNo,
-      cardCurrency: cardDetail.cardCurrency
+      cardCurrency: cardDetail.cardCurrency,
+      action: 'delete'
       // No need to pass faCode anymore as verification is completed
     }
   })
