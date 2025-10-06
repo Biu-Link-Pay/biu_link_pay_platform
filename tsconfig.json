@@ -4,7 +4,8 @@
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue",
-    "src/components/CardDetailDialog.vue"
+    "src/components/CardDetailDialog.vue",
+    "src/components/CardInfoHeader.vue"
   ],
   "exclude": [
     "src/**/__tests__/*"

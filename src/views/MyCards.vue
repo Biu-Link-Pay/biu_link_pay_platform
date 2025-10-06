@@ -1246,6 +1246,7 @@ const goToRecharge = () => {
     cardType: '-',
     cardScheme: '-', // Default card type
     cardCurrency: selectedCard.value?.cardCurrency || 'USD',
+    cardNo: selectedCard.value?.cardNo || '',
     billingAddressUpdatable: 'false',
     expiryDateCustomization: 'false',
     remainingAvailableCard: 0,

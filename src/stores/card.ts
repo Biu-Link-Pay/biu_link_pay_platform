@@ -9,8 +9,6 @@ import type {
   QueryCardBinParams,
   CardHolderInfo,
   CardListItem,
-  TransactionListQueryParams,
-  CardTransactionListResponse,
   CardDetailResponse
 } from '@/api/card'
 
@@ -227,7 +225,10 @@ export const useCardStore = defineStore('card', () => {
   const getEnabledCardConfigs = (): CardConfig[] => {
     return cardConfigs.value.filter(card => card.status === 1)
   }
-
+  // Get selected card BIN
+  const getSelectedCardBin = (): CardBin | null => {
+    return selectedCardBin.value
+  }
   // Set selected card BIN
   const setSelectedCardBin = (cardBin: CardBin | null) => {
     selectedCardBin.value = cardBin
@@ -315,6 +316,7 @@ export const useCardStore = defineStore('card', () => {
     getCardConfigsByType,
     getCardConfigsByPattern,
     getEnabledCardConfigs,
+    getSelectedCardBin,
     setSelectedCardBin,
     setSelectedCardConfig,
     setCurrentOrder,

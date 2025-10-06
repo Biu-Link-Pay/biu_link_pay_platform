@@ -18,29 +18,7 @@
       </div>
 
       <!-- Card Information (only for recharge action) -->
-      <div v-if="route.query.action === 'recharge'" class="mb-8">
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Your Card</h3>
-        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center space-x-4">
-              <div class="w-12 h-8 bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
-                <div
-                  class="w-6 h-4 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-sm flex items-center justify-center">
-                  <div class="w-3 h-2 bg-white rounded-sm"></div>
-                </div>
-              </div>
-              <div>
-              </div>
-            </div>
-            <div class="text-right">
-              <div class="text-sm text-gray-600 dark:text-gray-400">Card Number</div>
-              <div class="text-lg font-mono font-semibold text-gray-900 dark:text-white">
-                **** {{ maskedCardNumber }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CardInfoHeader v-if="route.query.action === 'recharge'" :card-no="currentCardNo" />
 
       <!-- Content: view or edit billing address -->
       <div class="space-y-8">
@@ -231,6 +209,7 @@ import InputText from 'primevue/inputtext'
 import Button from 'primevue/button'
 import Dropdown from 'primevue/dropdown'
 import AppHeader from '@/components/AppHeader.vue'
+import CardInfoHeader from '@/components/CardInfoHeader.vue'
 import { CardAPI } from '@/api/card'
 import type { CardHolderInfo as HolderInfo, CardHolderResponse } from '@/api/card'
 import * as CSC from 'country-state-city'
@@ -515,17 +494,8 @@ const currentCurrencySymbol = computed(() => {
   return currencySymbols[currency] || '$'
 })
 
-// Card information for recharge
-const cardBalance = ref(0.00)
-const cardNumber = ref('1234567890123456') // This would come from API in real implementation
-
-// Masked card number (show only last 4 digits)
-const maskedCardNumber = computed(() => {
-  if (cardNumber.value && cardNumber.value.length >= 4) {
-    return cardNumber.value.slice(-4)
-  }
-  return '****'
-})
+// Current card number from route/store for header
+const currentCardNo = computed(() => (cardStore.getSelectedCardBin()?.cardNo || ''))
 
 // Computed properties for button states
 const canConfirm = computed(() => {
@@ -856,29 +826,6 @@ const validateRechargeAmount = () => {
     })
   }
 }
-
-// Load card information for recharge
-const loadCardInfo = async () => {
-  if (route.query.action === 'recharge') {
-    try {
-      // In real implementation, this would call an API to get card details
-      // For now, we'll use mock data
-      cardBalance.value = 125.50
-      cardNumber.value = '1234567890123456'
-
-      // You could also get this from cardStore if available
-      // const cardDetails = await CardAPI.getCardDetails(cardId)
-      // cardBalance.value = cardDetails.balance
-      // cardNumber.value = cardDetails.cardNumber
-    } catch (error) {
-      console.error('Error loading card info:', error)
-      // Set default values on error
-      cardBalance.value = 0.00
-      cardNumber.value = '****'
-    }
-  }
-}
-
 // Initialize: query holder and card info
 onMounted(async () => {
   await loadHolder()
@@ -888,6 +835,5 @@ onMounted(async () => {
   } catch (error) {
     console.warn('Failed to fetch card list:', error)
   }
-  await loadCardInfo()
 })
 </script>

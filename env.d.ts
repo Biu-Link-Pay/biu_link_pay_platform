@@ -12,3 +12,9 @@ declare module '@/components/CardDetailDialog.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+
+declare module '@/components/CardInfoHeader.vue' {
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent<{}, {}, any>
+  export default component
+}
