@@ -28,6 +28,7 @@ export interface CardBin {
   availableCard: number | null // Number of cards issued
   cardFormFactor: string | null // Virtual card or physical card
   cardId?: string | null // Card ID, used for recharge operations
+  cardNo?: string | null // Card number (optional, used for display/header)
 }
 
 // Query card BIN parameters

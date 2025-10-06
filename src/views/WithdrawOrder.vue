@@ -6,6 +6,7 @@
     <!-- Main Content -->
     <div
       class="w-full max-w-2xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+      <CardInfoHeader :card-no="cardInfo.cardNo" />
       <!-- Desktop Layout -->
       <div class="hidden md:block">
         <div class="max-w-4xl xl:max-w-5xl mx-auto space-y-8">
@@ -71,17 +72,10 @@
                 </div>
                 <small v-if="errors.withdrawAmount" class="text-red-500">{{ errors.withdrawAmount }}</small>
 
-                <!-- Balance Info -->
-                <div class="mt-3 space-y-2">
-                  <div class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
-                    <span>Available: {{ formatCurrency(balance) }}</span>
-                    <span>Min: {{ formatCurrency(minimumBalance) }}</span>
-                  </div>
-                  <div class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
-                    <span>Max withdraw: {{ formatCurrency(getMaxWithdrawAmount()) }}</span>
-                    <span v-if="cardInfo.maxOnDaily > 0" class="text-xs">Daily limit: {{
-                      formatCurrency(cardInfo.maxOnDaily) }}</span>
-                  </div>
+                <!-- Amount Range Info (simplified) -->
+                <div class="mt-3 text-sm text-gray-600 dark:text-gray-400">
+                  Withdraw amount {{ minimumBalance }} - {{ getMaxWithdrawAmount() }} {{ selectedCurrency.toLowerCase()
+                  }}
                 </div>
               </div>
 
@@ -264,16 +258,9 @@
           </div>
         </div>
 
-        <!-- Minimum Balance Notice -->
-        <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
-          <div class="flex items-start space-x-2">
-            <div class="w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-              <i class="pi pi-info text-white text-xs"></i>
-            </div>
-            <div class="text-xs text-blue-800 dark:text-blue-200">
-              The balance in the card must be at least {{ formatCurrency(minimumBalance) }}
-            </div>
-          </div>
+        <!-- Amount Range Info (simplified, mobile) -->
+        <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-3 text-xs text-gray-700 dark:text-gray-300">
+          Withdraw amount {{ minimumBalance }} - {{ getMaxWithdrawAmount() }} {{ selectedCurrency.toLowerCase() }}
         </div>
 
         <!-- Withdraw Amount -->
@@ -502,6 +489,7 @@ import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
+import CardInfoHeader from '@/components/CardInfoHeader.vue'
 import { OrderAPI } from '@/api/order'
 import { useCardStore } from '@/stores/card'
 import Dialog from 'primevue/dialog'
