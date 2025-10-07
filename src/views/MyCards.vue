@@ -421,7 +421,7 @@
                           </div>
                           <div class="flex-1 min-w-0">
                             <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
-                              #{{ order.num }}
+                              {{ order.num }}
                             </div>
                             <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
                               {{ formatDate(order.createTime || '') }}
@@ -485,7 +485,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                               <div class="font-medium text-gray-900 dark:text-white text-xs">
-                                #{{ order.num }}
+                                {{ order.num }}
                               </div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">
                                 {{ formatDate(order.createTime || '') }}
@@ -562,7 +562,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                               <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
-                                #{{ order.num || 'N/A' }}
+                                {{ order.num || 'N/A' }}
                               </div>
                               <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
                                 {{ formatDate(order.createTime || '') }}
@@ -626,7 +626,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                               <div class="font-medium text-gray-900 dark:text-white text-xs">
-                                #{{ order.num || 'N/A' }}
+                                {{ order.num || 'N/A' }}
                               </div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">
                                 {{ formatDate(order.createTime || '') }}
