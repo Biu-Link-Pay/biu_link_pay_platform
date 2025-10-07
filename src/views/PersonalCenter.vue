@@ -4,28 +4,31 @@
     <AppHeader title="Personal Center" :show-title="true" />
 
     <!-- Main Content -->
-    <div class="w-full max-w-2xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+    <div
+      class="w-full max-w-2xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
       <!-- Desktop Layout -->
       <div class="hidden md:block">
         <div class="max-w-4xl mx-auto">
           <!-- User Information Card -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
             <div class="flex items-center space-x-6">
               <!-- User Avatar -->
               <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center">
                 <i class="pi pi-user text-white text-2xl"></i>
               </div>
-              
+
               <!-- User Info -->
               <div class="flex-1">
-                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">{{ userProfile?.firstName || 'User' }}</h2>
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">{{ userProfile?.firstName || 'User' }}
+                </h2>
                 <div class="space-y-3">
                   <!-- Email -->
                   <div class="flex items-center justify-between">
                     <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Email</span>
                     <span class="text-sm text-gray-900 dark:text-white">{{ maskedEmail }}</span>
                   </div>
-                  
+
                   <!-- KYC Status -->
                   <div class="flex items-center justify-between">
                     <span class="text-sm font-medium text-gray-600 dark:text-gray-400">KYC</span>
@@ -45,8 +48,9 @@
           <!-- Settings Grid -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <!-- Google Authentication -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
-                 @click="navigateToGoogleAuth">
+            <div
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
+              @click="navigateToGoogleAuth">
               <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
                   <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/20 rounded-lg flex items-center justify-center">
@@ -85,11 +89,13 @@
             </div> -->
 
             <!-- Terms of Service -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
-                 @click="navigateToTerms">
+            <div
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
+              @click="navigateToTerms">
               <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
-                  <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/20 rounded-lg flex items-center justify-center">
+                  <div
+                    class="w-12 h-12 bg-purple-100 dark:bg-purple-900/20 rounded-lg flex items-center justify-center">
                     <i class="pi pi-file text-purple-600 dark:text-purple-400 text-lg"></i>
                   </div>
                   <div>
@@ -102,11 +108,13 @@
             </div>
 
             <!-- Privacy Policy -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
-                 @click="navigateToPrivacy">
+            <div
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
+              @click="navigateToPrivacy">
               <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
-                  <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/20 rounded-lg flex items-center justify-center">
+                  <div
+                    class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/20 rounded-lg flex items-center justify-center">
                     <i class="pi pi-shield text-indigo-600 dark:text-indigo-400 text-lg"></i>
                   </div>
                   <div>
@@ -119,7 +127,7 @@
             </div>
 
             <!-- Safety Validation -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
+            <!-- <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
                  @click="navigateToSafety">
               <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
@@ -133,7 +141,7 @@
                 </div>
                 <i class="pi pi-chevron-right text-gray-400"></i>
               </div>
-            </div>
+            </div> -->
 
             <!-- Referral Code -->
             <!-- <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
@@ -155,8 +163,8 @@
 
           <!-- Log Out Button -->
           <div class="mt-8">
-            <button @click="handleLogout" 
-                    class="w-full bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-6 hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors">
+            <button @click="handleLogout"
+              class="w-full bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-6 hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors">
               <div class="flex items-center justify-center space-x-4">
                 <div class="w-12 h-12 bg-red-100 dark:bg-red-900/20 rounded-lg flex items-center justify-center">
                   <i class="pi pi-sign-out text-red-600 dark:text-red-400 text-lg"></i>
@@ -184,13 +192,13 @@
               <p class="text-sm text-gray-600 dark:text-gray-400">{{ maskedEmail }}</p>
             </div>
           </div>
-          
+
           <!-- Email -->
           <div class="flex items-center justify-between py-3 border-b border-gray-200 dark:border-gray-700">
             <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Email</span>
             <span class="text-sm text-gray-900 dark:text-white">{{ maskedEmail }}</span>
           </div>
-          
+
           <!-- KYC Status -->
           <div class="flex items-center justify-between py-3">
             <span class="text-sm font-medium text-gray-600 dark:text-gray-400">KYC</span>
@@ -207,8 +215,9 @@
         <!-- Settings List -->
         <div class="space-y-2">
           <!-- Google Authentication -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
-               @click="navigateToGoogleAuth">
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
+            @click="navigateToGoogleAuth">
             <div class="flex items-center space-x-3">
               <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/20 rounded-lg flex items-center justify-center">
                 <i class="pi pi-google text-blue-600 dark:text-blue-400"></i>
@@ -237,8 +246,9 @@
           </div> -->
 
           <!-- Terms of Service -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
-               @click="navigateToTerms">
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
+            @click="navigateToTerms">
             <div class="flex items-center space-x-3">
               <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/20 rounded-lg flex items-center justify-center">
                 <i class="pi pi-file text-purple-600 dark:text-purple-400"></i>
@@ -249,8 +259,9 @@
           </div>
 
           <!-- Privacy Policy -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
-               @click="navigateToPrivacy">
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
+            @click="navigateToPrivacy">
             <div class="flex items-center space-x-3">
               <div class="w-10 h-10 bg-indigo-100 dark:bg-indigo-900/20 rounded-lg flex items-center justify-center">
                 <i class="pi pi-shield text-indigo-600 dark:text-indigo-400"></i>
@@ -261,7 +272,7 @@
           </div>
 
           <!-- Safety Validation -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
+          <!-- <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
                @click="navigateToSafety">
             <div class="flex items-center space-x-3">
               <div class="w-10 h-10 bg-orange-100 dark:bg-orange-900/20 rounded-lg flex items-center justify-center">
@@ -270,7 +281,7 @@
               <span class="font-medium text-gray-900 dark:text-white">Safety Validation</span>
             </div>
             <i class="pi pi-chevron-right text-gray-400"></i>
-          </div>
+          </div> -->
 
           <!-- Referral Code -->
           <!-- <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
@@ -285,8 +296,9 @@
           </div> -->
 
           <!-- Log Out -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
-               @click="handleLogout">
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700 flex items-center justify-between cursor-pointer"
+            @click="handleLogout">
             <div class="flex items-center space-x-3">
               <div class="w-10 h-10 bg-red-100 dark:bg-red-900/20 rounded-lg flex items-center justify-center">
                 <i class="pi pi-sign-out text-red-600 dark:text-red-400"></i>
@@ -301,14 +313,8 @@
   </div>
 
   <!-- Google Auth Binding Dialog -->
-  <Dialog 
-    v-model:visible="showGoogleAuthBindDialog" 
-    modal 
-    header="Bind Google Authenticator"
-    :style="{ width: '500px' }"
-    :closable="!bindLoading"
-    :close-on-escape="!bindLoading"
-  >
+  <Dialog v-model:visible="showGoogleAuthBindDialog" modal header="Bind Google Authenticator"
+    :style="{ width: '500px' }" :closable="!bindLoading" :close-on-escape="!bindLoading">
     <div class="space-y-6">
       <!-- Step 1: Scan QR Code -->
       <div class="text-center space-y-4">
@@ -321,31 +327,19 @@
             Use Google Authenticator app to scan the QR code below
           </p>
         </div>
-        
+
         <!-- QR Code Display -->
         <div v-if="bindQrCode" class="flex justify-center">
-          <img 
-            :src="`data:image/png;base64,${bindQrCode}`" 
-            alt="Google Auth QR Code"
-            class="w-48 h-48 border border-gray-200 dark:border-gray-700 rounded-lg"
-          />
+          <img :src="`data:image/png;base64,${bindQrCode}`" alt="Google Auth QR Code"
+            class="w-48 h-48 border border-gray-200 dark:border-gray-700 rounded-lg" />
         </div>
-        
+
         <!-- Secret Key Display -->
         <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Or manually enter the secret key:</p>
           <div class="flex items-center space-x-2">
-            <InputText 
-              :model-value="bindSecretKey"
-              readonly
-              class="flex-1 font-mono text-sm"
-            />
-            <Button 
-              icon="pi pi-copy"
-              severity="secondary"
-              size="small"
-              @click="copySecretKey"
-            />
+            <InputText :model-value="bindSecretKey" readonly class="flex-1 font-mono text-sm" />
+            <Button icon="pi pi-copy" severity="secondary" size="small" @click="copySecretKey" />
           </div>
         </div>
       </div>
@@ -358,47 +352,26 @@
             Enter the 6-digit verification code from Google Authenticator
           </p>
         </div>
-        
+
         <div class="flex justify-center">
-          <InputText
-            v-model="bindAuthCode"
-            placeholder="Enter 6-digit code"
-            maxlength="6"
-            class="w-48 text-center text-lg font-mono tracking-widest"
-            :disabled="bindLoading"
-            @input="onBindCodeInput"
-          />
+          <InputText v-model="bindAuthCode" placeholder="Enter 6-digit code" maxlength="6"
+            class="w-48 text-center text-lg font-mono tracking-widest" :disabled="bindLoading"
+            @input="onBindCodeInput" />
         </div>
       </div>
 
       <!-- 操作按钮 -->
       <div class="flex justify-end space-x-3">
-        <Button 
-          label="Cancel" 
-          severity="secondary"
-          :disabled="bindLoading"
-          @click="cancelBind"
-        />
-        <Button 
-          label="Confirm Binding" 
-          icon="pi pi-check"
-          :loading="bindLoading"
-          :disabled="!bindAuthCode || bindAuthCode.length !== 6"
-          @click="confirmBind"
-        />
+        <Button label="Cancel" severity="secondary" :disabled="bindLoading" @click="cancelBind" />
+        <Button label="Confirm Binding" icon="pi pi-check" :loading="bindLoading"
+          :disabled="!bindAuthCode || bindAuthCode.length !== 6" @click="confirmBind" />
       </div>
     </div>
   </Dialog>
 
   <!-- Google Auth Unbind Dialog -->
-  <Dialog 
-    v-model:visible="showGoogleAuthUnbindDialog" 
-    modal 
-    header="Unbind Google Authenticator"
-    :style="{ width: '400px' }"
-    :closable="!unbindLoading"
-    :close-on-escape="!unbindLoading"
-  >
+  <Dialog v-model:visible="showGoogleAuthUnbindDialog" modal header="Unbind Google Authenticator"
+    :style="{ width: '400px' }" :closable="!unbindLoading" :close-on-escape="!unbindLoading">
     <div class="space-y-6">
       <!-- 警告图标和消息 -->
       <div class="text-center space-y-4">
@@ -408,7 +381,8 @@
         <div>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Confirm Unbind</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-            After unbinding, you will not be able to use Google Authenticator for two-factor authentication. Are you sure you want to continue?
+            After unbinding, you will not be able to use Google Authenticator for two-factor authentication. Are you
+            sure you want to continue?
           </p>
         </div>
       </div>
@@ -421,35 +395,19 @@
             Please enter the 6-digit verification code from Google Authenticator
           </p>
         </div>
-        
+
         <div class="flex justify-center">
-          <InputText
-            v-model="unbindAuthCode"
-            placeholder="Enter 6-digit code"
-            maxlength="6"
-            class="w-48 text-center text-lg font-mono tracking-widest"
-            :disabled="unbindLoading"
-            @input="onUnbindCodeInput"
-          />
+          <InputText v-model="unbindAuthCode" placeholder="Enter 6-digit code" maxlength="6"
+            class="w-48 text-center text-lg font-mono tracking-widest" :disabled="unbindLoading"
+            @input="onUnbindCodeInput" />
         </div>
       </div>
 
       <!-- 操作按钮 -->
       <div class="flex justify-end space-x-3">
-        <Button 
-          label="Cancel" 
-          severity="secondary"
-          :disabled="unbindLoading"
-          @click="cancelUnbind"
-        />
-        <Button 
-          label="Confirm Unbind" 
-          icon="pi pi-times"
-          severity="danger"
-          :loading="unbindLoading"
-          :disabled="!unbindAuthCode || unbindAuthCode.length !== 6"
-          @click="handleUnbindGoogleAuth"
-        />
+        <Button label="Cancel" severity="secondary" :disabled="unbindLoading" @click="cancelUnbind" />
+        <Button label="Confirm Unbind" icon="pi pi-times" severity="danger" :loading="unbindLoading"
+          :disabled="!unbindAuthCode || unbindAuthCode.length !== 6" @click="handleUnbindGoogleAuth" />
       </div>
     </div>
   </Dialog>
@@ -550,7 +508,7 @@ const fetchUserProfile = async () => {
 
     if (response.success && response.model) {
       userProfile.value = response.model
-      
+
       // 同时更新 Pinia 用户详情
       const profile = response.model
       userStore.updateProfile({
@@ -560,7 +518,7 @@ const fetchUserProfile = async () => {
         kycStatus: profile.kycStatus,
         googleAuthStatus: profile.googleAuthStatus
       })
-      
+
       console.log('User profile updated in Pinia store:', profile)
     } else {
       console.error('Failed to fetch user profile:', response.msg)
@@ -594,7 +552,7 @@ const navigateToGoogleAuth = async () => {
     try {
       loading.value = true
       const response = await AuthAPI.googleAuthGeneral()
-      
+
       if (response.success && response.model) {
         // 显示绑定弹框
         showGoogleAuthBindDialog.value = true
@@ -603,8 +561,8 @@ const navigateToGoogleAuth = async () => {
       } else {
         toast.add({
           severity: 'error',
-        summary: 'Binding Failed',
-        detail: response.msg || 'Failed to get binding information',
+          summary: 'Binding Failed',
+          detail: response.msg || 'Failed to get binding information',
           life: 3000
         })
       }
@@ -741,21 +699,21 @@ const confirmBind = async () => {
 
   try {
     bindLoading.value = true
-    
+
     // 验证验证码
     const response = await AuthAPI.googleAuthValid(bindAuthCode.value, bindSecretKey.value)
-    
+
     if (response.success && response.model) {
       // 验证成功，刷新用户信息
       await fetchUserProfile()
-      
+
       toast.add({
         severity: 'success',
         summary: 'Binding Successful',
         detail: 'Google Authenticator bound successfully',
         life: 3000
       })
-      
+
       showGoogleAuthBindDialog.value = false
       bindAuthCode.value = ''
       bindSecretKey.value = ''
@@ -795,20 +753,20 @@ const handleUnbindGoogleAuth = async () => {
 
   try {
     unbindLoading.value = true
-    
+
     const response = await AuthAPI.googleAuthUnbind(unbindAuthCode.value)
-    
+
     if (response.success && response.model) {
       // 解绑成功，刷新用户信息
       await fetchUserProfile()
-      
+
       toast.add({
         severity: 'success',
         summary: 'Unbind Successful',
         detail: 'Google Authenticator unbound successfully',
         life: 3000
       })
-      
+
       showGoogleAuthUnbindDialog.value = false
       unbindAuthCode.value = ''
     } else {
@@ -823,8 +781,8 @@ const handleUnbindGoogleAuth = async () => {
     console.error('Google Auth unbind error:', error)
     toast.add({
       severity: 'error',
-        summary: 'Unbind Failed',
-        detail: error instanceof Error ? error.message : 'Network error, please try again later',
+      summary: 'Unbind Failed',
+      detail: error instanceof Error ? error.message : 'Network error, please try again later',
       life: 3000
     })
   } finally {
