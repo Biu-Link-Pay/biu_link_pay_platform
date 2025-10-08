@@ -62,7 +62,7 @@
         <!-- Card BIN Selection -->
         <div v-else-if="cardBins.length > 0" class="space-y-4">
           <!-- Mobile: Card Carousel -->
-          <div class="md:hidden">
+          <div class="md:hidden mt-20">
             <div class="relative">
               <div class="overflow-hidden" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
                 @touchend="handleTouchEnd">
@@ -100,7 +100,7 @@
                           <!-- Available Cards -->
                         </div>
                         <!-- Card Footer -->
-                        <div class="flex items-center justify-between mt-4">
+                        <div class="flex items-center justify-between mt-10">
                           <div class="text-xs opacity-60 mb-1">Available Cards</div>
                           <div class="text-sm md:text-base font-semibold">
                             {{ binInfo.remainingAvailableCard || 'Unlimited' }}
@@ -309,7 +309,7 @@
       </div>
 
       <!-- Card Limit Information -->
-      <div v-if="selectedCard" class="mb-8">
+      <!-- <div v-if="selectedCard" class="mb-8">
         <div
           class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 md:p-6 shadow-sm">
           <h3 class="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-4">Card Limits</h3>
@@ -337,7 +337,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Action Buttons -->
       <div class="bottom-buttons-container relative md:static">
