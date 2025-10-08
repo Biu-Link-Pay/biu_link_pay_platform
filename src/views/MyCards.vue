@@ -723,7 +723,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onActivated, watch } from 'vue'
+import { ref, computed, onMounted, onActivated, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useCardStore } from '@/stores/card'
 import { useToast } from 'primevue/usetoast'
@@ -746,6 +746,10 @@ const currentCardIndex = ref(0)
 const showGoogleAuthDialog = ref(false)
 const pendingAction = ref<'withdraw' | 'details' | 'delete' | null>(null)
 const googleAuthDialogRef = ref()
+
+// Polling for transaction list
+let transactionPollingInterval: NodeJS.Timeout | null = null
+const isComponentMounted = ref(false)
 
 
 // Google Auth callbacks
@@ -834,7 +838,7 @@ const cards = computed(() => {
     maxOnDaily: card.maxOnDaily,
     maxOnPercent: card.maxOnPercent,
     cardCurrency: card.cardCurrency,
-    cardScheme: 'mastercard' // Default card scheme since it's not available in CardListItem
+    cardScheme: card.cardScheme.toLowerCase() // Default card scheme since it's not available in CardListItem
   }))
 })
 
@@ -1635,6 +1639,34 @@ const handleTabChange = (tabKey: string) => {
   }
 }
 
+// Start polling for transaction list
+const startTransactionPolling = () => {
+  // Clear existing interval if any
+  stopTransactionPolling()
+
+  // Start polling every 1 minute (60000ms)
+  transactionPollingInterval = setInterval(() => {
+    if (!isComponentMounted.value || activeTab.value !== 'transaction') {
+      return
+    }
+
+    // Silently refresh transactions without showing loading state
+    const currentPageIndex = pagination.value.transaction.pageIndex
+    fetchTransactions(currentPageIndex)
+  }, 60000) // 1 minute
+
+  console.log('Transaction polling started')
+}
+
+// Stop polling for transaction list
+const stopTransactionPolling = () => {
+  if (transactionPollingInterval) {
+    clearInterval(transactionPollingInterval)
+    transactionPollingInterval = null
+    console.log('Transaction polling stopped')
+  }
+}
+
 // Watch for card changes
 watch(currentCardIndex, () => {
   // Reload transactions when card changes
@@ -1645,13 +1677,28 @@ watch(currentCardIndex, () => {
     pagination.value.transaction.hasMore = true
     mobilePagination.value.transaction.currentPage = 0
     fetchTransactions(0)
+
+    // Restart polling
+    startTransactionPolling()
   }
 
+})
+
+// Watch for tab changes to control polling
+watch(activeTab, (newTab) => {
+  if (newTab === 'transaction' && cards.value.length > 0) {
+    // Start polling when switching to transaction tab
+    startTransactionPolling()
+  } else {
+    // Stop polling when switching away from transaction tab
+    stopTransactionPolling()
+  }
 })
 
 // Get card list when component mounts
 onMounted(async () => {
   console.log('MyCards component mounted')
+  isComponentMounted.value = true
 
   // Always fetch fresh card list data on page entry
   console.log('Fetching fresh card list...')
@@ -1673,6 +1720,11 @@ onMounted(async () => {
   if (cards.value.length > 0) {
     console.log('Loading initial transactions...')
     await fetchTransactions()
+
+    // Start polling if on transaction tab
+    if (activeTab.value === 'transaction') {
+      startTransactionPolling()
+    }
   } else {
     console.log('No cards available, skipping transaction fetch')
   }
@@ -1695,6 +1747,7 @@ onMounted(async () => {
 // Refresh data when page is activated (e.g., returning from other pages)
 onActivated(async () => {
   console.log('MyCards page activated, refreshing data...')
+  isComponentMounted.value = true
 
   // Always fetch fresh card list data when page is activated
   try {
@@ -1705,6 +1758,9 @@ onActivated(async () => {
     if (cards.value.length > 0 && activeTab.value === 'transaction') {
       console.log('Refreshing transactions...')
       await fetchTransactions()
+
+      // Restart polling
+      startTransactionPolling()
     }
   } catch (error) {
     console.error('Error refreshing card list:', error)
@@ -1715,6 +1771,13 @@ onActivated(async () => {
       life: 3000
     })
   }
+})
+
+// Cleanup when component unmounts
+onUnmounted(() => {
+  console.log('MyCards component unmounted')
+  isComponentMounted.value = false
+  stopTransactionPolling()
 })
 </script>
 

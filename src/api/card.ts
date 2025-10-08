@@ -129,6 +129,7 @@ export interface CardListItem {
   maxOnDaily: string // Daily limit
   maxOnPercent: string // Single transaction limit
   cardCurrency: string // Card currency
+  cardScheme: string // Card scheme
 }
 
 // Transaction record pagination query related types
