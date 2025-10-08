@@ -283,6 +283,11 @@
                               <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
                                 {{ transaction.merchantLocation || '' }}
                               </div>
+                              <div v-if="transaction.feeDeductionAmount"
+                                class="text-xs text-orange-600 dark:text-orange-400 mt-1">
+                                Fee: {{ transaction.feeDeductionAmount.toFixed(2) }} {{ transaction.feeDeductionCurrency
+                                }}
+                              </div>
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
@@ -355,6 +360,11 @@
                               </div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">
                                 {{ transaction.merchantLocation || '' }}
+                              </div>
+                              <div v-if="transaction.feeDeductionAmount"
+                                class="text-xs text-orange-600 dark:text-orange-400 mt-0.5">
+                                Fee: {{ transaction.feeDeductionAmount.toFixed(2) }} {{ transaction.feeDeductionCurrency
+                                }}
                               </div>
                             </div>
                             <div class="text-right">
