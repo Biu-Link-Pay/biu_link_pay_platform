@@ -278,7 +278,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                               <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base truncate">
-                                {{ transaction.merchantNameLocation || '' }}
+                                {{ transaction.merchantNameLocation || transaction.transactionType || '' }}
                               </div>
                               <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
                                 {{ transaction.merchantLocation || '' }}
@@ -350,7 +350,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                               <div class="font-medium text-gray-900 dark:text-white text-xs truncate">
-                                {{ transaction.merchantNameLocation || '' }}
+                                {{ transaction.merchantNameLocation || transaction.transactionType || '' }}
                               </div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">
                                 {{ transaction.merchantLocation || '' }}
