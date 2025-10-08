@@ -124,11 +124,13 @@
                   :disabled="isLoading" />
                 <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                   I have read and agree to BiuLinkPay
-                  <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">
+                  <a href="https://static.biulinkpay.online/compliance/TermsOfService.html" target="_blank"
+                    rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">
                     Terms of service
                   </a>
                   and
-                  <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">
+                  <a href="https://static.biulinkpay.online/compliance/PrivacyPolicy.html" target="_blank"
+                    rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">
                     Privacy Policy
                   </a>
                 </p>
