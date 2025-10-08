@@ -17,7 +17,6 @@ export default defineConfig(({ mode }) => ({
       launchEditor: 'cursor',
     }),
     tailwindcss(),
-    vueDevTools(),
     // 打包分析
     mode === 'analyze' && visualizer({
       open: true,

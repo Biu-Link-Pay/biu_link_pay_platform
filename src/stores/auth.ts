@@ -17,7 +17,7 @@ export const useAuthStore = defineStore('auth', () => {
   const token = ref<string | null>(null)
   const refreshToken = ref<string | null>(null)
   const loading = ref(false)
-  
+
   // KYC related state
   const kycStatus = ref<number | null>(null) // 0=not done, 1=approved, 2=temporarily rejected, 3=rejected
   const kycChecked = ref(false) // Whether KYC status has been checked
@@ -26,7 +26,7 @@ export const useAuthStore = defineStore('auth', () => {
   const isLoggedIn = computed(() => isAuthenticated.value && !!token.value)
   const currentUser = computed(() => user.value)
   const authToken = computed(() => token.value)
-  
+
   // KYC related computed properties
   const isKycApproved = computed(() => kycStatus.value === 1)
   const needsKyc = computed(() => kycStatus.value === 0 || kycStatus.value === 2 || kycStatus.value === 3)
@@ -153,7 +153,7 @@ export const useAuthStore = defineStore('auth', () => {
     loading.value = true
     try {
       console.log('开始登出，当前token:', !!token.value)
-      
+
       // If refresh token exists, call logout API
       if (refreshToken.value) {
         console.log('调用登出API...')
@@ -167,7 +167,7 @@ export const useAuthStore = defineStore('auth', () => {
       // 即使API调用失败，也要清除本地状态
     } finally {
       console.log('清除认证状态...')
-      
+
       // Clear all authentication info
       isAuthenticated.value = false
       user.value = null
@@ -183,7 +183,7 @@ export const useAuthStore = defineStore('auth', () => {
 
       // Clear card store cache
       try {
-        const { useCardStore } = await import('@/stores/card')
+        const { useCardStore } = await import('./card')
         const cardStore = useCardStore()
         cardStore.reset()
         console.log('Card store cache cleared on logout')
@@ -243,11 +243,11 @@ export const useAuthStore = defineStore('auth', () => {
       if (response.success && response.model !== null && response.model !== undefined) {
         kycStatus.value = response.model
         kycChecked.value = true
-        
+
         // Save to local storage
         localStorage.setItem('kycStatus', response.model.toString())
         localStorage.setItem('kycChecked', 'true')
-        
+
         return response.model
       } else {
         throw new Error(response.msg || 'Failed to check KYC status')

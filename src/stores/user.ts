@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import type { UserProfile } from '@/types/api'
+import { AuthAPI } from '@/api/auth'
 
 export interface User {
   id: number
@@ -26,7 +26,7 @@ export const useUserStore = defineStore('user', () => {
   const user = ref<UserDetails | null>(null)
   const isLoggedIn = ref(false)
   const loading = ref(false)
-  
+
   // Computed properties
   const userName = computed(() => user.value?.name || user.value?.firstName || '游客')
   const userEmail = computed(() => user.value?.email || '')
@@ -34,18 +34,18 @@ export const useUserStore = defineStore('user', () => {
   const userNum = computed(() => user.value?.userNum || '')
   const kycStatus = computed(() => user.value?.kycStatus || 0)
   const googleAuthStatus = computed(() => user.value?.googleAuthStatus || 0)
-  
+
   // Methods
-  
+
   const logout = () => {
     user.value = null
     isLoggedIn.value = false
-    
+
     // Clear local storage
     localStorage.removeItem('userDetails')
     localStorage.removeItem('isLoggedIn')
   }
-  
+
   const updateProfile = (updates: Partial<UserDetails>) => {
     if (user.value) {
       user.value = { ...user.value, ...updates }
@@ -57,9 +57,8 @@ export const useUserStore = defineStore('user', () => {
   const fetchUserProfile = async () => {
     loading.value = true
     try {
-      const { AuthAPI } = await import('@/api/auth')
       const response = await AuthAPI.getUserProfile()
-      
+
       if (response.success && response.model) {
         const profile = response.model
         // 更新用户信息
@@ -71,41 +70,41 @@ export const useUserStore = defineStore('user', () => {
           kycStatus: profile.kycStatus,
           googleAuthStatus: profile.googleAuthStatus
         }
-        
+
         // 保存到本地存储
         localStorage.setItem('userDetails', JSON.stringify(user.value))
-        
+
         return { success: true, data: profile }
       } else {
         return { success: false, message: response.msg || '获取用户详情失败' }
       }
     } catch (error) {
       console.error('获取用户详情失败:', error)
-      return { 
-        success: false, 
-        message: error instanceof Error ? error.message : '获取用户详情失败' 
+      return {
+        success: false,
+        message: error instanceof Error ? error.message : '获取用户详情失败'
       }
     } finally {
       loading.value = false
     }
   }
-  
+
   const initializeAuth = () => {
     const savedUser = localStorage.getItem('userDetails')
-    
+
     if (savedUser) {
       user.value = JSON.parse(savedUser)
     }
-    
+
     // 登录状态由authStore管理，这里不需要设置isLoggedIn
   }
-  
+
   return {
     // State
     user,
     isLoggedIn,
     loading,
-    
+
     // Computed properties
     userName,
     userEmail,
@@ -113,7 +112,7 @@ export const useUserStore = defineStore('user', () => {
     userNum,
     kycStatus,
     googleAuthStatus,
-    
+
     // Methods
     logout,
     updateProfile,
