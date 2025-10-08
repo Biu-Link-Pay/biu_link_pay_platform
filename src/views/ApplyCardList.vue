@@ -141,8 +141,6 @@
             class="h-full w-full rounded-lg border border-gray-200 dark:border-gray-700">
           </div>
         </div>
-
-
       </div>
     </Dialog>
   </div>
@@ -154,6 +152,7 @@ import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useCardStore } from '@/stores/card'
 import { useAuthStore } from '@/stores/auth'
+import { useUserStore } from '@/stores/user'
 import { useErrorHandler } from '@/utils/errorHandler'
 import AppHeader from '@/components/AppHeader.vue'
 import CardItem from '@/components/CardItem.vue'
@@ -164,6 +163,7 @@ const router = useRouter()
 const toast = useToast()
 const cardStore = useCardStore()
 const authStore = useAuthStore()
+const userStore = useUserStore()
 const { handleError, handleSuccess } = useErrorHandler()
 
 // Reactive data
@@ -609,6 +609,15 @@ const startKycPolling = () => {
         // KYC approved
         stopKycPolling()
         showKycDialog.value = false
+
+        // 更新用户信息
+        try {
+          await userStore.fetchUserProfile()
+          console.log('User profile updated after KYC approval')
+        } catch (error) {
+          console.error('Failed to update user profile after KYC approval:', error)
+        }
+
         handleSuccess('KYC verification approved. You can now apply for a card.')
 
         // Clear pending card
