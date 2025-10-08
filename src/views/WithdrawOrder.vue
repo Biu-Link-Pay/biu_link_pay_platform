@@ -6,10 +6,10 @@
     <!-- Main Content -->
     <div
       class="w-full max-w-2xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
-      <CardInfoHeader :card-no="cardInfo.cardNo" />
       <!-- Desktop Layout -->
       <div class="hidden md:block">
         <div class="max-w-4xl xl:max-w-5xl mx-auto space-y-8">
+          <CardInfoHeader :card-no="cardInfo.cardNo" />
           <!-- Withdraw Summary -->
           <div
             class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 text-white shadow-xl">
@@ -236,6 +236,7 @@
 
       <!-- Mobile Layout -->
       <div class="md:hidden space-y-4 pb-32">
+        <CardInfoHeader :card-no="cardInfo.cardNo" />
         <!-- Balance Card -->
         <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
           <div class="flex items-center justify-between">

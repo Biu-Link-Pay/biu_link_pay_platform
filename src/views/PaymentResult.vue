@@ -151,7 +151,8 @@
               <div
                 class="flex justify-between text-xs sm:text-sm lg:text-sm xl:text-base text-gray-500 dark:text-gray-400">
                 <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 1 }">Connecting</span>
-                <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 2 }">Verifying Payment</span>
+                <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 2 }">Verifying
+                  Payment</span>
                 <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 3 }">Complete</span>
               </div>
             </div>
@@ -180,8 +181,7 @@
                   <i class="pi pi-clock text-lg lg:text-xl xl:text-xl"></i>
                   <span>Payment Timeout</span>
                 </div>
-                <div
-                  v-if="!isPaymentExpired"
+                <div v-if="!isPaymentExpired"
                   class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-orange-700 dark:text-orange-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-start gap-2 lg:gap-3">
                   <i class="pi pi-info-circle text-lg lg:text-xl xl:text-xl mt-0.5"></i>
                   <span>For security reasons, the payment page has expired. Please complete the payment promptly.</span>
@@ -256,7 +256,7 @@
 
             <!-- Support Information -->
             <div class="text-center lg:text-left text-sm lg:text-base xl:text-lg text-gray-500 dark:text-gray-400">
-              <p>Need help? <a href="mailto:support@biulinkpay.org" 
+              <p>Need help? <a href="mailto:support@biulinkpay.org"
                   class="text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-200">Contact
                   Support</a></p>
             </div>
@@ -286,6 +286,7 @@ const orderStatus = ref<'PENDING' | 'SUCCESS' | 'FAIL' | 'CANCEL'>('PENDING')
 const paymentTime = ref<string | null>('')
 const transactionId = ref<string | null>('')
 const errorReason = ref<string | null>('')
+const orderType = ref<'deposit' | 'withdraw'>('deposit') // 订单类型：入金或出金
 
 // UI state
 const refreshing = ref(false)
@@ -373,11 +374,11 @@ const formatCurrency = (amount: number) => {
 // Check if payment is expired (15 minutes)
 const isPaymentExpired = computed(() => {
   if (!paymentTime.value) return false
-  
+
   const createTime = new Date(paymentTime.value).getTime()
   const currentTime = new Date().getTime()
   const fifteenMinutes = 15 * 60 * 1000 // 15 minutes in milliseconds
-  
+
   return (currentTime - createTime) >= fifteenMinutes
 })
 
@@ -406,23 +407,62 @@ const fetchOrderStatus = async () => {
   if (!orderNumber.value) return
 
   try {
-    const response = await OrderAPI.getDepositOrderDetail({ num: orderNumber.value.toString() })
+    // 根据订单类型调用不同的 API
+    if (orderType.value === 'withdraw') {
+      // 出金订单
+      const response = await OrderAPI.getWithdrawOrderDetail({ num: orderNumber.value.toString() })
 
-    if (response.success && response.model) {
-      const detail = response.model
-      const previousStatus = orderStatus.value
-      orderStatus.value = detail.status as any
-      paymentTime.value = detail.createTime || null
-      transactionId.value = detail.hashId || null
-      errorReason.value = detail.errorMessage || null
-      // Update other fields if needed
-      if (detail.amount) {
-        orderAmount.value = parseFloat(detail.amount.toString())
+      if (response.success && response.model && response.model.length > 0) {
+        const detail = response.model[0] // 出金订单详情返回数组，取第一个
+        const previousStatus = orderStatus.value
+        orderStatus.value = detail.status as any
+        paymentTime.value = detail.createTime || null
+        transactionId.value = detail.hashId || null
+
+        console.log('Withdraw order status updated:', {
+          orderNumber: orderNumber.value,
+          previousStatus,
+          newStatus: orderStatus.value,
+          detail
+        })
+
+        if (previousStatus === 'PENDING' && orderStatus.value !== 'PENDING') {
+          stopPolling()
+          toast.add({
+            severity: orderStatus.value === 'SUCCESS' ? 'success' : 'warn',
+            summary: 'Status Updated',
+            detail: `Order status changed to ${orderStatus.value}`,
+            life: 3000
+          })
+        }
       }
+    } else {
+      // 入金订单
+      const response = await OrderAPI.getDepositOrderDetail({ num: orderNumber.value.toString() })
 
-      // Handle status change
-      if (previousStatus !== detail.status) {
-        handleStatusChange(detail.status)
+      if (response.success && response.model) {
+        const detail = response.model
+        const previousStatus = orderStatus.value
+        orderStatus.value = detail.status as any
+        paymentTime.value = detail.createTime || null
+        transactionId.value = detail.hashId || null
+        errorReason.value = detail.errorMessage || null
+        // Update other fields if needed
+        if (detail.amount) {
+          orderAmount.value = parseFloat(detail.amount.toString())
+        }
+
+        console.log('Deposit order status updated:', {
+          orderNumber: orderNumber.value,
+          previousStatus,
+          newStatus: orderStatus.value,
+          detail
+        })
+
+        // Handle status change
+        if (previousStatus !== detail.status) {
+          handleStatusChange(detail.status)
+        }
       }
     }
   } catch (error) {
@@ -569,6 +609,16 @@ onMounted(async () => {
   const orderNum = route.query.orderNum as string
   if (orderNum) {
     orderNumber.value = orderNum
+  }
+
+  // Get order type from route query (deposit or withdraw)
+  const type = route.query.type as string
+  if (type === 'withdraw') {
+    orderType.value = 'withdraw'
+    console.log('Order type: withdraw (出金订单)')
+  } else {
+    orderType.value = 'deposit'
+    console.log('Order type: deposit (入金订单)')
   }
 
   // Get other data from route or set defaults

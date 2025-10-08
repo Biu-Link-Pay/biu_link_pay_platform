@@ -1,47 +1,81 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-indigo-200 dark:from-gray-800 dark:via-blue-800 dark:to-purple-800 flex items-center justify-center p-4">
+  <div
+    class="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-indigo-200 dark:from-gray-800 dark:via-blue-800 dark:to-purple-800 flex items-center justify-center p-4">
     <!-- Logo -->
     <div class="absolute left-4 top-4 lg:left-8 lg:top-8 z-10 flex items-center gap-2">
-      <img
-        src="https://static.biulinkpay.online/logo/biu_blue.png"
-        alt="BiulinkPay"
-        class="w-10 lg:w-12"
-        loading="eager"
-      />
-      <span class="text-[#007cc3] text-xl lg:text-2xl font-bold" style="font-family: Alimama ShuHeiTi, Alimama ShuHeiTi;">
+      <img src="https://static.biulinkpay.online/logo/biu_blue.png" alt="BiulinkPay" class="w-10 lg:w-12"
+        loading="eager" />
+      <span class="text-[#007cc3] text-xl lg:text-2xl font-bold"
+        style="font-family: Alimama ShuHeiTi, Alimama ShuHeiTi;">
         BiulinkPay
       </span>
     </div>
-    
+
     <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-6xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[600px]">
-        <!-- Left showcase area -->
+        <!-- Left showcase area (Desktop) -->
         <div class="hidden lg:block lg:pr-8 relative h-full">
           <!-- Service Logo Area -->
           <div class="relative h-full">
             <!-- Service Logo -->
-            <img
-              v-for="(service, index) in services" :key="index"
-              :src="service.image"
-              :alt="service.name"
+            <img v-for="(service, index) in services" :key="index" :src="service.image" :alt="service.name"
               class="absolute hover:opacity-100 transition-all duration-500 ease-out service-logo"
-              :class="[service.size, service.position, `surf-animation-${index}`]"
-              :style="{
+              :class="[service.size, service.position, `surf-animation-${index}`]" :style="{
                 opacity: 1,
-              }"
-            />
+              }" />
           </div>
         </div>
 
-        <!-- Right content area -->
-        <div class="w-full lg:pl-8">
+        <!-- Mobile: Welcome Screen (Step 1) -->
+        <div v-if="!showMobileForm"
+          class="lg:hidden w-full flex flex-col items-center justify-between min-h-[600px] px-6 py-8">
+          <!-- Service Logo Area -->
+          <div class="relative w-full flex-1 flex items-center justify-center max-h-[450px]">
+            <!-- Service Logo -->
+            <img v-for="(service, index) in services" :key="index" :src="service.image" :alt="service.name"
+              class="absolute hover:opacity-100 transition-all duration-500 ease-out service-logo"
+              :class="[service.size, service.position, `surf-animation-${index}`]" :style="{
+                opacity: 1,
+              }" />
+          </div>
+
+          <!-- Welcome Text & Button Container -->
+          <div class="w-full space-y-6">
+            <!-- Welcome Text -->
+            <div class="text-center">
+              <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-3">
+                Welcome to BiulinkPay
+              </h2>
+              <p class="text-base text-gray-600 dark:text-gray-400 px-4">
+                Your global virtual card solution for seamless payments
+              </p>
+            </div>
+
+            <!-- Login Button -->
+            <div class="w-full px-4">
+              <Button label="Get Started" icon="pi pi-arrow-right" iconPos="right" class="w-full" size="large"
+                severity="primary" @click="showMobileForm = true" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right content area (Desktop + Mobile Step 2) -->
+        <div v-if="showMobileForm || !isMobile" class="w-full lg:pl-8" :class="{ 'lg:block': !isMobile }">
           <!-- Login form -->
           <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 lg:p-10 w-full max-w-md mx-auto lg:mx-0">
-            <!-- Title and Language Selection -->
+            <!-- Title and Back Button -->
             <div class="flex items-center justify-between mb-8">
-              <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">
+              <!-- Back button (Mobile only) -->
+              <button v-if="showMobileForm && isMobile" @click="handleBackClick"
+                class="lg:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                type="button">
+                <i class="pi pi-arrow-left text-gray-700 dark:text-gray-300"></i>
+              </button>
+              <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white"
+                :class="{ 'ml-2': showMobileForm && isMobile }">
                 Login with Email
               </h1>
+              <div v-if="showMobileForm && isMobile" class="w-10"></div>
             </div>
 
             <!-- Login Form -->
@@ -214,11 +248,19 @@ const errors = ref({
 const isLoading = ref(false)
 const showVerificationCode = ref(false)
 const countdown = ref(0)
+const showMobileForm = ref(false) // 控制移动端是否显示表单
 
 // Countdown timer
 let countdownTimer: number | null = null
 
 // Computed properties
+const isMobile = computed(() => {
+  if (typeof window !== 'undefined') {
+    return window.innerWidth < 1024
+  }
+  return false
+})
+
 const buttonText = computed(() => {
   if (isLoading.value) {
     return showVerificationCode.value ? 'Signing in...' : 'Sending...'
@@ -375,7 +417,7 @@ const fetchUserProfileAndRedirect = async () => {
     // First, fetch user profile details
     console.log('Fetching user profile details...')
     const profileResult = await userStore.fetchUserProfile()
-    
+
     if (profileResult.success) {
       console.log('User profile fetched successfully:', profileResult.data)
     } else {
@@ -428,6 +470,29 @@ const handleSubmit = async () => {
   } else {
     await sendCode()
   }
+}
+
+// Handle back button click (mobile)
+const handleBackClick = () => {
+  showMobileForm.value = false
+  // Reset form state
+  showVerificationCode.value = false
+  form.value = {
+    email: '',
+    code: '',
+    agreeTerms: false
+  }
+  errors.value = {
+    email: '',
+    code: '',
+    agreeTerms: ''
+  }
+  // Clear countdown timer
+  if (countdownTimer) {
+    window.clearInterval(countdownTimer)
+    countdownTimer = null
+  }
+  countdown.value = 0
 }
 
 // Clean up timer when component unmounts
@@ -581,82 +646,102 @@ onMounted(() => {
     transform: translateY(0px) scale(0.7);
     opacity: 0;
   }
+
   5% {
     transform: translateY(-3px) scale(0.72);
     opacity: 0.05;
   }
+
   10% {
     transform: translateY(-6px) scale(0.74);
     opacity: 0.1;
   }
+
   15% {
     transform: translateY(-9px) scale(0.76);
     opacity: 0.15;
   }
+
   20% {
     transform: translateY(-12px) scale(0.78);
     opacity: 0.2;
   }
+
   25% {
     transform: translateY(-15px) scale(0.8);
     opacity: 0.25;
   }
+
   30% {
     transform: translateY(-18px) scale(0.82);
     opacity: 0.3;
   }
+
   35% {
     transform: translateY(-21px) scale(0.84);
     opacity: 0.35;
   }
+
   40% {
     transform: translateY(-24px) scale(0.86);
     opacity: 0.4;
   }
+
   45% {
     transform: translateY(-27px) scale(0.88);
     opacity: 0.45;
   }
+
   50% {
     transform: translateY(-30px) scale(0.9);
     opacity: 0.5;
   }
+
   55% {
     transform: translateY(-33px) scale(0.92);
     opacity: 0.55;
   }
+
   60% {
     transform: translateY(-36px) scale(0.94);
     opacity: 0.6;
   }
+
   65% {
     transform: translateY(-39px) scale(0.96);
     opacity: 0.65;
   }
+
   70% {
     transform: translateY(-42px) scale(0.98);
     opacity: 0.7;
   }
+
   75% {
     transform: translateY(-45px) scale(1.0);
     opacity: 0.75;
   }
+
   80% {
     transform: translateY(-48px) scale(1.02);
     opacity: 0.8;
   }
+
   85% {
     transform: translateY(-51px) scale(1.04);
     opacity: 0.85;
   }
+
   90% {
     transform: translateY(-54px) scale(1.06);
     opacity: 0.9;
   }
+
   95% {
     transform: translateY(-57px) scale(1.08);
     opacity: 0.95;
   }
+
   100% {
     transform: translateY(-60px) scale(1.1);
     opacity: 1.0;
@@ -664,15 +749,60 @@ onMounted(() => {
 }
 
 /* 随机冒泡效果 - 无序执行 */
-.surf-animation-2 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.1s; }    /* TikTok */
-.surf-animation-6 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.6s; }  /* Facebook */
-.surf-animation-0 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.3s; }  /* PayPal */
-.surf-animation-3 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 1.1s; }  /* Apple */
-.surf-animation-5 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.2s; }  /* ChatGPT */
-.surf-animation-1 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.9s; }  /* YouTube */
-.surf-animation-4 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 1.5s; }  /* eBay */
-.surf-animation-7 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 0.4s; }  /* Google */
-.surf-animation-8 { animation: bubbleFloat 3s ease-out infinite; animation-delay: 1.3s; }  /* Amazon */
+.surf-animation-2 {
+  animation: bubbleFloat 3s ease-out infinite;
+  animation-delay: 0.1s;
+}
+
+/* TikTok */
+.surf-animation-6 {
+  animation: bubbleFloat 3s ease-out infinite;
+  animation-delay: 0.6s;
+}
+
+/* Facebook */
+.surf-animation-0 {
+  animation: bubbleFloat 3s ease-out infinite;
+  animation-delay: 0.3s;
+}
+
+/* PayPal */
+.surf-animation-3 {
+  animation: bubbleFloat 3s ease-out infinite;
+  animation-delay: 1.1s;
+}
+
+/* Apple */
+.surf-animation-5 {
+  animation: bubbleFloat 3s ease-out infinite;
+  animation-delay: 0.2s;
+}
+
+/* ChatGPT */
+.surf-animation-1 {
+  animation: bubbleFloat 3s ease-out infinite;
+  animation-delay: 0.9s;
+}
+
+/* YouTube */
+.surf-animation-4 {
+  animation: bubbleFloat 3s ease-out infinite;
+  animation-delay: 1.5s;
+}
+
+/* eBay */
+.surf-animation-7 {
+  animation: bubbleFloat 3s ease-out infinite;
+  animation-delay: 0.4s;
+}
+
+/* Google */
+.surf-animation-8 {
+  animation: bubbleFloat 3s ease-out infinite;
+  animation-delay: 1.3s;
+}
+
+/* Amazon */
 
 /* 冒泡涟漪效果 - 气泡扩散 */
 .service-logo::before {
@@ -696,82 +826,102 @@ onMounted(() => {
     transform: translate(-50%, -50%) scale(0.2);
     opacity: 0;
   }
+
   5% {
     transform: translate(-50%, -50%) scale(0.25);
     opacity: 0.1;
   }
+
   10% {
     transform: translate(-50%, -50%) scale(0.3);
     opacity: 0.2;
   }
+
   15% {
     transform: translate(-50%, -50%) scale(0.35);
     opacity: 0.3;
   }
+
   20% {
     transform: translate(-50%, -50%) scale(0.4);
     opacity: 0.4;
   }
+
   25% {
     transform: translate(-50%, -50%) scale(0.45);
     opacity: 0.5;
   }
+
   30% {
     transform: translate(-50%, -50%) scale(0.5);
     opacity: 0.6;
   }
+
   35% {
     transform: translate(-50%, -50%) scale(0.55);
     opacity: 0.7;
   }
+
   40% {
     transform: translate(-50%, -50%) scale(0.6);
     opacity: 0.8;
   }
+
   45% {
     transform: translate(-50%, -50%) scale(0.65);
     opacity: 0.9;
   }
+
   50% {
     transform: translate(-50%, -50%) scale(0.7);
     opacity: 1.0;
   }
+
   55% {
     transform: translate(-50%, -50%) scale(0.75);
     opacity: 0.9;
   }
+
   60% {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.8;
   }
+
   65% {
     transform: translate(-50%, -50%) scale(0.85);
     opacity: 0.7;
   }
+
   70% {
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0.6;
   }
+
   75% {
     transform: translate(-50%, -50%) scale(0.95);
     opacity: 0.5;
   }
+
   80% {
     transform: translate(-50%, -50%) scale(1.0);
     opacity: 0.4;
   }
+
   85% {
     transform: translate(-50%, -50%) scale(1.05);
     opacity: 0.3;
   }
+
   90% {
     transform: translate(-50%, -50%) scale(1.1);
     opacity: 0.2;
   }
+
   95% {
     transform: translate(-50%, -50%) scale(1.15);
     opacity: 0.1;
   }
+
   100% {
     transform: translate(-50%, -50%) scale(1.2);
     opacity: 0;
