@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900 overflow-y-auto"
+  <div class="min-h-screen bg-white dark:bg-gray-900 overflow-y-auto md:bg-gray-50 "
     :style="{ minHeight: `calc(var(--app-vh, 1vh) * 100)` }">
     <!-- Navigation Header -->
     <AppHeader title="Apply Card" :show-title="true" />
@@ -27,28 +27,77 @@
 
       <!-- Card Selection -->
       <div v-else-if="cardConfigs.length > 0">
-        <!-- Mobile: Card Carousel -->
+        <!-- Mobile: New compact panel style -->
         <div class="md:hidden">
-          <div class="relative">
-            <div class="overflow-hidden" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
-              @touchend="handleTouchEnd">
-              <div class="flex transition-transform duration-300 ease-in-out"
-                :style="{ transform: `translateX(-${currentCardIndex * 100}%)` }">
-                <div v-for="(card, index) in cardConfigs" :key="index" class="w-full flex-shrink-0 px-4">
-                  <div class="relative">
-                    <CardItem :card="card" :selected="currentCardIndex === index" @select="selectCard(card)"
-                      @order="orderCard" @activate="activateCard" />
+          <div class="px-4">
+            <div class="bg-white dark:bg-gray-900 p-4">
+              <!-- Stats row -->
+              <div class="grid grid-cols-3 gap-3 text-center">
+                <div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400">Application fee</div>
+                  <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
+                    {{ formatMoney(currentCard?.applyFee) }}
+                  </div>
+                </div>
+                <div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400">Monthly limit</div>
+                  <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
+                    {{ formatNumber(currentCard?.maxOnMonthly) }}
+                  </div>
+                </div>
+                <div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400">Monthly fee</div>
+                  <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
+                    {{ formatMoney(currentCard?.monthlyFee) }}
                   </div>
                 </div>
               </div>
-            </div>
 
+              <!-- Card slider with preview effect -->
+              <div class="mt-6 relative">
+                <div class="overflow-visible" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
+                  @touchend="handleTouchEnd">
+                  <div class="relative flex items-center justify-center"
+                    style="perspective: 1000px; min-height: 400px;">
+                    <div v-for="(card, index) in cardConfigs" :key="index"
+                      class="absolute top-0 left-1/2 transition-all duration-500 ease-out" :style="getCardStyle(index)">
+                      <div class="rounded-2xl overflow-hidden bg-img" :style="{
+                        aspectRatio: '9/16',
+                        width: '55vw',
+                        maxWidth: '220px'
+                      }">
+                        <img v-if="card.cardPicture" :src="card.cardPicture" alt="" class="rot-img" draggable="false" />
+                        <div v-else
+                          class="h-full w-full flex items-center justify-center text-gray-500 dark:text-gray-400 text-sm">
+                          {{ card.cardName }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dots -->
+                <div class="flex justify-center mt-6 space-x-2">
+                  <button v-for="(card, index) in cardConfigs" :key="index"
+                    class="w-8 h-1 rounded-full transition-colors"
+                    :class="currentCardIndex === index ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'"
+                    @click="selectCardByIndex(index)"></button>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Dots Indicator -->
-          <div class="flex justify-center mt-4 space-x-2">
-            <div v-for="(card, index) in cardConfigs" :key="index" class="w-2 h-2 rounded-full transition-colors"
-              :class="currentCardIndex === index ? 'bg-blue-500' : 'bg-gray-300'"></div>
+          <!-- Title + brands -->
+          <div class="text-center mt-6">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              {{ currentCard?.cardPattern === 1 ? 'Virtual Card' : 'Physical Card' }}
+            </h3>
+          </div>
+
+          <!-- Primary action -->
+          <div class="px-4 mt-4">
+            <Button :label="currentCard?.cardPattern === 1 ? 'Order a Virtual Card' : 'Order a Physical Card'"
+              severity="primary" class="w-full" @click="currentCard && orderCard(currentCard)" />
           </div>
         </div>
 
@@ -173,6 +222,79 @@ const selectCard = (card: CardConfig) => {
     detail: `Selected ${card.cardName}`,
     life: 2000
   })
+}
+
+const currentCard = computed(() => cardConfigs.value[currentCardIndex.value])
+
+const formatMoney = (val?: number) => {
+  if (val === undefined || val === null) return '—'
+  return `${val} USD`
+}
+
+const formatNumber = (val?: number) => {
+  if (val === undefined || val === null) return '—'
+  return val.toLocaleString('en-US') + ' USD'
+}
+
+// Get card style for carousel with preview effect
+const getCardStyle = (index: number) => {
+  const diff = index - currentCardIndex.value
+  const isActive = diff === 0
+
+  // Calculate position and scale
+  let translateX = '-50%' // Start from center (because left: 50%)
+  let translateZ = '0'
+  let scale = 1
+  let opacity = 1
+  let rotateY = 0
+  let zIndex = 0
+
+  if (diff === 0) {
+    // Current card - center, full scale
+    translateX = '-50%'
+    translateZ = '0'
+    scale = 1
+    opacity = 1
+    rotateY = 0
+    zIndex = 10
+  } else if (diff === 1) {
+    // Next card - right side, smaller, rotated
+    translateX = 'calc(-50% + 85%)'
+    translateZ = '-100px'
+    scale = 0.8
+    opacity = 0.5
+    rotateY = -15
+    zIndex = 5
+  } else if (diff === -1) {
+    // Previous card - left side, smaller, rotated
+    translateX = 'calc(-50% - 85%)'
+    translateZ = '-100px'
+    scale = 0.8
+    opacity = 0.5
+    rotateY = 15
+    zIndex = 5
+  } else {
+    // Hidden cards
+    translateX = diff > 0 ? 'calc(-50% + 200%)' : 'calc(-50% - 200%)'
+    translateZ = '-200px'
+    scale = 0.6
+    opacity = 0
+    rotateY = diff > 0 ? -30 : 30
+    zIndex = 0
+  }
+
+  return {
+    transform: `translateX(${translateX}) translateZ(${translateZ}) scale(${scale}) rotateY(${rotateY}deg)`,
+    opacity: opacity.toString(),
+    zIndex: zIndex.toString(),
+    pointerEvents: (isActive ? 'auto' : 'none') as 'auto' | 'none'
+  }
+}
+
+// Select card by index with animation
+const selectCardByIndex = (index: number) => {
+  currentCardIndex.value = index
+  selectedCard.value = cardConfigs.value[index]
 }
 
 // Touch event handlers for mobile
@@ -490,6 +612,29 @@ onMounted(() => {
 </script>
 
 <style scoped>
+/* Mobile card container */
+.bg-img {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Center, rotate image and cover container */
+.bg-img .rot-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  transform-origin: center center;
+  /* 容器是 9:16，旋转后图片宽度应该填满容器高度 */
+  /* 容器高度 = 宽度 * (16/9)，图片宽度要等于这个高度，即 width = 容器宽度 * 16/9 = 177.78% */
+  width: 177.78%;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+
 /* Carousel container styles */
 .overflow-hidden {
   border-radius: 12px;
