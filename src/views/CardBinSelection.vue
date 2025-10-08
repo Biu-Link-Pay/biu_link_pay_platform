@@ -20,7 +20,7 @@
       <div class="grid grid-cols-3 gap-4 mb-8">
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.applyFee || 0)
-          }}</div>
+            }}</div>
           <div class="text-sm text-gray-500 dark:text-gray-400">Apply fee</div>
         </div>
         <div class="text-center">
@@ -31,7 +31,7 @@
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.monthlyFee || 0)
-          }}</div>
+            }}</div>
           <div class="text-sm text-gray-500 dark:text-gray-400">Monthly Fee</div>
         </div>
       </div>
@@ -100,7 +100,7 @@
                           <!-- Available Cards -->
                         </div>
                         <!-- Card Footer -->
-                        <div class="flex items-center justify-between mt-10">
+                        <div class="flex items-center justify-between mt-4 sm:mt-10">
                           <div class="text-xs opacity-60 mb-1">Available Cards</div>
                           <div class="text-sm md:text-base font-semibold">
                             {{ binInfo.remainingAvailableCard || 'Unlimited' }}
