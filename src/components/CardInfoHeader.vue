@@ -12,7 +12,14 @@
               <div class="w-2.5 h-1.5 md:w-3 md:h-2 bg-white rounded-sm"></div>
             </div>
           </div>
-          <div>
+          <div v-if="balance !== undefined">
+            <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400">Balance</div>
+            <div v-if="loading" class="text-base md:text-lg font-bold text-gray-900 dark:text-white">
+              <i class="pi pi-spin pi-spinner text-sm"></i>
+            </div>
+            <div v-else class="text-base md:text-lg font-bold text-gray-900 dark:text-white">
+              {{ formatBalance }}
+            </div>
           </div>
         </div>
         <div class="text-right">
@@ -31,6 +38,8 @@ import { computed } from 'vue'
 
 interface Props {
   cardNo?: string
+  balance?: number
+  loading?: boolean
 }
 
 const props = defineProps<Props>()
@@ -39,6 +48,11 @@ const maskedCardNumber = computed(() => {
   const cardNumber = props.cardNo || ''
   if (cardNumber && cardNumber.length >= 4) return cardNumber.slice(-4)
   return '****'
+})
+
+const formatBalance = computed(() => {
+  if (props.balance === undefined || props.balance === null) return '$0.00'
+  return `$${props.balance.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 })
 </script>
 

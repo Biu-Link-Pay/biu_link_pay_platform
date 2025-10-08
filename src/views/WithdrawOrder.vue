@@ -9,7 +9,7 @@
       <!-- Desktop Layout -->
       <div class="hidden md:block">
         <div class="max-w-4xl xl:max-w-5xl mx-auto space-y-8">
-          <CardInfoHeader :card-no="cardInfo.cardNo" />
+          <CardInfoHeader :card-no="cardInfo.cardNo" :balance="balance" :loading="!cardDetail" />
           <!-- Withdraw Summary -->
           <div
             class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 text-white shadow-xl">
@@ -113,7 +113,7 @@
                         <div>
                           <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
                           <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0
-                          }} crypto networks</div>
+                            }} crypto networks</div>
                         </div>
                       </div>
 
@@ -155,7 +155,7 @@
                             </div>
                             <div>
                               <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName
-                              }}</div>
+                                }}</div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                               <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
                                 Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
@@ -191,7 +191,7 @@
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
                     <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                    }}</span>
+                      }}</span>
                   </div>
                   <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                     <i class="pi pi-clock"></i>
@@ -236,28 +236,7 @@
 
       <!-- Mobile Layout -->
       <div class="md:hidden space-y-4 pb-32">
-        <CardInfoHeader :card-no="cardInfo.cardNo" />
-        <!-- Balance Card -->
-        <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-              <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/20 rounded-lg flex items-center justify-center">
-                <i class="pi pi-credit-card text-blue-600 dark:text-blue-400"></i>
-              </div>
-              <div>
-                <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Balance</div>
-                <div v-if="!cardDetail" class="text-lg font-bold text-gray-900 dark:text-white">
-                  <i class="pi pi-spin pi-spinner mr-2"></i>Loading...
-                </div>
-                <div v-else class="text-lg font-bold text-gray-900 dark:text-white">{{ formatCurrency(balance) }}</div>
-              </div>
-            </div>
-            <div class="text-right">
-              <div class="text-sm text-gray-500 dark:text-gray-400">{{ cardInfo.cardNo ? cardInfo.cardNo.slice(-4) :
-                '**** 3683' }}</div>
-            </div>
-          </div>
-        </div>
+        <CardInfoHeader :card-no="cardInfo.cardNo" :balance="balance" :loading="!cardDetail" />
 
         <!-- Amount Range Info (simplified, mobile) -->
         <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-3 text-xs text-gray-700 dark:text-gray-300">
@@ -557,27 +536,27 @@ watch(loading, (newValue, oldValue) => {
 })
 
 // Watch for address changes to validate in real-time
-// watch([recipientAddress, selectedCrypto], ([newAddress, newCrypto], [oldAddress, oldCrypto]) => {
-//   if (newAddress && newCrypto && newCrypto.network && newCrypto.network.addressRegex) {
-//     // Clear previous errors
-//     if (errors.value.recipientAddress && errors.value.recipientAddress.includes('Invalid address format')) {
-//       errors.value.recipientAddress = ''
-//     }
+watch([recipientAddress, selectedCrypto], ([newAddress, newCrypto], [oldAddress, oldCrypto]) => {
+  if (newAddress && newCrypto && newCrypto.network && newCrypto.network.addressRegex) {
+    // Clear previous errors
+    if (errors.value.recipientAddress && errors.value.recipientAddress.includes('Invalid address format')) {
+      errors.value.recipientAddress = ''
+    }
 
-//     // Real-time address format validation
-//     const addressRegex = new RegExp(newCrypto.network.addressRegex)
-//     const isValid = addressRegex.test(newAddress)
-//     console.log('Real-time address validation:', {
-//       address: newAddress,
-//       network: newCrypto.network.fullName || newCrypto.network.name,
-//       regex: newCrypto.network.addressRegex,
-//       isValid
-//     })
-//     if (!isValid) {
-//       errors.value.recipientAddress = `Invalid address format for ${newCrypto.network.fullName || newCrypto.network.name}`
-//     }
-//   }
-// })
+    // Real-time address format validation
+    const addressRegex = new RegExp(newCrypto.network.addressRegex)
+    const isValid = addressRegex.test(newAddress)
+    console.log('Real-time address validation:', {
+      address: newAddress,
+      network: newCrypto.network.fullName || newCrypto.network.name,
+      regex: newCrypto.network.addressRegex,
+      isValid
+    })
+    if (!isValid) {
+      errors.value.recipientAddress = `Invalid address format for ${newCrypto.network.fullName || newCrypto.network.name}`
+    }
+  }
+})
 
 // Card detail from cache
 const cardDetail = ref<any>(null)
