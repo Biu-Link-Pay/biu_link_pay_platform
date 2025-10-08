@@ -3,6 +3,7 @@
     <router-view />
     <Toast />
     <ConfirmDialog />
+    <CookieConsent />
   </div>
 </template>
 
@@ -11,6 +12,7 @@ import { onMounted } from 'vue'
 import { useThemeStore } from '@/stores/theme'
 import Toast from 'primevue/toast'
 import ConfirmDialog from 'primevue/confirmdialog'
+import CookieConsent from '@/components/CookieConsent.vue'
 
 // 初始化主题
 const themeStore = useThemeStore()
