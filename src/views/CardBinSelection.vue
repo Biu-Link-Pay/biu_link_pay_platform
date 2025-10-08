@@ -61,47 +61,43 @@
         <!-- Card BIN Selection -->
         <div v-else-if="cardBins.length > 0" class="space-y-4">
           <!-- Mobile: Card Carousel -->
-          <div class="md:hidden pt-16">
+          <div class="md:hidden">
             <div class="relative">
-              <div class="overflow-hidden" 
-                @touchstart="handleTouchStart"
-                @touchmove="handleTouchMove"
+              <div class="overflow-hidden" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
                 @touchend="handleTouchEnd">
                 <div class="flex transition-transform duration-300 ease-in-out"
                   :style="{ transform: `translateX(-${currentBinIndex * 100}%)` }">
                   <div v-for="(binInfo, index) in cardBins" :key="index" class="w-full flex-shrink-0 px-2">
-                    <div 
-                      class="rounded-xl p-6 text-white shadow-lg relative overflow-hidden"
-                      :style="{ 
-                        backgroundImage: `url(${getCardBackgroundImage(binInfo.cardScheme)})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat',
-                        aspectRatio: '1035/582',
-                        maxWidth: '100%',
-                        width: '100%'
-                      }">
+                    <div class="rounded-xl p-6 text-white shadow-lg relative overflow-hidden" :style="{
+                      backgroundImage: `url(${getCardBackgroundImage(binInfo.cardScheme)})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat',
+                      aspectRatio: '1035/582',
+                      maxWidth: '100%',
+                      width: '100%'
+                    }">
                       <!-- Semi-transparent overlay for better text readability -->
                       <div class="absolute inset-0 bg-black/20 rounded-xl"></div>
-                      
+
                       <!-- Card content -->
                       <div class="relative z-10">
                         <!-- Card Header -->
                         <div class="flex items-center justify-between mb-2 mt-12">
-                      </div>
+                        </div>
 
-                      <!-- Card Details -->
-                      <div class="space-y-1 mb-2 text-sm">
-                        <!-- Card Type and Currency -->
-                        <div class="mt-4 text-right">
-                          {{ binInfo.cardCurrency || 'USD' }}
+                        <!-- Card Details -->
+                        <div class="space-y-1 mb-2 text-sm">
+                          <!-- Card Type and Currency -->
+                          <div class="mt-4 text-right">
+                            {{ binInfo.cardCurrency || 'USD' }}
+                          </div>
+                          <!-- Card BIN -->
+                          <div class="text-base font-mono tracking-wider">
+                            {{ formatCardNumber(binInfo.cardBin) }}
+                          </div>
+                          <!-- Available Cards -->
                         </div>
-                        <!-- Card BIN -->
-                        <div class="text-base font-mono tracking-wider">
-                          {{ formatCardNumber(binInfo.cardBin) }}
-                        </div>
-                        <!-- Available Cards -->
-                      </div>
                         <!-- Card Footer -->
                         <div class="flex items-center justify-between">
                           <div>
@@ -195,66 +191,66 @@
                 <!-- Main Content Area -->
                 <div class="flex-1 max-w-4xl">
                   <div ref="carouselContainer" class="overflow-hidden rounded-xl" @mousedown="handleMouseDown"
-                    @mousemove="handleMouseMove" @mouseup="handleMouseUp" @mouseleave="handleMouseUp" @wheel="handleWheel"
-                    @keydown="handleKeyDown" tabindex="0" style="outline: none;">
+                    @mousemove="handleMouseMove" @mouseup="handleMouseUp" @mouseleave="handleMouseUp"
+                    @wheel="handleWheel" @keydown="handleKeyDown" tabindex="0" style="outline: none;">
 
-                  <!-- Card Carousel -->
-                  <div class="flex transition-transform duration-300 ease-in-out"
-                    :style="{ transform: `translateX(-${currentBinIndex * 100}%)` }">
-                    <div v-for="(binInfo, index) in cardBins" :key="index" class="w-full flex-shrink-0 px-4">
-                      <div class="space-y-6 flex flex-col items-center">
-                        <!-- Card Preview -->
-                        <div
-                          class="rounded-xl p-4 md:p-6 text-white cursor-grab active:cursor-grabbing relative overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600"
-                          :style="{ 
-                            backgroundImage: `url(${getCardBackgroundImage(binInfo.cardScheme)})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat',
-                            aspectRatio: '1035/582',
-                            maxWidth: '400px',
-                            width: '100%'
-                          }">
-                          
-                          <!-- Card content -->
-                          <div class="relative z-10 h-full flex flex-col justify-between">
-                            <!-- Top section -->
-                            <div class="flex items-center justify-between mb-4 mt-18">
-                              <div class="flex items-center space-x-2">
-                              </div>
-                              <div class="text-right">
-                                <div class="text-xs md:text-sm opacity-80">{{ binInfo.cardCurrency || 'USD' }}</div>
-                              </div>
-                            </div>
+                    <!-- Card Carousel -->
+                    <div class="flex transition-transform duration-300 ease-in-out"
+                      :style="{ transform: `translateX(-${currentBinIndex * 100}%)` }">
+                      <div v-for="(binInfo, index) in cardBins" :key="index" class="w-full flex-shrink-0 px-4">
+                        <div class="space-y-6 flex flex-col items-center">
+                          <!-- Card Preview -->
+                          <div
+                            class="rounded-xl p-4 md:p-6 text-white cursor-grab active:cursor-grabbing relative overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600"
+                            :style="{
+                              backgroundImage: `url(${getCardBackgroundImage(binInfo.cardScheme)})`,
+                              backgroundSize: 'cover',
+                              backgroundPosition: 'center',
+                              backgroundRepeat: 'no-repeat',
+                              aspectRatio: '1035/582',
+                              maxWidth: '400px',
+                              width: '100%'
+                            }">
 
-                            <!-- Middle section - Card number -->
-                            <div class="mb-4">
-                              <div class="text-lg md:text-xl font-mono tracking-wider">
-                                {{ formatCardNumber(binInfo.cardBin) }}
-                              </div>
-                            </div>
-
-                            <!-- Bottom section -->
-                            <div class="flex justify-between items-end">
-                              <div>
-                                <div class="text-xs opacity-60 mb-1">Available Cards</div>
-                                <div class="text-sm md:text-base font-semibold">
-                                  {{ binInfo.remainingAvailableCard || 'Unlimited' }}
+                            <!-- Card content -->
+                            <div class="relative z-10 h-full flex flex-col justify-between">
+                              <!-- Top section -->
+                              <div class="flex items-center justify-between mb-4 mt-18">
+                                <div class="flex items-center space-x-2">
+                                </div>
+                                <div class="text-right">
+                                  <div class="text-xs md:text-sm opacity-80">{{ binInfo.cardCurrency || 'USD' }}</div>
                                 </div>
                               </div>
-                              <div class="text-right">
-                                <div class="text-xs opacity-60 mb-1">Address Update</div>
-                                <div class="text-xs md:text-sm font-medium"
-                                  :class="binInfo.billingAddressUpdatable === 'true' ? 'text-green-300' : 'text-gray-300'">
-                                  {{ binInfo.billingAddressUpdatable === 'true' ? 'Supported' : 'Not Supported' }}
+
+                              <!-- Middle section - Card number -->
+                              <div class="mb-4">
+                                <div class="text-lg md:text-xl font-mono tracking-wider">
+                                  {{ formatCardNumber(binInfo.cardBin) }}
+                                </div>
+                              </div>
+
+                              <!-- Bottom section -->
+                              <div class="flex justify-between items-end">
+                                <div>
+                                  <div class="text-xs opacity-60 mb-1">Available Cards</div>
+                                  <div class="text-sm md:text-base font-semibold">
+                                    {{ binInfo.remainingAvailableCard || 'Unlimited' }}
+                                  </div>
+                                </div>
+                                <div class="text-right">
+                                  <div class="text-xs opacity-60 mb-1">Address Update</div>
+                                  <div class="text-xs md:text-sm font-medium"
+                                    :class="binInfo.billingAddressUpdatable === 'true' ? 'text-green-300' : 'text-gray-300'">
+                                    {{ binInfo.billingAddressUpdatable === 'true' ? 'Supported' : 'Not Supported' }}
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
 
-                        <!-- Card Details -->
-                        <!-- <div
+                          <!-- Card Details -->
+                          <!-- <div
                           class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
                           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Card Details</h3>
                           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-sm">
@@ -293,10 +289,10 @@
                             </div>
                           </div>
                         </div> -->
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
                 </div>
 
                 <!-- Right Navigation Button -->
@@ -325,6 +321,37 @@
             <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-4xl mb-4"></i>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">No Card BINs Available</h3>
             <p class="text-gray-600 dark:text-gray-400">No card BIN information found for this card type.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Limit Information -->
+      <div v-if="selectedCard" class="mb-8">
+        <div
+          class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 md:p-6 shadow-sm">
+          <h3 class="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-4">Card Limits</h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="flex flex-col">
+              <span
+                class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap mb-1">Max
+                Monthly</span>
+              <span class="text-base md:text-lg font-semibold text-gray-900 dark:text-white">{{
+                formatCurrency(selectedCard.maxOnMonthly) }}</span>
+            </div>
+            <div class="flex flex-col">
+              <span
+                class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap mb-1">Max
+                Daily</span>
+              <span class="text-base md:text-lg font-semibold text-gray-900 dark:text-white">{{
+                formatCurrency(selectedCard.maxOnDaily) }}</span>
+            </div>
+            <div class="flex flex-col">
+              <span
+                class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap mb-1">Max
+                Percent</span>
+              <span class="text-base md:text-lg font-semibold text-gray-900 dark:text-white">{{
+                formatPercentage(selectedCard.maxOnPercent) }}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -508,7 +535,7 @@ const handleTouchStart = (event: TouchEvent) => {
 
 const handleTouchMove = (event: TouchEvent) => {
   if (!isDragging.value || event.touches.length !== 1) return
-  
+
   currentX.value = event.touches[0].clientX
   event.preventDefault()
 }
@@ -632,7 +659,7 @@ const formatCardNumber = (cardBin: string | null) => {
 // Get card background image based on card scheme
 const getCardBackgroundImage = (cardScheme: string | null) => {
   console.log('Card Scheme:', cardScheme) // Debug log
-  
+
   if (!cardScheme) {
     console.log('No card scheme, using default Mastercard')
     return 'https://static.biulinkpay.online/images/master.png' // Default to Mastercard
@@ -640,7 +667,7 @@ const getCardBackgroundImage = (cardScheme: string | null) => {
 
   const scheme = cardScheme.toLowerCase()
   console.log('Normalized scheme:', scheme) // Debug log
-  
+
   if (scheme.includes('master') || scheme.includes('mastercard')) {
     console.log('Using Mastercard background')
     return 'https://static.biulinkpay.online/images/master.png'
