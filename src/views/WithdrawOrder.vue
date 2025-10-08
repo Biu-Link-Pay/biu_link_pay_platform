@@ -11,7 +11,7 @@
         <div class="max-w-4xl xl:max-w-5xl mx-auto space-y-8">
           <CardInfoHeader :card-no="cardInfo.cardNo" :balance="balance" :loading="!cardDetail" />
           <!-- Withdraw Summary -->
-          <div
+          <!-- <div
             class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 text-white shadow-xl">
             <div class="absolute -top-16 -right-20 w-56 h-56 bg-white/15 blur-3xl rounded-full"></div>
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
@@ -30,7 +30,7 @@
                 Secure withdrawal to {{ selectedToken }} network
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Withdrawal Form -->
           <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-lg p-8">
@@ -112,7 +112,7 @@
                         <div>
                           <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
                           <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0
-                          }} crypto networks</div>
+                            }} crypto networks</div>
                         </div>
                       </div>
 
@@ -154,7 +154,7 @@
                             </div>
                             <div>
                               <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName
-                              }}</div>
+                                }}</div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                               <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
                                 Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
@@ -190,7 +190,7 @@
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
                     <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                    }}</span>
+                      }}</span>
                   </div>
                   <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                     <i class="pi pi-clock"></i>

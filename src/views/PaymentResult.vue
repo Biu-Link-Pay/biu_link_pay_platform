@@ -87,67 +87,150 @@
           <!-- Right Column: Order Information & Actions -->
           <div class="lg:flex lg:flex-col lg:justify-center">
             <!-- Order Information -->
-            <div
-              class="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 sm:p-6 lg:p-6 xl:p-8 mb-6 lg:mb-8 space-y-3 lg:space-y-4">
+            <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 sm:p-6 lg:p-6 xl:p-8 mb-6 lg:mb-8">
               <h3 class="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white mb-4 lg:hidden">Order Details
               </h3>
-              <div
-                class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
-                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
-                <div class="flex items-center space-x-2">
-                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber }}</span>
-                  <button @click="copyToClipboard(orderNumber)"
-                    class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
-                    title="Copy order number">
-                    <i class="pi pi-copy text-gray-500 text-xs"></i>
-                  </button>
+
+              <!-- Desktop: Traditional List Layout -->
+              <div class="hidden lg:block space-y-3 lg:space-y-4">
+                <!-- Order Number -->
+                <div
+                  class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
+                  <div class="flex items-center space-x-2">
+                    <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
+                    }}</span>
+                    <button @click="copyToClipboard(orderNumber)"
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
+                      title="Copy order number">
+                      <i class="pi pi-copy text-gray-500 text-xs"></i>
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
-                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Created Time</span>
-                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{
-                  paymentTime }}</span>
-              </div>
-              <div v-if="orderStatus === 'SUCCESS'"
-                class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
-                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Transaction ID</span>
-                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
-                  transactionId }}</span>
-              </div>
-              <div v-if="orderType === 'withdraw' && withdrawAddress"
-                class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
-                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Address</span>
-                <div class="flex items-center gap-2">
+
+                <!-- Withdraw: Network -->
+                <div v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)"
+                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Network</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
+                    {{ withdrawToken }} {{ withdrawNetwork ? `(${withdrawNetwork})` : '' }}
+                  </span>
+                </div>
+
+                <!-- Withdraw: USDT Amount -->
+                <div v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null"
+                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">USDT Amount</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
+                    {{ withdrawUsdTAmount.toFixed(2) }} USDT
+                  </span>
+                </div>
+
+                <!-- Withdraw: Network Fee -->
+                <div v-if="orderType === 'withdraw' && withdrawNetworkFee !== null"
+                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Network Fee</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
+                    {{ withdrawNetworkFee.toFixed(2) }} USDT
+                  </span>
+                </div>
+
+                <!-- Withdraw: Address -->
+                <div v-if="orderType === 'withdraw' && withdrawAddress"
+                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Address</span>
+                  <div class="flex items-center gap-2">
+                    <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
+                      withdrawAddress }}</span>
+                    <button @click="copyToClipboard(withdrawAddress)"
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                      title="Copy address">
+                      <i class="pi pi-copy text-gray-500 text-xs"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Transaction ID -->
+                <div v-if="orderStatus === 'SUCCESS'"
+                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Transaction
+                    ID</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
-                    withdrawAddress }}</span>
-                  <button @click="copyToClipboard(withdrawAddress)"
-                    class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                    title="Copy address">
-                    <i class="pi pi-copy text-gray-500 text-xs"></i>
-                  </button>
+                    transactionId }}</span>
+                </div>
+
+                <!-- Created Time -->
+                <div class="flex justify-between items-center py-2 lg:py-3">
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Created Time</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ paymentTime }}</span>
                 </div>
               </div>
-              <div v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)"
-                class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
-                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Token & Network</span>
-                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
-                  {{ withdrawToken }} {{ withdrawNetwork ? `(${withdrawNetwork})` : '' }}
-                </span>
-              </div>
-              <div v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null"
-                class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
-                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">USDT Amount</span>
-                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
-                  {{ withdrawUsdTAmount.toFixed(2) }} USDT
-                </span>
-              </div>
-              <div v-if="orderType === 'withdraw' && withdrawNetworkFee !== null"
-                class="flex justify-between items-start gap-3 py-2 lg:py-3">
-                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Network Fee</span>
-                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
-                  {{ withdrawNetworkFee.toFixed(2) }} USDT
-                </span>
+
+              <!-- Mobile: Two Column Grid Layout -->
+              <div class="lg:hidden grid grid-cols-2 gap-4">
+                <!-- Order Number -->
+                <div class="col-span-2 pb-3 border-b border-gray-200 dark:border-gray-600">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Order Number</div>
+                  <div class="flex items-center gap-2">
+                    <div class="text-sm font-medium text-gray-900 dark:text-white break-all flex-1">{{ orderNumber }}
+                    </div>
+                    <button @click="copyToClipboard(orderNumber)"
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                      title="Copy">
+                      <i class="pi pi-copy text-gray-500 text-xs"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Withdraw: Network -->
+                <div v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)" class="col-span-2">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Network</div>
+                  <div class="text-sm font-medium text-gray-900 dark:text-white">
+                    {{ withdrawNetwork ? `${withdrawNetwork}` : '' }}
+                  </div>
+                </div>
+
+                <!-- Withdraw: USDT Amount -->
+                <div v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">USDT Amount</div>
+                  <div class="text-sm font-medium text-gray-900 dark:text-white">
+                    {{ withdrawUsdTAmount.toFixed(2) }} USDT
+                  </div>
+                </div>
+
+                <!-- Withdraw: Network Fee -->
+                <div v-if="orderType === 'withdraw' && withdrawNetworkFee !== null">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Network Fee</div>
+                  <div class="text-sm font-medium text-gray-900 dark:text-white">
+                    {{ withdrawNetworkFee.toFixed(2) }} USDT
+                  </div>
+                </div>
+
+                <!-- Withdraw: Address -->
+                <div v-if="orderType === 'withdraw' && withdrawAddress" class="col-span-2">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Address</div>
+                  <div class="flex items-center gap-2">
+                    <div class="text-sm font-medium text-gray-900 dark:text-white break-all flex-1">{{ withdrawAddress
+                    }}</div>
+                    <button @click="copyToClipboard(withdrawAddress)"
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                      title="Copy">
+                      <i class="pi pi-copy text-gray-500 text-xs"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Transaction ID -->
+                <div v-if="orderStatus === 'SUCCESS'" class="col-span-2">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Transaction ID</div>
+                  <div class="text-sm font-medium text-gray-900 dark:text-white break-all">{{ transactionId }}</div>
+                </div>
+
+                <!-- Created Time -->
+                <div class="col-span-2">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Created Time</div>
+                  <div class="text-sm font-medium text-gray-900 dark:text-white">{{ paymentTime }}</div>
+                </div>
               </div>
             </div>
 
