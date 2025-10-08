@@ -67,8 +67,7 @@
                   </div>
                   <Button label="Max" size="small" severity="secondary" @click="setMaxAmount"
                     :disabled="isDeleteAction" />
-                  <Button :label="selectedCurrency" icon="pi pi-dollar" size="small" severity="secondary"
-                    @click="showCurrencySelector = true" />
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">{{ cardInfo.cardCurrency }}</span>
                 </div>
                 <small v-if="errors.withdrawAmount" class="text-red-500">{{ errors.withdrawAmount }}</small>
 
@@ -113,7 +112,7 @@
                         <div>
                           <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
                           <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0
-                            }} crypto networks</div>
+                          }} crypto networks</div>
                         </div>
                       </div>
 
@@ -155,7 +154,7 @@
                             </div>
                             <div>
                               <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName
-                                }}</div>
+                              }}</div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                               <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
                                 Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
@@ -191,7 +190,7 @@
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
                     <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                      }}</span>
+                    }}</span>
                   </div>
                   <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                     <i class="pi pi-clock"></i>
@@ -258,8 +257,7 @@
                 }" />
             </div>
             <Button label="Max" size="small" severity="secondary" @click="setMaxAmount" :disabled="isDeleteAction" />
-            <Button :label="selectedCurrency" icon="pi pi-dollar" size="small" severity="secondary"
-              @click="showCurrencySelector = true" />
+            <span class="text-gray-700 dark:text-gray-300 font-medium">{{ cardInfo.cardCurrency }}</span>
           </div>
           <small v-if="errors.withdrawAmount" class="text-red-500 text-xs">{{ errors.withdrawAmount }}</small>
         </div>
@@ -420,19 +418,6 @@
       </div>
     </div>
 
-    <!-- Currency Selector Dialog -->
-    <Dialog v-model:visible="showCurrencySelector" modal header="Select Currency" class="w-96">
-      <div class="space-y-2">
-        <div v-for="currency in currencies" :key="currency"
-          class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer"
-          :class="{ 'bg-blue-50 dark:bg-blue-900/20': selectedCurrency === currency }"
-          @click="selectCurrency(currency)">
-          <span class="font-medium">{{ currency }}</span>
-          <i v-if="selectedCurrency === currency" class="pi pi-check text-blue-600"></i>
-        </div>
-      </div>
-    </Dialog>
-
     <!-- Token Selector Dialog -->
     <Dialog v-model:visible="showTokenSelector" modal header="Select Token" class="w-96">
       <div class="space-y-2">
@@ -562,7 +547,6 @@ watch([recipientAddress, selectedCrypto], ([newAddress, newCrypto], [oldAddress,
 const cardDetail = ref<any>(null)
 
 // UI state
-const showCurrencySelector = ref(false)
 const showTokenSelector = ref(false)
 const showNetworkSelector = ref(false)
 const isSubmitting = ref(false)
@@ -618,11 +602,6 @@ const setMaxAmount = () => {
 // Go back
 const goBack = () => {
   router.back()
-}
-
-const selectCurrency = (currency: string) => {
-  selectedCurrency.value = currency
-  showCurrencySelector.value = false
 }
 
 // Select payment method (matching PaymentMethodSelection.vue)
@@ -808,22 +787,22 @@ const handleWithdraw = async () => {
 
   // Address regex validation for submission control
   if (selectedCrypto.value.network && selectedCrypto.value.network.addressRegex) {
-    // const addressRegex = new RegExp(selectedCrypto.value.network.addressRegex)
-    // if (!addressRegex.test(recipientAddress.value)) {
-    //   console.log('Address validation failed on submission:', {
-    //     address: recipientAddress.value,
-    //     network: selectedCrypto.value.network.fullName || selectedCrypto.value.network.name,
-    //     regex: selectedCrypto.value.network.addressRegex,
-    //     isValid: false
-    //   })
-    //   toast.add({
-    //     severity: 'error',
-    //     summary: 'Invalid Address Format',
-    //     detail: `The address format is invalid for ${selectedCrypto.value.network.fullName || selectedCrypto.value.network.name}. Please check and try again.`,
-    //     life: 5000
-    //   })
-    //   return
-    // }
+    const addressRegex = new RegExp(selectedCrypto.value.network.addressRegex)
+    if (!addressRegex.test(recipientAddress.value)) {
+      console.log('Address validation failed on submission:', {
+        address: recipientAddress.value,
+        network: selectedCrypto.value.network.fullName || selectedCrypto.value.network.name,
+        regex: selectedCrypto.value.network.addressRegex,
+        isValid: false
+      })
+      toast.add({
+        severity: 'error',
+        summary: 'Invalid Address Format',
+        detail: `The address format is invalid for ${selectedCrypto.value.network.fullName || selectedCrypto.value.network.name}. Please check and try again.`,
+        life: 5000
+      })
+      return
+    }
     console.log('Address validation passed on submission:', {
       address: recipientAddress.value,
       network: selectedCrypto.value.network.fullName || selectedCrypto.value.network.name,
