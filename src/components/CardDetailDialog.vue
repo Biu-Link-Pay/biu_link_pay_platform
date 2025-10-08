@@ -85,7 +85,7 @@
               class="p-1.5 hover:bg-gray-200 rounded-lg transition-colors" title="Copy address">
               <i class="pi pi-copy text-gray-600 text-sm"></i>
             </button>
-            <Button v-if="canEdit && !isEditing" label="Edit" icon="pi pi-pencil" size="small" @click="startEdit" />
+            <Button label="Edit" icon="pi pi-pencil" size="small" @click="startEdit" />
           </div>
         </div>
 
@@ -155,7 +155,7 @@
       </div>
 
       <!-- Address Update Status -->
-      <div class="flex items-center gap-2 p-3 rounded-lg" :class="isAddressUpdatable(cardDetail.billingAddressUpdatable)
+      <!-- <div class="flex items-center gap-2 p-3 rounded-lg" :class="isAddressUpdatable(cardDetail.billingAddressUpdatable)
         ? 'bg-green-50 border border-green-200'
         : 'bg-orange-50 border border-orange-200'">
         <i :class="isAddressUpdatable(cardDetail.billingAddressUpdatable)
@@ -168,7 +168,7 @@
             ? 'Billing address can be updated'
             : 'Billing address cannot be updated' }}
         </span>
-      </div>
+      </div> -->
     </div>
 
     <div v-else class="text-sm text-gray-500">
@@ -247,7 +247,7 @@ watch(
 // ----- Edit billing address -----
 const isEditing = ref(false)
 const saving = ref(false)
-const canEdit = computed(() => isAddressUpdatable(props.cardDetail?.billingAddressUpdatable))
+// const canEdit = computed(() => isAddressUpdatable(props.cardDetail?.billingAddressUpdatable))
 
 // Country/State/City data
 const { Country, State, City } = CSC

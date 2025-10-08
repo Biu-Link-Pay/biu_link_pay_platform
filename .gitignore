@@ -93,3 +93,6 @@ temp/
 # pnpm
 .pnpm-debug.log*
 .pnpm-store/
+
+# Build analysis
+dist/stats.html

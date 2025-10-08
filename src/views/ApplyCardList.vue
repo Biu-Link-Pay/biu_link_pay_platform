@@ -32,21 +32,15 @@
           <div class="px-4">
             <div class="bg-white dark:bg-gray-900 p-4">
               <!-- Stats row -->
-              <div class="grid grid-cols-3 gap-3 text-center">
+              <div class="grid grid-cols-2 gap-3 text-center">
                 <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">Application fee</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400">Recharge Fee</div>
                   <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
-                    {{ formatMoney(currentCard?.applyFee) }}
+                    {{ formatRechargeFee(currentCard?.rechargeFee) }}
                   </div>
                 </div>
                 <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">Monthly limit</div>
-                  <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
-                    {{ formatNumber(currentCard?.maxOnMonthly) }}
-                  </div>
-                </div>
-                <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">Monthly fee</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400">Monthly Fee</div>
                   <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
                     {{ formatMoney(currentCard?.monthlyFee) }}
                   </div>
@@ -236,7 +230,10 @@ const formatMoney = (val?: number) => {
   if (val === undefined || val === null) return '—'
   return `${val} USD`
 }
-
+const formatRechargeFee = (val?: number) => {
+  if (val === undefined || val === null) return '—'
+  return `${val}%`
+}
 const formatNumber = (val?: number) => {
   if (val === undefined || val === null) return '—'
   return val.toLocaleString('en-US') + ' USD'
