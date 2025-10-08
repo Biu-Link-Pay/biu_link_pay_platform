@@ -97,7 +97,8 @@
           <!-- Primary action -->
           <div class="px-4 mt-4">
             <Button :label="currentCard?.cardPattern === 1 ? 'Order a Virtual Card' : 'Order a Physical Card'"
-              severity="primary" class="w-full" @click="currentCard && orderCard(currentCard)" />
+              severity="primary" class="w-full" :disabled="currentCard?.cardPattern !== 1"
+              @click="currentCard && orderCard(currentCard)" />
           </div>
         </div>
 
@@ -168,6 +169,11 @@ const { handleError, handleSuccess } = useErrorHandler()
 // Reactive data
 const selectedCard = ref<CardConfig | null>(null)
 const currentCardIndex = ref(0)
+
+// Card flip animation state - track rotation for each card (-180 or 0)
+const cardFlipRotations = ref<Record<number, number>>({})
+const isFlipping = ref(false)
+const animatingRotation = ref(0) // Current animating rotation value
 
 // Touch drag related state
 const isDragging = ref(false)
@@ -250,28 +256,34 @@ const getCardStyle = (index: number) => {
   let zIndex = 0
 
   if (diff === 0) {
-    // Current card - center, full scale
+    // Current card - center, full scale, with flip rotation
     translateX = '-50%'
     translateZ = '0'
     scale = 1
     opacity = 1
-    rotateY = 0
+    // Use animating rotation if flipping, otherwise use stored rotation (initialized to -180 for first flip)
+    if (isFlipping.value && index === currentCardIndex.value) {
+      rotateY = animatingRotation.value
+    } else {
+      // Default to -180 (back) for cards that haven't been flipped yet
+      rotateY = cardFlipRotations.value[index] ?? -180
+    }
     zIndex = 10
   } else if (diff === 1) {
-    // Next card - right side, smaller, rotated
+    // Next card - right side, smaller, always at back (-180)
     translateX = 'calc(-50% + 85%)'
     translateZ = '-100px'
     scale = 0.8
     opacity = 0.5
-    rotateY = -15
+    rotateY = -180
     zIndex = 5
   } else if (diff === -1) {
-    // Previous card - left side, smaller, rotated
+    // Previous card - left side, smaller, always at back (-180)
     translateX = 'calc(-50% - 85%)'
     translateZ = '-100px'
     scale = 0.8
     opacity = 0.5
-    rotateY = 15
+    rotateY = -180
     zIndex = 5
   } else {
     // Hidden cards
@@ -291,10 +303,62 @@ const getCardStyle = (index: number) => {
   }
 }
 
+// Trigger card flip animation for current card (180 degree flip from back to front)
+const triggerCardFlip = () => {
+  if (isFlipping.value) return
+
+  isFlipping.value = true
+  const cardIndex = currentCardIndex.value
+
+  // Always start from back (-180) and flip to front (0)
+  const startRotation = -180
+  const targetRotation = 0
+
+  // Animate flip rotation
+  const duration = 600 // ms
+  const startTime = Date.now()
+
+  const animate = () => {
+    const elapsed = Date.now() - startTime
+    const progress = Math.min(elapsed / duration, 1)
+
+    // Ease out cubic
+    const easeProgress = 1 - Math.pow(1 - progress, 3)
+    animatingRotation.value = startRotation + ((targetRotation - startRotation) * easeProgress)
+
+    if (progress < 1) {
+      requestAnimationFrame(animate)
+    } else {
+      // Set final rotation value to front (0)
+      cardFlipRotations.value = {
+        ...cardFlipRotations.value,
+        [cardIndex]: targetRotation
+      }
+      animatingRotation.value = targetRotation
+      isFlipping.value = false
+    }
+  }
+
+  requestAnimationFrame(animate)
+}
+
 // Select card by index with animation
 const selectCardByIndex = (index: number) => {
+  if (index === currentCardIndex.value) return
+
+  // Reset previous card back to -180 (back side) when leaving
+  const prevIndex = currentCardIndex.value
+  cardFlipRotations.value = {
+    ...cardFlipRotations.value,
+    [prevIndex]: -180
+  }
+
+  // Switch to new card
   currentCardIndex.value = index
   selectedCard.value = cardConfigs.value[index]
+
+  // Trigger flip animation for new card
+  triggerCardFlip()
 }
 
 // Touch event handlers for mobile
@@ -327,18 +391,26 @@ const handleTouchEnd = () => {
 
   // Switch card based on swipe distance and direction
   if (Math.abs(deltaX) > dragThreshold) {
+    let shouldSwitch = false
     if (deltaX > 0) {
       // Swipe left, show next card
       if (currentCardIndex.value < cardConfigs.value.length - 1) {
+        shouldSwitch = true
         currentCardIndex.value++
         selectedCard.value = cardConfigs.value[currentCardIndex.value]
       }
     } else {
       // Swipe right, show previous card
       if (currentCardIndex.value > 0) {
+        shouldSwitch = true
         currentCardIndex.value--
         selectedCard.value = cardConfigs.value[currentCardIndex.value]
       }
+    }
+
+    // Trigger flip animation on successful switch
+    if (shouldSwitch) {
+      triggerCardFlip()
     }
   }
 
@@ -608,6 +680,13 @@ onMounted(() => {
   window.addEventListener('resize', handleResize, { passive: true })
   window.addEventListener('orientationchange', handleOrientationChange)
   fetchCardConfigs()
+
+  // Initialize first card with flip animation after a short delay
+  nextTick(() => {
+    setTimeout(() => {
+      triggerCardFlip()
+    }, 300)
+  })
 })
 </script>
 
