@@ -32,7 +32,7 @@
           <div class="px-4">
             <div class="bg-white dark:bg-gray-900 p-4">
               <!-- Card slider with preview effect -->
-              <div class="relative">
+              <div class="relative overflow-x-hidden">
                 <div class="overflow-visible" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
                   @touchend="handleTouchEnd">
                   <div class="relative flex items-center justify-center"
@@ -70,13 +70,13 @@
                     <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Apply
                       Fee</span>
                     <span class="text-base font-semibold text-gray-900 dark:text-white mt-1">${{ currentCard?.applyFee
-                    }}</span>
+                      }}</span>
                   </div>
                   <div class="flex flex-col">
                     <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Monthly
                       Fee</span>
                     <span class="text-base font-semibold text-gray-900 dark:text-white mt-1">${{ currentCard?.monthlyFee
-                    }}</span>
+                      }}</span>
                   </div>
                   <div class="flex flex-col">
                     <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Recharge
@@ -94,7 +94,7 @@
                     <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Max
                       Daily</span>
                     <span class="text-base font-semibold text-gray-900 dark:text-white mt-1">${{ currentCard?.maxOnDaily
-                    }}</span>
+                      }}</span>
                   </div>
                   <div class="flex flex-col">
                     <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Max
