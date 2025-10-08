@@ -300,29 +300,35 @@
                   </div>
 
                   <!-- Desktop Navigation -->
-                  <div class="flex items-center justify-between">
+                  <div class="flex items-center justify-between mt-4 px-2">
                     <button @click="prevDesktopPage('transaction')"
                       :disabled="pagination.transaction.pageIndex === 0 || loading.transaction"
-                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <i class="pi pi-chevron-left text-sm"></i>
-                      <span class="text-sm">Previous</span>
+                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
+                      <i
+                        class="pi pi-chevron-left text-xs group-hover:transform group-hover:-translate-x-0.5 transition-transform"></i>
+                      <span>Previous</span>
                     </button>
 
-                    <div class="flex items-center space-x-3">
-                      <span class="text-xs text-gray-600 dark:text-gray-400">
-                        Page {{ pagination.transaction.pageIndex + 1 }}
-                      </span>
-                      <div v-if="loading.transaction" class="flex items-center space-x-1">
-                        <i class="pi pi-spin pi-spinner text-blue-600 text-xs"></i>
-                        <span class="text-xs text-gray-600 dark:text-gray-400">Loading...</span>
+                    <div class="flex items-center gap-3">
+                      <div
+                        class="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-800">
+                        <span class="text-sm font-semibold text-blue-700 dark:text-blue-300">
+                          Page {{ pagination.transaction.pageIndex + 1 }}
+                        </span>
+                      </div>
+                      <div v-if="loading.transaction"
+                        class="flex items-center gap-2 px-3 py-2 rounded-lg bg-blue-50 dark:bg-blue-900/20">
+                        <i class="pi pi-spin pi-spinner text-blue-600 dark:text-blue-400 text-sm"></i>
+                        <span class="text-xs font-medium text-blue-600 dark:text-blue-400">Loading...</span>
                       </div>
                     </div>
 
                     <button @click="nextDesktopPage('transaction')"
                       :disabled="!pagination.transaction.hasMore || loading.transaction"
-                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <span class="text-sm">Next</span>
-                      <i class="pi pi-chevron-right text-sm"></i>
+                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
+                      <span>Next</span>
+                      <i
+                        class="pi pi-chevron-right text-xs group-hover:transform group-hover:translate-x-0.5 transition-transform"></i>
                     </button>
                   </div>
                 </div>
@@ -365,28 +371,31 @@
                   </div>
 
                   <!-- Mobile Navigation -->
-                  <div class="flex items-center justify-between">
+                  <div class="flex items-center justify-between mt-3 px-1">
                     <button @click="prevDesktopPage('transaction')"
                       :disabled="pagination.transaction.pageIndex === 0 || loading.transaction"
-                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <i class="pi pi-chevron-left text-xs"></i>
-                      <span class="text-xs">Previous</span>
+                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
+                      <i class="pi pi-chevron-left text-[10px]"></i>
+                      <span>Prev</span>
                     </button>
 
-                    <div class="flex items-center space-x-2">
-                      <span class="text-xs text-gray-600 dark:text-gray-400">
-                        Page {{ pagination.transaction.pageIndex + 1 }}
-                      </span>
-                      <div v-if="loading.transaction" class="flex items-center space-x-1">
-                        <i class="pi pi-spin pi-spinner text-blue-600 text-xs"></i>
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-800">
+                        <span class="text-xs font-semibold text-blue-700 dark:text-blue-300">
+                          {{ pagination.transaction.pageIndex + 1 }}
+                        </span>
+                      </div>
+                      <div v-if="loading.transaction" class="flex items-center">
+                        <i class="pi pi-spin pi-spinner text-blue-600 dark:text-blue-400 text-xs"></i>
                       </div>
                     </div>
 
                     <button @click="nextDesktopPage('transaction')"
                       :disabled="!pagination.transaction.hasMore || loading.transaction"
-                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <span class="text-xs">Next</span>
-                      <i class="pi pi-chevron-right text-xs"></i>
+                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
+                      <span>Next</span>
+                      <i class="pi pi-chevron-right text-[10px]"></i>
                     </button>
                   </div>
                 </div>
@@ -441,29 +450,35 @@
                   </div>
 
                   <!-- Desktop Navigation -->
-                  <div class="flex items-center justify-between">
+                  <div class="flex items-center justify-between mt-4 px-2">
                     <button @click="prevDesktopPage('recharge')"
                       :disabled="pagination.recharge.pageNo === 0 || loading.recharge"
-                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <i class="pi pi-chevron-left text-sm"></i>
-                      <span class="text-sm">Previous</span>
+                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
+                      <i
+                        class="pi pi-chevron-left text-xs group-hover:transform group-hover:-translate-x-0.5 transition-transform"></i>
+                      <span>Previous</span>
                     </button>
 
-                    <div class="flex items-center space-x-3">
-                      <span class="text-xs text-gray-600 dark:text-gray-400">
-                        Page {{ pagination.recharge.pageNo + 1 }}
-                      </span>
-                      <div v-if="loading.recharge" class="flex items-center space-x-1">
-                        <i class="pi pi-spin pi-spinner text-blue-600 text-xs"></i>
-                        <span class="text-xs text-gray-600 dark:text-gray-400">Loading...</span>
+                    <div class="flex items-center gap-3">
+                      <div
+                        class="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-800">
+                        <span class="text-sm font-semibold text-blue-700 dark:text-blue-300">
+                          Page {{ pagination.recharge.pageNo + 1 }}
+                        </span>
+                      </div>
+                      <div v-if="loading.recharge"
+                        class="flex items-center gap-2 px-3 py-2 rounded-lg bg-blue-50 dark:bg-blue-900/20">
+                        <i class="pi pi-spin pi-spinner text-blue-600 dark:text-blue-400 text-sm"></i>
+                        <span class="text-xs font-medium text-blue-600 dark:text-blue-400">Loading...</span>
                       </div>
                     </div>
 
                     <button @click="nextDesktopPage('recharge')"
                       :disabled="!pagination.recharge.hasMore || loading.recharge"
-                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <span class="text-sm">Next</span>
-                      <i class="pi pi-chevron-right text-sm"></i>
+                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
+                      <span>Next</span>
+                      <i
+                        class="pi pi-chevron-right text-xs group-hover:transform group-hover:translate-x-0.5 transition-transform"></i>
                     </button>
                   </div>
                 </div>
@@ -506,28 +521,31 @@
                   </div>
 
                   <!-- Mobile Navigation -->
-                  <div class="flex items-center justify-between">
+                  <div class="flex items-center justify-between mt-3 px-1">
                     <button @click="prevDesktopPage('recharge')"
                       :disabled="pagination.recharge.pageNo === 0 || loading.recharge"
-                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <i class="pi pi-chevron-left text-xs"></i>
-                      <span class="text-xs">Previous</span>
+                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
+                      <i class="pi pi-chevron-left text-[10px]"></i>
+                      <span>Prev</span>
                     </button>
 
-                    <div class="flex items-center space-x-2">
-                      <span class="text-xs text-gray-600 dark:text-gray-400">
-                        Page {{ pagination.recharge.pageNo + 1 }}
-                      </span>
-                      <div v-if="loading.recharge" class="flex items-center space-x-1">
-                        <i class="pi pi-spin pi-spinner text-blue-600 text-xs"></i>
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-800">
+                        <span class="text-xs font-semibold text-blue-700 dark:text-blue-300">
+                          {{ pagination.recharge.pageNo + 1 }}
+                        </span>
+                      </div>
+                      <div v-if="loading.recharge" class="flex items-center">
+                        <i class="pi pi-spin pi-spinner text-blue-600 dark:text-blue-400 text-xs"></i>
                       </div>
                     </div>
 
                     <button @click="nextDesktopPage('recharge')"
                       :disabled="!pagination.recharge.hasMore || loading.recharge"
-                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <span class="text-xs">Next</span>
-                      <i class="pi pi-chevron-right text-xs"></i>
+                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
+                      <span>Next</span>
+                      <i class="pi pi-chevron-right text-[10px]"></i>
                     </button>
                   </div>
                 </div>
