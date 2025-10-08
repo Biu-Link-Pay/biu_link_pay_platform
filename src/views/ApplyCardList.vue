@@ -31,40 +31,18 @@
         <div class="md:hidden">
           <div class="px-4">
             <div class="bg-white dark:bg-gray-900 p-4">
-              <!-- Stats row -->
-              <div class="grid grid-cols-3 gap-3 text-center">
-                <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">Application fee</div>
-                  <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
-                    {{ formatMoney(currentCard?.applyFee) }}
-                  </div>
-                </div>
-                <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">Monthly limit</div>
-                  <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
-                    {{ formatNumber(currentCard?.maxOnMonthly) }}
-                  </div>
-                </div>
-                <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">Monthly fee</div>
-                  <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
-                    {{ formatMoney(currentCard?.monthlyFee) }}
-                  </div>
-                </div>
-              </div>
-
               <!-- Card slider with preview effect -->
-              <div class="mt-6 relative">
+              <div class="relative">
                 <div class="overflow-visible" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
                   @touchend="handleTouchEnd">
                   <div class="relative flex items-center justify-center"
-                    style="perspective: 1000px; min-height: 400px;">
+                    style="perspective: 1000px; min-height: 320px;">
                     <div v-for="(card, index) in cardConfigs" :key="index"
                       class="absolute top-0 left-1/2 transition-all duration-500 ease-out" :style="getCardStyle(index)">
                       <div class="rounded-2xl overflow-hidden bg-img" :style="{
                         aspectRatio: '9/16',
-                        width: '55vw',
-                        maxWidth: '220px'
+                        width: '45vw',
+                        maxWidth: '180px'
                       }">
                         <img v-if="card.cardPicture" :src="card.cardPicture" alt="" class="rot-img" draggable="false" />
                         <div v-else
@@ -82,6 +60,48 @@
                     class="w-8 h-1 rounded-full transition-colors"
                     :class="currentCardIndex === index ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'"
                     @click="selectCardByIndex(index)"></button>
+                </div>
+              </div>
+
+              <!-- Card Details - 5 indicators -->
+              <div class="mt-6 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="flex flex-col">
+                    <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Apply
+                      Fee</span>
+                    <span class="text-base font-semibold text-gray-900 dark:text-white mt-1">${{ currentCard?.applyFee
+                    }}</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Monthly
+                      Fee</span>
+                    <span class="text-base font-semibold text-gray-900 dark:text-white mt-1">${{ currentCard?.monthlyFee
+                    }}</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Recharge
+                      Fee</span>
+                    <span class="text-base font-semibold text-gray-900 dark:text-white mt-1">${{
+                      currentCard?.rechargeFee }}</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Max
+                      Monthly</span>
+                    <span class="text-base font-semibold text-gray-900 dark:text-white mt-1">${{
+                      currentCard?.maxOnMonthly }}</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Max
+                      Daily</span>
+                    <span class="text-base font-semibold text-gray-900 dark:text-white mt-1">${{ currentCard?.maxOnDaily
+                    }}</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500">Max
+                      Percent</span>
+                    <span class="text-base font-semibold text-gray-900 dark:text-white mt-1">${{
+                      currentCard?.maxOnPercent }}</span>
+                  </div>
                 </div>
               </div>
             </div>
