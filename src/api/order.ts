@@ -231,7 +231,7 @@ export interface WithdrawOrderDetailItem {
 export interface WithdrawOrderDetailResponse {
   code: string
   msg: string
-  model: WithdrawOrderDetailItem[]
+  model: WithdrawOrderDetailItem
   success: boolean
   error: boolean
 }

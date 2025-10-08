@@ -286,7 +286,8 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
-                                {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency)
+                                {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency,
+                                  transaction.transactionType)
                                 }}
                               </div>
                               <div class="text-xs lg:text-sm" :class="getStatusColor(transaction.status)">
@@ -357,7 +358,8 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-xs">
-                                {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency)
+                                {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency,
+                                  transaction.transactionType)
                                 }}
                               </div>
                               <div class="text-xs" :class="getStatusColor(transaction.status)">
@@ -573,7 +575,8 @@
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div class="space-y-3 lg:space-y-4">
                           <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors cursor-pointer"
+                            @click="goToWithdrawResult(order)">
                             <div
                               class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
                               <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-base lg:text-lg"></i>
@@ -637,7 +640,8 @@
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div class="space-y-2 lg:space-y-3">
                           <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-3 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700">
+                            class="flex items-center space-x-3 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                            @click="goToWithdrawResult(order)">
                             <div
                               class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
                               <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-sm"></i>
@@ -1297,7 +1301,20 @@ const goToPaymentResult = (order: DepositOrderListItem) => {
       currency: order.token,
       network: order.network,
       cryptoAmount: order.usdAmount.toString(),
-      paymentMethod: 'Crypto Payment'
+      paymentMethod: 'Crypto Payment',
+      type: 'deposit' // 入金订单
+    }
+  })
+}
+
+// Navigate to withdraw result page
+const goToWithdrawResult = (order: WithdrawOrderListItem) => {
+  router.push({
+    name: 'PaymentResult',
+    query: {
+      orderNum: order.num,
+      amount: order.usdAmount?.toString() || '0',
+      type: 'withdraw' // 出金订单
     }
   })
 }
@@ -1326,8 +1343,9 @@ const cardLastFour = (cardNo?: string) => {
   return digits.length <= 4 ? digits : digits.slice(-4)
 }
 
-const formatTransactionAmount = (amount: number, currency: string) => {
-  const sign = amount < 0 ? '-' : '+'
+const formatTransactionAmount = (amount: number, currency: string, transactionType?: string) => {
+  // recharge_return = 减金额，其他情况根据金额正负判断
+  const sign = transactionType === 'recharge_return' ? '-' : (amount < 0 ? '-' : '+')
   return `${sign}${Math.abs(amount).toFixed(2)} ${currency}`
 }
 

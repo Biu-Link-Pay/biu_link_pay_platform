@@ -105,12 +105,14 @@
               </div>
               <div
                 class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
-                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Payment Time</span>
-                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ paymentTime }}</span>
+                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Created Time</span>
+                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{
+                  paymentTime }}</span>
               </div>
-              <div v-if="orderStatus === 'SUCCESS'" class="flex justify-between items-center py-2 lg:py-3">
-                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Transaction ID</span>
-                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ transactionId }}</span>
+              <div v-if="orderStatus === 'SUCCESS'" class="flex justify-between items-start gap-3 py-2 lg:py-3">
+                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Transaction ID</span>
+                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
+                  transactionId }}</span>
               </div>
             </div>
 
@@ -412,8 +414,8 @@ const fetchOrderStatus = async () => {
       // 出金订单
       const response = await OrderAPI.getWithdrawOrderDetail({ num: orderNumber.value.toString() })
 
-      if (response.success && response.model && response.model.length > 0) {
-        const detail = response.model[0] // 出金订单详情返回数组，取第一个
+      if (response.success && response.model) {
+        const detail = response.model // 出金订单详情返回数组，取第一个
         const previousStatus = orderStatus.value
         orderStatus.value = detail.status as any
         paymentTime.value = detail.createTime || null
