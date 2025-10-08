@@ -1236,6 +1236,25 @@ const goToRecharge = () => {
 
 // Navigate to payment result page
 const goToPaymentResult = (order: DepositOrderListItem) => {
+  const statusUpper = (order.status || '').toString().toUpperCase()
+
+  if (statusUpper === 'INIT') {
+    // 订单待支付，跳转到加密支付页
+    router.push({
+      name: 'CryptoPayment',
+      query: {
+        orderNum: order.num,
+        amount: order.amount?.toString?.() || '0',
+        currency: (order as any).token || '',
+        network: (order as any).network || '',
+        cryptoAmount: (order as any).usdAmount?.toString?.() || '',
+        from: 'myCards'
+      }
+    })
+    return
+  }
+
+  // 其他状态走结果页
   router.push({
     name: 'PaymentResult',
     query: {
