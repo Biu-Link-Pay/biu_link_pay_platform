@@ -109,10 +109,24 @@
                 <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{
                   paymentTime }}</span>
               </div>
-              <div v-if="orderStatus === 'SUCCESS'" class="flex justify-between items-start gap-3 py-2 lg:py-3">
+              <div v-if="orderStatus === 'SUCCESS'"
+                class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
                 <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Transaction ID</span>
                 <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
                   transactionId }}</span>
+              </div>
+              <div v-if="orderType === 'withdraw' && withdrawAddress"
+                class="flex justify-between items-start gap-3 py-2 lg:py-3">
+                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Address</span>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
+                    withdrawAddress }}</span>
+                  <button @click="copyToClipboard(withdrawAddress)"
+                    class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                    title="Copy address">
+                    <i class="pi pi-copy text-gray-500 text-xs"></i>
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -289,6 +303,7 @@ const paymentTime = ref<string | null>('')
 const transactionId = ref<string | null>('')
 const errorReason = ref<string | null>('')
 const orderType = ref<'deposit' | 'withdraw'>('deposit') // 订单类型：入金或出金
+const withdrawAddress = ref<string | null>('') // 出金地址
 
 // UI state
 const refreshing = ref(false)
@@ -421,6 +436,7 @@ const fetchOrderStatus = async () => {
         orderStatus.value = detail.status as any
         paymentTime.value = detail.createTime || null
         transactionId.value = detail.hashId || null
+        withdrawAddress.value = detail.address || null // 获取出金地址
 
         console.log('Withdraw order status updated:', {
           orderNumber: orderNumber.value,
