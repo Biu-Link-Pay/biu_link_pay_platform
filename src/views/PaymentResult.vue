@@ -298,6 +298,7 @@ const progressStep = ref(0)
 // Polling for PENDING status
 let pollingInterval: NodeJS.Timeout | null = null
 const isMounted = ref(false)
+const isFromMyCards = ref(false) // 标识是否从 MyCards 页面进入
 
 // Copy to clipboard function
 const copyToClipboard = async (text: string) => {
@@ -430,12 +431,15 @@ const fetchOrderStatus = async () => {
 
         if (previousStatus === 'PENDING' && orderStatus.value !== 'PENDING') {
           stopPolling()
-          toast.add({
-            severity: orderStatus.value === 'SUCCESS' ? 'success' : 'warn',
-            summary: 'Status Updated',
-            detail: `Order status changed to ${orderStatus.value}`,
-            life: 3000
-          })
+          // 只有不是从 MyCards 页面进入时才显示提示
+          if (!isFromMyCards.value) {
+            toast.add({
+              severity: orderStatus.value === 'SUCCESS' ? 'success' : 'warn',
+              summary: 'Status Updated',
+              detail: `Order status changed to ${orderStatus.value}`,
+              life: 3000
+            })
+          }
         }
       }
     } else {
@@ -474,6 +478,14 @@ const fetchOrderStatus = async () => {
 
 // Handle status change
 const handleStatusChange = (status: string) => {
+  // 只有不是从 MyCards 页面进入时才显示状态变更提示
+  if (isFromMyCards.value) {
+    if (status !== 'PENDING') {
+      stopPolling()
+    }
+    return
+  }
+
   switch (status) {
     case 'SUCCESS':
       toast.add({
@@ -621,6 +633,13 @@ onMounted(async () => {
   } else {
     orderType.value = 'deposit'
     console.log('Order type: deposit (入金订单)')
+  }
+
+  // Check if coming from MyCards page
+  const from = route.query.from as string
+  if (from === 'myCards') {
+    isFromMyCards.value = true
+    console.log('Coming from MyCards page, will not show toast notifications')
   }
 
   // Get other data from route or set defaults

@@ -1240,13 +1240,14 @@ const goToPaymentResult = (order: DepositOrderListItem) => {
     name: 'PaymentResult',
     query: {
       orderNum: order.num,
-      status: 'SUCCESS', // Assuming completed orders are successful
+      status: order.status, // 使用订单实际状态
       amount: order.amount.toString(),
       currency: order.token,
       network: order.network,
       cryptoAmount: order.usdAmount.toString(),
       paymentMethod: 'Crypto Payment',
-      type: 'deposit' // 入金订单
+      type: 'deposit', // 入金订单
+      from: 'myCards' // 标识来源
     }
   })
 }
@@ -1257,8 +1258,10 @@ const goToWithdrawResult = (order: WithdrawOrderListItem) => {
     name: 'PaymentResult',
     query: {
       orderNum: order.num,
+      status: order.status, // 使用订单实际状态
       amount: order.usdAmount?.toString() || '0',
-      type: 'withdraw' // 出金订单
+      type: 'withdraw', // 出金订单
+      from: 'myCards' // 标识来源
     }
   })
 }
