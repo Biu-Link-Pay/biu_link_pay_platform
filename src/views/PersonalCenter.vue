@@ -591,23 +591,11 @@ const navigateToLanguage = () => {
 }
 
 const navigateToTerms = () => {
-  // TODO: Implement navigation to terms of service
-  toast.add({
-    severity: 'info',
-    summary: 'Coming Soon',
-    detail: 'Terms of service page is under development',
-    life: 3000
-  })
+  window.open('https://static.biulinkpay.online/compliance/TermsOfService.html', '_blank', 'noopener,noreferrer')
 }
 
 const navigateToPrivacy = () => {
-  // TODO: Implement navigation to privacy policy
-  toast.add({
-    severity: 'info',
-    summary: 'Coming Soon',
-    detail: 'Privacy policy page is under development',
-    life: 3000
-  })
+  window.open('https://static.biulinkpay.online/compliance/PrivacyPolicy.html', '_blank', 'noopener,noreferrer')
 }
 
 const navigateToSafety = () => {

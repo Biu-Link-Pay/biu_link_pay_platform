@@ -72,16 +72,4 @@ export function setupRouterGuards(router: Router) {
       }
     }
   })
-
-  // 全局后置钩子
-  router.afterEach((to) => {
-    // 设置页面标题
-    if (to.meta?.title) {
-      document.title = `${to.meta.title} - card.biulinkpay`
-    } else {
-      document.title = 'card.biulinkpay'
-    }
-
-    console.log('Route guard: navigation completed to', to.path)
-  })
 }

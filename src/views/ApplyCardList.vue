@@ -54,17 +54,17 @@
               </div>
 
               <!-- Card slider with preview effect -->
-              <div class="mt-6 relative">
-                <div class="overflow-visible" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
+              <div class="mt-6 relative overflow-x-hidden">
+                <div class="overflow-x-hidden" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
                   @touchend="handleTouchEnd">
-                  <div class="relative flex items-center justify-center"
-                    style="perspective: 1000px; min-height: 400px;">
+                  <div class="relative flex items-center justify-center overflow-x-hidden"
+                    style="perspective: 1000px; min-height: 320px;">
                     <div v-for="(card, index) in cardConfigs" :key="index"
                       class="absolute top-0 left-1/2 transition-all duration-500 ease-out" :style="getCardStyle(index)">
                       <div class="rounded-2xl overflow-hidden bg-img" :style="{
                         aspectRatio: '9/16',
-                        width: '55vw',
-                        maxWidth: '220px'
+                        width: '45vw',
+                        maxWidth: '180px'
                       }">
                         <img v-if="card.cardPicture" :src="card.cardPicture" alt="" class="rot-img" draggable="false" />
                         <div v-else

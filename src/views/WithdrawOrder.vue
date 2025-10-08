@@ -198,7 +198,7 @@
                   </div>
                 </div>
                 <div class="flex items-center justify-between text-sm">
-                  <span class="text-gray-700 dark:text-gray-300">Network fee</span>
+                  <span class="text-gray-700 dark:text-gray-300">Transaction Fee</span>
                   <span class="text-gray-700 dark:text-gray-300">{{ networkFee }} {{ selectedToken }}</span>
                 </div>
               </div>
@@ -385,7 +385,7 @@
             </div>
           </div>
           <div class="flex items-center justify-between text-xs mt-2">
-            <span class="text-gray-600 dark:text-gray-400">Network fee</span>
+            <span class="text-gray-600 dark:text-gray-400">Transaction Fee</span>
             <span class="text-gray-600 dark:text-gray-400">{{ networkFee }} {{ selectedToken }}</span>
           </div>
         </div>
