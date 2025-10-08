@@ -551,7 +551,7 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
-                                {{ formatWithdrawAmount(order.usdAmount, order.token) }}
+                                {{ formatWithdrawAmount(order.usdAmount, order.orderCurrency) }}
                               </div>
                               <div class="text-xs lg:text-sm" :class="getStatusColor(order.status)">
                                 {{ order.status }}
@@ -606,7 +606,7 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-xs">
-                                {{ formatWithdrawAmount(order.usdAmount, order.token) }}
+                                {{ formatWithdrawAmount(order.usdAmount, order.orderCurrency) }}
                               </div>
                               <div class="text-xs" :class="getStatusColor(order.status)">
                                 {{ order.status }}
@@ -1300,9 +1300,9 @@ const formatOrderAmount = (amount: number, currency: string) => {
   return `${amount.toFixed(2)} ${currency}`
 }
 
-const formatWithdrawAmount = (usdAmount: number | null, token: string | null) => {
-  if (usdAmount === null || token === null) return 'N/A'
-  return `${token} ${usdAmount.toFixed(2)}`
+const formatWithdrawAmount = (usdAmount: number | null, orderCurrency: string | null) => {
+  if (usdAmount === null || orderCurrency === null) return 'N/A'
+  return `${usdAmount.toFixed(2)} ${orderCurrency} `
 }
 
 const formatDate = (dateString: string) => {

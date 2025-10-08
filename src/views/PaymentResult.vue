@@ -116,7 +116,7 @@
                   transactionId }}</span>
               </div>
               <div v-if="orderType === 'withdraw' && withdrawAddress"
-                class="flex justify-between items-start gap-3 py-2 lg:py-3">
+                class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
                 <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Address</span>
                 <div class="flex items-center gap-2">
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
@@ -127,6 +127,27 @@
                     <i class="pi pi-copy text-gray-500 text-xs"></i>
                   </button>
                 </div>
+              </div>
+              <div v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)"
+                class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
+                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Token & Network</span>
+                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
+                  {{ withdrawToken }} {{ withdrawNetwork ? `(${withdrawNetwork})` : '' }}
+                </span>
+              </div>
+              <div v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null"
+                class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
+                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">USDT Amount</span>
+                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
+                  {{ withdrawUsdTAmount.toFixed(2) }} USDT
+                </span>
+              </div>
+              <div v-if="orderType === 'withdraw' && withdrawNetworkFee !== null"
+                class="flex justify-between items-start gap-3 py-2 lg:py-3">
+                <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Network Fee</span>
+                <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
+                  {{ withdrawNetworkFee.toFixed(2) }} USDT
+                </span>
               </div>
             </div>
 
@@ -304,6 +325,10 @@ const transactionId = ref<string | null>('')
 const errorReason = ref<string | null>('')
 const orderType = ref<'deposit' | 'withdraw'>('deposit') // 订单类型：入金或出金
 const withdrawAddress = ref<string | null>('') // 出金地址
+const withdrawToken = ref<string | null>('') // 出金币种
+const withdrawNetwork = ref<string | null>('') // 出金网络
+const withdrawUsdTAmount = ref<number | null>(null) // 出金USDT金额
+const withdrawNetworkFee = ref<number | null>(null) // 网络费
 
 // UI state
 const refreshing = ref(false)
@@ -437,6 +462,10 @@ const fetchOrderStatus = async () => {
         paymentTime.value = detail.createTime || null
         transactionId.value = detail.hashId || null
         withdrawAddress.value = detail.address || null // 获取出金地址
+        withdrawToken.value = detail.token || null // 获取出金币种
+        withdrawNetwork.value = detail.network || null // 获取出金网络
+        withdrawUsdTAmount.value = detail.usdTAmount || null // 获取USDT金额
+        withdrawNetworkFee.value = detail.networkFee || null // 获取网络费
 
         console.log('Withdraw order status updated:', {
           orderNumber: orderNumber.value,

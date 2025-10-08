@@ -225,6 +225,8 @@ export interface WithdrawOrderDetailItem {
   hashId: string | null // hashId
   createTime: string | null // 创建时间
   status: string // 订单状态 INIT：待支付，PENDING:处理中,SUCCESS：支付成功，FAIL：失败，CANCEL：已取消
+  usdTAmount: number | null // usd金额
+  orderCurrency: string | null // 订单币种
 }
 
 // 出金订单详情查询响应
@@ -259,6 +261,7 @@ export interface WithdrawOrderListItem {
   hashId: string | null // hashId
   createTime: string | null // 创建时间
   status: string // 订单状态
+  orderCurrency: string | null // 订单币种
 }
 
 // 出金订单分页查询响应数据
