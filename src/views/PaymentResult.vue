@@ -99,7 +99,7 @@
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
-                    }}</span>
+                      }}</span>
                     <button @click="copyToClipboard(orderNumber)"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
                       title="Copy order number">
@@ -122,7 +122,7 @@
                   class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">USDT Amount</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
-                    {{ withdrawUsdTAmount.toFixed(2) }} USDT
+                    {{ withdrawUsdTAmount }} USDT
                   </span>
                 </div>
 
@@ -194,7 +194,7 @@
                 <div v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null">
                   <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">USDT Amount</div>
                   <div class="text-sm font-medium text-gray-900 dark:text-white">
-                    {{ withdrawUsdTAmount.toFixed(2) }} USDT
+                    {{ withdrawUsdTAmount }} USDT
                   </div>
                 </div>
 
@@ -211,7 +211,7 @@
                   <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Address</div>
                   <div class="flex items-center gap-2">
                     <div class="text-sm font-medium text-gray-900 dark:text-white break-all flex-1">{{ withdrawAddress
-                    }}</div>
+                      }}</div>
                     <button @click="copyToClipboard(withdrawAddress)"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
                       title="Copy">
