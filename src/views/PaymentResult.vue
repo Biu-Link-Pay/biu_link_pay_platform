@@ -113,7 +113,7 @@
                   class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Network</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
-                    {{ withdrawToken }} {{ withdrawNetwork ? `(${withdrawNetwork})` : '' }}
+                    {{ withdrawNetwork ? `${withdrawNetwork}` : '' }}
                   </span>
                 </div>
 
