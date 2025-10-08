@@ -286,7 +286,8 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
-                                {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency,
+                                {{ formatTransactionAmount(transaction.transactionAmount,
+                                  transaction.transactionCurrency,
                                   transaction.transactionType)
                                 }}
                               </div>
@@ -358,7 +359,8 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-xs">
-                                {{ formatTransactionAmount(transaction.arrivalAmount, transaction.transactionCurrency,
+                                {{ formatTransactionAmount(transaction.transactionAmount,
+                                  transaction.transactionCurrency,
                                   transaction.transactionType)
                                 }}
                               </div>
