@@ -77,9 +77,9 @@ export function setupRouterGuards(router: Router) {
   router.afterEach((to) => {
     // 设置页面标题
     if (to.meta?.title) {
-      document.title = `${to.meta.title} - Vue Starter`
+      document.title = `${to.meta.title} - card.biulinkpay`
     } else {
-      document.title = 'Vue Starter'
+      document.title = 'card.biulinkpay'
     }
 
     console.log('Route guard: navigation completed to', to.path)
