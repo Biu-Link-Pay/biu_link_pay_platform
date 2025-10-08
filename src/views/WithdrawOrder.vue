@@ -785,6 +785,46 @@ const handleWithdraw = async () => {
     return
   }
 
+  // Validate withdrawal amount against payment method limits (in USD)
+  if (selectedCrypto.value && !isDeleteAction.value) {
+    const minLimit = selectedCrypto.value.minLimit || 0
+    const maxLimit = selectedCrypto.value.maxLimit || Infinity
+
+    // Use receiveAmount (crypto amount in USD) for comparison
+    const usdAmount = receiveAmount.value || 0
+
+    if (usdAmount < minLimit) {
+      toast.add({
+        severity: 'error',
+        summary: 'Receive Amount Below Limit',
+        detail: `Your receive amount is $${usdAmount.toFixed(2)}, which is below the minimum limit of $${minLimit} for ${selectedCrypto.value.crypto.name} on ${selectedCrypto.value.network.name}. Please increase your withdrawal amount.`,
+        life: 5000
+      })
+      return
+    }
+
+    if (usdAmount > maxLimit) {
+      toast.add({
+        severity: 'error',
+        summary: 'Receive Amount Exceeds Limit',
+        detail: `Your receive amount is $${usdAmount.toFixed(2)}, which exceeds the maximum limit of $${maxLimit} for ${selectedCrypto.value.crypto.name} on ${selectedCrypto.value.network.name}. Please reduce your withdrawal amount.`,
+        life: 5000
+      })
+      return
+    }
+
+    console.log('Payment method limit validation passed:', {
+      withdrawAmount: withdrawAmount.value,
+      cardCurrency: cardInfo.value.cardCurrency,
+      receiveAmount: receiveAmount.value,
+      usdAmount,
+      minLimit,
+      maxLimit,
+      crypto: selectedCrypto.value.crypto.name,
+      network: selectedCrypto.value.network.name
+    })
+  }
+
   // Address regex validation for submission control
   if (selectedCrypto.value.network && selectedCrypto.value.network.addressRegex) {
     const addressRegex = new RegExp(selectedCrypto.value.network.addressRegex)
