@@ -10,7 +10,8 @@
       <div class="hidden md:block">
         <div class="max-w-4xl xl:max-w-5xl mx-auto space-y-10">
           <!-- Pay Summary -->
-          <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 text-white shadow-xl">
+          <div
+            class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 text-white shadow-xl">
             <div class="absolute -top-16 -right-20 w-56 h-56 bg-white/15 blur-3xl rounded-full"></div>
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
             <div class="relative px-10 py-12 text-center flex flex-col items-center space-y-4">
@@ -19,7 +20,8 @@
               <div v-if="cardStore.selectedCardBin?.cardCurrency" class="text-sm text-white/80">
                 {{ cardStore.selectedCardBin?.cardCurrency }} total for your card
               </div>
-              <div class="mt-6 inline-flex items-center px-4 py-2 rounded-full text-sm text-white/90 bg-white/15 backdrop-blur-sm">
+              <div
+                class="mt-6 inline-flex items-center px-4 py-2 rounded-full text-sm text-white/90 bg-white/15 backdrop-blur-sm">
                 <i class="pi pi-shield mr-2 text-white/90"></i>
                 Secure crypto payment powered by {{ selectedPayType?.name || 'our partners' }}
               </div>
@@ -50,33 +52,29 @@
             </div>
 
             <div v-else class="space-y-4">
-              <div
-                v-for="payType in paymentMethods"
-                :key="payType.name"
+              <div v-for="payType in paymentMethods" :key="payType.name"
                 class="border border-gray-200 dark:border-gray-600 rounded-xl p-5 cursor-pointer transition-all duration-200"
                 :class="selectedPayType?.name === payType.name ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-300 dark:border-blue-600 shadow-md ring-2 ring-blue-100 dark:ring-blue-800/60' : 'hover:bg-gray-50 dark:hover:bg-gray-700 hover:shadow-sm'"
-                @click="selectPayType(payType)"
-              >
+                @click="selectPayType(payType)">
                 <div class="flex flex-col gap-4">
                   <div class="flex items-center space-x-4">
-                    <div class="w-14 h-14 rounded-xl flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
-                      <img
-                        v-if="payType.img"
-                        :src="payType.img"
-                        :alt="payType.name"
-                        class="w-full h-full object-cover"
-                      />
+                    <div
+                      class="w-14 h-14 rounded-xl flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
+                      <img v-if="payType.img" :src="payType.img" :alt="payType.name"
+                        class="w-full h-full object-cover" />
                       <div v-else class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
                         <span class="text-white font-bold text-lg">{{ payType.name.charAt(0) }}</span>
                       </div>
                     </div>
                     <div>
                       <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
-                      <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks.length }} crypto options</div>
+                      <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks.length }} crypto
+                        options</div>
                     </div>
                   </div>
 
-                  <div v-if="selectedPayType?.name === payType.name" class="flex items-center gap-3 text-blue-600 self-start">
+                  <div v-if="selectedPayType?.name === payType.name"
+                    class="flex items-center gap-3 text-blue-600 self-start">
                     <span class="text-sm font-medium">Currently selected</span>
                     <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center">
                       <i class="pi pi-check text-white text-xs"></i>
@@ -84,38 +82,34 @@
                   </div>
                 </div>
 
-                <div
-                  v-if="selectedPayType?.name === payType.name"
-                  class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600"
-                >
+                <div v-if="selectedPayType?.name === payType.name"
+                  class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
                   <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-3">
-                    <span class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">Available Networks</span>
-                    <span class="text-xs text-gray-500 dark:text-gray-400">Selected: {{ selectedCrypto ? selectedCrypto.crypto.name + '-' + selectedCrypto.network.name : 'None' }}</span>
+                    <span
+                      class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">Available
+                      Networks</span>
+                    <span class="text-xs text-gray-500 dark:text-gray-400">Selected: {{ selectedCrypto ?
+                      selectedCrypto.crypto.name + '-' + selectedCrypto.network.name : 'None' }}</span>
                   </div>
                   <div class="grid grid-cols-1 gap-3">
-                    <div
-                      v-for="crypto in payType.cryptoNetworks"
-                      :key="crypto.crypto.name + '-' + crypto.network.name"
+                    <div v-for="crypto in payType.cryptoNetworks" :key="crypto.crypto.name + '-' + crypto.network.name"
                       class="flex items-center justify-between p-3 rounded-lg cursor-pointer transition-colors duration-200 border border-transparent"
                       :class="[
                         selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name ? 'bg-blue-50 dark:bg-blue-900/30 border-blue-200 dark:border-blue-600 shadow-sm' : 'hover:bg-gray-50 dark:hover:bg-gray-700'
-                      ]"
-                      @click.stop="selectCrypto(crypto)"
-                    >
+                      ]" @click.stop="selectCrypto(crypto)">
                       <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
-                          <img
-                            v-if="crypto.crypto.logoUrl"
-                            :src="crypto.crypto.logoUrl"
-                            :alt="crypto.crypto.name"
-                            class="w-full h-full object-cover"
-                          />
-                          <div v-else class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
+                        <div
+                          class="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
+                          <img v-if="crypto.crypto.logoUrl" :src="crypto.crypto.logoUrl" :alt="crypto.crypto.name"
+                            class="w-full h-full object-cover" />
+                          <div v-else
+                            class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
                             <span class="text-white font-bold text-sm">{{ crypto.crypto.name.charAt(0) }}</span>
                           </div>
                         </div>
                         <div>
-                          <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName }}</div>
+                          <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName }}
+                          </div>
                           <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                           <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
                             Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
@@ -125,8 +119,7 @@
 
                       <div
                         v-if="selectedCrypto && selectedCrypto.crypto.name === crypto.crypto.name && selectedCrypto.network.name === crypto.network.name"
-                        class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center"
-                      >
+                        class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center">
                         <i class="pi pi-check text-white text-xs"></i>
                       </div>
                       <div v-else class="w-7 h-7 border-2 border-gray-300 dark:border-gray-600 rounded-full"></div>
@@ -138,11 +131,13 @@
           </div>
 
           <!-- Exchange Rate Info (Desktop) -->
-          <div v-if="selectedCrypto && actualCryptoAmount" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg p-4">
+          <div v-if="selectedCrypto && actualCryptoAmount"
+            class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg p-4">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center space-x-2">
                 <span class="text-gray-700 dark:text-gray-300">You will receive</span>
-                <span class="font-bold text-gray-900 dark:text-white">{{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}</span>
+                <span class="font-bold text-gray-900 dark:text-white">{{ actualCryptoAmount }} {{
+                  selectedCrypto.crypto.name }}</span>
                 <span class="text-gray-700 dark:text-gray-300">from</span>
                 <span class="font-bold text-gray-900 dark:text-white">{{ formatCurrency(payAmount) }}</span>
               </div>
@@ -152,7 +147,7 @@
               </div>
             </div>
             <div class="flex items-center justify-between text-sm">
-              <span class="text-gray-700 dark:text-gray-300">Network fee</span>
+              <span class="text-gray-700 dark:text-gray-300">Transaction Fee</span>
               <span class="text-gray-700 dark:text-gray-300">
                 {{ rateResult?.cryptoDetail?.cryptoFee || '0' }} {{ selectedCrypto.crypto.name }}
               </span>
@@ -165,7 +160,8 @@
       <div class="md:hidden">
         <div class="w-full max-w-md mx-auto space-y-6">
           <!-- Pay Summary -->
-          <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 text-white shadow-xl">
+          <div
+            class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 text-white shadow-xl">
             <div class="absolute -top-16 -right-20 w-56 h-56 bg-white/15 blur-3xl rounded-full"></div>
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
             <div class="relative px-6 py-8 text-center flex flex-col items-center space-y-3">
@@ -174,7 +170,8 @@
               <div v-if="cardStore.selectedCardBin?.cardCurrency" class="text-sm text-white/80">
                 {{ cardStore.selectedCardBin?.cardCurrency }} total for your card
               </div>
-              <div class="mt-4 inline-flex items-center px-3 py-2 rounded-full text-xs text-white/90 bg-white/15 backdrop-blur-sm">
+              <div
+                class="mt-4 inline-flex items-center px-3 py-2 rounded-full text-xs text-white/90 bg-white/15 backdrop-blur-sm">
                 <i class="pi pi-shield mr-2 text-white/90"></i>
                 Secure crypto payment powered by {{ selectedPayType?.name || 'our partners' }}
               </div>
@@ -323,7 +320,8 @@
           </div> -->
 
           <!-- Exchange Rate Info (Mobile) -->
-          <div v-if="selectedCrypto && actualCryptoAmount" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg p-4">
+          <div v-if="selectedCrypto && actualCryptoAmount"
+            class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg p-4">
             <div class="flex items-center justify-between">
               <div class="flex items-center space-x-1">
                 <span class="text-xs text-gray-600 dark:text-gray-400">You will receive</span>
@@ -340,7 +338,7 @@
               </div>
             </div>
             <div class="flex items-center justify-between text-xs mt-2">
-              <span class="text-gray-600 dark:text-gray-400">Network fee</span>
+              <span class="text-gray-600 dark:text-gray-400">Transaction Fee</span>
               <span class="text-gray-600 dark:text-gray-400">
                 {{ rateResult?.cryptoDetail?.cryptoFee || '0' }} {{ selectedCrypto.crypto.name }}
               </span>
@@ -353,20 +351,15 @@
       <!-- Action Buttons -->
       <div class="bottom-buttons-container relative md:static">
         <!-- Back Button -->
-        <button
-          class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
-          @click="goBack"
-        >
+        <button class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
+          @click="goBack">
           <i class="pi pi-arrow-left"></i>
           <span>Back</span>
         </button>
 
         <!-- Continue Button -->
-        <button
-          :disabled="!selectedPayType || !selectedCrypto || rateLoading || creatingOrder"
-          class="bottom-button-dual bottom-button-dual-primary"
-          @click="handleContinue"
-        >
+        <button :disabled="!selectedPayType || !selectedCrypto || rateLoading || creatingOrder"
+          class="bottom-button-dual bottom-button-dual-primary" @click="handleContinue">
           <span v-if="creatingOrder" class="flex items-center space-x-2">
             <i class="pi pi-spin pi-spinner text-sm"></i>
             <span>Creating...</span>
@@ -378,7 +371,8 @@
           <span v-else-if="!selectedPayType">Select Payment</span>
           <span v-else-if="!selectedCrypto">Select Crypto</span>
           <span v-else-if="!actualCryptoAmount">Loading payment amount...</span>
-          <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}<span v-if="countdown > 0" class="text-xs opacity-75"> ({{ countdown }}s)</span></span>
+          <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}<span v-if="countdown > 0"
+              class="text-xs opacity-75"> ({{ countdown }}s)</span></span>
         </button>
       </div>
     </div>
@@ -526,7 +520,7 @@ const startRatePolling = () => {
     console.log('Rate polling already active, skipping')
     return
   }
-  
+
   // Check if we have required data
   if (!selectedCrypto.value || !selectedPayType.value) {
     console.log('Cannot start polling: missing crypto or payment type', {
@@ -535,20 +529,20 @@ const startRatePolling = () => {
     })
     return
   }
-  
+
   isRatePolling.value = true
   console.log('Starting rate polling every 15 seconds', {
     crypto: selectedCrypto.value.crypto.name,
     network: selectedCrypto.value.network.sortName,
     payType: selectedPayType.value.name
   })
-  
+
   // Initial query
   queryRate()
-  
+
   // Start countdown
   startCountdown()
-  
+
   // Set up polling
   ratePollingInterval.value = setInterval(() => {
     console.log('Polling exchange rate...')
@@ -575,7 +569,7 @@ const startCountdown = () => {
   if (countdownInterval.value) {
     clearInterval(countdownInterval.value)
   }
-  
+
   countdownInterval.value = setInterval(() => {
     countdown.value--
     if (countdown.value <= 0) {
@@ -607,12 +601,12 @@ const loadPaymentMethods = async () => {
       if (paymentMethods.value.length > 0) {
         selectedPayType.value = paymentMethods.value[0]
         console.log('Auto-selected payment method:', paymentMethods.value[0].name)
-        
+
         // Auto-select first crypto network of the first payment method
         if (paymentMethods.value[0].cryptoNetworks && paymentMethods.value[0].cryptoNetworks.length > 0) {
           selectedCrypto.value = paymentMethods.value[0].cryptoNetworks[0]
           console.log('Auto-selected crypto network:', paymentMethods.value[0].cryptoNetworks[0].crypto.name)
-          
+
           // Start rate polling after auto-selecting payment method and crypto
           console.log('Attempting to start rate polling...')
           startRatePolling()
@@ -685,7 +679,7 @@ const handleContinue = async () => {
     // Determine if it's card application or recharge operation
     const isRecharge = route.query.action === 'recharge'
     const orderType = isRecharge ? '2' : '1' // 1: Card Application 2: Recharge
-    
+
     // Create deposit order
     const orderResponse = await OrderAPI.createDepositOrder({
       cardPattern: cardStore.selectedCardConfig?.cardPattern.toString() || '1', // 1: Virtual Card 2: Physical Card
