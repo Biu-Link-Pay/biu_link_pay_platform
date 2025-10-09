@@ -181,7 +181,7 @@ export const useCardStore = defineStore('card', () => {
   }
 
   // Get card list
-  const fetchCardList = async () => {
+  const fetchCardList = async (options?: { silent?: boolean }) => {
     loading.value = true
     error.value = null
 
@@ -195,11 +195,14 @@ export const useCardStore = defineStore('card', () => {
         throw new Error(response.msg || 'Failed to get card list')
       }
     } catch (err) {
-      error.value = err instanceof Error ? err.message : 'Failed to get card list'
-      console.error('Failed to get card list:', err)
+      const message = err instanceof Error ? err.message : 'Failed to get card list'
+      if (!options?.silent) {
+        error.value = message
+        console.error('Failed to get card list:', err)
+      }
       return {
         success: false,
-        error: error.value
+        error: message
       }
     } finally {
       loading.value = false

@@ -245,10 +245,10 @@ onUnmounted(() => {
 // Logo click: navigate to MyCards if user has cards, else to ApplyCardList
 const onLogoClick = async () => {
   try {
-    // Attempt to refresh card list to make a correct decision
-    await cardStore.fetchCardList()
+    // 在导航判断时静默获取，避免在 apply-card 页面展示错误
+    await cardStore.fetchCardList({ silent: true })
   } catch (e) {
-    // ignore fetch errors; routing guard will handle auth
+    // 静默模式下忽略错误；路由守卫处理鉴权
   }
 
   const hasCards = cardStore.cardList.length > 0
