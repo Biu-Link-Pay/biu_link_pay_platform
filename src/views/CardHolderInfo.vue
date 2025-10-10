@@ -58,7 +58,7 @@
                       Code</span>
                   </div>
                   <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialPostalCode
-                    }}</p>
+                  }}</p>
                 </div>
               </div>
 
@@ -124,7 +124,7 @@
                 <InputText v-else v-model="form.residentialState" placeholder="Enter state/province" class="w-full"
                   :class="{ 'p-invalid': errors.residentialState }" />
                 <small v-if="errors.residentialState" class="text-red-500 text-xs mt-1">{{ errors.residentialState
-                  }}</small>
+                }}</small>
               </div>
               <div>
                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">City</label>
@@ -134,7 +134,7 @@
                 <InputText v-else v-model="form.residentialCity" placeholder="Enter city" class="w-full"
                   :class="{ 'p-invalid': errors.residentialCity }" />
                 <small v-if="errors.residentialCity" class="text-red-500 text-xs mt-1">{{ errors.residentialCity
-                  }}</small>
+                }}</small>
               </div>
             </div>
 
@@ -143,7 +143,7 @@
               <InputText v-model="form.residentialAddress" placeholder="Enter your address" class="w-full"
                 :class="{ 'p-invalid': errors.residentialAddress }" />
               <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
-                }}</small>
+              }}</small>
             </div>
 
             <div>
