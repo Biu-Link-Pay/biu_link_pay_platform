@@ -667,6 +667,7 @@ import { ref, computed, onMounted, onActivated, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useCardStore } from '@/stores/card'
 import { useToast } from 'primevue/usetoast'
+import { useUserStore } from '@/stores/user'
 import AppHeader from '@/components/AppHeader.vue'
 import CardDetailDialog from '@/components/CardDetailDialog.vue'
 import GoogleAuthDialog from '@/components/GoogleAuthDialog.vue'
@@ -678,6 +679,7 @@ const router = useRouter()
 const route = useRoute()
 const cardStore = useCardStore()
 const toast = useToast()
+const userStore = useUserStore()
 
 // Card data
 const currentCardIndex = ref(0)
@@ -686,6 +688,9 @@ const currentCardIndex = ref(0)
 const showGoogleAuthDialog = ref(false)
 const pendingAction = ref<'withdraw' | 'details' | 'delete' | null>(null)
 const googleAuthDialogRef = ref()
+
+// Whether Google Authenticator is bound
+const isGoogleAuthBound = computed(() => userStore.googleAuthStatus === 1)
 
 // Polling for transaction list
 let transactionPollingInterval: NodeJS.Timeout | null = null
@@ -1071,6 +1076,18 @@ const goToWithdraw = async () => {
     return
   }
 
+  // Require Google Auth binding
+  if (!isGoogleAuthBound.value) {
+    toast.add({
+      severity: 'warn',
+      summary: 'Security Verification',
+      detail: 'Please bind Google Authenticator in Personal Center first',
+      life: 3000
+    })
+    router.push({ name: 'PersonalCenter' })
+    return
+  }
+
   // Set pending action and show Google Auth dialog
   console.log('Setting pending action to withdraw and showing dialog')
   pendingAction.value = 'withdraw'
@@ -1142,6 +1159,18 @@ const goToDetails = async () => {
     return
   }
 
+  // Require Google Auth binding
+  if (!isGoogleAuthBound.value) {
+    toast.add({
+      severity: 'warn',
+      summary: 'Security Verification',
+      detail: 'Please bind Google Authenticator in Personal Center first',
+      life: 3000
+    })
+    router.push({ name: 'PersonalCenter' })
+    return
+  }
+
   // Set pending action and show Google Auth dialog
   console.log('Setting pending action to details and showing dialog')
   pendingAction.value = 'details'
@@ -1159,6 +1188,18 @@ const goToDeleteCard = async () => {
       detail: 'Please select a card first',
       life: 3000
     })
+    return
+  }
+
+  // Require Google Auth binding
+  if (!isGoogleAuthBound.value) {
+    toast.add({
+      severity: 'warn',
+      summary: 'Security Verification',
+      detail: 'Please bind Google Authenticator in Personal Center first',
+      life: 3000
+    })
+    router.push({ name: 'PersonalCenter' })
     return
   }
 
