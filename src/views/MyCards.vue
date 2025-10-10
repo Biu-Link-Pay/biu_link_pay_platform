@@ -271,7 +271,7 @@
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div class="space-y-3 lg:space-y-4">
                           <div v-for="(transaction, index) in page" :key="index"
-                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl">
                             <div
                               class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
                               <i class="pi pi-minus text-gray-600 dark:text-gray-400 text-base lg:text-lg"></i>

@@ -58,7 +58,7 @@
                       Code</span>
                   </div>
                   <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialPostalCode
-                  }}</p>
+                    }}</p>
                 </div>
               </div>
 
@@ -124,7 +124,7 @@
                 <InputText v-else v-model="form.residentialState" placeholder="Enter state/province" class="w-full"
                   :class="{ 'p-invalid': errors.residentialState }" />
                 <small v-if="errors.residentialState" class="text-red-500 text-xs mt-1">{{ errors.residentialState
-                }}</small>
+                  }}</small>
               </div>
               <div>
                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">City</label>
@@ -134,7 +134,7 @@
                 <InputText v-else v-model="form.residentialCity" placeholder="Enter city" class="w-full"
                   :class="{ 'p-invalid': errors.residentialCity }" />
                 <small v-if="errors.residentialCity" class="text-red-500 text-xs mt-1">{{ errors.residentialCity
-                }}</small>
+                  }}</small>
               </div>
             </div>
 
@@ -143,7 +143,7 @@
               <InputText v-model="form.residentialAddress" placeholder="Enter your address" class="w-full"
                 :class="{ 'p-invalid': errors.residentialAddress }" />
               <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
-              }}</small>
+                }}</small>
             </div>
 
             <div>
@@ -523,6 +523,41 @@ const buildHeaders = () => {
   }
 }
 
+// Decimal precision per currency (default 2)
+const currencyDecimals: Record<string, number> = {
+  JPY: 0
+}
+const currentDecimals = computed(() => {
+  const currency = cardStore.selectedCardBin?.cardCurrency || 'USD'
+  return currencyDecimals[currency] ?? 2
+})
+
+// Sanitize amount string to limited decimals without float errors
+const sanitizeAmountString = (value: string, decimals: number): string => {
+  const raw = (value || '').toString().trim().replace(/[^\d.]/g, '')
+  if (!raw) return ''
+  const firstDot = raw.indexOf('.')
+  let normalized = firstDot >= 0
+    ? raw.slice(0, firstDot + 1) + raw.slice(firstDot + 1).replace(/\./g, '')
+    : raw
+  let [intPart, fracPart = ''] = normalized.split('.')
+  intPart = intPart.replace(/^0+(?=\d)/, '') || '0'
+  if (decimals <= 0) return intPart
+  if (fracPart) fracPart = fracPart.slice(0, decimals)
+  return fracPart ? `${intPart}.${fracPart}` : intPart
+}
+
+// Convert amount string to minor units using integers
+const toMinorUnits = (value: string, decimals: number): number => {
+  if (!value) return NaN as unknown as number
+  const [intPartRaw, fracRaw = ''] = value.split('.')
+  const intPart = parseInt(intPartRaw || '0', 10)
+  const fracPart = (fracRaw || '').padEnd(decimals, '0').slice(0, decimals)
+  const fracInt = decimals > 0 ? parseInt(fracPart || '0', 10) : 0
+  const base = Math.pow(10, decimals)
+  return intPart * base + fracInt
+}
+
 // Validation functions (now only for recharge since address validation is in saveAddress)
 const validateForm = () => {
   // Clear previous errors
@@ -755,8 +790,10 @@ const handleConfirm = async () => {
   }
 
   // Only validate recharge amount since address is handled separately
-  const rechargeAmount = parseFloat(form.rechargeAmount)
-  if (!form.rechargeAmount || isNaN(rechargeAmount) || rechargeAmount <= 0) {
+  const sanitized = sanitizeAmountString(form.rechargeAmount, currentDecimals.value)
+  form.rechargeAmount = sanitized
+  const minor = toMinorUnits(form.rechargeAmount, currentDecimals.value)
+  if (!form.rechargeAmount || Number.isNaN(minor) || minor <= 0) {
     toast.add({
       severity: 'error',
       summary: 'Validation Error',
@@ -808,16 +845,15 @@ const goBack = () => {
 
 // Validate recharge amount (on blur)
 const validateRechargeAmount = () => {
-  const amount = parseFloat(form.rechargeAmount)
+  const decimals = currentDecimals.value
+  form.rechargeAmount = sanitizeAmountString(form.rechargeAmount, decimals)
+  if (!form.rechargeAmount) return
 
-  // If empty or invalid number, don't process
-  if (!form.rechargeAmount || isNaN(amount)) {
-    return
-  }
-
-  // If less than 20, reset to 20 and show prompt
-  if (amount < 20) {
-    form.rechargeAmount = '20'
+  const minor = toMinorUnits(form.rechargeAmount, decimals)
+  const minMinor = 20 * Math.pow(10, decimals)
+  if (Number.isNaN(minor)) return
+  if (minor < minMinor) {
+    form.rechargeAmount = decimals > 0 ? '20' : '20'
     toast.add({
       severity: 'info',
       summary: 'Amount Adjusted',

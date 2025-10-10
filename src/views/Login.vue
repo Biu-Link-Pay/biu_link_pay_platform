@@ -362,6 +362,9 @@ const sendCode = async () => {
 // Resend code
 const resendCode = async () => {
   if (countdown.value > 0) return
+  // 重新获取验证码前清空验证码输入与错误提示
+  form.value.code = ''
+  errors.value.code = ''
   await sendCode()
 }
 
