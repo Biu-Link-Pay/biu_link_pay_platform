@@ -28,7 +28,8 @@
         class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-4 border border-blue-200 dark:border-gray-700">
         <div class="flex items-center justify-between mb-3">
           <div class="text-xs font-semibold uppercase text-blue-600 dark:text-blue-400 tracking-wide">Card Number</div>
-          <button @click="copyToClipboard(formatCardNumber(cardDetail.cardNo))"
+          <button
+            @click="() => { copyToClipboard(formatCardNumber(cardDetail?.cardNo)); toast.add({ severity: 'success', summary: 'Success', detail: 'Card number copied to clipboard', life: 2000 }) }"
             class="p-1.5 hover:bg-blue-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
             title="Copy card number">
             <i class="pi pi-copy text-blue-600 dark:text-blue-400 text-sm"></i>
@@ -89,7 +90,7 @@
           </div>
           <div class="flex items-center gap-2">
             <button
-              @click="copyToClipboard(`${localDetail?.billingAddress || ''}, ${localDetail?.billingCity || ''}, ${localDetail?.billingState || ''} ${localDetail?.billingPostalCode || ''}, ${localDetail?.billingCountry || ''}`)"
+              @click="() => { copyToClipboard(`${localDetail?.billingAddress || ''}, ${localDetail?.billingCity || ''}, ${localDetail?.billingState || ''} ${localDetail?.billingPostalCode || ''}, ${localDetail?.billingCountry || ''}`); toast.add({ severity: 'success', summary: 'Success', detail: 'Address copied to clipboard', life: 2000 }) }"
               class="p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors" title="Copy address">
               <i class="pi pi-copy text-gray-600 dark:text-gray-300 text-sm"></i>
             </button>
@@ -126,7 +127,7 @@
               <InputText v-else v-model="form.residentialState" placeholder="Enter state/province" class="w-full"
                 :class="{ 'p-invalid': errors.residentialState }" />
               <small v-if="errors.residentialState" class="text-red-500 text-xs mt-1">{{ errors.residentialState
-                }}</small>
+              }}</small>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">City</label>
@@ -136,7 +137,7 @@
               <InputText v-else v-model="form.residentialCity" placeholder="Enter city" class="w-full"
                 :class="{ 'p-invalid': errors.residentialCity }" />
               <small v-if="errors.residentialCity" class="text-red-500 text-xs mt-1">{{ errors.residentialCity
-                }}</small>
+              }}</small>
             </div>
           </div>
 
@@ -145,7 +146,7 @@
             <InputText v-model="form.residentialAddress" placeholder="Enter address" class="w-full"
               :class="{ 'p-invalid': errors.residentialAddress }" />
             <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
-              }}</small>
+            }}</small>
           </div>
 
           <div>
@@ -153,7 +154,7 @@
             <InputText v-model="form.residentialPostalCode" placeholder="Enter postal code" class="w-full"
               :class="{ 'p-invalid': errors.residentialPostalCode }" />
             <small v-if="errors.residentialPostalCode" class="text-red-500 text-xs mt-1">{{ errors.residentialPostalCode
-              }}</small>
+            }}</small>
           </div>
 
           <div class="mt-2 flex gap-3">
@@ -177,7 +178,7 @@ import InputText from 'primevue/inputtext'
 import Dropdown from 'primevue/dropdown'
 import Button from 'primevue/button'
 import type { CardDetailResponse } from '@/api/card'
-import { copyWithToast } from '@/utils'
+import { useClipboard } from '@vueuse/core'
 import { useToast } from 'primevue/usetoast'
 import { CardAPI } from '@/api/card'
 import type { CardHolderInfo as HolderInfo } from '@/api/card'
@@ -203,9 +204,7 @@ const onUpdateVisible = (value: boolean) => {
   emit('update:visible', value)
 }
 
-const copyToClipboard = async (text: string) => {
-  await copyWithToast(text, toast)
-}
+const { copy: copyToClipboard } = useClipboard()
 
 const formatCardNumber = (cardNo?: string) => {
   if (!cardNo) return 'N/A'

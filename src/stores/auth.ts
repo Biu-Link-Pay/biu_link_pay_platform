@@ -72,7 +72,7 @@ export const useAuthStore = defineStore('auth', () => {
       console.error('Failed to send email verification code:', error)
       return {
         success: false,
-        message: error instanceof Error ? error.message : 'Send failed'
+        message: (error as any)?.msg || 'Send failed'
       }
     } finally {
       loading.value = false
@@ -95,13 +95,6 @@ export const useAuthStore = defineStore('auth', () => {
         localStorage.setItem('token', response.model.token)
         localStorage.setItem('refreshToken', response.model.refreshToken)
 
-        // Set user info
-        // user.value = {
-        //   email: params.email,
-        //   id: params.email // Use email as ID
-        // }
-        // localStorage.setItem('user', JSON.stringify(user.value))
-
         return { success: true, message: 'Login successful' }
       } else {
         return { success: false, message: response.msg || 'Login failed' }
@@ -110,7 +103,7 @@ export const useAuthStore = defineStore('auth', () => {
       console.error('Login failed:', error)
       return {
         success: false,
-        message: error instanceof Error ? error.message : 'Login failed'
+        message: (error as any)?.msg || 'Login failed'
       }
     } finally {
       loading.value = false

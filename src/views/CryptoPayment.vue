@@ -20,7 +20,8 @@
                   <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Order NO.</div>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
-                    <button @click="copyToClipboard(orderNumber)"
+                    <button
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
                       title="Copy order number">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
@@ -39,12 +40,13 @@
                   <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">You need to pay</div>
                   <div class="flex items-center space-x-2">
                     <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
-                    }}</span>
+                      }}</span>
                     <div class="w-6 h-6 rounded-full flex items-center justify-center"
                       :class="getCryptoIconBg(selectedCrypto)">
                       <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
                     </div>
-                    <button @click="copyToClipboard(cryptoAmount)"
+                    <button
+                      @click="() => { copyToClipboard(cryptoAmount); toast.add({ severity: 'success', summary: 'Success', detail: 'Amount copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
                       title="Copy amount">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
@@ -72,7 +74,8 @@
                   <i class="pi pi-info-circle text-white text-xs"></i>
                 </div>
                 <div class="text-sm text-orange-800 dark:text-orange-200">
-                  <span class="font-semibold">For security reasons, the payment page has expired.</span> Please complete the payment promptly.
+                  <span class="font-semibold">For security reasons, the payment page has expired.</span> Please complete
+                  the payment promptly.
                 </div>
               </div>
             </div>
@@ -91,15 +94,18 @@
                     <i class="pi pi-clock text-sm"></i>
                     <div class="flex items-center space-x-1">
                       <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
-                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[0] }}</span>
+                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{
+                          formatTime(countdown).split(':')[0] }}</span>
                       </div>
                       <span class="text-gray-600 dark:text-gray-400 font-bold">:</span>
                       <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
-                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[1] }}</span>
+                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{
+                          formatTime(countdown).split(':')[1] }}</span>
                       </div>
                       <span class="text-gray-600 dark:text-gray-400 font-bold">:</span>
                       <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
-                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[2] }}</span>
+                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{
+                          formatTime(countdown).split(':')[2] }}</span>
                       </div>
                     </div>
                   </div>
@@ -107,7 +113,8 @@
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   <!-- Network Type -->
-                  <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                  <div
+                    class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
                     <div class="text-sm font-medium text-blue-800 dark:text-blue-200 mb-2">Network Type</div>
                     <div class="text-lg font-semibold text-blue-900 dark:text-blue-100">
                       {{ selectedCrypto }}({{ selectedNetwork }}) only
@@ -119,8 +126,10 @@
                     <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Payment Address:</div>
                     <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
                       <div class="flex items-center justify-between">
-                        <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>
-                        <button @click="copyToClipboard(walletAddress)"
+                        <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress
+                          }}</span>
+                        <button
+                          @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: 'Success', detail: 'Wallet address copied to clipboard', life: 2000 }) }"
                           class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
                           title="Copy address">
                           <i class="pi pi-copy text-gray-500 text-sm"></i>
@@ -288,7 +297,7 @@
               <span class="text-sm font-medium text-gray-600 dark:text-gray-400">You need to pay</span>
               <div class="flex items-center space-x-2">
                 <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
-                }}</span>
+                  }}</span>
                 <div class="w-6 h-6 rounded-full flex items-center justify-center"
                   :class="getCryptoIconBg(selectedCrypto)">
                   <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
@@ -319,7 +328,8 @@
               <i class="pi pi-info-circle text-white text-xs"></i>
             </div>
             <div class="text-sm text-orange-800 dark:text-orange-200">
-              <span class="font-semibold">For security reasons, the payment page has expired.</span> Please complete the payment promptly.
+              <span class="font-semibold">For security reasons, the payment page has expired.</span> Please complete the
+              payment promptly.
             </div>
           </div>
         </div>
@@ -334,15 +344,18 @@
                 <i class="pi pi-clock text-sm"></i>
                 <div class="flex items-center space-x-1">
                   <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
-                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[0] }}</span>
+                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{
+                      formatTime(countdown).split(':')[0] }}</span>
                   </div>
                   <span class="text-gray-600 dark:text-gray-400 font-bold text-sm">:</span>
                   <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
-                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[1] }}</span>
+                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{
+                      formatTime(countdown).split(':')[1] }}</span>
                   </div>
                   <span class="text-gray-600 dark:text-gray-400 font-bold text-sm">:</span>
                   <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
-                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{ formatTime(countdown).split(':')[2] }}</span>
+                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{
+                      formatTime(countdown).split(':')[2] }}</span>
                   </div>
                 </div>
               </div>
@@ -361,7 +374,8 @@
               <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 border border-gray-200 dark:border-gray-600">
                 <div class="flex items-center justify-between">
                   <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>
-                  <button @click="copyToClipboard(walletAddress)"
+                  <button
+                    @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: 'Success', detail: 'Wallet address copied to clipboard', life: 2000 }) }"
                     class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
                     title="Copy address">
                     <i class="pi pi-copy text-gray-500 text-sm"></i>
@@ -519,7 +533,7 @@ import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { useCardStore } from '@/stores/card'
 import { OrderAPI, type DepositOrderDetailItem } from '@/api/order'
-import { copyWithToast } from '@/utils'
+import { useClipboard } from '@vueuse/core'
 
 const router = useRouter()
 const route = useRoute()
@@ -697,10 +711,8 @@ const getCryptoIcon = (crypto: string) => {
   }
 }
 
-// Copy to clipboard using utility function
-const copyToClipboard = async (text: string) => {
-  await copyWithToast(text, toast)
-}
+// Copy to clipboard using vueuse
+const { copy: copyToClipboard } = useClipboard()
 
 
 // Start countdown timer
@@ -798,10 +810,10 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
       if (detail.createTime && detail.currentTime) {
         const createTime = new Date(detail.createTime).getTime()
         const serverCurrentTime = new Date(detail.currentTime).getTime()
-        
+
         // 优先使用接口返回的expires字段
         let remainingSeconds = 0
-        
+
         if (detail.expires) {
           // 如果expires是时间戳（大于1e12表示毫秒时间戳）
           if (detail.expires > 1e12) {
@@ -822,18 +834,18 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
           const remainingMs = Math.max(0, totalDurationMs - elapsedMs)
           remainingSeconds = Math.floor(remainingMs / 1000)
         }
-        
+
         // 确保倒计时不会超过expires时间
         if (detail.expires && detail.expires <= 1e12) {
           // 如果expires是秒数，确保剩余时间不超过expires
           const maxRemainingSeconds = detail.expires
           remainingSeconds = Math.min(remainingSeconds, maxRemainingSeconds)
         }
-        
+
         // 更新倒计时
         countdown.value = remainingSeconds
         defaultCountdownSeconds.value = remainingSeconds
-        
+
         console.log('Countdown calculation:', {
           createTime: new Date(createTime).toISOString(),
           serverCurrentTime: new Date(serverCurrentTime).toISOString(),
@@ -955,7 +967,7 @@ const refreshPayment = async () => {
     toast.add({
       severity: 'error',
       summary: 'Refresh Failed',
-      detail: 'Failed to refresh payment details',
+      detail: (error as any)?.msg || 'Failed to refresh payment details',
       life: 3000
     })
   } finally {

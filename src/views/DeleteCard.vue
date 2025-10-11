@@ -21,13 +21,15 @@
         <div v-if="cardInfo" class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Card Number</div>
+              <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Card
+                Number</div>
               <div class="text-base font-mono text-gray-900 dark:text-white">
                 {{ formatCardNumber(cardInfo.cardNo) }}
               </div>
             </div>
             <div>
-              <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Currency</div>
+              <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Currency
+              </div>
               <div class="text-base font-semibold text-gray-900 dark:text-white">
                 {{ cardInfo.cardCurrency }}
               </div>
@@ -39,7 +41,8 @@
       <!-- Warning Section -->
       <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-6 mb-8">
         <div class="flex items-start space-x-3">
-          <div class="w-8 h-8 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+          <div
+            class="w-8 h-8 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
             <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-sm"></i>
           </div>
           <div class="flex-1">
@@ -61,20 +64,15 @@
       <!-- Action Buttons -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <!-- Cancel Button -->
-        <button
-          @click="goBack"
-          class="flex-1 sm:flex-none px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-        >
+        <button @click="goBack"
+          class="flex-1 sm:flex-none px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
           <i class="pi pi-arrow-left mr-2"></i>
           Cancel
         </button>
 
         <!-- Delete Button -->
-        <button
-          @click="confirmDelete"
-          :disabled="loading"
-          class="flex-1 sm:flex-none px-6 py-3 bg-red-600 hover:bg-red-700 disabled:bg-red-400 text-white font-medium rounded-lg transition-colors flex items-center justify-center"
-        >
+        <button @click="confirmDelete" :disabled="loading"
+          class="flex-1 sm:flex-none px-6 py-3 bg-red-600 hover:bg-red-700 disabled:bg-red-400 text-white font-medium rounded-lg transition-colors flex items-center justify-center">
           <i v-if="loading" class="pi pi-spin pi-spinner mr-2"></i>
           <i v-else class="pi pi-trash mr-2"></i>
           {{ loading ? 'Deleting...' : 'Delete Card' }}
@@ -129,13 +127,13 @@ const confirmDelete = async () => {
 
   try {
     loading.value = true
-    
+
     // TODO: Implement actual delete API call
     console.log('Deleting card:', cardInfo.value)
-    
+
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 2000))
-    
+
     // Show success message
     toast.add({
       severity: 'success',
@@ -143,16 +141,16 @@ const confirmDelete = async () => {
       detail: 'Card deleted successfully',
       life: 3000
     })
-    
+
     // Navigate back to cards list
     router.push({ name: 'MyCards' })
-    
+
   } catch (error) {
     console.error('Error deleting card:', error)
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: 'Failed to delete card. Please try again.',
+      detail: (error as any)?.msg || 'Failed to delete card. Please try again.',
       life: 3000
     })
   } finally {

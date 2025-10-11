@@ -418,6 +418,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useConfirm } from 'primevue/useconfirm'
+import { useClipboard } from '@vueuse/core'
 import AppHeader from '@/components/AppHeader.vue'
 import Dialog from 'primevue/dialog'
 import Button from 'primevue/button'
@@ -534,7 +535,7 @@ const fetchUserProfile = async () => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: 'Failed to load user profile',
+      detail: (error as any)?.msg || 'Failed to load user profile',
       life: 3000
     })
   } finally {
@@ -571,7 +572,7 @@ const navigateToGoogleAuth = async () => {
       toast.add({
         severity: 'error',
         summary: 'Binding Failed',
-        detail: 'Network error, please try again later',
+        detail: (error as any)?.msg || 'Network error, please try again later',
         life: 3000
       })
     } finally {
@@ -634,7 +635,7 @@ const handleLogout = async () => {
     toast.add({
       severity: 'error',
       summary: 'Logout Failed',
-      detail: 'Failed to logout. Please try again.',
+      detail: (error as any)?.msg || 'Failed to logout. Please try again.',
       life: 3000
     })
   }
@@ -647,9 +648,11 @@ const onBindCodeInput = (event: Event) => {
   bindAuthCode.value = value.slice(0, 6) // 最多6位
 }
 
+const { copy: copyToClipboard } = useClipboard()
+
 const copySecretKey = async () => {
   try {
-    await navigator.clipboard.writeText(bindSecretKey.value)
+    await copyToClipboard(bindSecretKey.value)
     toast.add({
       severity: 'success',
       summary: 'Copy Successful',
@@ -661,7 +664,7 @@ const copySecretKey = async () => {
     toast.add({
       severity: 'error',
       summary: 'Copy Failed',
-      detail: 'Please copy the secret key manually',
+      detail: (error as any)?.msg || 'Please copy the secret key manually',
       life: 3000
     })
   }
@@ -718,8 +721,8 @@ const confirmBind = async () => {
     console.error('Google Auth bind error:', error)
     toast.add({
       severity: 'error',
-      summary: '绑定失败',
-      detail: '网络错误，请稍后重试',
+      summary: 'Binding Failed',
+      detail: (error as any)?.msg || 'Network error, please try again later',
       life: 3000
     })
   } finally {
@@ -770,7 +773,7 @@ const handleUnbindGoogleAuth = async () => {
     toast.add({
       severity: 'error',
       summary: 'Unbind Failed',
-      detail: error instanceof Error ? error.message : 'Network error, please try again later',
+      detail: (error as any)?.msg || 'Network error, please try again later',
       life: 3000
     })
   } finally {

@@ -1,37 +1,37 @@
 import type { UserInfo } from '@/types/api'
 
-// Token 相关工具函数
+// Token related utility functions
 export const TokenUtils = {
   /**
-   * 获取存储的 token
+   * Get stored token
    */
   getToken(): string | null {
     return localStorage.getItem('token')
   },
 
   /**
-   * 获取存储的刷新 token
+   * Get stored refresh token
    */
   getRefreshToken(): string | null {
     return localStorage.getItem('refreshToken')
   },
 
   /**
-   * 设置 token
+   * Set token
    */
   setToken(token: string): void {
     localStorage.setItem('token', token)
   },
 
   /**
-   * 设置刷新 token
+   * Set refresh token
    */
   setRefreshToken(refreshToken: string): void {
     localStorage.setItem('refreshToken', refreshToken)
   },
 
   /**
-   * 清除所有 token
+   * Clear all tokens
    */
   clearTokens(): void {
     localStorage.removeItem('token')
@@ -39,7 +39,7 @@ export const TokenUtils = {
   },
 
   /**
-   * 检查是否有有效的 token
+   * Check if has valid token
    */
   hasValidToken(): boolean {
     const token = this.getToken()
@@ -48,10 +48,10 @@ export const TokenUtils = {
   }
 }
 
-// 用户信息相关工具函数
+// User information related utility functions
 export const UserUtils = {
   /**
-   * 获取存储的用户信息
+   * Get stored user information
    */
   getUserInfo(): UserInfo | null {
     const userStr = localStorage.getItem('user')
@@ -59,7 +59,7 @@ export const UserUtils = {
       try {
         return JSON.parse(userStr)
       } catch (error) {
-        console.error('解析用户信息失败:', error)
+        console.error('Failed to parse user information:', error)
         return null
       }
     }
@@ -67,21 +67,21 @@ export const UserUtils = {
   },
 
   /**
-   * 设置用户信息
+   * Set user information
    */
   setUserInfo(userInfo: UserInfo): void {
     localStorage.setItem('user', JSON.stringify(userInfo))
   },
 
   /**
-   * 清除用户信息
+   * Clear user information
    */
   clearUserInfo(): void {
     localStorage.removeItem('user')
   },
 
   /**
-   * 更新用户信息
+   * Update user information
    */
   updateUserInfo(updates: Partial<UserInfo>): void {
     const currentUser = this.getUserInfo()
@@ -92,17 +92,17 @@ export const UserUtils = {
   }
 }
 
-// 认证状态检查工具函数
+// Authentication state check utility functions
 export const AuthUtils = {
   /**
-   * 检查是否已登录
+   * Check if user is logged in
    */
   isAuthenticated(): boolean {
     return TokenUtils.hasValidToken() && !!UserUtils.getUserInfo()
   },
 
   /**
-   * 清除所有认证信息
+   * Clear all authentication information
    */
   clearAuth(): void {
     TokenUtils.clearTokens()
@@ -110,7 +110,7 @@ export const AuthUtils = {
   },
 
   /**
-   * 获取认证头信息
+   * Get authentication headers
    */
   getAuthHeaders(): Record<string, string> {
     const token = TokenUtils.getToken()
@@ -118,7 +118,7 @@ export const AuthUtils = {
   },
 
   /**
-   * 验证邮箱格式
+   * Validate email format
    */
   isValidEmail(email: string): boolean {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -126,7 +126,7 @@ export const AuthUtils = {
   },
 
   /**
-   * 验证验证码格式（6位数字）
+   * Validate verification code format (6 digits)
    */
   isValidCode(code: string): boolean {
     const codeRegex = /^\d{6}$/
@@ -134,33 +134,33 @@ export const AuthUtils = {
   },
 
   /**
-   * 格式化邮箱（隐藏部分字符）
+   * Format email (hide partial characters)
    */
   maskEmail(email: string): string {
     if (!email || !this.isValidEmail(email)) {
       return email
     }
-    
+
     const [username, domain] = email.split('@')
-    const maskedUsername = username.length > 2 
+    const maskedUsername = username.length > 2
       ? username.substring(0, 2) + '*'.repeat(username.length - 2)
       : username
-    
+
     return `${maskedUsername}@${domain}`
   }
 }
 
-// 路由守卫工具函数
+// Route guard utility functions
 export const RouteUtils = {
   /**
-   * 检查路由是否需要认证
+   * Check if route requires authentication
    */
   requiresAuth(route: any): boolean {
     return route.meta?.requiresAuth === true
   },
 
   /**
-   * 获取登录重定向路径
+   * Get login redirect path
    */
   getLoginRedirectPath(): string {
     const currentPath = window.location.pathname
@@ -168,71 +168,71 @@ export const RouteUtils = {
   },
 
   /**
-   * 保存当前路径用于登录后重定向
+   * Save current path for redirect after login
    */
   saveRedirectPath(path: string): void {
     sessionStorage.setItem('redirectPath', path)
   },
 
   /**
-   * 获取保存的重定向路径
+   * Get saved redirect path
    */
   getSavedRedirectPath(): string | null {
     return sessionStorage.getItem('redirectPath')
   },
 
   /**
-   * 清除保存的重定向路径
+   * Clear saved redirect path
    */
   clearRedirectPath(): void {
     sessionStorage.removeItem('redirectPath')
   }
 }
 
-// 错误处理工具函数
+// Error handling utility functions
 export const ErrorUtils = {
   /**
-   * 处理认证相关错误
+   * Handle authentication related errors
    */
   handleAuthError(error: any): string {
     if (error.response) {
       const { status, data } = error.response
-      
+
       switch (status) {
         case 401:
-          return '登录已过期，请重新登录'
+          return 'Login expired, please login again'
         case 403:
-          return '没有权限访问此资源'
+          return 'No permission to access this resource'
         case 404:
-          return '请求的资源不存在'
+          return 'Requested resource does not exist'
         case 500:
-          return '服务器内部错误，请稍后重试'
+          return 'Internal server error, please try again later'
         default:
-          return data?.msg || `请求失败 (${status})`
+          return data?.msg || `Request failed (${status})`
       }
     } else if (error.request) {
-      return '网络连接失败，请检查网络设置'
+      return 'Network connection failed, please check network settings'
     } else {
-      return error.message || '未知错误'
+      return error.message || 'Unknown error'
     }
   },
 
   /**
-   * 格式化 API 错误消息
+   * Format API error message
    */
   formatApiError(error: any): string {
     if (typeof error === 'string') {
       return error
     }
-    
+
     if (error?.message) {
       return error.message
     }
-    
+
     if (error?.response?.data?.msg) {
       return error.response.data.msg
     }
-    
-    return '操作失败，请稍后重试'
+
+    return 'Operation failed, please try again later'
   }
 }

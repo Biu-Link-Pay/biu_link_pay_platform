@@ -12,38 +12,38 @@ export interface GoogleAuthOptions {
 export function useGoogleAuth() {
   const toast = useToast()
   const authStore = useAuthStore()
-  
+
   const showDialog = ref(false)
   const loading = ref(false)
   const options = ref<GoogleAuthOptions>({})
 
   /**
-   * 显示 Google Auth 验证弹框
-   * @param opts 配置选项
+   * Show Google Auth verification dialog
+   * @param opts Configuration options
    */
   const showAuthDialog = (opts: GoogleAuthOptions = {}) => {
     options.value = {
-      title: 'Google Auth 验证',
+      title: 'Google Auth Verification',
       ...opts
     }
     showDialog.value = true
   }
 
   /**
-   * 隐藏验证弹框
+   * Hide verification dialog
    */
   const hideAuthDialog = () => {
     showDialog.value = false
   }
 
   /**
-   * 检查 Google Auth 绑定状态
-   * @returns Promise<boolean> 是否已绑定
+   * Check Google Auth binding status
+   * @returns Promise<boolean> Whether bound or not
    */
   const checkAuthStatus = async (): Promise<boolean> => {
     try {
       const response = await AuthAPI.googleAuthResult()
-      
+
       return response.success && response.model === 1
     } catch (error) {
       console.error('Check auth status error:', error)
@@ -52,28 +52,28 @@ export function useGoogleAuth() {
   }
 
   /**
-   * 验证 Google Auth 验证码
-   * @param code 验证码
-   * @param secret 密钥（可选，如果为空则从服务器获取）
-   * @returns Promise<boolean> 验证结果
+   * Verify Google Auth code
+   * @param code Verification code
+   * @param secret Secret key (optional, if empty server will use user's bound key)
+   * @returns Promise<boolean> Verification result
    */
   const verifyAuthCode = async (code: string, secret?: string): Promise<boolean> => {
     try {
-      const response = await AuthAPI.googleAuthValid(code, secret || '') // 如果为空，服务器会使用用户绑定的密钥
+      const response = await AuthAPI.googleAuthValid(code, secret || '') // If empty, server will use user's bound key
 
       if (response.success && response.model) {
         toast.add({
           severity: 'success',
-          summary: '验证成功',
-          detail: 'Google Auth 验证通过',
+          summary: 'Verification Successful',
+          detail: 'Google Auth verification passed',
           life: 3000
         })
         return true
       } else {
         toast.add({
           severity: 'error',
-          summary: '验证失败',
-          detail: response.msg || '验证码错误',
+          summary: 'Verification Failed',
+          detail: response.msg || 'Incorrect verification code',
           life: 3000
         })
         return false
@@ -82,8 +82,8 @@ export function useGoogleAuth() {
       console.error('Verify auth code error:', error)
       toast.add({
         severity: 'error',
-        summary: '验证失败',
-        detail: '网络错误，请重试',
+        summary: 'Verification Failed',
+        detail: (error as any)?.msg || 'Network error, please try again',
         life: 3000
       })
       return false
@@ -91,9 +91,9 @@ export function useGoogleAuth() {
   }
 
   /**
-   * 获取当前验证码
-   * @param secret 密钥
-   * @returns Promise<string | null> 验证码
+   * Get current verification code
+   * @param secret Secret key
+   * @returns Promise<string | null> Verification code
    */
   const getCurrentCode = async (secret: string): Promise<string | null> => {
     try {
@@ -110,7 +110,7 @@ export function useGoogleAuth() {
   }
 
   /**
-   * 生成 Google Auth 密钥和二维码
+   * Generate Google Auth secret key and QR code
    * @returns Promise<{secretKey: string, qrCode: string} | null>
    */
   const generateAuthKey = async () => {
@@ -131,27 +131,27 @@ export function useGoogleAuth() {
   }
 
   /**
-   * 执行需要验证的操作
-   * @param operation 需要验证的操作函数
-   * @param opts 配置选项
+   * Execute operation that requires authentication
+   * @param operation Operation function that requires authentication
+   * @param opts Configuration options
    */
   const executeWithAuth = async <T>(
     operation: () => Promise<T> | T,
     opts: GoogleAuthOptions = {}
   ): Promise<T | null> => {
-    // 检查是否已绑定
+    // Check if bound
     const isBound = await checkAuthStatus()
     if (!isBound) {
       toast.add({
         severity: 'warn',
-        summary: '未绑定 Google Auth',
-        detail: '请先绑定 Google Authenticator',
+        summary: 'Google Auth Not Bound',
+        detail: 'Please bind Google Authenticator first',
         life: 3000
       })
       return null
     }
 
-    // 显示验证弹框
+    // Show verification dialog
     return new Promise((resolve) => {
       showAuthDialog({
         ...opts,

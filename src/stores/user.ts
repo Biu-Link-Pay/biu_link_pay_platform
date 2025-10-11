@@ -9,7 +9,7 @@ export interface User {
   avatar?: string
 }
 
-// 扩展用户信息以包含完整的用户详情
+// Extended user information to include complete user details
 export interface UserDetails {
   id?: number
   name?: string
@@ -28,7 +28,7 @@ export const useUserStore = defineStore('user', () => {
   const loading = ref(false)
 
   // Computed properties
-  const userName = computed(() => user.value?.name || user.value?.firstName || '游客')
+  const userName = computed(() => user.value?.name || user.value?.firstName || 'Guest')
   const userEmail = computed(() => user.value?.email || '')
   const userAvatar = computed(() => user.value?.avatar || '')
   const userNum = computed(() => user.value?.userNum || '')
@@ -53,7 +53,7 @@ export const useUserStore = defineStore('user', () => {
     }
   }
 
-  // 获取用户详情信息
+  // Fetch user profile information
   const fetchUserProfile = async () => {
     loading.value = true
     try {
@@ -61,7 +61,7 @@ export const useUserStore = defineStore('user', () => {
 
       if (response.success && response.model) {
         const profile = response.model
-        // 更新用户信息
+        // Update user information
         user.value = {
           ...user.value,
           userNum: profile.userNum,
@@ -71,18 +71,18 @@ export const useUserStore = defineStore('user', () => {
           googleAuthStatus: profile.googleAuthStatus
         }
 
-        // 保存到本地存储
+        // Save to local storage
         localStorage.setItem('userDetails', JSON.stringify(user.value))
 
         return { success: true, data: profile }
       } else {
-        return { success: false, message: response.msg || '获取用户详情失败' }
+        return { success: false, message: response.msg || 'Failed to get user profile' }
       }
     } catch (error) {
-      console.error('获取用户详情失败:', error)
+      console.error('Failed to get user profile:', error)
       return {
         success: false,
-        message: error instanceof Error ? error.message : '获取用户详情失败'
+        message: (error as any)?.msg || 'Failed to get user profile'
       }
     } finally {
       loading.value = false
@@ -96,7 +96,7 @@ export const useUserStore = defineStore('user', () => {
       user.value = JSON.parse(savedUser)
     }
 
-    // 登录状态由authStore管理，这里不需要设置isLoggedIn
+    // Login state is managed by authStore, no need to set isLoggedIn here
   }
 
   return {

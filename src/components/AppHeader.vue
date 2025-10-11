@@ -212,7 +212,7 @@ const handleLogout = async () => {
     toast.add({
       severity: 'error',
       summary: 'Logout Failed',
-      detail: 'Failed to logout. Please try again.',
+      detail: (error as any)?.msg || 'Failed to logout. Please try again.',
       life: 3000
     })
   }

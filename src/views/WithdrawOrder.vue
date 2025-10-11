@@ -906,7 +906,7 @@ const handleWithdraw = async () => {
     toast.add({
       severity: 'error',
       summary: 'Withdraw Failed',
-      detail: error instanceof Error ? error.message : 'Failed to create withdraw order. Please try again.',
+      detail: (error as any)?.msg || 'Failed to create withdraw order. Please try again.',
       life: 3000
     })
   } finally {
@@ -1077,7 +1077,7 @@ const fetchExchangeRate = async () => {
     }
   } catch (error) {
     console.error('Error fetching exchange rate:', error)
-    rateError.value = error instanceof Error ? error.message : 'Failed to get exchange rate'
+    rateError.value = (error as any)?.msg || 'Failed to get exchange rate'
 
     // 使用默认汇率作为后备
     exchangeRate.value = null
@@ -1213,7 +1213,7 @@ const fetchPaymentMethods = async () => {
     toast.add({
       severity: 'warn',
       summary: 'Warning',
-      detail: 'Failed to load payment methods, using defaults',
+      detail: (error as any)?.msg || 'Failed to load payment methods, using defaults',
       life: 3000
     })
 

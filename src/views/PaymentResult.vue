@@ -100,7 +100,8 @@
                   <div class="flex items-center space-x-2">
                     <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
                       }}</span>
-                    <button @click="copyToClipboard(orderNumber)"
+                    <button
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
                       title="Copy order number">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
@@ -142,7 +143,8 @@
                   <div class="flex items-center gap-2">
                     <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
                       withdrawAddress }}</span>
-                    <button @click="copyToClipboard(withdrawAddress)"
+                    <button
+                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: 'Success', detail: 'Address copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
                       title="Copy address">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
@@ -174,7 +176,8 @@
                   <div class="flex items-center gap-2">
                     <div class="text-sm font-medium text-gray-900 dark:text-white break-all flex-1">{{ orderNumber }}
                     </div>
-                    <button @click="copyToClipboard(orderNumber)"
+                    <button
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
                       title="Copy">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
@@ -212,7 +215,8 @@
                   <div class="flex items-center gap-2">
                     <div class="text-sm font-medium text-gray-900 dark:text-white break-all flex-1">{{ withdrawAddress
                       }}</div>
-                    <button @click="copyToClipboard(withdrawAddress)"
+                    <button
+                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: 'Success', detail: 'Address copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
                       title="Copy">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
@@ -393,7 +397,7 @@ import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI } from '@/api/order'
-import { copyWithToast } from '@/utils'
+import { useClipboard } from '@vueuse/core'
 
 const router = useRouter()
 const route = useRoute()
@@ -424,9 +428,7 @@ const isMounted = ref(false)
 const isFromMyCards = ref(false) // 标识是否从 MyCards 页面进入
 
 // Copy to clipboard function
-const copyToClipboard = async (text: string) => {
-  await copyWithToast(text, toast)
-}
+const { copy: copyToClipboard } = useClipboard()
 
 
 const statusIconClass = computed(() => {
@@ -682,7 +684,7 @@ const refreshPayment = async () => {
     toast.add({
       severity: 'error',
       summary: 'Refresh Failed',
-      detail: 'Failed to refresh payment status',
+      detail: (error as any)?.msg || 'Failed to refresh payment status',
       life: 3000
     })
   } finally {
