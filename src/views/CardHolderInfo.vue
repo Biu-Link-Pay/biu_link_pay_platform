@@ -796,7 +796,7 @@ const saveAddress = async () => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: 'An unexpected error occurred. Please try again.',
+      detail: (error as any)?.msg || 'An unexpected error occurred. Please try again.',
       life: 3000
     })
   } finally {
@@ -867,7 +867,7 @@ const handleConfirm = async () => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: 'An unexpected error occurred. Please try again.',
+      detail: (error as any)?.msg || 'An unexpected error occurred. Please try again.',
       life: 3000
     })
   } finally {

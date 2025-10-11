@@ -466,7 +466,7 @@ const saveAddress = async () => {
     }
   } catch (error) {
     console.error('Failed to save billing address:', error)
-    toast.add({ severity: 'error', summary: 'Error', detail: 'An unexpected error occurred. Please try again.', life: 3000 })
+    toast.add({ severity: 'error', summary: 'Error', detail: (error as any)?.msg || 'An unexpected error occurred. Please try again.', life: 3000 })
   } finally {
     saving.value = false
   }
