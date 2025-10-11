@@ -292,8 +292,7 @@
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
                                 {{ formatTransactionAmount(transaction.transactionAmount,
-                                  transaction.transactionCurrency,
-                                  transaction.transactionType)
+                                  transaction.transactionCurrency)
                                 }}
                               </div>
                               <div class="text-xs lg:text-sm" :class="getStatusColor(transaction.status)">
@@ -356,8 +355,7 @@
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-xs">
                                 {{ formatTransactionAmount(transaction.transactionAmount,
-                                  transaction.transactionCurrency,
-                                  transaction.transactionType)
+                                  transaction.transactionCurrency)
                                 }}
                               </div>
                               <div class="text-xs" :class="getStatusColor(transaction.status)">
@@ -1350,12 +1348,8 @@ const cardLastFour = (cardNo?: string) => {
   return digits.length <= 4 ? digits : digits.slice(-4)
 }
 
-const formatTransactionAmount = (amount: number, currency: string, transactionType?: string) => {
-  // recharge_return 或 auth 视为消费，强制显示为负数；其他情况根据金额正负判断
-  const type = (transactionType || '').toLowerCase()
-  const forceNegative = type === 'recharge_return' || type === 'auth'
-  const sign = forceNegative ? '-' : (amount < 0 ? '-' : '+')
-  return `${sign}${Math.abs(amount).toFixed(2)} ${currency}`
+const formatTransactionAmount = (amount: number, currency: string) => {
+  return `${amount.toFixed(2)} ${currency}`
 }
 
 const formatOrderAmount = (amount: number, currency: string) => {
