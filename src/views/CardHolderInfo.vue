@@ -673,8 +673,14 @@ const saveAddress = async () => {
 
   let isValid = true
 
-  if (!form.residentialAddress.trim()) {
+  // 地址只允许中文、英文、数字及 . - , / 和空格
+  const address = form.residentialAddress.trim()
+  const addressPattern = /^[\u4e00-\u9fa5A-Za-z0-9\s.,\-/]+$/
+  if (!address) {
     addressErrors.residentialAddress = 'Address is required'
+    isValid = false
+  } else if (!addressPattern.test(address)) {
+    addressErrors.residentialAddress = 'Only Chinese/English letters, numbers and . - , / are allowed'
     isValid = false
   }
 
@@ -717,12 +723,29 @@ const saveAddress = async () => {
   loading.value = true
 
   try {
+    // 针对美国，向后端传州二字码（ISO）
+    let stateToSend = form.residentialState
+    if (form.residentialCountryCode === 'US') {
+      if (selectedStateCode.value) {
+        stateToSend = selectedStateCode.value
+      } else {
+        const stateList = State.getStatesOfCountry('US') || []
+        const matched = stateList.find(s => s.name.trim().toLowerCase() === form.residentialState.trim().toLowerCase())
+        if (matched?.isoCode) stateToSend = matched.isoCode
+        else {
+          errors.residentialState = 'For US, state must be two-letter code'
+          loading.value = false
+          return
+        }
+      }
+    }
+
     const holderInfo: HolderInfo = {
       residentialAddress: form.residentialAddress,
       residentialCity: form.residentialCity,
       residentialCountryCode: form.residentialCountryCode,
       residentialPostalCode: form.residentialPostalCode,
-      residentialState: form.residentialState
+      residentialState: stateToSend
     }
 
     let ok = false

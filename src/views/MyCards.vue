@@ -1351,8 +1351,10 @@ const cardLastFour = (cardNo?: string) => {
 }
 
 const formatTransactionAmount = (amount: number, currency: string, transactionType?: string) => {
-  // recharge_return = 减金额，其他情况根据金额正负判断
-  const sign = transactionType === 'recharge_return' ? '-' : (amount < 0 ? '-' : '+')
+  // recharge_return 或 auth 视为消费，强制显示为负数；其他情况根据金额正负判断
+  const type = (transactionType || '').toLowerCase()
+  const forceNegative = type === 'recharge_return' || type === 'auth'
+  const sign = forceNegative ? '-' : (amount < 0 ? '-' : '+')
   return `${sign}${Math.abs(amount).toFixed(2)} ${currency}`
 }
 

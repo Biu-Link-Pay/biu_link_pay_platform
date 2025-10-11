@@ -24,73 +24,81 @@
 
     <div v-else-if="cardDetail" class="space-y-6">
       <!-- Card Number Section -->
-      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200">
+      <div
+        class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-4 border border-blue-200 dark:border-gray-700">
         <div class="flex items-center justify-between mb-3">
-          <div class="text-xs font-semibold uppercase text-blue-600 tracking-wide">Card Number</div>
+          <div class="text-xs font-semibold uppercase text-blue-600 dark:text-blue-400 tracking-wide">Card Number</div>
           <button @click="copyToClipboard(formatCardNumber(cardDetail.cardNo))"
-            class="p-1.5 hover:bg-blue-100 rounded-lg transition-colors" title="Copy card number">
-            <i class="pi pi-copy text-blue-600 text-sm"></i>
+            class="p-1.5 hover:bg-blue-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
+            title="Copy card number">
+            <i class="pi pi-copy text-blue-600 dark:text-blue-400 text-sm"></i>
           </button>
         </div>
-        <div class="text-xl font-mono text-gray-900 tracking-[0.3em] font-bold">
+        <div class="text-xl font-mono text-gray-900 dark:text-white tracking-[0.3em] font-bold">
           {{ formatCardNumber(cardDetail.cardNo) }}
         </div>
       </div>
 
       <!-- Card Balance Section -->
-      <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4 border border-green-200">
+      <div
+        class="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-4 border border-green-200 dark:border-gray-700">
         <div class="mb-3">
-          <div class="text-xs font-semibold uppercase text-green-600 tracking-wide">Available Balance</div>
+          <div class="text-xs font-semibold uppercase text-green-600 dark:text-green-400 tracking-wide">Available
+            Balance</div>
         </div>
-        <div class="text-2xl font-bold text-gray-900">
+        <div class="text-2xl font-bold text-gray-900 dark:text-white">
           {{ formatBalance(cardDetail.cardBalance) }} {{ cardDetail.cardCurrency }}
         </div>
       </div>
 
       <!-- Card Information Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div class="bg-gray-50 rounded-lg p-4">
-          <div class="text-xs font-semibold uppercase text-gray-500 mb-2 tracking-wide">Cardholder</div>
-          <div class="text-base font-semibold text-gray-900">
+        <div class="bg-gray-50 dark:bg-gray-800/60 rounded-lg p-4">
+          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Cardholder
+          </div>
+          <div class="text-base font-semibold text-gray-900 dark:text-white">
             {{ cardDetail.firstName }} {{ cardDetail.lastName }}
           </div>
         </div>
-        <div class="bg-gray-50 rounded-lg p-4">
-          <div class="text-xs font-semibold uppercase text-gray-500 mb-2 tracking-wide">Currency</div>
-          <div class="text-base font-semibold text-gray-900">
+        <div class="bg-gray-50 dark:bg-gray-800/60 rounded-lg p-4">
+          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Currency
+          </div>
+          <div class="text-base font-semibold text-gray-900 dark:text-white">
             {{ cardDetail.cardCurrency }}
           </div>
         </div>
-        <div class="bg-gray-50 rounded-lg p-4">
-          <div class="text-xs font-semibold uppercase text-gray-500 mb-2 tracking-wide">Expiration</div>
-          <div class="text-base font-semibold text-gray-900">
+        <div class="bg-gray-50 dark:bg-gray-800/60 rounded-lg p-4">
+          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Expiration
+          </div>
+          <div class="text-base font-semibold text-gray-900 dark:text-white">
             {{ cardDetail.expirationDate }}
           </div>
         </div>
-        <div class="bg-gray-50 rounded-lg p-4">
-          <div class="text-xs font-semibold uppercase text-gray-500 mb-2 tracking-wide">CVV</div>
-          <div class="text-base font-semibold text-gray-900">
+        <div class="bg-gray-50 dark:bg-gray-800/60 rounded-lg p-4">
+          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">CVV</div>
+          <div class="text-base font-semibold text-gray-900 dark:text-white">
             {{ cardDetail.cvv }}
           </div>
         </div>
       </div>
 
       <!-- Billing Address Section -->
-      <div class="bg-gray-50 rounded-xl p-4">
+      <div class="bg-gray-50 dark:bg-gray-800/60 rounded-xl p-4">
         <div class="flex items-center justify-between mb-3">
-          <div class="text-xs font-semibold uppercase text-gray-500 tracking-wide">Billing Address</div>
+          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 tracking-wide">Billing Address
+          </div>
           <div class="flex items-center gap-2">
             <button
               @click="copyToClipboard(`${localDetail?.billingAddress || ''}, ${localDetail?.billingCity || ''}, ${localDetail?.billingState || ''} ${localDetail?.billingPostalCode || ''}, ${localDetail?.billingCountry || ''}`)"
-              class="p-1.5 hover:bg-gray-200 rounded-lg transition-colors" title="Copy address">
-              <i class="pi pi-copy text-gray-600 text-sm"></i>
+              class="p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors" title="Copy address">
+              <i class="pi pi-copy text-gray-600 dark:text-gray-300 text-sm"></i>
             </button>
             <Button label="Edit" icon="pi pi-pencil" size="small" @click="startEdit" />
           </div>
         </div>
 
         <!-- Readonly view -->
-        <div v-if="!isEditing" class="space-y-1 text-sm text-gray-700">
+        <div v-if="!isEditing" class="space-y-1 text-sm text-gray-700 dark:text-gray-300">
           <div class="font-medium">{{ localDetail?.billingAddress }}</div>
           <div>{{ localDetail?.billingCity }}, {{ localDetail?.billingState }} {{ localDetail?.billingPostalCode }}
           </div>
@@ -153,22 +161,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Address Update Status -->
-      <!-- <div class="flex items-center gap-2 p-3 rounded-lg" :class="isAddressUpdatable(cardDetail.billingAddressUpdatable)
-        ? 'bg-green-50 border border-green-200'
-        : 'bg-orange-50 border border-orange-200'">
-        <i :class="isAddressUpdatable(cardDetail.billingAddressUpdatable)
-          ? 'pi pi-check-circle text-green-600'
-          : 'pi pi-info-circle text-orange-600'"></i>
-        <span :class="isAddressUpdatable(cardDetail.billingAddressUpdatable)
-          ? 'text-green-700 text-sm'
-          : 'text-orange-700 text-sm'">
-          {{ isAddressUpdatable(cardDetail.billingAddressUpdatable)
-            ? 'Billing address can be updated'
-            : 'Billing address cannot be updated' }}
-        </span>
-      </div> -->
     </div>
 
     <div v-else class="text-sm text-gray-500">
@@ -404,7 +396,14 @@ const clearErrors = () => {
 const validate = () => {
   clearErrors()
   let ok = true
-  if (!form.residentialAddress.trim()) { errors.residentialAddress = 'Address is required'; ok = false }
+  // 地址只允许中文、英文、数字及 . - , / 和空格
+  const address = form.residentialAddress.trim()
+  const addressPattern = /^[\u4e00-\u9fa5A-Za-z0-9\s.,\-/]+$/
+  if (!address) { errors.residentialAddress = 'Address is required'; ok = false }
+  else if (!addressPattern.test(address)) {
+    errors.residentialAddress = 'Only Chinese/English letters, numbers and . - , / are allowed'
+    ok = false
+  }
   if (!form.residentialCity.trim()) { errors.residentialCity = 'City is required'; ok = false }
   if (!form.residentialState.trim()) { errors.residentialState = 'State/Province is required'; ok = false }
   if (!form.residentialPostalCode.trim()) { errors.residentialPostalCode = 'Postal code is required'; ok = false }
@@ -416,7 +415,27 @@ const saveAddress = async () => {
   if (!validate()) return
   saving.value = true
   try {
-    const holderInfo: HolderInfo = { ...form }
+    // 针对美国，向后端传州二字码（ISO）
+    let stateToSend = form.residentialState
+    if (form.residentialCountryCode === 'US') {
+      if (selectedStateCode.value) {
+        stateToSend = selectedStateCode.value
+      } else {
+        const stateList = State.getStatesOfCountry('US') || []
+        const matched = stateList.find(s => s.name.trim().toLowerCase() === form.residentialState.trim().toLowerCase())
+        if (matched?.isoCode) stateToSend = matched.isoCode
+        else {
+          errors.residentialState = 'For US, state must be two-letter code'
+          saving.value = false
+          return
+        }
+      }
+    }
+
+    const holderInfo: HolderInfo = {
+      ...form,
+      residentialState: stateToSend
+    }
     const resp = await CardAPI.updateCardHolder(holderInfo)
     if (resp && (resp as any).success) {
       toast.add({ severity: 'success', summary: 'Saved', detail: 'Billing address saved successfully', life: 3000 })
@@ -483,5 +502,47 @@ const saveAddress = async () => {
 ::deep(.dark .card-detail-dialog .p-dialog-footer) {
   background: #1e293b;
   border-top: 1px solid #334155;
+}
+
+/* Dark mode content overrides inside dialog */
+:deep(.dark .card-detail-dialog .bg-gradient-to-r.from-blue-50.to-indigo-50) {
+  background-image: linear-gradient(135deg, #0f172a, #1f2937) !important;
+  border-color: #334155 !important;
+}
+
+:deep(.dark .card-detail-dialog .bg-gradient-to-r.from-green-50.to-emerald-50) {
+  background-image: linear-gradient(135deg, #0f172a, #064e3b) !important;
+  border-color: #334155 !important;
+}
+
+:deep(.dark .card-detail-dialog .bg-gray-50) {
+  background-color: #374151 !important;
+}
+
+:deep(.dark .card-detail-dialog .text-gray-900) {
+  color: #f9fafb !important;
+}
+
+:deep(.dark .card-detail-dialog .text-gray-700) {
+  color: #e5e7eb !important;
+}
+
+:deep(.dark .card-detail-dialog .text-gray-500) {
+  color: #cbd5e1 !important;
+}
+
+:deep(.dark .card-detail-dialog .border-blue-200),
+:deep(.dark .card-detail-dialog .border-green-200),
+:deep(.dark .card-detail-dialog .border-gray-200) {
+  border-color: #334155 !important;
+}
+
+/* Button hover backgrounds in dark mode */
+:deep(.dark .card-detail-dialog .hover\:bg-blue-100:hover) {
+  background-color: #334155 !important;
+}
+
+:deep(.dark .card-detail-dialog .hover\:bg-gray-200:hover) {
+  background-color: #374151 !important;
 }
 </style>
