@@ -100,7 +100,8 @@
         <!-- Readonly view -->
         <div v-if="!isEditing" class="space-y-1 text-sm text-gray-700 dark:text-gray-300">
           <div class="font-medium">{{ localDetail?.billingAddress }}</div>
-          <div>{{ localDetail?.billingCity }}, {{ localDetail?.billingState }} {{ localDetail?.billingPostalCode }}
+          <div>{{ localDetail?.billingCity }}, {{ getStateDisplay(localDetail?.billingCountry,
+            localDetail?.billingState) }} {{ localDetail?.billingPostalCode }}
           </div>
           <div>{{ localDetail?.billingCountry }}</div>
         </div>
@@ -343,7 +344,8 @@ watch(selectedStateCode, (newCode, oldCode) => {
     return
   }
   const stateEntry = states.value.find(s => s.isoCode === newCode)
-  form.residentialState = stateEntry?.name || ''
+  // 保存 isoCode 至表单
+  form.residentialState = stateEntry?.isoCode || newCode
   loadCitiesForState(form.residentialCountryCode, newCode, !oldCode)
 })
 
@@ -364,7 +366,9 @@ const startEdit = () => {
   loadStatesForCountry(form.residentialCountryCode, true)
   // Try set state/city selections from names
   const stateList = State.getStatesOfCountry(form.residentialCountryCode) || []
-  const matchedState = stateList.find(s => s.name.trim() === form.residentialState.trim())
+  const trimmed = (form.residentialState || '').trim()
+  const matchedByCode = stateList.find(s => s.isoCode.toUpperCase() === trimmed.toUpperCase())
+  const matchedState = matchedByCode || stateList.find(s => s.name.trim() === trimmed)
   selectedStateCode.value = matchedState ? matchedState.isoCode : null
   if (selectedStateCode.value) {
     const cityList = City.getCitiesOfState(form.residentialCountryCode, selectedStateCode.value) || []
@@ -411,24 +415,33 @@ const validate = () => {
   return ok
 }
 
+// Map state code to display name based on country (ISO 3166-2). Falls back to raw value.
+const getStateDisplay = (countryCode?: string, stateValue?: string) => {
+  if (!stateValue) return ''
+  const code = (countryCode || '').toUpperCase()
+  if (!code) return stateValue
+  const list = State.getStatesOfCountry(code) || []
+  const byCode = list.find(s => s.isoCode.toUpperCase() === stateValue.toUpperCase())
+  if (byCode) return byCode.name
+  const byName = list.find(s => s.name.trim().toLowerCase() === stateValue.trim().toLowerCase())
+  return byName?.name || stateValue
+}
+
 const saveAddress = async () => {
   if (!validate()) return
   saving.value = true
   try {
-    // 针对美国，向后端传州二字码（ISO）
+    // 始终提交 ISO 3166-2 州/省代码（各国长度可能不同）
     let stateToSend = form.residentialState
-    if (form.residentialCountryCode === 'US') {
-      if (selectedStateCode.value) {
-        stateToSend = selectedStateCode.value
-      } else {
-        const stateList = State.getStatesOfCountry('US') || []
-        const matched = stateList.find(s => s.name.trim().toLowerCase() === form.residentialState.trim().toLowerCase())
-        if (matched?.isoCode) stateToSend = matched.isoCode
-        else {
-          errors.residentialState = 'For US, state must be two-letter code'
-          saving.value = false
-          return
-        }
+    if (selectedStateCode.value) {
+      stateToSend = selectedStateCode.value
+    } else if (form.residentialCountryCode) {
+      const list = State.getStatesOfCountry(form.residentialCountryCode) || []
+      const byCode = list.find(s => s.isoCode.toUpperCase() === form.residentialState.trim().toUpperCase())
+      if (byCode) stateToSend = byCode.isoCode
+      else {
+        const byName = list.find(s => s.name.trim().toLowerCase() === form.residentialState.trim().toLowerCase())
+        if (byName) stateToSend = byName.isoCode
       }
     }
 
