@@ -183,23 +183,26 @@ api.interceptors.response.use(
           }
           break
         case 403:
-          console.error('禁止访问')
+          error.message = 'Access denied'
           break
         case 404:
-          console.error('请求的资源不存在')
+          error.message = 'Resource not found'
           break
         case 500:
-          console.error('服务器内部错误')
+          error.message = 'Internal server error'
+          break
+        case 502:
+          error.message = 'The system is updating. Please try again later'
           break
         default:
-          console.error(`请求失败: ${status}`)
+          error.message = `Request failed with status ${status}`
       }
     } else if (error.request) {
       // 请求已发出，但没有收到响应
-      console.error('网络错误，请检查网络连接')
+      error.message = 'Network error, please check your connection'
     } else {
       // 发生了一些问题，触发了错误
-      console.error('请求配置错误:', error.message)
+      error.message = `Request configuration error: ${error.message}`
     }
 
     return Promise.reject(error)

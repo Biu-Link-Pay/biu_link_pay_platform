@@ -82,7 +82,7 @@ export const useUserStore = defineStore('user', () => {
       console.error('Failed to get user profile:', error)
       return {
         success: false,
-        message: (error as any)?.msg || 'Failed to get user profile'
+        message: (error as any)?.message || 'Failed to get user profile'
       }
     } finally {
       loading.value = false

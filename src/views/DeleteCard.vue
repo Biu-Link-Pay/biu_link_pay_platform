@@ -150,7 +150,7 @@ const confirmDelete = async () => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: (error as any)?.msg || 'Failed to delete card. Please try again.',
+      detail: (error as any)?.message || 'Failed to delete card. Please try again.',
       life: 3000
     })
   } finally {

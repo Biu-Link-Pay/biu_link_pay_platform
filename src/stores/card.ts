@@ -27,7 +27,8 @@ export const useCardStore = defineStore('card', () => {
       maxOnDaily: 1000,
       maxOnPercent: 500,
       status: 1, // Enabled
-      cardPicture: null
+      cardPicture: null,
+      applyNumber: 3 // Maximum number of cards user can apply for
     },
     {
       cardPattern: 2,
@@ -40,7 +41,8 @@ export const useCardStore = defineStore('card', () => {
       maxOnDaily: 2000,
       maxOnPercent: 1000,
       status: 1, // Enabled
-      cardPicture: null
+      cardPicture: null,
+      applyNumber: 2 // Maximum number of cards user can apply for
     },
     {
       cardPattern: 1,
@@ -53,7 +55,8 @@ export const useCardStore = defineStore('card', () => {
       maxOnDaily: 1500,
       maxOnPercent: 750,
       status: 2, // Disabled
-      cardPicture: null
+      cardPicture: null,
+      applyNumber: 1 // Maximum number of cards user can apply for
     }
   ])
   const cardBins = ref<CardBin[]>([])

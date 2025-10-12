@@ -535,7 +535,7 @@ const fetchUserProfile = async () => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: (error as any)?.msg || 'Failed to load user profile',
+      detail: (error as any)?.message || 'Failed to load user profile',
       life: 3000
     })
   } finally {
@@ -572,7 +572,7 @@ const navigateToGoogleAuth = async () => {
       toast.add({
         severity: 'error',
         summary: 'Binding Failed',
-        detail: (error as any)?.msg || 'Network error, please try again later',
+        detail: (error as any)?.message || 'Network error, please try again later',
         life: 3000
       })
     } finally {
@@ -635,7 +635,7 @@ const handleLogout = async () => {
     toast.add({
       severity: 'error',
       summary: 'Logout Failed',
-      detail: (error as any)?.msg || 'Failed to logout. Please try again.',
+      detail: (error as any)?.message || 'Failed to logout. Please try again.',
       life: 3000
     })
   }
@@ -664,7 +664,7 @@ const copySecretKey = async () => {
     toast.add({
       severity: 'error',
       summary: 'Copy Failed',
-      detail: (error as any)?.msg || 'Please copy the secret key manually',
+      detail: (error as any)?.message || 'Please copy the secret key manually',
       life: 3000
     })
   }
@@ -722,7 +722,7 @@ const confirmBind = async () => {
     toast.add({
       severity: 'error',
       summary: 'Binding Failed',
-      detail: (error as any)?.msg || 'Network error, please try again later',
+      detail: (error as any)?.message || 'Network error, please try again later',
       life: 3000
     })
   } finally {
@@ -773,7 +773,7 @@ const handleUnbindGoogleAuth = async () => {
     toast.add({
       severity: 'error',
       summary: 'Unbind Failed',
-      detail: (error as any)?.msg || 'Network error, please try again later',
+      detail: (error as any)?.message || 'Network error, please try again later',
       life: 3000
     })
   } finally {

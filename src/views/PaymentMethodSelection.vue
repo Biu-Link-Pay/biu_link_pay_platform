@@ -561,7 +561,7 @@ const queryRate = async () => {
     toast.add({
       severity: 'error',
       summary: 'Rate Query Error',
-      detail: (error as any)?.msg || 'Failed to get exchange rate',
+      detail: (error as any)?.message || 'Failed to get exchange rate',
       life: 3000
     })
   } finally {
@@ -685,7 +685,7 @@ const loadPaymentMethods = async () => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: (error as any)?.msg || 'Failed to load payment methods',
+      detail: (error as any)?.message || 'Failed to load payment methods',
       life: 3000
     })
   } finally {
@@ -815,7 +815,7 @@ const handleContinue = async () => {
     toast.add({
       severity: 'error',
       summary: 'Order Creation Error',
-      detail: (error as any)?.msg || 'Failed to create deposit order',
+      detail: (error as any)?.message || 'Failed to create deposit order',
       life: 5000
     })
   } finally {

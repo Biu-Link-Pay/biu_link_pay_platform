@@ -351,7 +351,7 @@ const sendCode = async () => {
     toast.add({
       severity: 'error',
       summary: 'Send Failed',
-      detail: (error as any)?.msg || 'Network error, please try again later',
+      detail: (error as any)?.message || 'Network error, please try again later',
       life: 3000
     })
   } finally {
@@ -408,7 +408,7 @@ const login = async () => {
     toast.add({
       severity: 'error',
       summary: 'Login Failed',
-      detail: (error as any)?.msg || 'Network error, please try again later',
+      detail: (error as any)?.message || 'Network error, please try again later',
       life: 3000
     })
   } finally {

@@ -99,7 +99,7 @@
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
-                      }}</span>
+                    }}</span>
                     <button
                       @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
@@ -214,7 +214,7 @@
                   <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Address</div>
                   <div class="flex items-center gap-2">
                     <div class="text-sm font-medium text-gray-900 dark:text-white break-all flex-1">{{ withdrawAddress
-                      }}</div>
+                    }}</div>
                     <button
                       @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: 'Success', detail: 'Address copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
@@ -684,7 +684,7 @@ const refreshPayment = async () => {
     toast.add({
       severity: 'error',
       summary: 'Refresh Failed',
-      detail: (error as any)?.msg || 'Failed to refresh payment status',
+      detail: (error as any)?.message || 'Failed to refresh payment status',
       life: 3000
     })
   } finally {

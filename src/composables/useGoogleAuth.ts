@@ -83,7 +83,7 @@ export function useGoogleAuth() {
       toast.add({
         severity: 'error',
         summary: 'Verification Failed',
-        detail: (error as any)?.msg || 'Network error, please try again',
+        detail: (error as any)?.message || 'Network error, please try again',
         life: 3000
       })
       return false

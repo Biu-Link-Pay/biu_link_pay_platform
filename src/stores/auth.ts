@@ -72,7 +72,7 @@ export const useAuthStore = defineStore('auth', () => {
       console.error('Failed to send email verification code:', error)
       return {
         success: false,
-        message: (error as any)?.msg || 'Send failed'
+        message: (error as any)?.message || 'Send failed'
       }
     } finally {
       loading.value = false
@@ -103,7 +103,7 @@ export const useAuthStore = defineStore('auth', () => {
       console.error('Login failed:', error)
       return {
         success: false,
-        message: (error as any)?.msg || 'Login failed'
+        message: (error as any)?.message || 'Login failed'
       }
     } finally {
       loading.value = false

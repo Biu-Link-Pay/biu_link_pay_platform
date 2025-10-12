@@ -112,7 +112,7 @@
                         <div>
                           <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
                           <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0
-                            }} crypto networks</div>
+                          }} crypto networks</div>
                         </div>
                       </div>
 
@@ -154,7 +154,7 @@
                             </div>
                             <div>
                               <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName
-                                }}</div>
+                              }}</div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                               <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
                                 Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
@@ -190,7 +190,7 @@
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
                     <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                      }}</span>
+                    }}</span>
                   </div>
                   <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                     <i class="pi pi-clock"></i>
@@ -906,7 +906,7 @@ const handleWithdraw = async () => {
     toast.add({
       severity: 'error',
       summary: 'Withdraw Failed',
-      detail: (error as any)?.msg || 'Failed to create withdraw order. Please try again.',
+      detail: (error as any)?.message || 'Failed to create withdraw order. Please try again.',
       life: 3000
     })
   } finally {
@@ -1077,7 +1077,7 @@ const fetchExchangeRate = async () => {
     }
   } catch (error) {
     console.error('Error fetching exchange rate:', error)
-    rateError.value = (error as any)?.msg || 'Failed to get exchange rate'
+    rateError.value = (error as any)?.message || 'Failed to get exchange rate'
 
     // 使用默认汇率作为后备
     exchangeRate.value = null
@@ -1213,7 +1213,7 @@ const fetchPaymentMethods = async () => {
     toast.add({
       severity: 'warn',
       summary: 'Warning',
-      detail: (error as any)?.msg || 'Failed to load payment methods, using defaults',
+      detail: (error as any)?.message || 'Failed to load payment methods, using defaults',
       life: 3000
     })
 

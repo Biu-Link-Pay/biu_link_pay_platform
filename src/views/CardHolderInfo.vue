@@ -490,7 +490,13 @@ const initializeLocationForEdit = async () => {
 // Minimum amount based on action type
 const minAmount = computed(() => {
   const action = route.query.action as string
-  return action === 'recharge' ? 20 : 21
+  if (action === 'recharge') {
+    return 20
+  } else {
+    // 申请新卡：20 + 申请卡费
+    const applyFee = cardStore.selectedCardConfig?.applyFee || 0
+    return 20 + applyFee
+  }
 })
 
 // Quick recharge amounts - dynamic based on action type
@@ -805,7 +811,7 @@ const saveAddress = async () => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: (error as any)?.msg || 'An unexpected error occurred. Please try again.',
+      detail: (error as any)?.message || 'An unexpected error occurred. Please try again.',
       life: 3000
     })
   } finally {
@@ -876,7 +882,7 @@ const handleConfirm = async () => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: (error as any)?.msg || 'An unexpected error occurred. Please try again.',
+      detail: (error as any)?.message || 'An unexpected error occurred. Please try again.',
       life: 3000
     })
   } finally {

@@ -766,7 +766,7 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
     toast.add({
       severity: 'error',
       summary: 'Verification Failed',
-      detail: (error as any)?.msg || 'Invalid verification code, please try again',
+      detail: (error as any)?.message || 'Invalid verification code, please try again',
       life: 3000
     })
   }
@@ -947,7 +947,7 @@ const fetchTransactions = async (pageIndex = 0) => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: (error as any)?.msg || 'Failed to load transaction history',
+      detail: (error as any)?.message || 'Failed to load transaction history',
       life: 3000
     })
   } finally {
@@ -982,7 +982,7 @@ const fetchRechargeOrders = async (pageNo = 0) => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: (error as any)?.msg || 'Failed to load recharge history',
+      detail: (error as any)?.message || 'Failed to load recharge history',
       life: 3000
     })
   } finally {
@@ -1017,7 +1017,7 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: (error as any)?.msg || 'Failed to load withdraw history',
+      detail: (error as any)?.message || 'Failed to load withdraw history',
       life: 3000
     })
   } finally {
@@ -1139,7 +1139,7 @@ const loadCardDetail = async (cardId: string, faCode: string = '') => {
       throw new Error(response.msg || 'Failed to load card details')
     }
   } catch (error) {
-    const message = (error as any)?.msg || 'Failed to load card details'
+    const message = (error as any)?.message || 'Failed to load card details'
     handleCardDetailError(message)
     // Re-throw error for upper level handling
     throw error
@@ -1713,7 +1713,7 @@ onMounted(async () => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: (error as any)?.msg || 'Failed to load card list',
+      detail: (error as any)?.message || 'Failed to load card list',
       life: 3000
     })
   }
@@ -1770,7 +1770,7 @@ onActivated(async () => {
     toast.add({
       severity: 'error',
       summary: 'Error',
-      detail: (error as any)?.msg || 'Failed to refresh card list',
+      detail: (error as any)?.message || 'Failed to refresh card list',
       life: 3000
     })
   }

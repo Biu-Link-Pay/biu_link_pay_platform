@@ -40,7 +40,7 @@
                   <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">You need to pay</div>
                   <div class="flex items-center space-x-2">
                     <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
-                      }}</span>
+                    }}</span>
                     <div class="w-6 h-6 rounded-full flex items-center justify-center"
                       :class="getCryptoIconBg(selectedCrypto)">
                       <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
@@ -127,7 +127,7 @@
                     <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
                       <div class="flex items-center justify-between">
                         <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress
-                          }}</span>
+                        }}</span>
                         <button
                           @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: 'Success', detail: 'Wallet address copied to clipboard', life: 2000 }) }"
                           class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
@@ -297,7 +297,7 @@
               <span class="text-sm font-medium text-gray-600 dark:text-gray-400">You need to pay</span>
               <div class="flex items-center space-x-2">
                 <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
-                  }}</span>
+                }}</span>
                 <div class="w-6 h-6 rounded-full flex items-center justify-center"
                   :class="getCryptoIconBg(selectedCrypto)">
                   <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
@@ -967,7 +967,7 @@ const refreshPayment = async () => {
     toast.add({
       severity: 'error',
       summary: 'Refresh Failed',
-      detail: (error as any)?.msg || 'Failed to refresh payment details',
+      detail: (error as any)?.message || 'Failed to refresh payment details',
       life: 3000
     })
   } finally {
