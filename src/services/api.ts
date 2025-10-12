@@ -89,7 +89,6 @@ api.interceptors.response.use(
     // 处理常见错误状态码
     if (error.response) {
       const { status } = error.response
-
       switch (status) {
         case 401:
           // 检查是否是刷新token请求本身返回401
@@ -199,7 +198,7 @@ api.interceptors.response.use(
       }
     } else if (error.request) {
       // 请求已发出，但没有收到响应
-      error.message = 'Network error, please check your connection'
+      error.message = 'The system is updating. Please try again later'
     } else {
       // 发生了一些问题，触发了错误
       error.message = `Request configuration error: ${error.message}`
