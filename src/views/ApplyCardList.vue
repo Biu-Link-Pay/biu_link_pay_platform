@@ -88,10 +88,24 @@
             </h3>
           </div>
 
+          <!-- Card limit info -->
+          <div v-if="currentCard && hasReachedMaxCards(currentCard)" class="px-4 mt-4">
+            <div
+              class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-3 mb-4">
+              <div class="flex items-center space-x-2">
+                <i class="pi pi-exclamation-triangle text-yellow-600 dark:text-yellow-400"></i>
+                <span class="text-sm text-yellow-800 dark:text-yellow-200">
+                  You have reached the maximum limit of {{ currentCard.applyNumber }} cards
+                </span>
+              </div>
+            </div>
+          </div>
+
           <!-- Primary action -->
           <div class="px-4 mt-4">
             <Button :label="currentCard?.cardPattern === 1 ? 'Order a Virtual Card' : 'Order a Physical Card'"
-              severity="primary" class="w-full" :disabled="currentCard?.cardPattern !== 1"
+              severity="primary" class="w-full"
+              :disabled="currentCard?.cardPattern !== 1 || (currentCard && hasReachedMaxCards(currentCard))"
               @click="currentCard && orderCard(currentCard)" />
           </div>
         </div>
@@ -100,8 +114,9 @@
         <div class="hidden md:grid md:grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
           <div v-for="card in cardConfigs" :key="card.cardName"
             class="card-hover-container transition-all duration-300 ease-in-out hover:scale-102 hover:shadow-lg hover:-translate-y-1">
-            <CardItem :card="card" :selected="selectedCard?.cardName === card.cardName" @select="selectCard"
-              @order="orderCard" @activate="activateCard" />
+            <CardItem :card="card" :selected="selectedCard?.cardName === card.cardName"
+              :has-reached-max-cards="hasReachedMaxCards(card)" @select="selectCard" @order="orderCard"
+              @activate="activateCard" />
           </div>
         </div>
       </div>
@@ -186,6 +201,12 @@ const pendingCard = ref<CardConfig | null>(null)
 const loading = computed(() => cardStore.loading)
 const error = computed(() => cardStore.error)
 const cardConfigs = computed(() => cardStore.enabledCards)
+
+// Check if user has reached the maximum number of cards for a specific card configuration
+const hasReachedMaxCards = (cardConfig: CardConfig) => {
+  const userCardCount = cardStore.cardList.length
+  return userCardCount >= cardConfig.applyNumber
+}
 
 // Get card configuration
 const fetchCardConfigs = async () => {
@@ -427,6 +448,17 @@ const orderCard = async (card: CardConfig) => {
       summary: 'Not Available',
       detail: `${card.cardName} is currently not available`,
       life: 3000
+    })
+    return
+  }
+
+  // Check if user has reached the maximum number of cards for this configuration
+  if (hasReachedMaxCards(card)) {
+    toast.add({
+      severity: 'warn',
+      summary: 'Card Limit Reached',
+      detail: `You have reached the maximum limit of ${card.applyNumber} cards`,
+      life: 5000
     })
     return
   }
@@ -681,11 +713,20 @@ onUnmounted(() => {
 })
 
 // Fetch data when component mounts
-onMounted(() => {
+onMounted(async () => {
   setAppViewportHeight()
   window.addEventListener('resize', handleResize, { passive: true })
   window.addEventListener('orientationchange', handleOrientationChange)
-  fetchCardConfigs()
+
+  // Fetch card configurations and user's current cards
+  await fetchCardConfigs()
+
+  // Ensure card list is up to date for limit calculations
+  try {
+    await cardStore.fetchCardList({ silent: true })
+  } catch (error) {
+    console.warn('Failed to fetch card list:', error)
+  }
 
   // Initialize first card with flip animation after a short delay
   nextTick(() => {

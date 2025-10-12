@@ -58,7 +58,7 @@
                       Code</span>
                   </div>
                   <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialPostalCode
-                  }}</p>
+                    }}</p>
                 </div>
               </div>
 
@@ -125,7 +125,7 @@
                 <InputText v-else v-model="form.residentialState" placeholder="Enter state/province" class="w-full"
                   :class="{ 'p-invalid': errors.residentialState }" />
                 <small v-if="errors.residentialState" class="text-red-500 text-xs mt-1">{{ errors.residentialState
-                  }}</small>
+                }}</small>
               </div>
               <div>
                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">City</label>
@@ -135,7 +135,7 @@
                 <InputText v-else v-model="form.residentialCity" placeholder="Enter city" class="w-full"
                   :class="{ 'p-invalid': errors.residentialCity }" />
                 <small v-if="errors.residentialCity" class="text-red-500 text-xs mt-1">{{ errors.residentialCity
-                }}</small>
+                  }}</small>
               </div>
             </div>
 
@@ -144,7 +144,7 @@
               <InputText v-model="form.residentialAddress" placeholder="Enter your address" class="w-full"
                 :class="{ 'p-invalid': errors.residentialAddress }" />
               <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
-              }}</small>
+                }}</small>
             </div>
 
             <div>
@@ -171,7 +171,7 @@
           <div class="mb-4">
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Recharge amount</label>
             <div class="flex items-center gap-2">
-              <InputText v-model="form.rechargeAmount" type="text" placeholder="20" class="w-32"
+              <InputText v-model="form.rechargeAmount" type="text" :placeholder="minAmount.toString()" class="w-32"
                 :class="{ 'p-invalid': errors.rechargeAmount }" @blur="validateRechargeAmount" />
               <span class="text-gray-600 dark:text-gray-400">{{ cardStore.selectedCardBin?.cardCurrency }}</span>
             </div>
@@ -237,7 +237,7 @@ const form = reactive<HolderInfo & { rechargeAmount: string }>({
   residentialCountryCode: 'US',
   residentialPostalCode: '',
   residentialState: '',
-  rechargeAmount: '20'
+  rechargeAmount: ''
 })
 
 // Form validation errors
@@ -487,8 +487,17 @@ const initializeLocationForEdit = async () => {
   // If no state match found, load country-wide cities as fallback
   loadCitiesForCountry(form.residentialCountryCode, true)
 }
-// Quick recharge amounts
-const quickAmounts = ref([20, 50, 100, 200])
+// Minimum amount based on action type
+const minAmount = computed(() => {
+  const action = route.query.action as string
+  return action === 'recharge' ? 20 : 21
+})
+
+// Quick recharge amounts - dynamic based on action type
+const quickAmounts = computed(() => {
+  const min = minAmount.value
+  return [min, 50, 100, 200]
+})
 
 // Currency symbol mapping
 const currencySymbols: Record<string, string> = {
@@ -887,20 +896,23 @@ const validateRechargeAmount = () => {
   if (!form.rechargeAmount) return
 
   const minor = toMinorUnits(form.rechargeAmount, decimals)
-  const minMinor = 20 * Math.pow(10, decimals)
+  const minMinor = minAmount.value * Math.pow(10, decimals)
   if (Number.isNaN(minor)) return
   if (minor < minMinor) {
-    form.rechargeAmount = decimals > 0 ? '20' : '20'
+    form.rechargeAmount = minAmount.value.toString()
     toast.add({
       severity: 'info',
       summary: 'Amount Adjusted',
-      detail: 'Minimum recharge amount is 20',
+      detail: `Minimum recharge amount is ${minAmount.value}`,
       life: 2000
     })
   }
 }
 // Initialize: query holder and card info
 onMounted(async () => {
+  // Set default recharge amount based on action type
+  form.rechargeAmount = minAmount.value.toString()
+
   await loadHolder()
   // Ensure card list is up to date
   try {

@@ -44,11 +44,24 @@
           </div>
         </div>
 
+        <!-- Card Limit Info -->
+        <div v-if="hasReachedMaxCards" class="mb-4">
+          <div
+            class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-3">
+            <div class="flex items-center space-x-2">
+              <i class="pi pi-exclamation-triangle text-yellow-600 dark:text-yellow-400"></i>
+              <span class="text-sm text-yellow-800 dark:text-yellow-200">
+                You have reached the maximum limit of {{ card.applyNumber }} cards
+              </span>
+            </div>
+          </div>
+        </div>
+
         <!-- Action Buttons -->
         <div class="space-y-3">
           <div class="flex space-x-2">
             <Button :label="`Order a ${card.cardPattern === 1 ? 'Virtual' : 'Physical'} Card`" severity="primary"
-              class="flex-1" :disabled="card.cardPattern !== 1" @click="$emit('order', card)" />
+              class="flex-1" :disabled="card.cardPattern !== 1 || hasReachedMaxCards" @click="$emit('order', card)" />
           </div>
         </div>
       </div>
@@ -65,6 +78,7 @@ import type { CardConfig } from '@/api/card'
 interface Props {
   card: CardConfig
   selected: boolean
+  hasReachedMaxCards: boolean
 }
 
 const props = defineProps<Props>()

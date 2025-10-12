@@ -170,7 +170,9 @@
                     </div>
                   </div>
                   <div class="text-right">
-                    <div class="text-lg font-bold text-gray-900 dark:text-white">${{ selectedCard.maxOnDaily }}</div>
+                    <div class="text-lg font-bold text-gray-900 dark:text-white">
+                      {{ selectedCard.maxOnDaily != null ? `$${selectedCard.maxOnDaily}` : 'NO LIMIT' }}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -187,7 +189,9 @@
                     </div>
                   </div>
                   <div class="text-right">
-                    <div class="text-lg font-bold text-gray-900 dark:text-white">${{ selectedCard.maxOnMonthly }}</div>
+                    <div class="text-lg font-bold text-gray-900 dark:text-white">
+                      {{ selectedCard.maxOnMonthly != null ? `$${selectedCard.maxOnMonthly}` : 'NO LIMIT' }}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -205,7 +209,9 @@
                     </div>
                   </div>
                   <div class="text-right">
-                    <div class="text-lg font-bold text-gray-900 dark:text-white">${{ selectedCard.maxOnPercent }}</div>
+                    <div class="text-lg font-bold text-gray-900 dark:text-white">
+                      {{ selectedCard.maxOnPercent != null ? `$${selectedCard.maxOnPercent}` : 'NO LIMIT' }}
+                    </div>
                   </div>
                 </div>
               </div>

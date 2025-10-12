@@ -14,6 +14,7 @@ export interface CardConfig {
   maxOnPercent: number // Maximum single transaction amount
   status: number // 1:enabled, 2:disabled
   cardPicture: string | null // Card picture
+  applyNumber: number // Apply number
 }
 
 // Card BIN related types

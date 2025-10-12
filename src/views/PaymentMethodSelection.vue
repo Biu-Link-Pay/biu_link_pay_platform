@@ -153,6 +153,21 @@
               </span>
             </div>
           </div>
+
+          <!-- Amount Limit Warning (Desktop) -->
+          <div v-if="selectedCrypto && !isAmountWithinLimit"
+            class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-10 h-10 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-lg"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">Payment Amount Out of Range</h4>
+                <p class="text-sm text-red-700 dark:text-red-300">{{ limitErrorMessage }}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -345,6 +360,21 @@
             </div>
           </div>
 
+          <!-- Amount Limit Warning (Mobile) -->
+          <div v-if="selectedCrypto && !isAmountWithinLimit"
+            class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-8 h-8 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">Amount Out of Range</h4>
+                <p class="text-xs text-red-700 dark:text-red-300">{{ limitErrorMessage }}</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -358,7 +388,7 @@
         </button>
 
         <!-- Continue Button -->
-        <button :disabled="!selectedPayType || !selectedCrypto || rateLoading || creatingOrder"
+        <button :disabled="!selectedPayType || !selectedCrypto || rateLoading || creatingOrder || !isAmountWithinLimit"
           class="bottom-button-dual bottom-button-dual-primary" @click="handleContinue">
           <span v-if="creatingOrder" class="flex items-center space-x-2">
             <i class="pi pi-spin pi-spinner text-sm"></i>
@@ -370,6 +400,7 @@
           </span>
           <span v-else-if="!selectedPayType">Select Payment</span>
           <span v-else-if="!selectedCrypto">Select Crypto</span>
+          <span v-else-if="!isAmountWithinLimit">{{ limitErrorMessage }}</span>
           <span v-else-if="!actualCryptoAmount">Loading payment amount...</span>
           <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}<span v-if="countdown > 0"
               class="text-xs opacity-75"> ({{ countdown }}s)</span></span>
@@ -410,6 +441,38 @@ const creatingOrder = ref(false)
 // Rate query result
 const rateResult = ref<any>(null)
 const actualCryptoAmount = ref<string>('')
+
+// Check if payment amount is within selected crypto's limit
+const isAmountWithinLimit = computed(() => {
+  if (!selectedCrypto.value || !actualCryptoAmount.value) return false
+
+  // Convert crypto amount to number for comparison
+  const cryptoAmount = parseFloat(actualCryptoAmount.value)
+  if (isNaN(cryptoAmount)) return false
+
+  const minLimit = selectedCrypto.value.minLimit
+  const maxLimit = selectedCrypto.value.maxLimit
+  return cryptoAmount >= minLimit && cryptoAmount <= maxLimit
+})
+
+// Get limit error message
+const limitErrorMessage = computed(() => {
+  if (!selectedCrypto.value || !actualCryptoAmount.value) return ''
+
+  const cryptoAmount = parseFloat(actualCryptoAmount.value)
+  if (isNaN(cryptoAmount)) return ''
+
+  const minLimit = selectedCrypto.value.minLimit
+  const maxLimit = selectedCrypto.value.maxLimit
+
+  if (cryptoAmount < minLimit) {
+    return `Payment amount must be at least ${minLimit} ${selectedCrypto.value.crypto.name}`
+  }
+  if (cryptoAmount > maxLimit) {
+    return `Payment amount exceeds maximum limit of ${maxLimit} ${selectedCrypto.value.crypto.name}`
+  }
+  return ''
+})
 
 // Currency symbol mapping
 const currencySymbols: Record<string, string> = {
@@ -648,6 +711,16 @@ const handleContinue = async () => {
       summary: 'Selection Required',
       detail: 'Please select a cryptocurrency',
       life: 3000
+    })
+    return
+  }
+
+  if (!isAmountWithinLimit.value) {
+    toast.add({
+      severity: 'error',
+      summary: 'Amount Limit Exceeded',
+      detail: limitErrorMessage.value,
+      life: 5000
     })
     return
   }
