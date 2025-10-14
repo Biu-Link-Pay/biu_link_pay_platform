@@ -30,6 +30,8 @@ export interface CardBin {
   cardFormFactor: string | null // Virtual card or physical card
   cardId?: string | null // Card ID, used for recharge operations
   cardNo?: string | null // Card number (optional, used for display/header)
+  countryName?: string | null // Country name
+  countryCode?: string | null // Country code
 }
 
 // Query card BIN parameters

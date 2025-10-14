@@ -20,7 +20,7 @@
       <div class="grid grid-cols-3 gap-4 mb-8">
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.applyFee || 0)
-            }}</div>
+          }}</div>
           <div class="text-sm text-gray-500 dark:text-gray-400">Apply fee</div>
         </div>
         <div class="text-center">
@@ -31,7 +31,7 @@
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.monthlyFee || 0)
-            }}</div>
+          }}</div>
           <div class="text-sm text-gray-500 dark:text-gray-400">Monthly Fee</div>
         </div>
       </div>
@@ -91,11 +91,15 @@
                         <div class="space-y-1 mb-2 text-sm">
                           <!-- Card Type and Currency -->
                           <div class="mt-4 text-right">
-                            {{ binInfo.cardCurrency || 'USD' }}
+                            <!-- {{ binInfo.cardCurrency || 'USD' }} -->
+                            {{ binInfo.countryName || 'N/A' }}
                           </div>
                           <!-- Card BIN -->
-                          <div class="text-base font-mono tracking-wider">
-                            {{ formatCardNumber(binInfo.cardBin) }}
+                          <div class="flex justify-between items-center">
+                            <div class="text-base font-mono tracking-wider">
+                              {{ formatCardNumber(binInfo.cardBin) }}
+                            </div>
+                            <div class="text-xs md:text-sm opacity-80">{{ binInfo.cardCurrency || 'USD' }}</div>
                           </div>
                           <!-- Available Cards -->
                         </div>
@@ -211,15 +215,18 @@
                                 <div class="flex items-center space-x-2">
                                 </div>
                                 <div class="text-right">
-                                  <div class="text-xs md:text-sm opacity-80">{{ binInfo.cardCurrency || 'USD' }}</div>
+                                  <div class="text-xs md:text-sm opacity-80">{{ binInfo.countryName || 'N/A' }}</div>
+
+                                  <!-- <div class="text-xs md:text-sm opacity-80">{{ binInfo.cardCurrency || 'USD' }}</div> -->
                                 </div>
                               </div>
 
                               <!-- Middle section - Card number -->
-                              <div class="mb-4">
+                              <div class="mb-4 flex justify-between items-center">
                                 <div class="text-lg md:text-xl font-mono tracking-wider">
                                   {{ formatCardNumber(binInfo.cardBin) }}
                                 </div>
+                                <div class="text-xs md:text-sm opacity-80">{{ binInfo.cardCurrency || 'USD' }}</div>
                               </div>
 
                               <!-- Bottom section -->
@@ -231,47 +238,6 @@
                               </div>
                             </div>
                           </div>
-
-                          <!-- Card Details -->
-                          <!-- <div
-                          class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
-                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Card Details</h3>
-                          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-sm">
-                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                              <span class="text-gray-600 dark:text-gray-400">Card BIN:</span>
-                              <span class="font-medium text-gray-900 dark:text-white">{{ binInfo.cardBin || 'N/A'
-                              }}</span>
-                            </div>
-                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                              <span class="text-gray-600 dark:text-gray-400">Card Type:</span>
-                              <span class="font-medium text-gray-900 dark:text-white">{{ binInfo.cardType || 'N/A'
-                              }}</span>
-                            </div>
-                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                              <span class="text-gray-600 dark:text-gray-400">Card Scheme:</span>
-                              <span class="font-medium text-gray-900 dark:text-white">{{ binInfo.cardScheme || 'N/A'
-                              }}</span>
-                            </div>
-                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                              <span class="text-gray-600 dark:text-gray-400">Currency:</span>
-                              <span class="font-medium text-gray-900 dark:text-white">{{ binInfo.cardCurrency || 'USD'
-                              }}</span>
-                            </div>
-                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                              <span class="text-gray-600 dark:text-gray-400">Available Cards:</span>
-                              <span class="font-medium text-gray-900 dark:text-white">{{ binInfo.remainingAvailableCard
-                                || 'Unlimited'
-                              }}</span>
-                            </div>
-                            <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                              <span class="text-gray-600 dark:text-gray-400">Address Update:</span>
-                              <span class="font-medium"
-                                :class="binInfo.billingAddressUpdatable === 'true' ? 'text-green-600 dark:text-green-400' : 'text-gray-500 dark:text-gray-400'">
-                                {{ binInfo.billingAddressUpdatable === 'true' ? 'Supported' : 'Not Supported' }}
-                              </span>
-                            </div>
-                          </div>
-                        </div> -->
                         </div>
                       </div>
                     </div>
