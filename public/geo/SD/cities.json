@@ -1,0 +1,286 @@
+[
+  {
+    "name": "Zalingei",
+    "stateCode": "DC"
+  },
+  {
+    "name": "El Daein",
+    "stateCode": "DE"
+  },
+  {
+    "name": "El Fasher",
+    "stateCode": "DN"
+  },
+  {
+    "name": "Kutum",
+    "stateCode": "DN"
+  },
+  {
+    "name": "Umm Kaddadah",
+    "stateCode": "DN"
+  },
+  {
+    "name": "Gereida",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Nyala",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Geneina",
+    "stateCode": "DW"
+  },
+  {
+    "name": "Al Ḩawātah",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Al Qadarif",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Doka",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Abū Zabad",
+    "stateCode": "GK"
+  },
+  {
+    "name": "Al Lagowa",
+    "stateCode": "GK"
+  },
+  {
+    "name": "Al Mijlad",
+    "stateCode": "GK"
+  },
+  {
+    "name": "An Nuhūd",
+    "stateCode": "GK"
+  },
+  {
+    "name": "Al Hasaheisa",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Al Hilāliyya",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Al Kiremit al ‘Arakiyyīn",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Al Manāqil",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Al Masallamiyya",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Wad Medani",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Wad Rāwah",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Aroma",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Kassala",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Wagar",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Khartoum",
+    "stateCode": "KH"
+  },
+  {
+    "name": "Omdurman",
+    "stateCode": "KH"
+  },
+  {
+    "name": "Ar Rahad",
+    "stateCode": "KN"
+  },
+  {
+    "name": "Bārah",
+    "stateCode": "KN"
+  },
+  {
+    "name": "El Obeid",
+    "stateCode": "KN"
+  },
+  {
+    "name": "Umm Ruwaba",
+    "stateCode": "KN"
+  },
+  {
+    "name": "Abu Jibeha",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Al Fūlah",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Dilling",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kadugli",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Talodi",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Ad-Damazin",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Ar Ruseris",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kurmuk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Ad Dabbah",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Argo",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Dongola",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Karmah an Nuzul",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Kuraymah",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Merowe",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Atbara",
+    "stateCode": "NR"
+  },
+  {
+    "name": "Berber",
+    "stateCode": "NR"
+  },
+  {
+    "name": "Ed Damer",
+    "stateCode": "NR"
+  },
+  {
+    "name": "El Bauga",
+    "stateCode": "NR"
+  },
+  {
+    "name": "El Matama",
+    "stateCode": "NR"
+  },
+  {
+    "name": "Shendi",
+    "stateCode": "NR"
+  },
+  {
+    "name": "Ad Douiem",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Al Kawa",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Al Qiţena",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Kosti",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Marabba",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Rabak",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Tandaltī",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Um Jar Al Gharbiyya",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Wad az Zāki",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Gebeit",
+    "stateCode": "RS"
+  },
+  {
+    "name": "Port Sudan",
+    "stateCode": "RS"
+  },
+  {
+    "name": "Sawākin",
+    "stateCode": "RS"
+  },
+  {
+    "name": "Tokār",
+    "stateCode": "RS"
+  },
+  {
+    "name": "Ad Dindar",
+    "stateCode": "SI"
+  },
+  {
+    "name": "As Sūkī",
+    "stateCode": "SI"
+  },
+  {
+    "name": "Jalqani",
+    "stateCode": "SI"
+  },
+  {
+    "name": "Kināna",
+    "stateCode": "SI"
+  },
+  {
+    "name": "Maiurno",
+    "stateCode": "SI"
+  },
+  {
+    "name": "Singa",
+    "stateCode": "SI"
+  },
+  {
+    "name": "Sinnar",
+    "stateCode": "SI"
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "name": "Aydarken",
+    "stateCode": "B"
+  },
+  {
+    "name": "Batken",
+    "stateCode": "B"
+  },
+  {
+    "name": "Iradan",
+    "stateCode": "B"
+  },
+  {
+    "name": "Isfana",
+    "stateCode": "B"
+  },
+  {
+    "name": "Karavan",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kyzyl-Kyya",
+    "stateCode": "B"
+  },
+  {
+    "name": "Suluktu",
+    "stateCode": "B"
+  },
+  {
+    "name": "Alamudunskiy Rayon",
+    "stateCode": "C"
+  },
+  {
+    "name": "Belovodskoye",
+    "stateCode": "C"
+  },
+  {
+    "name": "Chuyskiy Rayon",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ivanovka",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kaindy",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kant",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kara-Balta",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kemin",
+    "stateCode": "C"
+  },
+  {
+    "name": "Lebedinovka",
+    "stateCode": "C"
+  },
+  {
+    "name": "Sokulukskiy Rayon",
+    "stateCode": "C"
+  },
+  {
+    "name": "Sosnovka",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tokmok",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ysyk-Ata",
+    "stateCode": "C"
+  },
+  {
+    "name": "Bishkek",
+    "stateCode": "GB"
+  },
+  {
+    "name": "Ala-Buka",
+    "stateCode": "J"
+  },
+  {
+    "name": "Bazar-Korgon",
+    "stateCode": "J"
+  },
+  {
+    "name": "Jalal-Abad",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kazarman",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kerben",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kochkor-Ata",
+    "stateCode": "J"
+  },
+  {
+    "name": "Suzak",
+    "stateCode": "J"
+  },
+  {
+    "name": "Tash-Kumyr",
+    "stateCode": "J"
+  },
+  {
+    "name": "Toktogul",
+    "stateCode": "J"
+  },
+  {
+    "name": "Toktogul District",
+    "stateCode": "J"
+  },
+  {
+    "name": "At-Bashi",
+    "stateCode": "N"
+  },
+  {
+    "name": "Jumgal",
+    "stateCode": "N"
+  },
+  {
+    "name": "Naryn",
+    "stateCode": "N"
+  },
+  {
+    "name": "Chong-Alay District",
+    "stateCode": "O"
+  },
+  {
+    "name": "Daroot-Korgon",
+    "stateCode": "O"
+  },
+  {
+    "name": "Kara Kulja",
+    "stateCode": "O"
+  },
+  {
+    "name": "Kara Suu",
+    "stateCode": "O"
+  },
+  {
+    "name": "Kyzyl-Eshme",
+    "stateCode": "O"
+  },
+  {
+    "name": "Nookat",
+    "stateCode": "O"
+  },
+  {
+    "name": "Osh",
+    "stateCode": "O"
+  },
+  {
+    "name": "Uzgen",
+    "stateCode": "O"
+  },
+  {
+    "name": "Uzgen District",
+    "stateCode": "O"
+  },
+  {
+    "name": "Kara-Buurinskiy Rayon",
+    "stateCode": "T"
+  },
+  {
+    "name": "Talas",
+    "stateCode": "T"
+  },
+  {
+    "name": "Talasskiy Rayon",
+    "stateCode": "T"
+  },
+  {
+    "name": "Ak-Suu",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Balykchy",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Cholpon-Ata",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Kadzhi-Say",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Karakol",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Kyzyl-Suu",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Tyup",
+    "stateCode": "Y"
+  }
+]

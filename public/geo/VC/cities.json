@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Biabou",
+    "stateCode": "01"
+  },
+  {
+    "name": "Byera Village",
+    "stateCode": "01"
+  },
+  {
+    "name": "Georgetown",
+    "stateCode": "01"
+  },
+  {
+    "name": "Layou",
+    "stateCode": "02"
+  },
+  {
+    "name": "Chateaubelair",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kingstown",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kingstown Park",
+    "stateCode": "04"
+  },
+  {
+    "name": "Barrouallie",
+    "stateCode": "05"
+  },
+  {
+    "name": "Port Elizabeth",
+    "stateCode": "06"
+  }
+]

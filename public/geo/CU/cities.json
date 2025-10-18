@@ -1,0 +1,750 @@
+[
+  {
+    "name": "Consolación del Sur",
+    "stateCode": "01"
+  },
+  {
+    "name": "Guane",
+    "stateCode": "01"
+  },
+  {
+    "name": "Los Palacios",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mantua",
+    "stateCode": "01"
+  },
+  {
+    "name": "Minas de Matahambre",
+    "stateCode": "01"
+  },
+  {
+    "name": "Municipio de Consolación del Sur",
+    "stateCode": "01"
+  },
+  {
+    "name": "Municipio de Guane",
+    "stateCode": "01"
+  },
+  {
+    "name": "Municipio de La Palma",
+    "stateCode": "01"
+  },
+  {
+    "name": "Municipio de Los Palacios",
+    "stateCode": "01"
+  },
+  {
+    "name": "Pinar del Río",
+    "stateCode": "01"
+  },
+  {
+    "name": "Puerto Esperanza",
+    "stateCode": "01"
+  },
+  {
+    "name": "San Diego de Los Baños",
+    "stateCode": "01"
+  },
+  {
+    "name": "San Luis",
+    "stateCode": "01"
+  },
+  {
+    "name": "Viñales",
+    "stateCode": "01"
+  },
+  {
+    "name": "Alamar",
+    "stateCode": "03"
+  },
+  {
+    "name": "Arroyo Naranjo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Boyeros",
+    "stateCode": "03"
+  },
+  {
+    "name": "Centro Habana",
+    "stateCode": "03"
+  },
+  {
+    "name": "Cerro",
+    "stateCode": "03"
+  },
+  {
+    "name": "Diez de Octubre",
+    "stateCode": "03"
+  },
+  {
+    "name": "Guanabacoa",
+    "stateCode": "03"
+  },
+  {
+    "name": "Habana del Este",
+    "stateCode": "03"
+  },
+  {
+    "name": "Havana",
+    "stateCode": "03"
+  },
+  {
+    "name": "La Habana Vieja",
+    "stateCode": "03"
+  },
+  {
+    "name": "Regla",
+    "stateCode": "03"
+  },
+  {
+    "name": "San Miguel del Padrón",
+    "stateCode": "03"
+  },
+  {
+    "name": "Santiago de las Vegas",
+    "stateCode": "03"
+  },
+  {
+    "name": "Alacranes",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bolondrón",
+    "stateCode": "04"
+  },
+  {
+    "name": "Calimete",
+    "stateCode": "04"
+  },
+  {
+    "name": "Cárdenas",
+    "stateCode": "04"
+  },
+  {
+    "name": "Colón",
+    "stateCode": "04"
+  },
+  {
+    "name": "Jagüey Grande",
+    "stateCode": "04"
+  },
+  {
+    "name": "Jovellanos",
+    "stateCode": "04"
+  },
+  {
+    "name": "Limonar",
+    "stateCode": "04"
+  },
+  {
+    "name": "Los Arabos",
+    "stateCode": "04"
+  },
+  {
+    "name": "Manguito",
+    "stateCode": "04"
+  },
+  {
+    "name": "Martí",
+    "stateCode": "04"
+  },
+  {
+    "name": "Matanzas",
+    "stateCode": "04"
+  },
+  {
+    "name": "Municipio de Cárdenas",
+    "stateCode": "04"
+  },
+  {
+    "name": "Municipio de Matanzas",
+    "stateCode": "04"
+  },
+  {
+    "name": "Pedro Betancourt",
+    "stateCode": "04"
+  },
+  {
+    "name": "Perico",
+    "stateCode": "04"
+  },
+  {
+    "name": "Unión de Reyes",
+    "stateCode": "04"
+  },
+  {
+    "name": "Varadero",
+    "stateCode": "04"
+  },
+  {
+    "name": "Caibarién",
+    "stateCode": "05"
+  },
+  {
+    "name": "Calabazar de Sagua",
+    "stateCode": "05"
+  },
+  {
+    "name": "Camajuaní",
+    "stateCode": "05"
+  },
+  {
+    "name": "Cifuentes",
+    "stateCode": "05"
+  },
+  {
+    "name": "Corralillo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Encrucijada",
+    "stateCode": "05"
+  },
+  {
+    "name": "Esperanza",
+    "stateCode": "05"
+  },
+  {
+    "name": "Isabela de Sagua",
+    "stateCode": "05"
+  },
+  {
+    "name": "Manicaragua",
+    "stateCode": "05"
+  },
+  {
+    "name": "Municipio de Placetas",
+    "stateCode": "05"
+  },
+  {
+    "name": "Municipio de Santa Clara",
+    "stateCode": "05"
+  },
+  {
+    "name": "Placetas",
+    "stateCode": "05"
+  },
+  {
+    "name": "Quemado de Güines",
+    "stateCode": "05"
+  },
+  {
+    "name": "Rancho Veloz",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ranchuelo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sagua la Grande",
+    "stateCode": "05"
+  },
+  {
+    "name": "Santa Clara",
+    "stateCode": "05"
+  },
+  {
+    "name": "Santo Domingo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Abreus",
+    "stateCode": "06"
+  },
+  {
+    "name": "Aguada de Pasajeros",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cienfuegos",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cruces",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cumanayagua",
+    "stateCode": "06"
+  },
+  {
+    "name": "Lajas",
+    "stateCode": "06"
+  },
+  {
+    "name": "Municipio de Abreus",
+    "stateCode": "06"
+  },
+  {
+    "name": "Municipio de Cienfuegos",
+    "stateCode": "06"
+  },
+  {
+    "name": "Palmira",
+    "stateCode": "06"
+  },
+  {
+    "name": "Rodas",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cabaiguán",
+    "stateCode": "07"
+  },
+  {
+    "name": "Condado",
+    "stateCode": "07"
+  },
+  {
+    "name": "Fomento",
+    "stateCode": "07"
+  },
+  {
+    "name": "Guayos",
+    "stateCode": "07"
+  },
+  {
+    "name": "Jatibonico",
+    "stateCode": "07"
+  },
+  {
+    "name": "La Sierpe",
+    "stateCode": "07"
+  },
+  {
+    "name": "Municipio de Cabaiguán",
+    "stateCode": "07"
+  },
+  {
+    "name": "Municipio de Jatibonico",
+    "stateCode": "07"
+  },
+  {
+    "name": "Municipio de Sancti Spíritus",
+    "stateCode": "07"
+  },
+  {
+    "name": "Municipio de Trinidad",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sancti Spíritus",
+    "stateCode": "07"
+  },
+  {
+    "name": "Topes de Collantes",
+    "stateCode": "07"
+  },
+  {
+    "name": "Trinidad",
+    "stateCode": "07"
+  },
+  {
+    "name": "Yaguajay",
+    "stateCode": "07"
+  },
+  {
+    "name": "Zaza del Medio",
+    "stateCode": "07"
+  },
+  {
+    "name": "Baraguá",
+    "stateCode": "08"
+  },
+  {
+    "name": "Chambas",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ciego de Ávila",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ciro Redondo",
+    "stateCode": "08"
+  },
+  {
+    "name": "Florencia",
+    "stateCode": "08"
+  },
+  {
+    "name": "Morón",
+    "stateCode": "08"
+  },
+  {
+    "name": "Municipio de Ciego de Ávila",
+    "stateCode": "08"
+  },
+  {
+    "name": "Municipio de Morón",
+    "stateCode": "08"
+  },
+  {
+    "name": "Primero de Enero",
+    "stateCode": "08"
+  },
+  {
+    "name": "Venezuela",
+    "stateCode": "08"
+  },
+  {
+    "name": "Camagüey",
+    "stateCode": "09"
+  },
+  {
+    "name": "El Caney",
+    "stateCode": "09"
+  },
+  {
+    "name": "Esmeralda",
+    "stateCode": "09"
+  },
+  {
+    "name": "Florida",
+    "stateCode": "09"
+  },
+  {
+    "name": "Guáimaro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Jimaguayú",
+    "stateCode": "09"
+  },
+  {
+    "name": "Minas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Municipio de Florida",
+    "stateCode": "09"
+  },
+  {
+    "name": "Municipio de Nuevitas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nuevitas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Cruz del Sur",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sibanicú",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vertientes",
+    "stateCode": "09"
+  },
+  {
+    "name": "Amancio",
+    "stateCode": "10"
+  },
+  {
+    "name": "Colombia",
+    "stateCode": "10"
+  },
+  {
+    "name": "Jesús Menéndez",
+    "stateCode": "10"
+  },
+  {
+    "name": "Jobabo",
+    "stateCode": "10"
+  },
+  {
+    "name": "Las Tunas",
+    "stateCode": "10"
+  },
+  {
+    "name": "Manatí",
+    "stateCode": "10"
+  },
+  {
+    "name": "Puerto Padre",
+    "stateCode": "10"
+  },
+  {
+    "name": "Banes",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cacocum",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cueto",
+    "stateCode": "11"
+  },
+  {
+    "name": "Gibara",
+    "stateCode": "11"
+  },
+  {
+    "name": "Holguín",
+    "stateCode": "11"
+  },
+  {
+    "name": "Jobabo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Moa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Municipio de Banes",
+    "stateCode": "11"
+  },
+  {
+    "name": "Municipio de Holguín",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sagua de Tánamo",
+    "stateCode": "11"
+  },
+  {
+    "name": "San Germán",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bartolomé Masó",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bayamo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Campechuela",
+    "stateCode": "12"
+  },
+  {
+    "name": "Cauto Cristo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Guisa",
+    "stateCode": "12"
+  },
+  {
+    "name": "Jiguaní",
+    "stateCode": "12"
+  },
+  {
+    "name": "Manzanillo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Media Luna",
+    "stateCode": "12"
+  },
+  {
+    "name": "Municipio de Bayamo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Municipio de Manzanillo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Municipio de Niquero",
+    "stateCode": "12"
+  },
+  {
+    "name": "Niquero",
+    "stateCode": "12"
+  },
+  {
+    "name": "Río Cauto",
+    "stateCode": "12"
+  },
+  {
+    "name": "Yara",
+    "stateCode": "12"
+  },
+  {
+    "name": "Contramaestre",
+    "stateCode": "13"
+  },
+  {
+    "name": "El Cobre",
+    "stateCode": "13"
+  },
+  {
+    "name": "Municipio de Palma Soriano",
+    "stateCode": "13"
+  },
+  {
+    "name": "Municipio de Santiago de Cuba",
+    "stateCode": "13"
+  },
+  {
+    "name": "Palma Soriano",
+    "stateCode": "13"
+  },
+  {
+    "name": "San Luis",
+    "stateCode": "13"
+  },
+  {
+    "name": "Santiago de Cuba",
+    "stateCode": "13"
+  },
+  {
+    "name": "Baracoa",
+    "stateCode": "14"
+  },
+  {
+    "name": "Guantánamo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Maisí",
+    "stateCode": "14"
+  },
+  {
+    "name": "Municipio de Guantánamo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Río Guayabal de Yateras",
+    "stateCode": "14"
+  },
+  {
+    "name": "San Antonio del Sur",
+    "stateCode": "14"
+  },
+  {
+    "name": "Alquízar",
+    "stateCode": "15"
+  },
+  {
+    "name": "Artemisa",
+    "stateCode": "15"
+  },
+  {
+    "name": "Bahía Honda",
+    "stateCode": "15"
+  },
+  {
+    "name": "Bauta",
+    "stateCode": "15"
+  },
+  {
+    "name": "Cabañas",
+    "stateCode": "15"
+  },
+  {
+    "name": "Candelaria",
+    "stateCode": "15"
+  },
+  {
+    "name": "Guanajay",
+    "stateCode": "15"
+  },
+  {
+    "name": "Güira de Melena",
+    "stateCode": "15"
+  },
+  {
+    "name": "Mariel",
+    "stateCode": "15"
+  },
+  {
+    "name": "Municipio de Artemisa",
+    "stateCode": "15"
+  },
+  {
+    "name": "Municipio de Bauta",
+    "stateCode": "15"
+  },
+  {
+    "name": "Municipio de Guanajay",
+    "stateCode": "15"
+  },
+  {
+    "name": "Municipio de Mariel",
+    "stateCode": "15"
+  },
+  {
+    "name": "Municipio de San Cristóbal",
+    "stateCode": "15"
+  },
+  {
+    "name": "San Antonio de los Baños",
+    "stateCode": "15"
+  },
+  {
+    "name": "San Cristobal",
+    "stateCode": "15"
+  },
+  {
+    "name": "Soroa",
+    "stateCode": "15"
+  },
+  {
+    "name": "Batabanó",
+    "stateCode": "16"
+  },
+  {
+    "name": "Bejucal",
+    "stateCode": "16"
+  },
+  {
+    "name": "Güines",
+    "stateCode": "16"
+  },
+  {
+    "name": "Jamaica",
+    "stateCode": "16"
+  },
+  {
+    "name": "Jaruco",
+    "stateCode": "16"
+  },
+  {
+    "name": "La Salud",
+    "stateCode": "16"
+  },
+  {
+    "name": "Madruga",
+    "stateCode": "16"
+  },
+  {
+    "name": "Municipio de Güines",
+    "stateCode": "16"
+  },
+  {
+    "name": "Municipio de Melena del Sur",
+    "stateCode": "16"
+  },
+  {
+    "name": "Quivicán",
+    "stateCode": "16"
+  },
+  {
+    "name": "San José de las Lajas",
+    "stateCode": "16"
+  },
+  {
+    "name": "San Nicolás de Bari",
+    "stateCode": "16"
+  },
+  {
+    "name": "Santa Cruz del Norte",
+    "stateCode": "16"
+  },
+  {
+    "name": "Nueva Gerona",
+    "stateCode": "99"
+  }
+]

@@ -1,0 +1,1246 @@
+[
+  {
+    "name": "Ajdovščina",
+    "stateCode": "001"
+  },
+  {
+    "name": "Cirkulane",
+    "stateCode": "001"
+  },
+  {
+    "name": "Lokavec",
+    "stateCode": "001"
+  },
+  {
+    "name": "Beltinci",
+    "stateCode": "002"
+  },
+  {
+    "name": "Gančani",
+    "stateCode": "002"
+  },
+  {
+    "name": "Lipovci",
+    "stateCode": "002"
+  },
+  {
+    "name": "Zgornje Gorje",
+    "stateCode": "002"
+  },
+  {
+    "name": "Bled",
+    "stateCode": "003"
+  },
+  {
+    "name": "Kostanjevica na Krki",
+    "stateCode": "003"
+  },
+  {
+    "name": "Zasip",
+    "stateCode": "003"
+  },
+  {
+    "name": "Bohinjska Bistrica",
+    "stateCode": "004"
+  },
+  {
+    "name": "Dragomer",
+    "stateCode": "004"
+  },
+  {
+    "name": "Log pri Brezovici",
+    "stateCode": "004"
+  },
+  {
+    "name": "Borovnica",
+    "stateCode": "005"
+  },
+  {
+    "name": "Makole",
+    "stateCode": "005"
+  },
+  {
+    "name": "Bovec",
+    "stateCode": "006"
+  },
+  {
+    "name": "Mirna",
+    "stateCode": "006"
+  },
+  {
+    "name": "Dobrovo",
+    "stateCode": "007"
+  },
+  {
+    "name": "Mokronog",
+    "stateCode": "007"
+  },
+  {
+    "name": "Brezovica pri Ljubljani",
+    "stateCode": "008"
+  },
+  {
+    "name": "Notranje Gorice",
+    "stateCode": "008"
+  },
+  {
+    "name": "Opština Ljubljana-Vič-Rudnik",
+    "stateCode": "008"
+  },
+  {
+    "name": "Rečica ob Savinji",
+    "stateCode": "008"
+  },
+  {
+    "name": "Vnanje Gorice",
+    "stateCode": "008"
+  },
+  {
+    "name": "Brežice",
+    "stateCode": "009"
+  },
+  {
+    "name": "Poljčane",
+    "stateCode": "009"
+  },
+  {
+    "name": "Tišina",
+    "stateCode": "010"
+  },
+  {
+    "name": "Celje",
+    "stateCode": "011"
+  },
+  {
+    "name": "Ljubečna",
+    "stateCode": "011"
+  },
+  {
+    "name": "Trnovlje pri Celju",
+    "stateCode": "011"
+  },
+  {
+    "name": "Cerklje na Gorenjskem",
+    "stateCode": "012"
+  },
+  {
+    "name": "Cerknica",
+    "stateCode": "013"
+  },
+  {
+    "name": "Rakek",
+    "stateCode": "013"
+  },
+  {
+    "name": "Cerkno",
+    "stateCode": "014"
+  },
+  {
+    "name": "Črenšovci",
+    "stateCode": "015"
+  },
+  {
+    "name": "Črna na Koroškem",
+    "stateCode": "016"
+  },
+  {
+    "name": "Črnomelj",
+    "stateCode": "017"
+  },
+  {
+    "name": "Destrnik",
+    "stateCode": "018"
+  },
+  {
+    "name": "Divača",
+    "stateCode": "019"
+  },
+  {
+    "name": "Videm",
+    "stateCode": "020"
+  },
+  {
+    "name": "Dobrova",
+    "stateCode": "021"
+  },
+  {
+    "name": "Dol pri Ljubljani",
+    "stateCode": "022"
+  },
+  {
+    "name": "Dob",
+    "stateCode": "023"
+  },
+  {
+    "name": "Domžale",
+    "stateCode": "023"
+  },
+  {
+    "name": "Radomlje",
+    "stateCode": "023"
+  },
+  {
+    "name": "Vir",
+    "stateCode": "023"
+  },
+  {
+    "name": "Dornava",
+    "stateCode": "024"
+  },
+  {
+    "name": "Dravograd",
+    "stateCode": "025"
+  },
+  {
+    "name": "Spodnji Duplek",
+    "stateCode": "026"
+  },
+  {
+    "name": "Zgornji Duplek",
+    "stateCode": "026"
+  },
+  {
+    "name": "Gorenja Vas",
+    "stateCode": "027"
+  },
+  {
+    "name": "Gorišnica",
+    "stateCode": "028"
+  },
+  {
+    "name": "Gornja Radgona",
+    "stateCode": "029"
+  },
+  {
+    "name": "Gornji Grad",
+    "stateCode": "030"
+  },
+  {
+    "name": "Gornji Petrovci",
+    "stateCode": "031"
+  },
+  {
+    "name": "Grosuplje",
+    "stateCode": "032"
+  },
+  {
+    "name": "Šmarje-Sap",
+    "stateCode": "032"
+  },
+  {
+    "name": "Šalovci",
+    "stateCode": "033"
+  },
+  {
+    "name": "Dol pri Hrastniku",
+    "stateCode": "034"
+  },
+  {
+    "name": "Hrastnik",
+    "stateCode": "034"
+  },
+  {
+    "name": "Kozina",
+    "stateCode": "035"
+  },
+  {
+    "name": "Idrija",
+    "stateCode": "036"
+  },
+  {
+    "name": "Spodnja Idrija",
+    "stateCode": "036"
+  },
+  {
+    "name": "Ig",
+    "stateCode": "037"
+  },
+  {
+    "name": "Ilirska Bistrica",
+    "stateCode": "038"
+  },
+  {
+    "name": "Ivančna Gorica",
+    "stateCode": "039"
+  },
+  {
+    "name": "Šentvid pri Stični",
+    "stateCode": "039"
+  },
+  {
+    "name": "Izola",
+    "stateCode": "040"
+  },
+  {
+    "name": "Jagodje",
+    "stateCode": "040"
+  },
+  {
+    "name": "Hrušica",
+    "stateCode": "041"
+  },
+  {
+    "name": "Jesenice",
+    "stateCode": "041"
+  },
+  {
+    "name": "Koroška Bela",
+    "stateCode": "041"
+  },
+  {
+    "name": "Slovenski Javornik",
+    "stateCode": "041"
+  },
+  {
+    "name": "Juršinci",
+    "stateCode": "042"
+  },
+  {
+    "name": "Kamnik",
+    "stateCode": "043"
+  },
+  {
+    "name": "Mekinje",
+    "stateCode": "043"
+  },
+  {
+    "name": "Šmarca",
+    "stateCode": "043"
+  },
+  {
+    "name": "Deskle",
+    "stateCode": "044"
+  },
+  {
+    "name": "Kanal",
+    "stateCode": "044"
+  },
+  {
+    "name": "Kidričevo",
+    "stateCode": "045"
+  },
+  {
+    "name": "Kobarid",
+    "stateCode": "046"
+  },
+  {
+    "name": "Kobilje",
+    "stateCode": "047"
+  },
+  {
+    "name": "Kočevje",
+    "stateCode": "048"
+  },
+  {
+    "name": "Komen",
+    "stateCode": "049"
+  },
+  {
+    "name": "Dekani",
+    "stateCode": "050"
+  },
+  {
+    "name": "Hrvatini",
+    "stateCode": "050"
+  },
+  {
+    "name": "Koper",
+    "stateCode": "050"
+  },
+  {
+    "name": "Pobegi",
+    "stateCode": "050"
+  },
+  {
+    "name": "Prade",
+    "stateCode": "050"
+  },
+  {
+    "name": "Spodnje Škofije",
+    "stateCode": "050"
+  },
+  {
+    "name": "Sv. Anton",
+    "stateCode": "050"
+  },
+  {
+    "name": "Kozje",
+    "stateCode": "051"
+  },
+  {
+    "name": "Britof",
+    "stateCode": "052"
+  },
+  {
+    "name": "Golnik",
+    "stateCode": "052"
+  },
+  {
+    "name": "Kokrica",
+    "stateCode": "052"
+  },
+  {
+    "name": "Kranj",
+    "stateCode": "052"
+  },
+  {
+    "name": "Mlaka pri Kranju",
+    "stateCode": "052"
+  },
+  {
+    "name": "Zgornje Bitnje",
+    "stateCode": "052"
+  },
+  {
+    "name": "Kranjska Gora",
+    "stateCode": "053"
+  },
+  {
+    "name": "Mojstrana",
+    "stateCode": "053"
+  },
+  {
+    "name": "Krško",
+    "stateCode": "054"
+  },
+  {
+    "name": "Leskovec pri Krškem",
+    "stateCode": "054"
+  },
+  {
+    "name": "Senovo",
+    "stateCode": "054"
+  },
+  {
+    "name": "Zgornja Kungota",
+    "stateCode": "055"
+  },
+  {
+    "name": "Kuzma",
+    "stateCode": "056"
+  },
+  {
+    "name": "Laško",
+    "stateCode": "057"
+  },
+  {
+    "name": "Lenart v Slov. Goricah",
+    "stateCode": "058"
+  },
+  {
+    "name": "Lendava",
+    "stateCode": "059"
+  },
+  {
+    "name": "Litija",
+    "stateCode": "060"
+  },
+  {
+    "name": "Dravlje District",
+    "stateCode": "061"
+  },
+  {
+    "name": "Jarše District",
+    "stateCode": "061"
+  },
+  {
+    "name": "Ljubljana",
+    "stateCode": "061"
+  },
+  {
+    "name": "Opčina Ljubljana-Bežigrad",
+    "stateCode": "061"
+  },
+  {
+    "name": "Opština Ljubljana-Center",
+    "stateCode": "061"
+  },
+  {
+    "name": "Opština Ljubljana-Moste-Polje",
+    "stateCode": "061"
+  },
+  {
+    "name": "Rožnik District",
+    "stateCode": "061"
+  },
+  {
+    "name": "Šentvid District",
+    "stateCode": "061"
+  },
+  {
+    "name": "Sostro District",
+    "stateCode": "061"
+  },
+  {
+    "name": "Trnovo District",
+    "stateCode": "061"
+  },
+  {
+    "name": "Vič District",
+    "stateCode": "061"
+  },
+  {
+    "name": "Ljubno ob Savinji",
+    "stateCode": "062"
+  },
+  {
+    "name": "Ljutomer",
+    "stateCode": "063"
+  },
+  {
+    "name": "Logatec",
+    "stateCode": "064"
+  },
+  {
+    "name": "Leskova Dolina",
+    "stateCode": "065"
+  },
+  {
+    "name": "Hrib-Loški Potok",
+    "stateCode": "066"
+  },
+  {
+    "name": "Luče",
+    "stateCode": "067"
+  },
+  {
+    "name": "Lukovica pri Domžalah",
+    "stateCode": "068"
+  },
+  {
+    "name": "Majšperk",
+    "stateCode": "069"
+  },
+  {
+    "name": "Bresternica",
+    "stateCode": "070"
+  },
+  {
+    "name": "Kamnica",
+    "stateCode": "070"
+  },
+  {
+    "name": "Limbuš",
+    "stateCode": "070"
+  },
+  {
+    "name": "Maribor",
+    "stateCode": "070"
+  },
+  {
+    "name": "Pekre",
+    "stateCode": "070"
+  },
+  {
+    "name": "Razvanje",
+    "stateCode": "070"
+  },
+  {
+    "name": "Medvode",
+    "stateCode": "071"
+  },
+  {
+    "name": "Opština [historical] Ljubljana-Šiška",
+    "stateCode": "071"
+  },
+  {
+    "name": "Zgornje Pirniče",
+    "stateCode": "071"
+  },
+  {
+    "name": "Mengeš",
+    "stateCode": "072"
+  },
+  {
+    "name": "Preserje pri Radomljah",
+    "stateCode": "072"
+  },
+  {
+    "name": "Metlika",
+    "stateCode": "073"
+  },
+  {
+    "name": "Mežica",
+    "stateCode": "074"
+  },
+  {
+    "name": "Bilje",
+    "stateCode": "075"
+  },
+  {
+    "name": "Miren",
+    "stateCode": "075"
+  },
+  {
+    "name": "Mislinja",
+    "stateCode": "076"
+  },
+  {
+    "name": "Moravče",
+    "stateCode": "077"
+  },
+  {
+    "name": "Moravske Toplice",
+    "stateCode": "078"
+  },
+  {
+    "name": "Mozirje",
+    "stateCode": "079"
+  },
+  {
+    "name": "Bakovci",
+    "stateCode": "080"
+  },
+  {
+    "name": "Černelavci",
+    "stateCode": "080"
+  },
+  {
+    "name": "Krog",
+    "stateCode": "080"
+  },
+  {
+    "name": "Murska Sobota",
+    "stateCode": "080"
+  },
+  {
+    "name": "Rakičan",
+    "stateCode": "080"
+  },
+  {
+    "name": "Muta",
+    "stateCode": "081"
+  },
+  {
+    "name": "Naklo",
+    "stateCode": "082"
+  },
+  {
+    "name": "Nazarje",
+    "stateCode": "083"
+  },
+  {
+    "name": "Kromberk",
+    "stateCode": "084"
+  },
+  {
+    "name": "Nova Gorica",
+    "stateCode": "084"
+  },
+  {
+    "name": "Prvačina",
+    "stateCode": "084"
+  },
+  {
+    "name": "Šempas",
+    "stateCode": "084"
+  },
+  {
+    "name": "Solkan",
+    "stateCode": "084"
+  },
+  {
+    "name": "Novo Mesto",
+    "stateCode": "085"
+  },
+  {
+    "name": "Odranci",
+    "stateCode": "086"
+  },
+  {
+    "name": "Ormož",
+    "stateCode": "087"
+  },
+  {
+    "name": "Osilnica",
+    "stateCode": "088"
+  },
+  {
+    "name": "Pesnica pri Mariboru",
+    "stateCode": "089"
+  },
+  {
+    "name": "Lucija",
+    "stateCode": "090"
+  },
+  {
+    "name": "Piran",
+    "stateCode": "090"
+  },
+  {
+    "name": "Portorož",
+    "stateCode": "090"
+  },
+  {
+    "name": "Seča",
+    "stateCode": "090"
+  },
+  {
+    "name": "Pivka",
+    "stateCode": "091"
+  },
+  {
+    "name": "Podčetrtek",
+    "stateCode": "092"
+  },
+  {
+    "name": "Podvelka",
+    "stateCode": "093"
+  },
+  {
+    "name": "Postojna",
+    "stateCode": "094"
+  },
+  {
+    "name": "Preddvor",
+    "stateCode": "095"
+  },
+  {
+    "name": "Ptuj",
+    "stateCode": "096"
+  },
+  {
+    "name": "Puconci",
+    "stateCode": "097"
+  },
+  {
+    "name": "Fram",
+    "stateCode": "098"
+  },
+  {
+    "name": "Morje",
+    "stateCode": "098"
+  },
+  {
+    "name": "Rače",
+    "stateCode": "098"
+  },
+  {
+    "name": "Radeče",
+    "stateCode": "099"
+  },
+  {
+    "name": "Radenci",
+    "stateCode": "100"
+  },
+  {
+    "name": "Radlje ob Dravi",
+    "stateCode": "101"
+  },
+  {
+    "name": "Lesce",
+    "stateCode": "102"
+  },
+  {
+    "name": "Radovljica",
+    "stateCode": "102"
+  },
+  {
+    "name": "Kotlje",
+    "stateCode": "103"
+  },
+  {
+    "name": "Ravne na Koroškem",
+    "stateCode": "103"
+  },
+  {
+    "name": "Ribnica",
+    "stateCode": "104"
+  },
+  {
+    "name": "Rogašovci",
+    "stateCode": "105"
+  },
+  {
+    "name": "Rogaška Slatina",
+    "stateCode": "106"
+  },
+  {
+    "name": "Rogatec",
+    "stateCode": "107"
+  },
+  {
+    "name": "Bistrica ob Dravi",
+    "stateCode": "108"
+  },
+  {
+    "name": "Ruše",
+    "stateCode": "108"
+  },
+  {
+    "name": "Semič",
+    "stateCode": "109"
+  },
+  {
+    "name": "Sevnica",
+    "stateCode": "110"
+  },
+  {
+    "name": "Sežana",
+    "stateCode": "111"
+  },
+  {
+    "name": "Legen",
+    "stateCode": "112"
+  },
+  {
+    "name": "Pameče",
+    "stateCode": "112"
+  },
+  {
+    "name": "Slovenj Gradec",
+    "stateCode": "112"
+  },
+  {
+    "name": "Šmartno pri Slovenj Gradcu",
+    "stateCode": "112"
+  },
+  {
+    "name": "Pragersko",
+    "stateCode": "113"
+  },
+  {
+    "name": "Slovenska Bistrica",
+    "stateCode": "113"
+  },
+  {
+    "name": "Zgornja Polskava",
+    "stateCode": "113"
+  },
+  {
+    "name": "Slovenske Konjice",
+    "stateCode": "114"
+  },
+  {
+    "name": "Starše",
+    "stateCode": "115"
+  },
+  {
+    "name": "Hrastje",
+    "stateCode": "117"
+  },
+  {
+    "name": "Šenčur",
+    "stateCode": "117"
+  },
+  {
+    "name": "Selnica ob Muri",
+    "stateCode": "118"
+  },
+  {
+    "name": "Šentilj v Slov. Goricah",
+    "stateCode": "118"
+  },
+  {
+    "name": "Šentjernej",
+    "stateCode": "119"
+  },
+  {
+    "name": "Šentjur",
+    "stateCode": "120"
+  },
+  {
+    "name": "Škocjan",
+    "stateCode": "121"
+  },
+  {
+    "name": "Škofja Loka",
+    "stateCode": "122"
+  },
+  {
+    "name": "Sv. Duh",
+    "stateCode": "122"
+  },
+  {
+    "name": "Lavrica",
+    "stateCode": "123"
+  },
+  {
+    "name": "Škofljica",
+    "stateCode": "123"
+  },
+  {
+    "name": "Šmarje pri Jelšah",
+    "stateCode": "124"
+  },
+  {
+    "name": "Šmartno ob Paki",
+    "stateCode": "125"
+  },
+  {
+    "name": "Ravne",
+    "stateCode": "126"
+  },
+  {
+    "name": "Šoštanj",
+    "stateCode": "126"
+  },
+  {
+    "name": "Topolšica",
+    "stateCode": "126"
+  },
+  {
+    "name": "Štore",
+    "stateCode": "127"
+  },
+  {
+    "name": "Tolmin",
+    "stateCode": "128"
+  },
+  {
+    "name": "Trbovlje",
+    "stateCode": "129"
+  },
+  {
+    "name": "Trebnje",
+    "stateCode": "130"
+  },
+  {
+    "name": "Bistrica pri Tržiču",
+    "stateCode": "131"
+  },
+  {
+    "name": "Tržič",
+    "stateCode": "131"
+  },
+  {
+    "name": "Turnišče",
+    "stateCode": "132"
+  },
+  {
+    "name": "Velike Lašče",
+    "stateCode": "134"
+  },
+  {
+    "name": "Videm pri Ptuju",
+    "stateCode": "135"
+  },
+  {
+    "name": "Vipava",
+    "stateCode": "136"
+  },
+  {
+    "name": "Vitanje",
+    "stateCode": "137"
+  },
+  {
+    "name": "Vodice",
+    "stateCode": "138"
+  },
+  {
+    "name": "Vojnik",
+    "stateCode": "139"
+  },
+  {
+    "name": "Verd",
+    "stateCode": "140"
+  },
+  {
+    "name": "Vrhnika",
+    "stateCode": "140"
+  },
+  {
+    "name": "Vuzenica",
+    "stateCode": "141"
+  },
+  {
+    "name": "Izlake",
+    "stateCode": "142"
+  },
+  {
+    "name": "Kisovec",
+    "stateCode": "142"
+  },
+  {
+    "name": "Zagorje ob Savi",
+    "stateCode": "142"
+  },
+  {
+    "name": "Zavrč",
+    "stateCode": "143"
+  },
+  {
+    "name": "Zreče",
+    "stateCode": "144"
+  },
+  {
+    "name": "Železniki",
+    "stateCode": "146"
+  },
+  {
+    "name": "Žiri",
+    "stateCode": "147"
+  },
+  {
+    "name": "Benedikt",
+    "stateCode": "148"
+  },
+  {
+    "name": "Bistrica ob Sotli",
+    "stateCode": "149"
+  },
+  {
+    "name": "Nova Vas",
+    "stateCode": "150"
+  },
+  {
+    "name": "Braslovče",
+    "stateCode": "151"
+  },
+  {
+    "name": "Cankova",
+    "stateCode": "152"
+  },
+  {
+    "name": "Cerkvenjak",
+    "stateCode": "153"
+  },
+  {
+    "name": "Dobje pri Planini",
+    "stateCode": "154"
+  },
+  {
+    "name": "Dobrna",
+    "stateCode": "155"
+  },
+  {
+    "name": "Dobrovnik",
+    "stateCode": "156"
+  },
+  {
+    "name": "Dolenjske Toplice",
+    "stateCode": "157"
+  },
+  {
+    "name": "Grad",
+    "stateCode": "158"
+  },
+  {
+    "name": "Spodnja Hajdina",
+    "stateCode": "159"
+  },
+  {
+    "name": "Hotinja Vas",
+    "stateCode": "160"
+  },
+  {
+    "name": "Radizel",
+    "stateCode": "160"
+  },
+  {
+    "name": "Rogoza",
+    "stateCode": "160"
+  },
+  {
+    "name": "Spodnje Hoče",
+    "stateCode": "160"
+  },
+  {
+    "name": "Hodoš",
+    "stateCode": "161"
+  },
+  {
+    "name": "Horjul",
+    "stateCode": "162"
+  },
+  {
+    "name": "Zgornje Jezersko",
+    "stateCode": "163"
+  },
+  {
+    "name": "Komenda",
+    "stateCode": "164"
+  },
+  {
+    "name": "Moste",
+    "stateCode": "164"
+  },
+  {
+    "name": "Kostel",
+    "stateCode": "165"
+  },
+  {
+    "name": "Križevci pri Ljutomeru",
+    "stateCode": "166"
+  },
+  {
+    "name": "Lovrenc na Pohorju",
+    "stateCode": "167"
+  },
+  {
+    "name": "Markovci",
+    "stateCode": "168"
+  },
+  {
+    "name": "Miklavž na Dravskem Polju",
+    "stateCode": "169"
+  },
+  {
+    "name": "Mirna Peč",
+    "stateCode": "170"
+  },
+  {
+    "name": "Oplotnica",
+    "stateCode": "171"
+  },
+  {
+    "name": "Podlehnik",
+    "stateCode": "172"
+  },
+  {
+    "name": "Polzela",
+    "stateCode": "173"
+  },
+  {
+    "name": "Prebold",
+    "stateCode": "174"
+  },
+  {
+    "name": "Prevalje",
+    "stateCode": "175"
+  },
+  {
+    "name": "Razkrižje",
+    "stateCode": "176"
+  },
+  {
+    "name": "Ribnica na Pohorju",
+    "stateCode": "177"
+  },
+  {
+    "name": "Selnica ob Dravi",
+    "stateCode": "178"
+  },
+  {
+    "name": "Sodražica",
+    "stateCode": "179"
+  },
+  {
+    "name": "Solčava",
+    "stateCode": "180"
+  },
+  {
+    "name": "Sv. Ana v Slov. Goricah",
+    "stateCode": "181"
+  },
+  {
+    "name": "Vitomarci",
+    "stateCode": "182"
+  },
+  {
+    "name": "Rožna Dolina",
+    "stateCode": "183"
+  },
+  {
+    "name": "Šempeter pri Gorici",
+    "stateCode": "183"
+  },
+  {
+    "name": "Vrtojba",
+    "stateCode": "183"
+  },
+  {
+    "name": "Tabor",
+    "stateCode": "184"
+  },
+  {
+    "name": "Trnovska Vas",
+    "stateCode": "185"
+  },
+  {
+    "name": "Črnuče District",
+    "stateCode": "186"
+  },
+  {
+    "name": "Trzin",
+    "stateCode": "186"
+  },
+  {
+    "name": "Velika Polana",
+    "stateCode": "187"
+  },
+  {
+    "name": "Veržej",
+    "stateCode": "188"
+  },
+  {
+    "name": "Vransko",
+    "stateCode": "189"
+  },
+  {
+    "name": "Gotovlje",
+    "stateCode": "190"
+  },
+  {
+    "name": "Šempeter v Savinj. Dolini",
+    "stateCode": "190"
+  },
+  {
+    "name": "Zabukovica",
+    "stateCode": "190"
+  },
+  {
+    "name": "Žalec",
+    "stateCode": "190"
+  },
+  {
+    "name": "Žetale",
+    "stateCode": "191"
+  },
+  {
+    "name": "Žirovnica",
+    "stateCode": "192"
+  },
+  {
+    "name": "Žužemberk",
+    "stateCode": "193"
+  },
+  {
+    "name": "Šmartno pri Litiji",
+    "stateCode": "194"
+  },
+  {
+    "name": "Apače",
+    "stateCode": "195"
+  },
+  {
+    "name": "Renče",
+    "stateCode": "201"
+  },
+  {
+    "name": "Volčja Draga",
+    "stateCode": "201"
+  },
+  {
+    "name": "Središče ob Dravi",
+    "stateCode": "202"
+  },
+  {
+    "name": "Straža",
+    "stateCode": "203"
+  },
+  {
+    "name": "Sv. Trojica v Slov. Goricah",
+    "stateCode": "204"
+  },
+  {
+    "name": "Sveti Tomaž",
+    "stateCode": "205"
+  },
+  {
+    "name": "Šmarjeta",
+    "stateCode": "206"
+  },
+  {
+    "name": "Sveti Jurij ob Ščavnici",
+    "stateCode": "210"
+  },
+  {
+    "name": "Šentrupert",
+    "stateCode": "211"
+  },
+  {
+    "name": "Ankaran",
+    "stateCode": "213"
+  }
+]

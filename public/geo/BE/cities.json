@@ -1,0 +1,2202 @@
+[
+  {
+    "name": "Brussels",
+    "stateCode": "BRU"
+  },
+  {
+    "name": "Aalst",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Aalter",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Aarschot",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Aartselaar",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Alken",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Alveringem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Antwerpen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Anzegem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ardooie",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Arendonk",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "As",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Asse",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Assenede",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Avelgem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Baarle-Hertog",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Balen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Beernem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Beerse",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Beersel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Begijnendijk",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Bekkevoort",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Beringen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Berlaar",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Berlare",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Bertem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Bever",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Beveren",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Bierbeek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Bilzen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Blankenberge",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Bocholt",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Boechout",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Bonheiden",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Boom",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Boortmeerbeek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Borgloon",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Bornem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Borsbeek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Boutersem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Brasschaat",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Brecht",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Bredene",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Bree",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Brugge",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Buggenhout",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Damme",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "De Haan",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "De Panne",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "De Pinte",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Deerlijk",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Deinze",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Denderleeuw",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Dendermonde",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Dentergem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Dessel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Destelbergen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Deurne",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Diegem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Diepenbeek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Diest",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Diksmuide",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Dilbeek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Drogenbos",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Duffel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Edegem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Eeklo",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Essen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Evergem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Galmaarden",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Gavere",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Geel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Geetbets",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Genk",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Gent",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Geraardsbergen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Gingelom",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Gistel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Glabbeek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Gooik",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Grimbergen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Grobbendonk",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Haacht",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Haaltert",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Halen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Halle",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Hamme",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Harelbeke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Hasselt",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Heers",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Heist-op-den-Berg",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Helchteren",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Hemiksem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Herent",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Herentals",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Herenthout",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Herk-de-Stad",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Herne",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Herselt",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Herzele",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Heusden",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Hoboken",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Hoegaarden",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Hoeilaart",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Hoeselt",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Holsbeek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Hooglede",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Hoogstraten",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Houthalen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Houthulst",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Hove",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Huldenberg",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Hulshout",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ichtegem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ieper",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ingelmunster",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Izegem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Jabbeke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kalmthout",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kampenhout",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kapelle-op-den-Bos",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kapellen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kaprijke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kasterlee",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Keerbergen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kinrooi",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Knesselare",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Knokke-Heist",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Koekelare",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Koksijde",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kontich",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kortemark",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kortenaken",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kortenberg",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kortessem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kortrijk",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kraainem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kruibeke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kruishoutem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Kuurne",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Laarne",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lanaken",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Landen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lebbeke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lede",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ledeberg",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ledegem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lendelede",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Leopoldsburg",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Leuven",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lichtervelde",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Liedekerke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lier",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lille",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Linkebeek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lint",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lochristi",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lokeren",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lommel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Londerzeel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lovendegem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lubbeek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Lummen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Maaseik",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Maasmechelen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Machelen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Maldegem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Mechelen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Meerhout",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Meise",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Melle",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Menen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Merchtem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Merelbeke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Merksplas",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Meulebeke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Middelkerke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Moerbeke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Mol",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Moorslede",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Mortsel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Nazareth",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Neerpelt",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Nevele",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Niel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Nieuwerkerken",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Nieuwpoort",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Nijlen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ninove",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Olen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Oostduinkerke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Oosterzele",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Oostkamp",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Oostmalle",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Oostrozebeke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Opglabbeek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Opwijk",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ostend",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Oud-Heverlee",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Oud-Turnhout",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Oudenaarde",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Oudenburg",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Overijse",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Overpelt",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Peer",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Pepingen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Perre",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Pittem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Poperinge",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Provincie Antwerpen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Provincie Limburg",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Provincie Oost-Vlaanderen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Provincie Vlaams-Brabant",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Provincie West-Vlaanderen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Putte",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Puurs",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ranst",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ravels",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Retie",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Riemst",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Rijkevorsel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Roeselare",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ronse",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Rotselaar",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ruiselede",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Rumst",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Schelle",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Schilde",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Schoten",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Amands",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Genesius-Rode",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Gillis-Waas",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Joris",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Katelijne-Waver",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Kruis",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Laureins",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Lievens-Houtem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Maria-Lierde",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Martens-Latem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Martens-Lennik",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Niklaas",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Pieters-Leeuw",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Pieters-Voeren",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Sint-Truiden",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Stabroek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Staden",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Steenokkerzeel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Stekene",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Temse",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Terkoest",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Ternat",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Tervuren",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Tessenderlo",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Tielt",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Tienen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Tongeren",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Torhout",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Tremelo",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Turnhout",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Veurne",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Vilvoorde",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Vorselaar",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Vosselaar",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Waarschoot",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Waasmunster",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wachtebeke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Waregem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wellen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wemmel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wenduine",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wervik",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Westerlo",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wetteren",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wevelgem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wezembeek-Oppem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wichelen",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wielsbeke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wijnegem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Willebroek",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wingene",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wommelgem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Wuustwezel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zandhoven",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zaventem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zedelgem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zeebrugge",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zele",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zelzate",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zemst",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zingem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zoersel",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zomergem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zonhoven",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zonnebeke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zottegem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zoutleeuw",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zuienkerke",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zulte",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zutendaal",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zwevegem",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Zwijndrecht",
+    "stateCode": "VLG"
+  },
+  {
+    "name": "Aiseau",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Amay",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Amblève",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Andenne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Anderlues",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Anhée",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Ans",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Anthisnes",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Antoing",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Arlon",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Assesse",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Ath",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Attert",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Aubange",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Aubel",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Awans",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Aywaille",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Baelen",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Basse Lasne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Bassenge",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Bastogne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Beaumont",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Beauraing",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Beauvechain",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Beloeil",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Berloz",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Bernissart",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Bertogne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Bertrix",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Beyne-Heusay",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Bièvre",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Binche",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Blégny",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Bouillon",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Boussu",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Braine-l'Alleud",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Braine-le-Château",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Braine-le-Comte",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Braives",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Brugelette",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Brunehault",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Bullange",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Burdinne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Butgenbach",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Celles",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Cerfontaine",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Chapelle-lez-Herlaimont",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Charleroi",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Chastre-Villeroux-Blanmont",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Châtelet",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Chaudfontaine",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Chaumont-Gistoux",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Chièvres",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Chimay",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Chiny",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Ciney",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Clavier",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Colfontaine",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Comblain-au-Pont",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Courcelles",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Court-Saint-Étienne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Couvin",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Crisnée",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Dalhem",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Daverdisse",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Dinant",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Dison",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Doische",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Donceel",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Dour",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Durbuy",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Écaussinnes-d’Enghien",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Éghezée",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Ellezelles",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Enghien",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Engis",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Érezée",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Erquelinnes",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Esneux",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Estaimpuis",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Estinnes-au-Val",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Étalle",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Eupen",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Faimes",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Farciennes",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Fauvillers",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Ferrières",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Fexhe-le-Haut-Clocher",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Flémalle-Haute",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Fléron",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Fleurus",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Flobecq",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Floreffe",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Florennes",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Florenville",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Forville",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Fosses-la-Ville",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Frameries",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Frasnes-lez-Buissenal",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Froidchapelle",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Gedinne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Geer",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Gembloux",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Genappe",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Gerpinnes",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Gesves",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Gouvy",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Grez-Doiceau",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Habay-la-Vieille",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Hamoir",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Hamois",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Hannut",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Hastière-Lavaux",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Havelange",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Hensies",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Herbeumont",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Héron",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Herstal",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Herve",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Hotton",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Houffalize",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Houyet",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Huy",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Incourt",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Ittre",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Jalhay",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Jodoigne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Juprelle",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Jurbise",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "La Bruyère",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "La Calamine",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "La Hulpe",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "La Louvière",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "La Roche-en-Ardenne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Léglise",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Lens",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Lessines",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Libin",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Liège",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Lierneux",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Limbourg",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Lincent",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Lobbes",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Lontzen",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Louvain-la-Neuve",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Malmédy",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Manage",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Manhay",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Marche-en-Famenne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Marchin",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Martelange",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Meix-devant-Virton",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Merbes-le-Château",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Messancy",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Mettet",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Modave",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Momignies",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Mons",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Mons-lez-Liège",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Mont-Saint-Guibert",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Morlanwelz-Mariemont",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Mouscron",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Musson",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Namur",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Nandrin",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Nassogne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Neufchâteau",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Nivelles",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Noville-les-Bois",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Ohey",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Olne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Onhaye",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Oreye",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Ottignies",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Ouffet",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Oupeye",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Paliseul",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Pecq",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Pepinster",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Péruwelz",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Perwez",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Philippeville",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Plombières",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Pont-à-Celles",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Profondeville",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Province de Liège",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Province de Namur",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Province du Brabant Wallon",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Province du Hainaut",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Province du Luxembourg",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Quaregnon",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Quévy-le-Petit",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Quiévrain",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Raeren",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Ramillies",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Rebecq-Rognon",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Remicourt",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Rendeux",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Rixensart",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Rochefort",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Roeulx",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Rouvroy",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Rumes",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Saint-Ghislain",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Saint-Hubert",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Saint-Léger",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Saint-Nicolas",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Saint-Vith",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Sainte-Ode",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Seneffe",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Seraing",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Silly",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Soignies",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Sombreffe",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Somme-Leuze",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Soumagne",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Spa",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Sprimont",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Stavelot",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Stoumont",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Tellin",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Tenneville",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Theux",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Thuin",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Tinlot",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Tintigny",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Tournai",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Trois-Ponts",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Trooz",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Tubize",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Vaux-sur-Sûre",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Verlaine",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Verviers",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Vielsalm",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Villers-la-Ville",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Villers-le-Bouillet",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Virton",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Visé",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Waimes",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Walcourt",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Walhain-Saint-Paul",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Wanze",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Waremme",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Wasseiges",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Waterloo",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Wavre",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Welkenraedt",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Wellin",
+    "stateCode": "WAL"
+  },
+  {
+    "name": "Yvoir",
+    "stateCode": "WAL"
+  }
+]

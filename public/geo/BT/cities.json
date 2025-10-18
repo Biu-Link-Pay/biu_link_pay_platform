@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Paro",
+    "stateCode": "11"
+  },
+  {
+    "name": "Daphu",
+    "stateCode": "12"
+  },
+  {
+    "name": "Phuntsholing",
+    "stateCode": "12"
+  },
+  {
+    "name": "Tsimasham",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ha",
+    "stateCode": "13"
+  },
+  {
+    "name": "Samtse",
+    "stateCode": "14"
+  },
+  {
+    "name": "Thimphu",
+    "stateCode": "15"
+  },
+  {
+    "name": "Trongsa",
+    "stateCode": "21"
+  },
+  {
+    "name": "Tsirang",
+    "stateCode": "21"
+  },
+  {
+    "name": "Daga",
+    "stateCode": "22"
+  },
+  {
+    "name": "Wangdue Phodrang",
+    "stateCode": "22"
+  },
+  {
+    "name": "Pajo",
+    "stateCode": "23"
+  },
+  {
+    "name": "Punākha",
+    "stateCode": "23"
+  },
+  {
+    "name": "Trashi Yangtse",
+    "stateCode": "24"
+  },
+  {
+    "name": "Sarpang",
+    "stateCode": "31"
+  },
+  {
+    "name": "Jakar",
+    "stateCode": "33"
+  },
+  {
+    "name": "Panbang",
+    "stateCode": "34"
+  },
+  {
+    "name": "Shemgang",
+    "stateCode": "34"
+  },
+  {
+    "name": "Trashigang",
+    "stateCode": "41"
+  },
+  {
+    "name": "Mongar",
+    "stateCode": "42"
+  },
+  {
+    "name": "Pemagatshel",
+    "stateCode": "43"
+  },
+  {
+    "name": "Lhuentse",
+    "stateCode": "44"
+  },
+  {
+    "name": "Samdrup Jongkhar",
+    "stateCode": "45"
+  },
+  {
+    "name": "Gasa",
+    "stateCode": "GA"
+  }
+]

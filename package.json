@@ -13,7 +13,8 @@
     "type-check": "vue-tsc --noEmit",
     "clean": "rm -rf dist node_modules/.vite",
     "clean:all": "rm -rf dist node_modules pnpm-lock.yaml",
-    "reinstall": "pnpm clean:all && pnpm install"
+    "reinstall": "pnpm clean:all && pnpm install",
+    "generate:geo": "node scripts/generate-geo-data.mjs"
   },
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "^4.6.2",

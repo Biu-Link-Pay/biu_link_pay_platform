@@ -1,0 +1,622 @@
+[
+  {
+    "name": "Bonanza",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Prinzapolka",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Puerto Cabezas",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Siuna",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Waslala",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Waspán",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Bluefields",
+    "stateCode": "AS"
+  },
+  {
+    "name": "Bocana de Paiwas",
+    "stateCode": "AS"
+  },
+  {
+    "name": "Corn Island",
+    "stateCode": "AS"
+  },
+  {
+    "name": "El Rama",
+    "stateCode": "AS"
+  },
+  {
+    "name": "El Tortuguero",
+    "stateCode": "AS"
+  },
+  {
+    "name": "Kukrahill",
+    "stateCode": "AS"
+  },
+  {
+    "name": "La Cruz de Río Grande",
+    "stateCode": "AS"
+  },
+  {
+    "name": "Laguna de Perlas",
+    "stateCode": "AS"
+  },
+  {
+    "name": "Muelle de los Bueyes",
+    "stateCode": "AS"
+  },
+  {
+    "name": "Nueva Guinea",
+    "stateCode": "AS"
+  },
+  {
+    "name": "Boaco",
+    "stateCode": "BO"
+  },
+  {
+    "name": "Camoapa",
+    "stateCode": "BO"
+  },
+  {
+    "name": "San José de los Remates",
+    "stateCode": "BO"
+  },
+  {
+    "name": "San Lorenzo",
+    "stateCode": "BO"
+  },
+  {
+    "name": "Santa Lucía",
+    "stateCode": "BO"
+  },
+  {
+    "name": "Teustepe",
+    "stateCode": "BO"
+  },
+  {
+    "name": "Diriamba",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Dolores",
+    "stateCode": "CA"
+  },
+  {
+    "name": "El Rosario",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Jinotepe",
+    "stateCode": "CA"
+  },
+  {
+    "name": "La Conquista",
+    "stateCode": "CA"
+  },
+  {
+    "name": "La Paz de Carazo",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Municipio de San Marcos",
+    "stateCode": "CA"
+  },
+  {
+    "name": "San Marcos",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Santa Teresa",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Chichigalpa",
+    "stateCode": "CI"
+  },
+  {
+    "name": "Chinandega",
+    "stateCode": "CI"
+  },
+  {
+    "name": "Cinco Pinos",
+    "stateCode": "CI"
+  },
+  {
+    "name": "Corinto",
+    "stateCode": "CI"
+  },
+  {
+    "name": "El Realejo",
+    "stateCode": "CI"
+  },
+  {
+    "name": "El Viejo",
+    "stateCode": "CI"
+  },
+  {
+    "name": "Jiquilillo",
+    "stateCode": "CI"
+  },
+  {
+    "name": "Municipio de San Francisco del Norte",
+    "stateCode": "CI"
+  },
+  {
+    "name": "Posoltega",
+    "stateCode": "CI"
+  },
+  {
+    "name": "Puerto Morazán",
+    "stateCode": "CI"
+  },
+  {
+    "name": "Santo Tomás del Norte",
+    "stateCode": "CI"
+  },
+  {
+    "name": "Somotillo",
+    "stateCode": "CI"
+  },
+  {
+    "name": "Acoyapa",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Comalapa",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Cuapa",
+    "stateCode": "CO"
+  },
+  {
+    "name": "El Ayote",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Juigalpa",
+    "stateCode": "CO"
+  },
+  {
+    "name": "La Libertad",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Santo Domingo",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Santo Tomás",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Villa Sandino",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Condega",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Estelí",
+    "stateCode": "ES"
+  },
+  {
+    "name": "La Trinidad",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Pueblo Nuevo",
+    "stateCode": "ES"
+  },
+  {
+    "name": "San Juan de Limay",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Diriá",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Diriomo",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Granada",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Nandaime",
+    "stateCode": "GR"
+  },
+  {
+    "name": "El Cuá",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Jinotega",
+    "stateCode": "JI"
+  },
+  {
+    "name": "La Concordia",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Las Praderas",
+    "stateCode": "JI"
+  },
+  {
+    "name": "LLano de La Cruz",
+    "stateCode": "JI"
+  },
+  {
+    "name": "San José de Bocay",
+    "stateCode": "JI"
+  },
+  {
+    "name": "San Rafael del Norte",
+    "stateCode": "JI"
+  },
+  {
+    "name": "San Sebastián de Yalí",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Achuapa",
+    "stateCode": "LE"
+  },
+  {
+    "name": "El Jicaral",
+    "stateCode": "LE"
+  },
+  {
+    "name": "El Sauce",
+    "stateCode": "LE"
+  },
+  {
+    "name": "La Paz Centro",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Larreynaga",
+    "stateCode": "LE"
+  },
+  {
+    "name": "León",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Nagarote",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Quezalguaque",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Santa Rosa del Peñón",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Telica",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Las Sabanas",
+    "stateCode": "MD"
+  },
+  {
+    "name": "Palacagüina",
+    "stateCode": "MD"
+  },
+  {
+    "name": "San José de Cusmapa",
+    "stateCode": "MD"
+  },
+  {
+    "name": "San Juan de Río Coco",
+    "stateCode": "MD"
+  },
+  {
+    "name": "San Lucas",
+    "stateCode": "MD"
+  },
+  {
+    "name": "Somoto",
+    "stateCode": "MD"
+  },
+  {
+    "name": "Telpaneca",
+    "stateCode": "MD"
+  },
+  {
+    "name": "Totogalpa",
+    "stateCode": "MD"
+  },
+  {
+    "name": "Yalagüina",
+    "stateCode": "MD"
+  },
+  {
+    "name": "Ciudad Sandino",
+    "stateCode": "MN"
+  },
+  {
+    "name": "El Crucero",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Managua",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Masachapa",
+    "stateCode": "MN"
+  },
+  {
+    "name": "San Rafael del Sur",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Ticuantepe",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Tipitapa",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Valle San Francisco",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Villa El Carmen",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Catarina",
+    "stateCode": "MS"
+  },
+  {
+    "name": "La Concepción",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Masatepe",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Masaya",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Municipio de Masatepe",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Municipio de Nandasmo",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Municipio de Niquinohomo",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Municipio de San Juan de Oriente",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Nandasmo",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Nindirí",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Niquinohomo",
+    "stateCode": "MS"
+  },
+  {
+    "name": "San Juan de Oriente",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Tisma",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Ciudad Darío",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Matagalpa",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Matiguás",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Muy Muy",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Río Blanco",
+    "stateCode": "MT"
+  },
+  {
+    "name": "San Dionisio",
+    "stateCode": "MT"
+  },
+  {
+    "name": "San Ramón",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Terrabona",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Ciudad Antigua",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Dipilto",
+    "stateCode": "NS"
+  },
+  {
+    "name": "El Jícaro",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Jalapa",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Macuelizo",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Mozonte",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Murra",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Ocotal",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Quilalí",
+    "stateCode": "NS"
+  },
+  {
+    "name": "San Fernando",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Santa María",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Wiwilí",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Altagracia",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Belén",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Buenos Aires",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Cárdenas",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Moyogalpa",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Municipio de Altagracia",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Municipio de Belén",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Municipio de Buenos Aires",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Municipio de Cárdenas",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Municipio de Moyogalpa",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Municipio de Potosí",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Municipio de Rivas",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Municipio de San Jorge",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Municipio de San Juan del Sur",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Municipio de Tola",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Potosí",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Rivas",
+    "stateCode": "RI"
+  },
+  {
+    "name": "San Jorge",
+    "stateCode": "RI"
+  },
+  {
+    "name": "San Juan del Sur",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Tola",
+    "stateCode": "RI"
+  },
+  {
+    "name": "El Almendro",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Greytown",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Morrito",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Miguelito",
+    "stateCode": "SJ"
+  }
+]

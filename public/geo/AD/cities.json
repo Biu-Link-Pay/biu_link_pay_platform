@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Canillo",
+    "stateCode": "02"
+  },
+  {
+    "name": "El Tarter",
+    "stateCode": "02"
+  },
+  {
+    "name": "Encamp",
+    "stateCode": "03"
+  },
+  {
+    "name": "Pas de la Casa",
+    "stateCode": "03"
+  },
+  {
+    "name": "Arinsal",
+    "stateCode": "04"
+  },
+  {
+    "name": "la Massana",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ordino",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sant Julià de Lòria",
+    "stateCode": "06"
+  },
+  {
+    "name": "Andorra la Vella",
+    "stateCode": "07"
+  },
+  {
+    "name": "les Escaldes",
+    "stateCode": "08"
+  }
+]

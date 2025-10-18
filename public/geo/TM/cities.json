@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Abadan",
+    "stateCode": "A"
+  },
+  {
+    "name": "Annau",
+    "stateCode": "A"
+  },
+  {
+    "name": "Arçabil",
+    "stateCode": "A"
+  },
+  {
+    "name": "Baharly",
+    "stateCode": "A"
+  },
+  {
+    "name": "Kaka",
+    "stateCode": "A"
+  },
+  {
+    "name": "Tejen",
+    "stateCode": "A"
+  },
+  {
+    "name": "Balkanabat",
+    "stateCode": "B"
+  },
+  {
+    "name": "Bereket",
+    "stateCode": "B"
+  },
+  {
+    "name": "Gumdag",
+    "stateCode": "B"
+  },
+  {
+    "name": "Magtymguly",
+    "stateCode": "B"
+  },
+  {
+    "name": "Serdar",
+    "stateCode": "B"
+  },
+  {
+    "name": "Türkmenbaşy",
+    "stateCode": "B"
+  },
+  {
+    "name": "Akdepe",
+    "stateCode": "D"
+  },
+  {
+    "name": "Boldumsaz",
+    "stateCode": "D"
+  },
+  {
+    "name": "Daşoguz",
+    "stateCode": "D"
+  },
+  {
+    "name": "Köneürgench",
+    "stateCode": "D"
+  },
+  {
+    "name": "Tagta",
+    "stateCode": "D"
+  },
+  {
+    "name": "Yylanly",
+    "stateCode": "D"
+  },
+  {
+    "name": "Atamyrat",
+    "stateCode": "L"
+  },
+  {
+    "name": "Farap",
+    "stateCode": "L"
+  },
+  {
+    "name": "Gazojak",
+    "stateCode": "L"
+  },
+  {
+    "name": "Gowurdak",
+    "stateCode": "L"
+  },
+  {
+    "name": "Saýat",
+    "stateCode": "L"
+  },
+  {
+    "name": "Türkmenabat",
+    "stateCode": "L"
+  },
+  {
+    "name": "Bayramaly",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mary",
+    "stateCode": "M"
+  },
+  {
+    "name": "Serhetabat",
+    "stateCode": "M"
+  },
+  {
+    "name": "Seydi",
+    "stateCode": "M"
+  },
+  {
+    "name": "Yolöten",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ashgabat",
+    "stateCode": "S"
+  }
+]

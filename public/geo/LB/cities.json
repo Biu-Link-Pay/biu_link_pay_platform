@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Caza de Aakkar",
+    "stateCode": "AK"
+  },
+  {
+    "name": "Batroûn",
+    "stateCode": "AS"
+  },
+  {
+    "name": "Bcharré",
+    "stateCode": "AS"
+  },
+  {
+    "name": "Tripoli",
+    "stateCode": "AS"
+  },
+  {
+    "name": "Beirut",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Ra’s Bayrūt",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Baalbek",
+    "stateCode": "BH"
+  },
+  {
+    "name": "Caza de Baalbek",
+    "stateCode": "BH"
+  },
+  {
+    "name": "Aanjar",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Zahlé",
+    "stateCode": "BI"
+  },
+  {
+    "name": "En Nâqoûra",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Ghazieh",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Sidon",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Tyre",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Baabda",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Bhamdoun",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Bhamdoûn el Mhatta",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Caza de Baabda",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Jbaïl",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Jounieh",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Ain Ebel",
+    "stateCode": "NA"
+  },
+  {
+    "name": "Caza de Bent Jbaïl",
+    "stateCode": "NA"
+  },
+  {
+    "name": "Caza de Nabatîyé",
+    "stateCode": "NA"
+  },
+  {
+    "name": "Habboûch",
+    "stateCode": "NA"
+  },
+  {
+    "name": "Marjayoûn",
+    "stateCode": "NA"
+  },
+  {
+    "name": "Nabatîyé et Tahta",
+    "stateCode": "NA"
+  }
+]

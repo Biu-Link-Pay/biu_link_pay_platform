@@ -1,0 +1,2402 @@
+[
+  {
+    "name": "Almirante",
+    "stateCode": "1"
+  },
+  {
+    "name": "Barranco",
+    "stateCode": "1"
+  },
+  {
+    "name": "Barranco Adentro",
+    "stateCode": "1"
+  },
+  {
+    "name": "Bastimentos",
+    "stateCode": "1"
+  },
+  {
+    "name": "Bocas del Toro",
+    "stateCode": "1"
+  },
+  {
+    "name": "Cauchero",
+    "stateCode": "1"
+  },
+  {
+    "name": "Changuinola",
+    "stateCode": "1"
+  },
+  {
+    "name": "Chiriquí Grande",
+    "stateCode": "1"
+  },
+  {
+    "name": "Distrito Chiriquí Grande",
+    "stateCode": "1"
+  },
+  {
+    "name": "Distrito de Bocas del Toro",
+    "stateCode": "1"
+  },
+  {
+    "name": "Distrito de Changuinola",
+    "stateCode": "1"
+  },
+  {
+    "name": "El Empalme",
+    "stateCode": "1"
+  },
+  {
+    "name": "El Silencio",
+    "stateCode": "1"
+  },
+  {
+    "name": "Guabito",
+    "stateCode": "1"
+  },
+  {
+    "name": "Isla Bastimentos",
+    "stateCode": "1"
+  },
+  {
+    "name": "La Mesa",
+    "stateCode": "1"
+  },
+  {
+    "name": "Miramar",
+    "stateCode": "1"
+  },
+  {
+    "name": "Punta Laurel",
+    "stateCode": "1"
+  },
+  {
+    "name": "Punta Peña",
+    "stateCode": "1"
+  },
+  {
+    "name": "Punta Róbalo",
+    "stateCode": "1"
+  },
+  {
+    "name": "Valle del Risco",
+    "stateCode": "1"
+  },
+  {
+    "name": "Alto del Espino",
+    "stateCode": "10"
+  },
+  {
+    "name": "Altos de San Francisco",
+    "stateCode": "10"
+  },
+  {
+    "name": "Arenosa",
+    "stateCode": "10"
+  },
+  {
+    "name": "Arosemena",
+    "stateCode": "10"
+  },
+  {
+    "name": "Arraiján",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bejuco",
+    "stateCode": "10"
+  },
+  {
+    "name": "Buenos Aires",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cabuya",
+    "stateCode": "10"
+  },
+  {
+    "name": "Caimito",
+    "stateCode": "10"
+  },
+  {
+    "name": "Capira",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cermeño",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cerro Cama",
+    "stateCode": "10"
+  },
+  {
+    "name": "Chame",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cirí de Los Sotos",
+    "stateCode": "10"
+  },
+  {
+    "name": "Distrito Arraiján",
+    "stateCode": "10"
+  },
+  {
+    "name": "Distrito de Capira",
+    "stateCode": "10"
+  },
+  {
+    "name": "Distrito de Chame",
+    "stateCode": "10"
+  },
+  {
+    "name": "Distrito de La Chorrera",
+    "stateCode": "10"
+  },
+  {
+    "name": "Distrito de San Carlos",
+    "stateCode": "10"
+  },
+  {
+    "name": "El Cacao",
+    "stateCode": "10"
+  },
+  {
+    "name": "El Coco",
+    "stateCode": "10"
+  },
+  {
+    "name": "El Espavé",
+    "stateCode": "10"
+  },
+  {
+    "name": "El Espino",
+    "stateCode": "10"
+  },
+  {
+    "name": "El Higo",
+    "stateCode": "10"
+  },
+  {
+    "name": "El Líbano",
+    "stateCode": "10"
+  },
+  {
+    "name": "Guadalupe",
+    "stateCode": "10"
+  },
+  {
+    "name": "Guayabito",
+    "stateCode": "10"
+  },
+  {
+    "name": "Hato Montaña",
+    "stateCode": "10"
+  },
+  {
+    "name": "La Chorrera",
+    "stateCode": "10"
+  },
+  {
+    "name": "La Ermita",
+    "stateCode": "10"
+  },
+  {
+    "name": "La Herradura",
+    "stateCode": "10"
+  },
+  {
+    "name": "La Laguna",
+    "stateCode": "10"
+  },
+  {
+    "name": "La Mitra",
+    "stateCode": "10"
+  },
+  {
+    "name": "La Pesa",
+    "stateCode": "10"
+  },
+  {
+    "name": "Las Colinas",
+    "stateCode": "10"
+  },
+  {
+    "name": "Las Lajas",
+    "stateCode": "10"
+  },
+  {
+    "name": "Las Uvas",
+    "stateCode": "10"
+  },
+  {
+    "name": "Llano Largo",
+    "stateCode": "10"
+  },
+  {
+    "name": "Los Llanitos",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mendoza",
+    "stateCode": "10"
+  },
+  {
+    "name": "Nueva Arenosa",
+    "stateCode": "10"
+  },
+  {
+    "name": "Nueva Gorgona",
+    "stateCode": "10"
+  },
+  {
+    "name": "Nuevo Arraiján",
+    "stateCode": "10"
+  },
+  {
+    "name": "Nuevo Emperador",
+    "stateCode": "10"
+  },
+  {
+    "name": "Playa Leona",
+    "stateCode": "10"
+  },
+  {
+    "name": "Potrero Grande",
+    "stateCode": "10"
+  },
+  {
+    "name": "Puerto Caimito",
+    "stateCode": "10"
+  },
+  {
+    "name": "Río Congo",
+    "stateCode": "10"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "10"
+  },
+  {
+    "name": "San José",
+    "stateCode": "10"
+  },
+  {
+    "name": "San Vicente de Bique",
+    "stateCode": "10"
+  },
+  {
+    "name": "Santa Clara",
+    "stateCode": "10"
+  },
+  {
+    "name": "Santa Rita",
+    "stateCode": "10"
+  },
+  {
+    "name": "Sorá",
+    "stateCode": "10"
+  },
+  {
+    "name": "Veracruz",
+    "stateCode": "10"
+  },
+  {
+    "name": "Villa Carmen",
+    "stateCode": "10"
+  },
+  {
+    "name": "Villa Rosario",
+    "stateCode": "10"
+  },
+  {
+    "name": "Vista Alegre",
+    "stateCode": "10"
+  },
+  {
+    "name": "Aguadulce",
+    "stateCode": "2"
+  },
+  {
+    "name": "Aguas Blancas",
+    "stateCode": "2"
+  },
+  {
+    "name": "Alto de La Estancia",
+    "stateCode": "2"
+  },
+  {
+    "name": "Antón",
+    "stateCode": "2"
+  },
+  {
+    "name": "Barranco Colorado",
+    "stateCode": "2"
+  },
+  {
+    "name": "Caballero",
+    "stateCode": "2"
+  },
+  {
+    "name": "Cabuya",
+    "stateCode": "2"
+  },
+  {
+    "name": "Caimito",
+    "stateCode": "2"
+  },
+  {
+    "name": "Cañaveral",
+    "stateCode": "2"
+  },
+  {
+    "name": "Capellanía",
+    "stateCode": "2"
+  },
+  {
+    "name": "Chigoré",
+    "stateCode": "2"
+  },
+  {
+    "name": "Chiguirí Arriba",
+    "stateCode": "2"
+  },
+  {
+    "name": "Churuquita Chiquita",
+    "stateCode": "2"
+  },
+  {
+    "name": "Churuquita Grande",
+    "stateCode": "2"
+  },
+  {
+    "name": "Coclé",
+    "stateCode": "2"
+  },
+  {
+    "name": "Distrito de Aguadulce",
+    "stateCode": "2"
+  },
+  {
+    "name": "Distrito de Antón",
+    "stateCode": "2"
+  },
+  {
+    "name": "Distrito de La Pintada",
+    "stateCode": "2"
+  },
+  {
+    "name": "Distrito de Natá",
+    "stateCode": "2"
+  },
+  {
+    "name": "Distrito de Olá",
+    "stateCode": "2"
+  },
+  {
+    "name": "Distrito Penonomé",
+    "stateCode": "2"
+  },
+  {
+    "name": "El Caño",
+    "stateCode": "2"
+  },
+  {
+    "name": "El Chirú",
+    "stateCode": "2"
+  },
+  {
+    "name": "El Coco",
+    "stateCode": "2"
+  },
+  {
+    "name": "El Copé",
+    "stateCode": "2"
+  },
+  {
+    "name": "El Cortezo",
+    "stateCode": "2"
+  },
+  {
+    "name": "El Cristo",
+    "stateCode": "2"
+  },
+  {
+    "name": "El Potrero",
+    "stateCode": "2"
+  },
+  {
+    "name": "El Retiro",
+    "stateCode": "2"
+  },
+  {
+    "name": "El Roble",
+    "stateCode": "2"
+  },
+  {
+    "name": "Entradero",
+    "stateCode": "2"
+  },
+  {
+    "name": "Farallón",
+    "stateCode": "2"
+  },
+  {
+    "name": "Guzman",
+    "stateCode": "2"
+  },
+  {
+    "name": "Juan Díaz",
+    "stateCode": "2"
+  },
+  {
+    "name": "La Loma",
+    "stateCode": "2"
+  },
+  {
+    "name": "La Pintada",
+    "stateCode": "2"
+  },
+  {
+    "name": "Las Huacas del Quije",
+    "stateCode": "2"
+  },
+  {
+    "name": "Las Marias",
+    "stateCode": "2"
+  },
+  {
+    "name": "Las Minas",
+    "stateCode": "2"
+  },
+  {
+    "name": "Las Sabanas",
+    "stateCode": "2"
+  },
+  {
+    "name": "Llano Grande",
+    "stateCode": "2"
+  },
+  {
+    "name": "Llano Marín",
+    "stateCode": "2"
+  },
+  {
+    "name": "Los Pollos",
+    "stateCode": "2"
+  },
+  {
+    "name": "Natá",
+    "stateCode": "2"
+  },
+  {
+    "name": "Nuestro Amo",
+    "stateCode": "2"
+  },
+  {
+    "name": "Olá",
+    "stateCode": "2"
+  },
+  {
+    "name": "Penonomé",
+    "stateCode": "2"
+  },
+  {
+    "name": "Piedras Gordas",
+    "stateCode": "2"
+  },
+  {
+    "name": "Pocrí",
+    "stateCode": "2"
+  },
+  {
+    "name": "Río Grande",
+    "stateCode": "2"
+  },
+  {
+    "name": "Río Hato",
+    "stateCode": "2"
+  },
+  {
+    "name": "San Juan de Dios",
+    "stateCode": "2"
+  },
+  {
+    "name": "Toabré",
+    "stateCode": "2"
+  },
+  {
+    "name": "Toza",
+    "stateCode": "2"
+  },
+  {
+    "name": "Vista Hermosa",
+    "stateCode": "2"
+  },
+  {
+    "name": "Buena Vista",
+    "stateCode": "3"
+  },
+  {
+    "name": "Cativá",
+    "stateCode": "3"
+  },
+  {
+    "name": "Coclé del Norte",
+    "stateCode": "3"
+  },
+  {
+    "name": "Colón",
+    "stateCode": "3"
+  },
+  {
+    "name": "Cristóbal",
+    "stateCode": "3"
+  },
+  {
+    "name": "Distrito de Chagres",
+    "stateCode": "3"
+  },
+  {
+    "name": "Distrito de Colón",
+    "stateCode": "3"
+  },
+  {
+    "name": "Distrito de Donoso",
+    "stateCode": "3"
+  },
+  {
+    "name": "Distrito de Portobelo",
+    "stateCode": "3"
+  },
+  {
+    "name": "Distrito de Santa Isabel",
+    "stateCode": "3"
+  },
+  {
+    "name": "El Giral",
+    "stateCode": "3"
+  },
+  {
+    "name": "El Guabo",
+    "stateCode": "3"
+  },
+  {
+    "name": "El Valle de la Unión",
+    "stateCode": "3"
+  },
+  {
+    "name": "Escobal",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gatún",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gatuncillo",
+    "stateCode": "3"
+  },
+  {
+    "name": "Las Margaritas",
+    "stateCode": "3"
+  },
+  {
+    "name": "María Chiquita",
+    "stateCode": "3"
+  },
+  {
+    "name": "Miramar",
+    "stateCode": "3"
+  },
+  {
+    "name": "Nombre de Dios",
+    "stateCode": "3"
+  },
+  {
+    "name": "Nuevo Chagres",
+    "stateCode": "3"
+  },
+  {
+    "name": "Nuevo San Juan",
+    "stateCode": "3"
+  },
+  {
+    "name": "Nuevo Vigía",
+    "stateCode": "3"
+  },
+  {
+    "name": "Palenque",
+    "stateCode": "3"
+  },
+  {
+    "name": "Palmas Bellas",
+    "stateCode": "3"
+  },
+  {
+    "name": "Palmira",
+    "stateCode": "3"
+  },
+  {
+    "name": "Playa Chiquita",
+    "stateCode": "3"
+  },
+  {
+    "name": "Portobelo",
+    "stateCode": "3"
+  },
+  {
+    "name": "Puerto Escondido",
+    "stateCode": "3"
+  },
+  {
+    "name": "Puerto Pilón",
+    "stateCode": "3"
+  },
+  {
+    "name": "Quebrada Bonita Adentro",
+    "stateCode": "3"
+  },
+  {
+    "name": "Río Alejandro",
+    "stateCode": "3"
+  },
+  {
+    "name": "Río Duque",
+    "stateCode": "3"
+  },
+  {
+    "name": "Río Rita",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sabanitas",
+    "stateCode": "3"
+  },
+  {
+    "name": "Santa Isabel",
+    "stateCode": "3"
+  },
+  {
+    "name": "Santa Rita Arriba",
+    "stateCode": "3"
+  },
+  {
+    "name": "Viento Frío",
+    "stateCode": "3"
+  },
+  {
+    "name": "Alanje",
+    "stateCode": "4"
+  },
+  {
+    "name": "Algarrobos Arriba",
+    "stateCode": "4"
+  },
+  {
+    "name": "Alto Boquete",
+    "stateCode": "4"
+  },
+  {
+    "name": "Aserrío de Gariché",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bágala",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bajo Boquete",
+    "stateCode": "4"
+  },
+  {
+    "name": "Barrio Guadalupe",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bijagual",
+    "stateCode": "4"
+  },
+  {
+    "name": "Boca Chica",
+    "stateCode": "4"
+  },
+  {
+    "name": "Boca del Monte",
+    "stateCode": "4"
+  },
+  {
+    "name": "Boquerón",
+    "stateCode": "4"
+  },
+  {
+    "name": "Boquete",
+    "stateCode": "4"
+  },
+  {
+    "name": "Breñón",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bugaba",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bugabita Arriba",
+    "stateCode": "4"
+  },
+  {
+    "name": "Caimito",
+    "stateCode": "4"
+  },
+  {
+    "name": "Caldera",
+    "stateCode": "4"
+  },
+  {
+    "name": "Cañas Gordas",
+    "stateCode": "4"
+  },
+  {
+    "name": "Celmira",
+    "stateCode": "4"
+  },
+  {
+    "name": "Cerro Punta",
+    "stateCode": "4"
+  },
+  {
+    "name": "Cerro Viejo",
+    "stateCode": "4"
+  },
+  {
+    "name": "Chiriquí",
+    "stateCode": "4"
+  },
+  {
+    "name": "Cochea Abajo",
+    "stateCode": "4"
+  },
+  {
+    "name": "Cordillera",
+    "stateCode": "4"
+  },
+  {
+    "name": "David",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de Alanje",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de Barú",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de Boquerón",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de Boquete",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de Bugaba",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de David",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de Dolega",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de Gualaca",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de Remedios",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de Renacimiento",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de San Félix",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de San Lorenzo",
+    "stateCode": "4"
+  },
+  {
+    "name": "Distrito de Tolé",
+    "stateCode": "4"
+  },
+  {
+    "name": "Divalá",
+    "stateCode": "4"
+  },
+  {
+    "name": "Dolega District",
+    "stateCode": "4"
+  },
+  {
+    "name": "El Nancito",
+    "stateCode": "4"
+  },
+  {
+    "name": "El Palmar",
+    "stateCode": "4"
+  },
+  {
+    "name": "El Porvenir",
+    "stateCode": "4"
+  },
+  {
+    "name": "El Tejar",
+    "stateCode": "4"
+  },
+  {
+    "name": "Finca Blanco",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gómez",
+    "stateCode": "4"
+  },
+  {
+    "name": "Guabal",
+    "stateCode": "4"
+  },
+  {
+    "name": "Guaca Arriba",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gualaca",
+    "stateCode": "4"
+  },
+  {
+    "name": "Guarumal",
+    "stateCode": "4"
+  },
+  {
+    "name": "Guayabal",
+    "stateCode": "4"
+  },
+  {
+    "name": "Horconcitos",
+    "stateCode": "4"
+  },
+  {
+    "name": "La Concepción",
+    "stateCode": "4"
+  },
+  {
+    "name": "La Esperanza",
+    "stateCode": "4"
+  },
+  {
+    "name": "La Estrella",
+    "stateCode": "4"
+  },
+  {
+    "name": "Lajas Adentro",
+    "stateCode": "4"
+  },
+  {
+    "name": "Lajas de Tolé",
+    "stateCode": "4"
+  },
+  {
+    "name": "Las Lajas",
+    "stateCode": "4"
+  },
+  {
+    "name": "Las Lomas",
+    "stateCode": "4"
+  },
+  {
+    "name": "Limones",
+    "stateCode": "4"
+  },
+  {
+    "name": "Los Algarrobos",
+    "stateCode": "4"
+  },
+  {
+    "name": "Los Anastacios",
+    "stateCode": "4"
+  },
+  {
+    "name": "Los Ángeles",
+    "stateCode": "4"
+  },
+  {
+    "name": "Los Naranjos",
+    "stateCode": "4"
+  },
+  {
+    "name": "Manaca Civil",
+    "stateCode": "4"
+  },
+  {
+    "name": "Manaca Norte",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mata del Nance",
+    "stateCode": "4"
+  },
+  {
+    "name": "Monte Lirio",
+    "stateCode": "4"
+  },
+  {
+    "name": "Nuevo San Carlitos",
+    "stateCode": "4"
+  },
+  {
+    "name": "Paja de Sombrero",
+    "stateCode": "4"
+  },
+  {
+    "name": "Palmira",
+    "stateCode": "4"
+  },
+  {
+    "name": "Palmira Centro",
+    "stateCode": "4"
+  },
+  {
+    "name": "Paraíso",
+    "stateCode": "4"
+  },
+  {
+    "name": "Paso Canoas Arriba",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pedregal",
+    "stateCode": "4"
+  },
+  {
+    "name": "Plaza de Caisán",
+    "stateCode": "4"
+  },
+  {
+    "name": "Potrerillos Abajo",
+    "stateCode": "4"
+  },
+  {
+    "name": "Potrerillos Arriba",
+    "stateCode": "4"
+  },
+  {
+    "name": "Progreso",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pueblo Viejo",
+    "stateCode": "4"
+  },
+  {
+    "name": "Puerto Armuelles",
+    "stateCode": "4"
+  },
+  {
+    "name": "Punta de Burica",
+    "stateCode": "4"
+  },
+  {
+    "name": "Quebrada de Piedra",
+    "stateCode": "4"
+  },
+  {
+    "name": "Querévalo",
+    "stateCode": "4"
+  },
+  {
+    "name": "Quinteño",
+    "stateCode": "4"
+  },
+  {
+    "name": "Remedios",
+    "stateCode": "4"
+  },
+  {
+    "name": "Rincón",
+    "stateCode": "4"
+  },
+  {
+    "name": "Río Sereno",
+    "stateCode": "4"
+  },
+  {
+    "name": "Rovira Arriba",
+    "stateCode": "4"
+  },
+  {
+    "name": "San Andrés",
+    "stateCode": "4"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "4"
+  },
+  {
+    "name": "San Félix",
+    "stateCode": "4"
+  },
+  {
+    "name": "San Isidro",
+    "stateCode": "4"
+  },
+  {
+    "name": "San Lorenzo",
+    "stateCode": "4"
+  },
+  {
+    "name": "San Pablo Nuevo Abajo",
+    "stateCode": "4"
+  },
+  {
+    "name": "San Pablo Viejo Abajo",
+    "stateCode": "4"
+  },
+  {
+    "name": "Santa Clara",
+    "stateCode": "4"
+  },
+  {
+    "name": "Santa Cruz",
+    "stateCode": "4"
+  },
+  {
+    "name": "Santa Marta",
+    "stateCode": "4"
+  },
+  {
+    "name": "Santa Rosa",
+    "stateCode": "4"
+  },
+  {
+    "name": "Santo Domingo",
+    "stateCode": "4"
+  },
+  {
+    "name": "Santo Tomás",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sioguí Abajo",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sioguí Arriba",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sortova",
+    "stateCode": "4"
+  },
+  {
+    "name": "Tijeras",
+    "stateCode": "4"
+  },
+  {
+    "name": "Tinajas",
+    "stateCode": "4"
+  },
+  {
+    "name": "Tolé",
+    "stateCode": "4"
+  },
+  {
+    "name": "Veladero",
+    "stateCode": "4"
+  },
+  {
+    "name": "Volcán",
+    "stateCode": "4"
+  },
+  {
+    "name": "Boca de Cupé",
+    "stateCode": "5"
+  },
+  {
+    "name": "Camogantí",
+    "stateCode": "5"
+  },
+  {
+    "name": "Cucunatí",
+    "stateCode": "5"
+  },
+  {
+    "name": "Distrito de Chepigana",
+    "stateCode": "5"
+  },
+  {
+    "name": "Distrito de Pinogana",
+    "stateCode": "5"
+  },
+  {
+    "name": "Garachiné",
+    "stateCode": "5"
+  },
+  {
+    "name": "Jaqué",
+    "stateCode": "5"
+  },
+  {
+    "name": "La Palma",
+    "stateCode": "5"
+  },
+  {
+    "name": "Metetí",
+    "stateCode": "5"
+  },
+  {
+    "name": "Mortí",
+    "stateCode": "5"
+  },
+  {
+    "name": "Púcuro",
+    "stateCode": "5"
+  },
+  {
+    "name": "Santa Fé",
+    "stateCode": "5"
+  },
+  {
+    "name": "Yaviza",
+    "stateCode": "5"
+  },
+  {
+    "name": "Boca de Parita",
+    "stateCode": "6"
+  },
+  {
+    "name": "Cabuya",
+    "stateCode": "6"
+  },
+  {
+    "name": "Cerro Largo",
+    "stateCode": "6"
+  },
+  {
+    "name": "Chitré",
+    "stateCode": "6"
+  },
+  {
+    "name": "Chumical",
+    "stateCode": "6"
+  },
+  {
+    "name": "Chupampa",
+    "stateCode": "6"
+  },
+  {
+    "name": "Distrito de Chitré",
+    "stateCode": "6"
+  },
+  {
+    "name": "Distrito de Las Minas",
+    "stateCode": "6"
+  },
+  {
+    "name": "Distrito de Los Pozos",
+    "stateCode": "6"
+  },
+  {
+    "name": "Distrito de Ocú",
+    "stateCode": "6"
+  },
+  {
+    "name": "Distrito de Parita",
+    "stateCode": "6"
+  },
+  {
+    "name": "Distrito de Pesé",
+    "stateCode": "6"
+  },
+  {
+    "name": "Distrito de Santa María",
+    "stateCode": "6"
+  },
+  {
+    "name": "El Calabacito",
+    "stateCode": "6"
+  },
+  {
+    "name": "El Capurí",
+    "stateCode": "6"
+  },
+  {
+    "name": "El Cedro",
+    "stateCode": "6"
+  },
+  {
+    "name": "El Pedregoso",
+    "stateCode": "6"
+  },
+  {
+    "name": "El Rincón",
+    "stateCode": "6"
+  },
+  {
+    "name": "El Toro",
+    "stateCode": "6"
+  },
+  {
+    "name": "La Arena",
+    "stateCode": "6"
+  },
+  {
+    "name": "La Trinidad",
+    "stateCode": "6"
+  },
+  {
+    "name": "Las Guabas",
+    "stateCode": "6"
+  },
+  {
+    "name": "Las Minas",
+    "stateCode": "6"
+  },
+  {
+    "name": "Leones Arriba",
+    "stateCode": "6"
+  },
+  {
+    "name": "Limón de Tijeras",
+    "stateCode": "6"
+  },
+  {
+    "name": "Llano Bonito",
+    "stateCode": "6"
+  },
+  {
+    "name": "Llano de La Cruz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Llano Grande",
+    "stateCode": "6"
+  },
+  {
+    "name": "Los Canelos",
+    "stateCode": "6"
+  },
+  {
+    "name": "Los Castillos",
+    "stateCode": "6"
+  },
+  {
+    "name": "Los Cerritos",
+    "stateCode": "6"
+  },
+  {
+    "name": "Los Cerros de Paja",
+    "stateCode": "6"
+  },
+  {
+    "name": "Los Pozos",
+    "stateCode": "6"
+  },
+  {
+    "name": "Monagrillo",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ocú",
+    "stateCode": "6"
+  },
+  {
+    "name": "París",
+    "stateCode": "6"
+  },
+  {
+    "name": "Parita",
+    "stateCode": "6"
+  },
+  {
+    "name": "Peñas Chatas",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pesé",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pitaloza Arriba",
+    "stateCode": "6"
+  },
+  {
+    "name": "Portobelillo",
+    "stateCode": "6"
+  },
+  {
+    "name": "Potuga",
+    "stateCode": "6"
+  },
+  {
+    "name": "Quebrada del Rosario",
+    "stateCode": "6"
+  },
+  {
+    "name": "Rincón Hondo",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sabana Grande",
+    "stateCode": "6"
+  },
+  {
+    "name": "San Juan Bautista",
+    "stateCode": "6"
+  },
+  {
+    "name": "Santa María",
+    "stateCode": "6"
+  },
+  {
+    "name": "Agua Buena",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ave María",
+    "stateCode": "7"
+  },
+  {
+    "name": "Bahía Honda",
+    "stateCode": "7"
+  },
+  {
+    "name": "Bajo Corral",
+    "stateCode": "7"
+  },
+  {
+    "name": "Bayano",
+    "stateCode": "7"
+  },
+  {
+    "name": "Bella Vista",
+    "stateCode": "7"
+  },
+  {
+    "name": "Cambutal",
+    "stateCode": "7"
+  },
+  {
+    "name": "Cañas",
+    "stateCode": "7"
+  },
+  {
+    "name": "Cedro Arriba",
+    "stateCode": "7"
+  },
+  {
+    "name": "Distrito de Guararé",
+    "stateCode": "7"
+  },
+  {
+    "name": "Distrito de Las Tablas",
+    "stateCode": "7"
+  },
+  {
+    "name": "Distrito de Los Santos",
+    "stateCode": "7"
+  },
+  {
+    "name": "Distrito de Macaracas",
+    "stateCode": "7"
+  },
+  {
+    "name": "Distrito de Pedasí",
+    "stateCode": "7"
+  },
+  {
+    "name": "Distrito de Pocrí",
+    "stateCode": "7"
+  },
+  {
+    "name": "Distrito de Tonosí",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Cacao",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Cañafístulo",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Carate",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Cocal",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Cortezo",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Ejido",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Guásimo",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Hato",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Macano",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Manantial",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Muñoz",
+    "stateCode": "7"
+  },
+  {
+    "name": "El Pedregoso",
+    "stateCode": "7"
+  },
+  {
+    "name": "Flores",
+    "stateCode": "7"
+  },
+  {
+    "name": "Guararé",
+    "stateCode": "7"
+  },
+  {
+    "name": "Guararé Arriba",
+    "stateCode": "7"
+  },
+  {
+    "name": "La Colorada",
+    "stateCode": "7"
+  },
+  {
+    "name": "La Enea",
+    "stateCode": "7"
+  },
+  {
+    "name": "La Espigadilla",
+    "stateCode": "7"
+  },
+  {
+    "name": "La Laja",
+    "stateCode": "7"
+  },
+  {
+    "name": "La Mesa",
+    "stateCode": "7"
+  },
+  {
+    "name": "La Miel",
+    "stateCode": "7"
+  },
+  {
+    "name": "La Palma",
+    "stateCode": "7"
+  },
+  {
+    "name": "La Pasera",
+    "stateCode": "7"
+  },
+  {
+    "name": "La Tiza",
+    "stateCode": "7"
+  },
+  {
+    "name": "La Tronosa",
+    "stateCode": "7"
+  },
+  {
+    "name": "Lajamina",
+    "stateCode": "7"
+  },
+  {
+    "name": "Las Cruces",
+    "stateCode": "7"
+  },
+  {
+    "name": "Las Guabas",
+    "stateCode": "7"
+  },
+  {
+    "name": "Las Palmas",
+    "stateCode": "7"
+  },
+  {
+    "name": "Las Palmitas",
+    "stateCode": "7"
+  },
+  {
+    "name": "Las Tablas",
+    "stateCode": "7"
+  },
+  {
+    "name": "Las Trancas",
+    "stateCode": "7"
+  },
+  {
+    "name": "Llano Abajo",
+    "stateCode": "7"
+  },
+  {
+    "name": "Llano de Piedra",
+    "stateCode": "7"
+  },
+  {
+    "name": "Llano Largo",
+    "stateCode": "7"
+  },
+  {
+    "name": "Los Ángeles",
+    "stateCode": "7"
+  },
+  {
+    "name": "Los Asientos",
+    "stateCode": "7"
+  },
+  {
+    "name": "Los Olivos",
+    "stateCode": "7"
+  },
+  {
+    "name": "Los Santos",
+    "stateCode": "7"
+  },
+  {
+    "name": "Macaracas",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mogollón",
+    "stateCode": "7"
+  },
+  {
+    "name": "Nuario",
+    "stateCode": "7"
+  },
+  {
+    "name": "Oria Arriba",
+    "stateCode": "7"
+  },
+  {
+    "name": "Palmira",
+    "stateCode": "7"
+  },
+  {
+    "name": "Paraíso",
+    "stateCode": "7"
+  },
+  {
+    "name": "Paritilla",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pedasí",
+    "stateCode": "7"
+  },
+  {
+    "name": "Peña Blanca",
+    "stateCode": "7"
+  },
+  {
+    "name": "Perales",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pocrí",
+    "stateCode": "7"
+  },
+  {
+    "name": "Río Hondo",
+    "stateCode": "7"
+  },
+  {
+    "name": "Sabana Grande",
+    "stateCode": "7"
+  },
+  {
+    "name": "San José",
+    "stateCode": "7"
+  },
+  {
+    "name": "Santa Ana Arriba",
+    "stateCode": "7"
+  },
+  {
+    "name": "Santo Domingo",
+    "stateCode": "7"
+  },
+  {
+    "name": "Sesteadero",
+    "stateCode": "7"
+  },
+  {
+    "name": "Tonosí",
+    "stateCode": "7"
+  },
+  {
+    "name": "Tres Quebradas",
+    "stateCode": "7"
+  },
+  {
+    "name": "Valle Rico",
+    "stateCode": "7"
+  },
+  {
+    "name": "Vallerriquito",
+    "stateCode": "7"
+  },
+  {
+    "name": "Villa Lourdes",
+    "stateCode": "7"
+  },
+  {
+    "name": "Alcalde Díaz",
+    "stateCode": "8"
+  },
+  {
+    "name": "Ancón",
+    "stateCode": "8"
+  },
+  {
+    "name": "Brujas",
+    "stateCode": "8"
+  },
+  {
+    "name": "Cabra Número Uno",
+    "stateCode": "8"
+  },
+  {
+    "name": "Caimitillo",
+    "stateCode": "8"
+  },
+  {
+    "name": "Calzada Larga",
+    "stateCode": "8"
+  },
+  {
+    "name": "Cañita",
+    "stateCode": "8"
+  },
+  {
+    "name": "Cerro Azul",
+    "stateCode": "8"
+  },
+  {
+    "name": "Chepillo",
+    "stateCode": "8"
+  },
+  {
+    "name": "Chepo",
+    "stateCode": "8"
+  },
+  {
+    "name": "Chilibre",
+    "stateCode": "8"
+  },
+  {
+    "name": "Chimán",
+    "stateCode": "8"
+  },
+  {
+    "name": "Contadora",
+    "stateCode": "8"
+  },
+  {
+    "name": "Curundú",
+    "stateCode": "8"
+  },
+  {
+    "name": "Distrito de Balboa",
+    "stateCode": "8"
+  },
+  {
+    "name": "Distrito de Chepo",
+    "stateCode": "8"
+  },
+  {
+    "name": "Distrito de Chimán",
+    "stateCode": "8"
+  },
+  {
+    "name": "Distrito de Panamá",
+    "stateCode": "8"
+  },
+  {
+    "name": "Distrito de Taboga",
+    "stateCode": "8"
+  },
+  {
+    "name": "El Chorrillo",
+    "stateCode": "8"
+  },
+  {
+    "name": "El Progreso",
+    "stateCode": "8"
+  },
+  {
+    "name": "Gonzalillo",
+    "stateCode": "8"
+  },
+  {
+    "name": "Howard",
+    "stateCode": "8"
+  },
+  {
+    "name": "Juan Díaz",
+    "stateCode": "8"
+  },
+  {
+    "name": "La Cabima",
+    "stateCode": "8"
+  },
+  {
+    "name": "La Colorada",
+    "stateCode": "8"
+  },
+  {
+    "name": "La Ensenada",
+    "stateCode": "8"
+  },
+  {
+    "name": "La Esmeralda",
+    "stateCode": "8"
+  },
+  {
+    "name": "La Guinea",
+    "stateCode": "8"
+  },
+  {
+    "name": "La Mesa",
+    "stateCode": "8"
+  },
+  {
+    "name": "Las Cumbres",
+    "stateCode": "8"
+  },
+  {
+    "name": "Las Margaritas",
+    "stateCode": "8"
+  },
+  {
+    "name": "Lídice",
+    "stateCode": "8"
+  },
+  {
+    "name": "Los Lotes",
+    "stateCode": "8"
+  },
+  {
+    "name": "Nueva Esperanza",
+    "stateCode": "8"
+  },
+  {
+    "name": "Nuevo Belén",
+    "stateCode": "8"
+  },
+  {
+    "name": "Pacora",
+    "stateCode": "8"
+  },
+  {
+    "name": "Panamá",
+    "stateCode": "8"
+  },
+  {
+    "name": "Parque Lefevre",
+    "stateCode": "8"
+  },
+  {
+    "name": "Pásiga",
+    "stateCode": "8"
+  },
+  {
+    "name": "Pedregal",
+    "stateCode": "8"
+  },
+  {
+    "name": "Río Abajo",
+    "stateCode": "8"
+  },
+  {
+    "name": "San Antonio",
+    "stateCode": "8"
+  },
+  {
+    "name": "San Felipe",
+    "stateCode": "8"
+  },
+  {
+    "name": "San Miguel",
+    "stateCode": "8"
+  },
+  {
+    "name": "San Miguelito",
+    "stateCode": "8"
+  },
+  {
+    "name": "San Vicente",
+    "stateCode": "8"
+  },
+  {
+    "name": "Tocumen",
+    "stateCode": "8"
+  },
+  {
+    "name": "Tortí",
+    "stateCode": "8"
+  },
+  {
+    "name": "Unión de Azuero",
+    "stateCode": "8"
+  },
+  {
+    "name": "Unión Santeña",
+    "stateCode": "8"
+  },
+  {
+    "name": "Villa Unida",
+    "stateCode": "8"
+  },
+  {
+    "name": "Vista Hermosa",
+    "stateCode": "8"
+  },
+  {
+    "name": "Alto de Jesús",
+    "stateCode": "9"
+  },
+  {
+    "name": "Arenas",
+    "stateCode": "9"
+  },
+  {
+    "name": "Atalaya",
+    "stateCode": "9"
+  },
+  {
+    "name": "Barnizal",
+    "stateCode": "9"
+  },
+  {
+    "name": "Bisvalles",
+    "stateCode": "9"
+  },
+  {
+    "name": "Boquerón",
+    "stateCode": "9"
+  },
+  {
+    "name": "Boró",
+    "stateCode": "9"
+  },
+  {
+    "name": "Calabacito",
+    "stateCode": "9"
+  },
+  {
+    "name": "Calidonia",
+    "stateCode": "9"
+  },
+  {
+    "name": "Calobre",
+    "stateCode": "9"
+  },
+  {
+    "name": "Calovébora",
+    "stateCode": "9"
+  },
+  {
+    "name": "Cañazas",
+    "stateCode": "9"
+  },
+  {
+    "name": "Canto del Llano",
+    "stateCode": "9"
+  },
+  {
+    "name": "Corozal",
+    "stateCode": "9"
+  },
+  {
+    "name": "Distrito de Atalaya",
+    "stateCode": "9"
+  },
+  {
+    "name": "Distrito de Calobre",
+    "stateCode": "9"
+  },
+  {
+    "name": "Distrito de Cañazas",
+    "stateCode": "9"
+  },
+  {
+    "name": "Distrito de La Mesa",
+    "stateCode": "9"
+  },
+  {
+    "name": "Distrito de Las Palmas",
+    "stateCode": "9"
+  },
+  {
+    "name": "Distrito de Montijo",
+    "stateCode": "9"
+  },
+  {
+    "name": "Distrito de Río de Jesús",
+    "stateCode": "9"
+  },
+  {
+    "name": "Distrito de San Francisco",
+    "stateCode": "9"
+  },
+  {
+    "name": "Distrito de Santa Fé",
+    "stateCode": "9"
+  },
+  {
+    "name": "Distrito de Santiago",
+    "stateCode": "9"
+  },
+  {
+    "name": "Distrito de Soná",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Alto",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Barrito",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Coclá",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Espino de Santa Rosa",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Marañón",
+    "stateCode": "9"
+  },
+  {
+    "name": "El María",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Pájaro",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Pantano",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Peñón",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Picador",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Potrero",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Rincón",
+    "stateCode": "9"
+  },
+  {
+    "name": "El Uvito",
+    "stateCode": "9"
+  },
+  {
+    "name": "Guarumal",
+    "stateCode": "9"
+  },
+  {
+    "name": "La Colorada",
+    "stateCode": "9"
+  },
+  {
+    "name": "La Garceana",
+    "stateCode": "9"
+  },
+  {
+    "name": "La Laguna",
+    "stateCode": "9"
+  },
+  {
+    "name": "La Loma",
+    "stateCode": "9"
+  },
+  {
+    "name": "La Mesa",
+    "stateCode": "9"
+  },
+  {
+    "name": "La Montañuela",
+    "stateCode": "9"
+  },
+  {
+    "name": "La Peña",
+    "stateCode": "9"
+  },
+  {
+    "name": "La Raya de Calobre",
+    "stateCode": "9"
+  },
+  {
+    "name": "La Raya de Santa María",
+    "stateCode": "9"
+  },
+  {
+    "name": "La Yeguada",
+    "stateCode": "9"
+  },
+  {
+    "name": "Las Guías Abajo",
+    "stateCode": "9"
+  },
+  {
+    "name": "Las Huacas",
+    "stateCode": "9"
+  },
+  {
+    "name": "Las Palmas",
+    "stateCode": "9"
+  },
+  {
+    "name": "Leones Arriba",
+    "stateCode": "9"
+  },
+  {
+    "name": "Llano Grande",
+    "stateCode": "9"
+  },
+  {
+    "name": "Lolá",
+    "stateCode": "9"
+  },
+  {
+    "name": "Los Algarrobos",
+    "stateCode": "9"
+  },
+  {
+    "name": "Los Castillos",
+    "stateCode": "9"
+  },
+  {
+    "name": "Los Higos",
+    "stateCode": "9"
+  },
+  {
+    "name": "Mariato District",
+    "stateCode": "9"
+  },
+  {
+    "name": "Monjarás",
+    "stateCode": "9"
+  },
+  {
+    "name": "Montijo",
+    "stateCode": "9"
+  },
+  {
+    "name": "Piedras Gordas",
+    "stateCode": "9"
+  },
+  {
+    "name": "Ponuga",
+    "stateCode": "9"
+  },
+  {
+    "name": "Puerto Vidal",
+    "stateCode": "9"
+  },
+  {
+    "name": "Quebrada de Oro",
+    "stateCode": "9"
+  },
+  {
+    "name": "Río de Jesús",
+    "stateCode": "9"
+  },
+  {
+    "name": "Río Grande",
+    "stateCode": "9"
+  },
+  {
+    "name": "Rodeo Viejo",
+    "stateCode": "9"
+  },
+  {
+    "name": "San Bartolo",
+    "stateCode": "9"
+  },
+  {
+    "name": "San Francisco",
+    "stateCode": "9"
+  },
+  {
+    "name": "San José",
+    "stateCode": "9"
+  },
+  {
+    "name": "San Juan",
+    "stateCode": "9"
+  },
+  {
+    "name": "San Marcelo",
+    "stateCode": "9"
+  },
+  {
+    "name": "San Pedro del Espino",
+    "stateCode": "9"
+  },
+  {
+    "name": "Santa Fé",
+    "stateCode": "9"
+  },
+  {
+    "name": "Santiago de Veraguas",
+    "stateCode": "9"
+  },
+  {
+    "name": "Soná",
+    "stateCode": "9"
+  },
+  {
+    "name": "Tebario",
+    "stateCode": "9"
+  },
+  {
+    "name": "Utirá",
+    "stateCode": "9"
+  },
+  {
+    "name": "Viguí",
+    "stateCode": "9"
+  },
+  {
+    "name": "Zapotillo",
+    "stateCode": "9"
+  },
+  {
+    "name": "Bayamón",
+    "stateCode": "EM"
+  },
+  {
+    "name": "Cémaco",
+    "stateCode": "EM"
+  },
+  {
+    "name": "Corozal",
+    "stateCode": "EM"
+  },
+  {
+    "name": "Sambú",
+    "stateCode": "EM"
+  },
+  {
+    "name": "Unión Chocó",
+    "stateCode": "EM"
+  },
+  {
+    "name": "Yape",
+    "stateCode": "EM"
+  },
+  {
+    "name": "Achutupo",
+    "stateCode": "KY"
+  },
+  {
+    "name": "Ailigandí",
+    "stateCode": "KY"
+  },
+  {
+    "name": "Cartí Sugdup",
+    "stateCode": "KY"
+  },
+  {
+    "name": "El Porvenir",
+    "stateCode": "KY"
+  },
+  {
+    "name": "Mulatupo",
+    "stateCode": "KY"
+  },
+  {
+    "name": "Narganá",
+    "stateCode": "KY"
+  },
+  {
+    "name": "Playón Chico",
+    "stateCode": "KY"
+  },
+  {
+    "name": "Puerto Obaldía",
+    "stateCode": "KY"
+  },
+  {
+    "name": "San Ignacio de Tupile",
+    "stateCode": "KY"
+  },
+  {
+    "name": "Tubualá",
+    "stateCode": "KY"
+  },
+  {
+    "name": "Ustupo",
+    "stateCode": "KY"
+  },
+  {
+    "name": "Bahía Azul",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Besiko",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Bisira",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Boca de Balsa",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Buenos Aires",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Camarón Arriba",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Cerro Banco",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Cerro Caña",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Cerro Plata",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Chichica",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Guayabito",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Hato Chami",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Hato Corotú",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kankintú",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kusapín",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Lajero Arriba",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Llano Ñopo",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Loma Yuca",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Mirono",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Müna",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Nole Düima",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Nurun",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Oma",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Paredón Arriba",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Plan de Chorcha",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Pueblo Nuevo",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Quebrada Canoa",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Quebrada Tula",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Sitio Prado",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Tobobe",
+    "stateCode": "NB"
+  }
+]

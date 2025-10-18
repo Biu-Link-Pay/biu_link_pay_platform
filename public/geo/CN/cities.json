@@ -1,0 +1,5186 @@
+[
+  {
+    "name": "Anqing",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Anqing Shi",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Bengbu",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Bozhou",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Chaohu",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Chizhou",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Chizhou Shi",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Chuzhou",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Chuzhou Shi",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Datong",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Fuyang",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Fuyang Shi",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Gushu",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Hefei",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Hefei Shi",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Huaibei",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Huainan",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Huainan Shi",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Huaiyuan Chengguanzhen",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Huangshan",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Huangshan Shi",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Huoqiu Chengguanzhen",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Jieshou",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Lu’an",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Lucheng",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Mengcheng Chengguanzhen",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Mingguang",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Suixi",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Suzhou",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Suzhou Shi",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Tangzhai",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Wucheng",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Wuhu",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Wusong",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Wuyang",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Xuanzhou",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Yingshang Chengguanzhen",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Beijing",
+    "stateCode": "BJ"
+  },
+  {
+    "name": "Changping",
+    "stateCode": "BJ"
+  },
+  {
+    "name": "Daxing",
+    "stateCode": "BJ"
+  },
+  {
+    "name": "Fangshan",
+    "stateCode": "BJ"
+  },
+  {
+    "name": "Liangxiang",
+    "stateCode": "BJ"
+  },
+  {
+    "name": "Mentougou",
+    "stateCode": "BJ"
+  },
+  {
+    "name": "Shunyi",
+    "stateCode": "BJ"
+  },
+  {
+    "name": "Tongzhou",
+    "stateCode": "BJ"
+  },
+  {
+    "name": "Beibei",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Caijia",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Chongqing",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Dongxi",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Fuling",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Ganshui",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Guofuchang",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Hechuan",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Jijiang",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Liangping District",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Puhechang",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Shapingba District",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Shijiaochang",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Wanxian",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Wanzhou District",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Yongchuan",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Yudong",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Yuzhong District",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Badu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Baiqi",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Baiyun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Beishancun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Changqiao",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Chengmen",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Chixi",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Chongru",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Dadeng",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Daixi",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Danyang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Daqiao",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Dazuo",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Dinghaicun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Dingtoucun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Dongchongcun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Dongdai",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Donghu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Dongling",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Dongyuan",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Feiluan",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Fengpu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Fengzhou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Fu’an",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Fuding",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Fuqing",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Fuzhou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Gantang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Guantou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Gufeng",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Hetang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Hongtang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Hongyang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Houyu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Huai’an",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Huangtian",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Huotong",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Jian’ou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Jiangkou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Jianjiang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Jingfeng",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Jinjiang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Jinjing",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Jitoucun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Kengyuan",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Kerencun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Kuai’an",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Lianhecun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Liuwudiancun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Longmen",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Longyan",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Luoqiao",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Luoyang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Luxia",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Maping",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Meipu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Min’an",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Nanping",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Neikeng",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Ningde",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Pandu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Pucheng",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Putian",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Qibu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Qidu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Quanzhou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Rong’an",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Sanming",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Shajiang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Shangjie",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Shanxia",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Shanyang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Shaowu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Shijing",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Shima",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Shoushan",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Shuangxi",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Shuangzhu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Shuikou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Tangkou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Tantou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Tatou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Tingjiang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Tuzhai",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Wubao",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Wuyishan",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Wuyucun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Xiabaishi",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Xiahu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Xiamen",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Xiancun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Xiangyun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Xibing",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Xiling",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Ximei",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Xinan",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Xindian",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Yakou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Yanghou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Yangzhong",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Yantian",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Yingdu",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Yinglin",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Yongning",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Yushan",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Zhangwan",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Zhangzhou",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Zhenhaicun",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Zhongfang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Zhuoyang",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Zhuqi",
+    "stateCode": "FJ"
+  },
+  {
+    "name": "Anbu",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Chaozhou",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Chenghua",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Daliang",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Danshui",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Dasha",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Dongguan",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Donghai",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Ducheng",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Encheng",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Foshan",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Foshan Shi",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Gaoyao",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Gaozhou",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Guangzhou",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Guangzhou Shi",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Haikuotiankong",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Haimen",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Hepo",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Heyuan",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Huaicheng",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Huanggang",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Huazhou",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Huicheng",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Huizhou",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Humen",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Jiangmen",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Jiazi",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Jieshi",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Jieyang",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Lecheng",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Lianjiang",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Lianzhou",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Licheng",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Lubu",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Luocheng",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Luoyang",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Maba",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Maoming",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Meizhou",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Nanfeng",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Pingshan",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Puning",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Qingyuan",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Sanshui",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Shantou",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Shanwei",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Shaoguan",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Shaping",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Shenzhen",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Shilong",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Shiqi",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Shiqiao",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Shiwan",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Shixing",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Taishan",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Tangping",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Wuchuan",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Xingning",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Xinhui",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Xinyi",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Xiongzhou",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Xucheng",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Yangchun",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Yangjiang",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Yingcheng",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Yunfu",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Zhanjiang",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Zhaoqing",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Zhongshan",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Zhongshan Prefecture",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Zhuhai",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Baiyin",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Beidao",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Dingxi Shi",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Hezuo",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Jiayuguan",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Jinchang",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Jiuquan",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Lanzhou",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Laojunmiao",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Linxia Chengguanzhen",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Linxia Huizu Zizhizhou",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Longnan Shi",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Mawu",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Pingliang",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Qincheng",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Qingyang Shi",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Tianshui",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Wuwei",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Zhangye",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Zhangye Shi",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Babu",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Baihe",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Baise City",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Baise Shi",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Beihai",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Chongzuo Shi",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Dazhai",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Fangchenggang Shi",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Guigang",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Guilin",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Guilin Shi",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Guiping",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Hechi Shi",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Jinji",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Laibin",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Lianzhou",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Lingcheng",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Liuzhou Shi",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Luorong",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Nandu",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Nanning",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Pingnan",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Pumiao",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Qinzhou",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Wuzhou",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Yangshuo",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Yashan",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Yulin",
+    "stateCode": "GX"
+  },
+  {
+    "name": "Anshun",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Aoshi",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Bahuang",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Baishi",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Bangdong",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Benchu",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Bijie",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Chadian",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Changsha",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Chumi",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Dabachang",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Darong",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Dundong",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Duyun",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Gaoniang",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Gaowu",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Gaozeng",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Guandu",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Guiyang",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Hongzhou",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Huaqiu",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Lantian",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Liangcunchang",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Liupanshui",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Longlisuo",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Loushanguan",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Maoping",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Ouyang",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Pingjiang",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Qiandongnan Miao and Dong Autonomous Prefecture",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Qianxinan Bouyeizu Miaozu Zizhizhou",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Qimeng",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Qinglang",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Runsong",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Sanchahe",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Sangmu",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Shiqian",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Songkan",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Tingdong",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Tonggu",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Tongren",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Tongren Diqu",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Weining",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Wenshui",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Xiajiang",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Xiaoweizhai",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Xinzhan",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Xishan",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Xujiaba",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Yangtou",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Youyupu",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Zhongchao",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Zhujiachang",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Zunyi",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Anyang",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Anyang Shi",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Binhe",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Chengguan",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Chengjiao",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Daokou",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Dingcheng",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Hancheng",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Hebi",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Huaidian",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Huazhou",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Huichang",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Jianshe",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Jiaozuo",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Jishui",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Jiyuan",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Kaifeng",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Kaiyuan",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Lingbao Chengguanzhen",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Luohe",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Luohe Shi",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Luoyang",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Minggang",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Nanyang",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Pingdingshan",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Puyang Chengguanzhen",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Puyang Shi",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Qingping",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Runing",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Ruzhou",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Shangqiu",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Songyang",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Suohe",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Tanbei",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Wacheng",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Xiangcheng Chengguanzhen",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Xincheng",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Xinhualu",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Xinxiang",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Xinxiang Shi",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Xinyang",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Xixiang",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Xuchang",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Xuchang Shi",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Yakou",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Yanshi Chengguanzhen",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Yigou",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Yima",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Yingchuan",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Yunyang",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Zhengzhou",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Zhoukou",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Zhumadian",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Zhumadian Shi",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Zijinglu",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Anlu",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Buhe",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Caidian",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Caohe",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Chengzhong",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Danjiangkou",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Daye",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Duobao",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Enshi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Enshi Tujiazu Miaozu Zizhizhou",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Ezhou",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Ezhou Shi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Fengkou",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Guangshui",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Gucheng Chengguanzhen",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hanchuan",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Huanggang",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Huangmei",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Huangpi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Huangshi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Huangzhou",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Jingling",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Jingmen",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Jingmen Shi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Jingzhou",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Laohekou",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Lichuan",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Macheng",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Nanzhang Chengguanzhen",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Puqi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Qianjiang",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Qingquan",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Shashi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Shennongjia",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Shiyan",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Suizhou",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Wuhan",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Wuxue",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Xiangyang",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Xianning",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Xianning Prefecture",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Xiantao",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Xiaogan",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Xihe",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Xindi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Xinshi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Xinzhou",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Xiulin",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Yichang",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Yicheng",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Yunmeng Chengguanzhen",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Zaoyang",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Zhicheng",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Zhijiang",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Zhongxiang",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Baoding",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Beidaihehaibin",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Botou",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Cangzhou",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Cangzhou Shi",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Changli",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Chengde",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Chengde Prefecture",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Dingzhou",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Fengrun",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Guye",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Handan",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Hecun",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Hengshui",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Langfang",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Langfang Shi",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Linshui",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Linxi",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Luancheng",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Nangong",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Pengcheng",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Qinhuangdao",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Renqiu",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Shahecheng",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Shanhaiguan",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Shijiazhuang",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Shijiazhuang Shi",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Songling",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Tangjiazhuang",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Tangshan",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Tangshan Shi",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Tianchang",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Xingtai",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Xinji",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Zhangjiakou",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Zhangjiakou Shi",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Zhangjiakou Shi Xuanhua Qu",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Zhaogezhuang",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Zunhua",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Basuo",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Chongshan",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Dadonghai",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Haikou",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Jinjiang",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Lincheng",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Nada",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Qionghai",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Qiongshan",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Sansha",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Sanya",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Wanning",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Wenchang",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Xiuying",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Acheng",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Anda",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Baiquan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Bamiantong",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Baoqing",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Baoshan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Bayan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Bei’an",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Binzhou",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Boli",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Chaihe",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Chengzihe",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Daqing",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Dongning",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Dongxing",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Fendou",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Fengxiang",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Fujin",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Fuli",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Fuyu",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Fuyuan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Gannan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Hailin",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Hailun",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Harbin",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Hegang",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Heihe",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Honggang",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Huanan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Hulan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Hulan Ergi",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Jiamusi",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Jidong",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Jixi",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Langxiang",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Lanxi",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Lianhe",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Lingdong",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Linkou",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Longfeng",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Longjiang",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Mingshui",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Mishan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Mudanjiang",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Nehe",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Nenjiang",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Nianzishan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Ning’an",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Qinggang",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Qiqihar",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Shangzhi",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Shanhecun",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Shuangcheng",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Shuangyashan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Suifenhe",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Suihua",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Suileng",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Tahe",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Taihecun",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Taikang",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Tailai",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Tieli",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Wangkui",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Wuchang",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Xinqing",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Yichun",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Yilan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Youhao",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Zhaodong",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Zhaoyuan",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Zhaozhou",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Anjiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Anping",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Anxiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Baisha",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Biyong",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Bojia",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Boyang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Bozhou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Changde",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Changsha",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Changsha Shi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Chatian",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Chenzhou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Dabaozi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Dehang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Dengjiapu",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Dengyuantai",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Dongshan Dongzuxiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Fenghuang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Gangdong",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Gaoqiao",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Gaoyi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Guankou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Hengbanqiao",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Hengyang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Hexiangqiao",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Hongjiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Hongqiao",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Huaihua",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Huangjinjing",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Huanglong",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Huangmaoyuan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Huangqiao",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Huangtukuang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Huangxikou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Huaqiao",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Huayuan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Huomachong",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Jiangfang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Jiangkouxu",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Jiangshi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Jinhe",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Jinshi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Jinshiqiao",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Lanli",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Leiyang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Lengshuijiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Lengshuitan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Liangyaping",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Lianyuan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Linkou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Liuduzhai",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Lixiqiao",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Longtan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Longtou’an",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Loudi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Luojiu",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Luyang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Ma’an",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Malin",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Maoping",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Nanmuping",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Nanzhou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Prefecture of Chenzhou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Pukou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Puzi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Qiancheng",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Qianzhou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Qiaojiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Qingjiangqiao",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Qingxi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Qionghu",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Ruoshui",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Shangmei",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Shanmen",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Shijiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Shuangjiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Shuangxi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Shuiche",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Shuidatian",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Simenqian",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Tangjiafang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Tanwan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Tongwan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Tuokou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Wantouqiao",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Wenxing",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Wulingyuan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Wuxi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Wuyang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Xiangtan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Xiangxi Tujiazu Miaozu Zizhizhou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Xiangxiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Xianrenwan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Xianxi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Xiaohenglong",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Xiaolongmen",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Xiaoshajiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Xishan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Xixi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Xiyan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Yanmen",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Yaoshi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Yatunpu",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Yiyang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Yongfeng",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Yongzhou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Yueyang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Yueyang Shi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Yutan",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Zhaishi Miaozu Dongzuxiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Zhangjiajie",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Zhongfang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Zhongzhai",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Zhushi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Zhuzhou",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Zhuzhou Shi",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Zhuzhoujiang Miaozuxiang",
+    "stateCode": "HN"
+  },
+  {
+    "name": "Baicheng",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Baishan",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Baishishan",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Changchun",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Changling",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Chaoyang",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Dalai",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Dashitou",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Dehui",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Dongfeng",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Dunhua",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Erdaojiang",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Fuyu",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Gongzhuling",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Guangming",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Helong",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Hepingjie",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Huadian",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Huangnihe",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Huinan",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Hunchun",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Ji’an",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Jilin",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Jishu",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Jiutai",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Kaitong",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Liaoyuan",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Linjiang",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Lishu",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Liuhe",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Longjing",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Meihekou",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Mingyue",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Minzhu",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Panshi",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Sanchazi",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Shuangyang",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Shulan",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Siping",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Songjianghe",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Songyuan",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Tonghua",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Tonghua Shi",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Tumen",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Wangqing",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Xinglongshan",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Yanbian Chaoxianzu Zizhizhou",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Yanji",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Yantongshan",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Yushu",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Zhengjiatun",
+    "stateCode": "JL"
+  },
+  {
+    "name": "Zhenlai",
+    "stateCode": "JL"
+  },
+  {
+    "name": "ChangZhou",
+    "stateCode": "JS"
+  },
+  {
+    "name": "HuaiAn",
+    "stateCode": "JS"
+  },
+  {
+    "name": "LianYunGang",
+    "stateCode": "JS"
+  },
+  {
+    "name": "NanJing",
+    "stateCode": "JS"
+  },
+  {
+    "name": "NanTong",
+    "stateCode": "JS"
+  },
+  {
+    "name": "SuQian",
+    "stateCode": "JS"
+  },
+  {
+    "name": "SuZhou",
+    "stateCode": "JS"
+  },
+  {
+    "name": "TaiZhou",
+    "stateCode": "JS"
+  },
+  {
+    "name": "WuXi",
+    "stateCode": "JS"
+  },
+  {
+    "name": "XuZhou",
+    "stateCode": "JS"
+  },
+  {
+    "name": "YanCheng",
+    "stateCode": "JS"
+  },
+  {
+    "name": "YangZhou",
+    "stateCode": "JS"
+  },
+  {
+    "name": "ZhenJiang",
+    "stateCode": "JS"
+  },
+  {
+    "name": "Changleng",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Fenyi",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Ganzhou",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Ganzhou Shi",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Guixi",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Ji’an",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Jianguang",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Jingdezhen",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Jingdezhen Shi",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Jiujiang",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Nanchang",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Pingxiang",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Poyang",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Shangrao",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Xinyu",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Yichun",
+    "stateCode": "JX"
+  },
+  {
+    "name": "Anshan",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Beipiao",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Benxi",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Changtu",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Chaoyang",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Dalian",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Dalianwan",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Dandong",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Dashiqiao",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Dongling",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Fengcheng",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Fushun",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Fuxin",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Gaizhou",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Gongchangling",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Haicheng",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Heishan",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Huanren",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Huludao",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Huludao Shi",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Hushitai",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Jinzhou",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Jiupu",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Kaiyuan",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Kuandian",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Langtoucun",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Lianshan",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Liaoyang",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Liaozhong",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Linghai",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Lingyuan",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Lüshun",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Nanpiao",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Nantai",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Panjin Shi",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Panshan",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Pulandian",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Shenyang",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Sujiatun",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Tieling",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Tieling Shi",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Wafangdian",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Xiaoshi",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Xifeng",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Xingcheng",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Xinmin",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Xinxing",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Xiuyan",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Yebaishou",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Yingkou",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Zhuanghe",
+    "stateCode": "LN"
+  },
+  {
+    "name": "Baotou",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Bayan Nur",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Bayannur Shi",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Beichengqu",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Chifeng",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Dongsheng",
+    "stateCode": "NM"
+  },
+  {
+    "name": "E’erguna",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Erenhot",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Genhe",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Hailar",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Hohhot",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Hulunbuir Region",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Jalai Nur",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Jiagedaqi",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Jining",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Manzhouli",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Mositai",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Mujiayingzi",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Ordos",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Ordos Shi",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Oroqen Zizhiqi",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Pingzhuang",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Salaqi",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Shiguai",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Tongliao",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Ulanhot",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Wenquan",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Wuda",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Wuhai",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Xilin Gol Meng",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Xilin Hot",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Yakeshi",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Zhalantun",
+    "stateCode": "NM"
+  },
+  {
+    "name": "Dawukou",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Dongta",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Shitanjing",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Shizuishan",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Wuzhong",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Yinchuan",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Zhongwei",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Delingha",
+    "stateCode": "QH"
+  },
+  {
+    "name": "Golmud",
+    "stateCode": "QH"
+  },
+  {
+    "name": "Golog Tibetan Autonomous Prefecture",
+    "stateCode": "QH"
+  },
+  {
+    "name": "Haibei Tibetan Autonomous Prefecture",
+    "stateCode": "QH"
+  },
+  {
+    "name": "Huangnan Zangzu Zizhizhou",
+    "stateCode": "QH"
+  },
+  {
+    "name": "Xining",
+    "stateCode": "QH"
+  },
+  {
+    "name": "Xireg",
+    "stateCode": "QH"
+  },
+  {
+    "name": "Yushu Zangzu Zizhizhou",
+    "stateCode": "QH"
+  },
+  {
+    "name": "Aba Zangzu Qiangzu Zizhizhou",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Barkam",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Bazhong Shi",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Changchi",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Chengdu",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Chonglong",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Dadukou",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Dazhou",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Deyang",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Dongxi",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Fangting",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Fubao",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Gaoping",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Garzê Zangzu Zizhizhou",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Guang’an",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Guangyuan",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Jiancheng",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Jiangyou",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Jiannan",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Kangding",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Langzhong",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Leshan",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Liangshan Yizu Zizhizhou",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Linqiong",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Luocheng",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Luzhou",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Meishan Shi",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Mianyang",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Nanchong",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Nanlong",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Neijiang",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Panzhihua",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Puji",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Shuanghejiedao",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Suining",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Taihe",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Taiping",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Tianpeng",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Tongchuan",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Xialiang",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Xiantan",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Xichang",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Xunchang",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Yanjiang",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Yibin",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Yucheng",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Zengjia",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Zhongba",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Zigong",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Anqiu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Beizhai",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Bianzhuang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Binzhou",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Boshan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Changqing",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Chengqu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Chengtangcun",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Chengyang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Dengying",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Dengzhou",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Dezhou",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Dingtao",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Dongcun",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Dongdu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Feicheng",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Gaomi",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Hanting",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Heze",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Jiamaying",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Jiaozhou",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Jiehu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Jimo",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Jinan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Jining",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Juye",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kuiju",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kutao",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Laiwu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Laixi",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Laiyang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Laizhou",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Laocheng",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Liaocheng",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Linqu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Linyi",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Longgang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Mengyin",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Mingshui",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Mizhou",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Nanding",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Nanma",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Ninghai",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Ningyang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Pingdu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Pingyi",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Pingyin",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Qingdao",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Qingnian",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Qingshancun",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Qingyang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Qingzhou",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Qufu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Rizhao",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shancheng",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shanting",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shazikou",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shengli",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shilaorencun",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shizilu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shouguang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Sishui",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Suozhen",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tai’an",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Taozhuang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tianfu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Weifang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Weihai",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Wenshang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Xiazhen",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Xiazhuang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Xiliguantun",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Xindian",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Xintai",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Yanggu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Yanta",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Yantai",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Yanzhou",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Yatou",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Yinzhu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Yishui",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Yucheng",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Zaozhuang",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Zhaoyuan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Zhoucheng",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Zhoucun",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Zhu Cheng City",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Zhuangyuan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Zibo",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Zoucheng",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shanghai",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Songjiang",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Zhabei",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Zhujiajiao",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Ankang",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Baoji Shi",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Guozhen",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Hancheng",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Hanzhong",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Huayin",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Lintong",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Tongchuanshi",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Weinan",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Xi’an",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Xianyang",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Yanliang",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Yulinshi",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Yuxia",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Changzhi",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Datong",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Datong Shi",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Gutao",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Jiexiu",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Jincheng",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Jinzhong Shi",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Linfen",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Lüliang",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Shuozhou",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Taiyuan",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Xintian",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Xinzhi",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Xinzhou",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Yangquan",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Yuanping",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Yuci",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Yuncheng",
+    "stateCode": "SX"
+  },
+  {
+    "name": "Badaogu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Baijian",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Bamencheng",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Bangjun",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Beicang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Beihuaidian",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Beilizigu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Biaokou",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Binhai New Area",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Caijiapu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Caodian",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Chabaihu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Changtun",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Chengtougu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Chitu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Cuijiamatou",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Dadunqiu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Dakoutun",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Dashentang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Dawangtai",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Daxinzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Dazhongzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Dongditou",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Dongshigu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Erwangzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Fanzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Fengtai (Ninghe)",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Fuzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Gaojingzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Hanjiashu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Hebeitun",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Hexiwu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Huangcaotuo",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Huantuo",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Huogezhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Jiangwakou",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Lianzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Lintingkou",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Liujiading",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Liukuaizhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Liuzikou",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Luotuofangzi",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Meichang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Mengquan",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Panzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Qingguang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Sangzi",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Shangcang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Shimianzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Shuangjiang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Sigaozhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Tianjin",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Touying",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Wangqinzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Weiwangzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Xiawuqi",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Xiditou",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Xinkaikou",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Xitazhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Yangjinzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Yangliuqing",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Yinliu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Yixingfu",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Youguzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Yuelongzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Yuguzhuang",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Zaojiacheng",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Zhangjiawo",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Zhaoguli",
+    "stateCode": "TJ"
+  },
+  {
+    "name": "Baoying",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Changshu City",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Changzhou",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Chengxiang",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Dazhong",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Dongkan",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Dongtai",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Fengxian",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Gaogou",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Gaoyou",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Guiren",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Haizhou",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Hede",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Huai'an",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Huai’an Shi",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Huilong",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Hutang",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Jiangyan",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Jiangyin",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Jingjiang",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Jinsha",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Juegang",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Kunshan",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Lianyungang Shi",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Licheng",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Mudu",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Nanjing",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Nantong",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Pizhou",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Qinnan",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Rucheng",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Sanmao",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Songling",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Suicheng",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Suzhou",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Taixing",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Taizhou",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Tongshan",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Wuxi",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Xiannü",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Xiaolingwei",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Xinghua",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Xinpu",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Yancheng",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Yangzhou",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Yicheng",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Yushan",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Zhangjiagang",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Zhenjiang",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Zhenzhou",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Zhongxing",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Zhouzhuang",
+    "stateCode": "TW"
+  },
+  {
+    "name": "Ailan Mubage",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Aksu",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Aksu Diqu",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Altay",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Altay Diqu",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Aral",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Aykol",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Baijiantan",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Baluntaicun",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Bayingolin Mongol Zizhizhou",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Changji",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Changji Huizu Zizhizhou",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Fukang",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Hami",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Hotan",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Hoxtolgay",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Huocheng",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Ili Kazak Zizhizhou",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Karamay",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Karamay Shi",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Kashgar",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Kaxgar Diqu",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Korla",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Kuqa",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Kuytun",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Qapqal",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Shache",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Shihezi",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Sishilichengzi",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Tacheng",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Tacheng Diqu",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Turpan",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Turpan Diqu",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Ürümqi",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Urumqi Shi",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Xinyuan",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Zangguy",
+    "stateCode": "XJ"
+  },
+  {
+    "name": "Burang",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Dêqên",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Jiangzi",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Lhasa",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Nagqu",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Nagqu Diqu",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Ngari Diqu",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Nyingchi Prefecture",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Qamdo",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Qamdo Shi",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Rikaze",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Saga",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Shannan Diqu",
+    "stateCode": "XZ"
+  },
+  {
+    "name": "Chuxiong Yizu Zizhizhou",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Dali",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Dali Baizu Zizhizhou",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Dehong Daizu Jingpozu Zizhizhou",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Dêqên Tibetan Autonomous Prefecture",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Gejiu",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Haikou",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Honghe Hanizu Yizu Zizhizhou",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Jinghong",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Kaihua",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Kaiyuan",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Kunming",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Lianran",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Lijiang",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Lincang Shi",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Longquan",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Mabai",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Majie",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Miyang",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Nujiang Lisuzu Zizhizhou",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Qujing",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Shangri-La",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Shilin",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Wenlan",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Wenshan City",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Wenshan Zhuangzu Miaozu Zizhizhou",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Yuxi",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Zhaotong",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Zhongshu",
+    "stateCode": "YN"
+  },
+  {
+    "name": "Deqing",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Dongyang",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Fenghua",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Fuyang",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Guli",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Haining",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Hangzhou",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Huangyan",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Huzhou",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Jiaojiang",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Jiashan",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Jiaxing",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Jiaxing Shi",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Jinhua",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Jinxiang",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Kunyang",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Lanxi",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Lianghu",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Linhai",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Linping",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Lishui",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Luqiao",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Ningbo",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Ninghai",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Puyang",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Quzhou",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Shangyu",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Shaoxing",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Shenjiamen",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Taizhou",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Wenling",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Wenzhou",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Wuzhen",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Xianju",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Xiaoshan",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Yiwu",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Yuyao",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Zhaobaoshan",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Zhicheng",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Zhoushan",
+    "stateCode": "ZJ"
+  },
+  {
+    "name": "Zhuji",
+    "stateCode": "ZJ"
+  }
+]

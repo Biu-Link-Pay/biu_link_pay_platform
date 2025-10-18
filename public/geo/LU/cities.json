@@ -1,0 +1,578 @@
+[
+  {
+    "name": "Bascharage",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Bridel",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Capellen",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Clemency",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Dippach",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Eischen",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Garnich",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Hautcharage",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Hobscheid",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Käerjeng",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Kehlen",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Koerich",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Kopstal",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Mamer",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Schouweiler",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Septfontaines",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Steinfort",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Clervaux",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Hosingen",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Parc Hosingen",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Troisvierges",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Weiswampach",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Wincrange",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Bettendorf",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Bourscheid",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Commune de la Vallée de l’Ernz",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Diekirch",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Erpeldange",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Ettelbruck",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Feulen",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Medernach",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Mertzig",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Niederfeulen",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Reisdorf",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Schieren",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Warken",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Beaufort",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Bech",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Berdorf",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Consdorf",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Echternach",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Mompach",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Rosport",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Waldbillig",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Aspelt",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Belvaux",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Bergem",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Bettembourg",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Crauthem",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Differdange",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Dudelange",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Esch-sur-Alzette",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Frisange",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Kayl",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Lamadelaine",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Leudelange",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Mondercange",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Niedercorn",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Obercorn",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Pétange",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Pontpierre",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Reckange-sur-Mess",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Rodange",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Roeser",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Rumelange",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Sanem",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Schifflange",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Soleuvre",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Tétange",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Betzdorf",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Biwer",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Flaxweiler",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gonderange",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Grevenmacher",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Junglinster",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Manternach",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Mertert",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Wasserbillig",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Wormeldange",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Alzingen",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Béreldange",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Bertrange",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Contern",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Fentange",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Heisdorf",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Helmsange",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Hesperange",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Itzig",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Kirchberg",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Luxembourg",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Moutfort",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Müllendorf",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Niederanven",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Olm",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Sandweiler",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Schrassig",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Schuttrange",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Steinsel",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Strassen",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Walferdange",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Weiler-la-Tour",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Bissen",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Boevange-sur-Attert",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Colmar",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Fischbach",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Heffingen",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Larochette",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Lintgen",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Lorentzweiler",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Mersch",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Nommern",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Rollingen",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Tuntange",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Beckerich",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Bettborn",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Commune de Préizerdaul",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Ell",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Grosbous",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Rambrouch",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Redange-sur-Attert",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Saeul",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Useldange",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Vichten",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Wahl",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Bous",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Dalheim",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Lenningen",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Mondorf-les-Bains",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Remich",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Schengen",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Stadtbredimus",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Waldbredimus",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Putscheid",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Tandel",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Vianden",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Bavigne",
+    "stateCode": "WI"
+  },
+  {
+    "name": "Boulaide",
+    "stateCode": "WI"
+  },
+  {
+    "name": "Esch-sur-Sûre",
+    "stateCode": "WI"
+  },
+  {
+    "name": "Goesdorf",
+    "stateCode": "WI"
+  },
+  {
+    "name": "Kiischpelt",
+    "stateCode": "WI"
+  },
+  {
+    "name": "Lac de la Haute-Sûre",
+    "stateCode": "WI"
+  },
+  {
+    "name": "Wiltz",
+    "stateCode": "WI"
+  },
+  {
+    "name": "Wilwerwiltz",
+    "stateCode": "WI"
+  },
+  {
+    "name": "Winseler",
+    "stateCode": "WI"
+  }
+]

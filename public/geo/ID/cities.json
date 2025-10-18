@@ -1,0 +1,3558 @@
+[
+  {
+    "name": "Banda Aceh",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Bireun",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Aceh Barat",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Aceh Barat Daya",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Aceh Besar",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Aceh Jaya",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Aceh Selatan",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Aceh Singkil",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Aceh Tamiang",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Aceh Tengah",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Aceh Tenggara",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Aceh Timur",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Aceh Utara",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Bener Meriah",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Bireuen",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Gayo Lues",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Nagan Raya",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Pidie",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kabupaten Simeulue",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kota Banda Aceh",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kota Langsa",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kota Lhokseumawe",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kota Sabang",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kota Subulussalam",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Langsa",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Lhokseumawe",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Meulaboh",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Reuleuet",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Sabang",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Sigli",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Sinabang",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Singkil",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Amlapura",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Amlapura city",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Banjar",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Banjar Wangsian",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Bedugul",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Denpasar",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Jimbaran",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kabupaten Badung",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kabupaten Bangli",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kabupaten Buleleng",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kabupaten Gianyar",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kabupaten Jembrana",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kabupaten Karang Asem",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kabupaten Klungkung",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kabupaten Tabanan",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Klungkung",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kota Denpasar",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kuta",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Legian",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Lovina",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Munduk",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Negara",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Nusa Dua",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Seririt",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Singaraja",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Tabanan",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Ubud",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kabupaten Bangka",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Kabupaten Bangka Barat",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Kabupaten Bangka Selatan",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Kabupaten Bangka Tengah",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Kabupaten Belitung",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Kabupaten Belitung Timur",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Kota Pangkal Pinang",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Manggar",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Muntok",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Pangkalpinang",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Sungailiat",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Tanjung Pandan",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Bengkulu",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Curup",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kabupaten Bengkulu Selatan",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kabupaten Bengkulu Tengah",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kabupaten Bengkulu Utara",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kabupaten Kaur",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kabupaten Kepahiang",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kabupaten Lebong",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kabupaten Mukomuko",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kabupaten Rejang Lebong",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kabupaten Seluma",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kota Bengkulu",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Curug",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Kabupaten Lebak",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Kabupaten Pandeglang",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Kabupaten Serang",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Kabupaten Tangerang",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Kota Cilegon",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Kota Serang",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Kota Tangerang",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Kota Tangerang Selatan",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Labuan",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Pandeglang",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Rangkasbitung",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Serang",
+    "stateCode": "BT"
+  },
+  {
+    "name": "South Tangerang",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Tangerang",
+    "stateCode": "BT"
+  },
+  {
+    "name": "Gorontalo",
+    "stateCode": "GO"
+  },
+  {
+    "name": "Kabupaten Boalemo",
+    "stateCode": "GO"
+  },
+  {
+    "name": "Kabupaten Bone Bolango",
+    "stateCode": "GO"
+  },
+  {
+    "name": "Kabupaten Gorontalo",
+    "stateCode": "GO"
+  },
+  {
+    "name": "Kabupaten Gorontalo Utara",
+    "stateCode": "GO"
+  },
+  {
+    "name": "Kabupaten Pohuwato",
+    "stateCode": "GO"
+  },
+  {
+    "name": "Kota Gorontalo",
+    "stateCode": "GO"
+  },
+  {
+    "name": "Bejubang Dua",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Jambi City",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kabupaten Batang Hari",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kabupaten Bungo",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kabupaten Kerinci",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kabupaten Merangin",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kabupaten Muaro Jambi",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kabupaten Sarolangun",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kabupaten Tanjung Jabung Barat",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kabupaten Tanjung Jabung Timur",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kabupaten Tebo",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kota Jambi",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kota Sungai Penuh",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kuala Tungkal",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Mendaha",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Simpang",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Sungai Penuh",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Arjawinangun",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Astanajapura",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Bandung",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Banjar",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Banjaran",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Bekasi",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Bogor",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Caringin",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Ciamis",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Ciampea",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Cibinong",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Cicurug",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Cikampek",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Cikarang",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Cikupa",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Cileungsir",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Cileunyi",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Cimahi",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Ciputat",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Ciranjang-hilir",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Cirebon",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Citeureup",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Depok",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Indramayu",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Jatibarang",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Jatiwangi",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Bandung",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Bandung Barat",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Bekasi",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Bogor",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Ciamis",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Cianjur",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Cirebon",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Garut",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Indramayu",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Karawang",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Kuningan",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Majalengka",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Pangandaran",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Purwakarta",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Subang",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Sukabumi",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Sumedang",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kabupaten Tasikmalaya",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Karangampel",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Karangsembung",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kawalu",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Klangenan",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kota Bandung",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kota Banjar",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kota Bekasi",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kota Bogor",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kota Cimahi",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kota Cirebon",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kota Depok",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kota Sukabumi",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kota Tasikmalaya",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kresek",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Kuningan",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Lembang",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Majalengka",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Margahayukencana",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Ngawi",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Padalarang",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Palimanan",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Pamanukan",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Pameungpeuk",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Pamulang",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Parung",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Pasarkemis",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Paseh",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Pelabuhanratu",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Plumbon",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Purwakarta",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Rajapolah",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Rengasdengklok",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Sawangan",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Sepatan",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Serpong",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Singaparna",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Soreang",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Sukabumi",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Sumber",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Sumedang",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Sumedang Utara",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Tasikmalaya",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Teluknaga",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Wanaraja",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Weru",
+    "stateCode": "JB"
+  },
+  {
+    "name": "Babat",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Balung",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Bangil",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Bangkalan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Banyuwangi",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Batu",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Besuki",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Blitar",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Bojonegoro",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Bondowoso",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Boyolangu",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Buduran",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Dampit",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Diwek",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Driyorejo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Gambiran Satu",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Gampengrejo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Gedangan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Genteng",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Gongdanglegi Kulon",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Gresik",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Gresik Regency",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Jember",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Jombang",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Bangkalan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Banyuwangi",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Blitar",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Bojonegoro",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Bondowoso",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Jember",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Jombang",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Kediri",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Lamongan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Lumajang",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Madiun",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Magetan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Malang",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Mojokerto",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Nganjuk",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Ngawi",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Pacitan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Pamekasan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Pasuruan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Ponorogo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Probolinggo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Sampang",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Sidoarjo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Situbondo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Sumenep",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Trenggalek",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Tuban",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kabupaten Tulungagung",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kalianget",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kamal",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kebomas",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kediri",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kedungwaru",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kencong",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kepanjen",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kertosono",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kota Batu",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kota Blitar",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kota Kediri",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kota Madiun",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kota Malang",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kota Mojokerto",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kota Pasuruan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kota Probolinggo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kota Surabaya",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Kraksaan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Krian",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Lamongan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Lawang",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Lumajang",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Madiun",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Malang",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Mojoagung",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Mojokerto",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Muncar",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Nganjuk",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Ngoro",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Ngunut",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Paciran",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Pakisaji",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Pamekasan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Panarukan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Pandaan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Panji",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Pare",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Pasuruan",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Ponorogo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Prigen",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Probolinggo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Sampang",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Sidoarjo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Singojuruh",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Singosari",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Situbondo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Soko",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Srono",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Sumberpucung",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Sumenep",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Surabaya",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Tanggul",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Tanggulangin",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Trenggalek",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Tuban",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Tulangan Utara",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Tulungagung",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Wongsorejo",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Jakarta",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Kota Administrasi Jakarta Barat",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Kota Administrasi Jakarta Pusat",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Kota Administrasi Jakarta Selatan",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Kota Administrasi Jakarta Timur",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Kota Administrasi Jakarta Utara",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Adiwerna",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Ambarawa",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Baekrajan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Baki",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Balapulang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Banyumas",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Batang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Baturaden",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Blora",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Boyolali",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Buaran",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Bulakamba",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Candi Prambanan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Ceper",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Cepu",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Colomadu",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Comal",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Delanggu",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Demak",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Dukuhturi",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Gatak",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Gebog",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Gombong",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Grogol",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Gunung Kendil",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Jaten",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Jatiroto",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Jekulo",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Jogonalan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Juwana",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Banjarnegara",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Banyumas",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Batang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Blora",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Boyolali",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Brebes",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Cilacap",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Demak",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Grobogan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Jepara",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Karanganyar",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Kebumen",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Kendal",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Klaten",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Kudus",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Magelang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Pati",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Pekalongan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Pemalang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Purbalingga",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Purworejo",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Rembang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Semarang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Sragen",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Sukoharjo",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Tegal",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Temanggung",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Wonogiri",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kabupaten Wonosobo",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Karanganom",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kartasura",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kebonarun",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kedungwuni",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Ketanggungan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Klaten",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kota Magelang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kota Pekalongan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kota Salatiga",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kota Semarang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kota Surakarta",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kota Tegal",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kroya",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kudus",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Kutoarjo",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Lasem",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Lebaksiu",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Magelang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Majenang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Margasari",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Mertoyudan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Mlonggo",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Mranggen",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Muntilan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Ngemplak",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Pati",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Pecangaan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Pekalongan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Pemalang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Purbalingga",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Purwodadi",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Purwokerto",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Randudongkal",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Rembangan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Salatiga",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Selogiri",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Semarang",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Sidareja",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Slawi",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Sokaraja",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Sragen",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Surakarta",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Tarub",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Tayu",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Tegal",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Trucuk",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Ungaran",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Wangon",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Wedi",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Welahan",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Weleri",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Wiradesa",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Wonopringgo",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Wonosobo",
+    "stateCode": "JT"
+  },
+  {
+    "name": "Balikpapan",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Bontang",
+    "stateCode": "KI"
+  },
+  {
+    "name": "City of Balikpapan",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kabupaten Berau",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kabupaten Kutai Barat",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kabupaten Kutai Kartanegara",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kabupaten Kutai Timur",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kabupaten Mahakam Hulu",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kabupaten Paser",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kabupaten Penajam Paser Utara",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kota Balikpapan",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kota Bontang",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kota Samarinda",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Loa Janan",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Samarinda",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kabupaten Bintan",
+    "stateCode": "KR"
+  },
+  {
+    "name": "Kabupaten Karimun",
+    "stateCode": "KR"
+  },
+  {
+    "name": "Kabupaten Kepulauan Anambas",
+    "stateCode": "KR"
+  },
+  {
+    "name": "Kabupaten Lingga",
+    "stateCode": "KR"
+  },
+  {
+    "name": "Kabupaten Natuna",
+    "stateCode": "KR"
+  },
+  {
+    "name": "Kijang",
+    "stateCode": "KR"
+  },
+  {
+    "name": "Kota Batam",
+    "stateCode": "KR"
+  },
+  {
+    "name": "Kota Tanjung Pinang",
+    "stateCode": "KR"
+  },
+  {
+    "name": "Tanjung Pinang",
+    "stateCode": "KR"
+  },
+  {
+    "name": "Amuntai",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Banjarmasin",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Barabai",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Balangan",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Banjar",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Barito Kuala",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Hulu Sungai Selatan",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Hulu Sungai Tengah",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Hulu Sungai Utara",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Kota Baru",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Tabalong",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Tanah Bumbu",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Tanah Laut",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Tapin",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kota Banjar Baru",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kota Banjarmasin",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Martapura",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Kabupaten Barito Selatan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Barito Timur",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Barito Utara",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Gunung Mas",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Kapuas",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Katingan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Kotawaringin Barat",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Kotawaringin Timur",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Lamandau",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Murung Raya",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Pulang Pisau",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Seruyan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Sukamara",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kota Palangka Raya",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kualakapuas",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Palangkaraya",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Pangkalanbuun",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Sampit",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kabupaten Bulungan",
+    "stateCode": "KU"
+  },
+  {
+    "name": "Kabupaten Malinau",
+    "stateCode": "KU"
+  },
+  {
+    "name": "Kabupaten Nunukan",
+    "stateCode": "KU"
+  },
+  {
+    "name": "Kabupaten Tana Tidung",
+    "stateCode": "KU"
+  },
+  {
+    "name": "Tanjung Selor",
+    "stateCode": "KU"
+  },
+  {
+    "name": "Tarakan",
+    "stateCode": "KU"
+  },
+  {
+    "name": "Bandar Lampung",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Lampung Barat",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Lampung Selatan",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Lampung Tengah",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Lampung Timur",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Lampung Utara",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Mesuji",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Pesawaran",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Pesisir Barat",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Pringsewu",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Tanggamus",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Tulangbawang",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kabupaten Way Kanan",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kota Bandar Lampung",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kota Metro",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kotabumi",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Metro",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Terbanggi Besar",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Amahai",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ambon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kabupaten Buru",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kabupaten Buru Selatan",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kabupaten Kepulauan Aru",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kabupaten Maluku Barat Daya",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kabupaten Maluku Tengah",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kabupaten Maluku Tenggara",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kabupaten Maluku Tenggara Barat",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kabupaten Seram Bagian Barat",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kabupaten Seram Bagian Timur",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kota Ambon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kota Tual",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Tual",
+    "stateCode": "MA"
+  },
+  {
+    "name": "East Halmahera Regency",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Kabupaten Halmahera Barat",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Kabupaten Halmahera Selatan",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Kabupaten Halmahera Tengah",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Kabupaten Halmahera Utara",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Kabupaten Kepulauan Sula",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Kabupaten Pulau Morotai",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Kabupaten Pulau Taliabu",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Kota Ternate",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Kota Tidore Kepulauan",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Sofifi",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Ternate",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Tobelo",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Bima",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Dompu",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gili Air",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kabupaten Bima",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kabupaten Dompu",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kabupaten Lombok Barat",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kabupaten Lombok Tengah",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kabupaten Lombok Timur",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kabupaten Lombok Utara",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kabupaten Sumbawa",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kabupaten Sumbawa Barat",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kota Bima",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kota Mataram",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Labuan Lombok",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Lembar",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Mataram",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Pemenang",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Pototano",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Praya",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Senggigi",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Sumbawa Besar",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Atambua",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Ende",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Alor",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Belu",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Ende",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Flores Timur",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Kupang",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Lembata",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Malaka",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Manggarai",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Manggarai Barat",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Manggarai Timur",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Nagekeo",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Ngada",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Rote Ndao",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Sabu Raijua",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Sikka",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Sumba Barat",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Sumba Barat Daya",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Sumba Tengah",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Sumba Timur",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Timor Tengah Selatan",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kabupaten Timor Tengah Utara",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kefamenanu",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Komodo",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kota Kupang",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Kupang",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Labuan Bajo",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Maumere",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Naisano Dua",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Ruteng",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Soe",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Waingapu",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Abepura",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Biak",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Insrom",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Jayapura",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Asmat",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Biak Numfor",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Boven Digoel",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Deiyai",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Dogiyai",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Intan Jaya",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Jayapura",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Jayawijaya",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Keerom",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Kepulauan Yapen",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Lanny Jaya",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Mamberamo Raya",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Mamberamo Tengah",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Mappi",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Merauke",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Mimika",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Nabire",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Nduga",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Paniai",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Pegunungan Bintang",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Puncak Jaya",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Sarmi",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Supiori",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Tolikara",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Waropen",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Yahukimo",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Yalimo",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kota Jayapura",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Nabire",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Kabupaten Fakfak",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kabupaten Kaimana",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kabupaten Manokwari",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kabupaten Manokwari Selatan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kabupaten Maybrat",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kabupaten Raja Ampat",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kabupaten Sorong",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kabupaten Sorong Selatan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kabupaten Tambrauw",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kabupaten Teluk Bintuni",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kabupaten Teluk Wondama",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kota Sorong",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Manokwari",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sorong",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Balaipungut",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Batam",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Dumai",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kabupaten Bengkalis",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kabupaten Indragiri Hilir",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kabupaten Indragiri Hulu",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kabupaten Kampar",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kabupaten Kepulauan Meranti",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kabupaten Kuantan Singingi",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kabupaten Pelalawan",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kabupaten Rokan Hilir",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kabupaten Rokan Hulu",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kabupaten Siak",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kota Dumai",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kota Pekanbaru",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Pekanbaru",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Kabupaten Bolaang Mongondow",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kabupaten Bolaang Mongondow Selatan",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kabupaten Bolaang Mongondow Timur",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kabupaten Bolaang Mongondow Utara",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kabupaten Kepulauan Sangihe",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kabupaten Kepulauan Talaud",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kabupaten Minahasa",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kabupaten Minahasa Selatan",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kabupaten Minahasa Tenggara",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kabupaten Minahasa Utara",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kabupaten Siau Tagulandang Biaro",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kota Bitung",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kota Kotamobagu",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kota Manado",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kota Tomohon",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Laikit, Laikit II (Dimembe)",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Manado",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Tomohon",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Tondano",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Bukittinggi",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Agam",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Dharmasraya",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Kepulauan Mentawai",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Lima Puluh Kota",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Padang Pariaman",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Pasaman",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Pasaman Barat",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Pesisir Selatan",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Sijunjung",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Solok",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Solok Selatan",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Tanah Datar",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kota Bukittinggi",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kota Padang",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kota Padang Panjang",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kota Pariaman",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kota Payakumbuh",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kota Sawah Lunto",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kota Solok",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Padang",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Pariaman",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Payakumbuh",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Sijunjung",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Solok",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Kabupaten Bombana",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Buton",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Buton Selatan",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Buton Tengah",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Buton Utara",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Kolaka",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Kolaka Timur",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Kolaka Utara",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Konawe",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Konawe Kepulauan",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Konawe Selatan",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Konawe Utara",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Muna",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kabupaten Muna Barat",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Katabu",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kendari",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kota Baubau",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kota Kendari",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wakatobi Regency",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Galesong",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Bantaeng",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Barru",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Bone",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Bulukumba",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Enrekang",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Gowa",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Jeneponto",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Luwu",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Luwu Timur",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Luwu Utara",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Maros",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Pangkajene Dan Kepulauan",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Pinrang",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Sidenreng Rappang",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Sinjai",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Soppeng",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Takalar",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Tana Toraja",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Toraja Utara",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Wajo",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kota Makassar",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kota Palopo",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kota Parepare",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Makassar",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Maros",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Palopo",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Parepare",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Rantepao",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Selayar Islands Regency",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Sengkang",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Sinjai",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Watampone",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kabupaten Majene",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Kabupaten Mamasa",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Kabupaten Mamuju",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Kabupaten Mamuju Tengah",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Kabupaten Mamuju Utara",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Kabupaten Polewali Mandar",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Majene",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Mamuju",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Polewali",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Baturaja",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Empat Lawang",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Muara Enim",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Musi Banyuasin",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Musi Rawas",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Musi Rawas Utara",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Ogan Ilir",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Ogan Komering Ilir",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Ogan Komering Ulu",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Ogan Komering Ulu Selatan",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Ogan Komering Ulu Timur",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Penukal Abab Lematang Ilir",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kota Lubuklinggau",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kota Pagar Alam",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kota Palembang",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kota Prabumulih",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Lahat",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Lahat Regency",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Lubuklinggau",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Pagar Alam",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Palembang",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Prabumulih",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Tanjungagung",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Kabupaten Banggai",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Kabupaten Banggai Kepulauan",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Kabupaten Banggai Laut",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Kabupaten Buol",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Kabupaten Donggala",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Kabupaten Morowali Utara",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Kabupaten Parigi Moutong",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Kabupaten Poso",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Kabupaten Sigi",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Kabupaten Toli-Toli",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Kota Palu",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Luwuk",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Morowali Regency",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Palu",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Poso",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Tojo Una-Una Regency",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Ambarita",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Bandar",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Belawan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Berastagi",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Binjai",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Deli Tua",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Gunungsitoli",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabanjahe",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Asahan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Batu Bara",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Dairi",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Deli Serdang",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Humbang Hasundutan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Karo",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Labuhan Batu",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Labuhan Batu Selatan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Labuhan Batu Utara",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Langkat",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Mandailing Natal",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Nias",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Nias Barat",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Nias Utara",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Padang Lawas",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Padang Lawas Utara",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Pakpak Bharat",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Samosir",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Serdang Bedagai",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Simalungun",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Tapanuli Selatan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Tapanuli Tengah",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabupaten Tapanuli Utara",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kisaran",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kota Binjai",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kota Gunungsitoli",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kota Medan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kota Padangsidimpuan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kota Pematang Siantar",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kota Sibolga",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kota Tanjung Balai",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kota Tebing Tinggi",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Labuhan Deli",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Medan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Padangsidempuan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Pangkalan Brandan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Parapat",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Pekan Bahapal",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Pematangsiantar",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Perbaungan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Percut",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Rantauprapat",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Sibolga",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Stabat",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Sunggal",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Tanjungbalai",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Tanjungtiram",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Tebingtinggi",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Teluk Nibung",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Tomok Bolon",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Tongging",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Tuktuk Sonak",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Bambanglipuro",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Bantul",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Depok",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Gamping Lor",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Godean",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Kabupaten Bantul",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Kabupaten Gunung Kidul",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Kabupaten Kulon Progo",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Kabupaten Sleman",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Kasihan",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Kota Yogyakarta",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Melati",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Pandak",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Pundong",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Sewon",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Sleman",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Srandakan",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Yogyakarta",
+    "stateCode": "YO"
+  }
+]

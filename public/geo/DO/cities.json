@@ -1,0 +1,830 @@
+[
+  {
+    "name": "Bella Vista",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ciudad Nueva",
+    "stateCode": "01"
+  },
+  {
+    "name": "Cristo Rey",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ensanche Luperón",
+    "stateCode": "01"
+  },
+  {
+    "name": "La Agustina",
+    "stateCode": "01"
+  },
+  {
+    "name": "La Julia",
+    "stateCode": "01"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "01"
+  },
+  {
+    "name": "Santo Domingo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Villa Consuelo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Villa Francisca",
+    "stateCode": "01"
+  },
+  {
+    "name": "Azua",
+    "stateCode": "02"
+  },
+  {
+    "name": "El Guayabal",
+    "stateCode": "02"
+  },
+  {
+    "name": "Estebanía",
+    "stateCode": "02"
+  },
+  {
+    "name": "Las Charcas",
+    "stateCode": "02"
+  },
+  {
+    "name": "Padre Las Casas",
+    "stateCode": "02"
+  },
+  {
+    "name": "Palmar de Ocoa",
+    "stateCode": "02"
+  },
+  {
+    "name": "Peralta",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pueblo Viejo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sabana Yegua",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tábara Arriba",
+    "stateCode": "02"
+  },
+  {
+    "name": "Villarpando",
+    "stateCode": "02"
+  },
+  {
+    "name": "Yayas de Viajama",
+    "stateCode": "02"
+  },
+  {
+    "name": "El Palmar",
+    "stateCode": "03"
+  },
+  {
+    "name": "Galván",
+    "stateCode": "03"
+  },
+  {
+    "name": "La Uvilla",
+    "stateCode": "03"
+  },
+  {
+    "name": "Los Ríos",
+    "stateCode": "03"
+  },
+  {
+    "name": "Neiba",
+    "stateCode": "03"
+  },
+  {
+    "name": "Tamayo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Villa Jaragua",
+    "stateCode": "03"
+  },
+  {
+    "name": "Cabral",
+    "stateCode": "04"
+  },
+  {
+    "name": "Cachón",
+    "stateCode": "04"
+  },
+  {
+    "name": "Canoa",
+    "stateCode": "04"
+  },
+  {
+    "name": "El Peñón",
+    "stateCode": "04"
+  },
+  {
+    "name": "Enriquillo",
+    "stateCode": "04"
+  },
+  {
+    "name": "Fundación",
+    "stateCode": "04"
+  },
+  {
+    "name": "Jaquimeyes",
+    "stateCode": "04"
+  },
+  {
+    "name": "La Ciénaga",
+    "stateCode": "04"
+  },
+  {
+    "name": "Las Salinas",
+    "stateCode": "04"
+  },
+  {
+    "name": "Paraíso",
+    "stateCode": "04"
+  },
+  {
+    "name": "Pescadería",
+    "stateCode": "04"
+  },
+  {
+    "name": "Polo",
+    "stateCode": "04"
+  },
+  {
+    "name": "Santa Cruz de Barahona",
+    "stateCode": "04"
+  },
+  {
+    "name": "Vicente Noble",
+    "stateCode": "04"
+  },
+  {
+    "name": "Dajabón",
+    "stateCode": "05"
+  },
+  {
+    "name": "El Pino",
+    "stateCode": "05"
+  },
+  {
+    "name": "Loma de Cabrera",
+    "stateCode": "05"
+  },
+  {
+    "name": "Partido",
+    "stateCode": "05"
+  },
+  {
+    "name": "Restauración",
+    "stateCode": "05"
+  },
+  {
+    "name": "Agua Santa del Yuna",
+    "stateCode": "06"
+  },
+  {
+    "name": "Arenoso",
+    "stateCode": "06"
+  },
+  {
+    "name": "Castillo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hostos",
+    "stateCode": "06"
+  },
+  {
+    "name": "Las Guáranas",
+    "stateCode": "06"
+  },
+  {
+    "name": "Pimentel",
+    "stateCode": "06"
+  },
+  {
+    "name": "San Francisco de Macorís",
+    "stateCode": "06"
+  },
+  {
+    "name": "Villa Riva",
+    "stateCode": "06"
+  },
+  {
+    "name": "Miches",
+    "stateCode": "08"
+  },
+  {
+    "name": "Pedro Sánchez",
+    "stateCode": "08"
+  },
+  {
+    "name": "Santa Cruz de El Seibo",
+    "stateCode": "08"
+  },
+  {
+    "name": "Cayetano Germosén",
+    "stateCode": "09"
+  },
+  {
+    "name": "Gaspar Hernández",
+    "stateCode": "09"
+  },
+  {
+    "name": "Jamao al Norte",
+    "stateCode": "09"
+  },
+  {
+    "name": "Joba Arriba",
+    "stateCode": "09"
+  },
+  {
+    "name": "Juan López Abajo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Moca",
+    "stateCode": "09"
+  },
+  {
+    "name": "San Víctor Arriba",
+    "stateCode": "09"
+  },
+  {
+    "name": "Veragua Arriba",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cristóbal",
+    "stateCode": "10"
+  },
+  {
+    "name": "Duvergé",
+    "stateCode": "10"
+  },
+  {
+    "name": "Guayabal",
+    "stateCode": "10"
+  },
+  {
+    "name": "Jimaní",
+    "stateCode": "10"
+  },
+  {
+    "name": "La Descubierta",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mella",
+    "stateCode": "10"
+  },
+  {
+    "name": "Postrer Río",
+    "stateCode": "10"
+  },
+  {
+    "name": "Boca de Yuma",
+    "stateCode": "11"
+  },
+  {
+    "name": "Higüey",
+    "stateCode": "11"
+  },
+  {
+    "name": "Otra Banda",
+    "stateCode": "11"
+  },
+  {
+    "name": "Punta Cana",
+    "stateCode": "11"
+  },
+  {
+    "name": "Salvaleón de Higüey",
+    "stateCode": "11"
+  },
+  {
+    "name": "San Rafael del Yuma",
+    "stateCode": "11"
+  },
+  {
+    "name": "Guaymate",
+    "stateCode": "12"
+  },
+  {
+    "name": "La Romana",
+    "stateCode": "12"
+  },
+  {
+    "name": "Concepción de La Vega",
+    "stateCode": "13"
+  },
+  {
+    "name": "Constanza",
+    "stateCode": "13"
+  },
+  {
+    "name": "Jarabacoa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Jima Abajo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rincón",
+    "stateCode": "13"
+  },
+  {
+    "name": "Río Verde Arriba",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tireo Arriba",
+    "stateCode": "13"
+  },
+  {
+    "name": "Arroyo Salado",
+    "stateCode": "14"
+  },
+  {
+    "name": "Cabrera",
+    "stateCode": "14"
+  },
+  {
+    "name": "El Factor",
+    "stateCode": "14"
+  },
+  {
+    "name": "La Entrada",
+    "stateCode": "14"
+  },
+  {
+    "name": "Nagua",
+    "stateCode": "14"
+  },
+  {
+    "name": "Río San Juan",
+    "stateCode": "14"
+  },
+  {
+    "name": "Cana Chapetón",
+    "stateCode": "15"
+  },
+  {
+    "name": "Castañuelas",
+    "stateCode": "15"
+  },
+  {
+    "name": "Guayubín",
+    "stateCode": "15"
+  },
+  {
+    "name": "Hatillo Palma",
+    "stateCode": "15"
+  },
+  {
+    "name": "Las Matas de Santa Cruz",
+    "stateCode": "15"
+  },
+  {
+    "name": "Monte Cristi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Pepillo Salcedo",
+    "stateCode": "15"
+  },
+  {
+    "name": "San Fernando de Monte Cristi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Villa Elisa",
+    "stateCode": "15"
+  },
+  {
+    "name": "Villa Vásquez",
+    "stateCode": "15"
+  },
+  {
+    "name": "Juancho",
+    "stateCode": "16"
+  },
+  {
+    "name": "Oviedo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Pedernales",
+    "stateCode": "16"
+  },
+  {
+    "name": "Baní",
+    "stateCode": "17"
+  },
+  {
+    "name": "Matanzas",
+    "stateCode": "17"
+  },
+  {
+    "name": "Nizao",
+    "stateCode": "17"
+  },
+  {
+    "name": "Paya",
+    "stateCode": "17"
+  },
+  {
+    "name": "Pizarrete",
+    "stateCode": "17"
+  },
+  {
+    "name": "Sabana Buey",
+    "stateCode": "17"
+  },
+  {
+    "name": "Altamira",
+    "stateCode": "18"
+  },
+  {
+    "name": "Cabarete",
+    "stateCode": "18"
+  },
+  {
+    "name": "Estero Hondo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Guananico",
+    "stateCode": "18"
+  },
+  {
+    "name": "Imbert",
+    "stateCode": "18"
+  },
+  {
+    "name": "Los Hidalgos",
+    "stateCode": "18"
+  },
+  {
+    "name": "Luperón",
+    "stateCode": "18"
+  },
+  {
+    "name": "Monte Llano",
+    "stateCode": "18"
+  },
+  {
+    "name": "Puerto Plata",
+    "stateCode": "18"
+  },
+  {
+    "name": "Río Grande",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sosúa",
+    "stateCode": "18"
+  },
+  {
+    "name": "Villa Isabela",
+    "stateCode": "18"
+  },
+  {
+    "name": "Salcedo",
+    "stateCode": "19"
+  },
+  {
+    "name": "Salsipuedes",
+    "stateCode": "19"
+  },
+  {
+    "name": "Tenares",
+    "stateCode": "19"
+  },
+  {
+    "name": "Villa Tapia",
+    "stateCode": "19"
+  },
+  {
+    "name": "Las Terrenas",
+    "stateCode": "20"
+  },
+  {
+    "name": "Samaná",
+    "stateCode": "20"
+  },
+  {
+    "name": "Sánchez",
+    "stateCode": "20"
+  },
+  {
+    "name": "Bajos de Haina",
+    "stateCode": "21"
+  },
+  {
+    "name": "Cambita Garabitos",
+    "stateCode": "21"
+  },
+  {
+    "name": "El Cacao",
+    "stateCode": "21"
+  },
+  {
+    "name": "El Carril",
+    "stateCode": "21"
+  },
+  {
+    "name": "Sabana Grande de Palenque",
+    "stateCode": "21"
+  },
+  {
+    "name": "San Cristóbal",
+    "stateCode": "21"
+  },
+  {
+    "name": "San Gregorio de Nigua",
+    "stateCode": "21"
+  },
+  {
+    "name": "Villa Altagracia",
+    "stateCode": "21"
+  },
+  {
+    "name": "Yaguate",
+    "stateCode": "21"
+  },
+  {
+    "name": "Bohechío",
+    "stateCode": "22"
+  },
+  {
+    "name": "Cercado Abajo",
+    "stateCode": "22"
+  },
+  {
+    "name": "El Cercado",
+    "stateCode": "22"
+  },
+  {
+    "name": "Juan de Herrera",
+    "stateCode": "22"
+  },
+  {
+    "name": "Las Matas de Farfán",
+    "stateCode": "22"
+  },
+  {
+    "name": "Matayaya",
+    "stateCode": "22"
+  },
+  {
+    "name": "Pedro Corto",
+    "stateCode": "22"
+  },
+  {
+    "name": "San Juan de la Maguana",
+    "stateCode": "22"
+  },
+  {
+    "name": "Vallejuelo",
+    "stateCode": "22"
+  },
+  {
+    "name": "El Puerto",
+    "stateCode": "23"
+  },
+  {
+    "name": "Los Llanos",
+    "stateCode": "23"
+  },
+  {
+    "name": "Quisqueya",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ramón Santana",
+    "stateCode": "23"
+  },
+  {
+    "name": "San Pedro de Macorís",
+    "stateCode": "23"
+  },
+  {
+    "name": "Cevicos",
+    "stateCode": "24"
+  },
+  {
+    "name": "Cotuí",
+    "stateCode": "24"
+  },
+  {
+    "name": "Fantino",
+    "stateCode": "24"
+  },
+  {
+    "name": "Baitoa",
+    "stateCode": "25"
+  },
+  {
+    "name": "Bisonó",
+    "stateCode": "25"
+  },
+  {
+    "name": "Juncalito Abajo",
+    "stateCode": "25"
+  },
+  {
+    "name": "La Canela",
+    "stateCode": "25"
+  },
+  {
+    "name": "Licey al Medio",
+    "stateCode": "25"
+  },
+  {
+    "name": "Palmar Arriba",
+    "stateCode": "25"
+  },
+  {
+    "name": "Pedro García",
+    "stateCode": "25"
+  },
+  {
+    "name": "Sabana Iglesia",
+    "stateCode": "25"
+  },
+  {
+    "name": "San José de Las Matas",
+    "stateCode": "25"
+  },
+  {
+    "name": "Santiago de los Caballeros",
+    "stateCode": "25"
+  },
+  {
+    "name": "Santo Tomás de Jánico",
+    "stateCode": "25"
+  },
+  {
+    "name": "Tamboril",
+    "stateCode": "25"
+  },
+  {
+    "name": "Villa Bisonó",
+    "stateCode": "25"
+  },
+  {
+    "name": "Villa González",
+    "stateCode": "25"
+  },
+  {
+    "name": "Monción",
+    "stateCode": "26"
+  },
+  {
+    "name": "Sabaneta",
+    "stateCode": "26"
+  },
+  {
+    "name": "San Ignacio de Sabaneta",
+    "stateCode": "26"
+  },
+  {
+    "name": "Amina",
+    "stateCode": "27"
+  },
+  {
+    "name": "Esperanza",
+    "stateCode": "27"
+  },
+  {
+    "name": "Guatapanal",
+    "stateCode": "27"
+  },
+  {
+    "name": "Jaibón",
+    "stateCode": "27"
+  },
+  {
+    "name": "Jicomé",
+    "stateCode": "27"
+  },
+  {
+    "name": "La Caya",
+    "stateCode": "27"
+  },
+  {
+    "name": "Laguna Salada",
+    "stateCode": "27"
+  },
+  {
+    "name": "Maizal",
+    "stateCode": "27"
+  },
+  {
+    "name": "Mao",
+    "stateCode": "27"
+  },
+  {
+    "name": "Bonao",
+    "stateCode": "28"
+  },
+  {
+    "name": "Juan Adrián",
+    "stateCode": "28"
+  },
+  {
+    "name": "Maimón",
+    "stateCode": "28"
+  },
+  {
+    "name": "Piedra Blanca",
+    "stateCode": "28"
+  },
+  {
+    "name": "Sabana del Puerto",
+    "stateCode": "28"
+  },
+  {
+    "name": "Bayaguana",
+    "stateCode": "29"
+  },
+  {
+    "name": "Don Juan",
+    "stateCode": "29"
+  },
+  {
+    "name": "Esperalvillo",
+    "stateCode": "29"
+  },
+  {
+    "name": "Gonzalo",
+    "stateCode": "29"
+  },
+  {
+    "name": "Los Botados",
+    "stateCode": "29"
+  },
+  {
+    "name": "Majagual",
+    "stateCode": "29"
+  },
+  {
+    "name": "Monte Plata",
+    "stateCode": "29"
+  },
+  {
+    "name": "Sabana Grande de Boyá",
+    "stateCode": "29"
+  },
+  {
+    "name": "Yamasá",
+    "stateCode": "29"
+  },
+  {
+    "name": "El Valle",
+    "stateCode": "30"
+  },
+  {
+    "name": "Guayabo Dulce",
+    "stateCode": "30"
+  },
+  {
+    "name": "Hato Mayor del Rey",
+    "stateCode": "30"
+  },
+  {
+    "name": "Sabana de la Mar",
+    "stateCode": "30"
+  },
+  {
+    "name": "San José de Ocoa",
+    "stateCode": "31"
+  },
+  {
+    "name": "Boca Chica",
+    "stateCode": "32"
+  },
+  {
+    "name": "Santo Domingo Este",
+    "stateCode": "32"
+  },
+  {
+    "name": "Santo Domingo Oeste",
+    "stateCode": "32"
+  }
+]

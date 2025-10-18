@@ -1,0 +1,590 @@
+[
+  {
+    "name": "Battaramulla South",
+    "stateCode": "1"
+  },
+  {
+    "name": "Beruwala",
+    "stateCode": "1"
+  },
+  {
+    "name": "Colombo",
+    "stateCode": "1"
+  },
+  {
+    "name": "Colombo District",
+    "stateCode": "1"
+  },
+  {
+    "name": "Gampaha",
+    "stateCode": "1"
+  },
+  {
+    "name": "Gampaha District",
+    "stateCode": "1"
+  },
+  {
+    "name": "Hanwella Ihala",
+    "stateCode": "1"
+  },
+  {
+    "name": "Hendala",
+    "stateCode": "1"
+  },
+  {
+    "name": "Horana South",
+    "stateCode": "1"
+  },
+  {
+    "name": "Horawala Junction",
+    "stateCode": "1"
+  },
+  {
+    "name": "Ja Ela",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kalutara",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kandana",
+    "stateCode": "1"
+  },
+  {
+    "name": "Katunayaka",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kelaniya",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kotikawatta",
+    "stateCode": "1"
+  },
+  {
+    "name": "Minuwangoda",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mulleriyawa",
+    "stateCode": "1"
+  },
+  {
+    "name": "Negombo",
+    "stateCode": "1"
+  },
+  {
+    "name": "Panadura",
+    "stateCode": "1"
+  },
+  {
+    "name": "Peliyagoda",
+    "stateCode": "1"
+  },
+  {
+    "name": "Pita Kotte",
+    "stateCode": "1"
+  },
+  {
+    "name": "Sri Jayewardenepura Kotte",
+    "stateCode": "1"
+  },
+  {
+    "name": "Wattala",
+    "stateCode": "1"
+  },
+  {
+    "name": "Welisara",
+    "stateCode": "1"
+  },
+  {
+    "name": "Dehiwala-Mount Lavinia",
+    "stateCode": "11"
+  },
+  {
+    "name": "Homagama",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kaduwela",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kesbewa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kolonnawa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kotte",
+    "stateCode": "11"
+  },
+  {
+    "name": "Maharagama",
+    "stateCode": "11"
+  },
+  {
+    "name": "Moratuwa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Padukka",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ratmalana",
+    "stateCode": "11"
+  },
+  {
+    "name": "Seethawaka",
+    "stateCode": "11"
+  },
+  {
+    "name": "Thimbirigasyaya",
+    "stateCode": "11"
+  },
+  {
+    "name": "Dambulla",
+    "stateCode": "2"
+  },
+  {
+    "name": "Hatton",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kandy",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kandy District",
+    "stateCode": "2"
+  },
+  {
+    "name": "Matale",
+    "stateCode": "2"
+  },
+  {
+    "name": "Matale District",
+    "stateCode": "2"
+  },
+  {
+    "name": "Nuwara Eliya",
+    "stateCode": "2"
+  },
+  {
+    "name": "Nuwara Eliya District",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sigiriya",
+    "stateCode": "2"
+  },
+  {
+    "name": "Talawakele",
+    "stateCode": "2"
+  },
+  {
+    "name": "Akurana",
+    "stateCode": "21"
+  },
+  {
+    "name": "Alawatugoda",
+    "stateCode": "21"
+  },
+  {
+    "name": "Ambatenna",
+    "stateCode": "21"
+  },
+  {
+    "name": "Daskara",
+    "stateCode": "21"
+  },
+  {
+    "name": "Daulagala",
+    "stateCode": "21"
+  },
+  {
+    "name": "Delthota",
+    "stateCode": "21"
+  },
+  {
+    "name": "Doluwa",
+    "stateCode": "21"
+  },
+  {
+    "name": "Galagedara",
+    "stateCode": "21"
+  },
+  {
+    "name": "Galhinna",
+    "stateCode": "21"
+  },
+  {
+    "name": "Gampola",
+    "stateCode": "21"
+  },
+  {
+    "name": "Ganga Ihala Korale",
+    "stateCode": "21"
+  },
+  {
+    "name": "Hanguranketa",
+    "stateCode": "21"
+  },
+  {
+    "name": "Hapugastalawa",
+    "stateCode": "21"
+  },
+  {
+    "name": "Harispattuwa",
+    "stateCode": "21"
+  },
+  {
+    "name": "Hatharaliyadda",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kadugannawa",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kandy Four Gravets",
+    "stateCode": "21"
+  },
+  {
+    "name": "Katugastota",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kundasale",
+    "stateCode": "21"
+  },
+  {
+    "name": "Madawala",
+    "stateCode": "21"
+  },
+  {
+    "name": "Medadumbara",
+    "stateCode": "21"
+  },
+  {
+    "name": "Menikdiwela",
+    "stateCode": "21"
+  },
+  {
+    "name": "Minipe",
+    "stateCode": "21"
+  },
+  {
+    "name": "Nawalapitiya",
+    "stateCode": "21"
+  },
+  {
+    "name": "Pallekele",
+    "stateCode": "21"
+  },
+  {
+    "name": "Panvila",
+    "stateCode": "21"
+  },
+  {
+    "name": "Pasbage Korale",
+    "stateCode": "21"
+  },
+  {
+    "name": "Pathadumbara",
+    "stateCode": "21"
+  },
+  {
+    "name": "Pathahewaheta",
+    "stateCode": "21"
+  },
+  {
+    "name": "Peradeniya",
+    "stateCode": "21"
+  },
+  {
+    "name": "Pilimathalawa",
+    "stateCode": "21"
+  },
+  {
+    "name": "Poojapitiya",
+    "stateCode": "21"
+  },
+  {
+    "name": "Pussellawa",
+    "stateCode": "21"
+  },
+  {
+    "name": "Talatuoya",
+    "stateCode": "21"
+  },
+  {
+    "name": "Teldeniya",
+    "stateCode": "21"
+  },
+  {
+    "name": "Thumpane",
+    "stateCode": "21"
+  },
+  {
+    "name": "Udadumbara",
+    "stateCode": "21"
+  },
+  {
+    "name": "Udapalatha",
+    "stateCode": "21"
+  },
+  {
+    "name": "Ududumbara",
+    "stateCode": "21"
+  },
+  {
+    "name": "Udunuwara",
+    "stateCode": "21"
+  },
+  {
+    "name": "Ulapane",
+    "stateCode": "21"
+  },
+  {
+    "name": "Watadeniya",
+    "stateCode": "21"
+  },
+  {
+    "name": "Wattegama",
+    "stateCode": "21"
+  },
+  {
+    "name": "Welamboda",
+    "stateCode": "21"
+  },
+  {
+    "name": "Yatinuwara",
+    "stateCode": "21"
+  },
+  {
+    "name": "Ambalangoda",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bentota",
+    "stateCode": "3"
+  },
+  {
+    "name": "Devinuwara",
+    "stateCode": "3"
+  },
+  {
+    "name": "Galle",
+    "stateCode": "3"
+  },
+  {
+    "name": "Galle District",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hambantota District",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hikkaduwa",
+    "stateCode": "3"
+  },
+  {
+    "name": "Koggala",
+    "stateCode": "3"
+  },
+  {
+    "name": "Matara",
+    "stateCode": "3"
+  },
+  {
+    "name": "Matara District",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mirissa city",
+    "stateCode": "3"
+  },
+  {
+    "name": "Talpe",
+    "stateCode": "3"
+  },
+  {
+    "name": "Tangalle",
+    "stateCode": "3"
+  },
+  {
+    "name": "Unawatuna",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weligama",
+    "stateCode": "3"
+  },
+  {
+    "name": "Jaffna",
+    "stateCode": "4"
+  },
+  {
+    "name": "Jaffna District",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kilinochchi",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kilinochchi District",
+    "stateCode": "4"
+  },
+  {
+    "name": "Point Pedro",
+    "stateCode": "4"
+  },
+  {
+    "name": "Valvedditturai",
+    "stateCode": "4"
+  },
+  {
+    "name": "Vavuniya",
+    "stateCode": "4"
+  },
+  {
+    "name": "Vavuniya District",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ampara",
+    "stateCode": "5"
+  },
+  {
+    "name": "Ampara District",
+    "stateCode": "5"
+  },
+  {
+    "name": "Batticaloa",
+    "stateCode": "5"
+  },
+  {
+    "name": "Batticaloa District",
+    "stateCode": "5"
+  },
+  {
+    "name": "Eravur Town",
+    "stateCode": "5"
+  },
+  {
+    "name": "Kalmunai",
+    "stateCode": "5"
+  },
+  {
+    "name": "Trincomalee",
+    "stateCode": "5"
+  },
+  {
+    "name": "Trincomalee District",
+    "stateCode": "5"
+  },
+  {
+    "name": "Vakarai",
+    "stateCode": "5"
+  },
+  {
+    "name": "Chilaw",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kuliyapitiya",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kurunegala",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kurunegala District",
+    "stateCode": "6"
+  },
+  {
+    "name": "Puttalam",
+    "stateCode": "6"
+  },
+  {
+    "name": "Puttalam District",
+    "stateCode": "6"
+  },
+  {
+    "name": "Anuradhapura",
+    "stateCode": "7"
+  },
+  {
+    "name": "Anuradhapura District",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mihintale",
+    "stateCode": "7"
+  },
+  {
+    "name": "Polonnaruwa",
+    "stateCode": "7"
+  },
+  {
+    "name": "Polonnaruwa District",
+    "stateCode": "7"
+  },
+  {
+    "name": "Badulla",
+    "stateCode": "8"
+  },
+  {
+    "name": "Badulla District",
+    "stateCode": "8"
+  },
+  {
+    "name": "Ella Town",
+    "stateCode": "8"
+  },
+  {
+    "name": "Haputale",
+    "stateCode": "8"
+  },
+  {
+    "name": "Kataragama",
+    "stateCode": "8"
+  },
+  {
+    "name": "Monaragala",
+    "stateCode": "8"
+  },
+  {
+    "name": "Moneragala District",
+    "stateCode": "8"
+  },
+  {
+    "name": "Wellawaya",
+    "stateCode": "8"
+  },
+  {
+    "name": "Kegalle",
+    "stateCode": "9"
+  },
+  {
+    "name": "Kegalle District",
+    "stateCode": "9"
+  },
+  {
+    "name": "Ratnapura",
+    "stateCode": "9"
+  },
+  {
+    "name": "Ratnapura District",
+    "stateCode": "9"
+  }
+]

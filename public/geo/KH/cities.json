@@ -1,0 +1,426 @@
+[
+  {
+    "name": "Mongkol Borei",
+    "stateCode": "1"
+  },
+  {
+    "name": "Paoy Paet",
+    "stateCode": "1"
+  },
+  {
+    "name": "Sisophon",
+    "stateCode": "1"
+  },
+  {
+    "name": "Srŏk Malai",
+    "stateCode": "1"
+  },
+  {
+    "name": "Srŏk Svay Chék",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kracheh",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kratié",
+    "stateCode": "10"
+  },
+  {
+    "name": "Snuol",
+    "stateCode": "10"
+  },
+  {
+    "name": "Krŏng Sênmônoŭrôm",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sen Monorom",
+    "stateCode": "11"
+  },
+  {
+    "name": "Srŏk Kaev Seima",
+    "stateCode": "11"
+  },
+  {
+    "name": "Srŏk Pech Chreada",
+    "stateCode": "11"
+  },
+  {
+    "name": "Khan 7 Makara",
+    "stateCode": "12"
+  },
+  {
+    "name": "Khan Châmkar Mon",
+    "stateCode": "12"
+  },
+  {
+    "name": "Khan Dângkaô",
+    "stateCode": "12"
+  },
+  {
+    "name": "Khan Duŏn Pénh",
+    "stateCode": "12"
+  },
+  {
+    "name": "Khan Méan Chey",
+    "stateCode": "12"
+  },
+  {
+    "name": "Khan Russey Keo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Khan Saen Sokh",
+    "stateCode": "12"
+  },
+  {
+    "name": "Phnom Penh",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sangkom Thmei",
+    "stateCode": "13"
+  },
+  {
+    "name": "Srŏk Ch’êh Sên",
+    "stateCode": "13"
+  },
+  {
+    "name": "Srŏk Chhêb",
+    "stateCode": "13"
+  },
+  {
+    "name": "Srŏk Kulén",
+    "stateCode": "13"
+  },
+  {
+    "name": "Srŏk Rôviĕng",
+    "stateCode": "13"
+  },
+  {
+    "name": "Srŏk Tbêng Méanchey",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tbeng Meanchey",
+    "stateCode": "13"
+  },
+  {
+    "name": "Prey Veng",
+    "stateCode": "14"
+  },
+  {
+    "name": "Srŏk Kâmpóng Léav",
+    "stateCode": "14"
+  },
+  {
+    "name": "Srŏk Mésang",
+    "stateCode": "14"
+  },
+  {
+    "name": "Srŏk Preăh Sdéch",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bakan",
+    "stateCode": "15"
+  },
+  {
+    "name": "Krakor",
+    "stateCode": "15"
+  },
+  {
+    "name": "Pursat",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sampov Meas",
+    "stateCode": "15"
+  },
+  {
+    "name": "Srŏk Kândiĕng",
+    "stateCode": "15"
+  },
+  {
+    "name": "Srŏk Véal Vêng",
+    "stateCode": "15"
+  },
+  {
+    "name": "Banlung",
+    "stateCode": "16"
+  },
+  {
+    "name": "Lumphat",
+    "stateCode": "16"
+  },
+  {
+    "name": "Srŏk Ândong Méas",
+    "stateCode": "16"
+  },
+  {
+    "name": "Srŏk Bâ Kêv",
+    "stateCode": "16"
+  },
+  {
+    "name": "Srŏk Ban Lŭng",
+    "stateCode": "16"
+  },
+  {
+    "name": "Srŏk Koun Mom",
+    "stateCode": "16"
+  },
+  {
+    "name": "Srŏk Ou Chum",
+    "stateCode": "16"
+  },
+  {
+    "name": "Srŏk Ou Ya Dav",
+    "stateCode": "16"
+  },
+  {
+    "name": "Srŏk Ta Vêng",
+    "stateCode": "16"
+  },
+  {
+    "name": "Siem Reap",
+    "stateCode": "17"
+  },
+  {
+    "name": "Srŏk Ângkôr Thum",
+    "stateCode": "17"
+  },
+  {
+    "name": "Srŏk Prasat Bakong",
+    "stateCode": "17"
+  },
+  {
+    "name": "Svay Leu",
+    "stateCode": "17"
+  },
+  {
+    "name": "Varin",
+    "stateCode": "17"
+  },
+  {
+    "name": "Sihanoukville",
+    "stateCode": "18"
+  },
+  {
+    "name": "Srok Stueng Hav",
+    "stateCode": "18"
+  },
+  {
+    "name": "Srŏk Srêsén",
+    "stateCode": "19"
+  },
+  {
+    "name": "Stueng Traeng",
+    "stateCode": "19"
+  },
+  {
+    "name": "Stung Treng",
+    "stateCode": "19"
+  },
+  {
+    "name": "Battambang",
+    "stateCode": "2"
+  },
+  {
+    "name": "Srŏk Âk Phnŭm",
+    "stateCode": "2"
+  },
+  {
+    "name": "Srŏk Banăn",
+    "stateCode": "2"
+  },
+  {
+    "name": "Srŏk Bâvĭl",
+    "stateCode": "2"
+  },
+  {
+    "name": "Srŏk Rotanak Mondol",
+    "stateCode": "2"
+  },
+  {
+    "name": "Srŏk Svay Chrŭm",
+    "stateCode": "20"
+  },
+  {
+    "name": "Svay Rieng",
+    "stateCode": "20"
+  },
+  {
+    "name": "Krŏng Doun Kaev",
+    "stateCode": "21"
+  },
+  {
+    "name": "Phumĭ Véal Srê",
+    "stateCode": "21"
+  },
+  {
+    "name": "Srŏk Ângkôr Borei",
+    "stateCode": "21"
+  },
+  {
+    "name": "Srŏk Borei Cholsar",
+    "stateCode": "21"
+  },
+  {
+    "name": "Takeo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Samraong",
+    "stateCode": "22"
+  },
+  {
+    "name": "Srŏk Bântéay Âmpĭl",
+    "stateCode": "22"
+  },
+  {
+    "name": "Srŏk Sâmraông",
+    "stateCode": "22"
+  },
+  {
+    "name": "Srŏk Trâpeăng Prasat",
+    "stateCode": "22"
+  },
+  {
+    "name": "Krong Kep",
+    "stateCode": "23"
+  },
+  {
+    "name": "Srŏk Dâmnăk Châng’aeur",
+    "stateCode": "23"
+  },
+  {
+    "name": "Khan Sala Krau",
+    "stateCode": "24"
+  },
+  {
+    "name": "Pailin",
+    "stateCode": "24"
+  },
+  {
+    "name": "Cheung Prey",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kampong Cham",
+    "stateCode": "3"
+  },
+  {
+    "name": "Srŏk Bathéay",
+    "stateCode": "3"
+  },
+  {
+    "name": "Baribour",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kampong Chhnang",
+    "stateCode": "4"
+  },
+  {
+    "name": "Rolea B'ier",
+    "stateCode": "4"
+  },
+  {
+    "name": "Srŏk Chol Kiri",
+    "stateCode": "4"
+  },
+  {
+    "name": "Srŏk Sameakki Mean Chey",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kampong Speu",
+    "stateCode": "5"
+  },
+  {
+    "name": "Krŏng Chbar Mon",
+    "stateCode": "5"
+  },
+  {
+    "name": "Srŏk Basedth",
+    "stateCode": "5"
+  },
+  {
+    "name": "Srŏk Kông Pĭsei",
+    "stateCode": "5"
+  },
+  {
+    "name": "Srŏk Ŏdŏngk",
+    "stateCode": "5"
+  },
+  {
+    "name": "Angkor Chey",
+    "stateCode": "7"
+  },
+  {
+    "name": "Banteay Meas",
+    "stateCode": "7"
+  },
+  {
+    "name": "Chhouk District",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kampong Bay",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kampong Tranch",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kampot",
+    "stateCode": "7"
+  },
+  {
+    "name": "Srŏk Chŭm Kiri",
+    "stateCode": "7"
+  },
+  {
+    "name": "Srŏk Dângtóng",
+    "stateCode": "7"
+  },
+  {
+    "name": "Srok Tuek Chhou",
+    "stateCode": "7"
+  },
+  {
+    "name": "Krŏng Ta Khmau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Srŏk Khsăch Kândal",
+    "stateCode": "8"
+  },
+  {
+    "name": "Ta Khmau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Koh Kong",
+    "stateCode": "9"
+  },
+  {
+    "name": "Smach Mean Chey",
+    "stateCode": "9"
+  },
+  {
+    "name": "Srae Ambel",
+    "stateCode": "9"
+  },
+  {
+    "name": "Srŏk Batum Sakôr",
+    "stateCode": "9"
+  },
+  {
+    "name": "Srŏk Môndôl Seima",
+    "stateCode": "9"
+  }
+]

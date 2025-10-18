@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Boffa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Boké",
+    "stateCode": "B"
+  },
+  {
+    "name": "Boke Prefecture",
+    "stateCode": "B"
+  },
+  {
+    "name": "Fria",
+    "stateCode": "B"
+  },
+  {
+    "name": "Gaoual",
+    "stateCode": "B"
+  },
+  {
+    "name": "Gaoual Prefecture",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kimbo",
+    "stateCode": "B"
+  },
+  {
+    "name": "Koundara",
+    "stateCode": "B"
+  },
+  {
+    "name": "Koundara Prefecture",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sanguéya",
+    "stateCode": "B"
+  },
+  {
+    "name": "Youkounkoun",
+    "stateCode": "B"
+  },
+  {
+    "name": "Camayenne",
+    "stateCode": "C"
+  },
+  {
+    "name": "Conakry",
+    "stateCode": "C"
+  },
+  {
+    "name": "Coyah",
+    "stateCode": "D"
+  },
+  {
+    "name": "Dubréka",
+    "stateCode": "D"
+  },
+  {
+    "name": "Forécariah",
+    "stateCode": "D"
+  },
+  {
+    "name": "Kindia",
+    "stateCode": "D"
+  },
+  {
+    "name": "Préfecture de Dubréka",
+    "stateCode": "D"
+  },
+  {
+    "name": "Préfecture de Forécariah",
+    "stateCode": "D"
+  },
+  {
+    "name": "Télimélé",
+    "stateCode": "D"
+  },
+  {
+    "name": "Telimele Prefecture",
+    "stateCode": "D"
+  },
+  {
+    "name": "Tondon",
+    "stateCode": "D"
+  },
+  {
+    "name": "Kankan",
+    "stateCode": "K"
+  },
+  {
+    "name": "Kankan Prefecture",
+    "stateCode": "K"
+  },
+  {
+    "name": "Kérouané",
+    "stateCode": "K"
+  },
+  {
+    "name": "Kerouane Prefecture",
+    "stateCode": "K"
+  },
+  {
+    "name": "Kouroussa",
+    "stateCode": "K"
+  },
+  {
+    "name": "Mandiana",
+    "stateCode": "K"
+  },
+  {
+    "name": "Mandiana Prefecture",
+    "stateCode": "K"
+  },
+  {
+    "name": "Siguiri",
+    "stateCode": "K"
+  },
+  {
+    "name": "Siguiri Prefecture",
+    "stateCode": "K"
+  },
+  {
+    "name": "Tokonou",
+    "stateCode": "K"
+  },
+  {
+    "name": "Koubia",
+    "stateCode": "L"
+  },
+  {
+    "name": "Labé",
+    "stateCode": "L"
+  },
+  {
+    "name": "Labe Prefecture",
+    "stateCode": "L"
+  },
+  {
+    "name": "Lélouma",
+    "stateCode": "L"
+  },
+  {
+    "name": "Lelouma Prefecture",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mali",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mali Prefecture",
+    "stateCode": "L"
+  },
+  {
+    "name": "Tougué",
+    "stateCode": "L"
+  },
+  {
+    "name": "Tougue Prefecture",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dalaba",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mamou",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mamou Prefecture",
+    "stateCode": "M"
+  },
+  {
+    "name": "Pita",
+    "stateCode": "M"
+  },
+  {
+    "name": "Beyla",
+    "stateCode": "N"
+  },
+  {
+    "name": "Beyla Prefecture",
+    "stateCode": "N"
+  },
+  {
+    "name": "Gueckedou",
+    "stateCode": "N"
+  },
+  {
+    "name": "Lola",
+    "stateCode": "N"
+  },
+  {
+    "name": "Macenta",
+    "stateCode": "N"
+  },
+  {
+    "name": "Nzérékoré",
+    "stateCode": "N"
+  },
+  {
+    "name": "Nzerekore Prefecture",
+    "stateCode": "N"
+  },
+  {
+    "name": "Préfecture de Guékédou",
+    "stateCode": "N"
+  },
+  {
+    "name": "Yomou",
+    "stateCode": "N"
+  }
+]

@@ -166,8 +166,7 @@
 
         <!-- Recharge Section -->
         <div>
-          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Please complete your first Recharge</h2>
-
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-6">{{ rechargeSectionTitle }}</h2>
           <div class="mb-4">
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Recharge amount</label>
             <div class="flex items-center gap-2">
@@ -213,9 +212,7 @@ import AppHeader from '@/components/AppHeader.vue'
 import CardInfoHeader from '@/components/CardInfoHeader.vue'
 import { CardAPI } from '@/api/card'
 import type { CardHolderInfo as HolderInfo, CardHolderResponse } from '@/api/card'
-import * as CSC from 'country-state-city'
-
-const { Country, State, City } = CSC
+import { getCountries, getStatesOfCountry, getCitiesOfState, getCitiesOfCountry, getStateDisplayName, normalizeStateCode, type CountryOption, type StateOption, type CityOption, tryGetStateDisplayFromCache } from '@/services/geo'
 
 const router = useRouter()
 const route = useRoute()
@@ -254,28 +251,7 @@ const errors = reactive({
 const loading = ref(false)
 
 // Location data sourced from country-state-city library (Country / State / City)
-interface CountryOption {
-  name: string
-  code: string
-}
-
-interface StateOption {
-  name: string
-  isoCode: string
-}
-
-interface CityOption {
-  name: string
-}
-
-const countries = ref<CountryOption[]>(
-  Country.getAllCountries()
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .map(country => ({
-      name: country.name,
-      code: country.isoCode
-    }))
-)
+const countries = ref<CountryOption[]>([])
 
 const states = ref<StateOption[]>([])
 const cities = ref<CityOption[]>([])
@@ -293,11 +269,16 @@ const getStateDisplay = (countryCode?: string, stateValue?: string) => {
   if (!stateValue) return ''
   const code = (countryCode || '').toUpperCase()
   if (!code) return stateValue
-  const stateList = State.getStatesOfCountry(code) || []
-  const byCode = stateList.find(s => s.isoCode.toUpperCase() === stateValue.toUpperCase())
-  if (byCode) return byCode.name
-  const byName = stateList.find(s => s.name.trim().toLowerCase() === stateValue.trim().toLowerCase())
-  return byName?.name || stateValue
+  // 优先从缓存同步获取（若未加载则返回原值）
+  const cached = tryGetStateDisplayFromCache(code, stateValue)
+  if (cached && cached !== stateValue) return cached
+  // 异步补偿加载
+  getStateDisplayName(code, stateValue).then(name => {
+    if (name && name !== stateValue) {
+      // 仅用于渲染展示，不覆盖表单
+    }
+  })
+  return stateValue
 }
 
 // Helper functions for cascading selects
@@ -315,19 +296,21 @@ const loadCitiesForState = (
     return
   }
 
-  const cityList = (City.getCitiesOfState(countryCode, stateIsoCode) || []).sort((a, b) => a.name.localeCompare(b.name))
-  cities.value = cityList.map(city => ({ name: city.name }))
+  getCitiesOfState(countryCode, stateIsoCode).then(list => {
+    const cityList = list.slice().sort((a, b) => a.name.localeCompare(b.name))
+    cities.value = cityList.map(city => ({ name: city.name }))
 
-  if (preserveExisting && form.residentialCity) {
-    const matchedCity = cityList.find(city => city.name === form.residentialCity)
-    if (matchedCity) {
-      selectedCityName.value = matchedCity.name
-      return
+    if (preserveExisting && form.residentialCity) {
+      const matchedCity = cityList.find(city => city.name === form.residentialCity)
+      if (matchedCity) {
+        selectedCityName.value = matchedCity.name
+        return
+      }
     }
-  }
 
-  selectedCityName.value = null
-  form.residentialCity = ''
+    selectedCityName.value = null
+    form.residentialCity = ''
+  })
 }
 
 const loadCitiesForCountry = (
@@ -343,19 +326,21 @@ const loadCitiesForCountry = (
     return
   }
 
-  const cityList = (City.getCitiesOfCountry(countryCode) || []).sort((a, b) => a.name.localeCompare(b.name))
-  cities.value = cityList.map(city => ({ name: city.name }))
+  getCitiesOfCountry(countryCode).then(list => {
+    const cityList = list.slice().sort((a, b) => a.name.localeCompare(b.name))
+    cities.value = cityList.map(city => ({ name: city.name }))
 
-  if (preserveExisting && form.residentialCity) {
-    const matchedCity = cityList.find(city => city.name === form.residentialCity)
-    if (matchedCity) {
-      selectedCityName.value = matchedCity.name
-      return
+    if (preserveExisting && form.residentialCity) {
+      const matchedCity = cityList.find(city => city.name === form.residentialCity)
+      if (matchedCity) {
+        selectedCityName.value = matchedCity.name
+        return
+      }
     }
-  }
 
-  selectedCityName.value = null
-  form.residentialCity = ''
+    selectedCityName.value = null
+    form.residentialCity = ''
+  })
 }
 
 const loadStatesForCountry = (countryCode: string | null | undefined, preserveExisting = false) => {
@@ -369,31 +354,31 @@ const loadStatesForCountry = (countryCode: string | null | undefined, preserveEx
     return
   }
 
-  const stateList = (State.getStatesOfCountry(countryCode) || []).sort((a, b) => a.name.localeCompare(b.name))
-
-  if (stateList.length === 0) {
-    states.value = []
-    selectedStateCode.value = null
-    if (!preserveExisting) {
-      form.residentialState = ''
+  getStatesOfCountry(countryCode).then(stateList => {
+    if (stateList.length === 0) {
+      states.value = []
+      selectedStateCode.value = null
+      if (!preserveExisting) {
+        form.residentialState = ''
+      }
+      loadCitiesForCountry(countryCode, preserveExisting)
+      return
     }
-    loadCitiesForCountry(countryCode, preserveExisting)
-    return
-  }
 
-  states.value = stateList.map(state => ({ name: state.name, isoCode: state.isoCode }))
+    states.value = stateList.map(state => ({ name: state.name, isoCode: state.isoCode }))
 
-  if (preserveExisting && form.residentialState) {
-    const target = form.residentialState.trim()
-    const matchedByCode = stateList.find(state => state.isoCode.toUpperCase() === target.toUpperCase())
-    if (matchedByCode) { selectedStateCode.value = matchedByCode.isoCode; return }
-    const matchedByName = stateList.find(state => state.name.trim() === target)
-    if (matchedByName) { selectedStateCode.value = matchedByName.isoCode; return }
-  }
+    if (preserveExisting && form.residentialState) {
+      const target = form.residentialState.trim()
+      const matchedByCode = stateList.find(state => state.isoCode.toUpperCase() === target.toUpperCase())
+      if (matchedByCode) { selectedStateCode.value = matchedByCode.isoCode; return }
+      const matchedByName = stateList.find(state => state.name.trim() === target)
+      if (matchedByName) { selectedStateCode.value = matchedByName.isoCode; return }
+    }
 
-  selectedStateCode.value = null
-  form.residentialState = ''
-  loadCitiesForState(countryCode, undefined, false)
+    selectedStateCode.value = null
+    form.residentialState = ''
+    loadCitiesForState(countryCode, undefined, false)
+  })
 }
 
 watch(
@@ -450,7 +435,7 @@ const initializeLocationForEdit = async () => {
   const originalCity = form.residentialCity
 
   // First load states data to get available choices
-  const stateList = State.getStatesOfCountry(form.residentialCountryCode) || []
+  const stateList = await getStatesOfCountry(form.residentialCountryCode)
   states.value = stateList.map(state => ({ name: state.name, isoCode: state.isoCode }))
 
   // Reset selections first
@@ -467,7 +452,7 @@ const initializeLocationForEdit = async () => {
       selectedStateCode.value = matchedState.isoCode
 
       // Load cities for this state
-      const cityOptions = City.getCitiesOfState(form.residentialCountryCode, matchedState.isoCode) || []
+      const cityOptions = await getCitiesOfState(form.residentialCountryCode, matchedState.isoCode)
       cities.value = cityOptions
         .slice()
         .sort((a, b) => a.name.localeCompare(b.name))
@@ -561,6 +546,12 @@ const currencyDecimals: Record<string, number> = {
 const currentDecimals = computed(() => {
   const currency = cardStore.selectedCardBin?.cardCurrency || 'USD'
   return currencyDecimals[currency] ?? 2
+})
+
+// Recharge section title text
+const rechargeSectionTitle = computed(() => {
+  return route.query.action === 'recharge'
+    ? 'Add funds anytime to keep your virtual card ready for payments.' : 'Please complete your first Recharge'
 })
 
 // Sanitize amount string to limited decimals without float errors
@@ -754,19 +745,12 @@ const saveAddress = async () => {
   loading.value = true
 
   try {
-    // 针对美国，向后端传州二字码（ISO）
     // 始终向后端发送 ISO 3166-2 的州/省 isoCode（各国长度不一）
     let stateToSend = form.residentialState
     if (selectedStateCode.value) {
       stateToSend = selectedStateCode.value
     } else if (form.residentialCountryCode) {
-      const list = State.getStatesOfCountry(form.residentialCountryCode) || []
-      const byCode = list.find(s => s.isoCode.toUpperCase() === form.residentialState.trim().toUpperCase())
-      if (byCode) stateToSend = byCode.isoCode
-      else {
-        const byName = list.find(s => s.name.trim().toLowerCase() === form.residentialState.trim().toLowerCase())
-        if (byName) stateToSend = byName.isoCode
-      }
+      stateToSend = await normalizeStateCode(form.residentialCountryCode, form.residentialState)
     }
 
     const holderInfo: HolderInfo = {
@@ -798,6 +782,8 @@ const saveAddress = async () => {
         detail: 'Billing address saved successfully',
         life: 3000
       })
+      // 清理详情缓存，避免后续详情页读取旧数据
+      try { cardStore.clearCurrentCardDetailCache() } catch (e) { }
       // Reload holder & exit edit mode
       await loadHolder()
       isEditing.value = false
@@ -870,16 +856,14 @@ const handleConfirm = async () => {
     })
 
     // Navigate to payment method selection page
-    setTimeout(() => {
-      router.push({
-        name: 'PaymentMethodSelection',
-        query: {
-          amount: form.rechargeAmount,
-          name: holder.value?.residentialAddress ? 'John Tan' : 'New User',
-          action: route.query.action || 'apply' // Pass operation type: recharge or apply
-        }
-      })
-    }, 2000)
+    router.push({
+      name: 'PaymentMethodSelection',
+      query: {
+        amount: form.rechargeAmount,
+        name: holder.value?.residentialAddress ? 'John Tan' : 'New User',
+        action: route.query.action || 'apply' // Pass operation type: recharge or apply
+      }
+    })
   } catch (error) {
     console.error('Error confirming recharge:', error)
     toast.add({
@@ -895,7 +879,18 @@ const handleConfirm = async () => {
 
 // Go back to previous page
 const goBack = () => {
-  router.back()
+  // 如果有当前卡号，直接跳转到 MyCards 页面并定位到对应卡片
+  const cardNo = currentCardNo.value
+  if (route.query.action === 'recharge') {
+    router.push({
+      name: 'MyCards',
+      query: {
+        cardNo: cardNo
+      }
+    })
+  } else {
+    router.back()
+  }
 }
 
 // Validate recharge amount (on blur)
@@ -921,6 +916,13 @@ const validateRechargeAmount = () => {
 onMounted(async () => {
   // Set default recharge amount based on action type
   form.rechargeAmount = minAmount.value.toString()
+
+  // 初始化国家列表（静态 JSON）
+  try {
+    countries.value = await getCountries()
+  } catch (e) {
+    countries.value = []
+  }
 
   await loadHolder()
   // Ensure card list is up to date

@@ -1,0 +1,914 @@
+[
+  {
+    "name": "Guayaramerín",
+    "stateCode": "B"
+  },
+  {
+    "name": "Provincia Cercado",
+    "stateCode": "B"
+  },
+  {
+    "name": "Provincia General José Ballivián",
+    "stateCode": "B"
+  },
+  {
+    "name": "Provincia Iténez",
+    "stateCode": "B"
+  },
+  {
+    "name": "Provincia Mamoré",
+    "stateCode": "B"
+  },
+  {
+    "name": "Provincia Marbán",
+    "stateCode": "B"
+  },
+  {
+    "name": "Provincia Moxos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Provincia Vaca Diez",
+    "stateCode": "B"
+  },
+  {
+    "name": "Provincia Yacuma",
+    "stateCode": "B"
+  },
+  {
+    "name": "Reyes",
+    "stateCode": "B"
+  },
+  {
+    "name": "Riberalta",
+    "stateCode": "B"
+  },
+  {
+    "name": "Rurrenabaque",
+    "stateCode": "B"
+  },
+  {
+    "name": "San Borja",
+    "stateCode": "B"
+  },
+  {
+    "name": "San Ramón",
+    "stateCode": "B"
+  },
+  {
+    "name": "Santa Ana de Yacuma",
+    "stateCode": "B"
+  },
+  {
+    "name": "Santa Rosa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Trinidad",
+    "stateCode": "B"
+  },
+  {
+    "name": "Aiquile",
+    "stateCode": "C"
+  },
+  {
+    "name": "Arani",
+    "stateCode": "C"
+  },
+  {
+    "name": "Bolivar",
+    "stateCode": "C"
+  },
+  {
+    "name": "Capinota",
+    "stateCode": "C"
+  },
+  {
+    "name": "Chimoré",
+    "stateCode": "C"
+  },
+  {
+    "name": "Cliza",
+    "stateCode": "C"
+  },
+  {
+    "name": "Cochabamba",
+    "stateCode": "C"
+  },
+  {
+    "name": "Colchani",
+    "stateCode": "C"
+  },
+  {
+    "name": "Colomi",
+    "stateCode": "C"
+  },
+  {
+    "name": "Independencia",
+    "stateCode": "C"
+  },
+  {
+    "name": "Irpa Irpa",
+    "stateCode": "C"
+  },
+  {
+    "name": "Mizque",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Arani",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Arque",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Ayopaya",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Campero",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Capinota",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Carrasco",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Cercado",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Chaparé",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Esteban Arce",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Germán Jordán",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Mizque",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Punata",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Quillacollo",
+    "stateCode": "C"
+  },
+  {
+    "name": "Provincia Tapacarí",
+    "stateCode": "C"
+  },
+  {
+    "name": "Punata",
+    "stateCode": "C"
+  },
+  {
+    "name": "Quillacollo",
+    "stateCode": "C"
+  },
+  {
+    "name": "Sacaba",
+    "stateCode": "C"
+  },
+  {
+    "name": "Sipe Sipe",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tarata",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tiquipaya",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tiraque Province",
+    "stateCode": "C"
+  },
+  {
+    "name": "Totora",
+    "stateCode": "C"
+  },
+  {
+    "name": "Camargo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Monteagudo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Padilla",
+    "stateCode": "H"
+  },
+  {
+    "name": "Provincia Azurduy",
+    "stateCode": "H"
+  },
+  {
+    "name": "Provincia Belisario Boeto",
+    "stateCode": "H"
+  },
+  {
+    "name": "Provincia Hernando Siles",
+    "stateCode": "H"
+  },
+  {
+    "name": "Provincia Luis Calvo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Provincia Nor Cinti",
+    "stateCode": "H"
+  },
+  {
+    "name": "Provincia Oropeza",
+    "stateCode": "H"
+  },
+  {
+    "name": "Provincia Sud Cinti",
+    "stateCode": "H"
+  },
+  {
+    "name": "Provincia Tomina",
+    "stateCode": "H"
+  },
+  {
+    "name": "Provincia Yamparáez",
+    "stateCode": "H"
+  },
+  {
+    "name": "Provincia Zudáñez",
+    "stateCode": "H"
+  },
+  {
+    "name": "Sucre",
+    "stateCode": "H"
+  },
+  {
+    "name": "Tarabuco",
+    "stateCode": "H"
+  },
+  {
+    "name": "Achacachi",
+    "stateCode": "L"
+  },
+  {
+    "name": "Amarete",
+    "stateCode": "L"
+  },
+  {
+    "name": "Batallas",
+    "stateCode": "L"
+  },
+  {
+    "name": "Caranavi",
+    "stateCode": "L"
+  },
+  {
+    "name": "Chulumani",
+    "stateCode": "L"
+  },
+  {
+    "name": "Colquiri",
+    "stateCode": "L"
+  },
+  {
+    "name": "Coripata",
+    "stateCode": "L"
+  },
+  {
+    "name": "Coroico",
+    "stateCode": "L"
+  },
+  {
+    "name": "Curahuara de Carangas",
+    "stateCode": "L"
+  },
+  {
+    "name": "Eucaliptus",
+    "stateCode": "L"
+  },
+  {
+    "name": "Guanay",
+    "stateCode": "L"
+  },
+  {
+    "name": "Huarina",
+    "stateCode": "L"
+  },
+  {
+    "name": "Huatajata",
+    "stateCode": "L"
+  },
+  {
+    "name": "José Manuel Pando",
+    "stateCode": "L"
+  },
+  {
+    "name": "La Paz",
+    "stateCode": "L"
+  },
+  {
+    "name": "Lahuachaca",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mapiri",
+    "stateCode": "L"
+  },
+  {
+    "name": "Patacamaya",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Aroma",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Bautista Saavedra",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Camacho",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Franz Tamayo",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Gualberto Villarroel",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Ingavi",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Inquisivi",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Iturralde",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Larecaja",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Loayza",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Los Andes",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Manco Kapac",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Muñecas",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Murillo",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Nor Yungas",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Omasuyos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Pacajes",
+    "stateCode": "L"
+  },
+  {
+    "name": "Provincia Sud Yungas",
+    "stateCode": "L"
+  },
+  {
+    "name": "Quime",
+    "stateCode": "L"
+  },
+  {
+    "name": "San Pablo",
+    "stateCode": "L"
+  },
+  {
+    "name": "San Pedro",
+    "stateCode": "L"
+  },
+  {
+    "name": "Sorata",
+    "stateCode": "L"
+  },
+  {
+    "name": "Tiahuanaco",
+    "stateCode": "L"
+  },
+  {
+    "name": "Viloco",
+    "stateCode": "L"
+  },
+  {
+    "name": "Yumani",
+    "stateCode": "L"
+  },
+  {
+    "name": "Cobija",
+    "stateCode": "N"
+  },
+  {
+    "name": "Provincia Abuná",
+    "stateCode": "N"
+  },
+  {
+    "name": "Provincia General Federico Román",
+    "stateCode": "N"
+  },
+  {
+    "name": "Provincia Madre de Dios",
+    "stateCode": "N"
+  },
+  {
+    "name": "Provincia Manuripi",
+    "stateCode": "N"
+  },
+  {
+    "name": "Provincia Nicolás Suárez",
+    "stateCode": "N"
+  },
+  {
+    "name": "Challapata",
+    "stateCode": "O"
+  },
+  {
+    "name": "Huanuni",
+    "stateCode": "O"
+  },
+  {
+    "name": "Litoral de Atacama",
+    "stateCode": "O"
+  },
+  {
+    "name": "Machacamarca",
+    "stateCode": "O"
+  },
+  {
+    "name": "Nor Carangas Province",
+    "stateCode": "O"
+  },
+  {
+    "name": "Oruro",
+    "stateCode": "O"
+  },
+  {
+    "name": "Poopó",
+    "stateCode": "O"
+  },
+  {
+    "name": "Provincia Avaroa",
+    "stateCode": "O"
+  },
+  {
+    "name": "Provincia Carangas",
+    "stateCode": "O"
+  },
+  {
+    "name": "Provincia Cercado",
+    "stateCode": "O"
+  },
+  {
+    "name": "Provincia Ladislao Cabrera",
+    "stateCode": "O"
+  },
+  {
+    "name": "Provincia Pantaleón Dalence",
+    "stateCode": "O"
+  },
+  {
+    "name": "Provincia Poopó",
+    "stateCode": "O"
+  },
+  {
+    "name": "Provincia Sabaya",
+    "stateCode": "O"
+  },
+  {
+    "name": "Provincia Sajama",
+    "stateCode": "O"
+  },
+  {
+    "name": "Provincia San Pedro de Totora",
+    "stateCode": "O"
+  },
+  {
+    "name": "Provincia Saucari",
+    "stateCode": "O"
+  },
+  {
+    "name": "Provincia Tomás Barron",
+    "stateCode": "O"
+  },
+  {
+    "name": "Puerto de Mejillones",
+    "stateCode": "O"
+  },
+  {
+    "name": "Sebastian Pagador Province",
+    "stateCode": "O"
+  },
+  {
+    "name": "Sud Carangas Province",
+    "stateCode": "O"
+  },
+  {
+    "name": "Totoral",
+    "stateCode": "O"
+  },
+  {
+    "name": "Atocha",
+    "stateCode": "P"
+  },
+  {
+    "name": "Betanzos",
+    "stateCode": "P"
+  },
+  {
+    "name": "Colchani",
+    "stateCode": "P"
+  },
+  {
+    "name": "Colquechaca",
+    "stateCode": "P"
+  },
+  {
+    "name": "Enrique Baldivieso",
+    "stateCode": "P"
+  },
+  {
+    "name": "Llallagua",
+    "stateCode": "P"
+  },
+  {
+    "name": "Potosí",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Alonzo de Ibáñez",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Charcas",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Chayanta",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Daniel Campos",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia General Bilbao",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Linares",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Modesto Omiste",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Nor Chichas",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Nor Lípez",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Quijarro",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Rafael Bustillo",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Saavedra",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Sud Chichas",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Sud Lípez",
+    "stateCode": "P"
+  },
+  {
+    "name": "Provincia Tomás Frías",
+    "stateCode": "P"
+  },
+  {
+    "name": "Santa Bárbara",
+    "stateCode": "P"
+  },
+  {
+    "name": "Tupiza",
+    "stateCode": "P"
+  },
+  {
+    "name": "Uyuni",
+    "stateCode": "P"
+  },
+  {
+    "name": "Villazón",
+    "stateCode": "P"
+  },
+  {
+    "name": "Abapó",
+    "stateCode": "S"
+  },
+  {
+    "name": "Ascención de Guarayos",
+    "stateCode": "S"
+  },
+  {
+    "name": "Ascensión",
+    "stateCode": "S"
+  },
+  {
+    "name": "Boyuibe",
+    "stateCode": "S"
+  },
+  {
+    "name": "Buena Vista",
+    "stateCode": "S"
+  },
+  {
+    "name": "Camiri",
+    "stateCode": "S"
+  },
+  {
+    "name": "Charagua",
+    "stateCode": "S"
+  },
+  {
+    "name": "Comarapa",
+    "stateCode": "S"
+  },
+  {
+    "name": "Concepción",
+    "stateCode": "S"
+  },
+  {
+    "name": "Cotoca",
+    "stateCode": "S"
+  },
+  {
+    "name": "German Busch",
+    "stateCode": "S"
+  },
+  {
+    "name": "Guarayos",
+    "stateCode": "S"
+  },
+  {
+    "name": "Jorochito",
+    "stateCode": "S"
+  },
+  {
+    "name": "La Bélgica",
+    "stateCode": "S"
+  },
+  {
+    "name": "Limoncito",
+    "stateCode": "S"
+  },
+  {
+    "name": "Los Negros",
+    "stateCode": "S"
+  },
+  {
+    "name": "Mairana",
+    "stateCode": "S"
+  },
+  {
+    "name": "Mineros",
+    "stateCode": "S"
+  },
+  {
+    "name": "Montero",
+    "stateCode": "S"
+  },
+  {
+    "name": "Okinawa Número Uno",
+    "stateCode": "S"
+  },
+  {
+    "name": "Pailón",
+    "stateCode": "S"
+  },
+  {
+    "name": "Paurito",
+    "stateCode": "S"
+  },
+  {
+    "name": "Portachuelo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Andrés Ibáñez",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Ángel Sandoval",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Chiquitos",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Cordillera",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Florida",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Ichilo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Manuel María Caballero",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Ñuflo de Chávez",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Santiesteban",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Sara",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Vallegrande",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Velasco",
+    "stateCode": "S"
+  },
+  {
+    "name": "Provincia Warnes",
+    "stateCode": "S"
+  },
+  {
+    "name": "Puerto Quijarro",
+    "stateCode": "S"
+  },
+  {
+    "name": "Puesto de Pailas",
+    "stateCode": "S"
+  },
+  {
+    "name": "Roboré",
+    "stateCode": "S"
+  },
+  {
+    "name": "Samaipata",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Ignacio de Velasco",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Juan del Surutú",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Julian",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Matías",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Pedro",
+    "stateCode": "S"
+  },
+  {
+    "name": "Santa Cruz de la Sierra",
+    "stateCode": "S"
+  },
+  {
+    "name": "Santa Rita",
+    "stateCode": "S"
+  },
+  {
+    "name": "Santa Rosa del Sara",
+    "stateCode": "S"
+  },
+  {
+    "name": "Santiago del Torno",
+    "stateCode": "S"
+  },
+  {
+    "name": "Urubichá",
+    "stateCode": "S"
+  },
+  {
+    "name": "Vallegrande",
+    "stateCode": "S"
+  },
+  {
+    "name": "Villa Yapacaní",
+    "stateCode": "S"
+  },
+  {
+    "name": "Warnes",
+    "stateCode": "S"
+  },
+  {
+    "name": "Bermejo",
+    "stateCode": "T"
+  },
+  {
+    "name": "Entre Ríos",
+    "stateCode": "T"
+  },
+  {
+    "name": "Provincia Arce",
+    "stateCode": "T"
+  },
+  {
+    "name": "Provincia Avilez",
+    "stateCode": "T"
+  },
+  {
+    "name": "Provincia Cercado",
+    "stateCode": "T"
+  },
+  {
+    "name": "Provincia Gran Chaco",
+    "stateCode": "T"
+  },
+  {
+    "name": "Provincia Méndez",
+    "stateCode": "T"
+  },
+  {
+    "name": "Provincia O’Connor",
+    "stateCode": "T"
+  },
+  {
+    "name": "Tarija",
+    "stateCode": "T"
+  },
+  {
+    "name": "Villamontes",
+    "stateCode": "T"
+  },
+  {
+    "name": "Yacuiba",
+    "stateCode": "T"
+  }
+]

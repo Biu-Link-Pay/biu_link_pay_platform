@@ -1,0 +1,406 @@
+[
+  {
+    "name": "Chuave",
+    "stateCode": "CPK"
+  },
+  {
+    "name": "Gumine",
+    "stateCode": "CPK"
+  },
+  {
+    "name": "Karimui Nomane",
+    "stateCode": "CPK"
+  },
+  {
+    "name": "Kerowagi",
+    "stateCode": "CPK"
+  },
+  {
+    "name": "Kundiawa",
+    "stateCode": "CPK"
+  },
+  {
+    "name": "Sinasina Yonggamugl",
+    "stateCode": "CPK"
+  },
+  {
+    "name": "Abau",
+    "stateCode": "CPM"
+  },
+  {
+    "name": "Goilala",
+    "stateCode": "CPM"
+  },
+  {
+    "name": "Kairuku-Hiri",
+    "stateCode": "CPM"
+  },
+  {
+    "name": "Rigo",
+    "stateCode": "CPM"
+  },
+  {
+    "name": "Gazelle",
+    "stateCode": "EBR"
+  },
+  {
+    "name": "Kokopo",
+    "stateCode": "EBR"
+  },
+  {
+    "name": "Pomio",
+    "stateCode": "EBR"
+  },
+  {
+    "name": "Rabaul",
+    "stateCode": "EBR"
+  },
+  {
+    "name": "Daulo",
+    "stateCode": "EHG"
+  },
+  {
+    "name": "Goroka",
+    "stateCode": "EHG"
+  },
+  {
+    "name": "Henganofi",
+    "stateCode": "EHG"
+  },
+  {
+    "name": "Kainantu",
+    "stateCode": "EHG"
+  },
+  {
+    "name": "Lufa",
+    "stateCode": "EHG"
+  },
+  {
+    "name": "Obura Wonenara",
+    "stateCode": "EHG"
+  },
+  {
+    "name": "Okapa",
+    "stateCode": "EHG"
+  },
+  {
+    "name": "Unggai Bena",
+    "stateCode": "EHG"
+  },
+  {
+    "name": "Kandep",
+    "stateCode": "EPW"
+  },
+  {
+    "name": "Kompiam Ambum",
+    "stateCode": "EPW"
+  },
+  {
+    "name": "Lagaip Porgera",
+    "stateCode": "EPW"
+  },
+  {
+    "name": "Porgera",
+    "stateCode": "EPW"
+  },
+  {
+    "name": "Wabag",
+    "stateCode": "EPW"
+  },
+  {
+    "name": "Wapenamanda",
+    "stateCode": "EPW"
+  },
+  {
+    "name": "Kerema",
+    "stateCode": "GPK"
+  },
+  {
+    "name": "Kikori",
+    "stateCode": "GPK"
+  },
+  {
+    "name": "Komo Margarima",
+    "stateCode": "HLA"
+  },
+  {
+    "name": "Koroba-Lake Kopiago",
+    "stateCode": "HLA"
+  },
+  {
+    "name": "Tari",
+    "stateCode": "HLA"
+  },
+  {
+    "name": "Tari Pori",
+    "stateCode": "HLA"
+  },
+  {
+    "name": "Angalimp South Wahgi",
+    "stateCode": "JWK"
+  },
+  {
+    "name": "Jimi",
+    "stateCode": "JWK"
+  },
+  {
+    "name": "North Wahgi",
+    "stateCode": "JWK"
+  },
+  {
+    "name": "Alotau",
+    "stateCode": "MBA"
+  },
+  {
+    "name": "Esa’ala",
+    "stateCode": "MBA"
+  },
+  {
+    "name": "Kiriwina Goodenough",
+    "stateCode": "MBA"
+  },
+  {
+    "name": "Samarai",
+    "stateCode": "MBA"
+  },
+  {
+    "name": "Samarai Murua",
+    "stateCode": "MBA"
+  },
+  {
+    "name": "Bulolo",
+    "stateCode": "MPL"
+  },
+  {
+    "name": "Finschhafen",
+    "stateCode": "MPL"
+  },
+  {
+    "name": "Huon Gulf",
+    "stateCode": "MPL"
+  },
+  {
+    "name": "Kabwum",
+    "stateCode": "MPL"
+  },
+  {
+    "name": "Lae",
+    "stateCode": "MPL"
+  },
+  {
+    "name": "Markham",
+    "stateCode": "MPL"
+  },
+  {
+    "name": "Menyamya",
+    "stateCode": "MPL"
+  },
+  {
+    "name": "Nawae",
+    "stateCode": "MPL"
+  },
+  {
+    "name": "Tewai Siassi",
+    "stateCode": "MPL"
+  },
+  {
+    "name": "Wau",
+    "stateCode": "MPL"
+  },
+  {
+    "name": "Bogia",
+    "stateCode": "MPM"
+  },
+  {
+    "name": "Madang",
+    "stateCode": "MPM"
+  },
+  {
+    "name": "Middle Ramu",
+    "stateCode": "MPM"
+  },
+  {
+    "name": "Rai Coast",
+    "stateCode": "MPM"
+  },
+  {
+    "name": "Sumkar",
+    "stateCode": "MPM"
+  },
+  {
+    "name": "Usino Bundi",
+    "stateCode": "MPM"
+  },
+  {
+    "name": "Lorengau",
+    "stateCode": "MRL"
+  },
+  {
+    "name": "Manus",
+    "stateCode": "MRL"
+  },
+  {
+    "name": "National Capital District",
+    "stateCode": "NCD"
+  },
+  {
+    "name": "Port Moresby",
+    "stateCode": "NCD"
+  },
+  {
+    "name": "Kavieng",
+    "stateCode": "NIK"
+  },
+  {
+    "name": "Namatanai",
+    "stateCode": "NIK"
+  },
+  {
+    "name": "Ijivitari",
+    "stateCode": "NPP"
+  },
+  {
+    "name": "Kokoda",
+    "stateCode": "NPP"
+  },
+  {
+    "name": "Popondetta",
+    "stateCode": "NPP"
+  },
+  {
+    "name": "Sohe",
+    "stateCode": "NPP"
+  },
+  {
+    "name": "Arawa",
+    "stateCode": "NSB"
+  },
+  {
+    "name": "Central Bougainville",
+    "stateCode": "NSB"
+  },
+  {
+    "name": "Kieta",
+    "stateCode": "NSB"
+  },
+  {
+    "name": "North Bougainville",
+    "stateCode": "NSB"
+  },
+  {
+    "name": "Panguna",
+    "stateCode": "NSB"
+  },
+  {
+    "name": "South Bougainville",
+    "stateCode": "NSB"
+  },
+  {
+    "name": "Aitape",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Aitape Lumi",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Nuku",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Telefomin",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Vanimo",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Vanimo Green",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Ialibu",
+    "stateCode": "SHM"
+  },
+  {
+    "name": "Ialibu Pangia",
+    "stateCode": "SHM"
+  },
+  {
+    "name": "Imbonggu",
+    "stateCode": "SHM"
+  },
+  {
+    "name": "Kagua Erave",
+    "stateCode": "SHM"
+  },
+  {
+    "name": "Mendi",
+    "stateCode": "SHM"
+  },
+  {
+    "name": "Nipa Kutubu",
+    "stateCode": "SHM"
+  },
+  {
+    "name": "Kandrian",
+    "stateCode": "WBK"
+  },
+  {
+    "name": "Kandrian Gloucester",
+    "stateCode": "WBK"
+  },
+  {
+    "name": "Kimbe",
+    "stateCode": "WBK"
+  },
+  {
+    "name": "Talasea",
+    "stateCode": "WBK"
+  },
+  {
+    "name": "Baiyer Mul",
+    "stateCode": "WHM"
+  },
+  {
+    "name": "Dei",
+    "stateCode": "WHM"
+  },
+  {
+    "name": "Hagen",
+    "stateCode": "WHM"
+  },
+  {
+    "name": "Mount Hagen",
+    "stateCode": "WHM"
+  },
+  {
+    "name": "Tambul Nebilyer",
+    "stateCode": "WHM"
+  },
+  {
+    "name": "Daru",
+    "stateCode": "WPD"
+  },
+  {
+    "name": "Kiunga",
+    "stateCode": "WPD"
+  },
+  {
+    "name": "Middle Fly",
+    "stateCode": "WPD"
+  },
+  {
+    "name": "Morehead",
+    "stateCode": "WPD"
+  },
+  {
+    "name": "North Fly",
+    "stateCode": "WPD"
+  },
+  {
+    "name": "South Fly",
+    "stateCode": "WPD"
+  }
+]

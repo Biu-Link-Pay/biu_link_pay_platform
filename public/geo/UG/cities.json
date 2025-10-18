@@ -1,0 +1,366 @@
+[
+  {
+    "name": "Bukomansimbi District",
+    "stateCode": "C"
+  },
+  {
+    "name": "Buvuma District",
+    "stateCode": "C"
+  },
+  {
+    "name": "Bweyogerere",
+    "stateCode": "C"
+  },
+  {
+    "name": "Byakabanda",
+    "stateCode": "C"
+  },
+  {
+    "name": "Entebbe",
+    "stateCode": "C"
+  },
+  {
+    "name": "Gomba District",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kajansi",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kampala",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kampala District",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kanoni",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kayunga",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kiboga",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kireka",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kyotera",
+    "stateCode": "C"
+  },
+  {
+    "name": "Lugazi",
+    "stateCode": "C"
+  },
+  {
+    "name": "Luwero",
+    "stateCode": "C"
+  },
+  {
+    "name": "Lyantonde",
+    "stateCode": "C"
+  },
+  {
+    "name": "Masaka",
+    "stateCode": "C"
+  },
+  {
+    "name": "Mityana",
+    "stateCode": "C"
+  },
+  {
+    "name": "Mpigi",
+    "stateCode": "C"
+  },
+  {
+    "name": "Mubende",
+    "stateCode": "C"
+  },
+  {
+    "name": "Mubende District",
+    "stateCode": "C"
+  },
+  {
+    "name": "Mukono",
+    "stateCode": "C"
+  },
+  {
+    "name": "Nakasongola",
+    "stateCode": "C"
+  },
+  {
+    "name": "Namasuba",
+    "stateCode": "C"
+  },
+  {
+    "name": "Njeru",
+    "stateCode": "C"
+  },
+  {
+    "name": "Sembabule",
+    "stateCode": "C"
+  },
+  {
+    "name": "Wakiso",
+    "stateCode": "C"
+  },
+  {
+    "name": "Wakiso District",
+    "stateCode": "C"
+  },
+  {
+    "name": "Wobulenzi",
+    "stateCode": "C"
+  },
+  {
+    "name": "Bugembe",
+    "stateCode": "E"
+  },
+  {
+    "name": "Bugiri",
+    "stateCode": "E"
+  },
+  {
+    "name": "Bukwa District",
+    "stateCode": "E"
+  },
+  {
+    "name": "Bulambuli District",
+    "stateCode": "E"
+  },
+  {
+    "name": "Busembatia",
+    "stateCode": "E"
+  },
+  {
+    "name": "Busia",
+    "stateCode": "E"
+  },
+  {
+    "name": "Buwenge",
+    "stateCode": "E"
+  },
+  {
+    "name": "Iganga",
+    "stateCode": "E"
+  },
+  {
+    "name": "Jinja",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kamuli",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kapchorwa",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kibuku District",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kumi",
+    "stateCode": "E"
+  },
+  {
+    "name": "Mayuge",
+    "stateCode": "E"
+  },
+  {
+    "name": "Mbale",
+    "stateCode": "E"
+  },
+  {
+    "name": "Pallisa",
+    "stateCode": "E"
+  },
+  {
+    "name": "Sironko",
+    "stateCode": "E"
+  },
+  {
+    "name": "Soroti",
+    "stateCode": "E"
+  },
+  {
+    "name": "Tororo",
+    "stateCode": "E"
+  },
+  {
+    "name": "Adjumani",
+    "stateCode": "N"
+  },
+  {
+    "name": "Amudat",
+    "stateCode": "N"
+  },
+  {
+    "name": "Apac",
+    "stateCode": "N"
+  },
+  {
+    "name": "Arua",
+    "stateCode": "N"
+  },
+  {
+    "name": "Gulu",
+    "stateCode": "N"
+  },
+  {
+    "name": "Kitgum",
+    "stateCode": "N"
+  },
+  {
+    "name": "Kotido",
+    "stateCode": "N"
+  },
+  {
+    "name": "Lira",
+    "stateCode": "N"
+  },
+  {
+    "name": "Moroto",
+    "stateCode": "N"
+  },
+  {
+    "name": "Moyo",
+    "stateCode": "N"
+  },
+  {
+    "name": "Nebbi",
+    "stateCode": "N"
+  },
+  {
+    "name": "Otuke District",
+    "stateCode": "N"
+  },
+  {
+    "name": "Oyam District",
+    "stateCode": "N"
+  },
+  {
+    "name": "Pader",
+    "stateCode": "N"
+  },
+  {
+    "name": "Pader Palwo",
+    "stateCode": "N"
+  },
+  {
+    "name": "Paidha",
+    "stateCode": "N"
+  },
+  {
+    "name": "Yumbe",
+    "stateCode": "N"
+  },
+  {
+    "name": "Bundibugyo",
+    "stateCode": "W"
+  },
+  {
+    "name": "Bwizibwera",
+    "stateCode": "W"
+  },
+  {
+    "name": "Fort Portal",
+    "stateCode": "W"
+  },
+  {
+    "name": "Hoima",
+    "stateCode": "W"
+  },
+  {
+    "name": "Ibanda",
+    "stateCode": "W"
+  },
+  {
+    "name": "Ibanda District",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kabale",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kagadi",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kamwenge",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kanungu",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kasese",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kibale",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kigorobya",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kilembe",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kiruhura",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kisoro",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kyenjojo",
+    "stateCode": "W"
+  },
+  {
+    "name": "Margherita",
+    "stateCode": "W"
+  },
+  {
+    "name": "Masindi",
+    "stateCode": "W"
+  },
+  {
+    "name": "Masindi Port",
+    "stateCode": "W"
+  },
+  {
+    "name": "Mbarara",
+    "stateCode": "W"
+  },
+  {
+    "name": "Muhororo",
+    "stateCode": "W"
+  },
+  {
+    "name": "Ntungamo",
+    "stateCode": "W"
+  },
+  {
+    "name": "Nyachera",
+    "stateCode": "W"
+  },
+  {
+    "name": "Rukungiri",
+    "stateCode": "W"
+  }
+]

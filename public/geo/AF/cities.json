@@ -1,0 +1,370 @@
+[
+  {
+    "name": "Balkh",
+    "stateCode": "BAL"
+  },
+  {
+    "name": "Dowlatābād",
+    "stateCode": "BAL"
+  },
+  {
+    "name": "Khulm",
+    "stateCode": "BAL"
+  },
+  {
+    "name": "Lab-Sar",
+    "stateCode": "BAL"
+  },
+  {
+    "name": "Mazār-e Sharīf",
+    "stateCode": "BAL"
+  },
+  {
+    "name": "Qarchī Gak",
+    "stateCode": "BAL"
+  },
+  {
+    "name": "Bāmyān",
+    "stateCode": "BAM"
+  },
+  {
+    "name": "Panjāb",
+    "stateCode": "BAM"
+  },
+  {
+    "name": "Ghormach",
+    "stateCode": "BDG"
+  },
+  {
+    "name": "Qala i Naw",
+    "stateCode": "BDG"
+  },
+  {
+    "name": "Ashkāsham",
+    "stateCode": "BDS"
+  },
+  {
+    "name": "Fayzabad",
+    "stateCode": "BDS"
+  },
+  {
+    "name": "Jurm",
+    "stateCode": "BDS"
+  },
+  {
+    "name": "Khandūd",
+    "stateCode": "BDS"
+  },
+  {
+    "name": "Rāghistān",
+    "stateCode": "BDS"
+  },
+  {
+    "name": "Wākhān",
+    "stateCode": "BDS"
+  },
+  {
+    "name": "Baghlān",
+    "stateCode": "BGL"
+  },
+  {
+    "name": "Ḩukūmatī Dahanah-ye Ghōrī",
+    "stateCode": "BGL"
+  },
+  {
+    "name": "Nahrīn",
+    "stateCode": "BGL"
+  },
+  {
+    "name": "Pul-e Khumrī",
+    "stateCode": "BGL"
+  },
+  {
+    "name": "Nīlī",
+    "stateCode": "DAY"
+  },
+  {
+    "name": "Farah",
+    "stateCode": "FRA"
+  },
+  {
+    "name": "Andkhoy",
+    "stateCode": "FYB"
+  },
+  {
+    "name": "Maymana",
+    "stateCode": "FYB"
+  },
+  {
+    "name": "Ghazni",
+    "stateCode": "GHA"
+  },
+  {
+    "name": "Fayrōz Kōh",
+    "stateCode": "GHO"
+  },
+  {
+    "name": "Shahrak",
+    "stateCode": "GHO"
+  },
+  {
+    "name": "‘Alāqahdārī Dīshū",
+    "stateCode": "HEL"
+  },
+  {
+    "name": "Gereshk",
+    "stateCode": "HEL"
+  },
+  {
+    "name": "Lashkar Gāh",
+    "stateCode": "HEL"
+  },
+  {
+    "name": "Markaz-e Ḩukūmat-e Darwēshān",
+    "stateCode": "HEL"
+  },
+  {
+    "name": "Sangīn",
+    "stateCode": "HEL"
+  },
+  {
+    "name": "Chahār Burj",
+    "stateCode": "HER"
+  },
+  {
+    "name": "Ghōriyān",
+    "stateCode": "HER"
+  },
+  {
+    "name": "Herāt",
+    "stateCode": "HER"
+  },
+  {
+    "name": "Kafir Qala",
+    "stateCode": "HER"
+  },
+  {
+    "name": "Karukh",
+    "stateCode": "HER"
+  },
+  {
+    "name": "Kuhsān",
+    "stateCode": "HER"
+  },
+  {
+    "name": "Kushk",
+    "stateCode": "HER"
+  },
+  {
+    "name": "Qarah Bāgh",
+    "stateCode": "HER"
+  },
+  {
+    "name": "Shīnḏanḏ",
+    "stateCode": "HER"
+  },
+  {
+    "name": "Tīr Pul",
+    "stateCode": "HER"
+  },
+  {
+    "name": "Zindah Jān",
+    "stateCode": "HER"
+  },
+  {
+    "name": "Āqchah",
+    "stateCode": "JOW"
+  },
+  {
+    "name": "Darzāb",
+    "stateCode": "JOW"
+  },
+  {
+    "name": "Qarqīn",
+    "stateCode": "JOW"
+  },
+  {
+    "name": "Shibirghān",
+    "stateCode": "JOW"
+  },
+  {
+    "name": "Kabul",
+    "stateCode": "KAB"
+  },
+  {
+    "name": "Mīr Bachah Kōṯ",
+    "stateCode": "KAB"
+  },
+  {
+    "name": "Paghmān",
+    "stateCode": "KAB"
+  },
+  {
+    "name": "Kandahār",
+    "stateCode": "KAN"
+  },
+  {
+    "name": "Sidqābād",
+    "stateCode": "KAP"
+  },
+  {
+    "name": "Dasht-e Archī",
+    "stateCode": "KDZ"
+  },
+  {
+    "name": "Imām Şāḩib",
+    "stateCode": "KDZ"
+  },
+  {
+    "name": "Khanabad",
+    "stateCode": "KDZ"
+  },
+  {
+    "name": "Kunduz",
+    "stateCode": "KDZ"
+  },
+  {
+    "name": "Qarāwul",
+    "stateCode": "KDZ"
+  },
+  {
+    "name": "Khōst",
+    "stateCode": "KHO"
+  },
+  {
+    "name": "Asadabad",
+    "stateCode": "KNR"
+  },
+  {
+    "name": "Āsmār",
+    "stateCode": "KNR"
+  },
+  {
+    "name": "Mehtar Lām",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Baraki Barak",
+    "stateCode": "LOG"
+  },
+  {
+    "name": "Ḩukūmatī Azrah",
+    "stateCode": "LOG"
+  },
+  {
+    "name": "Pul-e ‘Alam",
+    "stateCode": "LOG"
+  },
+  {
+    "name": "Bāsawul",
+    "stateCode": "NAN"
+  },
+  {
+    "name": "Jalālābād",
+    "stateCode": "NAN"
+  },
+  {
+    "name": "Markaz-e Woluswalī-ye Āchīn",
+    "stateCode": "NAN"
+  },
+  {
+    "name": "Khāsh",
+    "stateCode": "NIM"
+  },
+  {
+    "name": "Mīrābād",
+    "stateCode": "NIM"
+  },
+  {
+    "name": "Rūdbār",
+    "stateCode": "NIM"
+  },
+  {
+    "name": "Zaranj",
+    "stateCode": "NIM"
+  },
+  {
+    "name": "Pārūn",
+    "stateCode": "NUR"
+  },
+  {
+    "name": "Bāzārak",
+    "stateCode": "PAN"
+  },
+  {
+    "name": "Charikar",
+    "stateCode": "PAR"
+  },
+  {
+    "name": "Jabal os Saraj",
+    "stateCode": "PAR"
+  },
+  {
+    "name": "Gardez",
+    "stateCode": "PIA"
+  },
+  {
+    "name": "Saṟōbī",
+    "stateCode": "PKA"
+  },
+  {
+    "name": "Zaṟah Sharan",
+    "stateCode": "PKA"
+  },
+  {
+    "name": "Zarghūn Shahr",
+    "stateCode": "PKA"
+  },
+  {
+    "name": "Aībak",
+    "stateCode": "SAM"
+  },
+  {
+    "name": "Chīras",
+    "stateCode": "SAR"
+  },
+  {
+    "name": "Larkird",
+    "stateCode": "SAR"
+  },
+  {
+    "name": "Qal‘ah-ye Shahr",
+    "stateCode": "SAR"
+  },
+  {
+    "name": "Sang-e Chārak",
+    "stateCode": "SAR"
+  },
+  {
+    "name": "Sar-e Pul",
+    "stateCode": "SAR"
+  },
+  {
+    "name": "Tagāw-Bāy",
+    "stateCode": "SAR"
+  },
+  {
+    "name": "Tukzār",
+    "stateCode": "SAR"
+  },
+  {
+    "name": "Ārt Khwājah",
+    "stateCode": "TAK"
+  },
+  {
+    "name": "Taloqan",
+    "stateCode": "TAK"
+  },
+  {
+    "name": "Tarinkot",
+    "stateCode": "URU"
+  },
+  {
+    "name": "Uruzgān",
+    "stateCode": "URU"
+  },
+  {
+    "name": "Qalāt",
+    "stateCode": "ZAB"
+  }
+]

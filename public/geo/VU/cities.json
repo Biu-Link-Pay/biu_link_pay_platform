@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Lakatoro",
+    "stateCode": "MAP"
+  },
+  {
+    "name": "Norsup",
+    "stateCode": "MAP"
+  },
+  {
+    "name": "Luganville",
+    "stateCode": "SAM"
+  },
+  {
+    "name": "Port-Olry",
+    "stateCode": "SAM"
+  },
+  {
+    "name": "Port-Vila",
+    "stateCode": "SEE"
+  },
+  {
+    "name": "Isangel",
+    "stateCode": "TAE"
+  },
+  {
+    "name": "Sola",
+    "stateCode": "TOB"
+  }
+]

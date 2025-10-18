@@ -1,0 +1,4102 @@
+[
+  {
+    "name": "Farkadóna",
+    "stateCode": "22"
+  },
+  {
+    "name": "Fíki",
+    "stateCode": "22"
+  },
+  {
+    "name": "Gómfoi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Grizáno",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kalampáka",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kastráki",
+    "stateCode": "22"
+  },
+  {
+    "name": "Megála Kalývia",
+    "stateCode": "22"
+  },
+  {
+    "name": "Megalochóri",
+    "stateCode": "22"
+  },
+  {
+    "name": "Oichalía",
+    "stateCode": "22"
+  },
+  {
+    "name": "Palaiomonástiro",
+    "stateCode": "22"
+  },
+  {
+    "name": "Palaiópyrgos",
+    "stateCode": "22"
+  },
+  {
+    "name": "Pigí",
+    "stateCode": "22"
+  },
+  {
+    "name": "Pýli",
+    "stateCode": "22"
+  },
+  {
+    "name": "Pyrgetós",
+    "stateCode": "22"
+  },
+  {
+    "name": "Rízoma",
+    "stateCode": "22"
+  },
+  {
+    "name": "Taxiárches",
+    "stateCode": "22"
+  },
+  {
+    "name": "Tríkala",
+    "stateCode": "22"
+  },
+  {
+    "name": "Vasilikí",
+    "stateCode": "22"
+  },
+  {
+    "name": "Zárkos",
+    "stateCode": "22"
+  },
+  {
+    "name": "Agía Triáda",
+    "stateCode": "23"
+  },
+  {
+    "name": "Agnanteró",
+    "stateCode": "23"
+  },
+  {
+    "name": "Anávra",
+    "stateCode": "23"
+  },
+  {
+    "name": "Anthiró",
+    "stateCode": "23"
+  },
+  {
+    "name": "Artesianó",
+    "stateCode": "23"
+  },
+  {
+    "name": "Itéa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kallifóni",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kallíthiro",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kardítsa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Karditsomagoúla",
+    "stateCode": "23"
+  },
+  {
+    "name": "Karpochóri",
+    "stateCode": "23"
+  },
+  {
+    "name": "Magoúla",
+    "stateCode": "23"
+  },
+  {
+    "name": "Makrychóri",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mavrommáti",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mitrópoli",
+    "stateCode": "23"
+  },
+  {
+    "name": "Morfovoúni",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mouzáki",
+    "stateCode": "23"
+  },
+  {
+    "name": "Palamás",
+    "stateCode": "23"
+  },
+  {
+    "name": "Proástio",
+    "stateCode": "23"
+  },
+  {
+    "name": "Sofádes",
+    "stateCode": "23"
+  },
+  {
+    "name": "Agriá",
+    "stateCode": "24"
+  },
+  {
+    "name": "Álli Meriá",
+    "stateCode": "24"
+  },
+  {
+    "name": "Almyrós",
+    "stateCode": "24"
+  },
+  {
+    "name": "Anakasiá",
+    "stateCode": "24"
+  },
+  {
+    "name": "Áno Lekhónia",
+    "stateCode": "24"
+  },
+  {
+    "name": "Argalastí",
+    "stateCode": "24"
+  },
+  {
+    "name": "Evxinoúpolis",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kanália",
+    "stateCode": "24"
+  },
+  {
+    "name": "Káto Lekhónia",
+    "stateCode": "24"
+  },
+  {
+    "name": "Néa Anchiálos",
+    "stateCode": "24"
+  },
+  {
+    "name": "Néa Ionía",
+    "stateCode": "24"
+  },
+  {
+    "name": "Patitírion",
+    "stateCode": "24"
+  },
+  {
+    "name": "Portariá",
+    "stateCode": "24"
+  },
+  {
+    "name": "Pteleós",
+    "stateCode": "24"
+  },
+  {
+    "name": "Rizómylos",
+    "stateCode": "24"
+  },
+  {
+    "name": "Skiáthos",
+    "stateCode": "24"
+  },
+  {
+    "name": "Skópelos",
+    "stateCode": "24"
+  },
+  {
+    "name": "Soúrpi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Stefanovíkeio",
+    "stateCode": "24"
+  },
+  {
+    "name": "Tríkeri",
+    "stateCode": "24"
+  },
+  {
+    "name": "Velestíno",
+    "stateCode": "24"
+  },
+  {
+    "name": "Volos",
+    "stateCode": "24"
+  },
+  {
+    "name": "Zagorá",
+    "stateCode": "24"
+  },
+  {
+    "name": "Ágios Athanásios",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Alexandroupoli",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Amygdaleónas",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Áratos",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Arísvi",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Arrianá",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Ávato",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Choristí",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Chrysochóri",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Chrysoúpolis",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Didymóteicho",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Dráma",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Echínos",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Elaiochóri",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Eleftherés",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Eleftheroúpolis",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Évlalo",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Féres",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Fillýra",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Fotolívos",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Fteliá",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Genisséa",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Íasmos",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Iliokentima",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kalampáki",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kalí Vrýsi",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kallífytos",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kalós Agrós",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kamariótissa",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kastaniés",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Káto Nevrokópi",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kavála",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kavýli",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Keramotí",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kimméria",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kokkinóchoma",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Komotiní",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Krinídes",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kyprínos",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Kýria",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Lagós",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Lávara",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Limenária",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Lýkeio",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Mikrópolis",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Mýki",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Néa Iraklítsa",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Néa Karváli",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Néa Karyá",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Néa Péramos",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Néa Výssa",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Neochóri",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Nikísiani",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Orestiáda",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Páchni",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Palaió Tsiflíki",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Palaiochóri",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Paralía Ofryníou",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Paranésti",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Péplos",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Peteinós",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Petrochóri",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Petroússa",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Potamiá",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Prínos",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Prosotsáni",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Rízia",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Samothráki",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Sápes",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Sélero",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Sitagroí",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Smínthi",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Souflí",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Thásos",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Tycheró",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Vólakas",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Xánthi",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Xiropótamos",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Xylaganí",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Zygós",
+    "stateCode": "A2"
+  },
+  {
+    "name": "Ádendro",
+    "stateCode": "B"
+  },
+  {
+    "name": "Áfytos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Agía Paraskeví",
+    "stateCode": "B"
+  },
+  {
+    "name": "Agía Triáda",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ágio Pnévma",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ágios Athanásios",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ágios Geórgios",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ágios Loukás",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ágios Nikólaos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ágios Pávlos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ágios Pétros",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ágios Spyrídon",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ágios Vasíleios",
+    "stateCode": "B"
+  },
+  {
+    "name": "Agkathiá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Aigínio",
+    "stateCode": "B"
+  },
+  {
+    "name": "Akrolímni",
+    "stateCode": "B"
+  },
+  {
+    "name": "Alexándreia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Alistráti",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ampeleíes",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ampelókipoi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Anatolikó",
+    "stateCode": "B"
+  },
+  {
+    "name": "Angelochóri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ápsalos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Aravissós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Aridaía",
+    "stateCode": "B"
+  },
+  {
+    "name": "Arnaía",
+    "stateCode": "B"
+  },
+  {
+    "name": "Árnissa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Arsénio",
+    "stateCode": "B"
+  },
+  {
+    "name": "Askós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Asproválta",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ássiros",
+    "stateCode": "B"
+  },
+  {
+    "name": "Asvestochóri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Áthyra",
+    "stateCode": "B"
+  },
+  {
+    "name": "Axioúpoli",
+    "stateCode": "B"
+  },
+  {
+    "name": "Axós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Chalástra",
+    "stateCode": "B"
+  },
+  {
+    "name": "Chalkidóna",
+    "stateCode": "B"
+  },
+  {
+    "name": "Charopó",
+    "stateCode": "B"
+  },
+  {
+    "name": "Chortiátis",
+    "stateCode": "B"
+  },
+  {
+    "name": "Chrysó",
+    "stateCode": "B"
+  },
+  {
+    "name": "Chrysochórafa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Diavatá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Diavatós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Díon",
+    "stateCode": "B"
+  },
+  {
+    "name": "Dravískos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Drymós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Édessa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Efkarpía",
+    "stateCode": "B"
+  },
+  {
+    "name": "Eirinoúpoli",
+    "stateCode": "B"
+  },
+  {
+    "name": "Epanomí",
+    "stateCode": "B"
+  },
+  {
+    "name": "Episkopí",
+    "stateCode": "B"
+  },
+  {
+    "name": "Évosmos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Evropós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Exaplátanos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Fíliro",
+    "stateCode": "B"
+  },
+  {
+    "name": "Galatádes",
+    "stateCode": "B"
+  },
+  {
+    "name": "Galátista",
+    "stateCode": "B"
+  },
+  {
+    "name": "Gázoros",
+    "stateCode": "B"
+  },
+  {
+    "name": "Géfyra",
+    "stateCode": "B"
+  },
+  {
+    "name": "Gerakaroú",
+    "stateCode": "B"
+  },
+  {
+    "name": "Giannitsá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Gouménissa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ierissós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Irákleia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kalá Déndra",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kalamariá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kalí",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kallithéa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kalochóri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kalýves Polygýrou",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kalývia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kampánis",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kardiá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Karítsa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Karyótissa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kassándreia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kateríni",
+    "stateCode": "B"
+  },
+  {
+    "name": "Káto Kamíla",
+    "stateCode": "B"
+  },
+  {
+    "name": "Káto Lipochóri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Káto Miliá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Káto Scholári",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kavallári",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kilkís",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kítros",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kleidí",
+    "stateCode": "B"
+  },
+  {
+    "name": "Koímisi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kolchikón",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kolindrós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kontariótissa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kopanós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Korinós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Koryfí",
+    "stateCode": "B"
+  },
+  {
+    "name": "Koufália",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kouloúra",
+    "stateCode": "B"
+  },
+  {
+    "name": "Krithiá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Krýa Vrýsi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kýmina",
+    "stateCode": "B"
+  },
+  {
+    "name": "Lagkadás",
+    "stateCode": "B"
+  },
+  {
+    "name": "Lagyná",
+    "stateCode": "B"
+  },
+  {
+    "name": "Lákkoma",
+    "stateCode": "B"
+  },
+  {
+    "name": "Lefkónas",
+    "stateCode": "B"
+  },
+  {
+    "name": "Leptokaryá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Lianovérgi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Lití",
+    "stateCode": "B"
+  },
+  {
+    "name": "Litóchoro",
+    "stateCode": "B"
+  },
+  {
+    "name": "Lófos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Loutráki",
+    "stateCode": "B"
+  },
+  {
+    "name": "Loutrós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Makrochóri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Makrýgialos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Mándalo",
+    "stateCode": "B"
+  },
+  {
+    "name": "Marína",
+    "stateCode": "B"
+  },
+  {
+    "name": "Mavrothálassa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Mavrovoúni",
+    "stateCode": "B"
+  },
+  {
+    "name": "Megáli Panagía",
+    "stateCode": "B"
+  },
+  {
+    "name": "Melíki",
+    "stateCode": "B"
+  },
+  {
+    "name": "Melíssi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Melissochóri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Meneméni",
+    "stateCode": "B"
+  },
+  {
+    "name": "Mesiméri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Mikró Monastíri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Mitroúsi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Náousa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Apollonía",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Éfesos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Flogitá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Fókaia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Kallikráteia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Magnisía",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Málgara",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Mesimvría",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Michanióna",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Moudhaniá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Pélla",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Plágia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Poteídaia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Potídhaia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Róda",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Sánta",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Tríglia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Vrasná",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néa Zíchni",
+    "stateCode": "B"
+  },
+  {
+    "name": "Neapoli",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néo Agionéri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néo Petrítsi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néo Rýsi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néo Soúli",
+    "stateCode": "B"
+  },
+  {
+    "name": "Neochóri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Neochoroúda",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néoi Epivátes",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néos Marmarás",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néos Mylótopos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Néos Skopós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Nigríta",
+    "stateCode": "B"
+  },
+  {
+    "name": "Níkiti",
+    "stateCode": "B"
+  },
+  {
+    "name": "Nisí",
+    "stateCode": "B"
+  },
+  {
+    "name": "Nomós Chalkidikís",
+    "stateCode": "B"
+  },
+  {
+    "name": "Nomós Péllis",
+    "stateCode": "B"
+  },
+  {
+    "name": "Nomós Thessaloníkis",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ólynthos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Oraiókastro",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ormýlia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ouranoupolis",
+    "stateCode": "B"
+  },
+  {
+    "name": "Palaífyto",
+    "stateCode": "B"
+  },
+  {
+    "name": "Palaiochóri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Palaiokómi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Panórama",
+    "stateCode": "B"
+  },
+  {
+    "name": "Paralía",
+    "stateCode": "B"
+  },
+  {
+    "name": "Patrída",
+    "stateCode": "B"
+  },
+  {
+    "name": "Péfka",
+    "stateCode": "B"
+  },
+  {
+    "name": "Pefkochóri",
+    "stateCode": "B"
+  },
+  {
+    "name": "Pélla",
+    "stateCode": "B"
+  },
+  {
+    "name": "Pentálofos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Pentaplátano",
+    "stateCode": "B"
+  },
+  {
+    "name": "Peraía",
+    "stateCode": "B"
+  },
+  {
+    "name": "Perístasi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Peristerá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Plagiári",
+    "stateCode": "B"
+  },
+  {
+    "name": "Platý",
+    "stateCode": "B"
+  },
+  {
+    "name": "Políchni",
+    "stateCode": "B"
+  },
+  {
+    "name": "Polýgyros",
+    "stateCode": "B"
+  },
+  {
+    "name": "Polykárpi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Polýkastro",
+    "stateCode": "B"
+  },
+  {
+    "name": "Pontisméno",
+    "stateCode": "B"
+  },
+  {
+    "name": "Portariá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Próchoma",
+    "stateCode": "B"
+  },
+  {
+    "name": "Profítis Ilías",
+    "stateCode": "B"
+  },
+  {
+    "name": "Prómachoi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Próti",
+    "stateCode": "B"
+  },
+  {
+    "name": "Provatás",
+    "stateCode": "B"
+  },
+  {
+    "name": "Pylaía",
+    "stateCode": "B"
+  },
+  {
+    "name": "Ritíni",
+    "stateCode": "B"
+  },
+  {
+    "name": "Rizári",
+    "stateCode": "B"
+  },
+  {
+    "name": "Rizó",
+    "stateCode": "B"
+  },
+  {
+    "name": "Rizómata",
+    "stateCode": "B"
+  },
+  {
+    "name": "Rodolívos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sárti",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sérres",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sevastianá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sfendámi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sidirókastro",
+    "stateCode": "B"
+  },
+  {
+    "name": "Símantra",
+    "stateCode": "B"
+  },
+  {
+    "name": "Síndos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Skotoússa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Skoútari",
+    "stateCode": "B"
+  },
+  {
+    "name": "Skýdra",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sochós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sosándra",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sourotí",
+    "stateCode": "B"
+  },
+  {
+    "name": "Stathmós Mourión",
+    "stateCode": "B"
+  },
+  {
+    "name": "Stavrós",
+    "stateCode": "B"
+  },
+  {
+    "name": "Stavroúpoli",
+    "stateCode": "B"
+  },
+  {
+    "name": "Stratónion",
+    "stateCode": "B"
+  },
+  {
+    "name": "Strymonikó",
+    "stateCode": "B"
+  },
+  {
+    "name": "Svorónos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sykiá",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sykiés",
+    "stateCode": "B"
+  },
+  {
+    "name": "Terpní",
+    "stateCode": "B"
+  },
+  {
+    "name": "Thérmi",
+    "stateCode": "B"
+  },
+  {
+    "name": "Thessaloníki",
+    "stateCode": "B"
+  },
+  {
+    "name": "Triandría",
+    "stateCode": "B"
+  },
+  {
+    "name": "Tríkala",
+    "stateCode": "B"
+  },
+  {
+    "name": "Trílofos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Valteró",
+    "stateCode": "B"
+  },
+  {
+    "name": "Vamvakófyto",
+    "stateCode": "B"
+  },
+  {
+    "name": "Vasiliká",
+    "stateCode": "B"
+  },
+  {
+    "name": "Vathýlakkos",
+    "stateCode": "B"
+  },
+  {
+    "name": "Vergína",
+    "stateCode": "B"
+  },
+  {
+    "name": "Véroia",
+    "stateCode": "B"
+  },
+  {
+    "name": "Vrontoú",
+    "stateCode": "B"
+  },
+  {
+    "name": "Xilópolis",
+    "stateCode": "B"
+  },
+  {
+    "name": "Aianí",
+    "stateCode": "C"
+  },
+  {
+    "name": "Akriní",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ammochóri",
+    "stateCode": "C"
+  },
+  {
+    "name": "Amýntaio",
+    "stateCode": "C"
+  },
+  {
+    "name": "Anaráchi",
+    "stateCode": "C"
+  },
+  {
+    "name": "Áno Kómi",
+    "stateCode": "C"
+  },
+  {
+    "name": "Argos Orestiko",
+    "stateCode": "C"
+  },
+  {
+    "name": "Chlói",
+    "stateCode": "C"
+  },
+  {
+    "name": "Deskáti",
+    "stateCode": "C"
+  },
+  {
+    "name": "Empório",
+    "stateCode": "C"
+  },
+  {
+    "name": "Erátyra",
+    "stateCode": "C"
+  },
+  {
+    "name": "Filótas",
+    "stateCode": "C"
+  },
+  {
+    "name": "Flórina",
+    "stateCode": "C"
+  },
+  {
+    "name": "Galatiní",
+    "stateCode": "C"
+  },
+  {
+    "name": "Grevená",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kastoria",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kleítos",
+    "stateCode": "C"
+  },
+  {
+    "name": "Koíla",
+    "stateCode": "C"
+  },
+  {
+    "name": "Komniná",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kozáni",
+    "stateCode": "C"
+  },
+  {
+    "name": "Krókos",
+    "stateCode": "C"
+  },
+  {
+    "name": "Laimós",
+    "stateCode": "C"
+  },
+  {
+    "name": "Léchovo",
+    "stateCode": "C"
+  },
+  {
+    "name": "Livaderó",
+    "stateCode": "C"
+  },
+  {
+    "name": "Maniákoi",
+    "stateCode": "C"
+  },
+  {
+    "name": "Mavrochóri",
+    "stateCode": "C"
+  },
+  {
+    "name": "Melíti",
+    "stateCode": "C"
+  },
+  {
+    "name": "Mesopotamía",
+    "stateCode": "C"
+  },
+  {
+    "name": "Nea Lava",
+    "stateCode": "C"
+  },
+  {
+    "name": "Nestório",
+    "stateCode": "C"
+  },
+  {
+    "name": "Nomós Kozánis",
+    "stateCode": "C"
+  },
+  {
+    "name": "Platanórevma",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ptolemaḯda",
+    "stateCode": "C"
+  },
+  {
+    "name": "Sérvia",
+    "stateCode": "C"
+  },
+  {
+    "name": "Siátista",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tsotíli",
+    "stateCode": "C"
+  },
+  {
+    "name": "Velventós",
+    "stateCode": "C"
+  },
+  {
+    "name": "Xinó Neró",
+    "stateCode": "C"
+  },
+  {
+    "name": "Agía Kyriakí",
+    "stateCode": "D"
+  },
+  {
+    "name": "Anatolí",
+    "stateCode": "D"
+  },
+  {
+    "name": "Anéza",
+    "stateCode": "D"
+  },
+  {
+    "name": "Áno Kalentíni",
+    "stateCode": "D"
+  },
+  {
+    "name": "Árta",
+    "stateCode": "D"
+  },
+  {
+    "name": "Asprángeloi",
+    "stateCode": "D"
+  },
+  {
+    "name": "Chalkiádes",
+    "stateCode": "D"
+  },
+  {
+    "name": "Eksochí",
+    "stateCode": "D"
+  },
+  {
+    "name": "Eleoúsa",
+    "stateCode": "D"
+  },
+  {
+    "name": "Filiátes",
+    "stateCode": "D"
+  },
+  {
+    "name": "Filippiáda",
+    "stateCode": "D"
+  },
+  {
+    "name": "Graikochóri",
+    "stateCode": "D"
+  },
+  {
+    "name": "Grammenítsa",
+    "stateCode": "D"
+  },
+  {
+    "name": "Igoumenítsa",
+    "stateCode": "D"
+  },
+  {
+    "name": "Ioánnina",
+    "stateCode": "D"
+  },
+  {
+    "name": "Kalamiá",
+    "stateCode": "D"
+  },
+  {
+    "name": "Kalpáki",
+    "stateCode": "D"
+  },
+  {
+    "name": "Kanaláki",
+    "stateCode": "D"
+  },
+  {
+    "name": "Kardamítsia",
+    "stateCode": "D"
+  },
+  {
+    "name": "Katsikás",
+    "stateCode": "D"
+  },
+  {
+    "name": "Kompóti",
+    "stateCode": "D"
+  },
+  {
+    "name": "Kónitsa",
+    "stateCode": "D"
+  },
+  {
+    "name": "Kostakioí",
+    "stateCode": "D"
+  },
+  {
+    "name": "Koutselió",
+    "stateCode": "D"
+  },
+  {
+    "name": "Loúros",
+    "stateCode": "D"
+  },
+  {
+    "name": "Metsovo",
+    "stateCode": "D"
+  },
+  {
+    "name": "Néa Seléfkeia",
+    "stateCode": "D"
+  },
+  {
+    "name": "Neochóri",
+    "stateCode": "D"
+  },
+  {
+    "name": "Neochorópoulo",
+    "stateCode": "D"
+  },
+  {
+    "name": "Néos Oropós",
+    "stateCode": "D"
+  },
+  {
+    "name": "Nomós Ioannínon",
+    "stateCode": "D"
+  },
+  {
+    "name": "Pappadátes",
+    "stateCode": "D"
+  },
+  {
+    "name": "Paramythiá",
+    "stateCode": "D"
+  },
+  {
+    "name": "Parapótamos",
+    "stateCode": "D"
+  },
+  {
+    "name": "Párga",
+    "stateCode": "D"
+  },
+  {
+    "name": "Pediní",
+    "stateCode": "D"
+  },
+  {
+    "name": "Pérama",
+    "stateCode": "D"
+  },
+  {
+    "name": "Pérdika",
+    "stateCode": "D"
+  },
+  {
+    "name": "Péta",
+    "stateCode": "D"
+  },
+  {
+    "name": "Platariá",
+    "stateCode": "D"
+  },
+  {
+    "name": "Prámanta",
+    "stateCode": "D"
+  },
+  {
+    "name": "Préveza",
+    "stateCode": "D"
+  },
+  {
+    "name": "Rodotópi",
+    "stateCode": "D"
+  },
+  {
+    "name": "Stavráki",
+    "stateCode": "D"
+  },
+  {
+    "name": "Thesprotikó",
+    "stateCode": "D"
+  },
+  {
+    "name": "Tsiflikópoulo",
+    "stateCode": "D"
+  },
+  {
+    "name": "Voulgaréli",
+    "stateCode": "D"
+  },
+  {
+    "name": "Vounoplagiá",
+    "stateCode": "D"
+  },
+  {
+    "name": "Acharávi",
+    "stateCode": "F"
+  },
+  {
+    "name": "Agios Georgis",
+    "stateCode": "F"
+  },
+  {
+    "name": "Ágios Matthaíos",
+    "stateCode": "F"
+  },
+  {
+    "name": "Alepoú",
+    "stateCode": "F"
+  },
+  {
+    "name": "Ambelókipoi",
+    "stateCode": "F"
+  },
+  {
+    "name": "Argostólion",
+    "stateCode": "F"
+  },
+  {
+    "name": "Corfu",
+    "stateCode": "F"
+  },
+  {
+    "name": "Gáïos",
+    "stateCode": "F"
+  },
+  {
+    "name": "Gaïtánion",
+    "stateCode": "F"
+  },
+  {
+    "name": "Itháki",
+    "stateCode": "F"
+  },
+  {
+    "name": "Kanáli",
+    "stateCode": "F"
+  },
+  {
+    "name": "Katastárion",
+    "stateCode": "F"
+  },
+  {
+    "name": "Kontokáli",
+    "stateCode": "F"
+  },
+  {
+    "name": "Kynopiástes",
+    "stateCode": "F"
+  },
+  {
+    "name": "Lefkada",
+    "stateCode": "F"
+  },
+  {
+    "name": "Lefkímmi",
+    "stateCode": "F"
+  },
+  {
+    "name": "Lithakiá",
+    "stateCode": "F"
+  },
+  {
+    "name": "Lixoúri",
+    "stateCode": "F"
+  },
+  {
+    "name": "Mouzaki",
+    "stateCode": "F"
+  },
+  {
+    "name": "Nomós Kerkýras",
+    "stateCode": "F"
+  },
+  {
+    "name": "Nomós Zakýnthou",
+    "stateCode": "F"
+  },
+  {
+    "name": "Perama",
+    "stateCode": "F"
+  },
+  {
+    "name": "Perivóli",
+    "stateCode": "F"
+  },
+  {
+    "name": "Póros",
+    "stateCode": "F"
+  },
+  {
+    "name": "Potamós",
+    "stateCode": "F"
+  },
+  {
+    "name": "Sámi",
+    "stateCode": "F"
+  },
+  {
+    "name": "Valsamáta",
+    "stateCode": "F"
+  },
+  {
+    "name": "Vanáton",
+    "stateCode": "F"
+  },
+  {
+    "name": "Virós",
+    "stateCode": "F"
+  },
+  {
+    "name": "Zakynthos",
+    "stateCode": "F"
+  },
+  {
+    "name": "Agrínio",
+    "stateCode": "G"
+  },
+  {
+    "name": "Aígio",
+    "stateCode": "G"
+  },
+  {
+    "name": "Aitolikó",
+    "stateCode": "G"
+  },
+  {
+    "name": "Aíyira",
+    "stateCode": "G"
+  },
+  {
+    "name": "Akráta",
+    "stateCode": "G"
+  },
+  {
+    "name": "Aktaío",
+    "stateCode": "G"
+  },
+  {
+    "name": "Alfeioúsa",
+    "stateCode": "G"
+  },
+  {
+    "name": "Amaliáda",
+    "stateCode": "G"
+  },
+  {
+    "name": "Amfilochía",
+    "stateCode": "G"
+  },
+  {
+    "name": "Andravída",
+    "stateCode": "G"
+  },
+  {
+    "name": "Angelókastro",
+    "stateCode": "G"
+  },
+  {
+    "name": "Áno Kastrítsi",
+    "stateCode": "G"
+  },
+  {
+    "name": "Antirrio",
+    "stateCode": "G"
+  },
+  {
+    "name": "Archaía Olympía",
+    "stateCode": "G"
+  },
+  {
+    "name": "Archontochóri",
+    "stateCode": "G"
+  },
+  {
+    "name": "Arkoúdi",
+    "stateCode": "G"
+  },
+  {
+    "name": "Astakós",
+    "stateCode": "G"
+  },
+  {
+    "name": "Áyios Konstandínos",
+    "stateCode": "G"
+  },
+  {
+    "name": "Chalandrítsa",
+    "stateCode": "G"
+  },
+  {
+    "name": "Chávari",
+    "stateCode": "G"
+  },
+  {
+    "name": "Dhokímion",
+    "stateCode": "G"
+  },
+  {
+    "name": "Epitálio",
+    "stateCode": "G"
+  },
+  {
+    "name": "Fyteíes",
+    "stateCode": "G"
+  },
+  {
+    "name": "Galatás",
+    "stateCode": "G"
+  },
+  {
+    "name": "Gastoúni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Gavaloú",
+    "stateCode": "G"
+  },
+  {
+    "name": "Goúmero",
+    "stateCode": "G"
+  },
+  {
+    "name": "Kainoúryion",
+    "stateCode": "G"
+  },
+  {
+    "name": "Kalávryta",
+    "stateCode": "G"
+  },
+  {
+    "name": "Kamárai",
+    "stateCode": "G"
+  },
+  {
+    "name": "Kandíla",
+    "stateCode": "G"
+  },
+  {
+    "name": "Karátoula",
+    "stateCode": "G"
+  },
+  {
+    "name": "Kardamás",
+    "stateCode": "G"
+  },
+  {
+    "name": "Káto Achaḯa",
+    "stateCode": "G"
+  },
+  {
+    "name": "Káto Mazaráki",
+    "stateCode": "G"
+  },
+  {
+    "name": "Katochí",
+    "stateCode": "G"
+  },
+  {
+    "name": "Katoúna",
+    "stateCode": "G"
+  },
+  {
+    "name": "Kavásila",
+    "stateCode": "G"
+  },
+  {
+    "name": "Kréstena",
+    "stateCode": "G"
+  },
+  {
+    "name": "Kríkellos",
+    "stateCode": "G"
+  },
+  {
+    "name": "Kyllíni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Lálas",
+    "stateCode": "G"
+  },
+  {
+    "name": "Lápas",
+    "stateCode": "G"
+  },
+  {
+    "name": "Lechainá",
+    "stateCode": "G"
+  },
+  {
+    "name": "Lepenoú",
+    "stateCode": "G"
+  },
+  {
+    "name": "Limnokhórion",
+    "stateCode": "G"
+  },
+  {
+    "name": "Makrísia",
+    "stateCode": "G"
+  },
+  {
+    "name": "Manoláda",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mataránga",
+    "stateCode": "G"
+  },
+  {
+    "name": "Megáli Khóra",
+    "stateCode": "G"
+  },
+  {
+    "name": "Menídi",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mesolóngi",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mindilóglion",
+    "stateCode": "G"
+  },
+  {
+    "name": "Monastiráki",
+    "stateCode": "G"
+  },
+  {
+    "name": "Myrsíni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Náfpaktos",
+    "stateCode": "G"
+  },
+  {
+    "name": "Néa Manoláda",
+    "stateCode": "G"
+  },
+  {
+    "name": "Neápolis",
+    "stateCode": "G"
+  },
+  {
+    "name": "Neochóri",
+    "stateCode": "G"
+  },
+  {
+    "name": "Neochórion",
+    "stateCode": "G"
+  },
+  {
+    "name": "Nomós Achaḯas",
+    "stateCode": "G"
+  },
+  {
+    "name": "Nomós Aitolías kai Akarnanías",
+    "stateCode": "G"
+  },
+  {
+    "name": "Nomós Ileías",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ovriá",
+    "stateCode": "G"
+  },
+  {
+    "name": "Pálairos",
+    "stateCode": "G"
+  },
+  {
+    "name": "Panaitólion",
+    "stateCode": "G"
+  },
+  {
+    "name": "Pappadhátai",
+    "stateCode": "G"
+  },
+  {
+    "name": "Paralía",
+    "stateCode": "G"
+  },
+  {
+    "name": "Paravóla",
+    "stateCode": "G"
+  },
+  {
+    "name": "Pátra",
+    "stateCode": "G"
+  },
+  {
+    "name": "Pelópi",
+    "stateCode": "G"
+  },
+  {
+    "name": "Plátanos",
+    "stateCode": "G"
+  },
+  {
+    "name": "Pýrgos",
+    "stateCode": "G"
+  },
+  {
+    "name": "Río",
+    "stateCode": "G"
+  },
+  {
+    "name": "Rododáfni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Royítika",
+    "stateCode": "G"
+  },
+  {
+    "name": "Sardínia",
+    "stateCode": "G"
+  },
+  {
+    "name": "Savália",
+    "stateCode": "G"
+  },
+  {
+    "name": "Stános",
+    "stateCode": "G"
+  },
+  {
+    "name": "Sylivainiótika",
+    "stateCode": "G"
+  },
+  {
+    "name": "Synoikismós Chavaríou",
+    "stateCode": "G"
+  },
+  {
+    "name": "Témeni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Thérmo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Triandaíika",
+    "stateCode": "G"
+  },
+  {
+    "name": "Várda",
+    "stateCode": "G"
+  },
+  {
+    "name": "Vartholomió",
+    "stateCode": "G"
+  },
+  {
+    "name": "Varvásaina",
+    "stateCode": "G"
+  },
+  {
+    "name": "Vónitsa",
+    "stateCode": "G"
+  },
+  {
+    "name": "Vrachnaíika",
+    "stateCode": "G"
+  },
+  {
+    "name": "Zacháro",
+    "stateCode": "G"
+  },
+  {
+    "name": "Afrátion",
+    "stateCode": "H"
+  },
+  {
+    "name": "Agía Triáda",
+    "stateCode": "H"
+  },
+  {
+    "name": "Ágios Geórgios",
+    "stateCode": "H"
+  },
+  {
+    "name": "Aidipsós",
+    "stateCode": "H"
+  },
+  {
+    "name": "Akraifnía",
+    "stateCode": "H"
+  },
+  {
+    "name": "Alíartos",
+    "stateCode": "H"
+  },
+  {
+    "name": "Alivéri",
+    "stateCode": "H"
+  },
+  {
+    "name": "Amárynthos",
+    "stateCode": "H"
+  },
+  {
+    "name": "Amfíkleia",
+    "stateCode": "H"
+  },
+  {
+    "name": "Ámfissa",
+    "stateCode": "H"
+  },
+  {
+    "name": "Anthíli",
+    "stateCode": "H"
+  },
+  {
+    "name": "Antikyra",
+    "stateCode": "H"
+  },
+  {
+    "name": "Aráchova",
+    "stateCode": "H"
+  },
+  {
+    "name": "Árma",
+    "stateCode": "H"
+  },
+  {
+    "name": "Asopía",
+    "stateCode": "H"
+  },
+  {
+    "name": "Atalánti",
+    "stateCode": "H"
+  },
+  {
+    "name": "Áyios Konstandínos",
+    "stateCode": "H"
+  },
+  {
+    "name": "Áyios Nikólaos",
+    "stateCode": "H"
+  },
+  {
+    "name": "Áyios Thomás",
+    "stateCode": "H"
+  },
+  {
+    "name": "Chairóneia",
+    "stateCode": "H"
+  },
+  {
+    "name": "Chalkída",
+    "stateCode": "H"
+  },
+  {
+    "name": "Delphi",
+    "stateCode": "H"
+  },
+  {
+    "name": "Dhrosiá",
+    "stateCode": "H"
+  },
+  {
+    "name": "Dílesi",
+    "stateCode": "H"
+  },
+  {
+    "name": "Dístomo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Domokós",
+    "stateCode": "H"
+  },
+  {
+    "name": "Domvraína",
+    "stateCode": "H"
+  },
+  {
+    "name": "Eláteia",
+    "stateCode": "H"
+  },
+  {
+    "name": "Erétria",
+    "stateCode": "H"
+  },
+  {
+    "name": "Fáros",
+    "stateCode": "H"
+  },
+  {
+    "name": "Fílla",
+    "stateCode": "H"
+  },
+  {
+    "name": "Galaxídhion",
+    "stateCode": "H"
+  },
+  {
+    "name": "Istiaía",
+    "stateCode": "H"
+  },
+  {
+    "name": "Itéa",
+    "stateCode": "H"
+  },
+  {
+    "name": "Kainoúryion",
+    "stateCode": "H"
+  },
+  {
+    "name": "Kaména Voúrla",
+    "stateCode": "H"
+  },
+  {
+    "name": "Kaparéllion",
+    "stateCode": "H"
+  },
+  {
+    "name": "Karpenísi",
+    "stateCode": "H"
+  },
+  {
+    "name": "Kárystos",
+    "stateCode": "H"
+  },
+  {
+    "name": "Kastélla",
+    "stateCode": "H"
+  },
+  {
+    "name": "Káto Tithoréa",
+    "stateCode": "H"
+  },
+  {
+    "name": "Kerasochóri",
+    "stateCode": "H"
+  },
+  {
+    "name": "Kírra",
+    "stateCode": "H"
+  },
+  {
+    "name": "Kými",
+    "stateCode": "H"
+  },
+  {
+    "name": "Kyriáki",
+    "stateCode": "H"
+  },
+  {
+    "name": "Lamía",
+    "stateCode": "H"
+  },
+  {
+    "name": "Lianokládhion",
+    "stateCode": "H"
+  },
+  {
+    "name": "Lidoríki",
+    "stateCode": "H"
+  },
+  {
+    "name": "Límni",
+    "stateCode": "H"
+  },
+  {
+    "name": "Livadeiá",
+    "stateCode": "H"
+  },
+  {
+    "name": "Livanátes",
+    "stateCode": "H"
+  },
+  {
+    "name": "Loukísia",
+    "stateCode": "H"
+  },
+  {
+    "name": "Loutrá Aidhipsoú",
+    "stateCode": "H"
+  },
+  {
+    "name": "Magoúla",
+    "stateCode": "H"
+  },
+  {
+    "name": "Makrakómi",
+    "stateCode": "H"
+  },
+  {
+    "name": "Malakónta",
+    "stateCode": "H"
+  },
+  {
+    "name": "Malesína",
+    "stateCode": "H"
+  },
+  {
+    "name": "Mantoúdi",
+    "stateCode": "H"
+  },
+  {
+    "name": "Marmárion",
+    "stateCode": "H"
+  },
+  {
+    "name": "Martínon",
+    "stateCode": "H"
+  },
+  {
+    "name": "Mólos",
+    "stateCode": "H"
+  },
+  {
+    "name": "Mytikas",
+    "stateCode": "H"
+  },
+  {
+    "name": "Néa Artáki",
+    "stateCode": "H"
+  },
+  {
+    "name": "Néa Lámpsakos",
+    "stateCode": "H"
+  },
+  {
+    "name": "Néa Stíra",
+    "stateCode": "H"
+  },
+  {
+    "name": "Néon Monastírion",
+    "stateCode": "H"
+  },
+  {
+    "name": "Nomós Evrytanías",
+    "stateCode": "H"
+  },
+  {
+    "name": "Nomós Fokídos",
+    "stateCode": "H"
+  },
+  {
+    "name": "Oinófyta",
+    "stateCode": "H"
+  },
+  {
+    "name": "Omvriakí",
+    "stateCode": "H"
+  },
+  {
+    "name": "Orchomenós",
+    "stateCode": "H"
+  },
+  {
+    "name": "Oreoí",
+    "stateCode": "H"
+  },
+  {
+    "name": "Oxílithos",
+    "stateCode": "H"
+  },
+  {
+    "name": "Paralía Avlídhos",
+    "stateCode": "H"
+  },
+  {
+    "name": "Pelasgía",
+    "stateCode": "H"
+  },
+  {
+    "name": "Pláka Dílesi",
+    "stateCode": "H"
+  },
+  {
+    "name": "Politiká",
+    "stateCode": "H"
+  },
+  {
+    "name": "Prokópi",
+    "stateCode": "H"
+  },
+  {
+    "name": "Psachná",
+    "stateCode": "H"
+  },
+  {
+    "name": "Rodhítsa",
+    "stateCode": "H"
+  },
+  {
+    "name": "Roviés",
+    "stateCode": "H"
+  },
+  {
+    "name": "Schimatári",
+    "stateCode": "H"
+  },
+  {
+    "name": "Skýros",
+    "stateCode": "H"
+  },
+  {
+    "name": "Spercheiáda",
+    "stateCode": "H"
+  },
+  {
+    "name": "Stavrós",
+    "stateCode": "H"
+  },
+  {
+    "name": "Steíri",
+    "stateCode": "H"
+  },
+  {
+    "name": "Stylída",
+    "stateCode": "H"
+  },
+  {
+    "name": "Thespiés",
+    "stateCode": "H"
+  },
+  {
+    "name": "Thívai",
+    "stateCode": "H"
+  },
+  {
+    "name": "Vágia",
+    "stateCode": "H"
+  },
+  {
+    "name": "Vasilikón",
+    "stateCode": "H"
+  },
+  {
+    "name": "Vathí",
+    "stateCode": "H"
+  },
+  {
+    "name": "Yimnón",
+    "stateCode": "H"
+  },
+  {
+    "name": "Acharnés",
+    "stateCode": "I"
+  },
+  {
+    "name": "Aegina",
+    "stateCode": "I"
+  },
+  {
+    "name": "Afidnés",
+    "stateCode": "I"
+  },
+  {
+    "name": "Aghios Panteleímon",
+    "stateCode": "I"
+  },
+  {
+    "name": "Agía Marína",
+    "stateCode": "I"
+  },
+  {
+    "name": "Agía Paraskeví",
+    "stateCode": "I"
+  },
+  {
+    "name": "Agía Varvára",
+    "stateCode": "I"
+  },
+  {
+    "name": "Ágioi Anárgyroi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Agios Dimitrios",
+    "stateCode": "I"
+  },
+  {
+    "name": "Agios Dimítrios Kropiás",
+    "stateCode": "I"
+  },
+  {
+    "name": "Agios Ioannis Rentis",
+    "stateCode": "I"
+  },
+  {
+    "name": "Ágios Stéfanos",
+    "stateCode": "I"
+  },
+  {
+    "name": "Aiánteio",
+    "stateCode": "I"
+  },
+  {
+    "name": "Aigáleo",
+    "stateCode": "I"
+  },
+  {
+    "name": "Álimos",
+    "stateCode": "I"
+  },
+  {
+    "name": "Ampelákia",
+    "stateCode": "I"
+  },
+  {
+    "name": "Anávyssos",
+    "stateCode": "I"
+  },
+  {
+    "name": "Áno Liósia",
+    "stateCode": "I"
+  },
+  {
+    "name": "Anoixi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Anthoúsa",
+    "stateCode": "I"
+  },
+  {
+    "name": "Argithéa",
+    "stateCode": "I"
+  },
+  {
+    "name": "Argyroúpoli",
+    "stateCode": "I"
+  },
+  {
+    "name": "Artémida",
+    "stateCode": "I"
+  },
+  {
+    "name": "Asprópyrgos",
+    "stateCode": "I"
+  },
+  {
+    "name": "Athens",
+    "stateCode": "I"
+  },
+  {
+    "name": "Avlónas",
+    "stateCode": "I"
+  },
+  {
+    "name": "Áyioi Apóstoloi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Chaïdári",
+    "stateCode": "I"
+  },
+  {
+    "name": "Cholargós",
+    "stateCode": "I"
+  },
+  {
+    "name": "Dhafní",
+    "stateCode": "I"
+  },
+  {
+    "name": "Dhráfi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Dióni",
+    "stateCode": "I"
+  },
+  {
+    "name": "Diónysos",
+    "stateCode": "I"
+  },
+  {
+    "name": "Drapetsóna",
+    "stateCode": "I"
+  },
+  {
+    "name": "Drosiá",
+    "stateCode": "I"
+  },
+  {
+    "name": "Ekáli",
+    "stateCode": "I"
+  },
+  {
+    "name": "Elefsína",
+    "stateCode": "I"
+  },
+  {
+    "name": "Ellinikó",
+    "stateCode": "I"
+  },
+  {
+    "name": "Erythrés",
+    "stateCode": "I"
+  },
+  {
+    "name": "Filothéi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Fylí",
+    "stateCode": "I"
+  },
+  {
+    "name": "Galatás",
+    "stateCode": "I"
+  },
+  {
+    "name": "Galátsi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Gérakas",
+    "stateCode": "I"
+  },
+  {
+    "name": "Glyfáda",
+    "stateCode": "I"
+  },
+  {
+    "name": "Grammatikó",
+    "stateCode": "I"
+  },
+  {
+    "name": "Ílion",
+    "stateCode": "I"
+  },
+  {
+    "name": "Ilioúpoli",
+    "stateCode": "I"
+  },
+  {
+    "name": "Irákleio",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kaisarianí",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kálamos",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kallithéa",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kalývia Thorikoú",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kamaterón",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kapandríti",
+    "stateCode": "I"
+  },
+  {
+    "name": "Karellás",
+    "stateCode": "I"
+  },
+  {
+    "name": "Káto Soúlion",
+    "stateCode": "I"
+  },
+  {
+    "name": "Keratéa",
+    "stateCode": "I"
+  },
+  {
+    "name": "Keratsíni",
+    "stateCode": "I"
+  },
+  {
+    "name": "Khalándrion",
+    "stateCode": "I"
+  },
+  {
+    "name": "Khalkoútsion",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kifisiá",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kinéta",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kipséli",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kítsi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Koropí",
+    "stateCode": "I"
+  },
+  {
+    "name": "Korydallós",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kouvarás",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kryonéri",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kypséli",
+    "stateCode": "I"
+  },
+  {
+    "name": "Kýthira",
+    "stateCode": "I"
+  },
+  {
+    "name": "Lávrio",
+    "stateCode": "I"
+  },
+  {
+    "name": "Leondárion",
+    "stateCode": "I"
+  },
+  {
+    "name": "Limín Mesoyaías",
+    "stateCode": "I"
+  },
+  {
+    "name": "Lykóvrysi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Magoúla",
+    "stateCode": "I"
+  },
+  {
+    "name": "Mándra",
+    "stateCode": "I"
+  },
+  {
+    "name": "Marathónas",
+    "stateCode": "I"
+  },
+  {
+    "name": "Markópoulo",
+    "stateCode": "I"
+  },
+  {
+    "name": "Markópoulo Oropoú",
+    "stateCode": "I"
+  },
+  {
+    "name": "Maroúsi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Megalochóri",
+    "stateCode": "I"
+  },
+  {
+    "name": "Mégara",
+    "stateCode": "I"
+  },
+  {
+    "name": "Melíssia",
+    "stateCode": "I"
+  },
+  {
+    "name": "Metamórfosi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Moskháton",
+    "stateCode": "I"
+  },
+  {
+    "name": "Néa Chalkidóna",
+    "stateCode": "I"
+  },
+  {
+    "name": "Néa Erythraía",
+    "stateCode": "I"
+  },
+  {
+    "name": "Néa Filadélfeia",
+    "stateCode": "I"
+  },
+  {
+    "name": "Néa Ionía",
+    "stateCode": "I"
+  },
+  {
+    "name": "Néa Mákri",
+    "stateCode": "I"
+  },
+  {
+    "name": "Néa Palátia",
+    "stateCode": "I"
+  },
+  {
+    "name": "Néa Pentéli",
+    "stateCode": "I"
+  },
+  {
+    "name": "Néa Péramos",
+    "stateCode": "I"
+  },
+  {
+    "name": "Néa Smýrni",
+    "stateCode": "I"
+  },
+  {
+    "name": "Néo Psychikó",
+    "stateCode": "I"
+  },
+  {
+    "name": "Neos Voutzás",
+    "stateCode": "I"
+  },
+  {
+    "name": "Níkaia",
+    "stateCode": "I"
+  },
+  {
+    "name": "Oropós",
+    "stateCode": "I"
+  },
+  {
+    "name": "Paianía",
+    "stateCode": "I"
+  },
+  {
+    "name": "Palaiá Fókaia",
+    "stateCode": "I"
+  },
+  {
+    "name": "Palaió Fáliro",
+    "stateCode": "I"
+  },
+  {
+    "name": "Pallíni",
+    "stateCode": "I"
+  },
+  {
+    "name": "Papágou",
+    "stateCode": "I"
+  },
+  {
+    "name": "Péfki",
+    "stateCode": "I"
+  },
+  {
+    "name": "Pentéli",
+    "stateCode": "I"
+  },
+  {
+    "name": "Pérama",
+    "stateCode": "I"
+  },
+  {
+    "name": "Peristéri",
+    "stateCode": "I"
+  },
+  {
+    "name": "Petroúpolis",
+    "stateCode": "I"
+  },
+  {
+    "name": "Pikérmi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Piraeus",
+    "stateCode": "I"
+  },
+  {
+    "name": "Polydéndri",
+    "stateCode": "I"
+  },
+  {
+    "name": "Póros",
+    "stateCode": "I"
+  },
+  {
+    "name": "Psychikó",
+    "stateCode": "I"
+  },
+  {
+    "name": "Rafína",
+    "stateCode": "I"
+  },
+  {
+    "name": "Rodópoli",
+    "stateCode": "I"
+  },
+  {
+    "name": "Salamína",
+    "stateCode": "I"
+  },
+  {
+    "name": "Saronída",
+    "stateCode": "I"
+  },
+  {
+    "name": "Selínia",
+    "stateCode": "I"
+  },
+  {
+    "name": "Skála Oropoú",
+    "stateCode": "I"
+  },
+  {
+    "name": "Skarmagkás",
+    "stateCode": "I"
+  },
+  {
+    "name": "Spáta",
+    "stateCode": "I"
+  },
+  {
+    "name": "Spétses",
+    "stateCode": "I"
+  },
+  {
+    "name": "Stamáta",
+    "stateCode": "I"
+  },
+  {
+    "name": "Távros",
+    "stateCode": "I"
+  },
+  {
+    "name": "Thrakomakedónes",
+    "stateCode": "I"
+  },
+  {
+    "name": "Vári",
+    "stateCode": "I"
+  },
+  {
+    "name": "Varnávas",
+    "stateCode": "I"
+  },
+  {
+    "name": "Varybóbi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Vathý",
+    "stateCode": "I"
+  },
+  {
+    "name": "Vília",
+    "stateCode": "I"
+  },
+  {
+    "name": "Vlycháda",
+    "stateCode": "I"
+  },
+  {
+    "name": "Voúla",
+    "stateCode": "I"
+  },
+  {
+    "name": "Vouliagméni",
+    "stateCode": "I"
+  },
+  {
+    "name": "Vraná",
+    "stateCode": "I"
+  },
+  {
+    "name": "Vrilissia",
+    "stateCode": "I"
+  },
+  {
+    "name": "Výronas",
+    "stateCode": "I"
+  },
+  {
+    "name": "Ýdra",
+    "stateCode": "I"
+  },
+  {
+    "name": "Ymittos",
+    "stateCode": "I"
+  },
+  {
+    "name": "Zefyri",
+    "stateCode": "I"
+  },
+  {
+    "name": "Zográfos",
+    "stateCode": "I"
+  },
+  {
+    "name": "Ágioi Theódoroi",
+    "stateCode": "J"
+  },
+  {
+    "name": "Ágios Andréas",
+    "stateCode": "J"
+  },
+  {
+    "name": "Arfará",
+    "stateCode": "J"
+  },
+  {
+    "name": "Árgos",
+    "stateCode": "J"
+  },
+  {
+    "name": "Aria",
+    "stateCode": "J"
+  },
+  {
+    "name": "Áris",
+    "stateCode": "J"
+  },
+  {
+    "name": "Arkhaía Kórinthos",
+    "stateCode": "J"
+  },
+  {
+    "name": "Asíni",
+    "stateCode": "J"
+  },
+  {
+    "name": "Asopós",
+    "stateCode": "J"
+  },
+  {
+    "name": "Ássos",
+    "stateCode": "J"
+  },
+  {
+    "name": "Ástros",
+    "stateCode": "J"
+  },
+  {
+    "name": "Athíkia",
+    "stateCode": "J"
+  },
+  {
+    "name": "Ayía Triás",
+    "stateCode": "J"
+  },
+  {
+    "name": "Áyios Adhrianós",
+    "stateCode": "J"
+  },
+  {
+    "name": "Áyios Vasílios",
+    "stateCode": "J"
+  },
+  {
+    "name": "Chóra",
+    "stateCode": "J"
+  },
+  {
+    "name": "Dídyma",
+    "stateCode": "J"
+  },
+  {
+    "name": "Dimitsána",
+    "stateCode": "J"
+  },
+  {
+    "name": "Drépanon",
+    "stateCode": "J"
+  },
+  {
+    "name": "Ermióni",
+    "stateCode": "J"
+  },
+  {
+    "name": "Examília",
+    "stateCode": "J"
+  },
+  {
+    "name": "Filiatrá",
+    "stateCode": "J"
+  },
+  {
+    "name": "Gargaliánoi",
+    "stateCode": "J"
+  },
+  {
+    "name": "Géfyra",
+    "stateCode": "J"
+  },
+  {
+    "name": "Geráki",
+    "stateCode": "J"
+  },
+  {
+    "name": "Gýtheio",
+    "stateCode": "J"
+  },
+  {
+    "name": "Isthmía",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kalamata",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kardamýli",
+    "stateCode": "J"
+  },
+  {
+    "name": "Karyés",
+    "stateCode": "J"
+  },
+  {
+    "name": "Káto Dhiminió",
+    "stateCode": "J"
+  },
+  {
+    "name": "Káto Glykóvrysi",
+    "stateCode": "J"
+  },
+  {
+    "name": "Khiliomódhi",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kiáto",
+    "stateCode": "J"
+  },
+  {
+    "name": "Koilás",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kokkónion",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kopanáki",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kórinthos",
+    "stateCode": "J"
+  },
+  {
+    "name": "Koróni",
+    "stateCode": "J"
+  },
+  {
+    "name": "Koutsopódi",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kranídi",
+    "stateCode": "J"
+  },
+  {
+    "name": "Krokeés",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kyparissía",
+    "stateCode": "J"
+  },
+  {
+    "name": "Kyrás Vrýsi",
+    "stateCode": "J"
+  },
+  {
+    "name": "Langádhia",
+    "stateCode": "J"
+  },
+  {
+    "name": "Lékhaio",
+    "stateCode": "J"
+  },
+  {
+    "name": "Leonídio",
+    "stateCode": "J"
+  },
+  {
+    "name": "Levídion",
+    "stateCode": "J"
+  },
+  {
+    "name": "Ligourión",
+    "stateCode": "J"
+  },
+  {
+    "name": "Loutrá Oraías Elénis",
+    "stateCode": "J"
+  },
+  {
+    "name": "Loutráki",
+    "stateCode": "J"
+  },
+  {
+    "name": "Magoúla",
+    "stateCode": "J"
+  },
+  {
+    "name": "Megalópoli",
+    "stateCode": "J"
+  },
+  {
+    "name": "Meligalás",
+    "stateCode": "J"
+  },
+  {
+    "name": "Messíni",
+    "stateCode": "J"
+  },
+  {
+    "name": "Methóni",
+    "stateCode": "J"
+  },
+  {
+    "name": "Moláoi",
+    "stateCode": "J"
+  },
+  {
+    "name": "Moúlki",
+    "stateCode": "J"
+  },
+  {
+    "name": "Náfplio",
+    "stateCode": "J"
+  },
+  {
+    "name": "Néa Kíos",
+    "stateCode": "J"
+  },
+  {
+    "name": "Néa Tírins",
+    "stateCode": "J"
+  },
+  {
+    "name": "Neméa",
+    "stateCode": "J"
+  },
+  {
+    "name": "Nomós Arkadías",
+    "stateCode": "J"
+  },
+  {
+    "name": "Palaiá Epídavros",
+    "stateCode": "J"
+  },
+  {
+    "name": "Paralía Vérgas",
+    "stateCode": "J"
+  },
+  {
+    "name": "Pásion",
+    "stateCode": "J"
+  },
+  {
+    "name": "Perachóra",
+    "stateCode": "J"
+  },
+  {
+    "name": "Periyiáli",
+    "stateCode": "J"
+  },
+  {
+    "name": "Pórto Chéli",
+    "stateCode": "J"
+  },
+  {
+    "name": "Pýlos",
+    "stateCode": "J"
+  },
+  {
+    "name": "Sikyón",
+    "stateCode": "J"
+  },
+  {
+    "name": "Skála",
+    "stateCode": "J"
+  },
+  {
+    "name": "Sofikón",
+    "stateCode": "J"
+  },
+  {
+    "name": "Spárti",
+    "stateCode": "J"
+  },
+  {
+    "name": "Sperchógeia",
+    "stateCode": "J"
+  },
+  {
+    "name": "Sykiá",
+    "stateCode": "J"
+  },
+  {
+    "name": "Thouría",
+    "stateCode": "J"
+  },
+  {
+    "name": "Tolón",
+    "stateCode": "J"
+  },
+  {
+    "name": "Traganón",
+    "stateCode": "J"
+  },
+  {
+    "name": "Trípoli",
+    "stateCode": "J"
+  },
+  {
+    "name": "Vélo",
+    "stateCode": "J"
+  },
+  {
+    "name": "Vlachiótis",
+    "stateCode": "J"
+  },
+  {
+    "name": "Vlachópoulo",
+    "stateCode": "J"
+  },
+  {
+    "name": "Vokhaïkó",
+    "stateCode": "J"
+  },
+  {
+    "name": "Vrakháti",
+    "stateCode": "J"
+  },
+  {
+    "name": "Xylókastro",
+    "stateCode": "J"
+  },
+  {
+    "name": "Zevgolateió",
+    "stateCode": "J"
+  },
+  {
+    "name": "Adámas",
+    "stateCode": "L"
+  },
+  {
+    "name": "Afántou",
+    "stateCode": "L"
+  },
+  {
+    "name": "Agía Marína",
+    "stateCode": "L"
+  },
+  {
+    "name": "Amorgós",
+    "stateCode": "L"
+  },
+  {
+    "name": "Anáfi",
+    "stateCode": "L"
+  },
+  {
+    "name": "Andros",
+    "stateCode": "L"
+  },
+  {
+    "name": "Áno Merá",
+    "stateCode": "L"
+  },
+  {
+    "name": "Áno Sýros",
+    "stateCode": "L"
+  },
+  {
+    "name": "Antimácheia",
+    "stateCode": "L"
+  },
+  {
+    "name": "Antíparos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Archángelos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Astypálaia",
+    "stateCode": "L"
+  },
+  {
+    "name": "Chálki",
+    "stateCode": "L"
+  },
+  {
+    "name": "Émponas",
+    "stateCode": "L"
+  },
+  {
+    "name": "Emporeío",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ermoúpolis",
+    "stateCode": "L"
+  },
+  {
+    "name": "Faliraki",
+    "stateCode": "L"
+  },
+  {
+    "name": "Filótion",
+    "stateCode": "L"
+  },
+  {
+    "name": "Firá",
+    "stateCode": "L"
+  },
+  {
+    "name": "Folégandros",
+    "stateCode": "L"
+  },
+  {
+    "name": "Fry",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ialysós",
+    "stateCode": "L"
+  },
+  {
+    "name": "Íos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kálymnos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kardámaina",
+    "stateCode": "L"
+  },
+  {
+    "name": "Karpathos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kéfalos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kímolos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kremastí",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kýthnos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Lakkí",
+    "stateCode": "L"
+  },
+  {
+    "name": "Lárdos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mandráki",
+    "stateCode": "L"
+  },
+  {
+    "name": "Megálo Chorió",
+    "stateCode": "L"
+  },
+  {
+    "name": "Megísti",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mesariá",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mílos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mykonos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Náousa",
+    "stateCode": "L"
+  },
+  {
+    "name": "Náxos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Nomós Kykládon",
+    "stateCode": "L"
+  },
+  {
+    "name": "Oía",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ornós",
+    "stateCode": "L"
+  },
+  {
+    "name": "Pánormos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Páros",
+    "stateCode": "L"
+  },
+  {
+    "name": "Pátmos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Pylí",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ródos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Sérifos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Skála",
+    "stateCode": "L"
+  },
+  {
+    "name": "Sými",
+    "stateCode": "L"
+  },
+  {
+    "name": "Tínos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Vári",
+    "stateCode": "L"
+  },
+  {
+    "name": "Zipári",
+    "stateCode": "L"
+  },
+  {
+    "name": "Agía Foteiní",
+    "stateCode": "M"
+  },
+  {
+    "name": "Agía Galíni",
+    "stateCode": "M"
+  },
+  {
+    "name": "Agía Marína",
+    "stateCode": "M"
+  },
+  {
+    "name": "Agía Varvára",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ágioi Déka",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ágios Nikólaos",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ano Arhanes",
+    "stateCode": "M"
+  },
+  {
+    "name": "Anógeia",
+    "stateCode": "M"
+  },
+  {
+    "name": "Arkalochóri",
+    "stateCode": "M"
+  },
+  {
+    "name": "Asímion",
+    "stateCode": "M"
+  },
+  {
+    "name": "Atsipópoulo",
+    "stateCode": "M"
+  },
+  {
+    "name": "Chaniá",
+    "stateCode": "M"
+  },
+  {
+    "name": "Chóra Sfakíon",
+    "stateCode": "M"
+  },
+  {
+    "name": "Darátsos",
+    "stateCode": "M"
+  },
+  {
+    "name": "Eloúnda",
+    "stateCode": "M"
+  },
+  {
+    "name": "Galatás",
+    "stateCode": "M"
+  },
+  {
+    "name": "Gázi",
+    "stateCode": "M"
+  },
+  {
+    "name": "Georgioupolis",
+    "stateCode": "M"
+  },
+  {
+    "name": "Geráni",
+    "stateCode": "M"
+  },
+  {
+    "name": "Gérgeri",
+    "stateCode": "M"
+  },
+  {
+    "name": "Goúrnes",
+    "stateCode": "M"
+  },
+  {
+    "name": "Gra Liyiá",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ierápetra",
+    "stateCode": "M"
+  },
+  {
+    "name": "Irákleion",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kalýves",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kastélli",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kastrí",
+    "stateCode": "M"
+  },
+  {
+    "name": "Káto Asítai",
+    "stateCode": "M"
+  },
+  {
+    "name": "Káto Goúves",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kentrí",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kíssamos",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kokkíni Cháni",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kolympári",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kritsá",
+    "stateCode": "M"
+  },
+  {
+    "name": "Krousón",
+    "stateCode": "M"
+  },
+  {
+    "name": "Limín Khersonísou",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mália",
+    "stateCode": "M"
+  },
+  {
+    "name": "Moíres",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mokhós",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mourniés",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mouzourás",
+    "stateCode": "M"
+  },
+  {
+    "name": "Néa Alikarnassós",
+    "stateCode": "M"
+  },
+  {
+    "name": "Néa Anatolí",
+    "stateCode": "M"
+  },
+  {
+    "name": "Neápoli",
+    "stateCode": "M"
+  },
+  {
+    "name": "Nerokoúros",
+    "stateCode": "M"
+  },
+  {
+    "name": "Nomós Irakleíou",
+    "stateCode": "M"
+  },
+  {
+    "name": "Nomós Rethýmnis",
+    "stateCode": "M"
+  },
+  {
+    "name": "Palaióchora",
+    "stateCode": "M"
+  },
+  {
+    "name": "Palekastro",
+    "stateCode": "M"
+  },
+  {
+    "name": "Pánormos",
+    "stateCode": "M"
+  },
+  {
+    "name": "Pérama",
+    "stateCode": "M"
+  },
+  {
+    "name": "Perivólia",
+    "stateCode": "M"
+  },
+  {
+    "name": "Pithári",
+    "stateCode": "M"
+  },
+  {
+    "name": "Profítis Ilías",
+    "stateCode": "M"
+  },
+  {
+    "name": "Pýrgos",
+    "stateCode": "M"
+  },
+  {
+    "name": "Rethymno",
+    "stateCode": "M"
+  },
+  {
+    "name": "Schísma Eloúndas",
+    "stateCode": "M"
+  },
+  {
+    "name": "Sísion",
+    "stateCode": "M"
+  },
+  {
+    "name": "Sitia",
+    "stateCode": "M"
+  },
+  {
+    "name": "Skalánion",
+    "stateCode": "M"
+  },
+  {
+    "name": "Soúda",
+    "stateCode": "M"
+  },
+  {
+    "name": "Stalís",
+    "stateCode": "M"
+  },
+  {
+    "name": "Thrapsanón",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tílisos",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tsikalariá",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tympáki",
+    "stateCode": "M"
+  },
+  {
+    "name": "Violí Charáki",
+    "stateCode": "M"
+  },
+  {
+    "name": "Vrýses",
+    "stateCode": "M"
+  },
+  {
+    "name": "Zarós",
+    "stateCode": "M"
+  },
+  {
+    "name": "Zonianá",
+    "stateCode": "M"
+  }
+]

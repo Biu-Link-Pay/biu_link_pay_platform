@@ -1,0 +1,342 @@
+[
+  {
+    "name": "Adzopé",
+    "stateCode": "01"
+  },
+  {
+    "name": "Affery",
+    "stateCode": "01"
+  },
+  {
+    "name": "Agboville",
+    "stateCode": "01"
+  },
+  {
+    "name": "Agnéby-Tiassa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Akoupé",
+    "stateCode": "01"
+  },
+  {
+    "name": "Dabou",
+    "stateCode": "01"
+  },
+  {
+    "name": "Grand-Lahou",
+    "stateCode": "01"
+  },
+  {
+    "name": "Grands-Ponts",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tiassalé",
+    "stateCode": "01"
+  },
+  {
+    "name": "Béoumi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Botro",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bouaké",
+    "stateCode": "04"
+  },
+  {
+    "name": "Dabakala",
+    "stateCode": "04"
+  },
+  {
+    "name": "Gbêkê",
+    "stateCode": "04"
+  },
+  {
+    "name": "Hambol",
+    "stateCode": "04"
+  },
+  {
+    "name": "Katiola",
+    "stateCode": "04"
+  },
+  {
+    "name": "Sakassou",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bangolo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Biankouma",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cavally",
+    "stateCode": "06"
+  },
+  {
+    "name": "Danané",
+    "stateCode": "06"
+  },
+  {
+    "name": "Duekoué",
+    "stateCode": "06"
+  },
+  {
+    "name": "Guémon",
+    "stateCode": "06"
+  },
+  {
+    "name": "Guiglo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Man",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tonkpi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Toulépleu Gueré",
+    "stateCode": "06"
+  },
+  {
+    "name": "Arrah",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bélier",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bocanda",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bongouanou",
+    "stateCode": "07"
+  },
+  {
+    "name": "Daoukro",
+    "stateCode": "07"
+  },
+  {
+    "name": "Dimbokro",
+    "stateCode": "07"
+  },
+  {
+    "name": "Iffou",
+    "stateCode": "07"
+  },
+  {
+    "name": "Moronou",
+    "stateCode": "07"
+  },
+  {
+    "name": "N'Zi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Toumodi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Yamoussoukro",
+    "stateCode": "07"
+  },
+  {
+    "name": "Abidjan",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Abobo",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Anyama",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Bingerville",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Gbôklé",
+    "stateCode": "BS"
+  },
+  {
+    "name": "Nawa",
+    "stateCode": "BS"
+  },
+  {
+    "name": "San-Pédro",
+    "stateCode": "BS"
+  },
+  {
+    "name": "Sassandra",
+    "stateCode": "BS"
+  },
+  {
+    "name": "Tabou",
+    "stateCode": "BS"
+  },
+  {
+    "name": "Abengourou",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Aboisso",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Adiaké",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Agnibilékrou",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Ayamé",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Bonoua",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Grand-Bassam",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Indénié-Djuablin",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Sud-Comoé",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Folon",
+    "stateCode": "DN"
+  },
+  {
+    "name": "Kabadougou",
+    "stateCode": "DN"
+  },
+  {
+    "name": "Odienné",
+    "stateCode": "DN"
+  },
+  {
+    "name": "Divo",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Gagnoa",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Gôh",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Guibéroua",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Lakota",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Lôh-Djiboua",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Oumé",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Bouaflé",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Daloa",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Haut-Sassandra",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Issia",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Marahoué",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Vavoua",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Zuénoula",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Bafing",
+    "stateCode": "WR"
+  },
+  {
+    "name": "Béré",
+    "stateCode": "WR"
+  },
+  {
+    "name": "Mankono",
+    "stateCode": "WR"
+  },
+  {
+    "name": "Séguéla",
+    "stateCode": "WR"
+  },
+  {
+    "name": "Touba",
+    "stateCode": "WR"
+  },
+  {
+    "name": "Worodougou",
+    "stateCode": "WR"
+  },
+  {
+    "name": "Bondoukou",
+    "stateCode": "ZZ"
+  },
+  {
+    "name": "Bouna",
+    "stateCode": "ZZ"
+  },
+  {
+    "name": "Bounkani",
+    "stateCode": "ZZ"
+  },
+  {
+    "name": "Gontougo",
+    "stateCode": "ZZ"
+  },
+  {
+    "name": "Sinfra",
+    "stateCode": "ZZ"
+  },
+  {
+    "name": "Tanda",
+    "stateCode": "ZZ"
+  }
+]

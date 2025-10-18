@@ -1,0 +1,566 @@
+[
+  {
+    "name": "Barguna",
+    "stateCode": "06"
+  },
+  {
+    "name": "Barisal",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bhāndāria",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bhola",
+    "stateCode": "06"
+  },
+  {
+    "name": "Burhānuddin",
+    "stateCode": "06"
+  },
+  {
+    "name": "Gaurnadi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Jhalokati",
+    "stateCode": "06"
+  },
+  {
+    "name": "Lālmohan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mathba",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mehendiganj",
+    "stateCode": "06"
+  },
+  {
+    "name": "Nālchiti",
+    "stateCode": "06"
+  },
+  {
+    "name": "Patuakhali",
+    "stateCode": "06"
+  },
+  {
+    "name": "Pirojpur",
+    "stateCode": "06"
+  },
+  {
+    "name": "Azimpur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bājitpur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bhairab Bāzār",
+    "stateCode": "13"
+  },
+  {
+    "name": "Char Bhadrāsan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Char Golora",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dhaka",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dohār",
+    "stateCode": "13"
+  },
+  {
+    "name": "Faridpur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gazipur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gopalganj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Joymontop",
+    "stateCode": "13"
+  },
+  {
+    "name": "Khanbaniara",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kishoregonj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kishorganj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Madaripur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Manikganj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mirzāpur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Munshiganj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nāgarpur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Narayanganj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Narsingdi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pālang",
+    "stateCode": "13"
+  },
+  {
+    "name": "Paltan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Parvez Ali",
+    "stateCode": "13"
+  },
+  {
+    "name": "Parvez Ali Hossain",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rajbari",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ramnagar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sakhipur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sayani",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shariatpur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sonārgaon",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tangail",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tungi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tungipāra",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bagerhat",
+    "stateCode": "27"
+  },
+  {
+    "name": "Bhātpāra Abhaynagar",
+    "stateCode": "27"
+  },
+  {
+    "name": "Bherāmāra",
+    "stateCode": "27"
+  },
+  {
+    "name": "Chuadanga",
+    "stateCode": "27"
+  },
+  {
+    "name": "Jessore",
+    "stateCode": "27"
+  },
+  {
+    "name": "Jhenaidah",
+    "stateCode": "27"
+  },
+  {
+    "name": "Jhingergācha",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kālia",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kālīganj",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kesabpur",
+    "stateCode": "27"
+  },
+  {
+    "name": "Khulna",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kushtia",
+    "stateCode": "27"
+  },
+  {
+    "name": "Magura",
+    "stateCode": "27"
+  },
+  {
+    "name": "Meherpur",
+    "stateCode": "27"
+  },
+  {
+    "name": "Morrelgonj",
+    "stateCode": "27"
+  },
+  {
+    "name": "Narail",
+    "stateCode": "27"
+  },
+  {
+    "name": "Nowlamary",
+    "stateCode": "27"
+  },
+  {
+    "name": "Phultala",
+    "stateCode": "27"
+  },
+  {
+    "name": "Sarankhola",
+    "stateCode": "27"
+  },
+  {
+    "name": "Satkhira",
+    "stateCode": "27"
+  },
+  {
+    "name": "Ujalpur",
+    "stateCode": "27"
+  },
+  {
+    "name": "Uttar Char Fasson",
+    "stateCode": "27"
+  },
+  {
+    "name": "Gafargaon",
+    "stateCode": "34"
+  },
+  {
+    "name": "Jamalpur",
+    "stateCode": "34"
+  },
+  {
+    "name": "Muktāgācha",
+    "stateCode": "34"
+  },
+  {
+    "name": "Mymensingh",
+    "stateCode": "34"
+  },
+  {
+    "name": "Netrakona",
+    "stateCode": "34"
+  },
+  {
+    "name": "Sarishābāri",
+    "stateCode": "34"
+  },
+  {
+    "name": "Sherpur",
+    "stateCode": "34"
+  },
+  {
+    "name": "Bera",
+    "stateCode": "54"
+  },
+  {
+    "name": "Bogra",
+    "stateCode": "54"
+  },
+  {
+    "name": "Chapai Nababganj",
+    "stateCode": "54"
+  },
+  {
+    "name": "Ishurdi",
+    "stateCode": "54"
+  },
+  {
+    "name": "Joypur Hāt",
+    "stateCode": "54"
+  },
+  {
+    "name": "Joypurhat",
+    "stateCode": "54"
+  },
+  {
+    "name": "Mahasthangarh",
+    "stateCode": "54"
+  },
+  {
+    "name": "Naogaon",
+    "stateCode": "54"
+  },
+  {
+    "name": "Natore",
+    "stateCode": "54"
+  },
+  {
+    "name": "Nawābganj",
+    "stateCode": "54"
+  },
+  {
+    "name": "Pabna",
+    "stateCode": "54"
+  },
+  {
+    "name": "Pār Naogaon",
+    "stateCode": "54"
+  },
+  {
+    "name": "Puthia",
+    "stateCode": "54"
+  },
+  {
+    "name": "Rajshahi",
+    "stateCode": "54"
+  },
+  {
+    "name": "Saidpur",
+    "stateCode": "54"
+  },
+  {
+    "name": "Shāhzādpur",
+    "stateCode": "54"
+  },
+  {
+    "name": "Shibganj",
+    "stateCode": "54"
+  },
+  {
+    "name": "Sirajganj",
+    "stateCode": "54"
+  },
+  {
+    "name": "Badarganj",
+    "stateCode": "55"
+  },
+  {
+    "name": "Chilmāri",
+    "stateCode": "55"
+  },
+  {
+    "name": "Dinajpur",
+    "stateCode": "55"
+  },
+  {
+    "name": "Gaibandha",
+    "stateCode": "55"
+  },
+  {
+    "name": "Kurigram",
+    "stateCode": "55"
+  },
+  {
+    "name": "Lalmonirhat",
+    "stateCode": "55"
+  },
+  {
+    "name": "Lalmonirhat District",
+    "stateCode": "55"
+  },
+  {
+    "name": "Nageswari",
+    "stateCode": "55"
+  },
+  {
+    "name": "Nilphamari Zila",
+    "stateCode": "55"
+  },
+  {
+    "name": "Panchagarh",
+    "stateCode": "55"
+  },
+  {
+    "name": "Parbatipur",
+    "stateCode": "55"
+  },
+  {
+    "name": "Pīrgaaj",
+    "stateCode": "55"
+  },
+  {
+    "name": "Rangpur",
+    "stateCode": "55"
+  },
+  {
+    "name": "Thakurgaon",
+    "stateCode": "55"
+  },
+  {
+    "name": "Baniachang",
+    "stateCode": "60"
+  },
+  {
+    "name": "Chhātak",
+    "stateCode": "60"
+  },
+  {
+    "name": "Habiganj",
+    "stateCode": "60"
+  },
+  {
+    "name": "Jahedpur",
+    "stateCode": "60"
+  },
+  {
+    "name": "Maulavi Bāzār",
+    "stateCode": "60"
+  },
+  {
+    "name": "Maulvibazar",
+    "stateCode": "60"
+  },
+  {
+    "name": "Sunamganj",
+    "stateCode": "60"
+  },
+  {
+    "name": "Sylhet",
+    "stateCode": "60"
+  },
+  {
+    "name": "Bandarban",
+    "stateCode": "B"
+  },
+  {
+    "name": "Bibir Hat",
+    "stateCode": "B"
+  },
+  {
+    "name": "Brahmanbaria",
+    "stateCode": "B"
+  },
+  {
+    "name": "Chandpur",
+    "stateCode": "B"
+  },
+  {
+    "name": "Chhāgalnāiya",
+    "stateCode": "B"
+  },
+  {
+    "name": "Chittagong",
+    "stateCode": "B"
+  },
+  {
+    "name": "Comilla",
+    "stateCode": "B"
+  },
+  {
+    "name": "Cox's Bazar",
+    "stateCode": "B"
+  },
+  {
+    "name": "Cox’s Bāzār",
+    "stateCode": "B"
+  },
+  {
+    "name": "Feni",
+    "stateCode": "B"
+  },
+  {
+    "name": "Hājīganj",
+    "stateCode": "B"
+  },
+  {
+    "name": "Khagrachhari",
+    "stateCode": "B"
+  },
+  {
+    "name": "Lākshām",
+    "stateCode": "B"
+  },
+  {
+    "name": "Lakshmipur",
+    "stateCode": "B"
+  },
+  {
+    "name": "Manikchari",
+    "stateCode": "B"
+  },
+  {
+    "name": "Nabīnagar",
+    "stateCode": "B"
+  },
+  {
+    "name": "Noakhali",
+    "stateCode": "B"
+  },
+  {
+    "name": "Patiya",
+    "stateCode": "B"
+  },
+  {
+    "name": "Rāipur",
+    "stateCode": "B"
+  },
+  {
+    "name": "Rāmganj",
+    "stateCode": "B"
+  },
+  {
+    "name": "Rangamati",
+    "stateCode": "B"
+  },
+  {
+    "name": "Raojān",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sandwīp",
+    "stateCode": "B"
+  },
+  {
+    "name": "Sātkania",
+    "stateCode": "B"
+  },
+  {
+    "name": "Teknāf",
+    "stateCode": "B"
+  }
+]

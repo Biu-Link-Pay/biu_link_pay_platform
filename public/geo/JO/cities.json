@@ -1,0 +1,330 @@
+[
+  {
+    "name": "‘Ajlūn",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "‘Anjarah",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "‘Ayn Jannah",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Ḩalāwah",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Şakhrah",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Al Jīzah",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Al Jubayhah",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Amman",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Ḩayy al Bunayyāt",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Ḩayy al Quwaysimah",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Jāwā",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Saḩāb",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Umm as Summāq",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Wādī as Sīr",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Aqaba",
+    "stateCode": "AQ"
+  },
+  {
+    "name": "Tala Bay",
+    "stateCode": "AQ"
+  },
+  {
+    "name": "Aţ Ţafīlah",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Buşayrā",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Al Azraq ash Shamālī",
+    "stateCode": "AZ"
+  },
+  {
+    "name": "Russeifa",
+    "stateCode": "AZ"
+  },
+  {
+    "name": "Zarqa",
+    "stateCode": "AZ"
+  },
+  {
+    "name": "Al Karāmah",
+    "stateCode": "BA"
+  },
+  {
+    "name": "As Salţ",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Yarqā",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Ar Ramthā",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Ash Shajarah",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Aţ Ţayyibah",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Aţ Ţurrah",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Aydūn",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Bayt Īdis",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Bayt Yāfā",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Dayr Yūsuf",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Ḩakamā",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Ḩātim",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Irbid",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Judita",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Kafr Abīl",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Kafr Asad",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Kafr Sawm",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Kharjā",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Kitim",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Kurayyimah",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Malkā",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Qumaym",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Saḩam al Kaffārāt",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Sāl",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Şammā",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Tibnah",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Umm Qays",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Waqqāş",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Zaḩar",
+    "stateCode": "IR"
+  },
+  {
+    "name": "Al Kittah",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Balīlā",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Burmā",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Jarash",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Qafqafā",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Raymūn",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Sakib",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Sūf",
+    "stateCode": "JA"
+  },
+  {
+    "name": "‘Ayy",
+    "stateCode": "KA"
+  },
+  {
+    "name": "‘Izrā",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Adir",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Al Khinzīrah",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Al Mazār al Janūbī",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Al Qaşr",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Ar Rabbah",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Karak City",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Safi",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Al Ḩamrā’",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mafraq",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rehab",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rukban",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Şabḩā",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Umm al Qiţţayn",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mādabā",
+    "stateCode": "MD"
+  },
+  {
+    "name": "Al Jafr",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Al Quwayrah",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Ash Shawbak",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Aţ Ţayyibah",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Ma'an",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Petra",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Qīr Moāv",
+    "stateCode": "MN"
+  }
+]

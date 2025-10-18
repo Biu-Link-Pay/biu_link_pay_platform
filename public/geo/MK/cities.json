@@ -1,0 +1,790 @@
+[
+  {
+    "name": "Арачиново",
+    "stateCode": "02"
+  },
+  {
+    "name": "Berovo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Rusinovo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vladimirovo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Bistrica",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bitola",
+    "stateCode": "04"
+  },
+  {
+    "name": "Capari",
+    "stateCode": "04"
+  },
+  {
+    "name": "Dolno Orizari",
+    "stateCode": "04"
+  },
+  {
+    "name": "Gorno Orizari",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kukurečani",
+    "stateCode": "04"
+  },
+  {
+    "name": "Logovardi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bogdanci",
+    "stateCode": "05"
+  },
+  {
+    "name": "Stojakovo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bogovinje",
+    "stateCode": "06"
+  },
+  {
+    "name": "Dolno Palčište",
+    "stateCode": "06"
+  },
+  {
+    "name": "Gradec",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kamenjane",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bosilovo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Ilovica",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sekirnik",
+    "stateCode": "07"
+  },
+  {
+    "name": "Brvenica",
+    "stateCode": "08"
+  },
+  {
+    "name": "Čelopek",
+    "stateCode": "08"
+  },
+  {
+    "name": "Gurgurnica",
+    "stateCode": "08"
+  },
+  {
+    "name": "Miletino",
+    "stateCode": "08"
+  },
+  {
+    "name": "Butel",
+    "stateCode": "09"
+  },
+  {
+    "name": "Radishani",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pirava",
+    "stateCode": "10"
+  },
+  {
+    "name": "Valandovo",
+    "stateCode": "10"
+  },
+  {
+    "name": "Vasilevo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vevčani",
+    "stateCode": "12"
+  },
+  {
+    "name": "Gorno Orizari",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ivankovci",
+    "stateCode": "13"
+  },
+  {
+    "name": "Veles",
+    "stateCode": "13"
+  },
+  {
+    "name": "Blatec",
+    "stateCode": "14"
+  },
+  {
+    "name": "Gradec",
+    "stateCode": "14"
+  },
+  {
+    "name": "Vinica",
+    "stateCode": "14"
+  },
+  {
+    "name": "Dobri Dol",
+    "stateCode": "16"
+  },
+  {
+    "name": "Negotino",
+    "stateCode": "16"
+  },
+  {
+    "name": "Vrapčište",
+    "stateCode": "16"
+  },
+  {
+    "name": "Cresevo",
+    "stateCode": "17"
+  },
+  {
+    "name": "Gevgelija",
+    "stateCode": "18"
+  },
+  {
+    "name": "Miravci",
+    "stateCode": "18"
+  },
+  {
+    "name": "Cegrane",
+    "stateCode": "19"
+  },
+  {
+    "name": "Dolna Banjica",
+    "stateCode": "19"
+  },
+  {
+    "name": "Forino",
+    "stateCode": "19"
+  },
+  {
+    "name": "Gostivar",
+    "stateCode": "19"
+  },
+  {
+    "name": "Srbinovo",
+    "stateCode": "19"
+  },
+  {
+    "name": "Vrutok",
+    "stateCode": "19"
+  },
+  {
+    "name": "Gradsko",
+    "stateCode": "20"
+  },
+  {
+    "name": "Belčišta",
+    "stateCode": "22"
+  },
+  {
+    "name": "Mešeišta",
+    "stateCode": "22"
+  },
+  {
+    "name": "Delcevo",
+    "stateCode": "23"
+  },
+  {
+    "name": "Demir Kapija",
+    "stateCode": "24"
+  },
+  {
+    "name": "Demir Hisar",
+    "stateCode": "25"
+  },
+  {
+    "name": "Slepče",
+    "stateCode": "25"
+  },
+  {
+    "name": "Sopotnica",
+    "stateCode": "25"
+  },
+  {
+    "name": "Star Dojran",
+    "stateCode": "26"
+  },
+  {
+    "name": "Crnilište",
+    "stateCode": "27"
+  },
+  {
+    "name": "Desovo",
+    "stateCode": "27"
+  },
+  {
+    "name": "Dolneni",
+    "stateCode": "27"
+  },
+  {
+    "name": "Lažani",
+    "stateCode": "27"
+  },
+  {
+    "name": "Žitoše",
+    "stateCode": "27"
+  },
+  {
+    "name": "Gjorče Petro",
+    "stateCode": "29"
+  },
+  {
+    "name": "Dobarce",
+    "stateCode": "30"
+  },
+  {
+    "name": "Larce",
+    "stateCode": "30"
+  },
+  {
+    "name": "Sedlarevo",
+    "stateCode": "30"
+  },
+  {
+    "name": "Strimnica",
+    "stateCode": "30"
+  },
+  {
+    "name": "Zelino",
+    "stateCode": "30"
+  },
+  {
+    "name": "Zelenikovo",
+    "stateCode": "32"
+  },
+  {
+    "name": "Zrnovci",
+    "stateCode": "33"
+  },
+  {
+    "name": "Ilinden",
+    "stateCode": "34"
+  },
+  {
+    "name": "Kadino",
+    "stateCode": "34"
+  },
+  {
+    "name": "Marino",
+    "stateCode": "34"
+  },
+  {
+    "name": "Miladinovci",
+    "stateCode": "34"
+  },
+  {
+    "name": "Идризово",
+    "stateCode": "34"
+  },
+  {
+    "name": "Јурумлери",
+    "stateCode": "34"
+  },
+  {
+    "name": "Jegunovce",
+    "stateCode": "35"
+  },
+  {
+    "name": "Vratnica",
+    "stateCode": "35"
+  },
+  {
+    "name": "Kavadarci",
+    "stateCode": "36"
+  },
+  {
+    "name": "Vataša",
+    "stateCode": "36"
+  },
+  {
+    "name": "Karbinci",
+    "stateCode": "37"
+  },
+  {
+    "name": "Skopje",
+    "stateCode": "38"
+  },
+  {
+    "name": "Kisela Voda",
+    "stateCode": "39"
+  },
+  {
+    "name": "Drugovo",
+    "stateCode": "40"
+  },
+  {
+    "name": "Kičevo",
+    "stateCode": "40"
+  },
+  {
+    "name": "Srbica",
+    "stateCode": "40"
+  },
+  {
+    "name": "Strelci",
+    "stateCode": "40"
+  },
+  {
+    "name": "Tuin",
+    "stateCode": "40"
+  },
+  {
+    "name": "Vraneštica",
+    "stateCode": "40"
+  },
+  {
+    "name": "Zajas",
+    "stateCode": "40"
+  },
+  {
+    "name": "Konče",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kochani",
+    "stateCode": "42"
+  },
+  {
+    "name": "Orizari",
+    "stateCode": "42"
+  },
+  {
+    "name": "Kratovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kriva Palanka",
+    "stateCode": "44"
+  },
+  {
+    "name": "Krivogashtani",
+    "stateCode": "45"
+  },
+  {
+    "name": "Obršani",
+    "stateCode": "45"
+  },
+  {
+    "name": "Клечовце",
+    "stateCode": "45"
+  },
+  {
+    "name": "Bučin",
+    "stateCode": "46"
+  },
+  {
+    "name": "Krusevo",
+    "stateCode": "46"
+  },
+  {
+    "name": "Bedinje",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kumanovo",
+    "stateCode": "47"
+  },
+  {
+    "name": "Romanovci",
+    "stateCode": "47"
+  },
+  {
+    "name": "Izvor",
+    "stateCode": "48"
+  },
+  {
+    "name": "Lipkovo",
+    "stateCode": "48"
+  },
+  {
+    "name": "Lojane",
+    "stateCode": "48"
+  },
+  {
+    "name": "Matejce",
+    "stateCode": "48"
+  },
+  {
+    "name": "Otlja",
+    "stateCode": "48"
+  },
+  {
+    "name": "Vaksince",
+    "stateCode": "48"
+  },
+  {
+    "name": "Слупчане",
+    "stateCode": "48"
+  },
+  {
+    "name": "Lozovo",
+    "stateCode": "49"
+  },
+  {
+    "name": "Rostusa",
+    "stateCode": "50"
+  },
+  {
+    "name": "Makedonska Kamenica",
+    "stateCode": "51"
+  },
+  {
+    "name": "Makedonski Brod",
+    "stateCode": "52"
+  },
+  {
+    "name": "Samokov",
+    "stateCode": "52"
+  },
+  {
+    "name": "Beranci",
+    "stateCode": "53"
+  },
+  {
+    "name": "Dobruševo",
+    "stateCode": "53"
+  },
+  {
+    "name": "Dolno Srpci",
+    "stateCode": "53"
+  },
+  {
+    "name": "Mogila",
+    "stateCode": "53"
+  },
+  {
+    "name": "Negotino",
+    "stateCode": "54"
+  },
+  {
+    "name": "Novaci",
+    "stateCode": "55"
+  },
+  {
+    "name": "Novo Selo",
+    "stateCode": "56"
+  },
+  {
+    "name": "Sušica",
+    "stateCode": "56"
+  },
+  {
+    "name": "Kosel",
+    "stateCode": "58"
+  },
+  {
+    "name": "Ohrid",
+    "stateCode": "58"
+  },
+  {
+    "name": "Ohrid Opština",
+    "stateCode": "58"
+  },
+  {
+    "name": "Sredno Konjare",
+    "stateCode": "59"
+  },
+  {
+    "name": "Петровец",
+    "stateCode": "59"
+  },
+  {
+    "name": "Pehčevo",
+    "stateCode": "60"
+  },
+  {
+    "name": "Lisičani",
+    "stateCode": "61"
+  },
+  {
+    "name": "Plasnica",
+    "stateCode": "61"
+  },
+  {
+    "name": "Kanatlarci",
+    "stateCode": "62"
+  },
+  {
+    "name": "Markov Grad",
+    "stateCode": "62"
+  },
+  {
+    "name": "Prilep",
+    "stateCode": "62"
+  },
+  {
+    "name": "Topolčani",
+    "stateCode": "62"
+  },
+  {
+    "name": "Probishtip",
+    "stateCode": "63"
+  },
+  {
+    "name": "Zletovo",
+    "stateCode": "63"
+  },
+  {
+    "name": "Oraovica",
+    "stateCode": "64"
+  },
+  {
+    "name": "Podareš",
+    "stateCode": "64"
+  },
+  {
+    "name": "Radovis",
+    "stateCode": "64"
+  },
+  {
+    "name": "Ранковце",
+    "stateCode": "65"
+  },
+  {
+    "name": "Grnčari",
+    "stateCode": "66"
+  },
+  {
+    "name": "Jankovec",
+    "stateCode": "66"
+  },
+  {
+    "name": "Krani",
+    "stateCode": "66"
+  },
+  {
+    "name": "Resen",
+    "stateCode": "66"
+  },
+  {
+    "name": "Rosoman",
+    "stateCode": "67"
+  },
+  {
+    "name": "Bukovik",
+    "stateCode": "68"
+  },
+  {
+    "name": "Grčec",
+    "stateCode": "68"
+  },
+  {
+    "name": "Kondovo",
+    "stateCode": "68"
+  },
+  {
+    "name": "Krušopek",
+    "stateCode": "68"
+  },
+  {
+    "name": "Gorobinci",
+    "stateCode": "69"
+  },
+  {
+    "name": "Sveti Nikole",
+    "stateCode": "69"
+  },
+  {
+    "name": "Сопиште",
+    "stateCode": "70"
+  },
+  {
+    "name": "Старо Нагоричане",
+    "stateCode": "71"
+  },
+  {
+    "name": "Delogožda",
+    "stateCode": "72"
+  },
+  {
+    "name": "Labunista",
+    "stateCode": "72"
+  },
+  {
+    "name": "Lukovo",
+    "stateCode": "72"
+  },
+  {
+    "name": "Mislesevo",
+    "stateCode": "72"
+  },
+  {
+    "name": "Oktisi",
+    "stateCode": "72"
+  },
+  {
+    "name": "Radolista",
+    "stateCode": "72"
+  },
+  {
+    "name": "Struga",
+    "stateCode": "72"
+  },
+  {
+    "name": "Velesta",
+    "stateCode": "72"
+  },
+  {
+    "name": "Kuklis",
+    "stateCode": "73"
+  },
+  {
+    "name": "Murtino",
+    "stateCode": "73"
+  },
+  {
+    "name": "Strumica",
+    "stateCode": "73"
+  },
+  {
+    "name": "Veljusa",
+    "stateCode": "73"
+  },
+  {
+    "name": "Batinci",
+    "stateCode": "74"
+  },
+  {
+    "name": "Dolno Količani",
+    "stateCode": "74"
+  },
+  {
+    "name": "Morani",
+    "stateCode": "74"
+  },
+  {
+    "name": "Studeničane",
+    "stateCode": "74"
+  },
+  {
+    "name": "Nerašte",
+    "stateCode": "75"
+  },
+  {
+    "name": "Orashac",
+    "stateCode": "75"
+  },
+  {
+    "name": "Pršovce",
+    "stateCode": "75"
+  },
+  {
+    "name": "Slatino",
+    "stateCode": "75"
+  },
+  {
+    "name": "Tearce",
+    "stateCode": "75"
+  },
+  {
+    "name": "Dobrošte",
+    "stateCode": "76"
+  },
+  {
+    "name": "Džepčište",
+    "stateCode": "76"
+  },
+  {
+    "name": "Golema Rečica",
+    "stateCode": "76"
+  },
+  {
+    "name": "Pirok",
+    "stateCode": "76"
+  },
+  {
+    "name": "Poroj",
+    "stateCode": "76"
+  },
+  {
+    "name": "Selce",
+    "stateCode": "76"
+  },
+  {
+    "name": "Šipkovica",
+    "stateCode": "76"
+  },
+  {
+    "name": "Tetovo",
+    "stateCode": "76"
+  },
+  {
+    "name": "Centar Župa",
+    "stateCode": "78"
+  },
+  {
+    "name": "Čair",
+    "stateCode": "79"
+  },
+  {
+    "name": "Bogomila",
+    "stateCode": "80"
+  },
+  {
+    "name": "Čaška",
+    "stateCode": "80"
+  },
+  {
+    "name": "Češinovo",
+    "stateCode": "81"
+  },
+  {
+    "name": "Oblesevo",
+    "stateCode": "81"
+  },
+  {
+    "name": "Чучер - Сандево",
+    "stateCode": "82"
+  },
+  {
+    "name": "Shtip",
+    "stateCode": "83"
+  },
+  {
+    "name": "Šuto Orizare",
+    "stateCode": "84"
+  },
+  {
+    "name": "Bojane",
+    "stateCode": "85"
+  },
+  {
+    "name": "Dračevo",
+    "stateCode": "85"
+  },
+  {
+    "name": "Ljubin",
+    "stateCode": "85"
+  },
+  {
+    "name": "Saraj",
+    "stateCode": "85"
+  },
+  {
+    "name": "Usje",
+    "stateCode": "85"
+  }
+]

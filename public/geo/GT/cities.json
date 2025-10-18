@@ -1,0 +1,1530 @@
+[
+  {
+    "name": "Cahabón",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Chahal Guatemala",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Chisec",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Cobán",
+    "stateCode": "AV"
+  },
+  {
+    "name": "La Tinta",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Lanquín",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Panzós",
+    "stateCode": "AV"
+  },
+  {
+    "name": "San Cristóbal Verapaz",
+    "stateCode": "AV"
+  },
+  {
+    "name": "San Juan Chamelco",
+    "stateCode": "AV"
+  },
+  {
+    "name": "San Pedro Carchá",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Santa Cruz Verapaz",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Senahú",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Tactic",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Tamahú",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Tucurú",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Cubulco",
+    "stateCode": "BV"
+  },
+  {
+    "name": "El Chol",
+    "stateCode": "BV"
+  },
+  {
+    "name": "Granados",
+    "stateCode": "BV"
+  },
+  {
+    "name": "Purulhá",
+    "stateCode": "BV"
+  },
+  {
+    "name": "Rabinal",
+    "stateCode": "BV"
+  },
+  {
+    "name": "Salamá",
+    "stateCode": "BV"
+  },
+  {
+    "name": "San Jerónimo",
+    "stateCode": "BV"
+  },
+  {
+    "name": "San Miguel Chicaj",
+    "stateCode": "BV"
+  },
+  {
+    "name": "Acatenango",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Chimaltenango",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Comalapa",
+    "stateCode": "CM"
+  },
+  {
+    "name": "El Tejar",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Parramos",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Patzicía",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Patzún",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Pochuta",
+    "stateCode": "CM"
+  },
+  {
+    "name": "San Andrés Itzapa",
+    "stateCode": "CM"
+  },
+  {
+    "name": "San José Poaquil",
+    "stateCode": "CM"
+  },
+  {
+    "name": "San Martín Jilotepeque",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Santa Apolonia",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Santa Cruz Balanyá",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Tecpán Guatemala",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Yepocapa",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Zaragoza",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Camotán",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Chiquimula",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Concepción Las Minas",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Esquipulas",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Ipala",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Jocotán",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Olopa",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Quezaltepeque",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "San Jacinto",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "San José La Arada",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "San Juan Ermita",
+    "stateCode": "CQ"
+  },
+  {
+    "name": "Escuintla",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Guanagazapa",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Iztapa",
+    "stateCode": "ES"
+  },
+  {
+    "name": "La Democracia",
+    "stateCode": "ES"
+  },
+  {
+    "name": "La Gomera",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Masagua",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Nueva Concepción",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Palín",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Puerto San José",
+    "stateCode": "ES"
+  },
+  {
+    "name": "San Vicente Pacaya",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Santa Lucía Cotzumalguapa",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Siquinalá",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Tiquisate",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Amatitlán",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Chinautla",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Chuarrancho",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Fraijanes",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Guatemala City",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Mixco",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Palencia",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Petapa",
+    "stateCode": "GU"
+  },
+  {
+    "name": "San José del Golfo",
+    "stateCode": "GU"
+  },
+  {
+    "name": "San José Pinula",
+    "stateCode": "GU"
+  },
+  {
+    "name": "San Juan Sacatepéquez",
+    "stateCode": "GU"
+  },
+  {
+    "name": "San Pedro Ayampuc",
+    "stateCode": "GU"
+  },
+  {
+    "name": "San Pedro Sacatepéquez",
+    "stateCode": "GU"
+  },
+  {
+    "name": "San Raimundo",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Santa Catarina Pinula",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Villa Canales",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Villa Nueva",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Aguacatán",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Barillas",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Chiantla",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Colotenango",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Concepción Huista",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Cuilco",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Huehuetenango",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Ixtahuacán",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Jacaltenango",
+    "stateCode": "HU"
+  },
+  {
+    "name": "La Libertad",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Malacatancito",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Nentón",
+    "stateCode": "HU"
+  },
+  {
+    "name": "San Antonio Huista",
+    "stateCode": "HU"
+  },
+  {
+    "name": "San Gaspar Ixchil",
+    "stateCode": "HU"
+  },
+  {
+    "name": "San Juan Atitán",
+    "stateCode": "HU"
+  },
+  {
+    "name": "San Juan Ixcoy",
+    "stateCode": "HU"
+  },
+  {
+    "name": "San Mateo Ixtatán",
+    "stateCode": "HU"
+  },
+  {
+    "name": "San Miguel Acatán",
+    "stateCode": "HU"
+  },
+  {
+    "name": "San Pedro Necta",
+    "stateCode": "HU"
+  },
+  {
+    "name": "San Rafael La Independencia",
+    "stateCode": "HU"
+  },
+  {
+    "name": "San Rafael Petzal",
+    "stateCode": "HU"
+  },
+  {
+    "name": "San Sebastián Coatán",
+    "stateCode": "HU"
+  },
+  {
+    "name": "San Sebastián Huehuetenango",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Santa Ana Huista",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Santa Bárbara",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Santa Eulalia",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Santiago Chimaltenango",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Soloma",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Tectitán",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Todos Santos Cuchumatán",
+    "stateCode": "HU"
+  },
+  {
+    "name": "El Estor",
+    "stateCode": "IZ"
+  },
+  {
+    "name": "Lívingston",
+    "stateCode": "IZ"
+  },
+  {
+    "name": "Los Amates",
+    "stateCode": "IZ"
+  },
+  {
+    "name": "Morales",
+    "stateCode": "IZ"
+  },
+  {
+    "name": "Municipio de Morales",
+    "stateCode": "IZ"
+  },
+  {
+    "name": "Municipio de Puerto Barrios",
+    "stateCode": "IZ"
+  },
+  {
+    "name": "Puerto Barrios",
+    "stateCode": "IZ"
+  },
+  {
+    "name": "Jalapa",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Mataquescuintla",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Monjas",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Municipio de Jalapa",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Municipio de Mataquescuintla",
+    "stateCode": "JA"
+  },
+  {
+    "name": "San Luis Jilotepeque",
+    "stateCode": "JA"
+  },
+  {
+    "name": "San Manuel Chaparrón",
+    "stateCode": "JA"
+  },
+  {
+    "name": "San Pedro Pinula",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Agua Blanca",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Asunción Mita",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Atescatempa",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Comapa",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Conguaco",
+    "stateCode": "JU"
+  },
+  {
+    "name": "El Adelanto",
+    "stateCode": "JU"
+  },
+  {
+    "name": "El Progreso",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Jalpatagua",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Jerez",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Jutiapa",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Moyuta",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Municipio de Asunción Mita",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Pasaco",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Quesada",
+    "stateCode": "JU"
+  },
+  {
+    "name": "San José Acatempa",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Santa Catarina Mita",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Yupiltepeque",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Zapotitlán",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Dolores",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Flores",
+    "stateCode": "PE"
+  },
+  {
+    "name": "La Libertad",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Melchor de Mencos",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Municipio de Flores",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Municipio de Poptún",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Municipio de San Andrés",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Municipio de San Benito",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Municipio de San Francisco",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Municipio de Santa Ana",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Municipio de Sayaxché",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Poptún",
+    "stateCode": "PE"
+  },
+  {
+    "name": "San Andrés",
+    "stateCode": "PE"
+  },
+  {
+    "name": "San Benito",
+    "stateCode": "PE"
+  },
+  {
+    "name": "San Francisco",
+    "stateCode": "PE"
+  },
+  {
+    "name": "San José",
+    "stateCode": "PE"
+  },
+  {
+    "name": "San Luis",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Santa Ana",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Sayaxché",
+    "stateCode": "PE"
+  },
+  {
+    "name": "El Jícaro",
+    "stateCode": "PR"
+  },
+  {
+    "name": "Guastatoya",
+    "stateCode": "PR"
+  },
+  {
+    "name": "Morazán",
+    "stateCode": "PR"
+  },
+  {
+    "name": "San Agustín Acasaguastlán",
+    "stateCode": "PR"
+  },
+  {
+    "name": "San Antonio La Paz",
+    "stateCode": "PR"
+  },
+  {
+    "name": "San Cristóbal Acasaguastlán",
+    "stateCode": "PR"
+  },
+  {
+    "name": "Sanarate",
+    "stateCode": "PR"
+  },
+  {
+    "name": "Sansare",
+    "stateCode": "PR"
+  },
+  {
+    "name": "Canillá",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chajul",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chicamán",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chiché",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chichicastenango",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chinique",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Cunén",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Joyabaj",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Canillá",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Chajul",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Chicaman",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Chiché",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Chichicastenango",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Chinique",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Cunén",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Ixcan",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Joyabaj",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Pachalum",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Patzité",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de San Andrés Sajcabajá",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de San Antonio Ilotenango",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de San Juan Cotzal",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de San Pedro Jocopilas",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Uspantán",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Municipio de Zacualpa",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Nebaj",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Pachalum",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Patzité",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Playa Grande",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sacapulas",
+    "stateCode": "QC"
+  },
+  {
+    "name": "San Andrés Sajcabajá",
+    "stateCode": "QC"
+  },
+  {
+    "name": "San Antonio Ilotenango",
+    "stateCode": "QC"
+  },
+  {
+    "name": "San Bartolomé Jocotenango",
+    "stateCode": "QC"
+  },
+  {
+    "name": "San Juan Cotzal",
+    "stateCode": "QC"
+  },
+  {
+    "name": "San Luis Ixcán",
+    "stateCode": "QC"
+  },
+  {
+    "name": "San Pédro Jocopilas",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Santa Cruz del Quiché",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Uspantán",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Zacualpa",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Almolonga",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Cabricán",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Cajolá",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Cantel",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Coatepeque",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Colomba",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Concepción Chiquirichapa",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "El Palmar",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Flores Costa Cuca",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Génova",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Huitán",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "La Esperanza",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Municipio de Almolonga",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Municipio de Cabricán",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Municipio de Cantel",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Municipio de Coatepeque",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Municipio de Colomba",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Municipio de Concepción Chiquirichapa",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Municipio de Flores Costa Cuca",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Municipio de San Juan Ostuncalco",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Olintepeque",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Ostuncalco",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Palestina de los Altos",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Quetzaltenango",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Salcajá",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Samayac",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "San Carlos Sija",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "San Francisco la Unión",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "San Martín Sacatepéquez",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "San Mateo",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "San Miguel Sigüilá",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Sibilia",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Zunil",
+    "stateCode": "QZ"
+  },
+  {
+    "name": "Champerico",
+    "stateCode": "RE"
+  },
+  {
+    "name": "El Asintal",
+    "stateCode": "RE"
+  },
+  {
+    "name": "Municipio de San Felipe",
+    "stateCode": "RE"
+  },
+  {
+    "name": "Nuevo San Carlos",
+    "stateCode": "RE"
+  },
+  {
+    "name": "Retalhuleu",
+    "stateCode": "RE"
+  },
+  {
+    "name": "San Andrés Villa Seca",
+    "stateCode": "RE"
+  },
+  {
+    "name": "San Felipe",
+    "stateCode": "RE"
+  },
+  {
+    "name": "San Martín Zapotitlán",
+    "stateCode": "RE"
+  },
+  {
+    "name": "San Sebastián",
+    "stateCode": "RE"
+  },
+  {
+    "name": "Santa Cruz Muluá",
+    "stateCode": "RE"
+  },
+  {
+    "name": "Alotenango",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Antigua Guatemala",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Ciudad Vieja",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Jocotenango",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Magdalena Milpas Altas",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Municipio de Alotenango",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Municipio de Antigua Guatemala",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Municipio de Ciudad Vieja",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Municipio de Jocotenango",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Municipio de Magdalena Milpas Altas",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Municipio de Santa Lucía Milpas Altas",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Municipio de Santa María de Jesús",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Pastores",
+    "stateCode": "SA"
+  },
+  {
+    "name": "San Antonio Aguas Calientes",
+    "stateCode": "SA"
+  },
+  {
+    "name": "San Bartolomé Milpas Altas",
+    "stateCode": "SA"
+  },
+  {
+    "name": "San Lucas Sacatepéquez",
+    "stateCode": "SA"
+  },
+  {
+    "name": "San Miguel Dueñas",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Santa Catarina Barahona",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Santa Lucía Milpas Altas",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Santa María de Jesús",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Santiago Sacatepéquez",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Santo Domingo Xenacoj",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Sumpango",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Catarina",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Ciudad Tecún Umán",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Comitancillo",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Concepción Tutuapa",
+    "stateCode": "SM"
+  },
+  {
+    "name": "El Quetzal",
+    "stateCode": "SM"
+  },
+  {
+    "name": "El Rodeo",
+    "stateCode": "SM"
+  },
+  {
+    "name": "El Tumbador",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Esquipulas Palo Gordo",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Ixchiguán",
+    "stateCode": "SM"
+  },
+  {
+    "name": "La Reforma",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Malacatán",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Municipio de Concepción Tutuapa",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Municipio de Malacatán",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Municipio de Sipacapa",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Municipio de Tejutla",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Nuevo Progreso",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Ocós",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Pajapita",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Río Blanco",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San Antonio Sacatepéquez",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San Cristóbal Cucho",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San José Ojetenam",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San José Ojetenán",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San Lorenzo",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San Marcos",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San Miguel Ixtahuacán",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San Pablo",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San Pedro Sacatepéquez",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San Rafael Pie de la Cuesta",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Sibinal",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Sipacapa",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Tacaná",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Tajumulco",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Tejutla",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Concepción",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Municipio de Nahualá",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Municipio de Panajachel",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Municipio de Santa Catarina Palopó",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Municipio de Santa Cruz La Laguna",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Nahualá",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Panajachel",
+    "stateCode": "SO"
+  },
+  {
+    "name": "San Andrés Semetabaj",
+    "stateCode": "SO"
+  },
+  {
+    "name": "San Antonio Palopó",
+    "stateCode": "SO"
+  },
+  {
+    "name": "San José Chacayá",
+    "stateCode": "SO"
+  },
+  {
+    "name": "San Juan La Laguna",
+    "stateCode": "SO"
+  },
+  {
+    "name": "San Lucas Tolimán",
+    "stateCode": "SO"
+  },
+  {
+    "name": "San Marcos La Laguna",
+    "stateCode": "SO"
+  },
+  {
+    "name": "San Pablo La Laguna",
+    "stateCode": "SO"
+  },
+  {
+    "name": "San Pedro La Laguna",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Santa Catarina Ixtahuacán",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Santa Catarina Palopó",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Santa Clara La Laguna",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Santa Cruz La Laguna",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Santa Lucía Utatlán",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Santa María Visitación",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Santiago Atitlán",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Sololá",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Barberena",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Casillas",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Chiquimulilla",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Cuilapa",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Guazacapán",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Municipio de Casillas",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Municipio de Chiquimulilla",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Municipio de Guazacapán",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Nueva Santa Rosa",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Oratorio",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Pueblo Nuevo Viñas",
+    "stateCode": "SR"
+  },
+  {
+    "name": "San Juan Tecuaco",
+    "stateCode": "SR"
+  },
+  {
+    "name": "San Rafael Las Flores",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Santa Cruz Naranjo",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Santa María Ixhuatán",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Santa Rosa de Lima",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Taxisco",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Chicacao",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Cuyotenango",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Mazatenango",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Municipio de San Antonio Suchitepéquez",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Municipio de San Miguel Panán",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Municipio de Santa Bárbara",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Patulul",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Pueblo Nuevo",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Río Bravo",
+    "stateCode": "SU"
+  },
+  {
+    "name": "San Antonio Suchitepéquez",
+    "stateCode": "SU"
+  },
+  {
+    "name": "San Bernardino",
+    "stateCode": "SU"
+  },
+  {
+    "name": "San Francisco Zapotitlán",
+    "stateCode": "SU"
+  },
+  {
+    "name": "San Gabriel",
+    "stateCode": "SU"
+  },
+  {
+    "name": "San José El Ídolo",
+    "stateCode": "SU"
+  },
+  {
+    "name": "San Juan Bautista",
+    "stateCode": "SU"
+  },
+  {
+    "name": "San Lorenzo",
+    "stateCode": "SU"
+  },
+  {
+    "name": "San Miguel Panán",
+    "stateCode": "SU"
+  },
+  {
+    "name": "San Pablo Jocopilas",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Santa Bárbara",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Santo Domingo Suchitepéquez",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Santo Tomás La Unión",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Zunilito",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Momostenango",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Municipio de Momostenango",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Municipio de Santa María Chiquimula",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Municipio de Totonicapán",
+    "stateCode": "TO"
+  },
+  {
+    "name": "San Andrés Xecul",
+    "stateCode": "TO"
+  },
+  {
+    "name": "San Bartolo",
+    "stateCode": "TO"
+  },
+  {
+    "name": "San Cristóbal Totonicapán",
+    "stateCode": "TO"
+  },
+  {
+    "name": "San Francisco El Alto",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Santa Lucia La Reforma",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Santa María Chiquimula",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Totonicapán",
+    "stateCode": "TO"
+  }
+]

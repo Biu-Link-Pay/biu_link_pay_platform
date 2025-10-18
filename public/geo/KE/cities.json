@@ -1,0 +1,442 @@
+[
+  {
+    "name": "Baringo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Eldama Ravine",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kabarnet",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sotik",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sotik Post",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bungoma",
+    "stateCode": "03"
+  },
+  {
+    "name": "Malikisi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Webuye",
+    "stateCode": "03"
+  },
+  {
+    "name": "Busia",
+    "stateCode": "04"
+  },
+  {
+    "name": "Luanda",
+    "stateCode": "04"
+  },
+  {
+    "name": "Lugulu",
+    "stateCode": "04"
+  },
+  {
+    "name": "Malaba",
+    "stateCode": "04"
+  },
+  {
+    "name": "Nambare",
+    "stateCode": "04"
+  },
+  {
+    "name": "Port Victoria",
+    "stateCode": "04"
+  },
+  {
+    "name": "Embu",
+    "stateCode": "06"
+  },
+  {
+    "name": "Garissa",
+    "stateCode": "07"
+  },
+  {
+    "name": "Homa Bay",
+    "stateCode": "08"
+  },
+  {
+    "name": "Oyugis",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rachuonyo District",
+    "stateCode": "08"
+  },
+  {
+    "name": "Isiolo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kajiado",
+    "stateCode": "10"
+  },
+  {
+    "name": "Magadi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ngong",
+    "stateCode": "10"
+  },
+  {
+    "name": "Butere",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kakamega",
+    "stateCode": "11"
+  },
+  {
+    "name": "Mumias",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kericho",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kipkelion",
+    "stateCode": "12"
+  },
+  {
+    "name": "Litein",
+    "stateCode": "12"
+  },
+  {
+    "name": "Londiani",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kiambu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kikuyu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Limuru",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pumwani",
+    "stateCode": "13"
+  },
+  {
+    "name": "Thika",
+    "stateCode": "13"
+  },
+  {
+    "name": "Iten",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kapsowar",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kilifi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Malindi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mariakani",
+    "stateCode": "14"
+  },
+  {
+    "name": "Takaungu",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kerugoya",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sagana",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kisii",
+    "stateCode": "16"
+  },
+  {
+    "name": "Ogembo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Ahero",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kisumu",
+    "stateCode": "17"
+  },
+  {
+    "name": "Muhoroni",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kitui",
+    "stateCode": "18"
+  },
+  {
+    "name": "Mwingi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Gazi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kinango",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kwale",
+    "stateCode": "19"
+  },
+  {
+    "name": "Sawa Sawa",
+    "stateCode": "19"
+  },
+  {
+    "name": "Shimoni",
+    "stateCode": "19"
+  },
+  {
+    "name": "Nanyuki",
+    "stateCode": "20"
+  },
+  {
+    "name": "Nyahururu",
+    "stateCode": "20"
+  },
+  {
+    "name": "Rumuruti",
+    "stateCode": "20"
+  },
+  {
+    "name": "Lamu",
+    "stateCode": "21"
+  },
+  {
+    "name": "Witu",
+    "stateCode": "21"
+  },
+  {
+    "name": "Athi River",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kangundo",
+    "stateCode": "22"
+  },
+  {
+    "name": "Konza",
+    "stateCode": "22"
+  },
+  {
+    "name": "Machakos",
+    "stateCode": "22"
+  },
+  {
+    "name": "Makueni Boma",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mtito Andei",
+    "stateCode": "23"
+  },
+  {
+    "name": "Wote",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mandera",
+    "stateCode": "24"
+  },
+  {
+    "name": "Marsabit",
+    "stateCode": "25"
+  },
+  {
+    "name": "Moyale",
+    "stateCode": "25"
+  },
+  {
+    "name": "Maua",
+    "stateCode": "26"
+  },
+  {
+    "name": "Meru",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kihancha",
+    "stateCode": "27"
+  },
+  {
+    "name": "Migori",
+    "stateCode": "27"
+  },
+  {
+    "name": "Mombasa",
+    "stateCode": "28"
+  },
+  {
+    "name": "Kangema",
+    "stateCode": "29"
+  },
+  {
+    "name": "Karuri",
+    "stateCode": "29"
+  },
+  {
+    "name": "Maragua",
+    "stateCode": "29"
+  },
+  {
+    "name": "Murang’a",
+    "stateCode": "29"
+  },
+  {
+    "name": "Nairobi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Kijabe",
+    "stateCode": "31"
+  },
+  {
+    "name": "Molo",
+    "stateCode": "31"
+  },
+  {
+    "name": "Naivasha",
+    "stateCode": "31"
+  },
+  {
+    "name": "Nakuru",
+    "stateCode": "31"
+  },
+  {
+    "name": "Rongai",
+    "stateCode": "31"
+  },
+  {
+    "name": "Kapsabet",
+    "stateCode": "32"
+  },
+  {
+    "name": "Nandi Hills",
+    "stateCode": "32"
+  },
+  {
+    "name": "Narok",
+    "stateCode": "33"
+  },
+  {
+    "name": "Keroka",
+    "stateCode": "34"
+  },
+  {
+    "name": "Nyamira",
+    "stateCode": "34"
+  },
+  {
+    "name": "Ol Kalou",
+    "stateCode": "35"
+  },
+  {
+    "name": "Naro Moru",
+    "stateCode": "36"
+  },
+  {
+    "name": "Nyeri",
+    "stateCode": "36"
+  },
+  {
+    "name": "Othaya",
+    "stateCode": "36"
+  },
+  {
+    "name": "Maralal",
+    "stateCode": "37"
+  },
+  {
+    "name": "Bondo",
+    "stateCode": "38"
+  },
+  {
+    "name": "Siaya",
+    "stateCode": "38"
+  },
+  {
+    "name": "Yala",
+    "stateCode": "38"
+  },
+  {
+    "name": "Hola",
+    "stateCode": "40"
+  },
+  {
+    "name": "Kipini",
+    "stateCode": "40"
+  },
+  {
+    "name": "Chuka",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kitale",
+    "stateCode": "42"
+  },
+  {
+    "name": "Lodwar",
+    "stateCode": "43"
+  },
+  {
+    "name": "Eldoret",
+    "stateCode": "44"
+  },
+  {
+    "name": "Wajir",
+    "stateCode": "46"
+  },
+  {
+    "name": "Chepareria",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kapenguria",
+    "stateCode": "47"
+  },
+  {
+    "name": "Taveta",
+    "stateCode": "47"
+  },
+  {
+    "name": "Voi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Wundanyi",
+    "stateCode": "47"
+  }
+]

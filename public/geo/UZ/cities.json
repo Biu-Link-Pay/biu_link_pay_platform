@@ -1,0 +1,542 @@
+[
+  {
+    "name": "Andijon",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Andijon Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Asaka",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Asaka Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Baliqchi Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Bo‘z Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Buloqboshi Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Izboskan Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Jalolkuduk Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Khŭjaobod Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Marhamat",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Marhamat Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Oltinkŭl Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Pakhtaobod Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Paxtaobod",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Qo‘rg‘ontepa",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Qŭrghontepa Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Shahrikhon Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Shahrixon",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Ulug‘nor Tumani",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Xo‘jaobod",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Bukhara",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Galaosiyo",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Gazli",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Ghijduwon",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Karakul’",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Kogon",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Olot",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Peshku Tumani",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Qorako’l",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Qorovulbozor",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Romiton",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Shofirkon",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Wobkent",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Wobkent Tumani",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Beshariq",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Fergana",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Hamza",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Kirguli",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Marg‘ilon",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Oltiariq",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Qo‘qon",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Quva",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Quvasoy",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Rishton",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Shohimardon",
+    "stateCode": "FA"
+  },
+  {
+    "name": "So‘x Tumani",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Toshloq",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Yangi Marg‘ilon",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Yaypan",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Dashtobod",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Dŭstlik",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Gagarin",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Jizzax",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Paxtakor",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Zomin",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Chortoq",
+    "stateCode": "NG"
+  },
+  {
+    "name": "Chust",
+    "stateCode": "NG"
+  },
+  {
+    "name": "Haqqulobod",
+    "stateCode": "NG"
+  },
+  {
+    "name": "Kosonsoy",
+    "stateCode": "NG"
+  },
+  {
+    "name": "Namangan",
+    "stateCode": "NG"
+  },
+  {
+    "name": "Pop",
+    "stateCode": "NG"
+  },
+  {
+    "name": "To‘rqao‘rg‘on",
+    "stateCode": "NG"
+  },
+  {
+    "name": "Toshbuloq",
+    "stateCode": "NG"
+  },
+  {
+    "name": "Uchqŭrghon Shahri",
+    "stateCode": "NG"
+  },
+  {
+    "name": "Uychi",
+    "stateCode": "NG"
+  },
+  {
+    "name": "Yangiqo‘rg‘on",
+    "stateCode": "NG"
+  },
+  {
+    "name": "Navoiy",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Nurota",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Qiziltepa",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Yangirabot",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Beshkent",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Chiroqchi",
+    "stateCode": "QA"
+  },
+  {
+    "name": "G‘uzor",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Kitob",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Koson",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Muborak",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Nishon Tumani",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Qarshi",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Shahrisabz",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Beruniy",
+    "stateCode": "QR"
+  },
+  {
+    "name": "Kegeyli Shahar",
+    "stateCode": "QR"
+  },
+  {
+    "name": "Khŭjayli",
+    "stateCode": "QR"
+  },
+  {
+    "name": "Manghit",
+    "stateCode": "QR"
+  },
+  {
+    "name": "Mŭynoq",
+    "stateCode": "QR"
+  },
+  {
+    "name": "Novyy Turtkul’",
+    "stateCode": "QR"
+  },
+  {
+    "name": "Nukus",
+    "stateCode": "QR"
+  },
+  {
+    "name": "Oltinko‘l",
+    "stateCode": "QR"
+  },
+  {
+    "name": "Bulung’ur",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Charxin",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Chelak",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Daxbet",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Ishtixon",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Jomboy",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Juma",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Kattaqo‘rg‘on",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Oqtosh",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Payshanba",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Samarkand",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Urgut",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Guliston",
+    "stateCode": "SI"
+  },
+  {
+    "name": "Sirdaryo",
+    "stateCode": "SI"
+  },
+  {
+    "name": "Yangiyer",
+    "stateCode": "SI"
+  },
+  {
+    "name": "Boysun",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Denov",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Sho‘rchi",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Tirmiz",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Bektemir",
+    "stateCode": "TK"
+  },
+  {
+    "name": "Tashkent",
+    "stateCode": "TK"
+  },
+  {
+    "name": "Angren",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Bekobod",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Bo‘ka",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Chinoz",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Chirchiq",
+    "stateCode": "TO"
+  },
+  {
+    "name": "G‘azalkent",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Iskandar",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Kyzyldzhar",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Ohangaron",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Olmaliq",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Parkent",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Piskent",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Qibray",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Salor",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Tŭytepa",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Ŭrtaowul",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Yangiobod",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Yangiyŭl",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Zafar",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Boghot Tumani",
+    "stateCode": "XO"
+  },
+  {
+    "name": "Gurlan",
+    "stateCode": "XO"
+  },
+  {
+    "name": "Hazorasp",
+    "stateCode": "XO"
+  },
+  {
+    "name": "Khiwa",
+    "stateCode": "XO"
+  },
+  {
+    "name": "Qŭshkŭpir",
+    "stateCode": "XO"
+  },
+  {
+    "name": "Showot",
+    "stateCode": "XO"
+  },
+  {
+    "name": "Urganch",
+    "stateCode": "XO"
+  }
+]

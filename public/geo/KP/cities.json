@@ -1,0 +1,322 @@
+[
+  {
+    "name": "Chunghwa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kangdong-ŭp",
+    "stateCode": "01"
+  },
+  {
+    "name": "Pyongyang",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sunan",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sŭngho 1-tong",
+    "stateCode": "01"
+  },
+  {
+    "name": "Anju",
+    "stateCode": "02"
+  },
+  {
+    "name": "Namp’o",
+    "stateCode": "02"
+  },
+  {
+    "name": "P’yŏngsŏng",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sangsŏng-ni",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sil-li",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sinanju",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sunch’ŏn",
+    "stateCode": "02"
+  },
+  {
+    "name": "Yonggang-ŭp",
+    "stateCode": "02"
+  },
+  {
+    "name": "Chŏngju",
+    "stateCode": "03"
+  },
+  {
+    "name": "Chŏngju-gun",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kujang-ŭp",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kusŏng",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kwaksan",
+    "stateCode": "03"
+  },
+  {
+    "name": "Panghyŏn-dong",
+    "stateCode": "03"
+  },
+  {
+    "name": "Pukchil-lodongjagu",
+    "stateCode": "03"
+  },
+  {
+    "name": "Sakchu-ŭp",
+    "stateCode": "03"
+  },
+  {
+    "name": "Sinŭiju",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ŭiju",
+    "stateCode": "03"
+  },
+  {
+    "name": "Yŏmju-ŭp",
+    "stateCode": "03"
+  },
+  {
+    "name": "Yŏngbyŏn",
+    "stateCode": "03"
+  },
+  {
+    "name": "Changgang-gun",
+    "stateCode": "04"
+  },
+  {
+    "name": "Chasŏng",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kanggye",
+    "stateCode": "04"
+  },
+  {
+    "name": "Manp’o",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ayang-ni",
+    "stateCode": "05"
+  },
+  {
+    "name": "Chaeryŏng-ŭp",
+    "stateCode": "05"
+  },
+  {
+    "name": "Changyŏn",
+    "stateCode": "05"
+  },
+  {
+    "name": "Haeju",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kaesŏng",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ongjin",
+    "stateCode": "05"
+  },
+  {
+    "name": "Pyŏksŏng-ŭp",
+    "stateCode": "05"
+  },
+  {
+    "name": "Yŏnan-ŭp",
+    "stateCode": "05"
+  },
+  {
+    "name": "Anak",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hŭkkyo-ri",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hwangju-ŭp",
+    "stateCode": "06"
+  },
+  {
+    "name": "Koksan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sariwŏn",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sinmak",
+    "stateCode": "06"
+  },
+  {
+    "name": "Songnim",
+    "stateCode": "06"
+  },
+  {
+    "name": "Anbyŏn-ŭp",
+    "stateCode": "07"
+  },
+  {
+    "name": "Hoeyang",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kosan",
+    "stateCode": "07"
+  },
+  {
+    "name": "T’ongch’ŏn-ŭp",
+    "stateCode": "07"
+  },
+  {
+    "name": "Wŏnsan",
+    "stateCode": "07"
+  },
+  {
+    "name": "Hamhŭng",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hongwŏn",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hŭngnam",
+    "stateCode": "08"
+  },
+  {
+    "name": "Iwŏn-ŭp",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kowŏn-ŭp",
+    "stateCode": "08"
+  },
+  {
+    "name": "Samho-rodongjagu",
+    "stateCode": "08"
+  },
+  {
+    "name": "Sinsang-ni",
+    "stateCode": "08"
+  },
+  {
+    "name": "Yŏnggwang-ŭp",
+    "stateCode": "08"
+  },
+  {
+    "name": "Yuktae-dong",
+    "stateCode": "08"
+  },
+  {
+    "name": "Aoji",
+    "stateCode": "09"
+  },
+  {
+    "name": "Chongjin",
+    "stateCode": "09"
+  },
+  {
+    "name": "Hau-ri",
+    "stateCode": "09"
+  },
+  {
+    "name": "Hoemul-li",
+    "stateCode": "09"
+  },
+  {
+    "name": "Hoeryŏng",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kilju",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kimch’aek-si",
+    "stateCode": "09"
+  },
+  {
+    "name": "Komusan Il-tong",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kyŏngsŏng",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kyŏngwŏn",
+    "stateCode": "09"
+  },
+  {
+    "name": "Musan-ŭp",
+    "stateCode": "09"
+  },
+  {
+    "name": "Namyang-dong",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nanam",
+    "stateCode": "09"
+  },
+  {
+    "name": "Onsŏng",
+    "stateCode": "09"
+  },
+  {
+    "name": "Puryŏng",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sŭngam-nodongjagu",
+    "stateCode": "09"
+  },
+  {
+    "name": "Hyesan",
+    "stateCode": "10"
+  },
+  {
+    "name": "Hyesan-dong",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kapsan-ŭp",
+    "stateCode": "10"
+  },
+  {
+    "name": "Sŭngjibaegam",
+    "stateCode": "10"
+  },
+  {
+    "name": "Sŏnbong",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ungsang-nodongjagu",
+    "stateCode": "13"
+  }
+]

@@ -1,0 +1,7214 @@
+[
+  {
+    "name": "Bar",
+    "stateCode": "05"
+  },
+  {
+    "name": "Barskiy Rayon",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bershad",
+    "stateCode": "05"
+  },
+  {
+    "name": "Brailiv",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bratslav",
+    "stateCode": "05"
+  },
+  {
+    "name": "Chechelnyk",
+    "stateCode": "05"
+  },
+  {
+    "name": "Chernivets’kyy Rayon",
+    "stateCode": "05"
+  },
+  {
+    "name": "Chernivtsi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dashiv",
+    "stateCode": "05"
+  },
+  {
+    "name": "Haisyn",
+    "stateCode": "05"
+  },
+  {
+    "name": "Illintsi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kalynivka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Khmilnyk",
+    "stateCode": "05"
+  },
+  {
+    "name": "Klembivka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kopayhorod",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kozyatyn",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kryzhopil’",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ladyzhyn",
+    "stateCode": "05"
+  },
+  {
+    "name": "Lityn",
+    "stateCode": "05"
+  },
+  {
+    "name": "Lityns’kyy Rayon",
+    "stateCode": "05"
+  },
+  {
+    "name": "Lypovets’kyy Rayon",
+    "stateCode": "05"
+  },
+  {
+    "name": "Mohyliv-Podilskyi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Murafa",
+    "stateCode": "05"
+  },
+  {
+    "name": "Murovani Kurylivtsi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Nemyriv",
+    "stateCode": "05"
+  },
+  {
+    "name": "Nova Pryluka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Obodivka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Orativ",
+    "stateCode": "05"
+  },
+  {
+    "name": "Pavlivka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Pohrebyshche",
+    "stateCode": "05"
+  },
+  {
+    "name": "Pohrebyshchens’kyy Rayon",
+    "stateCode": "05"
+  },
+  {
+    "name": "Serebriya",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sharhorod",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sobolivka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sutysky",
+    "stateCode": "05"
+  },
+  {
+    "name": "Teplyk",
+    "stateCode": "05"
+  },
+  {
+    "name": "Tomashpil’",
+    "stateCode": "05"
+  },
+  {
+    "name": "Torkanivka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Tsybulevka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Tulchyn",
+    "stateCode": "05"
+  },
+  {
+    "name": "Turbiv",
+    "stateCode": "05"
+  },
+  {
+    "name": "Tyvriv",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ulaniv",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vapnyarka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vendychany",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vinnitskiy Rayon",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vinnytsia",
+    "stateCode": "05"
+  },
+  {
+    "name": "Viytivka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Voronovytsya",
+    "stateCode": "05"
+  },
+  {
+    "name": "Yampil’",
+    "stateCode": "05"
+  },
+  {
+    "name": "Zhmerynka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Berestechko",
+    "stateCode": "07"
+  },
+  {
+    "name": "Blahodatne",
+    "stateCode": "07"
+  },
+  {
+    "name": "Hołoby",
+    "stateCode": "07"
+  },
+  {
+    "name": "Horokhiv",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kamin-Kashyrskyi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kivertsi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kovel",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kovel’s’ka Mis’krada",
+    "stateCode": "07"
+  },
+  {
+    "name": "Liuboml",
+    "stateCode": "07"
+  },
+  {
+    "name": "Lokachi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Lukiv",
+    "stateCode": "07"
+  },
+  {
+    "name": "Lutsk",
+    "stateCode": "07"
+  },
+  {
+    "name": "Lyubeshivs’kyy Rayon",
+    "stateCode": "07"
+  },
+  {
+    "name": "Lyuboml’s’kyy Rayon",
+    "stateCode": "07"
+  },
+  {
+    "name": "Manevychi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Manevyts’kyy Rayon",
+    "stateCode": "07"
+  },
+  {
+    "name": "Novovolyns’k",
+    "stateCode": "07"
+  },
+  {
+    "name": "Nuyno",
+    "stateCode": "07"
+  },
+  {
+    "name": "Olyka",
+    "stateCode": "07"
+  },
+  {
+    "name": "Pishcha",
+    "stateCode": "07"
+  },
+  {
+    "name": "Rakiv Lis",
+    "stateCode": "07"
+  },
+  {
+    "name": "Ratne",
+    "stateCode": "07"
+  },
+  {
+    "name": "Ratnivs’kyy Rayon",
+    "stateCode": "07"
+  },
+  {
+    "name": "Rozhyshche",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shats’k",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shats’kyy Rayon",
+    "stateCode": "07"
+  },
+  {
+    "name": "Stara Vyzhivka",
+    "stateCode": "07"
+  },
+  {
+    "name": "Svityaz’",
+    "stateCode": "07"
+  },
+  {
+    "name": "Volodymyr-Volynskyi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Alchevs’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alchevs’ka Mis’krada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Antratsyt",
+    "stateCode": "09"
+  },
+  {
+    "name": "Antratsytivs’kyy Rayon",
+    "stateCode": "09"
+  },
+  {
+    "name": "Artemivs’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bayrachky",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bile",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bilohorivka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bilokurakyne",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bilovods'k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Biryukove",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bryanka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Buran",
+    "stateCode": "09"
+  },
+  {
+    "name": "Chervonopartyzans’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Chornukhyne",
+    "stateCode": "09"
+  },
+  {
+    "name": "Dovzhanskyy Rayon",
+    "stateCode": "09"
+  },
+  {
+    "name": "Hirs’ke",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kadiyivka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kirovs’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kirovs’ka Mis’krada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Klenovyy",
+    "stateCode": "09"
+  },
+  {
+    "name": "Krasnyy Kut",
+    "stateCode": "09"
+  },
+  {
+    "name": "Krasnyy Luch",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kreminna",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kripens’kyy",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lenina",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lozno-Oleksandrivka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Luhans’ka Mis’krada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Luhansk",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lutuhyne",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lutuhyns’kyy Rayon",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lysychans’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Makariv Yar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Markivka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Millerovo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Milove",
+    "stateCode": "09"
+  },
+  {
+    "name": "Miusyns’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Molodohvardiys’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Novopskov",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nyzhnya Duvanka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pavlivka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pereval’s’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pervomays’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Popasna",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pryvillya",
+    "stateCode": "09"
+  },
+  {
+    "name": "Roven’ky",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rozkishne",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rubizhans’ka Mis’krada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rubizhne",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shchastya",
+    "stateCode": "09"
+  },
+  {
+    "name": "Simeykyne",
+    "stateCode": "09"
+  },
+  {
+    "name": "Slov`yanoserbsk",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sorokyne",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sorokyns'kyi Rayon",
+    "stateCode": "09"
+  },
+  {
+    "name": "Stanytsya Luhans’ka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Starobil’s’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Svatove",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sverdlovs’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sverdlovs’ka Mis’krada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Syevyerodonets’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Teple",
+    "stateCode": "09"
+  },
+  {
+    "name": "Toshkivka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Tr’okhizbenka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Uralo-Kavkaz",
+    "stateCode": "09"
+  },
+  {
+    "name": "Uspenka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Zalesnoye",
+    "stateCode": "09"
+  },
+  {
+    "name": "Zoryns’k",
+    "stateCode": "09"
+  },
+  {
+    "name": "Zymohiria",
+    "stateCode": "09"
+  },
+  {
+    "name": "Apostolove",
+    "stateCode": "12"
+  },
+  {
+    "name": "Auly",
+    "stateCode": "12"
+  },
+  {
+    "name": "Aviatorske",
+    "stateCode": "12"
+  },
+  {
+    "name": "Chervonohryhorivka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Chortomlyk",
+    "stateCode": "12"
+  },
+  {
+    "name": "Dnipro",
+    "stateCode": "12"
+  },
+  {
+    "name": "Dnipro Raion",
+    "stateCode": "12"
+  },
+  {
+    "name": "Dniprovs’ka Mis’ka Rada",
+    "stateCode": "12"
+  },
+  {
+    "name": "Hubynykha",
+    "stateCode": "12"
+  },
+  {
+    "name": "Hupalivka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kamianske",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kaydaki",
+    "stateCode": "12"
+  },
+  {
+    "name": "Krynychky",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kryvoriz’ka Mis’krada",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kryvyi Rih",
+    "stateCode": "12"
+  },
+  {
+    "name": "Lykhivka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mahdalynivka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mahdalynivs’kyy Rayon",
+    "stateCode": "12"
+  },
+  {
+    "name": "Marhanets’",
+    "stateCode": "12"
+  },
+  {
+    "name": "Melioratyvne",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mezhova",
+    "stateCode": "12"
+  },
+  {
+    "name": "Nikopol",
+    "stateCode": "12"
+  },
+  {
+    "name": "Novomoskovs’k",
+    "stateCode": "12"
+  },
+  {
+    "name": "Novomoskovsk Raion",
+    "stateCode": "12"
+  },
+  {
+    "name": "Novomykolayivka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Novopokrovka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ordzhonikidze",
+    "stateCode": "12"
+  },
+  {
+    "name": "Partyzans’ke",
+    "stateCode": "12"
+  },
+  {
+    "name": "Pavlohrad",
+    "stateCode": "12"
+  },
+  {
+    "name": "Petropavlivka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Petrykivka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Petrykivs’kyy Rayon",
+    "stateCode": "12"
+  },
+  {
+    "name": "Piatykhatky",
+    "stateCode": "12"
+  },
+  {
+    "name": "Pidhorodne",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sholokhove",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shyroke",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shyroke Raion",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sofiyivka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Solone",
+    "stateCode": "12"
+  },
+  {
+    "name": "Solone Raion",
+    "stateCode": "12"
+  },
+  {
+    "name": "Spas’ke",
+    "stateCode": "12"
+  },
+  {
+    "name": "Surs’ko-Mykhaylivka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Synel’nykove",
+    "stateCode": "12"
+  },
+  {
+    "name": "Tomakivka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Tsarychanka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Tsarychans’kyy Rayon",
+    "stateCode": "12"
+  },
+  {
+    "name": "Verkhn’odniprovs’k",
+    "stateCode": "12"
+  },
+  {
+    "name": "Vil’ne",
+    "stateCode": "12"
+  },
+  {
+    "name": "Vyshchetarasivka",
+    "stateCode": "12"
+  },
+  {
+    "name": "Vyshneve",
+    "stateCode": "12"
+  },
+  {
+    "name": "Yur”yivs’kyy Rayon",
+    "stateCode": "12"
+  },
+  {
+    "name": "Zhovti Vody",
+    "stateCode": "12"
+  },
+  {
+    "name": "Amvrosiivka Raion",
+    "stateCode": "14"
+  },
+  {
+    "name": "Amvrosiyivka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Avdiyivka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bakhmut",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bakhmut Raion",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bezimenne",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bilyts’ke",
+    "stateCode": "14"
+  },
+  {
+    "name": "Blahodatne",
+    "stateCode": "14"
+  },
+  {
+    "name": "Boykivske",
+    "stateCode": "14"
+  },
+  {
+    "name": "Boykivske Raion",
+    "stateCode": "14"
+  },
+  {
+    "name": "Chasiv Yar",
+    "stateCode": "14"
+  },
+  {
+    "name": "Chystyakove",
+    "stateCode": "14"
+  },
+  {
+    "name": "Debal’tseve",
+    "stateCode": "14"
+  },
+  {
+    "name": "Dmytrivka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Dobropillia Raion",
+    "stateCode": "14"
+  },
+  {
+    "name": "Dobropillya",
+    "stateCode": "14"
+  },
+  {
+    "name": "Dokuchayevs’k",
+    "stateCode": "14"
+  },
+  {
+    "name": "Donetsk",
+    "stateCode": "14"
+  },
+  {
+    "name": "Druzhkivka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Horlivka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ilovays’k",
+    "stateCode": "14"
+  },
+  {
+    "name": "Khartsyz’k",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kostiantynivka Raion",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kostyantynivka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kramators’k",
+    "stateCode": "14"
+  },
+  {
+    "name": "Krasnotorka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Krinichnaya",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kurakhovo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kuteynykove",
+    "stateCode": "14"
+  },
+  {
+    "name": "Luhans’ke",
+    "stateCode": "14"
+  },
+  {
+    "name": "Lyman",
+    "stateCode": "14"
+  },
+  {
+    "name": "Lyman Raion",
+    "stateCode": "14"
+  },
+  {
+    "name": "Makiyivka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Makiyivs’ka Mis’krada",
+    "stateCode": "14"
+  },
+  {
+    "name": "Manhush",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mar'yinka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mariupol",
+    "stateCode": "14"
+  },
+  {
+    "name": "Melekyne",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mospyne",
+    "stateCode": "14"
+  },
+  {
+    "name": "Myrnohrad",
+    "stateCode": "14"
+  },
+  {
+    "name": "Nikolske Raion",
+    "stateCode": "14"
+  },
+  {
+    "name": "Novoazovs'k",
+    "stateCode": "14"
+  },
+  {
+    "name": "Novodonets’ke",
+    "stateCode": "14"
+  },
+  {
+    "name": "Novyy Svit",
+    "stateCode": "14"
+  },
+  {
+    "name": "Nyzhnya Krynka",
+    "stateCode": "14"
+  },
+  {
+    "name": "P'yatypill'ya",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pokrovsk",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pokrovsk Raion",
+    "stateCode": "14"
+  },
+  {
+    "name": "Rodyns’ke",
+    "stateCode": "14"
+  },
+  {
+    "name": "Rozsypne",
+    "stateCode": "14"
+  },
+  {
+    "name": "Sartana",
+    "stateCode": "14"
+  },
+  {
+    "name": "Selydivs’ka Mis’krada",
+    "stateCode": "14"
+  },
+  {
+    "name": "Selydove",
+    "stateCode": "14"
+  },
+  {
+    "name": "Serebryanka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Shakhtars’k",
+    "stateCode": "14"
+  },
+  {
+    "name": "Shcherbynivka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Shyroke",
+    "stateCode": "14"
+  },
+  {
+    "name": "Sivers’k",
+    "stateCode": "14"
+  },
+  {
+    "name": "Sloviansk",
+    "stateCode": "14"
+  },
+  {
+    "name": "Sloviansk Raion",
+    "stateCode": "14"
+  },
+  {
+    "name": "Snizhne",
+    "stateCode": "14"
+  },
+  {
+    "name": "Soledar",
+    "stateCode": "14"
+  },
+  {
+    "name": "Starobesheve",
+    "stateCode": "14"
+  },
+  {
+    "name": "Staryy Krym",
+    "stateCode": "14"
+  },
+  {
+    "name": "Stizhkivs’ke",
+    "stateCode": "14"
+  },
+  {
+    "name": "Svetlodarsk",
+    "stateCode": "14"
+  },
+  {
+    "name": "Svyatogorsk",
+    "stateCode": "14"
+  },
+  {
+    "name": "Syedove",
+    "stateCode": "14"
+  },
+  {
+    "name": "Temriuk",
+    "stateCode": "14"
+  },
+  {
+    "name": "Toretsk",
+    "stateCode": "14"
+  },
+  {
+    "name": "Urzuf",
+    "stateCode": "14"
+  },
+  {
+    "name": "Volnovakha",
+    "stateCode": "14"
+  },
+  {
+    "name": "Vuhlehirs’k",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yalta",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yasynuvata",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yasynuvata Raion",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yenakiyeve",
+    "stateCode": "14"
+  },
+  {
+    "name": "Zuhres",
+    "stateCode": "14"
+  },
+  {
+    "name": "Andrushivka",
+    "stateCode": "18"
+  },
+  {
+    "name": "Andrushivs’kyy Rayon",
+    "stateCode": "18"
+  },
+  {
+    "name": "Baranivka",
+    "stateCode": "18"
+  },
+  {
+    "name": "Berdychiv",
+    "stateCode": "18"
+  },
+  {
+    "name": "Berdychivskyy Rayon",
+    "stateCode": "18"
+  },
+  {
+    "name": "Bila Krynytsya",
+    "stateCode": "18"
+  },
+  {
+    "name": "Brusyliv",
+    "stateCode": "18"
+  },
+  {
+    "name": "Brusylivs’kyy Rayon",
+    "stateCode": "18"
+  },
+  {
+    "name": "Bykivka",
+    "stateCode": "18"
+  },
+  {
+    "name": "Cherniakhiv",
+    "stateCode": "18"
+  },
+  {
+    "name": "Chernyakhivskyy Rayon",
+    "stateCode": "18"
+  },
+  {
+    "name": "Chervone",
+    "stateCode": "18"
+  },
+  {
+    "name": "Chopovychi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Chornorudka",
+    "stateCode": "18"
+  },
+  {
+    "name": "Chudniv",
+    "stateCode": "18"
+  },
+  {
+    "name": "Chudniv Raion",
+    "stateCode": "18"
+  },
+  {
+    "name": "Denyshi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Dovbysh",
+    "stateCode": "18"
+  },
+  {
+    "name": "Holovyne",
+    "stateCode": "18"
+  },
+  {
+    "name": "Horodnytsya",
+    "stateCode": "18"
+  },
+  {
+    "name": "Horodok",
+    "stateCode": "18"
+  },
+  {
+    "name": "Hryshkivtsi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Khoroshiv Raion",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kornyn",
+    "stateCode": "18"
+  },
+  {
+    "name": "Korosten’",
+    "stateCode": "18"
+  },
+  {
+    "name": "Korostyshiv",
+    "stateCode": "18"
+  },
+  {
+    "name": "Korostyshiv Raion",
+    "stateCode": "18"
+  },
+  {
+    "name": "Liubar",
+    "stateCode": "18"
+  },
+  {
+    "name": "Luhyny",
+    "stateCode": "18"
+  },
+  {
+    "name": "Luhyny Raion",
+    "stateCode": "18"
+  },
+  {
+    "name": "Malyn",
+    "stateCode": "18"
+  },
+  {
+    "name": "Malyn Raion",
+    "stateCode": "18"
+  },
+  {
+    "name": "Narodychi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Narodychi Raion",
+    "stateCode": "18"
+  },
+  {
+    "name": "Nova Borova",
+    "stateCode": "18"
+  },
+  {
+    "name": "Novi Bilokorovychi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Novohrad-Volynskyi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Olevs’k",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ovruch",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ovruch Raion",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ozerne",
+    "stateCode": "18"
+  },
+  {
+    "name": "Pershotravneve",
+    "stateCode": "18"
+  },
+  {
+    "name": "Polyanka",
+    "stateCode": "18"
+  },
+  {
+    "name": "Popilnia",
+    "stateCode": "18"
+  },
+  {
+    "name": "Popilnia Raion",
+    "stateCode": "18"
+  },
+  {
+    "name": "Pulyny Raion",
+    "stateCode": "18"
+  },
+  {
+    "name": "Radomyshl",
+    "stateCode": "18"
+  },
+  {
+    "name": "Radomyshl Raion",
+    "stateCode": "18"
+  },
+  {
+    "name": "Romaniv",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ruzhyn",
+    "stateCode": "18"
+  },
+  {
+    "name": "Stavyshche",
+    "stateCode": "18"
+  },
+  {
+    "name": "Topory",
+    "stateCode": "18"
+  },
+  {
+    "name": "Yemil’chyne",
+    "stateCode": "18"
+  },
+  {
+    "name": "Zhytomyr",
+    "stateCode": "18"
+  },
+  {
+    "name": "Zhytomyr Raion",
+    "stateCode": "18"
+  },
+  {
+    "name": "Batiovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Berehivs’ka Mis’krada",
+    "stateCode": "21"
+  },
+  {
+    "name": "Berehove",
+    "stateCode": "21"
+  },
+  {
+    "name": "Berehove Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Bereznyky",
+    "stateCode": "21"
+  },
+  {
+    "name": "Berezovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Bilky",
+    "stateCode": "21"
+  },
+  {
+    "name": "Bobovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Bohdan",
+    "stateCode": "21"
+  },
+  {
+    "name": "Bushtyno",
+    "stateCode": "21"
+  },
+  {
+    "name": "Chop",
+    "stateCode": "21"
+  },
+  {
+    "name": "Chynadiyovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Dovhe",
+    "stateCode": "21"
+  },
+  {
+    "name": "Drahovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Dubove",
+    "stateCode": "21"
+  },
+  {
+    "name": "Horinchovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Irshava",
+    "stateCode": "21"
+  },
+  {
+    "name": "Irshava Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Iza",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kalyny",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kamianytsia",
+    "stateCode": "21"
+  },
+  {
+    "name": "Khust",
+    "stateCode": "21"
+  },
+  {
+    "name": "Khust Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Khusts’ka Mis’krada",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kolochava",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kopashnovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Korolevo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Koson’",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kryva",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kushnytsya",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kvasy",
+    "stateCode": "21"
+  },
+  {
+    "name": "Lazeshchyna",
+    "stateCode": "21"
+  },
+  {
+    "name": "Lazi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Lopukhiv",
+    "stateCode": "21"
+  },
+  {
+    "name": "Lypcha",
+    "stateCode": "21"
+  },
+  {
+    "name": "Lysychovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mizhhirya",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mizhhirya Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mukacheve",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mukachevo Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Muzhiyevo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mynay",
+    "stateCode": "21"
+  },
+  {
+    "name": "Nelipyno",
+    "stateCode": "21"
+  },
+  {
+    "name": "Neresnytsya",
+    "stateCode": "21"
+  },
+  {
+    "name": "Nevyts’ke",
+    "stateCode": "21"
+  },
+  {
+    "name": "Nove Davydkovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Nyzhnye Selyshche",
+    "stateCode": "21"
+  },
+  {
+    "name": "Oleshnyk",
+    "stateCode": "21"
+  },
+  {
+    "name": "Onokivtsi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Perechyn",
+    "stateCode": "21"
+  },
+  {
+    "name": "Perechyn Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Pidvynohradiv",
+    "stateCode": "21"
+  },
+  {
+    "name": "Poroshkovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Pylypets",
+    "stateCode": "21"
+  },
+  {
+    "name": "Rakhiv",
+    "stateCode": "21"
+  },
+  {
+    "name": "Rakhiv Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Rakoshyno",
+    "stateCode": "21"
+  },
+  {
+    "name": "Rokosovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Serednye",
+    "stateCode": "21"
+  },
+  {
+    "name": "Serednye Vodyane",
+    "stateCode": "21"
+  },
+  {
+    "name": "Solotvyno",
+    "stateCode": "21"
+  },
+  {
+    "name": "Storozhnytsya",
+    "stateCode": "21"
+  },
+  {
+    "name": "Strabychovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Svaliava Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Svalyava",
+    "stateCode": "21"
+  },
+  {
+    "name": "Synevyr",
+    "stateCode": "21"
+  },
+  {
+    "name": "Synevyrska Poliana",
+    "stateCode": "21"
+  },
+  {
+    "name": "Tiachiv Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Tyachiv",
+    "stateCode": "21"
+  },
+  {
+    "name": "Uzhgorod",
+    "stateCode": "21"
+  },
+  {
+    "name": "Uzhhorod Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Vary",
+    "stateCode": "21"
+  },
+  {
+    "name": "Velyki Berehy",
+    "stateCode": "21"
+  },
+  {
+    "name": "Velykyi Bereznyi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Velykyi Bereznyi Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Volovets",
+    "stateCode": "21"
+  },
+  {
+    "name": "Volovets Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Vylok",
+    "stateCode": "21"
+  },
+  {
+    "name": "Vynohradiv",
+    "stateCode": "21"
+  },
+  {
+    "name": "Vynohradiv Raion",
+    "stateCode": "21"
+  },
+  {
+    "name": "Vyshkovo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Yasinya",
+    "stateCode": "21"
+  },
+  {
+    "name": "Balky",
+    "stateCode": "23"
+  },
+  {
+    "name": "Berdiansk Raion",
+    "stateCode": "23"
+  },
+  {
+    "name": "Berdyans’ka Mis’krada",
+    "stateCode": "23"
+  },
+  {
+    "name": "Berdyansk",
+    "stateCode": "23"
+  },
+  {
+    "name": "Chapayevka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Chernihivka Raion",
+    "stateCode": "23"
+  },
+  {
+    "name": "Dniprorudne",
+    "stateCode": "23"
+  },
+  {
+    "name": "Dniprovka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Energodar",
+    "stateCode": "23"
+  },
+  {
+    "name": "Hulyaypole",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kirove",
+    "stateCode": "23"
+  },
+  {
+    "name": "Komysh-Zorya",
+    "stateCode": "23"
+  },
+  {
+    "name": "Komyshuvakha",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kostyantynivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kushuhum",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kuybysheve",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kyrylivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mala Bilozerka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mala Tokmachka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Malokaterynivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Matviyivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Melitopol",
+    "stateCode": "23"
+  },
+  {
+    "name": "Melitopol’s’kyy Rayon",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mykhaylivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mykhaylivs’kyy Rayon",
+    "stateCode": "23"
+  },
+  {
+    "name": "Novobohdanivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Novomykolayivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Novovasylivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Orikhiv",
+    "stateCode": "23"
+  },
+  {
+    "name": "Osypenko",
+    "stateCode": "23"
+  },
+  {
+    "name": "Polohy",
+    "stateCode": "23"
+  },
+  {
+    "name": "Preobrazhenka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Pryazovske Raion",
+    "stateCode": "23"
+  },
+  {
+    "name": "Prymors’k",
+    "stateCode": "23"
+  },
+  {
+    "name": "Prymorsk Raion",
+    "stateCode": "23"
+  },
+  {
+    "name": "Pryshyb",
+    "stateCode": "23"
+  },
+  {
+    "name": "Rozivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Rozivs’kyy Rayon",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ternuvate",
+    "stateCode": "23"
+  },
+  {
+    "name": "Terpinnya",
+    "stateCode": "23"
+  },
+  {
+    "name": "Tokmak",
+    "stateCode": "23"
+  },
+  {
+    "name": "Tokmak Raion",
+    "stateCode": "23"
+  },
+  {
+    "name": "Tymoshivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Vasylivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Velyka Bilozerka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Velykobilozers’kyy Rayon",
+    "stateCode": "23"
+  },
+  {
+    "name": "Vesele",
+    "stateCode": "23"
+  },
+  {
+    "name": "Vilniansk Raion",
+    "stateCode": "23"
+  },
+  {
+    "name": "Vodyane",
+    "stateCode": "23"
+  },
+  {
+    "name": "Voznesenka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Yakymivka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Yakymivka Raion",
+    "stateCode": "23"
+  },
+  {
+    "name": "Zaliznychne",
+    "stateCode": "23"
+  },
+  {
+    "name": "Zaporiz’ka Mis’krada",
+    "stateCode": "23"
+  },
+  {
+    "name": "Zaporizhia",
+    "stateCode": "23"
+  },
+  {
+    "name": "Bili Oslavy",
+    "stateCode": "26"
+  },
+  {
+    "name": "Bilshivtsi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Bohorodchans’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Bohorodchany",
+    "stateCode": "26"
+  },
+  {
+    "name": "Bolekhiv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Bolekhivs’ka Mis’krada",
+    "stateCode": "26"
+  },
+  {
+    "name": "Borshchevskiy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Broshniv-Osada",
+    "stateCode": "26"
+  },
+  {
+    "name": "Burshtyn",
+    "stateCode": "26"
+  },
+  {
+    "name": "Burshtyns’ka Mis’krada",
+    "stateCode": "26"
+  },
+  {
+    "name": "Bystrytsya",
+    "stateCode": "26"
+  },
+  {
+    "name": "Bytkiv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Chernelytsya",
+    "stateCode": "26"
+  },
+  {
+    "name": "Cherniyiv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Chernyatyn",
+    "stateCode": "26"
+  },
+  {
+    "name": "Chornoliztsi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Delyatyn",
+    "stateCode": "26"
+  },
+  {
+    "name": "Dolyna",
+    "stateCode": "26"
+  },
+  {
+    "name": "Dolyns’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Halych",
+    "stateCode": "26"
+  },
+  {
+    "name": "Halyts’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Horodenka",
+    "stateCode": "26"
+  },
+  {
+    "name": "Horodenkivs’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Hvizd",
+    "stateCode": "26"
+  },
+  {
+    "name": "Ivano-Frankivs’ka Mis’krada",
+    "stateCode": "26"
+  },
+  {
+    "name": "Ivano-Frankivsk",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kalus’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kalush",
+    "stateCode": "26"
+  },
+  {
+    "name": "Khymchyn",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kolomyia",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kolomyys’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kosiv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kosivs’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kosmach",
+    "stateCode": "26"
+  },
+  {
+    "name": "Krasna",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kuty",
+    "stateCode": "26"
+  },
+  {
+    "name": "Lanchyn",
+    "stateCode": "26"
+  },
+  {
+    "name": "Manyava",
+    "stateCode": "26"
+  },
+  {
+    "name": "Markova",
+    "stateCode": "26"
+  },
+  {
+    "name": "Nadvirna",
+    "stateCode": "26"
+  },
+  {
+    "name": "Nadvirnyans’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Nebyliv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Novytsya",
+    "stateCode": "26"
+  },
+  {
+    "name": "Obertyn",
+    "stateCode": "26"
+  },
+  {
+    "name": "Otyniya",
+    "stateCode": "26"
+  },
+  {
+    "name": "Pasichna",
+    "stateCode": "26"
+  },
+  {
+    "name": "Pechenizhyn",
+    "stateCode": "26"
+  },
+  {
+    "name": "Petranka",
+    "stateCode": "26"
+  },
+  {
+    "name": "Pniv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Porohy",
+    "stateCode": "26"
+  },
+  {
+    "name": "Radcha",
+    "stateCode": "26"
+  },
+  {
+    "name": "Rechka",
+    "stateCode": "26"
+  },
+  {
+    "name": "Rohatyn",
+    "stateCode": "26"
+  },
+  {
+    "name": "Rohatyns’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Rozhniativ",
+    "stateCode": "26"
+  },
+  {
+    "name": "Rozhniv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Rozhnyativs’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Sadzhavka",
+    "stateCode": "26"
+  },
+  {
+    "name": "Sheshory",
+    "stateCode": "26"
+  },
+  {
+    "name": "Sniatyn",
+    "stateCode": "26"
+  },
+  {
+    "name": "Snyatyns’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Solotvyn",
+    "stateCode": "26"
+  },
+  {
+    "name": "Spas",
+    "stateCode": "26"
+  },
+  {
+    "name": "Stari Bohorodchany",
+    "stateCode": "26"
+  },
+  {
+    "name": "Stari Kuty",
+    "stateCode": "26"
+  },
+  {
+    "name": "Stetseva",
+    "stateCode": "26"
+  },
+  {
+    "name": "Svarychiv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Tatariv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Tlumach",
+    "stateCode": "26"
+  },
+  {
+    "name": "Tlumats’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Tysmenychany",
+    "stateCode": "26"
+  },
+  {
+    "name": "Tysmenyts’kyy Rayon",
+    "stateCode": "26"
+  },
+  {
+    "name": "Tysmenytsya",
+    "stateCode": "26"
+  },
+  {
+    "name": "Uhryniv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Velykyy Klyuchiv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Verkhniy Yasenov",
+    "stateCode": "26"
+  },
+  {
+    "name": "Verkhovyna",
+    "stateCode": "26"
+  },
+  {
+    "name": "Vorokhta",
+    "stateCode": "26"
+  },
+  {
+    "name": "Yabluniv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Yablunytsya",
+    "stateCode": "26"
+  },
+  {
+    "name": "Yamnytsya",
+    "stateCode": "26"
+  },
+  {
+    "name": "Yaremchans’ks Mis’krada",
+    "stateCode": "26"
+  },
+  {
+    "name": "Yaremche",
+    "stateCode": "26"
+  },
+  {
+    "name": "Zabolotiv",
+    "stateCode": "26"
+  },
+  {
+    "name": "Zahvizdya",
+    "stateCode": "26"
+  },
+  {
+    "name": "Zarichchya",
+    "stateCode": "26"
+  },
+  {
+    "name": "Darnytsia Raion",
+    "stateCode": "30"
+  },
+  {
+    "name": "Desnyans’kyy Rayon",
+    "stateCode": "30"
+  },
+  {
+    "name": "Dnipro Raion",
+    "stateCode": "30"
+  },
+  {
+    "name": "Holosiiv Raion",
+    "stateCode": "30"
+  },
+  {
+    "name": "Kotsyubyns’ke",
+    "stateCode": "30"
+  },
+  {
+    "name": "Kyiv",
+    "stateCode": "30"
+  },
+  {
+    "name": "Pechersk Raion",
+    "stateCode": "30"
+  },
+  {
+    "name": "Podil’s’kyy Rayon",
+    "stateCode": "30"
+  },
+  {
+    "name": "Prolisky",
+    "stateCode": "30"
+  },
+  {
+    "name": "Shevchenkivs’kyy Rayon",
+    "stateCode": "30"
+  },
+  {
+    "name": "Solomianka Rayon",
+    "stateCode": "30"
+  },
+  {
+    "name": "Svyatoshyns’kyy Rayon",
+    "stateCode": "30"
+  },
+  {
+    "name": "Baryshivka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Baryshivs’kyy Rayon",
+    "stateCode": "32"
+  },
+  {
+    "name": "Bila Tserkva",
+    "stateCode": "32"
+  },
+  {
+    "name": "Bila Tserkva Raion",
+    "stateCode": "32"
+  },
+  {
+    "name": "Bohuslav",
+    "stateCode": "32"
+  },
+  {
+    "name": "Borispol’skiy Rayon",
+    "stateCode": "32"
+  },
+  {
+    "name": "Borodianka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Borodyans’kyy Rayon",
+    "stateCode": "32"
+  },
+  {
+    "name": "Borova",
+    "stateCode": "32"
+  },
+  {
+    "name": "Boryspil’",
+    "stateCode": "32"
+  },
+  {
+    "name": "Boyarka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Brovary",
+    "stateCode": "32"
+  },
+  {
+    "name": "Brovary Raion",
+    "stateCode": "32"
+  },
+  {
+    "name": "Bucha",
+    "stateCode": "32"
+  },
+  {
+    "name": "Chabany",
+    "stateCode": "32"
+  },
+  {
+    "name": "Chernyakhivka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Dymer",
+    "stateCode": "32"
+  },
+  {
+    "name": "Fastiv",
+    "stateCode": "32"
+  },
+  {
+    "name": "Fastiv Raion",
+    "stateCode": "32"
+  },
+  {
+    "name": "Hlevakha",
+    "stateCode": "32"
+  },
+  {
+    "name": "Hnidyn",
+    "stateCode": "32"
+  },
+  {
+    "name": "Horenka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Hostomel",
+    "stateCode": "32"
+  },
+  {
+    "name": "Irpin",
+    "stateCode": "32"
+  },
+  {
+    "name": "Irpins’ka Mis’krada",
+    "stateCode": "32"
+  },
+  {
+    "name": "Ivankiv",
+    "stateCode": "32"
+  },
+  {
+    "name": "Ivankiv Raion",
+    "stateCode": "32"
+  },
+  {
+    "name": "Kaharlyk",
+    "stateCode": "32"
+  },
+  {
+    "name": "Kaharlyk Raion",
+    "stateCode": "32"
+  },
+  {
+    "name": "Kalynove",
+    "stateCode": "32"
+  },
+  {
+    "name": "Karapyshi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Katyuzhanka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Khotiv",
+    "stateCode": "32"
+  },
+  {
+    "name": "Kirove",
+    "stateCode": "32"
+  },
+  {
+    "name": "Klavdiyevo-Tarasove",
+    "stateCode": "32"
+  },
+  {
+    "name": "Knyazhichi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Kodra",
+    "stateCode": "32"
+  },
+  {
+    "name": "Korniyivka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Kozhanka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Krasyatychi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Kriukivschina",
+    "stateCode": "32"
+  },
+  {
+    "name": "Kryva Hora",
+    "stateCode": "32"
+  },
+  {
+    "name": "Kyyevo-Svyatoshyns’kyy Rayon",
+    "stateCode": "32"
+  },
+  {
+    "name": "Liutizh",
+    "stateCode": "32"
+  },
+  {
+    "name": "Makariv",
+    "stateCode": "32"
+  },
+  {
+    "name": "Makariv Raion",
+    "stateCode": "32"
+  },
+  {
+    "name": "Mirovka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Motovylivka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Myronivka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Novi Petrivtsi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Obukhiv",
+    "stateCode": "32"
+  },
+  {
+    "name": "Obukhiv Raion",
+    "stateCode": "32"
+  },
+  {
+    "name": "Obukhivs’ka Mis’krada",
+    "stateCode": "32"
+  },
+  {
+    "name": "Pereiaslav-Khmelnytskyi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Pereiaslav-Khmelnytskyi Raion",
+    "stateCode": "32"
+  },
+  {
+    "name": "Piskivka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Pohreby",
+    "stateCode": "32"
+  },
+  {
+    "name": "Pukhivka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Rokytne",
+    "stateCode": "32"
+  },
+  {
+    "name": "Rokytne Raion",
+    "stateCode": "32"
+  },
+  {
+    "name": "Roskoshnyy",
+    "stateCode": "32"
+  },
+  {
+    "name": "Rzhyshchiv",
+    "stateCode": "32"
+  },
+  {
+    "name": "Semypolky",
+    "stateCode": "32"
+  },
+  {
+    "name": "Skvyra",
+    "stateCode": "32"
+  },
+  {
+    "name": "Skvyrs’kyy Rayon",
+    "stateCode": "32"
+  },
+  {
+    "name": "Slavutych",
+    "stateCode": "32"
+  },
+  {
+    "name": "Sofiyivska Borschagivka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Stavyshche",
+    "stateCode": "32"
+  },
+  {
+    "name": "Stayki",
+    "stateCode": "32"
+  },
+  {
+    "name": "Tarashcha",
+    "stateCode": "32"
+  },
+  {
+    "name": "Tetiiv",
+    "stateCode": "32"
+  },
+  {
+    "name": "Trebukhiv",
+    "stateCode": "32"
+  },
+  {
+    "name": "Trypillia",
+    "stateCode": "32"
+  },
+  {
+    "name": "Tsybli",
+    "stateCode": "32"
+  },
+  {
+    "name": "Ukrainka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Uzyn",
+    "stateCode": "32"
+  },
+  {
+    "name": "Vasylkiv",
+    "stateCode": "32"
+  },
+  {
+    "name": "Vasylkiv Raion",
+    "stateCode": "32"
+  },
+  {
+    "name": "Velyka Dymerka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Volodarka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Voronkov",
+    "stateCode": "32"
+  },
+  {
+    "name": "Vorzel’",
+    "stateCode": "32"
+  },
+  {
+    "name": "Vyshgorodskiy Rayon",
+    "stateCode": "32"
+  },
+  {
+    "name": "Vyshhorod",
+    "stateCode": "32"
+  },
+  {
+    "name": "Vyshneve",
+    "stateCode": "32"
+  },
+  {
+    "name": "Yahotyn",
+    "stateCode": "32"
+  },
+  {
+    "name": "Yahotyns’kyy Rayon",
+    "stateCode": "32"
+  },
+  {
+    "name": "Z·hurivs’kyy Rayon",
+    "stateCode": "32"
+  },
+  {
+    "name": "Zgurovka",
+    "stateCode": "32"
+  },
+  {
+    "name": "Adzhamka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Blahovishchenske Raion",
+    "stateCode": "35"
+  },
+  {
+    "name": "Bobrynets",
+    "stateCode": "35"
+  },
+  {
+    "name": "Dmytrivka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Dobrovelychkivka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Dobrovelychkivs’kyy Rayon",
+    "stateCode": "35"
+  },
+  {
+    "name": "Dolyns'ka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Dolyns’kyy Rayon",
+    "stateCode": "35"
+  },
+  {
+    "name": "Hayvoron",
+    "stateCode": "35"
+  },
+  {
+    "name": "Kapitanivka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Kirovohrads’ka Mis’krada",
+    "stateCode": "35"
+  },
+  {
+    "name": "Kompaniyivka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Kropyvnytskyi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Lozuvatka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Lypnyazhka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Mala Vyska",
+    "stateCode": "35"
+  },
+  {
+    "name": "Malovyskivs’kyy Rayon",
+    "stateCode": "35"
+  },
+  {
+    "name": "Molodizhne",
+    "stateCode": "35"
+  },
+  {
+    "name": "Nova Praha",
+    "stateCode": "35"
+  },
+  {
+    "name": "Novhorodka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Novoarkhanhel’s’k",
+    "stateCode": "35"
+  },
+  {
+    "name": "Novomyrhorod",
+    "stateCode": "35"
+  },
+  {
+    "name": "Novoukrayinka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Novyy Starodub",
+    "stateCode": "35"
+  },
+  {
+    "name": "Oleksandrivka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Oleksandriya",
+    "stateCode": "35"
+  },
+  {
+    "name": "Oleksandriys’ke",
+    "stateCode": "35"
+  },
+  {
+    "name": "Onufriyivka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Pantayivka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Pavlysh",
+    "stateCode": "35"
+  },
+  {
+    "name": "Perehonivka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Petrove",
+    "stateCode": "35"
+  },
+  {
+    "name": "Pobugskoye",
+    "stateCode": "35"
+  },
+  {
+    "name": "Pomichna",
+    "stateCode": "35"
+  },
+  {
+    "name": "Pryyutivka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Rivne",
+    "stateCode": "35"
+  },
+  {
+    "name": "Subottsi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Svitlovods’k",
+    "stateCode": "35"
+  },
+  {
+    "name": "Tyshkivka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Ustynivka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Yelyzavethradka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Zavallya",
+    "stateCode": "35"
+  },
+  {
+    "name": "Zlynka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Znomenka",
+    "stateCode": "35"
+  },
+  {
+    "name": "Abrikosovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Abrikosovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Aeroflotskiy",
+    "stateCode": "43"
+  },
+  {
+    "name": "Agrarnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Akimovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Aleksandrovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Alekseyevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Alupka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Alushta",
+    "stateCode": "43"
+  },
+  {
+    "name": "Amurskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Armyansk",
+    "stateCode": "43"
+  },
+  {
+    "name": "Aromatnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Azovskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Baherove",
+    "stateCode": "43"
+  },
+  {
+    "name": "Bakhchysarai",
+    "stateCode": "43"
+  },
+  {
+    "name": "Bakhchysarai Raion",
+    "stateCode": "43"
+  },
+  {
+    "name": "Batal’noye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Belinskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Beloglinka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Belogorskiy rayon",
+    "stateCode": "43"
+  },
+  {
+    "name": "Beregovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Berezovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Bilohirsk",
+    "stateCode": "43"
+  },
+  {
+    "name": "Blizhneye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Bogatoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Botanicheskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Bratskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chapayevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chaykino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chelyadinovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chernomorskiy rayon",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chernomorskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chernopolye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chernovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chernozemnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chernyshevo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chervonoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chisten’koye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chistopolye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chkalovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Dachnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Dalekoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Dmitrovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Dneprovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Dobroye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Dobrushino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Dolinnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Donskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Drofino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Dubki",
+    "stateCode": "43"
+  },
+  {
+    "name": "Dzhankoy",
+    "stateCode": "43"
+  },
+  {
+    "name": "Dzhankoyskiy rayon",
+    "stateCode": "43"
+  },
+  {
+    "name": "Feodosiya",
+    "stateCode": "43"
+  },
+  {
+    "name": "Filatovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Fontany",
+    "stateCode": "43"
+  },
+  {
+    "name": "Foros",
+    "stateCode": "43"
+  },
+  {
+    "name": "Frunze",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gaspra",
+    "stateCode": "43"
+  },
+  {
+    "name": "Geroyskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Glazovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Golubinka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gornostayevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gorodskoy okrug Alushta",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gorodskoy okrug Armyansk",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gorodskoy okrug Dzhankoy",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gorodskoy okrug Feodosiya",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gorodskoy okrug Krasnoperekopsk",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gorodskoy okrug Saki",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gorodskoy okrug Simferopol",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gorodskoy okrug Sudak",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gorodskoy okrug Yalta",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gorodskoy okrug Yevpatoriya",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gresovskiy",
+    "stateCode": "43"
+  },
+  {
+    "name": "Grishino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Grushevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gurzuf",
+    "stateCode": "43"
+  },
+  {
+    "name": "Hvardiiske",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ilychyovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ilyichevo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ilyinka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ishun’",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ivanovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Izobil’noye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Izumrudnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Izyumovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kalinino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kalinovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kamenolomnya",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kashtanovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kashtany",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kerch",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kerchens'ka Mis'ka Rada",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kholmovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kirovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kirovske Raion",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kirovskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Klepinino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Koktebel",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kol’chugino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kol’tsovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kolodeznoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Koloski",
+    "stateCode": "43"
+  },
+  {
+    "name": "Komsomol’skoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kondratyevo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Konstantinovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Koreiz",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kormovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kostochkovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kotel’nikovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kovyl’noye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasna Zor'ka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnaya Polyana",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnoarmeyskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnoflotskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnogorka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnogvardeyskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnohvardiiske Raion",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnokamenka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnolesye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnoperekops’k",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnoperekopsk Raion",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnoyarskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnoznamenka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krasnyi Mak",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krayneye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krest’yanovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krinichnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krymka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krymskaya Roza",
+    "stateCode": "43"
+  },
+  {
+    "name": "Krymskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kuibyshevo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kukushkino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kurskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "L’govskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Lekarstvennoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Lenine Raion",
+    "stateCode": "43"
+  },
+  {
+    "name": "Lenino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Leninskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Lesnovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Levadki",
+    "stateCode": "43"
+  },
+  {
+    "name": "Listvennoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Litvinenkovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Livadia",
+    "stateCode": "43"
+  },
+  {
+    "name": "Lobanovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Lozovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Luchistoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Luganskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Lugovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Magazinka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Malen’koye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Malorechenskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Maly Mayak",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mar’yanovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Marfovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Maryevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Maslovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Massandra",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mayskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mazanka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Medvedevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Medvedevo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mel’nichnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mezhvodnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Michurinskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mikhaylovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mirnovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mirnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mirny",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mitrofanovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mityayevo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Molochnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Molodyozhnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Morskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Muromskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Muskatnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mysovoe",
+    "stateCode": "43"
+  },
+  {
+    "name": "Nasypnoe",
+    "stateCode": "43"
+  },
+  {
+    "name": "Naydenovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Nekrasovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Nekrasovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Nikita",
+    "stateCode": "43"
+  },
+  {
+    "name": "Nikolayevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Nizhnegorskiy",
+    "stateCode": "43"
+  },
+  {
+    "name": "Nizhnegorskiy rayon",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novoandreyevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novoestoniya",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novofedorovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novogrigoryevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novoivanovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novokrymskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novonikolayevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novoozyornoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novopavlovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novopokrovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novosel’skoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novoselovskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novostepnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novosyolovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novozhilovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Novy Svet",
+    "stateCode": "43"
+  },
+  {
+    "name": "Okhotnikovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Okhotskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Oktyabr'skoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Oktyabr’skoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Okunevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Olenevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ordzhonikidze",
+    "stateCode": "43"
+  },
+  {
+    "name": "Orekhovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Orlovskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ostanino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ostrovskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pakharevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Partenit",
+    "stateCode": "43"
+  },
+  {
+    "name": "Partizanskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Partizany",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pereval'noye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Perovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pervomayskiy rayon",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pervomayskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Peschanoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Petrovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pionerskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Plodovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pobednoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pochetnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Poltavka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Poshtove",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pozharskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pravda",
+    "stateCode": "43"
+  },
+  {
+    "name": "Primorskiy",
+    "stateCode": "43"
+  },
+  {
+    "name": "Priozyornoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Privetnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Prostornoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Prudovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Prudy",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pshenichnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pushkino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pyatikhatka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Razdol’nenskiy rayon",
+    "stateCode": "43"
+  },
+  {
+    "name": "Razdol’noye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Rodnikovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Romashkino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Roshchino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Roskoshnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Rovnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ruch’i",
+    "stateCode": "43"
+  },
+  {
+    "name": "Rusakovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Rybach'e",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sadovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Saki",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sakskiy rayon",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sary-Bash",
+    "stateCode": "43"
+  },
+  {
+    "name": "Semisotka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Senokosnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Serebryanka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Shchebetovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Shchyolkino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Shelkovichnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Shirokoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Shkol’noye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Shtormovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Simeiz",
+    "stateCode": "43"
+  },
+  {
+    "name": "Simferopol",
+    "stateCode": "43"
+  },
+  {
+    "name": "Simferopol Raion",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sinitsyno",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sizovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Skalistoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Skvortsovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Slavnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Slavyanskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sofiivka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sokolinoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Solnechnaya Dolina",
+    "stateCode": "43"
+  },
+  {
+    "name": "Solnechnogorskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Solnechnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sovetskiy",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sovietskyi Raion",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sovkhoznoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Stakhanovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Stal’noye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Stary Krym",
+    "stateCode": "43"
+  },
+  {
+    "name": "Stepnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Stolbovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Strogonovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sudak",
+    "stateCode": "43"
+  },
+  {
+    "name": "Susanino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Suvorovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Suvorovskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Svetloye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Tabachnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Tankovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Tenistoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Teplovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Tokarevo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Trudovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Tselinnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Tsvetochnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Turgenevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Uglovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ukrainka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ukromnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Urozhaynoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Uvarovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Uvarovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Uyutnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vasilyevka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Veresayevo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Verkhorechye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vesele",
+    "stateCode": "43"
+  },
+  {
+    "name": "Veselovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vilino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vinnitskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vinogradnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vinogradovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vishennoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vishnyovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vladimirovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vladislavovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Voinka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vol’noye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Vorobyovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Voskhod",
+    "stateCode": "43"
+  },
+  {
+    "name": "Voykovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yalta",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yantarnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yarkoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yarkoye Pole",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yasnopolyanskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yemelyanovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yermakovo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yevpatoriya",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zalesye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zaozyornoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zarechnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zavet-Leninskiy",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zavetnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zelenogorskoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zelyonoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zemlyanichnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zernovoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zheleznodorozhnoye",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zhelyabovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zhemchuzhina",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zhuravki",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zhuravli",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zhuravlyovka",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zimino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zolotoye Pole",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zorkino",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zuya",
+    "stateCode": "43"
+  },
+  {
+    "name": "Zybiny",
+    "stateCode": "43"
+  },
+  {
+    "name": "Belz",
+    "stateCode": "46"
+  },
+  {
+    "name": "Bibrka",
+    "stateCode": "46"
+  },
+  {
+    "name": "Boryslav",
+    "stateCode": "46"
+  },
+  {
+    "name": "Brody",
+    "stateCode": "46"
+  },
+  {
+    "name": "Bryukhovychi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Chervonohrad",
+    "stateCode": "46"
+  },
+  {
+    "name": "Demnya",
+    "stateCode": "46"
+  },
+  {
+    "name": "Dobromyl’",
+    "stateCode": "46"
+  },
+  {
+    "name": "Drohobych",
+    "stateCode": "46"
+  },
+  {
+    "name": "Dublyany",
+    "stateCode": "46"
+  },
+  {
+    "name": "Duliby",
+    "stateCode": "46"
+  },
+  {
+    "name": "Dzvinogrud",
+    "stateCode": "46"
+  },
+  {
+    "name": "Hlyns'k",
+    "stateCode": "46"
+  },
+  {
+    "name": "Horodok",
+    "stateCode": "46"
+  },
+  {
+    "name": "Ivano-Frankove",
+    "stateCode": "46"
+  },
+  {
+    "name": "Khodoriv",
+    "stateCode": "46"
+  },
+  {
+    "name": "Khyriv",
+    "stateCode": "46"
+  },
+  {
+    "name": "Komarno",
+    "stateCode": "46"
+  },
+  {
+    "name": "Krasne",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kulykiv",
+    "stateCode": "46"
+  },
+  {
+    "name": "Lopatyn",
+    "stateCode": "46"
+  },
+  {
+    "name": "Lviv",
+    "stateCode": "46"
+  },
+  {
+    "name": "Medenychi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Morshyn",
+    "stateCode": "46"
+  },
+  {
+    "name": "Mostys'ka",
+    "stateCode": "46"
+  },
+  {
+    "name": "Murovane",
+    "stateCode": "46"
+  },
+  {
+    "name": "Mykolaiv",
+    "stateCode": "46"
+  },
+  {
+    "name": "Navaria",
+    "stateCode": "46"
+  },
+  {
+    "name": "Novoyavorivs'k",
+    "stateCode": "46"
+  },
+  {
+    "name": "Novyi Yarychiv",
+    "stateCode": "46"
+  },
+  {
+    "name": "Obroshyne",
+    "stateCode": "46"
+  },
+  {
+    "name": "Olesko",
+    "stateCode": "46"
+  },
+  {
+    "name": "Peremyshlyany",
+    "stateCode": "46"
+  },
+  {
+    "name": "Pidbuzh",
+    "stateCode": "46"
+  },
+  {
+    "name": "Pidhirtsi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Pidkamin’",
+    "stateCode": "46"
+  },
+  {
+    "name": "Pnikut",
+    "stateCode": "46"
+  },
+  {
+    "name": "Pomoriany",
+    "stateCode": "46"
+  },
+  {
+    "name": "Potelych",
+    "stateCode": "46"
+  },
+  {
+    "name": "Pustomyty",
+    "stateCode": "46"
+  },
+  {
+    "name": "Ralivka",
+    "stateCode": "46"
+  },
+  {
+    "name": "Rava-Rus’ka",
+    "stateCode": "46"
+  },
+  {
+    "name": "Richky",
+    "stateCode": "46"
+  },
+  {
+    "name": "Rodatychi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Rozdil",
+    "stateCode": "46"
+  },
+  {
+    "name": "Rozvadiv",
+    "stateCode": "46"
+  },
+  {
+    "name": "Rudky",
+    "stateCode": "46"
+  },
+  {
+    "name": "Rudne",
+    "stateCode": "46"
+  },
+  {
+    "name": "Rykhtychi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Sambir",
+    "stateCode": "46"
+  },
+  {
+    "name": "Shchyrets",
+    "stateCode": "46"
+  },
+  {
+    "name": "Shklo",
+    "stateCode": "46"
+  },
+  {
+    "name": "Silets’",
+    "stateCode": "46"
+  },
+  {
+    "name": "Skelivka",
+    "stateCode": "46"
+  },
+  {
+    "name": "Skhidnytsya",
+    "stateCode": "46"
+  },
+  {
+    "name": "Skole",
+    "stateCode": "46"
+  },
+  {
+    "name": "Slavske",
+    "stateCode": "46"
+  },
+  {
+    "name": "Sokal’",
+    "stateCode": "46"
+  },
+  {
+    "name": "Solonka",
+    "stateCode": "46"
+  },
+  {
+    "name": "Staroye Selo",
+    "stateCode": "46"
+  },
+  {
+    "name": "Starychi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Staryy Dobrotvir",
+    "stateCode": "46"
+  },
+  {
+    "name": "Staryy Sambir",
+    "stateCode": "46"
+  },
+  {
+    "name": "Stebnyk",
+    "stateCode": "46"
+  },
+  {
+    "name": "Stryi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Sudova Vyshnya",
+    "stateCode": "46"
+  },
+  {
+    "name": "Sukhovolya",
+    "stateCode": "46"
+  },
+  {
+    "name": "Truskavets’",
+    "stateCode": "46"
+  },
+  {
+    "name": "Tukhlia",
+    "stateCode": "46"
+  },
+  {
+    "name": "Turka",
+    "stateCode": "46"
+  },
+  {
+    "name": "Uhniv",
+    "stateCode": "46"
+  },
+  {
+    "name": "Ulychne",
+    "stateCode": "46"
+  },
+  {
+    "name": "Verblyany",
+    "stateCode": "46"
+  },
+  {
+    "name": "Verchnia Rozhanka",
+    "stateCode": "46"
+  },
+  {
+    "name": "Verkhnie Synevydne",
+    "stateCode": "46"
+  },
+  {
+    "name": "Verkhnyaya Belka",
+    "stateCode": "46"
+  },
+  {
+    "name": "Voyutychi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Yavoriv",
+    "stateCode": "46"
+  },
+  {
+    "name": "Zhovkva",
+    "stateCode": "46"
+  },
+  {
+    "name": "Zhydachiv",
+    "stateCode": "46"
+  },
+  {
+    "name": "Zolochiv",
+    "stateCode": "46"
+  },
+  {
+    "name": "Arbuzynka",
+    "stateCode": "48"
+  },
+  {
+    "name": "Bashtanka",
+    "stateCode": "48"
+  },
+  {
+    "name": "Berezanka",
+    "stateCode": "48"
+  },
+  {
+    "name": "Bereznehuvate",
+    "stateCode": "48"
+  },
+  {
+    "name": "Domanivka",
+    "stateCode": "48"
+  },
+  {
+    "name": "Kazanka",
+    "stateCode": "48"
+  },
+  {
+    "name": "Kobleve",
+    "stateCode": "48"
+  },
+  {
+    "name": "Kostyantynivka",
+    "stateCode": "48"
+  },
+  {
+    "name": "Kryve Ozero",
+    "stateCode": "48"
+  },
+  {
+    "name": "Lysa Hora",
+    "stateCode": "48"
+  },
+  {
+    "name": "Myhiya",
+    "stateCode": "48"
+  },
+  {
+    "name": "Mykolayiv",
+    "stateCode": "48"
+  },
+  {
+    "name": "Nova Odesa",
+    "stateCode": "48"
+  },
+  {
+    "name": "Novyy Buh",
+    "stateCode": "48"
+  },
+  {
+    "name": "Ochakiv",
+    "stateCode": "48"
+  },
+  {
+    "name": "Ol'shanskoye",
+    "stateCode": "48"
+  },
+  {
+    "name": "Oleksandrivka",
+    "stateCode": "48"
+  },
+  {
+    "name": "Parutyne",
+    "stateCode": "48"
+  },
+  {
+    "name": "Pervomays’k",
+    "stateCode": "48"
+  },
+  {
+    "name": "Pidhorodna",
+    "stateCode": "48"
+  },
+  {
+    "name": "Rybakivka",
+    "stateCode": "48"
+  },
+  {
+    "name": "Shevchenkove",
+    "stateCode": "48"
+  },
+  {
+    "name": "Snihurivka",
+    "stateCode": "48"
+  },
+  {
+    "name": "Veselynove",
+    "stateCode": "48"
+  },
+  {
+    "name": "Voznesensk",
+    "stateCode": "48"
+  },
+  {
+    "name": "Vradiyivka",
+    "stateCode": "48"
+  },
+  {
+    "name": "Yuzhnoukrains'k",
+    "stateCode": "48"
+  },
+  {
+    "name": "Artsyz",
+    "stateCode": "51"
+  },
+  {
+    "name": "Balta",
+    "stateCode": "51"
+  },
+  {
+    "name": "Balts’kyy Rayon",
+    "stateCode": "51"
+  },
+  {
+    "name": "Berezivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Berezyne",
+    "stateCode": "51"
+  },
+  {
+    "name": "Bilhorod-Dnistrovskyi",
+    "stateCode": "51"
+  },
+  {
+    "name": "Bilyayivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Bolhrad",
+    "stateCode": "51"
+  },
+  {
+    "name": "Borodino",
+    "stateCode": "51"
+  },
+  {
+    "name": "Broska",
+    "stateCode": "51"
+  },
+  {
+    "name": "Chornomors’k",
+    "stateCode": "51"
+  },
+  {
+    "name": "Dmytrivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Fontanka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Horodnye",
+    "stateCode": "51"
+  },
+  {
+    "name": "Ivanivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Izmayil",
+    "stateCode": "51"
+  },
+  {
+    "name": "Kalcheva",
+    "stateCode": "51"
+  },
+  {
+    "name": "Kamyshevka Vtoraya",
+    "stateCode": "51"
+  },
+  {
+    "name": "Karolino-Buhaz",
+    "stateCode": "51"
+  },
+  {
+    "name": "Kiliya",
+    "stateCode": "51"
+  },
+  {
+    "name": "Kodyma",
+    "stateCode": "51"
+  },
+  {
+    "name": "Kodyms’kyy Rayon",
+    "stateCode": "51"
+  },
+  {
+    "name": "Krasnosilka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Kremidivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Kryzhanivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Kuchurhan",
+    "stateCode": "51"
+  },
+  {
+    "name": "Kulevcha",
+    "stateCode": "51"
+  },
+  {
+    "name": "Kurisove",
+    "stateCode": "51"
+  },
+  {
+    "name": "Lymanske",
+    "stateCode": "51"
+  },
+  {
+    "name": "Lyubashivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Mayaky",
+    "stateCode": "51"
+  },
+  {
+    "name": "Mykolayivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Mykolayivs’kyy Rayon",
+    "stateCode": "51"
+  },
+  {
+    "name": "Novi Troyany",
+    "stateCode": "51"
+  },
+  {
+    "name": "Odesa",
+    "stateCode": "51"
+  },
+  {
+    "name": "Okny",
+    "stateCode": "51"
+  },
+  {
+    "name": "Oleksandrivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Ovidiopol",
+    "stateCode": "51"
+  },
+  {
+    "name": "Ozerne",
+    "stateCode": "51"
+  },
+  {
+    "name": "Peschana",
+    "stateCode": "51"
+  },
+  {
+    "name": "Plakhtiyivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Podil’s’k",
+    "stateCode": "51"
+  },
+  {
+    "name": "Podilsk Raion",
+    "stateCode": "51"
+  },
+  {
+    "name": "Reni",
+    "stateCode": "51"
+  },
+  {
+    "name": "Rozdil’na",
+    "stateCode": "51"
+  },
+  {
+    "name": "Salhany",
+    "stateCode": "51"
+  },
+  {
+    "name": "Sarata",
+    "stateCode": "51"
+  },
+  {
+    "name": "Savran",
+    "stateCode": "51"
+  },
+  {
+    "name": "Serhiyivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Serpneve",
+    "stateCode": "51"
+  },
+  {
+    "name": "Shabo",
+    "stateCode": "51"
+  },
+  {
+    "name": "Shevchenkove",
+    "stateCode": "51"
+  },
+  {
+    "name": "Shyryayeve",
+    "stateCode": "51"
+  },
+  {
+    "name": "Slobidka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Starokozache",
+    "stateCode": "51"
+  },
+  {
+    "name": "Stepanivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Stepove",
+    "stateCode": "51"
+  },
+  {
+    "name": "Tarutyne",
+    "stateCode": "51"
+  },
+  {
+    "name": "Tatarbunary",
+    "stateCode": "51"
+  },
+  {
+    "name": "Tayirove",
+    "stateCode": "51"
+  },
+  {
+    "name": "Teplodar",
+    "stateCode": "51"
+  },
+  {
+    "name": "Usatove",
+    "stateCode": "51"
+  },
+  {
+    "name": "Velyka Mykhaylivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Velykoploske",
+    "stateCode": "51"
+  },
+  {
+    "name": "Vylkove",
+    "stateCode": "51"
+  },
+  {
+    "name": "Vynohradivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Yuzhne",
+    "stateCode": "51"
+  },
+  {
+    "name": "Zagnitkiv",
+    "stateCode": "51"
+  },
+  {
+    "name": "Zakharivka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Zaliznychne",
+    "stateCode": "51"
+  },
+  {
+    "name": "Zatoka",
+    "stateCode": "51"
+  },
+  {
+    "name": "Zatyshshya",
+    "stateCode": "51"
+  },
+  {
+    "name": "Zorya",
+    "stateCode": "51"
+  },
+  {
+    "name": "Abramok",
+    "stateCode": "53"
+  },
+  {
+    "name": "Adamivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Adamove",
+    "stateCode": "53"
+  },
+  {
+    "name": "Agativka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Andriyivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Andrushivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Autozavodskoy Raion",
+    "stateCode": "53"
+  },
+  {
+    "name": "Avratin",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bairak",
+    "stateCode": "53"
+  },
+  {
+    "name": "Baliasne",
+    "stateCode": "53"
+  },
+  {
+    "name": "Baranivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Barashi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bazar",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bekhi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Berdychiv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Berestivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Berestovets",
+    "stateCode": "53"
+  },
+  {
+    "name": "Berezianka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Berezovii Grud",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bereztsi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bicheva",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bigun",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bikiv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bila Krynytsia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bilii Bereg",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bilka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bilylivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bistrik",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bistriyivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Borisivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Broniki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bronitsia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bronitska Guta",
+    "stateCode": "53"
+  },
+  {
+    "name": "Brovki Pershi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Brusyliv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Buchmany",
+    "stateCode": "53"
+  },
+  {
+    "name": "Buki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Buldichiv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Buriaki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Burkivtsi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Bykivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Chernechii Iar",
+    "stateCode": "53"
+  },
+  {
+    "name": "Cherniakhiv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Chervone",
+    "stateCode": "53"
+  },
+  {
+    "name": "Chopovychi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Chornukhy",
+    "stateCode": "53"
+  },
+  {
+    "name": "Chudniv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Chutove",
+    "stateCode": "53"
+  },
+  {
+    "name": "Dashynka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Davidivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Davydky",
+    "stateCode": "53"
+  },
+  {
+    "name": "Denyshi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Derhanivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Dibrova",
+    "stateCode": "53"
+  },
+  {
+    "name": "Didkovichi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Didovichi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Divochki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Dovbysh",
+    "stateCode": "53"
+  },
+  {
+    "name": "Druzhba",
+    "stateCode": "53"
+  },
+  {
+    "name": "Dubivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Dubnyki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Dubrivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Dvorishche",
+    "stateCode": "53"
+  },
+  {
+    "name": "Dykanka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Elivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Fedorivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Filenkove",
+    "stateCode": "53"
+  },
+  {
+    "name": "Glinivtsi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Godikha",
+    "stateCode": "53"
+  },
+  {
+    "name": "Golovenka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Golovki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Golubyatin",
+    "stateCode": "53"
+  },
+  {
+    "name": "Gorbuliv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Gordiyivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Gorianshchina",
+    "stateCode": "53"
+  },
+  {
+    "name": "Gorodkivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Gorodok",
+    "stateCode": "53"
+  },
+  {
+    "name": "Gorodske",
+    "stateCode": "53"
+  },
+  {
+    "name": "Goropayi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Goshiv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Gromada",
+    "stateCode": "53"
+  },
+  {
+    "name": "Grozyne",
+    "stateCode": "53"
+  },
+  {
+    "name": "Grushki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Gubske",
+    "stateCode": "53"
+  },
+  {
+    "name": "Gulsk",
+    "stateCode": "53"
+  },
+  {
+    "name": "Gumenniki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Guta-Potiyivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Guto-Mariatin",
+    "stateCode": "53"
+  },
+  {
+    "name": "Hadiach",
+    "stateCode": "53"
+  },
+  {
+    "name": "Hlobyne",
+    "stateCode": "53"
+  },
+  {
+    "name": "Holovyne",
+    "stateCode": "53"
+  },
+  {
+    "name": "Holubivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Horishni Plavni",
+    "stateCode": "53"
+  },
+  {
+    "name": "Horodets",
+    "stateCode": "53"
+  },
+  {
+    "name": "Horodnytsia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Hradyzk",
+    "stateCode": "53"
+  },
+  {
+    "name": "Hranitne",
+    "stateCode": "53"
+  },
+  {
+    "name": "Hrebinka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Hryshkivtsi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Iemilivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Ievgenivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Irshansk",
+    "stateCode": "53"
+  },
+  {
+    "name": "Ivanivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Ivankiv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Ivanopil",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kamiani Potoky",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kardashivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Karlivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Khodaky",
+    "stateCode": "53"
+  },
+  {
+    "name": "Khorol",
+    "stateCode": "53"
+  },
+  {
+    "name": "Khoroshiv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kobeliaky",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kononenki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Korchak",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kornyn",
+    "stateCode": "53"
+  },
+  {
+    "name": "Korosten",
+    "stateCode": "53"
+  },
+  {
+    "name": "Korostyshiv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kotelva",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kozelshchyna",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kratova Govtva",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kremenchuk",
+    "stateCode": "53"
+  },
+  {
+    "name": "Krukovskiy Raion",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kucherivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kupech",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kvitneve",
+    "stateCode": "53"
+  },
+  {
+    "name": "Landari",
+    "stateCode": "53"
+  },
+  {
+    "name": "Lani",
+    "stateCode": "53"
+  },
+  {
+    "name": "Lasky",
+    "stateCode": "53"
+  },
+  {
+    "name": "Lazarivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Lisogirka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Liubar",
+    "stateCode": "53"
+  },
+  {
+    "name": "Lokhvytsia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Lubny",
+    "stateCode": "53"
+  },
+  {
+    "name": "Luhyny",
+    "stateCode": "53"
+  },
+  {
+    "name": "Lutovynivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Mala Rudka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Malyn",
+    "stateCode": "53"
+  },
+  {
+    "name": "Marchenki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Markivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Maschiwka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Morozivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Myrhorod",
+    "stateCode": "53"
+  },
+  {
+    "name": "Myropil",
+    "stateCode": "53"
+  },
+  {
+    "name": "Narodychi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Nedoharky",
+    "stateCode": "53"
+  },
+  {
+    "name": "Nemyryntsi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Nova Borova",
+    "stateCode": "53"
+  },
+  {
+    "name": "Nova Chortoriia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Novi Bilokorovychi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Novi Sanzhary",
+    "stateCode": "53"
+  },
+  {
+    "name": "Novi Vorobyi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Novohrad-Volynskyi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Novoozerianka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Nyvky",
+    "stateCode": "53"
+  },
+  {
+    "name": "Odariukivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Olefirshchina",
+    "stateCode": "53"
+  },
+  {
+    "name": "Olevsk",
+    "stateCode": "53"
+  },
+  {
+    "name": "Onatski",
+    "stateCode": "53"
+  },
+  {
+    "name": "Opishnia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Orzhytsia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Ovruch",
+    "stateCode": "53"
+  },
+  {
+    "name": "Ozerne",
+    "stateCode": "53"
+  },
+  {
+    "name": "Pavoloch",
+    "stateCode": "53"
+  },
+  {
+    "name": "Pershotravensk",
+    "stateCode": "53"
+  },
+  {
+    "name": "Pershotravneve",
+    "stateCode": "53"
+  },
+  {
+    "name": "Petrenki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Pisarivshchina",
+    "stateCode": "53"
+  },
+  {
+    "name": "Pishchiv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Polianka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Poltava",
+    "stateCode": "53"
+  },
+  {
+    "name": "Popilnia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Popivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Potiivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Proni",
+    "stateCode": "53"
+  },
+  {
+    "name": "Pyriatyn",
+    "stateCode": "53"
+  },
+  {
+    "name": "Radomyshl",
+    "stateCode": "53"
+  },
+  {
+    "name": "Reshetylivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Rohachi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Romaniv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Romodan",
+    "stateCode": "53"
+  },
+  {
+    "name": "Ruzhyn (settlement)",
+    "stateCode": "53"
+  },
+  {
+    "name": "Schyschaky",
+    "stateCode": "53"
+  },
+  {
+    "name": "Semenivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Sencha",
+    "stateCode": "53"
+  },
+  {
+    "name": "Shumsk",
+    "stateCode": "53"
+  },
+  {
+    "name": "Slovechne",
+    "stateCode": "53"
+  },
+  {
+    "name": "Smolovivshchina",
+    "stateCode": "53"
+  },
+  {
+    "name": "Sokhatska Balka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Stepanivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Sudivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Tabory",
+    "stateCode": "53"
+  },
+  {
+    "name": "Taraschanka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Topory",
+    "stateCode": "53"
+  },
+  {
+    "name": "Travneve",
+    "stateCode": "53"
+  },
+  {
+    "name": "Troiany",
+    "stateCode": "53"
+  },
+  {
+    "name": "Vasilivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Velika Rudka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Veliki Budishcha",
+    "stateCode": "53"
+  },
+  {
+    "name": "Velyka Bahachka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Velyki Korovyntsi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Velyki Sorochyntsi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Veresna",
+    "stateCode": "53"
+  },
+  {
+    "name": "Veselivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Virlya",
+    "stateCode": "53"
+  },
+  {
+    "name": "Vodiana Balka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Yablunets",
+    "stateCode": "53"
+  },
+  {
+    "name": "Yarun",
+    "stateCode": "53"
+  },
+  {
+    "name": "Yemilchyne",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zabaro-Davidivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zadovga",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zakrinichchia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zalissia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zaliznia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zaluzhne",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zapadnia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zarichchia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zarudintsi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zavodske",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zbranki",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zdorovets",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zherdeli",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zhitintsi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zhovte",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zhovtii Brid",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zhupanivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zhurbintsi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zhytomyr",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zinkiv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zlobichi",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zoriane",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zorokiv",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zosimivka",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zubivshchina",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zvizdal",
+    "stateCode": "53"
+  },
+  {
+    "name": "Demydivs’kyy Rayon",
+    "stateCode": "56"
+  },
+  {
+    "name": "Dubno",
+    "stateCode": "56"
+  },
+  {
+    "name": "Dubrovytsya",
+    "stateCode": "56"
+  },
+  {
+    "name": "Horodyshche",
+    "stateCode": "56"
+  },
+  {
+    "name": "Hoshcha",
+    "stateCode": "56"
+  },
+  {
+    "name": "Klevan",
+    "stateCode": "56"
+  },
+  {
+    "name": "Kolodenka",
+    "stateCode": "56"
+  },
+  {
+    "name": "Koloniya Zastav’ye",
+    "stateCode": "56"
+  },
+  {
+    "name": "Korets",
+    "stateCode": "56"
+  },
+  {
+    "name": "Kostopil’",
+    "stateCode": "56"
+  },
+  {
+    "name": "Mizoch",
+    "stateCode": "56"
+  },
+  {
+    "name": "Mlyniv",
+    "stateCode": "56"
+  },
+  {
+    "name": "Mlynivs’kyy Rayon",
+    "stateCode": "56"
+  },
+  {
+    "name": "Orzhiv",
+    "stateCode": "56"
+  },
+  {
+    "name": "Ostroh",
+    "stateCode": "56"
+  },
+  {
+    "name": "Ostroz’ka Mis’krada",
+    "stateCode": "56"
+  },
+  {
+    "name": "Radyvyliv",
+    "stateCode": "56"
+  },
+  {
+    "name": "Rivne",
+    "stateCode": "56"
+  },
+  {
+    "name": "Rivnens’ka Mis’krada",
+    "stateCode": "56"
+  },
+  {
+    "name": "Rokytne",
+    "stateCode": "56"
+  },
+  {
+    "name": "Sarny",
+    "stateCode": "56"
+  },
+  {
+    "name": "Tarakaniv",
+    "stateCode": "56"
+  },
+  {
+    "name": "Tynne",
+    "stateCode": "56"
+  },
+  {
+    "name": "Varash",
+    "stateCode": "56"
+  },
+  {
+    "name": "Velyki Mezhyrichi",
+    "stateCode": "56"
+  },
+  {
+    "name": "Volodymyrets’",
+    "stateCode": "56"
+  },
+  {
+    "name": "Zarichne",
+    "stateCode": "56"
+  },
+  {
+    "name": "Zdolbuniv",
+    "stateCode": "56"
+  },
+  {
+    "name": "Zdovbytsya",
+    "stateCode": "56"
+  },
+  {
+    "name": "Bilopillya",
+    "stateCode": "59"
+  },
+  {
+    "name": "Boromlya",
+    "stateCode": "59"
+  },
+  {
+    "name": "Buryn’",
+    "stateCode": "59"
+  },
+  {
+    "name": "Druzhba",
+    "stateCode": "59"
+  },
+  {
+    "name": "Hlukhiv",
+    "stateCode": "59"
+  },
+  {
+    "name": "Konotop",
+    "stateCode": "59"
+  },
+  {
+    "name": "Krasnopillya",
+    "stateCode": "59"
+  },
+  {
+    "name": "Krolevets’",
+    "stateCode": "59"
+  },
+  {
+    "name": "Kyrykivka",
+    "stateCode": "59"
+  },
+  {
+    "name": "Lebedyn",
+    "stateCode": "59"
+  },
+  {
+    "name": "Lypova Dolyna",
+    "stateCode": "59"
+  },
+  {
+    "name": "Mezenivka",
+    "stateCode": "59"
+  },
+  {
+    "name": "Nedryhayliv",
+    "stateCode": "59"
+  },
+  {
+    "name": "Nyzy",
+    "stateCode": "59"
+  },
+  {
+    "name": "Okhtyrka",
+    "stateCode": "59"
+  },
+  {
+    "name": "Putyvl’",
+    "stateCode": "59"
+  },
+  {
+    "name": "Romens’ka Mis’krada",
+    "stateCode": "59"
+  },
+  {
+    "name": "Romny",
+    "stateCode": "59"
+  },
+  {
+    "name": "Seredyna-Buda",
+    "stateCode": "59"
+  },
+  {
+    "name": "Shalyhyne",
+    "stateCode": "59"
+  },
+  {
+    "name": "Shostka",
+    "stateCode": "59"
+  },
+  {
+    "name": "Sloboda",
+    "stateCode": "59"
+  },
+  {
+    "name": "Sumy",
+    "stateCode": "59"
+  },
+  {
+    "name": "Terny",
+    "stateCode": "59"
+  },
+  {
+    "name": "Trostyanets’",
+    "stateCode": "59"
+  },
+  {
+    "name": "Velyka Pysarivka",
+    "stateCode": "59"
+  },
+  {
+    "name": "Verkhnya Syrovatka",
+    "stateCode": "59"
+  },
+  {
+    "name": "Vorozhba",
+    "stateCode": "59"
+  },
+  {
+    "name": "Yampil’",
+    "stateCode": "59"
+  },
+  {
+    "name": "Yesman’",
+    "stateCode": "59"
+  },
+  {
+    "name": "Belaya",
+    "stateCode": "61"
+  },
+  {
+    "name": "Borshchiv",
+    "stateCode": "61"
+  },
+  {
+    "name": "Buchach",
+    "stateCode": "61"
+  },
+  {
+    "name": "Chortkiv",
+    "stateCode": "61"
+  },
+  {
+    "name": "Druzhba",
+    "stateCode": "61"
+  },
+  {
+    "name": "Hrymayliv",
+    "stateCode": "61"
+  },
+  {
+    "name": "Husiatyn",
+    "stateCode": "61"
+  },
+  {
+    "name": "Khorostkiv",
+    "stateCode": "61"
+  },
+  {
+    "name": "Kopychyntsi",
+    "stateCode": "61"
+  },
+  {
+    "name": "Kozova",
+    "stateCode": "61"
+  },
+  {
+    "name": "Kremenets",
+    "stateCode": "61"
+  },
+  {
+    "name": "Lanivtsi",
+    "stateCode": "61"
+  },
+  {
+    "name": "Mikulintsy",
+    "stateCode": "61"
+  },
+  {
+    "name": "Nyrkiv",
+    "stateCode": "61"
+  },
+  {
+    "name": "Ozerna",
+    "stateCode": "61"
+  },
+  {
+    "name": "Petrikov",
+    "stateCode": "61"
+  },
+  {
+    "name": "Pidhaytsi",
+    "stateCode": "61"
+  },
+  {
+    "name": "Pidvolochysk",
+    "stateCode": "61"
+  },
+  {
+    "name": "Pochaiv",
+    "stateCode": "61"
+  },
+  {
+    "name": "Skala-Podil’s’ka",
+    "stateCode": "61"
+  },
+  {
+    "name": "Skalat",
+    "stateCode": "61"
+  },
+  {
+    "name": "Terebovlya",
+    "stateCode": "61"
+  },
+  {
+    "name": "Ternopil",
+    "stateCode": "61"
+  },
+  {
+    "name": "Tovste",
+    "stateCode": "61"
+  },
+  {
+    "name": "Velikiye Borki",
+    "stateCode": "61"
+  },
+  {
+    "name": "Yahil’nytsya",
+    "stateCode": "61"
+  },
+  {
+    "name": "Zalishchyky",
+    "stateCode": "61"
+  },
+  {
+    "name": "Zaliztsi",
+    "stateCode": "61"
+  },
+  {
+    "name": "Zbarazh",
+    "stateCode": "61"
+  },
+  {
+    "name": "Zboriv",
+    "stateCode": "61"
+  },
+  {
+    "name": "Zolotyy Potik",
+    "stateCode": "61"
+  },
+  {
+    "name": "Бережани",
+    "stateCode": "61"
+  },
+  {
+    "name": "Balakliya",
+    "stateCode": "63"
+  },
+  {
+    "name": "Barvinkove",
+    "stateCode": "63"
+  },
+  {
+    "name": "Berezivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Bezlyudivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Blyznyuky",
+    "stateCode": "63"
+  },
+  {
+    "name": "Bohodukhiv",
+    "stateCode": "63"
+  },
+  {
+    "name": "Borova",
+    "stateCode": "63"
+  },
+  {
+    "name": "Budy",
+    "stateCode": "63"
+  },
+  {
+    "name": "Chapayeve",
+    "stateCode": "63"
+  },
+  {
+    "name": "Chervonyy Oskil",
+    "stateCode": "63"
+  },
+  {
+    "name": "Chuhuyiv",
+    "stateCode": "63"
+  },
+  {
+    "name": "Derhachi",
+    "stateCode": "63"
+  },
+  {
+    "name": "Dvorichna",
+    "stateCode": "63"
+  },
+  {
+    "name": "Eskhar",
+    "stateCode": "63"
+  },
+  {
+    "name": "Huty",
+    "stateCode": "63"
+  },
+  {
+    "name": "Izyum",
+    "stateCode": "63"
+  },
+  {
+    "name": "Kehychivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Kharkiv",
+    "stateCode": "63"
+  },
+  {
+    "name": "Khorosheve",
+    "stateCode": "63"
+  },
+  {
+    "name": "Kivsharivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Kochetok",
+    "stateCode": "63"
+  },
+  {
+    "name": "Kolomak",
+    "stateCode": "63"
+  },
+  {
+    "name": "Korotych",
+    "stateCode": "63"
+  },
+  {
+    "name": "Krasnohrad",
+    "stateCode": "63"
+  },
+  {
+    "name": "Krasnokuts’k",
+    "stateCode": "63"
+  },
+  {
+    "name": "Krasnopavlivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Kulynychi",
+    "stateCode": "63"
+  },
+  {
+    "name": "Kupjansk",
+    "stateCode": "63"
+  },
+  {
+    "name": "Lozova",
+    "stateCode": "63"
+  },
+  {
+    "name": "Lyman",
+    "stateCode": "63"
+  },
+  {
+    "name": "Lyubotyn",
+    "stateCode": "63"
+  },
+  {
+    "name": "Mala Danylivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Malynivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Manchenky",
+    "stateCode": "63"
+  },
+  {
+    "name": "Merefa",
+    "stateCode": "63"
+  },
+  {
+    "name": "Nova Vodolaha",
+    "stateCode": "63"
+  },
+  {
+    "name": "Novopokrovka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Panyutyne",
+    "stateCode": "63"
+  },
+  {
+    "name": "Peresichna",
+    "stateCode": "63"
+  },
+  {
+    "name": "Pervomaiskyi Raion",
+    "stateCode": "63"
+  },
+  {
+    "name": "Pervomays’kyy",
+    "stateCode": "63"
+  },
+  {
+    "name": "Petrivs’ke",
+    "stateCode": "63"
+  },
+  {
+    "name": "Pivdenne",
+    "stateCode": "63"
+  },
+  {
+    "name": "Pokotylivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Prudyanka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Prykolotne",
+    "stateCode": "63"
+  },
+  {
+    "name": "Sakhnovshchyna",
+    "stateCode": "63"
+  },
+  {
+    "name": "Savyntsi",
+    "stateCode": "63"
+  },
+  {
+    "name": "Shevchenkove",
+    "stateCode": "63"
+  },
+  {
+    "name": "Slatyne",
+    "stateCode": "63"
+  },
+  {
+    "name": "Slobozhans’ke",
+    "stateCode": "63"
+  },
+  {
+    "name": "Solonytsivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Staryy Merchyk",
+    "stateCode": "63"
+  },
+  {
+    "name": "Staryy Saltiv",
+    "stateCode": "63"
+  },
+  {
+    "name": "Studenok",
+    "stateCode": "63"
+  },
+  {
+    "name": "Utkivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Valky",
+    "stateCode": "63"
+  },
+  {
+    "name": "Vasyshcheve",
+    "stateCode": "63"
+  },
+  {
+    "name": "Velykyy Burluk",
+    "stateCode": "63"
+  },
+  {
+    "name": "Verbivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Vovchans’k",
+    "stateCode": "63"
+  },
+  {
+    "name": "Vvedenka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Vysokyy",
+    "stateCode": "63"
+  },
+  {
+    "name": "Zachepylivka",
+    "stateCode": "63"
+  },
+  {
+    "name": "Zmiyiv",
+    "stateCode": "63"
+  },
+  {
+    "name": "Zolochiv",
+    "stateCode": "63"
+  },
+  {
+    "name": "Askaniya-Nova",
+    "stateCode": "65"
+  },
+  {
+    "name": "Bekhtery",
+    "stateCode": "65"
+  },
+  {
+    "name": "Beryslav",
+    "stateCode": "65"
+  },
+  {
+    "name": "Bilozerka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Brylivka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Chaplynka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Chornobayivka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Chornyanka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Chulakivka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Dnipryany",
+    "stateCode": "65"
+  },
+  {
+    "name": "Dudchany",
+    "stateCode": "65"
+  },
+  {
+    "name": "Heniches’k",
+    "stateCode": "65"
+  },
+  {
+    "name": "Heniches’kyy Rayon",
+    "stateCode": "65"
+  },
+  {
+    "name": "Hola Prystan’",
+    "stateCode": "65"
+  },
+  {
+    "name": "Hornostayivka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Ivanivka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Kakhovka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Kalanchak",
+    "stateCode": "65"
+  },
+  {
+    "name": "Kayiry",
+    "stateCode": "65"
+  },
+  {
+    "name": "Kherson",
+    "stateCode": "65"
+  },
+  {
+    "name": "Komyshany",
+    "stateCode": "65"
+  },
+  {
+    "name": "Kozachi Laheri",
+    "stateCode": "65"
+  },
+  {
+    "name": "Krasne",
+    "stateCode": "65"
+  },
+  {
+    "name": "Lazurne",
+    "stateCode": "65"
+  },
+  {
+    "name": "Lyubymivka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Malokakhovka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Nova Kakhovka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Nova Mayachka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Novofedorivka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Novooleksiyivka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Novovorontsovka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Nyzhni Sirohozy",
+    "stateCode": "65"
+  },
+  {
+    "name": "Partyzany",
+    "stateCode": "65"
+  },
+  {
+    "name": "Radens’k",
+    "stateCode": "65"
+  },
+  {
+    "name": "Skadovs’k",
+    "stateCode": "65"
+  },
+  {
+    "name": "Stanislav",
+    "stateCode": "65"
+  },
+  {
+    "name": "Tsyurupyns’k",
+    "stateCode": "65"
+  },
+  {
+    "name": "Velyka Lepetykha",
+    "stateCode": "65"
+  },
+  {
+    "name": "Velyka Oleksandrivka",
+    "stateCode": "65"
+  },
+  {
+    "name": "Velyki Kopani",
+    "stateCode": "65"
+  },
+  {
+    "name": "Verkhniy Rohachyk",
+    "stateCode": "65"
+  },
+  {
+    "name": "Vynohradove",
+    "stateCode": "65"
+  },
+  {
+    "name": "Vysokopillya",
+    "stateCode": "65"
+  },
+  {
+    "name": "Zaliznyy Port",
+    "stateCode": "65"
+  },
+  {
+    "name": "Antoniny",
+    "stateCode": "68"
+  },
+  {
+    "name": "Bazaliya",
+    "stateCode": "68"
+  },
+  {
+    "name": "Derazhnya",
+    "stateCode": "68"
+  },
+  {
+    "name": "Derazhnyans’kyy Rayon",
+    "stateCode": "68"
+  },
+  {
+    "name": "Dunaivtsi",
+    "stateCode": "68"
+  },
+  {
+    "name": "Horodok",
+    "stateCode": "68"
+  },
+  {
+    "name": "Izyaslav",
+    "stateCode": "68"
+  },
+  {
+    "name": "Kamianets-Podilskyi",
+    "stateCode": "68"
+  },
+  {
+    "name": "Khmel’nyts’kyy Rayon",
+    "stateCode": "68"
+  },
+  {
+    "name": "Khmelnytskyi",
+    "stateCode": "68"
+  },
+  {
+    "name": "Krasyliv",
+    "stateCode": "68"
+  },
+  {
+    "name": "Letychiv",
+    "stateCode": "68"
+  },
+  {
+    "name": "Makiv",
+    "stateCode": "68"
+  },
+  {
+    "name": "Medzhybizh",
+    "stateCode": "68"
+  },
+  {
+    "name": "Narkevychi",
+    "stateCode": "68"
+  },
+  {
+    "name": "Netishyn",
+    "stateCode": "68"
+  },
+  {
+    "name": "Nova Ushytsya",
+    "stateCode": "68"
+  },
+  {
+    "name": "Novoselytsya",
+    "stateCode": "68"
+  },
+  {
+    "name": "Polonne",
+    "stateCode": "68"
+  },
+  {
+    "name": "Poninka",
+    "stateCode": "68"
+  },
+  {
+    "name": "Shepetivka",
+    "stateCode": "68"
+  },
+  {
+    "name": "Slavuta",
+    "stateCode": "68"
+  },
+  {
+    "name": "Smotrych",
+    "stateCode": "68"
+  },
+  {
+    "name": "Smyga",
+    "stateCode": "68"
+  },
+  {
+    "name": "Stara Syniava",
+    "stateCode": "68"
+  },
+  {
+    "name": "Starokostiantyniv",
+    "stateCode": "68"
+  },
+  {
+    "name": "Yarmolyntsi",
+    "stateCode": "68"
+  },
+  {
+    "name": "Zakupne",
+    "stateCode": "68"
+  },
+  {
+    "name": "Zhvanets",
+    "stateCode": "68"
+  },
+  {
+    "name": "Babanka",
+    "stateCode": "71"
+  },
+  {
+    "name": "Buky",
+    "stateCode": "71"
+  },
+  {
+    "name": "Cherkasy",
+    "stateCode": "71"
+  },
+  {
+    "name": "Chervona Sloboda",
+    "stateCode": "71"
+  },
+  {
+    "name": "Chornobay",
+    "stateCode": "71"
+  },
+  {
+    "name": "Chyhyryn",
+    "stateCode": "71"
+  },
+  {
+    "name": "Drabiv",
+    "stateCode": "71"
+  },
+  {
+    "name": "Horodyshche",
+    "stateCode": "71"
+  },
+  {
+    "name": "Kamianka",
+    "stateCode": "71"
+  },
+  {
+    "name": "Kaniv",
+    "stateCode": "71"
+  },
+  {
+    "name": "Khrystynivka",
+    "stateCode": "71"
+  },
+  {
+    "name": "Korsun-Shevchenkivskyi",
+    "stateCode": "71"
+  },
+  {
+    "name": "Lebedyn",
+    "stateCode": "71"
+  },
+  {
+    "name": "Lysianka",
+    "stateCode": "71"
+  },
+  {
+    "name": "Mankivka",
+    "stateCode": "71"
+  },
+  {
+    "name": "Mliiv",
+    "stateCode": "71"
+  },
+  {
+    "name": "Monastyryshche",
+    "stateCode": "71"
+  },
+  {
+    "name": "Moshny",
+    "stateCode": "71"
+  },
+  {
+    "name": "Nove-Misto",
+    "stateCode": "71"
+  },
+  {
+    "name": "Ruska Poliana",
+    "stateCode": "71"
+  },
+  {
+    "name": "Shpola",
+    "stateCode": "71"
+  },
+  {
+    "name": "Smila",
+    "stateCode": "71"
+  },
+  {
+    "name": "Stebliv",
+    "stateCode": "71"
+  },
+  {
+    "name": "Talne",
+    "stateCode": "71"
+  },
+  {
+    "name": "Tsibulev",
+    "stateCode": "71"
+  },
+  {
+    "name": "Tsvitkove",
+    "stateCode": "71"
+  },
+  {
+    "name": "Uman",
+    "stateCode": "71"
+  },
+  {
+    "name": "Vatutine",
+    "stateCode": "71"
+  },
+  {
+    "name": "Verkhniachka",
+    "stateCode": "71"
+  },
+  {
+    "name": "Yerky",
+    "stateCode": "71"
+  },
+  {
+    "name": "Yurkivka",
+    "stateCode": "71"
+  },
+  {
+    "name": "Zhashkiv",
+    "stateCode": "71"
+  },
+  {
+    "name": "Zolotonosha",
+    "stateCode": "71"
+  },
+  {
+    "name": "Zvenihorodka",
+    "stateCode": "71"
+  },
+  {
+    "name": "Avdiyivka",
+    "stateCode": "74"
+  },
+  {
+    "name": "Bakhmach",
+    "stateCode": "74"
+  },
+  {
+    "name": "Baturyn",
+    "stateCode": "74"
+  },
+  {
+    "name": "Berezna",
+    "stateCode": "74"
+  },
+  {
+    "name": "Bobrovytsya",
+    "stateCode": "74"
+  },
+  {
+    "name": "Borzna",
+    "stateCode": "74"
+  },
+  {
+    "name": "Chernihiv",
+    "stateCode": "74"
+  },
+  {
+    "name": "Chernihiv Raion",
+    "stateCode": "74"
+  },
+  {
+    "name": "Chernihivs’ka Mis’krada",
+    "stateCode": "74"
+  },
+  {
+    "name": "Desna",
+    "stateCode": "74"
+  },
+  {
+    "name": "Dihtyari",
+    "stateCode": "74"
+  },
+  {
+    "name": "Dobryanka",
+    "stateCode": "74"
+  },
+  {
+    "name": "Horodnya",
+    "stateCode": "74"
+  },
+  {
+    "name": "Ichnya",
+    "stateCode": "74"
+  },
+  {
+    "name": "Kholmy",
+    "stateCode": "74"
+  },
+  {
+    "name": "Kobyzhcha",
+    "stateCode": "74"
+  },
+  {
+    "name": "Korop",
+    "stateCode": "74"
+  },
+  {
+    "name": "Koryukivka",
+    "stateCode": "74"
+  },
+  {
+    "name": "Kozelets’",
+    "stateCode": "74"
+  },
+  {
+    "name": "Kruty",
+    "stateCode": "74"
+  },
+  {
+    "name": "Kulykivka",
+    "stateCode": "74"
+  },
+  {
+    "name": "Ladan",
+    "stateCode": "74"
+  },
+  {
+    "name": "Lisovi Sorochyntsi",
+    "stateCode": "74"
+  },
+  {
+    "name": "Lyubech",
+    "stateCode": "74"
+  },
+  {
+    "name": "Mena",
+    "stateCode": "74"
+  },
+  {
+    "name": "Mens’kyy Rayon",
+    "stateCode": "74"
+  },
+  {
+    "name": "Nizhyn",
+    "stateCode": "74"
+  },
+  {
+    "name": "Nosivka",
+    "stateCode": "74"
+  },
+  {
+    "name": "Novhorod-Sivers’kyy",
+    "stateCode": "74"
+  },
+  {
+    "name": "Olyshivka",
+    "stateCode": "74"
+  },
+  {
+    "name": "Oster",
+    "stateCode": "74"
+  },
+  {
+    "name": "Pryluky",
+    "stateCode": "74"
+  },
+  {
+    "name": "Ripky",
+    "stateCode": "74"
+  },
+  {
+    "name": "Sedniv",
+    "stateCode": "74"
+  },
+  {
+    "name": "Semenivka",
+    "stateCode": "74"
+  },
+  {
+    "name": "Shchors",
+    "stateCode": "74"
+  },
+  {
+    "name": "Snovs'kyy Rayon",
+    "stateCode": "74"
+  },
+  {
+    "name": "Sosnytsya",
+    "stateCode": "74"
+  },
+  {
+    "name": "Sribne",
+    "stateCode": "74"
+  },
+  {
+    "name": "Varva",
+    "stateCode": "74"
+  },
+  {
+    "name": "Zhuravka",
+    "stateCode": "74"
+  },
+  {
+    "name": "Banyliv",
+    "stateCode": "77"
+  },
+  {
+    "name": "Berehomet",
+    "stateCode": "77"
+  },
+  {
+    "name": "Boyany",
+    "stateCode": "77"
+  },
+  {
+    "name": "Chernivtsi",
+    "stateCode": "77"
+  },
+  {
+    "name": "Chernivtsi Municipality",
+    "stateCode": "77"
+  },
+  {
+    "name": "Chudey",
+    "stateCode": "77"
+  },
+  {
+    "name": "Davydivka",
+    "stateCode": "77"
+  },
+  {
+    "name": "Hlyboka",
+    "stateCode": "77"
+  },
+  {
+    "name": "Ispas",
+    "stateCode": "77"
+  },
+  {
+    "name": "Kadubivtsi",
+    "stateCode": "77"
+  },
+  {
+    "name": "Khotyn",
+    "stateCode": "77"
+  },
+  {
+    "name": "Klishkivtsi",
+    "stateCode": "77"
+  },
+  {
+    "name": "Kostryzhivka",
+    "stateCode": "77"
+  },
+  {
+    "name": "Luzhany",
+    "stateCode": "77"
+  },
+  {
+    "name": "Marshintsy",
+    "stateCode": "77"
+  },
+  {
+    "name": "Molodiya",
+    "stateCode": "77"
+  },
+  {
+    "name": "Myhove",
+    "stateCode": "77"
+  },
+  {
+    "name": "Novodnistrovs’k",
+    "stateCode": "77"
+  },
+  {
+    "name": "Novoselytsya",
+    "stateCode": "77"
+  },
+  {
+    "name": "Nyzhni Petrivtsi",
+    "stateCode": "77"
+  },
+  {
+    "name": "Putyla Raion",
+    "stateCode": "77"
+  },
+  {
+    "name": "Ropcha",
+    "stateCode": "77"
+  },
+  {
+    "name": "Shypyntsi",
+    "stateCode": "77"
+  },
+  {
+    "name": "Sokyryany",
+    "stateCode": "77"
+  },
+  {
+    "name": "Vashkivtsi",
+    "stateCode": "77"
+  },
+  {
+    "name": "Verenchanka",
+    "stateCode": "77"
+  },
+  {
+    "name": "Voloka",
+    "stateCode": "77"
+  },
+  {
+    "name": "Vyzhnytsya",
+    "stateCode": "77"
+  },
+  {
+    "name": "Yizhivtsi",
+    "stateCode": "77"
+  },
+  {
+    "name": "Zastavna",
+    "stateCode": "77"
+  }
+]

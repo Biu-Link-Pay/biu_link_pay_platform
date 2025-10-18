@@ -1,0 +1,718 @@
+[
+  {
+    "name": "Bakri",
+    "stateCode": "01"
+  },
+  {
+    "name": "Batu Pahat",
+    "stateCode": "01"
+  },
+  {
+    "name": "Buloh Kasap",
+    "stateCode": "01"
+  },
+  {
+    "name": "Chaah",
+    "stateCode": "01"
+  },
+  {
+    "name": "Daerah Batu Pahat",
+    "stateCode": "01"
+  },
+  {
+    "name": "Daerah Johor Baharu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Daerah Keluang",
+    "stateCode": "01"
+  },
+  {
+    "name": "Daerah Kota Tinggi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Daerah Mersing",
+    "stateCode": "01"
+  },
+  {
+    "name": "Daerah Muar",
+    "stateCode": "01"
+  },
+  {
+    "name": "Daerah Pontian",
+    "stateCode": "01"
+  },
+  {
+    "name": "Daerah Segamat",
+    "stateCode": "01"
+  },
+  {
+    "name": "Johor Bahru",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kampung Pasir Gudang Baru",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kampung Simpang Renggam",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kelapa Sawit",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kluang",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kota Tinggi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kulai",
+    "stateCode": "01"
+  },
+  {
+    "name": "Labis",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mersing",
+    "stateCode": "01"
+  },
+  {
+    "name": "Muar",
+    "stateCode": "01"
+  },
+  {
+    "name": "Parit Raja",
+    "stateCode": "01"
+  },
+  {
+    "name": "Pekan Nenas",
+    "stateCode": "01"
+  },
+  {
+    "name": "Pontian Kechil",
+    "stateCode": "01"
+  },
+  {
+    "name": "Segamat",
+    "stateCode": "01"
+  },
+  {
+    "name": "Skudai",
+    "stateCode": "01"
+  },
+  {
+    "name": "Taman Senai",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tangkak",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ulu Tiram",
+    "stateCode": "01"
+  },
+  {
+    "name": "Yong Peng",
+    "stateCode": "01"
+  },
+  {
+    "name": "Alor Setar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ayer Hangat",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bedong",
+    "stateCode": "02"
+  },
+  {
+    "name": "Gurun",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jitra",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kampung Kilim",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kampung Kok",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kuah",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kuala Kedah",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kuala Teriang",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kulim",
+    "stateCode": "02"
+  },
+  {
+    "name": "Langkawi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Padang Mat Sirat",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sungai Petani",
+    "stateCode": "02"
+  },
+  {
+    "name": "Gua Musang",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kampong Kadok",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kampong Pangkal Kalong",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kota Bharu",
+    "stateCode": "03"
+  },
+  {
+    "name": "Pasir Mas",
+    "stateCode": "03"
+  },
+  {
+    "name": "Peringat",
+    "stateCode": "03"
+  },
+  {
+    "name": "Tumpat",
+    "stateCode": "03"
+  },
+  {
+    "name": "Alor Gajah",
+    "stateCode": "04"
+  },
+  {
+    "name": "Batu Berendam",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bemban",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bukit Rambai",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kampong Masjid Tanah",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kampung Ayer Keroh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kampung Ayer Molek",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kampung Bukit Baharu",
+    "stateCode": "04"
+  },
+  {
+    "name": "Klebang Besar",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kuala Sungai Baru",
+    "stateCode": "04"
+  },
+  {
+    "name": "Malacca",
+    "stateCode": "04"
+  },
+  {
+    "name": "Pulau Sebang",
+    "stateCode": "04"
+  },
+  {
+    "name": "Sungai Udang",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bahau",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kampung Baharu Nilai",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kuala Pilah",
+    "stateCode": "05"
+  },
+  {
+    "name": "Port Dickson",
+    "stateCode": "05"
+  },
+  {
+    "name": "Seremban",
+    "stateCode": "05"
+  },
+  {
+    "name": "Tampin",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bentong Town",
+    "stateCode": "06"
+  },
+  {
+    "name": "Jerantut",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kampung Bukit Tinggi, Bentong",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kampung Tekek",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kuala Lipis",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kuantan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mentekab",
+    "stateCode": "06"
+  },
+  {
+    "name": "Pekan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Raub",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tanah Rata",
+    "stateCode": "06"
+  },
+  {
+    "name": "Temerluh",
+    "stateCode": "06"
+  },
+  {
+    "name": "Batu Feringgi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bukit Mertajam",
+    "stateCode": "07"
+  },
+  {
+    "name": "Butterworth",
+    "stateCode": "07"
+  },
+  {
+    "name": "George Town",
+    "stateCode": "07"
+  },
+  {
+    "name": "Juru",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kampung Batu Feringgi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kampung Sungai Ara",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kepala Batas",
+    "stateCode": "07"
+  },
+  {
+    "name": "Nibong Tebal",
+    "stateCode": "07"
+  },
+  {
+    "name": "Perai",
+    "stateCode": "07"
+  },
+  {
+    "name": "Permatang Kuching",
+    "stateCode": "07"
+  },
+  {
+    "name": "Seberang Perai",
+    "stateCode": "07"
+  },
+  {
+    "name": "Tanjung Tokong",
+    "stateCode": "07"
+  },
+  {
+    "name": "Tasek Glugor",
+    "stateCode": "07"
+  },
+  {
+    "name": "Telaga Batu",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bagan Serai",
+    "stateCode": "08"
+  },
+  {
+    "name": "Batu Gajah",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bidur",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ipoh",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kampar",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kampong Dungun",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kuala Kangsar",
+    "stateCode": "08"
+  },
+  {
+    "name": "Lumut",
+    "stateCode": "08"
+  },
+  {
+    "name": "Pantai Remis",
+    "stateCode": "08"
+  },
+  {
+    "name": "Parit Buntar",
+    "stateCode": "08"
+  },
+  {
+    "name": "Simpang Empat",
+    "stateCode": "08"
+  },
+  {
+    "name": "Taiping",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tapah Road",
+    "stateCode": "08"
+  },
+  {
+    "name": "Teluk Intan",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kangar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kuala Perlis",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pantai Cenang",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ampang",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bagan Pulau Ketam",
+    "stateCode": "10"
+  },
+  {
+    "name": "Banting",
+    "stateCode": "10"
+  },
+  {
+    "name": "Batang Berjuntai",
+    "stateCode": "10"
+  },
+  {
+    "name": "Batu Arang",
+    "stateCode": "10"
+  },
+  {
+    "name": "Jenjarum",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kampong Baharu Balakong",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kampung Baru Subang",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kampung Tanjung Karang",
+    "stateCode": "10"
+  },
+  {
+    "name": "Klang",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kuala Selangor",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kuang",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ladang Seri Kundang",
+    "stateCode": "10"
+  },
+  {
+    "name": "Pelabuhan Klang",
+    "stateCode": "10"
+  },
+  {
+    "name": "Petaling Jaya",
+    "stateCode": "10"
+  },
+  {
+    "name": "Putra Heights",
+    "stateCode": "10"
+  },
+  {
+    "name": "Rawang",
+    "stateCode": "10"
+  },
+  {
+    "name": "Semenyih",
+    "stateCode": "10"
+  },
+  {
+    "name": "Serendah",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shah Alam",
+    "stateCode": "10"
+  },
+  {
+    "name": "Subang Jaya",
+    "stateCode": "10"
+  },
+  {
+    "name": "Sungai Besar",
+    "stateCode": "10"
+  },
+  {
+    "name": "Sungai Pelek New Village",
+    "stateCode": "10"
+  },
+  {
+    "name": "Tanjung Sepat",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cukai",
+    "stateCode": "11"
+  },
+  {
+    "name": "Jertih",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kampung Kuala Besut",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kertih",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kuala Besut",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kuala Terengganu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Marang",
+    "stateCode": "11"
+  },
+  {
+    "name": "Paka",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bandar Labuan",
+    "stateCode": "12"
+  },
+  {
+    "name": "Beaufort",
+    "stateCode": "12"
+  },
+  {
+    "name": "Donggongon",
+    "stateCode": "12"
+  },
+  {
+    "name": "Keningau",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kinarut",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kota Belud",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kota Kinabalu",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kudat",
+    "stateCode": "12"
+  },
+  {
+    "name": "Lahad Datu",
+    "stateCode": "12"
+  },
+  {
+    "name": "Papar",
+    "stateCode": "12"
+  },
+  {
+    "name": "Putatan",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ranau",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sandakan",
+    "stateCode": "12"
+  },
+  {
+    "name": "Semporna",
+    "stateCode": "12"
+  },
+  {
+    "name": "Taman Rajawali",
+    "stateCode": "12"
+  },
+  {
+    "name": "Tawau",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bintulu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Data Kakus",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kapit",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kuching",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lawas",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lidung Jelo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Limbang",
+    "stateCode": "13"
+  },
+  {
+    "name": "Long Ampan Aing or Abanang",
+    "stateCode": "13"
+  },
+  {
+    "name": "Marudi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Miri",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mukah",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sarikei",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sibu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Simanggang",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kuala Lumpur",
+    "stateCode": "14"
+  },
+  {
+    "name": "Labuan",
+    "stateCode": "15"
+  },
+  {
+    "name": "Putrajaya",
+    "stateCode": "16"
+  }
+]

@@ -1,0 +1,3202 @@
+[
+  {
+    "name": "Akalla",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Åkersberga",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Alby",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Älmsta",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Älta",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Arnö",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Årsta",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Bergshamra",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Bollmora",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Boo",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Brevik",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Bro",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Bromma",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Brunn",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Brunna",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Dalarö",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Djurö",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Djursholm",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Ekerö",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Enebyberg",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Eriksberg",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Fisksätra",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Fittja",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Gamla Stan",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Gustavsberg",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Hallstavik",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Handen",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Haninge",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Hemmesta",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Hölö",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Huddinge",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Jakobsberg",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Järna",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Jordbro",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Kista",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Kopparmora",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Kummelnäs",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Kungsängen",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Kungsholmen",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Långvik",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Lidingö",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Lindholmen",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Märsta",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Mölnbo",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Mörtnäs",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Nacka",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Norrtälje",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Nykvarn",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Nynäshamn",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Ösmo",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Östermalm",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Pershagen",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Råsunda",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Resarö",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Rimbo",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Rindö",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Rönninge",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Rosersberg",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Saltsjöbaden",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Segeltorp",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Sigtuna",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Skänninge",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Södermalm",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Södertälje",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Sollentuna",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Solna",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Stavsnäs",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Stenhamra",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Stockholm",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Strömma",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Sundbyberg",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Tensta",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Tullinge",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Tumba",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Upplands Väsby",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Vallentuna",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Vårby",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Vårsta",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Vasastan",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Vaxholm",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Åsele",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Backa",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Bjurholm",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Boliden",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Bureå",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Burträsk",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Byske",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Dorotea",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Ersmark",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Forsbacka",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Holmsund",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Hörnefors",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Insjön",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Kåge",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Långsele",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Lycksele",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Malå",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Nordmaling",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Norsjö",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Obbola",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Röbäck",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Robertsfors",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Sävar",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Skellefteå",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Skelleftehamn",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Söderfors",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Sorsele",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Storuman",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Storvik",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Täfteå",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Umeå",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Ursviken",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Vännäs",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Vännäsby",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Viken",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Vilhelmina",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Vindeln",
+    "stateCode": "AC"
+  },
+  {
+    "name": "Älvsbyn",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Arjeplog",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Arvidsjaur",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Bergnäset",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Bergsviken",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Björkskatan",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Boden",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Gällivare",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Gammelstad",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Haparanda",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Hortlax",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Jokkmokk",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Kalix",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Kiruna",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Luleå",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Malmberget",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Marielund",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Norrfjärden",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Överkalix",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Övertorneå",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Pajala",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Piteå",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Råneå",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Roknäs",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Rolfs",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Rosvik",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Sävast",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Södra Sunderbyn",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Töre",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Alsike",
+    "stateCode": "C"
+  },
+  {
+    "name": "Alunda",
+    "stateCode": "C"
+  },
+  {
+    "name": "Älvkarleby",
+    "stateCode": "C"
+  },
+  {
+    "name": "Anneberg",
+    "stateCode": "C"
+  },
+  {
+    "name": "Bälinge",
+    "stateCode": "C"
+  },
+  {
+    "name": "Bålsta",
+    "stateCode": "C"
+  },
+  {
+    "name": "Björklinge",
+    "stateCode": "C"
+  },
+  {
+    "name": "Enköping",
+    "stateCode": "C"
+  },
+  {
+    "name": "Gamla Uppsala",
+    "stateCode": "C"
+  },
+  {
+    "name": "Gimo",
+    "stateCode": "C"
+  },
+  {
+    "name": "Grillby",
+    "stateCode": "C"
+  },
+  {
+    "name": "Heby",
+    "stateCode": "C"
+  },
+  {
+    "name": "Irsta",
+    "stateCode": "C"
+  },
+  {
+    "name": "Karlholmsbruk",
+    "stateCode": "C"
+  },
+  {
+    "name": "Knivsta",
+    "stateCode": "C"
+  },
+  {
+    "name": "Lövstalöt",
+    "stateCode": "C"
+  },
+  {
+    "name": "Marieberg",
+    "stateCode": "C"
+  },
+  {
+    "name": "Morgongåva",
+    "stateCode": "C"
+  },
+  {
+    "name": "Örbyhus",
+    "stateCode": "C"
+  },
+  {
+    "name": "Öregrund",
+    "stateCode": "C"
+  },
+  {
+    "name": "Örsundsbro",
+    "stateCode": "C"
+  },
+  {
+    "name": "Österbybruk",
+    "stateCode": "C"
+  },
+  {
+    "name": "Östervåla",
+    "stateCode": "C"
+  },
+  {
+    "name": "Östhammar",
+    "stateCode": "C"
+  },
+  {
+    "name": "Sävja",
+    "stateCode": "C"
+  },
+  {
+    "name": "Skutskär",
+    "stateCode": "C"
+  },
+  {
+    "name": "Söderfors",
+    "stateCode": "C"
+  },
+  {
+    "name": "Storvreta",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tärnsjö",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tierp",
+    "stateCode": "C"
+  },
+  {
+    "name": "Uppsala",
+    "stateCode": "C"
+  },
+  {
+    "name": "Vattholma",
+    "stateCode": "C"
+  },
+  {
+    "name": "Åkers Styckebruk",
+    "stateCode": "D"
+  },
+  {
+    "name": "Ärla",
+    "stateCode": "D"
+  },
+  {
+    "name": "Arnö",
+    "stateCode": "D"
+  },
+  {
+    "name": "Bara",
+    "stateCode": "D"
+  },
+  {
+    "name": "Eskilstuna",
+    "stateCode": "D"
+  },
+  {
+    "name": "Flen",
+    "stateCode": "D"
+  },
+  {
+    "name": "Gnesta",
+    "stateCode": "D"
+  },
+  {
+    "name": "Hällbybrunn",
+    "stateCode": "D"
+  },
+  {
+    "name": "Hälleforsnäs",
+    "stateCode": "D"
+  },
+  {
+    "name": "Katrineholm",
+    "stateCode": "D"
+  },
+  {
+    "name": "Kvicksund",
+    "stateCode": "D"
+  },
+  {
+    "name": "Malmköping",
+    "stateCode": "D"
+  },
+  {
+    "name": "Mariefred",
+    "stateCode": "D"
+  },
+  {
+    "name": "Nyköping",
+    "stateCode": "D"
+  },
+  {
+    "name": "Olstorp",
+    "stateCode": "D"
+  },
+  {
+    "name": "Oxelösund",
+    "stateCode": "D"
+  },
+  {
+    "name": "Skogstorp",
+    "stateCode": "D"
+  },
+  {
+    "name": "Stallarholmen",
+    "stateCode": "D"
+  },
+  {
+    "name": "Stigtomta",
+    "stateCode": "D"
+  },
+  {
+    "name": "Strängnäs",
+    "stateCode": "D"
+  },
+  {
+    "name": "Svalsta",
+    "stateCode": "D"
+  },
+  {
+    "name": "Torshälla",
+    "stateCode": "D"
+  },
+  {
+    "name": "Trosa",
+    "stateCode": "D"
+  },
+  {
+    "name": "Vagnhärad",
+    "stateCode": "D"
+  },
+  {
+    "name": "Valla",
+    "stateCode": "D"
+  },
+  {
+    "name": "Vingåker",
+    "stateCode": "D"
+  },
+  {
+    "name": "Åby",
+    "stateCode": "E"
+  },
+  {
+    "name": "Åtvidaberg",
+    "stateCode": "E"
+  },
+  {
+    "name": "Berg",
+    "stateCode": "E"
+  },
+  {
+    "name": "Borensberg",
+    "stateCode": "E"
+  },
+  {
+    "name": "Boxholm",
+    "stateCode": "E"
+  },
+  {
+    "name": "Ekängen",
+    "stateCode": "E"
+  },
+  {
+    "name": "Finspång",
+    "stateCode": "E"
+  },
+  {
+    "name": "Grebo",
+    "stateCode": "E"
+  },
+  {
+    "name": "Gusum",
+    "stateCode": "E"
+  },
+  {
+    "name": "Herrestad",
+    "stateCode": "E"
+  },
+  {
+    "name": "Jursla",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kimstad",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kisa",
+    "stateCode": "E"
+  },
+  {
+    "name": "Krokek",
+    "stateCode": "E"
+  },
+  {
+    "name": "Lindö",
+    "stateCode": "E"
+  },
+  {
+    "name": "Linghem",
+    "stateCode": "E"
+  },
+  {
+    "name": "Linköping",
+    "stateCode": "E"
+  },
+  {
+    "name": "Ljungsbro",
+    "stateCode": "E"
+  },
+  {
+    "name": "Malmslätt",
+    "stateCode": "E"
+  },
+  {
+    "name": "Mantorp",
+    "stateCode": "E"
+  },
+  {
+    "name": "Mjölby",
+    "stateCode": "E"
+  },
+  {
+    "name": "Motala",
+    "stateCode": "E"
+  },
+  {
+    "name": "Norrköping",
+    "stateCode": "E"
+  },
+  {
+    "name": "Ödeshög",
+    "stateCode": "E"
+  },
+  {
+    "name": "Österbymo",
+    "stateCode": "E"
+  },
+  {
+    "name": "Rimforsa",
+    "stateCode": "E"
+  },
+  {
+    "name": "Ryd",
+    "stateCode": "E"
+  },
+  {
+    "name": "Skänninge",
+    "stateCode": "E"
+  },
+  {
+    "name": "Skärblacka",
+    "stateCode": "E"
+  },
+  {
+    "name": "Söderköping",
+    "stateCode": "E"
+  },
+  {
+    "name": "Stenstorp",
+    "stateCode": "E"
+  },
+  {
+    "name": "Sturefors",
+    "stateCode": "E"
+  },
+  {
+    "name": "Svärtinge",
+    "stateCode": "E"
+  },
+  {
+    "name": "Tallboda",
+    "stateCode": "E"
+  },
+  {
+    "name": "Vadstena",
+    "stateCode": "E"
+  },
+  {
+    "name": "Valdemarsvik",
+    "stateCode": "E"
+  },
+  {
+    "name": "Vikingstad",
+    "stateCode": "E"
+  },
+  {
+    "name": "Anderstorp",
+    "stateCode": "F"
+  },
+  {
+    "name": "Aneby",
+    "stateCode": "F"
+  },
+  {
+    "name": "Bankeryd",
+    "stateCode": "F"
+  },
+  {
+    "name": "Bodafors",
+    "stateCode": "F"
+  },
+  {
+    "name": "Bor",
+    "stateCode": "F"
+  },
+  {
+    "name": "Bredaryd",
+    "stateCode": "F"
+  },
+  {
+    "name": "Ekenässjön",
+    "stateCode": "F"
+  },
+  {
+    "name": "Eksjö",
+    "stateCode": "F"
+  },
+  {
+    "name": "Forserum",
+    "stateCode": "F"
+  },
+  {
+    "name": "Forsheda",
+    "stateCode": "F"
+  },
+  {
+    "name": "Gislaved",
+    "stateCode": "F"
+  },
+  {
+    "name": "Gnosjö",
+    "stateCode": "F"
+  },
+  {
+    "name": "Gränna",
+    "stateCode": "F"
+  },
+  {
+    "name": "Habo",
+    "stateCode": "F"
+  },
+  {
+    "name": "Hestra",
+    "stateCode": "F"
+  },
+  {
+    "name": "Hillerstorp",
+    "stateCode": "F"
+  },
+  {
+    "name": "Huskvarna",
+    "stateCode": "F"
+  },
+  {
+    "name": "Jönköping",
+    "stateCode": "F"
+  },
+  {
+    "name": "Kaxholmen",
+    "stateCode": "F"
+  },
+  {
+    "name": "Landsbro",
+    "stateCode": "F"
+  },
+  {
+    "name": "Malmbäck",
+    "stateCode": "F"
+  },
+  {
+    "name": "Mariannelund",
+    "stateCode": "F"
+  },
+  {
+    "name": "Marieholm",
+    "stateCode": "F"
+  },
+  {
+    "name": "Mullsjö",
+    "stateCode": "F"
+  },
+  {
+    "name": "Nässjö",
+    "stateCode": "F"
+  },
+  {
+    "name": "Odensjö",
+    "stateCode": "F"
+  },
+  {
+    "name": "Reftele",
+    "stateCode": "F"
+  },
+  {
+    "name": "Rydaholm",
+    "stateCode": "F"
+  },
+  {
+    "name": "Sävsjö",
+    "stateCode": "F"
+  },
+  {
+    "name": "Skillingaryd",
+    "stateCode": "F"
+  },
+  {
+    "name": "Smålandsstenar",
+    "stateCode": "F"
+  },
+  {
+    "name": "Stockaryd",
+    "stateCode": "F"
+  },
+  {
+    "name": "Taberg",
+    "stateCode": "F"
+  },
+  {
+    "name": "Tenhult",
+    "stateCode": "F"
+  },
+  {
+    "name": "Tranås",
+    "stateCode": "F"
+  },
+  {
+    "name": "Vaggeryd",
+    "stateCode": "F"
+  },
+  {
+    "name": "Värnamo",
+    "stateCode": "F"
+  },
+  {
+    "name": "Vetlanda",
+    "stateCode": "F"
+  },
+  {
+    "name": "Vrigstad",
+    "stateCode": "F"
+  },
+  {
+    "name": "Älmhult",
+    "stateCode": "G"
+  },
+  {
+    "name": "Alvesta",
+    "stateCode": "G"
+  },
+  {
+    "name": "Åseda",
+    "stateCode": "G"
+  },
+  {
+    "name": "Braås",
+    "stateCode": "G"
+  },
+  {
+    "name": "Gemla",
+    "stateCode": "G"
+  },
+  {
+    "name": "Hovmantorp",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ingelstad",
+    "stateCode": "G"
+  },
+  {
+    "name": "Lagan",
+    "stateCode": "G"
+  },
+  {
+    "name": "Lammhult",
+    "stateCode": "G"
+  },
+  {
+    "name": "Lenhovda",
+    "stateCode": "G"
+  },
+  {
+    "name": "Lessebo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ljungby",
+    "stateCode": "G"
+  },
+  {
+    "name": "Markaryd",
+    "stateCode": "G"
+  },
+  {
+    "name": "Moheda",
+    "stateCode": "G"
+  },
+  {
+    "name": "Rottne",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ryd",
+    "stateCode": "G"
+  },
+  {
+    "name": "Strömsnäsbruk",
+    "stateCode": "G"
+  },
+  {
+    "name": "Tingsryd",
+    "stateCode": "G"
+  },
+  {
+    "name": "Växjö",
+    "stateCode": "G"
+  },
+  {
+    "name": "Vislanda",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ankarsrum",
+    "stateCode": "H"
+  },
+  {
+    "name": "Bergkvara",
+    "stateCode": "H"
+  },
+  {
+    "name": "Blomstermåla",
+    "stateCode": "H"
+  },
+  {
+    "name": "Borgholm",
+    "stateCode": "H"
+  },
+  {
+    "name": "Emmaboda",
+    "stateCode": "H"
+  },
+  {
+    "name": "Färjestaden",
+    "stateCode": "H"
+  },
+  {
+    "name": "Gamleby",
+    "stateCode": "H"
+  },
+  {
+    "name": "Gunnebo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Högsby",
+    "stateCode": "H"
+  },
+  {
+    "name": "Hultsfred",
+    "stateCode": "H"
+  },
+  {
+    "name": "Kalmar",
+    "stateCode": "H"
+  },
+  {
+    "name": "Kristdala",
+    "stateCode": "H"
+  },
+  {
+    "name": "Lindsdal",
+    "stateCode": "H"
+  },
+  {
+    "name": "Ljungbyholm",
+    "stateCode": "H"
+  },
+  {
+    "name": "Målilla",
+    "stateCode": "H"
+  },
+  {
+    "name": "Mönsterås",
+    "stateCode": "H"
+  },
+  {
+    "name": "Mörbylånga",
+    "stateCode": "H"
+  },
+  {
+    "name": "Nybro",
+    "stateCode": "H"
+  },
+  {
+    "name": "Oskarshamn",
+    "stateCode": "H"
+  },
+  {
+    "name": "Överum",
+    "stateCode": "H"
+  },
+  {
+    "name": "Påskallavik",
+    "stateCode": "H"
+  },
+  {
+    "name": "Rinkabyholm",
+    "stateCode": "H"
+  },
+  {
+    "name": "Smedby",
+    "stateCode": "H"
+  },
+  {
+    "name": "Södra Sandby",
+    "stateCode": "H"
+  },
+  {
+    "name": "Södra Vi",
+    "stateCode": "H"
+  },
+  {
+    "name": "Storebro",
+    "stateCode": "H"
+  },
+  {
+    "name": "Timmernabben",
+    "stateCode": "H"
+  },
+  {
+    "name": "Torsås",
+    "stateCode": "H"
+  },
+  {
+    "name": "Trekanten",
+    "stateCode": "H"
+  },
+  {
+    "name": "Västervik",
+    "stateCode": "H"
+  },
+  {
+    "name": "Vimmerby",
+    "stateCode": "H"
+  },
+  {
+    "name": "Virserum",
+    "stateCode": "H"
+  },
+  {
+    "name": "Gotland",
+    "stateCode": "I"
+  },
+  {
+    "name": "Hemse",
+    "stateCode": "I"
+  },
+  {
+    "name": "Klintehamn",
+    "stateCode": "I"
+  },
+  {
+    "name": "Vibble",
+    "stateCode": "I"
+  },
+  {
+    "name": "Visby",
+    "stateCode": "I"
+  },
+  {
+    "name": "Bräkne-Hoby",
+    "stateCode": "K"
+  },
+  {
+    "name": "Hällevik",
+    "stateCode": "K"
+  },
+  {
+    "name": "Hasslö",
+    "stateCode": "K"
+  },
+  {
+    "name": "Jämjö",
+    "stateCode": "K"
+  },
+  {
+    "name": "Jämshög",
+    "stateCode": "K"
+  },
+  {
+    "name": "Kallinge",
+    "stateCode": "K"
+  },
+  {
+    "name": "Karlshamn",
+    "stateCode": "K"
+  },
+  {
+    "name": "Karlskrona",
+    "stateCode": "K"
+  },
+  {
+    "name": "Mjällby",
+    "stateCode": "K"
+  },
+  {
+    "name": "Mörrum",
+    "stateCode": "K"
+  },
+  {
+    "name": "Nättraby",
+    "stateCode": "K"
+  },
+  {
+    "name": "Olofström",
+    "stateCode": "K"
+  },
+  {
+    "name": "Rödeby",
+    "stateCode": "K"
+  },
+  {
+    "name": "Ronneby",
+    "stateCode": "K"
+  },
+  {
+    "name": "Sölvesborg",
+    "stateCode": "K"
+  },
+  {
+    "name": "Sturkö",
+    "stateCode": "K"
+  },
+  {
+    "name": "Svängsta",
+    "stateCode": "K"
+  },
+  {
+    "name": "Åhus",
+    "stateCode": "M"
+  },
+  {
+    "name": "Åkarp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Anderslöv",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ängelholm",
+    "stateCode": "M"
+  },
+  {
+    "name": "Arlöv",
+    "stateCode": "M"
+  },
+  {
+    "name": "Asmundtorp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Åstorp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bara",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bårslöv",
+    "stateCode": "M"
+  },
+  {
+    "name": "Båstad",
+    "stateCode": "M"
+  },
+  {
+    "name": "Billeberga",
+    "stateCode": "M"
+  },
+  {
+    "name": "Billesholm",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bjärnum",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bjärred",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bjuv",
+    "stateCode": "M"
+  },
+  {
+    "name": "Blentarp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Broby",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bromölla",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bunkeflostrand",
+    "stateCode": "M"
+  },
+  {
+    "name": "Dalby",
+    "stateCode": "M"
+  },
+  {
+    "name": "Degeberga",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ekeby",
+    "stateCode": "M"
+  },
+  {
+    "name": "Eslöv",
+    "stateCode": "M"
+  },
+  {
+    "name": "Färlöv",
+    "stateCode": "M"
+  },
+  {
+    "name": "Fjälkinge",
+    "stateCode": "M"
+  },
+  {
+    "name": "Förslöv",
+    "stateCode": "M"
+  },
+  {
+    "name": "Furulund",
+    "stateCode": "M"
+  },
+  {
+    "name": "Gantofta",
+    "stateCode": "M"
+  },
+  {
+    "name": "Gärsnäs",
+    "stateCode": "M"
+  },
+  {
+    "name": "Genarp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Glimåkra",
+    "stateCode": "M"
+  },
+  {
+    "name": "Glumslöv",
+    "stateCode": "M"
+  },
+  {
+    "name": "Häljarp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hammar",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hanaskog",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hässleholm",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hästveda",
+    "stateCode": "M"
+  },
+  {
+    "name": "Helsingborg",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hittarp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hjärnarp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hjärup",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hofterup",
+    "stateCode": "M"
+  },
+  {
+    "name": "Höganäs",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hököpinge",
+    "stateCode": "M"
+  },
+  {
+    "name": "Höllviken",
+    "stateCode": "M"
+  },
+  {
+    "name": "Höör",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hörby",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hyllinge",
+    "stateCode": "M"
+  },
+  {
+    "name": "Jonstorp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kågeröd",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kävlinge",
+    "stateCode": "M"
+  },
+  {
+    "name": "Klågerup",
+    "stateCode": "M"
+  },
+  {
+    "name": "Klippan",
+    "stateCode": "M"
+  },
+  {
+    "name": "Knislinge",
+    "stateCode": "M"
+  },
+  {
+    "name": "Köpingebro",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kristianstad",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kvidinge",
+    "stateCode": "M"
+  },
+  {
+    "name": "Landskrona",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ljungbyhed",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ljunghusen",
+    "stateCode": "M"
+  },
+  {
+    "name": "Löberöd",
+    "stateCode": "M"
+  },
+  {
+    "name": "Löddeköpinge",
+    "stateCode": "M"
+  },
+  {
+    "name": "Lomma",
+    "stateCode": "M"
+  },
+  {
+    "name": "Lönsboda",
+    "stateCode": "M"
+  },
+  {
+    "name": "Lund",
+    "stateCode": "M"
+  },
+  {
+    "name": "Malmö",
+    "stateCode": "M"
+  },
+  {
+    "name": "Marieholm",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mörarp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Munka-Ljungby",
+    "stateCode": "M"
+  },
+  {
+    "name": "Näsum",
+    "stateCode": "M"
+  },
+  {
+    "name": "Norra Åsum",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ödåkra",
+    "stateCode": "M"
+  },
+  {
+    "name": "Önnestad",
+    "stateCode": "M"
+  },
+  {
+    "name": "Örkelljunga",
+    "stateCode": "M"
+  },
+  {
+    "name": "Osby",
+    "stateCode": "M"
+  },
+  {
+    "name": "Östra Ljungby",
+    "stateCode": "M"
+  },
+  {
+    "name": "Oxie",
+    "stateCode": "M"
+  },
+  {
+    "name": "Påarp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Perstorp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Rydebäck",
+    "stateCode": "M"
+  },
+  {
+    "name": "Rydsgård",
+    "stateCode": "M"
+  },
+  {
+    "name": "Sätofta",
+    "stateCode": "M"
+  },
+  {
+    "name": "Saxtorpsskogen",
+    "stateCode": "M"
+  },
+  {
+    "name": "Sibbhult",
+    "stateCode": "M"
+  },
+  {
+    "name": "Simrishamn",
+    "stateCode": "M"
+  },
+  {
+    "name": "Sjöbo",
+    "stateCode": "M"
+  },
+  {
+    "name": "Skanör med Falsterbo",
+    "stateCode": "M"
+  },
+  {
+    "name": "Skåre",
+    "stateCode": "M"
+  },
+  {
+    "name": "Skegrie",
+    "stateCode": "M"
+  },
+  {
+    "name": "Skivarp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Skurup",
+    "stateCode": "M"
+  },
+  {
+    "name": "Smygehamn",
+    "stateCode": "M"
+  },
+  {
+    "name": "Södra Sandby",
+    "stateCode": "M"
+  },
+  {
+    "name": "Sösdala",
+    "stateCode": "M"
+  },
+  {
+    "name": "Staffanstorp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Stångby",
+    "stateCode": "M"
+  },
+  {
+    "name": "Stehag",
+    "stateCode": "M"
+  },
+  {
+    "name": "Strövelstorp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Svalöv",
+    "stateCode": "M"
+  },
+  {
+    "name": "Svedala",
+    "stateCode": "M"
+  },
+  {
+    "name": "Teckomatorp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tollarp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tollarp1",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tomelilla",
+    "stateCode": "M"
+  },
+  {
+    "name": "Torekov",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tormestorp",
+    "stateCode": "M"
+  },
+  {
+    "name": "Trelleborg",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tygelsjö",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tyringe",
+    "stateCode": "M"
+  },
+  {
+    "name": "Valje",
+    "stateCode": "M"
+  },
+  {
+    "name": "Veberöd",
+    "stateCode": "M"
+  },
+  {
+    "name": "Vejbystrand",
+    "stateCode": "M"
+  },
+  {
+    "name": "Vellinge",
+    "stateCode": "M"
+  },
+  {
+    "name": "Viken",
+    "stateCode": "M"
+  },
+  {
+    "name": "Vinslöv",
+    "stateCode": "M"
+  },
+  {
+    "name": "Vittsjö",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ystad",
+    "stateCode": "M"
+  },
+  {
+    "name": "Åled",
+    "stateCode": "N"
+  },
+  {
+    "name": "Åsa",
+    "stateCode": "N"
+  },
+  {
+    "name": "Bua",
+    "stateCode": "N"
+  },
+  {
+    "name": "Falkenberg",
+    "stateCode": "N"
+  },
+  {
+    "name": "Fjärås kyrkby",
+    "stateCode": "N"
+  },
+  {
+    "name": "Frillesås",
+    "stateCode": "N"
+  },
+  {
+    "name": "Frösakull",
+    "stateCode": "N"
+  },
+  {
+    "name": "Fyllinge",
+    "stateCode": "N"
+  },
+  {
+    "name": "Getinge",
+    "stateCode": "N"
+  },
+  {
+    "name": "Glommen",
+    "stateCode": "N"
+  },
+  {
+    "name": "Gullbrandstorp",
+    "stateCode": "N"
+  },
+  {
+    "name": "Halmstad",
+    "stateCode": "N"
+  },
+  {
+    "name": "Harplinge",
+    "stateCode": "N"
+  },
+  {
+    "name": "Haverdal",
+    "stateCode": "N"
+  },
+  {
+    "name": "Hyltebruk",
+    "stateCode": "N"
+  },
+  {
+    "name": "Knäred",
+    "stateCode": "N"
+  },
+  {
+    "name": "Kungsbacka",
+    "stateCode": "N"
+  },
+  {
+    "name": "Laholm",
+    "stateCode": "N"
+  },
+  {
+    "name": "Mellbystrand",
+    "stateCode": "N"
+  },
+  {
+    "name": "Mjällby",
+    "stateCode": "N"
+  },
+  {
+    "name": "Onsala",
+    "stateCode": "N"
+  },
+  {
+    "name": "Oskarström",
+    "stateCode": "N"
+  },
+  {
+    "name": "Särö",
+    "stateCode": "N"
+  },
+  {
+    "name": "Skrea",
+    "stateCode": "N"
+  },
+  {
+    "name": "Steninge",
+    "stateCode": "N"
+  },
+  {
+    "name": "Torup",
+    "stateCode": "N"
+  },
+  {
+    "name": "Träslövsläge",
+    "stateCode": "N"
+  },
+  {
+    "name": "Trönninge",
+    "stateCode": "N"
+  },
+  {
+    "name": "Tvååker",
+    "stateCode": "N"
+  },
+  {
+    "name": "Vallda",
+    "stateCode": "N"
+  },
+  {
+    "name": "Varberg",
+    "stateCode": "N"
+  },
+  {
+    "name": "Västra Hagen",
+    "stateCode": "N"
+  },
+  {
+    "name": "Veddige",
+    "stateCode": "N"
+  },
+  {
+    "name": "Veinge",
+    "stateCode": "N"
+  },
+  {
+    "name": "Åkarp",
+    "stateCode": "O"
+  },
+  {
+    "name": "Alafors",
+    "stateCode": "O"
+  },
+  {
+    "name": "Alingsås",
+    "stateCode": "O"
+  },
+  {
+    "name": "Älvängen",
+    "stateCode": "O"
+  },
+  {
+    "name": "Åmål",
+    "stateCode": "O"
+  },
+  {
+    "name": "Andalen",
+    "stateCode": "O"
+  },
+  {
+    "name": "Anderstorp",
+    "stateCode": "O"
+  },
+  {
+    "name": "Angered",
+    "stateCode": "O"
+  },
+  {
+    "name": "Annelund",
+    "stateCode": "O"
+  },
+  {
+    "name": "Axvall",
+    "stateCode": "O"
+  },
+  {
+    "name": "Bengtsfors",
+    "stateCode": "O"
+  },
+  {
+    "name": "Billdal",
+    "stateCode": "O"
+  },
+  {
+    "name": "Billingsfors",
+    "stateCode": "O"
+  },
+  {
+    "name": "Björboholm",
+    "stateCode": "O"
+  },
+  {
+    "name": "Björkö",
+    "stateCode": "O"
+  },
+  {
+    "name": "Björlanda",
+    "stateCode": "O"
+  },
+  {
+    "name": "Bollebygd",
+    "stateCode": "O"
+  },
+  {
+    "name": "Borås",
+    "stateCode": "O"
+  },
+  {
+    "name": "Brålanda",
+    "stateCode": "O"
+  },
+  {
+    "name": "Brastad",
+    "stateCode": "O"
+  },
+  {
+    "name": "Dals Långed",
+    "stateCode": "O"
+  },
+  {
+    "name": "Dalsjöfors",
+    "stateCode": "O"
+  },
+  {
+    "name": "Diseröd",
+    "stateCode": "O"
+  },
+  {
+    "name": "Donsö",
+    "stateCode": "O"
+  },
+  {
+    "name": "Ed",
+    "stateCode": "O"
+  },
+  {
+    "name": "Ellös",
+    "stateCode": "O"
+  },
+  {
+    "name": "Eriksbo",
+    "stateCode": "O"
+  },
+  {
+    "name": "Falköping",
+    "stateCode": "O"
+  },
+  {
+    "name": "Färgelanda",
+    "stateCode": "O"
+  },
+  {
+    "name": "Floby",
+    "stateCode": "O"
+  },
+  {
+    "name": "Fristad",
+    "stateCode": "O"
+  },
+  {
+    "name": "Fritsla",
+    "stateCode": "O"
+  },
+  {
+    "name": "Furulund",
+    "stateCode": "O"
+  },
+  {
+    "name": "Gånghester",
+    "stateCode": "O"
+  },
+  {
+    "name": "Gårdsten",
+    "stateCode": "O"
+  },
+  {
+    "name": "Göta",
+    "stateCode": "O"
+  },
+  {
+    "name": "Göteborg",
+    "stateCode": "O"
+  },
+  {
+    "name": "Göteborgs stad",
+    "stateCode": "O"
+  },
+  {
+    "name": "Götene",
+    "stateCode": "O"
+  },
+  {
+    "name": "Gråbo",
+    "stateCode": "O"
+  },
+  {
+    "name": "Grästorp",
+    "stateCode": "O"
+  },
+  {
+    "name": "Grebbestad",
+    "stateCode": "O"
+  },
+  {
+    "name": "Gullspång",
+    "stateCode": "O"
+  },
+  {
+    "name": "Hammarkullen",
+    "stateCode": "O"
+  },
+  {
+    "name": "Henån",
+    "stateCode": "O"
+  },
+  {
+    "name": "Herrljunga",
+    "stateCode": "O"
+  },
+  {
+    "name": "Hindås",
+    "stateCode": "O"
+  },
+  {
+    "name": "Hjo",
+    "stateCode": "O"
+  },
+  {
+    "name": "Hjuvik",
+    "stateCode": "O"
+  },
+  {
+    "name": "Hönö",
+    "stateCode": "O"
+  },
+  {
+    "name": "Horred",
+    "stateCode": "O"
+  },
+  {
+    "name": "Hova",
+    "stateCode": "O"
+  },
+  {
+    "name": "Höviksnäs",
+    "stateCode": "O"
+  },
+  {
+    "name": "Hunnebostrand",
+    "stateCode": "O"
+  },
+  {
+    "name": "Ingared",
+    "stateCode": "O"
+  },
+  {
+    "name": "Jonstorp",
+    "stateCode": "O"
+  },
+  {
+    "name": "Jörlanda",
+    "stateCode": "O"
+  },
+  {
+    "name": "Källby",
+    "stateCode": "O"
+  },
+  {
+    "name": "Kållered",
+    "stateCode": "O"
+  },
+  {
+    "name": "Karlsborg",
+    "stateCode": "O"
+  },
+  {
+    "name": "Kinna",
+    "stateCode": "O"
+  },
+  {
+    "name": "Kode",
+    "stateCode": "O"
+  },
+  {
+    "name": "Kungälv",
+    "stateCode": "O"
+  },
+  {
+    "name": "Kungshamn",
+    "stateCode": "O"
+  },
+  {
+    "name": "Kvänum",
+    "stateCode": "O"
+  },
+  {
+    "name": "Landvetter",
+    "stateCode": "O"
+  },
+  {
+    "name": "Länghem",
+    "stateCode": "O"
+  },
+  {
+    "name": "Lerum",
+    "stateCode": "O"
+  },
+  {
+    "name": "Lidköping",
+    "stateCode": "O"
+  },
+  {
+    "name": "Lilla Edet",
+    "stateCode": "O"
+  },
+  {
+    "name": "Limmared",
+    "stateCode": "O"
+  },
+  {
+    "name": "Lindome",
+    "stateCode": "O"
+  },
+  {
+    "name": "Ljungskile",
+    "stateCode": "O"
+  },
+  {
+    "name": "Lödöse",
+    "stateCode": "O"
+  },
+  {
+    "name": "Lövgärdet",
+    "stateCode": "O"
+  },
+  {
+    "name": "Lysekil",
+    "stateCode": "O"
+  },
+  {
+    "name": "Majorna",
+    "stateCode": "O"
+  },
+  {
+    "name": "Mariestad",
+    "stateCode": "O"
+  },
+  {
+    "name": "Mellerud",
+    "stateCode": "O"
+  },
+  {
+    "name": "Mölltorp",
+    "stateCode": "O"
+  },
+  {
+    "name": "Mölndal",
+    "stateCode": "O"
+  },
+  {
+    "name": "Mölnlycke",
+    "stateCode": "O"
+  },
+  {
+    "name": "Munkedal",
+    "stateCode": "O"
+  },
+  {
+    "name": "Myggenäs",
+    "stateCode": "O"
+  },
+  {
+    "name": "Nolvik",
+    "stateCode": "O"
+  },
+  {
+    "name": "Nossebro",
+    "stateCode": "O"
+  },
+  {
+    "name": "Öckerö",
+    "stateCode": "O"
+  },
+  {
+    "name": "Ödsmål",
+    "stateCode": "O"
+  },
+  {
+    "name": "Öjersjö",
+    "stateCode": "O"
+  },
+  {
+    "name": "Olofstorp",
+    "stateCode": "O"
+  },
+  {
+    "name": "Olstorp",
+    "stateCode": "O"
+  },
+  {
+    "name": "Orust",
+    "stateCode": "O"
+  },
+  {
+    "name": "Partille",
+    "stateCode": "O"
+  },
+  {
+    "name": "Rannebergen",
+    "stateCode": "O"
+  },
+  {
+    "name": "Rävlanda",
+    "stateCode": "O"
+  },
+  {
+    "name": "Rönnäng",
+    "stateCode": "O"
+  },
+  {
+    "name": "Sålanda",
+    "stateCode": "O"
+  },
+  {
+    "name": "Sandared",
+    "stateCode": "O"
+  },
+  {
+    "name": "Sätila",
+    "stateCode": "O"
+  },
+  {
+    "name": "Sjömarken",
+    "stateCode": "O"
+  },
+  {
+    "name": "Sjuntorp",
+    "stateCode": "O"
+  },
+  {
+    "name": "Skara",
+    "stateCode": "O"
+  },
+  {
+    "name": "Skärhamn",
+    "stateCode": "O"
+  },
+  {
+    "name": "Skepplanda",
+    "stateCode": "O"
+  },
+  {
+    "name": "Skövde",
+    "stateCode": "O"
+  },
+  {
+    "name": "Skultorp",
+    "stateCode": "O"
+  },
+  {
+    "name": "Smögen",
+    "stateCode": "O"
+  },
+  {
+    "name": "Sollebrunn",
+    "stateCode": "O"
+  },
+  {
+    "name": "Stenkullen",
+    "stateCode": "O"
+  },
+  {
+    "name": "Stenstorp",
+    "stateCode": "O"
+  },
+  {
+    "name": "Stenungsund",
+    "stateCode": "O"
+  },
+  {
+    "name": "Stöpen",
+    "stateCode": "O"
+  },
+  {
+    "name": "Stora Höga",
+    "stateCode": "O"
+  },
+  {
+    "name": "Strömstad",
+    "stateCode": "O"
+  },
+  {
+    "name": "Styrsö",
+    "stateCode": "O"
+  },
+  {
+    "name": "Surte",
+    "stateCode": "O"
+  },
+  {
+    "name": "Svanesund",
+    "stateCode": "O"
+  },
+  {
+    "name": "Svenljunga",
+    "stateCode": "O"
+  },
+  {
+    "name": "Tanumshede",
+    "stateCode": "O"
+  },
+  {
+    "name": "Tibro",
+    "stateCode": "O"
+  },
+  {
+    "name": "Tidaholm",
+    "stateCode": "O"
+  },
+  {
+    "name": "Tjuvkil",
+    "stateCode": "O"
+  },
+  {
+    "name": "Töreboda",
+    "stateCode": "O"
+  },
+  {
+    "name": "Torslanda",
+    "stateCode": "O"
+  },
+  {
+    "name": "Tranemo",
+    "stateCode": "O"
+  },
+  {
+    "name": "Trollhättan",
+    "stateCode": "O"
+  },
+  {
+    "name": "Uddevalla",
+    "stateCode": "O"
+  },
+  {
+    "name": "Ulricehamn",
+    "stateCode": "O"
+  },
+  {
+    "name": "Vänersborg",
+    "stateCode": "O"
+  },
+  {
+    "name": "Vara",
+    "stateCode": "O"
+  },
+  {
+    "name": "Vårgårda",
+    "stateCode": "O"
+  },
+  {
+    "name": "Vargön",
+    "stateCode": "O"
+  },
+  {
+    "name": "Västra Frölunda",
+    "stateCode": "O"
+  },
+  {
+    "name": "Vinninga",
+    "stateCode": "O"
+  },
+  {
+    "name": "Viskafors",
+    "stateCode": "O"
+  },
+  {
+    "name": "Åmotfors",
+    "stateCode": "S"
+  },
+  {
+    "name": "Årjäng",
+    "stateCode": "S"
+  },
+  {
+    "name": "Arvika",
+    "stateCode": "S"
+  },
+  {
+    "name": "Björneborg",
+    "stateCode": "S"
+  },
+  {
+    "name": "Charlottenberg",
+    "stateCode": "S"
+  },
+  {
+    "name": "Deje",
+    "stateCode": "S"
+  },
+  {
+    "name": "Ekshärad",
+    "stateCode": "S"
+  },
+  {
+    "name": "Filipstad",
+    "stateCode": "S"
+  },
+  {
+    "name": "Forshaga",
+    "stateCode": "S"
+  },
+  {
+    "name": "Grums",
+    "stateCode": "S"
+  },
+  {
+    "name": "Hagfors",
+    "stateCode": "S"
+  },
+  {
+    "name": "Karlstad",
+    "stateCode": "S"
+  },
+  {
+    "name": "Kil",
+    "stateCode": "S"
+  },
+  {
+    "name": "Kristinehamn",
+    "stateCode": "S"
+  },
+  {
+    "name": "Molkom",
+    "stateCode": "S"
+  },
+  {
+    "name": "Munkfors",
+    "stateCode": "S"
+  },
+  {
+    "name": "Råtorp",
+    "stateCode": "S"
+  },
+  {
+    "name": "Säffle",
+    "stateCode": "S"
+  },
+  {
+    "name": "Skåre",
+    "stateCode": "S"
+  },
+  {
+    "name": "Skattkärr",
+    "stateCode": "S"
+  },
+  {
+    "name": "Skoghall",
+    "stateCode": "S"
+  },
+  {
+    "name": "Slottsbron",
+    "stateCode": "S"
+  },
+  {
+    "name": "Storfors",
+    "stateCode": "S"
+  },
+  {
+    "name": "Sunne",
+    "stateCode": "S"
+  },
+  {
+    "name": "Töcksfors",
+    "stateCode": "S"
+  },
+  {
+    "name": "Torsby",
+    "stateCode": "S"
+  },
+  {
+    "name": "Vålberg",
+    "stateCode": "S"
+  },
+  {
+    "name": "Åsbro",
+    "stateCode": "T"
+  },
+  {
+    "name": "Askersund",
+    "stateCode": "T"
+  },
+  {
+    "name": "Degerfors",
+    "stateCode": "T"
+  },
+  {
+    "name": "Ekeby-Almby",
+    "stateCode": "T"
+  },
+  {
+    "name": "Fellingsbro",
+    "stateCode": "T"
+  },
+  {
+    "name": "Fjugesta",
+    "stateCode": "T"
+  },
+  {
+    "name": "Frövi",
+    "stateCode": "T"
+  },
+  {
+    "name": "Garphyttan",
+    "stateCode": "T"
+  },
+  {
+    "name": "Hällabrottet",
+    "stateCode": "T"
+  },
+  {
+    "name": "Hällefors",
+    "stateCode": "T"
+  },
+  {
+    "name": "Hallsberg",
+    "stateCode": "T"
+  },
+  {
+    "name": "Hovsta",
+    "stateCode": "T"
+  },
+  {
+    "name": "Karlskoga",
+    "stateCode": "T"
+  },
+  {
+    "name": "Kopparberg",
+    "stateCode": "T"
+  },
+  {
+    "name": "Kumla",
+    "stateCode": "T"
+  },
+  {
+    "name": "Laxå",
+    "stateCode": "T"
+  },
+  {
+    "name": "Lindesberg",
+    "stateCode": "T"
+  },
+  {
+    "name": "Nora",
+    "stateCode": "T"
+  },
+  {
+    "name": "Odensbacken",
+    "stateCode": "T"
+  },
+  {
+    "name": "Örebro",
+    "stateCode": "T"
+  },
+  {
+    "name": "Pålsboda",
+    "stateCode": "T"
+  },
+  {
+    "name": "Sköllersta",
+    "stateCode": "T"
+  },
+  {
+    "name": "Storå",
+    "stateCode": "T"
+  },
+  {
+    "name": "Vintrosa",
+    "stateCode": "T"
+  },
+  {
+    "name": "Arboga",
+    "stateCode": "U"
+  },
+  {
+    "name": "Barkarö",
+    "stateCode": "U"
+  },
+  {
+    "name": "Dingtuna",
+    "stateCode": "U"
+  },
+  {
+    "name": "Enhagen-Ekbacken",
+    "stateCode": "U"
+  },
+  {
+    "name": "Fagersta",
+    "stateCode": "U"
+  },
+  {
+    "name": "Hallstahammar",
+    "stateCode": "U"
+  },
+  {
+    "name": "Hökåsen",
+    "stateCode": "U"
+  },
+  {
+    "name": "Irsta",
+    "stateCode": "U"
+  },
+  {
+    "name": "Kolbäck",
+    "stateCode": "U"
+  },
+  {
+    "name": "Kolsva",
+    "stateCode": "U"
+  },
+  {
+    "name": "Köping",
+    "stateCode": "U"
+  },
+  {
+    "name": "Kungsör",
+    "stateCode": "U"
+  },
+  {
+    "name": "Norberg",
+    "stateCode": "U"
+  },
+  {
+    "name": "Ramnäs",
+    "stateCode": "U"
+  },
+  {
+    "name": "Sala",
+    "stateCode": "U"
+  },
+  {
+    "name": "Skinnskatteberg",
+    "stateCode": "U"
+  },
+  {
+    "name": "Skultuna",
+    "stateCode": "U"
+  },
+  {
+    "name": "Surahammar",
+    "stateCode": "U"
+  },
+  {
+    "name": "Tillberga",
+    "stateCode": "U"
+  },
+  {
+    "name": "Västerås",
+    "stateCode": "U"
+  },
+  {
+    "name": "Abborrberget",
+    "stateCode": "W"
+  },
+  {
+    "name": "Älvdalen",
+    "stateCode": "W"
+  },
+  {
+    "name": "Avesta",
+    "stateCode": "W"
+  },
+  {
+    "name": "Bjursås",
+    "stateCode": "W"
+  },
+  {
+    "name": "Borlänge",
+    "stateCode": "W"
+  },
+  {
+    "name": "Brunna",
+    "stateCode": "W"
+  },
+  {
+    "name": "Djurås",
+    "stateCode": "W"
+  },
+  {
+    "name": "Enbacka",
+    "stateCode": "W"
+  },
+  {
+    "name": "Falun",
+    "stateCode": "W"
+  },
+  {
+    "name": "Gagnef",
+    "stateCode": "W"
+  },
+  {
+    "name": "Grängesberg",
+    "stateCode": "W"
+  },
+  {
+    "name": "Grycksbo",
+    "stateCode": "W"
+  },
+  {
+    "name": "Hedemora",
+    "stateCode": "W"
+  },
+  {
+    "name": "Horndal",
+    "stateCode": "W"
+  },
+  {
+    "name": "Insjön",
+    "stateCode": "W"
+  },
+  {
+    "name": "Järna",
+    "stateCode": "W"
+  },
+  {
+    "name": "Krylbo",
+    "stateCode": "W"
+  },
+  {
+    "name": "Långshyttan",
+    "stateCode": "W"
+  },
+  {
+    "name": "Leksand",
+    "stateCode": "W"
+  },
+  {
+    "name": "Ludvika",
+    "stateCode": "W"
+  },
+  {
+    "name": "Malung",
+    "stateCode": "W"
+  },
+  {
+    "name": "Mockfjärd",
+    "stateCode": "W"
+  },
+  {
+    "name": "Mora",
+    "stateCode": "W"
+  },
+  {
+    "name": "Nyhammar",
+    "stateCode": "W"
+  },
+  {
+    "name": "Ornäs",
+    "stateCode": "W"
+  },
+  {
+    "name": "Orsa",
+    "stateCode": "W"
+  },
+  {
+    "name": "Rättvik",
+    "stateCode": "W"
+  },
+  {
+    "name": "Romme",
+    "stateCode": "W"
+  },
+  {
+    "name": "Säter",
+    "stateCode": "W"
+  },
+  {
+    "name": "Siljansnäs",
+    "stateCode": "W"
+  },
+  {
+    "name": "Smedby",
+    "stateCode": "W"
+  },
+  {
+    "name": "Smedjebacken",
+    "stateCode": "W"
+  },
+  {
+    "name": "Svärdsjö",
+    "stateCode": "W"
+  },
+  {
+    "name": "Vansbro",
+    "stateCode": "W"
+  },
+  {
+    "name": "Vikarbyn",
+    "stateCode": "W"
+  },
+  {
+    "name": "Alfta",
+    "stateCode": "X"
+  },
+  {
+    "name": "Arbrå",
+    "stateCode": "X"
+  },
+  {
+    "name": "Årsunda",
+    "stateCode": "X"
+  },
+  {
+    "name": "Bergby",
+    "stateCode": "X"
+  },
+  {
+    "name": "Bergsjö",
+    "stateCode": "X"
+  },
+  {
+    "name": "Bollnäs",
+    "stateCode": "X"
+  },
+  {
+    "name": "Delsbo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Edsbyn",
+    "stateCode": "X"
+  },
+  {
+    "name": "Färila",
+    "stateCode": "X"
+  },
+  {
+    "name": "Forsbacka",
+    "stateCode": "X"
+  },
+  {
+    "name": "Gävle",
+    "stateCode": "X"
+  },
+  {
+    "name": "Gnarp",
+    "stateCode": "X"
+  },
+  {
+    "name": "Hedesunda",
+    "stateCode": "X"
+  },
+  {
+    "name": "Hofors",
+    "stateCode": "X"
+  },
+  {
+    "name": "Hudiksvall",
+    "stateCode": "X"
+  },
+  {
+    "name": "Iggesund",
+    "stateCode": "X"
+  },
+  {
+    "name": "Järbo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Järvsö",
+    "stateCode": "X"
+  },
+  {
+    "name": "Kilafors",
+    "stateCode": "X"
+  },
+  {
+    "name": "Ljusdal",
+    "stateCode": "X"
+  },
+  {
+    "name": "Ljusne",
+    "stateCode": "X"
+  },
+  {
+    "name": "Ockelbo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Sandarne",
+    "stateCode": "X"
+  },
+  {
+    "name": "Sandviken",
+    "stateCode": "X"
+  },
+  {
+    "name": "Söderhamn",
+    "stateCode": "X"
+  },
+  {
+    "name": "Sörforsa",
+    "stateCode": "X"
+  },
+  {
+    "name": "Storvik",
+    "stateCode": "X"
+  },
+  {
+    "name": "Valbo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Ånge",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Ås",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Bergeforsen",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Bjästa",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Bollstabruk",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Bredbyn",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Fränsta",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Härnösand",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Husum",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Johannedal",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Köpmanholmen",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Kramfors",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Kvissleby",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Långsele",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Matfors",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Njurundabommen",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Nolby",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Örnsköldsvik",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Skottsund",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Sollefteå",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Söråker",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Stockvik",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Sundsbruk",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Sundsvall",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Timrå",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Vi",
+    "stateCode": "Y"
+  }
+]

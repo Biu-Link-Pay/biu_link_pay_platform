@@ -1,0 +1,1926 @@
+[
+  {
+    "name": "Anse La Raye",
+    "stateCode": "01"
+  },
+  {
+    "name": "Au Tabor",
+    "stateCode": "01"
+  },
+  {
+    "name": "Au Tabor Hill",
+    "stateCode": "01"
+  },
+  {
+    "name": "Bois D'Inde",
+    "stateCode": "01"
+  },
+  {
+    "name": "Caico/Millet",
+    "stateCode": "01"
+  },
+  {
+    "name": "Canaries",
+    "stateCode": "01"
+  },
+  {
+    "name": "Champen Estate",
+    "stateCode": "01"
+  },
+  {
+    "name": "Derriere Lagoon",
+    "stateCode": "01"
+  },
+  {
+    "name": "Durandeau",
+    "stateCode": "01"
+  },
+  {
+    "name": "Enbar Pwin",
+    "stateCode": "01"
+  },
+  {
+    "name": "Jacmel",
+    "stateCode": "01"
+  },
+  {
+    "name": "Jean Baptiste",
+    "stateCode": "01"
+  },
+  {
+    "name": "La Trielle",
+    "stateCode": "01"
+  },
+  {
+    "name": "Massacre",
+    "stateCode": "01"
+  },
+  {
+    "name": "Millet",
+    "stateCode": "01"
+  },
+  {
+    "name": "Morne Ciseaux",
+    "stateCode": "01"
+  },
+  {
+    "name": "Morne D'Or",
+    "stateCode": "01"
+  },
+  {
+    "name": "Roseau Valley",
+    "stateCode": "01"
+  },
+  {
+    "name": "St Lawrence",
+    "stateCode": "01"
+  },
+  {
+    "name": "St Lawrence Estate",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tete Chemin",
+    "stateCode": "01"
+  },
+  {
+    "name": "Vanard",
+    "stateCode": "01"
+  },
+  {
+    "name": "Venus",
+    "stateCode": "01"
+  },
+  {
+    "name": "Village",
+    "stateCode": "01"
+  },
+  {
+    "name": "Village/Petite Bourgh",
+    "stateCode": "01"
+  },
+  {
+    "name": "Active Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Agard Lands/Morne Dudon",
+    "stateCode": "02"
+  },
+  {
+    "name": "Almondale",
+    "stateCode": "02"
+  },
+  {
+    "name": "Aurendel Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Babonneau Proper",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bagatelle",
+    "stateCode": "02"
+  },
+  {
+    "name": "Balata",
+    "stateCode": "02"
+  },
+  {
+    "name": "Banannes Bay",
+    "stateCode": "02"
+  },
+  {
+    "name": "Barnard Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Barre Denis",
+    "stateCode": "02"
+  },
+  {
+    "name": "Barre Duchaussee",
+    "stateCode": "02"
+  },
+  {
+    "name": "Barre St.Joseph",
+    "stateCode": "02"
+  },
+  {
+    "name": "Belair",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bella Rosa",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bexon",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bisee",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bishop'S Gap",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bissee",
+    "stateCode": "02"
+  },
+  {
+    "name": "Black Mallet",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bocage",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bois Catchet",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bois Patat",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cabiche/Babonneau",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cacoa/Babonneau",
+    "stateCode": "02"
+  },
+  {
+    "name": "Calvary",
+    "stateCode": "02"
+  },
+  {
+    "name": "Capital Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Carellie",
+    "stateCode": "02"
+  },
+  {
+    "name": "Castries",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cedars",
+    "stateCode": "02"
+  },
+  {
+    "name": "Chase Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Chassin/Babonneau",
+    "stateCode": "02"
+  },
+  {
+    "name": "Choppin Ridge/Sarot",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ciceron",
+    "stateCode": "02"
+  },
+  {
+    "name": "City",
+    "stateCode": "02"
+  },
+  {
+    "name": "City Gate/La Clery",
+    "stateCode": "02"
+  },
+  {
+    "name": "Conway/Waterfront",
+    "stateCode": "02"
+  },
+  {
+    "name": "Coolie Town",
+    "stateCode": "02"
+  },
+  {
+    "name": "Coubaril",
+    "stateCode": "02"
+  },
+  {
+    "name": "Crownlands/Marc",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cul De Sac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Darling Road",
+    "stateCode": "02"
+  },
+  {
+    "name": "Deglos",
+    "stateCode": "02"
+  },
+  {
+    "name": "Derierre Fort/Old Victoria Road",
+    "stateCode": "02"
+  },
+  {
+    "name": "Dubrassay",
+    "stateCode": "02"
+  },
+  {
+    "name": "En Pois Doux/Babonneau",
+    "stateCode": "02"
+  },
+  {
+    "name": "Entrepot",
+    "stateCode": "02"
+  },
+  {
+    "name": "Faux A Chaud",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ferrand",
+    "stateCode": "02"
+  },
+  {
+    "name": "Floissac/Marc",
+    "stateCode": "02"
+  },
+  {
+    "name": "Fond Assau/Babonneau",
+    "stateCode": "02"
+  },
+  {
+    "name": "Fond Canie",
+    "stateCode": "02"
+  },
+  {
+    "name": "Forestiere",
+    "stateCode": "02"
+  },
+  {
+    "name": "George Charles Boulevard",
+    "stateCode": "02"
+  },
+  {
+    "name": "Girard",
+    "stateCode": "02"
+  },
+  {
+    "name": "Goergeville",
+    "stateCode": "02"
+  },
+  {
+    "name": "Goodlands",
+    "stateCode": "02"
+  },
+  {
+    "name": "Grass Street",
+    "stateCode": "02"
+  },
+  {
+    "name": "Green Gold",
+    "stateCode": "02"
+  },
+  {
+    "name": "Guesneau",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hill 20/Babonneau",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hillcrest Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hospital Road",
+    "stateCode": "02"
+  },
+  {
+    "name": "Independence City",
+    "stateCode": "02"
+  },
+  {
+    "name": "John Compton Highway",
+    "stateCode": "02"
+  },
+  {
+    "name": "L'Anse Road",
+    "stateCode": "02"
+  },
+  {
+    "name": "La Carierre",
+    "stateCode": "02"
+  },
+  {
+    "name": "La Clery",
+    "stateCode": "02"
+  },
+  {
+    "name": "La Croix Maingot",
+    "stateCode": "02"
+  },
+  {
+    "name": "La Pansee",
+    "stateCode": "02"
+  },
+  {
+    "name": "La Toc",
+    "stateCode": "02"
+  },
+  {
+    "name": "Labayee",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lastic Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Leslie Land",
+    "stateCode": "02"
+  },
+  {
+    "name": "Marc",
+    "stateCode": "02"
+  },
+  {
+    "name": "Marchand",
+    "stateCode": "02"
+  },
+  {
+    "name": "Marigot",
+    "stateCode": "02"
+  },
+  {
+    "name": "Maynard Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Miami/Bexon",
+    "stateCode": "02"
+  },
+  {
+    "name": "Monkey Town Ciceron",
+    "stateCode": "02"
+  },
+  {
+    "name": "Morne Assau/Babonneau",
+    "stateCode": "02"
+  },
+  {
+    "name": "Morne Dudon",
+    "stateCode": "02"
+  },
+  {
+    "name": "Morne Road",
+    "stateCode": "02"
+  },
+  {
+    "name": "Morne Rouge/Marc",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mount Pleasant",
+    "stateCode": "02"
+  },
+  {
+    "name": "New Village",
+    "stateCode": "02"
+  },
+  {
+    "name": "Odsan",
+    "stateCode": "02"
+  },
+  {
+    "name": "Parker'S Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Patterson'S Gap",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pavee",
+    "stateCode": "02"
+  },
+  {
+    "name": "Peart'S Gap",
+    "stateCode": "02"
+  },
+  {
+    "name": "Perou",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pointe Seraphine",
+    "stateCode": "02"
+  },
+  {
+    "name": "Quarte Chemins",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ravine Chabot",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ravine Poisson",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ravine Touterelle",
+    "stateCode": "02"
+  },
+  {
+    "name": "Resinard/Babonneau",
+    "stateCode": "02"
+  },
+  {
+    "name": "Rock Hall",
+    "stateCode": "02"
+  },
+  {
+    "name": "Rose Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "San Soucis",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sand De Feu",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sarot",
+    "stateCode": "02"
+  },
+  {
+    "name": "Summersdale",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sunbilt",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sunny Acres",
+    "stateCode": "02"
+  },
+  {
+    "name": "Talvern",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tapion",
+    "stateCode": "02"
+  },
+  {
+    "name": "The Morne",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ti Colon",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ti Rocher",
+    "stateCode": "02"
+  },
+  {
+    "name": "Trois Piton",
+    "stateCode": "02"
+  },
+  {
+    "name": "Trou Cochan/Marc",
+    "stateCode": "02"
+  },
+  {
+    "name": "Trou Florent/Marc",
+    "stateCode": "02"
+  },
+  {
+    "name": "Trou Rouge",
+    "stateCode": "02"
+  },
+  {
+    "name": "Vide Bouteille",
+    "stateCode": "02"
+  },
+  {
+    "name": "Vigie",
+    "stateCode": "02"
+  },
+  {
+    "name": "Waterworks",
+    "stateCode": "02"
+  },
+  {
+    "name": "Wilton'S Yard/Grave Yard",
+    "stateCode": "02"
+  },
+  {
+    "name": "Yorke Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Belle Vue",
+    "stateCode": "03"
+  },
+  {
+    "name": "Bois Dinde",
+    "stateCode": "03"
+  },
+  {
+    "name": "Caffiere",
+    "stateCode": "03"
+  },
+  {
+    "name": "Cedars/Chu Tigre",
+    "stateCode": "03"
+  },
+  {
+    "name": "Choiseul",
+    "stateCode": "03"
+  },
+  {
+    "name": "Christian Hill",
+    "stateCode": "03"
+  },
+  {
+    "name": "Dacretin",
+    "stateCode": "03"
+  },
+  {
+    "name": "Debreuil",
+    "stateCode": "03"
+  },
+  {
+    "name": "Delcer",
+    "stateCode": "03"
+  },
+  {
+    "name": "Derriere Morne",
+    "stateCode": "03"
+  },
+  {
+    "name": "Dugard",
+    "stateCode": "03"
+  },
+  {
+    "name": "Dupre",
+    "stateCode": "03"
+  },
+  {
+    "name": "Esperance",
+    "stateCode": "03"
+  },
+  {
+    "name": "Franciou",
+    "stateCode": "03"
+  },
+  {
+    "name": "Industry",
+    "stateCode": "03"
+  },
+  {
+    "name": "La Fargue",
+    "stateCode": "03"
+  },
+  {
+    "name": "La Pointe",
+    "stateCode": "03"
+  },
+  {
+    "name": "Lamaze",
+    "stateCode": "03"
+  },
+  {
+    "name": "Le Riche",
+    "stateCode": "03"
+  },
+  {
+    "name": "Mailly Motete",
+    "stateCode": "03"
+  },
+  {
+    "name": "Martin",
+    "stateCode": "03"
+  },
+  {
+    "name": "Mongouge",
+    "stateCode": "03"
+  },
+  {
+    "name": "Monzie",
+    "stateCode": "03"
+  },
+  {
+    "name": "Morne Jacques",
+    "stateCode": "03"
+  },
+  {
+    "name": "Morne Sion",
+    "stateCode": "03"
+  },
+  {
+    "name": "Motete",
+    "stateCode": "03"
+  },
+  {
+    "name": "New Field/Fiette",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ponyon",
+    "stateCode": "03"
+  },
+  {
+    "name": "Raveneau",
+    "stateCode": "03"
+  },
+  {
+    "name": "Reunion",
+    "stateCode": "03"
+  },
+  {
+    "name": "River Doree",
+    "stateCode": "03"
+  },
+  {
+    "name": "Roblot",
+    "stateCode": "03"
+  },
+  {
+    "name": "Sauzay",
+    "stateCode": "03"
+  },
+  {
+    "name": "Savannesgeorge/Constitution",
+    "stateCode": "03"
+  },
+  {
+    "name": "Victoria",
+    "stateCode": "03"
+  },
+  {
+    "name": "Village",
+    "stateCode": "03"
+  },
+  {
+    "name": "Anse Canot",
+    "stateCode": "05"
+  },
+  {
+    "name": "Athens",
+    "stateCode": "05"
+  },
+  {
+    "name": "Au Leon",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bara Bara",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bazile",
+    "stateCode": "05"
+  },
+  {
+    "name": "Belmont",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bois Joli",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bordelais",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bosquet D'Or",
+    "stateCode": "05"
+  },
+  {
+    "name": "Delaide",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dennery",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dennery By Pass",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dennery By Pass/Green Mountain",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dennery By Pass/Rocky Lane",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dennery By Pass/White Rock Gardens",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dennery Village",
+    "stateCode": "05"
+  },
+  {
+    "name": "Derniere Riviere",
+    "stateCode": "05"
+  },
+  {
+    "name": "Derniere Riviere/Fond Maricient",
+    "stateCode": "05"
+  },
+  {
+    "name": "Derniere Riviere/Mardi Gras/Morne Caca Cochon",
+    "stateCode": "05"
+  },
+  {
+    "name": "Derniere Riviere/Morne Panache",
+    "stateCode": "05"
+  },
+  {
+    "name": "Despinoze",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dubonnaire",
+    "stateCode": "05"
+  },
+  {
+    "name": "Gadette",
+    "stateCode": "05"
+  },
+  {
+    "name": "Grande Ravine",
+    "stateCode": "05"
+  },
+  {
+    "name": "Grande Riviere",
+    "stateCode": "05"
+  },
+  {
+    "name": "Grande Riviere/Des Branch",
+    "stateCode": "05"
+  },
+  {
+    "name": "Grande Riviere/En Leur Morne/Discompere",
+    "stateCode": "05"
+  },
+  {
+    "name": "Grande Riviere/Funier",
+    "stateCode": "05"
+  },
+  {
+    "name": "Grande Riviere/Morne Caca Cochon",
+    "stateCode": "05"
+  },
+  {
+    "name": "La Caye",
+    "stateCode": "05"
+  },
+  {
+    "name": "La Pelle",
+    "stateCode": "05"
+  },
+  {
+    "name": "La Pointe",
+    "stateCode": "05"
+  },
+  {
+    "name": "La Ressource",
+    "stateCode": "05"
+  },
+  {
+    "name": "Lumiere",
+    "stateCode": "05"
+  },
+  {
+    "name": "Morne Panache",
+    "stateCode": "05"
+  },
+  {
+    "name": "Riche Fond",
+    "stateCode": "05"
+  },
+  {
+    "name": "Riche Fond/La Belle Vie",
+    "stateCode": "05"
+  },
+  {
+    "name": "Riche Fond/New Village",
+    "stateCode": "05"
+  },
+  {
+    "name": "St. Joseph Estate",
+    "stateCode": "05"
+  },
+  {
+    "name": "Thamazo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Beausejour",
+    "stateCode": "06"
+  },
+  {
+    "name": "Beausejour/Fostin'S Development",
+    "stateCode": "06"
+  },
+  {
+    "name": "Beausejour/Ndc",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bella Rosa",
+    "stateCode": "06"
+  },
+  {
+    "name": "Belle Vue",
+    "stateCode": "06"
+  },
+  {
+    "name": "Belle Vue Estate",
+    "stateCode": "06"
+  },
+  {
+    "name": "Boguis",
+    "stateCode": "06"
+  },
+  {
+    "name": "Boguis/Desa Blond",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bois D'Orange",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bois D'Ornange/Trouya",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bonneterre",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bonneterre Gardens",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cap Estate",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cap Estate/Becune Point",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cap Estate/Caribbean Park",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cap Estate/Golf Park",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cap Estate/Lower Saline Point",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cap Estate/Mon Du Cap",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cap Estate/Ranch Site",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cap Estate/Saddlec Back",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cap Estate/Upper Saline Point",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cas En Bas",
+    "stateCode": "06"
+  },
+  {
+    "name": "Caye Manje'",
+    "stateCode": "06"
+  },
+  {
+    "name": "Corinth",
+    "stateCode": "06"
+  },
+  {
+    "name": "Corinth Estate",
+    "stateCode": "06"
+  },
+  {
+    "name": "Corinth/La Bel Lair",
+    "stateCode": "06"
+  },
+  {
+    "name": "Dauphin",
+    "stateCode": "06"
+  },
+  {
+    "name": "Des Barras",
+    "stateCode": "06"
+  },
+  {
+    "name": "Des Barras/Cacolie",
+    "stateCode": "06"
+  },
+  {
+    "name": "Desrameaux",
+    "stateCode": "06"
+  },
+  {
+    "name": "Garrand",
+    "stateCode": "06"
+  },
+  {
+    "name": "Grand Riviere",
+    "stateCode": "06"
+  },
+  {
+    "name": "Grande Riviere/Assou Canal",
+    "stateCode": "06"
+  },
+  {
+    "name": "Grande Riviere/Ingle Woods",
+    "stateCode": "06"
+  },
+  {
+    "name": "Grande Riviere/Morne Serpent",
+    "stateCode": "06"
+  },
+  {
+    "name": "Grande Riviere/Norbert",
+    "stateCode": "06"
+  },
+  {
+    "name": "Grande Riviere/Piat",
+    "stateCode": "06"
+  },
+  {
+    "name": "Grande Riviere/White Rock",
+    "stateCode": "06"
+  },
+  {
+    "name": "Gros Islet",
+    "stateCode": "06"
+  },
+  {
+    "name": "Gros Islet Town",
+    "stateCode": "06"
+  },
+  {
+    "name": "Gros Islet/Edge Water",
+    "stateCode": "06"
+  },
+  {
+    "name": "L'Hermitage",
+    "stateCode": "06"
+  },
+  {
+    "name": "La Croix Chabourgh",
+    "stateCode": "06"
+  },
+  {
+    "name": "La Guerre",
+    "stateCode": "06"
+  },
+  {
+    "name": "La Guerre/Chicken Back Street",
+    "stateCode": "06"
+  },
+  {
+    "name": "Marisule",
+    "stateCode": "06"
+  },
+  {
+    "name": "Marisule/Bon Air",
+    "stateCode": "06"
+  },
+  {
+    "name": "Marisule/East Winds",
+    "stateCode": "06"
+  },
+  {
+    "name": "Marisule/La Brellotte",
+    "stateCode": "06"
+  },
+  {
+    "name": "Marisule/Top Of The World",
+    "stateCode": "06"
+  },
+  {
+    "name": "Marquis Estate",
+    "stateCode": "06"
+  },
+  {
+    "name": "Massade",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Careffe",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Cletus Village",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/La Borne",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/La Borne/Sans Souci",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/La Retraite",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Lafeuillee",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Lawi Fwen",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Malgretoute",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Moulin A Vent",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Ravine Macock",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Riviere Mitan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Ti Dauphin",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Vieux Sucreic",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Vieux Sucreic/Bois D'Inde",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monchy/Vieux Sucreic/Careffe",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mongiraud",
+    "stateCode": "06"
+  },
+  {
+    "name": "Monier",
+    "stateCode": "06"
+  },
+  {
+    "name": "Morne Citon",
+    "stateCode": "06"
+  },
+  {
+    "name": "Paix Bouche",
+    "stateCode": "06"
+  },
+  {
+    "name": "Pigeon Island",
+    "stateCode": "06"
+  },
+  {
+    "name": "Plateau",
+    "stateCode": "06"
+  },
+  {
+    "name": "Reduit",
+    "stateCode": "06"
+  },
+  {
+    "name": "Reduit Orchard",
+    "stateCode": "06"
+  },
+  {
+    "name": "Reduit Park",
+    "stateCode": "06"
+  },
+  {
+    "name": "Rodney Bay",
+    "stateCode": "06"
+  },
+  {
+    "name": "Rodney Heights",
+    "stateCode": "06"
+  },
+  {
+    "name": "Union",
+    "stateCode": "06"
+  },
+  {
+    "name": "Union Terrace",
+    "stateCode": "06"
+  },
+  {
+    "name": "Union/Ti Morne",
+    "stateCode": "06"
+  },
+  {
+    "name": "Annus",
+    "stateCode": "07"
+  },
+  {
+    "name": "Balca",
+    "stateCode": "07"
+  },
+  {
+    "name": "Balca/En Leur Ba",
+    "stateCode": "07"
+  },
+  {
+    "name": "Balembouche",
+    "stateCode": "07"
+  },
+  {
+    "name": "Banse",
+    "stateCode": "07"
+  },
+  {
+    "name": "Banse La Grace",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bongalo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Daban",
+    "stateCode": "07"
+  },
+  {
+    "name": "Fond Berange",
+    "stateCode": "07"
+  },
+  {
+    "name": "Gayabois",
+    "stateCode": "07"
+  },
+  {
+    "name": "Gentil",
+    "stateCode": "07"
+  },
+  {
+    "name": "Getrine",
+    "stateCode": "07"
+  },
+  {
+    "name": "Giraud",
+    "stateCode": "07"
+  },
+  {
+    "name": "H'Erelle",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kennedy Highway/Laborie Bypass",
+    "stateCode": "07"
+  },
+  {
+    "name": "La Haut",
+    "stateCode": "07"
+  },
+  {
+    "name": "La Perle",
+    "stateCode": "07"
+  },
+  {
+    "name": "Laborie",
+    "stateCode": "07"
+  },
+  {
+    "name": "Londonderry",
+    "stateCode": "07"
+  },
+  {
+    "name": "Macdomel",
+    "stateCode": "07"
+  },
+  {
+    "name": "Morne Gomier",
+    "stateCode": "07"
+  },
+  {
+    "name": "Morne Le Blanc",
+    "stateCode": "07"
+  },
+  {
+    "name": "Olibo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Parc Estate",
+    "stateCode": "07"
+  },
+  {
+    "name": "Piaye",
+    "stateCode": "07"
+  },
+  {
+    "name": "Saltibus",
+    "stateCode": "07"
+  },
+  {
+    "name": "Saphire",
+    "stateCode": "07"
+  },
+  {
+    "name": "Tete Morne",
+    "stateCode": "07"
+  },
+  {
+    "name": "Village",
+    "stateCode": "07"
+  },
+  {
+    "name": "Warwick/Daban",
+    "stateCode": "07"
+  },
+  {
+    "name": "Anse Ger",
+    "stateCode": "08"
+  },
+  {
+    "name": "Beauchamp",
+    "stateCode": "08"
+  },
+  {
+    "name": "Blanchard",
+    "stateCode": "08"
+  },
+  {
+    "name": "Canelles",
+    "stateCode": "08"
+  },
+  {
+    "name": "Cazuca",
+    "stateCode": "08"
+  },
+  {
+    "name": "Chique/Blanchard",
+    "stateCode": "08"
+  },
+  {
+    "name": "Coolie Town",
+    "stateCode": "08"
+  },
+  {
+    "name": "Delomel",
+    "stateCode": "08"
+  },
+  {
+    "name": "Des Blanchard",
+    "stateCode": "08"
+  },
+  {
+    "name": "Desruisseaux",
+    "stateCode": "08"
+  },
+  {
+    "name": "Dugard",
+    "stateCode": "08"
+  },
+  {
+    "name": "Escap",
+    "stateCode": "08"
+  },
+  {
+    "name": "Fond D'Lor/Dugard",
+    "stateCode": "08"
+  },
+  {
+    "name": "Fond Estate",
+    "stateCode": "08"
+  },
+  {
+    "name": "Fond/Desruisseaux",
+    "stateCode": "08"
+  },
+  {
+    "name": "Gomier",
+    "stateCode": "08"
+  },
+  {
+    "name": "Gouette",
+    "stateCode": "08"
+  },
+  {
+    "name": "Honeymoon Beach",
+    "stateCode": "08"
+  },
+  {
+    "name": "L'Eau Mineau",
+    "stateCode": "08"
+  },
+  {
+    "name": "La Courville",
+    "stateCode": "08"
+  },
+  {
+    "name": "La Pointe",
+    "stateCode": "08"
+  },
+  {
+    "name": "La Tille",
+    "stateCode": "08"
+  },
+  {
+    "name": "Lezy",
+    "stateCode": "08"
+  },
+  {
+    "name": "Lombard",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mahaut",
+    "stateCode": "08"
+  },
+  {
+    "name": "Malgretoute",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mamiku",
+    "stateCode": "08"
+  },
+  {
+    "name": "Micoud",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mon Repos",
+    "stateCode": "08"
+  },
+  {
+    "name": "Moreau",
+    "stateCode": "08"
+  },
+  {
+    "name": "Morne Vient",
+    "stateCode": "08"
+  },
+  {
+    "name": "Myette Gardens",
+    "stateCode": "08"
+  },
+  {
+    "name": "New Village",
+    "stateCode": "08"
+  },
+  {
+    "name": "Paix Bouche",
+    "stateCode": "08"
+  },
+  {
+    "name": "Palmiste Estate",
+    "stateCode": "08"
+  },
+  {
+    "name": "Patience",
+    "stateCode": "08"
+  },
+  {
+    "name": "Planard",
+    "stateCode": "08"
+  },
+  {
+    "name": "Praslin",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rameau",
+    "stateCode": "08"
+  },
+  {
+    "name": "Saint Marie Road",
+    "stateCode": "08"
+  },
+  {
+    "name": "Saut",
+    "stateCode": "08"
+  },
+  {
+    "name": "Savannes",
+    "stateCode": "08"
+  },
+  {
+    "name": "St Helen Estate",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ti Riviere",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ti Rocher",
+    "stateCode": "08"
+  },
+  {
+    "name": "Troumassee",
+    "stateCode": "08"
+  },
+  {
+    "name": "Village",
+    "stateCode": "08"
+  },
+  {
+    "name": "Volet",
+    "stateCode": "08"
+  },
+  {
+    "name": "Anse Chastanet",
+    "stateCode": "10"
+  },
+  {
+    "name": "Barons Drive/Coin De L'Anse",
+    "stateCode": "10"
+  },
+  {
+    "name": "Beasejour/Myers Bridge",
+    "stateCode": "10"
+  },
+  {
+    "name": "Belle Plaine",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bellefond",
+    "stateCode": "10"
+  },
+  {
+    "name": "Belvedere",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bois D'Inde",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bouton",
+    "stateCode": "10"
+  },
+  {
+    "name": "Calvary/Calvaire",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cenac",
+    "stateCode": "10"
+  },
+  {
+    "name": "Chateau Belair",
+    "stateCode": "10"
+  },
+  {
+    "name": "Colombette",
+    "stateCode": "10"
+  },
+  {
+    "name": "Compar",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cresslands",
+    "stateCode": "10"
+  },
+  {
+    "name": "Deville",
+    "stateCode": "10"
+  },
+  {
+    "name": "Diamond/Diamond Estate",
+    "stateCode": "10"
+  },
+  {
+    "name": "Esperance",
+    "stateCode": "10"
+  },
+  {
+    "name": "Etangs",
+    "stateCode": "10"
+  },
+  {
+    "name": "Fond Bernier",
+    "stateCode": "10"
+  },
+  {
+    "name": "Fond Cacoa",
+    "stateCode": "10"
+  },
+  {
+    "name": "Fond Doux",
+    "stateCode": "10"
+  },
+  {
+    "name": "Fond Gens Libre",
+    "stateCode": "10"
+  },
+  {
+    "name": "Jalousie",
+    "stateCode": "10"
+  },
+  {
+    "name": "La Haut",
+    "stateCode": "10"
+  },
+  {
+    "name": "La Pearle",
+    "stateCode": "10"
+  },
+  {
+    "name": "Lenny Hill",
+    "stateCode": "10"
+  },
+  {
+    "name": "Malgretoute",
+    "stateCode": "10"
+  },
+  {
+    "name": "Migny",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mocha",
+    "stateCode": "10"
+  },
+  {
+    "name": "Morne Bonin",
+    "stateCode": "10"
+  },
+  {
+    "name": "Morne La Croix",
+    "stateCode": "10"
+  },
+  {
+    "name": "Morne Lastic/Desruisseaux",
+    "stateCode": "10"
+  },
+  {
+    "name": "New Development",
+    "stateCode": "10"
+  },
+  {
+    "name": "Palmiste",
+    "stateCode": "10"
+  },
+  {
+    "name": "Plat Pays",
+    "stateCode": "10"
+  },
+  {
+    "name": "Rabot",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ravine Claire",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ruby Estate",
+    "stateCode": "10"
+  },
+  {
+    "name": "Soufrière",
+    "stateCode": "10"
+  },
+  {
+    "name": "Soufriere Estate",
+    "stateCode": "10"
+  },
+  {
+    "name": "St Phillip",
+    "stateCode": "10"
+  },
+  {
+    "name": "Stonefield",
+    "stateCode": "10"
+  },
+  {
+    "name": "Sulphur Springs",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ti Boug",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ti Delcer",
+    "stateCode": "10"
+  },
+  {
+    "name": "Toraille",
+    "stateCode": "10"
+  },
+  {
+    "name": "Town",
+    "stateCode": "10"
+  },
+  {
+    "name": "Union Vale",
+    "stateCode": "10"
+  },
+  {
+    "name": "Zenon",
+    "stateCode": "10"
+  },
+  {
+    "name": "Augier",
+    "stateCode": "11"
+  },
+  {
+    "name": "Beane Field",
+    "stateCode": "11"
+  },
+  {
+    "name": "Beausejour",
+    "stateCode": "11"
+  },
+  {
+    "name": "Belle Vue",
+    "stateCode": "11"
+  },
+  {
+    "name": "Black Bay",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bruceville/Shanty Town",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cacoa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cantonement",
+    "stateCode": "11"
+  },
+  {
+    "name": "Carierre",
+    "stateCode": "11"
+  },
+  {
+    "name": "Catin",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cocoa Dan",
+    "stateCode": "11"
+  },
+  {
+    "name": "Coolie Town",
+    "stateCode": "11"
+  },
+  {
+    "name": "De Mailly",
+    "stateCode": "11"
+  },
+  {
+    "name": "Derierre Bois",
+    "stateCode": "11"
+  },
+  {
+    "name": "Derierre Morne",
+    "stateCode": "11"
+  },
+  {
+    "name": "Docamel/La Resource",
+    "stateCode": "11"
+  },
+  {
+    "name": "Eau Piquant/St Urbain",
+    "stateCode": "11"
+  },
+  {
+    "name": "En Bamboo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Esperance",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fond Capeche",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fond Sabot",
+    "stateCode": "11"
+  },
+  {
+    "name": "Grace",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hewanorra Orchard",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hope Estate",
+    "stateCode": "11"
+  },
+  {
+    "name": "Industrial Estate",
+    "stateCode": "11"
+  },
+  {
+    "name": "Joyeux",
+    "stateCode": "11"
+  },
+  {
+    "name": "La Resource",
+    "stateCode": "11"
+  },
+  {
+    "name": "La Retraite",
+    "stateCode": "11"
+  },
+  {
+    "name": "La Tourney/Cedar Heights",
+    "stateCode": "11"
+  },
+  {
+    "name": "Maganier",
+    "stateCode": "11"
+  },
+  {
+    "name": "Morne Cayenne",
+    "stateCode": "11"
+  },
+  {
+    "name": "Morne Vert",
+    "stateCode": "11"
+  },
+  {
+    "name": "Moule A Chique",
+    "stateCode": "11"
+  },
+  {
+    "name": "Obrier",
+    "stateCode": "11"
+  },
+  {
+    "name": "Pierrot",
+    "stateCode": "11"
+  },
+  {
+    "name": "Plut",
+    "stateCode": "11"
+  },
+  {
+    "name": "Pomme",
+    "stateCode": "11"
+  },
+  {
+    "name": "St Jude'S Highway",
+    "stateCode": "11"
+  },
+  {
+    "name": "Tete Morne/Morne Andrew",
+    "stateCode": "11"
+  },
+  {
+    "name": "Town",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vieux Fort",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vieux Fort/Laborie Highway",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vige'",
+    "stateCode": "11"
+  },
+  {
+    "name": "Westall Group/The Mangue",
+    "stateCode": "11"
+  },
+  {
+    "name": "Anse Cochon",
+    "stateCode": "12"
+  },
+  {
+    "name": "Anse Galet",
+    "stateCode": "12"
+  },
+  {
+    "name": "Anse La Verdue",
+    "stateCode": "12"
+  },
+  {
+    "name": "Belvedere",
+    "stateCode": "12"
+  },
+  {
+    "name": "Chalon",
+    "stateCode": "12"
+  },
+  {
+    "name": "Riverside Road",
+    "stateCode": "12"
+  },
+  {
+    "name": "Theodrine",
+    "stateCode": "12"
+  },
+  {
+    "name": "Village",
+    "stateCode": "12"
+  }
+]

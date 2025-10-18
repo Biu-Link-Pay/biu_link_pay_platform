@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Nicola Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sandy Point Town",
+    "stateCode": "02"
+  },
+  {
+    "name": "Market Shop",
+    "stateCode": "04"
+  },
+  {
+    "name": "Newcastle",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dieppe Bay Town",
+    "stateCode": "06"
+  },
+  {
+    "name": "Fig Tree",
+    "stateCode": "07"
+  },
+  {
+    "name": "Cayon",
+    "stateCode": "08"
+  },
+  {
+    "name": "Saint Paul’s",
+    "stateCode": "09"
+  },
+  {
+    "name": "Charlestown",
+    "stateCode": "10"
+  },
+  {
+    "name": "Monkey Hill",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cotton Ground",
+    "stateCode": "12"
+  },
+  {
+    "name": "Middle Island",
+    "stateCode": "13"
+  },
+  {
+    "name": "Trinity",
+    "stateCode": "15"
+  }
+]

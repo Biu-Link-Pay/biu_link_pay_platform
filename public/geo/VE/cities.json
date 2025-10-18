@@ -1,0 +1,542 @@
+[
+  {
+    "name": "Caracas",
+    "stateCode": "A"
+  },
+  {
+    "name": "Anaco",
+    "stateCode": "B"
+  },
+  {
+    "name": "Aragua de Barcelona",
+    "stateCode": "B"
+  },
+  {
+    "name": "Barcelona",
+    "stateCode": "B"
+  },
+  {
+    "name": "Cantaura",
+    "stateCode": "B"
+  },
+  {
+    "name": "El Tigre",
+    "stateCode": "B"
+  },
+  {
+    "name": "Municipio José Gregorio Monagas",
+    "stateCode": "B"
+  },
+  {
+    "name": "Onoto",
+    "stateCode": "B"
+  },
+  {
+    "name": "Puerto La Cruz",
+    "stateCode": "B"
+  },
+  {
+    "name": "Puerto Píritu",
+    "stateCode": "B"
+  },
+  {
+    "name": "San José de Guanipa",
+    "stateCode": "B"
+  },
+  {
+    "name": "Cagua",
+    "stateCode": "D"
+  },
+  {
+    "name": "El Limón",
+    "stateCode": "D"
+  },
+  {
+    "name": "La Victoria",
+    "stateCode": "D"
+  },
+  {
+    "name": "Las Tejerías",
+    "stateCode": "D"
+  },
+  {
+    "name": "Maracay",
+    "stateCode": "D"
+  },
+  {
+    "name": "Palo Negro",
+    "stateCode": "D"
+  },
+  {
+    "name": "San Mateo",
+    "stateCode": "D"
+  },
+  {
+    "name": "Santa Rita",
+    "stateCode": "D"
+  },
+  {
+    "name": "Turmero",
+    "stateCode": "D"
+  },
+  {
+    "name": "Villa de Cura",
+    "stateCode": "D"
+  },
+  {
+    "name": "Alto Barinas",
+    "stateCode": "E"
+  },
+  {
+    "name": "Barinas",
+    "stateCode": "E"
+  },
+  {
+    "name": "Barinitas",
+    "stateCode": "E"
+  },
+  {
+    "name": "Municipio Barinas",
+    "stateCode": "E"
+  },
+  {
+    "name": "Ciudad Bolívar",
+    "stateCode": "F"
+  },
+  {
+    "name": "Ciudad Guayana",
+    "stateCode": "F"
+  },
+  {
+    "name": "Municipio Padre Pedro Chien",
+    "stateCode": "F"
+  },
+  {
+    "name": "Santa Elena de Uairén",
+    "stateCode": "F"
+  },
+  {
+    "name": "Upata",
+    "stateCode": "F"
+  },
+  {
+    "name": "Guacara",
+    "stateCode": "G"
+  },
+  {
+    "name": "Güigüe",
+    "stateCode": "G"
+  },
+  {
+    "name": "Los Guayos",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mariara",
+    "stateCode": "G"
+  },
+  {
+    "name": "Morón",
+    "stateCode": "G"
+  },
+  {
+    "name": "Puerto Cabello",
+    "stateCode": "G"
+  },
+  {
+    "name": "San Joaquín",
+    "stateCode": "G"
+  },
+  {
+    "name": "Tacarigua",
+    "stateCode": "G"
+  },
+  {
+    "name": "Tocuyito",
+    "stateCode": "G"
+  },
+  {
+    "name": "Valencia",
+    "stateCode": "G"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "H"
+  },
+  {
+    "name": "Tinaquillo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Chichiriviche",
+    "stateCode": "I"
+  },
+  {
+    "name": "Coro",
+    "stateCode": "I"
+  },
+  {
+    "name": "Municipio Los Taques",
+    "stateCode": "I"
+  },
+  {
+    "name": "Municipio Miranda",
+    "stateCode": "I"
+  },
+  {
+    "name": "Punta Cardón",
+    "stateCode": "I"
+  },
+  {
+    "name": "Punto Fijo",
+    "stateCode": "I"
+  },
+  {
+    "name": "Tucacas",
+    "stateCode": "I"
+  },
+  {
+    "name": "Altagracia de Orituco",
+    "stateCode": "J"
+  },
+  {
+    "name": "Calabozo",
+    "stateCode": "J"
+  },
+  {
+    "name": "San Juan de los Morros",
+    "stateCode": "J"
+  },
+  {
+    "name": "Valle de La Pascua",
+    "stateCode": "J"
+  },
+  {
+    "name": "Zaraza",
+    "stateCode": "J"
+  },
+  {
+    "name": "Barquisimeto",
+    "stateCode": "K"
+  },
+  {
+    "name": "Cabudare",
+    "stateCode": "K"
+  },
+  {
+    "name": "Carora",
+    "stateCode": "K"
+  },
+  {
+    "name": "El Tocuyo",
+    "stateCode": "K"
+  },
+  {
+    "name": "Los Rastrojos",
+    "stateCode": "K"
+  },
+  {
+    "name": "Quíbor",
+    "stateCode": "K"
+  },
+  {
+    "name": "Ejido",
+    "stateCode": "L"
+  },
+  {
+    "name": "El Vigía",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mérida",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mucumpiz",
+    "stateCode": "L"
+  },
+  {
+    "name": "Municipio Libertador",
+    "stateCode": "L"
+  },
+  {
+    "name": "Baruta",
+    "stateCode": "M"
+  },
+  {
+    "name": "Carrizal",
+    "stateCode": "M"
+  },
+  {
+    "name": "Caucaguita",
+    "stateCode": "M"
+  },
+  {
+    "name": "Caucagüito",
+    "stateCode": "M"
+  },
+  {
+    "name": "Chacao",
+    "stateCode": "M"
+  },
+  {
+    "name": "Charallave",
+    "stateCode": "M"
+  },
+  {
+    "name": "Cúa",
+    "stateCode": "M"
+  },
+  {
+    "name": "El Cafetal",
+    "stateCode": "M"
+  },
+  {
+    "name": "El Hatillo",
+    "stateCode": "M"
+  },
+  {
+    "name": "Guarenas",
+    "stateCode": "M"
+  },
+  {
+    "name": "Guatire",
+    "stateCode": "M"
+  },
+  {
+    "name": "La Dolorita",
+    "stateCode": "M"
+  },
+  {
+    "name": "Los Dos Caminos",
+    "stateCode": "M"
+  },
+  {
+    "name": "Los Teques",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ocumare del Tuy",
+    "stateCode": "M"
+  },
+  {
+    "name": "Petare",
+    "stateCode": "M"
+  },
+  {
+    "name": "San Antonio de Los Altos",
+    "stateCode": "M"
+  },
+  {
+    "name": "Santa Teresa del Tuy",
+    "stateCode": "M"
+  },
+  {
+    "name": "Caripito",
+    "stateCode": "N"
+  },
+  {
+    "name": "Maturín",
+    "stateCode": "N"
+  },
+  {
+    "name": "Municipio Maturín",
+    "stateCode": "N"
+  },
+  {
+    "name": "Municipio Uracoa",
+    "stateCode": "N"
+  },
+  {
+    "name": "Juan Griego",
+    "stateCode": "O"
+  },
+  {
+    "name": "La Asunción",
+    "stateCode": "O"
+  },
+  {
+    "name": "Porlamar",
+    "stateCode": "O"
+  },
+  {
+    "name": "Acarigua",
+    "stateCode": "P"
+  },
+  {
+    "name": "Araure",
+    "stateCode": "P"
+  },
+  {
+    "name": "Guanare",
+    "stateCode": "P"
+  },
+  {
+    "name": "Villa Bruzual",
+    "stateCode": "P"
+  },
+  {
+    "name": "Carúpano",
+    "stateCode": "R"
+  },
+  {
+    "name": "Cumaná",
+    "stateCode": "R"
+  },
+  {
+    "name": "Güiria",
+    "stateCode": "R"
+  },
+  {
+    "name": "Municipio Valdez",
+    "stateCode": "R"
+  },
+  {
+    "name": "Colón",
+    "stateCode": "S"
+  },
+  {
+    "name": "La Fría",
+    "stateCode": "S"
+  },
+  {
+    "name": "La Grita",
+    "stateCode": "S"
+  },
+  {
+    "name": "Municipio José María Vargas",
+    "stateCode": "S"
+  },
+  {
+    "name": "Rubio",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Antonio del Táchira",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Cristóbal",
+    "stateCode": "S"
+  },
+  {
+    "name": "Táriba",
+    "stateCode": "S"
+  },
+  {
+    "name": "Boconó",
+    "stateCode": "T"
+  },
+  {
+    "name": "Municipio Pampanito",
+    "stateCode": "T"
+  },
+  {
+    "name": "Municipio San Rafael de Carvajal",
+    "stateCode": "T"
+  },
+  {
+    "name": "Trujillo",
+    "stateCode": "T"
+  },
+  {
+    "name": "Valera",
+    "stateCode": "T"
+  },
+  {
+    "name": "Chivacoa",
+    "stateCode": "U"
+  },
+  {
+    "name": "Municipio Independencia",
+    "stateCode": "U"
+  },
+  {
+    "name": "Nirgua",
+    "stateCode": "U"
+  },
+  {
+    "name": "San Felipe",
+    "stateCode": "U"
+  },
+  {
+    "name": "Yaritagua",
+    "stateCode": "U"
+  },
+  {
+    "name": "Cabimas",
+    "stateCode": "V"
+  },
+  {
+    "name": "Ciudad Ojeda",
+    "stateCode": "V"
+  },
+  {
+    "name": "La Villa del Rosario",
+    "stateCode": "V"
+  },
+  {
+    "name": "Lagunillas",
+    "stateCode": "V"
+  },
+  {
+    "name": "Machiques",
+    "stateCode": "V"
+  },
+  {
+    "name": "Maracaibo",
+    "stateCode": "V"
+  },
+  {
+    "name": "San Carlos del Zulia",
+    "stateCode": "V"
+  },
+  {
+    "name": "Santa Rita",
+    "stateCode": "V"
+  },
+  {
+    "name": "Caraballeda",
+    "stateCode": "X"
+  },
+  {
+    "name": "Catia La Mar",
+    "stateCode": "X"
+  },
+  {
+    "name": "La Guaira",
+    "stateCode": "X"
+  },
+  {
+    "name": "Maiquetía",
+    "stateCode": "X"
+  },
+  {
+    "name": "Tucupita",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Maroa",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Municipio Autónomo Alto Orinoco",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Puerto Ayacucho",
+    "stateCode": "Z"
+  },
+  {
+    "name": "San Carlos de Río Negro",
+    "stateCode": "Z"
+  },
+  {
+    "name": "San Fernando de Atabapo",
+    "stateCode": "Z"
+  },
+  {
+    "name": "San Juan de Manapiare",
+    "stateCode": "Z"
+  }
+]

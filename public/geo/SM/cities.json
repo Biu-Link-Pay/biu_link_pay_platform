@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Acquaviva",
+    "stateCode": "01"
+  },
+  {
+    "name": "Poggio di Chiesanuova",
+    "stateCode": "02"
+  },
+  {
+    "name": "Domagnano",
+    "stateCode": "03"
+  },
+  {
+    "name": "Faetano",
+    "stateCode": "04"
+  },
+  {
+    "name": "Fiorentino",
+    "stateCode": "05"
+  },
+  {
+    "name": "Borgo Maggiore",
+    "stateCode": "06"
+  },
+  {
+    "name": "San Marino",
+    "stateCode": "07"
+  },
+  {
+    "name": "Monte Giardino",
+    "stateCode": "08"
+  },
+  {
+    "name": "Serravalle",
+    "stateCode": "09"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Cocobeach",
+    "stateCode": "1"
+  },
+  {
+    "name": "Libreville",
+    "stateCode": "1"
+  },
+  {
+    "name": "Ntoum",
+    "stateCode": "1"
+  },
+  {
+    "name": "Franceville",
+    "stateCode": "2"
+  },
+  {
+    "name": "Lékoni",
+    "stateCode": "2"
+  },
+  {
+    "name": "Moanda",
+    "stateCode": "2"
+  },
+  {
+    "name": "Mounana",
+    "stateCode": "2"
+  },
+  {
+    "name": "Okondja",
+    "stateCode": "2"
+  },
+  {
+    "name": "Lambaréné",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ndjolé",
+    "stateCode": "3"
+  },
+  {
+    "name": "Fougamou",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mbigou",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mimongo",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mouila",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ndendé",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mayumba",
+    "stateCode": "5"
+  },
+  {
+    "name": "Tchibanga",
+    "stateCode": "5"
+  },
+  {
+    "name": "Booué",
+    "stateCode": "6"
+  },
+  {
+    "name": "Makokou",
+    "stateCode": "6"
+  },
+  {
+    "name": "Zadie",
+    "stateCode": "6"
+  },
+  {
+    "name": "Koulamoutou",
+    "stateCode": "7"
+  },
+  {
+    "name": "Lastoursville",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gamba",
+    "stateCode": "8"
+  },
+  {
+    "name": "Omboué",
+    "stateCode": "8"
+  },
+  {
+    "name": "Port-Gentil",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bitam",
+    "stateCode": "9"
+  },
+  {
+    "name": "Mitzic",
+    "stateCode": "9"
+  },
+  {
+    "name": "Oyem",
+    "stateCode": "9"
+  }
+]

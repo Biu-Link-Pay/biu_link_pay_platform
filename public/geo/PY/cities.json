@@ -1,0 +1,562 @@
+[
+  {
+    "name": "Belén",
+    "stateCode": "1"
+  },
+  {
+    "name": "Concepción",
+    "stateCode": "1"
+  },
+  {
+    "name": "Horqueta",
+    "stateCode": "1"
+  },
+  {
+    "name": "Cedrales",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ciudad del Este",
+    "stateCode": "10"
+  },
+  {
+    "name": "Colonia Minga Porá",
+    "stateCode": "10"
+  },
+  {
+    "name": "Doctor Juan León Mallorquín",
+    "stateCode": "10"
+  },
+  {
+    "name": "Itakyry",
+    "stateCode": "10"
+  },
+  {
+    "name": "Naranjal",
+    "stateCode": "10"
+  },
+  {
+    "name": "Presidente Franco",
+    "stateCode": "10"
+  },
+  {
+    "name": "San Alberto",
+    "stateCode": "10"
+  },
+  {
+    "name": "Santa Rita",
+    "stateCode": "10"
+  },
+  {
+    "name": "Yguazú",
+    "stateCode": "10"
+  },
+  {
+    "name": "Areguá",
+    "stateCode": "11"
+  },
+  {
+    "name": "Capiatá",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fernando de la Mora",
+    "stateCode": "11"
+  },
+  {
+    "name": "Guarambaré",
+    "stateCode": "11"
+  },
+  {
+    "name": "Itá",
+    "stateCode": "11"
+  },
+  {
+    "name": "Itauguá",
+    "stateCode": "11"
+  },
+  {
+    "name": "Lambaré",
+    "stateCode": "11"
+  },
+  {
+    "name": "Limpio",
+    "stateCode": "11"
+  },
+  {
+    "name": "Mariano Roque Alonso",
+    "stateCode": "11"
+  },
+  {
+    "name": "Nemby",
+    "stateCode": "11"
+  },
+  {
+    "name": "Nueva Italia",
+    "stateCode": "11"
+  },
+  {
+    "name": "San Antonio",
+    "stateCode": "11"
+  },
+  {
+    "name": "San Lorenzo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Villa Elisa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ypacarai",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cerrito",
+    "stateCode": "12"
+  },
+  {
+    "name": "General José Eduvigis Díaz",
+    "stateCode": "12"
+  },
+  {
+    "name": "Pilar",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bella Vista",
+    "stateCode": "13"
+  },
+  {
+    "name": "Capitán Bado",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pedro Juan Caballero",
+    "stateCode": "13"
+  },
+  {
+    "name": "Colonia Catuete",
+    "stateCode": "14"
+  },
+  {
+    "name": "Corpus Christi",
+    "stateCode": "14"
+  },
+  {
+    "name": "La Paloma",
+    "stateCode": "14"
+  },
+  {
+    "name": "Nueva Esperanza",
+    "stateCode": "14"
+  },
+  {
+    "name": "Salto del Guairá",
+    "stateCode": "14"
+  },
+  {
+    "name": "San Isidro de Curuguaty",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ygatimi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Benjamín Aceval",
+    "stateCode": "15"
+  },
+  {
+    "name": "Nanawua",
+    "stateCode": "15"
+  },
+  {
+    "name": "Villa Hayes",
+    "stateCode": "15"
+  },
+  {
+    "name": "Capitán Pablo Lagerenza",
+    "stateCode": "16"
+  },
+  {
+    "name": "Fuerte Olimpo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Colonia Menno",
+    "stateCode": "19"
+  },
+  {
+    "name": "Colonia Neuland",
+    "stateCode": "19"
+  },
+  {
+    "name": "Filadelfia",
+    "stateCode": "19"
+  },
+  {
+    "name": "Antequera",
+    "stateCode": "2"
+  },
+  {
+    "name": "Capiíbary",
+    "stateCode": "2"
+  },
+  {
+    "name": "Colonia Nueva Germania",
+    "stateCode": "2"
+  },
+  {
+    "name": "General Elizardo Aquino",
+    "stateCode": "2"
+  },
+  {
+    "name": "Guayaybi",
+    "stateCode": "2"
+  },
+  {
+    "name": "Itacurubí del Rosario",
+    "stateCode": "2"
+  },
+  {
+    "name": "Lima",
+    "stateCode": "2"
+  },
+  {
+    "name": "Puerto Rosario",
+    "stateCode": "2"
+  },
+  {
+    "name": "San Pedro de Ycuamandiyú",
+    "stateCode": "2"
+  },
+  {
+    "name": "Tacuatí",
+    "stateCode": "2"
+  },
+  {
+    "name": "Unión",
+    "stateCode": "2"
+  },
+  {
+    "name": "Yataity del Norte",
+    "stateCode": "2"
+  },
+  {
+    "name": "Altos",
+    "stateCode": "3"
+  },
+  {
+    "name": "Arroyos y Esteros",
+    "stateCode": "3"
+  },
+  {
+    "name": "Atyrá",
+    "stateCode": "3"
+  },
+  {
+    "name": "Caacupé",
+    "stateCode": "3"
+  },
+  {
+    "name": "Caraguatay",
+    "stateCode": "3"
+  },
+  {
+    "name": "Emboscada",
+    "stateCode": "3"
+  },
+  {
+    "name": "Eusebio Ayala",
+    "stateCode": "3"
+  },
+  {
+    "name": "Isla Pucú",
+    "stateCode": "3"
+  },
+  {
+    "name": "Itacurubí de la Cordillera",
+    "stateCode": "3"
+  },
+  {
+    "name": "Piribebuy",
+    "stateCode": "3"
+  },
+  {
+    "name": "San Bernardino",
+    "stateCode": "3"
+  },
+  {
+    "name": "Santa Elena",
+    "stateCode": "3"
+  },
+  {
+    "name": "Tobatí",
+    "stateCode": "3"
+  },
+  {
+    "name": "Colonia Mauricio José Troche",
+    "stateCode": "4"
+  },
+  {
+    "name": "Coronel Martínez",
+    "stateCode": "4"
+  },
+  {
+    "name": "Independencia",
+    "stateCode": "4"
+  },
+  {
+    "name": "Itapé",
+    "stateCode": "4"
+  },
+  {
+    "name": "Iturbe",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mbocayaty",
+    "stateCode": "4"
+  },
+  {
+    "name": "Natalicio Talavera",
+    "stateCode": "4"
+  },
+  {
+    "name": "Villarrica",
+    "stateCode": "4"
+  },
+  {
+    "name": "Caaguazú",
+    "stateCode": "5"
+  },
+  {
+    "name": "Carayaó",
+    "stateCode": "5"
+  },
+  {
+    "name": "Cecilio Baez",
+    "stateCode": "5"
+  },
+  {
+    "name": "Colonia General Alfredo Stroessner",
+    "stateCode": "5"
+  },
+  {
+    "name": "Coronel Oviedo",
+    "stateCode": "5"
+  },
+  {
+    "name": "Doctor Juan Manuel Frutos",
+    "stateCode": "5"
+  },
+  {
+    "name": "Mbutuý",
+    "stateCode": "5"
+  },
+  {
+    "name": "Repatriación",
+    "stateCode": "5"
+  },
+  {
+    "name": "San Joaquín",
+    "stateCode": "5"
+  },
+  {
+    "name": "San José",
+    "stateCode": "5"
+  },
+  {
+    "name": "Yhú",
+    "stateCode": "5"
+  },
+  {
+    "name": "Abaí",
+    "stateCode": "6"
+  },
+  {
+    "name": "Buena Vista",
+    "stateCode": "6"
+  },
+  {
+    "name": "Caazapá",
+    "stateCode": "6"
+  },
+  {
+    "name": "General Higinio Morínigo",
+    "stateCode": "6"
+  },
+  {
+    "name": "San Juan Nepomuceno",
+    "stateCode": "6"
+  },
+  {
+    "name": "Yegros",
+    "stateCode": "6"
+  },
+  {
+    "name": "Yuty",
+    "stateCode": "6"
+  },
+  {
+    "name": "Arquitecto Tomás Romero Pereira",
+    "stateCode": "7"
+  },
+  {
+    "name": "Bella Vista",
+    "stateCode": "7"
+  },
+  {
+    "name": "Capitán Miranda",
+    "stateCode": "7"
+  },
+  {
+    "name": "Carmen del Paraná",
+    "stateCode": "7"
+  },
+  {
+    "name": "Colonia Carlos Antonio López",
+    "stateCode": "7"
+  },
+  {
+    "name": "Colonia San Lorenzo",
+    "stateCode": "7"
+  },
+  {
+    "name": "Edelira",
+    "stateCode": "7"
+  },
+  {
+    "name": "Encarnación",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fram",
+    "stateCode": "7"
+  },
+  {
+    "name": "General Artigas",
+    "stateCode": "7"
+  },
+  {
+    "name": "General Delgado",
+    "stateCode": "7"
+  },
+  {
+    "name": "Hohenau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Jesús",
+    "stateCode": "7"
+  },
+  {
+    "name": "Natalio",
+    "stateCode": "7"
+  },
+  {
+    "name": "Obligado",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pirapó",
+    "stateCode": "7"
+  },
+  {
+    "name": "Puerto Mayor Otaño",
+    "stateCode": "7"
+  },
+  {
+    "name": "San Cosme y Damián",
+    "stateCode": "7"
+  },
+  {
+    "name": "San Juan del Paraná",
+    "stateCode": "7"
+  },
+  {
+    "name": "San Pedro del Paraná",
+    "stateCode": "7"
+  },
+  {
+    "name": "Trinidad",
+    "stateCode": "7"
+  },
+  {
+    "name": "Juan de Ayolas",
+    "stateCode": "8"
+  },
+  {
+    "name": "San Juan Bautista",
+    "stateCode": "8"
+  },
+  {
+    "name": "San Miguel",
+    "stateCode": "8"
+  },
+  {
+    "name": "San Patricio",
+    "stateCode": "8"
+  },
+  {
+    "name": "Santa María",
+    "stateCode": "8"
+  },
+  {
+    "name": "Santa Rosa Misiones",
+    "stateCode": "8"
+  },
+  {
+    "name": "Santiago",
+    "stateCode": "8"
+  },
+  {
+    "name": "Villa Florida",
+    "stateCode": "8"
+  },
+  {
+    "name": "Acahay",
+    "stateCode": "9"
+  },
+  {
+    "name": "Caapucú",
+    "stateCode": "9"
+  },
+  {
+    "name": "Carapeguá",
+    "stateCode": "9"
+  },
+  {
+    "name": "La Colmena",
+    "stateCode": "9"
+  },
+  {
+    "name": "Mbuyapey",
+    "stateCode": "9"
+  },
+  {
+    "name": "Paraguarí",
+    "stateCode": "9"
+  },
+  {
+    "name": "Pirayú",
+    "stateCode": "9"
+  },
+  {
+    "name": "Quiindy",
+    "stateCode": "9"
+  },
+  {
+    "name": "Sapucaí",
+    "stateCode": "9"
+  },
+  {
+    "name": "Yaguarón",
+    "stateCode": "9"
+  },
+  {
+    "name": "Ybycuí",
+    "stateCode": "9"
+  }
+]

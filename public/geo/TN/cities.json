@@ -1,0 +1,538 @@
+[
+  {
+    "name": "Al Marsá",
+    "stateCode": "11"
+  },
+  {
+    "name": "Carthage",
+    "stateCode": "11"
+  },
+  {
+    "name": "La Goulette",
+    "stateCode": "11"
+  },
+  {
+    "name": "La Mohammedia",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sidi Bou Saïd",
+    "stateCode": "11"
+  },
+  {
+    "name": "Tunis",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ariana",
+    "stateCode": "12"
+  },
+  {
+    "name": "Galaat el Andeless",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ben Arous",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hammam Lif",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hammam-Lif",
+    "stateCode": "13"
+  },
+  {
+    "name": "La Sebala du Mornag",
+    "stateCode": "13"
+  },
+  {
+    "name": "Radès",
+    "stateCode": "13"
+  },
+  {
+    "name": "El Battan",
+    "stateCode": "14"
+  },
+  {
+    "name": "Manouba",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mu‘tamadīyat Manūbah",
+    "stateCode": "14"
+  },
+  {
+    "name": "Oued Lill",
+    "stateCode": "14"
+  },
+  {
+    "name": "El Fahs",
+    "stateCode": "22"
+  },
+  {
+    "name": "Zaghouan",
+    "stateCode": "22"
+  },
+  {
+    "name": "Al Matlīn",
+    "stateCode": "23"
+  },
+  {
+    "name": "Bizerte",
+    "stateCode": "23"
+  },
+  {
+    "name": "Bizerte Sud",
+    "stateCode": "23"
+  },
+  {
+    "name": "Douar Tindja",
+    "stateCode": "23"
+  },
+  {
+    "name": "El Alia",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mateur",
+    "stateCode": "23"
+  },
+  {
+    "name": "Menzel Abderhaman",
+    "stateCode": "23"
+  },
+  {
+    "name": "Menzel Bourguiba",
+    "stateCode": "23"
+  },
+  {
+    "name": "Menzel Jemil",
+    "stateCode": "23"
+  },
+  {
+    "name": "Rafrāf",
+    "stateCode": "23"
+  },
+  {
+    "name": "Rhar el Melah",
+    "stateCode": "23"
+  },
+  {
+    "name": "Sejenane",
+    "stateCode": "23"
+  },
+  {
+    "name": "Zahānah",
+    "stateCode": "23"
+  },
+  {
+    "name": "Béja",
+    "stateCode": "31"
+  },
+  {
+    "name": "Délégation de Béja Nord",
+    "stateCode": "31"
+  },
+  {
+    "name": "Goubellat",
+    "stateCode": "31"
+  },
+  {
+    "name": "Medjez el Bab",
+    "stateCode": "31"
+  },
+  {
+    "name": "Tabursuq",
+    "stateCode": "31"
+  },
+  {
+    "name": "Testour",
+    "stateCode": "31"
+  },
+  {
+    "name": "Fernana",
+    "stateCode": "32"
+  },
+  {
+    "name": "Jendouba",
+    "stateCode": "32"
+  },
+  {
+    "name": "Oued Meliz",
+    "stateCode": "32"
+  },
+  {
+    "name": "Tabarka",
+    "stateCode": "32"
+  },
+  {
+    "name": "As Sars",
+    "stateCode": "33"
+  },
+  {
+    "name": "El Kef",
+    "stateCode": "33"
+  },
+  {
+    "name": "El Ksour",
+    "stateCode": "33"
+  },
+  {
+    "name": "Menzel Salem",
+    "stateCode": "33"
+  },
+  {
+    "name": "Nibbar",
+    "stateCode": "33"
+  },
+  {
+    "name": "Sakiet Sidi Youssef",
+    "stateCode": "33"
+  },
+  {
+    "name": "Tajerouine",
+    "stateCode": "33"
+  },
+  {
+    "name": "Bou Arada",
+    "stateCode": "34"
+  },
+  {
+    "name": "Gafour",
+    "stateCode": "34"
+  },
+  {
+    "name": "Kesra",
+    "stateCode": "34"
+  },
+  {
+    "name": "Le Krib",
+    "stateCode": "34"
+  },
+  {
+    "name": "Maktar",
+    "stateCode": "34"
+  },
+  {
+    "name": "Siliana",
+    "stateCode": "34"
+  },
+  {
+    "name": "Haffouz",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kairouan",
+    "stateCode": "41"
+  },
+  {
+    "name": "Sbikha",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kasserine",
+    "stateCode": "42"
+  },
+  {
+    "name": "Rohia",
+    "stateCode": "42"
+  },
+  {
+    "name": "Sbiba",
+    "stateCode": "42"
+  },
+  {
+    "name": "Thala",
+    "stateCode": "42"
+  },
+  {
+    "name": "Bir el Hafey",
+    "stateCode": "43"
+  },
+  {
+    "name": "Er Regueb",
+    "stateCode": "43"
+  },
+  {
+    "name": "Jilma",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mezzouna",
+    "stateCode": "43"
+  },
+  {
+    "name": "Sidi Bouzid",
+    "stateCode": "43"
+  },
+  {
+    "name": "Akouda",
+    "stateCode": "51"
+  },
+  {
+    "name": "Hammam Sousse",
+    "stateCode": "51"
+  },
+  {
+    "name": "Harqalah",
+    "stateCode": "51"
+  },
+  {
+    "name": "Msaken",
+    "stateCode": "51"
+  },
+  {
+    "name": "Port el Kantaoui",
+    "stateCode": "51"
+  },
+  {
+    "name": "Sidi Bou Ali",
+    "stateCode": "51"
+  },
+  {
+    "name": "Sidi el Hani",
+    "stateCode": "51"
+  },
+  {
+    "name": "Sousse",
+    "stateCode": "51"
+  },
+  {
+    "name": "Banbalah",
+    "stateCode": "52"
+  },
+  {
+    "name": "Bekalta",
+    "stateCode": "52"
+  },
+  {
+    "name": "Beni Hassane",
+    "stateCode": "52"
+  },
+  {
+    "name": "Djemmal",
+    "stateCode": "52"
+  },
+  {
+    "name": "Ksar Hellal",
+    "stateCode": "52"
+  },
+  {
+    "name": "Ksibet el Mediouni",
+    "stateCode": "52"
+  },
+  {
+    "name": "Lemta",
+    "stateCode": "52"
+  },
+  {
+    "name": "Menzel Kamel",
+    "stateCode": "52"
+  },
+  {
+    "name": "Mesdour",
+    "stateCode": "52"
+  },
+  {
+    "name": "Monastir",
+    "stateCode": "52"
+  },
+  {
+    "name": "Ouardenine",
+    "stateCode": "52"
+  },
+  {
+    "name": "Sahline",
+    "stateCode": "52"
+  },
+  {
+    "name": "Seïada",
+    "stateCode": "52"
+  },
+  {
+    "name": "Sidi Ben Nour",
+    "stateCode": "52"
+  },
+  {
+    "name": "Skanes",
+    "stateCode": "52"
+  },
+  {
+    "name": "Touza",
+    "stateCode": "52"
+  },
+  {
+    "name": "Chebba",
+    "stateCode": "53"
+  },
+  {
+    "name": "Chorbane",
+    "stateCode": "53"
+  },
+  {
+    "name": "El Jem",
+    "stateCode": "53"
+  },
+  {
+    "name": "Ksour Essaf",
+    "stateCode": "53"
+  },
+  {
+    "name": "Mahdia",
+    "stateCode": "53"
+  },
+  {
+    "name": "Melloulèche",
+    "stateCode": "53"
+  },
+  {
+    "name": "Salakta",
+    "stateCode": "53"
+  },
+  {
+    "name": "Sidi Alouane",
+    "stateCode": "53"
+  },
+  {
+    "name": "Zouila",
+    "stateCode": "53"
+  },
+  {
+    "name": "Agareb",
+    "stateCode": "61"
+  },
+  {
+    "name": "Bir Ali Ben Khalifa",
+    "stateCode": "61"
+  },
+  {
+    "name": "Djebeniana",
+    "stateCode": "61"
+  },
+  {
+    "name": "Gremda",
+    "stateCode": "61"
+  },
+  {
+    "name": "Sfax",
+    "stateCode": "61"
+  },
+  {
+    "name": "Skhira",
+    "stateCode": "61"
+  },
+  {
+    "name": "Ar Rudayyif",
+    "stateCode": "71"
+  },
+  {
+    "name": "As Sanad",
+    "stateCode": "71"
+  },
+  {
+    "name": "Gafsa",
+    "stateCode": "71"
+  },
+  {
+    "name": "Metlaoui",
+    "stateCode": "71"
+  },
+  {
+    "name": "Mu‘tamadīyat ar Rudayyif",
+    "stateCode": "71"
+  },
+  {
+    "name": "Chebika",
+    "stateCode": "72"
+  },
+  {
+    "name": "Degache",
+    "stateCode": "72"
+  },
+  {
+    "name": "Nefta",
+    "stateCode": "72"
+  },
+  {
+    "name": "Tamaghzah",
+    "stateCode": "72"
+  },
+  {
+    "name": "Tozeur",
+    "stateCode": "72"
+  },
+  {
+    "name": "Douz",
+    "stateCode": "73"
+  },
+  {
+    "name": "El Golaa",
+    "stateCode": "73"
+  },
+  {
+    "name": "Jemna",
+    "stateCode": "73"
+  },
+  {
+    "name": "Kebili",
+    "stateCode": "73"
+  },
+  {
+    "name": "Bou Attouche",
+    "stateCode": "81"
+  },
+  {
+    "name": "El Hamma",
+    "stateCode": "81"
+  },
+  {
+    "name": "Gabès",
+    "stateCode": "81"
+  },
+  {
+    "name": "Matmata",
+    "stateCode": "81"
+  },
+  {
+    "name": "Ben Gardane",
+    "stateCode": "82"
+  },
+  {
+    "name": "Beni Kheddache",
+    "stateCode": "82"
+  },
+  {
+    "name": "Erriadh",
+    "stateCode": "82"
+  },
+  {
+    "name": "Houmt El Souk",
+    "stateCode": "82"
+  },
+  {
+    "name": "Jerba Midoun",
+    "stateCode": "82"
+  },
+  {
+    "name": "Medenine",
+    "stateCode": "82"
+  },
+  {
+    "name": "Midoun",
+    "stateCode": "82"
+  },
+  {
+    "name": "Zarzis",
+    "stateCode": "82"
+  },
+  {
+    "name": "Remada",
+    "stateCode": "83"
+  },
+  {
+    "name": "Tataouine",
+    "stateCode": "83"
+  }
+]

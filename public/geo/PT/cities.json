@@ -1,0 +1,5254 @@
+[
+  {
+    "name": "Aguada de Cima",
+    "stateCode": "01"
+  },
+  {
+    "name": "Águeda",
+    "stateCode": "01"
+  },
+  {
+    "name": "Albergaria-a-Velha",
+    "stateCode": "01"
+  },
+  {
+    "name": "Anadia",
+    "stateCode": "01"
+  },
+  {
+    "name": "Aradas",
+    "stateCode": "01"
+  },
+  {
+    "name": "Arcos",
+    "stateCode": "01"
+  },
+  {
+    "name": "Argoncilhe",
+    "stateCode": "01"
+  },
+  {
+    "name": "Arouca",
+    "stateCode": "01"
+  },
+  {
+    "name": "Arrifana",
+    "stateCode": "01"
+  },
+  {
+    "name": "Avanca",
+    "stateCode": "01"
+  },
+  {
+    "name": "Aveiro",
+    "stateCode": "01"
+  },
+  {
+    "name": "Beduido",
+    "stateCode": "01"
+  },
+  {
+    "name": "Branca",
+    "stateCode": "01"
+  },
+  {
+    "name": "Castelo de Paiva",
+    "stateCode": "01"
+  },
+  {
+    "name": "Cortegaça",
+    "stateCode": "01"
+  },
+  {
+    "name": "Cucujães",
+    "stateCode": "01"
+  },
+  {
+    "name": "Eixo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Esgueira",
+    "stateCode": "01"
+  },
+  {
+    "name": "Esmoriz",
+    "stateCode": "01"
+  },
+  {
+    "name": "Espargo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Espinho",
+    "stateCode": "01"
+  },
+  {
+    "name": "Estarreja",
+    "stateCode": "01"
+  },
+  {
+    "name": "Feira",
+    "stateCode": "01"
+  },
+  {
+    "name": "Fiães",
+    "stateCode": "01"
+  },
+  {
+    "name": "Gafanha da Encarnação",
+    "stateCode": "01"
+  },
+  {
+    "name": "Gafanha da Nazaré",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ílhavo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Lamas",
+    "stateCode": "01"
+  },
+  {
+    "name": "Lobão",
+    "stateCode": "01"
+  },
+  {
+    "name": "Lourosa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Luso",
+    "stateCode": "01"
+  },
+  {
+    "name": "Macieira de Cambra",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mealhada",
+    "stateCode": "01"
+  },
+  {
+    "name": "Milheirós de Poiares",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mosteirô",
+    "stateCode": "01"
+  },
+  {
+    "name": "Murtosa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Nogueira da Regedoura",
+    "stateCode": "01"
+  },
+  {
+    "name": "Oiã",
+    "stateCode": "01"
+  },
+  {
+    "name": "Oliveira de Azemeis",
+    "stateCode": "01"
+  },
+  {
+    "name": "Oliveira do Bairro",
+    "stateCode": "01"
+  },
+  {
+    "name": "Oliveirinha",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ovar",
+    "stateCode": "01"
+  },
+  {
+    "name": "Paços de Brandão",
+    "stateCode": "01"
+  },
+  {
+    "name": "Pampilhosa do Botão",
+    "stateCode": "01"
+  },
+  {
+    "name": "Pardilhó",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rio Meão",
+    "stateCode": "01"
+  },
+  {
+    "name": "Salreu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sanfins",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sangalhos",
+    "stateCode": "01"
+  },
+  {
+    "name": "Santa Maria da Feira",
+    "stateCode": "01"
+  },
+  {
+    "name": "São João",
+    "stateCode": "01"
+  },
+  {
+    "name": "São João da Madeira",
+    "stateCode": "01"
+  },
+  {
+    "name": "São João de Ver",
+    "stateCode": "01"
+  },
+  {
+    "name": "São Roque",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sever do Vouga",
+    "stateCode": "01"
+  },
+  {
+    "name": "Silvalde",
+    "stateCode": "01"
+  },
+  {
+    "name": "Souto",
+    "stateCode": "01"
+  },
+  {
+    "name": "Vagos",
+    "stateCode": "01"
+  },
+  {
+    "name": "Vale de Cambra",
+    "stateCode": "01"
+  },
+  {
+    "name": "Válega",
+    "stateCode": "01"
+  },
+  {
+    "name": "Valongo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Vila Chã",
+    "stateCode": "01"
+  },
+  {
+    "name": "Aldeia Nova de São Bento",
+    "stateCode": "02"
+  },
+  {
+    "name": "Aljustrel",
+    "stateCode": "02"
+  },
+  {
+    "name": "Almodôvar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Almograve",
+    "stateCode": "02"
+  },
+  {
+    "name": "Alvito",
+    "stateCode": "02"
+  },
+  {
+    "name": "Barrancos",
+    "stateCode": "02"
+  },
+  {
+    "name": "Beja",
+    "stateCode": "02"
+  },
+  {
+    "name": "Beringel",
+    "stateCode": "02"
+  },
+  {
+    "name": "Boavista dos Pinheiros",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cabeça Gorda",
+    "stateCode": "02"
+  },
+  {
+    "name": "Castro Verde",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cuba",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ferreira do Alentejo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mértola",
+    "stateCode": "02"
+  },
+  {
+    "name": "Minas de São Domingos",
+    "stateCode": "02"
+  },
+  {
+    "name": "Moura",
+    "stateCode": "02"
+  },
+  {
+    "name": "Neves",
+    "stateCode": "02"
+  },
+  {
+    "name": "Odemira",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ourique",
+    "stateCode": "02"
+  },
+  {
+    "name": "Penedo Gordo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Salvada",
+    "stateCode": "02"
+  },
+  {
+    "name": "São Luis",
+    "stateCode": "02"
+  },
+  {
+    "name": "São Teotónio",
+    "stateCode": "02"
+  },
+  {
+    "name": "Serpa",
+    "stateCode": "02"
+  },
+  {
+    "name": "Vidigueira",
+    "stateCode": "02"
+  },
+  {
+    "name": "Vila Nova de Milfontes",
+    "stateCode": "02"
+  },
+  {
+    "name": "Zambujeira do Mar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Adaúfe",
+    "stateCode": "03"
+  },
+  {
+    "name": "Amares",
+    "stateCode": "03"
+  },
+  {
+    "name": "Apúlia",
+    "stateCode": "03"
+  },
+  {
+    "name": "Apúlia e Fão",
+    "stateCode": "03"
+  },
+  {
+    "name": "Arcos",
+    "stateCode": "03"
+  },
+  {
+    "name": "Arões",
+    "stateCode": "03"
+  },
+  {
+    "name": "Aveleda",
+    "stateCode": "03"
+  },
+  {
+    "name": "Barcelos",
+    "stateCode": "03"
+  },
+  {
+    "name": "Barqueiros",
+    "stateCode": "03"
+  },
+  {
+    "name": "Braga",
+    "stateCode": "03"
+  },
+  {
+    "name": "Brito",
+    "stateCode": "03"
+  },
+  {
+    "name": "Cabeceiras de Basto",
+    "stateCode": "03"
+  },
+  {
+    "name": "Caldas das Taipas",
+    "stateCode": "03"
+  },
+  {
+    "name": "Caldas de Vizela",
+    "stateCode": "03"
+  },
+  {
+    "name": "Caldelas",
+    "stateCode": "03"
+  },
+  {
+    "name": "Calendário",
+    "stateCode": "03"
+  },
+  {
+    "name": "Candoso",
+    "stateCode": "03"
+  },
+  {
+    "name": "Celorico de Basto",
+    "stateCode": "03"
+  },
+  {
+    "name": "Chavão",
+    "stateCode": "03"
+  },
+  {
+    "name": "Cristelo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Esporões",
+    "stateCode": "03"
+  },
+  {
+    "name": "Esposende",
+    "stateCode": "03"
+  },
+  {
+    "name": "Fafe",
+    "stateCode": "03"
+  },
+  {
+    "name": "Faria",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ferreiros",
+    "stateCode": "03"
+  },
+  {
+    "name": "Fradelos",
+    "stateCode": "03"
+  },
+  {
+    "name": "Frossos",
+    "stateCode": "03"
+  },
+  {
+    "name": "Galegos",
+    "stateCode": "03"
+  },
+  {
+    "name": "Gandra",
+    "stateCode": "03"
+  },
+  {
+    "name": "Gondizalves",
+    "stateCode": "03"
+  },
+  {
+    "name": "Gueral",
+    "stateCode": "03"
+  },
+  {
+    "name": "Guimarães",
+    "stateCode": "03"
+  },
+  {
+    "name": "Guisande",
+    "stateCode": "03"
+  },
+  {
+    "name": "Joane",
+    "stateCode": "03"
+  },
+  {
+    "name": "Lago",
+    "stateCode": "03"
+  },
+  {
+    "name": "Lordelo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Macieira de Rates",
+    "stateCode": "03"
+  },
+  {
+    "name": "Marinhas",
+    "stateCode": "03"
+  },
+  {
+    "name": "Mariz",
+    "stateCode": "03"
+  },
+  {
+    "name": "Merelim",
+    "stateCode": "03"
+  },
+  {
+    "name": "Moreira de Conegos",
+    "stateCode": "03"
+  },
+  {
+    "name": "Negreiros",
+    "stateCode": "03"
+  },
+  {
+    "name": "Oliveira",
+    "stateCode": "03"
+  },
+  {
+    "name": "Perelhal",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ponte",
+    "stateCode": "03"
+  },
+  {
+    "name": "Póvoa de Lanhoso",
+    "stateCode": "03"
+  },
+  {
+    "name": "Prado",
+    "stateCode": "03"
+  },
+  {
+    "name": "Real",
+    "stateCode": "03"
+  },
+  {
+    "name": "Refojos de Basto",
+    "stateCode": "03"
+  },
+  {
+    "name": "Rendufe",
+    "stateCode": "03"
+  },
+  {
+    "name": "Riba de Ave",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ribeirão",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ronfe",
+    "stateCode": "03"
+  },
+  {
+    "name": "Sande",
+    "stateCode": "03"
+  },
+  {
+    "name": "Selho",
+    "stateCode": "03"
+  },
+  {
+    "name": "Semelhe",
+    "stateCode": "03"
+  },
+  {
+    "name": "Serzedelo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Serzedo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Tebosa",
+    "stateCode": "03"
+  },
+  {
+    "name": "Terras de Bouro",
+    "stateCode": "03"
+  },
+  {
+    "name": "Urgeses",
+    "stateCode": "03"
+  },
+  {
+    "name": "Várzea",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vieira do Minho",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vila Cova",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vila Frescainha",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vila Nova de Famalicão",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vila Seca",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vila Verde",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vilaça",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vilar de Figos",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vizela",
+    "stateCode": "03"
+  },
+  {
+    "name": "Alfândega da Fé",
+    "stateCode": "04"
+  },
+  {
+    "name": "Belver",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bragança Municipality",
+    "stateCode": "04"
+  },
+  {
+    "name": "Carrazeda de Anciães",
+    "stateCode": "04"
+  },
+  {
+    "name": "Carrazeda de Ansiães",
+    "stateCode": "04"
+  },
+  {
+    "name": "Freixo de Espada à Cinta",
+    "stateCode": "04"
+  },
+  {
+    "name": "Macedo de Cavaleiros",
+    "stateCode": "04"
+  },
+  {
+    "name": "Miranda do Douro",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mirandela",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mogadouro",
+    "stateCode": "04"
+  },
+  {
+    "name": "Samil",
+    "stateCode": "04"
+  },
+  {
+    "name": "Sendim",
+    "stateCode": "04"
+  },
+  {
+    "name": "Torre de Moncorvo",
+    "stateCode": "04"
+  },
+  {
+    "name": "Vila Flor",
+    "stateCode": "04"
+  },
+  {
+    "name": "Vimioso",
+    "stateCode": "04"
+  },
+  {
+    "name": "Vinhais",
+    "stateCode": "04"
+  },
+  {
+    "name": "Aldeia de Joanes",
+    "stateCode": "05"
+  },
+  {
+    "name": "Belmonte",
+    "stateCode": "05"
+  },
+  {
+    "name": "Castelo Branco",
+    "stateCode": "05"
+  },
+  {
+    "name": "Covilhã",
+    "stateCode": "05"
+  },
+  {
+    "name": "Fundão",
+    "stateCode": "05"
+  },
+  {
+    "name": "Idanha-A-Nova",
+    "stateCode": "05"
+  },
+  {
+    "name": "Oleiros",
+    "stateCode": "05"
+  },
+  {
+    "name": "Penamacor",
+    "stateCode": "05"
+  },
+  {
+    "name": "Proença-a-Nova",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sertã",
+    "stateCode": "05"
+  },
+  {
+    "name": "Teixoso",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vila de Rei",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vila Velha de Ródão",
+    "stateCode": "05"
+  },
+  {
+    "name": "Alfarelos",
+    "stateCode": "06"
+  },
+  {
+    "name": "Alhadas",
+    "stateCode": "06"
+  },
+  {
+    "name": "Ançã",
+    "stateCode": "06"
+  },
+  {
+    "name": "Arazede",
+    "stateCode": "06"
+  },
+  {
+    "name": "Arganil",
+    "stateCode": "06"
+  },
+  {
+    "name": "Assafarge",
+    "stateCode": "06"
+  },
+  {
+    "name": "Buarcos",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cantanhede",
+    "stateCode": "06"
+  },
+  {
+    "name": "Carapinheira",
+    "stateCode": "06"
+  },
+  {
+    "name": "Coimbra",
+    "stateCode": "06"
+  },
+  {
+    "name": "Condeixa-a-Nova",
+    "stateCode": "06"
+  },
+  {
+    "name": "Figueira da Foz",
+    "stateCode": "06"
+  },
+  {
+    "name": "Góis",
+    "stateCode": "06"
+  },
+  {
+    "name": "Lavos",
+    "stateCode": "06"
+  },
+  {
+    "name": "Lorvão",
+    "stateCode": "06"
+  },
+  {
+    "name": "Lousã",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mira",
+    "stateCode": "06"
+  },
+  {
+    "name": "Miranda do Corvo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Montemor-o-Velho",
+    "stateCode": "06"
+  },
+  {
+    "name": "Oliveira do Hospital",
+    "stateCode": "06"
+  },
+  {
+    "name": "Oliveira do Mondego",
+    "stateCode": "06"
+  },
+  {
+    "name": "Pampilhosa da Serra",
+    "stateCode": "06"
+  },
+  {
+    "name": "Penacova",
+    "stateCode": "06"
+  },
+  {
+    "name": "Penela",
+    "stateCode": "06"
+  },
+  {
+    "name": "Poiares",
+    "stateCode": "06"
+  },
+  {
+    "name": "Santa Clara",
+    "stateCode": "06"
+  },
+  {
+    "name": "Santo António dos Olivais",
+    "stateCode": "06"
+  },
+  {
+    "name": "São Pedro de Alva",
+    "stateCode": "06"
+  },
+  {
+    "name": "Soure",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tábua",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tavarede",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tocha",
+    "stateCode": "06"
+  },
+  {
+    "name": "Travanca",
+    "stateCode": "06"
+  },
+  {
+    "name": "Vila Nova de Poiares",
+    "stateCode": "06"
+  },
+  {
+    "name": "Alandroal",
+    "stateCode": "07"
+  },
+  {
+    "name": "Arraiolos",
+    "stateCode": "07"
+  },
+  {
+    "name": "Borba",
+    "stateCode": "07"
+  },
+  {
+    "name": "Estremoz",
+    "stateCode": "07"
+  },
+  {
+    "name": "Évora",
+    "stateCode": "07"
+  },
+  {
+    "name": "Montemor-o-Novo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Mora",
+    "stateCode": "07"
+  },
+  {
+    "name": "Mourão",
+    "stateCode": "07"
+  },
+  {
+    "name": "Portel",
+    "stateCode": "07"
+  },
+  {
+    "name": "Redondo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Reguengos de Monsaraz",
+    "stateCode": "07"
+  },
+  {
+    "name": "Vendas Novas",
+    "stateCode": "07"
+  },
+  {
+    "name": "Viana do Alentejo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Vila Viçosa",
+    "stateCode": "07"
+  },
+  {
+    "name": "Albufeira",
+    "stateCode": "08"
+  },
+  {
+    "name": "Alcantarilha",
+    "stateCode": "08"
+  },
+  {
+    "name": "Alcoutim",
+    "stateCode": "08"
+  },
+  {
+    "name": "Algoz",
+    "stateCode": "08"
+  },
+  {
+    "name": "Aljezur",
+    "stateCode": "08"
+  },
+  {
+    "name": "Almancil",
+    "stateCode": "08"
+  },
+  {
+    "name": "Altura",
+    "stateCode": "08"
+  },
+  {
+    "name": "Alvor",
+    "stateCode": "08"
+  },
+  {
+    "name": "Armação de Pêra",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bensafrim",
+    "stateCode": "08"
+  },
+  {
+    "name": "Boliqueime",
+    "stateCode": "08"
+  },
+  {
+    "name": "Cabanas de Tavira",
+    "stateCode": "08"
+  },
+  {
+    "name": "Carvoeiro",
+    "stateCode": "08"
+  },
+  {
+    "name": "Castro Marim",
+    "stateCode": "08"
+  },
+  {
+    "name": "Conceição",
+    "stateCode": "08"
+  },
+  {
+    "name": "Estói",
+    "stateCode": "08"
+  },
+  {
+    "name": "Estômbar",
+    "stateCode": "08"
+  },
+  {
+    "name": "Faro",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ferragudo",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ferreiras",
+    "stateCode": "08"
+  },
+  {
+    "name": "Fuzeta",
+    "stateCode": "08"
+  },
+  {
+    "name": "Guia",
+    "stateCode": "08"
+  },
+  {
+    "name": "Lagoa",
+    "stateCode": "08"
+  },
+  {
+    "name": "Lagos",
+    "stateCode": "08"
+  },
+  {
+    "name": "Laranjeiro",
+    "stateCode": "08"
+  },
+  {
+    "name": "Loulé",
+    "stateCode": "08"
+  },
+  {
+    "name": "Luz",
+    "stateCode": "08"
+  },
+  {
+    "name": "Manta Rota",
+    "stateCode": "08"
+  },
+  {
+    "name": "Marmelete",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mexilhoeira Grande",
+    "stateCode": "08"
+  },
+  {
+    "name": "Moncarapacho",
+    "stateCode": "08"
+  },
+  {
+    "name": "Monchique",
+    "stateCode": "08"
+  },
+  {
+    "name": "Monte Gordo",
+    "stateCode": "08"
+  },
+  {
+    "name": "Olhão",
+    "stateCode": "08"
+  },
+  {
+    "name": "Olhos de Água",
+    "stateCode": "08"
+  },
+  {
+    "name": "Paderne",
+    "stateCode": "08"
+  },
+  {
+    "name": "Parchal",
+    "stateCode": "08"
+  },
+  {
+    "name": "Pêra",
+    "stateCode": "08"
+  },
+  {
+    "name": "Porches",
+    "stateCode": "08"
+  },
+  {
+    "name": "Portimão",
+    "stateCode": "08"
+  },
+  {
+    "name": "Quarteira",
+    "stateCode": "08"
+  },
+  {
+    "name": "Sagres",
+    "stateCode": "08"
+  },
+  {
+    "name": "Santa Bárbara de Nexe",
+    "stateCode": "08"
+  },
+  {
+    "name": "Santa Luzia",
+    "stateCode": "08"
+  },
+  {
+    "name": "São Bartolomeu de Messines",
+    "stateCode": "08"
+  },
+  {
+    "name": "São Brás de Alportel",
+    "stateCode": "08"
+  },
+  {
+    "name": "São Marcos da Serra",
+    "stateCode": "08"
+  },
+  {
+    "name": "Senhora da Luz",
+    "stateCode": "08"
+  },
+  {
+    "name": "Silves",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tavira",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tunes",
+    "stateCode": "08"
+  },
+  {
+    "name": "Vila do Bispo",
+    "stateCode": "08"
+  },
+  {
+    "name": "Vila Nova De Cacela",
+    "stateCode": "08"
+  },
+  {
+    "name": "Vila Real de Santo António",
+    "stateCode": "08"
+  },
+  {
+    "name": "Vilamoura",
+    "stateCode": "08"
+  },
+  {
+    "name": "Abrigada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Açores",
+    "stateCode": "09"
+  },
+  {
+    "name": "Adão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Agualva",
+    "stateCode": "09"
+  },
+  {
+    "name": "Águas Belas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aguiar da Beira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ajuda",
+    "stateCode": "09"
+  },
+  {
+    "name": "Albardo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alcabideche",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alcains",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alcântara",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alcoentre",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aldeia da Ponte",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aldeia da Ribeira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aldeia de Santo António",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aldeia do Bispo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aldeia Galega da Merceana",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aldeia Gavinha",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aldeia Nova, Miranda do Douro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aldeia Velha",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aldeia Viçosa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aldeias",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alenquer",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alfaiates",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alfornelos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alfragide",
+    "stateCode": "09"
+  },
+  {
+    "name": "Algés",
+    "stateCode": "09"
+  },
+  {
+    "name": "Algodres",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alguber",
+    "stateCode": "09"
+  },
+  {
+    "name": "Algueirão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Algueirão–Mem Martins",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alhandra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Almargem",
+    "stateCode": "09"
+  },
+  {
+    "name": "Almargem do Bispo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Almeida",
+    "stateCode": "09"
+  },
+  {
+    "name": "Almendra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Almofala",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alto do Pina",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alvalade",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alvendre",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alverca da Beira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alverca do Ribatejo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Alvoco da Serra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Amadora",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ameixoeira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Amoreira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Anjos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Apelação",
+    "stateCode": "09"
+  },
+  {
+    "name": "Arcozelo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Arranhó",
+    "stateCode": "09"
+  },
+  {
+    "name": "Arrifana",
+    "stateCode": "09"
+  },
+  {
+    "name": "Arruda Dos Vinhos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Atalaia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aveiras de Baixo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aveiras de Cima",
+    "stateCode": "09"
+  },
+  {
+    "name": "Avelãs da Ribeira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aveloso",
+    "stateCode": "09"
+  },
+  {
+    "name": "Azambuja",
+    "stateCode": "09"
+  },
+  {
+    "name": "Azambuja (town)",
+    "stateCode": "09"
+  },
+  {
+    "name": "Azenhas do Mar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Azevo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Azueira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Baraçal",
+    "stateCode": "09"
+  },
+  {
+    "name": "Barcarena",
+    "stateCode": "09"
+  },
+  {
+    "name": "Barreira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Beato",
+    "stateCode": "09"
+  },
+  {
+    "name": "Belas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bendada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Benespera",
+    "stateCode": "09"
+  },
+  {
+    "name": "Benfica",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bismula",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bobadela",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bouça Cova",
+    "stateCode": "09"
+  },
+  {
+    "name": "Brandoa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bucelas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Buraca",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cabanas de Torres",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cabeça",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cacem",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cachoeiras",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cadafais",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cadafaz",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cadaval",
+    "stateCode": "09"
+  },
+  {
+    "name": "Calhandriz",
+    "stateCode": "09"
+  },
+  {
+    "name": "Camarate",
+    "stateCode": "09"
+  },
+  {
+    "name": "Campelos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Campo Grande",
+    "stateCode": "09"
+  },
+  {
+    "name": "Campolide",
+    "stateCode": "09"
+  },
+  {
+    "name": "Caneças",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carapito",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carcavelos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cardosas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carmões",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carnaxide",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carnicães",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carnide",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carnota",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carragozela",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carrapichana",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carregado",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carvalhal",
+    "stateCode": "09"
+  },
+  {
+    "name": "Carvoeira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Casal de Cambra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Casal de Cinza",
+    "stateCode": "09"
+  },
+  {
+    "name": "Casal Vasco",
+    "stateCode": "09"
+  },
+  {
+    "name": "Casas do Soeiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cascais",
+    "stateCode": "09"
+  },
+  {
+    "name": "Castanheira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Castanheira do Ribatejo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Casteição",
+    "stateCode": "09"
+  },
+  {
+    "name": "Casteleiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Castelo (Lisbon)",
+    "stateCode": "09"
+  },
+  {
+    "name": "Castelo Bom",
+    "stateCode": "09"
+  },
+  {
+    "name": "Castelo Melhor",
+    "stateCode": "09"
+  },
+  {
+    "name": "Castelo Rodrigo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cativelos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cavadoude",
+    "stateCode": "09"
+  },
+  {
+    "name": "Caxias",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cedovim",
+    "stateCode": "09"
+  },
+  {
+    "name": "Celorico da Beira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cercal",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cerdeira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cerejo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Charneca",
+    "stateCode": "09"
+  },
+  {
+    "name": "Chãs",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cheleiros",
+    "stateCode": "09"
+  },
+  {
+    "name": "Codesseiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cogula",
+    "stateCode": "09"
+  },
+  {
+    "name": "Colares",
+    "stateCode": "09"
+  },
+  {
+    "name": "Coração de Jesus",
+    "stateCode": "09"
+  },
+  {
+    "name": "Coriscada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cortiçada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cortiçô",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cortiçô da Serra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Coruche",
+    "stateCode": "09"
+  },
+  {
+    "name": "Corujeira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cótimos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cruz Quebrada - Dafundo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Custoias",
+    "stateCode": "09"
+  },
+  {
+    "name": "Damaia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Dois Portos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Dornelas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Eirado",
+    "stateCode": "09"
+  },
+  {
+    "name": "Encarnação",
+    "stateCode": "09"
+  },
+  {
+    "name": "Enxara do Bispo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ericeira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ervas Tenras",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ervedosa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Escalhão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Estoril",
+    "stateCode": "09"
+  },
+  {
+    "name": "Faia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Falagueira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Famalicão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Famões",
+    "stateCode": "09"
+  },
+  {
+    "name": "Fanhões",
+    "stateCode": "09"
+  },
+  {
+    "name": "Fernão Joanes",
+    "stateCode": "09"
+  },
+  {
+    "name": "Fiães",
+    "stateCode": "09"
+  },
+  {
+    "name": "Figueira de Castelo Rodrigo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Figueira do Guincho",
+    "stateCode": "09"
+  },
+  {
+    "name": "Figueiró da Granja",
+    "stateCode": "09"
+  },
+  {
+    "name": "Figueiró da Serra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Figueiros",
+    "stateCode": "09"
+  },
+  {
+    "name": "Fóios",
+    "stateCode": "09"
+  },
+  {
+    "name": "Folgosinho",
+    "stateCode": "09"
+  },
+  {
+    "name": "Folhadosa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Fontanelas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Fonte Longa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Forninhos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Forno Telheiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Fornos de Algodres",
+    "stateCode": "09"
+  },
+  {
+    "name": "Forte da Casa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Freches",
+    "stateCode": "09"
+  },
+  {
+    "name": "Freineda",
+    "stateCode": "09"
+  },
+  {
+    "name": "Freiria",
+    "stateCode": "09"
+  },
+  {
+    "name": "Freixeda do Torrão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Freixedas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Freixo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Freixo de Numão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Frielas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Gagos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Girabolhos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Gonçalo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Gonçalo Bocas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Gouveia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Graça",
+    "stateCode": "09"
+  },
+  {
+    "name": "Gradil",
+    "stateCode": "09"
+  },
+  {
+    "name": "Gradiz",
+    "stateCode": "09"
+  },
+  {
+    "name": "Granja",
+    "stateCode": "09"
+  },
+  {
+    "name": "Guarda",
+    "stateCode": "09"
+  },
+  {
+    "name": "Guilheiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Horta",
+    "stateCode": "09"
+  },
+  {
+    "name": "Igreja Nova",
+    "stateCode": "09"
+  },
+  {
+    "name": "Infias",
+    "stateCode": "09"
+  },
+  {
+    "name": "Jarmelo São Miguel",
+    "stateCode": "09"
+  },
+  {
+    "name": "Jarmelo São Pedro",
+    "stateCode": "09"
+  },
+  {
+    "name": "João Antão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Junça",
+    "stateCode": "09"
+  },
+  {
+    "name": "Juncais",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lagarinhos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lajeosa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lajeosa do Mondego",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lajes",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lamas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lamegal",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lameiras",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lapa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lapa Dos Dinheiros",
+    "stateCode": "09"
+  },
+  {
+    "name": "Leomil",
+    "stateCode": "09"
+  },
+  {
+    "name": "Linda-a-Velha",
+    "stateCode": "09"
+  },
+  {
+    "name": "Linhares (Celorico da Beira)",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lisbon",
+    "stateCode": "09"
+  },
+  {
+    "name": "Longroiva",
+    "stateCode": "09"
+  },
+  {
+    "name": "Loriga",
+    "stateCode": "09"
+  },
+  {
+    "name": "Loures",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lourinhã",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lousa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lumiar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Maçainhas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Maçal do Chão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Maceira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Maçussa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Madalena",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mafra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Malcata",
+    "stateCode": "09"
+  },
+  {
+    "name": "Malhada Sorda",
+    "stateCode": "09"
+  },
+  {
+    "name": "Malpartida",
+    "stateCode": "09"
+  },
+  {
+    "name": "Malveira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mangualde da Serra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Manigoto",
+    "stateCode": "09"
+  },
+  {
+    "name": "Manique do Intendente",
+    "stateCode": "09"
+  },
+  {
+    "name": "Manteigas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Manteigas (São Pedro)",
+    "stateCode": "09"
+  },
+  {
+    "name": "Marialva",
+    "stateCode": "09"
+  },
+  {
+    "name": "Marmeleiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Marteleira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mártires",
+    "stateCode": "09"
+  },
+  {
+    "name": "Marvila",
+    "stateCode": "09"
+  },
+  {
+    "name": "Massamá",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mata de Lobos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Matacães",
+    "stateCode": "09"
+  },
+  {
+    "name": "Matança",
+    "stateCode": "09"
+  },
+  {
+    "name": "Maxial",
+    "stateCode": "09"
+  },
+  {
+    "name": "Meca",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mêda",
+    "stateCode": "09"
+  },
+  {
+    "name": "Meios",
+    "stateCode": "09"
+  },
+  {
+    "name": "Melo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mem Martins",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mercês",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mesquitela",
+    "stateCode": "09"
+  },
+  {
+    "name": "Milharado",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mina",
+    "stateCode": "09"
+  },
+  {
+    "name": "Minhocal",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mira-Sintra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Miragaia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Miuzela",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mizarela",
+    "stateCode": "09"
+  },
+  {
+    "name": "Moimenta da Serra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Moimentinha",
+    "stateCode": "09"
+  },
+  {
+    "name": "Moita",
+    "stateCode": "09"
+  },
+  {
+    "name": "Moita dos Ferreiros",
+    "stateCode": "09"
+  },
+  {
+    "name": "Moledo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Monte Abraão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Monte Estoril",
+    "stateCode": "09"
+  },
+  {
+    "name": "Monte Redondo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Montelavar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Moreira de Rei",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mós",
+    "stateCode": "09"
+  },
+  {
+    "name": "Moscavide",
+    "stateCode": "09"
+  },
+  {
+    "name": "Murça",
+    "stateCode": "09"
+  },
+  {
+    "name": "Muxagata",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nabais",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nave",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nave de Haver",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nespereira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nossa Senhora de Fátima",
+    "stateCode": "09"
+  },
+  {
+    "name": "Numão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Odivelas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Odivelas Municipality",
+    "stateCode": "09"
+  },
+  {
+    "name": "Oeiras",
+    "stateCode": "09"
+  },
+  {
+    "name": "Oeiras e São Julião da Barra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Olhalvo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Olival de Basto",
+    "stateCode": "09"
+  },
+  {
+    "name": "Olival do Basto",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ota",
+    "stateCode": "09"
+  },
+  {
+    "name": "Outeiro da Cabeça",
+    "stateCode": "09"
+  },
+  {
+    "name": "Outeiro de Gatos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Paço de Arcos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Paços da Serra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Painho",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pala",
+    "stateCode": "09"
+  },
+  {
+    "name": "Palhais",
+    "stateCode": "09"
+  },
+  {
+    "name": "Panoias de Cima",
+    "stateCode": "09"
+  },
+  {
+    "name": "Parada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Paranhos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Parede",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pega",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pena",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pena Lobo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pena Verde",
+    "stateCode": "09"
+  },
+  {
+    "name": "Penha de Águia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Penha de França",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pêra do Moço",
+    "stateCode": "09"
+  },
+  {
+    "name": "Peral",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pereiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pereiro de Palhacana",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pêro Moniz",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pero Pinheiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Peva",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pinhanços",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pinheiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pinhel",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pínzio",
+    "stateCode": "09"
+  },
+  {
+    "name": "Poço do Canto",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pomares",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ponte do Rol",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pontinha",
+    "stateCode": "09"
+  },
+  {
+    "name": "Portela",
+    "stateCode": "09"
+  },
+  {
+    "name": "Porto da Carne",
+    "stateCode": "09"
+  },
+  {
+    "name": "Porto Salvo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pousada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pousafoles do Bispo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Póvoa de Santa Iria",
+    "stateCode": "09"
+  },
+  {
+    "name": "Póvoa de Santo Adrião",
+    "stateCode": "09"
+  },
+  {
+    "name": "Póvoa do Concelho",
+    "stateCode": "09"
+  },
+  {
+    "name": "Prados",
+    "stateCode": "09"
+  },
+  {
+    "name": "Prazeres",
+    "stateCode": "09"
+  },
+  {
+    "name": "Prior Velho",
+    "stateCode": "09"
+  },
+  {
+    "name": "Prova",
+    "stateCode": "09"
+  },
+  {
+    "name": "Quadrazais",
+    "stateCode": "09"
+  },
+  {
+    "name": "Queijas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Queiriz",
+    "stateCode": "09"
+  },
+  {
+    "name": "Queluz",
+    "stateCode": "09"
+  },
+  {
+    "name": "Quintã de Pêro Martins",
+    "stateCode": "09"
+  },
+  {
+    "name": "Quintas de São Bartolomeu",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rabaçal",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ramada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ramalhal",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ramela",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ranhados",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rapa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rapoula do Côa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ratoeira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Reboleira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Reboleiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rebolosa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Reguengo Grande",
+    "stateCode": "09"
+  },
+  {
+    "name": "Reigada",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rendo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ribafria",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ribamar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ribamondego",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ribeira Dos Carinhos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rio de Mel",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rio de Mouro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rio Torto",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rochoso",
+    "stateCode": "09"
+  },
+  {
+    "name": "Runa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ruvina",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sabugal",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sabugueiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sacavém",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sacramento",
+    "stateCode": "09"
+  },
+  {
+    "name": "Safurdão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Salgueirais",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sameice",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sameiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sandomil",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Bárbara",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Catarina",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Comba",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Engrácia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Eufémia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Eulália",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Iria da Azóia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Iria de Azoia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Isabel",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Justa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Maria",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Maria de Belém",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Maria do Castelo e São Miguel",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Maria dos Olivais",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Maria e São Miguel",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santa Marinha",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santana da Azinha",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santiago",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santiago dos Velhos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santo Antão do Tojal",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santo António dos Cavaleiros",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santo Condestável",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santo Estêvão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santo Estêvão das Galés",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santo Isidoro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santo Quintino",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santos-o-Velho",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Bartolomeu",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Bartolomeu dos Galegos",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Brás",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Cristóvão e São Lourenço",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Domingos de Benfica",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Domingos de Rana",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Francisco Xavier",
+    "stateCode": "09"
+  },
+  {
+    "name": "São João",
+    "stateCode": "09"
+  },
+  {
+    "name": "São João da Talha",
+    "stateCode": "09"
+  },
+  {
+    "name": "São João das Lampas",
+    "stateCode": "09"
+  },
+  {
+    "name": "São João de Brito",
+    "stateCode": "09"
+  },
+  {
+    "name": "São João de Deus",
+    "stateCode": "09"
+  },
+  {
+    "name": "São João Dos Montes",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Jorge de Arroios",
+    "stateCode": "09"
+  },
+  {
+    "name": "São José",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Julião",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Julião do Tojal",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Mamede",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Marcos",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Martinho",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Miguel",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Miguel da Guarda",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Miguel de Alcainça",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Nicolau",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Paio",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Paulo",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Pedro",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Pedro da Cadeira",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Pedro de Penaferrim",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Pedro de Rio Seco",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Romão",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Sebastião da Pedreira",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Vicente",
+    "stateCode": "09"
+  },
+  {
+    "name": "São Vicente de Fora",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sapataria",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sazes da Beira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sé",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sebadelhe",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sebadelhe da Serra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Seia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Seixas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Seixo do Côa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sequeira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sequeiros",
+    "stateCode": "09"
+  },
+  {
+    "name": "Silveira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sintra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sintra (town)",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sobral da Abelheira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sobral da Serra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sobral de Monte Agraço",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sobral Pichorro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sobralinho",
+    "stateCode": "09"
+  },
+  {
+    "name": "Socorro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sortelha",
+    "stateCode": "09"
+  },
+  {
+    "name": "Souro Pires",
+    "stateCode": "09"
+  },
+  {
+    "name": "Souto",
+    "stateCode": "09"
+  },
+  {
+    "name": "Souto de Aguiar da Beira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Souto Maior",
+    "stateCode": "09"
+  },
+  {
+    "name": "Tamanhos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Teixeira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Terrenho",
+    "stateCode": "09"
+  },
+  {
+    "name": "Terrugem",
+    "stateCode": "09"
+  },
+  {
+    "name": "Torre do Terrenho",
+    "stateCode": "09"
+  },
+  {
+    "name": "Torres",
+    "stateCode": "09"
+  },
+  {
+    "name": "Torres Vedras",
+    "stateCode": "09"
+  },
+  {
+    "name": "Torrozelo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Touça",
+    "stateCode": "09"
+  },
+  {
+    "name": "Tourais",
+    "stateCode": "09"
+  },
+  {
+    "name": "Trancoso",
+    "stateCode": "09"
+  },
+  {
+    "name": "Travancinha",
+    "stateCode": "09"
+  },
+  {
+    "name": "Triana",
+    "stateCode": "09"
+  },
+  {
+    "name": "Trinta",
+    "stateCode": "09"
+  },
+  {
+    "name": "Turcifal",
+    "stateCode": "09"
+  },
+  {
+    "name": "Unhos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Valbom",
+    "stateCode": "09"
+  },
+  {
+    "name": "Valdujo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vale da Mula",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vale de Amoreira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vale de Azares",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vale de Espinho",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vale de Estrela",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vale do Paraíso",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vale do Seixo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vale Flor",
+    "stateCode": "09"
+  },
+  {
+    "name": "Valezim",
+    "stateCode": "09"
+  },
+  {
+    "name": "Valhelhas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Valverde",
+    "stateCode": "09"
+  },
+  {
+    "name": "Várzea de Meruge",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vascoveiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vela",
+    "stateCode": "09"
+  },
+  {
+    "name": "Velosa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Venda do Pinheiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Venda Nova",
+    "stateCode": "09"
+  },
+  {
+    "name": "Venteira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ventosa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vermelha",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vermiosa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vialonga",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vide",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vide Entre Vinhas",
+    "stateCode": "09"
+  },
+  {
+    "name": "Videmonte",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Boa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Boa do Mondego",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Cortês da Serra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Cortês do Mondego",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Cova à Coelheira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila do Touro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Fernando",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Franca da Serra",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Franca das Naves",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Franca de Xira",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Franca do Deão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Franca do Rosário",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Garcia",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Nova da Rainha",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Nova de Foz Côa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Nova de São Pedro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Nova de Tazem",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Ruiva",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Soeiro do Chão",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Verde",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vila Verde dos Francos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vilar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vilar de Amargo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vilar Formoso",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vilar Maior",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vilar Torpim",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vilares",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vimeiro",
+    "stateCode": "09"
+  },
+  {
+    "name": "Vinhó",
+    "stateCode": "09"
+  },
+  {
+    "name": "A dos Francos",
+    "stateCode": "10"
+  },
+  {
+    "name": "Alcobaça",
+    "stateCode": "10"
+  },
+  {
+    "name": "Alfeizerão",
+    "stateCode": "10"
+  },
+  {
+    "name": "Aljubarrota",
+    "stateCode": "10"
+  },
+  {
+    "name": "Alvaiázere",
+    "stateCode": "10"
+  },
+  {
+    "name": "Alvorninha",
+    "stateCode": "10"
+  },
+  {
+    "name": "Amor",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ansião",
+    "stateCode": "10"
+  },
+  {
+    "name": "Atouguia da Baleia",
+    "stateCode": "10"
+  },
+  {
+    "name": "Batalha",
+    "stateCode": "10"
+  },
+  {
+    "name": "Benedita",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bombarral",
+    "stateCode": "10"
+  },
+  {
+    "name": "Caldas da Rainha",
+    "stateCode": "10"
+  },
+  {
+    "name": "Caranguejeira",
+    "stateCode": "10"
+  },
+  {
+    "name": "Castanheira de Pêra",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cela",
+    "stateCode": "10"
+  },
+  {
+    "name": "Famalicão",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ferrel",
+    "stateCode": "10"
+  },
+  {
+    "name": "Figueiró Dos Vinhos",
+    "stateCode": "10"
+  },
+  {
+    "name": "Foz do Arelho",
+    "stateCode": "10"
+  },
+  {
+    "name": "Leiria",
+    "stateCode": "10"
+  },
+  {
+    "name": "Louriçal",
+    "stateCode": "10"
+  },
+  {
+    "name": "Maceira",
+    "stateCode": "10"
+  },
+  {
+    "name": "Marinha Grande",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mira",
+    "stateCode": "10"
+  },
+  {
+    "name": "Monte Real",
+    "stateCode": "10"
+  },
+  {
+    "name": "Monte Redondo",
+    "stateCode": "10"
+  },
+  {
+    "name": "Nadadouro",
+    "stateCode": "10"
+  },
+  {
+    "name": "Nazaré",
+    "stateCode": "10"
+  },
+  {
+    "name": "Óbidos",
+    "stateCode": "10"
+  },
+  {
+    "name": "Pataias",
+    "stateCode": "10"
+  },
+  {
+    "name": "Pedrógão Grande",
+    "stateCode": "10"
+  },
+  {
+    "name": "Peniche",
+    "stateCode": "10"
+  },
+  {
+    "name": "Pombal",
+    "stateCode": "10"
+  },
+  {
+    "name": "Porto de Mós",
+    "stateCode": "10"
+  },
+  {
+    "name": "Salir de Matos",
+    "stateCode": "10"
+  },
+  {
+    "name": "Santa Catarina da Serra",
+    "stateCode": "10"
+  },
+  {
+    "name": "São Martinho do Porto",
+    "stateCode": "10"
+  },
+  {
+    "name": "Serra de El-Rei",
+    "stateCode": "10"
+  },
+  {
+    "name": "Souto da Carpalhosa",
+    "stateCode": "10"
+  },
+  {
+    "name": "Turquel",
+    "stateCode": "10"
+  },
+  {
+    "name": "Valado de Frades",
+    "stateCode": "10"
+  },
+  {
+    "name": "Vestiaria",
+    "stateCode": "10"
+  },
+  {
+    "name": "Vidais",
+    "stateCode": "10"
+  },
+  {
+    "name": "Vieira de Leiria",
+    "stateCode": "10"
+  },
+  {
+    "name": "A dos Cunhados",
+    "stateCode": "11"
+  },
+  {
+    "name": "Abrigada",
+    "stateCode": "11"
+  },
+  {
+    "name": "Alcabideche",
+    "stateCode": "11"
+  },
+  {
+    "name": "Alcoentre",
+    "stateCode": "11"
+  },
+  {
+    "name": "Alenquer",
+    "stateCode": "11"
+  },
+  {
+    "name": "Alfragide",
+    "stateCode": "11"
+  },
+  {
+    "name": "Algés",
+    "stateCode": "11"
+  },
+  {
+    "name": "Algueirão",
+    "stateCode": "11"
+  },
+  {
+    "name": "Alhandra",
+    "stateCode": "11"
+  },
+  {
+    "name": "Almargem",
+    "stateCode": "11"
+  },
+  {
+    "name": "Alvalade",
+    "stateCode": "11"
+  },
+  {
+    "name": "Amadora",
+    "stateCode": "11"
+  },
+  {
+    "name": "Apelação",
+    "stateCode": "11"
+  },
+  {
+    "name": "Arranhó",
+    "stateCode": "11"
+  },
+  {
+    "name": "Arruda dos Vinhos",
+    "stateCode": "11"
+  },
+  {
+    "name": "Aveiras de Cima",
+    "stateCode": "11"
+  },
+  {
+    "name": "Azambuja",
+    "stateCode": "11"
+  },
+  {
+    "name": "Barcarena",
+    "stateCode": "11"
+  },
+  {
+    "name": "Beato António",
+    "stateCode": "11"
+  },
+  {
+    "name": "Belas",
+    "stateCode": "11"
+  },
+  {
+    "name": "Benfica",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bobadela",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bucelas",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cabanas de Torres",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cacém",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cadafais",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cadaval",
+    "stateCode": "11"
+  },
+  {
+    "name": "Camarate",
+    "stateCode": "11"
+  },
+  {
+    "name": "Campelos",
+    "stateCode": "11"
+  },
+  {
+    "name": "Caneças",
+    "stateCode": "11"
+  },
+  {
+    "name": "Carcavelos",
+    "stateCode": "11"
+  },
+  {
+    "name": "Carnaxide",
+    "stateCode": "11"
+  },
+  {
+    "name": "Carregado",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cascais",
+    "stateCode": "11"
+  },
+  {
+    "name": "Castanheira do Ribatejo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Caxias",
+    "stateCode": "11"
+  },
+  {
+    "name": "Charneca",
+    "stateCode": "11"
+  },
+  {
+    "name": "Colares",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ericeira",
+    "stateCode": "11"
+  },
+  {
+    "name": "Estoril",
+    "stateCode": "11"
+  },
+  {
+    "name": "Famões",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fontanelas",
+    "stateCode": "11"
+  },
+  {
+    "name": "Linda-a-Velha",
+    "stateCode": "11"
+  },
+  {
+    "name": "Lisbon",
+    "stateCode": "11"
+  },
+  {
+    "name": "Loures",
+    "stateCode": "11"
+  },
+  {
+    "name": "Lourinhã",
+    "stateCode": "11"
+  },
+  {
+    "name": "Mafra",
+    "stateCode": "11"
+  },
+  {
+    "name": "Malveira",
+    "stateCode": "11"
+  },
+  {
+    "name": "Massamá",
+    "stateCode": "11"
+  },
+  {
+    "name": "Meca",
+    "stateCode": "11"
+  },
+  {
+    "name": "Mem Martins",
+    "stateCode": "11"
+  },
+  {
+    "name": "Milharado",
+    "stateCode": "11"
+  },
+  {
+    "name": "Moita dos Ferreiros",
+    "stateCode": "11"
+  },
+  {
+    "name": "Monte Estoril",
+    "stateCode": "11"
+  },
+  {
+    "name": "Moscavide e Portela",
+    "stateCode": "11"
+  },
+  {
+    "name": "Odivelas",
+    "stateCode": "11"
+  },
+  {
+    "name": "Oeiras",
+    "stateCode": "11"
+  },
+  {
+    "name": "Olivais",
+    "stateCode": "11"
+  },
+  {
+    "name": "Olival do Basto",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ota",
+    "stateCode": "11"
+  },
+  {
+    "name": "Paço de Arcos",
+    "stateCode": "11"
+  },
+  {
+    "name": "Parede",
+    "stateCode": "11"
+  },
+  {
+    "name": "Pero Pinheiro",
+    "stateCode": "11"
+  },
+  {
+    "name": "Pontinha",
+    "stateCode": "11"
+  },
+  {
+    "name": "Porto Salvo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Póvoa de Santa Iria",
+    "stateCode": "11"
+  },
+  {
+    "name": "Póvoa de Santo Adrião",
+    "stateCode": "11"
+  },
+  {
+    "name": "Prior Velho",
+    "stateCode": "11"
+  },
+  {
+    "name": "Queijas",
+    "stateCode": "11"
+  },
+  {
+    "name": "Queluz",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ramada",
+    "stateCode": "11"
+  },
+  {
+    "name": "Rio de Mouro",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sacavém",
+    "stateCode": "11"
+  },
+  {
+    "name": "Santa Iria da Azóia",
+    "stateCode": "11"
+  },
+  {
+    "name": "Santo Antão do Tojal",
+    "stateCode": "11"
+  },
+  {
+    "name": "Santo Isidoro",
+    "stateCode": "11"
+  },
+  {
+    "name": "Santos-o-Velho",
+    "stateCode": "11"
+  },
+  {
+    "name": "São Bartolomeu",
+    "stateCode": "11"
+  },
+  {
+    "name": "São Domingos de Rana",
+    "stateCode": "11"
+  },
+  {
+    "name": "São João da Talha",
+    "stateCode": "11"
+  },
+  {
+    "name": "São João das Lampas",
+    "stateCode": "11"
+  },
+  {
+    "name": "São João dos Montes",
+    "stateCode": "11"
+  },
+  {
+    "name": "São Pedro da Cadeira",
+    "stateCode": "11"
+  },
+  {
+    "name": "Silveira",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sintra",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sobral de Monte Agraço",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sobralinho",
+    "stateCode": "11"
+  },
+  {
+    "name": "Terrugem",
+    "stateCode": "11"
+  },
+  {
+    "name": "Torres Vedras",
+    "stateCode": "11"
+  },
+  {
+    "name": "Unhos",
+    "stateCode": "11"
+  },
+  {
+    "name": "Venda do Pinheiro",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ventosa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vialonga",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vila Franca de Xira",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vila Verde",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vimeiro",
+    "stateCode": "11"
+  },
+  {
+    "name": "Alter do Chão",
+    "stateCode": "12"
+  },
+  {
+    "name": "Arronches",
+    "stateCode": "12"
+  },
+  {
+    "name": "Atalaia",
+    "stateCode": "12"
+  },
+  {
+    "name": "Avis",
+    "stateCode": "12"
+  },
+  {
+    "name": "Campo Maior",
+    "stateCode": "12"
+  },
+  {
+    "name": "Castelo de Vide",
+    "stateCode": "12"
+  },
+  {
+    "name": "Crato",
+    "stateCode": "12"
+  },
+  {
+    "name": "Elvas",
+    "stateCode": "12"
+  },
+  {
+    "name": "Fronteira",
+    "stateCode": "12"
+  },
+  {
+    "name": "Gavião",
+    "stateCode": "12"
+  },
+  {
+    "name": "Marvão",
+    "stateCode": "12"
+  },
+  {
+    "name": "Monforte",
+    "stateCode": "12"
+  },
+  {
+    "name": "Montargil",
+    "stateCode": "12"
+  },
+  {
+    "name": "Nisa",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ponte de Sor",
+    "stateCode": "12"
+  },
+  {
+    "name": "Portalegre",
+    "stateCode": "12"
+  },
+  {
+    "name": "Santo André",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sousel",
+    "stateCode": "12"
+  },
+  {
+    "name": "Vale da Amoreira",
+    "stateCode": "12"
+  },
+  {
+    "name": "Água Longa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Águas Santas",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aguçadoura",
+    "stateCode": "13"
+  },
+  {
+    "name": "Alfena",
+    "stateCode": "13"
+  },
+  {
+    "name": "Alpendurada",
+    "stateCode": "13"
+  },
+  {
+    "name": "Amarante",
+    "stateCode": "13"
+  },
+  {
+    "name": "Amorim",
+    "stateCode": "13"
+  },
+  {
+    "name": "Anta",
+    "stateCode": "13"
+  },
+  {
+    "name": "Arcozelo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Argivai",
+    "stateCode": "13"
+  },
+  {
+    "name": "Árvore",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aver-o-Mar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aves",
+    "stateCode": "13"
+  },
+  {
+    "name": "Avintes",
+    "stateCode": "13"
+  },
+  {
+    "name": "Azenha",
+    "stateCode": "13"
+  },
+  {
+    "name": "Baguim do Monte",
+    "stateCode": "13"
+  },
+  {
+    "name": "Baião",
+    "stateCode": "13"
+  },
+  {
+    "name": "Balazar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Baltar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Barrosas",
+    "stateCode": "13"
+  },
+  {
+    "name": "Beiriz de Baixo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bougado",
+    "stateCode": "13"
+  },
+  {
+    "name": "Campo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Canelas",
+    "stateCode": "13"
+  },
+  {
+    "name": "Canidelo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Carvalhosa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Castelões de Cepeda",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ermesinde",
+    "stateCode": "13"
+  },
+  {
+    "name": "Estela",
+    "stateCode": "13"
+  },
+  {
+    "name": "Fânzeres",
+    "stateCode": "13"
+  },
+  {
+    "name": "Felgueiras",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ferreira",
+    "stateCode": "13"
+  },
+  {
+    "name": "Figueiró",
+    "stateCode": "13"
+  },
+  {
+    "name": "Foz do Douro",
+    "stateCode": "13"
+  },
+  {
+    "name": "Foz do Sousa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Frazão",
+    "stateCode": "13"
+  },
+  {
+    "name": "Freamunde",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gandra",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gemunde",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gondomar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Grijó",
+    "stateCode": "13"
+  },
+  {
+    "name": "Guifões",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gulpilhares",
+    "stateCode": "13"
+  },
+  {
+    "name": "Jovim",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lavra",
+    "stateCode": "13"
+  },
+  {
+    "name": "Leça da Palmeira",
+    "stateCode": "13"
+  },
+  {
+    "name": "Leça do Bailio",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lordelo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lousada",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lustosa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Madalena",
+    "stateCode": "13"
+  },
+  {
+    "name": "Maia",
+    "stateCode": "13"
+  },
+  {
+    "name": "Marco de Canaveses",
+    "stateCode": "13"
+  },
+  {
+    "name": "Marco de Canavezes",
+    "stateCode": "13"
+  },
+  {
+    "name": "Margaride",
+    "stateCode": "13"
+  },
+  {
+    "name": "Matosinhos",
+    "stateCode": "13"
+  },
+  {
+    "name": "Meinedo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Melres",
+    "stateCode": "13"
+  },
+  {
+    "name": "Milheirós",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mindelo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Moreira",
+    "stateCode": "13"
+  },
+  {
+    "name": "Negrelos",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nogueira",
+    "stateCode": "13"
+  },
+  {
+    "name": "Olival",
+    "stateCode": "13"
+  },
+  {
+    "name": "Oliveira do Douro",
+    "stateCode": "13"
+  },
+  {
+    "name": "Paços de Ferreira",
+    "stateCode": "13"
+  },
+  {
+    "name": "Paredes",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pedroso",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pedrouços",
+    "stateCode": "13"
+  },
+  {
+    "name": "Penafiel",
+    "stateCode": "13"
+  },
+  {
+    "name": "Perafita",
+    "stateCode": "13"
+  },
+  {
+    "name": "Perozinho",
+    "stateCode": "13"
+  },
+  {
+    "name": "Porto",
+    "stateCode": "13"
+  },
+  {
+    "name": "Póvoa de Varzim",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rebordões",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rebordosa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Recarei",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rio Mau",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rio Tinto",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sandim",
+    "stateCode": "13"
+  },
+  {
+    "name": "Santa Cruz do Bispo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Santo Izidoro",
+    "stateCode": "13"
+  },
+  {
+    "name": "Santo Tirso",
+    "stateCode": "13"
+  },
+  {
+    "name": "São Félix da Marinha",
+    "stateCode": "13"
+  },
+  {
+    "name": "São Mamede de Infesta",
+    "stateCode": "13"
+  },
+  {
+    "name": "São Miguel do Couto",
+    "stateCode": "13"
+  },
+  {
+    "name": "São Pedro da Cova",
+    "stateCode": "13"
+  },
+  {
+    "name": "São Romão do Coronado",
+    "stateCode": "13"
+  },
+  {
+    "name": "Senhora da Hora",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sermonde",
+    "stateCode": "13"
+  },
+  {
+    "name": "Seroa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Serzedo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sobrado",
+    "stateCode": "13"
+  },
+  {
+    "name": "Telões",
+    "stateCode": "13"
+  },
+  {
+    "name": "Trofa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vairão",
+    "stateCode": "13"
+  },
+  {
+    "name": "Valadares",
+    "stateCode": "13"
+  },
+  {
+    "name": "Valbom",
+    "stateCode": "13"
+  },
+  {
+    "name": "Valongo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vila do Conde",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vila Meã",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vila Nova da Telha",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vila Nova de Gaia",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vilar de Andorinho",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vilar do Paraíso",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vilarinho",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vizela",
+    "stateCode": "13"
+  },
+  {
+    "name": "Abrantes",
+    "stateCode": "14"
+  },
+  {
+    "name": "Alcanede",
+    "stateCode": "14"
+  },
+  {
+    "name": "Alcanena",
+    "stateCode": "14"
+  },
+  {
+    "name": "Alcanhões",
+    "stateCode": "14"
+  },
+  {
+    "name": "Alferrarede",
+    "stateCode": "14"
+  },
+  {
+    "name": "Almeirim",
+    "stateCode": "14"
+  },
+  {
+    "name": "Alpiarça",
+    "stateCode": "14"
+  },
+  {
+    "name": "Amiães de Baixo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Azinhaga",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bemfica",
+    "stateCode": "14"
+  },
+  {
+    "name": "Benavente",
+    "stateCode": "14"
+  },
+  {
+    "name": "Cartaxo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Chamusca",
+    "stateCode": "14"
+  },
+  {
+    "name": "Constância",
+    "stateCode": "14"
+  },
+  {
+    "name": "Coruche",
+    "stateCode": "14"
+  },
+  {
+    "name": "Entroncamento",
+    "stateCode": "14"
+  },
+  {
+    "name": "Fátima",
+    "stateCode": "14"
+  },
+  {
+    "name": "Fazendas de Almeirim",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ferreira do Zêzere",
+    "stateCode": "14"
+  },
+  {
+    "name": "Golegã",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mação",
+    "stateCode": "14"
+  },
+  {
+    "name": "Madalena",
+    "stateCode": "14"
+  },
+  {
+    "name": "Marinhais",
+    "stateCode": "14"
+  },
+  {
+    "name": "Minde",
+    "stateCode": "14"
+  },
+  {
+    "name": "Monsanto",
+    "stateCode": "14"
+  },
+  {
+    "name": "Montalvinho",
+    "stateCode": "14"
+  },
+  {
+    "name": "Montalvo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ourém",
+    "stateCode": "14"
+  },
+  {
+    "name": "Paialvo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pego",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pinheiro Grande",
+    "stateCode": "14"
+  },
+  {
+    "name": "Poceirão",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pontével",
+    "stateCode": "14"
+  },
+  {
+    "name": "Praia do Ribatejo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Riachos",
+    "stateCode": "14"
+  },
+  {
+    "name": "Rio Maior",
+    "stateCode": "14"
+  },
+  {
+    "name": "Salvaterra de Magos",
+    "stateCode": "14"
+  },
+  {
+    "name": "Samora Correia",
+    "stateCode": "14"
+  },
+  {
+    "name": "Santa Margarida da Coutada",
+    "stateCode": "14"
+  },
+  {
+    "name": "Santarém",
+    "stateCode": "14"
+  },
+  {
+    "name": "São Miguel de Rio Torto",
+    "stateCode": "14"
+  },
+  {
+    "name": "São Vicente do Paul",
+    "stateCode": "14"
+  },
+  {
+    "name": "Sardoal",
+    "stateCode": "14"
+  },
+  {
+    "name": "Tomar",
+    "stateCode": "14"
+  },
+  {
+    "name": "Torres Novas",
+    "stateCode": "14"
+  },
+  {
+    "name": "Tramagal",
+    "stateCode": "14"
+  },
+  {
+    "name": "Vale de Figueira",
+    "stateCode": "14"
+  },
+  {
+    "name": "Vale de Santarém",
+    "stateCode": "14"
+  },
+  {
+    "name": "Vila Chã de Ourique",
+    "stateCode": "14"
+  },
+  {
+    "name": "Vila Nova da Barquinha",
+    "stateCode": "14"
+  },
+  {
+    "name": "Alcácer do Sal",
+    "stateCode": "15"
+  },
+  {
+    "name": "Alcochete",
+    "stateCode": "15"
+  },
+  {
+    "name": "Aldeia de Paio Pires",
+    "stateCode": "15"
+  },
+  {
+    "name": "Alhos Vedros",
+    "stateCode": "15"
+  },
+  {
+    "name": "Almada",
+    "stateCode": "15"
+  },
+  {
+    "name": "Amora",
+    "stateCode": "15"
+  },
+  {
+    "name": "Arrentela",
+    "stateCode": "15"
+  },
+  {
+    "name": "Azeitão",
+    "stateCode": "15"
+  },
+  {
+    "name": "Barreiro",
+    "stateCode": "15"
+  },
+  {
+    "name": "Cacilhas",
+    "stateCode": "15"
+  },
+  {
+    "name": "Caparica",
+    "stateCode": "15"
+  },
+  {
+    "name": "Cercal",
+    "stateCode": "15"
+  },
+  {
+    "name": "Charneca de Caparica",
+    "stateCode": "15"
+  },
+  {
+    "name": "Comporta",
+    "stateCode": "15"
+  },
+  {
+    "name": "Corroios",
+    "stateCode": "15"
+  },
+  {
+    "name": "Costa de Caparica",
+    "stateCode": "15"
+  },
+  {
+    "name": "Grândola",
+    "stateCode": "15"
+  },
+  {
+    "name": "Laranjeira",
+    "stateCode": "15"
+  },
+  {
+    "name": "Lavradio",
+    "stateCode": "15"
+  },
+  {
+    "name": "Moita",
+    "stateCode": "15"
+  },
+  {
+    "name": "Montijo",
+    "stateCode": "15"
+  },
+  {
+    "name": "Palmela",
+    "stateCode": "15"
+  },
+  {
+    "name": "Piedade",
+    "stateCode": "15"
+  },
+  {
+    "name": "Pinhal Novo",
+    "stateCode": "15"
+  },
+  {
+    "name": "Porto Covo",
+    "stateCode": "15"
+  },
+  {
+    "name": "Pragal",
+    "stateCode": "15"
+  },
+  {
+    "name": "Quinta do Anjo",
+    "stateCode": "15"
+  },
+  {
+    "name": "Quinta Do Conde",
+    "stateCode": "15"
+  },
+  {
+    "name": "Rosairinho",
+    "stateCode": "15"
+  },
+  {
+    "name": "Samouco",
+    "stateCode": "15"
+  },
+  {
+    "name": "Santiago do Cacém",
+    "stateCode": "15"
+  },
+  {
+    "name": "Santo André",
+    "stateCode": "15"
+  },
+  {
+    "name": "Santo António da Charneca",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sarilhos Pequenos",
+    "stateCode": "15"
+  },
+  {
+    "name": "Seixal",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sesimbra",
+    "stateCode": "15"
+  },
+  {
+    "name": "Setúbal",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sines",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sobreda",
+    "stateCode": "15"
+  },
+  {
+    "name": "Trafaria",
+    "stateCode": "15"
+  },
+  {
+    "name": "Arcos de Valdevez",
+    "stateCode": "16"
+  },
+  {
+    "name": "Caminha",
+    "stateCode": "16"
+  },
+  {
+    "name": "Melgaço",
+    "stateCode": "16"
+  },
+  {
+    "name": "Monção",
+    "stateCode": "16"
+  },
+  {
+    "name": "Paredes de Coura",
+    "stateCode": "16"
+  },
+  {
+    "name": "Ponte da Barca",
+    "stateCode": "16"
+  },
+  {
+    "name": "Ponte de Lima",
+    "stateCode": "16"
+  },
+  {
+    "name": "Valença",
+    "stateCode": "16"
+  },
+  {
+    "name": "Viana do Castelo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Alijó",
+    "stateCode": "17"
+  },
+  {
+    "name": "Boticas",
+    "stateCode": "17"
+  },
+  {
+    "name": "Chaves",
+    "stateCode": "17"
+  },
+  {
+    "name": "Favaios",
+    "stateCode": "17"
+  },
+  {
+    "name": "Godim",
+    "stateCode": "17"
+  },
+  {
+    "name": "Mesão Frio",
+    "stateCode": "17"
+  },
+  {
+    "name": "Mondim de Basto",
+    "stateCode": "17"
+  },
+  {
+    "name": "Montalegre",
+    "stateCode": "17"
+  },
+  {
+    "name": "Murça",
+    "stateCode": "17"
+  },
+  {
+    "name": "Peso da Régua",
+    "stateCode": "17"
+  },
+  {
+    "name": "Ribeira de Pena",
+    "stateCode": "17"
+  },
+  {
+    "name": "Sabrosa",
+    "stateCode": "17"
+  },
+  {
+    "name": "Santa Cruz",
+    "stateCode": "17"
+  },
+  {
+    "name": "Santa Marta de Penaguião",
+    "stateCode": "17"
+  },
+  {
+    "name": "Sobreira",
+    "stateCode": "17"
+  },
+  {
+    "name": "Valpaços",
+    "stateCode": "17"
+  },
+  {
+    "name": "Vila Pouca de Aguiar",
+    "stateCode": "17"
+  },
+  {
+    "name": "Vila Real",
+    "stateCode": "17"
+  },
+  {
+    "name": "Vilela",
+    "stateCode": "17"
+  },
+  {
+    "name": "Abraveses",
+    "stateCode": "18"
+  },
+  {
+    "name": "Armamar",
+    "stateCode": "18"
+  },
+  {
+    "name": "Cabanas de Viriato",
+    "stateCode": "18"
+  },
+  {
+    "name": "Campo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Campo de Besteiros",
+    "stateCode": "18"
+  },
+  {
+    "name": "Canas de Senhorim",
+    "stateCode": "18"
+  },
+  {
+    "name": "Carregal do Sal",
+    "stateCode": "18"
+  },
+  {
+    "name": "Castro Daire",
+    "stateCode": "18"
+  },
+  {
+    "name": "Cinfães",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ervedosa do Douro",
+    "stateCode": "18"
+  },
+  {
+    "name": "Lamego",
+    "stateCode": "18"
+  },
+  {
+    "name": "Mangualde",
+    "stateCode": "18"
+  },
+  {
+    "name": "Moimenta da Beira",
+    "stateCode": "18"
+  },
+  {
+    "name": "Mortágua",
+    "stateCode": "18"
+  },
+  {
+    "name": "Nelas",
+    "stateCode": "18"
+  },
+  {
+    "name": "Oliveira de Frades",
+    "stateCode": "18"
+  },
+  {
+    "name": "Penalva do Castelo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Penedono",
+    "stateCode": "18"
+  },
+  {
+    "name": "Resende",
+    "stateCode": "18"
+  },
+  {
+    "name": "Rio de Loba",
+    "stateCode": "18"
+  },
+  {
+    "name": "Santa Comba Dão",
+    "stateCode": "18"
+  },
+  {
+    "name": "São João da Pesqueira",
+    "stateCode": "18"
+  },
+  {
+    "name": "São João de Areias",
+    "stateCode": "18"
+  },
+  {
+    "name": "São Pedro do Sul",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sátão",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sernancelhe",
+    "stateCode": "18"
+  },
+  {
+    "name": "Tabuaço",
+    "stateCode": "18"
+  },
+  {
+    "name": "Tarouca",
+    "stateCode": "18"
+  },
+  {
+    "name": "Tondela",
+    "stateCode": "18"
+  },
+  {
+    "name": "Treixedo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vila Nova de Paiva",
+    "stateCode": "18"
+  },
+  {
+    "name": "Viseu",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vouzela",
+    "stateCode": "18"
+  },
+  {
+    "name": "Água de Pau",
+    "stateCode": "20"
+  },
+  {
+    "name": "Angra do Heroísmo",
+    "stateCode": "20"
+  },
+  {
+    "name": "Angústias",
+    "stateCode": "20"
+  },
+  {
+    "name": "Arrifes",
+    "stateCode": "20"
+  },
+  {
+    "name": "Biscoitos",
+    "stateCode": "20"
+  },
+  {
+    "name": "Cabouco",
+    "stateCode": "20"
+  },
+  {
+    "name": "Cais do Pico",
+    "stateCode": "20"
+  },
+  {
+    "name": "Calheta",
+    "stateCode": "20"
+  },
+  {
+    "name": "Calheta de São Jorge",
+    "stateCode": "20"
+  },
+  {
+    "name": "Castelo Branco",
+    "stateCode": "20"
+  },
+  {
+    "name": "Corvo",
+    "stateCode": "20"
+  },
+  {
+    "name": "Fajã de Baixo",
+    "stateCode": "20"
+  },
+  {
+    "name": "Fenais da Ajuda",
+    "stateCode": "20"
+  },
+  {
+    "name": "Fenais da Luz",
+    "stateCode": "20"
+  },
+  {
+    "name": "Feteira",
+    "stateCode": "20"
+  },
+  {
+    "name": "Fonte Bastardo",
+    "stateCode": "20"
+  },
+  {
+    "name": "Furnas",
+    "stateCode": "20"
+  },
+  {
+    "name": "Horta",
+    "stateCode": "20"
+  },
+  {
+    "name": "Lagoa",
+    "stateCode": "20"
+  },
+  {
+    "name": "Lajes",
+    "stateCode": "20"
+  },
+  {
+    "name": "Lajes das Flores",
+    "stateCode": "20"
+  },
+  {
+    "name": "Lajes do Pico",
+    "stateCode": "20"
+  },
+  {
+    "name": "Madalena",
+    "stateCode": "20"
+  },
+  {
+    "name": "Maia",
+    "stateCode": "20"
+  },
+  {
+    "name": "Mosteiros",
+    "stateCode": "20"
+  },
+  {
+    "name": "Nordeste",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ponta Delgada",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ponta Garça",
+    "stateCode": "20"
+  },
+  {
+    "name": "Porto Judeu",
+    "stateCode": "20"
+  },
+  {
+    "name": "Porto Martins",
+    "stateCode": "20"
+  },
+  {
+    "name": "Povoação",
+    "stateCode": "20"
+  },
+  {
+    "name": "Praia da Vitória",
+    "stateCode": "20"
+  },
+  {
+    "name": "Rabo de Peixe",
+    "stateCode": "20"
+  },
+  {
+    "name": "Relva",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ribeira Grande",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ribeira Seca",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ribeirinha",
+    "stateCode": "20"
+  },
+  {
+    "name": "Rosto de Cão",
+    "stateCode": "20"
+  },
+  {
+    "name": "Santa Bárbara",
+    "stateCode": "20"
+  },
+  {
+    "name": "Santa Cruz da Graciosa",
+    "stateCode": "20"
+  },
+  {
+    "name": "Santa Cruz das Flores",
+    "stateCode": "20"
+  },
+  {
+    "name": "São Bartolomeu",
+    "stateCode": "20"
+  },
+  {
+    "name": "São Mateus",
+    "stateCode": "20"
+  },
+  {
+    "name": "São Roque",
+    "stateCode": "20"
+  },
+  {
+    "name": "São Roque do Pico",
+    "stateCode": "20"
+  },
+  {
+    "name": "São Sebastião",
+    "stateCode": "20"
+  },
+  {
+    "name": "São Vicente",
+    "stateCode": "20"
+  },
+  {
+    "name": "Senhora do Rosário",
+    "stateCode": "20"
+  },
+  {
+    "name": "Velas",
+    "stateCode": "20"
+  },
+  {
+    "name": "Vila do Porto",
+    "stateCode": "20"
+  },
+  {
+    "name": "Vila Franca do Campo",
+    "stateCode": "20"
+  },
+  {
+    "name": "Água de Pena",
+    "stateCode": "30"
+  },
+  {
+    "name": "Arco da Calheta",
+    "stateCode": "30"
+  },
+  {
+    "name": "Boaventura",
+    "stateCode": "30"
+  },
+  {
+    "name": "Calheta",
+    "stateCode": "30"
+  },
+  {
+    "name": "Camacha",
+    "stateCode": "30"
+  },
+  {
+    "name": "Câmara de Lobos",
+    "stateCode": "30"
+  },
+  {
+    "name": "Campanário",
+    "stateCode": "30"
+  },
+  {
+    "name": "Canhas",
+    "stateCode": "30"
+  },
+  {
+    "name": "Caniçal",
+    "stateCode": "30"
+  },
+  {
+    "name": "Caniço",
+    "stateCode": "30"
+  },
+  {
+    "name": "Curral das Freiras",
+    "stateCode": "30"
+  },
+  {
+    "name": "Estreito da Calheta",
+    "stateCode": "30"
+  },
+  {
+    "name": "Faial",
+    "stateCode": "30"
+  },
+  {
+    "name": "Fajã da Ovelha",
+    "stateCode": "30"
+  },
+  {
+    "name": "Funchal",
+    "stateCode": "30"
+  },
+  {
+    "name": "Machico",
+    "stateCode": "30"
+  },
+  {
+    "name": "Nossa Senhora do Monte",
+    "stateCode": "30"
+  },
+  {
+    "name": "Ponta do Sol",
+    "stateCode": "30"
+  },
+  {
+    "name": "Porto da Cruz",
+    "stateCode": "30"
+  },
+  {
+    "name": "Porto Moniz",
+    "stateCode": "30"
+  },
+  {
+    "name": "Porto Santo",
+    "stateCode": "30"
+  },
+  {
+    "name": "Ribeira Brava",
+    "stateCode": "30"
+  },
+  {
+    "name": "Santa Cruz",
+    "stateCode": "30"
+  },
+  {
+    "name": "Santana",
+    "stateCode": "30"
+  },
+  {
+    "name": "São Jorge",
+    "stateCode": "30"
+  },
+  {
+    "name": "São Martinho",
+    "stateCode": "30"
+  },
+  {
+    "name": "São Roque",
+    "stateCode": "30"
+  },
+  {
+    "name": "São Vicente",
+    "stateCode": "30"
+  }
+]

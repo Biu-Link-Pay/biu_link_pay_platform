@@ -1,0 +1,4022 @@
+[
+  {
+    "name": "Beremend",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Bóly",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Bólyi Járás",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Bükkösd",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Dunaszekcső",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Harkány",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Hegyháti Járás",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Hidas",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Hosszúhetény",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Komló",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Komlói Járás",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kozármisleny",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Lánycsók",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Mágocs",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Mecseknádasd",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Mohács",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Mohácsi Járás",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Pécs",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Pécsi Járás",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Pécsvárad",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Pécsváradi Járás",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Pellérd",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Sásd",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Sellye",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Sellyei Járás",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Siklós",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Siklósi Járás",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Szászvár",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Szentlőrinc",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Szentlőrinci Járás",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Szigetvár",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Szigetvári Járás",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Vajszló",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Villány",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Battonya",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Békés",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Békéscsaba",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Békéscsabai Járás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Békési Járás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Békéssámson",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Békésszentandrás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Bucsa",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Csanádapáca",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Csorvás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Dévaványa",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Doboz",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Dombegyház",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Elek",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Füzesgyarmat",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Gádoros",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Gyomaendrőd",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Gyomaendrődi Járás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Gyula",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Gyulai Járás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kaszaper",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kétegyháza",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kevermes",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kondoros",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Körösladány",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Köröstarcsa",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kunágota",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Lőkösháza",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Magyarbánhegyes",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Medgyesegyháza",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Méhkerék",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Mezőberény",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Mezőhegyes",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Mezőkovácsháza",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Mezőkovácsházai Járás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Nagyszénás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Okány",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Orosháza",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Orosházi Járás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Pusztaföldvár",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Sarkad",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Sarkadi Járás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Szabadkígyós",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Szarvas",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Szarvasi Járás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Szeghalmi Járás",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Szeghalom",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Tótkomlós",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Újkígyós",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Vésztő",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Ágasegyháza",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Akasztó",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Apostag",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Bácsalmás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Bácsalmási Járás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Bácsbokod",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Baja",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Bajai Járás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Ballószög",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Bátya",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Bugac",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Császártöltés",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Csávoly",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Csengőd",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Dávod",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Dunapataj",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Dunavecse",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Dusnok",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Érsekcsanád",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Felsőszentiván",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Fülöpjakab",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Fülöpszállás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Gara",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Hajós",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Harta",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Helvécia",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Hercegszántó",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Izsák",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Jánoshalma",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Jánoshalmai Járás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Jászszentlászló",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kalocsa",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kalocsai Járás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Katymár",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kecel",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kecskemét",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kecskeméti Járás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kelebia",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kerekegyháza",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kiskőrös",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kiskőrösi Járás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kiskunfélegyháza",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kiskunfélegyházi Járás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kiskunhalas",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kiskunhalasi Járás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kiskunmajsa",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kiskunmajsai Járás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kisszállás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kunfehértó",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kunszentmiklós",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Kunszentmiklósi Járás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Lajosmizse",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Lakitelek",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Madaras",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Mélykút",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Nagybaracska",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Nemesnádudvar",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Nyárlőrinc",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Orgovány",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Pálmonostora",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Solt",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Soltvadkert",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Sükösd",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Szabadszállás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Szalkszentmárton",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Szank",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Szentkirály",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Tass",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Tázlár",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Tiszaalpár",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Tiszakécske",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Tiszakécskei Járás",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Tompa",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Városföld",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Vaskút",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Budapest",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest I. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest II. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest III. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest IV. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest VI. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest VIII. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest X. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest XI. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest XII. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest XIII. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest XV. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest XVI. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest XVII. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest XVIII. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest XX. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest XXI. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest XXII. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Budapest XXIII. kerület",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Erzsébetváros",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Józsefváros",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Kispest",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Zugló",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Abaújszántó",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Alsózsolca",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Arló",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Arnót",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Aszaló",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Bekecs",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Bőcs",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Bogács",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Boldva",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Borsodnádasd",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Cigánd",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Cigándi Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Edelény",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Edelényi Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Emőd",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Encs",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Encsi Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Farkaslyuk",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Felsőzsolca",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Gesztely",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Gönc",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Gönci Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Halmaj",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Harsány",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Hejőbába",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Hernádnémeti",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Izsófalva",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Járdánháza",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Karcsa",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Kazincbarcika",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Kazincbarcikai Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Mád",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Mályi",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Megyaszó",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Mezőcsát",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Mezőcsáti Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Mezőkeresztes",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Mezőkövesd",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Mezőkövesdi Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Mezőzombor",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Miskolc",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Miskolci Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Monok",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Múcsony",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Nyékládháza",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Olaszliszka",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Onga",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Ónod",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Ózd",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Ózdi Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Prügy",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Putnok",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Putnoki Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Ricse",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Rudabánya",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sajóbábony",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sajókaza",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sajólád",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sajóörös",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sajószentpéter",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sajószöged",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sajóvámos",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sály",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sárospatak",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sárospataki Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sátoraljaújhely",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Sátoraljaújhelyi Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Szendrő",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Szentistván",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Szerencs",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Szerencsi Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Szikszó",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Szikszói Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Szirmabesenyő",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Taktaharkány",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Taktaszada",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Tállya",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Tarcal",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Tiszakarád",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Tiszakeszi",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Tiszalúc",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Tiszaújváros",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Tiszaújvárosi Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Tokaj",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Tokaji Járás",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Tolcsva",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Algyő",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Apátfalva",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Ásotthalom",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Baks",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Balástya",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Bordány",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Csanádpalota",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Csanytelek",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Csengele",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Csongrád",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Csongrádi Járás",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Deszk",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Domaszék",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Fábiánsebestyén",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Földeák",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Forráskút",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Hódmezővásárhely",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Hódmezővásárhelyi Járás",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Kistelek",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Kisteleki Járás",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Kiszombor",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Makó",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Makói Járás",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Maroslele",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Mindszent",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Mórahalmi Járás",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Mórahalom",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Ópusztaszer",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Pusztaszer",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Röszke",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Ruzsa",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Sándorfalva",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Szatymaz",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Szeged",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Szegedi Járás",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Szegvár",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Székkutas",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Szentes",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Szentesi Járás",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Tömörkény",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Üllés",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Zákányszék",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Zsombó",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Aba",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Adony",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Alap",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Bakonycsernye",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Baracs",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Baracska",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Bicske",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Bicskei Járás",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Bodajk",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Cece",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Csákvár",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Dég",
+    "stateCode": "FE"
+  },
+  {
+    "name": "dunaújváros",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Dunaújvárosi Járás",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Előszállás",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Enying",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Enyingi Járás",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Ercsi",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Etyek",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Fehérvárcsurgó",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Gárdony",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Gárdonyi Járás",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Iváncsa",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Káloz",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Kápolnásnyék",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Kincsesbánya",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Kisláng",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Lajoskomárom",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Lepsény",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Lovasberény",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Mány",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Martonvásár",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Martonvásári Járás",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Mezőfalva",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Mezőszilas",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Mór",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Móri Járás",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Pákozd",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Pázmánd",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Perkáta",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Polgárdi",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Pusztaszabolcs",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Pusztavám",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Rácalmás",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Ráckeresztúr",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Sárbogárd",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Sárbogárdi Járás",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Sárkeresztúr",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Sárosd",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Sárszentmihály",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Seregélyes",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Soponya",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Szabadbattyán",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Szárliget",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Székesfehérvár",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Székesfehérvári Járás",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Vál",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Velence",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Zámoly",
+    "stateCode": "FE"
+  },
+  {
+    "name": "Abda",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Ágfalva",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Ásványráró",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Bakonyszentlászló",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Beled",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Bőny",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Bősárkány",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Csorna",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Csornai Járás",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Farád",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Fertőd",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Fertőrákos",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Fertőszentmiklós",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Győr",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Győri Járás",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Győrszemere",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Győrújbarát",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Halászi",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Jánossomorja",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Kapuvár",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Kapuvári Járás",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Kimle",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Kóny",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Lébény",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Mihályi",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Mosonmagyaróvár",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Mosonmagyaróvári Járás",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Mosonszentmiklós",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Nagycenk",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Nyúl",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Öttevény",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Pannonhalma",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Pannonhalmi Járás",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Pér",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Rábapatona",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Rajka",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Sopron",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Soproni Járás",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Szany",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Tét",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Téti Járás",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Töltéstava",
+    "stateCode": "GS"
+  },
+  {
+    "name": "Bagamér",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Balmazújváros",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Balmazújvárosi Járás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Báránd",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Berettyóújfalu",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Berettyóújfalui Járás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Biharkeresztes",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Biharnagybajom",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Csökmő",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Debrecen",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Debreceni Járás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Derecske",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Derecskei Járás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Ebes",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Egyek",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Földes",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Görbeháza",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hadjúszoboszlói Járás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hajdúbagos",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hajdúböszörmény",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hajdúböszörményi Járás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hajdúdorog",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hajdúhadház",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hajdúhadházi Járás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hajdúnánás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hajdúnánási Járás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hajdúsámson",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hajdúszoboszló",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hajdúszovát",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hortobágy",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Hosszúpályi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Kaba",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Komádi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Konyár",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Létavértes",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Mikepércs",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Monostorpályi",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Nádudvar",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Nagyrábé",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Nyírábrány",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Nyíracsád",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Nyíradony",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Nyíradonyi Járás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Nyírmártonfalva",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Pocsaj",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Polgár",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Püspökladány",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Püspökladányi Járás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Sáránd",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Sárrétudvari",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Téglás",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Tiszacsege",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Vámospércs",
+    "stateCode": "HB"
+  },
+  {
+    "name": "Abasár",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Adács",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Andornaktálya",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Apc",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Bélapátfalva",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Bélapátfalvai Járás",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Besenyőtelek",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Boldog",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Csány",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Domoszló",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Ecséd",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Eger",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Egerszalók",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Egri Járás",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Erdőtelek",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Felsőtárkány",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Füzesabony",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Füzesabonyi Járás",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Gyöngyös",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Gyöngyöshalász",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Gyöngyösi Járás",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Gyöngyöspata",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Gyöngyössolymos",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Gyöngyöstarján",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Hatvan",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Hatvani Járás",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Heréd",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Heves",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Hevesi Járás",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Hort",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Kál",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Karácsond",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Kerecsend",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Kisköre",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Kompolt",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Lőrinci",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Maklár",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Mátraderecske",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Nagyréde",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Ostoros",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Parád",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Parádsasvár",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Pétervására",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Pétervásárai Járás",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Petőfibánya",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Poroszló",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Recsk",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Rózsaszentmárton",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Sirok",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Szihalom",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Szilvásvárad",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Tarnalelesz",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Tarnaörs",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Tiszanána",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Vámosgyörk",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Verpelét",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Zagyvaszántó",
+    "stateCode": "HE"
+  },
+  {
+    "name": "Abádszalók",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Alattyán",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Besenyszög",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Cibakháza",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Cserkeszőlő",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Fegyvernek",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jánoshida",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jászalsószentgyörgy",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jászapáti",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jászapáti Járás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jászárokszállás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jászberény",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jászberényi Járás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jászdózsa",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jászjákóhalma",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jászkisér",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jászladány",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Jászszentandrás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Karcag",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Karcagi Járás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Kenderes",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Kengyel",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Kisújszállás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Kunhegyes",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Kunhegyesi Járás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Kunmadaras",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Kunszentmárton",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Kunszentmártoni Járás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Mezőtúr",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Mezőtúri Járás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Öcsöd",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Rákóczifalva",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Rákócziújfalu",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Szajol",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Szelevény",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Szolnok",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Szolnoki Járás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Tiszabő",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Tiszabura",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Tiszaföldvár",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Tiszafüred",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Tiszafüredi Járás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Tiszapüspöki",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Tiszaroff",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Tiszasüly",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Tiszaszentimre",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Tiszaszőlős",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Törökszentmiklós",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Törökszentmiklósi Járás",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Tószeg",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Túrkeve",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Újszász",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Zagyvarékas",
+    "stateCode": "JN"
+  },
+  {
+    "name": "Balassagyarmat",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Balassagyarmati Járás",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Bátonyterenye",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Bátonyterenyei Járás",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Bercel",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Buják",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Diósjenő",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Érsekvadkert",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Héhalom",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Jobbágyi",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Karancskeszi",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Karancslapujtő",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Kazár",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Mátranovák",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Mátraterenye",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Mátraverebély",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Nagyoroszi",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Palotás",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Pásztó",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Pásztói Járás",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Rétság",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Rétsági Járás",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Rimóc",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Romhány",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Salgótarján",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Salgótarjáni Járás",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Somoskőújfalu",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Szécsény",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Szécsényi Járás",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Szurdokpüspöki",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Tar",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Abony",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Acsa",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Albertirsa",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Alsónémedi",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Aszód",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Aszódi Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Bag",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Biatorbágy",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Budakalász",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Budakeszi",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Budakeszi Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Budaörs",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Bugyi",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Cegléd",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Ceglédbercel",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Ceglédi Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Csemő",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Csobánka",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Csömör",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Dabas",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Dabasi Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Dánszentmiklós",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Dány",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Délegyháza",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Diósd",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Domony",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Dömsöd",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Dunabogdány",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Dunaharaszti",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Dunakeszi",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Dunakeszi Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Dunavarsány",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Ecser",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Érd",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Érdi Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Erdőkertes",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Farmos",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Felsőpakony",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Forrópuszta",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Fót",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Galgahévíz",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Galgamácsa",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Göd",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Gödöllő",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Gödöllői Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Gomba",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Gyál",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Gyáli Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Gyömrő",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Halásztelek",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Hernád",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Hévízgyörk",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Iklad",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Inárcs",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Isaszeg",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Jászkarajenő",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Kakucs",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Kartal",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Kerepes",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Kiskunlacháza",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Kismaros",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Kistarcsa",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Kocsér",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Kóka",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Kosd",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Leányfalu",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Maglód",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Mende",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Mogyoród",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Monor",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Monori Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Nagykáta",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Nagykátai Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Nagykőrös",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Nagykőrösi Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Nagykovácsi",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Nagymaros",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Nagytarcsa",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Nyáregyháza",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Ócsa",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Őrbottyán",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Örkény",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Pánd",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Páty",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Pécel",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Perbál",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Péteri",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Pilis",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Pilisborosjenő",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Piliscsaba",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Pilisszántó",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Pilisszentiván",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Pilisszentkereszt",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Pilisvörösvár",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Pilisvörösvári Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Pomáz",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Ráckeve",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Ráckevei Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Solymár",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Sóskút",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Sülysáp",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szada",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Százhalombatta",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szentendre",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szentendrei Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szentlőrinckáta",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szentmártonkáta",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szigetcsép",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szigethalom",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szigetszentmiklós",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szigetszentmiklósi Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szigetújfalu",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szob",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Szobi Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Sződ",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Sződliget",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Táborfalva",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tahitótfalu",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Taksony",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tápióbicske",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tápiógyörgye",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tápióság",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tápiószecső",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tápiószele",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tápiószentmárton",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tápiószőlős",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tárnok",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Telki",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tóalmás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tököl",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Törökbálint",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Törtel",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Tura",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Újhartyán",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Újszilvás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Üllő",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Úri",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Üröm",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Vác",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Váci Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Vácszentlászló",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Valkó",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Vecsés",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Vecsési Járás",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Veresegyház",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Verőce",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Visegrád",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Zsámbék",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Zsámbok",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Ádánd",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Babócsa",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Balatonberény",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Balatonboglár",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Balatonfenyves",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Balatonföldvár",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Balatonlelle",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Balatonszabadi",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Balatonszárszó",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Barcs",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Barcsi Járás",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Berzence",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Böhönye",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Csurgó",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Csurgói Járás",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Fonyód",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Fonyódi Járás",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Kadarkút",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Kaposmérő",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Kaposvár",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Kaposvári Járás",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Karád",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Kéthely",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Lábod",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Lengyeltóti",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Marcali",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Marcali Járás",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Nagyatád",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Nagyatádi Járás",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Nagybajom",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Segesd",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Siófok",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Siófoki Járás",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Somogyvár",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Tab",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Tabi Járás",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Taszár",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Zamárdi",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Ajak",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Anarcs",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Apagy",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Aranyosapáti",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Baktalórántháza",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Baktalórántházai Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Balkány",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Bököny",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Buj",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Csenger",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Csengeri Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Demecser",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Döge",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Dombrád",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Encsencs",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Fehérgyarmat",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Fehérgyarmati Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Fényeslitke",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Gégény",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Gyulaháza",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Hodász",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Ibrány",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Ibrányi Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kállósemjén",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kálmánháza",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kántorjánosi",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kék",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kemecse",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kemecsei Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kisléta",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kisvárda",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kisvárdai Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kocsord",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kótaj",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Levelek",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Mándok",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Máriapócs",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Mátészalka",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Mátészalkai Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Mérk",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nagycserkesz",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nagydobos",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nagyecsed",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nagyhalász",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nagykálló",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nagykállói Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Napkor",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírbátor",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírbátori Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírbéltek",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírbogát",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírbogdány",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírcsaholy",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyíregyháza",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyíregyházi Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírgyulaj",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírkarász",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírlugos",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírmada",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírmeggyes",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírmihálydi",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírpazony",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírtass",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírtelek",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Nyírvasvári",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Ófehértó",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Ököritófülpös",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Ópályi",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Pátroha",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Petneháza",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Porcsalma",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Rakamaz",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Szakoly",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Szamosszeg",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tarpa",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tiszabercel",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tiszabezdéd",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tiszadada",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tiszadob",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tiszaeszlár",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tiszalök",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tiszanagyfalu",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tiszavasvári",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tiszavasvári Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tornyospálca",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tunyogmatolcs",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tuzsér",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tyukod",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Újfehértó",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Vaja",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Vásárosnamény",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Vásárosnaményi Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Záhony",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Záhonyi Járás",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Báta",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Bátaszék",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Bogyiszló",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Bölcske",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Bonyhád",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Bonyhádi Járás",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Decs",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Döbrököz",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Dombóvár",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Dombóvári Járás",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Dunaföldvár",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Dunaszentgyörgy",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Fadd",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Gyönk",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Hőgyész",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Iregszemcse",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Madocsa",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Nagydorog",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Nagymányok",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Németkér",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Őcsény",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Ozora",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Paks",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Paksi Járás",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Pincehely",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Simontornya",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Szedres",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Szekszárd",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Szekszárdi Járás",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Szentgálpuszta",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Tamási",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Tamási Járás",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Tengelic",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Tolna",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Tolnai Járás",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Zomba",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Bük",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Celldömölk",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Celldömölki Járás",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Csepreg",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Gencsapáti",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Ják",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Jánosháza",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Körmend",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Körmendi Járás",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Kőszeg",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Kőszegi Járás",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Répcelak",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Sárvár",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Sárvári Járás",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Szentgotthárd",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Szentgotthárdi Járás",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Szombathely",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Szombathelyi Járás",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Táplánszentkereszt",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Vasvár",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Vasvári Járás",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Vép",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Ajka",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Ajkai Járás",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Badacsonytomaj",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Balatonalmádi",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Balatonalmádi Járás",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Balatonfüred",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Balatonfüredi Járás",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Balatonkenese",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Berhida",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Csabrendek",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Csetény",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Csopak",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Devecser",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Devecseri Járás",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Hajmáskér",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Herend",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Litér",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Nemesvámos",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Ősi",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Pápa",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Pápai Járás",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Pétfürdő",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Révfülöp",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Sümeg",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Sümegi Járás",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Szentkirályszabadja",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Tapolca",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Tapolcai Járás",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Tihany",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Úrkút",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Várpalota",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Várpalotai Járás",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Veszprém",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Veszprémi Járás",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Zánka",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Zirc",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Zirci Járás",
+    "stateCode": "VE"
+  },
+  {
+    "name": "Becsehely",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Cserszegtomaj",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Gyenesdiás",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Hévíz",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Keszthely",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Keszthelyi Járás",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Lenti",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Lenti Járás",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Letenye",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Letenyei Járás",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Murakeresztúr",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Nagykanizsa",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Nagykanizsai Járás",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Pacsa",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Sármellék",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Türje",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Vonyarcvashegy",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Zalaegerszeg",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Zalaegerszegi Járás",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Zalakomár",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Zalalövő",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Zalaszentgrót",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Zalaszentgróti Járás",
+    "stateCode": "ZA"
+  }
+]

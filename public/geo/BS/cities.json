@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Alice Town",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Arthur’s Town",
+    "stateCode": "CI"
+  },
+  {
+    "name": "Colonel Hill",
+    "stateCode": "CK"
+  },
+  {
+    "name": "Marsh Harbour",
+    "stateCode": "CO"
+  },
+  {
+    "name": "High Rock",
+    "stateCode": "EG"
+  },
+  {
+    "name": "George Town",
+    "stateCode": "EX"
+  },
+  {
+    "name": "Freeport",
+    "stateCode": "FP"
+  },
+  {
+    "name": "Lucaya",
+    "stateCode": "FP"
+  },
+  {
+    "name": "Dunmore Town",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Matthew Town",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Clarence Town",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Abraham’s Bay",
+    "stateCode": "MG"
+  },
+  {
+    "name": "Cooper’s Town",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Nassau",
+    "stateCode": "NP"
+  },
+  {
+    "name": "Andros Town",
+    "stateCode": "NS"
+  },
+  {
+    "name": "San Andros",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Port Nelson",
+    "stateCode": "RC"
+  },
+  {
+    "name": "Duncan Town",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Cockburn Town",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Spanish Wells",
+    "stateCode": "SW"
+  },
+  {
+    "name": "West End",
+    "stateCode": "WG"
+  }
+]

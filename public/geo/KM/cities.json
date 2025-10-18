@@ -1,0 +1,354 @@
+[
+  {
+    "name": "Adda-Douéni",
+    "stateCode": "A"
+  },
+  {
+    "name": "Antsahé",
+    "stateCode": "A"
+  },
+  {
+    "name": "Assimpao",
+    "stateCode": "A"
+  },
+  {
+    "name": "Bambao",
+    "stateCode": "A"
+  },
+  {
+    "name": "Bandajou",
+    "stateCode": "A"
+  },
+  {
+    "name": "Barakani",
+    "stateCode": "A"
+  },
+  {
+    "name": "Bimbini",
+    "stateCode": "A"
+  },
+  {
+    "name": "Boungouéni",
+    "stateCode": "A"
+  },
+  {
+    "name": "Chandra",
+    "stateCode": "A"
+  },
+  {
+    "name": "Chironkamba",
+    "stateCode": "A"
+  },
+  {
+    "name": "Chitrouni",
+    "stateCode": "A"
+  },
+  {
+    "name": "Daji",
+    "stateCode": "A"
+  },
+  {
+    "name": "Domoni",
+    "stateCode": "A"
+  },
+  {
+    "name": "Dziani",
+    "stateCode": "A"
+  },
+  {
+    "name": "Hajoho",
+    "stateCode": "A"
+  },
+  {
+    "name": "Harembo",
+    "stateCode": "A"
+  },
+  {
+    "name": "Kangani",
+    "stateCode": "A"
+  },
+  {
+    "name": "Kavani",
+    "stateCode": "A"
+  },
+  {
+    "name": "Koki",
+    "stateCode": "A"
+  },
+  {
+    "name": "Koni-Djodjo",
+    "stateCode": "A"
+  },
+  {
+    "name": "Koni-Ngani",
+    "stateCode": "A"
+  },
+  {
+    "name": "Kyo",
+    "stateCode": "A"
+  },
+  {
+    "name": "Limbi",
+    "stateCode": "A"
+  },
+  {
+    "name": "Lingoni",
+    "stateCode": "A"
+  },
+  {
+    "name": "Magnassini-Nindri",
+    "stateCode": "A"
+  },
+  {
+    "name": "Maraharé",
+    "stateCode": "A"
+  },
+  {
+    "name": "Mirontsi",
+    "stateCode": "A"
+  },
+  {
+    "name": "Mjamaoué",
+    "stateCode": "A"
+  },
+  {
+    "name": "Mjimandra",
+    "stateCode": "A"
+  },
+  {
+    "name": "Moutsamoudou",
+    "stateCode": "A"
+  },
+  {
+    "name": "Moya",
+    "stateCode": "A"
+  },
+  {
+    "name": "Mramani",
+    "stateCode": "A"
+  },
+  {
+    "name": "Mrémani",
+    "stateCode": "A"
+  },
+  {
+    "name": "Ongoni",
+    "stateCode": "A"
+  },
+  {
+    "name": "Ouani",
+    "stateCode": "A"
+  },
+  {
+    "name": "Ouzini",
+    "stateCode": "A"
+  },
+  {
+    "name": "Pajé",
+    "stateCode": "A"
+  },
+  {
+    "name": "Patsi",
+    "stateCode": "A"
+  },
+  {
+    "name": "Sima",
+    "stateCode": "A"
+  },
+  {
+    "name": "Tsimbeo",
+    "stateCode": "A"
+  },
+  {
+    "name": "Vouani",
+    "stateCode": "A"
+  },
+  {
+    "name": "Bahani",
+    "stateCode": "G"
+  },
+  {
+    "name": "Bambadjani",
+    "stateCode": "G"
+  },
+  {
+    "name": "Bouni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Chezani",
+    "stateCode": "G"
+  },
+  {
+    "name": "Chindini",
+    "stateCode": "G"
+  },
+  {
+    "name": "Chouani",
+    "stateCode": "G"
+  },
+  {
+    "name": "Dembéni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Douniani",
+    "stateCode": "G"
+  },
+  {
+    "name": "Dzahadjou",
+    "stateCode": "G"
+  },
+  {
+    "name": "Foumbouni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Hantsindzi",
+    "stateCode": "G"
+  },
+  {
+    "name": "Héroumbili",
+    "stateCode": "G"
+  },
+  {
+    "name": "Itsandra",
+    "stateCode": "G"
+  },
+  {
+    "name": "Itsandzéni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ivouani",
+    "stateCode": "G"
+  },
+  {
+    "name": "Koua",
+    "stateCode": "G"
+  },
+  {
+    "name": "Madjeouéni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mandza",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mavingouni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mbéni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mitsamiouli",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mitsoudjé",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mnoungou",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mohoro",
+    "stateCode": "G"
+  },
+  {
+    "name": "Moroni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mtsamdou",
+    "stateCode": "G"
+  },
+  {
+    "name": "Mvouni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Nioumamilima",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ntsaouéni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ntsoudjini",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ouellah",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ouhozi",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ourovéni",
+    "stateCode": "G"
+  },
+  {
+    "name": "Oussivo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Salimani",
+    "stateCode": "G"
+  },
+  {
+    "name": "Séléa",
+    "stateCode": "G"
+  },
+  {
+    "name": "Singani",
+    "stateCode": "G"
+  },
+  {
+    "name": "Tsidjé",
+    "stateCode": "G"
+  },
+  {
+    "name": "Vanadjou",
+    "stateCode": "G"
+  },
+  {
+    "name": "Vanambouani",
+    "stateCode": "G"
+  },
+  {
+    "name": "Djoyézi",
+    "stateCode": "M"
+  },
+  {
+    "name": "Fomboni",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hoani",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mtakoudja",
+    "stateCode": "M"
+  },
+  {
+    "name": "Nioumachoua",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ouanani",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ziroudani",
+    "stateCode": "M"
+  }
+]

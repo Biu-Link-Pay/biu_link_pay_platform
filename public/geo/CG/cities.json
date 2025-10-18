@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Kayes",
+    "stateCode": "11"
+  },
+  {
+    "name": "Madingou",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kinkala",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ouésso",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sémbé",
+    "stateCode": "13"
+  },
+  {
+    "name": "Djambala",
+    "stateCode": "14"
+  },
+  {
+    "name": "Gamboma",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ewo",
+    "stateCode": "15"
+  },
+  {
+    "name": "Loandjili",
+    "stateCode": "16"
+  },
+  {
+    "name": "Pointe-Noire",
+    "stateCode": "16"
+  },
+  {
+    "name": "Sibiti",
+    "stateCode": "2"
+  },
+  {
+    "name": "Impfondo",
+    "stateCode": "7"
+  },
+  {
+    "name": "Makoua",
+    "stateCode": "8"
+  },
+  {
+    "name": "Owando",
+    "stateCode": "8"
+  },
+  {
+    "name": "Dolisie",
+    "stateCode": "9"
+  },
+  {
+    "name": "Mossendjo",
+    "stateCode": "9"
+  },
+  {
+    "name": "Brazzaville",
+    "stateCode": "BZV"
+  }
+]

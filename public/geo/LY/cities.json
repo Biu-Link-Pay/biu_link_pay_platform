@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Benghazi",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Qaryat Sulūq",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Al Qubbah",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Darnah",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Ghat",
+    "stateCode": "GT"
+  },
+  {
+    "name": "Al Bayḑā’",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Gharyan",
+    "stateCode": "JG"
+  },
+  {
+    "name": "Giado",
+    "stateCode": "JG"
+  },
+  {
+    "name": "Mizdah",
+    "stateCode": "JG"
+  },
+  {
+    "name": "Yafran",
+    "stateCode": "JG"
+  },
+  {
+    "name": "Zintan",
+    "stateCode": "JG"
+  },
+  {
+    "name": "Al ‘Azīzīyah",
+    "stateCode": "JI"
+  },
+  {
+    "name": "Hūn",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Waddān",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Al Jawf",
+    "stateCode": "KF"
+  },
+  {
+    "name": "At Tāj",
+    "stateCode": "KF"
+  },
+  {
+    "name": "Al Khums",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Masallātah",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Tarhuna",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Bani Walid",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Mişrātah",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Zliten",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Al Abyār",
+    "stateCode": "MJ"
+  },
+  {
+    "name": "Al Marj",
+    "stateCode": "MJ"
+  },
+  {
+    "name": "Tūkrah",
+    "stateCode": "MJ"
+  },
+  {
+    "name": "Al Qaţrūn",
+    "stateCode": "MQ"
+  },
+  {
+    "name": "Murzuq",
+    "stateCode": "MQ"
+  },
+  {
+    "name": "Ghadāmis",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Nālūt",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Al Ajaylat",
+    "stateCode": "NQ"
+  },
+  {
+    "name": "Zalţan",
+    "stateCode": "NQ"
+  },
+  {
+    "name": "Zuwārah",
+    "stateCode": "NQ"
+  },
+  {
+    "name": "Al Jadīd",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Sabhā",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Qasr Abu Hadi",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Sirte",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Tagiura",
+    "stateCode": "TB"
+  },
+  {
+    "name": "Tripoli",
+    "stateCode": "TB"
+  },
+  {
+    "name": "Ajdabiya",
+    "stateCode": "WA"
+  },
+  {
+    "name": "Al Burayqah",
+    "stateCode": "WA"
+  },
+  {
+    "name": "Awjilah",
+    "stateCode": "WA"
+  },
+  {
+    "name": "Az Zuwaytīnah",
+    "stateCode": "WA"
+  },
+  {
+    "name": "Gialo",
+    "stateCode": "WA"
+  },
+  {
+    "name": "Marādah",
+    "stateCode": "WA"
+  },
+  {
+    "name": "Ubari",
+    "stateCode": "WD"
+  },
+  {
+    "name": "Brak",
+    "stateCode": "WS"
+  },
+  {
+    "name": "Idrī",
+    "stateCode": "WS"
+  },
+  {
+    "name": "Az Zāwīyah",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Şabrātah",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Şurmān",
+    "stateCode": "ZA"
+  },
+  {
+    "name": "Zawiya",
+    "stateCode": "ZA"
+  }
+]

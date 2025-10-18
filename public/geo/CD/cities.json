@@ -1,0 +1,278 @@
+[
+  {
+    "name": "Boma",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Kasangulu",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Matadi",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Mbanza-Ngungu",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Moanda",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Tshela",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Aketi",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Bondo",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Buta",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Gemena",
+    "stateCode": "EQ"
+  },
+  {
+    "name": "Lisala",
+    "stateCode": "EQ"
+  },
+  {
+    "name": "Lukolela",
+    "stateCode": "EQ"
+  },
+  {
+    "name": "Mbandaka",
+    "stateCode": "EQ"
+  },
+  {
+    "name": "Haut Katanga",
+    "stateCode": "HK"
+  },
+  {
+    "name": "Kambove",
+    "stateCode": "HK"
+  },
+  {
+    "name": "Kipushi",
+    "stateCode": "HK"
+  },
+  {
+    "name": "Likasi",
+    "stateCode": "HK"
+  },
+  {
+    "name": "Lubumbashi",
+    "stateCode": "HK"
+  },
+  {
+    "name": "Bukama",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Kamina",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Isiro",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Wamba",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Watsa",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Bunia",
+    "stateCode": "IT"
+  },
+  {
+    "name": "Gandajika",
+    "stateCode": "KE"
+  },
+  {
+    "name": "Kabinda",
+    "stateCode": "KE"
+  },
+  {
+    "name": "Mbuji-Mayi",
+    "stateCode": "KE"
+  },
+  {
+    "name": "Kasongo-Lunda",
+    "stateCode": "KG"
+  },
+  {
+    "name": "Bandundu",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Bulungu",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Kikwit",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Mangai",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Kinshasa",
+    "stateCode": "KN"
+  },
+  {
+    "name": "Masina",
+    "stateCode": "KN"
+  },
+  {
+    "name": "Ilebo",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Luebo",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Mweka",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Tshikapa",
+    "stateCode": "KS"
+  },
+  {
+    "name": "Lubao",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Mwene-Ditu",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Kampene",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kasongo",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kindu",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bolobo",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Inongo",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Mushie",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Nioki",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Bumba",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Beni",
+    "stateCode": "NK"
+  },
+  {
+    "name": "Butembo",
+    "stateCode": "NK"
+  },
+  {
+    "name": "Goma",
+    "stateCode": "NK"
+  },
+  {
+    "name": "Sake",
+    "stateCode": "NK"
+  },
+  {
+    "name": "Bosobolo",
+    "stateCode": "NU"
+  },
+  {
+    "name": "Businga",
+    "stateCode": "NU"
+  },
+  {
+    "name": "Gbadolite",
+    "stateCode": "NU"
+  },
+  {
+    "name": "Lodja",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Lusambo",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Bukavu",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kabare",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Uvira",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Bongandanga",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Libenge",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kabalo",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Kalemie",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Kongolo",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Basoko",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Kisangani",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Yangambi",
+    "stateCode": "TO"
+  },
+  {
+    "name": "Boende",
+    "stateCode": "TU"
+  }
+]

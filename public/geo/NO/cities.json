@@ -1,0 +1,2674 @@
+[
+  {
+    "name": "Aremark",
+    "stateCode": "01"
+  },
+  {
+    "name": "Askim",
+    "stateCode": "01"
+  },
+  {
+    "name": "Eidsberg",
+    "stateCode": "01"
+  },
+  {
+    "name": "Fossby",
+    "stateCode": "01"
+  },
+  {
+    "name": "Fredrikstad",
+    "stateCode": "01"
+  },
+  {
+    "name": "Halden",
+    "stateCode": "01"
+  },
+  {
+    "name": "Hobøl",
+    "stateCode": "01"
+  },
+  {
+    "name": "Hvaler",
+    "stateCode": "01"
+  },
+  {
+    "name": "Karlshus",
+    "stateCode": "01"
+  },
+  {
+    "name": "Knappstad",
+    "stateCode": "01"
+  },
+  {
+    "name": "Larkollen",
+    "stateCode": "01"
+  },
+  {
+    "name": "Lervik",
+    "stateCode": "01"
+  },
+  {
+    "name": "Marker",
+    "stateCode": "01"
+  },
+  {
+    "name": "Moss",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mysen",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ørje",
+    "stateCode": "01"
+  },
+  {
+    "name": "Råde",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rakkestad",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rømskog",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rygge",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ryggebyen",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sarpsborg",
+    "stateCode": "01"
+  },
+  {
+    "name": "Skiptvet",
+    "stateCode": "01"
+  },
+  {
+    "name": "Skjærhalden",
+    "stateCode": "01"
+  },
+  {
+    "name": "Skjeberg",
+    "stateCode": "01"
+  },
+  {
+    "name": "Spydeberg",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tomter",
+    "stateCode": "01"
+  },
+  {
+    "name": "Trøgstad",
+    "stateCode": "01"
+  },
+  {
+    "name": "Våler",
+    "stateCode": "01"
+  },
+  {
+    "name": "Åneby",
+    "stateCode": "02"
+  },
+  {
+    "name": "Årnes",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ås",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ask",
+    "stateCode": "02"
+  },
+  {
+    "name": "Asker",
+    "stateCode": "02"
+  },
+  {
+    "name": "Auli",
+    "stateCode": "02"
+  },
+  {
+    "name": "Aurskog-Høland",
+    "stateCode": "02"
+  },
+  {
+    "name": "Aursmoen",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bærum",
+    "stateCode": "02"
+  },
+  {
+    "name": "Billingstad",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bjørkelangen",
+    "stateCode": "02"
+  },
+  {
+    "name": "Blakstad",
+    "stateCode": "02"
+  },
+  {
+    "name": "Drøbak",
+    "stateCode": "02"
+  },
+  {
+    "name": "Eidsvoll",
+    "stateCode": "02"
+  },
+  {
+    "name": "Enebakk",
+    "stateCode": "02"
+  },
+  {
+    "name": "Fagerstrand",
+    "stateCode": "02"
+  },
+  {
+    "name": "Fet",
+    "stateCode": "02"
+  },
+  {
+    "name": "Fetsund",
+    "stateCode": "02"
+  },
+  {
+    "name": "Fjellfoten",
+    "stateCode": "02"
+  },
+  {
+    "name": "Flateby",
+    "stateCode": "02"
+  },
+  {
+    "name": "Frogn",
+    "stateCode": "02"
+  },
+  {
+    "name": "Frogner",
+    "stateCode": "02"
+  },
+  {
+    "name": "Gjerdrum",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hurdal",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jessheim",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kløfta",
+    "stateCode": "02"
+  },
+  {
+    "name": "Leirsund",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lillestrøm",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lørenskog",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lysaker",
+    "stateCode": "02"
+  },
+  {
+    "name": "Maura",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nannestad",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nes",
+    "stateCode": "02"
+  },
+  {
+    "name": "Neskollen",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nesodden",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nesoddtangen",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nittedal",
+    "stateCode": "02"
+  },
+  {
+    "name": "Oppegård",
+    "stateCode": "02"
+  },
+  {
+    "name": "Rælingen",
+    "stateCode": "02"
+  },
+  {
+    "name": "Råholt",
+    "stateCode": "02"
+  },
+  {
+    "name": "Rotnes",
+    "stateCode": "02"
+  },
+  {
+    "name": "Skedsmo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ski",
+    "stateCode": "02"
+  },
+  {
+    "name": "Skui",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sørum",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sørumsand",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ullensaker",
+    "stateCode": "02"
+  },
+  {
+    "name": "Vestby",
+    "stateCode": "02"
+  },
+  {
+    "name": "Oslo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Sjølyststranda",
+    "stateCode": "03"
+  },
+  {
+    "name": "Alvdal",
+    "stateCode": "04"
+  },
+  {
+    "name": "Åmot",
+    "stateCode": "04"
+  },
+  {
+    "name": "Åsnes",
+    "stateCode": "04"
+  },
+  {
+    "name": "Brumunddal",
+    "stateCode": "04"
+  },
+  {
+    "name": "Eidskog",
+    "stateCode": "04"
+  },
+  {
+    "name": "Elverum",
+    "stateCode": "04"
+  },
+  {
+    "name": "Engerdal",
+    "stateCode": "04"
+  },
+  {
+    "name": "Folldal",
+    "stateCode": "04"
+  },
+  {
+    "name": "Grue",
+    "stateCode": "04"
+  },
+  {
+    "name": "Hamar",
+    "stateCode": "04"
+  },
+  {
+    "name": "Innbygda",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kirkenær",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kongsvinger",
+    "stateCode": "04"
+  },
+  {
+    "name": "Koppang",
+    "stateCode": "04"
+  },
+  {
+    "name": "Løten",
+    "stateCode": "04"
+  },
+  {
+    "name": "Moelv",
+    "stateCode": "04"
+  },
+  {
+    "name": "Nord-Odal",
+    "stateCode": "04"
+  },
+  {
+    "name": "Os",
+    "stateCode": "04"
+  },
+  {
+    "name": "Rena",
+    "stateCode": "04"
+  },
+  {
+    "name": "Rendalen",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ringsaker",
+    "stateCode": "04"
+  },
+  {
+    "name": "Sand",
+    "stateCode": "04"
+  },
+  {
+    "name": "Skarnes",
+    "stateCode": "04"
+  },
+  {
+    "name": "Skotterud",
+    "stateCode": "04"
+  },
+  {
+    "name": "Sør-Odal",
+    "stateCode": "04"
+  },
+  {
+    "name": "Spetalen",
+    "stateCode": "04"
+  },
+  {
+    "name": "Stange",
+    "stateCode": "04"
+  },
+  {
+    "name": "Stor-Elvdal",
+    "stateCode": "04"
+  },
+  {
+    "name": "Tolga",
+    "stateCode": "04"
+  },
+  {
+    "name": "Trysil",
+    "stateCode": "04"
+  },
+  {
+    "name": "Tynset",
+    "stateCode": "04"
+  },
+  {
+    "name": "Våler",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bagn",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dokka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dombås",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dovre",
+    "stateCode": "05"
+  },
+  {
+    "name": "Etnedal",
+    "stateCode": "05"
+  },
+  {
+    "name": "Fagernes",
+    "stateCode": "05"
+  },
+  {
+    "name": "Fossbergom",
+    "stateCode": "05"
+  },
+  {
+    "name": "Gausdal",
+    "stateCode": "05"
+  },
+  {
+    "name": "Gjøvik",
+    "stateCode": "05"
+  },
+  {
+    "name": "Gran",
+    "stateCode": "05"
+  },
+  {
+    "name": "Grua",
+    "stateCode": "05"
+  },
+  {
+    "name": "Hov",
+    "stateCode": "05"
+  },
+  {
+    "name": "Hundorp",
+    "stateCode": "05"
+  },
+  {
+    "name": "Jevnaker",
+    "stateCode": "05"
+  },
+  {
+    "name": "Lena",
+    "stateCode": "05"
+  },
+  {
+    "name": "Lesja",
+    "stateCode": "05"
+  },
+  {
+    "name": "Lillehammer",
+    "stateCode": "05"
+  },
+  {
+    "name": "Lom",
+    "stateCode": "05"
+  },
+  {
+    "name": "Lunner",
+    "stateCode": "05"
+  },
+  {
+    "name": "Nord-Aurdal",
+    "stateCode": "05"
+  },
+  {
+    "name": "Nord-Fron",
+    "stateCode": "05"
+  },
+  {
+    "name": "Nordre Land",
+    "stateCode": "05"
+  },
+  {
+    "name": "Østre Toten",
+    "stateCode": "05"
+  },
+  {
+    "name": "Otta",
+    "stateCode": "05"
+  },
+  {
+    "name": "Øyer",
+    "stateCode": "05"
+  },
+  {
+    "name": "Øystre Slidre",
+    "stateCode": "05"
+  },
+  {
+    "name": "Raufoss",
+    "stateCode": "05"
+  },
+  {
+    "name": "Reinsvoll",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ringebu",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sel",
+    "stateCode": "05"
+  },
+  {
+    "name": "Skjåk",
+    "stateCode": "05"
+  },
+  {
+    "name": "Skreia",
+    "stateCode": "05"
+  },
+  {
+    "name": "Søndre Land",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sør-Aurdal",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sør-Fron",
+    "stateCode": "05"
+  },
+  {
+    "name": "Tretten",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vågå",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vågåmo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vang",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vestre Slidre",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vestre Toten",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vinstra",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ål",
+    "stateCode": "06"
+  },
+  {
+    "name": "Åros",
+    "stateCode": "06"
+  },
+  {
+    "name": "Drammen",
+    "stateCode": "06"
+  },
+  {
+    "name": "Flå",
+    "stateCode": "06"
+  },
+  {
+    "name": "Flesberg",
+    "stateCode": "06"
+  },
+  {
+    "name": "Geilo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Gol",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hemsedal",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hol",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hole",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hønefoss",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hurum",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hvittingfoss",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kongsberg",
+    "stateCode": "06"
+  },
+  {
+    "name": "Krødsherad",
+    "stateCode": "06"
+  },
+  {
+    "name": "Lier",
+    "stateCode": "06"
+  },
+  {
+    "name": "Modum",
+    "stateCode": "06"
+  },
+  {
+    "name": "Nedre Eiker",
+    "stateCode": "06"
+  },
+  {
+    "name": "Nes",
+    "stateCode": "06"
+  },
+  {
+    "name": "Nesbyen",
+    "stateCode": "06"
+  },
+  {
+    "name": "Nore og Uvdal",
+    "stateCode": "06"
+  },
+  {
+    "name": "Noresund",
+    "stateCode": "06"
+  },
+  {
+    "name": "Øvre Eiker",
+    "stateCode": "06"
+  },
+  {
+    "name": "Prestfoss",
+    "stateCode": "06"
+  },
+  {
+    "name": "Ringerike",
+    "stateCode": "06"
+  },
+  {
+    "name": "Rollag",
+    "stateCode": "06"
+  },
+  {
+    "name": "Røyken",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sætre",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sigdal",
+    "stateCode": "06"
+  },
+  {
+    "name": "Skoger",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tofte",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tranby",
+    "stateCode": "06"
+  },
+  {
+    "name": "Vikersund",
+    "stateCode": "06"
+  },
+  {
+    "name": "Årøysund",
+    "stateCode": "07"
+  },
+  {
+    "name": "Åsgårdstrand",
+    "stateCode": "07"
+  },
+  {
+    "name": "Barkåker",
+    "stateCode": "07"
+  },
+  {
+    "name": "Berger",
+    "stateCode": "07"
+  },
+  {
+    "name": "Færder",
+    "stateCode": "07"
+  },
+  {
+    "name": "Gullhaug",
+    "stateCode": "07"
+  },
+  {
+    "name": "Holmestrand",
+    "stateCode": "07"
+  },
+  {
+    "name": "Horten",
+    "stateCode": "07"
+  },
+  {
+    "name": "Larvik",
+    "stateCode": "07"
+  },
+  {
+    "name": "Melsomvik",
+    "stateCode": "07"
+  },
+  {
+    "name": "Re",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sande",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sandefjord",
+    "stateCode": "07"
+  },
+  {
+    "name": "Selvik",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sem",
+    "stateCode": "07"
+  },
+  {
+    "name": "Skoppum",
+    "stateCode": "07"
+  },
+  {
+    "name": "Stavern",
+    "stateCode": "07"
+  },
+  {
+    "name": "Stokke",
+    "stateCode": "07"
+  },
+  {
+    "name": "Svelvik",
+    "stateCode": "07"
+  },
+  {
+    "name": "Tjøme",
+    "stateCode": "07"
+  },
+  {
+    "name": "Tønsberg",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bamble",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bø",
+    "stateCode": "08"
+  },
+  {
+    "name": "Dalen",
+    "stateCode": "08"
+  },
+  {
+    "name": "Drangedal",
+    "stateCode": "08"
+  },
+  {
+    "name": "Fyresdal",
+    "stateCode": "08"
+  },
+  {
+    "name": "Gvarv",
+    "stateCode": "08"
+  },
+  {
+    "name": "Herre",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hjartdal",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kragerø",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kviteseid",
+    "stateCode": "08"
+  },
+  {
+    "name": "Lunde",
+    "stateCode": "08"
+  },
+  {
+    "name": "Nissedal",
+    "stateCode": "08"
+  },
+  {
+    "name": "Nome",
+    "stateCode": "08"
+  },
+  {
+    "name": "Notodden",
+    "stateCode": "08"
+  },
+  {
+    "name": "Porsgrunn",
+    "stateCode": "08"
+  },
+  {
+    "name": "Prestestranda",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rjukan",
+    "stateCode": "08"
+  },
+  {
+    "name": "Sauherad",
+    "stateCode": "08"
+  },
+  {
+    "name": "Seljord",
+    "stateCode": "08"
+  },
+  {
+    "name": "Siljan",
+    "stateCode": "08"
+  },
+  {
+    "name": "Skien",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tinn",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tokke",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ulefoss",
+    "stateCode": "08"
+  },
+  {
+    "name": "Vinje",
+    "stateCode": "08"
+  },
+  {
+    "name": "Åseral",
+    "stateCode": "10"
+  },
+  {
+    "name": "Audnedal",
+    "stateCode": "10"
+  },
+  {
+    "name": "Farsund",
+    "stateCode": "10"
+  },
+  {
+    "name": "Flekkefjord",
+    "stateCode": "10"
+  },
+  {
+    "name": "Hægebostad",
+    "stateCode": "10"
+  },
+  {
+    "name": "Justvik",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kristiansand",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kvinesdal",
+    "stateCode": "10"
+  },
+  {
+    "name": "Liknes",
+    "stateCode": "10"
+  },
+  {
+    "name": "Lindesnes",
+    "stateCode": "10"
+  },
+  {
+    "name": "Lyngdal",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mandal",
+    "stateCode": "10"
+  },
+  {
+    "name": "Marnardal",
+    "stateCode": "10"
+  },
+  {
+    "name": "Nodeland",
+    "stateCode": "10"
+  },
+  {
+    "name": "Sirdal",
+    "stateCode": "10"
+  },
+  {
+    "name": "Skålevik",
+    "stateCode": "10"
+  },
+  {
+    "name": "Søgne",
+    "stateCode": "10"
+  },
+  {
+    "name": "Songdalen",
+    "stateCode": "10"
+  },
+  {
+    "name": "Strai",
+    "stateCode": "10"
+  },
+  {
+    "name": "Tonstad",
+    "stateCode": "10"
+  },
+  {
+    "name": "Tveit",
+    "stateCode": "10"
+  },
+  {
+    "name": "Vanse",
+    "stateCode": "10"
+  },
+  {
+    "name": "Vennesla",
+    "stateCode": "10"
+  },
+  {
+    "name": "Vestbygd",
+    "stateCode": "10"
+  },
+  {
+    "name": "Vigeland",
+    "stateCode": "10"
+  },
+  {
+    "name": "Åkrehamn",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bjerkreim",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bokn",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bryne",
+    "stateCode": "11"
+  },
+  {
+    "name": "Egersund",
+    "stateCode": "11"
+  },
+  {
+    "name": "Eigersund",
+    "stateCode": "11"
+  },
+  {
+    "name": "Eike",
+    "stateCode": "11"
+  },
+  {
+    "name": "Finnøy",
+    "stateCode": "11"
+  },
+  {
+    "name": "Forsand",
+    "stateCode": "11"
+  },
+  {
+    "name": "Gjesdal",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hå",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hauge i Dalane",
+    "stateCode": "11"
+  },
+  {
+    "name": "Haugesund",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hjelmeland",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hommersåk",
+    "stateCode": "11"
+  },
+  {
+    "name": "Jørpeland",
+    "stateCode": "11"
+  },
+  {
+    "name": "Judaberg",
+    "stateCode": "11"
+  },
+  {
+    "name": "Karmøy",
+    "stateCode": "11"
+  },
+  {
+    "name": "Klepp",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kopervik",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kvitsøy",
+    "stateCode": "11"
+  },
+  {
+    "name": "Lund",
+    "stateCode": "11"
+  },
+  {
+    "name": "Lyefjell",
+    "stateCode": "11"
+  },
+  {
+    "name": "Moi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Nærbø",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ølen",
+    "stateCode": "11"
+  },
+  {
+    "name": "Randaberg",
+    "stateCode": "11"
+  },
+  {
+    "name": "Rennesøy",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sæveland",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sandnes",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sauda",
+    "stateCode": "11"
+  },
+  {
+    "name": "Skudeneshavn",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sokndal",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sola",
+    "stateCode": "11"
+  },
+  {
+    "name": "Stavanger",
+    "stateCode": "11"
+  },
+  {
+    "name": "Strand",
+    "stateCode": "11"
+  },
+  {
+    "name": "Suldal",
+    "stateCode": "11"
+  },
+  {
+    "name": "Tananger",
+    "stateCode": "11"
+  },
+  {
+    "name": "Tau",
+    "stateCode": "11"
+  },
+  {
+    "name": "Time",
+    "stateCode": "11"
+  },
+  {
+    "name": "Tysvær",
+    "stateCode": "11"
+  },
+  {
+    "name": "Utsira",
+    "stateCode": "11"
+  },
+  {
+    "name": "Varhaug",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vedavågen",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vigrestad",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vikeså",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vikevåg",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vindafjord",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vormedal",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ågotnes",
+    "stateCode": "12"
+  },
+  {
+    "name": "Askøy",
+    "stateCode": "12"
+  },
+  {
+    "name": "Austevoll",
+    "stateCode": "12"
+  },
+  {
+    "name": "Austrheim",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bergen",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bømlo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Dale",
+    "stateCode": "12"
+  },
+  {
+    "name": "Eidfjord",
+    "stateCode": "12"
+  },
+  {
+    "name": "Eikelandsosen",
+    "stateCode": "12"
+  },
+  {
+    "name": "Espeland",
+    "stateCode": "12"
+  },
+  {
+    "name": "Etne",
+    "stateCode": "12"
+  },
+  {
+    "name": "Fedje",
+    "stateCode": "12"
+  },
+  {
+    "name": "Fitjar",
+    "stateCode": "12"
+  },
+  {
+    "name": "Fjell",
+    "stateCode": "12"
+  },
+  {
+    "name": "Frekhaug",
+    "stateCode": "12"
+  },
+  {
+    "name": "Fusa",
+    "stateCode": "12"
+  },
+  {
+    "name": "Granvin",
+    "stateCode": "12"
+  },
+  {
+    "name": "Hagavik",
+    "stateCode": "12"
+  },
+  {
+    "name": "Hylkje",
+    "stateCode": "12"
+  },
+  {
+    "name": "Indre Arna",
+    "stateCode": "12"
+  },
+  {
+    "name": "Jondal",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kinsarvik",
+    "stateCode": "12"
+  },
+  {
+    "name": "Knappskog",
+    "stateCode": "12"
+  },
+  {
+    "name": "Knarvik",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kvam",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kvinnherad",
+    "stateCode": "12"
+  },
+  {
+    "name": "Leirvik",
+    "stateCode": "12"
+  },
+  {
+    "name": "Lindås",
+    "stateCode": "12"
+  },
+  {
+    "name": "Lonevåg",
+    "stateCode": "12"
+  },
+  {
+    "name": "Manger",
+    "stateCode": "12"
+  },
+  {
+    "name": "Masfjorden",
+    "stateCode": "12"
+  },
+  {
+    "name": "Meland",
+    "stateCode": "12"
+  },
+  {
+    "name": "Modalen",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mosterhamn",
+    "stateCode": "12"
+  },
+  {
+    "name": "Norheimsund",
+    "stateCode": "12"
+  },
+  {
+    "name": "Odda",
+    "stateCode": "12"
+  },
+  {
+    "name": "Os",
+    "stateCode": "12"
+  },
+  {
+    "name": "Osterøy",
+    "stateCode": "12"
+  },
+  {
+    "name": "Øygarden",
+    "stateCode": "12"
+  },
+  {
+    "name": "Øystese",
+    "stateCode": "12"
+  },
+  {
+    "name": "Radøy",
+    "stateCode": "12"
+  },
+  {
+    "name": "Rosendal",
+    "stateCode": "12"
+  },
+  {
+    "name": "Rubbestadneset",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sagvåg",
+    "stateCode": "12"
+  },
+  {
+    "name": "Samnanger",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sandsli",
+    "stateCode": "12"
+  },
+  {
+    "name": "Skogsvågen",
+    "stateCode": "12"
+  },
+  {
+    "name": "Stord",
+    "stateCode": "12"
+  },
+  {
+    "name": "Storebø",
+    "stateCode": "12"
+  },
+  {
+    "name": "Straume",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sund",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sveio",
+    "stateCode": "12"
+  },
+  {
+    "name": "Syfteland",
+    "stateCode": "12"
+  },
+  {
+    "name": "Tysnes",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ullensvang",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ulvik",
+    "stateCode": "12"
+  },
+  {
+    "name": "Vaksdal",
+    "stateCode": "12"
+  },
+  {
+    "name": "Voss",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ytre Arna",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ytrebygda",
+    "stateCode": "12"
+  },
+  {
+    "name": "Årdal",
+    "stateCode": "14"
+  },
+  {
+    "name": "Årdalstangen",
+    "stateCode": "14"
+  },
+  {
+    "name": "Askvoll",
+    "stateCode": "14"
+  },
+  {
+    "name": "Aurland",
+    "stateCode": "14"
+  },
+  {
+    "name": "Balestrand",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bremanger",
+    "stateCode": "14"
+  },
+  {
+    "name": "Dale",
+    "stateCode": "14"
+  },
+  {
+    "name": "Eid",
+    "stateCode": "14"
+  },
+  {
+    "name": "Eivindvik",
+    "stateCode": "14"
+  },
+  {
+    "name": "Farnes",
+    "stateCode": "14"
+  },
+  {
+    "name": "Fjaler",
+    "stateCode": "14"
+  },
+  {
+    "name": "Flora",
+    "stateCode": "14"
+  },
+  {
+    "name": "Florø",
+    "stateCode": "14"
+  },
+  {
+    "name": "Førde",
+    "stateCode": "14"
+  },
+  {
+    "name": "Gaular",
+    "stateCode": "14"
+  },
+  {
+    "name": "Gaupne",
+    "stateCode": "14"
+  },
+  {
+    "name": "Gloppen",
+    "stateCode": "14"
+  },
+  {
+    "name": "Gulen",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hardbakke",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hermansverk",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hornindal",
+    "stateCode": "14"
+  },
+  {
+    "name": "Høyanger",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hyllestad",
+    "stateCode": "14"
+  },
+  {
+    "name": "Jølster",
+    "stateCode": "14"
+  },
+  {
+    "name": "Lærdal",
+    "stateCode": "14"
+  },
+  {
+    "name": "Lærdalsøyri",
+    "stateCode": "14"
+  },
+  {
+    "name": "Leikanger",
+    "stateCode": "14"
+  },
+  {
+    "name": "Luster",
+    "stateCode": "14"
+  },
+  {
+    "name": "Måløy",
+    "stateCode": "14"
+  },
+  {
+    "name": "Naustdal",
+    "stateCode": "14"
+  },
+  {
+    "name": "Nordfjordeid",
+    "stateCode": "14"
+  },
+  {
+    "name": "Sandane",
+    "stateCode": "14"
+  },
+  {
+    "name": "Sande",
+    "stateCode": "14"
+  },
+  {
+    "name": "Selje",
+    "stateCode": "14"
+  },
+  {
+    "name": "Sogndal",
+    "stateCode": "14"
+  },
+  {
+    "name": "Solund",
+    "stateCode": "14"
+  },
+  {
+    "name": "Stryn",
+    "stateCode": "14"
+  },
+  {
+    "name": "Svelgen",
+    "stateCode": "14"
+  },
+  {
+    "name": "Vågsøy",
+    "stateCode": "14"
+  },
+  {
+    "name": "Vik",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ålesund",
+    "stateCode": "15"
+  },
+  {
+    "name": "Åndalsnes",
+    "stateCode": "15"
+  },
+  {
+    "name": "Aukra",
+    "stateCode": "15"
+  },
+  {
+    "name": "Aure",
+    "stateCode": "15"
+  },
+  {
+    "name": "Averøy",
+    "stateCode": "15"
+  },
+  {
+    "name": "Batnfjordsøra",
+    "stateCode": "15"
+  },
+  {
+    "name": "Brattvåg",
+    "stateCode": "15"
+  },
+  {
+    "name": "Eide",
+    "stateCode": "15"
+  },
+  {
+    "name": "Eidsvåg",
+    "stateCode": "15"
+  },
+  {
+    "name": "Elnesvågen",
+    "stateCode": "15"
+  },
+  {
+    "name": "Fræna",
+    "stateCode": "15"
+  },
+  {
+    "name": "Giske",
+    "stateCode": "15"
+  },
+  {
+    "name": "Gjemnes",
+    "stateCode": "15"
+  },
+  {
+    "name": "Halsa",
+    "stateCode": "15"
+  },
+  {
+    "name": "Haram",
+    "stateCode": "15"
+  },
+  {
+    "name": "Hareid",
+    "stateCode": "15"
+  },
+  {
+    "name": "Herøy",
+    "stateCode": "15"
+  },
+  {
+    "name": "Hjelset",
+    "stateCode": "15"
+  },
+  {
+    "name": "Hopen",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kristiansund",
+    "stateCode": "15"
+  },
+  {
+    "name": "Larsnes",
+    "stateCode": "15"
+  },
+  {
+    "name": "Midsund",
+    "stateCode": "15"
+  },
+  {
+    "name": "Molde",
+    "stateCode": "15"
+  },
+  {
+    "name": "Nesset",
+    "stateCode": "15"
+  },
+  {
+    "name": "Norddal",
+    "stateCode": "15"
+  },
+  {
+    "name": "Nordstranda",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ørskog",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ørsta",
+    "stateCode": "15"
+  },
+  {
+    "name": "Rauma",
+    "stateCode": "15"
+  },
+  {
+    "name": "Rensvik",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sande",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sandøy",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sjøholt",
+    "stateCode": "15"
+  },
+  {
+    "name": "Skodje",
+    "stateCode": "15"
+  },
+  {
+    "name": "Smøla",
+    "stateCode": "15"
+  },
+  {
+    "name": "Steinshamn",
+    "stateCode": "15"
+  },
+  {
+    "name": "Stordal",
+    "stateCode": "15"
+  },
+  {
+    "name": "Stranda",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sula",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sunndal",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sunndalsøra",
+    "stateCode": "15"
+  },
+  {
+    "name": "Surnadal",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sykkylven",
+    "stateCode": "15"
+  },
+  {
+    "name": "Tingvoll",
+    "stateCode": "15"
+  },
+  {
+    "name": "Tomra",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ulstein",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ulsteinvik",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ulsteinvik weather pws station",
+    "stateCode": "15"
+  },
+  {
+    "name": "Vanylven",
+    "stateCode": "15"
+  },
+  {
+    "name": "Vatne",
+    "stateCode": "15"
+  },
+  {
+    "name": "Vestnes",
+    "stateCode": "15"
+  },
+  {
+    "name": "Volda",
+    "stateCode": "15"
+  },
+  {
+    "name": "Alstahaug",
+    "stateCode": "18"
+  },
+  {
+    "name": "Andenes",
+    "stateCode": "18"
+  },
+  {
+    "name": "Andøy",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ballangen",
+    "stateCode": "18"
+  },
+  {
+    "name": "Beiarn",
+    "stateCode": "18"
+  },
+  {
+    "name": "Bindal",
+    "stateCode": "18"
+  },
+  {
+    "name": "Bjerkvik",
+    "stateCode": "18"
+  },
+  {
+    "name": "Bø",
+    "stateCode": "18"
+  },
+  {
+    "name": "Bodø",
+    "stateCode": "18"
+  },
+  {
+    "name": "Bogen",
+    "stateCode": "18"
+  },
+  {
+    "name": "Brønnøy",
+    "stateCode": "18"
+  },
+  {
+    "name": "Brønnøysund",
+    "stateCode": "18"
+  },
+  {
+    "name": "Dønna",
+    "stateCode": "18"
+  },
+  {
+    "name": "Evenes",
+    "stateCode": "18"
+  },
+  {
+    "name": "Evjen",
+    "stateCode": "18"
+  },
+  {
+    "name": "Fauske",
+    "stateCode": "18"
+  },
+  {
+    "name": "Flakstad",
+    "stateCode": "18"
+  },
+  {
+    "name": "Gildeskål",
+    "stateCode": "18"
+  },
+  {
+    "name": "Gladstad",
+    "stateCode": "18"
+  },
+  {
+    "name": "Glomfjord",
+    "stateCode": "18"
+  },
+  {
+    "name": "Grane",
+    "stateCode": "18"
+  },
+  {
+    "name": "Gravdal",
+    "stateCode": "18"
+  },
+  {
+    "name": "Hadsel",
+    "stateCode": "18"
+  },
+  {
+    "name": "Hamarøy",
+    "stateCode": "18"
+  },
+  {
+    "name": "Hattfjelldal",
+    "stateCode": "18"
+  },
+  {
+    "name": "Hauknes",
+    "stateCode": "18"
+  },
+  {
+    "name": "Hemnes",
+    "stateCode": "18"
+  },
+  {
+    "name": "Hemnesberget",
+    "stateCode": "18"
+  },
+  {
+    "name": "Herøy",
+    "stateCode": "18"
+  },
+  {
+    "name": "Inndyr",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kabelvåg",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kjøpsvik",
+    "stateCode": "18"
+  },
+  {
+    "name": "Korgen",
+    "stateCode": "18"
+  },
+  {
+    "name": "Leirfjord",
+    "stateCode": "18"
+  },
+  {
+    "name": "Leknes",
+    "stateCode": "18"
+  },
+  {
+    "name": "Leland",
+    "stateCode": "18"
+  },
+  {
+    "name": "Løding",
+    "stateCode": "18"
+  },
+  {
+    "name": "Lødingen",
+    "stateCode": "18"
+  },
+  {
+    "name": "Løpsmarka",
+    "stateCode": "18"
+  },
+  {
+    "name": "Lurøy",
+    "stateCode": "18"
+  },
+  {
+    "name": "Melbu",
+    "stateCode": "18"
+  },
+  {
+    "name": "Meløy",
+    "stateCode": "18"
+  },
+  {
+    "name": "Mo i Rana",
+    "stateCode": "18"
+  },
+  {
+    "name": "Mosjøen",
+    "stateCode": "18"
+  },
+  {
+    "name": "Moskenes",
+    "stateCode": "18"
+  },
+  {
+    "name": "Myre",
+    "stateCode": "18"
+  },
+  {
+    "name": "Narvik",
+    "stateCode": "18"
+  },
+  {
+    "name": "Nesna",
+    "stateCode": "18"
+  },
+  {
+    "name": "Øksnes",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ørnes",
+    "stateCode": "18"
+  },
+  {
+    "name": "Rana",
+    "stateCode": "18"
+  },
+  {
+    "name": "Reine",
+    "stateCode": "18"
+  },
+  {
+    "name": "Rødøy",
+    "stateCode": "18"
+  },
+  {
+    "name": "Rognan",
+    "stateCode": "18"
+  },
+  {
+    "name": "Røst",
+    "stateCode": "18"
+  },
+  {
+    "name": "Saltdal",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sandnessjøen",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sømna",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sørfold",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sørland",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sortland",
+    "stateCode": "18"
+  },
+  {
+    "name": "Steigen",
+    "stateCode": "18"
+  },
+  {
+    "name": "Stokmarknes",
+    "stateCode": "18"
+  },
+  {
+    "name": "Straume",
+    "stateCode": "18"
+  },
+  {
+    "name": "Straumen",
+    "stateCode": "18"
+  },
+  {
+    "name": "Svolvær",
+    "stateCode": "18"
+  },
+  {
+    "name": "Terråk",
+    "stateCode": "18"
+  },
+  {
+    "name": "Tjeldsund",
+    "stateCode": "18"
+  },
+  {
+    "name": "Træna",
+    "stateCode": "18"
+  },
+  {
+    "name": "Trofors",
+    "stateCode": "18"
+  },
+  {
+    "name": "Tysfjord",
+    "stateCode": "18"
+  },
+  {
+    "name": "Værøy",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vågan",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vefsn",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vega",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vestvågøy",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vevelstad",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vik",
+    "stateCode": "18"
+  },
+  {
+    "name": "Balsfjord",
+    "stateCode": "19"
+  },
+  {
+    "name": "Bardu",
+    "stateCode": "19"
+  },
+  {
+    "name": "Berg",
+    "stateCode": "19"
+  },
+  {
+    "name": "Borkenes",
+    "stateCode": "19"
+  },
+  {
+    "name": "Dyrøy",
+    "stateCode": "19"
+  },
+  {
+    "name": "Evenskjer",
+    "stateCode": "19"
+  },
+  {
+    "name": "Finnsnes",
+    "stateCode": "19"
+  },
+  {
+    "name": "Gratangen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Gryllefjord",
+    "stateCode": "19"
+  },
+  {
+    "name": "Hansnes",
+    "stateCode": "19"
+  },
+  {
+    "name": "Harstad",
+    "stateCode": "19"
+  },
+  {
+    "name": "Ibestad",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kåfjord",
+    "stateCode": "19"
+  },
+  {
+    "name": "Karlsøy",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kvæfjord",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kvænangen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Lavangen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Lenvik",
+    "stateCode": "19"
+  },
+  {
+    "name": "Lyngen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Lyngseidet",
+    "stateCode": "19"
+  },
+  {
+    "name": "Målselv",
+    "stateCode": "19"
+  },
+  {
+    "name": "Moen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Nordreisa",
+    "stateCode": "19"
+  },
+  {
+    "name": "Olderdalen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Salangen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Setermoen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Sjøvegan",
+    "stateCode": "19"
+  },
+  {
+    "name": "Skånland",
+    "stateCode": "19"
+  },
+  {
+    "name": "Skjervøy",
+    "stateCode": "19"
+  },
+  {
+    "name": "Sørreisa",
+    "stateCode": "19"
+  },
+  {
+    "name": "Storfjord",
+    "stateCode": "19"
+  },
+  {
+    "name": "Storslett",
+    "stateCode": "19"
+  },
+  {
+    "name": "Storsteinnes",
+    "stateCode": "19"
+  },
+  {
+    "name": "Torsken",
+    "stateCode": "19"
+  },
+  {
+    "name": "Tranøy",
+    "stateCode": "19"
+  },
+  {
+    "name": "Tromsø",
+    "stateCode": "19"
+  },
+  {
+    "name": "Alta",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ávanuorri",
+    "stateCode": "20"
+  },
+  {
+    "name": "Båtsfjord",
+    "stateCode": "20"
+  },
+  {
+    "name": "Berlevåg",
+    "stateCode": "20"
+  },
+  {
+    "name": "Bjørnevatn",
+    "stateCode": "20"
+  },
+  {
+    "name": "Gamvik",
+    "stateCode": "20"
+  },
+  {
+    "name": "Hammerfest",
+    "stateCode": "20"
+  },
+  {
+    "name": "Hasvik",
+    "stateCode": "20"
+  },
+  {
+    "name": "Honningsvåg",
+    "stateCode": "20"
+  },
+  {
+    "name": "Kárášjohka",
+    "stateCode": "20"
+  },
+  {
+    "name": "Karasjok",
+    "stateCode": "20"
+  },
+  {
+    "name": "Kautokeino",
+    "stateCode": "20"
+  },
+  {
+    "name": "Kirkenes",
+    "stateCode": "20"
+  },
+  {
+    "name": "Kjøllefjord",
+    "stateCode": "20"
+  },
+  {
+    "name": "Kvalsund",
+    "stateCode": "20"
+  },
+  {
+    "name": "Lakselv",
+    "stateCode": "20"
+  },
+  {
+    "name": "Lebesby",
+    "stateCode": "20"
+  },
+  {
+    "name": "Loppa",
+    "stateCode": "20"
+  },
+  {
+    "name": "Måsøy",
+    "stateCode": "20"
+  },
+  {
+    "name": "Mehamn",
+    "stateCode": "20"
+  },
+  {
+    "name": "Nesseby",
+    "stateCode": "20"
+  },
+  {
+    "name": "Nordkapp",
+    "stateCode": "20"
+  },
+  {
+    "name": "Øksfjord",
+    "stateCode": "20"
+  },
+  {
+    "name": "Porsanger",
+    "stateCode": "20"
+  },
+  {
+    "name": "Rypefjord",
+    "stateCode": "20"
+  },
+  {
+    "name": "Sør-Varanger",
+    "stateCode": "20"
+  },
+  {
+    "name": "Tana",
+    "stateCode": "20"
+  },
+  {
+    "name": "Vadsø",
+    "stateCode": "20"
+  },
+  {
+    "name": "Vardø",
+    "stateCode": "20"
+  },
+  {
+    "name": "Å i Åfjord",
+    "stateCode": "50"
+  },
+  {
+    "name": "Åfjord",
+    "stateCode": "50"
+  },
+  {
+    "name": "Agdenes",
+    "stateCode": "50"
+  },
+  {
+    "name": "Berkåk",
+    "stateCode": "50"
+  },
+  {
+    "name": "Bjugn",
+    "stateCode": "50"
+  },
+  {
+    "name": "Botngård",
+    "stateCode": "50"
+  },
+  {
+    "name": "Brekstad",
+    "stateCode": "50"
+  },
+  {
+    "name": "Fillan",
+    "stateCode": "50"
+  },
+  {
+    "name": "Flatanger",
+    "stateCode": "50"
+  },
+  {
+    "name": "Fosnes",
+    "stateCode": "50"
+  },
+  {
+    "name": "Frosta",
+    "stateCode": "50"
+  },
+  {
+    "name": "Frøya",
+    "stateCode": "50"
+  },
+  {
+    "name": "Grong",
+    "stateCode": "50"
+  },
+  {
+    "name": "Hemne",
+    "stateCode": "50"
+  },
+  {
+    "name": "Hitra",
+    "stateCode": "50"
+  },
+  {
+    "name": "Holtålen",
+    "stateCode": "50"
+  },
+  {
+    "name": "Hommelvik",
+    "stateCode": "50"
+  },
+  {
+    "name": "Høylandet",
+    "stateCode": "50"
+  },
+  {
+    "name": "Inderøy",
+    "stateCode": "50"
+  },
+  {
+    "name": "Indre Fosen",
+    "stateCode": "50"
+  },
+  {
+    "name": "Klæbu",
+    "stateCode": "50"
+  },
+  {
+    "name": "Kolvereid",
+    "stateCode": "50"
+  },
+  {
+    "name": "Kyrksæterøra",
+    "stateCode": "50"
+  },
+  {
+    "name": "Lauvsnes",
+    "stateCode": "50"
+  },
+  {
+    "name": "Leka",
+    "stateCode": "50"
+  },
+  {
+    "name": "Levanger",
+    "stateCode": "50"
+  },
+  {
+    "name": "Lierne",
+    "stateCode": "50"
+  },
+  {
+    "name": "Lundamo",
+    "stateCode": "50"
+  },
+  {
+    "name": "Malm",
+    "stateCode": "50"
+  },
+  {
+    "name": "Malvik",
+    "stateCode": "50"
+  },
+  {
+    "name": "Meldal",
+    "stateCode": "50"
+  },
+  {
+    "name": "Melhus",
+    "stateCode": "50"
+  },
+  {
+    "name": "Meråker",
+    "stateCode": "50"
+  },
+  {
+    "name": "Midtre Gauldal",
+    "stateCode": "50"
+  },
+  {
+    "name": "Nærøy",
+    "stateCode": "50"
+  },
+  {
+    "name": "Namdalseid",
+    "stateCode": "50"
+  },
+  {
+    "name": "Namsos",
+    "stateCode": "50"
+  },
+  {
+    "name": "Namsskogan",
+    "stateCode": "50"
+  },
+  {
+    "name": "Oppdal",
+    "stateCode": "50"
+  },
+  {
+    "name": "Orkdal",
+    "stateCode": "50"
+  },
+  {
+    "name": "Ørland",
+    "stateCode": "50"
+  },
+  {
+    "name": "Osen",
+    "stateCode": "50"
+  },
+  {
+    "name": "Overhalla",
+    "stateCode": "50"
+  },
+  {
+    "name": "Raarvihke - Røyrvik",
+    "stateCode": "50"
+  },
+  {
+    "name": "Ranemsletta",
+    "stateCode": "50"
+  },
+  {
+    "name": "Rennebu",
+    "stateCode": "50"
+  },
+  {
+    "name": "Rindal",
+    "stateCode": "50"
+  },
+  {
+    "name": "Roan",
+    "stateCode": "50"
+  },
+  {
+    "name": "Røros",
+    "stateCode": "50"
+  },
+  {
+    "name": "Rørvik",
+    "stateCode": "50"
+  },
+  {
+    "name": "Røyrvik",
+    "stateCode": "50"
+  },
+  {
+    "name": "Selbu",
+    "stateCode": "50"
+  },
+  {
+    "name": "Sistranda",
+    "stateCode": "50"
+  },
+  {
+    "name": "Skaun",
+    "stateCode": "50"
+  },
+  {
+    "name": "Skogn",
+    "stateCode": "50"
+  },
+  {
+    "name": "Snåase",
+    "stateCode": "50"
+  },
+  {
+    "name": "Snåase - Snåsa",
+    "stateCode": "50"
+  },
+  {
+    "name": "Snillfjord",
+    "stateCode": "50"
+  },
+  {
+    "name": "Steinkjer",
+    "stateCode": "50"
+  },
+  {
+    "name": "Stjørdal",
+    "stateCode": "50"
+  },
+  {
+    "name": "Stjørdalshalsen",
+    "stateCode": "50"
+  },
+  {
+    "name": "Straumen",
+    "stateCode": "50"
+  },
+  {
+    "name": "Trondheim",
+    "stateCode": "50"
+  },
+  {
+    "name": "Tydal",
+    "stateCode": "50"
+  },
+  {
+    "name": "Verdal",
+    "stateCode": "50"
+  },
+  {
+    "name": "Verran",
+    "stateCode": "50"
+  },
+  {
+    "name": "Vikna",
+    "stateCode": "50"
+  }
+]

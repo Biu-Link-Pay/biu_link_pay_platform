@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Arima",
+    "stateCode": "ARI"
+  },
+  {
+    "name": "Chaguanas",
+    "stateCode": "CHA"
+  },
+  {
+    "name": "Ward of Chaguanas",
+    "stateCode": "CHA"
+  },
+  {
+    "name": "Couva",
+    "stateCode": "CTT"
+  },
+  {
+    "name": "Tabaquite",
+    "stateCode": "CTT"
+  },
+  {
+    "name": "Petit Valley",
+    "stateCode": "DMN"
+  },
+  {
+    "name": "Ward of Diego Martin",
+    "stateCode": "DMN"
+  },
+  {
+    "name": "Scarborough",
+    "stateCode": "ETO"
+  },
+  {
+    "name": "Debe",
+    "stateCode": "PED"
+  },
+  {
+    "name": "Peñal",
+    "stateCode": "PED"
+  },
+  {
+    "name": "Mucurapo",
+    "stateCode": "POS"
+  },
+  {
+    "name": "Port of Spain",
+    "stateCode": "POS"
+  },
+  {
+    "name": "Princes Town",
+    "stateCode": "PRT"
+  },
+  {
+    "name": "Point Fortin",
+    "stateCode": "PTF"
+  },
+  {
+    "name": "Marabella",
+    "stateCode": "SFO"
+  },
+  {
+    "name": "Mon Repos",
+    "stateCode": "SFO"
+  },
+  {
+    "name": "San Fernando",
+    "stateCode": "SFO"
+  },
+  {
+    "name": "Sangre Grande",
+    "stateCode": "SGE"
+  },
+  {
+    "name": "Siparia",
+    "stateCode": "SIP"
+  },
+  {
+    "name": "Ward of Siparia",
+    "stateCode": "SIP"
+  },
+  {
+    "name": "Laventille",
+    "stateCode": "SJL"
+  },
+  {
+    "name": "Arouca",
+    "stateCode": "TUP"
+  },
+  {
+    "name": "Paradise",
+    "stateCode": "TUP"
+  },
+  {
+    "name": "Tunapuna",
+    "stateCode": "TUP"
+  },
+  {
+    "name": "Rio Claro",
+    "stateCode": "WTO"
+  }
+]

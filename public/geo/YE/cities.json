@@ -1,0 +1,1370 @@
+[
+  {
+    "name": "Ahwar",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Al Mahfad",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Al Wade'a",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Jawf al Maqbābah",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Jayshan",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Khanfir",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Lawdar",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Mudiyah",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Rasad",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Sarar",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Sibah",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Zingibar",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Zinjibār",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Aden",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Al Buraiqeh",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Al Mansura",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Al Mualla",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Ash Shaikh Outhman",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Attawahi",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Craiter",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Dar Sad",
+    "stateCode": "AD"
+  },
+  {
+    "name": "‘Amrān",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Al Ashah",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Al Madan",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Al Qaflah",
+    "stateCode": "AM"
+  },
+  {
+    "name": "As Sawd",
+    "stateCode": "AM"
+  },
+  {
+    "name": "As Sudah",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Bani Suraim",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Dhi Bin",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Habur Zulaymah",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Harf Sufyan",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Hooth",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Iyal Surayh",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Jabal Iyal Yazid",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Khamir",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Kharif",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Maswar",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Raydah",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Shahārah",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Suwayr",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Thula",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Al A'rsh",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Al Bayda",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Al Bayda City",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Al Bayḑā’",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Al Malagim",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Al Quraishyah",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Ar Ryashyyah",
+    "stateCode": "BA"
+  },
+  {
+    "name": "As Sawadiyah",
+    "stateCode": "BA"
+  },
+  {
+    "name": "As Sawma'ah",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Ash Sharafayn",
+    "stateCode": "BA"
+  },
+  {
+    "name": "At Taffah",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Az Zahir",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Dhi Na'im",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Maswarah",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Mukayras",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Na'man",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Nati'",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Radā‘",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Radman Al Awad",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Sabah",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Wald Rabi'",
+    "stateCode": "BA"
+  },
+  {
+    "name": "‘Ans",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Al Hada",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Al Manar",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Al-Medy Village, قرية المدي",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Dawran Aness",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Dhamār",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Jabal Ash sharq",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Jahran",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Maghirib Ans",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Mayfa'at Anss",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Utmah",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Wusab Al Ali",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Wusab As Safil",
+    "stateCode": "DH"
+  },
+  {
+    "name": "Ad Dis",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Ad Dīs ash Sharqīyah",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Adh Dhlia'ah",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Al Abr",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Al Ḩamdī",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Al Mukalla",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Al Mukalla City",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Al Qaf",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Al Qatn",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Amd",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Ar Raydah Wa Qusayar",
+    "stateCode": "HD"
+  },
+  {
+    "name": "As Sawm",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Ash Shihr",
+    "stateCode": "HD"
+  },
+  {
+    "name": "At Taḩāluf",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Brom Mayfa",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Daw'an",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Ghayl Ba Wazir",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Ghayl Bin Yamin",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Hagr As Sai'ar",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Hajr",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Huraidhah",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Kilmia",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Mukalla",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Rakhyah",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Rumah",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Sah",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Sayun",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Shibam",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Suḩayl Shibām",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Tarim",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Thamud",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Wadi Al Ayn",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Yabuth",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Zamakh wa Manwakh",
+    "stateCode": "HD"
+  },
+  {
+    "name": "Abs",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Aflah Al Yaman",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Aflah Ash Shawm",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Al Jamimah",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Al Maghrabah",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Al Mahabishah",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Al Miftah",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Ash Shaghadirah",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Ash Shahil",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Aslem",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Bakil Al Mir",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Banī al ‘Awwām",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Bani Al Awam",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Bani Qa'is",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Hajjah",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Harad District",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Hayran",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Khayran Al Muharraq",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Ku'aydinah",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Kuhlan Affar",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Kuhlan Ash Sharaf",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Kushar",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Mabyan",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Midi",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Mustaba",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Najrah",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Qafl Shamer",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Qarah",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Sharas",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Wadhrah",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Washḩah",
+    "stateCode": "HJ"
+  },
+  {
+    "name": "Ad Dahi",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Ad Durayhimi",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al Garrahi",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al Hajjaylah",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al Hali",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al Hawak",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al Ḩudaydah",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al Mansuriyah",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al Marawi'ah",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al Mighlaf",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al Mina",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al Munirah",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al Qanawis",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Alluheyah",
+    "stateCode": "HU"
+  },
+  {
+    "name": "As Salif",
+    "stateCode": "HU"
+  },
+  {
+    "name": "As Sukhnah",
+    "stateCode": "HU"
+  },
+  {
+    "name": "At Tuhayat",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Az Zaydīyah",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Az Zuhrah",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Bājil",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Bayt al Faqīh",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Bura",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Hays",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Jabal Ra's",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Kamaran",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Zabīd",
+    "stateCode": "HU"
+  },
+  {
+    "name": "Al ‘Udayn",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Al Dhihar",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Al Makhādir",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Al Mashannah",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Al Qafr",
+    "stateCode": "IB"
+  },
+  {
+    "name": "An Nādirah",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Ar Radmah",
+    "stateCode": "IB"
+  },
+  {
+    "name": "As Sabrah",
+    "stateCode": "IB"
+  },
+  {
+    "name": "As Saddah",
+    "stateCode": "IB"
+  },
+  {
+    "name": "As Sayyani",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Ash Sha'ir",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Ba'dan",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Dhī as Sufāl",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Far Al Udayn",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Hazm Al Udayn",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Hubaysh",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Ibb",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Jiblah",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Mudhaykhirah",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Yarīm",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Al ‘Inān",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Al Ghayl",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Al Hazm",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Al Humaydat",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Al Khalq",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Al Maslub",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Al Matammah",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Al Maton",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Az Zahir",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Barţ al ‘Anān",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Khabb wa ash Sha'af",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Kharab Al Marashi",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Rajuzah",
+    "stateCode": "JA"
+  },
+  {
+    "name": "Al  Hawtah",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Al Ḩabīlayn",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Al Had",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Al Madaribah Wa Al Arah",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Al Maflahy",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Al Maqatirah",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Al Milah",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Al Musaymir",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Al Qabbaytah",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Habil Jabr",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Halimayn",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Laḩij",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Radfan",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Tuban",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Tur Al Bahah",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Yafa'a",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Yahr",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Al Abdiyah",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Al Jubah",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bidbadah",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ḩarīb",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Harib Al Qaramish",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jabal Murad",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ma'rib",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mahliyah",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Majzar",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Marib",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Marib City",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Medghal",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Raghwan",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rahabah",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sirwah",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Al Ghaydah",
+    "stateCode": "MR"
+  },
+  {
+    "name": "Al Ghayz̧ah",
+    "stateCode": "MR"
+  },
+  {
+    "name": "Al Masilah",
+    "stateCode": "MR"
+  },
+  {
+    "name": "Hat",
+    "stateCode": "MR"
+  },
+  {
+    "name": "Hawf",
+    "stateCode": "MR"
+  },
+  {
+    "name": "Huswain",
+    "stateCode": "MR"
+  },
+  {
+    "name": "Man'ar",
+    "stateCode": "MR"
+  },
+  {
+    "name": "Qishn",
+    "stateCode": "MR"
+  },
+  {
+    "name": "Sayhut",
+    "stateCode": "MR"
+  },
+  {
+    "name": "Shahan",
+    "stateCode": "MR"
+  },
+  {
+    "name": "Al Khabt",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Al Mahwait",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Al Maḩwīt",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Ar Rujum",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Aţ Ţawīlah",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Bani Sa'd",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Hufash",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Milhan",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Shibām Kawkabān",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Al Jabin",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Al Jafariyah",
+    "stateCode": "RA"
+  },
+  {
+    "name": "As Salafiyah",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Bilad At Ta'am",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Kusmah",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Mazhar",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Al Dhaher",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Al Hashwah",
+    "stateCode": "SD"
+  },
+  {
+    "name": "As Safra",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Ash Shawātī",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Baqim",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Ghamr",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Haydan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kitaf wa Al Boqe'e",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Majz",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Monabbih",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Qatabir",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Rāziḩ",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Sa'dah",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Şa‘dah",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Saḩār",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Saqayn",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shada'a",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Ain",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Al ‘Āqir",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Al Talh",
+    "stateCode": "SH"
+  },
+  {
+    "name": "AL-khashā upper",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Ar Rawdah",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Arma",
+    "stateCode": "SH"
+  },
+  {
+    "name": "As Said",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Ataq",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Bayhan",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Dhar",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Habban",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Hatib",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Jardan",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Khimār",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Mayfa'a",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Merkhah Al Ulya",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Merkhah As Sufla",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Nisab",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Rudum",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Usaylan",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Al Haymah Ad Dakhiliyah",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Al Haymah Al Kharijiyah",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Al Husn",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Al Khāniq",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Arhab",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Attyal",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Bani Dhabyan",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Bani Hushaysh",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Bani Matar",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Bilad Ar Rus",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Hamdān",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Jihanah",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Khwlan",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Manakhah",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Nihm",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Sa'fan",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Saḩar",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Sanaa",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Sanhan",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Sayyān",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Hadibu",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Hidaybu",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Qalansīyah",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Qulensya Wa Abd Al Kuri",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Al Ma'afer",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Al Mawasit",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Al Misrakh",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Al Mudhaffar",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Al Mukhā’",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Al Qahirah",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Al Wazi'iyah",
+    "stateCode": "TA"
+  },
+  {
+    "name": "As Silw",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Ash Shamayatayn",
+    "stateCode": "TA"
+  },
+  {
+    "name": "At Ta‘izzīyah",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Dhubab",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Dimnat Khadir",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Hayfan",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Jabal Habashy",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Maqbanah",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Mashra'a Wa Hadnan",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Māwīyah",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Mawza",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Sabir Al Mawadim",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Salh",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Sama",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Shara'b Ar Rawnah",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Shara'b As Salam",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Ta‘izz",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Village of ALAMRAH",
+    "stateCode": "TA"
+  }
+]

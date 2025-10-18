@@ -1,0 +1,4494 @@
+[
+  {
+    "name": "El Encanto",
+    "stateCode": "AMA"
+  },
+  {
+    "name": "La Chorrera",
+    "stateCode": "AMA"
+  },
+  {
+    "name": "La Pedrera",
+    "stateCode": "AMA"
+  },
+  {
+    "name": "La Victoria",
+    "stateCode": "AMA"
+  },
+  {
+    "name": "Leticia",
+    "stateCode": "AMA"
+  },
+  {
+    "name": "Miriti - Paraná",
+    "stateCode": "AMA"
+  },
+  {
+    "name": "Puerto Alegría",
+    "stateCode": "AMA"
+  },
+  {
+    "name": "Puerto Arica",
+    "stateCode": "AMA"
+  },
+  {
+    "name": "Puerto Nariño",
+    "stateCode": "AMA"
+  },
+  {
+    "name": "Puerto Santander",
+    "stateCode": "AMA"
+  },
+  {
+    "name": "Tarapacá",
+    "stateCode": "AMA"
+  },
+  {
+    "name": "Abejorral",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Abriaquí",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Alejandría",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Amagá",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Amalfi",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Andes",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Angelópolis",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Angostura",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Anorí",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Anza",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Apartadó",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Arboletes",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Argelia",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Armenia",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Barbosa",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Bello",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Belmira",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Betania",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Betulia",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Briceño",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Buriticá",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Cáceres",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Caicedo",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Caldas",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Campamento",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Cañasgordas",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Caracolí",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Caramanta",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Carepa",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Carolina",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Caucasia",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Chigorodó",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Cisneros",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Ciudad Bolívar",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Cocorná",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Concepción",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Concordia",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Copacabana",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Dabeiba",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Donmatías",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Ebéjico",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "El Bagre",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "El Carmen de Viboral",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "El Santuario",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Entrerrios",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Envigado",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Fredonia",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Frontino",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Giraldo",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Girardota",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Gómez Plata",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Granada",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Guadalupe",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Guarne",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Guatapé",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Heliconia",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Hispania",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Itagui",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Ituango",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Jardín",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Jericó",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "La Ceja",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "La Estrella",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "La Pintada",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Liborina",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Maceo",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Marinilla",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Medellín",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Montebello",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Murindó",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Mutatá",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Nariño",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Nechí",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Necoclí",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Olaya",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Peñol",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Peque",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Pueblorrico",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Puerto Berrío",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Puerto Nare",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Puerto Triunfo",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Remedios",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Retiro",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Rionegro",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Sabanalarga",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Sabaneta",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Salgar",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San Andrés de Cuerquía",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San Francisco",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San Jerónimo",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San José de la Montaña",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San Juan de Urabá",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San Luis",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San Pedro de los Milagros",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San Pedro de Uraba",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San Rafael",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San Roque",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "San Vicente Ferrer",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Santa Bárbara",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Santa Fe de Antioquia",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Santa Rosa de Osos",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Santo Domingo",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Segovia",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Sonson",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Sopetrán",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Támesis",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Tarazá",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Tarso",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Titiribí",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Toledo",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Turbo",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Uramita",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Urrao",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Valdivia",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Valparaíso",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Vegachí",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Venecia",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Vigía del Fuerte",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Yalí",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Yarumal",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Yolombó",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Yondó",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Zaragoza",
+    "stateCode": "ANT"
+  },
+  {
+    "name": "Arauca",
+    "stateCode": "ARA"
+  },
+  {
+    "name": "Arauquita",
+    "stateCode": "ARA"
+  },
+  {
+    "name": "Cravo Norte",
+    "stateCode": "ARA"
+  },
+  {
+    "name": "Fortul",
+    "stateCode": "ARA"
+  },
+  {
+    "name": "Puerto Rondón",
+    "stateCode": "ARA"
+  },
+  {
+    "name": "Saravena",
+    "stateCode": "ARA"
+  },
+  {
+    "name": "Tame",
+    "stateCode": "ARA"
+  },
+  {
+    "name": "Baranoa",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Barranquilla",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Campo de la Cruz",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Candelaria",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Galapa",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Juan de Acosta",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Luruaco",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Malambo",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Manatí",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Palmar de Varela",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Piojó",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Polonuevo",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Ponedera",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Puerto Colombia",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Repelón",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Sabanagrande",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Sabanalarga",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Santa Lucía",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Santo Tomás",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Soledad",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Suan",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Tubará",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Usiacurí",
+    "stateCode": "ATL"
+  },
+  {
+    "name": "Achí",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Altos del Rosario",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Arenal",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Arjona",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Arroyohondo",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Barranco de Loba",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Calamar",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Cantagallo",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Cartagena de Indias",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Cicuco",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Clemencia",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Córdoba",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "El Carmen de Bolívar",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "El Guamo",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "El Peñón",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Hatillo de Loba",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Magangué",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Mahates",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Margarita",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "María la Baja",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Mompós",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Montecristo",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Morales",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Norosí",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Pinillos",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Regidor",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Río Viejo",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "San Cristóbal",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "San Estanislao",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "San Fernando",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "San Jacinto",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "San Jacinto del Cauca",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "San Juan Nepomuceno",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "San Martín de Loba",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "San Pablo",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Santa Catalina",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Santa Rosa",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Santa Rosa del Sur",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Simití",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Soplaviento",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Talaigua Nuevo",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Tiquisio",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Turbaco",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Turbaná",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Villanueva",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Zambrano",
+    "stateCode": "BOL"
+  },
+  {
+    "name": "Almeida",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Aquitania",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Arcabuco",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Belén",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Berbeo",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Betéitiva",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Boavita",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Boyacá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Briceño",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Buenavista",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Busbanzá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Caldas",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Campohermoso",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Cerinza",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Chinavita",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Chiquinquirá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Chíquiza",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Chiscas",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Chita",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Chitaraque",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Chivatá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Chivor",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Ciénega",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Combita",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Coper",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Corrales",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Covarachía",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Cubará",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Cucaita",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Cuítiva",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Duitama",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "El Cocuy",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "El Espino",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Firavitoba",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Floresta",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Gachantivá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Gameza",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Garagoa",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Guacamayas",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Guateque",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Guayatá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Güicán",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Iza",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Jenesano",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Jericó",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "La Capilla",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "La Uvita",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "La Victoria",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Labranzagrande",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Macanal",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Maripí",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Miraflores",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Mongua",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Monguí",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Moniquirá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Motavita",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Muzo",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Nobsa",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Nuevo Colón",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Oicatá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Otanche",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Pachavita",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Páez",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Paipa",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Pajarito",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Panqueba",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Pauna",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Paya",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Paz de Río",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Pesca",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Pisba",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Puerto Boyacá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Quípama",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Ramiriquí",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Ráquira",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Rondón",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Saboyá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Sáchica",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Samacá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "San Eduardo",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "San José de Pare",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "San Luis de Gaceno",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "San Mateo",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "San Miguel de Sema",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "San Pablo de Borbur",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Santa María",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Santa Rosa de Viterbo",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Santa Sofía",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Santana",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Sativanorte",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Sativasur",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Siachoque",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Soatá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Socha",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Socotá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Sogamoso",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Somondoco",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Sora",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Soracá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Sotaquirá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Susacón",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Sutamarchán",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Sutatenza",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tasco",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tenza",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tibaná",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tibasosa",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tinjacá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tipacoque",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Toca",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Togüí",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tópaga",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tota",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tunja",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tununguá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Turmequé",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tuta",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Tutazá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Umbita",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Ventaquemada",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Villa de Leyva",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Viracachá",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Zetaquira",
+    "stateCode": "BOY"
+  },
+  {
+    "name": "Aguadas",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Anserma",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Aranzazu",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Belalcázar",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Chinchiná",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Filadelfia",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "La Dorada",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "La Merced",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Manizales",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Manzanares",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Marmato",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Marquetalia",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Marulanda",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Neira",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Norcasia",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Pácora",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Palestina",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Pensilvania",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Riosucio",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Risaralda",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Salamina",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Samaná",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "San José",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Supía",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Victoria",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Villamaría",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Viterbo",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Albania",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "Belén de Los Andaquies",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "Cartagena del Chairá",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "Curillo",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "El Doncello",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "El Paujil",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "Florencia",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "La Montañita",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "Milán",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "Morelia",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "Puerto Rico",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "San José del Fragua",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "San Vicente del Caguán",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "Solano",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "Solita",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "Valparaíso",
+    "stateCode": "CAQ"
+  },
+  {
+    "name": "Aguazul",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Chameza",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Hato Corozal",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "La Salina",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Maní",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Monterrey",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Nunchía",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Orocué",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Paz de Ariporo",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Pore",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Recetor",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Sabanalarga",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Sácama",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "San Luis de Palenque",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Támara",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Tauramena",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Trinidad",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Villanueva",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Yopal",
+    "stateCode": "CAS"
+  },
+  {
+    "name": "Almaguer",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Argelia",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Balboa",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Bolívar",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Buenos Aires",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Cajibío",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Caldono",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Caloto",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Corinto",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "El Tambo",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Florencia",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Guachené",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Guapi",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Inzá",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Jambaló",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "La Sierra",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "La Vega",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "López de Micay",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Mercaderes",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Miranda",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Morales",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Padilla",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Páez",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Patía",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Piamonte",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Piendamo",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Popayán",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Puerto Tejada",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Puracé",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Rosas",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "San Sebastián",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Santa Rosa",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Santander de Quilichao",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Silvia",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Sotará",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Suárez",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Sucre",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Timbío",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Timbiquí",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Toribio",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Totoró",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Villa Rica",
+    "stateCode": "CAU"
+  },
+  {
+    "name": "Aguachica",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Agustín Codazzi",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Astrea",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Becerril",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Bosconia",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Chimichagua",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Chiriguaná",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Curumaní",
+    "stateCode": "CES"
+  },
+  {
+    "name": "El Copey",
+    "stateCode": "CES"
+  },
+  {
+    "name": "El Paso",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Gamarra",
+    "stateCode": "CES"
+  },
+  {
+    "name": "González",
+    "stateCode": "CES"
+  },
+  {
+    "name": "La Gloria",
+    "stateCode": "CES"
+  },
+  {
+    "name": "La Jagua de Ibirico",
+    "stateCode": "CES"
+  },
+  {
+    "name": "La Paz",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Manaure Balcón del Cesar",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Pailitas",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Pelaya",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Pueblo Bello",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Río de Oro",
+    "stateCode": "CES"
+  },
+  {
+    "name": "San Alberto",
+    "stateCode": "CES"
+  },
+  {
+    "name": "San Diego",
+    "stateCode": "CES"
+  },
+  {
+    "name": "San Martín",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Tamalameque",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Valledupar",
+    "stateCode": "CES"
+  },
+  {
+    "name": "Acandí",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Alto Baudó",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Atrato",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Bagadó",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Bahía Solano",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Bajo Baudó",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Bojayá",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Carmen del Darien",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Cértegui",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Condoto",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "El Cantón de San Pablo",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "El Carmen de Atrato",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Istmina",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Juradó",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Litoral del San Juan",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Lloró",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Medio Atrato",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Medio Baudó",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Medio San Juan",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Nóvita",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Nuquí",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Quibdó",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Río Iro",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Río Quito",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Riosucio",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "San José del Palmar",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Sipí",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Tadó",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Unguía",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Unión Panamericana",
+    "stateCode": "CHO"
+  },
+  {
+    "name": "Ayapel",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Buenavista",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Canalete",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Cereté",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Chimá",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Chinú",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Ciénaga de Oro",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Cotorra",
+    "stateCode": "COR"
+  },
+  {
+    "name": "La Apartada",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Lorica",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Los Córdobas",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Momil",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Moñitos",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Montelíbano",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Montería",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Planeta Rica",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Pueblo Nuevo",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Puerto Escondido",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Puerto Libertador",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Purísima",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Sahagún",
+    "stateCode": "COR"
+  },
+  {
+    "name": "San Andrés de Sotavento",
+    "stateCode": "COR"
+  },
+  {
+    "name": "San Antero",
+    "stateCode": "COR"
+  },
+  {
+    "name": "San Bernardo del Viento",
+    "stateCode": "COR"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "COR"
+  },
+  {
+    "name": "San José de Uré",
+    "stateCode": "COR"
+  },
+  {
+    "name": "San Pelayo",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Tierralta",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Tuchín",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Valencia",
+    "stateCode": "COR"
+  },
+  {
+    "name": "Agua de Dios",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Albán",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Anapoima",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Anolaima",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Apulo",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Arbeláez",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Beltrán",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Bituima",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Bogotá D.C.",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Bojacá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Cabrera",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Cachipay",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Cajicá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Caparrapí",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Caqueza",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Carmen de Carupa",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Chaguaní",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Chía",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Chipaque",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Choachí",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Chocontá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Cogua",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Cota",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Cucunubá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "El Colegio",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "El Peñón",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "El Rosal",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Facatativá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Fomeque",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Fosca",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Funza",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Fúquene",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Fusagasugá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Gachala",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Gachancipá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Gachetá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Gama",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Girardot",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Granada",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Guachetá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Guaduas",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Guasca",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Guataquí",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Guatavita",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Guayabal de Siquima",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Guayabetal",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Gutiérrez",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Jerusalén",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Junín",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "La Calera",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "La Mesa",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "La Palma",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "La Peña",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "La Vega",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Lenguazaque",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Macheta",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Madrid",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Manta",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Medina",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Mosquera",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Nariño",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Nemocón",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Nilo",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Nimaima",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Nocaima",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Pacho",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Paime",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Pandi",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Paratebueno",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Pasca",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Puerto Salgar",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Pulí",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Quebradanegra",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Quetame",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Quipile",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Ricaurte",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "San Antonio del Tequendama",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "San Bernardo",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "San Cayetano",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "San Francisco",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "San Juan de Río Seco",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Sasaima",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Sesquilé",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Sibaté",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Silvania",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Simijaca",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Soacha",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Sopó",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Subachoque",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Suesca",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Supatá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Susa",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Sutatausa",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Tabio",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Tausa",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Tena",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Tenjo",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Tibacuy",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Tibirita",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Tocaima",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Tocancipá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Topaipí",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Ubalá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Ubaque",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Une",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Útica",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Venecia",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Vergara",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Vianí",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Villa de San Diego de Ubate",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Villagómez",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Villapinzón",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Villeta",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Viotá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Yacopí",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Zipacón",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Zipaquirá",
+    "stateCode": "CUN"
+  },
+  {
+    "name": "Bogotá D.C.",
+    "stateCode": "DC"
+  },
+  {
+    "name": "Barranco Minas",
+    "stateCode": "GUA"
+  },
+  {
+    "name": "Cacahual",
+    "stateCode": "GUA"
+  },
+  {
+    "name": "Inírida",
+    "stateCode": "GUA"
+  },
+  {
+    "name": "La Guadalupe",
+    "stateCode": "GUA"
+  },
+  {
+    "name": "Mapiripana",
+    "stateCode": "GUA"
+  },
+  {
+    "name": "Morichal",
+    "stateCode": "GUA"
+  },
+  {
+    "name": "Pana Pana",
+    "stateCode": "GUA"
+  },
+  {
+    "name": "Puerto Colombia",
+    "stateCode": "GUA"
+  },
+  {
+    "name": "San Felipe",
+    "stateCode": "GUA"
+  },
+  {
+    "name": "Calamar",
+    "stateCode": "GUV"
+  },
+  {
+    "name": "El Retorno",
+    "stateCode": "GUV"
+  },
+  {
+    "name": "Miraflores",
+    "stateCode": "GUV"
+  },
+  {
+    "name": "San José del Guaviare",
+    "stateCode": "GUV"
+  },
+  {
+    "name": "Acevedo",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Aipe",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Algeciras",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Altamira",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Baraya",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Campoalegre",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Colombia",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "El Agrado",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Elias",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Garzón",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Gigante",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Guadalupe",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Hobo",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Iquira",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Isnos",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "La Argentina",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "La Plata",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Nataga",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Neiva",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Oporapa",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Paicol",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Palermo",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Palestina",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Pital",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Pitalito",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Rivera",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Saladoblanco",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "San Agustín",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Santa María",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Suaza",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Tarqui",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Tello",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Teruel",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Tesalia",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Timana",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Villavieja",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Yaguará",
+    "stateCode": "HUI"
+  },
+  {
+    "name": "Albania",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Barrancas",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Dibulla",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Distracción",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "El Molino",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Fonseca",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Hatonuevo",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "La Jagua del Pilar",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Maicao",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Manaure",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Riohacha",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "San Juan del Cesar",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Uribia",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Urumita",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Villanueva",
+    "stateCode": "LAG"
+  },
+  {
+    "name": "Algarrobo",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Aracataca",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Ariguaní",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Cerro de San Antonio",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Chivolo",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Ciénaga",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Concordia",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "El Banco",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "El Piñon",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "El Retén",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Fundación",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Guamal",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Nueva Granada",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Pedraza",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Pijiño del Carmen",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Pivijay",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Plato",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Puebloviejo",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Remolino",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Sabanas de San Angel",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Salamina",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "San Sebastián de Buenavista",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "San Zenón",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Santa Ana",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Santa Bárbara de Pinto",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Santa Marta",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Sitionuevo",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Tenerife",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Zapayán",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Zona Bananera",
+    "stateCode": "MAG"
+  },
+  {
+    "name": "Acacías",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Barranca de Upía",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Cabuyaro",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Castilla la Nueva",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Cubarral",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Cumaral",
+    "stateCode": "MET"
+  },
+  {
+    "name": "El Calvario",
+    "stateCode": "MET"
+  },
+  {
+    "name": "El Castillo",
+    "stateCode": "MET"
+  },
+  {
+    "name": "El Dorado",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Fuente de Oro",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Granada",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Guamal",
+    "stateCode": "MET"
+  },
+  {
+    "name": "La Macarena",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Lejanías",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Mapiripán",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Mesetas",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Puerto Concordia",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Puerto Gaitán",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Puerto Lleras",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Puerto López",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Puerto Rico",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Restrepo",
+    "stateCode": "MET"
+  },
+  {
+    "name": "San Carlos de Guaroa",
+    "stateCode": "MET"
+  },
+  {
+    "name": "San Juan de Arama",
+    "stateCode": "MET"
+  },
+  {
+    "name": "San Juanito",
+    "stateCode": "MET"
+  },
+  {
+    "name": "San Martín",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Uribe",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Villavicencio",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Vistahermosa",
+    "stateCode": "MET"
+  },
+  {
+    "name": "Aldana",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Ancuya",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Arboleda",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Barbacoas",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Belén",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Buesaco",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Chachagüí",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Colón",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Consaca",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Contadero",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Córdoba",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Cuaspud",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Cumbal",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Cumbitara",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "El Charco",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "El Peñol",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "El Rosario",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "El Tablón de Gómez",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "El Tambo",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Francisco Pizarro",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Funes",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Guachucal",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Guaitarilla",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Gualmatán",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Iles",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Imués",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Ipiales",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "La Cruz",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "La Florida",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "La Llanada",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "La Tola",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Leiva",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Linares",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Los Andes",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Magüí Payán",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Mallama",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Mosquera",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Nariño",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Olaya Herrera",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Ospina",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Pasto",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Policarpa",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Potosí",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Providencia",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Puerres",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Pupiales",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Ricaurte",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Roberto Payán",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Samaniego",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "San Bernardo",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "San José de Albán",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "San Lorenzo",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "San Pablo",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "San Pedro de Cartago",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Sandoná",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Santa Bárbara",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Santacruz",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Sapuyes",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Taminango",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Tangua",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Tumaco",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Túquerres",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Yacuanquer",
+    "stateCode": "NAR"
+  },
+  {
+    "name": "Abrego",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Arboledas",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Bochalema",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Bucarasica",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Cachirá",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Cácota",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Chinácota",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Chitagá",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Convención",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Cúcuta",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Cucutilla",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Durania",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "El Carmen",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "El Tarra",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "El Zulia",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Gramalote",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Hacarí",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Herrán",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "La Esperanza",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "La Playa",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Labateca",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Los Patios",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Lourdes",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Mutiscua",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Ocaña",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Pamplona",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Pamplonita",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Puerto Santander",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Ragonvalia",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Salazar",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "San Calixto",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "San Cayetano",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Santiago",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Sardinata",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Silos",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Teorama",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Tibú",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Toledo",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Villa Caro",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Villa del Rosario",
+    "stateCode": "NSA"
+  },
+  {
+    "name": "Colón",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "Mocoa",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "Orito",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "Puerto Asís",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "Puerto Caicedo",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "Puerto Guzmán",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "Puerto Leguízamo",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "San Francisco",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "San Miguel",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "Santiago",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "Sibundoy",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "Valle del Guamuez",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "Villagarzón",
+    "stateCode": "PUT"
+  },
+  {
+    "name": "Armenia",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "Buenavista",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "Calarca",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "Circasia",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "Córdoba",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "Filandia",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "Génova",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "La Tebaida",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "Montenegro",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "Pijao",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "Quimbaya",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "Salento",
+    "stateCode": "QUI"
+  },
+  {
+    "name": "Apía",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Balboa",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Belén de Umbría",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Dosquebradas",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Guática",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "La Celia",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "La Virginia",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Marsella",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Mistrató",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Pereira",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Pueblo Rico",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Quinchía",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Santa Rosa de Cabal",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Santuario",
+    "stateCode": "RIS"
+  },
+  {
+    "name": "Aguada",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Albania",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Aratoca",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Barbosa",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Barichara",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Barrancabermeja",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Betulia",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Bolívar",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Bucaramanga",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Cabrera",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "California",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Capitanejo",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Carcasí",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Cepitá",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Cerrito",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Charalá",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Charta",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Chima",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Chipatá",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Cimitarra",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Concepción",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Confines",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Contratación",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Coromoro",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Curití",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "El Carmen de Chucurí",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "El Guacamayo",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "El Peñón",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "El Playón",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Encino",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Enciso",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Florián",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Floridablanca",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Galán",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Gambita",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Girón",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Guaca",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Guadalupe",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Guapotá",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Guavatá",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Güepsa",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Hato",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Jesús María",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Jordán",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "La Belleza",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "La Paz",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Landázuri",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Lebrija",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Los Santos",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Macaravita",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Málaga",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Matanza",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Mogotes",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Molagavita",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Ocamonte",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Oiba",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Onzaga",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Palmar",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Palmas del Socorro",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Páramo",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Piedecuesta",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Pinchote",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Puente Nacional",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Puerto Parra",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Puerto Wilches",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Rionegro",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Sabana de Torres",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "San Andrés",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "San Benito",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "San Gil",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "San Joaquín",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "San José de Miranda",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "San Miguel",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "San Vicente de Chucurí",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Santa Bárbara",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Santa Helena Del Opón",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Simacota",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Socorro",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Suaita",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Sucre",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Suratá",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Tona",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Valle de San José",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Vélez",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Vetas",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Villanueva",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Zapatoca",
+    "stateCode": "SAN"
+  },
+  {
+    "name": "Providencia",
+    "stateCode": "SAP"
+  },
+  {
+    "name": "San Andrés",
+    "stateCode": "SAP"
+  },
+  {
+    "name": "Buenavista",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Caimito",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Chalán",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Coloso",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Corozal",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Coveñas",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "El Roble",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Galeras",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Guaranda",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Los Palmitos",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Majagual",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Morroa",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Ovejas",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Palmito",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Sampués",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "San Benito Abad",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "San Juan de Betulia",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "San Luis de Sincé",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "San Marcos",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "San Onofre",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "San Pedro",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Santiago de Tolú",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Sincelejo",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Sucre",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Tolú Viejo",
+    "stateCode": "SUC"
+  },
+  {
+    "name": "Alpujarra",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Alvarado",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Ambalema",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Anzoátegui",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Armero",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Ataco",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Cajamarca",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Carmen de Apicalá",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Casabianca",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Chaparral",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Coello",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Coyaima",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Cunday",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Dolores",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Espinal",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Falan",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Flandes",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Fresno",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Guamo",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Herveo",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Honda",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Ibagué",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Icononzo",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Lérida",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Líbano",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Melgar",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Murillo",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Natagaima",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Ortega",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Palocabildo",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Piedras",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Planadas",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Prado",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Purificación",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Rioblanco",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Roncesvalles",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Rovira",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Saldaña",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "San Antonio",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "San Luis",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "San Sebastián de Mariquita",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Santa Isabel",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Suárez",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Valle de San Juan",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Venadillo",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Villahermosa",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Villarrica",
+    "stateCode": "TOL"
+  },
+  {
+    "name": "Alcalá",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Andalucía",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Ansermanuevo",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Argelia",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Bolívar",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Buenaventura",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Bugalagrande",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Caicedonia",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Cali",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Calima",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Candelaria",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Cartago",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Dagua",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "El Águila",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "El Cairo",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "El Cerrito",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "El Dovio",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Florida",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Ginebra",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Guacarí",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Guadalajara de Buga",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Jamundí",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "La Cumbre",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "La Victoria",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Obando",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Palmira",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Pradera",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Restrepo",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Riofrío",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Roldanillo",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "San Pedro",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Sevilla",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Toro",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Trujillo",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Tuluá",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Ulloa",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Versalles",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Vijes",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Yotoco",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Yumbo",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Zarzal",
+    "stateCode": "VAC"
+  },
+  {
+    "name": "Caruru",
+    "stateCode": "VAU"
+  },
+  {
+    "name": "Mitú",
+    "stateCode": "VAU"
+  },
+  {
+    "name": "Pacoa",
+    "stateCode": "VAU"
+  },
+  {
+    "name": "Papunaua",
+    "stateCode": "VAU"
+  },
+  {
+    "name": "Taraira",
+    "stateCode": "VAU"
+  },
+  {
+    "name": "Yavaraté",
+    "stateCode": "VAU"
+  },
+  {
+    "name": "Cumaribo",
+    "stateCode": "VID"
+  },
+  {
+    "name": "La Primavera",
+    "stateCode": "VID"
+  },
+  {
+    "name": "Puerto Carreño",
+    "stateCode": "VID"
+  },
+  {
+    "name": "Santa Rosalia",
+    "stateCode": "VID"
+  }
+]

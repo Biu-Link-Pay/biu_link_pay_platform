@@ -1,0 +1,190 @@
+[
+  {
+    "name": "Bafoulabé",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kayes",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kita",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kokofata",
+    "stateCode": "1"
+  },
+  {
+    "name": "Sagalo",
+    "stateCode": "1"
+  },
+  {
+    "name": "Banamba",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kangaba",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kati",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kolokani",
+    "stateCode": "2"
+  },
+  {
+    "name": "Koulikoro",
+    "stateCode": "2"
+  },
+  {
+    "name": "Bougouni",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kolondiéba",
+    "stateCode": "3"
+  },
+  {
+    "name": "Koutiala",
+    "stateCode": "3"
+  },
+  {
+    "name": "Koutiala Cercle",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ntossoni",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sikasso",
+    "stateCode": "3"
+  },
+  {
+    "name": "Yorosso",
+    "stateCode": "3"
+  },
+  {
+    "name": "Baroueli",
+    "stateCode": "4"
+  },
+  {
+    "name": "Cercle de San",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ké-Macina",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kinmparana",
+    "stateCode": "4"
+  },
+  {
+    "name": "Markala",
+    "stateCode": "4"
+  },
+  {
+    "name": "San",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ségou",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sokolo",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bandiagara",
+    "stateCode": "5"
+  },
+  {
+    "name": "Djénné",
+    "stateCode": "5"
+  },
+  {
+    "name": "Douentza",
+    "stateCode": "5"
+  },
+  {
+    "name": "Douentza Cercle",
+    "stateCode": "5"
+  },
+  {
+    "name": "Mopti",
+    "stateCode": "5"
+  },
+  {
+    "name": "Ténenkou",
+    "stateCode": "5"
+  },
+  {
+    "name": "Araouane",
+    "stateCode": "6"
+  },
+  {
+    "name": "Cercle de Goundam",
+    "stateCode": "6"
+  },
+  {
+    "name": "Dire",
+    "stateCode": "6"
+  },
+  {
+    "name": "Goundam",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gourma-Rharous Cercle",
+    "stateCode": "6"
+  },
+  {
+    "name": "Niafunké",
+    "stateCode": "6"
+  },
+  {
+    "name": "Timbuktu",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ansongo",
+    "stateCode": "7"
+  },
+  {
+    "name": "Cercle de Bourem",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gao",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gao Cercle",
+    "stateCode": "7"
+  },
+  {
+    "name": "Inékar",
+    "stateCode": "7"
+  },
+  {
+    "name": "Abeïbara",
+    "stateCode": "8"
+  },
+  {
+    "name": "Cercle d’Abeïbara",
+    "stateCode": "8"
+  },
+  {
+    "name": "Kidal",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bamako",
+    "stateCode": "BKO"
+  }
+]

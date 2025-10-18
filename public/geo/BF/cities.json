@@ -1,0 +1,370 @@
+[
+  {
+    "name": "Barani",
+    "stateCode": "01"
+  },
+  {
+    "name": "Boromo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Dédougou",
+    "stateCode": "01"
+  },
+  {
+    "name": "Nouna",
+    "stateCode": "01"
+  },
+  {
+    "name": "Province de la Kossi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Province des Balé",
+    "stateCode": "01"
+  },
+  {
+    "name": "Province des Banwa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Province du Mouhoun",
+    "stateCode": "01"
+  },
+  {
+    "name": "Province du Nayala",
+    "stateCode": "01"
+  },
+  {
+    "name": "Province du Sourou",
+    "stateCode": "01"
+  },
+  {
+    "name": "Salanso",
+    "stateCode": "01"
+  },
+  {
+    "name": "Toma",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tougan",
+    "stateCode": "01"
+  },
+  {
+    "name": "Banfora",
+    "stateCode": "02"
+  },
+  {
+    "name": "Province de la Comoé",
+    "stateCode": "02"
+  },
+  {
+    "name": "Province de la Léraba",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sindou",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kadiogo Province",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ouagadougou",
+    "stateCode": "03"
+  },
+  {
+    "name": "Garango",
+    "stateCode": "04"
+  },
+  {
+    "name": "Koupéla",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kouritenga Province",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ouargaye",
+    "stateCode": "04"
+  },
+  {
+    "name": "Province du Boulgou",
+    "stateCode": "04"
+  },
+  {
+    "name": "Province du Koulpélogo",
+    "stateCode": "04"
+  },
+  {
+    "name": "Tenkodogo",
+    "stateCode": "04"
+  },
+  {
+    "name": "Boulsa",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kaya",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kongoussi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Province du Bam",
+    "stateCode": "05"
+  },
+  {
+    "name": "Province du Namentenga",
+    "stateCode": "05"
+  },
+  {
+    "name": "Province du Sanmatenga",
+    "stateCode": "05"
+  },
+  {
+    "name": "Goulouré",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kokologo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Koudougou",
+    "stateCode": "06"
+  },
+  {
+    "name": "Léo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Pitmoaga",
+    "stateCode": "06"
+  },
+  {
+    "name": "Province de la Sissili",
+    "stateCode": "06"
+  },
+  {
+    "name": "Province du Boulkiemdé",
+    "stateCode": "06"
+  },
+  {
+    "name": "Province du Sanguié",
+    "stateCode": "06"
+  },
+  {
+    "name": "Province du Ziro",
+    "stateCode": "06"
+  },
+  {
+    "name": "Réo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sapouy",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bazega Province",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kombissiri",
+    "stateCode": "07"
+  },
+  {
+    "name": "Manga",
+    "stateCode": "07"
+  },
+  {
+    "name": "Nahouri Province",
+    "stateCode": "07"
+  },
+  {
+    "name": "Pô",
+    "stateCode": "07"
+  },
+  {
+    "name": "Zoundweogo Province",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bogandé",
+    "stateCode": "08"
+  },
+  {
+    "name": "Diapaga",
+    "stateCode": "08"
+  },
+  {
+    "name": "Fada N'gourma",
+    "stateCode": "08"
+  },
+  {
+    "name": "Gayéri",
+    "stateCode": "08"
+  },
+  {
+    "name": "Gnagna Province",
+    "stateCode": "08"
+  },
+  {
+    "name": "Pama",
+    "stateCode": "08"
+  },
+  {
+    "name": "Province de la Komandjoari",
+    "stateCode": "08"
+  },
+  {
+    "name": "Province de la Kompienga",
+    "stateCode": "08"
+  },
+  {
+    "name": "Province de la Tapoa",
+    "stateCode": "08"
+  },
+  {
+    "name": "Province du Gourma",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bobo-Dioulasso",
+    "stateCode": "09"
+  },
+  {
+    "name": "Houndé",
+    "stateCode": "09"
+  },
+  {
+    "name": "Province du Houet",
+    "stateCode": "09"
+  },
+  {
+    "name": "Province du Kénédougou",
+    "stateCode": "09"
+  },
+  {
+    "name": "Province du Tuy",
+    "stateCode": "09"
+  },
+  {
+    "name": "Gourcy",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ouahigouya",
+    "stateCode": "10"
+  },
+  {
+    "name": "Province du Loroum",
+    "stateCode": "10"
+  },
+  {
+    "name": "Province du Passoré",
+    "stateCode": "10"
+  },
+  {
+    "name": "Province du Yatenga",
+    "stateCode": "10"
+  },
+  {
+    "name": "Province du Zondoma",
+    "stateCode": "10"
+  },
+  {
+    "name": "Titao",
+    "stateCode": "10"
+  },
+  {
+    "name": "Yako",
+    "stateCode": "10"
+  },
+  {
+    "name": "Boussé",
+    "stateCode": "11"
+  },
+  {
+    "name": "Oubritenga",
+    "stateCode": "11"
+  },
+  {
+    "name": "Province du Ganzourgou",
+    "stateCode": "11"
+  },
+  {
+    "name": "Province du Kourwéogo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ziniaré",
+    "stateCode": "11"
+  },
+  {
+    "name": "Zorgo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Djibo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Dori",
+    "stateCode": "12"
+  },
+  {
+    "name": "Gorom-Gorom",
+    "stateCode": "12"
+  },
+  {
+    "name": "Province de l’Oudalan",
+    "stateCode": "12"
+  },
+  {
+    "name": "Province du Séno",
+    "stateCode": "12"
+  },
+  {
+    "name": "Province du Soum",
+    "stateCode": "12"
+  },
+  {
+    "name": "Province du Yagha",
+    "stateCode": "12"
+  },
+  {
+    "name": "Batié",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dano",
+    "stateCode": "13"
+  },
+  {
+    "name": "Diébougou",
+    "stateCode": "13"
+  },
+  {
+    "name": "Province de la Bougouriba",
+    "stateCode": "13"
+  },
+  {
+    "name": "Province du Ioba",
+    "stateCode": "13"
+  },
+  {
+    "name": "Province du Noumbièl",
+    "stateCode": "13"
+  },
+  {
+    "name": "Province du Poni",
+    "stateCode": "13"
+  }
+]

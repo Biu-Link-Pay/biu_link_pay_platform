@@ -1,0 +1,930 @@
+[
+  {
+    "name": "Banovići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Barice",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Bihać",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Bijela",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Bila",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Blagaj",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Bosanska Krupa",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Bosanski Petrovac",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Bosansko Grahovo",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Breza",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Bugojno",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Busovača",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Bužim",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Čapljina",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Cazin",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Čelić",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Cim",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Čitluk",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Ćoralići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Crnići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Divičani",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Dobrinje",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Domaljevac",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Donja Dubica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Donja Mahala",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Donja Međiđa",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Donji Vakuf",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Drežnica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Drinovci",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Drvar",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Dubrave Donje",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Dubrave Gornje",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Dubravica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Fojnica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Glamoč",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gnojnica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Goražde",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gorica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gornja Breza",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gornja Koprivna",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gornja Tuzla",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gornje Moštre",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gornje Živinice",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gornji Vakuf",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gostovići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gračanica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gradačac",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Gromiljak",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Grude",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Hadžići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Hercegovačko-Neretvanski Kanton",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Hotonj",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Ilići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Ilijaš",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Izačić",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Jablanica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Jajce",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Jelah",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Jezerski",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Kačuni",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Kakanj",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Kanton Sarajevo",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Karadaglije",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Kiseljak",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Kladanj",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Ključ",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Kobilja Glava",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Kočerin",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Konjic",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Kovači",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Liješnica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Livno",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Ljubuški",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Lokvine",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Lukavac",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Lukavica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Maglaj",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Mahala",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Mala Kladuša",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Malešići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Mionica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Mostar",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Mramor",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Neum",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Novi Šeher",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Novi Travnik",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Odžak",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Olovo",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Omanjska",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Orahovica Donja",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Orašac",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Orašje",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Orguz",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Ostrožac",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Otoka",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Pajić Polje",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Pazarić",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Peći",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Pećigrad",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Pjanići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Podhum",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Podzvizd",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Polje",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Polje-Bijela",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Potoci",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Prozor",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Puračić",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Radišići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Rodoč",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Rumboci",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Sanica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Sanski Most",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Sapna",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Sarajevo",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Šerići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Široki Brijeg",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Skokovi",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Sladna",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Solina",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Srebrenik",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Stijena",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Stjepan-Polje",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Stolac",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Šturlić",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Šumatac",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Tasovčići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Tešanj",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Tešanjka",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Todorovo",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Tojšići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Tomislavgrad",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Travnik",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Tržačka Raštela",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Turbe",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Tuzla",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Ustikolina",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Vareš",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Varoška Rijeka",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Velagići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Velika Kladuša",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Vidoši",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Visoko",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Vitez",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Vitina",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Vogošća",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Voljevac",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Vrnograč",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Vukovije Donje",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Zabrišće",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Zavidovići",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Zborište",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Željezno Polje",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Zenica",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Žepče",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Živinice",
+    "stateCode": "BIH"
+  },
+  {
+    "name": "Brčko",
+    "stateCode": "BRC"
+  },
+  {
+    "name": "Brka",
+    "stateCode": "BRC"
+  },
+  {
+    "name": "Balatun",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Banja Luka",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Bijeljina",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Bileća",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Blatnica",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Brod",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Bronzani Majdan",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Čajniče",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Čečava",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Čelinac",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Derventa",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Doboj",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Dobrljin",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Dvorovi",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Foča",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Gacko",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Gradiška",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Hiseti",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Istočni Mostar",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Janja",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Kalenderovci Donji",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Kneževo",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Knežica",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Koran",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Kostajnica",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Kotor Varoš",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Kozarska Dubica",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Krupa na Vrbasu",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Laktaši",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Lamovita",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Ljubinje",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Lopare",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Maglajani",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Marićka",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Maslovare",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Mejdan - Obilićevo",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Milići",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Modriča",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Mrkonjić Grad",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Nevesinje",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Novi Grad",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Obudovac",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Omarska",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Opština Oštra Luka",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Opština Višegrad",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Oštra Luka",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Pale",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Pelagićevo",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Petkovci",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Piskavica",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Podbrdo",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Popovi",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Pribinić",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Priboj",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Prijedor",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Rogatica",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Rudo",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Šamac",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Šekovići",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Šipovo",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Sokolac",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Srbac",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Srebrenica",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Stanari",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Starcevica",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Svodna",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Teslić",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Trebinje",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Trn",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Ugljevik",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Velika Obarska",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Višegrad",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Vlasenica",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Živinice",
+    "stateCode": "SRP"
+  },
+  {
+    "name": "Zvornik",
+    "stateCode": "SRP"
+  }
+]

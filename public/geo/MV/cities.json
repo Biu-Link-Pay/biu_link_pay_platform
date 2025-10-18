@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Hithadhoo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Meedhoo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Naifaru",
+    "stateCode": "03"
+  },
+  {
+    "name": "Felidhoo",
+    "stateCode": "04"
+  },
+  {
+    "name": "Fonadhoo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dhidhdhoo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Veymandoo",
+    "stateCode": "08"
+  },
+  {
+    "name": "Muli",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ugoofaaru",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kudahuvadhoo",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kulhudhuffushi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Funadhoo",
+    "stateCode": "24"
+  },
+  {
+    "name": "Manadhoo",
+    "stateCode": "25"
+  },
+  {
+    "name": "Guraidhoo",
+    "stateCode": "26"
+  },
+  {
+    "name": "Hulhumale",
+    "stateCode": "26"
+  },
+  {
+    "name": "Maafushi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Male",
+    "stateCode": "26"
+  },
+  {
+    "name": "Viligili",
+    "stateCode": "27"
+  },
+  {
+    "name": "Thinadhoo",
+    "stateCode": "28"
+  },
+  {
+    "name": "Fuvahmulah",
+    "stateCode": "29"
+  },
+  {
+    "name": "Mahibadhoo",
+    "stateCode": "SC"
+  }
+]

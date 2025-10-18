@@ -1,0 +1,462 @@
+[
+  {
+    "name": "Cantón San Fernando",
+    "stateCode": "A"
+  },
+  {
+    "name": "Cuenca",
+    "stateCode": "A"
+  },
+  {
+    "name": "Gualaceo",
+    "stateCode": "A"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "A"
+  },
+  {
+    "name": "Llacao",
+    "stateCode": "A"
+  },
+  {
+    "name": "Nulti",
+    "stateCode": "A"
+  },
+  {
+    "name": "Guaranda",
+    "stateCode": "B"
+  },
+  {
+    "name": "San Miguel",
+    "stateCode": "B"
+  },
+  {
+    "name": "El Ángel",
+    "stateCode": "C"
+  },
+  {
+    "name": "San Gabriel",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tulcán",
+    "stateCode": "C"
+  },
+  {
+    "name": "Boca Suno",
+    "stateCode": "D"
+  },
+  {
+    "name": "Francisco de Orellana Canton",
+    "stateCode": "D"
+  },
+  {
+    "name": "Loreto Canton",
+    "stateCode": "D"
+  },
+  {
+    "name": "Puerto Francisco de Orellana",
+    "stateCode": "D"
+  },
+  {
+    "name": "Esmeraldas",
+    "stateCode": "E"
+  },
+  {
+    "name": "Muisne",
+    "stateCode": "E"
+  },
+  {
+    "name": "Pampanal de Bolívar",
+    "stateCode": "E"
+  },
+  {
+    "name": "Rio Verde",
+    "stateCode": "E"
+  },
+  {
+    "name": "Rosa Zarate",
+    "stateCode": "E"
+  },
+  {
+    "name": "San Lorenzo de Esmeraldas",
+    "stateCode": "E"
+  },
+  {
+    "name": "Valdez",
+    "stateCode": "E"
+  },
+  {
+    "name": "Azogues",
+    "stateCode": "F"
+  },
+  {
+    "name": "Cañar",
+    "stateCode": "F"
+  },
+  {
+    "name": "La Troncal",
+    "stateCode": "F"
+  },
+  {
+    "name": "Alfredo Baquerizo Moreno",
+    "stateCode": "G"
+  },
+  {
+    "name": "Baláo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Balzar",
+    "stateCode": "G"
+  },
+  {
+    "name": "Colimes",
+    "stateCode": "G"
+  },
+  {
+    "name": "Coronel Marcelino Maridueña",
+    "stateCode": "G"
+  },
+  {
+    "name": "El Triunfo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Eloy Alfaro",
+    "stateCode": "G"
+  },
+  {
+    "name": "Guayaquil",
+    "stateCode": "G"
+  },
+  {
+    "name": "Lomas de Sargentillo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Milagro",
+    "stateCode": "G"
+  },
+  {
+    "name": "Naranjal",
+    "stateCode": "G"
+  },
+  {
+    "name": "Naranjito",
+    "stateCode": "G"
+  },
+  {
+    "name": "Palestina",
+    "stateCode": "G"
+  },
+  {
+    "name": "Pedro Carbo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Playas",
+    "stateCode": "G"
+  },
+  {
+    "name": "Samborondón",
+    "stateCode": "G"
+  },
+  {
+    "name": "Santa Lucía",
+    "stateCode": "G"
+  },
+  {
+    "name": "Velasco Ibarra",
+    "stateCode": "G"
+  },
+  {
+    "name": "Yaguachi Nuevo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Alausí",
+    "stateCode": "H"
+  },
+  {
+    "name": "Guano",
+    "stateCode": "H"
+  },
+  {
+    "name": "Riobamba",
+    "stateCode": "H"
+  },
+  {
+    "name": "Atuntaqui",
+    "stateCode": "I"
+  },
+  {
+    "name": "Cotacachi",
+    "stateCode": "I"
+  },
+  {
+    "name": "Ibarra",
+    "stateCode": "I"
+  },
+  {
+    "name": "Otavalo",
+    "stateCode": "I"
+  },
+  {
+    "name": "Pimampiro",
+    "stateCode": "I"
+  },
+  {
+    "name": "Loja",
+    "stateCode": "L"
+  },
+  {
+    "name": "Bahía de Caráquez",
+    "stateCode": "M"
+  },
+  {
+    "name": "Calceta",
+    "stateCode": "M"
+  },
+  {
+    "name": "Cantón Portoviejo",
+    "stateCode": "M"
+  },
+  {
+    "name": "Chone",
+    "stateCode": "M"
+  },
+  {
+    "name": "Jipijapa",
+    "stateCode": "M"
+  },
+  {
+    "name": "Junín",
+    "stateCode": "M"
+  },
+  {
+    "name": "Manta",
+    "stateCode": "M"
+  },
+  {
+    "name": "Montecristi",
+    "stateCode": "M"
+  },
+  {
+    "name": "Paján",
+    "stateCode": "M"
+  },
+  {
+    "name": "Pedernales",
+    "stateCode": "M"
+  },
+  {
+    "name": "Portoviejo",
+    "stateCode": "M"
+  },
+  {
+    "name": "Rocafuerte",
+    "stateCode": "M"
+  },
+  {
+    "name": "San Vicente",
+    "stateCode": "M"
+  },
+  {
+    "name": "Santa Ana",
+    "stateCode": "M"
+  },
+  {
+    "name": "Sucre",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tosagua",
+    "stateCode": "M"
+  },
+  {
+    "name": "Archidona",
+    "stateCode": "N"
+  },
+  {
+    "name": "Tena",
+    "stateCode": "N"
+  },
+  {
+    "name": "Huaquillas",
+    "stateCode": "O"
+  },
+  {
+    "name": "Machala",
+    "stateCode": "O"
+  },
+  {
+    "name": "Pasaje",
+    "stateCode": "O"
+  },
+  {
+    "name": "Piñas",
+    "stateCode": "O"
+  },
+  {
+    "name": "Portovelo",
+    "stateCode": "O"
+  },
+  {
+    "name": "Puerto Bolívar",
+    "stateCode": "O"
+  },
+  {
+    "name": "Santa Rosa",
+    "stateCode": "O"
+  },
+  {
+    "name": "Zaruma",
+    "stateCode": "O"
+  },
+  {
+    "name": "Cayambe",
+    "stateCode": "P"
+  },
+  {
+    "name": "Machachi",
+    "stateCode": "P"
+  },
+  {
+    "name": "Quito",
+    "stateCode": "P"
+  },
+  {
+    "name": "Sangolquí",
+    "stateCode": "P"
+  },
+  {
+    "name": "Tutamandahostel",
+    "stateCode": "P"
+  },
+  {
+    "name": "Babahoyo",
+    "stateCode": "R"
+  },
+  {
+    "name": "Catarama",
+    "stateCode": "R"
+  },
+  {
+    "name": "Montalvo",
+    "stateCode": "R"
+  },
+  {
+    "name": "Palenque",
+    "stateCode": "R"
+  },
+  {
+    "name": "Quevedo",
+    "stateCode": "R"
+  },
+  {
+    "name": "Ventanas",
+    "stateCode": "R"
+  },
+  {
+    "name": "Vinces",
+    "stateCode": "R"
+  },
+  {
+    "name": "Gualaquiza",
+    "stateCode": "S"
+  },
+  {
+    "name": "Macas",
+    "stateCode": "S"
+  },
+  {
+    "name": "Palora",
+    "stateCode": "S"
+  },
+  {
+    "name": "Sucúa",
+    "stateCode": "S"
+  },
+  {
+    "name": "Santo Domingo de los Colorados",
+    "stateCode": "SD"
+  },
+  {
+    "name": "La Libertad",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Salinas",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Santa Elena",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Ambato",
+    "stateCode": "T"
+  },
+  {
+    "name": "Baños",
+    "stateCode": "T"
+  },
+  {
+    "name": "Pelileo",
+    "stateCode": "T"
+  },
+  {
+    "name": "Píllaro",
+    "stateCode": "T"
+  },
+  {
+    "name": "Nueva Loja",
+    "stateCode": "U"
+  },
+  {
+    "name": "Puerto Ayora",
+    "stateCode": "W"
+  },
+  {
+    "name": "Puerto Baquerizo Moreno",
+    "stateCode": "W"
+  },
+  {
+    "name": "Puerto Villamil",
+    "stateCode": "W"
+  },
+  {
+    "name": "La Maná",
+    "stateCode": "X"
+  },
+  {
+    "name": "Latacunga",
+    "stateCode": "X"
+  },
+  {
+    "name": "Pujilí",
+    "stateCode": "X"
+  },
+  {
+    "name": "San Miguel de Salcedo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Saquisilí",
+    "stateCode": "X"
+  },
+  {
+    "name": "Puyo",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Yantzaza",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Zamora",
+    "stateCode": "Z"
+  }
+]

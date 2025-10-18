@@ -1,0 +1,1238 @@
+[
+  {
+    "name": "Dobong-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Dongdaemun-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Dongjak-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Eunpyeong-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Gangbuk-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Gangdong-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Gangnam-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Gangseo-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Geumcheon-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Guro-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Gwanak-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Gwangjin-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Jongno-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Jung-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Jungnang-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Mapo-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Nowon-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Seocho-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Seodaemun-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Seongbuk-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Seongdong-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Seoul",
+    "stateCode": "11"
+  },
+  {
+    "name": "Songpa-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yangcheon-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yeongdeungpo-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yongsan-dong",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yongsan-gu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Buk-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Busan",
+    "stateCode": "26"
+  },
+  {
+    "name": "Dongnae-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Gangseo-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Geumjeong-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Gijang",
+    "stateCode": "26"
+  },
+  {
+    "name": "Gijang-gun",
+    "stateCode": "26"
+  },
+  {
+    "name": "Haeundae-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Jung-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Nam-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Saha-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Sasang-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Seo-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Suyeong-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Yeongdo-gu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Daegu",
+    "stateCode": "27"
+  },
+  {
+    "name": "Dalseo-gu",
+    "stateCode": "27"
+  },
+  {
+    "name": "Dalseong-gun",
+    "stateCode": "27"
+  },
+  {
+    "name": "Dong-gu",
+    "stateCode": "27"
+  },
+  {
+    "name": "Hwawŏn",
+    "stateCode": "27"
+  },
+  {
+    "name": "Jung-gu",
+    "stateCode": "27"
+  },
+  {
+    "name": "Seo-gu",
+    "stateCode": "27"
+  },
+  {
+    "name": "Suseong-gu",
+    "stateCode": "27"
+  },
+  {
+    "name": "Bupyeong-gu",
+    "stateCode": "28"
+  },
+  {
+    "name": "Incheon",
+    "stateCode": "28"
+  },
+  {
+    "name": "Michuhol",
+    "stateCode": "28"
+  },
+  {
+    "name": "Yeonsu-gu",
+    "stateCode": "28"
+  },
+  {
+    "name": "Gwangju",
+    "stateCode": "29"
+  },
+  {
+    "name": "Gwangsan-gu",
+    "stateCode": "29"
+  },
+  {
+    "name": "Masan",
+    "stateCode": "29"
+  },
+  {
+    "name": "Daejeon",
+    "stateCode": "30"
+  },
+  {
+    "name": "Seo-gu",
+    "stateCode": "30"
+  },
+  {
+    "name": "Sintansin",
+    "stateCode": "30"
+  },
+  {
+    "name": "Songgangdong",
+    "stateCode": "30"
+  },
+  {
+    "name": "Yuseong-gu",
+    "stateCode": "30"
+  },
+  {
+    "name": "Buk-gu",
+    "stateCode": "31"
+  },
+  {
+    "name": "Dong-gu",
+    "stateCode": "31"
+  },
+  {
+    "name": "Jung-gu",
+    "stateCode": "31"
+  },
+  {
+    "name": "Nam-gu",
+    "stateCode": "31"
+  },
+  {
+    "name": "Ulju-gun",
+    "stateCode": "31"
+  },
+  {
+    "name": "Ulsan",
+    "stateCode": "31"
+  },
+  {
+    "name": "Ansan-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Anseong",
+    "stateCode": "41"
+  },
+  {
+    "name": "Anyang-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Bucheon-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Dongducheon",
+    "stateCode": "41"
+  },
+  {
+    "name": "Gapyeong",
+    "stateCode": "41"
+  },
+  {
+    "name": "Gapyeong-gun",
+    "stateCode": "41"
+  },
+  {
+    "name": "Gimpo-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Goyang-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Gunpo-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Guri-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Gwacheon-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Gwangju",
+    "stateCode": "41"
+  },
+  {
+    "name": "Gwangju-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Gwangmyeong-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Hanam",
+    "stateCode": "41"
+  },
+  {
+    "name": "Hanam-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Hwado",
+    "stateCode": "41"
+  },
+  {
+    "name": "Hwaseong-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Icheon-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kwangmyŏng",
+    "stateCode": "41"
+  },
+  {
+    "name": "Munsan",
+    "stateCode": "41"
+  },
+  {
+    "name": "Namyangju",
+    "stateCode": "41"
+  },
+  {
+    "name": "Namyangju-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Osan",
+    "stateCode": "41"
+  },
+  {
+    "name": "Osan-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Paju-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Pocheon-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Pubal",
+    "stateCode": "41"
+  },
+  {
+    "name": "Pyeongtaek",
+    "stateCode": "41"
+  },
+  {
+    "name": "Seongnam-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Siheung",
+    "stateCode": "41"
+  },
+  {
+    "name": "Suwon",
+    "stateCode": "41"
+  },
+  {
+    "name": "Uijeongbu-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Uiwang-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Wabu",
+    "stateCode": "41"
+  },
+  {
+    "name": "Yangju",
+    "stateCode": "41"
+  },
+  {
+    "name": "Yangju-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Yangp'yŏng",
+    "stateCode": "41"
+  },
+  {
+    "name": "Yangpyeong-gun",
+    "stateCode": "41"
+  },
+  {
+    "name": "Yeoju-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Yeoncheon-gun",
+    "stateCode": "41"
+  },
+  {
+    "name": "Yongin-si",
+    "stateCode": "41"
+  },
+  {
+    "name": "Cheorwon-gun",
+    "stateCode": "42"
+  },
+  {
+    "name": "Chuncheon",
+    "stateCode": "42"
+  },
+  {
+    "name": "Chuncheon-si",
+    "stateCode": "42"
+  },
+  {
+    "name": "Donghae-si",
+    "stateCode": "42"
+  },
+  {
+    "name": "Gangneung",
+    "stateCode": "42"
+  },
+  {
+    "name": "Gangneung-si",
+    "stateCode": "42"
+  },
+  {
+    "name": "Goseong-gun",
+    "stateCode": "42"
+  },
+  {
+    "name": "Hoengseong-gun",
+    "stateCode": "42"
+  },
+  {
+    "name": "Hongch’ŏn",
+    "stateCode": "42"
+  },
+  {
+    "name": "Hongcheon-gun",
+    "stateCode": "42"
+  },
+  {
+    "name": "Hwacheon",
+    "stateCode": "42"
+  },
+  {
+    "name": "Hwacheon-gun",
+    "stateCode": "42"
+  },
+  {
+    "name": "Inje-gun",
+    "stateCode": "42"
+  },
+  {
+    "name": "Jeongseon-gun",
+    "stateCode": "42"
+  },
+  {
+    "name": "Kosong",
+    "stateCode": "42"
+  },
+  {
+    "name": "Neietsu",
+    "stateCode": "42"
+  },
+  {
+    "name": "Pyeongchang",
+    "stateCode": "42"
+  },
+  {
+    "name": "Pyeongchang-gun",
+    "stateCode": "42"
+  },
+  {
+    "name": "Samcheok-si",
+    "stateCode": "42"
+  },
+  {
+    "name": "Santyoku",
+    "stateCode": "42"
+  },
+  {
+    "name": "Sokcho",
+    "stateCode": "42"
+  },
+  {
+    "name": "Sokcho-si",
+    "stateCode": "42"
+  },
+  {
+    "name": "T’aebaek",
+    "stateCode": "42"
+  },
+  {
+    "name": "Taebaek-si",
+    "stateCode": "42"
+  },
+  {
+    "name": "Tonghae",
+    "stateCode": "42"
+  },
+  {
+    "name": "Wŏnju",
+    "stateCode": "42"
+  },
+  {
+    "name": "Wonju-si",
+    "stateCode": "42"
+  },
+  {
+    "name": "Yanggu",
+    "stateCode": "42"
+  },
+  {
+    "name": "Yanggu-gun",
+    "stateCode": "42"
+  },
+  {
+    "name": "Yangyang-gun",
+    "stateCode": "42"
+  },
+  {
+    "name": "Boeun-gun",
+    "stateCode": "43"
+  },
+  {
+    "name": "Cheongju-si",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chinch'ŏn",
+    "stateCode": "43"
+  },
+  {
+    "name": "Chungju-si",
+    "stateCode": "43"
+  },
+  {
+    "name": "Danyang-gun",
+    "stateCode": "43"
+  },
+  {
+    "name": "Eumseong-gun",
+    "stateCode": "43"
+  },
+  {
+    "name": "Goesan-gun",
+    "stateCode": "43"
+  },
+  {
+    "name": "Jecheon-si",
+    "stateCode": "43"
+  },
+  {
+    "name": "Jeungpyeong-gun",
+    "stateCode": "43"
+  },
+  {
+    "name": "Jincheon-gun",
+    "stateCode": "43"
+  },
+  {
+    "name": "Koesan",
+    "stateCode": "43"
+  },
+  {
+    "name": "Okcheon",
+    "stateCode": "43"
+  },
+  {
+    "name": "Okcheon-gun",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yeongdong",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yeongdong-gun",
+    "stateCode": "43"
+  },
+  {
+    "name": "Asan",
+    "stateCode": "44"
+  },
+  {
+    "name": "Asan-si",
+    "stateCode": "44"
+  },
+  {
+    "name": "Boryeong",
+    "stateCode": "44"
+  },
+  {
+    "name": "Boryeong-si",
+    "stateCode": "44"
+  },
+  {
+    "name": "Buyeo",
+    "stateCode": "44"
+  },
+  {
+    "name": "Buyeo-gun",
+    "stateCode": "44"
+  },
+  {
+    "name": "Cheonan",
+    "stateCode": "44"
+  },
+  {
+    "name": "Cheonan-si",
+    "stateCode": "44"
+  },
+  {
+    "name": "Cheongyang-gun",
+    "stateCode": "44"
+  },
+  {
+    "name": "Geumsan-gun",
+    "stateCode": "44"
+  },
+  {
+    "name": "Gongju",
+    "stateCode": "44"
+  },
+  {
+    "name": "Gongju-si",
+    "stateCode": "44"
+  },
+  {
+    "name": "Gyeryong-si",
+    "stateCode": "44"
+  },
+  {
+    "name": "Hongseong",
+    "stateCode": "44"
+  },
+  {
+    "name": "Hongseong-gun",
+    "stateCode": "44"
+  },
+  {
+    "name": "Kinzan",
+    "stateCode": "44"
+  },
+  {
+    "name": "Nonsan",
+    "stateCode": "44"
+  },
+  {
+    "name": "Nonsan-si",
+    "stateCode": "44"
+  },
+  {
+    "name": "Seocheon-gun",
+    "stateCode": "44"
+  },
+  {
+    "name": "Seonghwan",
+    "stateCode": "44"
+  },
+  {
+    "name": "Seosan",
+    "stateCode": "44"
+  },
+  {
+    "name": "Seosan-si",
+    "stateCode": "44"
+  },
+  {
+    "name": "Taean-gun",
+    "stateCode": "44"
+  },
+  {
+    "name": "Taesal-li",
+    "stateCode": "44"
+  },
+  {
+    "name": "Tangjin",
+    "stateCode": "44"
+  },
+  {
+    "name": "Yesan",
+    "stateCode": "44"
+  },
+  {
+    "name": "Yesan-gun",
+    "stateCode": "44"
+  },
+  {
+    "name": "Yŏnmu",
+    "stateCode": "44"
+  },
+  {
+    "name": "Buan-gun",
+    "stateCode": "45"
+  },
+  {
+    "name": "Changsu",
+    "stateCode": "45"
+  },
+  {
+    "name": "Gimje-si",
+    "stateCode": "45"
+  },
+  {
+    "name": "Gochang-gun",
+    "stateCode": "45"
+  },
+  {
+    "name": "Gunsan",
+    "stateCode": "45"
+  },
+  {
+    "name": "Gunsan-si",
+    "stateCode": "45"
+  },
+  {
+    "name": "Iksan",
+    "stateCode": "45"
+  },
+  {
+    "name": "Iksan-si",
+    "stateCode": "45"
+  },
+  {
+    "name": "Imsil",
+    "stateCode": "45"
+  },
+  {
+    "name": "Imsil-gun",
+    "stateCode": "45"
+  },
+  {
+    "name": "Jangsu-gun",
+    "stateCode": "45"
+  },
+  {
+    "name": "Jeongeup",
+    "stateCode": "45"
+  },
+  {
+    "name": "Jeongeup-si",
+    "stateCode": "45"
+  },
+  {
+    "name": "Jeonju",
+    "stateCode": "45"
+  },
+  {
+    "name": "Jeonju-si",
+    "stateCode": "45"
+  },
+  {
+    "name": "Jinan-gun",
+    "stateCode": "45"
+  },
+  {
+    "name": "Kimje",
+    "stateCode": "45"
+  },
+  {
+    "name": "Koch'ang",
+    "stateCode": "45"
+  },
+  {
+    "name": "Muju-gun",
+    "stateCode": "45"
+  },
+  {
+    "name": "Namwon",
+    "stateCode": "45"
+  },
+  {
+    "name": "Nangen",
+    "stateCode": "45"
+  },
+  {
+    "name": "Puan",
+    "stateCode": "45"
+  },
+  {
+    "name": "Sunchang-gun",
+    "stateCode": "45"
+  },
+  {
+    "name": "Wanju",
+    "stateCode": "45"
+  },
+  {
+    "name": "Beolgyo",
+    "stateCode": "46"
+  },
+  {
+    "name": "Boseong-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Damyang-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Gangjin-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Goheung-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Gokseong-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Gurye-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Gwangyang",
+    "stateCode": "46"
+  },
+  {
+    "name": "Gwangyang-si",
+    "stateCode": "46"
+  },
+  {
+    "name": "Haenam",
+    "stateCode": "46"
+  },
+  {
+    "name": "Haenam-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Hampyeong-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Hwasun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Hwasun-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Jangheung-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Jangseong-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Jindo-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kurye",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kwangyang",
+    "stateCode": "46"
+  },
+  {
+    "name": "Mokpo",
+    "stateCode": "46"
+  },
+  {
+    "name": "Mokpo-si",
+    "stateCode": "46"
+  },
+  {
+    "name": "Muan",
+    "stateCode": "46"
+  },
+  {
+    "name": "Muan-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Naju",
+    "stateCode": "46"
+  },
+  {
+    "name": "Naju-si",
+    "stateCode": "46"
+  },
+  {
+    "name": "Sinan",
+    "stateCode": "46"
+  },
+  {
+    "name": "Sinan-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Suncheon",
+    "stateCode": "46"
+  },
+  {
+    "name": "Suncheon-si",
+    "stateCode": "46"
+  },
+  {
+    "name": "Wando-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Yeongam",
+    "stateCode": "46"
+  },
+  {
+    "name": "Yeongam-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Yeonggwang",
+    "stateCode": "46"
+  },
+  {
+    "name": "Yeonggwang-gun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Yeosu",
+    "stateCode": "46"
+  },
+  {
+    "name": "Andong",
+    "stateCode": "47"
+  },
+  {
+    "name": "Andong-si",
+    "stateCode": "47"
+  },
+  {
+    "name": "Bonghwa-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Cheongdo-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Cheongsong gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Cheongsong-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Chilgok-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Eisen",
+    "stateCode": "47"
+  },
+  {
+    "name": "Gimcheon",
+    "stateCode": "47"
+  },
+  {
+    "name": "Gimcheon-si",
+    "stateCode": "47"
+  },
+  {
+    "name": "Goryeong-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Gumi-si",
+    "stateCode": "47"
+  },
+  {
+    "name": "Gunwi-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Gyeongju",
+    "stateCode": "47"
+  },
+  {
+    "name": "Gyeongsan-si",
+    "stateCode": "47"
+  },
+  {
+    "name": "Hayang",
+    "stateCode": "47"
+  },
+  {
+    "name": "Heunghae",
+    "stateCode": "47"
+  },
+  {
+    "name": "Jenzan",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kunwi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Mungyeong",
+    "stateCode": "47"
+  },
+  {
+    "name": "Mungyeong-si",
+    "stateCode": "47"
+  },
+  {
+    "name": "Pohang",
+    "stateCode": "47"
+  },
+  {
+    "name": "Pohang-si",
+    "stateCode": "47"
+  },
+  {
+    "name": "Sangju",
+    "stateCode": "47"
+  },
+  {
+    "name": "Seongju-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Uiseong-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Uljin-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Ulleung-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Waegwan",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yecheon-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yeongcheon-si",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yeongdeok-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yeongju-si",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yeongyang-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yeonil",
+    "stateCode": "47"
+  },
+  {
+    "name": "Changnyeong",
+    "stateCode": "48"
+  },
+  {
+    "name": "Changnyeong-gun",
+    "stateCode": "48"
+  },
+  {
+    "name": "Changwon",
+    "stateCode": "48"
+  },
+  {
+    "name": "Changwon-si",
+    "stateCode": "48"
+  },
+  {
+    "name": "Chinju",
+    "stateCode": "48"
+  },
+  {
+    "name": "Geochang-gun",
+    "stateCode": "48"
+  },
+  {
+    "name": "Geoje-si",
+    "stateCode": "48"
+  },
+  {
+    "name": "Gimhae-si",
+    "stateCode": "48"
+  },
+  {
+    "name": "Goseong",
+    "stateCode": "48"
+  },
+  {
+    "name": "Goseong-gun",
+    "stateCode": "48"
+  },
+  {
+    "name": "Hadong-gun",
+    "stateCode": "48"
+  },
+  {
+    "name": "Haman-gun",
+    "stateCode": "48"
+  },
+  {
+    "name": "Hapcheon-gun",
+    "stateCode": "48"
+  },
+  {
+    "name": "Jinju-si",
+    "stateCode": "48"
+  },
+  {
+    "name": "Kimhae",
+    "stateCode": "48"
+  },
+  {
+    "name": "Kyosai",
+    "stateCode": "48"
+  },
+  {
+    "name": "Miryang",
+    "stateCode": "48"
+  },
+  {
+    "name": "Miryang-si",
+    "stateCode": "48"
+  },
+  {
+    "name": "Naesŏ",
+    "stateCode": "48"
+  },
+  {
+    "name": "Namhae-gun",
+    "stateCode": "48"
+  },
+  {
+    "name": "Sacheon-si",
+    "stateCode": "48"
+  },
+  {
+    "name": "Sancheong-gun",
+    "stateCode": "48"
+  },
+  {
+    "name": "Sinhyeon",
+    "stateCode": "48"
+  },
+  {
+    "name": "Uiryeong-gun",
+    "stateCode": "48"
+  },
+  {
+    "name": "Ungsang",
+    "stateCode": "48"
+  },
+  {
+    "name": "Yangsan",
+    "stateCode": "48"
+  },
+  {
+    "name": "Gaigeturi",
+    "stateCode": "49"
+  },
+  {
+    "name": "Jeju City",
+    "stateCode": "49"
+  },
+  {
+    "name": "Jeju-si",
+    "stateCode": "49"
+  },
+  {
+    "name": "Seogwipo",
+    "stateCode": "49"
+  },
+  {
+    "name": "Sejong",
+    "stateCode": "50"
+  }
+]

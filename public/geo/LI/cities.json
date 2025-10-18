@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Balzers",
+    "stateCode": "01"
+  },
+  {
+    "name": "Eschen",
+    "stateCode": "02"
+  },
+  {
+    "name": "Gamprin",
+    "stateCode": "03"
+  },
+  {
+    "name": "Mauren",
+    "stateCode": "04"
+  },
+  {
+    "name": "Planken",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ruggell",
+    "stateCode": "06"
+  },
+  {
+    "name": "Schaan",
+    "stateCode": "07"
+  },
+  {
+    "name": "Schellenberg",
+    "stateCode": "08"
+  },
+  {
+    "name": "Triesen",
+    "stateCode": "09"
+  },
+  {
+    "name": "Triesenberg",
+    "stateCode": "10"
+  },
+  {
+    "name": "Vaduz",
+    "stateCode": "11"
+  }
+]

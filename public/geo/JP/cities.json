@@ -1,0 +1,6686 @@
+[
+  {
+    "name": "Abashiri",
+    "stateCode": "01"
+  },
+  {
+    "name": "Abashiri Shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Akabira",
+    "stateCode": "01"
+  },
+  {
+    "name": "Akabira-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Asahikawa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ashibetsu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ashibetsu-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Bibai",
+    "stateCode": "01"
+  },
+  {
+    "name": "Chitose",
+    "stateCode": "01"
+  },
+  {
+    "name": "Chitose Shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Date",
+    "stateCode": "01"
+  },
+  {
+    "name": "Date-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ebetsu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Eniwa-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Fukagawa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Fukagawa-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Furano-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Hakodate",
+    "stateCode": "01"
+  },
+  {
+    "name": "Hakodate Shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Hokuto",
+    "stateCode": "01"
+  },
+  {
+    "name": "Hokuto-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Honchō",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ishikari",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ishikari-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Iwamizawa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Iwamizawa-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Iwanai",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kamiiso",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kamikawa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kitahiroshima",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kitahiroshima-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kitami",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ktiami Shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kushiro",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kushiro Shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Makubetsu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mikasa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mikasa-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mombetsu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Monbetsu Shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Motomachi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Muroran",
+    "stateCode": "01"
+  },
+  {
+    "name": "Muroran-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Nayoro",
+    "stateCode": "01"
+  },
+  {
+    "name": "Nayoro Shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Nemuro",
+    "stateCode": "01"
+  },
+  {
+    "name": "Nemuro-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Niseko Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Noboribetsu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Noboribetsu-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obihiro",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obihiro Shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Otaru",
+    "stateCode": "01"
+  },
+  {
+    "name": "Otaru-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Otofuke",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rebun Gun",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rishiri Gun",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rishiri Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rumoi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rumoi-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sapporo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sapporo-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shibetsu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shibetsu Shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shimo-furano",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shiraoi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shizunai-furukawachō",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sunagawa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sunagawa-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Takikawa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Takikawa-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tōbetsu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tomakomai",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tomakomai Shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Utashinai",
+    "stateCode": "01"
+  },
+  {
+    "name": "Utashinai-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Wakkanai",
+    "stateCode": "01"
+  },
+  {
+    "name": "Wakkanai Shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Yoichi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Yūbari",
+    "stateCode": "01"
+  },
+  {
+    "name": "Yūbari-shi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Aomori",
+    "stateCode": "02"
+  },
+  {
+    "name": "Aomori Shi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Goshogawara",
+    "stateCode": "02"
+  },
+  {
+    "name": "Goshogawara Shi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hachinohe",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hachinohe Shi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hirakawa",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hirakawa Shi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hirosaki",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hirosaki Shi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kuroishi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kuroishi Shi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Misawa",
+    "stateCode": "02"
+  },
+  {
+    "name": "Misawa Shi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mutsu",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mutsu-shi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Namioka",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shimokizukuri",
+    "stateCode": "02"
+  },
+  {
+    "name": "Towada Shi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tsugaru",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tsugaru Shi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hachimantai",
+    "stateCode": "03"
+  },
+  {
+    "name": "Hachimantai Shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Hanamaki",
+    "stateCode": "03"
+  },
+  {
+    "name": "Hanamaki Shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ichinohe",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ichinoseki",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ichinoseki-shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Iwate-gun",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kamaishi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kamaishi-shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kitakami",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kitakami-shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kuji",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kuji-shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Miyako",
+    "stateCode": "03"
+  },
+  {
+    "name": "Miyako-shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Mizusawa",
+    "stateCode": "03"
+  },
+  {
+    "name": "Morioka",
+    "stateCode": "03"
+  },
+  {
+    "name": "Morioka-shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ninohe",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ninohe Shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ōfunato",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ōfunato-shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ōshū",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ōshū-shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ōtsuchi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Rikuzentakata-shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shizukuishi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Takizawa-shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Tōno",
+    "stateCode": "03"
+  },
+  {
+    "name": "Tōno-shi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Yamada",
+    "stateCode": "03"
+  },
+  {
+    "name": "Furukawa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Higashimatshushima Shi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Higashimatsushima",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ishinomaki",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ishinomaki Shi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Iwanuma",
+    "stateCode": "04"
+  },
+  {
+    "name": "Iwanuma-shi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kakuda",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kakuda Shi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kesennuma",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kesennuma Shi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kogota",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kurihara",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kurihara Shi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Marumori",
+    "stateCode": "04"
+  },
+  {
+    "name": "Matsushima",
+    "stateCode": "04"
+  },
+  {
+    "name": "Natori Shi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ōkawara",
+    "stateCode": "04"
+  },
+  {
+    "name": "Onagawa Chō",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ōsaki",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ōsaki Shi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Rifu",
+    "stateCode": "04"
+  },
+  {
+    "name": "Sendai",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shiogama",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shiroishi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shiroishi Shi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Tagajō Shi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Tome Shi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Tomiya",
+    "stateCode": "04"
+  },
+  {
+    "name": "Wakuya",
+    "stateCode": "04"
+  },
+  {
+    "name": "Watari",
+    "stateCode": "04"
+  },
+  {
+    "name": "Watari-gun",
+    "stateCode": "04"
+  },
+  {
+    "name": "Yamoto",
+    "stateCode": "04"
+  },
+  {
+    "name": "Akita",
+    "stateCode": "05"
+  },
+  {
+    "name": "Akita Shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Daisen",
+    "stateCode": "05"
+  },
+  {
+    "name": "Daisen-shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Hanawa",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kakunodatemachi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Katagami",
+    "stateCode": "05"
+  },
+  {
+    "name": "Katagami-shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kazuno Shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kitaakita-shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Nikaho-shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Noshiro",
+    "stateCode": "05"
+  },
+  {
+    "name": "Noshiro Shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ōdate",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ōdate-shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Oga",
+    "stateCode": "05"
+  },
+  {
+    "name": "Oga-shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ōmagari",
+    "stateCode": "05"
+  },
+  {
+    "name": "Semboku-shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Takanosu",
+    "stateCode": "05"
+  },
+  {
+    "name": "Tennō",
+    "stateCode": "05"
+  },
+  {
+    "name": "Yokote",
+    "stateCode": "05"
+  },
+  {
+    "name": "Yokote-shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Yurihonjō",
+    "stateCode": "05"
+  },
+  {
+    "name": "Yurihonjō-shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Yuzawa",
+    "stateCode": "05"
+  },
+  {
+    "name": "Yuzawa-shi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Higashine",
+    "stateCode": "06"
+  },
+  {
+    "name": "Higashine Shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kaminoyama",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kaminoyama-shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Murayama",
+    "stateCode": "06"
+  },
+  {
+    "name": "Murayama Shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Nagai",
+    "stateCode": "06"
+  },
+  {
+    "name": "Nagai-shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Nanyō Shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Obanazawa",
+    "stateCode": "06"
+  },
+  {
+    "name": "Obanazawa Shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sagae",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sagae-shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sakata",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sakata Shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shinjō",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shinjō Shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Takahata",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tendō",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tendō Shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tsuruoka",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tsuruoka Shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Yamagata",
+    "stateCode": "06"
+  },
+  {
+    "name": "Yamagata Shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Yonezawa",
+    "stateCode": "06"
+  },
+  {
+    "name": "Yonezawa Shi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Yuza",
+    "stateCode": "06"
+  },
+  {
+    "name": "Aizu-wakamatsu Shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Date-shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Fukushima",
+    "stateCode": "07"
+  },
+  {
+    "name": "Fukushima Shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Funehikimachi-funehiki",
+    "stateCode": "07"
+  },
+  {
+    "name": "Hobaramachi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Inawashiro",
+    "stateCode": "07"
+  },
+  {
+    "name": "Ishikawa",
+    "stateCode": "07"
+  },
+  {
+    "name": "Iwaki",
+    "stateCode": "07"
+  },
+  {
+    "name": "Iwaki-shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kitakata",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kitakata-shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kōriyama",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kōriyama Shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Miharu",
+    "stateCode": "07"
+  },
+  {
+    "name": "Minami-Sōma",
+    "stateCode": "07"
+  },
+  {
+    "name": "Minamisōma Shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Motomiya",
+    "stateCode": "07"
+  },
+  {
+    "name": "Motomiya-shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Namie",
+    "stateCode": "07"
+  },
+  {
+    "name": "Nihommatsu",
+    "stateCode": "07"
+  },
+  {
+    "name": "Nihonmatsu Shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shirakawa Shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sōma",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sōma Shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sukagawa",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sukagawa Shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Tamura",
+    "stateCode": "07"
+  },
+  {
+    "name": "Tamura-shi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Yanagawamachi-saiwaichō",
+    "stateCode": "07"
+  },
+  {
+    "name": "Ami",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bandō",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bandō-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Chikusei",
+    "stateCode": "08"
+  },
+  {
+    "name": "Chikusei-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Daigo",
+    "stateCode": "08"
+  },
+  {
+    "name": "Edosaki",
+    "stateCode": "08"
+  },
+  {
+    "name": "Fujishiro",
+    "stateCode": "08"
+  },
+  {
+    "name": "Funaishikawa",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hitachi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hitachi-Naka",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hitachi-ota",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hitachi-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hitachinaka-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hitachiōmiya-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hitachiōta-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hokota-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Inashiki",
+    "stateCode": "08"
+  },
+  {
+    "name": "Inashiki-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ishige",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ishioka",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ishioka-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Itako",
+    "stateCode": "08"
+  },
+  {
+    "name": "Itako-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Iwai",
+    "stateCode": "08"
+  },
+  {
+    "name": "Iwase",
+    "stateCode": "08"
+  },
+  {
+    "name": "Jōsō-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kamisu-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kasama",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kasama-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kashima-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kasumigaura",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kasumigaura-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Katsuta",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kitaibaraki",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kitaibaraki-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Koga",
+    "stateCode": "08"
+  },
+  {
+    "name": "Koga-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Makabe",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mito",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mito-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mitsukaidō",
+    "stateCode": "08"
+  },
+  {
+    "name": "Moriya",
+    "stateCode": "08"
+  },
+  {
+    "name": "Moriya-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Naka",
+    "stateCode": "08"
+  },
+  {
+    "name": "Naka-gun",
+    "stateCode": "08"
+  },
+  {
+    "name": "Namegata",
+    "stateCode": "08"
+  },
+  {
+    "name": "Namegata-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ōarai",
+    "stateCode": "08"
+  },
+  {
+    "name": "Okunoya",
+    "stateCode": "08"
+  },
+  {
+    "name": "Omitama-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ōmiya",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ryūgasaki",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ryūgasaki-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Sakai",
+    "stateCode": "08"
+  },
+  {
+    "name": "Sakuragawa",
+    "stateCode": "08"
+  },
+  {
+    "name": "Sakuragawa-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shimodate",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shimotsuma-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Takahagi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tomobe",
+    "stateCode": "08"
+  },
+  {
+    "name": "Toride",
+    "stateCode": "08"
+  },
+  {
+    "name": "Toride-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tsuchiura-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tsukuba",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tsukuba-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tsukubamirai",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tsukubamirai-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ushiku",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ushiku-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Yūki",
+    "stateCode": "08"
+  },
+  {
+    "name": "Yūki-shi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ashikaga",
+    "stateCode": "09"
+  },
+  {
+    "name": "Fujioka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Imaichi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kaminokawa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kanuma",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kanuma-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Karasuyama",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kuroiso",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mashiko",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mibu",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mooka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mooka-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Motegi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nasukarasuyama",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nasukarasuyama-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nasushiobara-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nikkō",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nikko-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ōtawara",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ōtawara-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Oyama",
+    "stateCode": "09"
+  },
+  {
+    "name": "Oyama-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sakura-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sano",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sano-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shimotsuke-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Tanuma",
+    "stateCode": "09"
+  },
+  {
+    "name": "Tochigi-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ujiie",
+    "stateCode": "09"
+  },
+  {
+    "name": "Utsunomiya",
+    "stateCode": "09"
+  },
+  {
+    "name": "Utsunomiya-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Yaita",
+    "stateCode": "09"
+  },
+  {
+    "name": "Yaita-shi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Agatsuma-gun",
+    "stateCode": "10"
+  },
+  {
+    "name": "Annaka",
+    "stateCode": "10"
+  },
+  {
+    "name": "Annaka Shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Fujioka",
+    "stateCode": "10"
+  },
+  {
+    "name": "Fujioka Shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Isesaki",
+    "stateCode": "10"
+  },
+  {
+    "name": "Isesaki Shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kanekomachi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kiryū",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kiryū Shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Maebashi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Maebashi Shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Midori",
+    "stateCode": "10"
+  },
+  {
+    "name": "Midori Shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Nakanojōmachi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Numata",
+    "stateCode": "10"
+  },
+  {
+    "name": "Numata Shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ōmamachō-ōmama",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ōta",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ōta-shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Sakai-nakajima",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shibukawa",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shibukawa-shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Takasaki",
+    "stateCode": "10"
+  },
+  {
+    "name": "Takasaki Shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Tamamura",
+    "stateCode": "10"
+  },
+  {
+    "name": "Tatebayashi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Tatebayashi-shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Tomioka",
+    "stateCode": "10"
+  },
+  {
+    "name": "Tomioka-shi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Yoshii",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ageo Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ageoshimo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Asaka",
+    "stateCode": "11"
+  },
+  {
+    "name": "Asaka-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Chichibu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Chichibu-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fujimi-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fujimino Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fukaya-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fukayachō",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fukiage-fujimi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Gyōda",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hannō",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hannō-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hanyū",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hanyū-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hasuda",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hasuda-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hatogaya-honchō",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hidaka-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Higashimatsuyama Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hiki-gun",
+    "stateCode": "11"
+  },
+  {
+    "name": "Honjō",
+    "stateCode": "11"
+  },
+  {
+    "name": "Honjō Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Iruma-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Iwatsuki",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kamifukuoka",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kasukabe",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kasukabe Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kawagoe",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kawagoe-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kawaguchi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kawaguchi-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kazo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kazo-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kisai",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kitamoto Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kodamachō-kodamaminami",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kōnosu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Konosu-Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Koshigaya Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kuki-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kukichūō",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kumagaya Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kurihashi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Menuma",
+    "stateCode": "11"
+  },
+  {
+    "name": "Misato Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Morohongō",
+    "stateCode": "11"
+  },
+  {
+    "name": "Niiza-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ogawa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ōi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Okegawa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Okegawa-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ōsato-gun",
+    "stateCode": "11"
+  },
+  {
+    "name": "Saitama",
+    "stateCode": "11"
+  },
+  {
+    "name": "Saitama-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sakado",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sakado-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Satte",
+    "stateCode": "11"
+  },
+  {
+    "name": "Satte Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sayama",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shiki",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shiki Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shimotoda",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shiraoka",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shiraoka-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shōbu",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sōka",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sōka Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sugito",
+    "stateCode": "11"
+  },
+  {
+    "name": "Toda-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Tokorozawa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Tokorozawa-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Tsurugashima-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Wako",
+    "stateCode": "11"
+  },
+  {
+    "name": "Wakō-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Warabi-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yashio",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yashio-shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yono",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yorii",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yoshikawa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yoshikawa Shi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Abiko",
+    "stateCode": "12"
+  },
+  {
+    "name": "Abiko-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Asahi-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Chiba",
+    "stateCode": "12"
+  },
+  {
+    "name": "Chōshi-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Funabashi-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Futtsu",
+    "stateCode": "12"
+  },
+  {
+    "name": "Hasaki",
+    "stateCode": "12"
+  },
+  {
+    "name": "Honchō",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ichihara",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ichihara Shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ichikawa Shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Inzai-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Isumi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Isumi Shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kamagaya Shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kamogawa",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kamogawa-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kashiwa",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kashiwa Shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Katori-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Katsuura",
+    "stateCode": "12"
+  },
+  {
+    "name": "Katsuura-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kimitsu",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kisarazu",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kisarazu Shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Matsudo Shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Minamibōsō Shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mobara",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mobara Shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Nagareyama",
+    "stateCode": "12"
+  },
+  {
+    "name": "Nagareyama-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Narashino-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Narita",
+    "stateCode": "12"
+  },
+  {
+    "name": "Narita-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Narutō",
+    "stateCode": "12"
+  },
+  {
+    "name": "Noda",
+    "stateCode": "12"
+  },
+  {
+    "name": "Noda-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ōami",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ōamishirasato-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ōhara",
+    "stateCode": "12"
+  },
+  {
+    "name": "Omigawa",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sakura",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sakura-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sambu-gun",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sanmu",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sanmu-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sawara",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shiroi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shiroi-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shisui",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sodegaura-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sōsa-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Tateyama",
+    "stateCode": "12"
+  },
+  {
+    "name": "Tateyama-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Tōgane",
+    "stateCode": "12"
+  },
+  {
+    "name": "Tōgane-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Tomisato-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Urayasu-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Yachimata",
+    "stateCode": "12"
+  },
+  {
+    "name": "Yachimata-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Yachiyo-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Yōkaichiba",
+    "stateCode": "12"
+  },
+  {
+    "name": "Yotsukaidō",
+    "stateCode": "12"
+  },
+  {
+    "name": "Yotsukaidō-shi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Adachi Ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Akiruno-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Akishima-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Arakawa Ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bunkyō-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chiyoda-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chōfu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chōfu-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chūō Ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Edogawa Ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Fuchū-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Fussa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hachiōji",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hamura-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Higashi-murayama-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Higashikurume-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Higashimurayama",
+    "stateCode": "13"
+  },
+  {
+    "name": "Higashiyamato",
+    "stateCode": "13"
+  },
+  {
+    "name": "Higashiyamato-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hino",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hino-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Inagi-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Itabashi-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Itsukaichi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kamirenjaku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Katsushika Ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kita-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kiyose-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kodaira-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Koganei-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kokubunji",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kokubunji-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Komae-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kōtō-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kunitachi-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Machida",
+    "stateCode": "13"
+  },
+  {
+    "name": "Machida-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Meguro-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Minato-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mitaka-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Musashimurayama-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Musashino",
+    "stateCode": "13"
+  },
+  {
+    "name": "Musashino-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nakano-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nerima-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nishi-Tokyo-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nishitōkyō-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ōme",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ōme-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ōta-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Setagaya-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shibuya-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shinagawa-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shinjuku-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Suginami-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sumida-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tachikawa-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Taitō-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tama-shi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tanashichō",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tokyo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Toshima-ku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Urayasu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Atsugi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Atsugi Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ayase Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Chigasaki",
+    "stateCode": "14"
+  },
+  {
+    "name": "Chigasaki Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ebina Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Fujisawa",
+    "stateCode": "14"
+  },
+  {
+    "name": "Fujisawa Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hadano",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hadano-shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hakone",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hayama",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hiratsuka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hiratsuka Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Isehara",
+    "stateCode": "14"
+  },
+  {
+    "name": "Isehara Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kamakura",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kamakura Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kawasaki",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kawasaki-shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Minamiashigara",
+    "stateCode": "14"
+  },
+  {
+    "name": "Minamiashigara Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Minamirinkan",
+    "stateCode": "14"
+  },
+  {
+    "name": "Miura",
+    "stateCode": "14"
+  },
+  {
+    "name": "Miura Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ninomiya",
+    "stateCode": "14"
+  },
+  {
+    "name": "Odawara",
+    "stateCode": "14"
+  },
+  {
+    "name": "Odawara-shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ōiso",
+    "stateCode": "14"
+  },
+  {
+    "name": "Sagamihara-shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yamakita",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yamato-shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yokohama",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yokohama Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yokosuka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yokosuka Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yugawara",
+    "stateCode": "14"
+  },
+  {
+    "name": "Zama",
+    "stateCode": "14"
+  },
+  {
+    "name": "Zama Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Zushi Shi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Agano Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Arai",
+    "stateCode": "15"
+  },
+  {
+    "name": "Gosen",
+    "stateCode": "15"
+  },
+  {
+    "name": "Gosen Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Itoigawa",
+    "stateCode": "15"
+  },
+  {
+    "name": "Itoigawa Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Jōetsu",
+    "stateCode": "15"
+  },
+  {
+    "name": "Jōetsu Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kameda-honchō",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kamo",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kamo Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kashiwazaki",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kashiwazaki Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Maki",
+    "stateCode": "15"
+  },
+  {
+    "name": "Minamiuonuma Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Mitsuke",
+    "stateCode": "15"
+  },
+  {
+    "name": "Mitsuke Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Muikamachi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Murakami Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Muramatsu",
+    "stateCode": "15"
+  },
+  {
+    "name": "Myoko-shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Nagaoka",
+    "stateCode": "15"
+  },
+  {
+    "name": "Nagaoka Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Niigata",
+    "stateCode": "15"
+  },
+  {
+    "name": "Niigata Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Niitsu-honchō",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ojiya",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ojiya-shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ryōtsu-minato",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sado Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sanjō Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Shibata",
+    "stateCode": "15"
+  },
+  {
+    "name": "Shibata Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Shiozawa",
+    "stateCode": "15"
+  },
+  {
+    "name": "Shirone",
+    "stateCode": "15"
+  },
+  {
+    "name": "Suibara",
+    "stateCode": "15"
+  },
+  {
+    "name": "Tainai",
+    "stateCode": "15"
+  },
+  {
+    "name": "Tainai Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Tochio-honchō",
+    "stateCode": "15"
+  },
+  {
+    "name": "Tōkamachi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Tōkamachi-shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Tsubame",
+    "stateCode": "15"
+  },
+  {
+    "name": "Tsubame Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Uonuma",
+    "stateCode": "15"
+  },
+  {
+    "name": "Uonuma Shi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Yoshida-kasugachō",
+    "stateCode": "15"
+  },
+  {
+    "name": "Fukumitsu",
+    "stateCode": "16"
+  },
+  {
+    "name": "Himi Shi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Himimachi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Imizu Shi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kamiichi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kurobe-shi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Namerikawa",
+    "stateCode": "16"
+  },
+  {
+    "name": "Namerikawa-shi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Nanto Shi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Nanto-shi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Nishishinminato",
+    "stateCode": "16"
+  },
+  {
+    "name": "Nyūzen",
+    "stateCode": "16"
+  },
+  {
+    "name": "Oyabe",
+    "stateCode": "16"
+  },
+  {
+    "name": "Oyabe Shi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Takaoka",
+    "stateCode": "16"
+  },
+  {
+    "name": "Takaoka Shi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Tonami Shi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Toyama Shi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Uozu",
+    "stateCode": "16"
+  },
+  {
+    "name": "Uozu Shi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Yatsuomachi-higashikumisaka",
+    "stateCode": "16"
+  },
+  {
+    "name": "Hakui",
+    "stateCode": "17"
+  },
+  {
+    "name": "Hakui Shi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Hakusan Shi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kaga Shi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kahoku Shi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kanazawa",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kanazawa-shi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Komatsu",
+    "stateCode": "17"
+  },
+  {
+    "name": "Matsutō",
+    "stateCode": "17"
+  },
+  {
+    "name": "Nanao Shi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Nomi Shi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Nonoichi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Nonoichi-shi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Suzu",
+    "stateCode": "17"
+  },
+  {
+    "name": "Suzu Shi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Tsubata",
+    "stateCode": "17"
+  },
+  {
+    "name": "Tsurugi-asahimachi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Wajima Shi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Asahi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Awara-shi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Echizen-shi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Fukui-shi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Katsuyama",
+    "stateCode": "18"
+  },
+  {
+    "name": "Katsuyama Shi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Maruoka",
+    "stateCode": "18"
+  },
+  {
+    "name": "Mikuni",
+    "stateCode": "18"
+  },
+  {
+    "name": "Obama",
+    "stateCode": "18"
+  },
+  {
+    "name": "Obama-shi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ōi-gun",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ono",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ōno-shi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sabae",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sabae-shi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sakai-shi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Takefu",
+    "stateCode": "18"
+  },
+  {
+    "name": "Tsuruga",
+    "stateCode": "18"
+  },
+  {
+    "name": "Tsuruga-shi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Chūō-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Enzan",
+    "stateCode": "19"
+  },
+  {
+    "name": "Fuefuki-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Fuji-yoshida Shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Fujikawaguchiko",
+    "stateCode": "19"
+  },
+  {
+    "name": "Fujiyoshida",
+    "stateCode": "19"
+  },
+  {
+    "name": "Hokuto",
+    "stateCode": "19"
+  },
+  {
+    "name": "Hokuto-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Isawa",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kai-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kōfu",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kōfu-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kōshū-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Minami Alps-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Nirasaki",
+    "stateCode": "19"
+  },
+  {
+    "name": "Nirasaki-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Ōtsuki",
+    "stateCode": "19"
+  },
+  {
+    "name": "Ōtsuki-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Ryūō",
+    "stateCode": "19"
+  },
+  {
+    "name": "Tsuru-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Uenohara",
+    "stateCode": "19"
+  },
+  {
+    "name": "Uenohara-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Yamanashi-shi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Azumino-Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Chikuma Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Chino",
+    "stateCode": "20"
+  },
+  {
+    "name": "Chino Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Hakuba",
+    "stateCode": "20"
+  },
+  {
+    "name": "Hotaka",
+    "stateCode": "20"
+  },
+  {
+    "name": "Iida",
+    "stateCode": "20"
+  },
+  {
+    "name": "Iida-shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Iiyama",
+    "stateCode": "20"
+  },
+  {
+    "name": "Iiyama Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ina",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ina-shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Kamimaruko",
+    "stateCode": "20"
+  },
+  {
+    "name": "Komagane",
+    "stateCode": "20"
+  },
+  {
+    "name": "Komagane-shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Komoro",
+    "stateCode": "20"
+  },
+  {
+    "name": "Komoro Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Matsumoto",
+    "stateCode": "20"
+  },
+  {
+    "name": "Matsumoto Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Nagano",
+    "stateCode": "20"
+  },
+  {
+    "name": "Nagano Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Nakano Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Okaya",
+    "stateCode": "20"
+  },
+  {
+    "name": "Okaya Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ōmachi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ōmachi-shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Saku",
+    "stateCode": "20"
+  },
+  {
+    "name": "Saku Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Shiojiri",
+    "stateCode": "20"
+  },
+  {
+    "name": "Shiojiri-shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Suwa",
+    "stateCode": "20"
+  },
+  {
+    "name": "Suwa Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Suzaka",
+    "stateCode": "20"
+  },
+  {
+    "name": "Suzaka-shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Tatsuno",
+    "stateCode": "20"
+  },
+  {
+    "name": "Tōmi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Tōmi Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Toyoshina",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ueda",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ueda Shi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ena-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Gero",
+    "stateCode": "21"
+  },
+  {
+    "name": "Gero-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Gifu-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Gōdo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Gujō",
+    "stateCode": "21"
+  },
+  {
+    "name": "Gujō-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Hashima",
+    "stateCode": "21"
+  },
+  {
+    "name": "Hashima-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Hida",
+    "stateCode": "21"
+  },
+  {
+    "name": "Hida Shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kaizu-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kakamigahara-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kani-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kasamatsuchō",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mino",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mino-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Minokamo",
+    "stateCode": "21"
+  },
+  {
+    "name": "Minokamo-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mitake",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mizuho-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mizunami",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mizunami-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Motosu-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Nakatsugawa",
+    "stateCode": "21"
+  },
+  {
+    "name": "Nakatsugawa-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Ōgaki-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Seki-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Tajimi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Tajimi-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Takayama Shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Tarui",
+    "stateCode": "21"
+  },
+  {
+    "name": "Toki",
+    "stateCode": "21"
+  },
+  {
+    "name": "Toki-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Yamagata-shi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Atami",
+    "stateCode": "22"
+  },
+  {
+    "name": "Atami-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Fuji Shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Fujieda Shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Fujinomiya",
+    "stateCode": "22"
+  },
+  {
+    "name": "Fujinomiya Shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Fukuroi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Fukuroi-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Gotenba Shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Hamakita",
+    "stateCode": "22"
+  },
+  {
+    "name": "Hamamatsu",
+    "stateCode": "22"
+  },
+  {
+    "name": "Hamamatsu-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Heda",
+    "stateCode": "22"
+  },
+  {
+    "name": "Itō",
+    "stateCode": "22"
+  },
+  {
+    "name": "Itō Shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Iwata",
+    "stateCode": "22"
+  },
+  {
+    "name": "Iwata-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Izu",
+    "stateCode": "22"
+  },
+  {
+    "name": "Izu-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Izunokuni-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kakegawa",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kakegawa Shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kanaya",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kikugawa-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kosai",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kosai-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Makinohara Shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Mishima",
+    "stateCode": "22"
+  },
+  {
+    "name": "Mishima Shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Mori",
+    "stateCode": "22"
+  },
+  {
+    "name": "Numazu-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Omaezaki-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Ōyama",
+    "stateCode": "22"
+  },
+  {
+    "name": "Sagara",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shimada",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shimada-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shimoda",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shimoda-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shizuoka",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shizuoka-shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Susono",
+    "stateCode": "22"
+  },
+  {
+    "name": "Susono Shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Yaizu",
+    "stateCode": "22"
+  },
+  {
+    "name": "Yaizu Shi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Aisai-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ama-gun",
+    "stateCode": "23"
+  },
+  {
+    "name": "Anjō-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Chiryū",
+    "stateCode": "23"
+  },
+  {
+    "name": "Chiryū-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Chita",
+    "stateCode": "23"
+  },
+  {
+    "name": "Chita-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Gamagōri",
+    "stateCode": "23"
+  },
+  {
+    "name": "Gamagōri-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Handa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Handa-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Hekinan",
+    "stateCode": "23"
+  },
+  {
+    "name": "Hekinan-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ichinomiya",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ichinomiya-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Inazawa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Inazawa-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Inuyama",
+    "stateCode": "23"
+  },
+  {
+    "name": "Inuyama-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ishiki",
+    "stateCode": "23"
+  },
+  {
+    "name": "Iwakura",
+    "stateCode": "23"
+  },
+  {
+    "name": "Iwakura-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kanie",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kariya",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kariya-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kasugai",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kasugai-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kitanagoya",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kitanagoya-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kiyosu-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Komaki",
+    "stateCode": "23"
+  },
+  {
+    "name": "Komaki-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kōnan",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kōnan-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kozakai-chō",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kuroda",
+    "stateCode": "23"
+  },
+  {
+    "name": "Miyoshi-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Nagakute-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Nagoya",
+    "stateCode": "23"
+  },
+  {
+    "name": "Nishio",
+    "stateCode": "23"
+  },
+  {
+    "name": "Nishio-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Nisshin-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ōbu",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ōbu-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Okazaki-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Owariasahi-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Seto",
+    "stateCode": "23"
+  },
+  {
+    "name": "Seto-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shinshiro",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shinshiro-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Sobue",
+    "stateCode": "23"
+  },
+  {
+    "name": "Tahara",
+    "stateCode": "23"
+  },
+  {
+    "name": "Tahara-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Takahama",
+    "stateCode": "23"
+  },
+  {
+    "name": "Takahama-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Taketoyo",
+    "stateCode": "23"
+  },
+  {
+    "name": "Tōkai-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Tokoname",
+    "stateCode": "23"
+  },
+  {
+    "name": "Tokoname-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Toyoake",
+    "stateCode": "23"
+  },
+  {
+    "name": "Toyoake-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Toyohama",
+    "stateCode": "23"
+  },
+  {
+    "name": "Toyohashi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Toyohashi-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Toyokawa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Toyokawa-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Toyota-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Tsushima",
+    "stateCode": "23"
+  },
+  {
+    "name": "Tsushima-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Yatomi-shi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Hisai-motomachi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Iga-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Inabe",
+    "stateCode": "24"
+  },
+  {
+    "name": "Inabe-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Ise",
+    "stateCode": "24"
+  },
+  {
+    "name": "Ise-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kameyama",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kameyama Shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kawage",
+    "stateCode": "24"
+  },
+  {
+    "name": "Komono",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kumano",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kumano-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kuwana",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kuwana-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Matsuzaka-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Nabari",
+    "stateCode": "24"
+  },
+  {
+    "name": "Nabari-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Owase",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shima",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shima-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Suzuka",
+    "stateCode": "24"
+  },
+  {
+    "name": "Suzuka-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Toba",
+    "stateCode": "24"
+  },
+  {
+    "name": "Toba-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Tsu",
+    "stateCode": "24"
+  },
+  {
+    "name": "Tsu-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Ueno-ebisumachi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Yokkaichi-shi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Higashiōmi-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Hikone",
+    "stateCode": "25"
+  },
+  {
+    "name": "Hikone-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Hino",
+    "stateCode": "25"
+  },
+  {
+    "name": "Kitahama",
+    "stateCode": "25"
+  },
+  {
+    "name": "Kōka-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Konan-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Kusatsu",
+    "stateCode": "25"
+  },
+  {
+    "name": "Kusatsu-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Maibara",
+    "stateCode": "25"
+  },
+  {
+    "name": "Maibara-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Minakuchichō-matoba",
+    "stateCode": "25"
+  },
+  {
+    "name": "Moriyama",
+    "stateCode": "25"
+  },
+  {
+    "name": "Moriyama-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Nagahama",
+    "stateCode": "25"
+  },
+  {
+    "name": "Nagahama-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Ōmihachiman",
+    "stateCode": "25"
+  },
+  {
+    "name": "Ōmihachiman-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Ōtsu-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Rittō-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Takashima",
+    "stateCode": "25"
+  },
+  {
+    "name": "Takashima-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Yasu-shi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Youkaichi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Arashiyama",
+    "stateCode": "26"
+  },
+  {
+    "name": "Ayabe",
+    "stateCode": "26"
+  },
+  {
+    "name": "Ayabe-shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Fukuchiyama-shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Jōyō Shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kameoka",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kameoka-shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kamigyō-ku",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kizugawa-shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kyōtanabe Shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kyōtango-shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kyoto",
+    "stateCode": "26"
+  },
+  {
+    "name": "Maizuru",
+    "stateCode": "26"
+  },
+  {
+    "name": "Maizuru-shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Miyazu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Miyazu-shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Mukō Shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Nagaokakyō Shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Nantan-shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Tanabe",
+    "stateCode": "26"
+  },
+  {
+    "name": "Uji",
+    "stateCode": "26"
+  },
+  {
+    "name": "Uji Shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Yawata",
+    "stateCode": "26"
+  },
+  {
+    "name": "Yawata Shi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Daitō Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Daitōchō",
+    "stateCode": "27"
+  },
+  {
+    "name": "Fujiidera-shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Habikino-shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Hannan",
+    "stateCode": "27"
+  },
+  {
+    "name": "Hannan Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Higashiōsaka Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Hirakata",
+    "stateCode": "27"
+  },
+  {
+    "name": "Hirakata Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Ibaraki",
+    "stateCode": "27"
+  },
+  {
+    "name": "Ibaraki Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Ikeda",
+    "stateCode": "27"
+  },
+  {
+    "name": "Ikeda Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Izumi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Izumi Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Izumiōtsu",
+    "stateCode": "27"
+  },
+  {
+    "name": "Izumiōtsu Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Izumisano",
+    "stateCode": "27"
+  },
+  {
+    "name": "Izumisano Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kadoma",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kadoma Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kaizuka",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kaizuka Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kashihara",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kashiwara-shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Katano Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kawachi-nagano Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kishiwada",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kishiwada Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Matsubara",
+    "stateCode": "27"
+  },
+  {
+    "name": "Matsubara-shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Mino",
+    "stateCode": "27"
+  },
+  {
+    "name": "Minoo Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Mishima-gun",
+    "stateCode": "27"
+  },
+  {
+    "name": "Moriguchi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Neyagawa",
+    "stateCode": "27"
+  },
+  {
+    "name": "Neyagawa Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Osaka",
+    "stateCode": "27"
+  },
+  {
+    "name": "Ōsaka-sayama Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Sakai",
+    "stateCode": "27"
+  },
+  {
+    "name": "Sakai Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Sennan Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Settsu Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shijonawate Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Suita",
+    "stateCode": "27"
+  },
+  {
+    "name": "Suita Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Tajiri",
+    "stateCode": "27"
+  },
+  {
+    "name": "Takaishi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Takaishi Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Takatsuki",
+    "stateCode": "27"
+  },
+  {
+    "name": "Takatsuki Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Tondabayashi Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Tondabayashichō",
+    "stateCode": "27"
+  },
+  {
+    "name": "Toyonaka",
+    "stateCode": "27"
+  },
+  {
+    "name": "Toyonaka Shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Yao",
+    "stateCode": "27"
+  },
+  {
+    "name": "Yao-shi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Aioi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Aioi Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Akashi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Akashi Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Amagasaki Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Asago-shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Ashiya",
+    "stateCode": "28"
+  },
+  {
+    "name": "Ashiya Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Awaji Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Fukura",
+    "stateCode": "28"
+  },
+  {
+    "name": "Himeji",
+    "stateCode": "28"
+  },
+  {
+    "name": "Himeji Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Itami",
+    "stateCode": "28"
+  },
+  {
+    "name": "Itami Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Kakogawa Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Kakogawachō-honmachi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Kariya",
+    "stateCode": "28"
+  },
+  {
+    "name": "Kasai Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Katō Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Kawanishi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Kawanishi Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Kobe",
+    "stateCode": "28"
+  },
+  {
+    "name": "Miki",
+    "stateCode": "28"
+  },
+  {
+    "name": "Miki Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Minamiawaji Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Nishinomiya Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Nishinomiya-hama",
+    "stateCode": "28"
+  },
+  {
+    "name": "Nishiwaki",
+    "stateCode": "28"
+  },
+  {
+    "name": "Nishiwaki-shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Ono",
+    "stateCode": "28"
+  },
+  {
+    "name": "Ono Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Sanda Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Sandachō",
+    "stateCode": "28"
+  },
+  {
+    "name": "Sasayama",
+    "stateCode": "28"
+  },
+  {
+    "name": "Sasayama-shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Shirahamachō-usazakiminami",
+    "stateCode": "28"
+  },
+  {
+    "name": "Shisō-shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Sumoto",
+    "stateCode": "28"
+  },
+  {
+    "name": "Sumoto Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Taka-gun",
+    "stateCode": "28"
+  },
+  {
+    "name": "Takarazuka",
+    "stateCode": "28"
+  },
+  {
+    "name": "Takarazuka Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Takasago Shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Tanba-shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Tatsuno-shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Tatsunochō-tominaga",
+    "stateCode": "28"
+  },
+  {
+    "name": "Toyooka",
+    "stateCode": "28"
+  },
+  {
+    "name": "Toyooka-shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Yabu",
+    "stateCode": "28"
+  },
+  {
+    "name": "Yabu-shi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Yamazakichō-nakabirose",
+    "stateCode": "28"
+  },
+  {
+    "name": "Yashiro",
+    "stateCode": "28"
+  },
+  {
+    "name": "Yonedacho Sendo",
+    "stateCode": "28"
+  },
+  {
+    "name": "Gojō",
+    "stateCode": "29"
+  },
+  {
+    "name": "Gojō-shi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Gose",
+    "stateCode": "29"
+  },
+  {
+    "name": "Haibara-akanedai",
+    "stateCode": "29"
+  },
+  {
+    "name": "Hōryūji",
+    "stateCode": "29"
+  },
+  {
+    "name": "Ikoma",
+    "stateCode": "29"
+  },
+  {
+    "name": "Ikoma-shi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Kashiba-shi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Kashihara-shi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Katsuragi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Katsuragi Shi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Nara-shi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Sakurai",
+    "stateCode": "29"
+  },
+  {
+    "name": "Sakurai-shi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Tawaramoto",
+    "stateCode": "29"
+  },
+  {
+    "name": "Tenri",
+    "stateCode": "29"
+  },
+  {
+    "name": "Tenri-shi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Uda Shi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Yamatokōriyama-shi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Yamatotakada-shi",
+    "stateCode": "29"
+  },
+  {
+    "name": "Yoshino-chō",
+    "stateCode": "29"
+  },
+  {
+    "name": "Arida Shi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Gobō",
+    "stateCode": "30"
+  },
+  {
+    "name": "Hashimoto",
+    "stateCode": "30"
+  },
+  {
+    "name": "Hashimoto Shi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Iwade",
+    "stateCode": "30"
+  },
+  {
+    "name": "Iwade Shi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Kainan",
+    "stateCode": "30"
+  },
+  {
+    "name": "Kainan Shi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Kinokawa Shi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Kōya",
+    "stateCode": "30"
+  },
+  {
+    "name": "Minato",
+    "stateCode": "30"
+  },
+  {
+    "name": "Shingū",
+    "stateCode": "30"
+  },
+  {
+    "name": "Shingū-shi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Tanabe-shi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Wakayama",
+    "stateCode": "30"
+  },
+  {
+    "name": "Wakayama Shi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Kurayoshi-shi",
+    "stateCode": "31"
+  },
+  {
+    "name": "Sakaiminato",
+    "stateCode": "31"
+  },
+  {
+    "name": "Sakaiminato Shi",
+    "stateCode": "31"
+  },
+  {
+    "name": "Tottori-shi",
+    "stateCode": "31"
+  },
+  {
+    "name": "Yonago Shi",
+    "stateCode": "31"
+  },
+  {
+    "name": "Gōtsu Shi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Gōtsuchō",
+    "stateCode": "32"
+  },
+  {
+    "name": "Hamada",
+    "stateCode": "32"
+  },
+  {
+    "name": "Hamada Shi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Hiratachō",
+    "stateCode": "32"
+  },
+  {
+    "name": "Izumo",
+    "stateCode": "32"
+  },
+  {
+    "name": "Izumo Shi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Masuda",
+    "stateCode": "32"
+  },
+  {
+    "name": "Masuda Shi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Matsue",
+    "stateCode": "32"
+  },
+  {
+    "name": "Matsue Shi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Ōda Shi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Ōdachō-ōda",
+    "stateCode": "32"
+  },
+  {
+    "name": "Unnan Shi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Yasugi Shi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Yasugichō",
+    "stateCode": "32"
+  },
+  {
+    "name": "Akaiwa Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Asakuchi Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Bizen Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Ibara",
+    "stateCode": "33"
+  },
+  {
+    "name": "Ibara Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Kamogatachō-kamogata",
+    "stateCode": "33"
+  },
+  {
+    "name": "Kasaoka",
+    "stateCode": "33"
+  },
+  {
+    "name": "Kasaoka Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Kurashiki",
+    "stateCode": "33"
+  },
+  {
+    "name": "Kurashiki Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Maniwa-shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Mimasaka-shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Niimi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Niimi Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Okayama",
+    "stateCode": "33"
+  },
+  {
+    "name": "Okayama Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Setouchi Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Sōja",
+    "stateCode": "33"
+  },
+  {
+    "name": "Sōja Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Takahashi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Takahashi Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Tamano",
+    "stateCode": "33"
+  },
+  {
+    "name": "Tamano Shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Tsuyama",
+    "stateCode": "33"
+  },
+  {
+    "name": "Tsuyama-shi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Aki-takata Shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Etajima-shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Fuchū-shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Fuchūchō",
+    "stateCode": "34"
+  },
+  {
+    "name": "Fukuyama",
+    "stateCode": "34"
+  },
+  {
+    "name": "Fukuyama Shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Hatsukaichi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Hatsukaichi-shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Higashihiroshima Shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Hiroshima",
+    "stateCode": "34"
+  },
+  {
+    "name": "Hiroshima-shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Innoshima",
+    "stateCode": "34"
+  },
+  {
+    "name": "Kannabechō-yahiro",
+    "stateCode": "34"
+  },
+  {
+    "name": "Kure",
+    "stateCode": "34"
+  },
+  {
+    "name": "Kure-shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Mihara",
+    "stateCode": "34"
+  },
+  {
+    "name": "Mihara Shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Miyajima",
+    "stateCode": "34"
+  },
+  {
+    "name": "Miyoshi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Miyoshi Shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Ōno-hara",
+    "stateCode": "34"
+  },
+  {
+    "name": "Onomichi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Onomichi-shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Ōtake",
+    "stateCode": "34"
+  },
+  {
+    "name": "Ōtake-shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Shin’ichi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Shōbara",
+    "stateCode": "34"
+  },
+  {
+    "name": "Shōbara-shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Takehara",
+    "stateCode": "34"
+  },
+  {
+    "name": "Takehara-shi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Hagi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Hagi Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Hikari",
+    "stateCode": "35"
+  },
+  {
+    "name": "Hikari Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Hōfu",
+    "stateCode": "35"
+  },
+  {
+    "name": "Hofu Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Iwakuni Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Kudamatsu",
+    "stateCode": "35"
+  },
+  {
+    "name": "Kudamatsu Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Mine Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Nagato",
+    "stateCode": "35"
+  },
+  {
+    "name": "Nagato Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Ogōri-shimogō",
+    "stateCode": "35"
+  },
+  {
+    "name": "Onoda",
+    "stateCode": "35"
+  },
+  {
+    "name": "Sanyōonoda Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Shimonoseki Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Shūnan Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Tokuyama",
+    "stateCode": "35"
+  },
+  {
+    "name": "Ube",
+    "stateCode": "35"
+  },
+  {
+    "name": "Yamaguchi Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Yanai Shi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Anan Shi",
+    "stateCode": "36"
+  },
+  {
+    "name": "Awa-shi",
+    "stateCode": "36"
+  },
+  {
+    "name": "Ikedachō",
+    "stateCode": "36"
+  },
+  {
+    "name": "Ishii",
+    "stateCode": "36"
+  },
+  {
+    "name": "Kamojimachō-jōgejima",
+    "stateCode": "36"
+  },
+  {
+    "name": "Katsuura Gun",
+    "stateCode": "36"
+  },
+  {
+    "name": "Komatsushima Shi",
+    "stateCode": "36"
+  },
+  {
+    "name": "Komatsushimachō",
+    "stateCode": "36"
+  },
+  {
+    "name": "Mima Shi",
+    "stateCode": "36"
+  },
+  {
+    "name": "Miyoshi Shi",
+    "stateCode": "36"
+  },
+  {
+    "name": "Miyoshi-gun",
+    "stateCode": "36"
+  },
+  {
+    "name": "Naruto-shi",
+    "stateCode": "36"
+  },
+  {
+    "name": "Narutochō-mitsuishi",
+    "stateCode": "36"
+  },
+  {
+    "name": "Tokushima",
+    "stateCode": "36"
+  },
+  {
+    "name": "Tokushima Shi",
+    "stateCode": "36"
+  },
+  {
+    "name": "Wakimachi",
+    "stateCode": "36"
+  },
+  {
+    "name": "Yoshinogawa Shi",
+    "stateCode": "36"
+  },
+  {
+    "name": "Higashikagawa Shi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Kan’onji Shi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Kan’onjichō",
+    "stateCode": "37"
+  },
+  {
+    "name": "Marugame",
+    "stateCode": "37"
+  },
+  {
+    "name": "Marugame Shi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Mitoyo Shi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Sakaide Shi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Sakaidechō",
+    "stateCode": "37"
+  },
+  {
+    "name": "Sanuki-shi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Shido",
+    "stateCode": "37"
+  },
+  {
+    "name": "Tadotsu",
+    "stateCode": "37"
+  },
+  {
+    "name": "Takamatsu",
+    "stateCode": "37"
+  },
+  {
+    "name": "Takamatsu Shi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Tonoshō",
+    "stateCode": "37"
+  },
+  {
+    "name": "Zentsūji Shi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Hōjō",
+    "stateCode": "38"
+  },
+  {
+    "name": "Imabari-shi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Iyo",
+    "stateCode": "38"
+  },
+  {
+    "name": "Iyo-shi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Kawanoechō",
+    "stateCode": "38"
+  },
+  {
+    "name": "Kihoku-chō",
+    "stateCode": "38"
+  },
+  {
+    "name": "Masaki-chō",
+    "stateCode": "38"
+  },
+  {
+    "name": "Matsuyama-shi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Niihama",
+    "stateCode": "38"
+  },
+  {
+    "name": "Niihama-shi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Ōzu",
+    "stateCode": "38"
+  },
+  {
+    "name": "Ōzu-shi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Saijō",
+    "stateCode": "38"
+  },
+  {
+    "name": "Saijō-shi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Seiyo-shi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Shikoku-chūō Shi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Tōon-shi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Uwajima",
+    "stateCode": "38"
+  },
+  {
+    "name": "Uwajima-shi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Yawatahama-shi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Achi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Agematsu",
+    "stateCode": "39"
+  },
+  {
+    "name": "Aki",
+    "stateCode": "39"
+  },
+  {
+    "name": "Anan",
+    "stateCode": "39"
+  },
+  {
+    "name": "Aoki",
+    "stateCode": "39"
+  },
+  {
+    "name": "Asahi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Azumino",
+    "stateCode": "39"
+  },
+  {
+    "name": "Chikuhoku",
+    "stateCode": "39"
+  },
+  {
+    "name": "Chikuma",
+    "stateCode": "39"
+  },
+  {
+    "name": "Chino",
+    "stateCode": "39"
+  },
+  {
+    "name": "Fujimi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Geisei",
+    "stateCode": "39"
+  },
+  {
+    "name": "Hakuba",
+    "stateCode": "39"
+  },
+  {
+    "name": "Hara",
+    "stateCode": "39"
+  },
+  {
+    "name": "Hidaka",
+    "stateCode": "39"
+  },
+  {
+    "name": "Hiraya",
+    "stateCode": "39"
+  },
+  {
+    "name": "Iida",
+    "stateCode": "39"
+  },
+  {
+    "name": "Iijima",
+    "stateCode": "39"
+  },
+  {
+    "name": "Iiyama",
+    "stateCode": "39"
+  },
+  {
+    "name": "Iizuna",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ikeda",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ikusaka",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ina",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ino",
+    "stateCode": "39"
+  },
+  {
+    "name": "Karuizawa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Kawakami",
+    "stateCode": "39"
+  },
+  {
+    "name": "Kijimadaira",
+    "stateCode": "39"
+  },
+  {
+    "name": "Kiso",
+    "stateCode": "39"
+  },
+  {
+    "name": "Kitaaiki",
+    "stateCode": "39"
+  },
+  {
+    "name": "Kitagawa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Kōchi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Komoro",
+    "stateCode": "39"
+  },
+  {
+    "name": "Kōnan",
+    "stateCode": "39"
+  },
+  {
+    "name": "Kuroshio",
+    "stateCode": "39"
+  },
+  {
+    "name": "Matsukawa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Matsumoto",
+    "stateCode": "39"
+  },
+  {
+    "name": "Mihara",
+    "stateCode": "39"
+  },
+  {
+    "name": "Minamiaiki",
+    "stateCode": "39"
+  },
+  {
+    "name": "Minamimaki",
+    "stateCode": "39"
+  },
+  {
+    "name": "Minamiminowa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Minowa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Mitsushima",
+    "stateCode": "39"
+  },
+  {
+    "name": "Miyada",
+    "stateCode": "39"
+  },
+  {
+    "name": "Miyota",
+    "stateCode": "39"
+  },
+  {
+    "name": "Motoyama",
+    "stateCode": "39"
+  },
+  {
+    "name": "Muroto",
+    "stateCode": "39"
+  },
+  {
+    "name": "Nagano",
+    "stateCode": "39"
+  },
+  {
+    "name": "Nagawa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Nagiso",
+    "stateCode": "39"
+  },
+  {
+    "name": "Nahari",
+    "stateCode": "39"
+  },
+  {
+    "name": "Nakagawa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Nakajō",
+    "stateCode": "39"
+  },
+  {
+    "name": "Nakamura",
+    "stateCode": "39"
+  },
+  {
+    "name": "Nakano",
+    "stateCode": "39"
+  },
+  {
+    "name": "Nakatosa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Nankoku",
+    "stateCode": "39"
+  },
+  {
+    "name": "Neba",
+    "stateCode": "39"
+  },
+  {
+    "name": "Niyodogawa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Nozawaonsen",
+    "stateCode": "39"
+  },
+  {
+    "name": "Obuse",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ochi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ogawa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ōkawa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Okaya",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ōkuwa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ōmachi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Omi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ōshika",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ōtaki",
+    "stateCode": "39"
+  },
+  {
+    "name": "Otari",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ōtoyo",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ōtsuki",
+    "stateCode": "39"
+  },
+  {
+    "name": "Sakae",
+    "stateCode": "39"
+  },
+  {
+    "name": "Sakaki",
+    "stateCode": "39"
+  },
+  {
+    "name": "Sakawa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Saku",
+    "stateCode": "39"
+  },
+  {
+    "name": "Sakuho",
+    "stateCode": "39"
+  },
+  {
+    "name": "Sanada",
+    "stateCode": "39"
+  },
+  {
+    "name": "Shimanto",
+    "stateCode": "39"
+  },
+  {
+    "name": "Shimojō",
+    "stateCode": "39"
+  },
+  {
+    "name": "Shimosuwa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Shinano",
+    "stateCode": "39"
+  },
+  {
+    "name": "Shiojiri",
+    "stateCode": "39"
+  },
+  {
+    "name": "Sukumo",
+    "stateCode": "39"
+  },
+  {
+    "name": "Susaki",
+    "stateCode": "39"
+  },
+  {
+    "name": "Suwa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Suzaka",
+    "stateCode": "39"
+  },
+  {
+    "name": "Takagi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Takamori",
+    "stateCode": "39"
+  },
+  {
+    "name": "Takayama",
+    "stateCode": "39"
+  },
+  {
+    "name": "Tano",
+    "stateCode": "39"
+  },
+  {
+    "name": "Tateshina",
+    "stateCode": "39"
+  },
+  {
+    "name": "Tatsuno",
+    "stateCode": "39"
+  },
+  {
+    "name": "Togari",
+    "stateCode": "39"
+  },
+  {
+    "name": "Tōmi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Tosa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Tosashimizu",
+    "stateCode": "39"
+  },
+  {
+    "name": "Tōyō",
+    "stateCode": "39"
+  },
+  {
+    "name": "Toyooka",
+    "stateCode": "39"
+  },
+  {
+    "name": "Tsuno",
+    "stateCode": "39"
+  },
+  {
+    "name": "Ueda",
+    "stateCode": "39"
+  },
+  {
+    "name": "Umaji",
+    "stateCode": "39"
+  },
+  {
+    "name": "Urugi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Usa",
+    "stateCode": "39"
+  },
+  {
+    "name": "Yamagata",
+    "stateCode": "39"
+  },
+  {
+    "name": "Yamanouchi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Yasuda",
+    "stateCode": "39"
+  },
+  {
+    "name": "Yasuoka",
+    "stateCode": "39"
+  },
+  {
+    "name": "Yawata",
+    "stateCode": "39"
+  },
+  {
+    "name": "Yusuhara",
+    "stateCode": "39"
+  },
+  {
+    "name": "Amagi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Asakura Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Buzen",
+    "stateCode": "40"
+  },
+  {
+    "name": "Buzen-shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Chikugo Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Chikushino-shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Dazaifu-shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Fukuoka",
+    "stateCode": "40"
+  },
+  {
+    "name": "Fukuoka-shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Fukutsu Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Iizuka",
+    "stateCode": "40"
+  },
+  {
+    "name": "Iizuka Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Itoshima-shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Kama Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Kanda",
+    "stateCode": "40"
+  },
+  {
+    "name": "Kasuga Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Kawasaki",
+    "stateCode": "40"
+  },
+  {
+    "name": "Kitakyushu",
+    "stateCode": "40"
+  },
+  {
+    "name": "Koga",
+    "stateCode": "40"
+  },
+  {
+    "name": "Koga-shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Kurume",
+    "stateCode": "40"
+  },
+  {
+    "name": "Kurume Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Maebaru-chūō",
+    "stateCode": "40"
+  },
+  {
+    "name": "Miyama Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Miyata",
+    "stateCode": "40"
+  },
+  {
+    "name": "Miyawaka Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Munakata-shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Nakama",
+    "stateCode": "40"
+  },
+  {
+    "name": "Nakama Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Nishifukuma",
+    "stateCode": "40"
+  },
+  {
+    "name": "Nōgata",
+    "stateCode": "40"
+  },
+  {
+    "name": "Nōgata Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Ogōri-shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Ōkawa",
+    "stateCode": "40"
+  },
+  {
+    "name": "Ōkawa-shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Ōmuta",
+    "stateCode": "40"
+  },
+  {
+    "name": "Ōmuta Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Onga-gun",
+    "stateCode": "40"
+  },
+  {
+    "name": "Ōnojō",
+    "stateCode": "40"
+  },
+  {
+    "name": "Ōnojō Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Sasaguri",
+    "stateCode": "40"
+  },
+  {
+    "name": "Setakamachi-takayanagi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Shiida",
+    "stateCode": "40"
+  },
+  {
+    "name": "Shingū",
+    "stateCode": "40"
+  },
+  {
+    "name": "Tagawa",
+    "stateCode": "40"
+  },
+  {
+    "name": "Tagawa Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Tanushimarumachi-toyoki",
+    "stateCode": "40"
+  },
+  {
+    "name": "Tsuiki",
+    "stateCode": "40"
+  },
+  {
+    "name": "Ukiha Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Umi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Yame Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Yanagawa",
+    "stateCode": "40"
+  },
+  {
+    "name": "Yanagawa Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Yoshitomi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Yukuhashi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Yukuhashi Shi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Imari Shi",
+    "stateCode": "41"
+  },
+  {
+    "name": "Imarichō-kō",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kanzaki Shi",
+    "stateCode": "41"
+  },
+  {
+    "name": "Karatsu",
+    "stateCode": "41"
+  },
+  {
+    "name": "Karatsu Shi",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kashima",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kashima Shi",
+    "stateCode": "41"
+  },
+  {
+    "name": "Miyaki-gun",
+    "stateCode": "41"
+  },
+  {
+    "name": "Ogi-shi",
+    "stateCode": "41"
+  },
+  {
+    "name": "Saga",
+    "stateCode": "41"
+  },
+  {
+    "name": "Saga Shi",
+    "stateCode": "41"
+  },
+  {
+    "name": "Takeo Shi",
+    "stateCode": "41"
+  },
+  {
+    "name": "Takeochō-takeo",
+    "stateCode": "41"
+  },
+  {
+    "name": "Taku Shi",
+    "stateCode": "41"
+  },
+  {
+    "name": "Tosu Shi",
+    "stateCode": "41"
+  },
+  {
+    "name": "Ureshino Shi",
+    "stateCode": "41"
+  },
+  {
+    "name": "Fukuechō",
+    "stateCode": "42"
+  },
+  {
+    "name": "Gotō Shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Hirado",
+    "stateCode": "42"
+  },
+  {
+    "name": "Hirado Shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Iki Shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Isahaya",
+    "stateCode": "42"
+  },
+  {
+    "name": "Isahaya-shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Matsuura",
+    "stateCode": "42"
+  },
+  {
+    "name": "Matsuura Shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Minamishimabara-shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Nagasaki",
+    "stateCode": "42"
+  },
+  {
+    "name": "Nagasaki-shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Obita",
+    "stateCode": "42"
+  },
+  {
+    "name": "Ōmura",
+    "stateCode": "42"
+  },
+  {
+    "name": "Ōmura-shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Saikai-shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Sasebo Shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Shimabara",
+    "stateCode": "42"
+  },
+  {
+    "name": "Shimabara-shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Togitsu",
+    "stateCode": "42"
+  },
+  {
+    "name": "Tsushima Shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Unzen-shi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Amakusa Gun",
+    "stateCode": "43"
+  },
+  {
+    "name": "Amakusa Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Arao Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Aso-shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Hitoyoshi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Hitoyoshi Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Hondomachi-hondo",
+    "stateCode": "43"
+  },
+  {
+    "name": "Honmachi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kamiamakusa Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kikuchi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kikuchi Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kōshi Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kumamoto",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kumamoto Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Matsubase",
+    "stateCode": "43"
+  },
+  {
+    "name": "Minamata",
+    "stateCode": "43"
+  },
+  {
+    "name": "Minamata Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ōzu",
+    "stateCode": "43"
+  },
+  {
+    "name": "Tamana",
+    "stateCode": "43"
+  },
+  {
+    "name": "Tamana Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Uekimachi-mōno",
+    "stateCode": "43"
+  },
+  {
+    "name": "Uki Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Ushibukamachi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Uto",
+    "stateCode": "43"
+  },
+  {
+    "name": "Uto Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yamaga Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Yatsushiro Shi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Beppu",
+    "stateCode": "44"
+  },
+  {
+    "name": "Beppu Shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Bungo-ōno Shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Bungo-Takada-shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Hiji",
+    "stateCode": "44"
+  },
+  {
+    "name": "Hita",
+    "stateCode": "44"
+  },
+  {
+    "name": "Hita Shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Kitsuki",
+    "stateCode": "44"
+  },
+  {
+    "name": "Kitsuki Shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Kunisaki-shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Nakatsu",
+    "stateCode": "44"
+  },
+  {
+    "name": "Nakatsu Shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Ōita",
+    "stateCode": "44"
+  },
+  {
+    "name": "Ōita-shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Saiki",
+    "stateCode": "44"
+  },
+  {
+    "name": "Saiki-shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Takedamachi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Taketa-shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Tsukawaki",
+    "stateCode": "44"
+  },
+  {
+    "name": "Tsukumi-shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Tsukumiura",
+    "stateCode": "44"
+  },
+  {
+    "name": "Tsurusaki",
+    "stateCode": "44"
+  },
+  {
+    "name": "Usa Shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Usuki",
+    "stateCode": "44"
+  },
+  {
+    "name": "Usuki Shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Yufu-shi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Ebino-shi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Hyūga-shi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Kobayashi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Kobayashi Shi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Kushima",
+    "stateCode": "45"
+  },
+  {
+    "name": "Kushima Shi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Miyakonojō",
+    "stateCode": "45"
+  },
+  {
+    "name": "Miyakonojō Shi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Miyazaki",
+    "stateCode": "45"
+  },
+  {
+    "name": "Miyazaki-shi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Nichinan",
+    "stateCode": "45"
+  },
+  {
+    "name": "Nichinan Shi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Nobeoka",
+    "stateCode": "45"
+  },
+  {
+    "name": "Nobeoka-shi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Saito-shi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Takanabe",
+    "stateCode": "45"
+  },
+  {
+    "name": "Tsuma",
+    "stateCode": "45"
+  },
+  {
+    "name": "Aira Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Akune",
+    "stateCode": "46"
+  },
+  {
+    "name": "Akune Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Amami",
+    "stateCode": "46"
+  },
+  {
+    "name": "Amami Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Hamanoichi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Hioki",
+    "stateCode": "46"
+  },
+  {
+    "name": "Hioki Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Ibusuki",
+    "stateCode": "46"
+  },
+  {
+    "name": "Ibusuki Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Ichikikushikino Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Ijūin",
+    "stateCode": "46"
+  },
+  {
+    "name": "Isa Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Izumi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Izumi Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kagoshima",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kagoshima Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kajiki",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kanoya",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kanoya Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kaseda-shirakame",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kirishima Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kokubu-matsuki",
+    "stateCode": "46"
+  },
+  {
+    "name": "Koseda",
+    "stateCode": "46"
+  },
+  {
+    "name": "Koshima",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kurio",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kushikino",
+    "stateCode": "46"
+  },
+  {
+    "name": "Makurazaki",
+    "stateCode": "46"
+  },
+  {
+    "name": "Makurazaki Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Minamikyushu Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Minamisatsuma Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Miyanoura",
+    "stateCode": "46"
+  },
+  {
+    "name": "Nagata",
+    "stateCode": "46"
+  },
+  {
+    "name": "Naze",
+    "stateCode": "46"
+  },
+  {
+    "name": "Nishinoomote",
+    "stateCode": "46"
+  },
+  {
+    "name": "Nishinoomote Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Ōkuchi-shinohara",
+    "stateCode": "46"
+  },
+  {
+    "name": "Satsumasendai",
+    "stateCode": "46"
+  },
+  {
+    "name": "Satsumasendai Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Shibushi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Shibushi-shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Soo Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Sueyoshichō-ninokata",
+    "stateCode": "46"
+  },
+  {
+    "name": "Tarumizu",
+    "stateCode": "46"
+  },
+  {
+    "name": "Tarumizu Shi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Yudomari",
+    "stateCode": "46"
+  },
+  {
+    "name": "Chatan",
+    "stateCode": "47"
+  },
+  {
+    "name": "Ginowan Shi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Gushikawa",
+    "stateCode": "47"
+  },
+  {
+    "name": "Hirara",
+    "stateCode": "47"
+  },
+  {
+    "name": "Ishigaki",
+    "stateCode": "47"
+  },
+  {
+    "name": "Ishigaki-shi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Ishikawa",
+    "stateCode": "47"
+  },
+  {
+    "name": "Itoman",
+    "stateCode": "47"
+  },
+  {
+    "name": "Itoman Shi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Katsuren-haebaru",
+    "stateCode": "47"
+  },
+  {
+    "name": "Miyakojima Shi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Nago",
+    "stateCode": "47"
+  },
+  {
+    "name": "Nago Shi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Naha",
+    "stateCode": "47"
+  },
+  {
+    "name": "Naha Shi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Nakagami-gun",
+    "stateCode": "47"
+  },
+  {
+    "name": "Nanjō",
+    "stateCode": "47"
+  },
+  {
+    "name": "Nanjō Shi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Okinawa",
+    "stateCode": "47"
+  },
+  {
+    "name": "Okinawa Shi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Tomigusuku",
+    "stateCode": "47"
+  },
+  {
+    "name": "Tomigusuku-shi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Urasoe Shi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Uruma Shi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yonakuni",
+    "stateCode": "47"
+  }
+]

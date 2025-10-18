@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Doha",
+    "stateCode": "DA"
+  },
+  {
+    "name": "Al Ghuwayrīyah",
+    "stateCode": "KH"
+  },
+  {
+    "name": "Al Khawr",
+    "stateCode": "KH"
+  },
+  {
+    "name": "Ar Ruways",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Fuwayriţ",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Madīnat ash Shamāl",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Ar Rayyān",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Umm Bāb",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Al Jumaylīyah",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Ash Shīḩānīyah",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Dukhān",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Umm Şalāl Muḩammad",
+    "stateCode": "US"
+  },
+  {
+    "name": "Al Wakrah",
+    "stateCode": "WA"
+  },
+  {
+    "name": "Al Wukayr",
+    "stateCode": "WA"
+  },
+  {
+    "name": "Musay‘īd",
+    "stateCode": "WA"
+  }
+]

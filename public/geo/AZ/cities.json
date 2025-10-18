@@ -1,0 +1,714 @@
+[
+  {
+    "name": "Ceyranbatan",
+    "stateCode": "ABS"
+  },
+  {
+    "name": "Digah",
+    "stateCode": "ABS"
+  },
+  {
+    "name": "Gyuzdek",
+    "stateCode": "ABS"
+  },
+  {
+    "name": "Khirdalan",
+    "stateCode": "ABS"
+  },
+  {
+    "name": "Qobu",
+    "stateCode": "ABS"
+  },
+  {
+    "name": "Saray",
+    "stateCode": "ABS"
+  },
+  {
+    "name": "Aghstafa",
+    "stateCode": "AGA"
+  },
+  {
+    "name": "Saloğlu",
+    "stateCode": "AGA"
+  },
+  {
+    "name": "Vurğun",
+    "stateCode": "AGA"
+  },
+  {
+    "name": "Agdzhabedy",
+    "stateCode": "AGC"
+  },
+  {
+    "name": "Avşar",
+    "stateCode": "AGC"
+  },
+  {
+    "name": "Ağdam",
+    "stateCode": "AGM"
+  },
+  {
+    "name": "Ağdaş",
+    "stateCode": "AGS"
+  },
+  {
+    "name": "Aghsu",
+    "stateCode": "AGU"
+  },
+  {
+    "name": "Astara",
+    "stateCode": "AST"
+  },
+  {
+    "name": "Kizhaba",
+    "stateCode": "AST"
+  },
+  {
+    "name": "Amirdzhan",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Badamdar",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Bakıxanov",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Baku",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Balakhani",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Bilajari",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Bilajer",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Binagadi",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Biny Selo",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Buzovna",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Hövsan",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Khodzhi-Gasan",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Korgöz",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Lökbatan",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Mardakan",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Maştağa",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Nardaran",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Nizami Rayonu",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Pirallahı",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Puta",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Qala",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Qaraçuxur",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Qobustan",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Ramana",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Sabunçu",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Sanqaçal",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Türkan",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Yeni Suraxanı",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Zabrat",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Zyrya",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Belokany",
+    "stateCode": "BAL"
+  },
+  {
+    "name": "Qabaqçöl",
+    "stateCode": "BAL"
+  },
+  {
+    "name": "Barda",
+    "stateCode": "BAR"
+  },
+  {
+    "name": "Samuxlu",
+    "stateCode": "BAR"
+  },
+  {
+    "name": "Beylagan",
+    "stateCode": "BEY"
+  },
+  {
+    "name": "Birinci Aşıqlı",
+    "stateCode": "BEY"
+  },
+  {
+    "name": "Dünyamalılar",
+    "stateCode": "BEY"
+  },
+  {
+    "name": "Orjonikidze",
+    "stateCode": "BEY"
+  },
+  {
+    "name": "Yuxarı Aran",
+    "stateCode": "BEY"
+  },
+  {
+    "name": "Pushkino",
+    "stateCode": "BIL"
+  },
+  {
+    "name": "Jebrail",
+    "stateCode": "CAB"
+  },
+  {
+    "name": "Jalilabad",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Prishibinskoye",
+    "stateCode": "CAL"
+  },
+  {
+    "name": "Verkhniy Dashkesan",
+    "stateCode": "DAS"
+  },
+  {
+    "name": "Yukhary-Dashkesan",
+    "stateCode": "DAS"
+  },
+  {
+    "name": "Fizuli",
+    "stateCode": "FUZ"
+  },
+  {
+    "name": "Horadiz",
+    "stateCode": "FUZ"
+  },
+  {
+    "name": "Ganja",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Arıqdam",
+    "stateCode": "GAD"
+  },
+  {
+    "name": "Arıqıran",
+    "stateCode": "GAD"
+  },
+  {
+    "name": "Böyük Qaramurad",
+    "stateCode": "GAD"
+  },
+  {
+    "name": "Kyadabek",
+    "stateCode": "GAD"
+  },
+  {
+    "name": "Novosaratovka",
+    "stateCode": "GAD"
+  },
+  {
+    "name": "Goranboy",
+    "stateCode": "GOR"
+  },
+  {
+    "name": "Qızılhacılı",
+    "stateCode": "GOR"
+  },
+  {
+    "name": "Geoktschai",
+    "stateCode": "GOY"
+  },
+  {
+    "name": "Yelenendorf",
+    "stateCode": "GYG"
+  },
+  {
+    "name": "Hacıqabul",
+    "stateCode": "HAC"
+  },
+  {
+    "name": "Mughan",
+    "stateCode": "HAC"
+  },
+  {
+    "name": "Imishli",
+    "stateCode": "IMI"
+  },
+  {
+    "name": "Basqal",
+    "stateCode": "ISM"
+  },
+  {
+    "name": "İsmayıllı",
+    "stateCode": "ISM"
+  },
+  {
+    "name": "Kerbakhiar",
+    "stateCode": "KAL"
+  },
+  {
+    "name": "Vank",
+    "stateCode": "KAL"
+  },
+  {
+    "name": "Kyurdarmir",
+    "stateCode": "KUR"
+  },
+  {
+    "name": "Haftoni",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Lankaran",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Laçın",
+    "stateCode": "LAC"
+  },
+  {
+    "name": "Lerik",
+    "stateCode": "LER"
+  },
+  {
+    "name": "Boradigah",
+    "stateCode": "MAS"
+  },
+  {
+    "name": "Masally",
+    "stateCode": "MAS"
+  },
+  {
+    "name": "Mingelchaur",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Neftçala",
+    "stateCode": "NEF"
+  },
+  {
+    "name": "Severo-Vostotchnyi Bank",
+    "stateCode": "NEF"
+  },
+  {
+    "name": "Sovetabad",
+    "stateCode": "NEF"
+  },
+  {
+    "name": "Xıllı",
+    "stateCode": "NEF"
+  },
+  {
+    "name": "Cahri",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Çalxanqala",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Culfa",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Deste",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Heydarabad",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Julfa Rayon",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Nakhchivan",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Oğlanqala",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Ordubad",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Ordubad Rayon",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Qıvraq",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Şahbuz",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Sedarak",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Shahbuz Rayon",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Sharur City",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Sumbatan-diza",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Tazakend",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Yaycı",
+    "stateCode": "NX"
+  },
+  {
+    "name": "Oğuz",
+    "stateCode": "OGU"
+  },
+  {
+    "name": "Qutqashen",
+    "stateCode": "QAB"
+  },
+  {
+    "name": "Çinarlı",
+    "stateCode": "QAX"
+  },
+  {
+    "name": "Qax",
+    "stateCode": "QAX"
+  },
+  {
+    "name": "Qax İngiloy",
+    "stateCode": "QAX"
+  },
+  {
+    "name": "Qaxbaş",
+    "stateCode": "QAX"
+  },
+  {
+    "name": "Qazax",
+    "stateCode": "QAZ"
+  },
+  {
+    "name": "Hacıhüseynli",
+    "stateCode": "QBA"
+  },
+  {
+    "name": "Quba",
+    "stateCode": "QBA"
+  },
+  {
+    "name": "Qubadlı",
+    "stateCode": "QBI"
+  },
+  {
+    "name": "Qobustan",
+    "stateCode": "QOB"
+  },
+  {
+    "name": "Qusar",
+    "stateCode": "QUS"
+  },
+  {
+    "name": "Samur",
+    "stateCode": "QUS"
+  },
+  {
+    "name": "Sheki",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Sabirabad",
+    "stateCode": "SAB"
+  },
+  {
+    "name": "Baş Göynük",
+    "stateCode": "SAK"
+  },
+  {
+    "name": "Qaraçala",
+    "stateCode": "SAL"
+  },
+  {
+    "name": "Salyan",
+    "stateCode": "SAL"
+  },
+  {
+    "name": "Əhmədbəyli",
+    "stateCode": "SAT"
+  },
+  {
+    "name": "Saatlı",
+    "stateCode": "SAT"
+  },
+  {
+    "name": "Divichibazar",
+    "stateCode": "SBN"
+  },
+  {
+    "name": "Gilgilçay",
+    "stateCode": "SIY"
+  },
+  {
+    "name": "Kyzyl-Burun",
+    "stateCode": "SIY"
+  },
+  {
+    "name": "Dolyar",
+    "stateCode": "SKR"
+  },
+  {
+    "name": "Dzagam",
+    "stateCode": "SKR"
+  },
+  {
+    "name": "Qasım İsmayılov",
+    "stateCode": "SKR"
+  },
+  {
+    "name": "Shamkhor",
+    "stateCode": "SKR"
+  },
+  {
+    "name": "Corat",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Hacı Zeynalabdin",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Sumqayıt",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Shamakhi",
+    "stateCode": "SMI"
+  },
+  {
+    "name": "Qarayeri",
+    "stateCode": "SMX"
+  },
+  {
+    "name": "Qırmızı Samux",
+    "stateCode": "SMX"
+  },
+  {
+    "name": "Samux",
+    "stateCode": "SMX"
+  },
+  {
+    "name": "Şirvan",
+    "stateCode": "SR"
+  },
+  {
+    "name": "Shushi",
+    "stateCode": "SUS"
+  },
+  {
+    "name": "Martakert",
+    "stateCode": "TAR"
+  },
+  {
+    "name": "Terter",
+    "stateCode": "TAR"
+  },
+  {
+    "name": "Çatax",
+    "stateCode": "TOV"
+  },
+  {
+    "name": "Çobansığnaq",
+    "stateCode": "TOV"
+  },
+  {
+    "name": "Dondar Quşçu",
+    "stateCode": "TOV"
+  },
+  {
+    "name": "Qaraxanlı",
+    "stateCode": "TOV"
+  },
+  {
+    "name": "Tovuz",
+    "stateCode": "TOV"
+  },
+  {
+    "name": "Yanıqlı",
+    "stateCode": "TOV"
+  },
+  {
+    "name": "Ujar",
+    "stateCode": "UCA"
+  },
+  {
+    "name": "Xaçmaz",
+    "stateCode": "XAC"
+  },
+  {
+    "name": "Xudat",
+    "stateCode": "XAC"
+  },
+  {
+    "name": "Askyaran",
+    "stateCode": "XCI"
+  },
+  {
+    "name": "Xocalı",
+    "stateCode": "XCI"
+  },
+  {
+    "name": "Altıağac",
+    "stateCode": "XIZ"
+  },
+  {
+    "name": "Khyzy",
+    "stateCode": "XIZ"
+  },
+  {
+    "name": "Kilyazi",
+    "stateCode": "XIZ"
+  },
+  {
+    "name": "Şuraabad",
+    "stateCode": "XIZ"
+  },
+  {
+    "name": "Hadrut",
+    "stateCode": "XVD"
+  },
+  {
+    "name": "Novyy Karanlug",
+    "stateCode": "XVD"
+  },
+  {
+    "name": "Qırmızı Bazar",
+    "stateCode": "XVD"
+  },
+  {
+    "name": "Yardımlı",
+    "stateCode": "YAR"
+  },
+  {
+    "name": "Yevlakh",
+    "stateCode": "YE"
+  },
+  {
+    "name": "Aran",
+    "stateCode": "YEV"
+  },
+  {
+    "name": "Qaramanlı",
+    "stateCode": "YEV"
+  },
+  {
+    "name": "Mincivan",
+    "stateCode": "ZAN"
+  },
+  {
+    "name": "Zangilan",
+    "stateCode": "ZAN"
+  },
+  {
+    "name": "Aliabad",
+    "stateCode": "ZAQ"
+  },
+  {
+    "name": "Faldarlı",
+    "stateCode": "ZAQ"
+  },
+  {
+    "name": "Mamrux",
+    "stateCode": "ZAQ"
+  },
+  {
+    "name": "Qandax",
+    "stateCode": "ZAQ"
+  },
+  {
+    "name": "Zaqatala",
+    "stateCode": "ZAQ"
+  },
+  {
+    "name": "Zardob",
+    "stateCode": "ZAR"
+  }
+]

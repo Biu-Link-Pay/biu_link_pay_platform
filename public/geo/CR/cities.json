@@ -1,0 +1,638 @@
+[
+  {
+    "name": "Alajuela",
+    "stateCode": "A"
+  },
+  {
+    "name": "Atenas",
+    "stateCode": "A"
+  },
+  {
+    "name": "Bijagua",
+    "stateCode": "A"
+  },
+  {
+    "name": "Carrillos",
+    "stateCode": "A"
+  },
+  {
+    "name": "Desamparados",
+    "stateCode": "A"
+  },
+  {
+    "name": "Esquipulas",
+    "stateCode": "A"
+  },
+  {
+    "name": "Grecia",
+    "stateCode": "A"
+  },
+  {
+    "name": "Guatuso",
+    "stateCode": "A"
+  },
+  {
+    "name": "La Fortuna",
+    "stateCode": "A"
+  },
+  {
+    "name": "Los Chiles",
+    "stateCode": "A"
+  },
+  {
+    "name": "Naranjo",
+    "stateCode": "A"
+  },
+  {
+    "name": "Orotina",
+    "stateCode": "A"
+  },
+  {
+    "name": "Palmares",
+    "stateCode": "A"
+  },
+  {
+    "name": "Pital",
+    "stateCode": "A"
+  },
+  {
+    "name": "Poás",
+    "stateCode": "A"
+  },
+  {
+    "name": "Pocosol",
+    "stateCode": "A"
+  },
+  {
+    "name": "Quesada",
+    "stateCode": "A"
+  },
+  {
+    "name": "Río Segundo",
+    "stateCode": "A"
+  },
+  {
+    "name": "Sabanilla",
+    "stateCode": "A"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "A"
+  },
+  {
+    "name": "San José",
+    "stateCode": "A"
+  },
+  {
+    "name": "San Juan",
+    "stateCode": "A"
+  },
+  {
+    "name": "San Mateo",
+    "stateCode": "A"
+  },
+  {
+    "name": "San Rafael",
+    "stateCode": "A"
+  },
+  {
+    "name": "San Ramón",
+    "stateCode": "A"
+  },
+  {
+    "name": "Santiago",
+    "stateCode": "A"
+  },
+  {
+    "name": "Upala",
+    "stateCode": "A"
+  },
+  {
+    "name": "Valverde Vega",
+    "stateCode": "A"
+  },
+  {
+    "name": "Zarcero",
+    "stateCode": "A"
+  },
+  {
+    "name": "Alvarado",
+    "stateCode": "C"
+  },
+  {
+    "name": "Cartago",
+    "stateCode": "C"
+  },
+  {
+    "name": "Concepción",
+    "stateCode": "C"
+  },
+  {
+    "name": "Cot",
+    "stateCode": "C"
+  },
+  {
+    "name": "El Guarco",
+    "stateCode": "C"
+  },
+  {
+    "name": "Jiménez",
+    "stateCode": "C"
+  },
+  {
+    "name": "La Suiza",
+    "stateCode": "C"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "C"
+  },
+  {
+    "name": "Oreamuno",
+    "stateCode": "C"
+  },
+  {
+    "name": "Orosí",
+    "stateCode": "C"
+  },
+  {
+    "name": "Pacayas",
+    "stateCode": "C"
+  },
+  {
+    "name": "Paraíso",
+    "stateCode": "C"
+  },
+  {
+    "name": "Pejibaye",
+    "stateCode": "C"
+  },
+  {
+    "name": "San Diego",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tobosi",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tres Ríos",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tucurrique",
+    "stateCode": "C"
+  },
+  {
+    "name": "Turrialba",
+    "stateCode": "C"
+  },
+  {
+    "name": "Abangares",
+    "stateCode": "G"
+  },
+  {
+    "name": "Bagaces",
+    "stateCode": "G"
+  },
+  {
+    "name": "Belén",
+    "stateCode": "G"
+  },
+  {
+    "name": "Cañas",
+    "stateCode": "G"
+  },
+  {
+    "name": "Carrillo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Fortuna",
+    "stateCode": "G"
+  },
+  {
+    "name": "Hojancha",
+    "stateCode": "G"
+  },
+  {
+    "name": "Juntas",
+    "stateCode": "G"
+  },
+  {
+    "name": "La Cruz",
+    "stateCode": "G"
+  },
+  {
+    "name": "Liberia",
+    "stateCode": "G"
+  },
+  {
+    "name": "Nandayure",
+    "stateCode": "G"
+  },
+  {
+    "name": "Nicoya",
+    "stateCode": "G"
+  },
+  {
+    "name": "Sámara",
+    "stateCode": "G"
+  },
+  {
+    "name": "Santa Cruz",
+    "stateCode": "G"
+  },
+  {
+    "name": "Sardinal",
+    "stateCode": "G"
+  },
+  {
+    "name": "Tilarán",
+    "stateCode": "G"
+  },
+  {
+    "name": "Ángeles",
+    "stateCode": "H"
+  },
+  {
+    "name": "Barva",
+    "stateCode": "H"
+  },
+  {
+    "name": "Belén",
+    "stateCode": "H"
+  },
+  {
+    "name": "Flores",
+    "stateCode": "H"
+  },
+  {
+    "name": "Heredia",
+    "stateCode": "H"
+  },
+  {
+    "name": "La Asunción",
+    "stateCode": "H"
+  },
+  {
+    "name": "Llorente",
+    "stateCode": "H"
+  },
+  {
+    "name": "Mercedes",
+    "stateCode": "H"
+  },
+  {
+    "name": "San Antonio",
+    "stateCode": "H"
+  },
+  {
+    "name": "San Francisco",
+    "stateCode": "H"
+  },
+  {
+    "name": "San Isidro",
+    "stateCode": "H"
+  },
+  {
+    "name": "San Josecito",
+    "stateCode": "H"
+  },
+  {
+    "name": "San Pablo",
+    "stateCode": "H"
+  },
+  {
+    "name": "San Rafael",
+    "stateCode": "H"
+  },
+  {
+    "name": "Santa Bárbara",
+    "stateCode": "H"
+  },
+  {
+    "name": "Santo Domingo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Sarapiquí",
+    "stateCode": "H"
+  },
+  {
+    "name": "Batán",
+    "stateCode": "L"
+  },
+  {
+    "name": "Guácimo",
+    "stateCode": "L"
+  },
+  {
+    "name": "Guápiles",
+    "stateCode": "L"
+  },
+  {
+    "name": "Limón",
+    "stateCode": "L"
+  },
+  {
+    "name": "Matina",
+    "stateCode": "L"
+  },
+  {
+    "name": "Pococí",
+    "stateCode": "L"
+  },
+  {
+    "name": "Pocora",
+    "stateCode": "L"
+  },
+  {
+    "name": "Roxana",
+    "stateCode": "L"
+  },
+  {
+    "name": "Siquirres",
+    "stateCode": "L"
+  },
+  {
+    "name": "Sixaola",
+    "stateCode": "L"
+  },
+  {
+    "name": "Talamanca",
+    "stateCode": "L"
+  },
+  {
+    "name": "Buenos Aires",
+    "stateCode": "P"
+  },
+  {
+    "name": "Canoas",
+    "stateCode": "P"
+  },
+  {
+    "name": "Chacarita",
+    "stateCode": "P"
+  },
+  {
+    "name": "Ciudad Cortés",
+    "stateCode": "P"
+  },
+  {
+    "name": "Corredor",
+    "stateCode": "P"
+  },
+  {
+    "name": "Corredores",
+    "stateCode": "P"
+  },
+  {
+    "name": "Coto Brus",
+    "stateCode": "P"
+  },
+  {
+    "name": "Esparza",
+    "stateCode": "P"
+  },
+  {
+    "name": "Garabito",
+    "stateCode": "P"
+  },
+  {
+    "name": "Golfito",
+    "stateCode": "P"
+  },
+  {
+    "name": "Jacó",
+    "stateCode": "P"
+  },
+  {
+    "name": "Miramar",
+    "stateCode": "P"
+  },
+  {
+    "name": "Montes de Oro",
+    "stateCode": "P"
+  },
+  {
+    "name": "Osa",
+    "stateCode": "P"
+  },
+  {
+    "name": "Paquera",
+    "stateCode": "P"
+  },
+  {
+    "name": "Parrita",
+    "stateCode": "P"
+  },
+  {
+    "name": "Puntarenas",
+    "stateCode": "P"
+  },
+  {
+    "name": "Quepos",
+    "stateCode": "P"
+  },
+  {
+    "name": "San Vito",
+    "stateCode": "P"
+  },
+  {
+    "name": "Acosta",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Alajuelita",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Aserrí",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Calle Blancos",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Colima",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Colón",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Curridabat",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Daniel Flores",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Desamparados",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Dota",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Escazú",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Goicoechea",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Granadilla",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Guadalupe",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Ipís",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "León Cortés",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Mercedes",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Montes de Oca",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Mora",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Moravia",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Palmichal",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Patarrá",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Pérez Zeledón",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Puriscal",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Purral",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Sabanilla",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Salitral",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Salitrillos",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Felipe",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Ignacio",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Isidro",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San José",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Juan",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Juan de Dios",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Marcos",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Miguel",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Pedro",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Rafael",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Rafael Abajo",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Rafael Arriba",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Vicente",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "San Vicente de Moravia",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Santa Ana",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Santiago",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Tarrazú",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Tejar",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Tibás",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Turrubares",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Vázquez de Coronado",
+    "stateCode": "SJ"
+  }
+]

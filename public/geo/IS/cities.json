@@ -1,0 +1,298 @@
+[
+  {
+    "name": "Álftanes",
+    "stateCode": "1"
+  },
+  {
+    "name": "Garðabær",
+    "stateCode": "1"
+  },
+  {
+    "name": "Hafnarfjörður",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kjósarhreppur",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kópavogur",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mosfellsbaer",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mosfellsbær",
+    "stateCode": "1"
+  },
+  {
+    "name": "Reykjavík",
+    "stateCode": "1"
+  },
+  {
+    "name": "Seltjarnarnes",
+    "stateCode": "1"
+  },
+  {
+    "name": "Garður",
+    "stateCode": "2"
+  },
+  {
+    "name": "Grindavík",
+    "stateCode": "2"
+  },
+  {
+    "name": "Keflavík",
+    "stateCode": "2"
+  },
+  {
+    "name": "Reykjanesbær",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sandgerði",
+    "stateCode": "2"
+  },
+  {
+    "name": "Vogar",
+    "stateCode": "2"
+  },
+  {
+    "name": "Akranes",
+    "stateCode": "3"
+  },
+  {
+    "name": "Borgarbyggð",
+    "stateCode": "3"
+  },
+  {
+    "name": "Borgarnes",
+    "stateCode": "3"
+  },
+  {
+    "name": "Dalabyggð",
+    "stateCode": "3"
+  },
+  {
+    "name": "Eyja- og Miklaholtshreppur",
+    "stateCode": "3"
+  },
+  {
+    "name": "Helgafellssveit",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hvalfjarðarsveit",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ólafsvík",
+    "stateCode": "3"
+  },
+  {
+    "name": "Skorradalshreppur",
+    "stateCode": "3"
+  },
+  {
+    "name": "Snæfellsbær",
+    "stateCode": "3"
+  },
+  {
+    "name": "Stykkishólmur",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ísafjarðarbær",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ísafjörður",
+    "stateCode": "4"
+  },
+  {
+    "name": "Reykhólahreppur",
+    "stateCode": "4"
+  },
+  {
+    "name": "Strandabyggð",
+    "stateCode": "4"
+  },
+  {
+    "name": "Tálknafjarðarhreppur",
+    "stateCode": "4"
+  },
+  {
+    "name": "Akrahreppur",
+    "stateCode": "5"
+  },
+  {
+    "name": "Húnaþing Vestra",
+    "stateCode": "5"
+  },
+  {
+    "name": "Sauðárkrókur",
+    "stateCode": "5"
+  },
+  {
+    "name": "Skagabyggð",
+    "stateCode": "5"
+  },
+  {
+    "name": "Sveitarfélagið Skagafjörður",
+    "stateCode": "5"
+  },
+  {
+    "name": "Akureyri",
+    "stateCode": "6"
+  },
+  {
+    "name": "Dalvík",
+    "stateCode": "6"
+  },
+  {
+    "name": "Dalvíkurbyggð",
+    "stateCode": "6"
+  },
+  {
+    "name": "Eyjafjarðarsveit",
+    "stateCode": "6"
+  },
+  {
+    "name": "Fjallabyggð",
+    "stateCode": "6"
+  },
+  {
+    "name": "Grýtubakkahreppur",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hörgársveit",
+    "stateCode": "6"
+  },
+  {
+    "name": "Húsavík",
+    "stateCode": "6"
+  },
+  {
+    "name": "Langanesbyggð",
+    "stateCode": "6"
+  },
+  {
+    "name": "Laugar",
+    "stateCode": "6"
+  },
+  {
+    "name": "Siglufjörður",
+    "stateCode": "6"
+  },
+  {
+    "name": "Skútustaðahreppur",
+    "stateCode": "6"
+  },
+  {
+    "name": "Svalbarðsstrandarhreppur",
+    "stateCode": "6"
+  },
+  {
+    "name": "Tjörneshreppur",
+    "stateCode": "6"
+  },
+  {
+    "name": "Þingeyjarsveit",
+    "stateCode": "6"
+  },
+  {
+    "name": "Borgarfjarðarhreppur",
+    "stateCode": "7"
+  },
+  {
+    "name": "Breiðdalshreppur",
+    "stateCode": "7"
+  },
+  {
+    "name": "Egilsstaðir",
+    "stateCode": "7"
+  },
+  {
+    "name": "Eskifjörður",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fjarðabyggð",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fljótsdalshérað",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fljótsdalshreppur",
+    "stateCode": "7"
+  },
+  {
+    "name": "Höfn",
+    "stateCode": "7"
+  },
+  {
+    "name": "Neskaupstaður",
+    "stateCode": "7"
+  },
+  {
+    "name": "Reyðarfjörður",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ásahreppur",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bláskógabyggð",
+    "stateCode": "8"
+  },
+  {
+    "name": "Flóahreppur",
+    "stateCode": "8"
+  },
+  {
+    "name": "Grímsnes- og Grafningshreppur",
+    "stateCode": "8"
+  },
+  {
+    "name": "Hrunamannahreppur",
+    "stateCode": "8"
+  },
+  {
+    "name": "Hveragerði",
+    "stateCode": "8"
+  },
+  {
+    "name": "Mýrdalshreppur",
+    "stateCode": "8"
+  },
+  {
+    "name": "Selfoss",
+    "stateCode": "8"
+  },
+  {
+    "name": "Skaftárhreppur",
+    "stateCode": "8"
+  },
+  {
+    "name": "Skeiða- og Gnúpverjahreppur",
+    "stateCode": "8"
+  },
+  {
+    "name": "Vestmannaeyjabær",
+    "stateCode": "8"
+  },
+  {
+    "name": "Vestmannaeyjar",
+    "stateCode": "8"
+  },
+  {
+    "name": "Þorlákshöfn",
+    "stateCode": "8"
+  }
+]

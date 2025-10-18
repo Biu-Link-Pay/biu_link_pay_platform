@@ -1,0 +1,498 @@
+[
+  {
+    "name": "Anse Rouge",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Arrondissement de Saint-Marc",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Désarmes",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Dessalines",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Ennery",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Gonaïves",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Grande Saline",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Gros Morne",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Marmelade",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Saint-Marc",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Verrettes",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Arrondissement de Cerca La Source",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Cerca la Source",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Hinche",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Lascahobas",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mayisad",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mirebalais",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Thomassique",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Thomonde",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Anse-à-Veau",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Chambellan",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Corail",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Dame-Marie",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Jeremi",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Jérémie",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Les Abricots",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Les Irois",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Moron",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Petite Rivière de Nippes",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Acul du Nord",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Arrondissement de la Grande Rivière du Nord",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Arrondissement de Plaisance",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Arrondissement du Borgne",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Bahon",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Borgne",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Dondon",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Grande Rivière du Nord",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Lenbe",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Limonade",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Milot",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Okap",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Pignon",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Pilate",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Plaine du Nord",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Plaisance",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Port-Margot",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Quartier Morin",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Ranquitte",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Saint-Raphaël",
+    "stateCode": "ND"
+  },
+  {
+    "name": "Arrondissement de Fort Liberté",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Arrondissement du Trou du Nord",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Caracol",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Carice",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Dérac",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Ferrier",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Fort Liberté",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Montòrganize",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Ouanaminthe",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Perches",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Phaëton",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Trou du Nord",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Wanament",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Ansavo",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Baradères",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Miragoâne",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Petit Trou de Nippes",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Arcahaie",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Arrondissement de Port-de-Paix",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Arrondissement de Saint-Louis du Nord",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Arrondissement du Môle Saint-Nicolas",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Baie de Henne",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Bombardopolis",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Fond Bassin Bleu",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Jean-Rabel",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Môle Saint-Nicolas",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Petite Anse",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Port-de-Paix",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Saint-Louis du Nord",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Ti Port-de-Paix",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Anse à Galets",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Arcahaie",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Arrondissement de Croix des Bouquets",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Arrondissement de Léogâne",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Arrondissement de Port-au-Prince",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Cabaret",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Carrefour",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Cornillon",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Croix-des-Bouquets",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Delmas 73",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Fond Parisien",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Fonds Verrettes",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Grangwav",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Gressier",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Kenscoff",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Lagonav",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Léogâne",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Pétionville",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Port-au-Prince",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Thomazeau",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Tigwav",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Aquin",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Arrondissement de Port-Salut",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Arrondissement des Cayes",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Cavaillon",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Chantal",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Chardonnière",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Fond des Blancs",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Koto",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Les Anglais",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Les Cayes",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Port-à-Piment",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Roche-à-Bateau",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Saint-Louis du Sud",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tiburon",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Torbeck",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Anse-à-Pitre",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Arrondissement de Bainet",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Arrondissement de Jacmel",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Belle-Anse",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Cayes-Jacmel",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Jacmel",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Kotdefè",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Marigot",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Thiotte",
+    "stateCode": "SE"
+  }
+]

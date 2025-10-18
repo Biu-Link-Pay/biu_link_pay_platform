@@ -1,0 +1,578 @@
+[
+  {
+    "name": "Addis Ababa",
+    "stateCode": "AA"
+  },
+  {
+    "name": "Administrative Zone 2",
+    "stateCode": "AF"
+  },
+  {
+    "name": "Administrative Zone 3",
+    "stateCode": "AF"
+  },
+  {
+    "name": "Asaita",
+    "stateCode": "AF"
+  },
+  {
+    "name": "Āwash",
+    "stateCode": "AF"
+  },
+  {
+    "name": "Dubti",
+    "stateCode": "AF"
+  },
+  {
+    "name": "Gewanē",
+    "stateCode": "AF"
+  },
+  {
+    "name": "Semera",
+    "stateCode": "AF"
+  },
+  {
+    "name": "Abomsa",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Addiet Canna",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Ādīs Zemen",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Bahir Dar",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Batī",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Bichena",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Burē",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Dabat",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Debark’",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Debre Birhan",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Debre Mark’os",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Debre Sīna",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Debre Tabor",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Debre Werk’",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Dejen",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Desē",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Finote Selam",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Gondar",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Kemisē",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Kombolcha",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Lalībela",
+    "stateCode": "AM"
+  },
+  {
+    "name": "North Shewa Zone",
+    "stateCode": "AM"
+  },
+  {
+    "name": "North Wollo Zone",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Robīt",
+    "stateCode": "AM"
+  },
+  {
+    "name": "South Gondar Zone",
+    "stateCode": "AM"
+  },
+  {
+    "name": "South Wollo Zone",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Wag Hemra Zone",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Were Īlu",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Werota",
+    "stateCode": "AM"
+  },
+  {
+    "name": "Asosa",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Metekel",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Dire Dawa",
+    "stateCode": "DD"
+  },
+  {
+    "name": "Administrative Zone 1",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Gambēla",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Harar",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Ādīs ‘Alem",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Āgaro",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Arsi Zone",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Āsasa",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Āsbe Teferī",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Bedelē",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Bedēsa",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Bishoftu",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Deder",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Dembī Dolo",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Dodola",
+    "stateCode": "OR"
+  },
+  {
+    "name": "East Harerghe Zone",
+    "stateCode": "OR"
+  },
+  {
+    "name": "East Shewa Zone",
+    "stateCode": "OR"
+  },
+  {
+    "name": "East Wellega Zone",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Fichē",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Gebre Guracha",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Gēdo",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Gelemso",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Genet",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Gimbi",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Ginir",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Goba",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Gorē",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Guji Zone",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Hāgere Hiywet",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Hagere Maryam",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Hīrna",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Huruta",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Illubabor Zone",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Jimma",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Jimma Zone",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Kibre Mengist",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Kofelē",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Mēga",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Mendī",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Metahāra",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Metu",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Mojo",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Nazrēt",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Nejo",
+    "stateCode": "OR"
+  },
+  {
+    "name": "North Shewa Zone",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Sebeta",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Sendafa",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Shakiso",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Shambu",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Shashemenē",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Sirre",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Tulu Bolo",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Waliso",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Wenjī",
+    "stateCode": "OR"
+  },
+  {
+    "name": "West Harerghe Zone",
+    "stateCode": "OR"
+  },
+  {
+    "name": "West Wellega Zone",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Yabēlo",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Ziway",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Alaba Special Wereda",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Arba Minch",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Āreka",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Bako",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Bench Maji Zone",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Bodītī",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Bonga",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Butajīra",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Dīla",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Felege Neway",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Gedeo Zone",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Gīdolē",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Guraghe Zone",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Hadiya Zone",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Hāgere Selam",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Hawassa",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Hosa’ina",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Jinka",
+    "stateCode": "SN"
+  },
+  {
+    "name": "K’olīto",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Kembata Alaba Tembaro Zone",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Konso",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Leku",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Lobuni",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Mīzan Teferī",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Sheka Zone",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Sidama Zone",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Sodo",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Tippi",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Turmi",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Wendo",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Wolayita Zone",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Yem",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Yirga ‘Alem",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Afder Zone",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Degehabur Zone",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Gode Zone",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Jijiga",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Liben zone",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Shinile Zone",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Ādīgrat",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Axum",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Inda Silasē",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Korem",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Maych’ew",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Mek'ele",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Southeastern Tigray Zone",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Southern Tigray Zone",
+    "stateCode": "TI"
+  }
+]

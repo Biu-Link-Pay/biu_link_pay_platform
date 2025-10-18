@@ -1,0 +1,634 @@
+[
+  {
+    "name": "Auckland",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Mangere",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Manukau City",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Muriwai Beach",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Murrays Bay",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "North Shore",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Pakuranga",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Papakura",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Parakai",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Pukekohe East",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Red Hill",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Rosebank",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Rothesay Bay",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Takanini",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Tamaki",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Titirangi",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Waitakere",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Waiuku",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Warkworth",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Wellsford",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Wiri",
+    "stateCode": "AUK"
+  },
+  {
+    "name": "Edgecumbe",
+    "stateCode": "BOP"
+  },
+  {
+    "name": "Katikati",
+    "stateCode": "BOP"
+  },
+  {
+    "name": "Kawerau",
+    "stateCode": "BOP"
+  },
+  {
+    "name": "Maketu",
+    "stateCode": "BOP"
+  },
+  {
+    "name": "Murupara",
+    "stateCode": "BOP"
+  },
+  {
+    "name": "Opotiki",
+    "stateCode": "BOP"
+  },
+  {
+    "name": "Rotorua",
+    "stateCode": "BOP"
+  },
+  {
+    "name": "Tauranga",
+    "stateCode": "BOP"
+  },
+  {
+    "name": "Waihi Beach",
+    "stateCode": "BOP"
+  },
+  {
+    "name": "Whakatane",
+    "stateCode": "BOP"
+  },
+  {
+    "name": "Amberley",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Ashburton",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Ashburton District",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Burnham",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Christchurch",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Christchurch City",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Darfield",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Geraldine",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Kaiapoi",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Leeston",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Lincoln",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Mackenzie District",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Methven",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Oxford",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Pleasant Point",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Prebbleton",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Rakaia",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Rolleston",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Selwyn District",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Timaru",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Timaru District",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Tinwald",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Waimakariri District",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Woodend",
+    "stateCode": "CAN"
+  },
+  {
+    "name": "Waitangi",
+    "stateCode": "CIT"
+  },
+  {
+    "name": "Gisborne",
+    "stateCode": "GIS"
+  },
+  {
+    "name": "Hastings",
+    "stateCode": "HKB"
+  },
+  {
+    "name": "Napier",
+    "stateCode": "HKB"
+  },
+  {
+    "name": "Taradale",
+    "stateCode": "HKB"
+  },
+  {
+    "name": "Wairoa",
+    "stateCode": "HKB"
+  },
+  {
+    "name": "Blenheim",
+    "stateCode": "MBH"
+  },
+  {
+    "name": "Picton",
+    "stateCode": "MBH"
+  },
+  {
+    "name": "Bulls",
+    "stateCode": "MWT"
+  },
+  {
+    "name": "Foxton",
+    "stateCode": "MWT"
+  },
+  {
+    "name": "Horowhenua District",
+    "stateCode": "MWT"
+  },
+  {
+    "name": "Levin",
+    "stateCode": "MWT"
+  },
+  {
+    "name": "Manawatu District",
+    "stateCode": "MWT"
+  },
+  {
+    "name": "Palmerston North",
+    "stateCode": "MWT"
+  },
+  {
+    "name": "Waiouru",
+    "stateCode": "MWT"
+  },
+  {
+    "name": "Wanganui",
+    "stateCode": "MWT"
+  },
+  {
+    "name": "Nelson",
+    "stateCode": "NSN"
+  },
+  {
+    "name": "Ahipara",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Dargaville",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Far North District",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Kaipara District",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Kaitaia",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Kawakawa",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Kerikeri",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Maungatapere",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Moerewa",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Ngunguru",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Paihia",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Ruakaka",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Taipa",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Waimate North",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Whangarei",
+    "stateCode": "NTL"
+  },
+  {
+    "name": "Arrowtown",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Balclutha",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Clutha District",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Cromwell",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Dunedin",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Kingston",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Milton",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Oamaru",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Papatowai",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Portobello",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Queenstown",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Wanaka",
+    "stateCode": "OTA"
+  },
+  {
+    "name": "Bluff",
+    "stateCode": "STL"
+  },
+  {
+    "name": "Gore",
+    "stateCode": "STL"
+  },
+  {
+    "name": "Invercargill",
+    "stateCode": "STL"
+  },
+  {
+    "name": "Riverton",
+    "stateCode": "STL"
+  },
+  {
+    "name": "Southland District",
+    "stateCode": "STL"
+  },
+  {
+    "name": "Te Anau",
+    "stateCode": "STL"
+  },
+  {
+    "name": "Winton",
+    "stateCode": "STL"
+  },
+  {
+    "name": "Brightwater",
+    "stateCode": "TAS"
+  },
+  {
+    "name": "Mapua",
+    "stateCode": "TAS"
+  },
+  {
+    "name": "Motueka",
+    "stateCode": "TAS"
+  },
+  {
+    "name": "Richmond",
+    "stateCode": "TAS"
+  },
+  {
+    "name": "Takaka",
+    "stateCode": "TAS"
+  },
+  {
+    "name": "Wakefield",
+    "stateCode": "TAS"
+  },
+  {
+    "name": "Eltham",
+    "stateCode": "TKI"
+  },
+  {
+    "name": "Hawera",
+    "stateCode": "TKI"
+  },
+  {
+    "name": "New Plymouth",
+    "stateCode": "TKI"
+  },
+  {
+    "name": "New Plymouth District",
+    "stateCode": "TKI"
+  },
+  {
+    "name": "Opunake",
+    "stateCode": "TKI"
+  },
+  {
+    "name": "Patea",
+    "stateCode": "TKI"
+  },
+  {
+    "name": "South Taranaki District",
+    "stateCode": "TKI"
+  },
+  {
+    "name": "Waitara",
+    "stateCode": "TKI"
+  },
+  {
+    "name": "Brooklyn",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Castlepoint",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Kapiti Coast District",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Kelburn",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Khandallah",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Lower Hutt",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Masterton",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Otaki",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Paraparaumu",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Petone",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Porirua",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "South Wairarapa District",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Upper Hutt",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Waipawa",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Wellington",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Wellington City",
+    "stateCode": "WGN"
+  },
+  {
+    "name": "Cambridge",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Coromandel",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Hamilton",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Matamata",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Ngaruawahia",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Ngatea",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Otorohanga",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Paeroa",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Raglan",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "South Waikato District",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Tairua",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Taupo",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Te Kauwhata",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Thames",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Tokoroa",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Turangi",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Waihi",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Whangamata",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Whitianga",
+    "stateCode": "WKO"
+  },
+  {
+    "name": "Greymouth",
+    "stateCode": "WTC"
+  },
+  {
+    "name": "Hokitika",
+    "stateCode": "WTC"
+  },
+  {
+    "name": "Westport",
+    "stateCode": "WTC"
+  }
+]

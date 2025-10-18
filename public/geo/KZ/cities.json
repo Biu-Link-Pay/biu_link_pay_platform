@@ -1,0 +1,1042 @@
+[
+  {
+    "name": "Akkol",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Akkol’",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Aksu",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Astrakhan",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Atbasar",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Balkashino",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Bestobe",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Derzhavīnsk",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Egindiköl",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Esil",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Kokshetau",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Krasnogorskiy",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Makinsk",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Shantobe",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Shchuchinsk",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Shortandy",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Stepnogorsk",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Stepnyak",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Yermentau",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Zavodskoy",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Zhaqsy",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Zholymbet",
+    "stateCode": "AKM"
+  },
+  {
+    "name": "Aktobe",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Batamshinskiy",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Bayganin",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Embi",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Kandyagash",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Khromtau",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Martuk",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Shalqar",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Shubarkuduk",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Shubarshi",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Temir",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Yrghyz",
+    "stateCode": "AKT"
+  },
+  {
+    "name": "Almaty",
+    "stateCode": "ALA"
+  },
+  {
+    "name": "Bakanas",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Balpyk Bī",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Burunday",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Chemolgan",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Druzhba",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Esik",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Kapshagay",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Kegen",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Lepsy",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Matay",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Otegen Batyra",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Pervomayka",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Sarkand",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Saryozek",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Taldykorgan",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Talghar",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Tekeli",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Turgen",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Ülken",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Ush-Tyube",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Zharkent",
+    "stateCode": "ALM"
+  },
+  {
+    "name": "Nur-Sultan",
+    "stateCode": "AST"
+  },
+  {
+    "name": "Akkol’",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Atyrau",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Balykshi",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Bayshonas",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Dossor",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Inderbor",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Makhambet",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Maloye Ganyushkino",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Maqat",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Miyaly",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Qaraton",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Qulsary",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Shalkar",
+    "stateCode": "ATY"
+  },
+  {
+    "name": "Baikonur",
+    "stateCode": "BAY"
+  },
+  {
+    "name": "Abay",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Abay Qalasy",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Aksu-Ayuly",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Aktas",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Aktau",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Aktogay",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Aqadyr",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Aqshataū",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Aqtoghay Aūdany",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Atasū",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Balqash",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Bukhar-Zhyrau",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Dolinka",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Karagandy",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Kīevka",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Koktal",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Kushoky",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Kyzylzhar",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Moyynty",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Novodolinskiy",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Osakarovka",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Prigorodnoye",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Priozersk",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Qarazhal",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Qarqaraly",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Saryshaghan",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Sayaq",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Shakhan",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Shakhtinsk",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Shashūbay",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Shubarköl",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Soran",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Temirtau",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Tokarevka",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Verkhniye Kayrakty",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Zhambyl",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Zharyk",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Zhezqazghan",
+    "stateCode": "KAR"
+  },
+  {
+    "name": "Arkalyk",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Ayat",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Borovskoy",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Dzhetygara",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Fyodorovka",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Karasu",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Komsomolets",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Kostanay",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Lisakovsk",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Ordzhonikidze",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Qashar",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Qusmuryn",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Rudnyy",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Tobol",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Torghay",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Troyebratskiy",
+    "stateCode": "KUS"
+  },
+  {
+    "name": "Aral",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Ayteke Bi",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Belköl",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Dzhalagash",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Kyzylorda",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Qazaly",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Sekseūil",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Shalqīya",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Shīeli",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Tasböget",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Terenozek",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Yanykurgan",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Zhosaly",
+    "stateCode": "KZY"
+  },
+  {
+    "name": "Aktau",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Baūtīno",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Beyneu",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Fort-Shevchenko",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Munayshy",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Ömirzaq",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Sayötesh",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Shetpe",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Taūshyq",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Yeraliyev",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Zhanaozen",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Zhetibay",
+    "stateCode": "MAN"
+  },
+  {
+    "name": "Aksu",
+    "stateCode": "PAV"
+  },
+  {
+    "name": "Bayanaul",
+    "stateCode": "PAV"
+  },
+  {
+    "name": "Belogor’ye",
+    "stateCode": "PAV"
+  },
+  {
+    "name": "Ekibastuz",
+    "stateCode": "PAV"
+  },
+  {
+    "name": "Irtyshsk",
+    "stateCode": "PAV"
+  },
+  {
+    "name": "Kalkaman",
+    "stateCode": "PAV"
+  },
+  {
+    "name": "Leninskiy",
+    "stateCode": "PAV"
+  },
+  {
+    "name": "Mayqayyng",
+    "stateCode": "PAV"
+  },
+  {
+    "name": "Pavlodar",
+    "stateCode": "PAV"
+  },
+  {
+    "name": "Qashyr",
+    "stateCode": "PAV"
+  },
+  {
+    "name": "Zhelezinka",
+    "stateCode": "PAV"
+  },
+  {
+    "name": "Birlestik",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Bishkul",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Bulayevo",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Būrabay",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Kzyltu",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Novoishimskiy",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Petropavl",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Sergeyevka",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Smirnovo",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Taiynsha",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Talshik",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Timiryazevo",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Volodarskoye",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Yavlenka",
+    "stateCode": "SEV"
+  },
+  {
+    "name": "Altayskiy",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Aqtoghay",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Asūbulaq",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Auezov",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Ayagoz",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Belogorskīy",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Belousovka",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Borodulikha",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Georgīevka",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Glubokoye",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Kurchatov",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Kurchum",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Maleyevsk",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Ognevka",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Priisk Boko",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Qaraūyl",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Ridder",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Semey",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Shar",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Shemonaīkha",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Suykbulak",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Tūghyl",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Urzhar",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Ust-Kamenogorsk",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Ūst’-Talovka",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Zaysan",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Zhalghyztobe",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Zhanga Buqtyrma",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Zhezkent",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Zyryanovsk",
+    "stateCode": "VOS"
+  },
+  {
+    "name": "Arys",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Ashchysay",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Asyqata",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Atakent",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Bayzhansay",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Belyye Vody",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Chardara",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Chayan",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Chulakkurgan",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Kantagi",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Kentau",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Kokterek",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Lenger",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Leninskoye",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Maqtaaral Aūdany",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Myrzakent",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Qogham",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Saryaghash",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Saryaghash Aūdany",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Sastobe",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Sozaq Aūdany",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Temirlanovka",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Turar Ryskulov",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Turkestan",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Tyul’kubas",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Zhabagly",
+    "stateCode": "YUZ"
+  },
+  {
+    "name": "Aqsay",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Burlin",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Chapaev",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Chingirlau",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Dzhambeyty",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Fedorovka",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Kaztalovka",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Krūgloozernoe",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Oral",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Peremetnoe",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Saykhin",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Tasqala",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Zhänibek",
+    "stateCode": "ZAP"
+  },
+  {
+    "name": "Aqbaqay",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Chu",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Georgiyevka",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Granitogorsk",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Karatau",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Khantaū",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Lugovoy",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Lugovoye",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Merke",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Moyynkum",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Mynaral",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Oytal",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Sarykemer",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Shyghanaq",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Taraz",
+    "stateCode": "ZHA"
+  },
+  {
+    "name": "Zhangatas",
+    "stateCode": "ZHA"
+  }
+]

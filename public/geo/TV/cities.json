@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Alapi Village",
+    "stateCode": "FUN"
+  },
+  {
+    "name": "Fakaifou Village",
+    "stateCode": "FUN"
+  },
+  {
+    "name": "Funafuti",
+    "stateCode": "FUN"
+  },
+  {
+    "name": "Kulia Village",
+    "stateCode": "NIT"
+  },
+  {
+    "name": "Niulakita",
+    "stateCode": "NIT"
+  },
+  {
+    "name": "Savave Village",
+    "stateCode": "NKF"
+  },
+  {
+    "name": "Toga Village",
+    "stateCode": "NMG"
+  },
+  {
+    "name": "Tanrake Village",
+    "stateCode": "NUI"
+  },
+  {
+    "name": "Asau Village",
+    "stateCode": "VAI"
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Changhua",
+    "stateCode": "CHA"
+  },
+  {
+    "name": "Yuanlin",
+    "stateCode": "CHA"
+  },
+  {
+    "name": "Chiayi",
+    "stateCode": "CYI"
+  },
+  {
+    "name": "Pizitou",
+    "stateCode": "CYI"
+  },
+  {
+    "name": "Chiayi County",
+    "stateCode": "CYQ"
+  },
+  {
+    "name": "Hsinchu",
+    "stateCode": "HSQ"
+  },
+  {
+    "name": "Hsinchu County",
+    "stateCode": "HSZ"
+  },
+  {
+    "name": "Hualien",
+    "stateCode": "HUA"
+  },
+  {
+    "name": "Hualien City",
+    "stateCode": "HUA"
+  },
+  {
+    "name": "Yilan",
+    "stateCode": "ILA"
+  },
+  {
+    "name": "Kaohsiung",
+    "stateCode": "KHH"
+  },
+  {
+    "name": "Jincheng",
+    "stateCode": "KIN"
+  },
+  {
+    "name": "Kinmen County",
+    "stateCode": "KIN"
+  },
+  {
+    "name": "Lienchiang",
+    "stateCode": "LIE"
+  },
+  {
+    "name": "Nangan",
+    "stateCode": "LIE"
+  },
+  {
+    "name": "Miaoli",
+    "stateCode": "MIA"
+  },
+  {
+    "name": "Lugu",
+    "stateCode": "NAN"
+  },
+  {
+    "name": "Nantou",
+    "stateCode": "NAN"
+  },
+  {
+    "name": "Puli",
+    "stateCode": "NAN"
+  },
+  {
+    "name": "Zhongxing New Village",
+    "stateCode": "NAN"
+  },
+  {
+    "name": "Magong",
+    "stateCode": "PEN"
+  },
+  {
+    "name": "Penghu County",
+    "stateCode": "PEN"
+  },
+  {
+    "name": "Donggang",
+    "stateCode": "PIF"
+  },
+  {
+    "name": "Hengchun",
+    "stateCode": "PIF"
+  },
+  {
+    "name": "Pingtung",
+    "stateCode": "PIF"
+  },
+  {
+    "name": "Daxi",
+    "stateCode": "TAO"
+  },
+  {
+    "name": "Taoyuan",
+    "stateCode": "TAO"
+  },
+  {
+    "name": "Taoyuan City",
+    "stateCode": "TAO"
+  },
+  {
+    "name": "Tainan",
+    "stateCode": "TNN"
+  },
+  {
+    "name": "Yujing",
+    "stateCode": "TNN"
+  },
+  {
+    "name": "Banqiao",
+    "stateCode": "TPE"
+  },
+  {
+    "name": "Jiufen",
+    "stateCode": "TPE"
+  },
+  {
+    "name": "Taipei",
+    "stateCode": "TPE"
+  },
+  {
+    "name": "Taipei City",
+    "stateCode": "TPE"
+  },
+  {
+    "name": "Taitung",
+    "stateCode": "TTT"
+  },
+  {
+    "name": "Taitung City",
+    "stateCode": "TTT"
+  },
+  {
+    "name": "Taichung",
+    "stateCode": "TXG"
+  },
+  {
+    "name": "Taichung City",
+    "stateCode": "TXG"
+  },
+  {
+    "name": "Douliu",
+    "stateCode": "YUN"
+  },
+  {
+    "name": "Yunlin",
+    "stateCode": "YUN"
+  }
+]

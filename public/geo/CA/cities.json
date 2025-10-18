@@ -1,0 +1,4318 @@
+[
+  {
+    "name": "Airdrie",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Athabasca",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Banff",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Barrhead",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Bassano",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Beaumont",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Beaverlodge",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Black Diamond",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Blackfalds",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Bon Accord",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Bonnyville",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Bow Island",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Brooks",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Calgary",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Calmar",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Camrose",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Canmore",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Cardston",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Carstairs",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Chestermere",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Claresholm",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Coaldale",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Coalhurst",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Cochrane",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Cold Lake",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Crossfield",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Devon",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Didsbury",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Drayton Valley",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Edmonton",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Edson",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Elk Point",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Fairview",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Falher",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Fort Macleod",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Fort McMurray",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Fort Saskatchewan",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Fox Creek",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Gibbons",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Grand Centre",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Grande Cache",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Grande Prairie",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Grimshaw",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Hanna",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Heritage Pointe",
+    "stateCode": "AB"
+  },
+  {
+    "name": "High Level",
+    "stateCode": "AB"
+  },
+  {
+    "name": "High Prairie",
+    "stateCode": "AB"
+  },
+  {
+    "name": "High River",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Hinton",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Irricana",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Jasper Park Lodge",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Killam",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Lac La Biche",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Lacombe",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Lamont",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Larkspur",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Laurel",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Leduc",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Lethbridge",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Lloydminster",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Magrath",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Manning",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Mannville",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Maple Ridge",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Mayerthorpe",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Medicine Hat",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Mill Woods Town Centre",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Millet",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Morinville",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Nanton",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Okotoks",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Olds",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Peace River",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Penhold",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Picture Butte",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Pincher Creek",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Ponoka",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Provost",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Raymond",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Red Deer",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Rideau Park",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Rimbey",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Rocky Mountain House",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Sexsmith",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Sherwood Park",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Silver Berry",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Slave Lake",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Smoky Lake",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Spirit River",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Springbrook",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Spruce Grove",
+    "stateCode": "AB"
+  },
+  {
+    "name": "St. Albert",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Stettler",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Stony Plain",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Strathmore",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Sundre",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Swan Hills",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Sylvan Lake",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Taber",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Tamarack",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Three Hills",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Tofield",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Two Hills",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Valleyview",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Vegreville",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Vermilion",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Viking",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Vulcan",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Wainwright",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Wembley",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Westlake",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Westlock",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Wetaskiwin",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Whitecourt",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Wild Rose",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Abbotsford",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Agassiz",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Aldergrove",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Aldergrove East",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Anmore",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Arbutus Ridge",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Armstrong",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Ashcroft",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Barrière",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Bowen Island",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Burnaby",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Burns Lake",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Cache Creek",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Campbell River",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Castlegar",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Cedar",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Central Coast Regional District",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Chase",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Chemainus",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Chetwynd",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Chilliwack",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Colwood",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Coombs",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Coquitlam",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Courtenay",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Cowichan Bay",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Cranbrook",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Creston",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Cumberland",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Dawson Creek",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Delta",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Denman Island",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Denman Island Trust Area",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Duck Lake",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Duncan",
+    "stateCode": "BC"
+  },
+  {
+    "name": "East Wellington",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Elkford",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Ellison",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Enderby",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Fairwinds",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Fernie",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Fort Nelson",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Fort St. John",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Fraser Valley Regional District",
+    "stateCode": "BC"
+  },
+  {
+    "name": "French Creek",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Fruitvale",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Gibsons",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Golden",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Grand Forks",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Hanceville",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Hope",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Hornby Island",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Houston",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Invermere",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Kamloops",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Kelowna",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Kimberley",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Kitimat",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Ladner",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Ladysmith",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Lake Cowichan",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Langford",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Langley",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Lillooet",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Lions Bay",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Logan Lake",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Lumby",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Mackenzie",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Maple Ridge",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Merritt",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Metchosin",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Metro Vancouver Regional District",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Mission",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Nakusp",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Nanaimo",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Nelson",
+    "stateCode": "BC"
+  },
+  {
+    "name": "New Westminster",
+    "stateCode": "BC"
+  },
+  {
+    "name": "North Cowichan",
+    "stateCode": "BC"
+  },
+  {
+    "name": "North Oyster/Yellow Point",
+    "stateCode": "BC"
+  },
+  {
+    "name": "North Saanich",
+    "stateCode": "BC"
+  },
+  {
+    "name": "North Vancouver",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Oak Bay",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okanagan",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okanagan Falls",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Oliver",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Osoyoos",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Parksville",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Peace River Regional District",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Peachland",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Pemberton",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Penticton",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Pitt Meadows",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Port Alberni",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Port Coquitlam",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Port McNeill",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Port Moody",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Powell River",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Prince George",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Prince Rupert",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Princeton",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Puntledge",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Quesnel",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Regional District of Alberni-Clayoquot",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Regional District of Central Okanagan",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Revelstoke",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Richmond",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Rossland",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Royston",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Salmo",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Salmon Arm",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Salt Spring Island",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Saltair",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Sechelt",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Sicamous",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Six Mile",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Smithers",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Sooke",
+    "stateCode": "BC"
+  },
+  {
+    "name": "South Pender Harbour",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Sparwood",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Summerland",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Surrey",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Terrace",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Tofino",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Trail",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Tsawwassen",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Tumbler Ridge",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Ucluelet",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Vancouver",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Vanderhoof",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Vernon",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Victoria",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Walnut Grove",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Welcome Beach",
+    "stateCode": "BC"
+  },
+  {
+    "name": "West End",
+    "stateCode": "BC"
+  },
+  {
+    "name": "West Kelowna",
+    "stateCode": "BC"
+  },
+  {
+    "name": "West Vancouver",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Whistler",
+    "stateCode": "BC"
+  },
+  {
+    "name": "White Rock",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Williams Lake",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Altona",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Beausejour",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Boissevain",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Brandon",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Carberry",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Carman",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Cross Lake 19A",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Dauphin",
+    "stateCode": "MB"
+  },
+  {
+    "name": "De Salaberry",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Deloraine",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Flin Flon",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Gimli",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Grunthal",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Headingley",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Ile des Chênes",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Killarney",
+    "stateCode": "MB"
+  },
+  {
+    "name": "La Broquerie",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Lac du Bonnet",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Landmark",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Lorette",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Melita",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Minnedosa",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Moose Lake",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Morden",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Morris",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Neepawa",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Niverville",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Portage la Prairie",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Rivers",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Roblin",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Selkirk",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Shilo",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Souris",
+    "stateCode": "MB"
+  },
+  {
+    "name": "St. Adolphe",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Steinbach",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Stonewall",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Swan River",
+    "stateCode": "MB"
+  },
+  {
+    "name": "The Pas",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Thompson",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Virden",
+    "stateCode": "MB"
+  },
+  {
+    "name": "West St. Paul",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Winkler",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Winnipeg",
+    "stateCode": "MB"
+  },
+  {
+    "name": "Baie Ste. Anne",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Bathurst",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Bouctouche",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Campbellton",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Dieppe",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Edmundston",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Florenceville-Bristol",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Fredericton",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Fundy Bay",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Grande-Digue",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Greater Lakeburn",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Hampton",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Harrison Brook",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Keswick Ridge",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Lincoln",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Lutes Mountain",
+    "stateCode": "NB"
+  },
+  {
+    "name": "McEwen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Miramichi",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Moncton",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Nackawic",
+    "stateCode": "NB"
+  },
+  {
+    "name": "New Maryland",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Noonan",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Oromocto",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Richibucto",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Sackville",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Saint Andrews",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Saint John",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Saint-Antoine",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Saint-Léonard",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Salisbury",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Shediac",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Shediac Bridge-Shediac River",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Shippagan",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Starlight Village",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Sussex",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Tracadie-Sheila",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Wells",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Bay Roberts",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Bay St. George South",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Bonavista",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Botwood",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Burgeo",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Carbonear",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Catalina",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Channel-Port aux Basques",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Clarenville-Shoal Harbour",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Conception Bay South",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Corner Brook",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Deer Lake",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Fogo Island",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Gambo",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Goulds",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Grand Bank",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Grand Falls-Windsor",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Happy Valley-Goose Bay",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Harbour Breton",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Labrador City",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Lewisporte",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Marystown",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Mount Pearl",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Pasadena",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Springdale",
+    "stateCode": "NL"
+  },
+  {
+    "name": "St. Anthony",
+    "stateCode": "NL"
+  },
+  {
+    "name": "St. John's",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Stephenville",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Stephenville Crossing",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Torbay",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Upper Island Cove",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Wabana",
+    "stateCode": "NL"
+  },
+  {
+    "name": "Amherst",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Annapolis County",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Antigonish",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Berwick",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Bridgewater",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Cape Breton County",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Chester",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Colchester",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Cole Harbour",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Cow Bay",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Dartmouth",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Digby",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Digby County",
+    "stateCode": "NS"
+  },
+  {
+    "name": "English Corner",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Eskasoni 3",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Fall River",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Glace Bay",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Greenwood",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Halifax",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Hantsport",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Hayes Subdivision",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Kentville",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Lake Echo",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Lantz",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Lower Sackville",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Lunenburg",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Middleton",
+    "stateCode": "NS"
+  },
+  {
+    "name": "New Glasgow",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Oxford",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Parrsboro",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Pictou",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Pictou County",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Port Hawkesbury",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Port Williams",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Princeville",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Shelburne",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Springhill",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Sydney",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Sydney Mines",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Truro",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Windsor",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Wolfville",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Yarmouth",
+    "stateCode": "NS"
+  },
+  {
+    "name": "Behchokǫ̀",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Fort McPherson",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Fort Smith",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Hay River",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Inuvik",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Norman Wells",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Yellowknife",
+    "stateCode": "NT"
+  },
+  {
+    "name": "Clyde River",
+    "stateCode": "NU"
+  },
+  {
+    "name": "Gjoa Haven",
+    "stateCode": "NU"
+  },
+  {
+    "name": "Iqaluit",
+    "stateCode": "NU"
+  },
+  {
+    "name": "Kugluktuk",
+    "stateCode": "NU"
+  },
+  {
+    "name": "Pangnirtung",
+    "stateCode": "NU"
+  },
+  {
+    "name": "Rankin Inlet",
+    "stateCode": "NU"
+  },
+  {
+    "name": "Ajax",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Algoma",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Alliston",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Amherstburg",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Amigo Beach",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Ancaster",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Angus",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Arnprior",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Atikokan",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Attawapiskat",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Aurora",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Aylmer",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Azilda",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Ballantrae",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Bancroft",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Barrie",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Bath",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Belleville",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Bells Corners",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Belmont",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Binbrook",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Bluewater",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Bourget",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Bracebridge",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Brampton",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Brant",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Brantford",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Brockville",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Brussels",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Burford",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Burlington",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Cambridge",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Camlachie",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Capreol",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Carleton Place",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Casselman",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Chatham",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Chatham-Kent",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Clarence-Rockland",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Cobourg",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Cochrane District",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Collingwood",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Concord",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Constance Bay",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Cookstown",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Cornwall",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Corunna",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Deep River",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Delaware",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Deseronto",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Dorchester",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Dowling",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Dryden",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Durham",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Ear Falls",
+    "stateCode": "ON"
+  },
+  {
+    "name": "East Gwillimbury",
+    "stateCode": "ON"
+  },
+  {
+    "name": "East York",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Elliot Lake",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Elmvale",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Englehart",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Espanola",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Essex",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Etobicoke",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Fort Erie",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Fort Frances",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Gananoque",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Glencoe",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Goderich",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Golden",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Gravenhurst",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Greater Napanee",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Greater Sudbury",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Greenstone",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Guelph",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Haldimand County",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Haliburton Village",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Halton",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Hamilton",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Hanover",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Harriston",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Hawkesbury",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Hearst",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Hornepayne",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Huntsville",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Huron East",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Ingersoll",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Innisfil",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Iroquois Falls",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Jarvis",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Kanata",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Kapuskasing",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Kawartha Lakes",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Kenora",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Keswick",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Kincardine",
+    "stateCode": "ON"
+  },
+  {
+    "name": "King",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Kingston",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Kirkland Lake",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Kitchener",
+    "stateCode": "ON"
+  },
+  {
+    "name": "L'Orignal",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Lakefield",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Lambton Shores",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Lappe",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Leamington",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Limoges",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Lindsay",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Listowel",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Little Current",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Lively",
+    "stateCode": "ON"
+  },
+  {
+    "name": "London",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Lucan",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Madoc",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Manitoulin District",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Manitouwadge",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Marathon",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Markdale",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Markham",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Mattawa",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Meaford",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Metcalfe",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Midland",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Mildmay",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Millbrook",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Milton",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Mississauga",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Mississauga Beach",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Moose Factory",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Moosonee",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Morrisburg",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Mount Albert",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Mount Brydges",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Napanee",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Napanee Downtown",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Neebing",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Nepean",
+    "stateCode": "ON"
+  },
+  {
+    "name": "New Hamburg",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Newmarket",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Niagara Falls",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Nipissing District",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Norfolk County",
+    "stateCode": "ON"
+  },
+  {
+    "name": "North Bay",
+    "stateCode": "ON"
+  },
+  {
+    "name": "North Perth",
+    "stateCode": "ON"
+  },
+  {
+    "name": "North York",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Norwood",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Oakville",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Omemee",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Orangeville",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Orillia",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Osgoode",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Oshawa",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Ottawa",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Owen Sound",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Paisley",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Paris",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Parkhill",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Parry Sound",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Parry Sound District",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Peel",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Pembroke",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Perth",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Petawawa",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Peterborough",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Petrolia",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Pickering",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Picton",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Plantagenet",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Plattsville",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Port Colborne",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Port Hope",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Port Rowan",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Port Stanley",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Powassan",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Prescott",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Prince Edward",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Queenswood Heights",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Quinte West",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Rainy River District",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Rayside-Balfour",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Red Lake",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Regional Municipality of Waterloo",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Renfrew",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Richmond",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Richmond Hill",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Ridgetown",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Rockwood",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Russell",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Sarnia",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Sault Ste. Marie",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Scarborough",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Seaforth",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Shelburne",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Simcoe",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Sioux Lookout",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Skatepark",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Smiths Falls",
+    "stateCode": "ON"
+  },
+  {
+    "name": "South Huron",
+    "stateCode": "ON"
+  },
+  {
+    "name": "South River",
+    "stateCode": "ON"
+  },
+  {
+    "name": "St. Catharines",
+    "stateCode": "ON"
+  },
+  {
+    "name": "St. George",
+    "stateCode": "ON"
+  },
+  {
+    "name": "St. Thomas",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Stirling",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Stoney Point",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Stratford",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Sudbury",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Tavistock",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Temiskaming Shores",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Thessalon",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Thorold",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Thunder Bay",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Thunder Bay District",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Timiskaming District",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Timmins",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Tobermory",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Toronto",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Toronto county",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Tottenham",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Tweed",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Uxbridge",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Valley East",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Vanier",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Vaughan",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Vineland",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Virgil",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Walpole Island",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Wasaga Beach",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Waterford",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Waterloo",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Watford",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Wawa",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Welland",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Wellesley",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Wendover",
+    "stateCode": "ON"
+  },
+  {
+    "name": "West Lorne",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Willowdale",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Winchester",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Windsor",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Wingham",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Woodstock",
+    "stateCode": "ON"
+  },
+  {
+    "name": "York",
+    "stateCode": "ON"
+  },
+  {
+    "name": "Alberton",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Belfast",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Charlottetown",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Cornwall",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Fallingbrook",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Kensington",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Montague",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Souris",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Summerside",
+    "stateCode": "PE"
+  },
+  {
+    "name": "Abitibi-Témiscamingue",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Acton Vale",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Adstock",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Albanel",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Alma",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Amos",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Amqui",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Ange-Gardien",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Asbestos",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Baie-Comeau",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Baie-D'Urfé",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Baie-Saint-Paul",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Barraute",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Bas-Saint-Laurent",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Beaconsfield",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Beauceville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Beauharnois",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Beaupré",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Bécancour",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Bedford",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Beloeil",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Berthierville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Blainville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Bois-des-Filion",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Boisbriand",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Bonaventure",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Boucherville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Breakeyville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Bromont",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Brossard",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Brownsburg-Chatham",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Buckingham",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Cabano",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Cacouna",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Candiac",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Cantley",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Cap-Chat",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Cap-Santé",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Capitale-Nationale",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Carignan",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Carleton",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Carleton-sur-Mer",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Centre-du-Québec",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chambly",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chambord",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chandler",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chapais",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Charlemagne",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Château-Richer",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Châteauguay",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chaudière-Appalaches",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chertsey",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chibougamau",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Chute-aux-Outardes",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Coaticook",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Contrecoeur",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Cookshire",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Cookshire-Eaton",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Côte-Nord",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Côte-Saint-Luc",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Coteau-du-Lac",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Cowansville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Crabtree",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Danville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Daveluyville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Delson",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Deux-Montagnes",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Disraeli",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Dolbeau-Mistassini",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Dollard-Des Ormeaux",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Donnacona",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Dorval",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Drummondville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Dunham",
+    "stateCode": "QC"
+  },
+  {
+    "name": "East Angus",
+    "stateCode": "QC"
+  },
+  {
+    "name": "East Broughton",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Farnham",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Ferme-Neuve",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Fermont",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Forestville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Fort-Coulonge",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Fossambault-sur-le-Lac",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Franklin",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Gaspé",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Gaspésie-Îles-de-la-Madeleine",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Gatineau",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Godefroy",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Granby",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Hampstead",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Hauterive",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Havre-Saint-Pierre",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Hérouxville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Hudson",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Huntingdon",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Joliette",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Jonquière",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Kingsey Falls",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Kirkland",
+    "stateCode": "QC"
+  },
+  {
+    "name": "L'Ancienne-Lorette",
+    "stateCode": "QC"
+  },
+  {
+    "name": "L'Ange-Gardien",
+    "stateCode": "QC"
+  },
+  {
+    "name": "L'Ascension-de-Notre-Seigneur",
+    "stateCode": "QC"
+  },
+  {
+    "name": "L'Assomption",
+    "stateCode": "QC"
+  },
+  {
+    "name": "L'Épiphanie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "L'Île-Perrot",
+    "stateCode": "QC"
+  },
+  {
+    "name": "La Conception",
+    "stateCode": "QC"
+  },
+  {
+    "name": "La Haute-Saint-Charles",
+    "stateCode": "QC"
+  },
+  {
+    "name": "La Malbaie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "La Minerve",
+    "stateCode": "QC"
+  },
+  {
+    "name": "La Pocatière",
+    "stateCode": "QC"
+  },
+  {
+    "name": "La Prairie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "La Sarre",
+    "stateCode": "QC"
+  },
+  {
+    "name": "La Tuque",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Labelle",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lac-Alouette",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lac-Brome",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lac-Connelly",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lac-Lapierre",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lac-Mégantic",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lac-Simon",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lachute",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lacolle",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lanoraie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Laval",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lavaltrie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Le Bic",
+    "stateCode": "QC"
+  },
+  {
+    "name": "le Plateau",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lebel-sur-Quévillon",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Leblanc",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Les Cèdres",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Les Coteaux",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Les Escoumins",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lévis",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Linière",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Longueuil",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Lorraine",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Louiseville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Luceville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Macamic",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Magog",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Malartic",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Maliotenam",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Manawan",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mandeville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Maniwaki",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Maria",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Marieville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mascouche",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Maskinongé",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Matagami",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Matane",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mauricie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Melocheville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mercier",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Métabetchouan",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Metabetchouan-Lac-a-la-Croix",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mirabel",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mistissini",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mont-Joli",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mont-Laurier",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mont-Royal",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mont-Saint-Grégoire",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mont-Saint-Hilaire",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Mont-Tremblant",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Montmagny",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Montréal",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Montréal-Est",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Montréal-Ouest",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Morin-Heights",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Napierville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Neuville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "New Carlisle",
+    "stateCode": "QC"
+  },
+  {
+    "name": "New-Richmond",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Nicolet",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Nord-du-Québec",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Normandin",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Notre-Dame-de-Grâce",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Notre-Dame-de-l'Île-Perrot",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Notre-Dame-des-Prairies",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Notre-Dame-du-Lac",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Notre-Dame-du-Mont-Carmel",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Oka",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Ormstown",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Otterburn Park",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Outaouais",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Papineauville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Parc-Boutin",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Piedmont",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Pierreville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Pincourt",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Plessisville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Pohénégamook",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Pointe-Calumet",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Pointe-Claire",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Pointe-du-Lac",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Pont Rouge",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Pont-Rouge",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Port-Cartier",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Portneuf",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Prévost",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Princeville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Québec",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Rawdon",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Repentigny",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Richelieu",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Richmond",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Rigaud",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Rimouski",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Rivière-du-Loup",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Rivière-Rouge",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Roberval",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Rock Forest",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Rosemère",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Rougemont",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Rouyn-Noranda",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sacré-Coeur",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saguenay",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Adolphe-d'Howard",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Alexandre",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Amable",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Ambroise",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-André-Avellin",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Anselme",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Antoine-de-Tilly",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Augustin",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Augustin-de-Desmaures",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Barnabé-Sud",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Basile-le-Grand",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Boniface",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Bruno",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Bruno-de-Guigues",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Bruno-de-Montarville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Canut",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Césaire",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Charles",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Côme-Linière",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Constant",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Cyrille-de-Wendover",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Damase",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Denis-sur-Richelieu",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Donat-de-Montcalm",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Édouard",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Elzéar",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Éphrem-de-Beauce",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Eustache",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Félicien",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Félix-de-Valois",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Gabriel",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Gédéon",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Georges",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Germain-de-Grantham",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Henri",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Hippolyte",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Honoré",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Hyacinthe",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Isidore",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Jacques-le-Mineur",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Jean-Baptiste",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Jean-sur-Richelieu",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Jérôme",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Joseph",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Joseph-de-Beauce",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Joseph-de-Coleraine",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Joseph-du-Lac",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Lambert-de-Lauzon",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Laurent",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Lazare",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Léonard",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Léonard-d'Aston",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Liboire",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Lin-Laurentides",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Marc-des-Carrières",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Mathieu",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Michel",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Michel-des-Saints",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Nazaire",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Norbert",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Pacôme",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Pascal",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Philippe-de-La Prairie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Pie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Pierre-les-Becquets",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Prime",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Raphaël",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Raymond",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Rémi",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Rémi-de-Tingwick",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Sauveur",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Sauveur-des-Monts",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Siméon",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Thomas",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Tite",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Victor",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Saint-Zotique",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte Catherine de la Jacques Cartier",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Adèle",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Agathe-des-Monts",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Anne-de-Bellevue",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Anne-des-Monts",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Anne-des-Plaines",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Béatrix",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Catherine",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Croix",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Élisabeth",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Julie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Julienne",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Madeleine",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Marie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Marthe-sur-le-Lac",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Martine",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Sophie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Thècle",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sainte-Thérèse",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Salaberry-de-Valleyfield",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Salluit",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Senneterre",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sept-Îles",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Shannon",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Shawinigan",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Shawville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sherbrooke",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sorel-Tracy",
+    "stateCode": "QC"
+  },
+  {
+    "name": "St-Jean-Port-Joli",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Sutton",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Témiscaming",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Terrasse-des-Pins",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Terrebonne",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Thetford-Mines",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Thurso",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Trois-Rivières",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Val-d'Or",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Val-David",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Val-des-Monts",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Val-Morin",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Valcourt",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Vallée-Jonction",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Varennes",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Vaudreuil-Dorion",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Venise-en-Québec",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Verchères",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Victoriaville",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Ville-Marie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Wakefield",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Warwick",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Waskaganish",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Waswanipi",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Waterloo",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Weedon Centre",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Westmount",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Weymontachie",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Windsor",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Yamachiche",
+    "stateCode": "QC"
+  },
+  {
+    "name": "Assiniboia",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Biggar",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Canora",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Carlyle",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Dalmeny",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Esterhazy",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Estevan",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Foam Lake",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Gravelbourg",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Hudson Bay",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Humboldt",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Indian Head",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kamsack",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kerrobert",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kindersley",
+    "stateCode": "SK"
+  },
+  {
+    "name": "La Ronge",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Langenburg",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Langham",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Lanigan",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Lumsden",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Macklin",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Maple Creek",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Martensville",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Meadow Lake",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Melfort",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Melville",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Moose Jaw",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Moosomin",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Nipawin",
+    "stateCode": "SK"
+  },
+  {
+    "name": "North Battleford",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Outlook",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Oxbow",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Pelican Narrows",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Pilot Butte",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Preeceville",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Prince Albert",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Regina",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Regina Beach",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Rosetown",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Rosthern",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Saskatoon",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Shaunavon",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Shellbrook",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Swift Current",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Tisdale",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Unity",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Wadena",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Warman",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Watrous",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Weyburn",
+    "stateCode": "SK"
+  },
+  {
+    "name": "White City",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Wilkie",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Wynyard",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Yorkton",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Dawson City",
+    "stateCode": "YT"
+  },
+  {
+    "name": "Haines Junction",
+    "stateCode": "YT"
+  },
+  {
+    "name": "Watson Lake",
+    "stateCode": "YT"
+  },
+  {
+    "name": "Whitehorse",
+    "stateCode": "YT"
+  }
+]

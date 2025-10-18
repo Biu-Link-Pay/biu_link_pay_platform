@@ -1,0 +1,1258 @@
+[
+  {
+    "name": "Adelaide",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Alfred Nzo District Municipality",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Alice",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Aliwal North",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Amathole District Municipality",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Bhisho",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Buffalo City Metropolitan Municipality",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Burgersdorp",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Butterworth",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Cacadu District Municipality",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Chris Hani District Municipality",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Cradock",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Dordrecht",
+    "stateCode": "EC"
+  },
+  {
+    "name": "East London",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Elliot",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Fort Beaufort",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Graaff-Reinet",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Grahamstown",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Ilinge",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Joe Gqabi District Municipality",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Kirkwood",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Kruisfontein",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Lady Frere",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Middelburg",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Molteno",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Mthatha",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Nelson Mandela Bay Metropolitan Municipality",
+    "stateCode": "EC"
+  },
+  {
+    "name": "OR Tambo District Municipality",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Port Alfred",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Port Elizabeth",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Port Saint John’s",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Queensdale",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Queenstown",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Somerset East",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Stutterheim",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Uitenhage",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Whittlesea",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Willowmore",
+    "stateCode": "EC"
+  },
+  {
+    "name": "Allanridge",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Bethlehem",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Bloemfontein",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Bothaville",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Botshabelo",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Brandfort",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Clocolan",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Deneysville",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Fezile Dabi District Municipality",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Frankfort",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Harrismith",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Heilbron",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Hennenman",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Hoopstad",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Koppies",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Kroonstad",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Kutloanong",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Ladybrand",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Lejweleputswa District Municipality",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Lindley",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Mangaung Metropolitan Municipality",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Marquard",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Parys",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Phuthaditjhaba",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Reitz",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Sasolburg",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Senekal",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Thaba Nchu",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Thabo Mofutsanyana District Municipality",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Theunissen",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Ventersburg",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Viljoenskroon",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Villiers",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Virginia",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Vrede",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Vredefort",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Welkom",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Wesselsbron",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Winburg",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Xhariep District Municipality",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Zastron",
+    "stateCode": "FS"
+  },
+  {
+    "name": "Alberton",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Benoni",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Boksburg",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Brakpan",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Bronkhorstspruit",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Carletonville",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Centurion",
+    "stateCode": "GP"
+  },
+  {
+    "name": "City of Johannesburg Metropolitan Municipality",
+    "stateCode": "GP"
+  },
+  {
+    "name": "City of Tshwane Metropolitan Municipality",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Cullinan",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Diepsloot",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Eastleigh",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Eden Glen",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Eden Glen Ext 60",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Edenvale",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Ekangala",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Ekurhuleni Metropolitan Municipality",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Heidelberg",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Johannesburg",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Krugersdorp",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Mabopane",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Midrand",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Midstream",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Modderfontein",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Muldersdriseloop",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Nigel",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Orange Farm",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Pretoria",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Randburg",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Randfontein",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Roodepoort",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Sedibeng District Municipality",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Soweto",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Springs",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Tembisa",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Vanderbijlpark",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Vereeniging",
+    "stateCode": "GP"
+  },
+  {
+    "name": "West Rand District Municipality",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Westonaria",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Amajuba District Municipality",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Ballito",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Berea",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Dundee",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Durban",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Ekuvukeni",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "eMkhomazi",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Empangeni",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Eshowe",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "eSikhaleni",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "eThekwini Metropolitan Municipality",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Glencoe",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Greytown",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Hluhluwe",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Howick",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "iLembe District Municipality",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Kokstad",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "KwaDukuza",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Margate",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Mondlo",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Mooirivier",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Mpophomeni",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Mpumalanga",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Mtubatuba",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Ndwedwe",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Newcastle",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Pietermaritzburg",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Port Shepstone",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Richards Bay",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Richmond",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Scottburgh",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Sisonke District Municipality",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Sundumbili",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Ugu District Municipality",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Ulundi",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "uMgungundlovu District Municipality",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "uMkhanyakude District Municipality",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "uMzinyathi District Municipality",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "uThukela District Municipality",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "uThungulu District Municipality",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Utrecht",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Vryheid",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Zululand District Municipality",
+    "stateCode": "KZN"
+  },
+  {
+    "name": "Bochum",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Capricorn District Municipality",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Duiwelskloof",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Ga-Kgapane",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Giyani",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Lebowakgomo",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Louis Trichardt",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Mankoeng",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Modimolle",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Mokopane",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Mopani District Municipality",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Musina",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Nkowakowa",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Phalaborwa",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Polokwane",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Sekhukhune District Municipality",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Thabazimbi",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Thohoyandou",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Thulamahashi",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Tzaneen",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Vhembe District Municipality",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Warmbaths",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Waterberg District Municipality",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Balfour",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Barberton",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Belfast",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Bethal",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Breyten",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Carolina",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Delmas",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Driefontein",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Ehlanzeni District",
+    "stateCode": "MP"
+  },
+  {
+    "name": "eMbalenhle",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Ermelo",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Gert Sibande District Municipality",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Hendrina",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Komatipoort",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Kriel",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Lydenburg",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Middelburg",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Nelspruit",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Nkangala District Municipality",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Piet Retief",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Secunda",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Siyabuswa",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Standerton",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Volksrust",
+    "stateCode": "MP"
+  },
+  {
+    "name": "White River",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Witbank",
+    "stateCode": "MP"
+  },
+  {
+    "name": "Barkly West",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Brandvlei",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Calvinia",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Carnarvon",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Colesberg",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Daniëlskuil",
+    "stateCode": "NC"
+  },
+  {
+    "name": "De Aar",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Frances Baard District Municipality",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Fraserburg",
+    "stateCode": "NC"
+  },
+  {
+    "name": "John Taolo Gaetsewe District Municipality",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Kathu",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Kenhardt",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Kimberley",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Kuruman",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Namakwa District Municipality",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Noupoort",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Orania",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Pampierstad",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Pixley ka Seme District Municipality",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Pofadder",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Postmasburg",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Prieska",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Ritchie",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Siyanda District Municipality",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Springbok",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Upington",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Van Wyksvlei",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Warrenton",
+    "stateCode": "NC"
+  },
+  {
+    "name": "Bloemhof",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Bojanala Platinum District Municipality",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Brits",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Christiana",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Dr Kenneth Kaunda District Municipality",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Dr Ruth Segomotsi Mompati District Municipality",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Fochville",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Ga-Rankuwa",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Jan Kempdorp",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Klerksdorp",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Koster",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Lichtenburg",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Mahikeng",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Maile",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Mmabatho",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Ngaka Modiri Molema District Municipality",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Orkney",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Potchefstroom",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Rustenburg",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Schweizer-Reneke",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Stilfontein",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Vryburg",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Wolmaransstad",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Zeerust",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Albertina",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Arniston",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Atlantis",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Beaufort West",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Bergvliet",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Bredasdorp",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Caledon",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Calitzdorp",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Cape Town",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Cape Winelands District Municipality",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Central Karoo District Municipality",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Ceres",
+    "stateCode": "WC"
+  },
+  {
+    "name": "City of Cape Town",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Clanwilliam",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Claremont",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Constantia",
+    "stateCode": "WC"
+  },
+  {
+    "name": "De Rust",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Eden District Municipality",
+    "stateCode": "WC"
+  },
+  {
+    "name": "George",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Grabouw",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Hardys Memories of Africa",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Hermanus",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Knysna",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Kraaifontein",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Ladismith",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Lansdowne",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Malmesbury",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Montagu",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Moorreesburg",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Mossel Bay",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Newlands",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Oudtshoorn",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Overberg District Municipality",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Paarl",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Piketberg",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Plettenberg Bay",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Prince Albert",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Retreat",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Riversdale",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Robertson",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Rondebosch",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Rosebank",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Saldanha",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Stellenbosch",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Sunset Beach",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Swellendam",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Vredenburg",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Vredendal",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Wellington",
+    "stateCode": "WC"
+  },
+  {
+    "name": "West Coast District Municipality",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Worcester",
+    "stateCode": "WC"
+  },
+  {
+    "name": "Zoar",
+    "stateCode": "WC"
+  }
+]

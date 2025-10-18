@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Anenii Noi",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Varniţa",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Bălţi",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Bender",
+    "stateCode": "BD"
+  },
+  {
+    "name": "Briceni",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Basarabeasca",
+    "stateCode": "BS"
+  },
+  {
+    "name": "Cahul",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Giurgiuleşti",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Călăraşi",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Cimişlia",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Criuleni",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Căuşeni",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Chiţcani",
+    "stateCode": "CS"
+  },
+  {
+    "name": "Cantemir",
+    "stateCode": "CT"
+  },
+  {
+    "name": "Iargara",
+    "stateCode": "CT"
+  },
+  {
+    "name": "Vişniovca",
+    "stateCode": "CT"
+  },
+  {
+    "name": "Chisinau",
+    "stateCode": "CU"
+  },
+  {
+    "name": "Ciorescu",
+    "stateCode": "CU"
+  },
+  {
+    "name": "Cricova",
+    "stateCode": "CU"
+  },
+  {
+    "name": "Sîngera",
+    "stateCode": "CU"
+  },
+  {
+    "name": "Stăuceni",
+    "stateCode": "CU"
+  },
+  {
+    "name": "Vadul lui Vodă",
+    "stateCode": "CU"
+  },
+  {
+    "name": "Vatra",
+    "stateCode": "CU"
+  },
+  {
+    "name": "Briceni",
+    "stateCode": "DO"
+  },
+  {
+    "name": "Donduşeni",
+    "stateCode": "DO"
+  },
+  {
+    "name": "Drochia",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Cocieri",
+    "stateCode": "DU"
+  },
+  {
+    "name": "Ustia",
+    "stateCode": "DU"
+  },
+  {
+    "name": "Edineţ",
+    "stateCode": "ED"
+  },
+  {
+    "name": "Fălești",
+    "stateCode": "FA"
+  },
+  {
+    "name": "Floreşti",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Ghindești",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Mărculeşti",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Bugeac",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Ceadîr-Lunga",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Comrat",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Vulcăneşti",
+    "stateCode": "GA"
+  },
+  {
+    "name": "Glodeni",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Dancu",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Hînceşti",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Ialoveni",
+    "stateCode": "IA"
+  },
+  {
+    "name": "Nisporeni",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Ocniţa",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Otaci",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Orhei",
+    "stateCode": "OR"
+  },
+  {
+    "name": "Rezina",
+    "stateCode": "RE"
+  },
+  {
+    "name": "Saharna",
+    "stateCode": "RE"
+  },
+  {
+    "name": "Rîşcani",
+    "stateCode": "RI"
+  },
+  {
+    "name": "Şoldăneşti",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Bilicenii Vechi",
+    "stateCode": "SI"
+  },
+  {
+    "name": "Biruinţa",
+    "stateCode": "SI"
+  },
+  {
+    "name": "Sîngerei",
+    "stateCode": "SI"
+  },
+  {
+    "name": "Camenca",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Crasnoe",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Dnestrovsc",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Dubăsari",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Hryhoriopol",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Maiac",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Pervomaisc",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Rîbniţa",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Slobozia",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Tiraspol",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Tiraspolul Nou",
+    "stateCode": "SN"
+  },
+  {
+    "name": "Soroca",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bucovăţ",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Strășeni",
+    "stateCode": "ST"
+  },
+  {
+    "name": "Ştefan Vodă",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Taraclia",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Tvardița",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Mîndreşti",
+    "stateCode": "TE"
+  },
+  {
+    "name": "Teleneşti",
+    "stateCode": "TE"
+  },
+  {
+    "name": "Ungheni",
+    "stateCode": "UN"
+  }
+]

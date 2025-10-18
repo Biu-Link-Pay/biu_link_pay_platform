@@ -1,0 +1,390 @@
+[
+  {
+    "name": "Vingt Cinq",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Albion",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Bambous",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Cascavelle",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Flic en Flac",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Grande Rivière Noire",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Gros Cailloux",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Petite Case Noyale",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Petite Rivière",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Tamarin",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Cargados Carajos",
+    "stateCode": "CC"
+  },
+  {
+    "name": "Bel Air Rivière Sèche",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Bon Accueil",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Brisée Verdière",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Camp de Masque",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Camp Ithier",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Centre de Flacq",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Clémencia",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Ecroignard",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Grande Rivière Sud Est",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Lalmatie",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Laventure",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Mare La Chaux",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Olivia",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Poste de Flacq",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Quatre Cocos",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Quatre Soeurs",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Queen Victoria",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Saint Julien",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Sebastopol",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Bambous Virieux",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Beau Vallon",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Bois des Amourettes",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Cluny",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Grand Sable",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Mahébourg",
+    "stateCode": "GP"
+  },
+  {
+    "name": "New Grove",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Nouvelle France",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Plaine Magnien",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Rose Belle",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Saint Hubert",
+    "stateCode": "GP"
+  },
+  {
+    "name": "Camp Thorel",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Dagotière",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Dubreuil",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Melrose",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Moka",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Pailles",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Providence",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Quartier Militaire",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Saint Pierre",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Verdun",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Arsenal",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Calebasses",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Congomah",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Crève Coeur",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Fond du Sac",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Le Hochet",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Long Mountain",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Morcellement Saint André",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Notre Dame",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Pamplemousses",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Plaine des Papayes",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Pointe aux Piments",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Terre Rouge",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Triolet",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Port Louis",
+    "stateCode": "PL"
+  },
+  {
+    "name": "Beau Bassin-Rose Hill",
+    "stateCode": "PW"
+  },
+  {
+    "name": "Curepipe",
+    "stateCode": "PW"
+  },
+  {
+    "name": "Ebene",
+    "stateCode": "PW"
+  },
+  {
+    "name": "Midlands",
+    "stateCode": "PW"
+  },
+  {
+    "name": "Quatre Bornes",
+    "stateCode": "PW"
+  },
+  {
+    "name": "Vacoas",
+    "stateCode": "PW"
+  },
+  {
+    "name": "Baie aux Huîtres",
+    "stateCode": "RO"
+  },
+  {
+    "name": "Port Mathurin",
+    "stateCode": "RO"
+  },
+  {
+    "name": "Amaury",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Cap Malheureux",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Cottage",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Espérance Trébuchet",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Goodlands",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Grand Baie",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Grand Gaube",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Mapou",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Petit Raffray",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Piton",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Plaines des Roches",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Rivière du Rempart",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Roche Terre",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Roches Noire",
+    "stateCode": "RR"
+  },
+  {
+    "name": "The Vale",
+    "stateCode": "RR"
+  },
+  {
+    "name": "Camp Diable",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Chamouny",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Chemin Grenier",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Grand Bois",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Rivière des Anguilles",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Saint Aubin",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Souillac",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Surinam",
+    "stateCode": "SA"
+  }
+]

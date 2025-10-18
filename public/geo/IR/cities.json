@@ -1,0 +1,4362 @@
+[
+  {
+    "name": "Ābyek",
+    "stateCode": "00"
+  },
+  {
+    "name": "Arāk",
+    "stateCode": "00"
+  },
+  {
+    "name": "Delījān",
+    "stateCode": "00"
+  },
+  {
+    "name": "Khomeyn",
+    "stateCode": "00"
+  },
+  {
+    "name": "Komījān",
+    "stateCode": "00"
+  },
+  {
+    "name": "Sāveh",
+    "stateCode": "00"
+  },
+  {
+    "name": "Shahrestān-e Arāk",
+    "stateCode": "00"
+  },
+  {
+    "name": "Shahrestān-e Āshtīān",
+    "stateCode": "00"
+  },
+  {
+    "name": "Shahrestān-e Delījān",
+    "stateCode": "00"
+  },
+  {
+    "name": "Shahrestān-e Farahān",
+    "stateCode": "00"
+  },
+  {
+    "name": "Shahrestān-e Khondāb",
+    "stateCode": "00"
+  },
+  {
+    "name": "Shahrestān-e Komījān",
+    "stateCode": "00"
+  },
+  {
+    "name": "Shahrestān-e Maḩallāt",
+    "stateCode": "00"
+  },
+  {
+    "name": "Shahrestān-e Sāveh",
+    "stateCode": "00"
+  },
+  {
+    "name": "Shahrestān-e Shāzand",
+    "stateCode": "00"
+  },
+  {
+    "name": "Shahrestān-e Zarandīyeh",
+    "stateCode": "00"
+  },
+  {
+    "name": "Tafresh",
+    "stateCode": "00"
+  },
+  {
+    "name": "Āstāneh-ye Ashrafīyeh",
+    "stateCode": "01"
+  },
+  {
+    "name": "Āstārā",
+    "stateCode": "01"
+  },
+  {
+    "name": "Bandar-e Anzalī",
+    "stateCode": "01"
+  },
+  {
+    "name": "Fūman",
+    "stateCode": "01"
+  },
+  {
+    "name": "Hashtpar",
+    "stateCode": "01"
+  },
+  {
+    "name": "Langarūd",
+    "stateCode": "01"
+  },
+  {
+    "name": "Pādegān-e Manjīl",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rasht",
+    "stateCode": "01"
+  },
+  {
+    "name": "Reẕvānshahr",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rūdsar",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Āstāneh-ye Ashrafīyeh",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Āstārā",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Bandar-e Anzalī",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Fūman",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Lāhījān",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Langarūd",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Māsāl",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Reẕvānshahr",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Rūdbār",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Rūdsar",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Sīāhkal",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Şowme‘eh Sarā",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shahrestān-e Tālesh",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ziabar (Gaskar)",
+    "stateCode": "01"
+  },
+  {
+    "name": "Āmol",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bābol",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bābolsar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Behshahr",
+    "stateCode": "02"
+  },
+  {
+    "name": "Chālūs",
+    "stateCode": "02"
+  },
+  {
+    "name": "Fereydūnkenār",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jūybār",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nashtārūd",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nekā",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nowshahr",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sari",
+    "stateCode": "02"
+  },
+  {
+    "name": "Savadkuh-e Shomali",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e ‘Abbāsābād",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Āmol",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Bābol",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Bābolsar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Chālūs",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Fareydūnkenār",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Galūgāh",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Jūybār",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestan-e Kalār Dasht",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Maḩmūdābād",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Mīāndorūd",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Nekā",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Nūr",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Qā’em Shahr",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Rāmsar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Sārī",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Savādkūh",
+    "stateCode": "02"
+  },
+  {
+    "name": "Shahrestān-e Tonekābon",
+    "stateCode": "02"
+  },
+  {
+    "name": "Simorgh County",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tonekābon",
+    "stateCode": "02"
+  },
+  {
+    "name": "‘Ajab Shīr",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ahar",
+    "stateCode": "03"
+  },
+  {
+    "name": "Bonāb",
+    "stateCode": "03"
+  },
+  {
+    "name": "Hashtrūd",
+    "stateCode": "03"
+  },
+  {
+    "name": "Marand",
+    "stateCode": "03"
+  },
+  {
+    "name": "Sarāb",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e ‘Ajab Shīr",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Āz̄arshahr",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Bonāb",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Bostānābād",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Chārāvīmāq",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Hashtrūd",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Herīs",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Jolfā",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Khodā Āfarīn",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Malekān",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Marāgheh",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Mīāneh",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Oskū",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Sarāb",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Tabrīz",
+    "stateCode": "03"
+  },
+  {
+    "name": "Shahrestān-e Varzaqān",
+    "stateCode": "03"
+  },
+  {
+    "name": "Tabriz",
+    "stateCode": "03"
+  },
+  {
+    "name": "Būkān",
+    "stateCode": "04"
+  },
+  {
+    "name": "Chāypāreh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Khowy",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mahābād",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mīāndoāb",
+    "stateCode": "04"
+  },
+  {
+    "name": "Naqadeh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Orūmīyeh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Oshnavīyeh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Piranshahr",
+    "stateCode": "04"
+  },
+  {
+    "name": "Poldasht",
+    "stateCode": "04"
+  },
+  {
+    "name": "Qarah Ẕīā’ od Dīn",
+    "stateCode": "04"
+  },
+  {
+    "name": "Salmās",
+    "stateCode": "04"
+  },
+  {
+    "name": "Sardasht",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shāhīn Dezh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shahrestān-e Būkān",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shahrestān-e Chāldorān",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shahrestān-e Mahābād",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shahrestān-e Mākū",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shahrestān-e Mīāndoāb",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shahrestān-e Orūmīyeh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shahrestān-e Oshnavīyeh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shahrestān-e Pīrānshahr",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shahrestān-e Salmās",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shahrestān-e Shāhīn Dezh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shahrestān-e Takāb",
+    "stateCode": "04"
+  },
+  {
+    "name": "Takāb",
+    "stateCode": "04"
+  },
+  {
+    "name": "Harsīn",
+    "stateCode": "05"
+  },
+  {
+    "name": "Javānrūd",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kahrīz",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kangāvar",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kermanshah",
+    "stateCode": "05"
+  },
+  {
+    "name": "Pāveh",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sarpol-e Z̄ahāb",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Dālāhū",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Eslāmābād-e Gharb",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Gīlān-e Gharb",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Harsīn",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Javānrūd",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Kangāvar",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Kermānshāh",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Pāveh",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Qaşr-e Shīrīn",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Ravānsar",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Şaḩneh",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e S̄alās̄-e Bābā Jānī",
+    "stateCode": "05"
+  },
+  {
+    "name": "Shahrestān-e Sarpol-e Z̄ahāb",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sonqor",
+    "stateCode": "05"
+  },
+  {
+    "name": "Abadan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Aghajari",
+    "stateCode": "06"
+  },
+  {
+    "name": "Ahvaz",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bāgh Shahrestān-e Malek",
+    "stateCode": "06"
+  },
+  {
+    "name": "Behbahān",
+    "stateCode": "06"
+  },
+  {
+    "name": "Gotvand",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hamidiyeh",
+    "stateCode": "06"
+  },
+  {
+    "name": "Jongīyeh",
+    "stateCode": "06"
+  },
+  {
+    "name": "Karun",
+    "stateCode": "06"
+  },
+  {
+    "name": "Khorramshahr",
+    "stateCode": "06"
+  },
+  {
+    "name": "Masjed Soleymān",
+    "stateCode": "06"
+  },
+  {
+    "name": "Omīdīyeh",
+    "stateCode": "06"
+  },
+  {
+    "name": "Rāmhormoz",
+    "stateCode": "06"
+  },
+  {
+    "name": "Rāmshīr",
+    "stateCode": "06"
+  },
+  {
+    "name": "sedeyen-e Yek",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shādegān",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrak-e Kūlūrī",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Ābādān",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Ahvāz",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Andīkā",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Andīmeshk",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Bandar-e Māhshahr",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Bāvī",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Behbahān",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Dasht-e Āzādegān",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Dezfūl",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Hendījān",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Īz̄eh",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Lālī",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Masjed Soleymān",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Omīdīyeh",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Rāmhormoz",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Rāmshīr",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Shādegān",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Shūsh",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shahrestān-e Shūshtar",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shūsh",
+    "stateCode": "06"
+  },
+  {
+    "name": "Shūshtar",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sūsangerd",
+    "stateCode": "06"
+  },
+  {
+    "name": "Ābādeh",
+    "stateCode": "07"
+  },
+  {
+    "name": "Akbarābād",
+    "stateCode": "07"
+  },
+  {
+    "name": "Dārāb",
+    "stateCode": "07"
+  },
+  {
+    "name": "Fasā",
+    "stateCode": "07"
+  },
+  {
+    "name": "Fīrūzābād",
+    "stateCode": "07"
+  },
+  {
+    "name": "Gerāsh",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kāzerūn",
+    "stateCode": "07"
+  },
+  {
+    "name": "Mamasanī",
+    "stateCode": "07"
+  },
+  {
+    "name": "Marvdasht",
+    "stateCode": "07"
+  },
+  {
+    "name": "Mohr",
+    "stateCode": "07"
+  },
+  {
+    "name": "Neyrīz",
+    "stateCode": "07"
+  },
+  {
+    "name": "Nūrābād",
+    "stateCode": "07"
+  },
+  {
+    "name": "Pāsārgād",
+    "stateCode": "07"
+  },
+  {
+    "name": "Rostam",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahr-e Qadīm-e Lār",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Ābādeh",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Arsanjān",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Bavānāt",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Dārāb",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Eqlīd",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Estahbān",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Farāshband",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Fasā",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Fīrūzābād",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Gerāsh",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Kavār",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Kāzerūn",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Kherāmeh",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Khorrambīd",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Lāmerd",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Lārestān",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Neyrīz",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Pāsārgād",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Qīr va Kārzīn",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Sarvestān",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Sepīdān",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Shīrāz",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shahrestān-e Zarrīn Dasht",
+    "stateCode": "07"
+  },
+  {
+    "name": "Shiraz",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bāft",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bam",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bardsīr",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kerman",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kūh Sefīd",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rafsanjān",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rāvar",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rīgān",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahr-e Bābak",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrak-e Pābedānā",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e ‘Anbarābād",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Anār",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Bāft",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Bardsīr",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Fāryāb",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Jīroft",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Kahnūj",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Kermān",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Kūhbanān",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Manūjān",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Narmāshīr",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Orzū‘īyeh",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Qal‘eh Ganj",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Rābor",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Rafsanjān",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Rūdbār-e Jonūbī",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Shahr-e Bābak",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shahrestān-e Sīrjān",
+    "stateCode": "08"
+  },
+  {
+    "name": "Sirjan",
+    "stateCode": "08"
+  },
+  {
+    "name": "Zarand",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bardaskan",
+    "stateCode": "09"
+  },
+  {
+    "name": "Chenārān",
+    "stateCode": "09"
+  },
+  {
+    "name": "Dargaz",
+    "stateCode": "09"
+  },
+  {
+    "name": "Dāvarzan",
+    "stateCode": "09"
+  },
+  {
+    "name": "Gonābād",
+    "stateCode": "09"
+  },
+  {
+    "name": "Joveyn",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kāshmar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mashhad",
+    "stateCode": "09"
+  },
+  {
+    "name": "Neyshābūr",
+    "stateCode": "09"
+  },
+  {
+    "name": "Qūchān",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sabzevar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sarakhs",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Bajestān",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Bākharz",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Bīnālūd",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Chenārān",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Farīmān",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Fīrūzeh",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Gonābād",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Joghatāy",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Kalāt",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Kāshmar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Khalīlābād",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Khowshāb",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Khvāf",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Mah Velāt",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Neyshābūr",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Qūchān",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Roshtkhvār",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Sabzevār",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Tāybād",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Torbat-e Ḩeydarīyeh",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Torbat-e Jām",
+    "stateCode": "09"
+  },
+  {
+    "name": "Shahrestān-e Zāveh",
+    "stateCode": "09"
+  },
+  {
+    "name": "Tāybād",
+    "stateCode": "09"
+  },
+  {
+    "name": "Torbat-e Ḩeydarīyeh",
+    "stateCode": "09"
+  },
+  {
+    "name": "Torbat-e Jām",
+    "stateCode": "09"
+  },
+  {
+    "name": "Abrīsham",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ardestān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Buin va Miandasht",
+    "stateCode": "10"
+  },
+  {
+    "name": "Chādegān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Dārān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Dehāqān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Dorcheh Pīāz",
+    "stateCode": "10"
+  },
+  {
+    "name": "Dowlatābād",
+    "stateCode": "10"
+  },
+  {
+    "name": "Falāvarjān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Fareydūnshahr",
+    "stateCode": "10"
+  },
+  {
+    "name": "Fereydan",
+    "stateCode": "10"
+  },
+  {
+    "name": "Golpāyegān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Isfahan",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kelīshād va Sūdarjān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Khomeynī Shahr",
+    "stateCode": "10"
+  },
+  {
+    "name": "Khūr",
+    "stateCode": "10"
+  },
+  {
+    "name": "Khvānsār",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mobārakeh",
+    "stateCode": "10"
+  },
+  {
+    "name": "Nā’īn",
+    "stateCode": "10"
+  },
+  {
+    "name": "Najafābād",
+    "stateCode": "10"
+  },
+  {
+    "name": "Naţanz",
+    "stateCode": "10"
+  },
+  {
+    "name": "Qahderījān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Rehnān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Semīrom",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shāhīn Shahr",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Ārān va Bīdgol",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Ardestān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Borkhvār",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Chādegān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Dehāqān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Eşfahān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Falāvarjān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Fareydūnshahr",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Golpāyegān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Kāshān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Khomeynī Shahr",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Khūr va Bīābānak",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Khvānsār",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Lenjān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Mobārakeh",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Nā’īn",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Najafābād",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Naţanz",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Semīrom",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Shāhīn Shahr va Meymeh",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Shahreẕā",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahrestān-e Tīrān va Karvan",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shahreẕā",
+    "stateCode": "10"
+  },
+  {
+    "name": "Tīrān",
+    "stateCode": "10"
+  },
+  {
+    "name": "Zarrīn Shahr",
+    "stateCode": "10"
+  },
+  {
+    "name": "Chabahar",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fannūj",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fanuj",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hamoon",
+    "stateCode": "11"
+  },
+  {
+    "name": "Iranshahr",
+    "stateCode": "11"
+  },
+  {
+    "name": "Khāsh",
+    "stateCode": "11"
+  },
+  {
+    "name": "Mirjaveh",
+    "stateCode": "11"
+  },
+  {
+    "name": "Nīkshahr",
+    "stateCode": "11"
+  },
+  {
+    "name": "Nimruz",
+    "stateCode": "11"
+  },
+  {
+    "name": "Noşratābād",
+    "stateCode": "11"
+  },
+  {
+    "name": "Qaser-e Qand",
+    "stateCode": "11"
+  },
+  {
+    "name": "Qaşr-e Qand",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Chābahār",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Dalgān",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Hīrmand",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Īrānshahr",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Khāsh",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Konārak",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Mehrestān",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Nīkshahr",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Sarāvān",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Sarbāz",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Sīb va Sūrān",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Zābol",
+    "stateCode": "11"
+  },
+  {
+    "name": "Shahrestān-e Zāhedān",
+    "stateCode": "11"
+  },
+  {
+    "name": "Zābol",
+    "stateCode": "11"
+  },
+  {
+    "name": "Zahedan",
+    "stateCode": "11"
+  },
+  {
+    "name": "Zehak",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bāneh",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bījār",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kāmyārān",
+    "stateCode": "12"
+  },
+  {
+    "name": "Marīvān",
+    "stateCode": "12"
+  },
+  {
+    "name": "Qorveh",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sanandaj",
+    "stateCode": "12"
+  },
+  {
+    "name": "Saqqez",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shahrestān-e Bāneh",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shahrestān-e Bījār",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shahrestān-e Dehgolān",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shahrestān-e Dīvāndarreh",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shahrestān-e Kāmyārān",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shahrestān-e Marīvān",
+    "stateCode": "12"
+  },
+  {
+    "name": "Shahrestān-e Sarvābād",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ab Meshkin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Abarlaq-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Abdalan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Abdol Rahim",
+    "stateCode": "13"
+  },
+  {
+    "name": "Abrumand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Abshineh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Abu ol Fathabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aghcheh Qayah",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ahmadabad-e Tappeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ahu Tappeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ajin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ajorlu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Akanlu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Akleh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Alan-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Alanjeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Alfavut",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aliabad-e Posht Shahr",
+    "stateCode": "13"
+  },
+  {
+    "name": "Amirabad-e Kord",
+    "stateCode": "13"
+  },
+  {
+    "name": "Amzajerd",
+    "stateCode": "13"
+  },
+  {
+    "name": "Angoshteh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Anjir Baghi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ansar ol Emam",
+    "stateCode": "13"
+  },
+  {
+    "name": "Anuch",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aq Bolagh-e Aqdaq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aq Bolagh-e Latgah",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aq Bolagh-e Morshed",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aq Chay",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aqa Bolaghi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aqa Jan Bolaghi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aqaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aqcheh Kharabeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aqchelu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Arges-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Arikan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Arpa Darreh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Arteh Bolagh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Artiman",
+    "stateCode": "13"
+  },
+  {
+    "name": "Arzan Fud",
+    "stateCode": "13"
+  },
+  {
+    "name": "Arzuvaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Asadabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ashmizan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Avarzaman",
+    "stateCode": "13"
+  },
+  {
+    "name": "Azandarian",
+    "stateCode": "13"
+  },
+  {
+    "name": "Aznahri",
+    "stateCode": "13"
+  },
+  {
+    "name": "Baba Khanjar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Baba Pir",
+    "stateCode": "13"
+  },
+  {
+    "name": "Baba Qasem",
+    "stateCode": "13"
+  },
+  {
+    "name": "Babolqani",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bad Khvoreh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bahar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Band Aman",
+    "stateCode": "13"
+  },
+  {
+    "name": "Banesareh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Baraband",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bargecheh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Barreh Farakh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Barzul",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bashqurtaran",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bazeran",
+    "stateCode": "13"
+  },
+  {
+    "name": "Behkandan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Belartu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Beshik Tappeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Biaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Biatan-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bid Korpeh-ye Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bid Korpeh-ye Vosta",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bifanaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bighash",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bish Aghaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bitervan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Borjaki",
+    "stateCode": "13"
+  },
+  {
+    "name": "Boyukabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bozchalu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bozineh Jerd",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bujin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bustandar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Buyaqchi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chahar Bolagh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chal Boqa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chaleh Kand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Charoq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chasht Khvoreh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chenari",
+    "stateCode": "13"
+  },
+  {
+    "name": "Cheshmeh Malek",
+    "stateCode": "13"
+  },
+  {
+    "name": "Cheshmeh Pahn-e Nanaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Cheshmeh Qandab",
+    "stateCode": "13"
+  },
+  {
+    "name": "Cheshmeh Qareh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Cheshmeh Qassaban",
+    "stateCode": "13"
+  },
+  {
+    "name": "Cheshmeh Valad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Cheshmeh Zowraq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Choqa Sarahi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chowtash",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chulak Qapanuri",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dahnejerd",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dali Chu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Damaq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Daqdaqabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dar Qeshlaq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Darani-ye Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Darcham",
+    "stateCode": "13"
+  },
+  {
+    "name": "Darreh Chenar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Darreh Mianeh-ye Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Darreh Mirza",
+    "stateCode": "13"
+  },
+  {
+    "name": "Darreh-ye Ebrahim",
+    "stateCode": "13"
+  },
+  {
+    "name": "Darsibeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Davijan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Deh Chaneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Deh Dalian",
+    "stateCode": "13"
+  },
+  {
+    "name": "Deh Ful",
+    "stateCode": "13"
+  },
+  {
+    "name": "Deh Mianeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Deh Nush",
+    "stateCode": "13"
+  },
+  {
+    "name": "Deh Piaz",
+    "stateCode": "13"
+  },
+  {
+    "name": "Deh-e Shaker",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dehnow-e Avarzaman",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dingeleh Kahriz",
+    "stateCode": "13"
+  },
+  {
+    "name": "Do Rudan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Doraneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dorudgaran",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dow Baraleh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dowlatabad-e Hajjilu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dowlujerdin-e Bala",
+    "stateCode": "13"
+  },
+  {
+    "name": "Durijan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Durnian",
+    "stateCode": "13"
+  },
+  {
+    "name": "Emamzadeh Khatun",
+    "stateCode": "13"
+  },
+  {
+    "name": "Emamzadeh Pir Nahan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Eskanan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Fahrumand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Famast",
+    "stateCode": "13"
+  },
+  {
+    "name": "Famenin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Farasfaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Farsban",
+    "stateCode": "13"
+  },
+  {
+    "name": "Farvaz",
+    "stateCode": "13"
+  },
+  {
+    "name": "Faryazan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Fasijan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Fiazaman",
+    "stateCode": "13"
+  },
+  {
+    "name": "Firuzabad-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Firuzan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gamasa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gamasb",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ganj Tappeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ganjab",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gashani",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gav Zaban",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gavkaran",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ghazyatan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gholam Veys",
+    "stateCode": "13"
+  },
+  {
+    "name": "Givaki",
+    "stateCode": "13"
+  },
+  {
+    "name": "Giyan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gol Darreh-ye Anuch",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gol Heydar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Golparabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Golshir",
+    "stateCode": "13"
+  },
+  {
+    "name": "Golushjerd",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gomush Bolagh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gonbad Chay",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gonbad-e Kabud",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gostar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gozal Abdal",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gug Qash",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gujak",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gulvand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gunestan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gur Gaz",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gurjiu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gushalan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gusheh-ye Kasavand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hajji Kheder",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hajji Maqsud",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hajji Tu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hamadan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hamilabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hamzehlu-ye Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Haramabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hasan Kusej",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hasan Teymur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hasanabad-e Emam",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hasanabad-e Qush Bolagh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hasanabad-e Sheverin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Heriraz",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hesar-e Qarah Baghi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hesar-e Qujeh Baghi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Heydareh-ye Dar-e Emam",
+    "stateCode": "13"
+  },
+  {
+    "name": "Heydareh-ye Posht-e Shahr",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hizaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Holvar-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hom-e Khosrow",
+    "stateCode": "13"
+  },
+  {
+    "name": "Horhoreh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hoseynabad-e Bahar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hoseynabad-e Nazem",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hoseynabad-e Shamlu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hudaraj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Iraneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Isti Bolagh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Jamishlu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Jaria",
+    "stateCode": "13"
+  },
+  {
+    "name": "Javar Sajin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Jerbanlu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Jighi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Jijan Kuh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Jijian Rud",
+    "stateCode": "13"
+  },
+  {
+    "name": "Jin Taraqayah",
+    "stateCode": "13"
+  },
+  {
+    "name": "Juraqan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kaboodrahang",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kahard",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kahkadan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kahriz-e Baba Hoseyn",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kahriz-e Boqazi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kahriz-e Hoseynabad-e Nazem",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kahriz-e Jamal",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kahriz-e Salim",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kal Kabud",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kalb Hesari",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kalilabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kamak-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kamar Boneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kamazan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kand Halan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kand Tappeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kand-e Bolaghi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kangavar-e Kohneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Karafs",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kark-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kartilabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kasavand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kaslan Qayah",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kavanaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kesb",
+    "stateCode": "13"
+  },
+  {
+    "name": "Keykaleh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Keyni Sayeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Khabar Arkhi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Khaku",
+    "stateCode": "13"
+  },
+  {
+    "name": "Khaleq Verdi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Khalil Kord",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kheradmand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kheyr Qoli",
+    "stateCode": "13"
+  },
+  {
+    "name": "Khomeygan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Khvajeh Hesar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Khvajeh Hoseyni",
+    "stateCode": "13"
+  },
+  {
+    "name": "Khvajeh Kandi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Khvoshab-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kitu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kohnush",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kolanjan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Konjineh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kord Bolagh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Korzan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kowzareh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kuhani",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kur Kahriz",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kusaj Khalil",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kutah Darreh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Laleh Dan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lalejin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lamiyan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Latgah",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lavashan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Leyli Yadegar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Luluhar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mahanabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mahbar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mahdaviyeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mahnian",
+    "stateCode": "13"
+  },
+  {
+    "name": "Malayer",
+    "stateCode": "13"
+  },
+  {
+    "name": "Malek-e Ashtar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Malusan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mangavi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Marvil",
+    "stateCode": "13"
+  },
+  {
+    "name": "Maryanaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Masjedin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Menjan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mesinak",
+    "stateCode": "13"
+  },
+  {
+    "name": "Meyvaleh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mianzulan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mihamleh-ye Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Milab",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mirza Hesari",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mishen",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mobarakin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mohajeran",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mohammadabad-e Chulak",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mohammadiyeh-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mohara",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mokarrabi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Molham Darreh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Molla Bodagh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Monavvar Tappeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Morghabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mowdaran",
+    "stateCode": "13"
+  },
+  {
+    "name": "Musa Bolaghi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nahandar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nahavand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Najafiyeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nakilabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nakin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Namileh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nanaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nazul",
+    "stateCode": "13"
+  },
+  {
+    "name": "Negar Khatun",
+    "stateCode": "13"
+  },
+  {
+    "name": "Negarabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nehenjeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nesar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Neshar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Niyanj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nosratabad-e Behraz",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nosratabad-e Laklak",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nurabad-e Simineh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ojaq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ommatlar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Oshtoran",
+    "stateCode": "13"
+  },
+  {
+    "name": "Oshtorjin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ovraqin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Owrteh Qamish",
+    "stateCode": "13"
+  },
+  {
+    "name": "Owryad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pahnabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Panbeh Dar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Parluk",
+    "stateCode": "13"
+  },
+  {
+    "name": "Parvaraq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Payandeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Peyhan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pileh Jin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pir Anbar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pir Badam",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pir Khodaverdi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pir Malu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pir Mishan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pir Savaran",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pir Yusof",
+    "stateCode": "13"
+  },
+  {
+    "name": "Piruz",
+    "stateCode": "13"
+  },
+  {
+    "name": "Poshtjin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qabanqoli",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qader Khalaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qadimi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qahavand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qajar Ab-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qarah Day",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qarah Tegini",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qaranqu Darreh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qasabestan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qasemabad-e Laklak",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qater Owlan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qayesh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qazan Qarah",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qazi Mardan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeshlaq Baba Rostam",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeshlaq-e Anuch",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeshlaq-e Deh Ful",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeshlaq-e Dehnow",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeshlaq-e Mohammadi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeshlaq-e Najaf",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeshlaq-e Pust Shuran",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeshlaq-e Qobad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeshlaq-e Shirazi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeshlaq-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeshlaq-e Valiollah",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qeydli Bolagh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qilab",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qohurd-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qoli Laleh-ye Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qolqolabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Quch Tappeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Qushjeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rahmanabad, Malayer",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ramishan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rastguyan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rasulabad-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ravand-e Vosta",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rayegan-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Razaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Razan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Razini",
+    "stateCode": "13"
+  },
+  {
+    "name": "Reza Baghi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rezvankadeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rivasijan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Robat-e Sheverin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rud Avar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rud-e Hasan-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Safa Riz",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sahamabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Salehabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Salilak",
+    "stateCode": "13"
+  },
+  {
+    "name": "Saluk",
+    "stateCode": "13"
+  },
+  {
+    "name": "Samen",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sanaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sanjuzan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sar Duran",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sarab-e Tajar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Saravak",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sarayjuq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sarijlu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sarkan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Saziyan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sefid Khaneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Segavi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Setaq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shademaneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shanabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shanjur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sharifabad-e Quzan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sharifabad-e Tajar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shatzal",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shavand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sheverin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sheykh Jarrah",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shilandar-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shir Barat",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shirin Su",
+    "stateCode": "13"
+  },
+  {
+    "name": "Shush Ab",
+    "stateCode": "13"
+  },
+  {
+    "name": "Siah Goleh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sib Dar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Silvar",
+    "stateCode": "13"
+  },
+  {
+    "name": "Simin-e Abaru",
+    "stateCode": "13"
+  },
+  {
+    "name": "Simin-e Zagheh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Siravand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sistaneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Solulan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sorkh Kand",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sulijeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Surtajin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sutlaq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tafrijan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tahunabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tajar-e Samen",
+    "stateCode": "13"
+  },
+  {
+    "name": "Takhtiabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Taleh Jerd-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tamuzan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tappeh Yazdan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tappeh-ye Dibi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Taraqayah",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tarik Darreh-ye Bala",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tarkhinabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tas Tappeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tasbandi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tasran",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tavaleh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tavaneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Taveh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tavilan-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tazehnab-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Termianak",
+    "stateCode": "13"
+  },
+  {
+    "name": "Timi Jan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tuchaqaz",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tulki Tappeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tusk-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tutal",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tuyserkan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vafr-e Jin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vahandeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vahman",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vahnan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vali Mohammad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vali Sir Ab",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vandarabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Varayeneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Varazaneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Varchaq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vardavard-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vardavard-e Vosta",
+    "stateCode": "13"
+  },
+  {
+    "name": "Varkaneh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Varqestan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Varvazin",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vasaj",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vashur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vasleh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vesht",
+    "stateCode": "13"
+  },
+  {
+    "name": "Vezendan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Yalfan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Yarom Qayah",
+    "stateCode": "13"
+  },
+  {
+    "name": "Yaromjeh Bagh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Yeganeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Yekanabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Yekleh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Yeserlu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Yunes",
+    "stateCode": "13"
+  },
+  {
+    "name": "Yunji",
+    "stateCode": "13"
+  },
+  {
+    "name": "Zagheh-ye Anuch",
+    "stateCode": "13"
+  },
+  {
+    "name": "Zagheh-ye Tasbandi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Zaghlijeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Zamanabad-e Mohammadabad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Zangeneh-ye Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Zapon",
+    "stateCode": "13"
+  },
+  {
+    "name": "Zaramin-e Sofla",
+    "stateCode": "13"
+  },
+  {
+    "name": "Zarrin Bagh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Zeraq",
+    "stateCode": "13"
+  },
+  {
+    "name": "Zirabiyeh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ben",
+    "stateCode": "14"
+  },
+  {
+    "name": "Borūjen",
+    "stateCode": "14"
+  },
+  {
+    "name": "Chelgard",
+    "stateCode": "14"
+  },
+  {
+    "name": "Farrokh Shahr",
+    "stateCode": "14"
+  },
+  {
+    "name": "Fārsān",
+    "stateCode": "14"
+  },
+  {
+    "name": "Saman",
+    "stateCode": "14"
+  },
+  {
+    "name": "Shahr-e Kord",
+    "stateCode": "14"
+  },
+  {
+    "name": "Shahrekord",
+    "stateCode": "14"
+  },
+  {
+    "name": "Shahrestān-e Borūjen",
+    "stateCode": "14"
+  },
+  {
+    "name": "Shahrestān-e Fārsān",
+    "stateCode": "14"
+  },
+  {
+    "name": "Shahrestān-e Kīār",
+    "stateCode": "14"
+  },
+  {
+    "name": "Shahrestān-e Kūhrang",
+    "stateCode": "14"
+  },
+  {
+    "name": "Shahrestān-e Lordegān",
+    "stateCode": "14"
+  },
+  {
+    "name": "Aleshtar",
+    "stateCode": "15"
+  },
+  {
+    "name": "Alīgūdarz",
+    "stateCode": "15"
+  },
+  {
+    "name": "Aznā",
+    "stateCode": "15"
+  },
+  {
+    "name": "Borūjerd",
+    "stateCode": "15"
+  },
+  {
+    "name": "Delfan",
+    "stateCode": "15"
+  },
+  {
+    "name": "Khorramabad",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kūhdasht",
+    "stateCode": "15"
+  },
+  {
+    "name": "Nūrābād",
+    "stateCode": "15"
+  },
+  {
+    "name": "Pol-e Dokhtar",
+    "stateCode": "15"
+  },
+  {
+    "name": "Rumeshkhan County",
+    "stateCode": "15"
+  },
+  {
+    "name": "Selseleh",
+    "stateCode": "15"
+  },
+  {
+    "name": "Shahrestān-e Alīgūdarz",
+    "stateCode": "15"
+  },
+  {
+    "name": "Shahrestān-e Aznā",
+    "stateCode": "15"
+  },
+  {
+    "name": "Shahrestān-e Borūjerd",
+    "stateCode": "15"
+  },
+  {
+    "name": "Shahrestān-e Dūreh",
+    "stateCode": "15"
+  },
+  {
+    "name": "Shahrestān-e Khorramābād",
+    "stateCode": "15"
+  },
+  {
+    "name": "Shahrestān-e Kūhdasht",
+    "stateCode": "15"
+  },
+  {
+    "name": "Vasīān",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ābdānān",
+    "stateCode": "16"
+  },
+  {
+    "name": "Badreh",
+    "stateCode": "16"
+  },
+  {
+    "name": "Chardavol County",
+    "stateCode": "16"
+  },
+  {
+    "name": "Darreh Shahr",
+    "stateCode": "16"
+  },
+  {
+    "name": "Darrehshahr",
+    "stateCode": "16"
+  },
+  {
+    "name": "Dehlorān",
+    "stateCode": "16"
+  },
+  {
+    "name": "Īlām",
+    "stateCode": "16"
+  },
+  {
+    "name": "Mehrān",
+    "stateCode": "16"
+  },
+  {
+    "name": "Shahrestān-e Ābdānān",
+    "stateCode": "16"
+  },
+  {
+    "name": "Shahrestān-e Dehlorān",
+    "stateCode": "16"
+  },
+  {
+    "name": "Shahrestān-e Eyvān",
+    "stateCode": "16"
+  },
+  {
+    "name": "Shahrestān-e Īlām",
+    "stateCode": "16"
+  },
+  {
+    "name": "Shahrestān-e Malekshāhī",
+    "stateCode": "16"
+  },
+  {
+    "name": "Shahrestān-e Mehrān",
+    "stateCode": "16"
+  },
+  {
+    "name": "Sirvan",
+    "stateCode": "16"
+  },
+  {
+    "name": "Dehdasht",
+    "stateCode": "17"
+  },
+  {
+    "name": "Dogonbadan",
+    "stateCode": "17"
+  },
+  {
+    "name": "Landeh",
+    "stateCode": "17"
+  },
+  {
+    "name": "Shahrestān-e Bahma’ī",
+    "stateCode": "17"
+  },
+  {
+    "name": "Shahrestān-e Bāsht",
+    "stateCode": "17"
+  },
+  {
+    "name": "Shahrestān-e Bowyer Aḩmad",
+    "stateCode": "17"
+  },
+  {
+    "name": "Shahrestān-e Charām",
+    "stateCode": "17"
+  },
+  {
+    "name": "Shahrestān-e Danā",
+    "stateCode": "17"
+  },
+  {
+    "name": "Shahrestān-e Gachsārān",
+    "stateCode": "17"
+  },
+  {
+    "name": "Shahrestān-e Kohgīlūyeh",
+    "stateCode": "17"
+  },
+  {
+    "name": "Yasuj",
+    "stateCode": "17"
+  },
+  {
+    "name": "Ahram",
+    "stateCode": "18"
+  },
+  {
+    "name": "Bandar-e Genāveh",
+    "stateCode": "18"
+  },
+  {
+    "name": "Borāzjān",
+    "stateCode": "18"
+  },
+  {
+    "name": "Bushehr",
+    "stateCode": "18"
+  },
+  {
+    "name": "Deylam",
+    "stateCode": "18"
+  },
+  {
+    "name": "Khārk",
+    "stateCode": "18"
+  },
+  {
+    "name": "Shahrestān-e ‘Asalūyeh",
+    "stateCode": "18"
+  },
+  {
+    "name": "Shahrestān-e Būshehr",
+    "stateCode": "18"
+  },
+  {
+    "name": "Shahrestān-e Dashtestān",
+    "stateCode": "18"
+  },
+  {
+    "name": "Shahrestān-e Dashtī",
+    "stateCode": "18"
+  },
+  {
+    "name": "Shahrestān-e Genāveh",
+    "stateCode": "18"
+  },
+  {
+    "name": "Shahrestān-e Kangān",
+    "stateCode": "18"
+  },
+  {
+    "name": "Shahrestān-e Tangestān",
+    "stateCode": "18"
+  },
+  {
+    "name": "Abhar",
+    "stateCode": "19"
+  },
+  {
+    "name": "Alvand",
+    "stateCode": "19"
+  },
+  {
+    "name": "Khorramdarreh",
+    "stateCode": "19"
+  },
+  {
+    "name": "Shahrestān-e Ījrūd",
+    "stateCode": "19"
+  },
+  {
+    "name": "Shahrestān-e Khodābandeh",
+    "stateCode": "19"
+  },
+  {
+    "name": "Shahrestān-e Māhneshān",
+    "stateCode": "19"
+  },
+  {
+    "name": "Shahrestān-e Ţārom",
+    "stateCode": "19"
+  },
+  {
+    "name": "Shahrestān-e Zanjān",
+    "stateCode": "19"
+  },
+  {
+    "name": "Soltaniyeh",
+    "stateCode": "19"
+  },
+  {
+    "name": "Zanjān",
+    "stateCode": "19"
+  },
+  {
+    "name": "Dāmghān",
+    "stateCode": "20"
+  },
+  {
+    "name": "Īstgāh-e Rāh Āhan-e Garmsār",
+    "stateCode": "20"
+  },
+  {
+    "name": "Mahdishahr",
+    "stateCode": "20"
+  },
+  {
+    "name": "Semnan",
+    "stateCode": "20"
+  },
+  {
+    "name": "Shahrestān-e Ārādān",
+    "stateCode": "20"
+  },
+  {
+    "name": "Shahrestān-e Dāmghān",
+    "stateCode": "20"
+  },
+  {
+    "name": "Shahrestān-e Garmsār",
+    "stateCode": "20"
+  },
+  {
+    "name": "Shahrestān-e Mayāmey",
+    "stateCode": "20"
+  },
+  {
+    "name": "Shahrestān-e Semnān",
+    "stateCode": "20"
+  },
+  {
+    "name": "Shahrestān-e Shāhrūd",
+    "stateCode": "20"
+  },
+  {
+    "name": "Shahrud",
+    "stateCode": "20"
+  },
+  {
+    "name": "Ardakān",
+    "stateCode": "21"
+  },
+  {
+    "name": "Bāfq",
+    "stateCode": "21"
+  },
+  {
+    "name": "Khavāş Kūh",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mahrīz",
+    "stateCode": "21"
+  },
+  {
+    "name": "Meybod",
+    "stateCode": "21"
+  },
+  {
+    "name": "Shahrestān-e Abarkūh",
+    "stateCode": "21"
+  },
+  {
+    "name": "Shahrestān-e Ardakān",
+    "stateCode": "21"
+  },
+  {
+    "name": "Shahrestān-e Ashkez̄ar",
+    "stateCode": "21"
+  },
+  {
+    "name": "Shahrestān-e Bāfq",
+    "stateCode": "21"
+  },
+  {
+    "name": "Shahrestān-e Behābād",
+    "stateCode": "21"
+  },
+  {
+    "name": "Shahrestān-e Khātam",
+    "stateCode": "21"
+  },
+  {
+    "name": "Shahrestān-e Mehrīz",
+    "stateCode": "21"
+  },
+  {
+    "name": "Shahrestān-e Yazd",
+    "stateCode": "21"
+  },
+  {
+    "name": "Tabas",
+    "stateCode": "21"
+  },
+  {
+    "name": "Taft",
+    "stateCode": "21"
+  },
+  {
+    "name": "Yazd",
+    "stateCode": "21"
+  },
+  {
+    "name": "Bandar Abbas",
+    "stateCode": "22"
+  },
+  {
+    "name": "Bandar Lengeh",
+    "stateCode": "22"
+  },
+  {
+    "name": "Bandar-e Lengeh",
+    "stateCode": "22"
+  },
+  {
+    "name": "Bastak",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kīsh",
+    "stateCode": "22"
+  },
+  {
+    "name": "Mīnāb",
+    "stateCode": "22"
+  },
+  {
+    "name": "Qeshm",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shahrestān-e Abū Mūsá",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shahrestān-e Bandar ‘Abbās",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shahrestān-e Bashāgard",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shahrestān-e Ḩājjīābād",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shahrestān-e Jāsk",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shahrestān-e Khamīr",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shahrestān-e Mīnāb",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shahrestān-e Pārsīān",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shahrestān-e Rūdān",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shahrestān-e Sīrīk",
+    "stateCode": "22"
+  },
+  {
+    "name": "Damāvand",
+    "stateCode": "23"
+  },
+  {
+    "name": "Eqbālīyeh",
+    "stateCode": "23"
+  },
+  {
+    "name": "Eslāmshahr",
+    "stateCode": "23"
+  },
+  {
+    "name": "Malārd",
+    "stateCode": "23"
+  },
+  {
+    "name": "Pardis",
+    "stateCode": "23"
+  },
+  {
+    "name": "Pīshvā",
+    "stateCode": "23"
+  },
+  {
+    "name": "Qarchak",
+    "stateCode": "23"
+  },
+  {
+    "name": "Qods",
+    "stateCode": "23"
+  },
+  {
+    "name": "Rey",
+    "stateCode": "23"
+  },
+  {
+    "name": "Robāţ Karīm",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrak-e Emām Ḩasan",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahre Jadide Andisheh",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Bahārestān",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Damāvand",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Eslāmshahr",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Fīrūzkūh",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Malārd",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Pākdasht",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Pīshvā",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Robāţ Karīm",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Shahrīār",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Shemīrānāt",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Tehrān",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrestān-e Varāmīn",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shahrīār",
+    "stateCode": "23"
+  },
+  {
+    "name": "Sharīfābād",
+    "stateCode": "23"
+  },
+  {
+    "name": "Soleh Bon",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ţāleb ābād",
+    "stateCode": "23"
+  },
+  {
+    "name": "Tehran",
+    "stateCode": "23"
+  },
+  {
+    "name": "Varāmīn",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ardabīl",
+    "stateCode": "24"
+  },
+  {
+    "name": "Bīleh Savār",
+    "stateCode": "24"
+  },
+  {
+    "name": "Khalkhāl",
+    "stateCode": "24"
+  },
+  {
+    "name": "Omīdcheh",
+    "stateCode": "24"
+  },
+  {
+    "name": "Pārsābād",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shahrestān-e Ardabīl",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shahrestān-e Bīleh Savār",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shahrestān-e Germī",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shahrestān-e Khalkhāl",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shahrestān-e Kows̄ar",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shahrestān-e Meshgīn Shahr",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shahrestān-e Namīn",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shahrestān-e Nīr",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shahrestān-e Pārsābād",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shahrestān-e Sar‘eyn",
+    "stateCode": "24"
+  },
+  {
+    "name": "Qom",
+    "stateCode": "25"
+  },
+  {
+    "name": "Alborz",
+    "stateCode": "26"
+  },
+  {
+    "name": "Alvand",
+    "stateCode": "26"
+  },
+  {
+    "name": "Avaj",
+    "stateCode": "26"
+  },
+  {
+    "name": "Qazvin",
+    "stateCode": "26"
+  },
+  {
+    "name": "Shahrestān-e Bū’īn Zahrā",
+    "stateCode": "26"
+  },
+  {
+    "name": "Shahrestān-e Qazvīn",
+    "stateCode": "26"
+  },
+  {
+    "name": "Shahrestān-e Tākestān",
+    "stateCode": "26"
+  },
+  {
+    "name": "Tākestān",
+    "stateCode": "26"
+  },
+  {
+    "name": "Āq Qāyeh",
+    "stateCode": "27"
+  },
+  {
+    "name": "Āzādshahr",
+    "stateCode": "27"
+  },
+  {
+    "name": "Gonbad-e Kāvūs",
+    "stateCode": "27"
+  },
+  {
+    "name": "Gorgān",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kalāleh",
+    "stateCode": "27"
+  },
+  {
+    "name": "Qarnābād",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e ‘Alīābād",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e Āq Qalā",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e Āzādshahr",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e Gālīkesh",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e Gomīshān",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e Gonbad-e Kāvūs",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e Gorgān",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e Kalāleh",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e Kordkūy",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e Marāveh Tappeh",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e Mīnūdasht",
+    "stateCode": "27"
+  },
+  {
+    "name": "Shahrestān-e Rāmīān",
+    "stateCode": "27"
+  },
+  {
+    "name": "Torkaman",
+    "stateCode": "27"
+  },
+  {
+    "name": "Bojnūrd",
+    "stateCode": "28"
+  },
+  {
+    "name": "Esfarāyen",
+    "stateCode": "28"
+  },
+  {
+    "name": "Raz and Jargalan",
+    "stateCode": "28"
+  },
+  {
+    "name": "Shahrestān-e Bojnūrd",
+    "stateCode": "28"
+  },
+  {
+    "name": "Shahrestān-e Esfarāyen",
+    "stateCode": "28"
+  },
+  {
+    "name": "Shahrestān-e Fārūj",
+    "stateCode": "28"
+  },
+  {
+    "name": "Shahrestān-e Jājarm",
+    "stateCode": "28"
+  },
+  {
+    "name": "Shahrestān-e Māneh va Samalqān",
+    "stateCode": "28"
+  },
+  {
+    "name": "Shahrestān-e Shīrvān",
+    "stateCode": "28"
+  },
+  {
+    "name": "Shīrvān",
+    "stateCode": "28"
+  },
+  {
+    "name": "Bīrjand",
+    "stateCode": "29"
+  },
+  {
+    "name": "Boshrūyeh",
+    "stateCode": "29"
+  },
+  {
+    "name": "Qā’en",
+    "stateCode": "29"
+  },
+  {
+    "name": "Shahrestān-e Bīrjand",
+    "stateCode": "29"
+  },
+  {
+    "name": "Shahrestān-e Darmīān",
+    "stateCode": "29"
+  },
+  {
+    "name": "Shahrestān-e Khūsf",
+    "stateCode": "29"
+  },
+  {
+    "name": "Shahrestān-e Nehbandān",
+    "stateCode": "29"
+  },
+  {
+    "name": "Shahrestān-e Qā’en",
+    "stateCode": "29"
+  },
+  {
+    "name": "Shahrestān-e Sarāyān",
+    "stateCode": "29"
+  },
+  {
+    "name": "Shahrestān-e Sarbīsheh",
+    "stateCode": "29"
+  },
+  {
+    "name": "Shahrestān-e Zīrkūh",
+    "stateCode": "29"
+  },
+  {
+    "name": "Tabas",
+    "stateCode": "29"
+  },
+  {
+    "name": "Fardis",
+    "stateCode": "30"
+  },
+  {
+    "name": "Karaj",
+    "stateCode": "30"
+  },
+  {
+    "name": "Naz̧arābād",
+    "stateCode": "30"
+  },
+  {
+    "name": "Shahrestān-e Eshtehārd",
+    "stateCode": "30"
+  },
+  {
+    "name": "Shahrestān-e Naz̧arābād",
+    "stateCode": "30"
+  },
+  {
+    "name": "Shahrestān-e Sāvojbolāgh",
+    "stateCode": "30"
+  },
+  {
+    "name": "Shahrestān-e Ţāleqān",
+    "stateCode": "30"
+  }
+]

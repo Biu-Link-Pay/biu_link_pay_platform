@@ -1,0 +1,1318 @@
+[
+  {
+    "name": "Antopal’",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Asnyezhytsy",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Baranovichi",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Baranovichskiy Rayon",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Brest",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Brestski Rayon",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Byaroza",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Byarozawski Rayon",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Byelaazyorsk",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Charnawchytsy",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Damachava",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Davyd-Haradok",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Drahichyn",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Drahichynski Rayon",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Hantsavichy",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Hantsavitski Rayon",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Haradzishcha",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Horad Baranavichy",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Horad Brest",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Ivanava",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Ivanawski Rayon",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Ivatsevichy",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Kamyanyets",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Kamyanyetski Rayon",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Kamyanyuki",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Kobryn",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Kosava",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Lahishyn",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Luninyets",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Lyakhavichy",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Malaryta",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Mikashevichy",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Motal’",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Nyakhachava",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Pinsk",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Pruzhanski Rayon",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Pruzhany",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Ruzhany",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Stolin",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Stolinski Rayon",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Tsyelyakhany",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Vysokaye",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Zhabinka",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Zhabinkawski Rayon",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Znamenka",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Frunzyenski Rayon",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Kastrychnitski Rayon",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Lyeninski Rayon",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Maskowski Rayon",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Minsk",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Partyzanski Rayon",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Savyetski Rayon",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Tsentral’ny Rayon",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Zavodski Rayon",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Aktsyabrski",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Brahin",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Brahinski Rayon",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Buda-Kashalyova",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Chachersk",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Chacherski Rayon",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Dobrush",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Dowsk",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Homyel'",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Homyel’ski Rayon",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Kalinkavichy",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Karanyowka",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Karma",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Kastsyukowka",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Khal’ch",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Khoyniki",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Loyew",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Lyel’chytski Rayon",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Lyel’chytsy",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Mazyr",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Mazyrski Rayon",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Narowlya",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Novaya Huta",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Parychy",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Peramoga",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Pyetrykaw",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Rahachow",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Rahachowski Rayon",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Rechytsa",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Sasnovy Bor",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Svyetlahorsk",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Turaw",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Vasilyevichy",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Vyetka",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Vyetkawski Rayon",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Yel’sk",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Zhlobin",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Zhlobinski Rayon",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Zhytkavichy",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Ashmyanski Rayon",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Ashmyany",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Astravyets",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Astravyetski Rayon",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Baruny",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Byarozawka",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Dyatlovo",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Grodnenskiy Rayon",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Hal’shany",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Horad Hrodna",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Hrodna",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Hyeranyony",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Indura",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Iwye",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Karelichy",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Karelitski Rayon",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Krasnosel’skiy",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Kreva",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Lida",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Lidski Rayon",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Lyubcha",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Mir",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Mosty",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Novogrudok",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Ross’",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Sapotskin",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Shchuchyn",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Shchuchynski Rayon",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Skidel’",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Slonim",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Smarhon’",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Soly",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Svislach",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Vishnyeva",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Volkovysk",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Voranava",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Vyalikaya Byerastavitsa",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Zel’va",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Zhaludok",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Zhirovichi",
+    "stateCode": "HR"
+  },
+  {
+    "name": "Asipovichy",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Asipovitski Rayon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Babruysk",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Babruyski Rayon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Buynichy",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Byalynichy",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Byalynitski Rayon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bykhaw",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Chavuski Rayon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Chavusy",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Cherykaw",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Cherykawski Rayon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Dashkawka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Drybin",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Drybinski Rayon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Hlusha",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Hlusk",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Horatski Rayon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Horki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kadino",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kamyennyya Lavy",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kastsyukovichy",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Khodasy",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Khotsimsk",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Khotsimski Rayon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kirawsk",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Klichaw",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Klimavichy",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krasnapol’ski Rayon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krasnapollye",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krasnyy Bereg",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kruhlaye",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krychaw",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mahilyow",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mahilyowski Rayon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mstsislaw",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Myazhysyatki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Myshkavichy",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Palykavichy Pyershyya",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Posëlok Voskhod",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ramanavichy",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Shklow",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Shklowski Rayon",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Slawharad",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Veyno",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Vishow",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Yalizava",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Astrashytski Haradok",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Atolina",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Azyartso",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Bal’shavik",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Barysaw",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Barysawski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Blon’",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Bobr",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Borovlyany",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Byarezinski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Byerazino",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Chervyen’",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Chervyen’ski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Chyrvonaya Slabada",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Chyst’",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Druzhny",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Dukora",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Dzyarzhynsk",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Enyerhyetykaw",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Fanipol",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Haradzyeya",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Hatava",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Horad Smalyavichy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Horad Zhodzina",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Hotsk",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Il’ya",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Ivyanyets",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Kalodzishchy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Kapyl’",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Kapyl’ski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Khatsyezhyna",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Kholopenichi",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Klyetsk",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Klyetski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Korolëv Stan",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Krasnaye",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Krupki",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Kryvichy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Lahoysk",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Loshnitsa",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Luhavaya Slabada",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Lyasny",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Lyeskawka",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Lyuban’",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Machulishchy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Maladzyechna",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Mar’’ina Horka",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Michanovichi",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Myadzyel",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Myadzyel’ski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Narach",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Nasilava",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Novosel’ye",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Novy Svyerzhan’",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Nyasvizh",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Nyasvizhski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Plyeshchanitsy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Prawdzinski",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Pryvol’ny",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Pukhavichy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Pukhavichy Raion",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Pyatryshki",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Radashkovichy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Rakaw",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Rudzyensk",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Salihorsk",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Samakhvalavichy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Sarachy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Schomyslitsa",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Slabada",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Slutsk",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Slutski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Smalyavitski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Smilavichy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Snow",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Stan’kava",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Staradarozhski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Starobin",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Staryya Darohi",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Stawbtsowski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Stowbtsy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Svir",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Svislach",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Syenitsa",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Syomkava",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Tsimkavichy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Turets-Bayary",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Urechcha",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Usiazh",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Uzda",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Uzdzyenski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Valozhyn",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Vilyeyka",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Vilyeyski Rayon",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Vyaliki Trastsyanets",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Yubilyeyny",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Zamostochye",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Zaslawye",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Zhdanovichy",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Zyembin",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Октябрьский",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Balbasava",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Baran’",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Braslaw",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Braslawski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Byahoml’",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Byeshankovitski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Chashniki",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Chashnitski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Dokshytski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Dokshytsy",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Druya",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Dubrowna",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Dzisna",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Haradok",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Haradotski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Hlybokaye",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Hlybotski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Kokhanava",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Konstantinovo",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Lyepyel’",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Lyepyel’ski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Lyntupy",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Lyozna",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Lyoznyenski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Mosar",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Myorski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Myory",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Navapolatsk",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Novolukoml’",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Orsha",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Osveya",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Pastavy",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Pastawski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Polatsk",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Polatski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Rasonski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Rasony",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Sharkawshchyna",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Sharkawshchynski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Shumilinski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Syanno",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Syennyenski Rayon",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Talachyn",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Ushachy",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Vidzy",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Vitebsk",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Vyerkhnyadzvinsk",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Vyerkhnyadzvinski Rayon",
+    "stateCode": "VI"
+  }
+]

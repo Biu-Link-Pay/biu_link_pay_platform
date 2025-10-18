@@ -1,0 +1,9446 @@
+[
+  {
+    "name": "Andau",
+    "stateCode": "1"
+  },
+  {
+    "name": "Antau",
+    "stateCode": "1"
+  },
+  {
+    "name": "Apetlon",
+    "stateCode": "1"
+  },
+  {
+    "name": "Bad Sauerbrunn",
+    "stateCode": "1"
+  },
+  {
+    "name": "Bad Tatzmannsdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Badersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Bernstein",
+    "stateCode": "1"
+  },
+  {
+    "name": "Bocksdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Breitenbrunn",
+    "stateCode": "1"
+  },
+  {
+    "name": "Bruckneudorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Deutsch Jahrndorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Deutsch Kaltenbrunn",
+    "stateCode": "1"
+  },
+  {
+    "name": "Deutschkreutz",
+    "stateCode": "1"
+  },
+  {
+    "name": "Donnerskirchen",
+    "stateCode": "1"
+  },
+  {
+    "name": "Drassburg",
+    "stateCode": "1"
+  },
+  {
+    "name": "Eberau",
+    "stateCode": "1"
+  },
+  {
+    "name": "Edelstal",
+    "stateCode": "1"
+  },
+  {
+    "name": "Eisenstadt",
+    "stateCode": "1"
+  },
+  {
+    "name": "Eisenstadt Stadt",
+    "stateCode": "1"
+  },
+  {
+    "name": "Eisenstadt-Umgebung",
+    "stateCode": "1"
+  },
+  {
+    "name": "Eltendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Forchtenstein",
+    "stateCode": "1"
+  },
+  {
+    "name": "Frauenkirchen",
+    "stateCode": "1"
+  },
+  {
+    "name": "Gattendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Gols",
+    "stateCode": "1"
+  },
+  {
+    "name": "Grafenschachen",
+    "stateCode": "1"
+  },
+  {
+    "name": "Grosshöflein",
+    "stateCode": "1"
+  },
+  {
+    "name": "Grosspetersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Güssing",
+    "stateCode": "1"
+  },
+  {
+    "name": "Güttenbach",
+    "stateCode": "1"
+  },
+  {
+    "name": "Hackerberg",
+    "stateCode": "1"
+  },
+  {
+    "name": "Halbturn",
+    "stateCode": "1"
+  },
+  {
+    "name": "Hannersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Heiligenbrunn",
+    "stateCode": "1"
+  },
+  {
+    "name": "Heiligenkreuz im Lafnitztal",
+    "stateCode": "1"
+  },
+  {
+    "name": "Heugraben",
+    "stateCode": "1"
+  },
+  {
+    "name": "Hirm",
+    "stateCode": "1"
+  },
+  {
+    "name": "Horitschon",
+    "stateCode": "1"
+  },
+  {
+    "name": "Hornstein",
+    "stateCode": "1"
+  },
+  {
+    "name": "Illmitz",
+    "stateCode": "1"
+  },
+  {
+    "name": "Inzenhof",
+    "stateCode": "1"
+  },
+  {
+    "name": "Jabing",
+    "stateCode": "1"
+  },
+  {
+    "name": "Jennersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Jois",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kaisersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kemeten",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kittsee",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kleinhöflein im Burgenland",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kleinmürbisch",
+    "stateCode": "1"
+  },
+  {
+    "name": "Klingenbach",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kobersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kohfidisch",
+    "stateCode": "1"
+  },
+  {
+    "name": "Königsdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Krensdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Kukmirn",
+    "stateCode": "1"
+  },
+  {
+    "name": "Lackenbach",
+    "stateCode": "1"
+  },
+  {
+    "name": "Lackendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Leithaprodersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Litzelsdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Lockenhaus",
+    "stateCode": "1"
+  },
+  {
+    "name": "Loipersbach im Burgenland",
+    "stateCode": "1"
+  },
+  {
+    "name": "Loretto",
+    "stateCode": "1"
+  },
+  {
+    "name": "Lutzmannsburg",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mannersdorf an der Rabnitz",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mariasdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Markt Allhau",
+    "stateCode": "1"
+  },
+  {
+    "name": "Markt Neuhodis",
+    "stateCode": "1"
+  },
+  {
+    "name": "Markt Sankt Martin",
+    "stateCode": "1"
+  },
+  {
+    "name": "Marz",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mattersburg",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mischendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mitterpullendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mogersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mönchhof",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mörbisch am See",
+    "stateCode": "1"
+  },
+  {
+    "name": "Moschendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Mühlgraben",
+    "stateCode": "1"
+  },
+  {
+    "name": "Müllendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Neckenmarkt",
+    "stateCode": "1"
+  },
+  {
+    "name": "Neuberg im Burgenland",
+    "stateCode": "1"
+  },
+  {
+    "name": "Neudörfl",
+    "stateCode": "1"
+  },
+  {
+    "name": "Neufeld an der Leitha",
+    "stateCode": "1"
+  },
+  {
+    "name": "Neuhaus am Klausenbach",
+    "stateCode": "1"
+  },
+  {
+    "name": "Neusiedl am See",
+    "stateCode": "1"
+  },
+  {
+    "name": "Neustift an der Lafnitz",
+    "stateCode": "1"
+  },
+  {
+    "name": "Neustift bei Güssing",
+    "stateCode": "1"
+  },
+  {
+    "name": "Neutal",
+    "stateCode": "1"
+  },
+  {
+    "name": "Nickelsdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Nikitsch",
+    "stateCode": "1"
+  },
+  {
+    "name": "Oberdorf im Burgenland",
+    "stateCode": "1"
+  },
+  {
+    "name": "Oberloisdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Oberpullendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Oberschützen",
+    "stateCode": "1"
+  },
+  {
+    "name": "Oberwart",
+    "stateCode": "1"
+  },
+  {
+    "name": "Oggau",
+    "stateCode": "1"
+  },
+  {
+    "name": "Olbendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Ollersdorf im Burgenland",
+    "stateCode": "1"
+  },
+  {
+    "name": "Oslip",
+    "stateCode": "1"
+  },
+  {
+    "name": "Pama",
+    "stateCode": "1"
+  },
+  {
+    "name": "Pamhagen",
+    "stateCode": "1"
+  },
+  {
+    "name": "Parndorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Pilgersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Pinkafeld",
+    "stateCode": "1"
+  },
+  {
+    "name": "Piringsdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Podersdorf am See",
+    "stateCode": "1"
+  },
+  {
+    "name": "Politischer Bezirk Güssing",
+    "stateCode": "1"
+  },
+  {
+    "name": "Politischer Bezirk Jennersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Politischer Bezirk Mattersburg",
+    "stateCode": "1"
+  },
+  {
+    "name": "Politischer Bezirk Neusiedl am See",
+    "stateCode": "1"
+  },
+  {
+    "name": "Politischer Bezirk Oberpullendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Politischer Bezirk Oberwart",
+    "stateCode": "1"
+  },
+  {
+    "name": "Pöttelsdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Pöttsching",
+    "stateCode": "1"
+  },
+  {
+    "name": "Potzneusiedl",
+    "stateCode": "1"
+  },
+  {
+    "name": "Purbach am Neusiedler See",
+    "stateCode": "1"
+  },
+  {
+    "name": "Raiding",
+    "stateCode": "1"
+  },
+  {
+    "name": "Rechnitz",
+    "stateCode": "1"
+  },
+  {
+    "name": "Riedlingsdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Ritzing",
+    "stateCode": "1"
+  },
+  {
+    "name": "Rohr im Burgenland",
+    "stateCode": "1"
+  },
+  {
+    "name": "Rohrbach bei Mattersburg",
+    "stateCode": "1"
+  },
+  {
+    "name": "Rotenturm an der Pinka",
+    "stateCode": "1"
+  },
+  {
+    "name": "Rudersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Rust",
+    "stateCode": "1"
+  },
+  {
+    "name": "Rust Stadt",
+    "stateCode": "1"
+  },
+  {
+    "name": "Sankt Andrä am Zicksee",
+    "stateCode": "1"
+  },
+  {
+    "name": "Sankt Georgen am Leithagebirge",
+    "stateCode": "1"
+  },
+  {
+    "name": "Sankt Margarethen im Burgenland",
+    "stateCode": "1"
+  },
+  {
+    "name": "Sankt Martin an der Raab",
+    "stateCode": "1"
+  },
+  {
+    "name": "Sankt Michael im Burgenland",
+    "stateCode": "1"
+  },
+  {
+    "name": "Schachendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Schandorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Schattendorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Schützen am Gebirge",
+    "stateCode": "1"
+  },
+  {
+    "name": "Siegendorf im Burgenland",
+    "stateCode": "1"
+  },
+  {
+    "name": "Sieggraben",
+    "stateCode": "1"
+  },
+  {
+    "name": "Sigless",
+    "stateCode": "1"
+  },
+  {
+    "name": "Stadtschlaining",
+    "stateCode": "1"
+  },
+  {
+    "name": "Stegersbach",
+    "stateCode": "1"
+  },
+  {
+    "name": "Steinbrunn",
+    "stateCode": "1"
+  },
+  {
+    "name": "Stinatz",
+    "stateCode": "1"
+  },
+  {
+    "name": "Stoob",
+    "stateCode": "1"
+  },
+  {
+    "name": "Stotzing",
+    "stateCode": "1"
+  },
+  {
+    "name": "Strem",
+    "stateCode": "1"
+  },
+  {
+    "name": "Tadten",
+    "stateCode": "1"
+  },
+  {
+    "name": "Tobaj",
+    "stateCode": "1"
+  },
+  {
+    "name": "Trausdorf an der Wulka",
+    "stateCode": "1"
+  },
+  {
+    "name": "Tschanigraben",
+    "stateCode": "1"
+  },
+  {
+    "name": "Unterfrauenhaid",
+    "stateCode": "1"
+  },
+  {
+    "name": "Unterkohlstätten",
+    "stateCode": "1"
+  },
+  {
+    "name": "Unterwart",
+    "stateCode": "1"
+  },
+  {
+    "name": "Wallern im Burgenland",
+    "stateCode": "1"
+  },
+  {
+    "name": "Weichselbaum",
+    "stateCode": "1"
+  },
+  {
+    "name": "Weiden am See",
+    "stateCode": "1"
+  },
+  {
+    "name": "Weiden bei Rechnitz",
+    "stateCode": "1"
+  },
+  {
+    "name": "Weingraben",
+    "stateCode": "1"
+  },
+  {
+    "name": "Weppersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Wiesen",
+    "stateCode": "1"
+  },
+  {
+    "name": "Wiesfleck",
+    "stateCode": "1"
+  },
+  {
+    "name": "Wimpassing an der Leitha",
+    "stateCode": "1"
+  },
+  {
+    "name": "Winden am See",
+    "stateCode": "1"
+  },
+  {
+    "name": "Wolfau",
+    "stateCode": "1"
+  },
+  {
+    "name": "Wörterberg",
+    "stateCode": "1"
+  },
+  {
+    "name": "Wulkaprodersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Zagersdorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Zillingtal",
+    "stateCode": "1"
+  },
+  {
+    "name": "Zurndorf",
+    "stateCode": "1"
+  },
+  {
+    "name": "Albeck",
+    "stateCode": "2"
+  },
+  {
+    "name": "Althofen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Annabichl",
+    "stateCode": "2"
+  },
+  {
+    "name": "Arnoldstein",
+    "stateCode": "2"
+  },
+  {
+    "name": "Arriach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Auen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Bad Bleiberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Bad Eisenkappel",
+    "stateCode": "2"
+  },
+  {
+    "name": "Bad Kleinkirchheim",
+    "stateCode": "2"
+  },
+  {
+    "name": "Bad Sankt Leonhard im Lavanttal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Baldramsdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Berg im Drautal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Bleiburg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Bodensdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Brückl",
+    "stateCode": "2"
+  },
+  {
+    "name": "Dellach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Dellach im Drautal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Deutsch Griffen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Deutsch-Griffen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Diex",
+    "stateCode": "2"
+  },
+  {
+    "name": "Döbriach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Draschen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Ebenthal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Eberndorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Eberstein",
+    "stateCode": "2"
+  },
+  {
+    "name": "Ebriach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Eisenkappel-Vellach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Faak am See",
+    "stateCode": "2"
+  },
+  {
+    "name": "Feffernitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Feistritz an der Drau",
+    "stateCode": "2"
+  },
+  {
+    "name": "Feistritz an der Gail",
+    "stateCode": "2"
+  },
+  {
+    "name": "Feistritz im Rosental",
+    "stateCode": "2"
+  },
+  {
+    "name": "Feistritz ob Bleiburg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Feld am See",
+    "stateCode": "2"
+  },
+  {
+    "name": "Feldkirchen District",
+    "stateCode": "2"
+  },
+  {
+    "name": "Feldkirchen in Kärnten",
+    "stateCode": "2"
+  },
+  {
+    "name": "Ferlach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Ferndorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Finkenstein",
+    "stateCode": "2"
+  },
+  {
+    "name": "Finkenstein am Faaker See",
+    "stateCode": "2"
+  },
+  {
+    "name": "Flattach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Föderlach I",
+    "stateCode": "2"
+  },
+  {
+    "name": "Frantschach-Sankt Gertraud",
+    "stateCode": "2"
+  },
+  {
+    "name": "Frauenstein",
+    "stateCode": "2"
+  },
+  {
+    "name": "Fresach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Fresen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Friesach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Fürnitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Gailitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Gallizien",
+    "stateCode": "2"
+  },
+  {
+    "name": "Gemmersdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Gerlamoos",
+    "stateCode": "2"
+  },
+  {
+    "name": "Gitschtal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Glanegg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Globasnitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Glödnitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Gmünd",
+    "stateCode": "2"
+  },
+  {
+    "name": "Gmünd in Kärnten",
+    "stateCode": "2"
+  },
+  {
+    "name": "Gnesau",
+    "stateCode": "2"
+  },
+  {
+    "name": "Görtschach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Grafenstein",
+    "stateCode": "2"
+  },
+  {
+    "name": "Greifenburg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Gries",
+    "stateCode": "2"
+  },
+  {
+    "name": "Griffen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Großkirchheim",
+    "stateCode": "2"
+  },
+  {
+    "name": "Gurk",
+    "stateCode": "2"
+  },
+  {
+    "name": "Guttaring",
+    "stateCode": "2"
+  },
+  {
+    "name": "Heiligenblut",
+    "stateCode": "2"
+  },
+  {
+    "name": "Hermagor",
+    "stateCode": "2"
+  },
+  {
+    "name": "Hermagor District",
+    "stateCode": "2"
+  },
+  {
+    "name": "Hermagor-Pressegger See",
+    "stateCode": "2"
+  },
+  {
+    "name": "Himmelberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Hohenthurn",
+    "stateCode": "2"
+  },
+  {
+    "name": "Hörtendorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Hüttenberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Irschen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kappel am Krappfeld",
+    "stateCode": "2"
+  },
+  {
+    "name": "Keutschach am See",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kirchbach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Klagenfurt",
+    "stateCode": "2"
+  },
+  {
+    "name": "Klagenfurt am Wörthersee",
+    "stateCode": "2"
+  },
+  {
+    "name": "Klagenfurt-Land District",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kleblach-Lind",
+    "stateCode": "2"
+  },
+  {
+    "name": "Klein Sankt Paul",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kleinedling",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kötschach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kötschach-Mauthen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Köttmannsdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Krems",
+    "stateCode": "2"
+  },
+  {
+    "name": "Krumpendorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Kühnsdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Lamnitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Landskron",
+    "stateCode": "2"
+  },
+  {
+    "name": "Launsdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Lavamünd",
+    "stateCode": "2"
+  },
+  {
+    "name": "Ledenitzen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Lendorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Leppen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Lesachtal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Liebenfels",
+    "stateCode": "2"
+  },
+  {
+    "name": "Lind",
+    "stateCode": "2"
+  },
+  {
+    "name": "Lobersberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Ludmannsdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Lurnfeld",
+    "stateCode": "2"
+  },
+  {
+    "name": "Magdalensberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Mallnitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Malta",
+    "stateCode": "2"
+  },
+  {
+    "name": "Maria Rain",
+    "stateCode": "2"
+  },
+  {
+    "name": "Maria Saal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Maria Wörth",
+    "stateCode": "2"
+  },
+  {
+    "name": "Mautbrücken",
+    "stateCode": "2"
+  },
+  {
+    "name": "Metnitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Micheldorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Millstatt",
+    "stateCode": "2"
+  },
+  {
+    "name": "Mölbling",
+    "stateCode": "2"
+  },
+  {
+    "name": "Möllbrücke",
+    "stateCode": "2"
+  },
+  {
+    "name": "Moosburg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Mörtschach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Mühldorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Neu-Feffernitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Neuhaus",
+    "stateCode": "2"
+  },
+  {
+    "name": "Niederdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Nötsch im Gailtal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Oberdörfl",
+    "stateCode": "2"
+  },
+  {
+    "name": "Oberdrauburg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Obermillstatt",
+    "stateCode": "2"
+  },
+  {
+    "name": "Obervellach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Ossiach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Paternion",
+    "stateCode": "2"
+  },
+  {
+    "name": "Pischeldorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Pöckau",
+    "stateCode": "2"
+  },
+  {
+    "name": "Poggersdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Pörtschach am Wörthersee",
+    "stateCode": "2"
+  },
+  {
+    "name": "Preitenegg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Priel",
+    "stateCode": "2"
+  },
+  {
+    "name": "Pusarnitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Radenthein",
+    "stateCode": "2"
+  },
+  {
+    "name": "Rain",
+    "stateCode": "2"
+  },
+  {
+    "name": "Rangersdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Reding",
+    "stateCode": "2"
+  },
+  {
+    "name": "Reichenau",
+    "stateCode": "2"
+  },
+  {
+    "name": "Reichenfels",
+    "stateCode": "2"
+  },
+  {
+    "name": "Reißeck",
+    "stateCode": "2"
+  },
+  {
+    "name": "Rennweg am Katschberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Rittersdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Rosegg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Ruden",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sachsenburg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Andrä",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Egyden an der Drau",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Georgen am Längsee",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Georgen im Lavanttal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Jakob",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Jakob im Rosental",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Kanzian am Klopeiner See",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Leonhard",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Magdalen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Margareten im Rosental",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Martin",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Paul im Lavanttal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Peter",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Ruprecht",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Stefan",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Stefan im Gailtal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Urban",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Veit an der Glan",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sankt Veit an der Glan District",
+    "stateCode": "2"
+  },
+  {
+    "name": "Schiefling am See",
+    "stateCode": "2"
+  },
+  {
+    "name": "Schleben",
+    "stateCode": "2"
+  },
+  {
+    "name": "Seebach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Seeboden",
+    "stateCode": "2"
+  },
+  {
+    "name": "Seitenberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sirnitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Sittersdorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Spittal an der Drau",
+    "stateCode": "2"
+  },
+  {
+    "name": "Spittal an der Drau District",
+    "stateCode": "2"
+  },
+  {
+    "name": "St. Agathen und Perau",
+    "stateCode": "2"
+  },
+  {
+    "name": "St. Andrä",
+    "stateCode": "2"
+  },
+  {
+    "name": "St. Margareten im Rosental",
+    "stateCode": "2"
+  },
+  {
+    "name": "St. Paul im Lavanttal",
+    "stateCode": "2"
+  },
+  {
+    "name": "St. Stefan im Gailtal",
+    "stateCode": "2"
+  },
+  {
+    "name": "St. Urban",
+    "stateCode": "2"
+  },
+  {
+    "name": "St. Veit an der Glan",
+    "stateCode": "2"
+  },
+  {
+    "name": "St. Veiter Vorstadt",
+    "stateCode": "2"
+  },
+  {
+    "name": "Stall",
+    "stateCode": "2"
+  },
+  {
+    "name": "Steindorf am Ossiacher See",
+    "stateCode": "2"
+  },
+  {
+    "name": "Steinfeld",
+    "stateCode": "2"
+  },
+  {
+    "name": "Steuerberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Stockenboi",
+    "stateCode": "2"
+  },
+  {
+    "name": "Straßburg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Straßburg-Stadt",
+    "stateCode": "2"
+  },
+  {
+    "name": "Suetschach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Techelsberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Timenitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Trebesing",
+    "stateCode": "2"
+  },
+  {
+    "name": "Treffen",
+    "stateCode": "2"
+  },
+  {
+    "name": "Treibach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Tschachoritsch",
+    "stateCode": "2"
+  },
+  {
+    "name": "Umberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Untere Fellach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Velden am Wörther See",
+    "stateCode": "2"
+  },
+  {
+    "name": "Velden am Wörthersee",
+    "stateCode": "2"
+  },
+  {
+    "name": "Viktring",
+    "stateCode": "2"
+  },
+  {
+    "name": "Viktringer Vorstadt",
+    "stateCode": "2"
+  },
+  {
+    "name": "Villach",
+    "stateCode": "2"
+  },
+  {
+    "name": "Villach-Innere Stadt",
+    "stateCode": "2"
+  },
+  {
+    "name": "Villach-Land District",
+    "stateCode": "2"
+  },
+  {
+    "name": "Villacher Vorstadt",
+    "stateCode": "2"
+  },
+  {
+    "name": "Völkendorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Völkermarkt",
+    "stateCode": "2"
+  },
+  {
+    "name": "Völkermarkt District",
+    "stateCode": "2"
+  },
+  {
+    "name": "Völkermarkter Vorstadt",
+    "stateCode": "2"
+  },
+  {
+    "name": "Waiern",
+    "stateCode": "2"
+  },
+  {
+    "name": "Warmbad-Judendorf",
+    "stateCode": "2"
+  },
+  {
+    "name": "Weißensee",
+    "stateCode": "2"
+  },
+  {
+    "name": "Weißenstein",
+    "stateCode": "2"
+  },
+  {
+    "name": "Weitensfeld",
+    "stateCode": "2"
+  },
+  {
+    "name": "Weitensfeld im Gurktal",
+    "stateCode": "2"
+  },
+  {
+    "name": "Wernberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Winklern",
+    "stateCode": "2"
+  },
+  {
+    "name": "Wölfnitz",
+    "stateCode": "2"
+  },
+  {
+    "name": "Wolfsberg",
+    "stateCode": "2"
+  },
+  {
+    "name": "Wolfsberg District",
+    "stateCode": "2"
+  },
+  {
+    "name": "Wudmath",
+    "stateCode": "2"
+  },
+  {
+    "name": "Zell",
+    "stateCode": "2"
+  },
+  {
+    "name": "Absdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Achau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Aderklaa",
+    "stateCode": "3"
+  },
+  {
+    "name": "Aggsbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Alland",
+    "stateCode": "3"
+  },
+  {
+    "name": "Allentsteig",
+    "stateCode": "3"
+  },
+  {
+    "name": "Allhartsberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Altenburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Altendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Altenmarkt an der Triesting",
+    "stateCode": "3"
+  },
+  {
+    "name": "Altlengbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Altlichtenwarth",
+    "stateCode": "3"
+  },
+  {
+    "name": "Altmelon",
+    "stateCode": "3"
+  },
+  {
+    "name": "Amstetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Andlersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Angern an der March",
+    "stateCode": "3"
+  },
+  {
+    "name": "Arbesbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ardagger Stift",
+    "stateCode": "3"
+  },
+  {
+    "name": "Aschbach Markt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Aspang Markt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Asparn an der Zaya",
+    "stateCode": "3"
+  },
+  {
+    "name": "Asperhofen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Atzenbrugg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Au am Leithaberge",
+    "stateCode": "3"
+  },
+  {
+    "name": "Auersthal",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bad Deutsch-Altenburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bad Erlach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bad Fischau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bad Pirawarth",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bad Schönau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bad Traunstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bad Vöslau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Baden",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bärnkopf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Behamberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Berg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bergland",
+    "stateCode": "3"
+  },
+  {
+    "name": "Berndorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bernhardsthal",
+    "stateCode": "3"
+  },
+  {
+    "name": "Biberbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Biedermannsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bisamberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bischofstetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Blindenmarkt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bockfließ",
+    "stateCode": "3"
+  },
+  {
+    "name": "Böheimkirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Breitenau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Breitenfurt bei Wien",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bromberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Bruck an der Leitha",
+    "stateCode": "3"
+  },
+  {
+    "name": "Brunn am Gebirge",
+    "stateCode": "3"
+  },
+  {
+    "name": "Brunn an der Schneebergbahn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Brunn an der Wild",
+    "stateCode": "3"
+  },
+  {
+    "name": "Buchbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Deutsch-Wagram",
+    "stateCode": "3"
+  },
+  {
+    "name": "Dobersberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Dorfstetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Drasenhofen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Drösing",
+    "stateCode": "3"
+  },
+  {
+    "name": "Droß",
+    "stateCode": "3"
+  },
+  {
+    "name": "Dürnkrut",
+    "stateCode": "3"
+  },
+  {
+    "name": "Dürnstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ebenfurth",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ebenthal",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ebergassing",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ebreichsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Echsenbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Eckartsau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Edlitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Eggenburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Eggendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Eggern",
+    "stateCode": "3"
+  },
+  {
+    "name": "Eichgraben",
+    "stateCode": "3"
+  },
+  {
+    "name": "Eisgarn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Emmersdorf an der Donau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Engelhartstetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ennsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Enzenreith",
+    "stateCode": "3"
+  },
+  {
+    "name": "Enzersdorf an der Fischa",
+    "stateCode": "3"
+  },
+  {
+    "name": "Enzersfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Erlauf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ernstbrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ernsthofen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Erpersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ertl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Eschenau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Euratsfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Falkenstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Fallbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Feistritz am Wechsel",
+    "stateCode": "3"
+  },
+  {
+    "name": "Felixdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Fels am Wagram",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ferschnitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Fischamend-Markt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Frankenfels",
+    "stateCode": "3"
+  },
+  {
+    "name": "Frohsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Furth an der Triesting",
+    "stateCode": "3"
+  },
+  {
+    "name": "Furth bei Göttweig",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gaaden",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gablitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gainfarn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gaming",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gänserndorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gars am Kamp",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gastern",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gaubitsch",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gaweinstal",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gedersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Geras",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gerasdorf bei Wien",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gerersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gerolding",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gföhl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gießhübl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Glinzendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gloggnitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gmünd",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gnadendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gneixendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Göllersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Göpfritz an der Wild",
+    "stateCode": "3"
+  },
+  {
+    "name": "Göstling an der Ybbs",
+    "stateCode": "3"
+  },
+  {
+    "name": "Götzendorf an der Leitha",
+    "stateCode": "3"
+  },
+  {
+    "name": "Grafenegg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Grafenschlag",
+    "stateCode": "3"
+  },
+  {
+    "name": "Grafenwörth",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gramatneusiedl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Greinsfurth",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gresten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Grimmenstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Groß-Engersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Groß-Enzersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Groß-Gerungs",
+    "stateCode": "3"
+  },
+  {
+    "name": "Groß-Schweinbarth",
+    "stateCode": "3"
+  },
+  {
+    "name": "Groß-Siegharts",
+    "stateCode": "3"
+  },
+  {
+    "name": "Großebersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Großharras",
+    "stateCode": "3"
+  },
+  {
+    "name": "Großhofen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Großkrut",
+    "stateCode": "3"
+  },
+  {
+    "name": "Großmugl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Großriedenthal",
+    "stateCode": "3"
+  },
+  {
+    "name": "Großrußbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Großweikersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Grünbach am Schneeberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gugging",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gumpoldskirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Günselsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Guntersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Guntramsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gutenbrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gutenstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Haag",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hadersdorf am Kamp",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hadres",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hafnerbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hagenbrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Haidershofen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hainburg an der Donau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hainfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hardegg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Haringsee",
+    "stateCode": "3"
+  },
+  {
+    "name": "Harland",
+    "stateCode": "3"
+  },
+  {
+    "name": "Harmannsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hart",
+    "stateCode": "3"
+  },
+  {
+    "name": "Haugschlag",
+    "stateCode": "3"
+  },
+  {
+    "name": "Haugsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Haunoldstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hausbrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hauskirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hausleiten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hausmening",
+    "stateCode": "3"
+  },
+  {
+    "name": "Heidenreichstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Heiligeneich",
+    "stateCode": "3"
+  },
+  {
+    "name": "Heiligenkreuz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hennersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hernstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Herrnbaumgarten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Herzogenburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Himberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hinterbrühl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hinterleiten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hirschbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hirtenberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hochleithen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hochwolkersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hof am Leithaberge",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hofamt Priel",
+    "stateCode": "3"
+  },
+  {
+    "name": "Höflein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Höfling",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hofstetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hohenau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hohenberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hoheneich",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hohenruppersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hollabrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hollenstein an der Ybbs",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hollenthon",
+    "stateCode": "3"
+  },
+  {
+    "name": "Horn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hundsheim",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hürm",
+    "stateCode": "3"
+  },
+  {
+    "name": "Hutten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Jaidhof",
+    "stateCode": "3"
+  },
+  {
+    "name": "Japons",
+    "stateCode": "3"
+  },
+  {
+    "name": "Jedenspeigen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kaltenleutgeben",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kapelln",
+    "stateCode": "3"
+  },
+  {
+    "name": "Karlstetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kasten bei Böheimkirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Katzelsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kaumberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kautzen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kematen an der Ybbs",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kierling",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kilb",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kirchberg am Wagram",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kirchberg am Walde",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kirchberg am Wechsel",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kirchberg an der Pielach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kirchschlag",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kirchschlag in der Buckligen Welt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kirchstetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kirnberg an der Mank",
+    "stateCode": "3"
+  },
+  {
+    "name": "Klausen-Leopoldsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Klein-Neusiedl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Klein-Pöchlarn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kleinzell",
+    "stateCode": "3"
+  },
+  {
+    "name": "Klosterneuburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Königstetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Korneuburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kottingbrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Krems an der Donau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Krems an der Donau Stadt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Kritzendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Krumau am Kamp",
+    "stateCode": "3"
+  },
+  {
+    "name": "Krumbach Markt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Krumnussbaum",
+    "stateCode": "3"
+  },
+  {
+    "name": "Laa an der Thaya",
+    "stateCode": "3"
+  },
+  {
+    "name": "Laab im Walde",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ladendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Landegg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Langau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Langenlebarn-Oberaigen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Langenlois",
+    "stateCode": "3"
+  },
+  {
+    "name": "Langenrohr",
+    "stateCode": "3"
+  },
+  {
+    "name": "Langenzersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Langschlag",
+    "stateCode": "3"
+  },
+  {
+    "name": "Lanzendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Lanzenkirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Lassee",
+    "stateCode": "3"
+  },
+  {
+    "name": "Laxenburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Leiben",
+    "stateCode": "3"
+  },
+  {
+    "name": "Leitzersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Lengenfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Leobendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Leobersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Leopoldsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Leopoldsdorf im Marchfelde",
+    "stateCode": "3"
+  },
+  {
+    "name": "Lerchenfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Lichtenegg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Lichtenwörth",
+    "stateCode": "3"
+  },
+  {
+    "name": "Lilienfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Litschau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Loich",
+    "stateCode": "3"
+  },
+  {
+    "name": "Loosdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Lunz am See",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mailberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Maissau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mank",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mannersdorf am Leithagebirge",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mannsdorf an der Donau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mannswörth",
+    "stateCode": "3"
+  },
+  {
+    "name": "Marbach an der Donau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Marchegg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Margarethen am Moos",
+    "stateCode": "3"
+  },
+  {
+    "name": "Maria Ellend",
+    "stateCode": "3"
+  },
+  {
+    "name": "Maria Enzersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Maria Laach am Jauerling",
+    "stateCode": "3"
+  },
+  {
+    "name": "Maria Lanzendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Maria Taferl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Maria-Anzbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Markersdorf an der Pielach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Markgrafneusiedl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Markt Piesting",
+    "stateCode": "3"
+  },
+  {
+    "name": "Martinsberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Matzen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Matzendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mauer bei Amstetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mauerbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mautern",
+    "stateCode": "3"
+  },
+  {
+    "name": "Melk",
+    "stateCode": "3"
+  },
+  {
+    "name": "Michelhausen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Miesenbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mistelbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mitterbach am Erlaufsee",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mitterndorf an der Fischa",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mödling",
+    "stateCode": "3"
+  },
+  {
+    "name": "Möllersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mönichkirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Moosbrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Muckendorf an der Donau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Muggendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Mühldorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Münchendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Neidling",
+    "stateCode": "3"
+  },
+  {
+    "name": "Neu-Guntramsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Neudorf bei Staatz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Neufurth",
+    "stateCode": "3"
+  },
+  {
+    "name": "Neuhofen an der Ybbs",
+    "stateCode": "3"
+  },
+  {
+    "name": "Neulengbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Neumarkt an der Ybbs",
+    "stateCode": "3"
+  },
+  {
+    "name": "Neunkirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Neusiedl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Neusiedl an der Zaya",
+    "stateCode": "3"
+  },
+  {
+    "name": "Niederhollabrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Niederleis",
+    "stateCode": "3"
+  },
+  {
+    "name": "Nöchling",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ober-Grafendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Oberhausen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Oberndorf an der Melk",
+    "stateCode": "3"
+  },
+  {
+    "name": "Oberndorf in der Ebene",
+    "stateCode": "3"
+  },
+  {
+    "name": "Obersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Obersiebenbrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Oberwagram",
+    "stateCode": "3"
+  },
+  {
+    "name": "Oberwaltersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Oberwölbling",
+    "stateCode": "3"
+  },
+  {
+    "name": "Oehling",
+    "stateCode": "3"
+  },
+  {
+    "name": "Oeynhausen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Opponitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Orth an der Donau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ottenschlag",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ottenthal",
+    "stateCode": "3"
+  },
+  {
+    "name": "Otterthal",
+    "stateCode": "3"
+  },
+  {
+    "name": "Parbasdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Paudorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Payerbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Penz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Perchtoldsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pernegg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pernersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pernitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Persenbeug",
+    "stateCode": "3"
+  },
+  {
+    "name": "Petronell-Carnuntum",
+    "stateCode": "3"
+  },
+  {
+    "name": "Petzenkirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pfaffstätten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pillichsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pitten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pöchlarn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pöggstall",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Amstetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Baden",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Bruck an der Leitha",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Gänserndorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Gmünd",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Hollabrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Horn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Korneuburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Krems",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Lilienfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Melk",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Mistelbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Mödling",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Neunkirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Sankt Pölten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Scheibbs",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Tulln",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Waidhofen an der Thaya",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Wiener Neustadt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Politischer Bezirk Zwettl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pottenbrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pottendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pottenstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pottschach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Poysdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Prellenkirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pressbaum",
+    "stateCode": "3"
+  },
+  {
+    "name": "Prigglitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Prinzersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Prottes",
+    "stateCode": "3"
+  },
+  {
+    "name": "Puchberg am Schneeberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Puchenstuben",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pulkau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Purgstall",
+    "stateCode": "3"
+  },
+  {
+    "name": "Purkersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Pyhra",
+    "stateCode": "3"
+  },
+  {
+    "name": "Raabs an der Thaya",
+    "stateCode": "3"
+  },
+  {
+    "name": "Raach am Hochgebirge",
+    "stateCode": "3"
+  },
+  {
+    "name": "Raasdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rabensburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rabenstein an der Pielach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ramsau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Randegg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rannersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rappottenstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rastenfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ratzersdorf an der Traisen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rauchenwarth",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ravelsbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Raxendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rehberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Reichenau an der Rax",
+    "stateCode": "3"
+  },
+  {
+    "name": "Reingers",
+    "stateCode": "3"
+  },
+  {
+    "name": "Reinsberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Reisenberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Retz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rohr im Gebirge",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rohrau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rohrbach an der Gölsen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Röhrenbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rohrendorf bei Krems",
+    "stateCode": "3"
+  },
+  {
+    "name": "Röschitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Rosenau am Sonntagberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ruprechtshofen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sallingberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Aegyd am Neuwalde",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Andrä vor dem Hagenthale",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Corona am Wechsel",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Georgen am Ybbsfelde",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Georgen an der Leys",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Leonhard am Forst",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Leonhard am Hornerwald",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Margarethen an der Sierning",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Martin am Ybbsfelde",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Pantaleon",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Peter in der Au Markt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Pölten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Pölten Stadt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Valentin",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sankt Veit an der Gölsen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Scharndorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Scheibbs",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schleinbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schönau an der Triesting",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schönbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schönkirchen-Reyersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schottwien",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schrattenbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schrattenberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schrattenthal",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schrems",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schwadorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schwarzau am Steinfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schwarzau im Gebirge",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schwarzenau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schwarzenbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schwarzenbach an der Pielach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schwechat",
+    "stateCode": "3"
+  },
+  {
+    "name": "Schweiggers",
+    "stateCode": "3"
+  },
+  {
+    "name": "Seebenstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Seibersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Seitenstetten Markt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Semmering",
+    "stateCode": "3"
+  },
+  {
+    "name": "Senftenberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Seyring",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sieghartskirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sierndorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sigmundsherberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sitzendorf an der Schmida",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sollenau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sommerein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sonntagberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Sooss",
+    "stateCode": "3"
+  },
+  {
+    "name": "Spannberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Spillern",
+    "stateCode": "3"
+  },
+  {
+    "name": "Spitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Spratzern",
+    "stateCode": "3"
+  },
+  {
+    "name": "Staatz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Stattersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Statzendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Stein an der Donau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Steinabrückl",
+    "stateCode": "3"
+  },
+  {
+    "name": "Steinakirchen am Forst",
+    "stateCode": "3"
+  },
+  {
+    "name": "Stephanshart",
+    "stateCode": "3"
+  },
+  {
+    "name": "Stetteldorf am Wagram",
+    "stateCode": "3"
+  },
+  {
+    "name": "Stetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Stockerau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Stollhofen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Stössing",
+    "stateCode": "3"
+  },
+  {
+    "name": "Strass",
+    "stateCode": "3"
+  },
+  {
+    "name": "Strasshof an der Nordbahn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Stratzing",
+    "stateCode": "3"
+  },
+  {
+    "name": "Strengberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Stronsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Tattendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Teesdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ternitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Thaya",
+    "stateCode": "3"
+  },
+  {
+    "name": "Theresienfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Thomasberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Tiefenbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Traisen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Traiskirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Traismauer",
+    "stateCode": "3"
+  },
+  {
+    "name": "Trattenbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Trautmannsdorf an der Leitha",
+    "stateCode": "3"
+  },
+  {
+    "name": "Tribuswinkel",
+    "stateCode": "3"
+  },
+  {
+    "name": "Trumau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Tulbing",
+    "stateCode": "3"
+  },
+  {
+    "name": "Tulln",
+    "stateCode": "3"
+  },
+  {
+    "name": "Tullnerbach-Lawies",
+    "stateCode": "3"
+  },
+  {
+    "name": "Türnitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ulrichskirchen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Untersiebenbrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Unterstinkenbrunn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Unterwagram",
+    "stateCode": "3"
+  },
+  {
+    "name": "Unterwaltersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Velm",
+    "stateCode": "3"
+  },
+  {
+    "name": "Viehofen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Vitis",
+    "stateCode": "3"
+  },
+  {
+    "name": "Vösendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Waidhofen an der Thaya",
+    "stateCode": "3"
+  },
+  {
+    "name": "Waidhofen an der Ybbs",
+    "stateCode": "3"
+  },
+  {
+    "name": "Waidhofen an der Ybbs Stadt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Waidmannsfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Waldegg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Waldenstein",
+    "stateCode": "3"
+  },
+  {
+    "name": "Waldhausen",
+    "stateCode": "3"
+  },
+  {
+    "name": "Waldkirchen an der Thaya",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wallsee",
+    "stateCode": "3"
+  },
+  {
+    "name": "Walpersbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wang",
+    "stateCode": "3"
+  },
+  {
+    "name": "Warth",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wartmannstetten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weidling",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weigelsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weikendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weikersdorf am Steinfelde",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weinburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weinzierl am Walde",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weinzierl bei Krems",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weissenbach an der Triesting",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weißenkirchen in der Wachau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weistrach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weiten",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weitersfeld",
+    "stateCode": "3"
+  },
+  {
+    "name": "Weitra",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wiener Neudorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wiener Neustadt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wiener Neustadt Stadt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wienersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wieselburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wiesmath",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wilfersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wilfleinsdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wilhelmsburg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Willendorf am Steinfelde",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wimpassing im Schwarzatale",
+    "stateCode": "3"
+  },
+  {
+    "name": "Windhag",
+    "stateCode": "3"
+  },
+  {
+    "name": "Windigsteig",
+    "stateCode": "3"
+  },
+  {
+    "name": "Winklarn",
+    "stateCode": "3"
+  },
+  {
+    "name": "Winzendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wolfpassing",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wolfsbach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wolfsgraben",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wolfsthal",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wolkersdorf im Weinviertel",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wöllersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wördern",
+    "stateCode": "3"
+  },
+  {
+    "name": "Wullersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Würflach",
+    "stateCode": "3"
+  },
+  {
+    "name": "Würmla",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ybbs an der Donau",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ybbsitz",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ysper",
+    "stateCode": "3"
+  },
+  {
+    "name": "Zeillern",
+    "stateCode": "3"
+  },
+  {
+    "name": "Zeiselmauer",
+    "stateCode": "3"
+  },
+  {
+    "name": "Zell-Arzberg",
+    "stateCode": "3"
+  },
+  {
+    "name": "Zell-Markt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Zellerndorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Ziersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Zillingdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Zistersdorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Zöbern",
+    "stateCode": "3"
+  },
+  {
+    "name": "Zwentendorf",
+    "stateCode": "3"
+  },
+  {
+    "name": "Zwettl Stadt",
+    "stateCode": "3"
+  },
+  {
+    "name": "Zwölfaxing",
+    "stateCode": "3"
+  },
+  {
+    "name": "Abwinden",
+    "stateCode": "4"
+  },
+  {
+    "name": "Adlwang",
+    "stateCode": "4"
+  },
+  {
+    "name": "Afiesl",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ahorn",
+    "stateCode": "4"
+  },
+  {
+    "name": "Aichkirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Aigen im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Aistersheim",
+    "stateCode": "4"
+  },
+  {
+    "name": "Alberndorf in der Riedmark",
+    "stateCode": "4"
+  },
+  {
+    "name": "Alkoven",
+    "stateCode": "4"
+  },
+  {
+    "name": "Allerheiligen im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Allhaming",
+    "stateCode": "4"
+  },
+  {
+    "name": "Altenberg bei Linz",
+    "stateCode": "4"
+  },
+  {
+    "name": "Altenfelden",
+    "stateCode": "4"
+  },
+  {
+    "name": "Altheim",
+    "stateCode": "4"
+  },
+  {
+    "name": "Altlichtenberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Altmünster",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ampflwang",
+    "stateCode": "4"
+  },
+  {
+    "name": "Andorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ansfelden",
+    "stateCode": "4"
+  },
+  {
+    "name": "Arnreit",
+    "stateCode": "4"
+  },
+  {
+    "name": "Aschach an der Donau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Aschach an der Steyr",
+    "stateCode": "4"
+  },
+  {
+    "name": "Asten",
+    "stateCode": "4"
+  },
+  {
+    "name": "Attersee",
+    "stateCode": "4"
+  },
+  {
+    "name": "Attnang",
+    "stateCode": "4"
+  },
+  {
+    "name": "Attnang-Puchheim",
+    "stateCode": "4"
+  },
+  {
+    "name": "Atzbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Atzesberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Au an der Traun",
+    "stateCode": "4"
+  },
+  {
+    "name": "Audorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Aurach am Hongar",
+    "stateCode": "4"
+  },
+  {
+    "name": "Aurolzmünster",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bachmanning",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bad Goisern",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bad Hall",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bad Ischl",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bad Kreuzen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bad Leonfelden",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bad Schallerbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bad Zell",
+    "stateCode": "4"
+  },
+  {
+    "name": "Berg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bergern",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bergham",
+    "stateCode": "4"
+  },
+  {
+    "name": "Bernardin",
+    "stateCode": "4"
+  },
+  {
+    "name": "Brandln",
+    "stateCode": "4"
+  },
+  {
+    "name": "Braunau am Inn",
+    "stateCode": "4"
+  },
+  {
+    "name": "Braunau Neustadt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Buchkirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Burgfried",
+    "stateCode": "4"
+  },
+  {
+    "name": "Desselbrunn",
+    "stateCode": "4"
+  },
+  {
+    "name": "Dickerldorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Diesseits",
+    "stateCode": "4"
+  },
+  {
+    "name": "Dietach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Dietachdorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Doppl",
+    "stateCode": "4"
+  },
+  {
+    "name": "Dörfl",
+    "stateCode": "4"
+  },
+  {
+    "name": "Dürnau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ebensee",
+    "stateCode": "4"
+  },
+  {
+    "name": "Eberschwang",
+    "stateCode": "4"
+  },
+  {
+    "name": "Eberstalzell",
+    "stateCode": "4"
+  },
+  {
+    "name": "Edt bei Lambach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Eferding",
+    "stateCode": "4"
+  },
+  {
+    "name": "Eidenberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Engerwitzdorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Enns",
+    "stateCode": "4"
+  },
+  {
+    "name": "Feldkirchen an der Donau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Fisching",
+    "stateCode": "4"
+  },
+  {
+    "name": "Fornach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Frankenburg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Frankenmarkt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Freindorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Freistadt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gaflenz",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gallneukirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gallspach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gampern",
+    "stateCode": "4"
+  },
+  {
+    "name": "Garsten",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gaspoltshofen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gaumberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Geboltskirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gmunden",
+    "stateCode": "4"
+  },
+  {
+    "name": "Goldwörth",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gosau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gramastetten",
+    "stateCode": "4"
+  },
+  {
+    "name": "Grein",
+    "stateCode": "4"
+  },
+  {
+    "name": "Grieskirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Grossraming",
+    "stateCode": "4"
+  },
+  {
+    "name": "Grünau im Almtal",
+    "stateCode": "4"
+  },
+  {
+    "name": "Grünburg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gschwandt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gunskirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Gutau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Haag",
+    "stateCode": "4"
+  },
+  {
+    "name": "Haag am Hausruck",
+    "stateCode": "4"
+  },
+  {
+    "name": "Hagenberg im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Haibach im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Haid",
+    "stateCode": "4"
+  },
+  {
+    "name": "Haiden",
+    "stateCode": "4"
+  },
+  {
+    "name": "Haidl",
+    "stateCode": "4"
+  },
+  {
+    "name": "Handenberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Hart",
+    "stateCode": "4"
+  },
+  {
+    "name": "Hartheim",
+    "stateCode": "4"
+  },
+  {
+    "name": "Hartkirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Haselbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Haslach an der Mühl",
+    "stateCode": "4"
+  },
+  {
+    "name": "Hellmonsödt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Herzogsdorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Hochburg-Ach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Hochpoint",
+    "stateCode": "4"
+  },
+  {
+    "name": "Hof",
+    "stateCode": "4"
+  },
+  {
+    "name": "Hofkirchen im Traunkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Holzhausen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Hörsching",
+    "stateCode": "4"
+  },
+  {
+    "name": "Innerschwand",
+    "stateCode": "4"
+  },
+  {
+    "name": "Inzersdorf im Kremstal",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kaltenbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Katsdorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kematen an der Krems",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kirchberg ob der Donau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kirchdorf an der Krems",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kirchschlag bei Linz",
+    "stateCode": "4"
+  },
+  {
+    "name": "Klaffer am Hochficht",
+    "stateCode": "4"
+  },
+  {
+    "name": "Königswiesen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kopfing im Innkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kremsdorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kremsmünster",
+    "stateCode": "4"
+  },
+  {
+    "name": "Kronstorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Laab",
+    "stateCode": "4"
+  },
+  {
+    "name": "Laahen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Laakirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Lambach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Langenstein",
+    "stateCode": "4"
+  },
+  {
+    "name": "Langholzfeld",
+    "stateCode": "4"
+  },
+  {
+    "name": "Laussa",
+    "stateCode": "4"
+  },
+  {
+    "name": "Lembach im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Lenzing",
+    "stateCode": "4"
+  },
+  {
+    "name": "Leonding",
+    "stateCode": "4"
+  },
+  {
+    "name": "Leonstein",
+    "stateCode": "4"
+  },
+  {
+    "name": "Lichtenegg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Linz",
+    "stateCode": "4"
+  },
+  {
+    "name": "Linz Stadt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Losenstein",
+    "stateCode": "4"
+  },
+  {
+    "name": "Luftenberg an der Donau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Manning",
+    "stateCode": "4"
+  },
+  {
+    "name": "Marchtrenk",
+    "stateCode": "4"
+  },
+  {
+    "name": "Maria Neustift",
+    "stateCode": "4"
+  },
+  {
+    "name": "Maria Schmolln",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mattighofen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mauerkirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Meggenhofen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mehrnbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Michaelnbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Micheldorf in Oberösterreich",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mitterkirchen im Machland",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mittertreffling",
+    "stateCode": "4"
+  },
+  {
+    "name": "Molln",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mondsee",
+    "stateCode": "4"
+  },
+  {
+    "name": "Moosdorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mühldorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Munderfing",
+    "stateCode": "4"
+  },
+  {
+    "name": "Münzbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Münzkirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Naarn im Machlande",
+    "stateCode": "4"
+  },
+  {
+    "name": "Natternbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Nebelberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Neubau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Neue Heimat",
+    "stateCode": "4"
+  },
+  {
+    "name": "Neuhofen an der Krems",
+    "stateCode": "4"
+  },
+  {
+    "name": "Neukirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Neukirchen am Walde",
+    "stateCode": "4"
+  },
+  {
+    "name": "Neukirchen an der Vöckla",
+    "stateCode": "4"
+  },
+  {
+    "name": "Neukirchen bei Lambach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Neumarkt im Hausruckkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Neumarkt im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Neuzeug",
+    "stateCode": "4"
+  },
+  {
+    "name": "Niederneukirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Niederstraß",
+    "stateCode": "4"
+  },
+  {
+    "name": "Niederthalheim",
+    "stateCode": "4"
+  },
+  {
+    "name": "Nöstlbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Oberhaid",
+    "stateCode": "4"
+  },
+  {
+    "name": "Oberhart",
+    "stateCode": "4"
+  },
+  {
+    "name": "Oberhofen am Irrsee",
+    "stateCode": "4"
+  },
+  {
+    "name": "Obernberg am Inn",
+    "stateCode": "4"
+  },
+  {
+    "name": "Oberndorf bei Schwanenstadt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Oberneukirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Oberwang",
+    "stateCode": "4"
+  },
+  {
+    "name": "Oedt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Oepping",
+    "stateCode": "4"
+  },
+  {
+    "name": "Offenhausen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ohlsdorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ort im Innkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ostermiething",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ottenschlag im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ottensheim",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ottnang am Hausruck",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pabneukirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Palting",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pasching",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pattigham",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pennewang",
+    "stateCode": "4"
+  },
+  {
+    "name": "Perg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Perwang am Grabensee",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pettenbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Peuerbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pfaffing",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pfarrkirchen bei Bad Hall",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pichl bei Wels",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pierbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pinsdorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pitzenberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Plesching",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Braunau am Inn",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Eferding",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Freistadt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Gmunden",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Grieskirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Kirchdorf an der Krems",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Linz-Land",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Perg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Ried im Innkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Rohrbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Schärding",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Steyr-Land",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Urfahr-Umgebung",
+    "stateCode": "4"
+  },
+  {
+    "name": "Politischer Bezirk Vöcklabruck",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pötting",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pram",
+    "stateCode": "4"
+  },
+  {
+    "name": "Prambachkirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pramet",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pregarten",
+    "stateCode": "4"
+  },
+  {
+    "name": "Puchenau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Puchheim",
+    "stateCode": "4"
+  },
+  {
+    "name": "Puchlkirchen am Trattberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pucking",
+    "stateCode": "4"
+  },
+  {
+    "name": "Pühret",
+    "stateCode": "4"
+  },
+  {
+    "name": "Raab",
+    "stateCode": "4"
+  },
+  {
+    "name": "Raffelstetten",
+    "stateCode": "4"
+  },
+  {
+    "name": "Rainbach im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ranshofen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Redleiten",
+    "stateCode": "4"
+  },
+  {
+    "name": "Redlham",
+    "stateCode": "4"
+  },
+  {
+    "name": "Regau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Reichenau im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Reichenthal",
+    "stateCode": "4"
+  },
+  {
+    "name": "Reichraming",
+    "stateCode": "4"
+  },
+  {
+    "name": "Reiterndorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ried im Innkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ried im Traunkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ried in der Riedmark",
+    "stateCode": "4"
+  },
+  {
+    "name": "Rohr im Kremstal",
+    "stateCode": "4"
+  },
+  {
+    "name": "Rohrbach-Berg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Roitham",
+    "stateCode": "4"
+  },
+  {
+    "name": "Rufling",
+    "stateCode": "4"
+  },
+  {
+    "name": "Rüstorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Rutzenham",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sammersdorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Aegidi",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Dionysen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Florian",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Georgen am Fillmannsbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Georgen an der Gusen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Georgen bei Obernberg am Inn",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Georgen im Attergau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Gotthard im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Lorenz",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Marien",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Martin",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Martin im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Oswald bei Freistadt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Peter am Hart",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Ulrich bei Steyr",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sankt Wolfgang im Salzkammergut",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sarleinsbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sattledt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schafwiesen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schalchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schalchham",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schardenberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schärding",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schärding Vorstadt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Scharnstein",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schenkenfelden",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schildorn",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schlatt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schlierbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schlüsslberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schöndorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schönering",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schörfling",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schwanenstadt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schweinbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Schwertberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Seewalchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sierning",
+    "stateCode": "4"
+  },
+  {
+    "name": "Sonnberg im Mühlkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Spital am Pyhrn",
+    "stateCode": "4"
+  },
+  {
+    "name": "Stadl-Hausruck",
+    "stateCode": "4"
+  },
+  {
+    "name": "Stadl-Paura",
+    "stateCode": "4"
+  },
+  {
+    "name": "Stadl-Traun",
+    "stateCode": "4"
+  },
+  {
+    "name": "Steinbach am Attersee",
+    "stateCode": "4"
+  },
+  {
+    "name": "Steinerkirchen an der Traun",
+    "stateCode": "4"
+  },
+  {
+    "name": "Steinfeld",
+    "stateCode": "4"
+  },
+  {
+    "name": "Steinhaus",
+    "stateCode": "4"
+  },
+  {
+    "name": "Steyr",
+    "stateCode": "4"
+  },
+  {
+    "name": "Steyr Stadt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Steyregg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Strassham",
+    "stateCode": "4"
+  },
+  {
+    "name": "Taiskirchen im Innkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Taufkirchen an der Trattnach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ternberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Thalheim bei Wels",
+    "stateCode": "4"
+  },
+  {
+    "name": "Tiefgraben",
+    "stateCode": "4"
+  },
+  {
+    "name": "Timelkam",
+    "stateCode": "4"
+  },
+  {
+    "name": "Tragwein",
+    "stateCode": "4"
+  },
+  {
+    "name": "Traun",
+    "stateCode": "4"
+  },
+  {
+    "name": "Traunkirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ufer",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ulrichsberg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Ungenach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Untereisenfeld",
+    "stateCode": "4"
+  },
+  {
+    "name": "Unterjosefstal",
+    "stateCode": "4"
+  },
+  {
+    "name": "Uttendorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Utzenaich",
+    "stateCode": "4"
+  },
+  {
+    "name": "Viechtwang",
+    "stateCode": "4"
+  },
+  {
+    "name": "Vöcklabruck",
+    "stateCode": "4"
+  },
+  {
+    "name": "Vöcklamarkt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Vorchdorf",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wagrain",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wagram",
+    "stateCode": "4"
+  },
+  {
+    "name": "Waizenkirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Walding",
+    "stateCode": "4"
+  },
+  {
+    "name": "Waldkirchen am Wesen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Waldneukirchen",
+    "stateCode": "4"
+  },
+  {
+    "name": "Waldzell",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wallern an der Trattnach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wartberg an der Krems",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wartberg ob der Aist",
+    "stateCode": "4"
+  },
+  {
+    "name": "Weibern",
+    "stateCode": "4"
+  },
+  {
+    "name": "Weilbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Weißenkirchen im Attergau",
+    "stateCode": "4"
+  },
+  {
+    "name": "Weisskirchen an der Traun",
+    "stateCode": "4"
+  },
+  {
+    "name": "Weitersfelden",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wels",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wels Stadt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wels-Land",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wendling",
+    "stateCode": "4"
+  },
+  {
+    "name": "Weng im Innkreis",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wernstein am Inn",
+    "stateCode": "4"
+  },
+  {
+    "name": "Weyer",
+    "stateCode": "4"
+  },
+  {
+    "name": "Weyregg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wimpassing",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wimsbach",
+    "stateCode": "4"
+  },
+  {
+    "name": "Windhaag bei Freistadt",
+    "stateCode": "4"
+  },
+  {
+    "name": "Windhaag bei Perg",
+    "stateCode": "4"
+  },
+  {
+    "name": "Windischgarsten",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wippenham",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wispl",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wolfern",
+    "stateCode": "4"
+  },
+  {
+    "name": "Wolfsegg am Hausruck",
+    "stateCode": "4"
+  },
+  {
+    "name": "Zell am Moos",
+    "stateCode": "4"
+  },
+  {
+    "name": "Zell am Pettenfirst",
+    "stateCode": "4"
+  },
+  {
+    "name": "Zell an der Pram",
+    "stateCode": "4"
+  },
+  {
+    "name": "Zwettl an der Rodl",
+    "stateCode": "4"
+  },
+  {
+    "name": "Abtenau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Adnet",
+    "stateCode": "5"
+  },
+  {
+    "name": "Altenmarkt im Pongau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Anger",
+    "stateCode": "5"
+  },
+  {
+    "name": "Anif",
+    "stateCode": "5"
+  },
+  {
+    "name": "Anthering",
+    "stateCode": "5"
+  },
+  {
+    "name": "Au",
+    "stateCode": "5"
+  },
+  {
+    "name": "Bad Gastein",
+    "stateCode": "5"
+  },
+  {
+    "name": "Bad Hofgastein",
+    "stateCode": "5"
+  },
+  {
+    "name": "Bergheim",
+    "stateCode": "5"
+  },
+  {
+    "name": "Berndorf bei Salzburg",
+    "stateCode": "5"
+  },
+  {
+    "name": "Bischofshofen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Bramberg am Wildkogel",
+    "stateCode": "5"
+  },
+  {
+    "name": "Bruck an der Großglocknerstraße",
+    "stateCode": "5"
+  },
+  {
+    "name": "Burgfried",
+    "stateCode": "5"
+  },
+  {
+    "name": "Bürmoos",
+    "stateCode": "5"
+  },
+  {
+    "name": "Dienten am Hochkönig",
+    "stateCode": "5"
+  },
+  {
+    "name": "Dorfbeuern",
+    "stateCode": "5"
+  },
+  {
+    "name": "Dorfgastein",
+    "stateCode": "5"
+  },
+  {
+    "name": "Eben im Pongau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Ebenau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Eching",
+    "stateCode": "5"
+  },
+  {
+    "name": "Elixhausen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Elsbethen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Esch",
+    "stateCode": "5"
+  },
+  {
+    "name": "Eugendorf",
+    "stateCode": "5"
+  },
+  {
+    "name": "Faistenau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Filzmoos",
+    "stateCode": "5"
+  },
+  {
+    "name": "Flachau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Forstau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Fuschl am See",
+    "stateCode": "5"
+  },
+  {
+    "name": "Georgenberg",
+    "stateCode": "5"
+  },
+  {
+    "name": "Glanegg",
+    "stateCode": "5"
+  },
+  {
+    "name": "Glasenbach",
+    "stateCode": "5"
+  },
+  {
+    "name": "Golling an der Salzach",
+    "stateCode": "5"
+  },
+  {
+    "name": "Grödig",
+    "stateCode": "5"
+  },
+  {
+    "name": "Grossarl",
+    "stateCode": "5"
+  },
+  {
+    "name": "Grossgmain",
+    "stateCode": "5"
+  },
+  {
+    "name": "Habach",
+    "stateCode": "5"
+  },
+  {
+    "name": "Hallein",
+    "stateCode": "5"
+  },
+  {
+    "name": "Hallwang",
+    "stateCode": "5"
+  },
+  {
+    "name": "Henndorf am Wallersee",
+    "stateCode": "5"
+  },
+  {
+    "name": "Himmelreich",
+    "stateCode": "5"
+  },
+  {
+    "name": "Hinterglemm",
+    "stateCode": "5"
+  },
+  {
+    "name": "Hintersee",
+    "stateCode": "5"
+  },
+  {
+    "name": "Hof",
+    "stateCode": "5"
+  },
+  {
+    "name": "Hof bei Salzburg",
+    "stateCode": "5"
+  },
+  {
+    "name": "Hollersbach im Pinzgau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Hüttau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Hüttschlag",
+    "stateCode": "5"
+  },
+  {
+    "name": "Irrsdorf",
+    "stateCode": "5"
+  },
+  {
+    "name": "Kaprun",
+    "stateCode": "5"
+  },
+  {
+    "name": "Kleinarl",
+    "stateCode": "5"
+  },
+  {
+    "name": "Koppl",
+    "stateCode": "5"
+  },
+  {
+    "name": "Köstendorf",
+    "stateCode": "5"
+  },
+  {
+    "name": "Krimml",
+    "stateCode": "5"
+  },
+  {
+    "name": "Krispl",
+    "stateCode": "5"
+  },
+  {
+    "name": "Kuchl",
+    "stateCode": "5"
+  },
+  {
+    "name": "Lamprechtshausen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Lehen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Lend",
+    "stateCode": "5"
+  },
+  {
+    "name": "Lengfelden",
+    "stateCode": "5"
+  },
+  {
+    "name": "Leogang",
+    "stateCode": "5"
+  },
+  {
+    "name": "Lofer",
+    "stateCode": "5"
+  },
+  {
+    "name": "Maishofen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Maria Alm am Steinernen Meer",
+    "stateCode": "5"
+  },
+  {
+    "name": "Mariapfarr",
+    "stateCode": "5"
+  },
+  {
+    "name": "Mattsee",
+    "stateCode": "5"
+  },
+  {
+    "name": "Mauterndorf",
+    "stateCode": "5"
+  },
+  {
+    "name": "Mitterberghütten",
+    "stateCode": "5"
+  },
+  {
+    "name": "Mitterhofen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Mittersill",
+    "stateCode": "5"
+  },
+  {
+    "name": "Mühlbach am Hochkönig",
+    "stateCode": "5"
+  },
+  {
+    "name": "Neualm",
+    "stateCode": "5"
+  },
+  {
+    "name": "Neukirchen am Großvenediger",
+    "stateCode": "5"
+  },
+  {
+    "name": "Neumarkt am Wallersee",
+    "stateCode": "5"
+  },
+  {
+    "name": "Niederalm",
+    "stateCode": "5"
+  },
+  {
+    "name": "Niedernsill",
+    "stateCode": "5"
+  },
+  {
+    "name": "Nußdorf am Haunsberg",
+    "stateCode": "5"
+  },
+  {
+    "name": "Oberalm",
+    "stateCode": "5"
+  },
+  {
+    "name": "Obergäu",
+    "stateCode": "5"
+  },
+  {
+    "name": "Oberndorf bei Salzburg",
+    "stateCode": "5"
+  },
+  {
+    "name": "Obertrum am See",
+    "stateCode": "5"
+  },
+  {
+    "name": "Pfarrwerfen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Pichl",
+    "stateCode": "5"
+  },
+  {
+    "name": "Piesendorf",
+    "stateCode": "5"
+  },
+  {
+    "name": "Plainfeld",
+    "stateCode": "5"
+  },
+  {
+    "name": "Plankenau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Politischer Bezirk Hallein",
+    "stateCode": "5"
+  },
+  {
+    "name": "Politischer Bezirk Salzburg-Umgebung",
+    "stateCode": "5"
+  },
+  {
+    "name": "Politischer Bezirk Sankt Johann im Pongau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Politischer Bezirk Tamsweg",
+    "stateCode": "5"
+  },
+  {
+    "name": "Puch bei Hallein",
+    "stateCode": "5"
+  },
+  {
+    "name": "Radstadt",
+    "stateCode": "5"
+  },
+  {
+    "name": "Ramingstein",
+    "stateCode": "5"
+  },
+  {
+    "name": "Rauris",
+    "stateCode": "5"
+  },
+  {
+    "name": "Reinbach",
+    "stateCode": "5"
+  },
+  {
+    "name": "Reitberg",
+    "stateCode": "5"
+  },
+  {
+    "name": "Saalbach",
+    "stateCode": "5"
+  },
+  {
+    "name": "Saalfelden am Steinernen Meer",
+    "stateCode": "5"
+  },
+  {
+    "name": "Salzburg",
+    "stateCode": "5"
+  },
+  {
+    "name": "Salzburg Stadt",
+    "stateCode": "5"
+  },
+  {
+    "name": "Sankt Andrä im Lungau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Sankt Gilgen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Sankt Johann im Pongau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Sankt Leonhard",
+    "stateCode": "5"
+  },
+  {
+    "name": "Sankt Margarethen im Lungau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Sankt Martin bei Lofer",
+    "stateCode": "5"
+  },
+  {
+    "name": "Sankt Michael im Lungau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Sankt Veit im Pongau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Scheffau am Tennengebirge",
+    "stateCode": "5"
+  },
+  {
+    "name": "Schleedorf",
+    "stateCode": "5"
+  },
+  {
+    "name": "Schwarzach im Pongau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Seeham",
+    "stateCode": "5"
+  },
+  {
+    "name": "Seekirchen am Wallersee",
+    "stateCode": "5"
+  },
+  {
+    "name": "Seewalchen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Siezenheim",
+    "stateCode": "5"
+  },
+  {
+    "name": "St. Martin of Tennengebirge",
+    "stateCode": "5"
+  },
+  {
+    "name": "Strasswalchen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Strobl",
+    "stateCode": "5"
+  },
+  {
+    "name": "Stuhlfelden",
+    "stateCode": "5"
+  },
+  {
+    "name": "Tamsweg",
+    "stateCode": "5"
+  },
+  {
+    "name": "Taugl",
+    "stateCode": "5"
+  },
+  {
+    "name": "Taxach",
+    "stateCode": "5"
+  },
+  {
+    "name": "Taxenbach",
+    "stateCode": "5"
+  },
+  {
+    "name": "Thalgau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Thomatal",
+    "stateCode": "5"
+  },
+  {
+    "name": "Thumersbach",
+    "stateCode": "5"
+  },
+  {
+    "name": "Tweng",
+    "stateCode": "5"
+  },
+  {
+    "name": "Unken",
+    "stateCode": "5"
+  },
+  {
+    "name": "Unternberg",
+    "stateCode": "5"
+  },
+  {
+    "name": "Untertauern",
+    "stateCode": "5"
+  },
+  {
+    "name": "Uttendorf",
+    "stateCode": "5"
+  },
+  {
+    "name": "Viehhausen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Viehhofen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Vigaun",
+    "stateCode": "5"
+  },
+  {
+    "name": "Wagnergraben",
+    "stateCode": "5"
+  },
+  {
+    "name": "Wagrain",
+    "stateCode": "5"
+  },
+  {
+    "name": "Walchen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Wald im Pinzgau",
+    "stateCode": "5"
+  },
+  {
+    "name": "Waldprechting",
+    "stateCode": "5"
+  },
+  {
+    "name": "Wals",
+    "stateCode": "5"
+  },
+  {
+    "name": "Walserfeld",
+    "stateCode": "5"
+  },
+  {
+    "name": "Werfen",
+    "stateCode": "5"
+  },
+  {
+    "name": "Werfenweng",
+    "stateCode": "5"
+  },
+  {
+    "name": "Zederhaus",
+    "stateCode": "5"
+  },
+  {
+    "name": "Zell am See",
+    "stateCode": "5"
+  },
+  {
+    "name": "Abtissendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Admont",
+    "stateCode": "6"
+  },
+  {
+    "name": "Aflenz Kurort",
+    "stateCode": "6"
+  },
+  {
+    "name": "Aibl",
+    "stateCode": "6"
+  },
+  {
+    "name": "Aigen im Ennstal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Albersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Allerheiligen bei Wildon",
+    "stateCode": "6"
+  },
+  {
+    "name": "Allerheiligen im Mürztal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Altaussee",
+    "stateCode": "6"
+  },
+  {
+    "name": "Altenmarkt bei Fürstenfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Altenmarkt bei Sankt Gallen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Andritz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Anger",
+    "stateCode": "6"
+  },
+  {
+    "name": "Apfelberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ardning",
+    "stateCode": "6"
+  },
+  {
+    "name": "Arnfels",
+    "stateCode": "6"
+  },
+  {
+    "name": "Arzberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Attendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Auersbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Bad Aussee",
+    "stateCode": "6"
+  },
+  {
+    "name": "Bad Blumau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Bad Gams",
+    "stateCode": "6"
+  },
+  {
+    "name": "Bad Gleichenberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Bad Radkersburg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Bad Waltersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Baierdorf-Umgebung",
+    "stateCode": "6"
+  },
+  {
+    "name": "Bairisch Kölldorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Bärnbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Baumgarten bei Gnas",
+    "stateCode": "6"
+  },
+  {
+    "name": "Berndorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Bierbaum am Auersbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Birkfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Blaindorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Breitenfeld am Tannenriegel",
+    "stateCode": "6"
+  },
+  {
+    "name": "Breitenfeld an der Rittschein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Bretstein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Bruck an der Mur",
+    "stateCode": "6"
+  },
+  {
+    "name": "Brunn",
+    "stateCode": "6"
+  },
+  {
+    "name": "Burgau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Dechantskirchen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Deuchendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Deutsch Goritz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Deutschfeistritz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Deutschlandsberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Diemlach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Dienersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Dietersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Dietersdorf am Gnasbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Donawitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Donnersbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Dürnstein in der Steiermark",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ebersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Edelsbach bei Feldbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Edelschrott",
+    "stateCode": "6"
+  },
+  {
+    "name": "Edelsgrub",
+    "stateCode": "6"
+  },
+  {
+    "name": "Edelstauden",
+    "stateCode": "6"
+  },
+  {
+    "name": "Eggenberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Eggersdorf bei Graz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ehrenhausen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Eibiswald",
+    "stateCode": "6"
+  },
+  {
+    "name": "Eichberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Eichfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Eisbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Eisenerz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Empersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Eppenstein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Falkenburg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Farrach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Fehring",
+    "stateCode": "6"
+  },
+  {
+    "name": "Feistritz bei Knittelfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Feldbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Feldkirchen bei Graz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Fernitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Fischbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Fladnitz im Raabtal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Flatschach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Floing",
+    "stateCode": "6"
+  },
+  {
+    "name": "Fohnsdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Frannach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Frauenberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Freidorf an der Laßnitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Freiland bei Deutschlandsberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Friedberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Frohnleiten",
+    "stateCode": "6"
+  },
+  {
+    "name": "Fürstenfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gaal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gabersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gallmannsegg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gamlitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gams bei Hieflau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ganz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Garanas",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gasen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Geidorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Geistthal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gersdorf an der Feistritz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gleinstätten",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gleisdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Glojach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gnas",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gniebing",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gosdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Göss",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gössenberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gossendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gösting",
+    "stateCode": "6"
+  },
+  {
+    "name": "Göttelsberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Grabersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Grafendorf bei Hartberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gralla",
+    "stateCode": "6"
+  },
+  {
+    "name": "Grambach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gratkorn",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gratwein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Graz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Graz Stadt",
+    "stateCode": "6"
+  },
+  {
+    "name": "Greisdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gressenberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gries",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gröbming",
+    "stateCode": "6"
+  },
+  {
+    "name": "Groß Sankt Florian",
+    "stateCode": "6"
+  },
+  {
+    "name": "Großklein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Großlobming",
+    "stateCode": "6"
+  },
+  {
+    "name": "Großsölk",
+    "stateCode": "6"
+  },
+  {
+    "name": "Grosssulz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Gundersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hafendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hainersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hainsdorf im Schwarzautal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Halbenrain",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hall bei Admont",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hart bei Graz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hartberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hartl",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hartmannsdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hatzendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Haus",
+    "stateCode": "6"
+  },
+  {
+    "name": "Haus im Ennstal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hausmannstätten",
+    "stateCode": "6"
+  },
+  {
+    "name": "Heiligenkreuz am Waasen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Heimschuh",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hengsberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hetzendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hieflau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hinterberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hirnsdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hitzendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hochtregist",
+    "stateCode": "6"
+  },
+  {
+    "name": "Höf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hof bei Straden",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hofstätten an der Raab",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hohenau an der Raab",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hohentauern",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hollenegg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Hönigsberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ilz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Innere Stadt",
+    "stateCode": "6"
+  },
+  {
+    "name": "Irdning",
+    "stateCode": "6"
+  },
+  {
+    "name": "Jagerberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Jakomini",
+    "stateCode": "6"
+  },
+  {
+    "name": "Johnsbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Judenburg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Judendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kaibing",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kainach bei Voitsberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kainbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kaindorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kaindorf an der Sulm",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kalsdorf bei Graz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kalwang",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kammern im Liesingtal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kapellen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kapfenberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kapfenstein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kindberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kirchbach in Steiermark",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kirchberg an der Raab",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kirchenviertel",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kitzeck im Sausal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kleinlobming",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kleinsöding",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kleinsölk",
+    "stateCode": "6"
+  },
+  {
+    "name": "Klöch",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kloster",
+    "stateCode": "6"
+  },
+  {
+    "name": "Knittelfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kobenz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Köflach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kohlberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kohlschwarz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Krakaudorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Krakauhintermühlen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Krakauschatten",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kraubath an der Mur",
+    "stateCode": "6"
+  },
+  {
+    "name": "Krieglach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Krottendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Krottendorf bei Ligist",
+    "stateCode": "6"
+  },
+  {
+    "name": "Krumegg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Krusdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kulm am Zirbitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kumberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Labuch",
+    "stateCode": "6"
+  },
+  {
+    "name": "Lafnitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Landl",
+    "stateCode": "6"
+  },
+  {
+    "name": "Lang",
+    "stateCode": "6"
+  },
+  {
+    "name": "Langegg bei Graz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Langenwang",
+    "stateCode": "6"
+  },
+  {
+    "name": "Lannach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Lassnitzhöhe",
+    "stateCode": "6"
+  },
+  {
+    "name": "Leibnitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Leitendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Leitersdorf im Raabtal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Leitring",
+    "stateCode": "6"
+  },
+  {
+    "name": "Lend",
+    "stateCode": "6"
+  },
+  {
+    "name": "Leoben",
+    "stateCode": "6"
+  },
+  {
+    "name": "Leutschach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Liebenau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Lieboch",
+    "stateCode": "6"
+  },
+  {
+    "name": "Liesingtal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Liezen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ligist",
+    "stateCode": "6"
+  },
+  {
+    "name": "Lödersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Loipersdorf bei Fürstenfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Maierdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Maria Lankowitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mariahof",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mariatrost",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mariazell",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mautern in Steiermark",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mellach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Merkendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mettersdorf am Saßbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Michaelerberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mitterdorf an der Raab",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mitterdorf im Mürztal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mitterlabill",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mitterndorf im Steirischen Salzkammergut",
+    "stateCode": "6"
+  },
+  {
+    "name": "Modriach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mönichwald",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mooskirchen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mortantsch",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mühldorf bei Feldbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mühlen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Murau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mureck",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mürzhofen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mürzsteg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Mürzzuschlag",
+    "stateCode": "6"
+  },
+  {
+    "name": "Naas",
+    "stateCode": "6"
+  },
+  {
+    "name": "Nestelbach bei Graz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Nestelbach im Ilztal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Neuberg an der Mürz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Neudau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Neumarkt in Steiermark",
+    "stateCode": "6"
+  },
+  {
+    "name": "Neutillmitsch",
+    "stateCode": "6"
+  },
+  {
+    "name": "Niederöblarn",
+    "stateCode": "6"
+  },
+  {
+    "name": "Niederschöckl",
+    "stateCode": "6"
+  },
+  {
+    "name": "Niederwölz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Niklasdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Nitscha",
+    "stateCode": "6"
+  },
+  {
+    "name": "Obdach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Oberaich",
+    "stateCode": "6"
+  },
+  {
+    "name": "Oberdorf am Hochegg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Oberhaag",
+    "stateCode": "6"
+  },
+  {
+    "name": "Oberkurzheim",
+    "stateCode": "6"
+  },
+  {
+    "name": "Oberpremstätten",
+    "stateCode": "6"
+  },
+  {
+    "name": "Oberrettenbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Oberstorcha",
+    "stateCode": "6"
+  },
+  {
+    "name": "Obervogau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Oberweg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Oberwölz Stadt",
+    "stateCode": "6"
+  },
+  {
+    "name": "Oberzeiring",
+    "stateCode": "6"
+  },
+  {
+    "name": "Öblarn",
+    "stateCode": "6"
+  },
+  {
+    "name": "Oppenberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ortgraben",
+    "stateCode": "6"
+  },
+  {
+    "name": "Osterwitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pack",
+    "stateCode": "6"
+  },
+  {
+    "name": "Paldau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Palfau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Parschlug",
+    "stateCode": "6"
+  },
+  {
+    "name": "Passail",
+    "stateCode": "6"
+  },
+  {
+    "name": "Peggau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Perchau am Sattel",
+    "stateCode": "6"
+  },
+  {
+    "name": "Perlsdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pernegg an der Mur",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pertlstein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Piberegg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pichling bei Köflach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pinggau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pirching am Traubenberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pirka",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pischelsdorf in der Steiermark",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pistorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pitschgau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Bruck-Mürzzuschlag",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Deutschlandsberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Graz-Umgebung",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Hartberg-Fürstenfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Leibnitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Leoben",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Liezen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Murau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Murtal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Südoststeiermark",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Voitsberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Politischer Bezirk Weiz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pöllau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pöllauberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pöls",
+    "stateCode": "6"
+  },
+  {
+    "name": "Poppendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Preding",
+    "stateCode": "6"
+  },
+  {
+    "name": "Proleb",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pruggern",
+    "stateCode": "6"
+  },
+  {
+    "name": "Puch bei Weiz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Puntigam",
+    "stateCode": "6"
+  },
+  {
+    "name": "Pusterwald",
+    "stateCode": "6"
+  },
+  {
+    "name": "Raaba",
+    "stateCode": "6"
+  },
+  {
+    "name": "Raabau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Rabenwald",
+    "stateCode": "6"
+  },
+  {
+    "name": "Rachau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ragnitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ramsau am Dachstein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Raning",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ranten",
+    "stateCode": "6"
+  },
+  {
+    "name": "Rassach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ratsch an der Weinstraße",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ratschendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ratten",
+    "stateCode": "6"
+  },
+  {
+    "name": "Reichendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Reifling",
+    "stateCode": "6"
+  },
+  {
+    "name": "Rettenegg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Retznei",
+    "stateCode": "6"
+  },
+  {
+    "name": "Riegersburg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ries",
+    "stateCode": "6"
+  },
+  {
+    "name": "Rohrbach an der Lafnitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Rosental an der Kainach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Röthelstein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Rottenmann",
+    "stateCode": "6"
+  },
+  {
+    "name": "Salla",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Anna am Aigen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Bartholomä",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Blasen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Gallen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Georgen an der Stiefing",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Georgen ob Judenburg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Georgen ob Murau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Ilgen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Jakob im Walde",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Jakob-Breitenau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Johann am Tauern",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Johann bei Herberstein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Johann im Saggautal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Johann in der Haide",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Josef (Weststeiermark)",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Katharein an der Laming",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Kathrein am Hauenstein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Kathrein am Offenegg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Lambrecht",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Leonhard",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Lorenzen am Wechsel",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Lorenzen bei Knittelfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Lorenzen bei Scheifling",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Lorenzen im Mürztal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Marein bei Graz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Marein bei Knittelfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Marein bei Neumarkt",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Marein im Mürztal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Margarethen an der Raab",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Margarethen bei Knittelfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Martin",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Martin am Grimming",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Martin im Sulmtal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Michael in Obersteiermark",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Nikolai im Sausal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Nikolai im Sölktal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Nikolai ob Draßling",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Oswald bei Plankenwarth",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Oswald ob Eibiswald",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Peter",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Peter am Kammersberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Peter am Ottersbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Peter im Sulmtal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Peter ob Judenburg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Peter-Freienstein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Radegund bei Graz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Ruprecht an der Raab",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Stefan im Rosental",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Stefan ob Leoben",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Stefan ob Stainz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Ulrich am Waasen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sankt Veit am Vogau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Schachen bei Vorau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Schäffern",
+    "stateCode": "6"
+  },
+  {
+    "name": "Scheifling",
+    "stateCode": "6"
+  },
+  {
+    "name": "Schladming",
+    "stateCode": "6"
+  },
+  {
+    "name": "Schöder",
+    "stateCode": "6"
+  },
+  {
+    "name": "Schrems bei Frohnleiten",
+    "stateCode": "6"
+  },
+  {
+    "name": "Schwanberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Schwarzau im Schwarzautal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sebersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Seckau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Seggauberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Seiersberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Selzthal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Semriach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Siegersdorf bei Herberstein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sinabelkirchen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Soboth",
+    "stateCode": "6"
+  },
+  {
+    "name": "Söchau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Södingberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Spatenhof",
+    "stateCode": "6"
+  },
+  {
+    "name": "Spielberg bei Knittelfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Spielfeld",
+    "stateCode": "6"
+  },
+  {
+    "name": "Spital am Semmering",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stadl an der Mur",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stainach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stainz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stainz bei Straden",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stallhof",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stallhofen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stambach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stattegg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stein",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stenzengreith",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stiwoll",
+    "stateCode": "6"
+  },
+  {
+    "name": "Straden",
+    "stateCode": "6"
+  },
+  {
+    "name": "Strallegg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Straß in Steiermark",
+    "stateCode": "6"
+  },
+  {
+    "name": "Strassengel",
+    "stateCode": "6"
+  },
+  {
+    "name": "Straßgang",
+    "stateCode": "6"
+  },
+  {
+    "name": "Stubenberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Studenzen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Sulztal an der Weinstraße",
+    "stateCode": "6"
+  },
+  {
+    "name": "Tauplitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Teufenbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Thal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Thörl",
+    "stateCode": "6"
+  },
+  {
+    "name": "Tieschen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Tillmitsch",
+    "stateCode": "6"
+  },
+  {
+    "name": "Tillmitsch Links der Laßnitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Traboch",
+    "stateCode": "6"
+  },
+  {
+    "name": "Trahütten",
+    "stateCode": "6"
+  },
+  {
+    "name": "Trautmannsdorf in Oststeiermark",
+    "stateCode": "6"
+  },
+  {
+    "name": "Treglwang",
+    "stateCode": "6"
+  },
+  {
+    "name": "Trieben",
+    "stateCode": "6"
+  },
+  {
+    "name": "Triebendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Trofaiach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Trössing",
+    "stateCode": "6"
+  },
+  {
+    "name": "Turnau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Übelbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Übersbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ungerdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Unterauersbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Unterbergla",
+    "stateCode": "6"
+  },
+  {
+    "name": "Unterfladnitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Unterlamm",
+    "stateCode": "6"
+  },
+  {
+    "name": "Unterpremstätten",
+    "stateCode": "6"
+  },
+  {
+    "name": "Utschtal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Vasoldsberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Veitsch",
+    "stateCode": "6"
+  },
+  {
+    "name": "Vogau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Voitsberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Vorau",
+    "stateCode": "6"
+  },
+  {
+    "name": "Vordernberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wagna",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wagnitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wald am Schoberpaß",
+    "stateCode": "6"
+  },
+  {
+    "name": "Waltendorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wartberg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Weinburg am Saßbach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Weißenbach bei Liezen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Weißkirchen in Steiermark",
+    "stateCode": "6"
+  },
+  {
+    "name": "Weiz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Werndorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wernersdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wettmannstätten",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wetzelsdorf",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wies",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wildalpen",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wildon",
+    "stateCode": "6"
+  },
+  {
+    "name": "Winklern bei Oberwölz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wolfsberg im Schwarzautal",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wörschach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wörth an der Lafnitz",
+    "stateCode": "6"
+  },
+  {
+    "name": "Wundschuh",
+    "stateCode": "6"
+  },
+  {
+    "name": "Zeltweg",
+    "stateCode": "6"
+  },
+  {
+    "name": "Zerlach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Zettling",
+    "stateCode": "6"
+  },
+  {
+    "name": "Zeutschach",
+    "stateCode": "6"
+  },
+  {
+    "name": "Abfaltersbach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Absam",
+    "stateCode": "7"
+  },
+  {
+    "name": "Achenkirch",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ainet",
+    "stateCode": "7"
+  },
+  {
+    "name": "Aldrans",
+    "stateCode": "7"
+  },
+  {
+    "name": "Alpbach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Amlach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ampass",
+    "stateCode": "7"
+  },
+  {
+    "name": "Amras",
+    "stateCode": "7"
+  },
+  {
+    "name": "Angath",
+    "stateCode": "7"
+  },
+  {
+    "name": "Angerberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Anras",
+    "stateCode": "7"
+  },
+  {
+    "name": "Arzl",
+    "stateCode": "7"
+  },
+  {
+    "name": "Arzl im Pitztal",
+    "stateCode": "7"
+  },
+  {
+    "name": "Aschau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Aschau im Zillertal",
+    "stateCode": "7"
+  },
+  {
+    "name": "Aurach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Außervillgraten",
+    "stateCode": "7"
+  },
+  {
+    "name": "Axams",
+    "stateCode": "7"
+  },
+  {
+    "name": "Bad Häring",
+    "stateCode": "7"
+  },
+  {
+    "name": "Barwies",
+    "stateCode": "7"
+  },
+  {
+    "name": "Baumkirchen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Berwang",
+    "stateCode": "7"
+  },
+  {
+    "name": "Biberwier",
+    "stateCode": "7"
+  },
+  {
+    "name": "Bichlbach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Birgitz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Brandenberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Breitenbach am Inn",
+    "stateCode": "7"
+  },
+  {
+    "name": "Breitenwang",
+    "stateCode": "7"
+  },
+  {
+    "name": "Brixen im Thale",
+    "stateCode": "7"
+  },
+  {
+    "name": "Brixlegg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Bruck am Ziller",
+    "stateCode": "7"
+  },
+  {
+    "name": "Buch in Tirol",
+    "stateCode": "7"
+  },
+  {
+    "name": "Debant",
+    "stateCode": "7"
+  },
+  {
+    "name": "Dölsach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ebbs",
+    "stateCode": "7"
+  },
+  {
+    "name": "Eben am Achensee",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ehenbichl",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ehrwald",
+    "stateCode": "7"
+  },
+  {
+    "name": "Elbigenalp",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ellbögen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ellmau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Elmen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Endach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Erl",
+    "stateCode": "7"
+  },
+  {
+    "name": "Erpfendorf",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fendels",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fieberbrunn",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fiecht",
+    "stateCode": "7"
+  },
+  {
+    "name": "Finkenberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fiss",
+    "stateCode": "7"
+  },
+  {
+    "name": "Flaurling",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fliess",
+    "stateCode": "7"
+  },
+  {
+    "name": "Flirsch",
+    "stateCode": "7"
+  },
+  {
+    "name": "Forchach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fritzens",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fügen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fügenberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Fulpmes",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gallzein",
+    "stateCode": "7"
+  },
+  {
+    "name": "Galtür",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gerlos",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gerlosberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gnadenwald",
+    "stateCode": "7"
+  },
+  {
+    "name": "Going",
+    "stateCode": "7"
+  },
+  {
+    "name": "Götzens",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gramais",
+    "stateCode": "7"
+  },
+  {
+    "name": "Grän",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gries am Brenner",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gries im Sellrain",
+    "stateCode": "7"
+  },
+  {
+    "name": "Grins",
+    "stateCode": "7"
+  },
+  {
+    "name": "Grinzens",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gschnitz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Haiming",
+    "stateCode": "7"
+  },
+  {
+    "name": "Hainzenberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Hall in Tirol",
+    "stateCode": "7"
+  },
+  {
+    "name": "Hart im Zillertal",
+    "stateCode": "7"
+  },
+  {
+    "name": "Häselgehr",
+    "stateCode": "7"
+  },
+  {
+    "name": "Hatting",
+    "stateCode": "7"
+  },
+  {
+    "name": "Heinfels",
+    "stateCode": "7"
+  },
+  {
+    "name": "Heiterwang",
+    "stateCode": "7"
+  },
+  {
+    "name": "Hippach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Hochfilzen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Höfen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Holzgau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Hopfgarten im Brixental",
+    "stateCode": "7"
+  },
+  {
+    "name": "Hopfgarten in Defereggen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Hötting",
+    "stateCode": "7"
+  },
+  {
+    "name": "Igls",
+    "stateCode": "7"
+  },
+  {
+    "name": "Imst",
+    "stateCode": "7"
+  },
+  {
+    "name": "Imsterberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Innervillgraten",
+    "stateCode": "7"
+  },
+  {
+    "name": "Innsbruck",
+    "stateCode": "7"
+  },
+  {
+    "name": "Innsbruck Stadt",
+    "stateCode": "7"
+  },
+  {
+    "name": "Inzing",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ischgl",
+    "stateCode": "7"
+  },
+  {
+    "name": "Itter",
+    "stateCode": "7"
+  },
+  {
+    "name": "Jenbach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Jerzens",
+    "stateCode": "7"
+  },
+  {
+    "name": "Jochberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Jungholz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kaltenbach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kapfing",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kappl",
+    "stateCode": "7"
+  },
+  {
+    "name": "Karres",
+    "stateCode": "7"
+  },
+  {
+    "name": "Karrösten",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kartitsch",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kauns",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kematen in Tirol",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kirchberg in Tirol",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kirchbichl",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kirchdorf in Tirol",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kitzbühel",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kolsass",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kolsassberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kössen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kramsach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kufstein",
+    "stateCode": "7"
+  },
+  {
+    "name": "Kundl",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ladis",
+    "stateCode": "7"
+  },
+  {
+    "name": "Landeck",
+    "stateCode": "7"
+  },
+  {
+    "name": "Längenfeld",
+    "stateCode": "7"
+  },
+  {
+    "name": "Lans",
+    "stateCode": "7"
+  },
+  {
+    "name": "Lavant",
+    "stateCode": "7"
+  },
+  {
+    "name": "Lechaschau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Leisach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Lermoos",
+    "stateCode": "7"
+  },
+  {
+    "name": "Leutasch",
+    "stateCode": "7"
+  },
+  {
+    "name": "Lienz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mariastein",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mariatal",
+    "stateCode": "7"
+  },
+  {
+    "name": "Matrei am Brenner",
+    "stateCode": "7"
+  },
+  {
+    "name": "Matrei in Osttirol",
+    "stateCode": "7"
+  },
+  {
+    "name": "Maurach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mayrhofen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Medraz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mieders",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mieming",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mils bei Imst",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mils bei Solbad Hall",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mitterndorf",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mötz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mühlau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mühlbachl",
+    "stateCode": "7"
+  },
+  {
+    "name": "Münster",
+    "stateCode": "7"
+  },
+  {
+    "name": "Musau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mutters",
+    "stateCode": "7"
+  },
+  {
+    "name": "Namlos",
+    "stateCode": "7"
+  },
+  {
+    "name": "Nassereith",
+    "stateCode": "7"
+  },
+  {
+    "name": "Natters",
+    "stateCode": "7"
+  },
+  {
+    "name": "Nauders",
+    "stateCode": "7"
+  },
+  {
+    "name": "Nesselwängle",
+    "stateCode": "7"
+  },
+  {
+    "name": "Neustift im Stubaital",
+    "stateCode": "7"
+  },
+  {
+    "name": "Niederau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Niederbreitenbach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Niederndorf",
+    "stateCode": "7"
+  },
+  {
+    "name": "Nikolsdorf",
+    "stateCode": "7"
+  },
+  {
+    "name": "Oberau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Oberhofen im Inntal",
+    "stateCode": "7"
+  },
+  {
+    "name": "Oberlienz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Obermieming",
+    "stateCode": "7"
+  },
+  {
+    "name": "Obernberg am Brenner",
+    "stateCode": "7"
+  },
+  {
+    "name": "Oberndorf in Tirol",
+    "stateCode": "7"
+  },
+  {
+    "name": "Oberperfuss",
+    "stateCode": "7"
+  },
+  {
+    "name": "Obertilliach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Obsteig",
+    "stateCode": "7"
+  },
+  {
+    "name": "Oetz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ötztal-Bahnhof",
+    "stateCode": "7"
+  },
+  {
+    "name": "Patsch",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pettnau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pettneu",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pfaffenhofen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pflach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pfons",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pfunds",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pians",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pill",
+    "stateCode": "7"
+  },
+  {
+    "name": "Politischer Bezirk Imst",
+    "stateCode": "7"
+  },
+  {
+    "name": "Politischer Bezirk Innsbruck Land",
+    "stateCode": "7"
+  },
+  {
+    "name": "Politischer Bezirk Kitzbühel",
+    "stateCode": "7"
+  },
+  {
+    "name": "Politischer Bezirk Kufstein",
+    "stateCode": "7"
+  },
+  {
+    "name": "Politischer Bezirk Landeck",
+    "stateCode": "7"
+  },
+  {
+    "name": "Politischer Bezirk Lienz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Politischer Bezirk Reutte",
+    "stateCode": "7"
+  },
+  {
+    "name": "Politischer Bezirk Schwaz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Polling in Tirol",
+    "stateCode": "7"
+  },
+  {
+    "name": "Pradl",
+    "stateCode": "7"
+  },
+  {
+    "name": "Prutz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Radfeld",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ramsau im Zillertal",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ranggen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Rattenberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Reith bei Kitzbühel",
+    "stateCode": "7"
+  },
+  {
+    "name": "Reith bei Seefeld",
+    "stateCode": "7"
+  },
+  {
+    "name": "Reith im Alpbachtal",
+    "stateCode": "7"
+  },
+  {
+    "name": "Rettenschöss",
+    "stateCode": "7"
+  },
+  {
+    "name": "Reutte",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ried im Oberinntal",
+    "stateCode": "7"
+  },
+  {
+    "name": "Ried im Zillertal",
+    "stateCode": "7"
+  },
+  {
+    "name": "Rietz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Rinn",
+    "stateCode": "7"
+  },
+  {
+    "name": "Rohrberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Roppen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Rum",
+    "stateCode": "7"
+  },
+  {
+    "name": "Sankt Johann in Tirol",
+    "stateCode": "7"
+  },
+  {
+    "name": "Sankt Ulrich am Pillersee",
+    "stateCode": "7"
+  },
+  {
+    "name": "Sankt Veit in Defereggen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Sautens",
+    "stateCode": "7"
+  },
+  {
+    "name": "Scharnitz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Schattwald",
+    "stateCode": "7"
+  },
+  {
+    "name": "Scheffau am Wilden Kaiser",
+    "stateCode": "7"
+  },
+  {
+    "name": "Schlaiten",
+    "stateCode": "7"
+  },
+  {
+    "name": "Schlitters",
+    "stateCode": "7"
+  },
+  {
+    "name": "Schönberg im Stubaital",
+    "stateCode": "7"
+  },
+  {
+    "name": "Schönwies",
+    "stateCode": "7"
+  },
+  {
+    "name": "Schwaz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Schwendau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Schwendt",
+    "stateCode": "7"
+  },
+  {
+    "name": "Schwoich",
+    "stateCode": "7"
+  },
+  {
+    "name": "See",
+    "stateCode": "7"
+  },
+  {
+    "name": "Seefeld in Tirol",
+    "stateCode": "7"
+  },
+  {
+    "name": "Sellrain",
+    "stateCode": "7"
+  },
+  {
+    "name": "Serfaus",
+    "stateCode": "7"
+  },
+  {
+    "name": "Sillian",
+    "stateCode": "7"
+  },
+  {
+    "name": "Silz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Sistrans",
+    "stateCode": "7"
+  },
+  {
+    "name": "Sölden",
+    "stateCode": "7"
+  },
+  {
+    "name": "Söll",
+    "stateCode": "7"
+  },
+  {
+    "name": "St Anton am Arlberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Stams",
+    "stateCode": "7"
+  },
+  {
+    "name": "Stans",
+    "stateCode": "7"
+  },
+  {
+    "name": "Stanz bei Landeck",
+    "stateCode": "7"
+  },
+  {
+    "name": "Stanzach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Steeg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Steinach am Brenner",
+    "stateCode": "7"
+  },
+  {
+    "name": "Strass im Zillertal",
+    "stateCode": "7"
+  },
+  {
+    "name": "Strassen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Strengen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Stumm",
+    "stateCode": "7"
+  },
+  {
+    "name": "Stummerberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Tannheim",
+    "stateCode": "7"
+  },
+  {
+    "name": "Tarrenz",
+    "stateCode": "7"
+  },
+  {
+    "name": "Telfes im Stubai",
+    "stateCode": "7"
+  },
+  {
+    "name": "Telfs",
+    "stateCode": "7"
+  },
+  {
+    "name": "Terfens",
+    "stateCode": "7"
+  },
+  {
+    "name": "Thaur",
+    "stateCode": "7"
+  },
+  {
+    "name": "Thurn",
+    "stateCode": "7"
+  },
+  {
+    "name": "Tobadill",
+    "stateCode": "7"
+  },
+  {
+    "name": "Trins",
+    "stateCode": "7"
+  },
+  {
+    "name": "Tristach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Tulfes",
+    "stateCode": "7"
+  },
+  {
+    "name": "Tux",
+    "stateCode": "7"
+  },
+  {
+    "name": "Uderns",
+    "stateCode": "7"
+  },
+  {
+    "name": "Umhausen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Unterlangkampfen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Unterperfuss",
+    "stateCode": "7"
+  },
+  {
+    "name": "Untertilliach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Vals",
+    "stateCode": "7"
+  },
+  {
+    "name": "Vils",
+    "stateCode": "7"
+  },
+  {
+    "name": "Virgen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Volders",
+    "stateCode": "7"
+  },
+  {
+    "name": "Voldöpp",
+    "stateCode": "7"
+  },
+  {
+    "name": "Völs",
+    "stateCode": "7"
+  },
+  {
+    "name": "Vomp",
+    "stateCode": "7"
+  },
+  {
+    "name": "Vorderhornbach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Vorderthiersee",
+    "stateCode": "7"
+  },
+  {
+    "name": "Waidring",
+    "stateCode": "7"
+  },
+  {
+    "name": "Walchsee",
+    "stateCode": "7"
+  },
+  {
+    "name": "Wängle",
+    "stateCode": "7"
+  },
+  {
+    "name": "Wattenberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Wattens",
+    "stateCode": "7"
+  },
+  {
+    "name": "Weer",
+    "stateCode": "7"
+  },
+  {
+    "name": "Weerberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Weissach",
+    "stateCode": "7"
+  },
+  {
+    "name": "Weissenbach am Lech",
+    "stateCode": "7"
+  },
+  {
+    "name": "Wenns",
+    "stateCode": "7"
+  },
+  {
+    "name": "Westendorf",
+    "stateCode": "7"
+  },
+  {
+    "name": "Wiesing",
+    "stateCode": "7"
+  },
+  {
+    "name": "Wildermieming",
+    "stateCode": "7"
+  },
+  {
+    "name": "Wildschönau",
+    "stateCode": "7"
+  },
+  {
+    "name": "Wilten",
+    "stateCode": "7"
+  },
+  {
+    "name": "Wörgl",
+    "stateCode": "7"
+  },
+  {
+    "name": "Zams",
+    "stateCode": "7"
+  },
+  {
+    "name": "Zell",
+    "stateCode": "7"
+  },
+  {
+    "name": "Zell am Ziller",
+    "stateCode": "7"
+  },
+  {
+    "name": "Zellberg",
+    "stateCode": "7"
+  },
+  {
+    "name": "Zirl",
+    "stateCode": "7"
+  },
+  {
+    "name": "Zöblen",
+    "stateCode": "7"
+  },
+  {
+    "name": "Alberschwende",
+    "stateCode": "8"
+  },
+  {
+    "name": "Altach",
+    "stateCode": "8"
+  },
+  {
+    "name": "Andelsbuch",
+    "stateCode": "8"
+  },
+  {
+    "name": "Au",
+    "stateCode": "8"
+  },
+  {
+    "name": "Ausserbraz",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bartholomäberg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Batschuns",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bezau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bildstein",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bizau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Blons",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bludenz",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bludesch",
+    "stateCode": "8"
+  },
+  {
+    "name": "Brand",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bregenz",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bürs",
+    "stateCode": "8"
+  },
+  {
+    "name": "Bürserberg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Dalaas",
+    "stateCode": "8"
+  },
+  {
+    "name": "Damüls",
+    "stateCode": "8"
+  },
+  {
+    "name": "Doren",
+    "stateCode": "8"
+  },
+  {
+    "name": "Dornbirn",
+    "stateCode": "8"
+  },
+  {
+    "name": "Düns",
+    "stateCode": "8"
+  },
+  {
+    "name": "Dünserberg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Egg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Eichenberg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Feldkirch",
+    "stateCode": "8"
+  },
+  {
+    "name": "Frastanz",
+    "stateCode": "8"
+  },
+  {
+    "name": "Fraxern",
+    "stateCode": "8"
+  },
+  {
+    "name": "Fußach",
+    "stateCode": "8"
+  },
+  {
+    "name": "Gaißau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Gaschurn",
+    "stateCode": "8"
+  },
+  {
+    "name": "Göfis",
+    "stateCode": "8"
+  },
+  {
+    "name": "Götzis",
+    "stateCode": "8"
+  },
+  {
+    "name": "Großdorf",
+    "stateCode": "8"
+  },
+  {
+    "name": "Hard",
+    "stateCode": "8"
+  },
+  {
+    "name": "Hirschegg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Hittisau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Höchst",
+    "stateCode": "8"
+  },
+  {
+    "name": "Hohenems",
+    "stateCode": "8"
+  },
+  {
+    "name": "Hohenweiler",
+    "stateCode": "8"
+  },
+  {
+    "name": "Hörbranz",
+    "stateCode": "8"
+  },
+  {
+    "name": "Innerbraz",
+    "stateCode": "8"
+  },
+  {
+    "name": "Kennelbach",
+    "stateCode": "8"
+  },
+  {
+    "name": "Klaus",
+    "stateCode": "8"
+  },
+  {
+    "name": "Klösterle",
+    "stateCode": "8"
+  },
+  {
+    "name": "Koblach",
+    "stateCode": "8"
+  },
+  {
+    "name": "Krumbach",
+    "stateCode": "8"
+  },
+  {
+    "name": "Langen",
+    "stateCode": "8"
+  },
+  {
+    "name": "Langenegg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Lauterach",
+    "stateCode": "8"
+  },
+  {
+    "name": "Lech",
+    "stateCode": "8"
+  },
+  {
+    "name": "Lingenau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Lochau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Lorüns",
+    "stateCode": "8"
+  },
+  {
+    "name": "Ludesch",
+    "stateCode": "8"
+  },
+  {
+    "name": "Lustenau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Mäder",
+    "stateCode": "8"
+  },
+  {
+    "name": "Meiningen",
+    "stateCode": "8"
+  },
+  {
+    "name": "Mellau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Mittelberg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Möggers",
+    "stateCode": "8"
+  },
+  {
+    "name": "Muntlix",
+    "stateCode": "8"
+  },
+  {
+    "name": "Nenzing",
+    "stateCode": "8"
+  },
+  {
+    "name": "Nüziders",
+    "stateCode": "8"
+  },
+  {
+    "name": "Politischer Bezirk Bludenz",
+    "stateCode": "8"
+  },
+  {
+    "name": "Politischer Bezirk Bregenz",
+    "stateCode": "8"
+  },
+  {
+    "name": "Politischer Bezirk Dornbirn",
+    "stateCode": "8"
+  },
+  {
+    "name": "Politischer Bezirk Feldkirch",
+    "stateCode": "8"
+  },
+  {
+    "name": "Raggal",
+    "stateCode": "8"
+  },
+  {
+    "name": "Rankweil",
+    "stateCode": "8"
+  },
+  {
+    "name": "Reuthe",
+    "stateCode": "8"
+  },
+  {
+    "name": "Riefensberg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Riezlern",
+    "stateCode": "8"
+  },
+  {
+    "name": "Röns",
+    "stateCode": "8"
+  },
+  {
+    "name": "Röthis",
+    "stateCode": "8"
+  },
+  {
+    "name": "Sankt Anton im Montafon",
+    "stateCode": "8"
+  },
+  {
+    "name": "Sankt Gallenkirch",
+    "stateCode": "8"
+  },
+  {
+    "name": "Satteins",
+    "stateCode": "8"
+  },
+  {
+    "name": "Schlins",
+    "stateCode": "8"
+  },
+  {
+    "name": "Schnepfau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Schnifis",
+    "stateCode": "8"
+  },
+  {
+    "name": "Schoppernau",
+    "stateCode": "8"
+  },
+  {
+    "name": "Schröcken",
+    "stateCode": "8"
+  },
+  {
+    "name": "Schruns",
+    "stateCode": "8"
+  },
+  {
+    "name": "Schwarzach",
+    "stateCode": "8"
+  },
+  {
+    "name": "Schwarzenberg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Sibratsgfäll",
+    "stateCode": "8"
+  },
+  {
+    "name": "Silbertal",
+    "stateCode": "8"
+  },
+  {
+    "name": "Stallehr",
+    "stateCode": "8"
+  },
+  {
+    "name": "Sulz",
+    "stateCode": "8"
+  },
+  {
+    "name": "Sulzberg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Thüringen",
+    "stateCode": "8"
+  },
+  {
+    "name": "Tschagguns",
+    "stateCode": "8"
+  },
+  {
+    "name": "Übersaxen",
+    "stateCode": "8"
+  },
+  {
+    "name": "Vandans",
+    "stateCode": "8"
+  },
+  {
+    "name": "Viktorsberg",
+    "stateCode": "8"
+  },
+  {
+    "name": "Warth",
+    "stateCode": "8"
+  },
+  {
+    "name": "Weiler",
+    "stateCode": "8"
+  },
+  {
+    "name": "Wolfurt",
+    "stateCode": "8"
+  },
+  {
+    "name": "Donaustadt",
+    "stateCode": "9"
+  },
+  {
+    "name": "Favoriten",
+    "stateCode": "9"
+  },
+  {
+    "name": "Floridsdorf",
+    "stateCode": "9"
+  },
+  {
+    "name": "Hernals",
+    "stateCode": "9"
+  },
+  {
+    "name": "Hietzing",
+    "stateCode": "9"
+  },
+  {
+    "name": "Innere Stadt",
+    "stateCode": "9"
+  },
+  {
+    "name": "Meidling",
+    "stateCode": "9"
+  },
+  {
+    "name": "Ottakring",
+    "stateCode": "9"
+  },
+  {
+    "name": "Simmering",
+    "stateCode": "9"
+  },
+  {
+    "name": "Vienna",
+    "stateCode": "9"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Anse Boileau",
+    "stateCode": "02"
+  },
+  {
+    "name": "Anse Royale",
+    "stateCode": "05"
+  },
+  {
+    "name": "Beau Vallon",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bel Ombre",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cascade",
+    "stateCode": "11"
+  },
+  {
+    "name": "Victoria",
+    "stateCode": "16"
+  },
+  {
+    "name": "Port Glaud",
+    "stateCode": "21"
+  },
+  {
+    "name": "Takamaka",
+    "stateCode": "23"
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "name": "Aglona",
+    "stateCode": "001"
+  },
+  {
+    "name": "Aizkraukle",
+    "stateCode": "002"
+  },
+  {
+    "name": "Aizpute",
+    "stateCode": "003"
+  },
+  {
+    "name": "Aknīste",
+    "stateCode": "004"
+  },
+  {
+    "name": "Aloja",
+    "stateCode": "005"
+  },
+  {
+    "name": "Staicele",
+    "stateCode": "005"
+  },
+  {
+    "name": "Alsunga",
+    "stateCode": "006"
+  },
+  {
+    "name": "Alūksne",
+    "stateCode": "007"
+  },
+  {
+    "name": "Ape",
+    "stateCode": "009"
+  },
+  {
+    "name": "Auce",
+    "stateCode": "010"
+  },
+  {
+    "name": "Piņķi",
+    "stateCode": "012"
+  },
+  {
+    "name": "Baldone",
+    "stateCode": "013"
+  },
+  {
+    "name": "Baltinava",
+    "stateCode": "014"
+  },
+  {
+    "name": "Balvi",
+    "stateCode": "015"
+  },
+  {
+    "name": "Bauska",
+    "stateCode": "016"
+  },
+  {
+    "name": "Mūrmuiža",
+    "stateCode": "017"
+  },
+  {
+    "name": "Brocēni",
+    "stateCode": "018"
+  },
+  {
+    "name": "Carnikava",
+    "stateCode": "020"
+  },
+  {
+    "name": "Cesvaine",
+    "stateCode": "021"
+  },
+  {
+    "name": "Cēsis",
+    "stateCode": "022"
+  },
+  {
+    "name": "Cibla",
+    "stateCode": "023"
+  },
+  {
+    "name": "Dagda",
+    "stateCode": "024"
+  },
+  {
+    "name": "Daugavpils",
+    "stateCode": "025"
+  },
+  {
+    "name": "Dobele",
+    "stateCode": "026"
+  },
+  {
+    "name": "Dundaga",
+    "stateCode": "027"
+  },
+  {
+    "name": "Lieģi",
+    "stateCode": "028"
+  },
+  {
+    "name": "Smārde",
+    "stateCode": "029"
+  },
+  {
+    "name": "Ērgļi",
+    "stateCode": "030"
+  },
+  {
+    "name": "Garkalne",
+    "stateCode": "031"
+  },
+  {
+    "name": "Grobiņa",
+    "stateCode": "032"
+  },
+  {
+    "name": "Gulbene",
+    "stateCode": "033"
+  },
+  {
+    "name": "Iecava",
+    "stateCode": "034"
+  },
+  {
+    "name": "Ikšķile",
+    "stateCode": "035"
+  },
+  {
+    "name": "Ilūkste",
+    "stateCode": "036"
+  },
+  {
+    "name": "Inčukalns",
+    "stateCode": "037"
+  },
+  {
+    "name": "Vangaži",
+    "stateCode": "037"
+  },
+  {
+    "name": "Jaunjelgava",
+    "stateCode": "038"
+  },
+  {
+    "name": "Jaunpils",
+    "stateCode": "040"
+  },
+  {
+    "name": "Tīreļi",
+    "stateCode": "041"
+  },
+  {
+    "name": "Jēkabpils",
+    "stateCode": "042"
+  },
+  {
+    "name": "Krustpils",
+    "stateCode": "042"
+  },
+  {
+    "name": "Kandava",
+    "stateCode": "043"
+  },
+  {
+    "name": "Kārsava",
+    "stateCode": "044"
+  },
+  {
+    "name": "Kocēni",
+    "stateCode": "045"
+  },
+  {
+    "name": "Koknese",
+    "stateCode": "046"
+  },
+  {
+    "name": "Krāslava",
+    "stateCode": "047"
+  },
+  {
+    "name": "Kuldīga",
+    "stateCode": "050"
+  },
+  {
+    "name": "Ķegums",
+    "stateCode": "051"
+  },
+  {
+    "name": "Baloži",
+    "stateCode": "052"
+  },
+  {
+    "name": "Ķekava",
+    "stateCode": "052"
+  },
+  {
+    "name": "Lielvārde",
+    "stateCode": "053"
+  },
+  {
+    "name": "Limbaži",
+    "stateCode": "054"
+  },
+  {
+    "name": "Līgatne",
+    "stateCode": "055"
+  },
+  {
+    "name": "Līvāni",
+    "stateCode": "056"
+  },
+  {
+    "name": "Lubāna",
+    "stateCode": "057"
+  },
+  {
+    "name": "Ludza",
+    "stateCode": "058"
+  },
+  {
+    "name": "Madona",
+    "stateCode": "059"
+  },
+  {
+    "name": "Mazsalaca",
+    "stateCode": "060"
+  },
+  {
+    "name": "Mālpils",
+    "stateCode": "061"
+  },
+  {
+    "name": "Mārupe",
+    "stateCode": "062"
+  },
+  {
+    "name": "Naukšēni",
+    "stateCode": "064"
+  },
+  {
+    "name": "Nereta",
+    "stateCode": "065"
+  },
+  {
+    "name": "Nīca",
+    "stateCode": "066"
+  },
+  {
+    "name": "Jumprava",
+    "stateCode": "067"
+  },
+  {
+    "name": "Ogre",
+    "stateCode": "067"
+  },
+  {
+    "name": "Olaine",
+    "stateCode": "068"
+  },
+  {
+    "name": "Ozolnieki",
+    "stateCode": "069"
+  },
+  {
+    "name": "Stalbe",
+    "stateCode": "070"
+  },
+  {
+    "name": "Pāvilosta",
+    "stateCode": "071"
+  },
+  {
+    "name": "Pļaviņas",
+    "stateCode": "072"
+  },
+  {
+    "name": "Jaunaglona",
+    "stateCode": "073"
+  },
+  {
+    "name": "Preiļi",
+    "stateCode": "073"
+  },
+  {
+    "name": "Priekule",
+    "stateCode": "074"
+  },
+  {
+    "name": "Priekuļi",
+    "stateCode": "075"
+  },
+  {
+    "name": "Rauna",
+    "stateCode": "076"
+  },
+  {
+    "name": "Riebiņi",
+    "stateCode": "078"
+  },
+  {
+    "name": "Roja",
+    "stateCode": "079"
+  },
+  {
+    "name": "Ropaži",
+    "stateCode": "080"
+  },
+  {
+    "name": "Rucava",
+    "stateCode": "081"
+  },
+  {
+    "name": "Rugāji",
+    "stateCode": "082"
+  },
+  {
+    "name": "Pilsrundāle",
+    "stateCode": "083"
+  },
+  {
+    "name": "Rūjiena",
+    "stateCode": "084"
+  },
+  {
+    "name": "Ainaži",
+    "stateCode": "086"
+  },
+  {
+    "name": "Salacgrīva",
+    "stateCode": "086"
+  },
+  {
+    "name": "Salaspils",
+    "stateCode": "087"
+  },
+  {
+    "name": "Saldus",
+    "stateCode": "088"
+  },
+  {
+    "name": "Saulkrasti",
+    "stateCode": "089"
+  },
+  {
+    "name": "Engure",
+    "stateCode": "090"
+  },
+  {
+    "name": "Tukums",
+    "stateCode": "090"
+  },
+  {
+    "name": "Sigulda",
+    "stateCode": "091"
+  },
+  {
+    "name": "Skrīveri",
+    "stateCode": "092"
+  },
+  {
+    "name": "Skrunda",
+    "stateCode": "093"
+  },
+  {
+    "name": "Smiltene",
+    "stateCode": "094"
+  },
+  {
+    "name": "Ulbroka",
+    "stateCode": "095"
+  },
+  {
+    "name": "Seda",
+    "stateCode": "096"
+  },
+  {
+    "name": "Strenči",
+    "stateCode": "096"
+  },
+  {
+    "name": "Sabile",
+    "stateCode": "097"
+  },
+  {
+    "name": "Stende",
+    "stateCode": "097"
+  },
+  {
+    "name": "Talsi",
+    "stateCode": "097"
+  },
+  {
+    "name": "Valdemārpils",
+    "stateCode": "097"
+  },
+  {
+    "name": "Tērvete",
+    "stateCode": "098"
+  },
+  {
+    "name": "Zelmeņi",
+    "stateCode": "098"
+  },
+  {
+    "name": "Vaiņode",
+    "stateCode": "100"
+  },
+  {
+    "name": "Valka",
+    "stateCode": "101"
+  },
+  {
+    "name": "Varakļāni",
+    "stateCode": "102"
+  },
+  {
+    "name": "Vecvārkava",
+    "stateCode": "103"
+  },
+  {
+    "name": "Vecpiebalga",
+    "stateCode": "104"
+  },
+  {
+    "name": "Vecumnieki",
+    "stateCode": "105"
+  },
+  {
+    "name": "Piltene",
+    "stateCode": "106"
+  },
+  {
+    "name": "Viesīte",
+    "stateCode": "107"
+  },
+  {
+    "name": "Viļaka",
+    "stateCode": "108"
+  },
+  {
+    "name": "Viļāni",
+    "stateCode": "109"
+  },
+  {
+    "name": "Zilupe",
+    "stateCode": "110"
+  },
+  {
+    "name": "Jelgava",
+    "stateCode": "JEL"
+  },
+  {
+    "name": "Jūrmala",
+    "stateCode": "JUR"
+  },
+  {
+    "name": "Karosta",
+    "stateCode": "LPX"
+  },
+  {
+    "name": "Liepāja",
+    "stateCode": "LPX"
+  },
+  {
+    "name": "Rēzekne",
+    "stateCode": "REZ"
+  },
+  {
+    "name": "Bolderaja",
+    "stateCode": "RIX"
+  },
+  {
+    "name": "Daugavgrīva",
+    "stateCode": "RIX"
+  },
+  {
+    "name": "Jaunciems",
+    "stateCode": "RIX"
+  },
+  {
+    "name": "Mežaparks",
+    "stateCode": "RIX"
+  },
+  {
+    "name": "Riga",
+    "stateCode": "RIX"
+  },
+  {
+    "name": "Ventspils",
+    "stateCode": "VEN"
+  },
+  {
+    "name": "Valmiera",
+    "stateCode": "VMR"
+  }
+]

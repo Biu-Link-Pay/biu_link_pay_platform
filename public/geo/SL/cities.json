@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Barma",
+    "stateCode": "E"
+  },
+  {
+    "name": "Blama",
+    "stateCode": "E"
+  },
+  {
+    "name": "Boajibu",
+    "stateCode": "E"
+  },
+  {
+    "name": "Buedu",
+    "stateCode": "E"
+  },
+  {
+    "name": "Bunumbu",
+    "stateCode": "E"
+  },
+  {
+    "name": "Daru",
+    "stateCode": "E"
+  },
+  {
+    "name": "Giehun",
+    "stateCode": "E"
+  },
+  {
+    "name": "Gorahun",
+    "stateCode": "E"
+  },
+  {
+    "name": "Hangha",
+    "stateCode": "E"
+  },
+  {
+    "name": "Jojoima",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kailahun",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kailahun District",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kayima",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kenema",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kenema District",
+    "stateCode": "E"
+  },
+  {
+    "name": "Koidu",
+    "stateCode": "E"
+  },
+  {
+    "name": "Kono District",
+    "stateCode": "E"
+  },
+  {
+    "name": "Koyima",
+    "stateCode": "E"
+  },
+  {
+    "name": "Manowa",
+    "stateCode": "E"
+  },
+  {
+    "name": "Mobai",
+    "stateCode": "E"
+  },
+  {
+    "name": "Motema",
+    "stateCode": "E"
+  },
+  {
+    "name": "Panguma",
+    "stateCode": "E"
+  },
+  {
+    "name": "Pendembu",
+    "stateCode": "E"
+  },
+  {
+    "name": "Segbwema",
+    "stateCode": "E"
+  },
+  {
+    "name": "Simbakoro",
+    "stateCode": "E"
+  },
+  {
+    "name": "Tefeya",
+    "stateCode": "E"
+  },
+  {
+    "name": "Tombodu",
+    "stateCode": "E"
+  },
+  {
+    "name": "Tombu",
+    "stateCode": "E"
+  },
+  {
+    "name": "Wima",
+    "stateCode": "E"
+  },
+  {
+    "name": "Yengema",
+    "stateCode": "E"
+  },
+  {
+    "name": "Alikalia",
+    "stateCode": "N"
+  },
+  {
+    "name": "Bindi",
+    "stateCode": "N"
+  },
+  {
+    "name": "Binkolo",
+    "stateCode": "N"
+  },
+  {
+    "name": "Bombali District",
+    "stateCode": "N"
+  },
+  {
+    "name": "Bumbuna",
+    "stateCode": "N"
+  },
+  {
+    "name": "Gberia Fotombu",
+    "stateCode": "N"
+  },
+  {
+    "name": "Kabala",
+    "stateCode": "N"
+  },
+  {
+    "name": "Kamakwie",
+    "stateCode": "N"
+  },
+  {
+    "name": "Kambia",
+    "stateCode": "N"
+  },
+  {
+    "name": "Kassiri",
+    "stateCode": "N"
+  },
+  {
+    "name": "Koinadugu District",
+    "stateCode": "N"
+  },
+  {
+    "name": "Konakridee",
+    "stateCode": "N"
+  },
+  {
+    "name": "Kukuna",
+    "stateCode": "N"
+  },
+  {
+    "name": "Loma",
+    "stateCode": "N"
+  },
+  {
+    "name": "Lunsar",
+    "stateCode": "N"
+  },
+  {
+    "name": "Magburaka",
+    "stateCode": "N"
+  },
+  {
+    "name": "Makali",
+    "stateCode": "N"
+  },
+  {
+    "name": "Makeni",
+    "stateCode": "N"
+  },
+  {
+    "name": "Mambolo",
+    "stateCode": "N"
+  },
+  {
+    "name": "Mange",
+    "stateCode": "N"
+  },
+  {
+    "name": "Masaka",
+    "stateCode": "N"
+  },
+  {
+    "name": "Masingbi",
+    "stateCode": "N"
+  },
+  {
+    "name": "Masoyila",
+    "stateCode": "N"
+  },
+  {
+    "name": "Pepel",
+    "stateCode": "N"
+  },
+  {
+    "name": "Rokupr",
+    "stateCode": "N"
+  },
+  {
+    "name": "Sawkta",
+    "stateCode": "N"
+  },
+  {
+    "name": "Seidu",
+    "stateCode": "N"
+  },
+  {
+    "name": "Tintafor",
+    "stateCode": "N"
+  },
+  {
+    "name": "Tonkolili District",
+    "stateCode": "N"
+  },
+  {
+    "name": "Yonibana",
+    "stateCode": "N"
+  },
+  {
+    "name": "Baiima",
+    "stateCode": "S"
+  },
+  {
+    "name": "Baoma",
+    "stateCode": "S"
+  },
+  {
+    "name": "Bo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Bo District",
+    "stateCode": "S"
+  },
+  {
+    "name": "Bomi",
+    "stateCode": "S"
+  },
+  {
+    "name": "Bonthe",
+    "stateCode": "S"
+  },
+  {
+    "name": "Bonthe District",
+    "stateCode": "S"
+  },
+  {
+    "name": "Bumpe",
+    "stateCode": "S"
+  },
+  {
+    "name": "Foindu",
+    "stateCode": "S"
+  },
+  {
+    "name": "Gandorhun",
+    "stateCode": "S"
+  },
+  {
+    "name": "Gbewebu",
+    "stateCode": "S"
+  },
+  {
+    "name": "Koribundu",
+    "stateCode": "S"
+  },
+  {
+    "name": "Largo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Mamboma",
+    "stateCode": "S"
+  },
+  {
+    "name": "Mogbwemo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Moyamba",
+    "stateCode": "S"
+  },
+  {
+    "name": "Moyamba District",
+    "stateCode": "S"
+  },
+  {
+    "name": "Palima",
+    "stateCode": "S"
+  },
+  {
+    "name": "Potoru",
+    "stateCode": "S"
+  },
+  {
+    "name": "Pujehun",
+    "stateCode": "S"
+  },
+  {
+    "name": "Pujehun District",
+    "stateCode": "S"
+  },
+  {
+    "name": "Rotifunk",
+    "stateCode": "S"
+  },
+  {
+    "name": "Serabu",
+    "stateCode": "S"
+  },
+  {
+    "name": "Sumbuya",
+    "stateCode": "S"
+  },
+  {
+    "name": "Tongole",
+    "stateCode": "S"
+  },
+  {
+    "name": "Zimmi",
+    "stateCode": "S"
+  },
+  {
+    "name": "Freetown",
+    "stateCode": "W"
+  },
+  {
+    "name": "Hastings",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kent",
+    "stateCode": "W"
+  },
+  {
+    "name": "Waterloo",
+    "stateCode": "W"
+  }
+]

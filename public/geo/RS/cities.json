@@ -1,0 +1,1338 @@
+[
+  {
+    "name": "Aranđelovac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Arilje",
+    "stateCode": "02"
+  },
+  {
+    "name": "Badovinci",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bajina Bašta",
+    "stateCode": "02"
+  },
+  {
+    "name": "Banovo Polje",
+    "stateCode": "02"
+  },
+  {
+    "name": "Barič",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bečmen",
+    "stateCode": "02"
+  },
+  {
+    "name": "Belgrade",
+    "stateCode": "02"
+  },
+  {
+    "name": "Belotić",
+    "stateCode": "02"
+  },
+  {
+    "name": "Biljača",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bogatić",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bogosavac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Boljevci",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bor",
+    "stateCode": "02"
+  },
+  {
+    "name": "Brdarica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bukor",
+    "stateCode": "02"
+  },
+  {
+    "name": "Čačak",
+    "stateCode": "02"
+  },
+  {
+    "name": "Čajetina",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ćićevac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Čokešina",
+    "stateCode": "02"
+  },
+  {
+    "name": "Crna Bara",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ćuprija",
+    "stateCode": "02"
+  },
+  {
+    "name": "Dobanovci",
+    "stateCode": "02"
+  },
+  {
+    "name": "Dobrić",
+    "stateCode": "02"
+  },
+  {
+    "name": "Donji Dobrić",
+    "stateCode": "02"
+  },
+  {
+    "name": "Donji Milanovac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Draginje",
+    "stateCode": "02"
+  },
+  {
+    "name": "Drenovac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Dublje",
+    "stateCode": "02"
+  },
+  {
+    "name": "Duboka",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ðurići",
+    "stateCode": "02"
+  },
+  {
+    "name": "Glušci",
+    "stateCode": "02"
+  },
+  {
+    "name": "Golubac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Gornja Bukovica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Gornji Milanovac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Grabovac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jablanica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jadranska Lešnica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jagodina",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jarebice",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jelenča",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jevremovac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Joševa",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kamenica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Klenje",
+    "stateCode": "02"
+  },
+  {
+    "name": "Knjazevac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kolubara",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kozjak",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kragujevac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kraljevo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Krivaja",
+    "stateCode": "02"
+  },
+  {
+    "name": "Krupanj",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kruševac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lagja e Poshtme",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lapovo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lazarevac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Leskovac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lešnica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lipnički Šor",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lipolist",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ljig",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ljubovija",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lugavčina",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mačva",
+    "stateCode": "02"
+  },
+  {
+    "name": "Majdanpek",
+    "stateCode": "02"
+  },
+  {
+    "name": "Majur",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mala Moštanica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mali Zvornik",
+    "stateCode": "02"
+  },
+  {
+    "name": "Metković",
+    "stateCode": "02"
+  },
+  {
+    "name": "Miratovac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Morava",
+    "stateCode": "02"
+  },
+  {
+    "name": "Negotin",
+    "stateCode": "02"
+  },
+  {
+    "name": "Niš",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nišava",
+    "stateCode": "02"
+  },
+  {
+    "name": "Novi Pazar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Novo Selo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obrenovac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Osečina",
+    "stateCode": "02"
+  },
+  {
+    "name": "Osječenik",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ostružnica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ovča",
+    "stateCode": "02"
+  },
+  {
+    "name": "Paraćin",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pčinja",
+    "stateCode": "02"
+  },
+  {
+    "name": "Petkovica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pirot",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pocerski Pričinović",
+    "stateCode": "02"
+  },
+  {
+    "name": "Podunavlje District",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pomoravlje",
+    "stateCode": "02"
+  },
+  {
+    "name": "Požarevac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Priboj",
+    "stateCode": "02"
+  },
+  {
+    "name": "Prijepolje",
+    "stateCode": "02"
+  },
+  {
+    "name": "Prislonica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Prnjavor",
+    "stateCode": "02"
+  },
+  {
+    "name": "Prokuplje",
+    "stateCode": "02"
+  },
+  {
+    "name": "Radenka",
+    "stateCode": "02"
+  },
+  {
+    "name": "Radovnica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Rajince",
+    "stateCode": "02"
+  },
+  {
+    "name": "Rasina",
+    "stateCode": "02"
+  },
+  {
+    "name": "Raška",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ribari",
+    "stateCode": "02"
+  },
+  {
+    "name": "Rumska",
+    "stateCode": "02"
+  },
+  {
+    "name": "Rušanj",
+    "stateCode": "02"
+  },
+  {
+    "name": "Šabac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Salaš Crnobarski",
+    "stateCode": "02"
+  },
+  {
+    "name": "Samoljica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ševarice",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ševica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sinošević",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sjenica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Smederevo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Smederevska Palanka",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sokolovica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sokolovo Brdo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sremčica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Stepojevac",
+    "stateCode": "02"
+  },
+  {
+    "name": "Štitar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Stubline",
+    "stateCode": "02"
+  },
+  {
+    "name": "Šumadija",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sumulicë",
+    "stateCode": "02"
+  },
+  {
+    "name": "Surčin",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tabanović",
+    "stateCode": "02"
+  },
+  {
+    "name": "Toplica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tršić",
+    "stateCode": "02"
+  },
+  {
+    "name": "Trstenik",
+    "stateCode": "02"
+  },
+  {
+    "name": "Turija",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tutin",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ugrinovci",
+    "stateCode": "02"
+  },
+  {
+    "name": "Umka",
+    "stateCode": "02"
+  },
+  {
+    "name": "Užice",
+    "stateCode": "02"
+  },
+  {
+    "name": "Uzveće",
+    "stateCode": "02"
+  },
+  {
+    "name": "Valjevo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Varna",
+    "stateCode": "02"
+  },
+  {
+    "name": "Velika Moštanica",
+    "stateCode": "02"
+  },
+  {
+    "name": "Vladimirci",
+    "stateCode": "02"
+  },
+  {
+    "name": "Vranić",
+    "stateCode": "02"
+  },
+  {
+    "name": "Vranje",
+    "stateCode": "02"
+  },
+  {
+    "name": "Vrnjačka Banja",
+    "stateCode": "02"
+  },
+  {
+    "name": "Zaječar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Zemun",
+    "stateCode": "02"
+  },
+  {
+    "name": "Zlatibor",
+    "stateCode": "02"
+  },
+  {
+    "name": "Zminjak",
+    "stateCode": "02"
+  },
+  {
+    "name": "Žujince",
+    "stateCode": "02"
+  },
+  {
+    "name": "Zvečka",
+    "stateCode": "02"
+  },
+  {
+    "name": "Adorjan",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Aleksandrovo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Alibunar",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Apatin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Aradac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bačka Palanka",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bačka Topola",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bački Breg",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bački Petrovac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bačko Gradište",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bačko Petrovo Selo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Banatska Topola",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Banatski Despotovac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Banatski Dvor",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Banatski Karlovac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Banatsko Karađorđevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Banatsko Veliko Selo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Baranda",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Barice",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bašaid",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bečej",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bela Crkva",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Belegiš",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Belo Blato",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Beška",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bočar",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bogojevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Boka",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Bosut",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Botoš",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Buđanovci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Čelarevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Čenta",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Čestereg",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Čoka",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Čortanovci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Crepaja",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Čurug",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Debeljača",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Despotovo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Dobrica",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Doroslovo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Ðurđevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Ečka",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Elemir",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Farkaždin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Gakovo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Gardinovci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Gložan",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Golubinci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Gornji Breg",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Grabovci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Gudurica",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Hajdučica",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Hetin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Hrtkovci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Idvor",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Ilandža",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Inđija",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Irig",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Izbište",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Janošik",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Jarak",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Jarkovac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Jaša Tomić",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Jazovo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Jermenovci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kanjiža",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kikinda",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kisač",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Klek",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Klenak",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Knićanin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kolut",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Konak",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kovačica",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kovilj",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kovin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kozjak",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Krajišnik",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Krčedin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kulpin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kumane",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kupinovo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kupusina",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Kuštilj",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Lazarevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Ljukovo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Lok",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Lokve",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Lukićevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Mačvanska Mitrovica",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Maglić",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Margita",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Međa",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Melenci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Mihajlovo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Mokrin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Mol",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Mošorin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Nakovo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Neuzina",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Nikinci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Nikolinci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Nova Crnja",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Nova Pazova",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Novi Banovci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Novi Itebej",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Novi Karlovci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Novi Kneževac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Novi Kozarci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Novi Sad",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Novi Slankamen",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Novo Miloševo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Obrovac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Opovo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Orlovat",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Ostojićevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Padej",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Padina",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Pančevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Pavliš",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Pećinci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Perlez",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Petrovaradin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Plandište",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Platičevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Prigrevica",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Putinci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Radenković",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Radojevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Ravni Topolovac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Ravnje",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Ravno Selo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Riđica",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Ruma",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Rumenka",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Rusko Selo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Sajan",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Šajkaš",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Sakule",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Salaš Noćajski",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Samoš",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Sanad",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Šašinci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Sečanj",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Sefkerin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Seleuš",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Senta",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Šimanovci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Sombor",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Sonta",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Sremska Mitrovica",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Sremski Karlovci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Srpska Crnja",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Srpski Itebej",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Stajićevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Stanišić",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Stara Pazova",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Stari Banovci",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Stari Lec",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Stepanovićevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Subotica",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Surduk",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Sutjeska",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Taraš",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Tiszahegyes",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Titel",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Toba",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Tomaševac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Torak",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Torda",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Uljma",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Uzdin",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Velika Greda",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Veliki Gaj",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Veliko Središte",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Veternik",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Vilovo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Višnjićevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Vladimirovac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Vlajkovac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Vojka",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Vojvoda Stepa",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Vrbas",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Vrdnik",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Vršac",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Žabalj",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Žitište",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Zmajevo",
+    "stateCode": "VO"
+  },
+  {
+    "name": "Zrenjanin",
+    "stateCode": "VO"
+  }
+]

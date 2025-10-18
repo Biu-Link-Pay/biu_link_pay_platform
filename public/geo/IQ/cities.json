@@ -1,0 +1,326 @@
+[
+  {
+    "name": "‘Anah",
+    "stateCode": "AN"
+  },
+  {
+    "name": "‘Anat al Qadīmah",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Al Fallūjah",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Ar Ruţbah",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Ḩadīthah",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Hīt",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Hīt District",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Ramadi",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Rāwah",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Arbil",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Erbil",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Koysinceq",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Ruwāndiz",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Shaqlāwah",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Soran",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Al Başrah al Qadīmah",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Al Fāw",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Al Hārithah",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Az Zubayr",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Basrah",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Umm Qaşr",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Al Ḩillah",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Al Musayyib",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Imam Qasim",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Nāḩīyat Saddat al Hindīyah",
+    "stateCode": "BB"
+  },
+  {
+    "name": "Abu Ghraib District",
+    "stateCode": "BG"
+  },
+  {
+    "name": "Abū Ghurayb",
+    "stateCode": "BG"
+  },
+  {
+    "name": "Baghdad",
+    "stateCode": "BG"
+  },
+  {
+    "name": "Al ‘Amādīyah",
+    "stateCode": "DA"
+  },
+  {
+    "name": "Batifa",
+    "stateCode": "DA"
+  },
+  {
+    "name": "Dihok",
+    "stateCode": "DA"
+  },
+  {
+    "name": "Sīnah",
+    "stateCode": "DA"
+  },
+  {
+    "name": "Zaxo",
+    "stateCode": "DA"
+  },
+  {
+    "name": "Al Miqdādīyah",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Baladrūz",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Baqubah",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Khāliş",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Kifrī",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Mandalī",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Qaḑā’ Kifrī",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Ash Shaţrah",
+    "stateCode": "DQ"
+  },
+  {
+    "name": "Nāḩiyat al Fuhūd",
+    "stateCode": "DQ"
+  },
+  {
+    "name": "Nasiriyah",
+    "stateCode": "DQ"
+  },
+  {
+    "name": "Al Hindīyah",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Karbala",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Kirkuk",
+    "stateCode": "KI"
+  },
+  {
+    "name": "‘Alī al Gharbī",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Al ‘Amārah",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Al-Mejar Al-Kabi District",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ar Rumaythah",
+    "stateCode": "MU"
+  },
+  {
+    "name": "As Samawah",
+    "stateCode": "MU"
+  },
+  {
+    "name": "Al Mishkhāb",
+    "stateCode": "NA"
+  },
+  {
+    "name": "Kufa",
+    "stateCode": "NA"
+  },
+  {
+    "name": "Najaf",
+    "stateCode": "NA"
+  },
+  {
+    "name": "‘Aqrah",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Al Mawşil al Jadīdah",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Al-Hamdaniya",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Ash Shaykhān",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Mosul",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Sinjar",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Tall ‘Afar",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Tallkayf",
+    "stateCode": "NI"
+  },
+  {
+    "name": "‘Afak",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Ad Dīwānīyah",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Ash Shāmīyah",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Nāḩiyat ash Shināfīyah",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Nahiyat Ghammas",
+    "stateCode": "QA"
+  },
+  {
+    "name": "Ad Dujayl",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Balad",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Bayjī",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Sāmarrā’",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tikrīt",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tozkhurmato",
+    "stateCode": "SD"
+  },
+  {
+    "name": "As Sulaymānīyah",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Baynjiwayn",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Ḩalabjah",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Jamjamāl",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Al ‘Azīzīyah",
+    "stateCode": "WA"
+  },
+  {
+    "name": "Al Ḩayy",
+    "stateCode": "WA"
+  },
+  {
+    "name": "Al Kūt",
+    "stateCode": "WA"
+  },
+  {
+    "name": "Aş Şuwayrah",
+    "stateCode": "WA"
+  }
+]

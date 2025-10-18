@@ -1,0 +1,326 @@
+[
+  {
+    "name": "Lelu Municipality",
+    "stateCode": "KSA"
+  },
+  {
+    "name": "Malem Municipality",
+    "stateCode": "KSA"
+  },
+  {
+    "name": "Tafunsak Municipality",
+    "stateCode": "KSA"
+  },
+  {
+    "name": "Tofol",
+    "stateCode": "KSA"
+  },
+  {
+    "name": "Utwe Municipality",
+    "stateCode": "KSA"
+  },
+  {
+    "name": "Kitti Municipality",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Kolonia",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Kolonia Municipality",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Kolonia Town",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Madolenihm Municipality",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Mokil Municipality",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Nett Municipality",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Ngatik",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Nukuoro Municipality",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Palikir - National Government Center",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Pingelap Municipality",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Sapwuahfik Municipality",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Sokehs Municipality",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "U Municipality",
+    "stateCode": "PNI"
+  },
+  {
+    "name": "Eot Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Ettal Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Fananu Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Fanapanges Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Fefen Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Fonoton Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Houk Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Kuttu Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Lekinioch Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Losap Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Makur Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Moch Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Murilo",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Murilo Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Namoluk Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Nema",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Nema Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Nomwin Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Oneop Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Onou Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Onoun Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Paata-Tupunion Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Parem Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Piherarh Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Piis-Emwar Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Piis-Panewu Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Pollap Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Polowat Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Pwene Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Ramanum Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Ruo Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Satowan Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Siis Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Ta Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Tamatam Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Tolensom Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Tonoas Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Udot-Fonuweisom Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Uman-Fonuweisom Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Unanu Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Weno",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Weno Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Wonei Municipality",
+    "stateCode": "TRK"
+  },
+  {
+    "name": "Colonia",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Dalipebinaw Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Fais",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Fais Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Fanif Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Faraulep Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Gagil Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Gilman Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Kanifay Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Lamotrek Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Maap Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Ngulu Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Rull Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Rumung Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Satawal Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Tomil Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Ulithi Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Weloy Municipality",
+    "stateCode": "YAP"
+  },
+  {
+    "name": "Woleai Municipality",
+    "stateCode": "YAP"
+  }
+]

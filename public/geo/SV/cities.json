@@ -1,0 +1,402 @@
+[
+  {
+    "name": "Ahuachapán",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Atiquizaya",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Concepción de Ataco",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Guaymango",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Jujutla",
+    "stateCode": "AH"
+  },
+  {
+    "name": "San Francisco Menéndez",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Tacuba",
+    "stateCode": "AH"
+  },
+  {
+    "name": "Sensuntepeque",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Victoria",
+    "stateCode": "CA"
+  },
+  {
+    "name": "Chalatenango",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Nueva Concepción",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Cojutepeque",
+    "stateCode": "CU"
+  },
+  {
+    "name": "San Martín",
+    "stateCode": "CU"
+  },
+  {
+    "name": "Suchitoto",
+    "stateCode": "CU"
+  },
+  {
+    "name": "Tecoluca",
+    "stateCode": "CU"
+  },
+  {
+    "name": "Tenancingo",
+    "stateCode": "CU"
+  },
+  {
+    "name": "Antiguo Cuscatlán",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Ciudad Arce",
+    "stateCode": "LI"
+  },
+  {
+    "name": "La Libertad",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Nuevo Cuscatlán",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Quezaltepeque",
+    "stateCode": "LI"
+  },
+  {
+    "name": "San Juan Opico",
+    "stateCode": "LI"
+  },
+  {
+    "name": "San Pablo Tacachico",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Santa Tecla",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Zaragoza",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Cacaopera",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Corinto",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Guatajiagua",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Jocoro",
+    "stateCode": "MO"
+  },
+  {
+    "name": "San Francisco",
+    "stateCode": "MO"
+  },
+  {
+    "name": "Sociedad",
+    "stateCode": "MO"
+  },
+  {
+    "name": "El Rosario",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Olocuilta",
+    "stateCode": "PA"
+  },
+  {
+    "name": "San Pedro Masahuat",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Santiago Nonualco",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Zacatecoluca",
+    "stateCode": "PA"
+  },
+  {
+    "name": "Candelaria de La Frontera",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Chalchuapa",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Coatepeque",
+    "stateCode": "SA"
+  },
+  {
+    "name": "El Congo",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Metapán",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Santa Ana",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Texistepeque",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Chapeltique",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Chinameca",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Chirilagua",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Ciudad Barrios",
+    "stateCode": "SM"
+  },
+  {
+    "name": "El Tránsito",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Lolotique",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Moncagua",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Nueva Guadalupe",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San Miguel",
+    "stateCode": "SM"
+  },
+  {
+    "name": "San Rafael Oriente",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Sesori",
+    "stateCode": "SM"
+  },
+  {
+    "name": "Acajutla",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Armenia",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Izalco",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Juayúa",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Nahuizalco",
+    "stateCode": "SO"
+  },
+  {
+    "name": "San Antonio del Monte",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Sonsonate",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Sonzacate",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Aguilares",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Apopa",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Ayutuxtepeque",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Cuscatancingo",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Delgado",
+    "stateCode": "SS"
+  },
+  {
+    "name": "El Paisnal",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Guazapa",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Ilopango",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Mejicanos",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Panchimalco",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Rosario de Mora",
+    "stateCode": "SS"
+  },
+  {
+    "name": "San Marcos",
+    "stateCode": "SS"
+  },
+  {
+    "name": "San Salvador",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Santo Tomás",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Soyapango",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Tonacatepeque",
+    "stateCode": "SS"
+  },
+  {
+    "name": "Apastepeque",
+    "stateCode": "SV"
+  },
+  {
+    "name": "San Sebastián",
+    "stateCode": "SV"
+  },
+  {
+    "name": "San Vicente",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Anamorós",
+    "stateCode": "UN"
+  },
+  {
+    "name": "Conchagua",
+    "stateCode": "UN"
+  },
+  {
+    "name": "Intipucá",
+    "stateCode": "UN"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "UN"
+  },
+  {
+    "name": "Nueva Esparta",
+    "stateCode": "UN"
+  },
+  {
+    "name": "Pasaquina",
+    "stateCode": "UN"
+  },
+  {
+    "name": "San Alejo",
+    "stateCode": "UN"
+  },
+  {
+    "name": "Santa Rosa de Lima",
+    "stateCode": "UN"
+  },
+  {
+    "name": "Berlín",
+    "stateCode": "US"
+  },
+  {
+    "name": "Concepción Batres",
+    "stateCode": "US"
+  },
+  {
+    "name": "Jiquilisco",
+    "stateCode": "US"
+  },
+  {
+    "name": "Jucuapa",
+    "stateCode": "US"
+  },
+  {
+    "name": "Jucuarán",
+    "stateCode": "US"
+  },
+  {
+    "name": "Ozatlán",
+    "stateCode": "US"
+  },
+  {
+    "name": "Puerto El Triunfo",
+    "stateCode": "US"
+  },
+  {
+    "name": "San Agustín",
+    "stateCode": "US"
+  },
+  {
+    "name": "Santa Elena",
+    "stateCode": "US"
+  },
+  {
+    "name": "Santiago de María",
+    "stateCode": "US"
+  },
+  {
+    "name": "Usulután",
+    "stateCode": "US"
+  }
+]

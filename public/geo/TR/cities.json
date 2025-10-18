@@ -1,0 +1,5390 @@
+[
+  {
+    "name": "Adana",
+    "stateCode": "01"
+  },
+  {
+    "name": "Aladağ",
+    "stateCode": "01"
+  },
+  {
+    "name": "Bahçe",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ceyhan",
+    "stateCode": "01"
+  },
+  {
+    "name": "Çukurova",
+    "stateCode": "01"
+  },
+  {
+    "name": "Feke",
+    "stateCode": "01"
+  },
+  {
+    "name": "İmamoğlu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Karaisalı",
+    "stateCode": "01"
+  },
+  {
+    "name": "Karataş",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kozan",
+    "stateCode": "01"
+  },
+  {
+    "name": "Pozantı",
+    "stateCode": "01"
+  },
+  {
+    "name": "Saimbeyli",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sarıçam",
+    "stateCode": "01"
+  },
+  {
+    "name": "Seyhan",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tufanbeyli",
+    "stateCode": "01"
+  },
+  {
+    "name": "Yumurtalık",
+    "stateCode": "01"
+  },
+  {
+    "name": "Yüreğir",
+    "stateCode": "01"
+  },
+  {
+    "name": "Adıyaman",
+    "stateCode": "02"
+  },
+  {
+    "name": "Aralık İlçesi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Besni",
+    "stateCode": "02"
+  },
+  {
+    "name": "Çelikhan",
+    "stateCode": "02"
+  },
+  {
+    "name": "Gerger",
+    "stateCode": "02"
+  },
+  {
+    "name": "Gölbaşı",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kâhta",
+    "stateCode": "02"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "02"
+  },
+  {
+    "name": "Samsat",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sincik",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tut",
+    "stateCode": "02"
+  },
+  {
+    "name": "Afyonkarahisar",
+    "stateCode": "03"
+  },
+  {
+    "name": "Başmakçı",
+    "stateCode": "03"
+  },
+  {
+    "name": "Bayat",
+    "stateCode": "03"
+  },
+  {
+    "name": "Bolvadin",
+    "stateCode": "03"
+  },
+  {
+    "name": "Çay",
+    "stateCode": "03"
+  },
+  {
+    "name": "Çobanlar İlçesi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Dazkırı",
+    "stateCode": "03"
+  },
+  {
+    "name": "Dinar",
+    "stateCode": "03"
+  },
+  {
+    "name": "Emirdağ",
+    "stateCode": "03"
+  },
+  {
+    "name": "Evciler",
+    "stateCode": "03"
+  },
+  {
+    "name": "Hocalar",
+    "stateCode": "03"
+  },
+  {
+    "name": "İhsaniye",
+    "stateCode": "03"
+  },
+  {
+    "name": "İscehisar",
+    "stateCode": "03"
+  },
+  {
+    "name": "Işıklar",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kızılören",
+    "stateCode": "03"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "03"
+  },
+  {
+    "name": "Sandıklı",
+    "stateCode": "03"
+  },
+  {
+    "name": "Sinanpaşa",
+    "stateCode": "03"
+  },
+  {
+    "name": "Şuhut",
+    "stateCode": "03"
+  },
+  {
+    "name": "Sultandağı",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ağrı",
+    "stateCode": "04"
+  },
+  {
+    "name": "Diyadin",
+    "stateCode": "04"
+  },
+  {
+    "name": "Doğubayazıt",
+    "stateCode": "04"
+  },
+  {
+    "name": "Eleşkirt",
+    "stateCode": "04"
+  },
+  {
+    "name": "Hamur",
+    "stateCode": "04"
+  },
+  {
+    "name": "Patnos",
+    "stateCode": "04"
+  },
+  {
+    "name": "Taşlıçay",
+    "stateCode": "04"
+  },
+  {
+    "name": "Tutak İlçesi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Amasya",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dedeköy",
+    "stateCode": "05"
+  },
+  {
+    "name": "Göynücek",
+    "stateCode": "05"
+  },
+  {
+    "name": "Gümüşhacıköy",
+    "stateCode": "05"
+  },
+  {
+    "name": "Hamamözü İlçesi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "05"
+  },
+  {
+    "name": "Merzifon İlçesi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Suluova",
+    "stateCode": "05"
+  },
+  {
+    "name": "Taşova",
+    "stateCode": "05"
+  },
+  {
+    "name": "Akyurt",
+    "stateCode": "06"
+  },
+  {
+    "name": "Altındağ",
+    "stateCode": "06"
+  },
+  {
+    "name": "Altpınar",
+    "stateCode": "06"
+  },
+  {
+    "name": "Ankara",
+    "stateCode": "06"
+  },
+  {
+    "name": "Ayaş",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bala İlçesi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Batikent",
+    "stateCode": "06"
+  },
+  {
+    "name": "Beypazari",
+    "stateCode": "06"
+  },
+  {
+    "name": "Beypazarı",
+    "stateCode": "06"
+  },
+  {
+    "name": "Çamlıdere",
+    "stateCode": "06"
+  },
+  {
+    "name": "Çankaya",
+    "stateCode": "06"
+  },
+  {
+    "name": "Çubuk",
+    "stateCode": "06"
+  },
+  {
+    "name": "Elmadağ",
+    "stateCode": "06"
+  },
+  {
+    "name": "Etimesgut İlçesi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Evren",
+    "stateCode": "06"
+  },
+  {
+    "name": "Gölbaşı",
+    "stateCode": "06"
+  },
+  {
+    "name": "Güdül",
+    "stateCode": "06"
+  },
+  {
+    "name": "Haymana",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kahramankazan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kalecik",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kazan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Keçiören",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kızılcahamam",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mamak İlçesi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Nallıhan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Polatlı",
+    "stateCode": "06"
+  },
+  {
+    "name": "Pursaklar",
+    "stateCode": "06"
+  },
+  {
+    "name": "Şereflikoçhisar",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sincan İlçesi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Yenimahalle",
+    "stateCode": "06"
+  },
+  {
+    "name": "Akseki",
+    "stateCode": "07"
+  },
+  {
+    "name": "Aksu",
+    "stateCode": "07"
+  },
+  {
+    "name": "Alanya",
+    "stateCode": "07"
+  },
+  {
+    "name": "Antalya",
+    "stateCode": "07"
+  },
+  {
+    "name": "Avsallar",
+    "stateCode": "07"
+  },
+  {
+    "name": "Belek",
+    "stateCode": "07"
+  },
+  {
+    "name": "Beykonak",
+    "stateCode": "07"
+  },
+  {
+    "name": "Boğazkent",
+    "stateCode": "07"
+  },
+  {
+    "name": "Demre",
+    "stateCode": "07"
+  },
+  {
+    "name": "Döşemealtı İlçesi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Eksere",
+    "stateCode": "07"
+  },
+  {
+    "name": "Elmalı",
+    "stateCode": "07"
+  },
+  {
+    "name": "Evrenseki",
+    "stateCode": "07"
+  },
+  {
+    "name": "Finike",
+    "stateCode": "07"
+  },
+  {
+    "name": "Gazipaşa",
+    "stateCode": "07"
+  },
+  {
+    "name": "Göynük",
+    "stateCode": "07"
+  },
+  {
+    "name": "Gündoğmuş İlçesi",
+    "stateCode": "07"
+  },
+  {
+    "name": "İbradı",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kalkan",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kaş",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kemer",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kepez İlçesi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kızılağaç",
+    "stateCode": "07"
+  },
+  {
+    "name": "Konyaaltı",
+    "stateCode": "07"
+  },
+  {
+    "name": "Korkuteli",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kumköy",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kumluca",
+    "stateCode": "07"
+  },
+  {
+    "name": "Mahmutlar",
+    "stateCode": "07"
+  },
+  {
+    "name": "Manavgat",
+    "stateCode": "07"
+  },
+  {
+    "name": "Muratpaşa",
+    "stateCode": "07"
+  },
+  {
+    "name": "Okurcalar",
+    "stateCode": "07"
+  },
+  {
+    "name": "Payallar",
+    "stateCode": "07"
+  },
+  {
+    "name": "Serik",
+    "stateCode": "07"
+  },
+  {
+    "name": "Side",
+    "stateCode": "07"
+  },
+  {
+    "name": "Tekirova",
+    "stateCode": "07"
+  },
+  {
+    "name": "Türkler",
+    "stateCode": "07"
+  },
+  {
+    "name": "Turunçova",
+    "stateCode": "07"
+  },
+  {
+    "name": "Ardanuç",
+    "stateCode": "08"
+  },
+  {
+    "name": "Arhavi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Artvin",
+    "stateCode": "08"
+  },
+  {
+    "name": "Borçka",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hopa",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kemalpaşa",
+    "stateCode": "08"
+  },
+  {
+    "name": "Murgul",
+    "stateCode": "08"
+  },
+  {
+    "name": "Şavşat",
+    "stateCode": "08"
+  },
+  {
+    "name": "Seyitler",
+    "stateCode": "08"
+  },
+  {
+    "name": "Yusufeli",
+    "stateCode": "08"
+  },
+  {
+    "name": "Acarlar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Atça",
+    "stateCode": "09"
+  },
+  {
+    "name": "Aydın",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bozdoğan",
+    "stateCode": "09"
+  },
+  {
+    "name": "Buharkent",
+    "stateCode": "09"
+  },
+  {
+    "name": "Çine",
+    "stateCode": "09"
+  },
+  {
+    "name": "Dalama",
+    "stateCode": "09"
+  },
+  {
+    "name": "Davutlar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Didim",
+    "stateCode": "09"
+  },
+  {
+    "name": "Efeler",
+    "stateCode": "09"
+  },
+  {
+    "name": "Germencik",
+    "stateCode": "09"
+  },
+  {
+    "name": "İncirliova",
+    "stateCode": "09"
+  },
+  {
+    "name": "İsabeyli",
+    "stateCode": "09"
+  },
+  {
+    "name": "Karacasu",
+    "stateCode": "09"
+  },
+  {
+    "name": "Karpuzlu",
+    "stateCode": "09"
+  },
+  {
+    "name": "Koçarlı",
+    "stateCode": "09"
+  },
+  {
+    "name": "Köşk",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kuşadası",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kuyucak",
+    "stateCode": "09"
+  },
+  {
+    "name": "Nazilli",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sarıkemer",
+    "stateCode": "09"
+  },
+  {
+    "name": "Söke",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sultanhisar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Tepecik",
+    "stateCode": "09"
+  },
+  {
+    "name": "Yenipazar",
+    "stateCode": "09"
+  },
+  {
+    "name": "Altıeylül İlçesi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Altınoluk",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ayvalık",
+    "stateCode": "10"
+  },
+  {
+    "name": "Balıkesir",
+    "stateCode": "10"
+  },
+  {
+    "name": "Balya",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bandırma",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bigadiç",
+    "stateCode": "10"
+  },
+  {
+    "name": "Burhaniye",
+    "stateCode": "10"
+  },
+  {
+    "name": "Dursunbey",
+    "stateCode": "10"
+  },
+  {
+    "name": "Edremit",
+    "stateCode": "10"
+  },
+  {
+    "name": "Erdek",
+    "stateCode": "10"
+  },
+  {
+    "name": "Gömeç",
+    "stateCode": "10"
+  },
+  {
+    "name": "Gönen",
+    "stateCode": "10"
+  },
+  {
+    "name": "Havran",
+    "stateCode": "10"
+  },
+  {
+    "name": "İvrindi",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kepsut",
+    "stateCode": "10"
+  },
+  {
+    "name": "Manyas",
+    "stateCode": "10"
+  },
+  {
+    "name": "Marmara",
+    "stateCode": "10"
+  },
+  {
+    "name": "Savaştepe",
+    "stateCode": "10"
+  },
+  {
+    "name": "Sındırgı",
+    "stateCode": "10"
+  },
+  {
+    "name": "Susurluk",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bilecik",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bozüyük",
+    "stateCode": "11"
+  },
+  {
+    "name": "Dodurga",
+    "stateCode": "11"
+  },
+  {
+    "name": "Gölpazarı",
+    "stateCode": "11"
+  },
+  {
+    "name": "İnhisar",
+    "stateCode": "11"
+  },
+  {
+    "name": "Küplü",
+    "stateCode": "11"
+  },
+  {
+    "name": "Osmaneli",
+    "stateCode": "11"
+  },
+  {
+    "name": "Pazaryeri",
+    "stateCode": "11"
+  },
+  {
+    "name": "Söğüt İlçesi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vezirhan",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yenipazar",
+    "stateCode": "11"
+  },
+  {
+    "name": "Adaklı İlçesi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bingöl",
+    "stateCode": "12"
+  },
+  {
+    "name": "Genç",
+    "stateCode": "12"
+  },
+  {
+    "name": "Karlıova",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kiğı İlçesi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "12"
+  },
+  {
+    "name": "Solhan",
+    "stateCode": "12"
+  },
+  {
+    "name": "Yayladere",
+    "stateCode": "12"
+  },
+  {
+    "name": "Yedisu",
+    "stateCode": "12"
+  },
+  {
+    "name": "Adilcevaz",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ahlat",
+    "stateCode": "13"
+  },
+  {
+    "name": "Beğendik",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bitlis",
+    "stateCode": "13"
+  },
+  {
+    "name": "Güroymak",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hizan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mutki",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tatvan",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bolu",
+    "stateCode": "14"
+  },
+  {
+    "name": "Dörtdivan",
+    "stateCode": "14"
+  },
+  {
+    "name": "Gerede",
+    "stateCode": "14"
+  },
+  {
+    "name": "Göynük",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kıbrıscık",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mengen",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mudurnu",
+    "stateCode": "14"
+  },
+  {
+    "name": "Seben",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yeniçağa",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ağlasun",
+    "stateCode": "15"
+  },
+  {
+    "name": "Altınyayla",
+    "stateCode": "15"
+  },
+  {
+    "name": "Bucak",
+    "stateCode": "15"
+  },
+  {
+    "name": "Burdur",
+    "stateCode": "15"
+  },
+  {
+    "name": "Çavdır İlçesi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Çeltikçi İlçesi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Gölhisar",
+    "stateCode": "15"
+  },
+  {
+    "name": "Karamanlı",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kemer",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kızılkaya",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kocaaliler",
+    "stateCode": "15"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "15"
+  },
+  {
+    "name": "Tefenni",
+    "stateCode": "15"
+  },
+  {
+    "name": "Yeşilova",
+    "stateCode": "15"
+  },
+  {
+    "name": "Alanyurt",
+    "stateCode": "16"
+  },
+  {
+    "name": "Balarim",
+    "stateCode": "16"
+  },
+  {
+    "name": "Boyalıca",
+    "stateCode": "16"
+  },
+  {
+    "name": "Bursa",
+    "stateCode": "16"
+  },
+  {
+    "name": "Büyükorhan İlçesi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Çakırca",
+    "stateCode": "16"
+  },
+  {
+    "name": "Çakırlı",
+    "stateCode": "16"
+  },
+  {
+    "name": "Cerrah",
+    "stateCode": "16"
+  },
+  {
+    "name": "Demirtaş",
+    "stateCode": "16"
+  },
+  {
+    "name": "Elbeyli",
+    "stateCode": "16"
+  },
+  {
+    "name": "Gemlik",
+    "stateCode": "16"
+  },
+  {
+    "name": "Gürsu",
+    "stateCode": "16"
+  },
+  {
+    "name": "Hamzabey",
+    "stateCode": "16"
+  },
+  {
+    "name": "Harmancık İlçesi",
+    "stateCode": "16"
+  },
+  {
+    "name": "İnegol",
+    "stateCode": "16"
+  },
+  {
+    "name": "İznik",
+    "stateCode": "16"
+  },
+  {
+    "name": "Karacabey",
+    "stateCode": "16"
+  },
+  {
+    "name": "Karıncalı",
+    "stateCode": "16"
+  },
+  {
+    "name": "Keles",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kestel",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kirazlı",
+    "stateCode": "16"
+  },
+  {
+    "name": "Küçükkumla",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kurşunlu",
+    "stateCode": "16"
+  },
+  {
+    "name": "Mudanya",
+    "stateCode": "16"
+  },
+  {
+    "name": "Mustafakemalpaşa",
+    "stateCode": "16"
+  },
+  {
+    "name": "Narlıca",
+    "stateCode": "16"
+  },
+  {
+    "name": "Nilüfer",
+    "stateCode": "16"
+  },
+  {
+    "name": "Orhaneli",
+    "stateCode": "16"
+  },
+  {
+    "name": "Orhangazi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Osmangazi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Sölöz",
+    "stateCode": "16"
+  },
+  {
+    "name": "Tacir",
+    "stateCode": "16"
+  },
+  {
+    "name": "Tahtaköprü",
+    "stateCode": "16"
+  },
+  {
+    "name": "Tatkavaklı",
+    "stateCode": "16"
+  },
+  {
+    "name": "Umurbey",
+    "stateCode": "16"
+  },
+  {
+    "name": "Yenice",
+    "stateCode": "16"
+  },
+  {
+    "name": "Yeniköy",
+    "stateCode": "16"
+  },
+  {
+    "name": "Yenişehir",
+    "stateCode": "16"
+  },
+  {
+    "name": "Yıldırım İlçesi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Ayvacık",
+    "stateCode": "17"
+  },
+  {
+    "name": "Bayramiç İlçesi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Behram",
+    "stateCode": "17"
+  },
+  {
+    "name": "Biga",
+    "stateCode": "17"
+  },
+  {
+    "name": "Bozcaada",
+    "stateCode": "17"
+  },
+  {
+    "name": "Çan",
+    "stateCode": "17"
+  },
+  {
+    "name": "Çanakkale",
+    "stateCode": "17"
+  },
+  {
+    "name": "Eceabat",
+    "stateCode": "17"
+  },
+  {
+    "name": "Ezine",
+    "stateCode": "17"
+  },
+  {
+    "name": "Gelibolu",
+    "stateCode": "17"
+  },
+  {
+    "name": "Geyikli",
+    "stateCode": "17"
+  },
+  {
+    "name": "Gökçeada",
+    "stateCode": "17"
+  },
+  {
+    "name": "Hamdibey",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kalkım",
+    "stateCode": "17"
+  },
+  {
+    "name": "Lapseki",
+    "stateCode": "17"
+  },
+  {
+    "name": "Lâpseki İlçesi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "17"
+  },
+  {
+    "name": "Yenice",
+    "stateCode": "17"
+  },
+  {
+    "name": "Atkaracalar",
+    "stateCode": "18"
+  },
+  {
+    "name": "Bayramören",
+    "stateCode": "18"
+  },
+  {
+    "name": "Çerkeş",
+    "stateCode": "18"
+  },
+  {
+    "name": "Eldivan",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ilgaz",
+    "stateCode": "18"
+  },
+  {
+    "name": "Khanjarah",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kızılırmak",
+    "stateCode": "18"
+  },
+  {
+    "name": "Korgun",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kurşunlu",
+    "stateCode": "18"
+  },
+  {
+    "name": "Orta",
+    "stateCode": "18"
+  },
+  {
+    "name": "Şabanözü",
+    "stateCode": "18"
+  },
+  {
+    "name": "Yapraklı",
+    "stateCode": "18"
+  },
+  {
+    "name": "Alaca",
+    "stateCode": "19"
+  },
+  {
+    "name": "Bayat",
+    "stateCode": "19"
+  },
+  {
+    "name": "Boğazkale İlçesi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Çorum",
+    "stateCode": "19"
+  },
+  {
+    "name": "Dodurga",
+    "stateCode": "19"
+  },
+  {
+    "name": "İskilip",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kargı İlçesi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Laçin",
+    "stateCode": "19"
+  },
+  {
+    "name": "Mecitözü",
+    "stateCode": "19"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "19"
+  },
+  {
+    "name": "Oğuzlar İlçesi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Ortaköy",
+    "stateCode": "19"
+  },
+  {
+    "name": "Osmancık",
+    "stateCode": "19"
+  },
+  {
+    "name": "Sungurlu",
+    "stateCode": "19"
+  },
+  {
+    "name": "Uğurludağ",
+    "stateCode": "19"
+  },
+  {
+    "name": "Acıpayam",
+    "stateCode": "20"
+  },
+  {
+    "name": "Akkent",
+    "stateCode": "20"
+  },
+  {
+    "name": "Akköy",
+    "stateCode": "20"
+  },
+  {
+    "name": "Babadağ",
+    "stateCode": "20"
+  },
+  {
+    "name": "Baklan",
+    "stateCode": "20"
+  },
+  {
+    "name": "Bekilli",
+    "stateCode": "20"
+  },
+  {
+    "name": "Beyağaç İlçesi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Bozkurt",
+    "stateCode": "20"
+  },
+  {
+    "name": "Buldan",
+    "stateCode": "20"
+  },
+  {
+    "name": "Çal İlçesi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Çameli İlçesi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Çardak",
+    "stateCode": "20"
+  },
+  {
+    "name": "Çivril",
+    "stateCode": "20"
+  },
+  {
+    "name": "Denizli",
+    "stateCode": "20"
+  },
+  {
+    "name": "Gözler",
+    "stateCode": "20"
+  },
+  {
+    "name": "Güney İlçesi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Honaz",
+    "stateCode": "20"
+  },
+  {
+    "name": "Kale",
+    "stateCode": "20"
+  },
+  {
+    "name": "Merkezefendi",
+    "stateCode": "20"
+  },
+  {
+    "name": "Nikfer",
+    "stateCode": "20"
+  },
+  {
+    "name": "Pamukkale",
+    "stateCode": "20"
+  },
+  {
+    "name": "Sarayköy",
+    "stateCode": "20"
+  },
+  {
+    "name": "Serinhisar",
+    "stateCode": "20"
+  },
+  {
+    "name": "Tavas",
+    "stateCode": "20"
+  },
+  {
+    "name": "Alacakaya İlçesi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Altınkum",
+    "stateCode": "21"
+  },
+  {
+    "name": "Ambar",
+    "stateCode": "21"
+  },
+  {
+    "name": "Aralık",
+    "stateCode": "21"
+  },
+  {
+    "name": "Bağlar",
+    "stateCode": "21"
+  },
+  {
+    "name": "Bismil",
+    "stateCode": "21"
+  },
+  {
+    "name": "Çermik",
+    "stateCode": "21"
+  },
+  {
+    "name": "Çınar İlçesi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Çüngüş",
+    "stateCode": "21"
+  },
+  {
+    "name": "Dicle",
+    "stateCode": "21"
+  },
+  {
+    "name": "Diyarbakır",
+    "stateCode": "21"
+  },
+  {
+    "name": "Eğil",
+    "stateCode": "21"
+  },
+  {
+    "name": "Ergani",
+    "stateCode": "21"
+  },
+  {
+    "name": "Hani",
+    "stateCode": "21"
+  },
+  {
+    "name": "Hazro",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kayapınar",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kazancı",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kerh",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kocaköy",
+    "stateCode": "21"
+  },
+  {
+    "name": "Köseli",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kulp",
+    "stateCode": "21"
+  },
+  {
+    "name": "Lice",
+    "stateCode": "21"
+  },
+  {
+    "name": "Salat",
+    "stateCode": "21"
+  },
+  {
+    "name": "Silvan",
+    "stateCode": "21"
+  },
+  {
+    "name": "Sinanköy",
+    "stateCode": "21"
+  },
+  {
+    "name": "Sur",
+    "stateCode": "21"
+  },
+  {
+    "name": "Yaprakbaşı",
+    "stateCode": "21"
+  },
+  {
+    "name": "Yenişehir",
+    "stateCode": "21"
+  },
+  {
+    "name": "Edirne",
+    "stateCode": "22"
+  },
+  {
+    "name": "Enez",
+    "stateCode": "22"
+  },
+  {
+    "name": "Havsa",
+    "stateCode": "22"
+  },
+  {
+    "name": "İpsala",
+    "stateCode": "22"
+  },
+  {
+    "name": "Keşan",
+    "stateCode": "22"
+  },
+  {
+    "name": "Küplü",
+    "stateCode": "22"
+  },
+  {
+    "name": "Lâlapaşa",
+    "stateCode": "22"
+  },
+  {
+    "name": "Meriç",
+    "stateCode": "22"
+  },
+  {
+    "name": "Süloğlu İlçesi",
+    "stateCode": "22"
+  },
+  {
+    "name": "Uzunköprü",
+    "stateCode": "22"
+  },
+  {
+    "name": "Ağın",
+    "stateCode": "23"
+  },
+  {
+    "name": "Arıcak",
+    "stateCode": "23"
+  },
+  {
+    "name": "Baskil",
+    "stateCode": "23"
+  },
+  {
+    "name": "Elazığ",
+    "stateCode": "23"
+  },
+  {
+    "name": "Karakoçan",
+    "stateCode": "23"
+  },
+  {
+    "name": "Karakoçan / Elazığ",
+    "stateCode": "23"
+  },
+  {
+    "name": "Keban",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kovancılar",
+    "stateCode": "23"
+  },
+  {
+    "name": "Maden İlçesi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "23"
+  },
+  {
+    "name": "Palu",
+    "stateCode": "23"
+  },
+  {
+    "name": "Sivrice",
+    "stateCode": "23"
+  },
+  {
+    "name": "Turluk",
+    "stateCode": "23"
+  },
+  {
+    "name": "Çayırlı İlçesi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Cimin",
+    "stateCode": "24"
+  },
+  {
+    "name": "Erzincan",
+    "stateCode": "24"
+  },
+  {
+    "name": "İliç İlçesi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kemah",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kemaliye",
+    "stateCode": "24"
+  },
+  {
+    "name": "Otlukbeli",
+    "stateCode": "24"
+  },
+  {
+    "name": "Refahiye",
+    "stateCode": "24"
+  },
+  {
+    "name": "Tercan",
+    "stateCode": "24"
+  },
+  {
+    "name": "Üzümlü İlçesi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Aşkale",
+    "stateCode": "25"
+  },
+  {
+    "name": "Aziziye",
+    "stateCode": "25"
+  },
+  {
+    "name": "Çat İlçesi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Erzurum",
+    "stateCode": "25"
+  },
+  {
+    "name": "Hınıs",
+    "stateCode": "25"
+  },
+  {
+    "name": "Horasan",
+    "stateCode": "25"
+  },
+  {
+    "name": "Ilıca",
+    "stateCode": "25"
+  },
+  {
+    "name": "İspir",
+    "stateCode": "25"
+  },
+  {
+    "name": "Karaçoban",
+    "stateCode": "25"
+  },
+  {
+    "name": "Karayazı",
+    "stateCode": "25"
+  },
+  {
+    "name": "Köprüköy İlçesi",
+    "stateCode": "25"
+  },
+  {
+    "name": "Narman",
+    "stateCode": "25"
+  },
+  {
+    "name": "Oltu",
+    "stateCode": "25"
+  },
+  {
+    "name": "Olur",
+    "stateCode": "25"
+  },
+  {
+    "name": "Palandöken",
+    "stateCode": "25"
+  },
+  {
+    "name": "Pasinler",
+    "stateCode": "25"
+  },
+  {
+    "name": "Pazaryolu",
+    "stateCode": "25"
+  },
+  {
+    "name": "Şenkaya",
+    "stateCode": "25"
+  },
+  {
+    "name": "Tekman",
+    "stateCode": "25"
+  },
+  {
+    "name": "Tortum",
+    "stateCode": "25"
+  },
+  {
+    "name": "Uzundere",
+    "stateCode": "25"
+  },
+  {
+    "name": "Yakutiye",
+    "stateCode": "25"
+  },
+  {
+    "name": "Alpu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Beylikova",
+    "stateCode": "26"
+  },
+  {
+    "name": "Bozan",
+    "stateCode": "26"
+  },
+  {
+    "name": "Çifteler",
+    "stateCode": "26"
+  },
+  {
+    "name": "Eskişehir",
+    "stateCode": "26"
+  },
+  {
+    "name": "Günyüzü İlçesi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Han",
+    "stateCode": "26"
+  },
+  {
+    "name": "İnönü",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kırka",
+    "stateCode": "26"
+  },
+  {
+    "name": "Mahmudiye İlçesi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Mihalgazi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Mihalıçcık İlçesi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Odunpazarı",
+    "stateCode": "26"
+  },
+  {
+    "name": "Sarıcakaya İlçesi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Sevinç",
+    "stateCode": "26"
+  },
+  {
+    "name": "Seyitgazi",
+    "stateCode": "26"
+  },
+  {
+    "name": "Sivrihisar",
+    "stateCode": "26"
+  },
+  {
+    "name": "Tepebaşı",
+    "stateCode": "26"
+  },
+  {
+    "name": "Araban",
+    "stateCode": "27"
+  },
+  {
+    "name": "Doğanpınar",
+    "stateCode": "27"
+  },
+  {
+    "name": "Gaziantep",
+    "stateCode": "27"
+  },
+  {
+    "name": "İkizce",
+    "stateCode": "27"
+  },
+  {
+    "name": "İslahiye İlçesi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Karkamış",
+    "stateCode": "27"
+  },
+  {
+    "name": "Nizip",
+    "stateCode": "27"
+  },
+  {
+    "name": "Nurdağı",
+    "stateCode": "27"
+  },
+  {
+    "name": "Oğuzeli",
+    "stateCode": "27"
+  },
+  {
+    "name": "Şahinbey İlçesi",
+    "stateCode": "27"
+  },
+  {
+    "name": "Şehitkamil",
+    "stateCode": "27"
+  },
+  {
+    "name": "Sekili",
+    "stateCode": "27"
+  },
+  {
+    "name": "Uluyatır",
+    "stateCode": "27"
+  },
+  {
+    "name": "Yavuzeli",
+    "stateCode": "27"
+  },
+  {
+    "name": "Yeşildere",
+    "stateCode": "27"
+  },
+  {
+    "name": "Alucra İlçesi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Bulancak",
+    "stateCode": "28"
+  },
+  {
+    "name": "Çamoluk İlçesi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Çanakçı",
+    "stateCode": "28"
+  },
+  {
+    "name": "Dereli",
+    "stateCode": "28"
+  },
+  {
+    "name": "Doğankent",
+    "stateCode": "28"
+  },
+  {
+    "name": "Espiye",
+    "stateCode": "28"
+  },
+  {
+    "name": "Eynesil",
+    "stateCode": "28"
+  },
+  {
+    "name": "Giresun",
+    "stateCode": "28"
+  },
+  {
+    "name": "Görele",
+    "stateCode": "28"
+  },
+  {
+    "name": "Güce İlçesi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Keşap",
+    "stateCode": "28"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "28"
+  },
+  {
+    "name": "Piraziz",
+    "stateCode": "28"
+  },
+  {
+    "name": "Şebin Karahisar",
+    "stateCode": "28"
+  },
+  {
+    "name": "Tirebolu",
+    "stateCode": "28"
+  },
+  {
+    "name": "Yağlıdere İlçesi",
+    "stateCode": "28"
+  },
+  {
+    "name": "Evren",
+    "stateCode": "29"
+  },
+  {
+    "name": "Gumushkhane",
+    "stateCode": "29"
+  },
+  {
+    "name": "Kelkit",
+    "stateCode": "29"
+  },
+  {
+    "name": "Köse",
+    "stateCode": "29"
+  },
+  {
+    "name": "Kürtün",
+    "stateCode": "29"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "29"
+  },
+  {
+    "name": "Şiran",
+    "stateCode": "29"
+  },
+  {
+    "name": "Torul",
+    "stateCode": "29"
+  },
+  {
+    "name": "Yağlıdere",
+    "stateCode": "29"
+  },
+  {
+    "name": "Çukurca",
+    "stateCode": "30"
+  },
+  {
+    "name": "Hakkâri",
+    "stateCode": "30"
+  },
+  {
+    "name": "Karsani",
+    "stateCode": "30"
+  },
+  {
+    "name": "Şemdinli",
+    "stateCode": "30"
+  },
+  {
+    "name": "Şemdinni İlçesi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Yüksekova",
+    "stateCode": "30"
+  },
+  {
+    "name": "Açıkdere",
+    "stateCode": "31"
+  },
+  {
+    "name": "Altınözü",
+    "stateCode": "31"
+  },
+  {
+    "name": "Anayazı",
+    "stateCode": "31"
+  },
+  {
+    "name": "Antakya",
+    "stateCode": "31"
+  },
+  {
+    "name": "Arsuz",
+    "stateCode": "31"
+  },
+  {
+    "name": "Aşağı Karafakılı",
+    "stateCode": "31"
+  },
+  {
+    "name": "Aşağıokçular",
+    "stateCode": "31"
+  },
+  {
+    "name": "Balıklıdere",
+    "stateCode": "31"
+  },
+  {
+    "name": "Belen",
+    "stateCode": "31"
+  },
+  {
+    "name": "Boynuyoğun",
+    "stateCode": "31"
+  },
+  {
+    "name": "Büyük Dalyan",
+    "stateCode": "31"
+  },
+  {
+    "name": "Büyükçat",
+    "stateCode": "31"
+  },
+  {
+    "name": "Çırtıman",
+    "stateCode": "31"
+  },
+  {
+    "name": "Defne",
+    "stateCode": "31"
+  },
+  {
+    "name": "Denizciler",
+    "stateCode": "31"
+  },
+  {
+    "name": "Dörtyol",
+    "stateCode": "31"
+  },
+  {
+    "name": "Dursunlu",
+    "stateCode": "31"
+  },
+  {
+    "name": "Erzin",
+    "stateCode": "31"
+  },
+  {
+    "name": "Gümüşgöze",
+    "stateCode": "31"
+  },
+  {
+    "name": "Günyazı",
+    "stateCode": "31"
+  },
+  {
+    "name": "Hacıpaşa",
+    "stateCode": "31"
+  },
+  {
+    "name": "Hassa",
+    "stateCode": "31"
+  },
+  {
+    "name": "İskenderun",
+    "stateCode": "31"
+  },
+  {
+    "name": "Karasüleymanlı",
+    "stateCode": "31"
+  },
+  {
+    "name": "Kastal",
+    "stateCode": "31"
+  },
+  {
+    "name": "Kırıkhan",
+    "stateCode": "31"
+  },
+  {
+    "name": "Kışlak",
+    "stateCode": "31"
+  },
+  {
+    "name": "Kızkalesi",
+    "stateCode": "31"
+  },
+  {
+    "name": "Kumlu İlçesi",
+    "stateCode": "31"
+  },
+  {
+    "name": "Kuzeytepe",
+    "stateCode": "31"
+  },
+  {
+    "name": "Mahmutlar",
+    "stateCode": "31"
+  },
+  {
+    "name": "Payas",
+    "stateCode": "31"
+  },
+  {
+    "name": "Reyhanlı",
+    "stateCode": "31"
+  },
+  {
+    "name": "Samankaya",
+    "stateCode": "31"
+  },
+  {
+    "name": "Serinyol",
+    "stateCode": "31"
+  },
+  {
+    "name": "Tepehan",
+    "stateCode": "31"
+  },
+  {
+    "name": "Toygarlı",
+    "stateCode": "31"
+  },
+  {
+    "name": "Uzunbağ",
+    "stateCode": "31"
+  },
+  {
+    "name": "Uzunkavak",
+    "stateCode": "31"
+  },
+  {
+    "name": "Yayladağı",
+    "stateCode": "31"
+  },
+  {
+    "name": "Aksu",
+    "stateCode": "32"
+  },
+  {
+    "name": "Anamas",
+    "stateCode": "32"
+  },
+  {
+    "name": "Atabey",
+    "stateCode": "32"
+  },
+  {
+    "name": "Eğirdir",
+    "stateCode": "32"
+  },
+  {
+    "name": "Gelendost",
+    "stateCode": "32"
+  },
+  {
+    "name": "Gönen",
+    "stateCode": "32"
+  },
+  {
+    "name": "Isparta",
+    "stateCode": "32"
+  },
+  {
+    "name": "Keçiborlu",
+    "stateCode": "32"
+  },
+  {
+    "name": "Pavlu Cebel",
+    "stateCode": "32"
+  },
+  {
+    "name": "Şarkîkaraağaç",
+    "stateCode": "32"
+  },
+  {
+    "name": "Senirkent",
+    "stateCode": "32"
+  },
+  {
+    "name": "Sütçüler İlçesi",
+    "stateCode": "32"
+  },
+  {
+    "name": "Uluborlu",
+    "stateCode": "32"
+  },
+  {
+    "name": "Yalvaç",
+    "stateCode": "32"
+  },
+  {
+    "name": "Yenişarbademli",
+    "stateCode": "32"
+  },
+  {
+    "name": "Akdeniz",
+    "stateCode": "33"
+  },
+  {
+    "name": "Akdere",
+    "stateCode": "33"
+  },
+  {
+    "name": "Anamur",
+    "stateCode": "33"
+  },
+  {
+    "name": "Aydıncık",
+    "stateCode": "33"
+  },
+  {
+    "name": "Bozyazı",
+    "stateCode": "33"
+  },
+  {
+    "name": "Çamlıyayla İlçesi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Elvanlı",
+    "stateCode": "33"
+  },
+  {
+    "name": "Erdemli",
+    "stateCode": "33"
+  },
+  {
+    "name": "Gülnar",
+    "stateCode": "33"
+  },
+  {
+    "name": "Kocahasanlı",
+    "stateCode": "33"
+  },
+  {
+    "name": "Mersin",
+    "stateCode": "33"
+  },
+  {
+    "name": "Mezitli İlçesi",
+    "stateCode": "33"
+  },
+  {
+    "name": "Mut",
+    "stateCode": "33"
+  },
+  {
+    "name": "Pınarbaşı",
+    "stateCode": "33"
+  },
+  {
+    "name": "Silifke",
+    "stateCode": "33"
+  },
+  {
+    "name": "Tarsus",
+    "stateCode": "33"
+  },
+  {
+    "name": "Toroslar",
+    "stateCode": "33"
+  },
+  {
+    "name": "Yenişehir",
+    "stateCode": "33"
+  },
+  {
+    "name": "Adalar",
+    "stateCode": "34"
+  },
+  {
+    "name": "Arnavutköy",
+    "stateCode": "34"
+  },
+  {
+    "name": "Ataşehir",
+    "stateCode": "34"
+  },
+  {
+    "name": "Avcılar",
+    "stateCode": "34"
+  },
+  {
+    "name": "Bağcılar",
+    "stateCode": "34"
+  },
+  {
+    "name": "Bahçelievler",
+    "stateCode": "34"
+  },
+  {
+    "name": "Bakırköy",
+    "stateCode": "34"
+  },
+  {
+    "name": "Başakşehir",
+    "stateCode": "34"
+  },
+  {
+    "name": "Bayrampaşa",
+    "stateCode": "34"
+  },
+  {
+    "name": "Beşiktaş",
+    "stateCode": "34"
+  },
+  {
+    "name": "Beykoz",
+    "stateCode": "34"
+  },
+  {
+    "name": "Beylikdüzü",
+    "stateCode": "34"
+  },
+  {
+    "name": "Beyoğlu",
+    "stateCode": "34"
+  },
+  {
+    "name": "Büyükçekmece",
+    "stateCode": "34"
+  },
+  {
+    "name": "Çatalca",
+    "stateCode": "34"
+  },
+  {
+    "name": "Çekmeköy",
+    "stateCode": "34"
+  },
+  {
+    "name": "Eminönü",
+    "stateCode": "34"
+  },
+  {
+    "name": "Esenler",
+    "stateCode": "34"
+  },
+  {
+    "name": "Esenyurt",
+    "stateCode": "34"
+  },
+  {
+    "name": "Eyüpsultan",
+    "stateCode": "34"
+  },
+  {
+    "name": "Fatih",
+    "stateCode": "34"
+  },
+  {
+    "name": "Gaziosmanpaşa",
+    "stateCode": "34"
+  },
+  {
+    "name": "Güngören",
+    "stateCode": "34"
+  },
+  {
+    "name": "Kadıköy",
+    "stateCode": "34"
+  },
+  {
+    "name": "Kâğıthane",
+    "stateCode": "34"
+  },
+  {
+    "name": "Kartal",
+    "stateCode": "34"
+  },
+  {
+    "name": "Küçükçekmece",
+    "stateCode": "34"
+  },
+  {
+    "name": "Maltepe",
+    "stateCode": "34"
+  },
+  {
+    "name": "Pendik",
+    "stateCode": "34"
+  },
+  {
+    "name": "Sancaktepe",
+    "stateCode": "34"
+  },
+  {
+    "name": "Sarıyer",
+    "stateCode": "34"
+  },
+  {
+    "name": "Şile",
+    "stateCode": "34"
+  },
+  {
+    "name": "Silivri",
+    "stateCode": "34"
+  },
+  {
+    "name": "Şişli",
+    "stateCode": "34"
+  },
+  {
+    "name": "Sultanbeyli",
+    "stateCode": "34"
+  },
+  {
+    "name": "Sultangazi",
+    "stateCode": "34"
+  },
+  {
+    "name": "Tuzla",
+    "stateCode": "34"
+  },
+  {
+    "name": "Umraniye",
+    "stateCode": "34"
+  },
+  {
+    "name": "Üsküdar",
+    "stateCode": "34"
+  },
+  {
+    "name": "Zeytinburnu",
+    "stateCode": "34"
+  },
+  {
+    "name": "Alaçatı",
+    "stateCode": "35"
+  },
+  {
+    "name": "Aliağa",
+    "stateCode": "35"
+  },
+  {
+    "name": "Bademli",
+    "stateCode": "35"
+  },
+  {
+    "name": "Balçova",
+    "stateCode": "35"
+  },
+  {
+    "name": "Bayındır",
+    "stateCode": "35"
+  },
+  {
+    "name": "Bayraklı",
+    "stateCode": "35"
+  },
+  {
+    "name": "Belevi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Bergama",
+    "stateCode": "35"
+  },
+  {
+    "name": "Beydağ",
+    "stateCode": "35"
+  },
+  {
+    "name": "Bornova",
+    "stateCode": "35"
+  },
+  {
+    "name": "Buca",
+    "stateCode": "35"
+  },
+  {
+    "name": "Çandarlı",
+    "stateCode": "35"
+  },
+  {
+    "name": "Çaylı",
+    "stateCode": "35"
+  },
+  {
+    "name": "Çeşme",
+    "stateCode": "35"
+  },
+  {
+    "name": "Çiğli",
+    "stateCode": "35"
+  },
+  {
+    "name": "Dikili",
+    "stateCode": "35"
+  },
+  {
+    "name": "Foça",
+    "stateCode": "35"
+  },
+  {
+    "name": "Gaziemir",
+    "stateCode": "35"
+  },
+  {
+    "name": "Gökçen",
+    "stateCode": "35"
+  },
+  {
+    "name": "Güzelbahçe",
+    "stateCode": "35"
+  },
+  {
+    "name": "İzmir",
+    "stateCode": "35"
+  },
+  {
+    "name": "Karabağlar",
+    "stateCode": "35"
+  },
+  {
+    "name": "Karaburun",
+    "stateCode": "35"
+  },
+  {
+    "name": "Karşıyaka İlçesi",
+    "stateCode": "35"
+  },
+  {
+    "name": "Kaymakçı",
+    "stateCode": "35"
+  },
+  {
+    "name": "Kemalpaşa",
+    "stateCode": "35"
+  },
+  {
+    "name": "Kiraz",
+    "stateCode": "35"
+  },
+  {
+    "name": "Kınık",
+    "stateCode": "35"
+  },
+  {
+    "name": "Konak",
+    "stateCode": "35"
+  },
+  {
+    "name": "Konaklı",
+    "stateCode": "35"
+  },
+  {
+    "name": "Menderes",
+    "stateCode": "35"
+  },
+  {
+    "name": "Menemen",
+    "stateCode": "35"
+  },
+  {
+    "name": "Narlıdere",
+    "stateCode": "35"
+  },
+  {
+    "name": "Ödemiş",
+    "stateCode": "35"
+  },
+  {
+    "name": "Özdere",
+    "stateCode": "35"
+  },
+  {
+    "name": "Seferihisar",
+    "stateCode": "35"
+  },
+  {
+    "name": "Selçuk",
+    "stateCode": "35"
+  },
+  {
+    "name": "Tire",
+    "stateCode": "35"
+  },
+  {
+    "name": "Torbalı",
+    "stateCode": "35"
+  },
+  {
+    "name": "Urla",
+    "stateCode": "35"
+  },
+  {
+    "name": "Yenifoça",
+    "stateCode": "35"
+  },
+  {
+    "name": "Yenişakran",
+    "stateCode": "35"
+  },
+  {
+    "name": "Zeytindağ",
+    "stateCode": "35"
+  },
+  {
+    "name": "Akyaka",
+    "stateCode": "36"
+  },
+  {
+    "name": "Arpaçay",
+    "stateCode": "36"
+  },
+  {
+    "name": "Digor İlçesi",
+    "stateCode": "36"
+  },
+  {
+    "name": "Kağızman",
+    "stateCode": "36"
+  },
+  {
+    "name": "Kars",
+    "stateCode": "36"
+  },
+  {
+    "name": "Sarıkamış",
+    "stateCode": "36"
+  },
+  {
+    "name": "Selim",
+    "stateCode": "36"
+  },
+  {
+    "name": "Susuz",
+    "stateCode": "36"
+  },
+  {
+    "name": "Abana",
+    "stateCode": "37"
+  },
+  {
+    "name": "Ağlı İlçesi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Araç",
+    "stateCode": "37"
+  },
+  {
+    "name": "Azdavay",
+    "stateCode": "37"
+  },
+  {
+    "name": "Bozkurt",
+    "stateCode": "37"
+  },
+  {
+    "name": "Çatalzeytin İlçesi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Cide",
+    "stateCode": "37"
+  },
+  {
+    "name": "Daday",
+    "stateCode": "37"
+  },
+  {
+    "name": "Devrekani",
+    "stateCode": "37"
+  },
+  {
+    "name": "Doğanyurt",
+    "stateCode": "37"
+  },
+  {
+    "name": "Hanönü",
+    "stateCode": "37"
+  },
+  {
+    "name": "İhsangazi",
+    "stateCode": "37"
+  },
+  {
+    "name": "İnebolu",
+    "stateCode": "37"
+  },
+  {
+    "name": "Kastamonu",
+    "stateCode": "37"
+  },
+  {
+    "name": "Küre",
+    "stateCode": "37"
+  },
+  {
+    "name": "Pınarbaşı",
+    "stateCode": "37"
+  },
+  {
+    "name": "Şenpazar İlçesi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Seydiler",
+    "stateCode": "37"
+  },
+  {
+    "name": "Taşköprü",
+    "stateCode": "37"
+  },
+  {
+    "name": "Tosya",
+    "stateCode": "37"
+  },
+  {
+    "name": "Akkışla",
+    "stateCode": "38"
+  },
+  {
+    "name": "Bünyan",
+    "stateCode": "38"
+  },
+  {
+    "name": "Develi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Felahiye",
+    "stateCode": "38"
+  },
+  {
+    "name": "Hacılar",
+    "stateCode": "38"
+  },
+  {
+    "name": "Incesu",
+    "stateCode": "38"
+  },
+  {
+    "name": "Kayseri",
+    "stateCode": "38"
+  },
+  {
+    "name": "Kocasinan",
+    "stateCode": "38"
+  },
+  {
+    "name": "Melikgazi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Özvatan İlçesi",
+    "stateCode": "38"
+  },
+  {
+    "name": "Pınarbaşı",
+    "stateCode": "38"
+  },
+  {
+    "name": "Sarıoğlan",
+    "stateCode": "38"
+  },
+  {
+    "name": "Sarız",
+    "stateCode": "38"
+  },
+  {
+    "name": "Talas",
+    "stateCode": "38"
+  },
+  {
+    "name": "Tomarza",
+    "stateCode": "38"
+  },
+  {
+    "name": "Yahyali",
+    "stateCode": "38"
+  },
+  {
+    "name": "Yahyalı",
+    "stateCode": "38"
+  },
+  {
+    "name": "Yesilhisar",
+    "stateCode": "38"
+  },
+  {
+    "name": "Babaeski",
+    "stateCode": "39"
+  },
+  {
+    "name": "Demirköy İlçesi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Kırklareli",
+    "stateCode": "39"
+  },
+  {
+    "name": "Kofçaz",
+    "stateCode": "39"
+  },
+  {
+    "name": "Lüleburgaz İlçesi",
+    "stateCode": "39"
+  },
+  {
+    "name": "Pehlivanköy",
+    "stateCode": "39"
+  },
+  {
+    "name": "Pınarhisar",
+    "stateCode": "39"
+  },
+  {
+    "name": "Üsküp",
+    "stateCode": "39"
+  },
+  {
+    "name": "Vize",
+    "stateCode": "39"
+  },
+  {
+    "name": "Akçakent İlçesi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Akpınar",
+    "stateCode": "40"
+  },
+  {
+    "name": "Boztepe İlçesi",
+    "stateCode": "40"
+  },
+  {
+    "name": "Çiçekdağı",
+    "stateCode": "40"
+  },
+  {
+    "name": "Kaman",
+    "stateCode": "40"
+  },
+  {
+    "name": "Kırşehir",
+    "stateCode": "40"
+  },
+  {
+    "name": "Mucur",
+    "stateCode": "40"
+  },
+  {
+    "name": "Bahçecik",
+    "stateCode": "41"
+  },
+  {
+    "name": "Balçık",
+    "stateCode": "41"
+  },
+  {
+    "name": "Başiskele",
+    "stateCode": "41"
+  },
+  {
+    "name": "Çayırova",
+    "stateCode": "41"
+  },
+  {
+    "name": "Darıca",
+    "stateCode": "41"
+  },
+  {
+    "name": "Derince",
+    "stateCode": "41"
+  },
+  {
+    "name": "Dilovası",
+    "stateCode": "41"
+  },
+  {
+    "name": "Gebze",
+    "stateCode": "41"
+  },
+  {
+    "name": "Gölcük",
+    "stateCode": "41"
+  },
+  {
+    "name": "Halıdere",
+    "stateCode": "41"
+  },
+  {
+    "name": "İhsaniye",
+    "stateCode": "41"
+  },
+  {
+    "name": "İzmit",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kandıra",
+    "stateCode": "41"
+  },
+  {
+    "name": "Karamürsel",
+    "stateCode": "41"
+  },
+  {
+    "name": "Karşıyaka",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kartepe",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kefken",
+    "stateCode": "41"
+  },
+  {
+    "name": "Körfez",
+    "stateCode": "41"
+  },
+  {
+    "name": "Köseköy",
+    "stateCode": "41"
+  },
+  {
+    "name": "Kullar",
+    "stateCode": "41"
+  },
+  {
+    "name": "Tavşancıl",
+    "stateCode": "41"
+  },
+  {
+    "name": "Tavşanlı",
+    "stateCode": "41"
+  },
+  {
+    "name": "Ulaşlı",
+    "stateCode": "41"
+  },
+  {
+    "name": "Yalakdere",
+    "stateCode": "41"
+  },
+  {
+    "name": "Yuvacık",
+    "stateCode": "41"
+  },
+  {
+    "name": "Ahırlı İlçesi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Akören İlçesi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Akşehir",
+    "stateCode": "42"
+  },
+  {
+    "name": "Altınekin",
+    "stateCode": "42"
+  },
+  {
+    "name": "Beyşehir",
+    "stateCode": "42"
+  },
+  {
+    "name": "Bozkır",
+    "stateCode": "42"
+  },
+  {
+    "name": "Çatalhöyük",
+    "stateCode": "42"
+  },
+  {
+    "name": "Çeltik İlçesi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Cihanbeyli",
+    "stateCode": "42"
+  },
+  {
+    "name": "Cihanbeyli District",
+    "stateCode": "42"
+  },
+  {
+    "name": "Çumra",
+    "stateCode": "42"
+  },
+  {
+    "name": "Derbent",
+    "stateCode": "42"
+  },
+  {
+    "name": "Derebucak",
+    "stateCode": "42"
+  },
+  {
+    "name": "Doğanhisar",
+    "stateCode": "42"
+  },
+  {
+    "name": "Emirgazi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Ereğli",
+    "stateCode": "42"
+  },
+  {
+    "name": "Güneysınır İlçesi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Hadim",
+    "stateCode": "42"
+  },
+  {
+    "name": "Halkapınar",
+    "stateCode": "42"
+  },
+  {
+    "name": "Hüyük",
+    "stateCode": "42"
+  },
+  {
+    "name": "Ilgın",
+    "stateCode": "42"
+  },
+  {
+    "name": "Kadınhanı",
+    "stateCode": "42"
+  },
+  {
+    "name": "Karapınar",
+    "stateCode": "42"
+  },
+  {
+    "name": "Karatay",
+    "stateCode": "42"
+  },
+  {
+    "name": "Konya",
+    "stateCode": "42"
+  },
+  {
+    "name": "Kulu",
+    "stateCode": "42"
+  },
+  {
+    "name": "Kuyulusebil",
+    "stateCode": "42"
+  },
+  {
+    "name": "Meram İlçesi",
+    "stateCode": "42"
+  },
+  {
+    "name": "Ovakavağı",
+    "stateCode": "42"
+  },
+  {
+    "name": "Sarayönü",
+    "stateCode": "42"
+  },
+  {
+    "name": "Selcuklu",
+    "stateCode": "42"
+  },
+  {
+    "name": "Seydişehir",
+    "stateCode": "42"
+  },
+  {
+    "name": "Taşkent",
+    "stateCode": "42"
+  },
+  {
+    "name": "Tuzlukçu",
+    "stateCode": "42"
+  },
+  {
+    "name": "Yalıhüyük",
+    "stateCode": "42"
+  },
+  {
+    "name": "Yarma",
+    "stateCode": "42"
+  },
+  {
+    "name": "Yeniceoba",
+    "stateCode": "42"
+  },
+  {
+    "name": "Yunak",
+    "stateCode": "42"
+  },
+  {
+    "name": "Altıntaş İlçesi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Aslanapa",
+    "stateCode": "43"
+  },
+  {
+    "name": "Çavdarhisar İlçesi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Domaniç",
+    "stateCode": "43"
+  },
+  {
+    "name": "Dumlupınar",
+    "stateCode": "43"
+  },
+  {
+    "name": "Emet",
+    "stateCode": "43"
+  },
+  {
+    "name": "Gediz",
+    "stateCode": "43"
+  },
+  {
+    "name": "Hisarcık İlçesi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kütahya",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pazarlar",
+    "stateCode": "43"
+  },
+  {
+    "name": "Şaphane",
+    "stateCode": "43"
+  },
+  {
+    "name": "Simav",
+    "stateCode": "43"
+  },
+  {
+    "name": "Tavşanlı",
+    "stateCode": "43"
+  },
+  {
+    "name": "Akçadağ",
+    "stateCode": "44"
+  },
+  {
+    "name": "Arapgir",
+    "stateCode": "44"
+  },
+  {
+    "name": "Arguvan",
+    "stateCode": "44"
+  },
+  {
+    "name": "Battalgazi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Darende",
+    "stateCode": "44"
+  },
+  {
+    "name": "Doğanşehir",
+    "stateCode": "44"
+  },
+  {
+    "name": "Doğanyol",
+    "stateCode": "44"
+  },
+  {
+    "name": "Hekimhan",
+    "stateCode": "44"
+  },
+  {
+    "name": "Kale",
+    "stateCode": "44"
+  },
+  {
+    "name": "Kuluncak",
+    "stateCode": "44"
+  },
+  {
+    "name": "Malatya",
+    "stateCode": "44"
+  },
+  {
+    "name": "Pütürge",
+    "stateCode": "44"
+  },
+  {
+    "name": "Yazıhan",
+    "stateCode": "44"
+  },
+  {
+    "name": "Yeşilyurt",
+    "stateCode": "44"
+  },
+  {
+    "name": "Ahmetli",
+    "stateCode": "45"
+  },
+  {
+    "name": "Akhisar",
+    "stateCode": "45"
+  },
+  {
+    "name": "Alaşehir",
+    "stateCode": "45"
+  },
+  {
+    "name": "Demirci",
+    "stateCode": "45"
+  },
+  {
+    "name": "Gölmarmara",
+    "stateCode": "45"
+  },
+  {
+    "name": "Gördes",
+    "stateCode": "45"
+  },
+  {
+    "name": "Kırkağaç",
+    "stateCode": "45"
+  },
+  {
+    "name": "Köprübaşı",
+    "stateCode": "45"
+  },
+  {
+    "name": "Kula",
+    "stateCode": "45"
+  },
+  {
+    "name": "Manisa",
+    "stateCode": "45"
+  },
+  {
+    "name": "Salihli İlçesi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Sarıgöl",
+    "stateCode": "45"
+  },
+  {
+    "name": "Saruhanlı",
+    "stateCode": "45"
+  },
+  {
+    "name": "Şehzadeler",
+    "stateCode": "45"
+  },
+  {
+    "name": "Selendi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Soma",
+    "stateCode": "45"
+  },
+  {
+    "name": "Turgutlu İlçesi",
+    "stateCode": "45"
+  },
+  {
+    "name": "Yunusemre",
+    "stateCode": "45"
+  },
+  {
+    "name": "Zeytinliova",
+    "stateCode": "45"
+  },
+  {
+    "name": "Afşin",
+    "stateCode": "46"
+  },
+  {
+    "name": "Andırın",
+    "stateCode": "46"
+  },
+  {
+    "name": "Çağlayancerit",
+    "stateCode": "46"
+  },
+  {
+    "name": "Celeyke",
+    "stateCode": "46"
+  },
+  {
+    "name": "Dulkadiroğlu",
+    "stateCode": "46"
+  },
+  {
+    "name": "Ekinözü İlçesi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Elbistan",
+    "stateCode": "46"
+  },
+  {
+    "name": "Göksun",
+    "stateCode": "46"
+  },
+  {
+    "name": "Kahramanmaraş",
+    "stateCode": "46"
+  },
+  {
+    "name": "Nurhak",
+    "stateCode": "46"
+  },
+  {
+    "name": "Onikişubat",
+    "stateCode": "46"
+  },
+  {
+    "name": "Pazarcık",
+    "stateCode": "46"
+  },
+  {
+    "name": "Süleymanlı",
+    "stateCode": "46"
+  },
+  {
+    "name": "Türkoğlu İlçesi",
+    "stateCode": "46"
+  },
+  {
+    "name": "Acırlı",
+    "stateCode": "47"
+  },
+  {
+    "name": "Akarsu",
+    "stateCode": "47"
+  },
+  {
+    "name": "Alakamış",
+    "stateCode": "47"
+  },
+  {
+    "name": "Aran",
+    "stateCode": "47"
+  },
+  {
+    "name": "Artuklu",
+    "stateCode": "47"
+  },
+  {
+    "name": "Avine",
+    "stateCode": "47"
+  },
+  {
+    "name": "Bağlıca",
+    "stateCode": "47"
+  },
+  {
+    "name": "Barıştepe",
+    "stateCode": "47"
+  },
+  {
+    "name": "Başkavak",
+    "stateCode": "47"
+  },
+  {
+    "name": "Çalpınar",
+    "stateCode": "47"
+  },
+  {
+    "name": "Çavuşlu",
+    "stateCode": "47"
+  },
+  {
+    "name": "Cinatamiho",
+    "stateCode": "47"
+  },
+  {
+    "name": "Çınaraltı",
+    "stateCode": "47"
+  },
+  {
+    "name": "Çıplak",
+    "stateCode": "47"
+  },
+  {
+    "name": "Dara",
+    "stateCode": "47"
+  },
+  {
+    "name": "Dargeçit",
+    "stateCode": "47"
+  },
+  {
+    "name": "Dereyanı",
+    "stateCode": "47"
+  },
+  {
+    "name": "Derik İlçesi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Duruca",
+    "stateCode": "47"
+  },
+  {
+    "name": "Ebish",
+    "stateCode": "47"
+  },
+  {
+    "name": "Eşme",
+    "stateCode": "47"
+  },
+  {
+    "name": "Eymirli",
+    "stateCode": "47"
+  },
+  {
+    "name": "Gelinkaya",
+    "stateCode": "47"
+  },
+  {
+    "name": "Gülveren",
+    "stateCode": "47"
+  },
+  {
+    "name": "Gyundyukoru",
+    "stateCode": "47"
+  },
+  {
+    "name": "Haberli",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kabala",
+    "stateCode": "47"
+  },
+  {
+    "name": "Karalar",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kavsan",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kayalıpınar",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kaynakkaya",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kindirip",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kılavuz",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kızıltepe",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kumlu",
+    "stateCode": "47"
+  },
+  {
+    "name": "Kutlubey",
+    "stateCode": "47"
+  },
+  {
+    "name": "Mardin",
+    "stateCode": "47"
+  },
+  {
+    "name": "Mardin Merkez",
+    "stateCode": "47"
+  },
+  {
+    "name": "Mazıdağı",
+    "stateCode": "47"
+  },
+  {
+    "name": "Midyat",
+    "stateCode": "47"
+  },
+  {
+    "name": "Nusaybin",
+    "stateCode": "47"
+  },
+  {
+    "name": "Ömerli",
+    "stateCode": "47"
+  },
+  {
+    "name": "Ortaca",
+    "stateCode": "47"
+  },
+  {
+    "name": "Ortaköy",
+    "stateCode": "47"
+  },
+  {
+    "name": "Oyalı",
+    "stateCode": "47"
+  },
+  {
+    "name": "Özbek",
+    "stateCode": "47"
+  },
+  {
+    "name": "Pınardere",
+    "stateCode": "47"
+  },
+  {
+    "name": "Reshidi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Savur",
+    "stateCode": "47"
+  },
+  {
+    "name": "Selah",
+    "stateCode": "47"
+  },
+  {
+    "name": "Şenocak",
+    "stateCode": "47"
+  },
+  {
+    "name": "Şenyurt",
+    "stateCode": "47"
+  },
+  {
+    "name": "Seri",
+    "stateCode": "47"
+  },
+  {
+    "name": "Serkan",
+    "stateCode": "47"
+  },
+  {
+    "name": "Sivrice",
+    "stateCode": "47"
+  },
+  {
+    "name": "Teffi",
+    "stateCode": "47"
+  },
+  {
+    "name": "Telminar",
+    "stateCode": "47"
+  },
+  {
+    "name": "Tepealtı",
+    "stateCode": "47"
+  },
+  {
+    "name": "Toptepe",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yaylı",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yayvantepe",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yeşilalan",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yeşilli",
+    "stateCode": "47"
+  },
+  {
+    "name": "Yolbaşı",
+    "stateCode": "47"
+  },
+  {
+    "name": "Bayır",
+    "stateCode": "48"
+  },
+  {
+    "name": "Bodrum",
+    "stateCode": "48"
+  },
+  {
+    "name": "Bozarmut",
+    "stateCode": "48"
+  },
+  {
+    "name": "Dalaman",
+    "stateCode": "48"
+  },
+  {
+    "name": "Dalyan",
+    "stateCode": "48"
+  },
+  {
+    "name": "Datça",
+    "stateCode": "48"
+  },
+  {
+    "name": "Fethiye",
+    "stateCode": "48"
+  },
+  {
+    "name": "Göcek",
+    "stateCode": "48"
+  },
+  {
+    "name": "Güvercinlik",
+    "stateCode": "48"
+  },
+  {
+    "name": "Kargı",
+    "stateCode": "48"
+  },
+  {
+    "name": "Kavaklıdere",
+    "stateCode": "48"
+  },
+  {
+    "name": "Köyceğiz İlçesi",
+    "stateCode": "48"
+  },
+  {
+    "name": "Marmaris",
+    "stateCode": "48"
+  },
+  {
+    "name": "Menteşe",
+    "stateCode": "48"
+  },
+  {
+    "name": "Milas",
+    "stateCode": "48"
+  },
+  {
+    "name": "Muğla",
+    "stateCode": "48"
+  },
+  {
+    "name": "Ölüdeniz",
+    "stateCode": "48"
+  },
+  {
+    "name": "Ortaca",
+    "stateCode": "48"
+  },
+  {
+    "name": "Sarigerme",
+    "stateCode": "48"
+  },
+  {
+    "name": "Seydikemer",
+    "stateCode": "48"
+  },
+  {
+    "name": "Turgut",
+    "stateCode": "48"
+  },
+  {
+    "name": "Turgutreis",
+    "stateCode": "48"
+  },
+  {
+    "name": "Ula",
+    "stateCode": "48"
+  },
+  {
+    "name": "Yalıkavak",
+    "stateCode": "48"
+  },
+  {
+    "name": "Yaniklar",
+    "stateCode": "48"
+  },
+  {
+    "name": "Yatağan",
+    "stateCode": "48"
+  },
+  {
+    "name": "Bulanık",
+    "stateCode": "49"
+  },
+  {
+    "name": "Hasköy",
+    "stateCode": "49"
+  },
+  {
+    "name": "Korkut",
+    "stateCode": "49"
+  },
+  {
+    "name": "Malazgirt",
+    "stateCode": "49"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "49"
+  },
+  {
+    "name": "Muş",
+    "stateCode": "49"
+  },
+  {
+    "name": "Varto",
+    "stateCode": "49"
+  },
+  {
+    "name": "Acıgöl",
+    "stateCode": "50"
+  },
+  {
+    "name": "Avanos",
+    "stateCode": "50"
+  },
+  {
+    "name": "Derinkuyu",
+    "stateCode": "50"
+  },
+  {
+    "name": "Göreme",
+    "stateCode": "50"
+  },
+  {
+    "name": "Gülşehir",
+    "stateCode": "50"
+  },
+  {
+    "name": "Hacıbektaş",
+    "stateCode": "50"
+  },
+  {
+    "name": "Kozaklı İlçesi",
+    "stateCode": "50"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "50"
+  },
+  {
+    "name": "Nevşehir",
+    "stateCode": "50"
+  },
+  {
+    "name": "Ürgüp",
+    "stateCode": "50"
+  },
+  {
+    "name": "Altunhisar",
+    "stateCode": "51"
+  },
+  {
+    "name": "Bor",
+    "stateCode": "51"
+  },
+  {
+    "name": "Çamardı İlçesi",
+    "stateCode": "51"
+  },
+  {
+    "name": "Çiftlik",
+    "stateCode": "51"
+  },
+  {
+    "name": "Niğde",
+    "stateCode": "51"
+  },
+  {
+    "name": "Ulukisla",
+    "stateCode": "51"
+  },
+  {
+    "name": "Akkuş",
+    "stateCode": "52"
+  },
+  {
+    "name": "Altınordu",
+    "stateCode": "52"
+  },
+  {
+    "name": "Aybastı İlçesi",
+    "stateCode": "52"
+  },
+  {
+    "name": "Çamaş",
+    "stateCode": "52"
+  },
+  {
+    "name": "Çatalpınar İlçesi",
+    "stateCode": "52"
+  },
+  {
+    "name": "Çaybaşı İlçesi",
+    "stateCode": "52"
+  },
+  {
+    "name": "Fatsa",
+    "stateCode": "52"
+  },
+  {
+    "name": "Gölköy İlçesi",
+    "stateCode": "52"
+  },
+  {
+    "name": "Gülyalı İlçesi",
+    "stateCode": "52"
+  },
+  {
+    "name": "Gürgentepe",
+    "stateCode": "52"
+  },
+  {
+    "name": "İkizce",
+    "stateCode": "52"
+  },
+  {
+    "name": "Kabadüz",
+    "stateCode": "52"
+  },
+  {
+    "name": "Kabataş",
+    "stateCode": "52"
+  },
+  {
+    "name": "Korgan",
+    "stateCode": "52"
+  },
+  {
+    "name": "Kumru",
+    "stateCode": "52"
+  },
+  {
+    "name": "Mesudiye",
+    "stateCode": "52"
+  },
+  {
+    "name": "Ordu",
+    "stateCode": "52"
+  },
+  {
+    "name": "Perşembe",
+    "stateCode": "52"
+  },
+  {
+    "name": "Piraziz İlçesi",
+    "stateCode": "52"
+  },
+  {
+    "name": "Ulubey",
+    "stateCode": "52"
+  },
+  {
+    "name": "Ünye İlçesi",
+    "stateCode": "52"
+  },
+  {
+    "name": "Ardeşen",
+    "stateCode": "53"
+  },
+  {
+    "name": "Çayeli",
+    "stateCode": "53"
+  },
+  {
+    "name": "Fındıklı",
+    "stateCode": "53"
+  },
+  {
+    "name": "Güneysu",
+    "stateCode": "53"
+  },
+  {
+    "name": "Hemşin İlçesi",
+    "stateCode": "53"
+  },
+  {
+    "name": "İkizdere İlçesi",
+    "stateCode": "53"
+  },
+  {
+    "name": "İyidere",
+    "stateCode": "53"
+  },
+  {
+    "name": "Kalkandere",
+    "stateCode": "53"
+  },
+  {
+    "name": "Nurluca",
+    "stateCode": "53"
+  },
+  {
+    "name": "Pazar",
+    "stateCode": "53"
+  },
+  {
+    "name": "Rize",
+    "stateCode": "53"
+  },
+  {
+    "name": "Adapazarı",
+    "stateCode": "54"
+  },
+  {
+    "name": "Akyazı",
+    "stateCode": "54"
+  },
+  {
+    "name": "Arifiye",
+    "stateCode": "54"
+  },
+  {
+    "name": "Erenler",
+    "stateCode": "54"
+  },
+  {
+    "name": "Ferizli",
+    "stateCode": "54"
+  },
+  {
+    "name": "Geyve",
+    "stateCode": "54"
+  },
+  {
+    "name": "Hendek",
+    "stateCode": "54"
+  },
+  {
+    "name": "Karapürçek",
+    "stateCode": "54"
+  },
+  {
+    "name": "Karasu İlçesi",
+    "stateCode": "54"
+  },
+  {
+    "name": "Karasu Mahallesi",
+    "stateCode": "54"
+  },
+  {
+    "name": "Kaynarca",
+    "stateCode": "54"
+  },
+  {
+    "name": "Kocaali",
+    "stateCode": "54"
+  },
+  {
+    "name": "Pamukova",
+    "stateCode": "54"
+  },
+  {
+    "name": "Sapanca",
+    "stateCode": "54"
+  },
+  {
+    "name": "Serdivan",
+    "stateCode": "54"
+  },
+  {
+    "name": "Söğütlü",
+    "stateCode": "54"
+  },
+  {
+    "name": "Taraklı",
+    "stateCode": "54"
+  },
+  {
+    "name": "Alaçam İlçesi",
+    "stateCode": "55"
+  },
+  {
+    "name": "Asarcık",
+    "stateCode": "55"
+  },
+  {
+    "name": "Atakum",
+    "stateCode": "55"
+  },
+  {
+    "name": "Ayvacık",
+    "stateCode": "55"
+  },
+  {
+    "name": "Bafra",
+    "stateCode": "55"
+  },
+  {
+    "name": "Canik",
+    "stateCode": "55"
+  },
+  {
+    "name": "Çarşamba",
+    "stateCode": "55"
+  },
+  {
+    "name": "Havza",
+    "stateCode": "55"
+  },
+  {
+    "name": "İlkadım",
+    "stateCode": "55"
+  },
+  {
+    "name": "Kavak",
+    "stateCode": "55"
+  },
+  {
+    "name": "Ladik",
+    "stateCode": "55"
+  },
+  {
+    "name": "Ondokuzmayıs İlçesi",
+    "stateCode": "55"
+  },
+  {
+    "name": "Salıpazarı İlçesi",
+    "stateCode": "55"
+  },
+  {
+    "name": "Samsun",
+    "stateCode": "55"
+  },
+  {
+    "name": "Tekkeköy",
+    "stateCode": "55"
+  },
+  {
+    "name": "Terme",
+    "stateCode": "55"
+  },
+  {
+    "name": "Vezirköprü",
+    "stateCode": "55"
+  },
+  {
+    "name": "Yakakent",
+    "stateCode": "55"
+  },
+  {
+    "name": "Baykan",
+    "stateCode": "56"
+  },
+  {
+    "name": "Civankan",
+    "stateCode": "56"
+  },
+  {
+    "name": "Doğanca",
+    "stateCode": "56"
+  },
+  {
+    "name": "Doğanköy",
+    "stateCode": "56"
+  },
+  {
+    "name": "Eruh",
+    "stateCode": "56"
+  },
+  {
+    "name": "Gökbudak",
+    "stateCode": "56"
+  },
+  {
+    "name": "Gökçekoru",
+    "stateCode": "56"
+  },
+  {
+    "name": "Gölgelikonak",
+    "stateCode": "56"
+  },
+  {
+    "name": "Gözpınar",
+    "stateCode": "56"
+  },
+  {
+    "name": "Güleçler",
+    "stateCode": "56"
+  },
+  {
+    "name": "Kayabağlar",
+    "stateCode": "56"
+  },
+  {
+    "name": "Kurtalan",
+    "stateCode": "56"
+  },
+  {
+    "name": "Lodi",
+    "stateCode": "56"
+  },
+  {
+    "name": "Okçular",
+    "stateCode": "56"
+  },
+  {
+    "name": "Palamutlu",
+    "stateCode": "56"
+  },
+  {
+    "name": "Pervari",
+    "stateCode": "56"
+  },
+  {
+    "name": "Serhatta",
+    "stateCode": "56"
+  },
+  {
+    "name": "Siirt",
+    "stateCode": "56"
+  },
+  {
+    "name": "Şirvan",
+    "stateCode": "56"
+  },
+  {
+    "name": "Taliban",
+    "stateCode": "56"
+  },
+  {
+    "name": "Taşlı",
+    "stateCode": "56"
+  },
+  {
+    "name": "Tillo",
+    "stateCode": "56"
+  },
+  {
+    "name": "Boyabat",
+    "stateCode": "57"
+  },
+  {
+    "name": "Dikmen",
+    "stateCode": "57"
+  },
+  {
+    "name": "Durağan",
+    "stateCode": "57"
+  },
+  {
+    "name": "Erfelek",
+    "stateCode": "57"
+  },
+  {
+    "name": "Gerze",
+    "stateCode": "57"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "57"
+  },
+  {
+    "name": "Saraydüzü",
+    "stateCode": "57"
+  },
+  {
+    "name": "Sinop",
+    "stateCode": "57"
+  },
+  {
+    "name": "Türkeli",
+    "stateCode": "57"
+  },
+  {
+    "name": "Akıncılar",
+    "stateCode": "58"
+  },
+  {
+    "name": "Aksu",
+    "stateCode": "58"
+  },
+  {
+    "name": "Altınyayla",
+    "stateCode": "58"
+  },
+  {
+    "name": "Divriği",
+    "stateCode": "58"
+  },
+  {
+    "name": "Doğanşar",
+    "stateCode": "58"
+  },
+  {
+    "name": "Gemerek",
+    "stateCode": "58"
+  },
+  {
+    "name": "Gölova",
+    "stateCode": "58"
+  },
+  {
+    "name": "Gürün",
+    "stateCode": "58"
+  },
+  {
+    "name": "Hafik",
+    "stateCode": "58"
+  },
+  {
+    "name": "İmranlı",
+    "stateCode": "58"
+  },
+  {
+    "name": "Kangal",
+    "stateCode": "58"
+  },
+  {
+    "name": "Koyulhisar",
+    "stateCode": "58"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "58"
+  },
+  {
+    "name": "Şarkışla",
+    "stateCode": "58"
+  },
+  {
+    "name": "Sivas",
+    "stateCode": "58"
+  },
+  {
+    "name": "Suşehri",
+    "stateCode": "58"
+  },
+  {
+    "name": "Ulaş",
+    "stateCode": "58"
+  },
+  {
+    "name": "Yıldızeli İlçesi",
+    "stateCode": "58"
+  },
+  {
+    "name": "Zara",
+    "stateCode": "58"
+  },
+  {
+    "name": "Çerkezköy",
+    "stateCode": "59"
+  },
+  {
+    "name": "Çorlu",
+    "stateCode": "59"
+  },
+  {
+    "name": "Ergene",
+    "stateCode": "59"
+  },
+  {
+    "name": "Hayrabolu",
+    "stateCode": "59"
+  },
+  {
+    "name": "Kapaklı",
+    "stateCode": "59"
+  },
+  {
+    "name": "Kumbağ",
+    "stateCode": "59"
+  },
+  {
+    "name": "Malkara",
+    "stateCode": "59"
+  },
+  {
+    "name": "Marmara Ereğlisi",
+    "stateCode": "59"
+  },
+  {
+    "name": "Marmaracık",
+    "stateCode": "59"
+  },
+  {
+    "name": "Muratlı İlçesi",
+    "stateCode": "59"
+  },
+  {
+    "name": "Saray",
+    "stateCode": "59"
+  },
+  {
+    "name": "Şarköy İlçesi",
+    "stateCode": "59"
+  },
+  {
+    "name": "Süleymanpaşa",
+    "stateCode": "59"
+  },
+  {
+    "name": "Sultanköy",
+    "stateCode": "59"
+  },
+  {
+    "name": "Tekirdağ",
+    "stateCode": "59"
+  },
+  {
+    "name": "Velimeşe",
+    "stateCode": "59"
+  },
+  {
+    "name": "Almus",
+    "stateCode": "60"
+  },
+  {
+    "name": "Artova",
+    "stateCode": "60"
+  },
+  {
+    "name": "Başçiftlik",
+    "stateCode": "60"
+  },
+  {
+    "name": "Erbaa",
+    "stateCode": "60"
+  },
+  {
+    "name": "Niksar",
+    "stateCode": "60"
+  },
+  {
+    "name": "Pazar",
+    "stateCode": "60"
+  },
+  {
+    "name": "Reşadiye",
+    "stateCode": "60"
+  },
+  {
+    "name": "Sulusaray",
+    "stateCode": "60"
+  },
+  {
+    "name": "Tokat",
+    "stateCode": "60"
+  },
+  {
+    "name": "Turhal",
+    "stateCode": "60"
+  },
+  {
+    "name": "Yeşilyurt İlçesi",
+    "stateCode": "60"
+  },
+  {
+    "name": "Zile",
+    "stateCode": "60"
+  },
+  {
+    "name": "Akçaabat",
+    "stateCode": "61"
+  },
+  {
+    "name": "Araklı",
+    "stateCode": "61"
+  },
+  {
+    "name": "Arsin",
+    "stateCode": "61"
+  },
+  {
+    "name": "Beşikdüzü",
+    "stateCode": "61"
+  },
+  {
+    "name": "Çarşıbaşı",
+    "stateCode": "61"
+  },
+  {
+    "name": "Çaykara",
+    "stateCode": "61"
+  },
+  {
+    "name": "Dernekpazarı",
+    "stateCode": "61"
+  },
+  {
+    "name": "Düzköy",
+    "stateCode": "61"
+  },
+  {
+    "name": "Hayrat",
+    "stateCode": "61"
+  },
+  {
+    "name": "Köprübaşı",
+    "stateCode": "61"
+  },
+  {
+    "name": "Maçka",
+    "stateCode": "61"
+  },
+  {
+    "name": "Of",
+    "stateCode": "61"
+  },
+  {
+    "name": "Ortahisar",
+    "stateCode": "61"
+  },
+  {
+    "name": "Şalpazarı",
+    "stateCode": "61"
+  },
+  {
+    "name": "Sürmene",
+    "stateCode": "61"
+  },
+  {
+    "name": "Tonya",
+    "stateCode": "61"
+  },
+  {
+    "name": "Trabzon",
+    "stateCode": "61"
+  },
+  {
+    "name": "Vakfıkebir",
+    "stateCode": "61"
+  },
+  {
+    "name": "Yomra",
+    "stateCode": "61"
+  },
+  {
+    "name": "Çemişgezek İlçesi",
+    "stateCode": "62"
+  },
+  {
+    "name": "Hozat",
+    "stateCode": "62"
+  },
+  {
+    "name": "Mazgirt",
+    "stateCode": "62"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "62"
+  },
+  {
+    "name": "Nazimiye",
+    "stateCode": "62"
+  },
+  {
+    "name": "Nazımiye İlçesi",
+    "stateCode": "62"
+  },
+  {
+    "name": "Ovacık",
+    "stateCode": "62"
+  },
+  {
+    "name": "Pertek",
+    "stateCode": "62"
+  },
+  {
+    "name": "Pulumer",
+    "stateCode": "62"
+  },
+  {
+    "name": "Pülümür İlçesi",
+    "stateCode": "62"
+  },
+  {
+    "name": "Tunceli",
+    "stateCode": "62"
+  },
+  {
+    "name": "Akçakale",
+    "stateCode": "63"
+  },
+  {
+    "name": "Akdiken",
+    "stateCode": "63"
+  },
+  {
+    "name": "Aşağı Beğdeş",
+    "stateCode": "63"
+  },
+  {
+    "name": "Birecik",
+    "stateCode": "63"
+  },
+  {
+    "name": "Bozova",
+    "stateCode": "63"
+  },
+  {
+    "name": "Bulutlu",
+    "stateCode": "63"
+  },
+  {
+    "name": "Ceylanpınar",
+    "stateCode": "63"
+  },
+  {
+    "name": "Dorumali",
+    "stateCode": "63"
+  },
+  {
+    "name": "Eyyübiye",
+    "stateCode": "63"
+  },
+  {
+    "name": "Güneren",
+    "stateCode": "63"
+  },
+  {
+    "name": "Halfeti",
+    "stateCode": "63"
+  },
+  {
+    "name": "Haliliye",
+    "stateCode": "63"
+  },
+  {
+    "name": "Hanköy",
+    "stateCode": "63"
+  },
+  {
+    "name": "Harran",
+    "stateCode": "63"
+  },
+  {
+    "name": "Hilvan",
+    "stateCode": "63"
+  },
+  {
+    "name": "Işıklar",
+    "stateCode": "63"
+  },
+  {
+    "name": "Karaköprü",
+    "stateCode": "63"
+  },
+  {
+    "name": "Koyunluca",
+    "stateCode": "63"
+  },
+  {
+    "name": "Küçükkendirci",
+    "stateCode": "63"
+  },
+  {
+    "name": "Mağaralı",
+    "stateCode": "63"
+  },
+  {
+    "name": "Meydankapı",
+    "stateCode": "63"
+  },
+  {
+    "name": "Minare",
+    "stateCode": "63"
+  },
+  {
+    "name": "Muratlı",
+    "stateCode": "63"
+  },
+  {
+    "name": "Öncül",
+    "stateCode": "63"
+  },
+  {
+    "name": "Pekmezli",
+    "stateCode": "63"
+  },
+  {
+    "name": "Şanlıurfa",
+    "stateCode": "63"
+  },
+  {
+    "name": "Seksenören",
+    "stateCode": "63"
+  },
+  {
+    "name": "Siverek",
+    "stateCode": "63"
+  },
+  {
+    "name": "Suruç",
+    "stateCode": "63"
+  },
+  {
+    "name": "Viranşehir",
+    "stateCode": "63"
+  },
+  {
+    "name": "Yukarı Taşyalak",
+    "stateCode": "63"
+  },
+  {
+    "name": "Banaz",
+    "stateCode": "64"
+  },
+  {
+    "name": "Bölme",
+    "stateCode": "64"
+  },
+  {
+    "name": "Eşme",
+    "stateCode": "64"
+  },
+  {
+    "name": "Güllü",
+    "stateCode": "64"
+  },
+  {
+    "name": "İlyaslı",
+    "stateCode": "64"
+  },
+  {
+    "name": "Karahallı",
+    "stateCode": "64"
+  },
+  {
+    "name": "Kızılcasöğüt",
+    "stateCode": "64"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "64"
+  },
+  {
+    "name": "Selçikler",
+    "stateCode": "64"
+  },
+  {
+    "name": "Sivaslı",
+    "stateCode": "64"
+  },
+  {
+    "name": "Ulubey",
+    "stateCode": "64"
+  },
+  {
+    "name": "Uşak",
+    "stateCode": "64"
+  },
+  {
+    "name": "Bahçesaray",
+    "stateCode": "65"
+  },
+  {
+    "name": "Başkale",
+    "stateCode": "65"
+  },
+  {
+    "name": "Çaldıran",
+    "stateCode": "65"
+  },
+  {
+    "name": "Çatak İlçesi",
+    "stateCode": "65"
+  },
+  {
+    "name": "Edremit",
+    "stateCode": "65"
+  },
+  {
+    "name": "Erciş",
+    "stateCode": "65"
+  },
+  {
+    "name": "Gevaş",
+    "stateCode": "65"
+  },
+  {
+    "name": "Gürpınar",
+    "stateCode": "65"
+  },
+  {
+    "name": "İpekyolu",
+    "stateCode": "65"
+  },
+  {
+    "name": "Konalga",
+    "stateCode": "65"
+  },
+  {
+    "name": "Muradiye",
+    "stateCode": "65"
+  },
+  {
+    "name": "Özalp",
+    "stateCode": "65"
+  },
+  {
+    "name": "Saray",
+    "stateCode": "65"
+  },
+  {
+    "name": "Tuşpa",
+    "stateCode": "65"
+  },
+  {
+    "name": "Van",
+    "stateCode": "65"
+  },
+  {
+    "name": "Akdağmadeni",
+    "stateCode": "66"
+  },
+  {
+    "name": "Aydıncık",
+    "stateCode": "66"
+  },
+  {
+    "name": "Boğazlıyan İlçesi",
+    "stateCode": "66"
+  },
+  {
+    "name": "Çandır İlçesi",
+    "stateCode": "66"
+  },
+  {
+    "name": "Çayıralan",
+    "stateCode": "66"
+  },
+  {
+    "name": "Çekerek",
+    "stateCode": "66"
+  },
+  {
+    "name": "Kadışehri",
+    "stateCode": "66"
+  },
+  {
+    "name": "Saraykent",
+    "stateCode": "66"
+  },
+  {
+    "name": "Sarıkaya",
+    "stateCode": "66"
+  },
+  {
+    "name": "Şefaatli İlçesi",
+    "stateCode": "66"
+  },
+  {
+    "name": "Şefaatlı",
+    "stateCode": "66"
+  },
+  {
+    "name": "Sorgun",
+    "stateCode": "66"
+  },
+  {
+    "name": "Yenifakılı",
+    "stateCode": "66"
+  },
+  {
+    "name": "Yerköy",
+    "stateCode": "66"
+  },
+  {
+    "name": "Yozgat",
+    "stateCode": "66"
+  },
+  {
+    "name": "Alaplı",
+    "stateCode": "67"
+  },
+  {
+    "name": "Çaycuma",
+    "stateCode": "67"
+  },
+  {
+    "name": "Devrek",
+    "stateCode": "67"
+  },
+  {
+    "name": "Ereğli",
+    "stateCode": "67"
+  },
+  {
+    "name": "Gökçebey İlçesi",
+    "stateCode": "67"
+  },
+  {
+    "name": "Kilimli",
+    "stateCode": "67"
+  },
+  {
+    "name": "Kozlu",
+    "stateCode": "67"
+  },
+  {
+    "name": "Zonguldak",
+    "stateCode": "67"
+  },
+  {
+    "name": "Ağaçören",
+    "stateCode": "68"
+  },
+  {
+    "name": "Aksaray",
+    "stateCode": "68"
+  },
+  {
+    "name": "Eskil İlçesi",
+    "stateCode": "68"
+  },
+  {
+    "name": "Gülağaç İlçesi",
+    "stateCode": "68"
+  },
+  {
+    "name": "Güzelyurt",
+    "stateCode": "68"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "68"
+  },
+  {
+    "name": "Ortaköy",
+    "stateCode": "68"
+  },
+  {
+    "name": "Sarıyahşi",
+    "stateCode": "68"
+  },
+  {
+    "name": "Sultanhanı",
+    "stateCode": "68"
+  },
+  {
+    "name": "Aydıntepe",
+    "stateCode": "69"
+  },
+  {
+    "name": "Bayburt",
+    "stateCode": "69"
+  },
+  {
+    "name": "Demirözü İlçesi",
+    "stateCode": "69"
+  },
+  {
+    "name": "Pulur",
+    "stateCode": "69"
+  },
+  {
+    "name": "Ayrancı İlçesi",
+    "stateCode": "70"
+  },
+  {
+    "name": "Başyayla",
+    "stateCode": "70"
+  },
+  {
+    "name": "Ermenek",
+    "stateCode": "70"
+  },
+  {
+    "name": "İnönü",
+    "stateCode": "70"
+  },
+  {
+    "name": "Karaman",
+    "stateCode": "70"
+  },
+  {
+    "name": "Kazımkarabekir",
+    "stateCode": "70"
+  },
+  {
+    "name": "Sarıveliler",
+    "stateCode": "70"
+  },
+  {
+    "name": "Bahşılı İlçesi",
+    "stateCode": "71"
+  },
+  {
+    "name": "Balışeyh",
+    "stateCode": "71"
+  },
+  {
+    "name": "Çelebi İlçesi",
+    "stateCode": "71"
+  },
+  {
+    "name": "Delice",
+    "stateCode": "71"
+  },
+  {
+    "name": "Karakeçili",
+    "stateCode": "71"
+  },
+  {
+    "name": "Keskin",
+    "stateCode": "71"
+  },
+  {
+    "name": "Kırıkkale",
+    "stateCode": "71"
+  },
+  {
+    "name": "Sulakyurt",
+    "stateCode": "71"
+  },
+  {
+    "name": "Yahşihan İlçesi",
+    "stateCode": "71"
+  },
+  {
+    "name": "Aviski",
+    "stateCode": "72"
+  },
+  {
+    "name": "Aydınkonak",
+    "stateCode": "72"
+  },
+  {
+    "name": "Balpınar",
+    "stateCode": "72"
+  },
+  {
+    "name": "Batman",
+    "stateCode": "72"
+  },
+  {
+    "name": "Beşiri",
+    "stateCode": "72"
+  },
+  {
+    "name": "Beşpınar",
+    "stateCode": "72"
+  },
+  {
+    "name": "Binatlı",
+    "stateCode": "72"
+  },
+  {
+    "name": "Çevrimova",
+    "stateCode": "72"
+  },
+  {
+    "name": "Demiryol",
+    "stateCode": "72"
+  },
+  {
+    "name": "Doğankavak",
+    "stateCode": "72"
+  },
+  {
+    "name": "Erköklü",
+    "stateCode": "72"
+  },
+  {
+    "name": "Gercüş İlçesi",
+    "stateCode": "72"
+  },
+  {
+    "name": "Gerdzhyush",
+    "stateCode": "72"
+  },
+  {
+    "name": "Hasankeyf",
+    "stateCode": "72"
+  },
+  {
+    "name": "Hisar",
+    "stateCode": "72"
+  },
+  {
+    "name": "Kayapınar",
+    "stateCode": "72"
+  },
+  {
+    "name": "Kozluk İlçesi",
+    "stateCode": "72"
+  },
+  {
+    "name": "Merkez",
+    "stateCode": "72"
+  },
+  {
+    "name": "Oymataş",
+    "stateCode": "72"
+  },
+  {
+    "name": "Sason",
+    "stateCode": "72"
+  },
+  {
+    "name": "Yeniköy",
+    "stateCode": "72"
+  },
+  {
+    "name": "Yenipınar",
+    "stateCode": "72"
+  },
+  {
+    "name": "Yolağzı",
+    "stateCode": "72"
+  },
+  {
+    "name": "Andaç",
+    "stateCode": "73"
+  },
+  {
+    "name": "Bağlıca",
+    "stateCode": "73"
+  },
+  {
+    "name": "Ballı",
+    "stateCode": "73"
+  },
+  {
+    "name": "Balveren",
+    "stateCode": "73"
+  },
+  {
+    "name": "Baraniferho",
+    "stateCode": "73"
+  },
+  {
+    "name": "Başaran",
+    "stateCode": "73"
+  },
+  {
+    "name": "Becuh",
+    "stateCode": "73"
+  },
+  {
+    "name": "Beytüşşebap",
+    "stateCode": "73"
+  },
+  {
+    "name": "Bisbin",
+    "stateCode": "73"
+  },
+  {
+    "name": "Boğazören",
+    "stateCode": "73"
+  },
+  {
+    "name": "Bostancı",
+    "stateCode": "73"
+  },
+  {
+    "name": "Bozalan",
+    "stateCode": "73"
+  },
+  {
+    "name": "Çalışkan",
+    "stateCode": "73"
+  },
+  {
+    "name": "Çardaklı",
+    "stateCode": "73"
+  },
+  {
+    "name": "Cizre",
+    "stateCode": "73"
+  },
+  {
+    "name": "Dicle",
+    "stateCode": "73"
+  },
+  {
+    "name": "Doruklu",
+    "stateCode": "73"
+  },
+  {
+    "name": "Düzova",
+    "stateCode": "73"
+  },
+  {
+    "name": "Girikbedro",
+    "stateCode": "73"
+  },
+  {
+    "name": "Güçlükonak İlçesi",
+    "stateCode": "73"
+  },
+  {
+    "name": "Hilal",
+    "stateCode": "73"
+  },
+  {
+    "name": "İdil",
+    "stateCode": "73"
+  },
+  {
+    "name": "Kızılsu",
+    "stateCode": "73"
+  },
+  {
+    "name": "Kumçatı",
+    "stateCode": "73"
+  },
+  {
+    "name": "Mezraa",
+    "stateCode": "73"
+  },
+  {
+    "name": "Ortabağ",
+    "stateCode": "73"
+  },
+  {
+    "name": "Ortaköy",
+    "stateCode": "73"
+  },
+  {
+    "name": "Pınarbaşı",
+    "stateCode": "73"
+  },
+  {
+    "name": "Razvaliny Ayinvan",
+    "stateCode": "73"
+  },
+  {
+    "name": "Şenoba",
+    "stateCode": "73"
+  },
+  {
+    "name": "Silopi",
+    "stateCode": "73"
+  },
+  {
+    "name": "Şırnak",
+    "stateCode": "73"
+  },
+  {
+    "name": "Sulak",
+    "stateCode": "73"
+  },
+  {
+    "name": "Tililan",
+    "stateCode": "73"
+  },
+  {
+    "name": "Uludere",
+    "stateCode": "73"
+  },
+  {
+    "name": "Uzungeçit",
+    "stateCode": "73"
+  },
+  {
+    "name": "Yemişli",
+    "stateCode": "73"
+  },
+  {
+    "name": "Yeniköy",
+    "stateCode": "73"
+  },
+  {
+    "name": "Amasra",
+    "stateCode": "74"
+  },
+  {
+    "name": "Bartın",
+    "stateCode": "74"
+  },
+  {
+    "name": "Kurucaşile",
+    "stateCode": "74"
+  },
+  {
+    "name": "Ulus İlçesi",
+    "stateCode": "74"
+  },
+  {
+    "name": "Ardahan",
+    "stateCode": "75"
+  },
+  {
+    "name": "Çıldır İlçesi",
+    "stateCode": "75"
+  },
+  {
+    "name": "Damal",
+    "stateCode": "75"
+  },
+  {
+    "name": "Göle",
+    "stateCode": "75"
+  },
+  {
+    "name": "Hanak",
+    "stateCode": "75"
+  },
+  {
+    "name": "Posof",
+    "stateCode": "75"
+  },
+  {
+    "name": "Iğdır",
+    "stateCode": "76"
+  },
+  {
+    "name": "Karakoyunlu",
+    "stateCode": "76"
+  },
+  {
+    "name": "Tuzluca İlçesi",
+    "stateCode": "76"
+  },
+  {
+    "name": "Altınova",
+    "stateCode": "77"
+  },
+  {
+    "name": "Armutlu İlçesi",
+    "stateCode": "77"
+  },
+  {
+    "name": "Çiftlikköy",
+    "stateCode": "77"
+  },
+  {
+    "name": "Çınarcık",
+    "stateCode": "77"
+  },
+  {
+    "name": "Kadıköy",
+    "stateCode": "77"
+  },
+  {
+    "name": "Kaytazdere",
+    "stateCode": "77"
+  },
+  {
+    "name": "Kılıç",
+    "stateCode": "77"
+  },
+  {
+    "name": "Kocadere",
+    "stateCode": "77"
+  },
+  {
+    "name": "Koruköy",
+    "stateCode": "77"
+  },
+  {
+    "name": "Taşköprü",
+    "stateCode": "77"
+  },
+  {
+    "name": "Termal İlçesi",
+    "stateCode": "77"
+  },
+  {
+    "name": "Yalova",
+    "stateCode": "77"
+  },
+  {
+    "name": "Eflani",
+    "stateCode": "78"
+  },
+  {
+    "name": "Eskipazar İlçesi",
+    "stateCode": "78"
+  },
+  {
+    "name": "Gözyeri",
+    "stateCode": "78"
+  },
+  {
+    "name": "Karabük",
+    "stateCode": "78"
+  },
+  {
+    "name": "Ovacık İlçesi",
+    "stateCode": "78"
+  },
+  {
+    "name": "Safranbolu",
+    "stateCode": "78"
+  },
+  {
+    "name": "Yenice",
+    "stateCode": "78"
+  },
+  {
+    "name": "Elbeyli",
+    "stateCode": "79"
+  },
+  {
+    "name": "Kilis",
+    "stateCode": "79"
+  },
+  {
+    "name": "Musabeyli",
+    "stateCode": "79"
+  },
+  {
+    "name": "Polateli İlçesi",
+    "stateCode": "79"
+  },
+  {
+    "name": "Bahçe İlçesi",
+    "stateCode": "80"
+  },
+  {
+    "name": "Düziçi İlçesi",
+    "stateCode": "80"
+  },
+  {
+    "name": "Hasanbeyli",
+    "stateCode": "80"
+  },
+  {
+    "name": "Kadirli",
+    "stateCode": "80"
+  },
+  {
+    "name": "Osmaniye",
+    "stateCode": "80"
+  },
+  {
+    "name": "Sumbas İlçesi",
+    "stateCode": "80"
+  },
+  {
+    "name": "Toprakkale",
+    "stateCode": "80"
+  },
+  {
+    "name": "Akçakoca",
+    "stateCode": "81"
+  },
+  {
+    "name": "Çilimli İlçesi",
+    "stateCode": "81"
+  },
+  {
+    "name": "Cumayeri İlçesi",
+    "stateCode": "81"
+  },
+  {
+    "name": "Düzce",
+    "stateCode": "81"
+  },
+  {
+    "name": "Gölyaka İlçesi",
+    "stateCode": "81"
+  },
+  {
+    "name": "Gümüşova İlçesi",
+    "stateCode": "81"
+  },
+  {
+    "name": "Kaynaşlı İlçesi",
+    "stateCode": "81"
+  },
+  {
+    "name": "Yığılca İlçesi",
+    "stateCode": "81"
+  }
+]

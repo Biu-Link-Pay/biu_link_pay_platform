@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Ishqoshim",
+    "stateCode": "GB"
+  },
+  {
+    "name": "Khorugh",
+    "stateCode": "GB"
+  },
+  {
+    "name": "Murghob",
+    "stateCode": "GB"
+  },
+  {
+    "name": "Nohiyai Shughnon",
+    "stateCode": "GB"
+  },
+  {
+    "name": "Abdurahmoni Jomí",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Boshchorbogh",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Bŭstonqal’a",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Chubek",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Danghara",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Dŭstí",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Farkhor",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Gharavŭtí",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Jilikŭl",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kirov",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kolkhozobod",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kŭlob",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Moskovskiy",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Mŭ’minobod",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Nohiyai Kolkhozobod",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Nohiyai Panj",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Nohiyai Vakhsh",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Norak",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Orzu",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Panj",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Qŭrghonteppa",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Shahritus",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Sovet",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Tartiki",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Vakhsh",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Vose’",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Yovon",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Darband",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Hisor",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Karakenja",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Khodzha-Maston",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Novobod",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Obigarm",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Rasht",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Roghun",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Shahrinav",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Tagob",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Tursunzoda",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Vahdat",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Vahdat District",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Varzob",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Varzob District",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Adrasmon",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Ayní",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Bŭston",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Chkalov",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Ghafurov",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Isfara",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Istaravshan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Khŭjand",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kim",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Konibodom",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Konsoy",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Neftobod",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Nohiyai Konibodom",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Nov",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Oltintopkan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Pakhtakoron",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Palos",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Panjakent",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Proletar",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Quruqsoy",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Shaydon",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Shŭrob",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Taboshar",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Vorukh",
+    "stateCode": "SU"
+  }
+]

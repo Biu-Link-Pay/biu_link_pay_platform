@@ -146,6 +146,10 @@
                 <span>{{ countdown }}s</span>
               </div>
             </div>
+            <div v-if="rateResult?.cryptoDetail?.cryptoToUsdTRate" class="text-xs text-gray-600 dark:text-gray-400">
+              1 {{ cardStore.selectedCardBin?.cardCurrency || 'USD' }} ≈ {{ rateResult.cryptoDetail.cryptoToUsdTRate
+              }} {{ selectedCrypto?.crypto.name }}
+            </div>
             <div class="flex items-center justify-between text-sm">
               <span class="text-gray-700 dark:text-gray-300">Transaction Fee</span>
               <span class="text-gray-700 dark:text-gray-300">
@@ -352,6 +356,11 @@
                 <span>{{ countdown }}s</span>
               </div>
             </div>
+            <div v-if="rateResult?.cryptoDetail?.cryptoToUsdTRate"
+              class="text-xs text-gray-600 dark:text-gray-400 mt-2">
+              1 {{ cardStore.selectedCardBin?.cardCurrency || 'USD' }} ≈ {{ rateResult.cryptoDetail.cryptoToUsdTRate }}
+              {{ selectedCrypto?.crypto.name }}
+            </div>
             <div class="flex items-center justify-between text-xs mt-2">
               <span class="text-gray-600 dark:text-gray-400">Transaction Fee</span>
               <span class="text-gray-600 dark:text-gray-400">
@@ -444,31 +453,31 @@ const actualCryptoAmount = ref<string>('')
 
 // Check if payment amount is within selected crypto's limit
 const isAmountWithinLimit = computed(() => {
-  if (!selectedCrypto.value || !actualCryptoAmount.value) return false
+  if (!selectedCrypto.value) return false
 
-  // Convert crypto amount to number for comparison
-  const cryptoAmount = parseFloat(actualCryptoAmount.value)
-  if (isNaN(cryptoAmount)) return false
+  // Use payAmount directly for comparison (without fees)
+  const paymentAmount = payAmount.value
+  if (isNaN(paymentAmount)) return false
 
   const minLimit = selectedCrypto.value.minLimit
   const maxLimit = selectedCrypto.value.maxLimit
-  return cryptoAmount >= minLimit && cryptoAmount <= maxLimit
+  return paymentAmount >= minLimit && paymentAmount <= maxLimit
 })
 
 // Get limit error message
 const limitErrorMessage = computed(() => {
-  if (!selectedCrypto.value || !actualCryptoAmount.value) return ''
+  if (!selectedCrypto.value) return ''
 
-  const cryptoAmount = parseFloat(actualCryptoAmount.value)
-  if (isNaN(cryptoAmount)) return ''
+  const paymentAmount = payAmount.value
+  if (isNaN(paymentAmount)) return ''
 
   const minLimit = selectedCrypto.value.minLimit
   const maxLimit = selectedCrypto.value.maxLimit
 
-  if (cryptoAmount < minLimit) {
+  if (paymentAmount < minLimit) {
     return `Payment amount must be at least ${minLimit} ${selectedCrypto.value.crypto.name}`
   }
-  if (cryptoAmount > maxLimit) {
+  if (paymentAmount > maxLimit) {
     return `Payment amount exceeds maximum limit of ${maxLimit} ${selectedCrypto.value.crypto.name}`
   }
   return ''

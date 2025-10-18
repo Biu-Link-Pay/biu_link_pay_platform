@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Belize City",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "San Pedro",
+    "stateCode": "BZ"
+  },
+  {
+    "name": "Belmopan",
+    "stateCode": "CY"
+  },
+  {
+    "name": "Benque Viejo el Carmen",
+    "stateCode": "CY"
+  },
+  {
+    "name": "San Ignacio",
+    "stateCode": "CY"
+  },
+  {
+    "name": "Valley of Peace",
+    "stateCode": "CY"
+  },
+  {
+    "name": "Corozal",
+    "stateCode": "CZL"
+  },
+  {
+    "name": "Hopelchén",
+    "stateCode": "OW"
+  },
+  {
+    "name": "Orange Walk",
+    "stateCode": "OW"
+  },
+  {
+    "name": "Shipyard",
+    "stateCode": "OW"
+  },
+  {
+    "name": "Dangriga",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Placencia",
+    "stateCode": "SC"
+  },
+  {
+    "name": "Punta Gorda",
+    "stateCode": "TOL"
+  }
+]

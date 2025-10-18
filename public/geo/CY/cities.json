@@ -1,0 +1,382 @@
+[
+  {
+    "name": "Akáki",
+    "stateCode": "01"
+  },
+  {
+    "name": "Alámpra",
+    "stateCode": "01"
+  },
+  {
+    "name": "Aredioú",
+    "stateCode": "01"
+  },
+  {
+    "name": "Astromerítis",
+    "stateCode": "01"
+  },
+  {
+    "name": "Dáli",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ergátes",
+    "stateCode": "01"
+  },
+  {
+    "name": "Géri",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kakopetriá",
+    "stateCode": "01"
+  },
+  {
+    "name": "Káto Defterá",
+    "stateCode": "01"
+  },
+  {
+    "name": "Káto Pýrgos",
+    "stateCode": "01"
+  },
+  {
+    "name": "Klírou",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kokkinotrimithiá",
+    "stateCode": "01"
+  },
+  {
+    "name": "Léfka",
+    "stateCode": "01"
+  },
+  {
+    "name": "Lýmpia",
+    "stateCode": "01"
+  },
+  {
+    "name": "Lythrodóntas",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mámmari",
+    "stateCode": "01"
+  },
+  {
+    "name": "Méniko",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mórfou",
+    "stateCode": "01"
+  },
+  {
+    "name": "Nicosia",
+    "stateCode": "01"
+  },
+  {
+    "name": "Nicosia Municipality",
+    "stateCode": "01"
+  },
+  {
+    "name": "Páno Defterá",
+    "stateCode": "01"
+  },
+  {
+    "name": "Péra",
+    "stateCode": "01"
+  },
+  {
+    "name": "Peristeróna",
+    "stateCode": "01"
+  },
+  {
+    "name": "Psimolofou",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tséri",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ágios Tomás",
+    "stateCode": "02"
+  },
+  {
+    "name": "Erími",
+    "stateCode": "02"
+  },
+  {
+    "name": "Germasógeia",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kyperoúnta",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lemesós",
+    "stateCode": "02"
+  },
+  {
+    "name": "Limassol",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mouttagiáka",
+    "stateCode": "02"
+  },
+  {
+    "name": "Páchna",
+    "stateCode": "02"
+  },
+  {
+    "name": "Páno Polemídia",
+    "stateCode": "02"
+  },
+  {
+    "name": "Parekklisha",
+    "stateCode": "02"
+  },
+  {
+    "name": "Peléndri",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pissoúri",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pyrgos",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sotíra",
+    "stateCode": "02"
+  },
+  {
+    "name": "Soúni-Zanakiá",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ýpsonas",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ágios Týchon",
+    "stateCode": "03"
+  },
+  {
+    "name": "Aradíppou",
+    "stateCode": "03"
+  },
+  {
+    "name": "Athíenou",
+    "stateCode": "03"
+  },
+  {
+    "name": "Dhromolaxia",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kíti",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kofínou",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kolossi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kórnos",
+    "stateCode": "03"
+  },
+  {
+    "name": "Larnaca",
+    "stateCode": "03"
+  },
+  {
+    "name": "Livádia",
+    "stateCode": "03"
+  },
+  {
+    "name": "Meneou",
+    "stateCode": "03"
+  },
+  {
+    "name": "Mosfilotí",
+    "stateCode": "03"
+  },
+  {
+    "name": "Pérgamos",
+    "stateCode": "03"
+  },
+  {
+    "name": "Perivólia",
+    "stateCode": "03"
+  },
+  {
+    "name": "Psevdás",
+    "stateCode": "03"
+  },
+  {
+    "name": "Pýla",
+    "stateCode": "03"
+  },
+  {
+    "name": "Tersefánou",
+    "stateCode": "03"
+  },
+  {
+    "name": "Troúlloi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Voróklini",
+    "stateCode": "03"
+  },
+  {
+    "name": "Xylofágou",
+    "stateCode": "03"
+  },
+  {
+    "name": "Xylotymbou",
+    "stateCode": "03"
+  },
+  {
+    "name": "Acherítou",
+    "stateCode": "04"
+  },
+  {
+    "name": "Áchna",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ammochostos Municipality",
+    "stateCode": "04"
+  },
+  {
+    "name": "Avgórou",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ayia Napa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Derýneia",
+    "stateCode": "04"
+  },
+  {
+    "name": "Famagusta",
+    "stateCode": "04"
+  },
+  {
+    "name": "Frénaros",
+    "stateCode": "04"
+  },
+  {
+    "name": "Lefkónoiko",
+    "stateCode": "04"
+  },
+  {
+    "name": "Leonárisso",
+    "stateCode": "04"
+  },
+  {
+    "name": "Liopétri",
+    "stateCode": "04"
+  },
+  {
+    "name": "Paralímni",
+    "stateCode": "04"
+  },
+  {
+    "name": "Protaras",
+    "stateCode": "04"
+  },
+  {
+    "name": "Rizokárpaso",
+    "stateCode": "04"
+  },
+  {
+    "name": "Tríkomo",
+    "stateCode": "04"
+  },
+  {
+    "name": "Argáka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Chlórakas",
+    "stateCode": "05"
+  },
+  {
+    "name": "Emba",
+    "stateCode": "05"
+  },
+  {
+    "name": "Geroskipou",
+    "stateCode": "05"
+  },
+  {
+    "name": "Geroskípou (quarter)",
+    "stateCode": "05"
+  },
+  {
+    "name": "Geroskípou Municipality",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kissonerga",
+    "stateCode": "05"
+  },
+  {
+    "name": "Koloni",
+    "stateCode": "05"
+  },
+  {
+    "name": "Konia",
+    "stateCode": "05"
+  },
+  {
+    "name": "Mesógi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Paphos",
+    "stateCode": "05"
+  },
+  {
+    "name": "Pégeia",
+    "stateCode": "05"
+  },
+  {
+    "name": "Pólis",
+    "stateCode": "05"
+  },
+  {
+    "name": "Tála",
+    "stateCode": "05"
+  },
+  {
+    "name": "Tsáda",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kyrenia",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kyrenia Municipality",
+    "stateCode": "06"
+  },
+  {
+    "name": "Lápithos",
+    "stateCode": "06"
+  }
+]

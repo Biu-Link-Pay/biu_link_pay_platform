@@ -1,0 +1,12506 @@
+[
+  {
+    "name": "Bardo",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Bielany Wrocławskie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Bielawa",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Bierutów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Biskupin",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Bogatynia",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Boguszów-Gorce",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Bolesławiec",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Bolków",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Bozkow",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Brzeg Dolny",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Budzów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Bystrzyca",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Bystrzyca Kłodzka",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Chocianów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Chojnów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Ciechów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Cieplice Śląskie Zdrój",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Ciepłowody",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Cieszków",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Czarny Bór",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Czernica",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Dąbie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Długołęka",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Dobroszyce",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Duszniki-Zdrój",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Dziadowa Kłoda",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Dziećmorowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Dzierżoniów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Gądów Mały",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Gaworzyce",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Głogów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Głuszyca",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Głuszyca Górna",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Gniechowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Góra",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Grabiszyn",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Grabiszynek",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Grębocice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Gromadka",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Gryfów Śląski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Henryków",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Janowice Wielkie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Jarnołtów-Jerzmanowo",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Jawor",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Jaworzyna Śląska",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Jedlina-Zdrój",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Jelcz",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Jelcz Laskowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Jelenia Góra",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Jeżów Sudecki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Jordanów Śląski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Jugów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kamieniec Wrocławski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kamieniec Ząbkowicki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kamienna Góra",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Karłowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Karpacz",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kąty Wrocławskie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kiełczów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kłodzko",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kobierzyce",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kotla",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kowale-Popiele",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kowary",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kozanów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Krośnice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Krzeszów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Krzyki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Księże Małe-Księże Wielkie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kudowa-Zdrój",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Kunice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Lądek-Zdrój",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Łagiewniki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Łagów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Legnica",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Legnickie Pole",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Leśna",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Leśnica-Ratyń-Pustki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Lewin Kłodzki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Lubań",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Lubawka",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Lubin",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Lubomierz",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Ludwikowice Kłodzkie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Lwówek Śląski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Malczyce",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Marciszów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Marszowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Maślice Małe",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Maślice Wielkie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Międzybórz",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Międzylesie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Miękinia",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Mieroszów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Milicz",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Miłkowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Mirków",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Mirsk",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Mrozów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Mysłakowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Niemcza",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Nowa Ruda",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Nowogrodziec",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Oborniki Śląskie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Oława",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Oleśnica",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Olszanica",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Olszyna",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Osiedle Henrykowskie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Osiedle Kosmonautów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Osiek",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Ostroszowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Partynice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Paszowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Pawłowice-Kłokoczyce",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Piechowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Pieńsk",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Pieszyce",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Piława Górna",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Pilczyce",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Pisarzowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Podgórzyn",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Polanica-Zdrój",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Polkowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Poświętne",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat bolesławiecki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat dzierżoniowski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat głogowski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat górowski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat jaworski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat jeleniogórski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat kamiennogórski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat kłodzki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat legnicki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat lubański",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat lubiński",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat lwówecki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat milicki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat oławski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat oleśnicki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat polkowicki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat średzki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat strzeliński",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat świdnicki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat trzebnicki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat wałbrzyski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat wołowski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat wrocławski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat ząbkowicki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat zgorzelecki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powiat złotoryjski",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powstańców Śląskich Wschód",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Powstańców Śląskich Zachód-Centrum Południow",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Pracze Odrzańskie-Janówek",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Prochowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Prusice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Przemków",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Przeworno",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Psary",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Psie Pole Południe-Kiełczów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Radków",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Radwanice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Ratowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Rejon alei Kromera",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Rejon placu Grunwaldzkiego",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Rejon placu Świętego Macieja",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Rejon ulicy Borowskiej-Południe",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Rejon ulicy Klęczkowskiej",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Rejon ulicy Mieleckiej",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Rejon ulicy Saperów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Rejon ulicy Traugutta",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Różanka-Polanka",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Rudna",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Ścinawa",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Sępolno",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Siechnice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Siekierczyn",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Smolec",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Sobótka",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Sołtysowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Sosnówka",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Środa Śląska",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Stabłowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Stanowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Stara Kamienica",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Stare Bogaczowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Stoszowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Strachocin-Wojnów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Stronie Śląskie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Strzegom",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Strzelin",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Sulików",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Sułów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Świdnica",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Świebodzice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Świeradów-Zdrój",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Świerzawa",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Święta Katarzyna",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Swojczyce",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Syców",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Szczawno-Zdrój",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Szczepanów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Szczytna",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Szklarska Poręba",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Trzebnica",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Twardogóra",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Tyniec Mały",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Uciechów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Udanin",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wałbrzych",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Walim",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wąsosz",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Węgliniec",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wiązów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Widawa-Lipa Piotrowska-Polanowice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wierzbno",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wilczyce",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wilków",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wińsko",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wleń",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wojcieszów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wojszyce",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wołów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Wrocław",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Ząbkowice Śląskie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Zacisze",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Zagrodno",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Zakrzów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Zalesie i Stadion",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Żarów",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Żerniki Wrocławskie",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Zgorzelec",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Zgorzelisko",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Ziębice",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Złotniki",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Złotoryja",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Złoty Stok",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Żmigród",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Żórawina",
+    "stateCode": "DS"
+  },
+  {
+    "name": "Aleksandrów Kujawski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Barcin",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Bartniczka",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Baruchowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Białe Błota",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Bobrowniki",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Bobrowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Boniewo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Brodnica",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Brześć Kujawski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Brzozie",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Brzuze",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Bukowiec",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Bydgoszcz",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Bytoń",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Cekcyn",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Chełmno",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Chełmża",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Choceń",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Chodecz",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Chrostkowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Ciechocin",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Ciechocinek",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Czerniewice",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Czernikowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Dąbrowa",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Dąbrowa Chełmińska",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Dębowa Łąka",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Dobre",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Dobrzyń nad Wisłą",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Drzycim",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Fabianki",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Fordon",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Gąsawa",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Gniewkowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Golub-Dobrzyń",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Górzno",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Gostycyn",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Grudziądz",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Gruta",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Inowrocław",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Izbica Kujawska",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Jabłonowo Pomorskie",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Janikowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Janowiec Wielkopolski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Jeżewo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Jeziora Wielkie",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Kamień Krajeński",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Kcynia",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Kęsowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Kikół",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Koronowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Kowal",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Kowalewo Pomorskie",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Kruszwica",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Łabiszyn",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Łasin",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Lipno",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Lisewo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Lniano",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Lubanie",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Łubianka",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Lubicz Dolny",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Lubicz Górny",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Lubień Kujawski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Lubiewo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Lubraniec",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Łysomice",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Mogilno",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Mrocza",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Nakło nad Notecią",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Nieszawa",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Nowa Wieś Wielka",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Nowe",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Obrowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Osie",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Osięciny",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Osiek",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Osielsko",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Ostrowite",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Pakość",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Piotrków Kujawski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Płużnica",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat aleksandrowski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat brodnicki",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat bydgoski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat chełmiński",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat golubsko-dobrzyński",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat grudziądzki",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat inowrocławski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat lipnowski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat mogileński",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat nakielski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat radziejowski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat rypiński",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat sępoleński",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat świecki",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat toruński",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat tucholski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat wąbrzeski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat włocławski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Powiat żniński",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Pruszcz",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Raciążek",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Radomin",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Radziejów",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Radzyń Chełmiński",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Rogowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Rogóźno",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Rypin",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Sadki",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Sępólno Krajeńskie",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Sicienko",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Skępe",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Skrwilno",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Ślesin",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Śliwice",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Solec Kujawski",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Sośno",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Strzelno",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Świecie",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Świecie nad Osą",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Świedziebnia",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Świekatowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Sypniewo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Szubin",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Tłuchowo",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Topólka",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Toruń",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Tuchola",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Unisław",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Wąbrzeźno",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Waganiec",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Wąpielsk",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Warlubie",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Więcbork",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Wielgie",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Wielka Nieszawka",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Wierzchosławice",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Włocławek",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Zbójno",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Zławieś Wielka",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Złotniki Kujawskie",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Żnin",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Babimost",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Bledzew",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Bobrowice",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Bogdaniec",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Bojadła",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Brody",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Brójce",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Bytnica",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Bytom Odrzański",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Cybinka",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Czerwieńsk",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Dąbie",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Deszczno",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Dobiegniew",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Drezdenko",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Gorzów Wielkopolski",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Górzyca",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Gozdnica",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Gubin",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Iłowa",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Jasień",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Jenin",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Kargowa",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Klenica",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Kłodawa",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Kolsko",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Konotop",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Kostrzyn nad Odrą",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Kożuchów",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Krosno Odrzańskie",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Krzeszyce",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Kunice Żarskie",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Łagów",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Łęknica",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Lipinki Łużyckie",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Lubiszyn",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Lubniewice",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Lubrza",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Lubsko",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Małomice",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Maszewo",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Międzylesie",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Międzyrzecz",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Nowa Sól",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Nowe Miasteczko",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Nowogród Bobrzański",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Ochla",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Ośno Lubuskie",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Otyń",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat gorzowski",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat krośnieński",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat międzyrzecki",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat nowosolski",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat słubicki",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat strzelecko-drezdenecki",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat sulęciński",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat świebodziński",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat wschowski",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat żagański",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat żarski",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Powiat zielonogórski",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Przewóz",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Przyborów",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Przytoczna",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Pszczew",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Rzepin",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Santok",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Siedlisko",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Sieniawa",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Sieniawa Żarska",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Skąpe",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Skwierzyna",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Sława",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Słońsk",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Słubice",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Stare Kurowo",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Strzelce Krajeńskie",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Sulechów",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Świdnica",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Świebodzin",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Szczaniec",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Szlichtyngowa",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Szprotawa",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Torzym",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Trzciel",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Trzebiechów",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Trzebiel",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Tuplice",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Witnica",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Wschowa",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Wymiarki",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Zabór",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Żagań",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Żary",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Zbąszynek",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Zielona Góra",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Zwierzyń",
+    "stateCode": "LB"
+  },
+  {
+    "name": "Aleksandrów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Aleksandrów Łódzki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Andrespol",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Będków",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Bedlno",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Bełchatów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Biała Rawska",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Białaczów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Bielawy",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Błaszki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Bobrowniki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Bolesławiec",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Bolimów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Brąszewice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Brójce",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Brzeziny",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Brzeźnio",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Buczek",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Budziszewice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Burzenin",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Chąśno",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Cielądz",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Czarnocin",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Czarnożyły",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Czastary",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Czerniewice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Dąbrowice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Dalików",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Daszyna",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Dłutów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Dmosin",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Dobroń",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Domaniewice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Drużbice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Drzewica",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Działoszyn",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Galewice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Gałków Mały",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Gidle",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Głowno",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Głuchów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Godzianów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Gomunice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Góra Świętej Małgorzaty",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Gorzkowice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Goszczanów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Grabica",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Grabów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Inowłódz",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Jeżów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Kamieńsk",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Kawęczyn Nowy",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Kiernozia",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Kleszczów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Klonowa",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Kluki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Kocierzew Południowy",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Koluszki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Konstantynów Łódzki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Kowiesy",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Krośniewice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Krzyżanów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Ksawerów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Kutno",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Łanięta",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Łask",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Łęczyca",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Łęki Szlacheckie",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Lgota Wielka",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Lipce Reymontowskie",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Łódź",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Łowicz",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Łubnice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Lubochnia",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Lutomiersk",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Lututów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Łyszkowice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Maków",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Mniszków",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Mokrsko",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Moszczenica",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Nieborów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Nowe Ostrowy",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Opoczno",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Oporów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Osjaków",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Ostrowy",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Ożarów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Ozorków",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Pabianice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Pajęczno",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Paradyż",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Parzęczew",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Pątnów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Pęczniew",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Piątek",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Piotrków Trybunalski",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Pławno",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Poddębice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Poświętne",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat bełchatowski",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat brzeziński",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat kutnowski",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat łaski",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat łęczycki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat łódzki wschodni",
+    "stateCode": "LD"
+  },
+  {
+    "name": "powiat Łowicki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat opoczyński",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat pabianicki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat pajęczański",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat piotrkowski",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat poddębicki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat radomszczański",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat rawski",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat sieradzki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat skierniewicki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat tomaszowski",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat wieluński",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat wieruszowski",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat zduńskowolski",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Powiat zgierski",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Przedbórz",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Radomsko",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Rawa Mazowiecka",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Ręczno",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Regnów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Rogów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Rokiciny",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Rokiciny-Kolonia",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Rozprza",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Rusiec",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Rzeczyca",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Rzgów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Sadkowice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Sędziejowice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Siemkowice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Sieradz",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Skierniewice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Skomlin",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Sławno",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Słupia",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Sokolniki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Starowa Góra",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Stryków",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Strzelce",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Strzelce Wielkie",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Sulejów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Sulmierzyce",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Świnice Warckie",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Szadek",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Szczerców",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Tomaszów Mazowiecki",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Tuszyn",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Ujazd",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Uniejów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Walichnowy",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Warta",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Wartkowice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Widawa",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Wieluń",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Wieruszów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Wierzchlas",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Witonia",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Wodzierady",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Wola Krzysztoporska",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Wolbórz",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Wróblew",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Zadzim",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Zapolice",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Żarnów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Zduńska Wola",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Żelechlinek",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Zelów",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Zgierz",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Złoczew",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Żychlin",
+    "stateCode": "LD"
+  },
+  {
+    "name": "Abramów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Adamów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Aleksandrów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Annopol",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Baranów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Batorz",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Bełżec",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Bełżyce",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Biała Podlaska",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Biłgoraj",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Biszcza",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Borki",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Borzechów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Bychawa",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Chełm",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Chodel",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Chrzanów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Cyców",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Czemierniki",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Dęblin",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Dębowa Kłoda",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Dołhobyczów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Dorohusk",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Drelów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Dubienka",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Dzwola",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Fajsławice",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Firlej",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Frampol",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Garbów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Godziszów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Godziszów Pierwszy",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Goraj",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Gorzków",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Gościeradów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Grabowiec",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Hańsk",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Horodło",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Hrubieszów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Izbica",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Jabłoń",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Jabłonna",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Jakubowice Murowane",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Janów Lubelski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Janów Podlaski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Janowiec",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Jarczów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Jastków",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Jeziorzany",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Józefów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Józefów nad Wisłą",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Kamionka",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Karczmiska",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Kazimierz Dolny",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Kłoczew",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Kock",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Kodeń",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Komarów-Osada",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Komarówka Podlaska",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Końskowola",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Konstantynów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Kozubszczyzna",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Kraśniczyn",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Kraśnik",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Krasnobród",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Krasnystaw",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Krynice",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Krzczonów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Krzywda",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Księżomierz",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Księżpol",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Kurów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Łabunie",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Łaszczów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Łaziska",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Łęczna",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Leśna Podlaska",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Łomazy",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Łopiennik Górny",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Lubartów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Lublin",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Lubycza Królewska",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Ludwin",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Łuków",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Łukowa",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Markuszów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Mełgiew",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Miączyn",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Michałów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Michów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Międzyrzec Podlaski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Milanów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Milejów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Mircze",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Modliborzyce",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Nałęczów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Niedrzwica Duża",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Niedźwiada",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Nielisz",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Niemce",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Nowodwór",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Obsza",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Opole Lubelskie",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Ostrów Lubelski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Ostrówek",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Parczew",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Piaski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Piszczac",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Podedwórze",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Pokrówka",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Poniatowa",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Potok Górny",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Potok Wielki",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat bialski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat biłgorajski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat chełmski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat hrubieszowski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat janowski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat kraśnicki",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat krasnostawski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat łęczyński",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat lubartowski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat lubelski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat łukowski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat opolski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat parczewski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat puławski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat radzyński",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat rycki",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat świdnicki",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat tomaszowski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat włodawski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Powiat zamojski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Przytoczno",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Puchaczów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Puławy",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Rachanie",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Radecznica",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Radzyń Podlaski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Rejowiec",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Rejowiec Fabryczny",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Rogóźno",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Rokitno",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Ruda-Huta",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Rudnik",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Rybczewice",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Ryki",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Rzeczyca",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Sawin",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Serniki",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Serokomla",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Siemień",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Siennica Różana",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Sitno",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Skierbieszów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Sławatycze",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Sosnowica",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Sosnówka",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Spiczyn",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Stary Zamość",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Stężyca",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Stoczek Łukowski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Strzyżowice",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Sułów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Susiec",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Świdnik",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Szastarka",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Szczebrzeszyn",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Tarnawatka",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Tarnogród",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Telatyn",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Terespol",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Tereszpol",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Tomaszów Lubelski",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Trawniki",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Trzebieszów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Trzydnik Duży",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Turobin",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Tyszowce",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Ułęż",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Ulhówek",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Urszulin",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Urzędów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Uścimów Stary",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wąwolnica",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Werbkowice",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wilkołaz",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wilków",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wisznice",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Włodawa",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wohyń",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wojciechów",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wojcieszków",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wojsławice",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wola Sernicka",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wola Uhruska",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wysokie",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Zakrzew",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Zakrzówek",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Zamch",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Zamość",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Żółkiewka",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Zwierzyniec",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Żyrzyn",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Alwernia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Andrychów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Babice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bachowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Balice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Balin",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Barwałd Górny",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Barwałd Średni",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bębło",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bęczarka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Białka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Białka Tatrzańska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Biały Dunajec",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Biecz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bieńkówka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Binarowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Biskupice Radłowskie",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bobowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bochnia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bolechowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bolęcin",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bolesław",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Borek",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Borzęcin",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Borzęta",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Brodła",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Brody",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Brzączowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Brzesko",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Brzeszcze",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Brzezinka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Brzeźnica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Budzów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bukowina Tatrzańska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bukowno",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bulowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bystra",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Chełmek",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Chełmiec",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Chocznia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Chrzanów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Chyżne",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ciężkowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Czarna Góra",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Czarnochowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Czarny Dunajec",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Czchów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Czernichów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Czułów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Dąbrowa Tarnowska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Dębno",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Dobczyce",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Dobra",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Dziewin",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Filipowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Frydman",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Frydrychowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Gdów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Giebułtów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Gierałtowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Głogoczów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Gnojnik",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Gorenice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Gorlice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Gręboszów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Grojec",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Gromnik",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Gruszów Wielki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Grybów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Grzechynia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Harbutowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Inwałd",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Iwkowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Izdebnik",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jabłonka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jadowniki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jadowniki Mokre",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Janowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jaroszowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jasień",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jasienica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jastrzębia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jawornik",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jerzmanowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jodłówka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jodłówka-Wałki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Jordanów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Juszczyn",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kalwaria Zebrzydowska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kamień",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kamienica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kamionka Wielka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kasina Wielka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kaszów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kęty",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kłaj",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Klecza Dolna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Klikuszowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Klimontów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Klucze",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kluszkowce",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kobylanka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kokotów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Korzenna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kościelisko",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Koszyce",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Koszyce Wielkie",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kozłów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kraków",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krościenko nad Dunajcem",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krośnica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krynica-Zdrój",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kryspinów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krzczonów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krzęcin",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krzeczów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krzeszów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krzeszowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krzyszkowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Krzywaczka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kuków",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Kwaczała",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łabowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Lachowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łącko",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łączany",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Lanckorona",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łapanów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łapczyca",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łapsze Niżne",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Lasek",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Laskowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Leńcze",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Leśnica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łętownia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Libertów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Libiąż",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Limanowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Lipinki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Lipnica Mała",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Lipnica Wielka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Lipnik",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Lisia Góra",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Liszki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łopuszna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łososina Dolna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Lubień",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Lubomierz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ludźmierz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łukowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łukowica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Luszowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Łużna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Maków Podhalański",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Malec",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Maniowy",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Maszkienice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mędrzechów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mętków",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Michałowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Miechów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Miechów Charsznica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Miękinia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mników",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Modlnica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Modlniczka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mogilany",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Moszczenica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mszana Dolna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mszana Górna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Muszyna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Myślachowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Myślenice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Naprawa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nawojowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nidek",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Niedomice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Niedzica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Niedźwiedź",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Niepołomice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nowa Góra",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nowa Wieś",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nowe Brzesko",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nowy Sącz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nowy Targ",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nowy Wiśnicz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ochojno",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ochotnica Dolna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Okocim",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Olesno",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Olkusz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ołpiny",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Olszana",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Olszówka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Osieczany",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Osiek",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Osielec",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ostrężnica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ostrowsko",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Oświęcim",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Palcza",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Pawlikowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Pcim",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Piekary",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Piekielnik",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Piwniczna-Zdrój",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Płaza",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Pleśna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Podegrodzie",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Podłęże",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Podwilk",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Pogórska Wola",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Pogorzyce",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Polanka Wielka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ponikiew",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Porąbka Uszewska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Poręba",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Poręba Spytkowska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Poręba Wielka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Poronin",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat bocheński",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat brzeski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat chrzanowski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat dąbrowski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat gorlicki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat krakowski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat limanowski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat miechowski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat myślenicki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat nowosądecki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat nowotarski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat olkuski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat oświęcimski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat proszowicki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat suski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat tarnowski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat tatrzański",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat wadowicki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Powiat wielicki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Proszowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Przecieszyn",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Przeciszów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Przeginia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Przyborów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Przytkowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Psary",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Raba Wyżna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rabka-Zdrój",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Racławice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rączna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Radgoszcz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Radłów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Radocza",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Radziszów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rajsko",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Regulice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Roczyny",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rokiciny",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ropa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rudawa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rudnik",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rusocice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ryczów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Ryglice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rytro",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rząska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rzepiennik Strzyżewski",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rzeszotary",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rzezawa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rzozów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rzyki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sanka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sąspów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sękowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sidzina",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Siedliska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Siemiechów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sieniawa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Siepraw",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sieradza",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Skała",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Skawica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Skawina",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Skawinki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Skomielna Czarna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Skrzydlna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Skrzyszów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Słomniki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Słopnice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Słupiec",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Smęgorzów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sosnowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Spytkowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Stanisław Dolny",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Stanisław Górny",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Stanisławice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Stary Sącz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Stary Wiśnicz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Stronie",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Stróża",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Stryszawa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Stryszów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sucha Beskidzka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sulęcin",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sułkowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Sułoszowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Świątniki Górne",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Szaflary",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Szarów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Szczawnica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Szczucin",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Szczurowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Szerzyny",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Szynwałd",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Targanice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Targowisko",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Tarnów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Tarnowiec",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Tenczynek",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Tokarnia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Tomaszkowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Tomice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Toporzysko",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Trąbki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Trzciana",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Trzebinia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Trzebunia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Trzemeśnia",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Tuchów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Tylicz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Tymbark",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Uście Gorlickie",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wadowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Waksmund",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wawrzeńczyce",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Węglówka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Węgrzce Wielkie",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wieliczka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wielka Wieś",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wieprz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wierzchosławice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wietrzychowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wiśniowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Witanowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Witkowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Włosienica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wojnicz",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wola Batorska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wola Dębińska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wola Filipowska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wola Radziszowska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wola Zabierzowska",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wolbrom",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wołowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Woźniki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wrząsowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Wysoka",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zabierzów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zabierzów Bocheński",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Żabno",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zaborze",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zagórnik",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zagórze",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zakliczyn",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zakopane",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zakrzów",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zalas",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Żarki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zarzecze",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zator",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zawoja",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zebrzydowice",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Żegocina",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zembrzyce",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zielonki",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Złota",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zubrzyca Dolna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Zubrzyca Górna",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Żurowa",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Baboszewo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Baniocha",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Baranowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Bemowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Biała",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Białobrzegi",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Białołeka",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Bielany",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Bielsk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Bieniewice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Bieżuń",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Błędów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Błonie",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Bodzanów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Boguty-Pianki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Borkowice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Borowie",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Brańszczyk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Brochów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Brody-Parcele",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Brok",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Brudzeń Duży",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Brwinów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Bulkowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Cegłów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Celestynów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ceranów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Chlewiska",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Chorzele",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Chotcza",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Chynów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ciechanów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ciepielów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Czarnia",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Czernice Borowe",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Czerwin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Czerwińsk Nad Wisłą",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Czerwonka",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Dąbrówka",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Dębe Wielkie",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Długosiodło",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Dobre",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Domanice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Drobin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Duczki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Dziekanów Leśny",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Dzierzążnia",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Dzierzgowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Gąbin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Garbatka-Letnisko",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Garwolin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Gąsocin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Gielniów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Glinojeck",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Gołymin-Ośrodek",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Góra Kalwaria",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Górzno",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Gostynin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Goszczyn",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Goworowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Gózd",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Gozdowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Granica",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Grębków",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Grodzisk Mazowiecki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Grójec",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Grudusk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Guzów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Gzy",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Halinów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Hornówek",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Iłów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Iłża",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Izabelin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Jabłonna",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Jabłonna Lacka",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Jadów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Jakubów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Jasienica",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Jasieniec",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Jastrząb",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Jastrzębia",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Jedlińsk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Jedlnia-Letnisko",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Jednorożec",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Joniec",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Józefosław",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Józefów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kabaty",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kadzidło",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kałuszyn",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kampinos",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Karczew",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Karniewo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kazanów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kiełpin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Klembów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Klwów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kobyłka",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kołbiel",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Komorów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Konstancin-Jeziorna",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Korczew",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Korytnica",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kosów Lacki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kotuń",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kowala",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kozienice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Krasne",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Krasnosielc",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Krzynowłoga Mała",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Kuczbork-Osada",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Łąck",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Łajski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Łaskarzew",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Latowicz",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Legionowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Leszno",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Lesznowola",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Lipowiec Kościelny",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Lipsko",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Łochów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Łomianki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Łosice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Lubowidz",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Lutocin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Łyse",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Maciejowice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Maków Mazowiecki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Mała Wieś",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Małkinia Górna",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Marki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Maszewo Duże",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Miastków Kościelny",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Michałów-Reginów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Michałowice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Miedzna",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Miętne",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Milanówek",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Mińsk Mazowiecki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Mława",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Młodzieszyn",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Młynarze",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Mochowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Mogielnica",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Mokobody",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Mokotów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Mordy",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Mrozy",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Mszczonów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Mysiadło",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Myszyniec",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Nadarzyn",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Naruszewo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Nasielsk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Nieporęt",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Nowe Grocholice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Nowe Lipiny",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Nowe Miasto",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Nowe Miasto nad Pilicą",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Nowy Duninów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Nowy Dwór Mazowiecki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Nur",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Obryte",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ochota",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Odrzywół",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ojrzeń",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Opinogóra Górna",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Orońsko",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Osieck",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ostrołęka",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ostrów Mazowiecka",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ostrówek",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Otrębusy",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Otwock",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Owczarnia",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ożarów Mazowiecki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Pacyna",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Paprotnia",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Parysów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Piaseczno",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Piastów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Pilawa",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Pionki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Płock",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Płoniawy-Bramura",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Płońsk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Podebłocie",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Podkowa Leśna",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Pokrzywnica",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Policzna",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Pomiechówek",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Poświętne",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Potworów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat białobrzeski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat ciechanowski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat garwoliński",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat gostyniński",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat grodziski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat grójecki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat kozienicki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat legionowski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat lipski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat łosicki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat makowski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat miński",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat mławski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat nowodworski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat ostrołęcki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat ostrowski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat otwocki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat piaseczyński",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat płocki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat płoński",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat pruszkowski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat przasnyski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat przysuski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat pułtuski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat radomski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat siedlecki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat sierpecki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat sochaczewski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat sokołowski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat szydłowiecki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat warszawski zachodni",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat węgrowski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat wołomiński",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat wyszkowski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat żuromiński",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat zwoleński",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Powiat żyrardowski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Praga Północ",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Praga Południe",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Prażmów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Promna",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Pruszków",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Przasnysz",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Przesmyki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Przyłęk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Przysucha",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Przytyk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Pułtusk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Puszcza Mariańska",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Raciąż",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Radom",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Radzanów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Radzanowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Radziejowice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Radzymin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Raszyn",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Regimin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Rembertów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Repki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Rościszewo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Różan",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Rusinów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Rybie",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Rybno",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ryczywół",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Rząśnik",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Rzeczniów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Rzekuń",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Rzewnie",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sabnie",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sadowne",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sanniki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sarnaki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Serock",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Siedlce",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Siemiątkowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Siennica",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sienno",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sierpc",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Skaryszew",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Skórzec",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Słubice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Słupno",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sobienie Jeziory",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sobolew",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sochaczew",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sochocin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sokołów Podlaski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Solec Nad Wisłą",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sońsk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Śródmieście",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Stanisławów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Stanisławów Pierwszy",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Stara Błotnica",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Stara Kornica",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Stare Babice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Staroźreby",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sterdyń",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Stoczek",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Strachówka",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Stromiec",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Strzegowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Stupsk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sucha",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Suchożebry",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sulbiny Górne",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sulejówek",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sułkowice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Świercze",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Sypniewo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Szczutowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Szelków",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Szreńsk",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Szydłowiec",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Szydłowo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Tarczyn",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Targówek",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Tczów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Teresin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Tłuszcz",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Trąbki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Trablice",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Trojanów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Troszyn",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Truskaw",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ursus",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ursynów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Warka",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Warsaw",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Warszawa",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wawer",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Węgrów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wesoła",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wieczfnia Kościelna",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wieliszew",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wieniawa",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wierzbica",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wierzbno",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wilanów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wilga",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Winnica",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wiskitki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wiśniew",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wiśniewo",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Włochy",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wodynie",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wola",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wola Rębkowska",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wolanów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wołomin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wyśmierzyce",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wyszków",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Wyszogród",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Żabia Wola",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Żabieniec",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Ząbki",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Zakroczym",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Zakrzew",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Zalesie Górne",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Załuski",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Zatory",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Zawidz",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Zbuczyn",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Żelechów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Zielonka",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Żoliborz",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Żuromin",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Zwoleń",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Żyrardów",
+    "stateCode": "MZ"
+  },
+  {
+    "name": "Baborów",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Biała",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Bierawa",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Bierdzany",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Branice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Brzeg",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Byczyna",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Chmielowice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Chróścice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Chrościna",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Chrząstowice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Cisek",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Czarnowąsy",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Dąbrowa",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Dalachów",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Długomiłowice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Dobrodzień",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Dobrzeń Wielki",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Domaszowice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Dziergowice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Głogówek",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Głubczyce",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Głuchołazy",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Gogolin",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Górażdże",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Gorzów Śląski",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Grodków",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Izbicko",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Januszkowice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Jemielnica",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Kamienica",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Kamiennik",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Kędzierzyn-Koźle",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Kietrz",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Kluczbork",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Kolonowskie",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Komprachcice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Korfantów",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Koźle",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Krapkowice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Kup",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Łąka Prudnicka",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Łambinowice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Leśnica",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Lewin Brzeski",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Łosiów",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Łubniany",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Lubrza",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Lubsza",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Moszczanka",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Murów",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Nakło",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Namysłów",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Niemodlin",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Nysa",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Olesno",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Olszanka",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Opole",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Otmuchów",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Ozimek",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Paczków",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Pakosławice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Pawłowiczki",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Pokój",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Polska Cerekiew",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Popielów",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Powiat brzeski",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Powiat głubczycki",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Powiat kędzierzyńsko-kozielski",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Powiat kluczborski",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Powiat krapkowicki",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Powiat namysłowski",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Powiat nyski",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Powiat oleski",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Powiat opolski",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Powiat prudnicki",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Powiat strzelecki",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Praszka",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Prószków",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Prudnik",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Racławice Śląskie",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Raszowa",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Reńska Wieś",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Rozwadza",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Sidzina",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Skarbimierz Osiedle",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Skorogoszcz",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Skoroszyce",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Sławięcice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Strzelce Opolskie",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Strzeleczki",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Świerczów",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Tarnów Opolski",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Tułowice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Twardawa",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Ujazd",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Walce",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Węgry",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Większyce",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Wilków",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Wołczyn",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Zawadzkie",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Zdzieszowice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Zębowice",
+    "stateCode": "OP"
+  },
+  {
+    "name": "Augustów",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Białowieża",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Białystok",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Bielsk Podlaski",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Boćki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Brańsk",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Choroszcz",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Ciechanowiec",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Czarna Białostocka",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Czeremcha",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Czyżew",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Dąbrowa Białostocka",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Dobrzyniewo Duże",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Drohiczyn",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Filipów",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Goniadz",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Grajewo",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Grudki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Hajnówka",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Jedwabne",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Kleszczele",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Knyszyn",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Kolno",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Krasnopol",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Krynki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Kuźnica",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Łapy",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Lipsk",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Łomża",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Mały Płock",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Michałowo",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Milejczyce",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Mońki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Narew",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Nowogród",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Nurzec-Stacja",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Orla",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Piątnica",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat augustowski",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat białostocki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat bielski",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat grajewski",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat hajnowski",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat kolneński",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat łomżyński",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat moniecki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat sejneński",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat siemiatycki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat sokólski",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat suwalski",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat wysokomazowiecki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Powiat zambrowski",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Puńsk",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Raczki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Radziłów",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Rajgród",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Rudka",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Rutki-Kossaki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Sejny",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Siemiatycze",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Śniadowo",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Sokółka",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Sokoły",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Stawiski",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Suchowola",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Supraśl",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Suraż",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Suwałki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Szczuczyn",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Szepietowo",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Szumowo",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Turośń Kościelna",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Tykocin",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Wasilków",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Wąsosz",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Wizna",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Wysokie Mazowieckie",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Wyszki",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Zabłudów",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Zambrów",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Zbójna",
+    "stateCode": "PD"
+  },
+  {
+    "name": "Adamówka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Albigowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Babica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Baligród",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Baranów Sandomierski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Besko",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Białobrzegi",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Bieliny",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Bircza",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Błażowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Blizne",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Boguchwała",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Bojanów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Borowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Brzeźnica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Brzostek",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Brzóza Królewska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Brzóza Stadnicka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Brzozów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Brzyska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Bukowsko",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Chmielnik",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Chorkówka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Chwałowice",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Cieszanów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Cisna",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Cmolas",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Czarna",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Czaszyn",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Czermin",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Czudec",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Dębica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Dębno",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Dębów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Dębowiec",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Długie",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Domaradz",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Dubiecko",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Dukla",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Dydnia",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Dynów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Dzików Stary",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Dzikowiec",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Fredropol",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Frysztak",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Gać",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Giedlarowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Głogów Małopolski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Głuchów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Golcowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Górki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Gorliczyna",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Górno",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Gorzyce",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Grabownica Starzeńska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Grębów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Grodzisko Dolne",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Grodzisko Górne",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Grzęska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Gwoźnica Górna",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Haczów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Handzlówka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Harasiuki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Horyniec-Zdrój",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Humniska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Husów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Hyżne",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Iwierzyce",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Iwonicz-Zdrój",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jabłonica Polska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jabłonka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jagiełła",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jarocin",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jarosław",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jasienica Rosielna",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jasionów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jaśliska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jasło",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jawornik",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jawornik Polski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jedlicze",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jeżowe",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jodłowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Jodłówka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Kamień",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Kańczuga",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Kępie Żaleszańskie",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Kielanówka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Kołaczyce",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Kolbuszowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Komańcza",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Kończyce",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Konieczkowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Korczyna",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Kosina",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Kraczkowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Kramarzówka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Krasiczyn",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Krasne",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Krempna",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Krościenko Wyżne",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Krosno",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Krzeczowice",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Krzemienica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Krzeszów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Krzywcza",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Kuryłówka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Łańcut",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Laszki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Lecka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Łęki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Łęki Dolne",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Łęki Górne",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Lesko",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Łętownia",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Leżajsk",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Lipnica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Łopuszka Wielka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Lubaczów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Lubenia",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Lutoryż",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Lutowiska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Majdan Królewski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Manasterz",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Markowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Medyka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Miejsce Piastowe",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Mielec",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Mirocin",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Narol",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Niebieszczany",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Niebocko",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Niebylec",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Niechobrz",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Niedźwiada",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Nienadowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Nisko",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Niwiska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Nowa Dęba",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Nowa Sarzyna",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Nowe Sioło",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Nowosielce",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Nowosielce-Gniewosz",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Nowy Żmigród",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Nozdrzec",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Odrzykoń",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Oleszyce",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Olszanica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Orły",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Orzechówka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Osiek Jasielski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Ostrów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Padew Narodowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Pantalowice",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Pawłosiów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Pilzno",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Piskorowice",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Polańczyk",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Połomia",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Poraż",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat bieszczadzki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat brzozowski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat dębicki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat jarosławski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat jasielski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat kolbuszowski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat krośnieński",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat łańcucki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat leski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat leżajski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat lubaczowski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat mielecki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat niżański",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat przemyski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat przeworski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat ropczycko-sędziszowski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat rzeszowski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat sanocki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat stalowowolski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat strzyżowski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Powiat tarnobrzeski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Pruchnik",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Przecław",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Przedmieście Dubieckie",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Przędzel",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Przemyśl",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Przeworsk",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Przybyszówka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Pysznica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Racławice",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Radomyśl",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Radomyśl Wielki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Radymno",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Rakszawa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Raniżów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Rogóźno",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Rokietnica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Ropczyce",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Rozbórz",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Rudna Mała",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Rudna Wielka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Rudnik nad Sanem",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Rymanów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Rzepedź",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Rzeszów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Sanok",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Sędziszów Małopolski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Siedleczka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Siedliska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Sieniawa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Sietesz",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Skołyszyn",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Słotowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Sokolniki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Sokołów Małopolski",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Sonina",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Sośnica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Stalowa Wola",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Stara Wieś",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Stare Miasto",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Strachocina",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Straszydle",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Strzyżów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Stubno",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Świlcza",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Tarnobrzeg",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Tarnowiec",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Tryńcza",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Trzciana",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Trzcinica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Trzebownisko",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Turze Pole",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Tyczyn",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Tyrawa Wołoska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Uherce Mineralne",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Ulanów",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Urzejowice",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Ustrzyki Dolne",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wadowice Górne",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wesoła",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wiązownica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wielkie Oczy",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wielopole Skrzyńskie",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wierzawice",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wierzbna",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wiśniowa",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wojaszówka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wola Żarczycka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wólka Niedźwiedzka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wólka Pełkińska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wólka Podleśna",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wólka Tanewska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wysoka",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wysoka Głogowska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Wysoka Strzyżowska",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Zagórz",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Zagórzyce",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Zaklików",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Zalesie",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Zaleszany",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Zarszyn",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Zarzecze",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Zdziechowice Drugie",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Zgłobień",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Zmiennica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Żołynia",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Żurawica",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Żurawiczki",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Żyraków",
+    "stateCode": "PK"
+  },
+  {
+    "name": "Banino",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Bobowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Bojano",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Bolszewo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Borzytuchom",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Brusy",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Bytów",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Cedry Wielkie",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Cewice",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Chłapowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Chmielno",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Choczewo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Chojnice",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Chwaszczyno",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Czarna Dąbrówka",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Czarna Woda",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Czarne",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Czersk",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Człuchów",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Damnica",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Dębnica Kaszubska",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Debrzno",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Dziemiany",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Dzierzgoń",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Garcz",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Gardeja",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Gdańsk",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Gdynia",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Główczyce",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Gniew",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Gniewino",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Gnieżdżewo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Gościcino",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Grabowo Kościerskie",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Hel",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Jastarnia",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Jastrzębia Góra",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Kaliska",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Karsin",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Kartuzy",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Kępice",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Kobylnica",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Koczała",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Kolbudy",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Kołczygłowy",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Koleczkowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Kosakowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Kościerzyna",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Kowale",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Krokowa",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Krynica Morska",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Kwidzyn",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Łeba",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Lębork",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Łęczyce",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Łęgowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Linia",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Liniewo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Lipnica",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Lipusz",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Lisewo Malborskie",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Lubichowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Lublewo Gdańskie",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Luzino",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Malbork",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Miastko",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Mikołajki Pomorskie",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Miłoradz",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Mosty",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Mrzezino",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Nowa Wieś Lęborska",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Nowy Dwór Gdański",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Nowy Staw",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Orle",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Osiek",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Ostaszewo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Parchowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Pelplin",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Pogórze",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Potęgowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat bytowski",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat chojnicki",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat człuchowski",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat gdański",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat kartuski",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat kościerski",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat kwidzyński",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat lęborski",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat malborski",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat nowodworski",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat pucki",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat słupski",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat starogardzki",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat sztumski",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat tczewski",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Powiat wejherowski",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Prabuty",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Pruszcz Gdański",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Przechlewo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Przodkowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Przywidz",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Pszczółki",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Puck",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Reda",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Rekowo Dolne",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Rotmanka",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Rumia",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Ryjewo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Rzeczenica",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Sadlinki",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Sierakowice",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Skarszewy",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Skórcz",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Słupsk",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Smętowo Graniczne",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Smołdzino",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Somonino",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Sopot",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Stara Kiszewa",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Stare Pole",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Starogard Gdański",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Stary Targ",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Stegna",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Stężyca",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Straszyn",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Strzelno",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Studzienice",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Subkowy",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Suchy Dąb",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Sulęczyno",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Szemud",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Szlachta",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Sztum",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Sztutowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Tczew",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Trąbki Wielkie",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Trzebielino",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Tuchomie",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Ustka",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Wejherowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Wielki Kack",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Wierzchucino",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Władysławowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Zblewo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Żelistrzewo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Żukowo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Baćkowice",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Bałtów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Bejsce",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Bieliny",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Bliżyn",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Bodzentyn",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Bogoria",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Brody",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Brzeziny",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Busko-Zdrój",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Chęciny",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Chmielnik",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Ćmielów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Czarnocin",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Daleszyce",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Domaszowice",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Dwikozy",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Działoszyce",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Fałków",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Gnojno",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Górno",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Gowarczów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Grzybowa Góra",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Imielno",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Iwaniska",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Jędrzejów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kaniów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kazimierza Wielka",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kielce",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kije",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Klimontów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Końskie",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Koprzywnica",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kostomłoty Drugie",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kostomłoty Pierwsze",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Krasocin",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kunów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Łączna",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Łagów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Lipnik",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Łoniów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Łopuszno",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Łubnice",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Małogoszcz",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Masłów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Michałów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Miedziana Góra",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Mirzec",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Mniów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Morawica",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Nagłowice",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Nowa Słupia",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Nowy Korczyn",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Obrazów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Oksa",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Oleśnica",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Opatów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Opatowiec",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Osiedle-Nowiny",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Osiek",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Ostrowiec Świętokrzyski",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Ożarów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Pacanów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Pawłów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Piekoszów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Pierzchnica",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Pińczów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Połaniec",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat buski",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat jędrzejowski",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat kazimierski",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat kielecki",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat konecki",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat opatowski",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat ostrowiecki",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat pińczowski",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat sandomierski",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat skarżyski",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat starachowicki",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat staszowski",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Powiat włoszczowski",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Radoszyce",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Raków",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Rogów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Ruda Maleniecka",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Rytwiany",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Sadowie",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Samborzec",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Sandomierz",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Secemin",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Sędziszów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Skalbmierz",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Skarżysko Kościelne",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Skarżysko-Kamienna",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Słupia",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Smyków",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Sobków",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Solec-Zdrój",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Stąporków",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Starachowice",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Staszów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Stopnica",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Strawczyn",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Suchedniów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Szydłów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Tarłów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Tuczępy",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Wąchock",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Waśniów",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Wielka Wieś",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Wilczyce",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Wiślica",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Włoszczowa",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Wodzisław",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Wojciechowice",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Wola Jachowa",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Zagnańsk",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Zawichost",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Złota",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Bąków",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bażanowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Będzin",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bełk",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bełsznica",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bestwina",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bestwinka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bielsko-Biala",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bielsko-Biała",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bieruń",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Blachownia",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bobrowniki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bojszowy",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bojszowy Nowe",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Boronów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Borowno",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Borucin",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Brenna",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bronów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Brzeziny Śląskie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Buczkowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bujaków",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bystra",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Bytom",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Chałupki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Chełm Śląski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Choroń",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Chorzów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Chruszczobród",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Chybie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ciasna",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Cięcina",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Cielmice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Cieszyn",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Cisiec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Cisownica",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Cynków",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Czaniec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Czarków",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Czechowice-Dziedzice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Czeladź",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Czernica",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Czernichów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Czerwionka-Leszczyny",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Częstochowa",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Czyżowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Dąbrowa Górnicza",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Dąbrowa Zielona",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Dębowiec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Dobieszowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Drogomyśl",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Dzięgielów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Frydek",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Gardawice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Gaszowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Gierałtowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Gilowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Gliwice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Gniazdów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Goczałkowice Zdrój",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Godów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Godziszka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Goleszów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Gołkowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Góra",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Górki Wielkie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Gorzyce",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Gorzyczki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Gostyń",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Hażlach",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Herby",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Huta Stara B",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Imielin",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Istebna",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Jankowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Jankowice Rybnickie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Janowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Jasienica",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Jastrząb",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Jastrzębie Zdrój",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Jastrzębie-Zdrój",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Jaworze",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Jaworzno",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Jaworzynka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Jejkowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Jeleśnia",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Juszczyna",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kaczyce",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kalej",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kalety",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kamesznica",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kamienica Polska",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kamyk",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kaniów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Katowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kłobuck",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kłomnice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Knurów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kobiernice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kobiór",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kochanowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kończyce Małe",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kończyce Wielkie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Koniaków",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Koniecpol",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Konopiska",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Korbielów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kornowac",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kościelec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Koszarawa",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Koszęcin",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Koziegłowy",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kozy",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kroczyce",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Krupski Młyn",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kryry",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Krzanowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Krzepice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Krzyżanowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Krzyżowa",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Krzyżowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Książenice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kuźnia Raciborska",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Laliki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Łaziska",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Łaziska Górne",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Łazy",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Lędziny",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Łękawica",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Lelów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Leśna",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ligota",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Lipie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Lipowa",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Łobodno",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Łodygowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Lubliniec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Lubomia",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Lyski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Markłowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Mazańcowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Miasteczko Śląskie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Miedźna",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Miedzno",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Międzybrodzie Bialskie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Mierzęcice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Mikołów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Milówka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Mnich",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Mstów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Mszana",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Murcki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Mykanów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Mysłowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Myszków",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Nakło",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Nędza",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Niedobczyce",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Niegowonice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ochaby",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ogrodzieniec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Olsztyn",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Olza",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Opatów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ornontowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Orzech",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Orzesze",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ostrowy nad Okszą",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ożarowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Paniówki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Panki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pawłowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pawonków",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pewel Ślemieńska",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pewel Wielka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Piasek",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Piekary Śląskie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pielgrzymowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pierściec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pietrowice Wielkie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pietrzykowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pilchowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pilica",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pisarzowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pogórze",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pogrzebień",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pogwizdów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Połomia",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Porąbka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Poraj",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Poręba",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Potok Złoty",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat będziński",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat bielski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat bieruńsko-lędziński",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat cieszyński",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat częstochowski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat gliwicki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat kłobucki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat lubliniecki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat mikołowski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat myszkowski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat pszczyński",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat raciborski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat rybnicki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat tarnogórski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat wodzisławski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat zawierciański",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Powiat żywiecki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pruchna",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Przyborów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Przyrów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Przystajń",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Przyszowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Psary",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pszczyna",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pszów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Puńców",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Pyskowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Racibórz",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Radlin",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Radostowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Radziechowy",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Radzionków",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rajcza",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Raszczyce",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rędziny",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rogów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rogoźnik",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rokitno Szlacheckie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ruda Śląska",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rudnik",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rudniki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rudy",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rudziczka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rudziniec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rybarzowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rybnik",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rycerka Dolna",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rycerka Górna",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rydułtowy",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Sączów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Sarnów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Siemianowice Śląskie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Sieraków Śląski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Siewierz",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Skoczów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Skrzyszów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Sławków",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ślemień",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Sól",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Sopotnia Wielka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Sośnicowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Sosnowiec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Stanowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Starcza",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Starokrzepice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Strumień",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Strzebiń",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Strzyżowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Studzionka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Suszec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Świerklaniec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Świerklany Dolne",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Świerklany Górne",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Świętochłowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Świnna",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Syrynia",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Szczekociny",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Szczerbice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Szczyrk",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Tarnowskie Góry",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Toszek",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Truskolasy",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Trzebinia",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Turza Śląska",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Tworków",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Tworóg",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Tychy",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ujsoły",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ustroń",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Węgierska Górka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wielowieś",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wieprz",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wieszowa",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wilamowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wilcza",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wilkowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wisła",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Włodowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wodzisław Śląski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wojkowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wola",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wożniki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wręczyca Wielka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wyry",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Wysoka",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Zabłocie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Żabnica",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Zaborze",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Zabrze",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Zabrzeg",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Zamarski",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Żarki",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Żarki-Letnisko",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Zarzecze",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Zawidów",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Zawiercie",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Zbrosławice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Zbytków",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Zebrzydowice",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Żernica",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Żory",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Żywiec",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Banie Mazurskie",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Barciany",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Barczewo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Bartoszyce",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Biała Piska",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Biskupiec",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Bisztynek",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Braniewo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Czerwonka",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Dąbrówno",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Dobre Miasto",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Dywity",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Działdowo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Dźwierzuty",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Elbląg",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Ełk",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Frombork",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Gierłoż",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Gierzwałd",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Gietrzwałd",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Giżycko",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Gołdap",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Górowo Iławeckie",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Gronowo Elbląskie",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Gronowo Górne",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Iława",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Iłowo -Osada",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Jedwabno",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Jeziorany",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Jonkowo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Kętrzyn",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Kisielice",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Korsze",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Kortowo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Kowale Oleckie",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Kozłowo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Kruklanki",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Kurzętnik",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Lelkowo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Lidzbark",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Lidzbark Warmiński",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Lubawa",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Lubomino",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Małdyty",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Mikołajki",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Miłakowo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Miłomłyn",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Młynary",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Morąg",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Mrągowo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Nidzica",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Nowe Miasto Lubawskie",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Olecko",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Olsztyn",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Olsztynek",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Orneta",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Orzysz",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Ostróda",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Pasłęk",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Pasym",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Piecki",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Pieniężno",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Pisz",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat bartoszycki",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat braniewski",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat działdowski",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat elbląski",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat ełcki",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat giżycki",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat gołdapski",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat iławski",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat kętrzyński",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat lidzbarski",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat mrągowski",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat nidzicki",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat nowomiejski",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat olecki",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat olsztyński",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat ostródzki",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat piski",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat szczycieński",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Powiat węgorzewski",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Pozezdrze",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Prostki",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Purda",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Reszel",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Rozogi",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Ruciane-Nida",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Rybno",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Ryn",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Sępopol",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Srokowo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Stare Juchy",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Stawiguda",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Susz",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Swiętajno",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Szczytno",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Tolkmicko",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Węgorzewo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Wielbark",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Wydminy",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Zalewo",
+    "stateCode": "WN"
+  },
+  {
+    "name": "Babiak",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Baranów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Baranowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Białośliwie",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Blizanów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Bojanowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Bojanowo Stare",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Borek Wielkopolski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Bralin",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Brdów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Brenno",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Brodnica",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Broniszewice",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Brudzew",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Budzyń",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Buk",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Chocz",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Chodów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Chodzież",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Chrzypsko Wielkie",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Czajków",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Czapury",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Czarnków",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Czempiń",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Czermin",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Czerniejewo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Czerwonak",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Dąbie",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Damasławek",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Daszewice",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Dobra",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Dobrzyca",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Dolsk",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Dominowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Dopiewo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Doruchów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Drawsko",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Duszniki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Gizałki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Gniezno",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Gołańcz",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Golina",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Gołuchów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Gorzyce Wielkie",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Gostyń",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Grabów nad Prosną",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Granowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Grodziec",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Grodzisk Wielkopolski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Grzegorzew",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Jabłonna",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Janków Przygodzki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Jaraczewo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Jarocin",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Jastrowie",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Jutrosin",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kaczory",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kalisz",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kamieniec",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kawęczyn",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kazimierz Biskupi",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kaźmierz",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kępno",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kiszkowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kłecko",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kleczew",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kleszczewo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kłodawa",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kobyla Góra",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kobylin",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kobylnica",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kołaczkowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Koło",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Komorniki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Konary",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Konin",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kórnik",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kościan",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kościelec",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kostrzyn",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kotlin",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Koźmin Wielkopolski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Koźminek",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Krajenka",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kramsk",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kraszewice",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Krobia",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Krosno",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Krotoszyn",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Krzemieniewo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Krzykosy",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Krzywiń",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Krzyż Wielkopolski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Książ Wielkopolski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kuślin",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Kwilcz",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Lądek",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Łęka Opatowska",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Leszno",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Licheń Stary",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Lipka",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Lipno",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Lisków",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Łobżenica",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Lubasz",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Luboń",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Łubowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Lwówek",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Malanów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Margonin",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Miasteczko Krajeńskie",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Miedzichowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Międzychód",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Miejska Górka",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Mieleszyn",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Mieścisko",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Mikstat",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Miłosław",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Mosina",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Murowana Goślina",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Nekla",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Niechanowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Nowe Miasto nad Wartą",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Nowe Skalmierzyce",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Nowy Tomyśl",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Oborniki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Obrzycko",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Odolanów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Okonek",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Olszówka",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Opalenica",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Opatów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Opatówek",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Orchowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Osieczna",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Osiek Mały",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Osiek nad Notecią",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Ostroróg",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Ostrów Wielkopolski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Ostrowite",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Ostrzeszów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Pakosław",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Pamiątkowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Pecna",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Pępowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Perzów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Piaski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Piła",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Pleszew",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Plewiska",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Pniewy",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Pobiedziska",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Pogorzela",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Połajewo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Poniec",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat chodzieski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat czarnkowsko-trzcianecki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat gnieźnieński",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat gostyński",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat grodziski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat jarociński",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat kaliski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat kępiński",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat kolski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat koniński",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat kościański",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat krotoszyński",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat leszczyński",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat międzychodzki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat nowotomyski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat obornicki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat ostrowski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat ostrzeszowski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat pilski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat pleszewski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat poznański",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat rawicki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat słupecki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat średzki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat śremski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat szamotulski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat turecki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat wągrowiecki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat wolsztyński",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat wrzesiński",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powiat złotowski",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Powidz",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Poznań",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Przedecz",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Przemęt",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Przygodzice",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Przykona",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Puszczykowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Pyzdry",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Rakoniewice",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Raszków",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Rawicz",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Rogalinek",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Rogoźno",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Rokietnica",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Rozdrażew",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Rychtal",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Rychwał",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Ryczywół",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Rydzyna",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Rzgów Pierwszy",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Siedlec",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Sieraków",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Sieroszewice",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Skalmierzyce",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Skoki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Skulsk",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Ślesin",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Słupca",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Słupia pod Kępnem",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Śmigiel",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Śmiłowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Sompolno",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Sośnie",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Śrem",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Środa Wielkopolska",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Stare Miasto",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Stawiszyn",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Stęszew",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Strzałkowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Suchy Las",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Sulmierzyce",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Swarzędz",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Święciechowa",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Sypniewo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Szamocin",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Szamotuły",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Szydłowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Tarnówka",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Tarnowo Podgórne",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Trzcianka",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Trzcinica",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Trzemeszno",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Tuliszków",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Turek",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Ujście",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wągrowiec",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wapno",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wieleń",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wielichowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wierzbinek",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wijewo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wilczogóra",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wilczyn",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wilkowice",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Witaszyce",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Witkowo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Władysławów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Włoszakowice",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wolsztyn",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wronki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Września",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wyrzysk",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Wysoka",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Zagórów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Zakrzewo",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Zaniemyśl",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Zbąszyń",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Zduny",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Żelazków",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Żerków",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Złotniki",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Złotów",
+    "stateCode": "WP"
+  },
+  {
+    "name": "Banie",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Barlinek",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Barwice",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Białogard",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Biały Bór",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Bielice",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Bierzwnik",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Bobolice",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Boleszkowice",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Borne Sulinowo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Brojce",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Cedynia",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Cerkwica",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Chociwel",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Chojna",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Choszczno",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Czaplinek",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Człopa",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Darłowo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Dębno",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Dobra",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Dobrzany",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Dolice",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Drawno",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Drawsko Pomorskie",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Dygowo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Dziwnów",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Golczewo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Goleniów",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Gościno",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Gryfice",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Gryfino",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Grzmiąca",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Grzybowo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Ińsko",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Kalisz Pomorski",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Kamień Pomorski",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Karlino",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Karnice",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Kobylanka",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Kołbaskowo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Kołobrzeg",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Koszalin",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Krzęcin",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Lipiany",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Łobez",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Łubowo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Marianowo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Maszewo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Międzyzdroje",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Mielno",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Mieszkowice",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Mirosławiec",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Moryń",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Mosty",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Mrzeżyno",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Myślibórz",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Nowe Warpno",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Nowogard",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Nowogródek Pomorski",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Osina",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Pełczyce",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Płoty",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Pobierowo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Polanów",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Połczyn-Zdrój",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Police",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat białogardzki",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat choszczeński",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat drawski",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat goleniowski",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat gryficki",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat gryfiński",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat kamieński",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat kołobrzeski",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat koszaliński",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat łobeski",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat myśliborski",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat policki",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat pyrzycki",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat sławieński",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat stargardzki",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat świdwiński",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat szczecinecki",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Powiat wałecki",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Przecław",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Przelewice",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Przybiernów",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Pyrzyce",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Rąbino",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Radowo Małe",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Recz",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Resko",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Rewal",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Rymań",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Sianów",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Sławno",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Sławoborze",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Stara Dąbrowa",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Stare Czarnowo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Stargard",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Stepnica",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Suchań",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Świdwin",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Świerzno",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Świnoujście",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Szczecin",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Szczecinek",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Trzcińsko Zdrój",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Trzebiatów",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Tuczno",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Tychowo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Ustronie Morskie",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Wałcz",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Warnice",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Węgorzyno",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Widuchowa",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Wierzchowo",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Wolin",
+    "stateCode": "ZP"
+  },
+  {
+    "name": "Złocieniec",
+    "stateCode": "ZP"
+  }
+]

@@ -1,0 +1,1490 @@
+[
+  {
+    "name": "Athenry",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ballaghaderreen",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ballina",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ballinasloe",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ballinrobe",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ballisodare",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ballyhaunis",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ballymote",
+    "stateCode": "C"
+  },
+  {
+    "name": "Bearna",
+    "stateCode": "C"
+  },
+  {
+    "name": "Belmullet",
+    "stateCode": "C"
+  },
+  {
+    "name": "Boyle",
+    "stateCode": "C"
+  },
+  {
+    "name": "Carrick-on-Shannon",
+    "stateCode": "C"
+  },
+  {
+    "name": "Castlebar",
+    "stateCode": "C"
+  },
+  {
+    "name": "Castlerea",
+    "stateCode": "C"
+  },
+  {
+    "name": "Claregalway",
+    "stateCode": "C"
+  },
+  {
+    "name": "Claremorris",
+    "stateCode": "C"
+  },
+  {
+    "name": "Clifden",
+    "stateCode": "C"
+  },
+  {
+    "name": "Collooney",
+    "stateCode": "C"
+  },
+  {
+    "name": "County Galway",
+    "stateCode": "C"
+  },
+  {
+    "name": "County Leitrim",
+    "stateCode": "C"
+  },
+  {
+    "name": "Crossmolina",
+    "stateCode": "C"
+  },
+  {
+    "name": "Foxford",
+    "stateCode": "C"
+  },
+  {
+    "name": "Gaillimh",
+    "stateCode": "C"
+  },
+  {
+    "name": "Galway City",
+    "stateCode": "C"
+  },
+  {
+    "name": "Gort",
+    "stateCode": "C"
+  },
+  {
+    "name": "Inishcrone",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kiltamagh",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kinlough",
+    "stateCode": "C"
+  },
+  {
+    "name": "Loughrea",
+    "stateCode": "C"
+  },
+  {
+    "name": "Manorhamilton",
+    "stateCode": "C"
+  },
+  {
+    "name": "Mayo County",
+    "stateCode": "C"
+  },
+  {
+    "name": "Moycullen",
+    "stateCode": "C"
+  },
+  {
+    "name": "Oranmore",
+    "stateCode": "C"
+  },
+  {
+    "name": "Oughterard",
+    "stateCode": "C"
+  },
+  {
+    "name": "Portumna",
+    "stateCode": "C"
+  },
+  {
+    "name": "Roscommon",
+    "stateCode": "C"
+  },
+  {
+    "name": "Sligo",
+    "stateCode": "C"
+  },
+  {
+    "name": "Strandhill",
+    "stateCode": "C"
+  },
+  {
+    "name": "Swinford",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tobercurry",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tuam",
+    "stateCode": "C"
+  },
+  {
+    "name": "Westport",
+    "stateCode": "C"
+  },
+  {
+    "name": "Abbeyleix",
+    "stateCode": "L"
+  },
+  {
+    "name": "An Iarmhí",
+    "stateCode": "L"
+  },
+  {
+    "name": "An Longfort",
+    "stateCode": "L"
+  },
+  {
+    "name": "An Mhí",
+    "stateCode": "L"
+  },
+  {
+    "name": "An Muileann gCearr",
+    "stateCode": "L"
+  },
+  {
+    "name": "An Ros",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ardee",
+    "stateCode": "L"
+  },
+  {
+    "name": "Arklow",
+    "stateCode": "L"
+  },
+  {
+    "name": "Artane",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ashbourne",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ashford",
+    "stateCode": "L"
+  },
+  {
+    "name": "Athboy",
+    "stateCode": "L"
+  },
+  {
+    "name": "Athgarvan",
+    "stateCode": "L"
+  },
+  {
+    "name": "Athlone",
+    "stateCode": "L"
+  },
+  {
+    "name": "Athy",
+    "stateCode": "L"
+  },
+  {
+    "name": "Aughrim",
+    "stateCode": "L"
+  },
+  {
+    "name": "Bagenalstown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Balally",
+    "stateCode": "L"
+  },
+  {
+    "name": "Balbriggan",
+    "stateCode": "L"
+  },
+  {
+    "name": "Baldoyle",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ballinroad",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ballinteer",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ballivor",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ballyboden",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ballyfermot",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ballygerry",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ballylinan",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ballymahon",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ballymun",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ballyragget",
+    "stateCode": "L"
+  },
+  {
+    "name": "Balrothery",
+    "stateCode": "L"
+  },
+  {
+    "name": "Baltinglass",
+    "stateCode": "L"
+  },
+  {
+    "name": "Banagher",
+    "stateCode": "L"
+  },
+  {
+    "name": "Bayside",
+    "stateCode": "L"
+  },
+  {
+    "name": "Beaumont",
+    "stateCode": "L"
+  },
+  {
+    "name": "Birr",
+    "stateCode": "L"
+  },
+  {
+    "name": "Blackrock",
+    "stateCode": "L"
+  },
+  {
+    "name": "Blanchardstown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Blessington",
+    "stateCode": "L"
+  },
+  {
+    "name": "Bonnybrook",
+    "stateCode": "L"
+  },
+  {
+    "name": "Booterstown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Bray",
+    "stateCode": "L"
+  },
+  {
+    "name": "Bunclody",
+    "stateCode": "L"
+  },
+  {
+    "name": "Cabinteely",
+    "stateCode": "L"
+  },
+  {
+    "name": "Cabra",
+    "stateCode": "L"
+  },
+  {
+    "name": "Callan",
+    "stateCode": "L"
+  },
+  {
+    "name": "Carlingford",
+    "stateCode": "L"
+  },
+  {
+    "name": "Carlow",
+    "stateCode": "L"
+  },
+  {
+    "name": "Carnew",
+    "stateCode": "L"
+  },
+  {
+    "name": "Castlebellingham",
+    "stateCode": "L"
+  },
+  {
+    "name": "Castlebridge",
+    "stateCode": "L"
+  },
+  {
+    "name": "Castlecomer",
+    "stateCode": "L"
+  },
+  {
+    "name": "Castledermot",
+    "stateCode": "L"
+  },
+  {
+    "name": "Castleknock",
+    "stateCode": "L"
+  },
+  {
+    "name": "Castlepollard",
+    "stateCode": "L"
+  },
+  {
+    "name": "Castletown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Celbridge",
+    "stateCode": "L"
+  },
+  {
+    "name": "Chapelizod",
+    "stateCode": "L"
+  },
+  {
+    "name": "Charlesland",
+    "stateCode": "L"
+  },
+  {
+    "name": "Cherry Orchard",
+    "stateCode": "L"
+  },
+  {
+    "name": "Cherryville",
+    "stateCode": "L"
+  },
+  {
+    "name": "Clane",
+    "stateCode": "L"
+  },
+  {
+    "name": "Clara",
+    "stateCode": "L"
+  },
+  {
+    "name": "Clogherhead",
+    "stateCode": "L"
+  },
+  {
+    "name": "Clondalkin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Clonskeagh",
+    "stateCode": "L"
+  },
+  {
+    "name": "Confey",
+    "stateCode": "L"
+  },
+  {
+    "name": "Coolock",
+    "stateCode": "L"
+  },
+  {
+    "name": "County Carlow",
+    "stateCode": "L"
+  },
+  {
+    "name": "Courtown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Crumlin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Daingean",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dalkey",
+    "stateCode": "L"
+  },
+  {
+    "name": "Darndale",
+    "stateCode": "L"
+  },
+  {
+    "name": "Derrinturn",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dollymount",
+    "stateCode": "L"
+  },
+  {
+    "name": "Donabate",
+    "stateCode": "L"
+  },
+  {
+    "name": "Donaghmede",
+    "stateCode": "L"
+  },
+  {
+    "name": "Donnybrook",
+    "stateCode": "L"
+  },
+  {
+    "name": "Donnycarney",
+    "stateCode": "L"
+  },
+  {
+    "name": "Drogheda",
+    "stateCode": "L"
+  },
+  {
+    "name": "Droichead Nua",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dromiskin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Drumcondra",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dublin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dublin City",
+    "stateCode": "L"
+  },
+  {
+    "name": "Duleek",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dún Laoghaire",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dún Laoghaire-Rathdown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dunboyne",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dundalk",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dundrum",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dunleer",
+    "stateCode": "L"
+  },
+  {
+    "name": "Dunshaughlin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Eadestown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Edenderry",
+    "stateCode": "L"
+  },
+  {
+    "name": "Edgeworthstown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Enfield",
+    "stateCode": "L"
+  },
+  {
+    "name": "Enniscorthy",
+    "stateCode": "L"
+  },
+  {
+    "name": "Enniskerry",
+    "stateCode": "L"
+  },
+  {
+    "name": "Fairview",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ferbane",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ferns",
+    "stateCode": "L"
+  },
+  {
+    "name": "Fingal County",
+    "stateCode": "L"
+  },
+  {
+    "name": "Finglas",
+    "stateCode": "L"
+  },
+  {
+    "name": "Firhouse",
+    "stateCode": "L"
+  },
+  {
+    "name": "Foxrock",
+    "stateCode": "L"
+  },
+  {
+    "name": "Glasnevin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Gorey",
+    "stateCode": "L"
+  },
+  {
+    "name": "Graiguenamanagh",
+    "stateCode": "L"
+  },
+  {
+    "name": "Granard",
+    "stateCode": "L"
+  },
+  {
+    "name": "Greenhills",
+    "stateCode": "L"
+  },
+  {
+    "name": "Greystones",
+    "stateCode": "L"
+  },
+  {
+    "name": "Hartstown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Howth",
+    "stateCode": "L"
+  },
+  {
+    "name": "Jobstown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Johnstown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kells",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kentstown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kilbeggan",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kilcock",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kilcoole",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kilcullen",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kildare",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kilkenny",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kill",
+    "stateCode": "L"
+  },
+  {
+    "name": "Killester",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kilmacanoge",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kilpedder",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kilquade",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kinnegad",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kinsealy-Drinan",
+    "stateCode": "L"
+  },
+  {
+    "name": "Knocklyon",
+    "stateCode": "L"
+  },
+  {
+    "name": "Lanesborough",
+    "stateCode": "L"
+  },
+  {
+    "name": "Laois",
+    "stateCode": "L"
+  },
+  {
+    "name": "Laytown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Leixlip",
+    "stateCode": "L"
+  },
+  {
+    "name": "Little Bray",
+    "stateCode": "L"
+  },
+  {
+    "name": "Loch Garman",
+    "stateCode": "L"
+  },
+  {
+    "name": "Longford",
+    "stateCode": "L"
+  },
+  {
+    "name": "Longwood",
+    "stateCode": "L"
+  },
+  {
+    "name": "Loughlinstown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Lú",
+    "stateCode": "L"
+  },
+  {
+    "name": "Lucan",
+    "stateCode": "L"
+  },
+  {
+    "name": "Lusk",
+    "stateCode": "L"
+  },
+  {
+    "name": "Malahide",
+    "stateCode": "L"
+  },
+  {
+    "name": "Marino",
+    "stateCode": "L"
+  },
+  {
+    "name": "Maynooth",
+    "stateCode": "L"
+  },
+  {
+    "name": "Milltown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Moate",
+    "stateCode": "L"
+  },
+  {
+    "name": "Monasterevin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Monkstown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mooncoin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Moone",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mount Merrion",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mountmellick",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mountrath",
+    "stateCode": "L"
+  },
+  {
+    "name": "Naas",
+    "stateCode": "L"
+  },
+  {
+    "name": "Navan",
+    "stateCode": "L"
+  },
+  {
+    "name": "New Ross",
+    "stateCode": "L"
+  },
+  {
+    "name": "Newcastle",
+    "stateCode": "L"
+  },
+  {
+    "name": "Newtown Trim",
+    "stateCode": "L"
+  },
+  {
+    "name": "Newtownmountkennedy",
+    "stateCode": "L"
+  },
+  {
+    "name": "Old Kilcullen",
+    "stateCode": "L"
+  },
+  {
+    "name": "Oldbawn",
+    "stateCode": "L"
+  },
+  {
+    "name": "Oldcastle",
+    "stateCode": "L"
+  },
+  {
+    "name": "Palmerstown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Piltown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Portarlington",
+    "stateCode": "L"
+  },
+  {
+    "name": "Portlaoise",
+    "stateCode": "L"
+  },
+  {
+    "name": "Portmarnock",
+    "stateCode": "L"
+  },
+  {
+    "name": "Portraine",
+    "stateCode": "L"
+  },
+  {
+    "name": "Prosperous",
+    "stateCode": "L"
+  },
+  {
+    "name": "Raheny",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rathangan",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rathcoole",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rathdowney",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rathdrum",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rathgar",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rathmines",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rathnew",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rathwire",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ratoath",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rialto",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ringsend",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rochfortbridge",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rosslare",
+    "stateCode": "L"
+  },
+  {
+    "name": "Saggart",
+    "stateCode": "L"
+  },
+  {
+    "name": "Sallins",
+    "stateCode": "L"
+  },
+  {
+    "name": "Sallynoggin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Sandyford",
+    "stateCode": "L"
+  },
+  {
+    "name": "Sandymount",
+    "stateCode": "L"
+  },
+  {
+    "name": "Shankill",
+    "stateCode": "L"
+  },
+  {
+    "name": "Skerries",
+    "stateCode": "L"
+  },
+  {
+    "name": "Slane",
+    "stateCode": "L"
+  },
+  {
+    "name": "South Dublin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Stamullin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Stradbally",
+    "stateCode": "L"
+  },
+  {
+    "name": "Sutton",
+    "stateCode": "L"
+  },
+  {
+    "name": "Swords",
+    "stateCode": "L"
+  },
+  {
+    "name": "Tallaght",
+    "stateCode": "L"
+  },
+  {
+    "name": "Templeogue",
+    "stateCode": "L"
+  },
+  {
+    "name": "Terenure",
+    "stateCode": "L"
+  },
+  {
+    "name": "Termonfeckin",
+    "stateCode": "L"
+  },
+  {
+    "name": "Thomastown",
+    "stateCode": "L"
+  },
+  {
+    "name": "Trim",
+    "stateCode": "L"
+  },
+  {
+    "name": "Tullamore",
+    "stateCode": "L"
+  },
+  {
+    "name": "Tullow",
+    "stateCode": "L"
+  },
+  {
+    "name": "Tullyallen",
+    "stateCode": "L"
+  },
+  {
+    "name": "Uíbh Fhailí",
+    "stateCode": "L"
+  },
+  {
+    "name": "Valleymount",
+    "stateCode": "L"
+  },
+  {
+    "name": "Wicklow",
+    "stateCode": "L"
+  },
+  {
+    "name": "Abbeyfeale",
+    "stateCode": "M"
+  },
+  {
+    "name": "Adare",
+    "stateCode": "M"
+  },
+  {
+    "name": "Aghada",
+    "stateCode": "M"
+  },
+  {
+    "name": "An Clár",
+    "stateCode": "M"
+  },
+  {
+    "name": "Annacotty",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ardnacrusha",
+    "stateCode": "M"
+  },
+  {
+    "name": "Askeaton",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ballina",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ballybunnion",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bandon",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bantry",
+    "stateCode": "M"
+  },
+  {
+    "name": "Blarney",
+    "stateCode": "M"
+  },
+  {
+    "name": "Caherconlish",
+    "stateCode": "M"
+  },
+  {
+    "name": "Cahersiveen",
+    "stateCode": "M"
+  },
+  {
+    "name": "Cahir",
+    "stateCode": "M"
+  },
+  {
+    "name": "Carrick-on-Suir",
+    "stateCode": "M"
+  },
+  {
+    "name": "Carrigaline",
+    "stateCode": "M"
+  },
+  {
+    "name": "Carrigtwohill",
+    "stateCode": "M"
+  },
+  {
+    "name": "Cashel",
+    "stateCode": "M"
+  },
+  {
+    "name": "Castleconnell",
+    "stateCode": "M"
+  },
+  {
+    "name": "Castleisland",
+    "stateCode": "M"
+  },
+  {
+    "name": "Castlemartyr",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ciarraí",
+    "stateCode": "M"
+  },
+  {
+    "name": "Cill Airne",
+    "stateCode": "M"
+  },
+  {
+    "name": "Clonakilty",
+    "stateCode": "M"
+  },
+  {
+    "name": "Cloyne",
+    "stateCode": "M"
+  },
+  {
+    "name": "Cluain Meala",
+    "stateCode": "M"
+  },
+  {
+    "name": "Cobh",
+    "stateCode": "M"
+  },
+  {
+    "name": "Cork",
+    "stateCode": "M"
+  },
+  {
+    "name": "Cork City",
+    "stateCode": "M"
+  },
+  {
+    "name": "County Cork",
+    "stateCode": "M"
+  },
+  {
+    "name": "County Tipperary",
+    "stateCode": "M"
+  },
+  {
+    "name": "Croom",
+    "stateCode": "M"
+  },
+  {
+    "name": "Crosshaven",
+    "stateCode": "M"
+  },
+  {
+    "name": "Derry",
+    "stateCode": "M"
+  },
+  {
+    "name": "Dingle",
+    "stateCode": "M"
+  },
+  {
+    "name": "Dungarvan",
+    "stateCode": "M"
+  },
+  {
+    "name": "Dunmanway",
+    "stateCode": "M"
+  },
+  {
+    "name": "Dunmore East",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ennis",
+    "stateCode": "M"
+  },
+  {
+    "name": "Fermoy",
+    "stateCode": "M"
+  },
+  {
+    "name": "Fethard",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kanturk",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kenmare",
+    "stateCode": "M"
+  },
+  {
+    "name": "Killaloe",
+    "stateCode": "M"
+  },
+  {
+    "name": "Killorglin",
+    "stateCode": "M"
+  },
+  {
+    "name": "Killumney",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kilmallock",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kilrush",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kinsale",
+    "stateCode": "M"
+  },
+  {
+    "name": "Listowel",
+    "stateCode": "M"
+  },
+  {
+    "name": "Luimneach",
+    "stateCode": "M"
+  },
+  {
+    "name": "Macroom",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mallow",
+    "stateCode": "M"
+  },
+  {
+    "name": "Midleton",
+    "stateCode": "M"
+  },
+  {
+    "name": "Millstreet",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mitchelstown",
+    "stateCode": "M"
+  },
+  {
+    "name": "Moroe",
+    "stateCode": "M"
+  },
+  {
+    "name": "Moyross",
+    "stateCode": "M"
+  },
+  {
+    "name": "Nenagh",
+    "stateCode": "M"
+  },
+  {
+    "name": "Nenagh Bridge",
+    "stateCode": "M"
+  },
+  {
+    "name": "Newcastle West",
+    "stateCode": "M"
+  },
+  {
+    "name": "Newmarket on Fergus",
+    "stateCode": "M"
+  },
+  {
+    "name": "Newport",
+    "stateCode": "M"
+  },
+  {
+    "name": "Passage West",
+    "stateCode": "M"
+  },
+  {
+    "name": "Portlaw",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ráth Luirc",
+    "stateCode": "M"
+  },
+  {
+    "name": "Rathcormac",
+    "stateCode": "M"
+  },
+  {
+    "name": "Rathkeale",
+    "stateCode": "M"
+  },
+  {
+    "name": "Roscrea",
+    "stateCode": "M"
+  },
+  {
+    "name": "Shannon",
+    "stateCode": "M"
+  },
+  {
+    "name": "Sixmilebridge",
+    "stateCode": "M"
+  },
+  {
+    "name": "Skibbereen",
+    "stateCode": "M"
+  },
+  {
+    "name": "Templemore",
+    "stateCode": "M"
+  },
+  {
+    "name": "Thurles",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tipperary",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tower",
+    "stateCode": "M"
+  },
+  {
+    "name": "Trá Mhór",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tralee",
+    "stateCode": "M"
+  },
+  {
+    "name": "Waterford",
+    "stateCode": "M"
+  },
+  {
+    "name": "Watergrasshill",
+    "stateCode": "M"
+  },
+  {
+    "name": "Whitegate",
+    "stateCode": "M"
+  },
+  {
+    "name": "Youghal",
+    "stateCode": "M"
+  },
+  {
+    "name": "An Cabhán",
+    "stateCode": "U"
+  },
+  {
+    "name": "Bailieborough",
+    "stateCode": "U"
+  },
+  {
+    "name": "Ballybofey",
+    "stateCode": "U"
+  },
+  {
+    "name": "Ballyconnell",
+    "stateCode": "U"
+  },
+  {
+    "name": "Ballyjamesduff",
+    "stateCode": "U"
+  },
+  {
+    "name": "Ballyshannon",
+    "stateCode": "U"
+  },
+  {
+    "name": "Belturbet",
+    "stateCode": "U"
+  },
+  {
+    "name": "Buncrana",
+    "stateCode": "U"
+  },
+  {
+    "name": "Bundoran",
+    "stateCode": "U"
+  },
+  {
+    "name": "Carndonagh",
+    "stateCode": "U"
+  },
+  {
+    "name": "Carrickmacross",
+    "stateCode": "U"
+  },
+  {
+    "name": "Castleblayney",
+    "stateCode": "U"
+  },
+  {
+    "name": "Cavan",
+    "stateCode": "U"
+  },
+  {
+    "name": "Clones",
+    "stateCode": "U"
+  },
+  {
+    "name": "Convoy",
+    "stateCode": "U"
+  },
+  {
+    "name": "Cootehill",
+    "stateCode": "U"
+  },
+  {
+    "name": "County Donegal",
+    "stateCode": "U"
+  },
+  {
+    "name": "County Monaghan",
+    "stateCode": "U"
+  },
+  {
+    "name": "Derrybeg",
+    "stateCode": "U"
+  },
+  {
+    "name": "Donegal",
+    "stateCode": "U"
+  },
+  {
+    "name": "Dungloe",
+    "stateCode": "U"
+  },
+  {
+    "name": "Dunlewy",
+    "stateCode": "U"
+  },
+  {
+    "name": "Gweedore",
+    "stateCode": "U"
+  },
+  {
+    "name": "Killybegs",
+    "stateCode": "U"
+  },
+  {
+    "name": "Kingscourt",
+    "stateCode": "U"
+  },
+  {
+    "name": "Leifear",
+    "stateCode": "U"
+  },
+  {
+    "name": "Letterkenny",
+    "stateCode": "U"
+  },
+  {
+    "name": "Monaghan",
+    "stateCode": "U"
+  },
+  {
+    "name": "Moville",
+    "stateCode": "U"
+  },
+  {
+    "name": "Muff",
+    "stateCode": "U"
+  },
+  {
+    "name": "Mullagh",
+    "stateCode": "U"
+  },
+  {
+    "name": "Newtown Cunningham",
+    "stateCode": "U"
+  },
+  {
+    "name": "Ramelton",
+    "stateCode": "U"
+  },
+  {
+    "name": "Raphoe",
+    "stateCode": "U"
+  },
+  {
+    "name": "Virginia",
+    "stateCode": "U"
+  }
+]

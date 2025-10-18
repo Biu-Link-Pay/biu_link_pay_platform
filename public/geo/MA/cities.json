@@ -1,0 +1,898 @@
+[
+  {
+    "name": "Al Hoceïma",
+    "stateCode": "01"
+  },
+  {
+    "name": "Al-Hoceima",
+    "stateCode": "01"
+  },
+  {
+    "name": "Asilah",
+    "stateCode": "01"
+  },
+  {
+    "name": "Bni Bouayach",
+    "stateCode": "01"
+  },
+  {
+    "name": "Brikcha",
+    "stateCode": "01"
+  },
+  {
+    "name": "Cap Negro II",
+    "stateCode": "01"
+  },
+  {
+    "name": "Chefchaouen Province",
+    "stateCode": "01"
+  },
+  {
+    "name": "Chefchaouene",
+    "stateCode": "01"
+  },
+  {
+    "name": "Derdara",
+    "stateCode": "01"
+  },
+  {
+    "name": "Fahs-Anjra",
+    "stateCode": "01"
+  },
+  {
+    "name": "Fnidek",
+    "stateCode": "01"
+  },
+  {
+    "name": "Imzouren",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ksar El Kebir",
+    "stateCode": "01"
+  },
+  {
+    "name": "Larache",
+    "stateCode": "01"
+  },
+  {
+    "name": "M'Diq-Fnideq",
+    "stateCode": "01"
+  },
+  {
+    "name": "Martil",
+    "stateCode": "01"
+  },
+  {
+    "name": "Oued Laou",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ouezzane",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ouezzane Province",
+    "stateCode": "01"
+  },
+  {
+    "name": "Senada",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tamorot",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tanger-Assilah",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tangier",
+    "stateCode": "01"
+  },
+  {
+    "name": "Targuist",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tetouan",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tirhanimîne",
+    "stateCode": "01"
+  },
+  {
+    "name": "Zinat",
+    "stateCode": "01"
+  },
+  {
+    "name": "Zoumi",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ahfir",
+    "stateCode": "02"
+  },
+  {
+    "name": "Aïn Beni Mathar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Al Aaroui",
+    "stateCode": "02"
+  },
+  {
+    "name": "Berkane",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bouarfa",
+    "stateCode": "02"
+  },
+  {
+    "name": "Debdou",
+    "stateCode": "02"
+  },
+  {
+    "name": "Driouch Province",
+    "stateCode": "02"
+  },
+  {
+    "name": "El Aïoun",
+    "stateCode": "02"
+  },
+  {
+    "name": "Figuig",
+    "stateCode": "02"
+  },
+  {
+    "name": "Guercif Province",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jerada",
+    "stateCode": "02"
+  },
+  {
+    "name": "Madagh",
+    "stateCode": "02"
+  },
+  {
+    "name": "Midar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nador",
+    "stateCode": "02"
+  },
+  {
+    "name": "Oujda-Angad",
+    "stateCode": "02"
+  },
+  {
+    "name": "Saidia",
+    "stateCode": "02"
+  },
+  {
+    "name": "Selouane",
+    "stateCode": "02"
+  },
+  {
+    "name": "Taourirt",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tiztoutine",
+    "stateCode": "02"
+  },
+  {
+    "name": "Zaïo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Aïn Leuh",
+    "stateCode": "03"
+  },
+  {
+    "name": "Aknoul",
+    "stateCode": "03"
+  },
+  {
+    "name": "Almis Marmoucha",
+    "stateCode": "03"
+  },
+  {
+    "name": "Azrou",
+    "stateCode": "03"
+  },
+  {
+    "name": "Bhalil",
+    "stateCode": "03"
+  },
+  {
+    "name": "Bouarouss",
+    "stateCode": "03"
+  },
+  {
+    "name": "Boulemane",
+    "stateCode": "03"
+  },
+  {
+    "name": "El Hajeb",
+    "stateCode": "03"
+  },
+  {
+    "name": "El-Hajeb",
+    "stateCode": "03"
+  },
+  {
+    "name": "Fes",
+    "stateCode": "03"
+  },
+  {
+    "name": "Fès al Bali",
+    "stateCode": "03"
+  },
+  {
+    "name": "Galaz",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ghouazi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Guercif",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ifrane",
+    "stateCode": "03"
+  },
+  {
+    "name": "Meknes",
+    "stateCode": "03"
+  },
+  {
+    "name": "Missour",
+    "stateCode": "03"
+  },
+  {
+    "name": "Moulay Bouchta",
+    "stateCode": "03"
+  },
+  {
+    "name": "Moulay-Yacoub",
+    "stateCode": "03"
+  },
+  {
+    "name": "Oued Amlil",
+    "stateCode": "03"
+  },
+  {
+    "name": "Oulad Tayeb",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ourtzagh",
+    "stateCode": "03"
+  },
+  {
+    "name": "Sefrou",
+    "stateCode": "03"
+  },
+  {
+    "name": "Tahla",
+    "stateCode": "03"
+  },
+  {
+    "name": "Talzemt",
+    "stateCode": "03"
+  },
+  {
+    "name": "Taounate",
+    "stateCode": "03"
+  },
+  {
+    "name": "Taza",
+    "stateCode": "03"
+  },
+  {
+    "name": "Tmourghout",
+    "stateCode": "03"
+  },
+  {
+    "name": "Azemmour",
+    "stateCode": "06"
+  },
+  {
+    "name": "Benslimane",
+    "stateCode": "06"
+  },
+  {
+    "name": "Berrechid",
+    "stateCode": "06"
+  },
+  {
+    "name": "Berrechid Province",
+    "stateCode": "06"
+  },
+  {
+    "name": "Boulaouane",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bouskoura",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bouznika",
+    "stateCode": "06"
+  },
+  {
+    "name": "Casablanca",
+    "stateCode": "06"
+  },
+  {
+    "name": "El Jadid",
+    "stateCode": "06"
+  },
+  {
+    "name": "El-Jadida",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mediouna",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mohammedia",
+    "stateCode": "06"
+  },
+  {
+    "name": "Nouaceur",
+    "stateCode": "06"
+  },
+  {
+    "name": "Oualidia",
+    "stateCode": "06"
+  },
+  {
+    "name": "Oulad Frej",
+    "stateCode": "06"
+  },
+  {
+    "name": "Settat",
+    "stateCode": "06"
+  },
+  {
+    "name": "Settat Province",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sidi Bennour",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sidi Smai’il",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tit Mellil",
+    "stateCode": "06"
+  },
+  {
+    "name": "Zawyat an Nwaçer",
+    "stateCode": "06"
+  },
+  {
+    "name": "Agdz",
+    "stateCode": "08"
+  },
+  {
+    "name": "Alnif",
+    "stateCode": "08"
+  },
+  {
+    "name": "Aoufous",
+    "stateCode": "08"
+  },
+  {
+    "name": "Arfoud",
+    "stateCode": "08"
+  },
+  {
+    "name": "Errachidia",
+    "stateCode": "08"
+  },
+  {
+    "name": "Imilchil",
+    "stateCode": "08"
+  },
+  {
+    "name": "Jebel Tiskaouine",
+    "stateCode": "08"
+  },
+  {
+    "name": "Jorf",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kelaat Mgouna",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mhamid",
+    "stateCode": "08"
+  },
+  {
+    "name": "Midelt",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ouarzazat",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ouarzazate",
+    "stateCode": "08"
+  },
+  {
+    "name": "Reçani",
+    "stateCode": "08"
+  },
+  {
+    "name": "Taznakht",
+    "stateCode": "08"
+  },
+  {
+    "name": "Telouet",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tinghir",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tinghir Province",
+    "stateCode": "08"
+  },
+  {
+    "name": "Zagora",
+    "stateCode": "08"
+  },
+  {
+    "name": "Assa-Zag",
+    "stateCode": "10"
+  },
+  {
+    "name": "Guelmim",
+    "stateCode": "10"
+  },
+  {
+    "name": "Sidi Ifni",
+    "stateCode": "10"
+  },
+  {
+    "name": "Tan-Tan",
+    "stateCode": "10"
+  },
+  {
+    "name": "Akhfennir",
+    "stateCode": "11"
+  },
+  {
+    "name": "Boujdour",
+    "stateCode": "11"
+  },
+  {
+    "name": "Es-Semara",
+    "stateCode": "11"
+  },
+  {
+    "name": "Gueltat Zemmour",
+    "stateCode": "11"
+  },
+  {
+    "name": "Laayoune",
+    "stateCode": "11"
+  },
+  {
+    "name": "Smara",
+    "stateCode": "11"
+  },
+  {
+    "name": "Tarfaya",
+    "stateCode": "11"
+  },
+  {
+    "name": "Agadir",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Agadir Melloul",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Agadir-Ida-ou-Tnan",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Aoulouz",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Aourir",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Arazane",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Argana",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Bigoudine",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Chtouka-Ait-Baha",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Inezgane",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Inezgane-Ait Melloul",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Ouijjane",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Oulad Teïma",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Reggada",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Sidi Ifni",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Tadrart",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Tafraout",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Taghazout",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Taliouine",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Tamri",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Tanalt",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Taroudannt",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Taroudant",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Tarsouat",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Tata",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Tiznit",
+    "stateCode": "ASZ"
+  },
+  {
+    "name": "Arbaoua",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Had Kourt",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Kenitra",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Kenitra Province",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Khemisset",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Mechraa Bel Ksiri",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Oulmes",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Rabat",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Sale",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Sidi Bousber",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Sidi Qacem",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Sidi Redouane",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Sidi Slimane",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Sidi Yahia El Gharb",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Sidi-Kacem",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Skhirate",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Skhirate-Temara",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Souq Larb’a al Gharb",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Temara",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Teroual",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Tiflet",
+    "stateCode": "KEN"
+  },
+  {
+    "name": "Aguelmous",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Al Fqih Ben Çalah",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Azilal",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Azilal Province",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Beni Mellal",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Beni-Mellal",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Boujniba",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Bzou",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Dar Ould Zidouh",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Demnate",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "El Ksiba",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Fquih Ben Salah Province",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Ifrane",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Isseksi",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Itzer",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Kasba Tadla",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Kerrouchen",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Khenifra",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Khouribga",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Khouribga Province",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Midelt",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Ouaoula",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Oued Zem",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Sidi Jaber",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Timoulilt",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Zawyat ech Cheïkh",
+    "stateCode": "KHN"
+  },
+  {
+    "name": "Aousserd",
+    "stateCode": "OUD"
+  },
+  {
+    "name": "Imlili",
+    "stateCode": "OUD"
+  },
+  {
+    "name": "Oued-Ed-Dahab",
+    "stateCode": "OUD"
+  },
+  {
+    "name": "Abadou",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Adassil",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Al-Haouz",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Bouabout",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Chichaoua",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Essaouira",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Kelaa-Des-Sraghna",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Marrakech",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Marrakesh",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Oukaïmedene",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Rehamna",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Safi",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Setti Fatma",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Sidi Rahhal",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Smimou",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Tamanar",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Taouloukoult",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Tidili Mesfioua",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Timezgadiouine",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Youssoufia",
+    "stateCode": "SAF"
+  },
+  {
+    "name": "Zerkten",
+    "stateCode": "SAF"
+  }
+]

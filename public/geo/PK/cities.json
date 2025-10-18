@@ -1,0 +1,1834 @@
+[
+  {
+    "name": "Alik Ghund",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Awārān District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Barkhan",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Bārkhān District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Bela",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Bhag",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Chāgai District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Chaman",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Chowki Jamali",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Dadhar",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Dalbandin",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Dera Bugti",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Dera Bugti District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Duki",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Gadani",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Garhi Khairo",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Gwadar",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Harnai",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Jāfarābād District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Jhal Magsi District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Jiwani",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kalat",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kalāt District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Khadan Khak",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kharan",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Khārān District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Khuzdar",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Khuzdār District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kohlu",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Kot Malik Barkhurdar",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Lasbela District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Loralai",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Loralai District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Mach",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Mastung",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Mastung District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Mehrabpur",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Mūsa Khel District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Nasīrābād District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Nushki",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Ormara",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Panjgūr District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Pasni",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Pishin",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Qila Saifullāh District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Quetta",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Quetta District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Sibi",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Sohbatpur",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Surab",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Turbat",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Usta Muhammad",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Uthal",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Zhob",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Zhob District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Ziarat",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Ziārat District",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Barishal",
+    "stateCode": "GB"
+  },
+  {
+    "name": "Gilgit",
+    "stateCode": "GB"
+  },
+  {
+    "name": "Skardu",
+    "stateCode": "GB"
+  },
+  {
+    "name": "Islamabad",
+    "stateCode": "IS"
+  },
+  {
+    "name": "Bhimbar",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Kotli",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Kotli District",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Mirpur District",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Muzaffarābād",
+    "stateCode": "JK"
+  },
+  {
+    "name": "New Mirpur",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Rawala Kot",
+    "stateCode": "JK"
+  },
+  {
+    "name": "Abbottabad",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Akora",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Aman Garh",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Amirabad",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Ashanagro Koto",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Baffa",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Bannu",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Bat Khela",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Battagram",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Battagram District",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Buner District",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Charsadda",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Cherat Cantonement",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Chitral",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Dera Ismail Khan",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Dera Ismāīl Khān District",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Doaba",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Hangu",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Haripur",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Havelian",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Kakad Wari Dir Upper",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Karak",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Khalabat",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Kohat",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Kulachi",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Lachi",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Lakki",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Mansehra",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Mardan",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Mingora",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Noorabad",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Nowshera",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Nowshera Cantonment",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Pabbi",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Paharpur",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Peshawar",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Risalpur Cantonment",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Sarai Naurang",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Shabqadar",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Shingli Bala",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Shorkot",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Swabi",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Tangi",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Tank",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Thal",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Topi",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Upper Dir",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Utmanzai",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Zaida",
+    "stateCode": "KP"
+  },
+  {
+    "name": "Ahmadpur Sial",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Ahmedpur East",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Alipur Chatha",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Arifwala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Attock Tehsil",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Baddomalhi",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Bahawalnagar",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Bahawalpur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Bakhri Ahmad Khan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Basirpur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Basti Dosa",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Begowala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Bhakkar",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Bhalwal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Bhawana",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Bhera",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Bhopalwala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Burewala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chak Azam Saffo",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chak Jhumra",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chak One Hundred Twenty Nine Left",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chak Thirty-one -Eleven Left",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chak Two Hundred Forty-Nine TDA",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chakwal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chawinda",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chichawatni",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chiniot",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chishtian",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Choa Saidanshah",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chuhar Kana",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Chunian",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Daira Din Panah",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dajal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dandot RS",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Darya Khan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Daska",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Daud Khel",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Daultala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dera Ghazi Khan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dhanot",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dhaunkal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dhok Awan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dijkot",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dinan Bashnoian Wala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dinga",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dipalpur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dullewala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dunga Bunga",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Dunyapur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Eminabad",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Faisalabad",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Faqirwali",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Faruka",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Fazilpur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Ferozewala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Fort Abbas",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Garh Maharaja",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Gojra",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Gujar Khan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Gujranwala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Gujranwala Division",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Gujrat",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Hadali",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Hafizabad",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Harnoli",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Harunabad",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Hasan Abdal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Hasilpur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Haveli Lakha",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Hazro",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Hujra Shah Muqeem",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jahanian Shah",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jalalpur Jattan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jalalpur Pirwala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jampur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jand",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jandiala Sher Khan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jaranwala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jatoi Shimali",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jauharabad",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jhang",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jhang Sadar",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jhawarian",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Jhelum",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kabirwala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kahna Nau",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kahuta",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kalabagh",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kalaswala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kaleke Mandi",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kallar Kahar",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kalur Kot",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kamalia",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kamar Mushani",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kamoke",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kamra",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kanganpur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Karor",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kasur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Keshupur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Khairpur Tamiwali",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Khandowa",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Khanewal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Khanga Dogran",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Khangarh",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Khanpur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kharian",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Khewra",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Khurrianwala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Khushab",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kohror Pakka",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kot Addu Tehsil",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kot Ghulam Muhammad",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kot Mumin",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kot Radha Kishan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kot Rajkour",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kot Samaba",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kot Sultan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kotli Loharan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kundian",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Kunjah",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Ladhewala Waraich",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Lahore",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Lala Musa",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Lalian",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Layyah",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Layyah District",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Liliani",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Lodhran",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mailsi",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Malakwal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Malakwal City",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mamu Kanjan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mananwala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mandi Bahauddin",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mandi Bahauddin District",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mangla",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mankera",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mehmand Chak",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mian Channun",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mianke Mor",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mianwali",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Minchinabad",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mitha Tiwana",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Moza Shahwala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Multan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Multan District",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Muridke",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Murree",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Mustafabad",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Muzaffargarh",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Nankana Sahib",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Narang Mandi",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Narowal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Naushahra Virkan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Nazir Town",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Okara",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Pakki Shagwanwali",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Pakpattan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Pasrur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Pattoki",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Phalia",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Pind Dadan Khan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Pindi Bhattian",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Pindi Gheb",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Pir Mahal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Qadirpur Ran",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Qila Didar Singh",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Rabwah",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Rahim Yar Khan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Rahimyar Khan District",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Raiwind",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Raja Jang",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Rajanpur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Rasulnagar",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Rawalpindi",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Rawalpindi District",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Renala Khurd",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Rojhan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sadiqabad",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sahiwal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sambrial",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sangla Hill",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sanjwal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sarai Alamgir",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sarai Sidhu",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sargodha",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Shahkot Tehsil",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Shahpur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Shahr Sultan",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Shakargarh",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sharqpur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sheikhupura",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Shorkot",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Shujaabad",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sialkot",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sillanwali",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sodhra",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Sukheke Mandi",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Surkhpur",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Talagang",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Talamba",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Tandlianwala",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Taunsa",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Toba Tek Singh",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Umerkot",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Vihari",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Wah",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Warburton",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Wazirabad",
+    "stateCode": "PB"
+  },
+  {
+    "name": "West Punjab",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Yazman",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Zafarwal",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Zahir Pir",
+    "stateCode": "PB"
+  },
+  {
+    "name": "Adilpur",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Badin",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Bagarji",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Bandhi",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Berani",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Bhan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Bhiria",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Bhit Shah",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Bozdar Wada",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Bulri",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Chak",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Chamber",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Chhor",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Chuhar Jamali",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Dadu",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Daromehar",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Darya Khan Marri",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Daulatpur",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Daur",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Dhoro Naro",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Digri",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Diplo",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Dokri",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Gambat",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Garhiyasin",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Gharo",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Ghauspur",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Ghotki",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Goth Garelo",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Goth Phulji",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Goth Radhan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Hala",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Hingorja",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Hyderabad",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Islamkot",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Jacobabad",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Jām Sāhib",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Jamshoro",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Jati",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Jhol",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Johi",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kadhan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kambar",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kandhkot",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kandiari",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kandiaro",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Karachi",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Karaundi",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kario Ghanwar",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kashmor",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Keti Bandar",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Khadro",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Khairpur",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Khairpur Mir’s",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Khairpur Nathan Shah",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Khanpur Mahar",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kot Diji",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kotri",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Kunri",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Lakhi",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Larkana",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Madeji",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Malir Cantonment",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Matiari",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Matli",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Mehar",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Miro Khan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Mirpur Bhtoro",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Mirpur Khas",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Mirpur Mathelo",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Mirpur Sakro",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Mirwah Gorchani",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Mithi",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Moro",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Nabisar",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Nasirabad",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Naudero",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Naukot",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Naushahro Firoz",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Nawabshah",
+    "stateCode": "SD"
+  },
+  {
+    "name": "New Bādāh",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Pad Idan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Pano Aqil",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Pir Jo Goth",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Pithoro",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Rajo Khanani",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Ranipur",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Ratodero",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Rohri",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Rustam",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Sakrand",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Samaro",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Sanghar",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Sann",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Sehwan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Setharja Old",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shahdad Kot",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shahdadpur",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shahpur Chakar",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Shikarpur",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Sinjhoro",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Sīta Road",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Sobhodero",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Sukkur",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Talhar",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tando Adam",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tando Allahyar",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tando Bago",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tando Jam",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tando Mitha Khan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tando Muhammad Khan",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tangwani",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Tharu Shah",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Thatta",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Thul",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Ubauro",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Umarkot",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Umerkot District",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Warah",
+    "stateCode": "SD"
+  },
+  {
+    "name": "Alizai",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Gulishah Kach",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Landi Kotal",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Miran Shah",
+    "stateCode": "TA"
+  },
+  {
+    "name": "North Wazīristān Agency",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Shinpokh",
+    "stateCode": "TA"
+  },
+  {
+    "name": "South Wazīristān Agency",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Wana",
+    "stateCode": "TA"
+  }
+]

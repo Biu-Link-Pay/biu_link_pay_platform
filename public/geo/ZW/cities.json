@@ -1,0 +1,438 @@
+[
+  {
+    "name": "Bulawayo",
+    "stateCode": "BU"
+  },
+  {
+    "name": "Chitungwiza",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Epworth",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Harare",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Buhera District",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Chimanimani",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Chimanimani District",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Chipinge",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Chipinge District",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Dorowa Mining Lease",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Headlands",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Makoni District",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mutare",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mutare District",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Mutasa District",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nyanga",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nyanga District",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nyazura",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Odzi",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Penhalonga",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Rusape",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Bindura",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Bindura District",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Centenary",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Centenary District",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Concession",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Glendale",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Guruve District",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Mazowe",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Mazowe District",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Mount Darwin",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Mvurwi",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Rushinga District",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Shamva",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Shamva District",
+    "stateCode": "MC"
+  },
+  {
+    "name": "Beatrice",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Chivhu",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Goromonzi District",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Macheke",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Marondera",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Marondera District",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Mudzi District",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Murehwa",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Murehwa District",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Mutoko",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Ruwa",
+    "stateCode": "ME"
+  },
+  {
+    "name": "Gokwe",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Gweru",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Gweru District",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Kwekwe",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Kwekwe District",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Lalapanzi",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Mberengwa District",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Mvuma",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Redcliff",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Shangani",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Shurugwi",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Shurugwi District",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Zvishavane District",
+    "stateCode": "MI"
+  },
+  {
+    "name": "Binga",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Binga District",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Bubi District",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Dete",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Hwange",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Hwange District",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Inyati",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Kamativi Mine",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Lupane",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Lupane District",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Nkayi District",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Victoria Falls",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Beitbridge",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Beitbridge District",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Esigodini",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Filabusi",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Gwanda",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Gwanda District",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Insiza",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Insiza District",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Mangwe District",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Matobo",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Plumtree",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Umzingwane District",
+    "stateCode": "MS"
+  },
+  {
+    "name": "Bikita District",
+    "stateCode": "MV"
+  },
+  {
+    "name": "Chiredzi",
+    "stateCode": "MV"
+  },
+  {
+    "name": "Chiredzi District",
+    "stateCode": "MV"
+  },
+  {
+    "name": "Chivi District",
+    "stateCode": "MV"
+  },
+  {
+    "name": "Gutu District",
+    "stateCode": "MV"
+  },
+  {
+    "name": "Mashava",
+    "stateCode": "MV"
+  },
+  {
+    "name": "Masvingo",
+    "stateCode": "MV"
+  },
+  {
+    "name": "Masvingo District",
+    "stateCode": "MV"
+  },
+  {
+    "name": "Mwenezi District",
+    "stateCode": "MV"
+  },
+  {
+    "name": "Zvishavane",
+    "stateCode": "MV"
+  },
+  {
+    "name": "Banket",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Chakari",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Chegutu",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Chegutu District",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Chinhoyi",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Chirundu",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Hurungwe District",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Kadoma",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Kadoma District",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Kariba",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Kariba District",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Karoi",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Makonde District",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Mhangura",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Norton",
+    "stateCode": "MW"
+  },
+  {
+    "name": "Raffingora",
+    "stateCode": "MW"
+  }
+]

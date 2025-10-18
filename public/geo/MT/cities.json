@@ -1,0 +1,274 @@
+[
+  {
+    "name": "Attard",
+    "stateCode": "01"
+  },
+  {
+    "name": "Balzan",
+    "stateCode": "02"
+  },
+  {
+    "name": "Vittoriosa",
+    "stateCode": "03"
+  },
+  {
+    "name": "Birkirkara",
+    "stateCode": "04"
+  },
+  {
+    "name": "Birżebbuġa",
+    "stateCode": "05"
+  },
+  {
+    "name": "Cospicua",
+    "stateCode": "06"
+  },
+  {
+    "name": "Dingli",
+    "stateCode": "07"
+  },
+  {
+    "name": "Fgura",
+    "stateCode": "08"
+  },
+  {
+    "name": "Floriana",
+    "stateCode": "09"
+  },
+  {
+    "name": "Fontana",
+    "stateCode": "10"
+  },
+  {
+    "name": "Għarb",
+    "stateCode": "12"
+  },
+  {
+    "name": "Għajnsielem",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hal Gharghur",
+    "stateCode": "13"
+  },
+  {
+    "name": "Għaxaq",
+    "stateCode": "15"
+  },
+  {
+    "name": "Gudja",
+    "stateCode": "16"
+  },
+  {
+    "name": "Gżira",
+    "stateCode": "17"
+  },
+  {
+    "name": "Ħamrun",
+    "stateCode": "18"
+  },
+  {
+    "name": "L-Iklin",
+    "stateCode": "19"
+  },
+  {
+    "name": "Imdina",
+    "stateCode": "20"
+  },
+  {
+    "name": "Imġarr",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mġarr",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mqabba",
+    "stateCode": "22"
+  },
+  {
+    "name": "Imsida",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kirkop",
+    "stateCode": "23"
+  },
+  {
+    "name": "Imtarfa",
+    "stateCode": "24"
+  },
+  {
+    "name": "Lija",
+    "stateCode": "24"
+  },
+  {
+    "name": "Luqa",
+    "stateCode": "25"
+  },
+  {
+    "name": "Senglea",
+    "stateCode": "25"
+  },
+  {
+    "name": "Kalkara",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kerċem",
+    "stateCode": "27"
+  },
+  {
+    "name": "Marsaskala",
+    "stateCode": "27"
+  },
+  {
+    "name": "Marsaxlokk",
+    "stateCode": "28"
+  },
+  {
+    "name": "Marsa",
+    "stateCode": "31"
+  },
+  {
+    "name": "Mellieħa",
+    "stateCode": "34"
+  },
+  {
+    "name": "Munxar",
+    "stateCode": "36"
+  },
+  {
+    "name": "Nadur",
+    "stateCode": "37"
+  },
+  {
+    "name": "Naxxar",
+    "stateCode": "38"
+  },
+  {
+    "name": "Paola",
+    "stateCode": "39"
+  },
+  {
+    "name": "Pembroke",
+    "stateCode": "40"
+  },
+  {
+    "name": "Pietà",
+    "stateCode": "41"
+  },
+  {
+    "name": "Qala",
+    "stateCode": "42"
+  },
+  {
+    "name": "Qormi",
+    "stateCode": "43"
+  },
+  {
+    "name": "Qrendi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Rabat",
+    "stateCode": "45"
+  },
+  {
+    "name": "Victoria",
+    "stateCode": "45"
+  },
+  {
+    "name": "Saint John",
+    "stateCode": "48"
+  },
+  {
+    "name": "San Ġiljan",
+    "stateCode": "49"
+  },
+  {
+    "name": "San Lawrenz",
+    "stateCode": "50"
+  },
+  {
+    "name": "Mosta",
+    "stateCode": "51"
+  },
+  {
+    "name": "Saint Lucia",
+    "stateCode": "51"
+  },
+  {
+    "name": "Santa Luċija",
+    "stateCode": "51"
+  },
+  {
+    "name": "San Pawl il-Baħar",
+    "stateCode": "52"
+  },
+  {
+    "name": "Sannat",
+    "stateCode": "52"
+  },
+  {
+    "name": "Santa Venera",
+    "stateCode": "53"
+  },
+  {
+    "name": "Siġġiewi",
+    "stateCode": "55"
+  },
+  {
+    "name": "Sliema",
+    "stateCode": "56"
+  },
+  {
+    "name": "Swieqi",
+    "stateCode": "57"
+  },
+  {
+    "name": "Ta’ Xbiex",
+    "stateCode": "58"
+  },
+  {
+    "name": "Tarxien",
+    "stateCode": "59"
+  },
+  {
+    "name": "Valletta",
+    "stateCode": "60"
+  },
+  {
+    "name": "Xagħra",
+    "stateCode": "61"
+  },
+  {
+    "name": "Xewkija",
+    "stateCode": "62"
+  },
+  {
+    "name": "Xgħajra",
+    "stateCode": "63"
+  },
+  {
+    "name": "Żabbar",
+    "stateCode": "64"
+  },
+  {
+    "name": "Haz-Zebbug",
+    "stateCode": "65"
+  },
+  {
+    "name": "Żebbuġ",
+    "stateCode": "66"
+  },
+  {
+    "name": "Żejtun",
+    "stateCode": "67"
+  },
+  {
+    "name": "Żurrieq",
+    "stateCode": "68"
+  }
+]

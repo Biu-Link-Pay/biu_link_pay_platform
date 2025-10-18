@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Oistins",
+    "stateCode": "01"
+  },
+  {
+    "name": "Greenland",
+    "stateCode": "02"
+  },
+  {
+    "name": "Holetown",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bathsheba",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bridgetown",
+    "stateCode": "08"
+  },
+  {
+    "name": "Speightstown",
+    "stateCode": "09"
+  },
+  {
+    "name": "Crane",
+    "stateCode": "10"
+  }
+]

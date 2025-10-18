@@ -1,0 +1,298 @@
+[
+  {
+    "name": "Mawlaik",
+    "stateCode": "01"
+  },
+  {
+    "name": "Monywa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sagaing",
+    "stateCode": "01"
+  },
+  {
+    "name": "Shwebo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Bago",
+    "stateCode": "02"
+  },
+  {
+    "name": "Letpandan",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nyaunglebin",
+    "stateCode": "02"
+  },
+  {
+    "name": "Paungde",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pyay",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pyu",
+    "stateCode": "02"
+  },
+  {
+    "name": "Taungoo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Thanatpin",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tharyarwady",
+    "stateCode": "02"
+  },
+  {
+    "name": "Chauk",
+    "stateCode": "03"
+  },
+  {
+    "name": "Magway",
+    "stateCode": "03"
+  },
+  {
+    "name": "Minbu",
+    "stateCode": "03"
+  },
+  {
+    "name": "Myaydo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Pakokku",
+    "stateCode": "03"
+  },
+  {
+    "name": "Taungdwingyi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Thayetmyo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Yenangyaung",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kyaukse",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mandalay",
+    "stateCode": "04"
+  },
+  {
+    "name": "Meiktila",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mogok",
+    "stateCode": "04"
+  },
+  {
+    "name": "Myingyan",
+    "stateCode": "04"
+  },
+  {
+    "name": "Nyaungshwe",
+    "stateCode": "04"
+  },
+  {
+    "name": "Pyin Oo Lwin",
+    "stateCode": "04"
+  },
+  {
+    "name": "Yamethin",
+    "stateCode": "04"
+  },
+  {
+    "name": "Dawei",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kawthoung",
+    "stateCode": "05"
+  },
+  {
+    "name": "Myeik",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kanbe",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kayan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Syriam",
+    "stateCode": "06"
+  },
+  {
+    "name": "Thongwa",
+    "stateCode": "06"
+  },
+  {
+    "name": "Twante",
+    "stateCode": "06"
+  },
+  {
+    "name": "Yangon",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bogale",
+    "stateCode": "07"
+  },
+  {
+    "name": "Hinthada",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kyaiklat",
+    "stateCode": "07"
+  },
+  {
+    "name": "Maubin",
+    "stateCode": "07"
+  },
+  {
+    "name": "Mawlamyinegyunn",
+    "stateCode": "07"
+  },
+  {
+    "name": "Myanaung",
+    "stateCode": "07"
+  },
+  {
+    "name": "Nyaungdon",
+    "stateCode": "07"
+  },
+  {
+    "name": "Pathein",
+    "stateCode": "07"
+  },
+  {
+    "name": "Pyapon",
+    "stateCode": "07"
+  },
+  {
+    "name": "Wakema",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bhamo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Myitkyina",
+    "stateCode": "11"
+  },
+  {
+    "name": "Loikaw",
+    "stateCode": "12"
+  },
+  {
+    "name": "Dellok",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hpa-An",
+    "stateCode": "13"
+  },
+  {
+    "name": "Klonhtoug",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kyain Seikgyi Township",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mikenaungea",
+    "stateCode": "13"
+  },
+  {
+    "name": "Myawadi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pulei",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tagondaing",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tamoowoug",
+    "stateCode": "13"
+  },
+  {
+    "name": "Falam",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hakha",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kyaikkami",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kyaikto",
+    "stateCode": "15"
+  },
+  {
+    "name": "Martaban",
+    "stateCode": "15"
+  },
+  {
+    "name": "Mawlamyine",
+    "stateCode": "15"
+  },
+  {
+    "name": "Mudon",
+    "stateCode": "15"
+  },
+  {
+    "name": "Thaton",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sittwe",
+    "stateCode": "16"
+  },
+  {
+    "name": "Lashio",
+    "stateCode": "17"
+  },
+  {
+    "name": "Tachilek",
+    "stateCode": "17"
+  },
+  {
+    "name": "Taunggyi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Nay Pyi Taw",
+    "stateCode": "18"
+  },
+  {
+    "name": "Pyinmana",
+    "stateCode": "18"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "code": "T",
+    "name": "Antananarivo Province"
+  },
+  {
+    "code": "D",
+    "name": "Antsiranana Province"
+  },
+  {
+    "code": "F",
+    "name": "Fianarantsoa Province"
+  },
+  {
+    "code": "M",
+    "name": "Mahajanga Province"
+  },
+  {
+    "code": "A",
+    "name": "Toamasina Province"
+  },
+  {
+    "code": "U",
+    "name": "Toliara Province"
+  }
+]

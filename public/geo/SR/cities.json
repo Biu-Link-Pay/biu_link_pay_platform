@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Brokopondo",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Brownsweg",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Mariënburg",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Nieuw Amsterdam",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Totness",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Albina",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Moengo",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Nieuw Nickerie",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Wageningen",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Paramaribo",
+    "stateCode": "PM"
+  },
+  {
+    "name": "Onverwacht",
+    "stateCode": "PR"
+  },
+  {
+    "name": "Groningen",
+    "stateCode": "SA"
+  },
+  {
+    "name": "Lelydorp",
+    "stateCode": "WA"
+  }
+]

@@ -1,0 +1,650 @@
+[
+  {
+    "name": "Anija vald",
+    "stateCode": "37"
+  },
+  {
+    "name": "Aruküla",
+    "stateCode": "37"
+  },
+  {
+    "name": "Haabneeme",
+    "stateCode": "37"
+  },
+  {
+    "name": "Harku",
+    "stateCode": "37"
+  },
+  {
+    "name": "Harku vald",
+    "stateCode": "37"
+  },
+  {
+    "name": "Jõelähtme vald",
+    "stateCode": "37"
+  },
+  {
+    "name": "Jüri",
+    "stateCode": "37"
+  },
+  {
+    "name": "Kehra",
+    "stateCode": "37"
+  },
+  {
+    "name": "Keila",
+    "stateCode": "37"
+  },
+  {
+    "name": "Kiili",
+    "stateCode": "37"
+  },
+  {
+    "name": "Kiili vald",
+    "stateCode": "37"
+  },
+  {
+    "name": "Kose",
+    "stateCode": "37"
+  },
+  {
+    "name": "Kuusalu",
+    "stateCode": "37"
+  },
+  {
+    "name": "Laagri",
+    "stateCode": "37"
+  },
+  {
+    "name": "Loksa",
+    "stateCode": "37"
+  },
+  {
+    "name": "Loksa linn",
+    "stateCode": "37"
+  },
+  {
+    "name": "Loo",
+    "stateCode": "37"
+  },
+  {
+    "name": "Maardu",
+    "stateCode": "37"
+  },
+  {
+    "name": "Maardu linn",
+    "stateCode": "37"
+  },
+  {
+    "name": "Paldiski",
+    "stateCode": "37"
+  },
+  {
+    "name": "Pringi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Raasiku",
+    "stateCode": "37"
+  },
+  {
+    "name": "Rae vald",
+    "stateCode": "37"
+  },
+  {
+    "name": "Riisipere",
+    "stateCode": "37"
+  },
+  {
+    "name": "Rummu",
+    "stateCode": "37"
+  },
+  {
+    "name": "Saku",
+    "stateCode": "37"
+  },
+  {
+    "name": "Saku vald",
+    "stateCode": "37"
+  },
+  {
+    "name": "Saue",
+    "stateCode": "37"
+  },
+  {
+    "name": "Saue vald",
+    "stateCode": "37"
+  },
+  {
+    "name": "Tabasalu",
+    "stateCode": "37"
+  },
+  {
+    "name": "Tallinn",
+    "stateCode": "37"
+  },
+  {
+    "name": "Turba",
+    "stateCode": "37"
+  },
+  {
+    "name": "Vaida",
+    "stateCode": "37"
+  },
+  {
+    "name": "Viimsi",
+    "stateCode": "37"
+  },
+  {
+    "name": "Viimsi vald",
+    "stateCode": "37"
+  },
+  {
+    "name": "Kärdla",
+    "stateCode": "39"
+  },
+  {
+    "name": "Iisaku",
+    "stateCode": "44"
+  },
+  {
+    "name": "Jõhvi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Jõhvi vald",
+    "stateCode": "44"
+  },
+  {
+    "name": "Kiviõli",
+    "stateCode": "44"
+  },
+  {
+    "name": "Kohtla-Järve",
+    "stateCode": "44"
+  },
+  {
+    "name": "Kohtla-Nõmme",
+    "stateCode": "44"
+  },
+  {
+    "name": "Lüganuse vald",
+    "stateCode": "44"
+  },
+  {
+    "name": "Narva",
+    "stateCode": "44"
+  },
+  {
+    "name": "Narva-Jõesuu",
+    "stateCode": "44"
+  },
+  {
+    "name": "Narva-Jõesuu linn",
+    "stateCode": "44"
+  },
+  {
+    "name": "Püssi",
+    "stateCode": "44"
+  },
+  {
+    "name": "Sillamäe",
+    "stateCode": "44"
+  },
+  {
+    "name": "Toila",
+    "stateCode": "44"
+  },
+  {
+    "name": "Voka",
+    "stateCode": "44"
+  },
+  {
+    "name": "Jõgeva",
+    "stateCode": "49"
+  },
+  {
+    "name": "Jõgeva vald",
+    "stateCode": "49"
+  },
+  {
+    "name": "Mustvee",
+    "stateCode": "49"
+  },
+  {
+    "name": "Põltsamaa",
+    "stateCode": "49"
+  },
+  {
+    "name": "Põltsamaa vald",
+    "stateCode": "49"
+  },
+  {
+    "name": "Järva-Jaani",
+    "stateCode": "51"
+  },
+  {
+    "name": "Koeru",
+    "stateCode": "51"
+  },
+  {
+    "name": "Paide",
+    "stateCode": "51"
+  },
+  {
+    "name": "Paide linn",
+    "stateCode": "51"
+  },
+  {
+    "name": "Särevere",
+    "stateCode": "51"
+  },
+  {
+    "name": "Türi",
+    "stateCode": "51"
+  },
+  {
+    "name": "Türi vald",
+    "stateCode": "51"
+  },
+  {
+    "name": "Haapsalu",
+    "stateCode": "57"
+  },
+  {
+    "name": "Haapsalu linn",
+    "stateCode": "57"
+  },
+  {
+    "name": "Hullo",
+    "stateCode": "57"
+  },
+  {
+    "name": "Lääne-Nigula vald",
+    "stateCode": "57"
+  },
+  {
+    "name": "Taebla",
+    "stateCode": "57"
+  },
+  {
+    "name": "Uuemõisa",
+    "stateCode": "57"
+  },
+  {
+    "name": "Vormsi vald",
+    "stateCode": "57"
+  },
+  {
+    "name": "Aseri",
+    "stateCode": "59"
+  },
+  {
+    "name": "Haljala",
+    "stateCode": "59"
+  },
+  {
+    "name": "Haljala vald",
+    "stateCode": "59"
+  },
+  {
+    "name": "Kadrina",
+    "stateCode": "59"
+  },
+  {
+    "name": "Kadrina vald",
+    "stateCode": "59"
+  },
+  {
+    "name": "Kunda",
+    "stateCode": "59"
+  },
+  {
+    "name": "Pajusti",
+    "stateCode": "59"
+  },
+  {
+    "name": "Rakke",
+    "stateCode": "59"
+  },
+  {
+    "name": "Rakvere",
+    "stateCode": "59"
+  },
+  {
+    "name": "Rakvere vald",
+    "stateCode": "59"
+  },
+  {
+    "name": "Sõmeru",
+    "stateCode": "59"
+  },
+  {
+    "name": "Tamsalu",
+    "stateCode": "59"
+  },
+  {
+    "name": "Tapa",
+    "stateCode": "59"
+  },
+  {
+    "name": "Tapa vald",
+    "stateCode": "59"
+  },
+  {
+    "name": "Vaiatu",
+    "stateCode": "59"
+  },
+  {
+    "name": "Väike-Maarja",
+    "stateCode": "59"
+  },
+  {
+    "name": "Väike-Maarja vald",
+    "stateCode": "59"
+  },
+  {
+    "name": "Vinni",
+    "stateCode": "59"
+  },
+  {
+    "name": "Vinni vald",
+    "stateCode": "59"
+  },
+  {
+    "name": "Viru-Nigula vald",
+    "stateCode": "59"
+  },
+  {
+    "name": "Kanepi",
+    "stateCode": "65"
+  },
+  {
+    "name": "Kanepi vald",
+    "stateCode": "65"
+  },
+  {
+    "name": "Põlva",
+    "stateCode": "65"
+  },
+  {
+    "name": "Põlva vald",
+    "stateCode": "65"
+  },
+  {
+    "name": "Räpina",
+    "stateCode": "65"
+  },
+  {
+    "name": "Räpina vald",
+    "stateCode": "65"
+  },
+  {
+    "name": "Audru",
+    "stateCode": "67"
+  },
+  {
+    "name": "Kihnu vald",
+    "stateCode": "67"
+  },
+  {
+    "name": "Kilingi-Nõmme",
+    "stateCode": "67"
+  },
+  {
+    "name": "Lihula",
+    "stateCode": "67"
+  },
+  {
+    "name": "Linaküla",
+    "stateCode": "67"
+  },
+  {
+    "name": "Paikuse",
+    "stateCode": "67"
+  },
+  {
+    "name": "Pärnu",
+    "stateCode": "67"
+  },
+  {
+    "name": "Pärnu linn",
+    "stateCode": "67"
+  },
+  {
+    "name": "Pärnu-Jaagupi",
+    "stateCode": "67"
+  },
+  {
+    "name": "Saarde vald",
+    "stateCode": "67"
+  },
+  {
+    "name": "Sauga",
+    "stateCode": "67"
+  },
+  {
+    "name": "Sindi",
+    "stateCode": "67"
+  },
+  {
+    "name": "Tootsi",
+    "stateCode": "67"
+  },
+  {
+    "name": "Tori vald",
+    "stateCode": "67"
+  },
+  {
+    "name": "Uulu",
+    "stateCode": "67"
+  },
+  {
+    "name": "Vändra",
+    "stateCode": "67"
+  },
+  {
+    "name": "Järvakandi",
+    "stateCode": "70"
+  },
+  {
+    "name": "Kehtna",
+    "stateCode": "70"
+  },
+  {
+    "name": "Kehtna vald",
+    "stateCode": "70"
+  },
+  {
+    "name": "Kohila",
+    "stateCode": "70"
+  },
+  {
+    "name": "Kohila vald",
+    "stateCode": "70"
+  },
+  {
+    "name": "Märjamaa",
+    "stateCode": "70"
+  },
+  {
+    "name": "Märjamaa vald",
+    "stateCode": "70"
+  },
+  {
+    "name": "Rapla",
+    "stateCode": "70"
+  },
+  {
+    "name": "Rapla vald",
+    "stateCode": "70"
+  },
+  {
+    "name": "Kuressaare",
+    "stateCode": "74"
+  },
+  {
+    "name": "Liiva",
+    "stateCode": "74"
+  },
+  {
+    "name": "Muhu vald",
+    "stateCode": "74"
+  },
+  {
+    "name": "Orissaare",
+    "stateCode": "74"
+  },
+  {
+    "name": "Ruhnu",
+    "stateCode": "74"
+  },
+  {
+    "name": "Ruhnu vald",
+    "stateCode": "74"
+  },
+  {
+    "name": "Tehumardi",
+    "stateCode": "74"
+  },
+  {
+    "name": "Alatskivi",
+    "stateCode": "78"
+  },
+  {
+    "name": "Elva",
+    "stateCode": "78"
+  },
+  {
+    "name": "Kallaste",
+    "stateCode": "78"
+  },
+  {
+    "name": "Kambja vald",
+    "stateCode": "78"
+  },
+  {
+    "name": "Kõrveküla",
+    "stateCode": "78"
+  },
+  {
+    "name": "Kurepalu",
+    "stateCode": "78"
+  },
+  {
+    "name": "Luunja",
+    "stateCode": "78"
+  },
+  {
+    "name": "Luunja vald",
+    "stateCode": "78"
+  },
+  {
+    "name": "Nõo",
+    "stateCode": "78"
+  },
+  {
+    "name": "Nõo vald",
+    "stateCode": "78"
+  },
+  {
+    "name": "Peipsiääre vald",
+    "stateCode": "78"
+  },
+  {
+    "name": "Puhja",
+    "stateCode": "78"
+  },
+  {
+    "name": "Tartu",
+    "stateCode": "78"
+  },
+  {
+    "name": "Tartu linn",
+    "stateCode": "78"
+  },
+  {
+    "name": "Tartu vald",
+    "stateCode": "78"
+  },
+  {
+    "name": "Ülenurme",
+    "stateCode": "78"
+  },
+  {
+    "name": "Otepää vald",
+    "stateCode": "82"
+  },
+  {
+    "name": "Tõrva",
+    "stateCode": "82"
+  },
+  {
+    "name": "Valga",
+    "stateCode": "82"
+  },
+  {
+    "name": "Abja-Paluoja",
+    "stateCode": "84"
+  },
+  {
+    "name": "Karksi-Nuia",
+    "stateCode": "84"
+  },
+  {
+    "name": "Mõisaküla",
+    "stateCode": "84"
+  },
+  {
+    "name": "Suure-Jaani",
+    "stateCode": "84"
+  },
+  {
+    "name": "Viiratsi",
+    "stateCode": "84"
+  },
+  {
+    "name": "Viljandi",
+    "stateCode": "84"
+  },
+  {
+    "name": "Viljandi vald",
+    "stateCode": "84"
+  },
+  {
+    "name": "Võhma",
+    "stateCode": "84"
+  },
+  {
+    "name": "Antsla",
+    "stateCode": "86"
+  },
+  {
+    "name": "Antsla vald",
+    "stateCode": "86"
+  },
+  {
+    "name": "Rõuge",
+    "stateCode": "86"
+  },
+  {
+    "name": "Rõuge vald",
+    "stateCode": "86"
+  },
+  {
+    "name": "Vana-Antsla",
+    "stateCode": "86"
+  },
+  {
+    "name": "Värska",
+    "stateCode": "86"
+  },
+  {
+    "name": "Võru",
+    "stateCode": "86"
+  },
+  {
+    "name": "Võru vald",
+    "stateCode": "86"
+  }
+]

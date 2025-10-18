@@ -1,0 +1,3854 @@
+[
+  {
+    "name": "Apolinario Saravia",
+    "stateCode": "A"
+  },
+  {
+    "name": "Cachí",
+    "stateCode": "A"
+  },
+  {
+    "name": "Cafayate",
+    "stateCode": "A"
+  },
+  {
+    "name": "Campo Quijano",
+    "stateCode": "A"
+  },
+  {
+    "name": "Chicoana",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento Capital",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de Anta",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de Cerrillos",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de Chicoana",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de General Güemes",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de Guachipas",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de Iruya",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de La Poma",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de La Viña",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de Los Andes",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de Metán",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de Rivadavia",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de Rosario de la Frontera",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de Rosario de Lerma",
+    "stateCode": "A"
+  },
+  {
+    "name": "Departamento de San Carlos",
+    "stateCode": "A"
+  },
+  {
+    "name": "El Carril",
+    "stateCode": "A"
+  },
+  {
+    "name": "El Galpón",
+    "stateCode": "A"
+  },
+  {
+    "name": "El Quebrachal",
+    "stateCode": "A"
+  },
+  {
+    "name": "Embarcación",
+    "stateCode": "A"
+  },
+  {
+    "name": "General Enrique Mosconi",
+    "stateCode": "A"
+  },
+  {
+    "name": "Joaquín V. González",
+    "stateCode": "A"
+  },
+  {
+    "name": "La Caldera",
+    "stateCode": "A"
+  },
+  {
+    "name": "Las Lajitas",
+    "stateCode": "A"
+  },
+  {
+    "name": "Salta",
+    "stateCode": "A"
+  },
+  {
+    "name": "San Antonio de los Cobres",
+    "stateCode": "A"
+  },
+  {
+    "name": "San Ramón de la Nueva Orán",
+    "stateCode": "A"
+  },
+  {
+    "name": "Santa Rosa de Tastil",
+    "stateCode": "A"
+  },
+  {
+    "name": "Tartagal",
+    "stateCode": "A"
+  },
+  {
+    "name": "Balvanera",
+    "stateCode": "B"
+  },
+  {
+    "name": "Barracas",
+    "stateCode": "B"
+  },
+  {
+    "name": "Belgrano",
+    "stateCode": "B"
+  },
+  {
+    "name": "Boedo",
+    "stateCode": "B"
+  },
+  {
+    "name": "Buenos Aires",
+    "stateCode": "B"
+  },
+  {
+    "name": "Colegiales",
+    "stateCode": "B"
+  },
+  {
+    "name": "Retiro",
+    "stateCode": "B"
+  },
+  {
+    "name": "Villa Lugano",
+    "stateCode": "B"
+  },
+  {
+    "name": "Villa Ortúzar",
+    "stateCode": "B"
+  },
+  {
+    "name": "Villa Santa Rita",
+    "stateCode": "B"
+  },
+  {
+    "name": "Buena Esperanza",
+    "stateCode": "D"
+  },
+  {
+    "name": "Candelaria",
+    "stateCode": "D"
+  },
+  {
+    "name": "Concarán",
+    "stateCode": "D"
+  },
+  {
+    "name": "Juan Martín de Pueyrredón",
+    "stateCode": "D"
+  },
+  {
+    "name": "Justo Daract",
+    "stateCode": "D"
+  },
+  {
+    "name": "La Punta",
+    "stateCode": "D"
+  },
+  {
+    "name": "La Toma",
+    "stateCode": "D"
+  },
+  {
+    "name": "Luján",
+    "stateCode": "D"
+  },
+  {
+    "name": "Merlo",
+    "stateCode": "D"
+  },
+  {
+    "name": "Naschel",
+    "stateCode": "D"
+  },
+  {
+    "name": "San Francisco del Monte de Oro",
+    "stateCode": "D"
+  },
+  {
+    "name": "San Luis",
+    "stateCode": "D"
+  },
+  {
+    "name": "Santa Rosa del Conlara",
+    "stateCode": "D"
+  },
+  {
+    "name": "Tilisarao",
+    "stateCode": "D"
+  },
+  {
+    "name": "Unión",
+    "stateCode": "D"
+  },
+  {
+    "name": "Villa General Roca",
+    "stateCode": "D"
+  },
+  {
+    "name": "Villa Mercedes",
+    "stateCode": "D"
+  },
+  {
+    "name": "Aldea San Antonio",
+    "stateCode": "E"
+  },
+  {
+    "name": "Aranguren",
+    "stateCode": "E"
+  },
+  {
+    "name": "Bovril",
+    "stateCode": "E"
+  },
+  {
+    "name": "Caseros",
+    "stateCode": "E"
+  },
+  {
+    "name": "Ceibas",
+    "stateCode": "E"
+  },
+  {
+    "name": "Chajarí",
+    "stateCode": "E"
+  },
+  {
+    "name": "Colón",
+    "stateCode": "E"
+  },
+  {
+    "name": "Colonia Elía",
+    "stateCode": "E"
+  },
+  {
+    "name": "Concepción del Uruguay",
+    "stateCode": "E"
+  },
+  {
+    "name": "Concordia",
+    "stateCode": "E"
+  },
+  {
+    "name": "Conscripto Bernardi",
+    "stateCode": "E"
+  },
+  {
+    "name": "Crespo",
+    "stateCode": "E"
+  },
+  {
+    "name": "Departamento de Gualeguaychú",
+    "stateCode": "E"
+  },
+  {
+    "name": "Departamento de Paraná",
+    "stateCode": "E"
+  },
+  {
+    "name": "Diamante",
+    "stateCode": "E"
+  },
+  {
+    "name": "Domínguez",
+    "stateCode": "E"
+  },
+  {
+    "name": "Federación",
+    "stateCode": "E"
+  },
+  {
+    "name": "Federal",
+    "stateCode": "E"
+  },
+  {
+    "name": "General Campos",
+    "stateCode": "E"
+  },
+  {
+    "name": "General Galarza",
+    "stateCode": "E"
+  },
+  {
+    "name": "General Ramírez",
+    "stateCode": "E"
+  },
+  {
+    "name": "Gobernador Mansilla",
+    "stateCode": "E"
+  },
+  {
+    "name": "Gualeguay",
+    "stateCode": "E"
+  },
+  {
+    "name": "Gualeguaychú",
+    "stateCode": "E"
+  },
+  {
+    "name": "Hasenkamp",
+    "stateCode": "E"
+  },
+  {
+    "name": "Hernández",
+    "stateCode": "E"
+  },
+  {
+    "name": "Herrera",
+    "stateCode": "E"
+  },
+  {
+    "name": "La Criolla",
+    "stateCode": "E"
+  },
+  {
+    "name": "La Paz",
+    "stateCode": "E"
+  },
+  {
+    "name": "Larroque",
+    "stateCode": "E"
+  },
+  {
+    "name": "Los Charrúas",
+    "stateCode": "E"
+  },
+  {
+    "name": "Los Conquistadores",
+    "stateCode": "E"
+  },
+  {
+    "name": "Lucas González",
+    "stateCode": "E"
+  },
+  {
+    "name": "Maciá",
+    "stateCode": "E"
+  },
+  {
+    "name": "Nogoyá",
+    "stateCode": "E"
+  },
+  {
+    "name": "Oro Verde",
+    "stateCode": "E"
+  },
+  {
+    "name": "Paraná",
+    "stateCode": "E"
+  },
+  {
+    "name": "Piedras Blancas",
+    "stateCode": "E"
+  },
+  {
+    "name": "Pronunciamiento",
+    "stateCode": "E"
+  },
+  {
+    "name": "Puerto Ibicuy",
+    "stateCode": "E"
+  },
+  {
+    "name": "Puerto Yeruá",
+    "stateCode": "E"
+  },
+  {
+    "name": "Rosario del Tala",
+    "stateCode": "E"
+  },
+  {
+    "name": "San Benito",
+    "stateCode": "E"
+  },
+  {
+    "name": "San Gustavo",
+    "stateCode": "E"
+  },
+  {
+    "name": "San José de Feliciano",
+    "stateCode": "E"
+  },
+  {
+    "name": "San Justo",
+    "stateCode": "E"
+  },
+  {
+    "name": "San Salvador",
+    "stateCode": "E"
+  },
+  {
+    "name": "Santa Ana",
+    "stateCode": "E"
+  },
+  {
+    "name": "Santa Anita",
+    "stateCode": "E"
+  },
+  {
+    "name": "Santa Elena",
+    "stateCode": "E"
+  },
+  {
+    "name": "Sauce de Luna",
+    "stateCode": "E"
+  },
+  {
+    "name": "Seguí",
+    "stateCode": "E"
+  },
+  {
+    "name": "Tabossi",
+    "stateCode": "E"
+  },
+  {
+    "name": "Ubajay",
+    "stateCode": "E"
+  },
+  {
+    "name": "Urdinarrain",
+    "stateCode": "E"
+  },
+  {
+    "name": "Viale",
+    "stateCode": "E"
+  },
+  {
+    "name": "Victoria",
+    "stateCode": "E"
+  },
+  {
+    "name": "Villa del Rosario",
+    "stateCode": "E"
+  },
+  {
+    "name": "Villa Elisa",
+    "stateCode": "E"
+  },
+  {
+    "name": "Villa Hernandarias",
+    "stateCode": "E"
+  },
+  {
+    "name": "Villa Mantero",
+    "stateCode": "E"
+  },
+  {
+    "name": "Villa María Grande",
+    "stateCode": "E"
+  },
+  {
+    "name": "Villa Paranacito",
+    "stateCode": "E"
+  },
+  {
+    "name": "Villa Urquiza",
+    "stateCode": "E"
+  },
+  {
+    "name": "Villaguay",
+    "stateCode": "E"
+  },
+  {
+    "name": "Arauco",
+    "stateCode": "F"
+  },
+  {
+    "name": "Castro Barros",
+    "stateCode": "F"
+  },
+  {
+    "name": "Chamical",
+    "stateCode": "F"
+  },
+  {
+    "name": "Chilecito",
+    "stateCode": "F"
+  },
+  {
+    "name": "Departamento de Arauco",
+    "stateCode": "F"
+  },
+  {
+    "name": "Departamento de General Lamadrid",
+    "stateCode": "F"
+  },
+  {
+    "name": "Departamento de Independencia",
+    "stateCode": "F"
+  },
+  {
+    "name": "La Rioja",
+    "stateCode": "F"
+  },
+  {
+    "name": "Villa Bustos",
+    "stateCode": "F"
+  },
+  {
+    "name": "Vinchina",
+    "stateCode": "F"
+  },
+  {
+    "name": "Añatuya",
+    "stateCode": "G"
+  },
+  {
+    "name": "Beltrán",
+    "stateCode": "G"
+  },
+  {
+    "name": "Campo Gallo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Clodomira",
+    "stateCode": "G"
+  },
+  {
+    "name": "Colonia Dora",
+    "stateCode": "G"
+  },
+  {
+    "name": "Departamento de Aguirre",
+    "stateCode": "G"
+  },
+  {
+    "name": "Departamento de Banda",
+    "stateCode": "G"
+  },
+  {
+    "name": "Departamento de Choya",
+    "stateCode": "G"
+  },
+  {
+    "name": "Departamento de Guasayán",
+    "stateCode": "G"
+  },
+  {
+    "name": "Departamento de Loreto",
+    "stateCode": "G"
+  },
+  {
+    "name": "Departamento de Moreno",
+    "stateCode": "G"
+  },
+  {
+    "name": "Departamento de Río Hondo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Departamento de Robles",
+    "stateCode": "G"
+  },
+  {
+    "name": "Departamento de San Martín",
+    "stateCode": "G"
+  },
+  {
+    "name": "Departamento de Sarmiento",
+    "stateCode": "G"
+  },
+  {
+    "name": "El Hoyo",
+    "stateCode": "G"
+  },
+  {
+    "name": "La Banda",
+    "stateCode": "G"
+  },
+  {
+    "name": "Los Juríes",
+    "stateCode": "G"
+  },
+  {
+    "name": "Los Telares",
+    "stateCode": "G"
+  },
+  {
+    "name": "Pampa de los Guanacos",
+    "stateCode": "G"
+  },
+  {
+    "name": "Quimilí",
+    "stateCode": "G"
+  },
+  {
+    "name": "San Pedro",
+    "stateCode": "G"
+  },
+  {
+    "name": "Santiago del Estero",
+    "stateCode": "G"
+  },
+  {
+    "name": "Sumampa",
+    "stateCode": "G"
+  },
+  {
+    "name": "Suncho Corral",
+    "stateCode": "G"
+  },
+  {
+    "name": "Termas de Río Hondo",
+    "stateCode": "G"
+  },
+  {
+    "name": "Tintina",
+    "stateCode": "G"
+  },
+  {
+    "name": "Villa Atamisqui",
+    "stateCode": "G"
+  },
+  {
+    "name": "Villa General Mitre",
+    "stateCode": "G"
+  },
+  {
+    "name": "Villa Ojo de Agua",
+    "stateCode": "G"
+  },
+  {
+    "name": "Aviá Terai",
+    "stateCode": "H"
+  },
+  {
+    "name": "Barranqueras",
+    "stateCode": "H"
+  },
+  {
+    "name": "Basail",
+    "stateCode": "H"
+  },
+  {
+    "name": "Campo Largo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Capitán Solari",
+    "stateCode": "H"
+  },
+  {
+    "name": "Castelli",
+    "stateCode": "H"
+  },
+  {
+    "name": "Charadai",
+    "stateCode": "H"
+  },
+  {
+    "name": "Charata",
+    "stateCode": "H"
+  },
+  {
+    "name": "Chorotis",
+    "stateCode": "H"
+  },
+  {
+    "name": "Ciervo Petiso",
+    "stateCode": "H"
+  },
+  {
+    "name": "Colonia Benítez",
+    "stateCode": "H"
+  },
+  {
+    "name": "Colonia Elisa",
+    "stateCode": "H"
+  },
+  {
+    "name": "Colonias Unidas",
+    "stateCode": "H"
+  },
+  {
+    "name": "Concepción del Bermejo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Coronel Du Graty",
+    "stateCode": "H"
+  },
+  {
+    "name": "Corzuela",
+    "stateCode": "H"
+  },
+  {
+    "name": "Coté-Lai",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Almirante Brown",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Bermejo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Comandante Fernández",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Doce de Octubre",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Dos de Abril",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de General Donovan",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de General Güemes",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Independencia",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Libertad",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Maipú",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Nueve de Julio",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de O’Higgins",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Presidencia de la Plaza",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Quitilipi",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de San Fernando",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de San Lorenzo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Sargento Cabral",
+    "stateCode": "H"
+  },
+  {
+    "name": "Departamento de Tapenagá",
+    "stateCode": "H"
+  },
+  {
+    "name": "Fontana",
+    "stateCode": "H"
+  },
+  {
+    "name": "Gancedo",
+    "stateCode": "H"
+  },
+  {
+    "name": "General José de San Martín",
+    "stateCode": "H"
+  },
+  {
+    "name": "General Pinedo",
+    "stateCode": "H"
+  },
+  {
+    "name": "General Vedia",
+    "stateCode": "H"
+  },
+  {
+    "name": "Hermoso Campo",
+    "stateCode": "H"
+  },
+  {
+    "name": "La Clotilde",
+    "stateCode": "H"
+  },
+  {
+    "name": "La Eduvigis",
+    "stateCode": "H"
+  },
+  {
+    "name": "La Escondida",
+    "stateCode": "H"
+  },
+  {
+    "name": "La Leonesa",
+    "stateCode": "H"
+  },
+  {
+    "name": "La Tigra",
+    "stateCode": "H"
+  },
+  {
+    "name": "La Verde",
+    "stateCode": "H"
+  },
+  {
+    "name": "Laguna Limpia",
+    "stateCode": "H"
+  },
+  {
+    "name": "Lapachito",
+    "stateCode": "H"
+  },
+  {
+    "name": "Las Breñas",
+    "stateCode": "H"
+  },
+  {
+    "name": "Las Garcitas",
+    "stateCode": "H"
+  },
+  {
+    "name": "Los Frentones",
+    "stateCode": "H"
+  },
+  {
+    "name": "Machagai",
+    "stateCode": "H"
+  },
+  {
+    "name": "Makallé",
+    "stateCode": "H"
+  },
+  {
+    "name": "Margarita Belén",
+    "stateCode": "H"
+  },
+  {
+    "name": "Napenay",
+    "stateCode": "H"
+  },
+  {
+    "name": "Pampa Almirón",
+    "stateCode": "H"
+  },
+  {
+    "name": "Pampa del Indio",
+    "stateCode": "H"
+  },
+  {
+    "name": "Pampa del Infierno",
+    "stateCode": "H"
+  },
+  {
+    "name": "Presidencia de la Plaza",
+    "stateCode": "H"
+  },
+  {
+    "name": "Presidencia Roca",
+    "stateCode": "H"
+  },
+  {
+    "name": "Presidencia Roque Sáenz Peña",
+    "stateCode": "H"
+  },
+  {
+    "name": "Puerto Bermejo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Puerto Tirol",
+    "stateCode": "H"
+  },
+  {
+    "name": "Puerto Vilelas",
+    "stateCode": "H"
+  },
+  {
+    "name": "Quitilipi",
+    "stateCode": "H"
+  },
+  {
+    "name": "Resistencia",
+    "stateCode": "H"
+  },
+  {
+    "name": "Samuhú",
+    "stateCode": "H"
+  },
+  {
+    "name": "San Bernardo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Santa Sylvina",
+    "stateCode": "H"
+  },
+  {
+    "name": "Taco Pozo",
+    "stateCode": "H"
+  },
+  {
+    "name": "Tres Isletas",
+    "stateCode": "H"
+  },
+  {
+    "name": "Villa Ángela",
+    "stateCode": "H"
+  },
+  {
+    "name": "Villa Berthet",
+    "stateCode": "H"
+  },
+  {
+    "name": "Albardón",
+    "stateCode": "J"
+  },
+  {
+    "name": "Calingasta",
+    "stateCode": "J"
+  },
+  {
+    "name": "Caucete",
+    "stateCode": "J"
+  },
+  {
+    "name": "Chimbas",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Albardón",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Angaco",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Calingasta",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Capital",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Caucete",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Chimbas",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Iglesia",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Jáchal",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Nueve de Julio",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Rawson",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Rivadavia",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de San Martín",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Santa Lucía",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Sarmiento",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Ullúm",
+    "stateCode": "J"
+  },
+  {
+    "name": "Departamento de Zonda",
+    "stateCode": "J"
+  },
+  {
+    "name": "Nueve de Julio",
+    "stateCode": "J"
+  },
+  {
+    "name": "Pocito",
+    "stateCode": "J"
+  },
+  {
+    "name": "San Agustín de Valle Fértil",
+    "stateCode": "J"
+  },
+  {
+    "name": "San José de Jáchal",
+    "stateCode": "J"
+  },
+  {
+    "name": "San Juan",
+    "stateCode": "J"
+  },
+  {
+    "name": "San Martín",
+    "stateCode": "J"
+  },
+  {
+    "name": "Santa Lucía",
+    "stateCode": "J"
+  },
+  {
+    "name": "Villa Basilio Nievas",
+    "stateCode": "J"
+  },
+  {
+    "name": "Villa Paula de Sarmiento",
+    "stateCode": "J"
+  },
+  {
+    "name": "Ancasti",
+    "stateCode": "K"
+  },
+  {
+    "name": "Andalgalá",
+    "stateCode": "K"
+  },
+  {
+    "name": "Antofagasta de la Sierra",
+    "stateCode": "K"
+  },
+  {
+    "name": "Capayán",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Ambato",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Ancasti",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Andalgalá",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Antofagasta de la Sierra",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Capayán",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Capital",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de El Alto",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Fray Mamerto Esquiú",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de La Paz",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Pomán",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Santa María",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Santa Rosa",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Tinogasta",
+    "stateCode": "K"
+  },
+  {
+    "name": "Departamento de Valle Viejo",
+    "stateCode": "K"
+  },
+  {
+    "name": "El Rodeo",
+    "stateCode": "K"
+  },
+  {
+    "name": "Fiambalá",
+    "stateCode": "K"
+  },
+  {
+    "name": "Hualfín",
+    "stateCode": "K"
+  },
+  {
+    "name": "Huillapima",
+    "stateCode": "K"
+  },
+  {
+    "name": "Icaño",
+    "stateCode": "K"
+  },
+  {
+    "name": "La Puerta de San José",
+    "stateCode": "K"
+  },
+  {
+    "name": "Londres",
+    "stateCode": "K"
+  },
+  {
+    "name": "Los Altos",
+    "stateCode": "K"
+  },
+  {
+    "name": "Los Varela",
+    "stateCode": "K"
+  },
+  {
+    "name": "Mutquín",
+    "stateCode": "K"
+  },
+  {
+    "name": "Pomán",
+    "stateCode": "K"
+  },
+  {
+    "name": "Puerta de Corral Quemado",
+    "stateCode": "K"
+  },
+  {
+    "name": "Recreo",
+    "stateCode": "K"
+  },
+  {
+    "name": "San Antonio",
+    "stateCode": "K"
+  },
+  {
+    "name": "San Fernando del Valle de Catamarca",
+    "stateCode": "K"
+  },
+  {
+    "name": "Santa María",
+    "stateCode": "K"
+  },
+  {
+    "name": "Tinogasta",
+    "stateCode": "K"
+  },
+  {
+    "name": "Alpachiri",
+    "stateCode": "L"
+  },
+  {
+    "name": "Alta Italia",
+    "stateCode": "L"
+  },
+  {
+    "name": "Anguil",
+    "stateCode": "L"
+  },
+  {
+    "name": "Arata",
+    "stateCode": "L"
+  },
+  {
+    "name": "Bernardo Larroudé",
+    "stateCode": "L"
+  },
+  {
+    "name": "Bernasconi",
+    "stateCode": "L"
+  },
+  {
+    "name": "Caleufú",
+    "stateCode": "L"
+  },
+  {
+    "name": "Catriló",
+    "stateCode": "L"
+  },
+  {
+    "name": "Colonia Barón",
+    "stateCode": "L"
+  },
+  {
+    "name": "Departamento de Caleu-Caleu",
+    "stateCode": "L"
+  },
+  {
+    "name": "Departamento de Toay",
+    "stateCode": "L"
+  },
+  {
+    "name": "Doblas",
+    "stateCode": "L"
+  },
+  {
+    "name": "Eduardo Castex",
+    "stateCode": "L"
+  },
+  {
+    "name": "Embajador Martini",
+    "stateCode": "L"
+  },
+  {
+    "name": "General Acha",
+    "stateCode": "L"
+  },
+  {
+    "name": "General Manuel J. Campos",
+    "stateCode": "L"
+  },
+  {
+    "name": "General Pico",
+    "stateCode": "L"
+  },
+  {
+    "name": "General San Martín",
+    "stateCode": "L"
+  },
+  {
+    "name": "Guatraché",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ingeniero Luiggi",
+    "stateCode": "L"
+  },
+  {
+    "name": "Intendente Alvear",
+    "stateCode": "L"
+  },
+  {
+    "name": "Jacinto Arauz",
+    "stateCode": "L"
+  },
+  {
+    "name": "La Adela",
+    "stateCode": "L"
+  },
+  {
+    "name": "La Maruja",
+    "stateCode": "L"
+  },
+  {
+    "name": "Lonquimay",
+    "stateCode": "L"
+  },
+  {
+    "name": "Macachín",
+    "stateCode": "L"
+  },
+  {
+    "name": "Miguel Riglos",
+    "stateCode": "L"
+  },
+  {
+    "name": "Parera",
+    "stateCode": "L"
+  },
+  {
+    "name": "Quemú Quemú",
+    "stateCode": "L"
+  },
+  {
+    "name": "Rancul",
+    "stateCode": "L"
+  },
+  {
+    "name": "Realicó",
+    "stateCode": "L"
+  },
+  {
+    "name": "Santa Isabel",
+    "stateCode": "L"
+  },
+  {
+    "name": "Santa Rosa",
+    "stateCode": "L"
+  },
+  {
+    "name": "Telén",
+    "stateCode": "L"
+  },
+  {
+    "name": "Trenel",
+    "stateCode": "L"
+  },
+  {
+    "name": "Uriburu",
+    "stateCode": "L"
+  },
+  {
+    "name": "Veinticinco de Mayo",
+    "stateCode": "L"
+  },
+  {
+    "name": "Victorica",
+    "stateCode": "L"
+  },
+  {
+    "name": "Winifreda",
+    "stateCode": "L"
+  },
+  {
+    "name": "Departamento de Capital",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de General Alvear",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de Godoy Cruz",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de Guaymallén",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de La Paz",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de Las Heras",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de Lavalle",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de Luján",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de Maipú",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de Malargüe",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de Rivadavia",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de San Carlos",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de San Martín",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de San Rafael",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de Santa Rosa",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de Tunuyán",
+    "stateCode": "M"
+  },
+  {
+    "name": "Departamento de Tupungato",
+    "stateCode": "M"
+  },
+  {
+    "name": "Godoy Cruz",
+    "stateCode": "M"
+  },
+  {
+    "name": "Las Heras",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mendoza",
+    "stateCode": "M"
+  },
+  {
+    "name": "San Martín",
+    "stateCode": "M"
+  },
+  {
+    "name": "San Rafael",
+    "stateCode": "M"
+  },
+  {
+    "name": "Alba Posse",
+    "stateCode": "N"
+  },
+  {
+    "name": "Almafuerte",
+    "stateCode": "N"
+  },
+  {
+    "name": "Aristóbulo del Valle",
+    "stateCode": "N"
+  },
+  {
+    "name": "Arroyo del Medio",
+    "stateCode": "N"
+  },
+  {
+    "name": "Azara",
+    "stateCode": "N"
+  },
+  {
+    "name": "Bernardo de Irigoyen",
+    "stateCode": "N"
+  },
+  {
+    "name": "Bonpland",
+    "stateCode": "N"
+  },
+  {
+    "name": "Campo Grande",
+    "stateCode": "N"
+  },
+  {
+    "name": "Campo Ramón",
+    "stateCode": "N"
+  },
+  {
+    "name": "Campo Viera",
+    "stateCode": "N"
+  },
+  {
+    "name": "Candelaria",
+    "stateCode": "N"
+  },
+  {
+    "name": "Capioví",
+    "stateCode": "N"
+  },
+  {
+    "name": "Caraguatay",
+    "stateCode": "N"
+  },
+  {
+    "name": "Cerro Azul",
+    "stateCode": "N"
+  },
+  {
+    "name": "Cerro Corá",
+    "stateCode": "N"
+  },
+  {
+    "name": "Colonia Aurora",
+    "stateCode": "N"
+  },
+  {
+    "name": "Concepción de la Sierra",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Apóstoles",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Cainguás",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Candelaria",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Capital",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Concepción de la Sierra",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Eldorado",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de General Manuel Belgrano",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Guaraní",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Iguazú",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Leandro N. Alem",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Libertador General San Martín",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Montecarlo",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Oberá",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de San Ignacio",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de San Javier",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de San Pedro",
+    "stateCode": "N"
+  },
+  {
+    "name": "Departamento de Veinticinco de Mayo",
+    "stateCode": "N"
+  },
+  {
+    "name": "Dos Arroyos",
+    "stateCode": "N"
+  },
+  {
+    "name": "Dos de Mayo",
+    "stateCode": "N"
+  },
+  {
+    "name": "El Alcázar",
+    "stateCode": "N"
+  },
+  {
+    "name": "El Soberbio",
+    "stateCode": "N"
+  },
+  {
+    "name": "Florentino Ameghino",
+    "stateCode": "N"
+  },
+  {
+    "name": "Garuhapé",
+    "stateCode": "N"
+  },
+  {
+    "name": "Garupá",
+    "stateCode": "N"
+  },
+  {
+    "name": "General Alvear",
+    "stateCode": "N"
+  },
+  {
+    "name": "Gobernador Roca",
+    "stateCode": "N"
+  },
+  {
+    "name": "Guaraní",
+    "stateCode": "N"
+  },
+  {
+    "name": "Jardín América",
+    "stateCode": "N"
+  },
+  {
+    "name": "Loreto",
+    "stateCode": "N"
+  },
+  {
+    "name": "Los Helechos",
+    "stateCode": "N"
+  },
+  {
+    "name": "Mártires",
+    "stateCode": "N"
+  },
+  {
+    "name": "Mojón Grande",
+    "stateCode": "N"
+  },
+  {
+    "name": "Montecarlo",
+    "stateCode": "N"
+  },
+  {
+    "name": "Oberá",
+    "stateCode": "N"
+  },
+  {
+    "name": "Panambí",
+    "stateCode": "N"
+  },
+  {
+    "name": "Picada Gobernador López",
+    "stateCode": "N"
+  },
+  {
+    "name": "Posadas",
+    "stateCode": "N"
+  },
+  {
+    "name": "Puerto Eldorado",
+    "stateCode": "N"
+  },
+  {
+    "name": "Puerto Esperanza",
+    "stateCode": "N"
+  },
+  {
+    "name": "Puerto Iguazú",
+    "stateCode": "N"
+  },
+  {
+    "name": "Puerto Leoni",
+    "stateCode": "N"
+  },
+  {
+    "name": "Puerto Libertad",
+    "stateCode": "N"
+  },
+  {
+    "name": "Puerto Piray",
+    "stateCode": "N"
+  },
+  {
+    "name": "Puerto Rico",
+    "stateCode": "N"
+  },
+  {
+    "name": "Ruiz de Montoya",
+    "stateCode": "N"
+  },
+  {
+    "name": "San José",
+    "stateCode": "N"
+  },
+  {
+    "name": "San Pedro",
+    "stateCode": "N"
+  },
+  {
+    "name": "San Vicente",
+    "stateCode": "N"
+  },
+  {
+    "name": "Santa María",
+    "stateCode": "N"
+  },
+  {
+    "name": "Santo Pipó",
+    "stateCode": "N"
+  },
+  {
+    "name": "Tres Capones",
+    "stateCode": "N"
+  },
+  {
+    "name": "Veinticinco de Mayo",
+    "stateCode": "N"
+  },
+  {
+    "name": "Wanda",
+    "stateCode": "N"
+  },
+  {
+    "name": "Clorinda",
+    "stateCode": "P"
+  },
+  {
+    "name": "Comandante Fontana",
+    "stateCode": "P"
+  },
+  {
+    "name": "Departamento de Pilcomayo",
+    "stateCode": "P"
+  },
+  {
+    "name": "El Colorado",
+    "stateCode": "P"
+  },
+  {
+    "name": "Estanislao del Campo",
+    "stateCode": "P"
+  },
+  {
+    "name": "Formosa",
+    "stateCode": "P"
+  },
+  {
+    "name": "General Enrique Mosconi",
+    "stateCode": "P"
+  },
+  {
+    "name": "Herradura",
+    "stateCode": "P"
+  },
+  {
+    "name": "Ibarreta",
+    "stateCode": "P"
+  },
+  {
+    "name": "Ingeniero Guillermo N. Juárez",
+    "stateCode": "P"
+  },
+  {
+    "name": "Laguna Naick-Neck",
+    "stateCode": "P"
+  },
+  {
+    "name": "Laguna Yema",
+    "stateCode": "P"
+  },
+  {
+    "name": "Las Lomitas",
+    "stateCode": "P"
+  },
+  {
+    "name": "Palo Santo",
+    "stateCode": "P"
+  },
+  {
+    "name": "Pirané",
+    "stateCode": "P"
+  },
+  {
+    "name": "Pozo del Tigre",
+    "stateCode": "P"
+  },
+  {
+    "name": "Riacho Eh-Eh",
+    "stateCode": "P"
+  },
+  {
+    "name": "San Francisco de Laishí",
+    "stateCode": "P"
+  },
+  {
+    "name": "Villa Escolar",
+    "stateCode": "P"
+  },
+  {
+    "name": "Villa General Guemes",
+    "stateCode": "P"
+  },
+  {
+    "name": "Aluminé",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Andacollo",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Añelo",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Barrancas",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Buta Ranquil",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Centenario",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Chos Malal",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Cutral-Có",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Departamento de Aluminé",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Departamento de Añelo",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Departamento de Catán-Lil",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Departamento de Chos-Malal",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Departamento de Collón-Curá",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Departamento de Confluencia",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Departamento de Lácar",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Departamento de Minas",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Departamento de Zapala",
+    "stateCode": "Q"
+  },
+  {
+    "name": "El Huecú",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Junín de los Andes",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Las Coloradas",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Las Lajas",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Las Ovejas",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Loncopué",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Mariano Moreno",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Neuquén",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Picún Leufú",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Piedra del Águila",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Plaza Huincul",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Plottier",
+    "stateCode": "Q"
+  },
+  {
+    "name": "San Martín de los Andes",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Senillosa",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Villa La Angostura",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Vista Alegre",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Zapala",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Allen",
+    "stateCode": "R"
+  },
+  {
+    "name": "Catriel",
+    "stateCode": "R"
+  },
+  {
+    "name": "Cervantes",
+    "stateCode": "R"
+  },
+  {
+    "name": "Chichinales",
+    "stateCode": "R"
+  },
+  {
+    "name": "Chimpay",
+    "stateCode": "R"
+  },
+  {
+    "name": "Choele Choel",
+    "stateCode": "R"
+  },
+  {
+    "name": "Cinco Saltos",
+    "stateCode": "R"
+  },
+  {
+    "name": "Cipolletti",
+    "stateCode": "R"
+  },
+  {
+    "name": "Comallo",
+    "stateCode": "R"
+  },
+  {
+    "name": "Contraalmirante Cordero",
+    "stateCode": "R"
+  },
+  {
+    "name": "Coronel Belisle",
+    "stateCode": "R"
+  },
+  {
+    "name": "Darwin",
+    "stateCode": "R"
+  },
+  {
+    "name": "Departamento de Avellaneda",
+    "stateCode": "R"
+  },
+  {
+    "name": "Departamento de Veinticinco de Mayo",
+    "stateCode": "R"
+  },
+  {
+    "name": "El Bolsón",
+    "stateCode": "R"
+  },
+  {
+    "name": "El Cuy",
+    "stateCode": "R"
+  },
+  {
+    "name": "Fray Luis Beltrán",
+    "stateCode": "R"
+  },
+  {
+    "name": "General Conesa",
+    "stateCode": "R"
+  },
+  {
+    "name": "General Enrique Godoy",
+    "stateCode": "R"
+  },
+  {
+    "name": "General Fernández Oro",
+    "stateCode": "R"
+  },
+  {
+    "name": "General Roca",
+    "stateCode": "R"
+  },
+  {
+    "name": "Ingeniero Jacobacci",
+    "stateCode": "R"
+  },
+  {
+    "name": "Ingeniero Luis A. Huergo",
+    "stateCode": "R"
+  },
+  {
+    "name": "Lamarque",
+    "stateCode": "R"
+  },
+  {
+    "name": "Los Menucos",
+    "stateCode": "R"
+  },
+  {
+    "name": "Mainque",
+    "stateCode": "R"
+  },
+  {
+    "name": "Maquinchao",
+    "stateCode": "R"
+  },
+  {
+    "name": "Ñorquinco",
+    "stateCode": "R"
+  },
+  {
+    "name": "Pilcaniyeu",
+    "stateCode": "R"
+  },
+  {
+    "name": "Río Colorado",
+    "stateCode": "R"
+  },
+  {
+    "name": "San Antonio Oeste",
+    "stateCode": "R"
+  },
+  {
+    "name": "San Carlos de Bariloche",
+    "stateCode": "R"
+  },
+  {
+    "name": "Sierra Colorada",
+    "stateCode": "R"
+  },
+  {
+    "name": "Sierra Grande",
+    "stateCode": "R"
+  },
+  {
+    "name": "Valcheta",
+    "stateCode": "R"
+  },
+  {
+    "name": "Viedma",
+    "stateCode": "R"
+  },
+  {
+    "name": "Villa Regina",
+    "stateCode": "R"
+  },
+  {
+    "name": "Armstrong",
+    "stateCode": "S"
+  },
+  {
+    "name": "Arroyo Seco",
+    "stateCode": "S"
+  },
+  {
+    "name": "Arrufó",
+    "stateCode": "S"
+  },
+  {
+    "name": "Avellaneda",
+    "stateCode": "S"
+  },
+  {
+    "name": "Bella Italia",
+    "stateCode": "S"
+  },
+  {
+    "name": "Calchaquí",
+    "stateCode": "S"
+  },
+  {
+    "name": "Cañada de Gómez",
+    "stateCode": "S"
+  },
+  {
+    "name": "Capitán Bermúdez",
+    "stateCode": "S"
+  },
+  {
+    "name": "Carcarañá",
+    "stateCode": "S"
+  },
+  {
+    "name": "Casilda",
+    "stateCode": "S"
+  },
+  {
+    "name": "Ceres",
+    "stateCode": "S"
+  },
+  {
+    "name": "Chañar Ladeado",
+    "stateCode": "S"
+  },
+  {
+    "name": "Coronda",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de Belgrano",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de Caseros",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de Castellanos",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de Constitución",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de La Capital",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de Nueve de Julio",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de San Cristóbal",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de San Javier",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de San Justo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de San Lorenzo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de San Martín",
+    "stateCode": "S"
+  },
+  {
+    "name": "Departamento de Vera",
+    "stateCode": "S"
+  },
+  {
+    "name": "El Trébol",
+    "stateCode": "S"
+  },
+  {
+    "name": "Esperanza",
+    "stateCode": "S"
+  },
+  {
+    "name": "Firmat",
+    "stateCode": "S"
+  },
+  {
+    "name": "Fray Luis A. Beltrán",
+    "stateCode": "S"
+  },
+  {
+    "name": "Funes",
+    "stateCode": "S"
+  },
+  {
+    "name": "Gálvez",
+    "stateCode": "S"
+  },
+  {
+    "name": "Gato Colorado",
+    "stateCode": "S"
+  },
+  {
+    "name": "Gobernador Gálvez",
+    "stateCode": "S"
+  },
+  {
+    "name": "Granadero Baigorria",
+    "stateCode": "S"
+  },
+  {
+    "name": "Helvecia",
+    "stateCode": "S"
+  },
+  {
+    "name": "Hersilia",
+    "stateCode": "S"
+  },
+  {
+    "name": "Iriondo Department",
+    "stateCode": "S"
+  },
+  {
+    "name": "Laguna Paiva",
+    "stateCode": "S"
+  },
+  {
+    "name": "Las Parejas",
+    "stateCode": "S"
+  },
+  {
+    "name": "Las Rosas",
+    "stateCode": "S"
+  },
+  {
+    "name": "Las Toscas",
+    "stateCode": "S"
+  },
+  {
+    "name": "Los Laureles",
+    "stateCode": "S"
+  },
+  {
+    "name": "Malabrigo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Melincué",
+    "stateCode": "S"
+  },
+  {
+    "name": "Pérez",
+    "stateCode": "S"
+  },
+  {
+    "name": "Rafaela",
+    "stateCode": "S"
+  },
+  {
+    "name": "Reconquista",
+    "stateCode": "S"
+  },
+  {
+    "name": "Recreo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Roldán",
+    "stateCode": "S"
+  },
+  {
+    "name": "Rosario",
+    "stateCode": "S"
+  },
+  {
+    "name": "Rufino",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Carlos Centro",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Cristóbal",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Javier",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Jorge",
+    "stateCode": "S"
+  },
+  {
+    "name": "San Justo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Santa Fe",
+    "stateCode": "S"
+  },
+  {
+    "name": "Santo Tomé",
+    "stateCode": "S"
+  },
+  {
+    "name": "Sastre",
+    "stateCode": "S"
+  },
+  {
+    "name": "Sunchales",
+    "stateCode": "S"
+  },
+  {
+    "name": "Tacuarendí",
+    "stateCode": "S"
+  },
+  {
+    "name": "Tostado",
+    "stateCode": "S"
+  },
+  {
+    "name": "Totoras",
+    "stateCode": "S"
+  },
+  {
+    "name": "Venado Tuerto",
+    "stateCode": "S"
+  },
+  {
+    "name": "Vera",
+    "stateCode": "S"
+  },
+  {
+    "name": "Villa Cañás",
+    "stateCode": "S"
+  },
+  {
+    "name": "Villa Constitución",
+    "stateCode": "S"
+  },
+  {
+    "name": "Villa Mugueta",
+    "stateCode": "S"
+  },
+  {
+    "name": "Villa Ocampo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Villa Trinidad",
+    "stateCode": "S"
+  },
+  {
+    "name": "Aguilares",
+    "stateCode": "T"
+  },
+  {
+    "name": "Alderetes",
+    "stateCode": "T"
+  },
+  {
+    "name": "Bella Vista",
+    "stateCode": "T"
+  },
+  {
+    "name": "Burruyacú",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de Burruyacú",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de Capital",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de Cruz Alta",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de Famaillá",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de Graneros",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de La Cocha",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de Lules",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de Monteros",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de Río Chico",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de Simoca",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de Trancas",
+    "stateCode": "T"
+  },
+  {
+    "name": "Departamento de Yerba Buena",
+    "stateCode": "T"
+  },
+  {
+    "name": "Famaillá",
+    "stateCode": "T"
+  },
+  {
+    "name": "Graneros",
+    "stateCode": "T"
+  },
+  {
+    "name": "La Cocha",
+    "stateCode": "T"
+  },
+  {
+    "name": "Monteros",
+    "stateCode": "T"
+  },
+  {
+    "name": "San Miguel de Tucumán",
+    "stateCode": "T"
+  },
+  {
+    "name": "Simoca",
+    "stateCode": "T"
+  },
+  {
+    "name": "Tafí del Valle",
+    "stateCode": "T"
+  },
+  {
+    "name": "Tafí Viejo",
+    "stateCode": "T"
+  },
+  {
+    "name": "Trancas",
+    "stateCode": "T"
+  },
+  {
+    "name": "Yerba Buena",
+    "stateCode": "T"
+  },
+  {
+    "name": "Alto Río Senguer",
+    "stateCode": "U"
+  },
+  {
+    "name": "Camarones",
+    "stateCode": "U"
+  },
+  {
+    "name": "Comodoro Rivadavia",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Biedma",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Cushamen",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Escalante",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Florentino Ameghino",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Futaleufú",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Gaimán",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Gastre",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Languiñeo",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Mártires",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Paso de Indios",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Rawson",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Río Senguerr",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Sarmiento",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Tehuelches",
+    "stateCode": "U"
+  },
+  {
+    "name": "Departamento de Telsen",
+    "stateCode": "U"
+  },
+  {
+    "name": "Dolavón",
+    "stateCode": "U"
+  },
+  {
+    "name": "El Maitén",
+    "stateCode": "U"
+  },
+  {
+    "name": "Esquel",
+    "stateCode": "U"
+  },
+  {
+    "name": "Gaimán",
+    "stateCode": "U"
+  },
+  {
+    "name": "Gastre",
+    "stateCode": "U"
+  },
+  {
+    "name": "Gobernador Costa",
+    "stateCode": "U"
+  },
+  {
+    "name": "Hoyo de Epuyén",
+    "stateCode": "U"
+  },
+  {
+    "name": "José de San Martín",
+    "stateCode": "U"
+  },
+  {
+    "name": "Lago Puelo",
+    "stateCode": "U"
+  },
+  {
+    "name": "Las Plumas",
+    "stateCode": "U"
+  },
+  {
+    "name": "Puerto Madryn",
+    "stateCode": "U"
+  },
+  {
+    "name": "Rada Tilly",
+    "stateCode": "U"
+  },
+  {
+    "name": "Rawson",
+    "stateCode": "U"
+  },
+  {
+    "name": "Río Mayo",
+    "stateCode": "U"
+  },
+  {
+    "name": "Río Pico",
+    "stateCode": "U"
+  },
+  {
+    "name": "Sarmiento",
+    "stateCode": "U"
+  },
+  {
+    "name": "Tecka",
+    "stateCode": "U"
+  },
+  {
+    "name": "Trelew",
+    "stateCode": "U"
+  },
+  {
+    "name": "Trevelin",
+    "stateCode": "U"
+  },
+  {
+    "name": "Río Grande",
+    "stateCode": "V"
+  },
+  {
+    "name": "Tolhuin",
+    "stateCode": "V"
+  },
+  {
+    "name": "Ushuaia",
+    "stateCode": "V"
+  },
+  {
+    "name": "Alvear",
+    "stateCode": "W"
+  },
+  {
+    "name": "Berón de Astrada",
+    "stateCode": "W"
+  },
+  {
+    "name": "Bonpland",
+    "stateCode": "W"
+  },
+  {
+    "name": "Chavarría",
+    "stateCode": "W"
+  },
+  {
+    "name": "Concepción",
+    "stateCode": "W"
+  },
+  {
+    "name": "Corrientes",
+    "stateCode": "W"
+  },
+  {
+    "name": "Cruz de los Milagros",
+    "stateCode": "W"
+  },
+  {
+    "name": "Curuzú Cuatiá",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Bella Vista",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Berón de Astrada",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Capital",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Concepción",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Curuzú Cuatiá",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Empedrado",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Esquina",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de General Alvear",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de General Paz",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Goya",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Itatí",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Ituzaingó",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Lavalle",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Mburucuyá",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Mercedes",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Monte Caseros",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Paso de los Libres",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Saladas",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de San Cosme",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de San Luis del Palmar",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de San Martín",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de San Miguel",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de San Roque",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Santo Tomé",
+    "stateCode": "W"
+  },
+  {
+    "name": "Departamento de Sauce",
+    "stateCode": "W"
+  },
+  {
+    "name": "Empedrado",
+    "stateCode": "W"
+  },
+  {
+    "name": "Esquina",
+    "stateCode": "W"
+  },
+  {
+    "name": "Felipe Yofré",
+    "stateCode": "W"
+  },
+  {
+    "name": "Garruchos",
+    "stateCode": "W"
+  },
+  {
+    "name": "Gobernador Juan E. Martínez",
+    "stateCode": "W"
+  },
+  {
+    "name": "Gobernador Virasora",
+    "stateCode": "W"
+  },
+  {
+    "name": "Goya",
+    "stateCode": "W"
+  },
+  {
+    "name": "Herlitzka",
+    "stateCode": "W"
+  },
+  {
+    "name": "Itá Ibaté",
+    "stateCode": "W"
+  },
+  {
+    "name": "Itatí",
+    "stateCode": "W"
+  },
+  {
+    "name": "Ituzaingó",
+    "stateCode": "W"
+  },
+  {
+    "name": "Juan Pujol",
+    "stateCode": "W"
+  },
+  {
+    "name": "La Cruz",
+    "stateCode": "W"
+  },
+  {
+    "name": "Libertad",
+    "stateCode": "W"
+  },
+  {
+    "name": "Lomas de Vallejos",
+    "stateCode": "W"
+  },
+  {
+    "name": "Loreto",
+    "stateCode": "W"
+  },
+  {
+    "name": "Mariano I. Loza",
+    "stateCode": "W"
+  },
+  {
+    "name": "Mburucuyá",
+    "stateCode": "W"
+  },
+  {
+    "name": "Mercedes",
+    "stateCode": "W"
+  },
+  {
+    "name": "Mocoretá",
+    "stateCode": "W"
+  },
+  {
+    "name": "Monte Caseros",
+    "stateCode": "W"
+  },
+  {
+    "name": "Nuestra Señora del Rosario de Caa Catí",
+    "stateCode": "W"
+  },
+  {
+    "name": "Nueve de Julio",
+    "stateCode": "W"
+  },
+  {
+    "name": "Palmar Grande",
+    "stateCode": "W"
+  },
+  {
+    "name": "Paso de la Patria",
+    "stateCode": "W"
+  },
+  {
+    "name": "Paso de los Libres",
+    "stateCode": "W"
+  },
+  {
+    "name": "Pedro R. Fernández",
+    "stateCode": "W"
+  },
+  {
+    "name": "Perugorría",
+    "stateCode": "W"
+  },
+  {
+    "name": "Pueblo Libertador",
+    "stateCode": "W"
+  },
+  {
+    "name": "Riachuelo",
+    "stateCode": "W"
+  },
+  {
+    "name": "Saladas",
+    "stateCode": "W"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "W"
+  },
+  {
+    "name": "San Cosme",
+    "stateCode": "W"
+  },
+  {
+    "name": "San Lorenzo",
+    "stateCode": "W"
+  },
+  {
+    "name": "San Luis del Palmar",
+    "stateCode": "W"
+  },
+  {
+    "name": "San Miguel",
+    "stateCode": "W"
+  },
+  {
+    "name": "Santa Lucía",
+    "stateCode": "W"
+  },
+  {
+    "name": "Santa Rosa",
+    "stateCode": "W"
+  },
+  {
+    "name": "Santo Tomé",
+    "stateCode": "W"
+  },
+  {
+    "name": "Yapeyú",
+    "stateCode": "W"
+  },
+  {
+    "name": "Yataity Calle",
+    "stateCode": "W"
+  },
+  {
+    "name": "Achiras",
+    "stateCode": "X"
+  },
+  {
+    "name": "Adelia María",
+    "stateCode": "X"
+  },
+  {
+    "name": "Agua de Oro",
+    "stateCode": "X"
+  },
+  {
+    "name": "Alejandro Roca",
+    "stateCode": "X"
+  },
+  {
+    "name": "Alejo Ledesma",
+    "stateCode": "X"
+  },
+  {
+    "name": "Almafuerte",
+    "stateCode": "X"
+  },
+  {
+    "name": "Alta Gracia",
+    "stateCode": "X"
+  },
+  {
+    "name": "Altos de Chipión",
+    "stateCode": "X"
+  },
+  {
+    "name": "Arias",
+    "stateCode": "X"
+  },
+  {
+    "name": "Arroyito",
+    "stateCode": "X"
+  },
+  {
+    "name": "Arroyo Cabral",
+    "stateCode": "X"
+  },
+  {
+    "name": "Balnearia",
+    "stateCode": "X"
+  },
+  {
+    "name": "Bell Ville",
+    "stateCode": "X"
+  },
+  {
+    "name": "Berrotarán",
+    "stateCode": "X"
+  },
+  {
+    "name": "Brinkmann",
+    "stateCode": "X"
+  },
+  {
+    "name": "Buchardo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Camilo Aldao",
+    "stateCode": "X"
+  },
+  {
+    "name": "Cañada de Luque",
+    "stateCode": "X"
+  },
+  {
+    "name": "Canals",
+    "stateCode": "X"
+  },
+  {
+    "name": "Capilla del Monte",
+    "stateCode": "X"
+  },
+  {
+    "name": "Carnerillo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Carrilobo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Cavanagh",
+    "stateCode": "X"
+  },
+  {
+    "name": "Charras",
+    "stateCode": "X"
+  },
+  {
+    "name": "Chazón",
+    "stateCode": "X"
+  },
+  {
+    "name": "Cintra",
+    "stateCode": "X"
+  },
+  {
+    "name": "Colonia La Tordilla",
+    "stateCode": "X"
+  },
+  {
+    "name": "Colonia San Bartolomé",
+    "stateCode": "X"
+  },
+  {
+    "name": "Córdoba",
+    "stateCode": "X"
+  },
+  {
+    "name": "Coronel Baigorria",
+    "stateCode": "X"
+  },
+  {
+    "name": "Coronel Moldes",
+    "stateCode": "X"
+  },
+  {
+    "name": "Corral de Bustos",
+    "stateCode": "X"
+  },
+  {
+    "name": "Corralito",
+    "stateCode": "X"
+  },
+  {
+    "name": "Cosquín",
+    "stateCode": "X"
+  },
+  {
+    "name": "Costa Sacate",
+    "stateCode": "X"
+  },
+  {
+    "name": "Cruz Alta",
+    "stateCode": "X"
+  },
+  {
+    "name": "Cruz del Eje",
+    "stateCode": "X"
+  },
+  {
+    "name": "Cuesta Blanca",
+    "stateCode": "X"
+  },
+  {
+    "name": "Dalmacio Vélez Sársfield",
+    "stateCode": "X"
+  },
+  {
+    "name": "Deán Funes",
+    "stateCode": "X"
+  },
+  {
+    "name": "Del Campillo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Calamuchita",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Colón",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Cruz del Eje",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de General Roca",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de General San Martín",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Juárez Celman",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Marcos Juárez",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Minas",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Presidente Roque Sáenz Peña",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Río Cuarto",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Río Primero",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Río Seco",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Río Segundo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de San Alberto",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de San Javier",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de San Justo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Sobremonte",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Totoral",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Tulumba",
+    "stateCode": "X"
+  },
+  {
+    "name": "Departamento de Unión",
+    "stateCode": "X"
+  },
+  {
+    "name": "Despeñaderos",
+    "stateCode": "X"
+  },
+  {
+    "name": "Devoto",
+    "stateCode": "X"
+  },
+  {
+    "name": "El Arañado",
+    "stateCode": "X"
+  },
+  {
+    "name": "El Tío",
+    "stateCode": "X"
+  },
+  {
+    "name": "Elena",
+    "stateCode": "X"
+  },
+  {
+    "name": "Embalse",
+    "stateCode": "X"
+  },
+  {
+    "name": "Etruria",
+    "stateCode": "X"
+  },
+  {
+    "name": "General Baldissera",
+    "stateCode": "X"
+  },
+  {
+    "name": "General Cabrera",
+    "stateCode": "X"
+  },
+  {
+    "name": "General Levalle",
+    "stateCode": "X"
+  },
+  {
+    "name": "General Roca",
+    "stateCode": "X"
+  },
+  {
+    "name": "Guatimozín",
+    "stateCode": "X"
+  },
+  {
+    "name": "Hernando",
+    "stateCode": "X"
+  },
+  {
+    "name": "Huanchillas",
+    "stateCode": "X"
+  },
+  {
+    "name": "Huerta Grande",
+    "stateCode": "X"
+  },
+  {
+    "name": "Huinca Renancó",
+    "stateCode": "X"
+  },
+  {
+    "name": "Idiazábal",
+    "stateCode": "X"
+  },
+  {
+    "name": "Inriville",
+    "stateCode": "X"
+  },
+  {
+    "name": "Isla Verde",
+    "stateCode": "X"
+  },
+  {
+    "name": "Italó",
+    "stateCode": "X"
+  },
+  {
+    "name": "James Craik",
+    "stateCode": "X"
+  },
+  {
+    "name": "Jesús María",
+    "stateCode": "X"
+  },
+  {
+    "name": "Justiniano Posse",
+    "stateCode": "X"
+  },
+  {
+    "name": "La Calera",
+    "stateCode": "X"
+  },
+  {
+    "name": "La Carlota",
+    "stateCode": "X"
+  },
+  {
+    "name": "La Cesira",
+    "stateCode": "X"
+  },
+  {
+    "name": "La Cumbre",
+    "stateCode": "X"
+  },
+  {
+    "name": "La Falda",
+    "stateCode": "X"
+  },
+  {
+    "name": "La Francia",
+    "stateCode": "X"
+  },
+  {
+    "name": "La Granja",
+    "stateCode": "X"
+  },
+  {
+    "name": "La Para",
+    "stateCode": "X"
+  },
+  {
+    "name": "La Playosa",
+    "stateCode": "X"
+  },
+  {
+    "name": "Laborde",
+    "stateCode": "X"
+  },
+  {
+    "name": "Laboulaye",
+    "stateCode": "X"
+  },
+  {
+    "name": "Laguna Larga",
+    "stateCode": "X"
+  },
+  {
+    "name": "Las Acequias",
+    "stateCode": "X"
+  },
+  {
+    "name": "Las Higueras",
+    "stateCode": "X"
+  },
+  {
+    "name": "Las Junturas",
+    "stateCode": "X"
+  },
+  {
+    "name": "Las Perdices",
+    "stateCode": "X"
+  },
+  {
+    "name": "Las Varas",
+    "stateCode": "X"
+  },
+  {
+    "name": "Las Varillas",
+    "stateCode": "X"
+  },
+  {
+    "name": "Leones",
+    "stateCode": "X"
+  },
+  {
+    "name": "Los Cocos",
+    "stateCode": "X"
+  },
+  {
+    "name": "Los Cóndores",
+    "stateCode": "X"
+  },
+  {
+    "name": "Los Surgentes",
+    "stateCode": "X"
+  },
+  {
+    "name": "Malagueño",
+    "stateCode": "X"
+  },
+  {
+    "name": "Malvinas Argentinas",
+    "stateCode": "X"
+  },
+  {
+    "name": "Marcos Juárez",
+    "stateCode": "X"
+  },
+  {
+    "name": "Marull",
+    "stateCode": "X"
+  },
+  {
+    "name": "Mattaldi",
+    "stateCode": "X"
+  },
+  {
+    "name": "Mendiolaza",
+    "stateCode": "X"
+  },
+  {
+    "name": "Mina Clavero",
+    "stateCode": "X"
+  },
+  {
+    "name": "Miramar",
+    "stateCode": "X"
+  },
+  {
+    "name": "Monte Buey",
+    "stateCode": "X"
+  },
+  {
+    "name": "Monte Cristo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Monte Maíz",
+    "stateCode": "X"
+  },
+  {
+    "name": "Morrison",
+    "stateCode": "X"
+  },
+  {
+    "name": "Morteros",
+    "stateCode": "X"
+  },
+  {
+    "name": "Noetinger",
+    "stateCode": "X"
+  },
+  {
+    "name": "Obispo Trejo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Oliva",
+    "stateCode": "X"
+  },
+  {
+    "name": "Oncativo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Ordóñez",
+    "stateCode": "X"
+  },
+  {
+    "name": "Pascanas",
+    "stateCode": "X"
+  },
+  {
+    "name": "Pasco",
+    "stateCode": "X"
+  },
+  {
+    "name": "Pilar",
+    "stateCode": "X"
+  },
+  {
+    "name": "Piquillín",
+    "stateCode": "X"
+  },
+  {
+    "name": "Porteña",
+    "stateCode": "X"
+  },
+  {
+    "name": "Pozo del Molle",
+    "stateCode": "X"
+  },
+  {
+    "name": "Quilino",
+    "stateCode": "X"
+  },
+  {
+    "name": "Río Ceballos",
+    "stateCode": "X"
+  },
+  {
+    "name": "Río Cuarto",
+    "stateCode": "X"
+  },
+  {
+    "name": "Río Segundo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Río Tercero",
+    "stateCode": "X"
+  },
+  {
+    "name": "Sacanta",
+    "stateCode": "X"
+  },
+  {
+    "name": "Saldán",
+    "stateCode": "X"
+  },
+  {
+    "name": "Salsacate",
+    "stateCode": "X"
+  },
+  {
+    "name": "Salsipuedes",
+    "stateCode": "X"
+  },
+  {
+    "name": "Sampacho",
+    "stateCode": "X"
+  },
+  {
+    "name": "San Agustín",
+    "stateCode": "X"
+  },
+  {
+    "name": "San Antonio de Litín",
+    "stateCode": "X"
+  },
+  {
+    "name": "San Basilio",
+    "stateCode": "X"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "X"
+  },
+  {
+    "name": "San Francisco",
+    "stateCode": "X"
+  },
+  {
+    "name": "San Francisco del Chañar",
+    "stateCode": "X"
+  },
+  {
+    "name": "San José de la Dormida",
+    "stateCode": "X"
+  },
+  {
+    "name": "Santa Eufemia",
+    "stateCode": "X"
+  },
+  {
+    "name": "Santa Magdalena",
+    "stateCode": "X"
+  },
+  {
+    "name": "Santa Rosa de Calamuchita",
+    "stateCode": "X"
+  },
+  {
+    "name": "Santa Rosa de Río Primero",
+    "stateCode": "X"
+  },
+  {
+    "name": "Santiago Temple",
+    "stateCode": "X"
+  },
+  {
+    "name": "Saturnino M. Laspiur",
+    "stateCode": "X"
+  },
+  {
+    "name": "Sebastián Elcano",
+    "stateCode": "X"
+  },
+  {
+    "name": "Serrano",
+    "stateCode": "X"
+  },
+  {
+    "name": "Serrezuela",
+    "stateCode": "X"
+  },
+  {
+    "name": "Tancacha",
+    "stateCode": "X"
+  },
+  {
+    "name": "Ticino",
+    "stateCode": "X"
+  },
+  {
+    "name": "Tío Pujio",
+    "stateCode": "X"
+  },
+  {
+    "name": "Toledo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Ucacha",
+    "stateCode": "X"
+  },
+  {
+    "name": "Unquillo",
+    "stateCode": "X"
+  },
+  {
+    "name": "Valle Hermoso",
+    "stateCode": "X"
+  },
+  {
+    "name": "Viamonte",
+    "stateCode": "X"
+  },
+  {
+    "name": "Vicuña Mackenna",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Allende",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Ascasubi",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Berna",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Carlos Paz",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Concepción del Tío",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Cura Brochero",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa de Soto",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa del Dique",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa del Rosario",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa del Totoral",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Dolores",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa General Belgrano",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Giardino",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Huidobro",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Las Rosas",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa María",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Nueva",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Reducción",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Rumipal",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Tulumba",
+    "stateCode": "X"
+  },
+  {
+    "name": "Villa Valeria",
+    "stateCode": "X"
+  },
+  {
+    "name": "Wenceslao Escalante",
+    "stateCode": "X"
+  },
+  {
+    "name": "Abra Pampa",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Caimancito",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Calilegua",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Departamento de Cochinoca",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Departamento de Rinconada",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Departamento de Tumbaya",
+    "stateCode": "Y"
+  },
+  {
+    "name": "El Aguilar",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Fraile Pintado",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Humahuaca",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Ingenio La Esperanza",
+    "stateCode": "Y"
+  },
+  {
+    "name": "La Mendieta",
+    "stateCode": "Y"
+  },
+  {
+    "name": "La Quiaca",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Libertador General San Martín",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Maimará",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Palma Sola",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Palpalá",
+    "stateCode": "Y"
+  },
+  {
+    "name": "San Pedro de Jujuy",
+    "stateCode": "Y"
+  },
+  {
+    "name": "San Salvador de Jujuy",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Santa Clara",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Tilcara",
+    "stateCode": "Y"
+  },
+  {
+    "name": "Yuto",
+    "stateCode": "Y"
+  },
+  {
+    "name": "28 de Noviembre",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Caleta Olivia",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Comandante Luis Piedra Buena",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Departamento de Deseado",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Departamento de Güer Aike",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Departamento de Lago Argentino",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Departamento de Magallanes",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Departamento de Río Chico",
+    "stateCode": "Z"
+  },
+  {
+    "name": "El Calafate",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Gobernador Gregores",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Las Heras",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Los Antiguos",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Perito Moreno",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Pico Truncado",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Puerto Deseado",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Puerto Santa Cruz",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Río Gallegos",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Río Turbio",
+    "stateCode": "Z"
+  },
+  {
+    "name": "San Julián",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Yacimiento Río Turbio",
+    "stateCode": "Z"
+  }
+]

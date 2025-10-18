@@ -1,0 +1,450 @@
+[
+  {
+    "name": "Bich’vinta",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Dranda",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Gagra",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Gali",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Gantiadi",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Gudauta",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Kelasuri",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Och’amch’ire",
+    "stateCode": "AB"
+  },
+  {
+    "name": "P’rimorsk’oe",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Sokhumi",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Stantsiya Novyy Afon",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Tqvarch'eli",
+    "stateCode": "AB"
+  },
+  {
+    "name": "Akhaldaba",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Batumi",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Chakvi",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Dioknisi",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Khelvachauri",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Khulo",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Kobuleti",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Makhinjauri",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Ochkhamuri",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Shuakhevi",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Tsikhisdziri",
+    "stateCode": "AJ"
+  },
+  {
+    "name": "Lanchkhuti",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Naruja",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Ozurgeti",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Urek’i",
+    "stateCode": "GU"
+  },
+  {
+    "name": "Baghdatis Munitsip’alit’et’i",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Chiat’ura",
+    "stateCode": "IM"
+  },
+  {
+    "name": "K’alak’i Chiat’ura",
+    "stateCode": "IM"
+  },
+  {
+    "name": "K’ulashi",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Kharagauli",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Khoni",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Kutaisi",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Sach’khere",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Samtredia",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Shorapani",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Tqibuli",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Tsqaltubo",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Vani",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Zestap’oni",
+    "stateCode": "IM"
+  },
+  {
+    "name": "Akhmet’a",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Akhmet’is Munitsip’alit’et’i",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Gurjaani",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Lagodekhi",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Qvareli",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Sagarejo",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Sighnaghi",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Sighnaghis Munitsip’alit’et’i",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Telavi",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Tsinandali",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Tsnori",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Bolnisi",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Bolnisis Munitsip’alit’et’i",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Didi Lilo",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Dmanisis Munitsip’alit’et’i",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Gardabani",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Gardabnis Munitsip’alit’et’i",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Manglisi",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Marneuli",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Marneulis Munitsip’alit’et’i",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Naghvarevi",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Rust’avi",
+    "stateCode": "KK"
+  },
+  {
+    "name": "T’et’ri Tsqaro",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Tetrits’q’alos Munitsip’alit’et’i",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Ts’alk’is Munitsip’alit’et’i",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Tsalka",
+    "stateCode": "KK"
+  },
+  {
+    "name": "Akhalgori",
+    "stateCode": "MM"
+  },
+  {
+    "name": "Dzegvi",
+    "stateCode": "MM"
+  },
+  {
+    "name": "Gudauri",
+    "stateCode": "MM"
+  },
+  {
+    "name": "Java",
+    "stateCode": "MM"
+  },
+  {
+    "name": "Mtskheta",
+    "stateCode": "MM"
+  },
+  {
+    "name": "P’asanauri",
+    "stateCode": "MM"
+  },
+  {
+    "name": "Step’antsminda",
+    "stateCode": "MM"
+  },
+  {
+    "name": "Zhinvali",
+    "stateCode": "MM"
+  },
+  {
+    "name": "Ambrolauri",
+    "stateCode": "RL"
+  },
+  {
+    "name": "Ambrolauris Munitsip’alit’et’i",
+    "stateCode": "RL"
+  },
+  {
+    "name": "Lent’ekhi",
+    "stateCode": "RL"
+  },
+  {
+    "name": "Oni",
+    "stateCode": "RL"
+  },
+  {
+    "name": "Adigeni",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Adigeni Municipality",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Akhaldaba",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Akhalk’alak’i",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Akhaltsikhe",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Akhaltsikhis Munitsip’alit’et’i",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Asp’indzis Munitsip’alit’et’i",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Aspindza",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Bakuriani",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Borjomi",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Ninotsminda",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Tsaghveri",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Vale",
+    "stateCode": "SJ"
+  },
+  {
+    "name": "Agara",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Gori",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Goris Munitsip’alit’et’i",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Kaspi",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Khashuri",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Surami",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Ts’khinvali",
+    "stateCode": "SK"
+  },
+  {
+    "name": "Abasha",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Jvari",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Khobi",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Kveda Chkhorots’q’u",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Mart’vili",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Mest’ia",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Mest’iis Munitsip’alit’et’i",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Orsant’ia",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "P’ot’i",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Senak’i",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tsalenjikha",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Zugdidi",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tbilisi",
+    "stateCode": "TB"
+  }
+]

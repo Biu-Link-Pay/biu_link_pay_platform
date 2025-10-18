@@ -1,0 +1,558 @@
+[
+  {
+    "name": "Bankim",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Banyo",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Bélel",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Djohong",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Kontcha",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Mayo-Banyo",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Meïganga",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Ngaoundéré",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Somié",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Tibati",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Tignère",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Vina",
+    "stateCode": "AD"
+  },
+  {
+    "name": "Akono",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Akonolinga",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Bafia",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Eséka",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Essé",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Évodoula",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mbalmayo",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mbam-Et-Inoubou",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mbandjok",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mbankomo",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mefou-et-Akono",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mfoundi",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Minta",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Nanga Eboko",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Ndikiniméki",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Ngomedzap",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Ngoro",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Nkoteng",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Ntui",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Obala",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Okoa",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Okola",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Ombésa",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Saa",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Yaoundé",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Yoko",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Bogo",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Kaélé",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Kousséri",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Koza",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Makary",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Maroua",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Mayo-Sava",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Mayo-Tsanaga",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Mindif",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Mokolo",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Mora",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Yagoua",
+    "stateCode": "EN"
+  },
+  {
+    "name": "Abong Mbang",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Batouri",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Bélabo",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Bertoua",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Bétaré Oya",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Dimako",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Doumé",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Garoua Boulaï",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Mbang",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Ndelele",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Yokadouma",
+    "stateCode": "ES"
+  },
+  {
+    "name": "Bonabéri",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Diang",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Dibombari",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Dizangué",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Douala",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Edéa",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Loum",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Manjo",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Mbanga",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Melong",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Mouanko",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Ndom",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Ngambé",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Nkongsamba",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Penja",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Yabassi",
+    "stateCode": "LT"
+  },
+  {
+    "name": "Faro Department",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Garoua",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Guider",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Lagdo",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Mayo-Louti",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Mayo-Rey",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Pitoa",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Poli",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Rey Bouba",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Tcholliré",
+    "stateCode": "NO"
+  },
+  {
+    "name": "Babanki",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Bali",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Bamenda",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Batibo",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Belo",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Boyo",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Fundong",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Jakiri",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Kumbo",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Mbengwi",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Mme-Bafumen",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Njinikom",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Wum",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Bafang",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Bafoussam",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Bamendjou",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Bana",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Bandjoun",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Bangangté",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Bansoa",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Bazou",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Dschang",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Foumban",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Foumbot",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Hauts-Plateaux",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Koung-Khi",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Mbouda",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Ngou",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Noun",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Tonga",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Akom II",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Ambam",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Ébolowa",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kribi",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Lolodorf",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Mvangué",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Mvila",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Sangmélima",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Bamusso",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Bekondo",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Buea",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Fako Division",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Fontem",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Kumba",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Lebialem",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Limbe",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Mamfe",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Mundemba",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Mutengene",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Muyuka",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Nguti",
+    "stateCode": "SW"
+  },
+  {
+    "name": "Tiko",
+    "stateCode": "SW"
+  }
+]

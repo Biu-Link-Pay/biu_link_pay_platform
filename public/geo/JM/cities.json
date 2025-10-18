@@ -1,0 +1,3362 @@
+[
+  {
+    "name": "Allman Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Bournemouth Gardens",
+    "stateCode": "01"
+  },
+  {
+    "name": "Campbell Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Central Down Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "D'Aguilar Town/ Rennock Lodge",
+    "stateCode": "01"
+  },
+  {
+    "name": "Denham Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "East Down Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Fletchers Land",
+    "stateCode": "01"
+  },
+  {
+    "name": "Franklyn Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Hannah Town/ Craig Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Johnson Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kingston",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kingston Gardens",
+    "stateCode": "01"
+  },
+  {
+    "name": "Manley Meadows",
+    "stateCode": "01"
+  },
+  {
+    "name": "Newport East",
+    "stateCode": "01"
+  },
+  {
+    "name": "Newton Square",
+    "stateCode": "01"
+  },
+  {
+    "name": "Norman Gardens",
+    "stateCode": "01"
+  },
+  {
+    "name": "Passmore Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Port Royal",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rae Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Rollington Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Southside",
+    "stateCode": "01"
+  },
+  {
+    "name": "Springfield",
+    "stateCode": "01"
+  },
+  {
+    "name": "Tivoli Gardens",
+    "stateCode": "01"
+  },
+  {
+    "name": "West Down Town",
+    "stateCode": "01"
+  },
+  {
+    "name": "Arcadia",
+    "stateCode": "02"
+  },
+  {
+    "name": "Arlene Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Arnett Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "August Town",
+    "stateCode": "02"
+  },
+  {
+    "name": "Barbican",
+    "stateCode": "02"
+  },
+  {
+    "name": "Beverley Hills",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bito",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bloxborough",
+    "stateCode": "02"
+  },
+  {
+    "name": "Boucher Park",
+    "stateCode": "02"
+  },
+  {
+    "name": "Brandon Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bull Bay/ Seven Mile",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cane River",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cassia Park",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cavaliers",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cherry Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cockburn Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Constant Spring",
+    "stateCode": "02"
+  },
+  {
+    "name": "Constant Spring Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Constitution Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Content Gap",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cooreville Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Cross Roads",
+    "stateCode": "02"
+  },
+  {
+    "name": "Dallas",
+    "stateCode": "02"
+  },
+  {
+    "name": "Delacree Park/ Union Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Delacree Pen",
+    "stateCode": "02"
+  },
+  {
+    "name": "Drewsland",
+    "stateCode": "02"
+  },
+  {
+    "name": "Drumblair",
+    "stateCode": "02"
+  },
+  {
+    "name": "Duhaney Park",
+    "stateCode": "02"
+  },
+  {
+    "name": "Eastwood Park Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Elleston Flats/ Mona Commons",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ferry",
+    "stateCode": "02"
+  },
+  {
+    "name": "Forest Hills Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Forest Hills/ Plantation Height",
+    "stateCode": "02"
+  },
+  {
+    "name": "Golden Spring",
+    "stateCode": "02"
+  },
+  {
+    "name": "Gordon Town",
+    "stateCode": "02"
+  },
+  {
+    "name": "Grants Pen",
+    "stateCode": "02"
+  },
+  {
+    "name": "Greenwich Town/ Newport West",
+    "stateCode": "02"
+  },
+  {
+    "name": "Half Way Tree",
+    "stateCode": "02"
+  },
+  {
+    "name": "Half-Way-Tree",
+    "stateCode": "02"
+  },
+  {
+    "name": "Harbour View",
+    "stateCode": "02"
+  },
+  {
+    "name": "Havendale",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hermitage",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hope Pastures/ UTECH",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hope Tavern",
+    "stateCode": "02"
+  },
+  {
+    "name": "Hughenden",
+    "stateCode": "02"
+  },
+  {
+    "name": "Irish Town",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jacks Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Jones Town",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kencot",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kintyre",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lawrence Tavern",
+    "stateCode": "02"
+  },
+  {
+    "name": "Liguanea",
+    "stateCode": "02"
+  },
+  {
+    "name": "Majestic Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mannings Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mannings Hill (Rural)",
+    "stateCode": "02"
+  },
+  {
+    "name": "Marverley",
+    "stateCode": "02"
+  },
+  {
+    "name": "Maryland",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mavis Bank",
+    "stateCode": "02"
+  },
+  {
+    "name": "Maxfield Park",
+    "stateCode": "02"
+  },
+  {
+    "name": "Meadowbrook",
+    "stateCode": "02"
+  },
+  {
+    "name": "Meadowbrook Estate",
+    "stateCode": "02"
+  },
+  {
+    "name": "Molynes Four Roads",
+    "stateCode": "02"
+  },
+  {
+    "name": "Molynes Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mona Heights",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mount James",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mountain View Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nannyville",
+    "stateCode": "02"
+  },
+  {
+    "name": "New Haven",
+    "stateCode": "02"
+  },
+  {
+    "name": "New Kingston",
+    "stateCode": "02"
+  },
+  {
+    "name": "Norbrook",
+    "stateCode": "02"
+  },
+  {
+    "name": "Oaklands",
+    "stateCode": "02"
+  },
+  {
+    "name": "Papine",
+    "stateCode": "02"
+  },
+  {
+    "name": "Parks Road",
+    "stateCode": "02"
+  },
+  {
+    "name": "Patrick City",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pembroke Hall",
+    "stateCode": "02"
+  },
+  {
+    "name": "Penwood",
+    "stateCode": "02"
+  },
+  {
+    "name": "Queensborough/ Tunbridge",
+    "stateCode": "02"
+  },
+  {
+    "name": "Red Hills (Rural)",
+    "stateCode": "02"
+  },
+  {
+    "name": "Red Hills Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Red Hills/ Sterling Castle",
+    "stateCode": "02"
+  },
+  {
+    "name": "Richmond Park",
+    "stateCode": "02"
+  },
+  {
+    "name": "Riverton City",
+    "stateCode": "02"
+  },
+  {
+    "name": "Roehampton",
+    "stateCode": "02"
+  },
+  {
+    "name": "Rose Town",
+    "stateCode": "02"
+  },
+  {
+    "name": "Seaview Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Seaward Pen",
+    "stateCode": "02"
+  },
+  {
+    "name": "Seymour Lands",
+    "stateCode": "02"
+  },
+  {
+    "name": "St. Peter's",
+    "stateCode": "02"
+  },
+  {
+    "name": "Stadium Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Stony Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Swallowfield",
+    "stateCode": "02"
+  },
+  {
+    "name": "Temple Hall",
+    "stateCode": "02"
+  },
+  {
+    "name": "Three Oaks/ Glendale",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tower Hill",
+    "stateCode": "02"
+  },
+  {
+    "name": "Trafalgar Park",
+    "stateCode": "02"
+  },
+  {
+    "name": "Trench Town",
+    "stateCode": "02"
+  },
+  {
+    "name": "University",
+    "stateCode": "02"
+  },
+  {
+    "name": "Vineyard Town",
+    "stateCode": "02"
+  },
+  {
+    "name": "Waltham Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Washington Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Waterhouse",
+    "stateCode": "02"
+  },
+  {
+    "name": "Whitehall",
+    "stateCode": "02"
+  },
+  {
+    "name": "Whitfield Town",
+    "stateCode": "02"
+  },
+  {
+    "name": "Wilton Gardens/ Rema",
+    "stateCode": "02"
+  },
+  {
+    "name": "Woodford",
+    "stateCode": "02"
+  },
+  {
+    "name": "Woodford Park",
+    "stateCode": "02"
+  },
+  {
+    "name": "Zaidie Gardens",
+    "stateCode": "02"
+  },
+  {
+    "name": "Airy Castle",
+    "stateCode": "03"
+  },
+  {
+    "name": "Albion",
+    "stateCode": "03"
+  },
+  {
+    "name": "Amity Hall",
+    "stateCode": "03"
+  },
+  {
+    "name": "Arcadia",
+    "stateCode": "03"
+  },
+  {
+    "name": "Baptist",
+    "stateCode": "03"
+  },
+  {
+    "name": "Barking Lodge",
+    "stateCode": "03"
+  },
+  {
+    "name": "Bath",
+    "stateCode": "03"
+  },
+  {
+    "name": "Bethel",
+    "stateCode": "03"
+  },
+  {
+    "name": "Cedar Valley",
+    "stateCode": "03"
+  },
+  {
+    "name": "Church Corner",
+    "stateCode": "03"
+  },
+  {
+    "name": "Dalvey",
+    "stateCode": "03"
+  },
+  {
+    "name": "Danvers Pen",
+    "stateCode": "03"
+  },
+  {
+    "name": "Duckenfield",
+    "stateCode": "03"
+  },
+  {
+    "name": "Duhaney Pen",
+    "stateCode": "03"
+  },
+  {
+    "name": "Easington",
+    "stateCode": "03"
+  },
+  {
+    "name": "Eleven Miles",
+    "stateCode": "03"
+  },
+  {
+    "name": "Font Hill",
+    "stateCode": "03"
+  },
+  {
+    "name": "Golden Grove",
+    "stateCode": "03"
+  },
+  {
+    "name": "Hagley Gap",
+    "stateCode": "03"
+  },
+  {
+    "name": "Hampton Court",
+    "stateCode": "03"
+  },
+  {
+    "name": "Hayfield",
+    "stateCode": "03"
+  },
+  {
+    "name": "Hillside",
+    "stateCode": "03"
+  },
+  {
+    "name": "Johns Town",
+    "stateCode": "03"
+  },
+  {
+    "name": "Johnson Mountain",
+    "stateCode": "03"
+  },
+  {
+    "name": "Jones Pen",
+    "stateCode": "03"
+  },
+  {
+    "name": "Leith Hall",
+    "stateCode": "03"
+  },
+  {
+    "name": "Llandewey",
+    "stateCode": "03"
+  },
+  {
+    "name": "Lloyds",
+    "stateCode": "03"
+  },
+  {
+    "name": "Lyssons",
+    "stateCode": "03"
+  },
+  {
+    "name": "Middleton",
+    "stateCode": "03"
+  },
+  {
+    "name": "Morant Bay",
+    "stateCode": "03"
+  },
+  {
+    "name": "Mount Lebanus",
+    "stateCode": "03"
+  },
+  {
+    "name": "New Monkland",
+    "stateCode": "03"
+  },
+  {
+    "name": "Pamphret",
+    "stateCode": "03"
+  },
+  {
+    "name": "Pear Tree",
+    "stateCode": "03"
+  },
+  {
+    "name": "Poormans Corner",
+    "stateCode": "03"
+  },
+  {
+    "name": "Port Morant",
+    "stateCode": "03"
+  },
+  {
+    "name": "Prospect",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ramble",
+    "stateCode": "03"
+  },
+  {
+    "name": "Retreat",
+    "stateCode": "03"
+  },
+  {
+    "name": "Richmond Vale",
+    "stateCode": "03"
+  },
+  {
+    "name": "River Head",
+    "stateCode": "03"
+  },
+  {
+    "name": "Rowlandsfield",
+    "stateCode": "03"
+  },
+  {
+    "name": "Seaforth",
+    "stateCode": "03"
+  },
+  {
+    "name": "Somerset",
+    "stateCode": "03"
+  },
+  {
+    "name": "Spring Bank",
+    "stateCode": "03"
+  },
+  {
+    "name": "Spring Garden",
+    "stateCode": "03"
+  },
+  {
+    "name": "Sunning Hill",
+    "stateCode": "03"
+  },
+  {
+    "name": "Trinity Ville",
+    "stateCode": "03"
+  },
+  {
+    "name": "Trinityville",
+    "stateCode": "03"
+  },
+  {
+    "name": "Wheelerfield",
+    "stateCode": "03"
+  },
+  {
+    "name": "White Hall",
+    "stateCode": "03"
+  },
+  {
+    "name": "White Horses",
+    "stateCode": "03"
+  },
+  {
+    "name": "Wilmington",
+    "stateCode": "03"
+  },
+  {
+    "name": "Winchester",
+    "stateCode": "03"
+  },
+  {
+    "name": "Yallahs",
+    "stateCode": "03"
+  },
+  {
+    "name": "York",
+    "stateCode": "03"
+  },
+  {
+    "name": "Balcarres",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bangor Ridge",
+    "stateCode": "04"
+  },
+  {
+    "name": "Belvedere",
+    "stateCode": "04"
+  },
+  {
+    "name": "Black Hill",
+    "stateCode": "04"
+  },
+  {
+    "name": "Boundbrook",
+    "stateCode": "04"
+  },
+  {
+    "name": "Breastworks",
+    "stateCode": "04"
+  },
+  {
+    "name": "Buff Bay",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bybrook",
+    "stateCode": "04"
+  },
+  {
+    "name": "Cascade",
+    "stateCode": "04"
+  },
+  {
+    "name": "Castle Comfort",
+    "stateCode": "04"
+  },
+  {
+    "name": "Central Port Antonio",
+    "stateCode": "04"
+  },
+  {
+    "name": "Charles Town",
+    "stateCode": "04"
+  },
+  {
+    "name": "Claverty Cottage",
+    "stateCode": "04"
+  },
+  {
+    "name": "Comfort Castle",
+    "stateCode": "04"
+  },
+  {
+    "name": "Drapers",
+    "stateCode": "04"
+  },
+  {
+    "name": "Durham",
+    "stateCode": "04"
+  },
+  {
+    "name": "Fairy Hill",
+    "stateCode": "04"
+  },
+  {
+    "name": "Fellowship",
+    "stateCode": "04"
+  },
+  {
+    "name": "Fruitfulvale",
+    "stateCode": "04"
+  },
+  {
+    "name": "Hectors River",
+    "stateCode": "04"
+  },
+  {
+    "name": "Hope Bay",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kensington",
+    "stateCode": "04"
+  },
+  {
+    "name": "Long Bay",
+    "stateCode": "04"
+  },
+  {
+    "name": "Long Road",
+    "stateCode": "04"
+  },
+  {
+    "name": "Manchioneal",
+    "stateCode": "04"
+  },
+  {
+    "name": "Moore Town",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mount Pleasant",
+    "stateCode": "04"
+  },
+  {
+    "name": "Nonsuch",
+    "stateCode": "04"
+  },
+  {
+    "name": "Norwich",
+    "stateCode": "04"
+  },
+  {
+    "name": "Orange Bay",
+    "stateCode": "04"
+  },
+  {
+    "name": "Port Antonio",
+    "stateCode": "04"
+  },
+  {
+    "name": "Prospect",
+    "stateCode": "04"
+  },
+  {
+    "name": "Rock Hall",
+    "stateCode": "04"
+  },
+  {
+    "name": "Sherwood Forest",
+    "stateCode": "04"
+  },
+  {
+    "name": "Shirley Castle",
+    "stateCode": "04"
+  },
+  {
+    "name": "Skibo",
+    "stateCode": "04"
+  },
+  {
+    "name": "Snow Hill",
+    "stateCode": "04"
+  },
+  {
+    "name": "Spring Hill",
+    "stateCode": "04"
+  },
+  {
+    "name": "St. Margaret's Bay",
+    "stateCode": "04"
+  },
+  {
+    "name": "Swift River",
+    "stateCode": "04"
+  },
+  {
+    "name": "Tranquility",
+    "stateCode": "04"
+  },
+  {
+    "name": "Windsor",
+    "stateCode": "04"
+  },
+  {
+    "name": "Windsor Castle",
+    "stateCode": "04"
+  },
+  {
+    "name": "Windsor Forest",
+    "stateCode": "04"
+  },
+  {
+    "name": "Amiel Town",
+    "stateCode": "05"
+  },
+  {
+    "name": "Annotto Bay",
+    "stateCode": "05"
+  },
+  {
+    "name": "Baileys Vale",
+    "stateCode": "05"
+  },
+  {
+    "name": "Baxter Mountain",
+    "stateCode": "05"
+  },
+  {
+    "name": "Belfield",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bonnygate",
+    "stateCode": "05"
+  },
+  {
+    "name": "Brainerd",
+    "stateCode": "05"
+  },
+  {
+    "name": "Broadgate",
+    "stateCode": "05"
+  },
+  {
+    "name": "Camberwell",
+    "stateCode": "05"
+  },
+  {
+    "name": "Carron Hall",
+    "stateCode": "05"
+  },
+  {
+    "name": "Castleton",
+    "stateCode": "05"
+  },
+  {
+    "name": "Charles Town",
+    "stateCode": "05"
+  },
+  {
+    "name": "Clonmel",
+    "stateCode": "05"
+  },
+  {
+    "name": "Devon Pen",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dover",
+    "stateCode": "05"
+  },
+  {
+    "name": "Enfield",
+    "stateCode": "05"
+  },
+  {
+    "name": "Epson",
+    "stateCode": "05"
+  },
+  {
+    "name": "Flint River",
+    "stateCode": "05"
+  },
+  {
+    "name": "Free Hill",
+    "stateCode": "05"
+  },
+  {
+    "name": "Friendship Gap",
+    "stateCode": "05"
+  },
+  {
+    "name": "Galina",
+    "stateCode": "05"
+  },
+  {
+    "name": "Gayle",
+    "stateCode": "05"
+  },
+  {
+    "name": "Guys Hill",
+    "stateCode": "05"
+  },
+  {
+    "name": "Hampstead",
+    "stateCode": "05"
+  },
+  {
+    "name": "Highgate",
+    "stateCode": "05"
+  },
+  {
+    "name": "Islington",
+    "stateCode": "05"
+  },
+  {
+    "name": "Jacks River",
+    "stateCode": "05"
+  },
+  {
+    "name": "Jeffery Town",
+    "stateCode": "05"
+  },
+  {
+    "name": "Labyrinth",
+    "stateCode": "05"
+  },
+  {
+    "name": "Long Road",
+    "stateCode": "05"
+  },
+  {
+    "name": "Lucky Hill",
+    "stateCode": "05"
+  },
+  {
+    "name": "Mango Valley",
+    "stateCode": "05"
+  },
+  {
+    "name": "Martin",
+    "stateCode": "05"
+  },
+  {
+    "name": "Mason Hall",
+    "stateCode": "05"
+  },
+  {
+    "name": "Mile Gully",
+    "stateCode": "05"
+  },
+  {
+    "name": "Oracabessa",
+    "stateCode": "05"
+  },
+  {
+    "name": "Port Maria",
+    "stateCode": "05"
+  },
+  {
+    "name": "Prospect",
+    "stateCode": "05"
+  },
+  {
+    "name": "Retreat",
+    "stateCode": "05"
+  },
+  {
+    "name": "Richmond",
+    "stateCode": "05"
+  },
+  {
+    "name": "Robins Bay",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sandside",
+    "stateCode": "05"
+  },
+  {
+    "name": "Scotts Hall",
+    "stateCode": "05"
+  },
+  {
+    "name": "Woodpark",
+    "stateCode": "05"
+  },
+  {
+    "name": "Woodside",
+    "stateCode": "05"
+  },
+  {
+    "name": "Aboukir",
+    "stateCode": "06"
+  },
+  {
+    "name": "Alderton",
+    "stateCode": "06"
+  },
+  {
+    "name": "Alexandria",
+    "stateCode": "06"
+  },
+  {
+    "name": "Alva",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bamboo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Beecher Town",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bensonton",
+    "stateCode": "06"
+  },
+  {
+    "name": "Blackstonedge",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bohemia",
+    "stateCode": "06"
+  },
+  {
+    "name": "Borobridge",
+    "stateCode": "06"
+  },
+  {
+    "name": "Browns Town",
+    "stateCode": "06"
+  },
+  {
+    "name": "Calderwood",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cascade",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cave Valley",
+    "stateCode": "06"
+  },
+  {
+    "name": "Chalky Hill",
+    "stateCode": "06"
+  },
+  {
+    "name": "Chester",
+    "stateCode": "06"
+  },
+  {
+    "name": "Claremont",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cole Gate",
+    "stateCode": "06"
+  },
+  {
+    "name": "Content Garden",
+    "stateCode": "06"
+  },
+  {
+    "name": "Cuffie Ridge",
+    "stateCode": "06"
+  },
+  {
+    "name": "Discovery Bay",
+    "stateCode": "06"
+  },
+  {
+    "name": "Epworth",
+    "stateCode": "06"
+  },
+  {
+    "name": "Exchange",
+    "stateCode": "06"
+  },
+  {
+    "name": "Faith's Pen",
+    "stateCode": "06"
+  },
+  {
+    "name": "Gibraltar",
+    "stateCode": "06"
+  },
+  {
+    "name": "Golden Grove",
+    "stateCode": "06"
+  },
+  {
+    "name": "Great Pond",
+    "stateCode": "06"
+  },
+  {
+    "name": "Higgin Land",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hinds Town",
+    "stateCode": "06"
+  },
+  {
+    "name": "Inverness",
+    "stateCode": "06"
+  },
+  {
+    "name": "Lime Hall",
+    "stateCode": "06"
+  },
+  {
+    "name": "Lime Tree Gardens",
+    "stateCode": "06"
+  },
+  {
+    "name": "Linton Park",
+    "stateCode": "06"
+  },
+  {
+    "name": "Macknie",
+    "stateCode": "06"
+  },
+  {
+    "name": "Madras",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mansfield",
+    "stateCode": "06"
+  },
+  {
+    "name": "Moneague",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mount Moriah",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mount Zion",
+    "stateCode": "06"
+  },
+  {
+    "name": "Ocho Rios",
+    "stateCode": "06"
+  },
+  {
+    "name": "Parry Town",
+    "stateCode": "06"
+  },
+  {
+    "name": "Philadelphia",
+    "stateCode": "06"
+  },
+  {
+    "name": "Pimento Walk",
+    "stateCode": "06"
+  },
+  {
+    "name": "Priory",
+    "stateCode": "06"
+  },
+  {
+    "name": "River Head",
+    "stateCode": "06"
+  },
+  {
+    "name": "Runaway Bay",
+    "stateCode": "06"
+  },
+  {
+    "name": "Saint Ann’s Bay",
+    "stateCode": "06"
+  },
+  {
+    "name": "St. Ann's Bay",
+    "stateCode": "06"
+  },
+  {
+    "name": "St. D'Acre",
+    "stateCode": "06"
+  },
+  {
+    "name": "Steer Town",
+    "stateCode": "06"
+  },
+  {
+    "name": "Sturge Town",
+    "stateCode": "06"
+  },
+  {
+    "name": "Walkers Wood",
+    "stateCode": "06"
+  },
+  {
+    "name": "Watt Town",
+    "stateCode": "06"
+  },
+  {
+    "name": "York Castle",
+    "stateCode": "06"
+  },
+  {
+    "name": "Albert Town",
+    "stateCode": "07"
+  },
+  {
+    "name": "Alps",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bounty Hall",
+    "stateCode": "07"
+  },
+  {
+    "name": "Brampton",
+    "stateCode": "07"
+  },
+  {
+    "name": "Bunkers Hill",
+    "stateCode": "07"
+  },
+  {
+    "name": "Clarks Town",
+    "stateCode": "07"
+  },
+  {
+    "name": "Daniel Town",
+    "stateCode": "07"
+  },
+  {
+    "name": "Deeside",
+    "stateCode": "07"
+  },
+  {
+    "name": "Duanvale",
+    "stateCode": "07"
+  },
+  {
+    "name": "Duncans",
+    "stateCode": "07"
+  },
+  {
+    "name": "Falmouth",
+    "stateCode": "07"
+  },
+  {
+    "name": "Freemans Hall",
+    "stateCode": "07"
+  },
+  {
+    "name": "Granville",
+    "stateCode": "07"
+  },
+  {
+    "name": "Hampden",
+    "stateCode": "07"
+  },
+  {
+    "name": "Jackson Town",
+    "stateCode": "07"
+  },
+  {
+    "name": "Joe Hut",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kinloss",
+    "stateCode": "07"
+  },
+  {
+    "name": "Lorrimers",
+    "stateCode": "07"
+  },
+  {
+    "name": "Martha Brae",
+    "stateCode": "07"
+  },
+  {
+    "name": "Perth Town",
+    "stateCode": "07"
+  },
+  {
+    "name": "Refuge",
+    "stateCode": "07"
+  },
+  {
+    "name": "Rio Bueno",
+    "stateCode": "07"
+  },
+  {
+    "name": "Salt Marsh",
+    "stateCode": "07"
+  },
+  {
+    "name": "Samuels Prospect",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sawyers",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sherwood Content",
+    "stateCode": "07"
+  },
+  {
+    "name": "Spicy Hill",
+    "stateCode": "07"
+  },
+  {
+    "name": "Spring Garden",
+    "stateCode": "07"
+  },
+  {
+    "name": "St. Vincent",
+    "stateCode": "07"
+  },
+  {
+    "name": "Stettin",
+    "stateCode": "07"
+  },
+  {
+    "name": "Stewart Town",
+    "stateCode": "07"
+  },
+  {
+    "name": "Troy",
+    "stateCode": "07"
+  },
+  {
+    "name": "Ulster Spring",
+    "stateCode": "07"
+  },
+  {
+    "name": "Wait-A-Bit",
+    "stateCode": "07"
+  },
+  {
+    "name": "Wakefield",
+    "stateCode": "07"
+  },
+  {
+    "name": "Warsop",
+    "stateCode": "07"
+  },
+  {
+    "name": "Wilson's Run",
+    "stateCode": "07"
+  },
+  {
+    "name": "Wirefence",
+    "stateCode": "07"
+  },
+  {
+    "name": "Adelphi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Albion",
+    "stateCode": "08"
+  },
+  {
+    "name": "Anchovy",
+    "stateCode": "08"
+  },
+  {
+    "name": "Arcadia",
+    "stateCode": "08"
+  },
+  {
+    "name": "Barrett Town",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bickersteth",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bogue",
+    "stateCode": "08"
+  },
+  {
+    "name": "Brandon Hill",
+    "stateCode": "08"
+  },
+  {
+    "name": "Cambridge",
+    "stateCode": "08"
+  },
+  {
+    "name": "Canterbury",
+    "stateCode": "08"
+  },
+  {
+    "name": "Catadupa",
+    "stateCode": "08"
+  },
+  {
+    "name": "Catherine Hall",
+    "stateCode": "08"
+  },
+  {
+    "name": "Catherine Mount",
+    "stateCode": "08"
+  },
+  {
+    "name": "Comfort Hall",
+    "stateCode": "08"
+  },
+  {
+    "name": "Coral Gardens",
+    "stateCode": "08"
+  },
+  {
+    "name": "Cornwall",
+    "stateCode": "08"
+  },
+  {
+    "name": "Down Town Montego Bay",
+    "stateCode": "08"
+  },
+  {
+    "name": "Dumfries",
+    "stateCode": "08"
+  },
+  {
+    "name": "Fairfield",
+    "stateCode": "08"
+  },
+  {
+    "name": "Farm Heights",
+    "stateCode": "08"
+  },
+  {
+    "name": "Flagstaff",
+    "stateCode": "08"
+  },
+  {
+    "name": "Flamstead",
+    "stateCode": "08"
+  },
+  {
+    "name": "Flankers",
+    "stateCode": "08"
+  },
+  {
+    "name": "Flower Hill",
+    "stateCode": "08"
+  },
+  {
+    "name": "Friendship",
+    "stateCode": "08"
+  },
+  {
+    "name": "Garlands",
+    "stateCode": "08"
+  },
+  {
+    "name": "Glendevon",
+    "stateCode": "08"
+  },
+  {
+    "name": "Goodwill",
+    "stateCode": "08"
+  },
+  {
+    "name": "Granville",
+    "stateCode": "08"
+  },
+  {
+    "name": "Green Pond",
+    "stateCode": "08"
+  },
+  {
+    "name": "Greenwood",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hopeton",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ironshore",
+    "stateCode": "08"
+  },
+  {
+    "name": "Irwin",
+    "stateCode": "08"
+  },
+  {
+    "name": "John's Hall",
+    "stateCode": "08"
+  },
+  {
+    "name": "Lilliput",
+    "stateCode": "08"
+  },
+  {
+    "name": "Lottery",
+    "stateCode": "08"
+  },
+  {
+    "name": "Maldon",
+    "stateCode": "08"
+  },
+  {
+    "name": "Maroon Town",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mocho",
+    "stateCode": "08"
+  },
+  {
+    "name": "Montego Bay",
+    "stateCode": "08"
+  },
+  {
+    "name": "Montego Hill",
+    "stateCode": "08"
+  },
+  {
+    "name": "Montpelier",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mount Carey",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mount Horeb",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mount Salem",
+    "stateCode": "08"
+  },
+  {
+    "name": "Niagara",
+    "stateCode": "08"
+  },
+  {
+    "name": "Norwood",
+    "stateCode": "08"
+  },
+  {
+    "name": "Orange",
+    "stateCode": "08"
+  },
+  {
+    "name": "Paradise",
+    "stateCode": "08"
+  },
+  {
+    "name": "Pitfour",
+    "stateCode": "08"
+  },
+  {
+    "name": "Porto Bello",
+    "stateCode": "08"
+  },
+  {
+    "name": "Reading",
+    "stateCode": "08"
+  },
+  {
+    "name": "Retirement",
+    "stateCode": "08"
+  },
+  {
+    "name": "Retrieve",
+    "stateCode": "08"
+  },
+  {
+    "name": "Roehampton",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rose Hall",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rose Heights",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rose Mount Garden",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rosemount",
+    "stateCode": "08"
+  },
+  {
+    "name": "Salt Spring",
+    "stateCode": "08"
+  },
+  {
+    "name": "Seven Rivers",
+    "stateCode": "08"
+  },
+  {
+    "name": "Somerton",
+    "stateCode": "08"
+  },
+  {
+    "name": "Spot Valley",
+    "stateCode": "08"
+  },
+  {
+    "name": "Stonehenge",
+    "stateCode": "08"
+  },
+  {
+    "name": "Summer Hill",
+    "stateCode": "08"
+  },
+  {
+    "name": "Sunderland",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tangle River",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tower Hill/Moy Hall",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tucker",
+    "stateCode": "08"
+  },
+  {
+    "name": "Unity Hall",
+    "stateCode": "08"
+  },
+  {
+    "name": "Vaughnsfield",
+    "stateCode": "08"
+  },
+  {
+    "name": "Welcome Hall",
+    "stateCode": "08"
+  },
+  {
+    "name": "West Green",
+    "stateCode": "08"
+  },
+  {
+    "name": "Askenish",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cacoon",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cacoon Castle",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cascade",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cash Hill",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cauldwell",
+    "stateCode": "09"
+  },
+  {
+    "name": "Chambers Pen",
+    "stateCode": "09"
+  },
+  {
+    "name": "Chester Castle",
+    "stateCode": "09"
+  },
+  {
+    "name": "Copse",
+    "stateCode": "09"
+  },
+  {
+    "name": "Cousins Cove",
+    "stateCode": "09"
+  },
+  {
+    "name": "Dias",
+    "stateCode": "09"
+  },
+  {
+    "name": "Great Valley",
+    "stateCode": "09"
+  },
+  {
+    "name": "Green Island",
+    "stateCode": "09"
+  },
+  {
+    "name": "Haddington",
+    "stateCode": "09"
+  },
+  {
+    "name": "Hopewell",
+    "stateCode": "09"
+  },
+  {
+    "name": "Jericho",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kendal",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kingsvale",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lances Bay",
+    "stateCode": "09"
+  },
+  {
+    "name": "Logwood",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lucea",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lucea East",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lucea West",
+    "stateCode": "09"
+  },
+  {
+    "name": "March Town",
+    "stateCode": "09"
+  },
+  {
+    "name": "Maryland",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mount Peto",
+    "stateCode": "09"
+  },
+  {
+    "name": "Orange Bay",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pell River",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pondside",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ramble",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rock Spring",
+    "stateCode": "09"
+  },
+  {
+    "name": "Sandy Bay",
+    "stateCode": "09"
+  },
+  {
+    "name": "Santoy",
+    "stateCode": "09"
+  },
+  {
+    "name": "Success",
+    "stateCode": "09"
+  },
+  {
+    "name": "Woodlands",
+    "stateCode": "09"
+  },
+  {
+    "name": "Woodsville",
+    "stateCode": "09"
+  },
+  {
+    "name": "12th Street",
+    "stateCode": "10"
+  },
+  {
+    "name": "Amity",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ashton",
+    "stateCode": "10"
+  },
+  {
+    "name": "Barneyside",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bath",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bath Mountain",
+    "stateCode": "10"
+  },
+  {
+    "name": "Beaufort",
+    "stateCode": "10"
+  },
+  {
+    "name": "Beeston Spring",
+    "stateCode": "10"
+  },
+  {
+    "name": "Belvedere",
+    "stateCode": "10"
+  },
+  {
+    "name": "Berkshire",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bethel Town",
+    "stateCode": "10"
+  },
+  {
+    "name": "Big Bridge",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bluefields",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bog",
+    "stateCode": "10"
+  },
+  {
+    "name": "Broughton",
+    "stateCode": "10"
+  },
+  {
+    "name": "Burnt Savannah",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cairn Curran",
+    "stateCode": "10"
+  },
+  {
+    "name": "Caledonia",
+    "stateCode": "10"
+  },
+  {
+    "name": "Carmel",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cave",
+    "stateCode": "10"
+  },
+  {
+    "name": "Chantilly",
+    "stateCode": "10"
+  },
+  {
+    "name": "Content",
+    "stateCode": "10"
+  },
+  {
+    "name": "Cornwall Mountian",
+    "stateCode": "10"
+  },
+  {
+    "name": "Darliston",
+    "stateCode": "10"
+  },
+  {
+    "name": "Delveland",
+    "stateCode": "10"
+  },
+  {
+    "name": "Dillion Bigwoods",
+    "stateCode": "10"
+  },
+  {
+    "name": "Dundee",
+    "stateCode": "10"
+  },
+  {
+    "name": "Enfield",
+    "stateCode": "10"
+  },
+  {
+    "name": "Ferris",
+    "stateCode": "10"
+  },
+  {
+    "name": "Fort Williams",
+    "stateCode": "10"
+  },
+  {
+    "name": "Frome",
+    "stateCode": "10"
+  },
+  {
+    "name": "Fullersfield",
+    "stateCode": "10"
+  },
+  {
+    "name": "Georges Plain",
+    "stateCode": "10"
+  },
+  {
+    "name": "Gooden's River",
+    "stateCode": "10"
+  },
+  {
+    "name": "Grange",
+    "stateCode": "10"
+  },
+  {
+    "name": "Grange Hill",
+    "stateCode": "10"
+  },
+  {
+    "name": "Haddo",
+    "stateCode": "10"
+  },
+  {
+    "name": "Harmony Town",
+    "stateCode": "10"
+  },
+  {
+    "name": "Hertford",
+    "stateCode": "10"
+  },
+  {
+    "name": "Jerusalem",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kentucky",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kilmarnoch",
+    "stateCode": "10"
+  },
+  {
+    "name": "Lambs River",
+    "stateCode": "10"
+  },
+  {
+    "name": "Leamington",
+    "stateCode": "10"
+  },
+  {
+    "name": "Lenox Bigwoods",
+    "stateCode": "10"
+  },
+  {
+    "name": "Little London",
+    "stateCode": "10"
+  },
+  {
+    "name": "Llandilo",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mackfield",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mearnsville",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mount Airy",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mount Stewart",
+    "stateCode": "10"
+  },
+  {
+    "name": "Negril",
+    "stateCode": "10"
+  },
+  {
+    "name": "New Market Oval",
+    "stateCode": "10"
+  },
+  {
+    "name": "New Roads",
+    "stateCode": "10"
+  },
+  {
+    "name": "New Works",
+    "stateCode": "10"
+  },
+  {
+    "name": "Orange Hill",
+    "stateCode": "10"
+  },
+  {
+    "name": "Paul Island",
+    "stateCode": "10"
+  },
+  {
+    "name": "Petersfield",
+    "stateCode": "10"
+  },
+  {
+    "name": "Petersville",
+    "stateCode": "10"
+  },
+  {
+    "name": "Porters Mountain",
+    "stateCode": "10"
+  },
+  {
+    "name": "Red Hills",
+    "stateCode": "10"
+  },
+  {
+    "name": "Revival",
+    "stateCode": "10"
+  },
+  {
+    "name": "Roaring River",
+    "stateCode": "10"
+  },
+  {
+    "name": "Russia",
+    "stateCode": "10"
+  },
+  {
+    "name": "Savanna-la-Mar",
+    "stateCode": "10"
+  },
+  {
+    "name": "Savannah-la-mar Business Dist.",
+    "stateCode": "10"
+  },
+  {
+    "name": "Seaford Town",
+    "stateCode": "10"
+  },
+  {
+    "name": "Seaton Crescent",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shefield",
+    "stateCode": "10"
+  },
+  {
+    "name": "Shoalin Grotto",
+    "stateCode": "10"
+  },
+  {
+    "name": "Smithfield",
+    "stateCode": "10"
+  },
+  {
+    "name": "St. Leonards",
+    "stateCode": "10"
+  },
+  {
+    "name": "Strathbogie",
+    "stateCode": "10"
+  },
+  {
+    "name": "Strawberry",
+    "stateCode": "10"
+  },
+  {
+    "name": "Struie",
+    "stateCode": "10"
+  },
+  {
+    "name": "Three Mile River",
+    "stateCode": "10"
+  },
+  {
+    "name": "Town Head",
+    "stateCode": "10"
+  },
+  {
+    "name": "Truro",
+    "stateCode": "10"
+  },
+  {
+    "name": "Water Works",
+    "stateCode": "10"
+  },
+  {
+    "name": "Whitehouse",
+    "stateCode": "10"
+  },
+  {
+    "name": "Whithorn",
+    "stateCode": "10"
+  },
+  {
+    "name": "Williamsfield",
+    "stateCode": "10"
+  },
+  {
+    "name": "Aberdeen",
+    "stateCode": "11"
+  },
+  {
+    "name": "Accompong",
+    "stateCode": "11"
+  },
+  {
+    "name": "Alligator Pond",
+    "stateCode": "11"
+  },
+  {
+    "name": "Balaclava",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ballards  Valley",
+    "stateCode": "11"
+  },
+  {
+    "name": "Barbary Hall",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bigwoods",
+    "stateCode": "11"
+  },
+  {
+    "name": "Black River",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bogue",
+    "stateCode": "11"
+  },
+  {
+    "name": "Braes River",
+    "stateCode": "11"
+  },
+  {
+    "name": "Brighton",
+    "stateCode": "11"
+  },
+  {
+    "name": "Brompton",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bull Savanna",
+    "stateCode": "11"
+  },
+  {
+    "name": "Bull Savannah",
+    "stateCode": "11"
+  },
+  {
+    "name": "Burnt Savannah",
+    "stateCode": "11"
+  },
+  {
+    "name": "Carisbrook",
+    "stateCode": "11"
+  },
+  {
+    "name": "Cotterwood",
+    "stateCode": "11"
+  },
+  {
+    "name": "Crawford",
+    "stateCode": "11"
+  },
+  {
+    "name": "Elderslie",
+    "stateCode": "11"
+  },
+  {
+    "name": "Fullerswood",
+    "stateCode": "11"
+  },
+  {
+    "name": "Giddy Hall",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ginger Hill",
+    "stateCode": "11"
+  },
+  {
+    "name": "Goshen",
+    "stateCode": "11"
+  },
+  {
+    "name": "Holland",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hopeton",
+    "stateCode": "11"
+  },
+  {
+    "name": "Junction",
+    "stateCode": "11"
+  },
+  {
+    "name": "Lacovia",
+    "stateCode": "11"
+  },
+  {
+    "name": "Leeds",
+    "stateCode": "11"
+  },
+  {
+    "name": "Lititz",
+    "stateCode": "11"
+  },
+  {
+    "name": "Maggotty",
+    "stateCode": "11"
+  },
+  {
+    "name": "Malvern",
+    "stateCode": "11"
+  },
+  {
+    "name": "Merrywood",
+    "stateCode": "11"
+  },
+  {
+    "name": "Middle Quarters",
+    "stateCode": "11"
+  },
+  {
+    "name": "Mountainside",
+    "stateCode": "11"
+  },
+  {
+    "name": "Mulgrave",
+    "stateCode": "11"
+  },
+  {
+    "name": "Myersville",
+    "stateCode": "11"
+  },
+  {
+    "name": "Nain",
+    "stateCode": "11"
+  },
+  {
+    "name": "New Market",
+    "stateCode": "11"
+  },
+  {
+    "name": "Newell",
+    "stateCode": "11"
+  },
+  {
+    "name": "Newton",
+    "stateCode": "11"
+  },
+  {
+    "name": "Parottee",
+    "stateCode": "11"
+  },
+  {
+    "name": "Pedro Plains",
+    "stateCode": "11"
+  },
+  {
+    "name": "Pepper",
+    "stateCode": "11"
+  },
+  {
+    "name": "Pisgah",
+    "stateCode": "11"
+  },
+  {
+    "name": "Pondside",
+    "stateCode": "11"
+  },
+  {
+    "name": "Potsdam",
+    "stateCode": "11"
+  },
+  {
+    "name": "Quick Step",
+    "stateCode": "11"
+  },
+  {
+    "name": "Red Bank",
+    "stateCode": "11"
+  },
+  {
+    "name": "Retirement",
+    "stateCode": "11"
+  },
+  {
+    "name": "Rose Hall",
+    "stateCode": "11"
+  },
+  {
+    "name": "Russels",
+    "stateCode": "11"
+  },
+  {
+    "name": "Santa Cruz",
+    "stateCode": "11"
+  },
+  {
+    "name": "Scholefield",
+    "stateCode": "11"
+  },
+  {
+    "name": "Siloah",
+    "stateCode": "11"
+  },
+  {
+    "name": "Slipe",
+    "stateCode": "11"
+  },
+  {
+    "name": "Southfield",
+    "stateCode": "11"
+  },
+  {
+    "name": "Springfield",
+    "stateCode": "11"
+  },
+  {
+    "name": "Thornton",
+    "stateCode": "11"
+  },
+  {
+    "name": "Top Hill",
+    "stateCode": "11"
+  },
+  {
+    "name": "Treasure Beach",
+    "stateCode": "11"
+  },
+  {
+    "name": "Warminister",
+    "stateCode": "11"
+  },
+  {
+    "name": "Watchwell",
+    "stateCode": "11"
+  },
+  {
+    "name": "White Hill",
+    "stateCode": "11"
+  },
+  {
+    "name": "Alligator Pond",
+    "stateCode": "12"
+  },
+  {
+    "name": "Asia/Pratville",
+    "stateCode": "12"
+  },
+  {
+    "name": "Auchtembeddie",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bellefield",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bethany",
+    "stateCode": "12"
+  },
+  {
+    "name": "Blue Mountain",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bombay",
+    "stateCode": "12"
+  },
+  {
+    "name": "Butt-Up",
+    "stateCode": "12"
+  },
+  {
+    "name": "Cedar Grove",
+    "stateCode": "12"
+  },
+  {
+    "name": "Chantilly",
+    "stateCode": "12"
+  },
+  {
+    "name": "Christiana",
+    "stateCode": "12"
+  },
+  {
+    "name": "Chudleigh",
+    "stateCode": "12"
+  },
+  {
+    "name": "Cobbla",
+    "stateCode": "12"
+  },
+  {
+    "name": "Coleyville",
+    "stateCode": "12"
+  },
+  {
+    "name": "Comfort",
+    "stateCode": "12"
+  },
+  {
+    "name": "Comfort Hall",
+    "stateCode": "12"
+  },
+  {
+    "name": "Content",
+    "stateCode": "12"
+  },
+  {
+    "name": "Craig Head",
+    "stateCode": "12"
+  },
+  {
+    "name": "Cross Keys",
+    "stateCode": "12"
+  },
+  {
+    "name": "Devon",
+    "stateCode": "12"
+  },
+  {
+    "name": "Downs",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ellen Street",
+    "stateCode": "12"
+  },
+  {
+    "name": "Evergreen",
+    "stateCode": "12"
+  },
+  {
+    "name": "Fairfield",
+    "stateCode": "12"
+  },
+  {
+    "name": "French Park",
+    "stateCode": "12"
+  },
+  {
+    "name": "George's Valley",
+    "stateCode": "12"
+  },
+  {
+    "name": "Good Intent",
+    "stateCode": "12"
+  },
+  {
+    "name": "Greenvale",
+    "stateCode": "12"
+  },
+  {
+    "name": "Grove Place",
+    "stateCode": "12"
+  },
+  {
+    "name": "Grove Town",
+    "stateCode": "12"
+  },
+  {
+    "name": "Harmons",
+    "stateCode": "12"
+  },
+  {
+    "name": "Harry Watch",
+    "stateCode": "12"
+  },
+  {
+    "name": "Hatfield",
+    "stateCode": "12"
+  },
+  {
+    "name": "Heartease",
+    "stateCode": "12"
+  },
+  {
+    "name": "Hibernia",
+    "stateCode": "12"
+  },
+  {
+    "name": "Huntley",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kendal",
+    "stateCode": "12"
+  },
+  {
+    "name": "Knockpatrick",
+    "stateCode": "12"
+  },
+  {
+    "name": "Lancaster",
+    "stateCode": "12"
+  },
+  {
+    "name": "Litchfield",
+    "stateCode": "12"
+  },
+  {
+    "name": "Maidstone",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mandeville",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mandeville Proper",
+    "stateCode": "12"
+  },
+  {
+    "name": "Marlie Hill",
+    "stateCode": "12"
+  },
+  {
+    "name": "May Day",
+    "stateCode": "12"
+  },
+  {
+    "name": "Medina",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mike Town",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mile Gully",
+    "stateCode": "12"
+  },
+  {
+    "name": "New Forest",
+    "stateCode": "12"
+  },
+  {
+    "name": "New Green",
+    "stateCode": "12"
+  },
+  {
+    "name": "Newport",
+    "stateCode": "12"
+  },
+  {
+    "name": "Old England",
+    "stateCode": "12"
+  },
+  {
+    "name": "Part Of Banana Ground",
+    "stateCode": "12"
+  },
+  {
+    "name": "Part Of Gutters",
+    "stateCode": "12"
+  },
+  {
+    "name": "Part of Spaldings",
+    "stateCode": "12"
+  },
+  {
+    "name": "Pike",
+    "stateCode": "12"
+  },
+  {
+    "name": "Plowden",
+    "stateCode": "12"
+  },
+  {
+    "name": "Porus",
+    "stateCode": "12"
+  },
+  {
+    "name": "Prospect",
+    "stateCode": "12"
+  },
+  {
+    "name": "Richmond",
+    "stateCode": "12"
+  },
+  {
+    "name": "Robins Hall",
+    "stateCode": "12"
+  },
+  {
+    "name": "Rose Hill",
+    "stateCode": "12"
+  },
+  {
+    "name": "Royal Flat",
+    "stateCode": "12"
+  },
+  {
+    "name": "Scotts Pass",
+    "stateCode": "12"
+  },
+  {
+    "name": "Snowdon",
+    "stateCode": "12"
+  },
+  {
+    "name": "Somerset",
+    "stateCode": "12"
+  },
+  {
+    "name": "Spring Ground",
+    "stateCode": "12"
+  },
+  {
+    "name": "Spur Tree",
+    "stateCode": "12"
+  },
+  {
+    "name": "St. Paul's",
+    "stateCode": "12"
+  },
+  {
+    "name": "Swaby's Hope",
+    "stateCode": "12"
+  },
+  {
+    "name": "Top Hill",
+    "stateCode": "12"
+  },
+  {
+    "name": "Victoria Town",
+    "stateCode": "12"
+  },
+  {
+    "name": "Walderston",
+    "stateCode": "12"
+  },
+  {
+    "name": "Watham",
+    "stateCode": "12"
+  },
+  {
+    "name": "Williamsfield",
+    "stateCode": "12"
+  },
+  {
+    "name": "Aenon Town",
+    "stateCode": "13"
+  },
+  {
+    "name": "Alley",
+    "stateCode": "13"
+  },
+  {
+    "name": "Alston",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ashley",
+    "stateCode": "13"
+  },
+  {
+    "name": "Banks",
+    "stateCode": "13"
+  },
+  {
+    "name": "Beckford Kraal",
+    "stateCode": "13"
+  },
+  {
+    "name": "Brandon Hill",
+    "stateCode": "13"
+  },
+  {
+    "name": "Brixton Hill",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bucknor",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bucks Common",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bushy Park",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chapelton",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chateau",
+    "stateCode": "13"
+  },
+  {
+    "name": "Cockpit",
+    "stateCode": "13"
+  },
+  {
+    "name": "Coffee Piece",
+    "stateCode": "13"
+  },
+  {
+    "name": "Colonels Ridge",
+    "stateCode": "13"
+  },
+  {
+    "name": "Coxswain",
+    "stateCode": "13"
+  },
+  {
+    "name": "Crofts Hill",
+    "stateCode": "13"
+  },
+  {
+    "name": "Crooked River",
+    "stateCode": "13"
+  },
+  {
+    "name": "Cumberland",
+    "stateCode": "13"
+  },
+  {
+    "name": "Curatoe Hill",
+    "stateCode": "13"
+  },
+  {
+    "name": "Dawkins",
+    "stateCode": "13"
+  },
+  {
+    "name": "Effortville",
+    "stateCode": "13"
+  },
+  {
+    "name": "Four Paths",
+    "stateCode": "13"
+  },
+  {
+    "name": "Frankfield",
+    "stateCode": "13"
+  },
+  {
+    "name": "Freetown",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gimme-me-bit",
+    "stateCode": "13"
+  },
+  {
+    "name": "Glenmuir",
+    "stateCode": "13"
+  },
+  {
+    "name": "Grantham",
+    "stateCode": "13"
+  },
+  {
+    "name": "Gravel Hill",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hayes",
+    "stateCode": "13"
+  },
+  {
+    "name": "Hazard",
+    "stateCode": "13"
+  },
+  {
+    "name": "Inverness",
+    "stateCode": "13"
+  },
+  {
+    "name": "James Hill",
+    "stateCode": "13"
+  },
+  {
+    "name": "Johns Hall",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kellits",
+    "stateCode": "13"
+  },
+  {
+    "name": "Limit",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lionel Town",
+    "stateCode": "13"
+  },
+  {
+    "name": "Longville Park",
+    "stateCode": "13"
+  },
+  {
+    "name": "Longwood",
+    "stateCode": "13"
+  },
+  {
+    "name": "May Pen",
+    "stateCode": "13"
+  },
+  {
+    "name": "May Pen Proper",
+    "stateCode": "13"
+  },
+  {
+    "name": "Milk River",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mineral Heights",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mitchell Town",
+    "stateCode": "13"
+  },
+  {
+    "name": "Moores",
+    "stateCode": "13"
+  },
+  {
+    "name": "Morgans Forest",
+    "stateCode": "13"
+  },
+  {
+    "name": "Morgans Pass",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mount Airy",
+    "stateCode": "13"
+  },
+  {
+    "name": "New Denbigh",
+    "stateCode": "13"
+  },
+  {
+    "name": "New Longsville",
+    "stateCode": "13"
+  },
+  {
+    "name": "Old Denbigh",
+    "stateCode": "13"
+  },
+  {
+    "name": "Orange Hill",
+    "stateCode": "13"
+  },
+  {
+    "name": "Osbourne Store",
+    "stateCode": "13"
+  },
+  {
+    "name": "Paisley",
+    "stateCode": "13"
+  },
+  {
+    "name": "Palmers Cross",
+    "stateCode": "13"
+  },
+  {
+    "name": "Part of Banana Ground",
+    "stateCode": "13"
+  },
+  {
+    "name": "Part of Douglas Castle",
+    "stateCode": "13"
+  },
+  {
+    "name": "Part of Kellits",
+    "stateCode": "13"
+  },
+  {
+    "name": "Peckham",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pennants",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pleasant Valley",
+    "stateCode": "13"
+  },
+  {
+    "name": "Portland Cottage",
+    "stateCode": "13"
+  },
+  {
+    "name": "Porus",
+    "stateCode": "13"
+  },
+  {
+    "name": "Race Course",
+    "stateCode": "13"
+  },
+  {
+    "name": "Richmond Park",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ritchies",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rock",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rock River",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rocky Point",
+    "stateCode": "13"
+  },
+  {
+    "name": "Salt River",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sandy Bay",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sanguinetti",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sedgepond",
+    "stateCode": "13"
+  },
+  {
+    "name": "Silent Hill",
+    "stateCode": "13"
+  },
+  {
+    "name": "Smithville",
+    "stateCode": "13"
+  },
+  {
+    "name": "Spaldings",
+    "stateCode": "13"
+  },
+  {
+    "name": "Summerfield",
+    "stateCode": "13"
+  },
+  {
+    "name": "Thompson Town",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tollgate",
+    "stateCode": "13"
+  },
+  {
+    "name": "Treadlight",
+    "stateCode": "13"
+  },
+  {
+    "name": "Trout Hall",
+    "stateCode": "13"
+  },
+  {
+    "name": "Turners",
+    "stateCode": "13"
+  },
+  {
+    "name": "Water Lane",
+    "stateCode": "13"
+  },
+  {
+    "name": "Woodhall",
+    "stateCode": "13"
+  },
+  {
+    "name": "York Town",
+    "stateCode": "13"
+  },
+  {
+    "name": "Above Rocks",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bartons",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bellas Gate",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bog Walk",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bogwalk",
+    "stateCode": "14"
+  },
+  {
+    "name": "Braeton",
+    "stateCode": "14"
+  },
+  {
+    "name": "Bridgeport",
+    "stateCode": "14"
+  },
+  {
+    "name": "Browns Hill",
+    "stateCode": "14"
+  },
+  {
+    "name": "Caymanas",
+    "stateCode": "14"
+  },
+  {
+    "name": "Central Village",
+    "stateCode": "14"
+  },
+  {
+    "name": "Crescent",
+    "stateCode": "14"
+  },
+  {
+    "name": "Cromarty",
+    "stateCode": "14"
+  },
+  {
+    "name": "Cumberland",
+    "stateCode": "14"
+  },
+  {
+    "name": "Edgewater",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ensom",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ewarton",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ginger Ridge",
+    "stateCode": "14"
+  },
+  {
+    "name": "Glengoffe",
+    "stateCode": "14"
+  },
+  {
+    "name": "Golden Acres",
+    "stateCode": "14"
+  },
+  {
+    "name": "Greater Portmore",
+    "stateCode": "14"
+  },
+  {
+    "name": "Greendale",
+    "stateCode": "14"
+  },
+  {
+    "name": "Gregory Park",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hampton Green",
+    "stateCode": "14"
+  },
+  {
+    "name": "Harewood",
+    "stateCode": "14"
+  },
+  {
+    "name": "Harkers Hall",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hellshire",
+    "stateCode": "14"
+  },
+  {
+    "name": "Independence City",
+    "stateCode": "14"
+  },
+  {
+    "name": "Keystone",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kitson Town",
+    "stateCode": "14"
+  },
+  {
+    "name": "Linstead",
+    "stateCode": "14"
+  },
+  {
+    "name": "Lluidas Vale",
+    "stateCode": "14"
+  },
+  {
+    "name": "Naggo Head",
+    "stateCode": "14"
+  },
+  {
+    "name": "Old Harbour",
+    "stateCode": "14"
+  },
+  {
+    "name": "Old Harbour Bay",
+    "stateCode": "14"
+  },
+  {
+    "name": "Old Harbour Road",
+    "stateCode": "14"
+  },
+  {
+    "name": "Part of Guys Hill",
+    "stateCode": "14"
+  },
+  {
+    "name": "Part of Keystone",
+    "stateCode": "14"
+  },
+  {
+    "name": "Part of Rock Hall",
+    "stateCode": "14"
+  },
+  {
+    "name": "Passage Fort",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pear Tree Grove",
+    "stateCode": "14"
+  },
+  {
+    "name": "Point Hill",
+    "stateCode": "14"
+  },
+  {
+    "name": "Portmore",
+    "stateCode": "14"
+  },
+  {
+    "name": "Redwood",
+    "stateCode": "14"
+  },
+  {
+    "name": "Riversdale",
+    "stateCode": "14"
+  },
+  {
+    "name": "Sligoville",
+    "stateCode": "14"
+  },
+  {
+    "name": "Spanish Town",
+    "stateCode": "14"
+  },
+  {
+    "name": "Spanish Town Central",
+    "stateCode": "14"
+  },
+  {
+    "name": "St. John's East",
+    "stateCode": "14"
+  },
+  {
+    "name": "St. John's West",
+    "stateCode": "14"
+  },
+  {
+    "name": "Troja",
+    "stateCode": "14"
+  },
+  {
+    "name": "Waterford",
+    "stateCode": "14"
+  },
+  {
+    "name": "Watermount",
+    "stateCode": "14"
+  },
+  {
+    "name": "West Cumberland",
+    "stateCode": "14"
+  },
+  {
+    "name": "Willowdene",
+    "stateCode": "14"
+  }
+]

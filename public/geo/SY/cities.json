@@ -1,0 +1,570 @@
+[
+  {
+    "name": "Damascus",
+    "stateCode": "DI"
+  },
+  {
+    "name": "Al Ḩarāk",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Al Muzayrīb",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Al-Sanamayn District",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Aş Şanamayn",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Ash Shaykh Miskīn",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Buşrá ash Shām",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Dar‘ā",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Ghabāghib",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Inkhil",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Izra District",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Izra‘",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Jāsim",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Nawá",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Ţafas",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Tasīl",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Al Mayādīn",
+    "stateCode": "DY"
+  },
+  {
+    "name": "Ālbū Kamāl",
+    "stateCode": "DY"
+  },
+  {
+    "name": "Deir ez-Zor",
+    "stateCode": "DY"
+  },
+  {
+    "name": "Hajīn",
+    "stateCode": "DY"
+  },
+  {
+    "name": "Subaykhān",
+    "stateCode": "DY"
+  },
+  {
+    "name": "Ad Darbāsīyah",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Al Ḩasakah",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Al Mālikīyah",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Al Qāmishlī",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Al-Malikiyah District",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Amude",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Al Ghanţū",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Al Qaryatayn",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Al Quşayr",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Al-Rastan District",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Ar Rastan",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Hisya",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Homs",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Kafr Lāhā",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Mukharram al Fawqānī",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Şadad",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Tadmur",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Tadmur District",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Tallbīsah",
+    "stateCode": "HI"
+  },
+  {
+    "name": "Tallkalakh",
+    "stateCode": "HI"
+  },
+  {
+    "name": "‘Afrīn",
+    "stateCode": "HL"
+  },
+  {
+    "name": "‘Ayn al ‘Arab",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Afrin District",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Al Atārib",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Al Bāb",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Al-Bab District",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Aleppo",
+    "stateCode": "HL"
+  },
+  {
+    "name": "As Safīrah",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Azaz District",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Dayr Ḩāfir",
+    "stateCode": "HL"
+  },
+  {
+    "name": "I‘zāz",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Jarābulus",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Kafr Şaghīr",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Khanāşir",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Manbij",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Manbij District",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Mount Simeon District",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Nubl",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Şūrān",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Tādif",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Tall Rif‘at",
+    "stateCode": "HL"
+  },
+  {
+    "name": "Al-Salamiyah District",
+    "stateCode": "HM"
+  },
+  {
+    "name": "As Salamīyah",
+    "stateCode": "HM"
+  },
+  {
+    "name": "As Suqaylibīyah",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Ḩalfāyā",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Hama District",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Ḩamāh",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Kafr Zaytā",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Maşyāf",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Masyaf District",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Mūrak",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Souran",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Tall Salḩab",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Ţayyibat al Imām",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Tremseh",
+    "stateCode": "HM"
+  },
+  {
+    "name": "Ad Dānā",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Arīḩā",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Armanāz",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Binnish",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Darkūsh",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Harem District",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Ḩārim",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Idlib",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Jisr al-Shughur District",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Jisr ash Shughūr",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Kafr Takhārīm",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Kafranbel",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Khān Shaykhūn",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Ma‘arratmişrīn",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Maarrat al-Nu'man District",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Salqīn",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Sarāqib",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Sarmīn",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Taftanāz",
+    "stateCode": "ID"
+  },
+  {
+    "name": "Al-Haffah District",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Jablah",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Jableh District",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Kassab",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Latakia",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Latakia District",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Qardaha District",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Şlinfah",
+    "stateCode": "LA"
+  },
+  {
+    "name": "Al Qunayţirah",
+    "stateCode": "QU"
+  },
+  {
+    "name": "Al-Thawrah District",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Ar Raqqah",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Ar-Raqqah District",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Ath Thawrah",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Tall Abyaḑ",
+    "stateCode": "RA"
+  },
+  {
+    "name": "Tell Abyad District",
+    "stateCode": "RA"
+  },
+  {
+    "name": "‘Irbīn",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Al Kiswah",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Al Quţayfah",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Al-Zabadani District",
+    "stateCode": "RD"
+  },
+  {
+    "name": "An Nabk",
+    "stateCode": "RD"
+  },
+  {
+    "name": "At Tall",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Az Zabadānī",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Dārayyā",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Dayr al ‘Aşāfīr",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Douma",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Ḩarastā",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Jaramānā",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Jayrūd",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Ma‘lūlā",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Medaya",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Qārah",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Qaţanā",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Şaydnāyā",
+    "stateCode": "RD"
+  },
+  {
+    "name": "Yabrūd",
+    "stateCode": "RD"
+  },
+  {
+    "name": "As-Suwayda",
+    "stateCode": "SU"
+  },
+  {
+    "name": "As-Suwayda District",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Şalākhid",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Şalkhad",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Salkhad District",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Shahbā",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Shahba District",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Ad Duraykīsh",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Bāniyās",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Kaff al-Jaa",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Safita District",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Satita",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Tartouss",
+    "stateCode": "TA"
+  }
+]

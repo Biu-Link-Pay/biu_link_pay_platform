@@ -1,0 +1,306 @@
+[
+  {
+    "name": "Attapeu",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Muang Phouvong",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Muang Samakhixai",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Muang Sanamxai",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Muang Sanxai",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Muang Xaiséttha",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Ban Houakhoua",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Ban Houayxay",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Muang Houayxay",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Muang Meung",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Muang Paktha",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Muang Pha Oudôm",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Muang Tônpheung",
+    "stateCode": "BK"
+  },
+  {
+    "name": "Ban Nahin",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Pakxan",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Champasak",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Muang Bachiangchaleunsook",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Muang Champasak",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Muang Không",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Muang Mounlapamôk",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Muang Pakxé",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Muang Pakxong",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Muang Pathoumphon",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Muang Phônthong",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Muang Soukhouma",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Muang Xanasômboun",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Pakse",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Pakxong",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Xam Neua",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Xam Nua",
+    "stateCode": "HO"
+  },
+  {
+    "name": "Muang Thakhèk",
+    "stateCode": "KH"
+  },
+  {
+    "name": "Thakhèk",
+    "stateCode": "KH"
+  },
+  {
+    "name": "Luang Namtha",
+    "stateCode": "LM"
+  },
+  {
+    "name": "Muang Louang Namtha",
+    "stateCode": "LM"
+  },
+  {
+    "name": "Luang Prabang",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Muang Xay",
+    "stateCode": "OU"
+  },
+  {
+    "name": "Phôngsali",
+    "stateCode": "PH"
+  },
+  {
+    "name": "Muang Khôngxédôn",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Muang Lakhonphéng",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Muang Laongam",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Muang Samouay",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Muang Saravan",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Muang Ta-Ôy",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Muang Toumlan",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Muang Vapi",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Salavan",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Kaysone Phomvihane",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Alsaphangthong",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Atsaphan",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Champhon",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Nong",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Outhoumphon",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Phin",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Songkhon",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Thapangthong",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Vilabouli",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Xaibouli",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Xayphoothong",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Xônbouli",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Savannakhet",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Thaphalanxay",
+    "stateCode": "SV"
+  },
+  {
+    "name": "Muang Phôn-Hông",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Vangviang",
+    "stateCode": "VI"
+  },
+  {
+    "name": "Vientiane",
+    "stateCode": "VT"
+  },
+  {
+    "name": "Sainyabuli",
+    "stateCode": "XA"
+  },
+  {
+    "name": "Ban Thatèng",
+    "stateCode": "XE"
+  },
+  {
+    "name": "Lamam",
+    "stateCode": "XE"
+  },
+  {
+    "name": "Muang Dakchung",
+    "stateCode": "XE"
+  },
+  {
+    "name": "Muang Khaleum",
+    "stateCode": "XE"
+  },
+  {
+    "name": "Muang Laman",
+    "stateCode": "XE"
+  },
+  {
+    "name": "Muang Thatèng",
+    "stateCode": "XE"
+  },
+  {
+    "name": "Muang Phônsavan",
+    "stateCode": "XI"
+  },
+  {
+    "name": "Anouvong district",
+    "stateCode": "XS"
+  },
+  {
+    "name": "Longchaeng",
+    "stateCode": "XS"
+  },
+  {
+    "name": "Muang Longxan",
+    "stateCode": "XS"
+  },
+  {
+    "name": "Muang Thathôm",
+    "stateCode": "XS"
+  }
+]

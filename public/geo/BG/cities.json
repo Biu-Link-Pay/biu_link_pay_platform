@@ -1,0 +1,2018 @@
+[
+  {
+    "name": "Bansko",
+    "stateCode": "01"
+  },
+  {
+    "name": "Belitsa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Blagoevgrad",
+    "stateCode": "01"
+  },
+  {
+    "name": "Garmen",
+    "stateCode": "01"
+  },
+  {
+    "name": "Gotse Delchev",
+    "stateCode": "01"
+  },
+  {
+    "name": "Hadzhidimovo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kolarovo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kresna",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Bansko",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Belitsa",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Blagoevgrad",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Garmen",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Gotse Delchev",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Kresna",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Petrich",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Razlog",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Sandanski",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Satovcha",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Simitli",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Strumyani",
+    "stateCode": "01"
+  },
+  {
+    "name": "Obshtina Yakoruda",
+    "stateCode": "01"
+  },
+  {
+    "name": "Petrich",
+    "stateCode": "01"
+  },
+  {
+    "name": "Razlog",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sandanski",
+    "stateCode": "01"
+  },
+  {
+    "name": "Satovcha",
+    "stateCode": "01"
+  },
+  {
+    "name": "Simitli",
+    "stateCode": "01"
+  },
+  {
+    "name": "Stara Kresna",
+    "stateCode": "01"
+  },
+  {
+    "name": "Strumyani",
+    "stateCode": "01"
+  },
+  {
+    "name": "Yakoruda",
+    "stateCode": "01"
+  },
+  {
+    "name": "Aheloy",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ahtopol",
+    "stateCode": "02"
+  },
+  {
+    "name": "Aytos",
+    "stateCode": "02"
+  },
+  {
+    "name": "Bata",
+    "stateCode": "02"
+  },
+  {
+    "name": "Burgas",
+    "stateCode": "02"
+  },
+  {
+    "name": "Chernomorets",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kameno",
+    "stateCode": "02"
+  },
+  {
+    "name": "Karnobat",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kiten",
+    "stateCode": "02"
+  },
+  {
+    "name": "Malko Tarnovo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nesebar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obshtina Aytos",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obshtina Burgas",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obshtina Kameno",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obshtina Karnobat",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obshtina Malko Tarnovo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obshtina Nesebar",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obshtina Pomorie",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obshtina Primorsko",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obshtina Sozopol",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obshtina Sungurlare",
+    "stateCode": "02"
+  },
+  {
+    "name": "Obzor",
+    "stateCode": "02"
+  },
+  {
+    "name": "Pomorie",
+    "stateCode": "02"
+  },
+  {
+    "name": "Primorsko",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ravda",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ruen",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sarafovo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sozopol",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sredets",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sungurlare",
+    "stateCode": "02"
+  },
+  {
+    "name": "Sveti Vlas",
+    "stateCode": "02"
+  },
+  {
+    "name": "Tsarevo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Aksakovo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Asparuhovo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Balgarevo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Beloslav",
+    "stateCode": "03"
+  },
+  {
+    "name": "Byala",
+    "stateCode": "03"
+  },
+  {
+    "name": "Dalgopol",
+    "stateCode": "03"
+  },
+  {
+    "name": "Devnya",
+    "stateCode": "03"
+  },
+  {
+    "name": "Dolni Chiflik",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kiten",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Aksakovo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Avren",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Beloslav",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Byala",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Dalgopol",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Devnya",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Dolni Chiflik",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Provadia",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Suvorovo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Valchidol",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Varna",
+    "stateCode": "03"
+  },
+  {
+    "name": "Obshtina Vetrino",
+    "stateCode": "03"
+  },
+  {
+    "name": "Provadia",
+    "stateCode": "03"
+  },
+  {
+    "name": "Suvorovo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Valchidol",
+    "stateCode": "03"
+  },
+  {
+    "name": "Varna",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vetrino",
+    "stateCode": "03"
+  },
+  {
+    "name": "Zlatni Pyasatsi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Byala Cherkva",
+    "stateCode": "04"
+  },
+  {
+    "name": "Debelets",
+    "stateCode": "04"
+  },
+  {
+    "name": "Elena",
+    "stateCode": "04"
+  },
+  {
+    "name": "Gorna Oryahovitsa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kilifarevo",
+    "stateCode": "04"
+  },
+  {
+    "name": "Lyaskovets",
+    "stateCode": "04"
+  },
+  {
+    "name": "Obshtina Elena",
+    "stateCode": "04"
+  },
+  {
+    "name": "Obshtina Gorna Oryahovitsa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Obshtina Lyaskovets",
+    "stateCode": "04"
+  },
+  {
+    "name": "Obshtina Pavlikeni",
+    "stateCode": "04"
+  },
+  {
+    "name": "Obshtina Polski Trambesh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Obshtina Strazhitsa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Obshtina Suhindol",
+    "stateCode": "04"
+  },
+  {
+    "name": "Obshtina Svishtov",
+    "stateCode": "04"
+  },
+  {
+    "name": "Obshtina Veliko Tŭrnovo",
+    "stateCode": "04"
+  },
+  {
+    "name": "Obshtina Zlataritsa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Parvomaytsi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Pavlikeni",
+    "stateCode": "04"
+  },
+  {
+    "name": "Polski Trambesh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Strazhitsa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Suhindol",
+    "stateCode": "04"
+  },
+  {
+    "name": "Svishtov",
+    "stateCode": "04"
+  },
+  {
+    "name": "Veliko Tŭrnovo",
+    "stateCode": "04"
+  },
+  {
+    "name": "Zlataritsa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Belogradchik",
+    "stateCode": "05"
+  },
+  {
+    "name": "Boynitsa",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bregovo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Chuprene",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dimovo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Drenovets",
+    "stateCode": "05"
+  },
+  {
+    "name": "Dunavtsi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Gramada",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kula",
+    "stateCode": "05"
+  },
+  {
+    "name": "Makresh",
+    "stateCode": "05"
+  },
+  {
+    "name": "Novo Selo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Obshtina Belogradchik",
+    "stateCode": "05"
+  },
+  {
+    "name": "Obshtina Boynitsa",
+    "stateCode": "05"
+  },
+  {
+    "name": "Obshtina Dimovo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Obshtina Gramada",
+    "stateCode": "05"
+  },
+  {
+    "name": "Obshtina Kula",
+    "stateCode": "05"
+  },
+  {
+    "name": "Obshtina Ruzhintsi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Obshtina Vidin",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ruzhintsi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vidin",
+    "stateCode": "05"
+  },
+  {
+    "name": "Borovan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Byala Slatina",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hayredin",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kozloduy",
+    "stateCode": "06"
+  },
+  {
+    "name": "Krivodol",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mezdra",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mizia",
+    "stateCode": "06"
+  },
+  {
+    "name": "Obshtina Borovan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Obshtina Hayredin",
+    "stateCode": "06"
+  },
+  {
+    "name": "Obshtina Kozloduy",
+    "stateCode": "06"
+  },
+  {
+    "name": "Obshtina Krivodol",
+    "stateCode": "06"
+  },
+  {
+    "name": "Obshtina Mezdra",
+    "stateCode": "06"
+  },
+  {
+    "name": "Obshtina Mizia",
+    "stateCode": "06"
+  },
+  {
+    "name": "Obshtina Oryahovo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Obshtina Roman",
+    "stateCode": "06"
+  },
+  {
+    "name": "Obshtina Vratsa",
+    "stateCode": "06"
+  },
+  {
+    "name": "Oryahovo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Roman",
+    "stateCode": "06"
+  },
+  {
+    "name": "Vratsa",
+    "stateCode": "06"
+  },
+  {
+    "name": "Dryanovo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Gabrovo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Obshtina Dryanovo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Obshtina Gabrovo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Obshtina Sevlievo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Obshtina Tryavna",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sevlievo",
+    "stateCode": "07"
+  },
+  {
+    "name": "Tryavna",
+    "stateCode": "07"
+  },
+  {
+    "name": "Balchik",
+    "stateCode": "08"
+  },
+  {
+    "name": "Dobrich",
+    "stateCode": "08"
+  },
+  {
+    "name": "General Toshevo",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kavarna",
+    "stateCode": "08"
+  },
+  {
+    "name": "Krushari",
+    "stateCode": "08"
+  },
+  {
+    "name": "Obshtina Balchik",
+    "stateCode": "08"
+  },
+  {
+    "name": "Obshtina Dobrich",
+    "stateCode": "08"
+  },
+  {
+    "name": "Obshtina Dobrich-Selska",
+    "stateCode": "08"
+  },
+  {
+    "name": "Obshtina General Toshevo",
+    "stateCode": "08"
+  },
+  {
+    "name": "Obshtina Kavarna",
+    "stateCode": "08"
+  },
+  {
+    "name": "Obshtina Krushari",
+    "stateCode": "08"
+  },
+  {
+    "name": "Obshtina Shabla",
+    "stateCode": "08"
+  },
+  {
+    "name": "Obshtina Tervel",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shabla",
+    "stateCode": "08"
+  },
+  {
+    "name": "Tervel",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ardino",
+    "stateCode": "09"
+  },
+  {
+    "name": "Dzhebel",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kardzhali",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kirkovo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Krumovgrad",
+    "stateCode": "09"
+  },
+  {
+    "name": "Obshtina Ardino",
+    "stateCode": "09"
+  },
+  {
+    "name": "Obshtina Chernoochene",
+    "stateCode": "09"
+  },
+  {
+    "name": "Obshtina Dzhebel",
+    "stateCode": "09"
+  },
+  {
+    "name": "Obshtina Kardzhali",
+    "stateCode": "09"
+  },
+  {
+    "name": "Obshtina Kirkovo",
+    "stateCode": "09"
+  },
+  {
+    "name": "Obshtina Momchilgrad",
+    "stateCode": "09"
+  },
+  {
+    "name": "Boboshevo",
+    "stateCode": "10"
+  },
+  {
+    "name": "Bobov Dol",
+    "stateCode": "10"
+  },
+  {
+    "name": "Dupnitsa",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kocherinovo",
+    "stateCode": "10"
+  },
+  {
+    "name": "Kyustendil",
+    "stateCode": "10"
+  },
+  {
+    "name": "Nevestino",
+    "stateCode": "10"
+  },
+  {
+    "name": "Obshtina Boboshevo",
+    "stateCode": "10"
+  },
+  {
+    "name": "Obshtina Bobov Dol",
+    "stateCode": "10"
+  },
+  {
+    "name": "Obshtina Dupnitsa",
+    "stateCode": "10"
+  },
+  {
+    "name": "Obshtina Kocherinovo",
+    "stateCode": "10"
+  },
+  {
+    "name": "Obshtina Kyustendil",
+    "stateCode": "10"
+  },
+  {
+    "name": "Obshtina Nevestino",
+    "stateCode": "10"
+  },
+  {
+    "name": "Obshtina Rila",
+    "stateCode": "10"
+  },
+  {
+    "name": "Obshtina Sapareva Banya",
+    "stateCode": "10"
+  },
+  {
+    "name": "Obshtina Treklyano",
+    "stateCode": "10"
+  },
+  {
+    "name": "Rila",
+    "stateCode": "10"
+  },
+  {
+    "name": "Sapareva Banya",
+    "stateCode": "10"
+  },
+  {
+    "name": "Apriltsi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Letnitsa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Lovech",
+    "stateCode": "11"
+  },
+  {
+    "name": "Lukovit",
+    "stateCode": "11"
+  },
+  {
+    "name": "Obshtina Lovech",
+    "stateCode": "11"
+  },
+  {
+    "name": "Obshtina Teteven",
+    "stateCode": "11"
+  },
+  {
+    "name": "Obshtina Ugarchin",
+    "stateCode": "11"
+  },
+  {
+    "name": "Teteven",
+    "stateCode": "11"
+  },
+  {
+    "name": "Troyan",
+    "stateCode": "11"
+  },
+  {
+    "name": "Ugarchin",
+    "stateCode": "11"
+  },
+  {
+    "name": "Yablanitsa",
+    "stateCode": "11"
+  },
+  {
+    "name": "Berkovitsa",
+    "stateCode": "12"
+  },
+  {
+    "name": "Boychinovtsi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Brusartsi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Chiprovtsi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Lom",
+    "stateCode": "12"
+  },
+  {
+    "name": "Medkovets",
+    "stateCode": "12"
+  },
+  {
+    "name": "Montana",
+    "stateCode": "12"
+  },
+  {
+    "name": "Obshtina Boychinovtsi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Obshtina Chiprovtsi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Obshtina Georgi Damyanovo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Obshtina Lom",
+    "stateCode": "12"
+  },
+  {
+    "name": "Obshtina Montana",
+    "stateCode": "12"
+  },
+  {
+    "name": "Obshtina Valchedram",
+    "stateCode": "12"
+  },
+  {
+    "name": "Obshtina Varshets",
+    "stateCode": "12"
+  },
+  {
+    "name": "Obshtina Yakimovo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Valchedram",
+    "stateCode": "12"
+  },
+  {
+    "name": "Varshets",
+    "stateCode": "12"
+  },
+  {
+    "name": "Yakimovo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Batak",
+    "stateCode": "13"
+  },
+  {
+    "name": "Belovo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Bratsigovo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lesichovo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Obshtina Batak",
+    "stateCode": "13"
+  },
+  {
+    "name": "Obshtina Belovo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Obshtina Bratsigovo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Obshtina Lesichovo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Obshtina Panagyurishte",
+    "stateCode": "13"
+  },
+  {
+    "name": "Obshtina Pazardzhik",
+    "stateCode": "13"
+  },
+  {
+    "name": "Obshtina Peshtera",
+    "stateCode": "13"
+  },
+  {
+    "name": "Obshtina Rakitovo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Obshtina Septemvri",
+    "stateCode": "13"
+  },
+  {
+    "name": "Obshtina Strelcha",
+    "stateCode": "13"
+  },
+  {
+    "name": "Obshtina Velingrad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Panagyurishte",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pazardzhik",
+    "stateCode": "13"
+  },
+  {
+    "name": "Peshtera",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rakitovo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sarnitsa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sarnitsa Obshtina",
+    "stateCode": "13"
+  },
+  {
+    "name": "Septemvri",
+    "stateCode": "13"
+  },
+  {
+    "name": "Strelcha",
+    "stateCode": "13"
+  },
+  {
+    "name": "Velingrad",
+    "stateCode": "13"
+  },
+  {
+    "name": "Batanovtsi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Breznik",
+    "stateCode": "14"
+  },
+  {
+    "name": "Obshtina Kovachevtsi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Obshtina Pernik",
+    "stateCode": "14"
+  },
+  {
+    "name": "Obshtina Radomir",
+    "stateCode": "14"
+  },
+  {
+    "name": "Obshtina Zemen",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pernik",
+    "stateCode": "14"
+  },
+  {
+    "name": "Radomir",
+    "stateCode": "14"
+  },
+  {
+    "name": "Tran",
+    "stateCode": "14"
+  },
+  {
+    "name": "Zemen",
+    "stateCode": "14"
+  },
+  {
+    "name": "Belene",
+    "stateCode": "15"
+  },
+  {
+    "name": "Cherven Bryag",
+    "stateCode": "15"
+  },
+  {
+    "name": "Dolna Mitropolia",
+    "stateCode": "15"
+  },
+  {
+    "name": "Dolni Dabnik",
+    "stateCode": "15"
+  },
+  {
+    "name": "Gulyantsi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Iskar",
+    "stateCode": "15"
+  },
+  {
+    "name": "Knezha",
+    "stateCode": "15"
+  },
+  {
+    "name": "Koynare",
+    "stateCode": "15"
+  },
+  {
+    "name": "Levski",
+    "stateCode": "15"
+  },
+  {
+    "name": "Nikopol",
+    "stateCode": "15"
+  },
+  {
+    "name": "Obshtina Belene",
+    "stateCode": "15"
+  },
+  {
+    "name": "Obshtina Cherven Bryag",
+    "stateCode": "15"
+  },
+  {
+    "name": "Obshtina Dolna Mitropolia",
+    "stateCode": "15"
+  },
+  {
+    "name": "Obshtina Dolni Dabnik",
+    "stateCode": "15"
+  },
+  {
+    "name": "Obshtina Gulyantsi",
+    "stateCode": "15"
+  },
+  {
+    "name": "Obshtina Iskar",
+    "stateCode": "15"
+  },
+  {
+    "name": "Obshtina Knezha",
+    "stateCode": "15"
+  },
+  {
+    "name": "Obshtina Levski",
+    "stateCode": "15"
+  },
+  {
+    "name": "Obshtina Nikopol",
+    "stateCode": "15"
+  },
+  {
+    "name": "Obshtina Pleven",
+    "stateCode": "15"
+  },
+  {
+    "name": "Obshtina Pordim",
+    "stateCode": "15"
+  },
+  {
+    "name": "Pleven",
+    "stateCode": "15"
+  },
+  {
+    "name": "Pordim",
+    "stateCode": "15"
+  },
+  {
+    "name": "Slavyanovo",
+    "stateCode": "15"
+  },
+  {
+    "name": "Asenovgrad",
+    "stateCode": "16"
+  },
+  {
+    "name": "Brezovo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Hisarya",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kalofer",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kaloyanovo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Karlovo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Klisura",
+    "stateCode": "16"
+  },
+  {
+    "name": "Krichim",
+    "stateCode": "16"
+  },
+  {
+    "name": "Laki",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Asenovgrad",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Hisarya",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Kaloyanovo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Karlovo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Krichim",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Kuklen",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Laki",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Maritsa",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Parvomay",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Perushtitsa",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Plovdiv",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Rakovski",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Rodopi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Sadovo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Saedinenie",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Sopot",
+    "stateCode": "16"
+  },
+  {
+    "name": "Obshtina Stamboliyski",
+    "stateCode": "16"
+  },
+  {
+    "name": "Parvomay",
+    "stateCode": "16"
+  },
+  {
+    "name": "Perushtitsa",
+    "stateCode": "16"
+  },
+  {
+    "name": "Plovdiv",
+    "stateCode": "16"
+  },
+  {
+    "name": "Rakovski",
+    "stateCode": "16"
+  },
+  {
+    "name": "Sadovo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Saedinenie",
+    "stateCode": "16"
+  },
+  {
+    "name": "Stamboliyski",
+    "stateCode": "16"
+  },
+  {
+    "name": "Topolovo",
+    "stateCode": "16"
+  },
+  {
+    "name": "Isperih",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kubrat",
+    "stateCode": "17"
+  },
+  {
+    "name": "Loznitsa",
+    "stateCode": "17"
+  },
+  {
+    "name": "Medovene",
+    "stateCode": "17"
+  },
+  {
+    "name": "Obshtina Isperih",
+    "stateCode": "17"
+  },
+  {
+    "name": "Obshtina Kubrat",
+    "stateCode": "17"
+  },
+  {
+    "name": "Obshtina Loznitsa",
+    "stateCode": "17"
+  },
+  {
+    "name": "Obshtina Razgrad",
+    "stateCode": "17"
+  },
+  {
+    "name": "Obshtina Samuil",
+    "stateCode": "17"
+  },
+  {
+    "name": "Obshtina Tsar Kaloyan",
+    "stateCode": "17"
+  },
+  {
+    "name": "Obshtina Zavet",
+    "stateCode": "17"
+  },
+  {
+    "name": "Razgrad",
+    "stateCode": "17"
+  },
+  {
+    "name": "Samuil",
+    "stateCode": "17"
+  },
+  {
+    "name": "Tsar Kaloyan",
+    "stateCode": "17"
+  },
+  {
+    "name": "Zavet",
+    "stateCode": "17"
+  },
+  {
+    "name": "Borovo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Dve Mogili",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ivanovo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Obshtina Borovo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Obshtina Byala",
+    "stateCode": "18"
+  },
+  {
+    "name": "Obshtina Dve Mogili",
+    "stateCode": "18"
+  },
+  {
+    "name": "Obshtina Ivanovo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Obshtina Ruse",
+    "stateCode": "18"
+  },
+  {
+    "name": "Obshtina Slivo Pole",
+    "stateCode": "18"
+  },
+  {
+    "name": "Obshtina Tsenovo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Obshtina Vetovo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ruse",
+    "stateCode": "18"
+  },
+  {
+    "name": "Senovo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Slivo Pole",
+    "stateCode": "18"
+  },
+  {
+    "name": "Tsenovo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vetovo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Alfatar",
+    "stateCode": "19"
+  },
+  {
+    "name": "Dulovo",
+    "stateCode": "19"
+  },
+  {
+    "name": "Glavinitsa",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kaynardzha",
+    "stateCode": "19"
+  },
+  {
+    "name": "Obshtina Alfatar",
+    "stateCode": "19"
+  },
+  {
+    "name": "Obshtina Dulovo",
+    "stateCode": "19"
+  },
+  {
+    "name": "Obshtina Glavinitsa",
+    "stateCode": "19"
+  },
+  {
+    "name": "Obshtina Kaynardzha",
+    "stateCode": "19"
+  },
+  {
+    "name": "Obshtina Silistra",
+    "stateCode": "19"
+  },
+  {
+    "name": "Obshtina Sitovo",
+    "stateCode": "19"
+  },
+  {
+    "name": "Obshtina Tutrakan",
+    "stateCode": "19"
+  },
+  {
+    "name": "Silistra",
+    "stateCode": "19"
+  },
+  {
+    "name": "Sitovo",
+    "stateCode": "19"
+  },
+  {
+    "name": "Tutrakan",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kermen",
+    "stateCode": "20"
+  },
+  {
+    "name": "Kotel",
+    "stateCode": "20"
+  },
+  {
+    "name": "Nova Zagora",
+    "stateCode": "20"
+  },
+  {
+    "name": "Obshtina Kotel",
+    "stateCode": "20"
+  },
+  {
+    "name": "Obshtina Nova Zagora",
+    "stateCode": "20"
+  },
+  {
+    "name": "Obshtina Sliven",
+    "stateCode": "20"
+  },
+  {
+    "name": "Obshtina Tvarditsa",
+    "stateCode": "20"
+  },
+  {
+    "name": "Sliven",
+    "stateCode": "20"
+  },
+  {
+    "name": "Tvarditsa",
+    "stateCode": "20"
+  },
+  {
+    "name": "Banite",
+    "stateCode": "21"
+  },
+  {
+    "name": "Borino",
+    "stateCode": "21"
+  },
+  {
+    "name": "Chepelare",
+    "stateCode": "21"
+  },
+  {
+    "name": "Devin",
+    "stateCode": "21"
+  },
+  {
+    "name": "Dospat",
+    "stateCode": "21"
+  },
+  {
+    "name": "Gyovren",
+    "stateCode": "21"
+  },
+  {
+    "name": "Madan",
+    "stateCode": "21"
+  },
+  {
+    "name": "Nedelino",
+    "stateCode": "21"
+  },
+  {
+    "name": "Obshtina Banite",
+    "stateCode": "21"
+  },
+  {
+    "name": "Obshtina Borino",
+    "stateCode": "21"
+  },
+  {
+    "name": "Obshtina Chepelare",
+    "stateCode": "21"
+  },
+  {
+    "name": "Obshtina Devin",
+    "stateCode": "21"
+  },
+  {
+    "name": "Obshtina Dospat",
+    "stateCode": "21"
+  },
+  {
+    "name": "Obshtina Madan",
+    "stateCode": "21"
+  },
+  {
+    "name": "Obshtina Nedelino",
+    "stateCode": "21"
+  },
+  {
+    "name": "Obshtina Rudozem",
+    "stateCode": "21"
+  },
+  {
+    "name": "Obshtina Smolyan",
+    "stateCode": "21"
+  },
+  {
+    "name": "Obshtina Zlatograd",
+    "stateCode": "21"
+  },
+  {
+    "name": "Rudozem",
+    "stateCode": "21"
+  },
+  {
+    "name": "Smolyan",
+    "stateCode": "21"
+  },
+  {
+    "name": "Zlatograd",
+    "stateCode": "21"
+  },
+  {
+    "name": "Buhovo",
+    "stateCode": "22"
+  },
+  {
+    "name": "Sofia",
+    "stateCode": "22"
+  },
+  {
+    "name": "Stolichna Obshtina",
+    "stateCode": "22"
+  },
+  {
+    "name": "Anton",
+    "stateCode": "23"
+  },
+  {
+    "name": "Botevgrad",
+    "stateCode": "23"
+  },
+  {
+    "name": "Bozhurishte",
+    "stateCode": "23"
+  },
+  {
+    "name": "Chavdar",
+    "stateCode": "23"
+  },
+  {
+    "name": "Chelopech",
+    "stateCode": "23"
+  },
+  {
+    "name": "Dolna Banya",
+    "stateCode": "23"
+  },
+  {
+    "name": "Dragoman",
+    "stateCode": "23"
+  },
+  {
+    "name": "Elin Pelin",
+    "stateCode": "23"
+  },
+  {
+    "name": "Etropole",
+    "stateCode": "23"
+  },
+  {
+    "name": "Godech",
+    "stateCode": "23"
+  },
+  {
+    "name": "Gorna Malina",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ihtiman",
+    "stateCode": "23"
+  },
+  {
+    "name": "Koprivshtitsa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kostinbrod",
+    "stateCode": "23"
+  },
+  {
+    "name": "Lakatnik",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mirkovo",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Anton",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Botevgrad",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Bozhurishte",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Chavdar",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Chelopech",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Dolna Banya",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Dragoman",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Elin Pelin",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Etropole",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Gorna Malina",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Koprivshtitsa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Kostenets",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Kostinbrod",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Mirkovo",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Pirdop",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Pravets",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Samokov",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Slivnitsa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Svoge",
+    "stateCode": "23"
+  },
+  {
+    "name": "Obshtina Zlatitsa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Pirdop",
+    "stateCode": "23"
+  },
+  {
+    "name": "Pravets",
+    "stateCode": "23"
+  },
+  {
+    "name": "Samokov",
+    "stateCode": "23"
+  },
+  {
+    "name": "Slivnitsa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Svoge",
+    "stateCode": "23"
+  },
+  {
+    "name": "Zlatitsa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Asen",
+    "stateCode": "24"
+  },
+  {
+    "name": "Chirpan",
+    "stateCode": "24"
+  },
+  {
+    "name": "Gŭlŭbovo",
+    "stateCode": "24"
+  },
+  {
+    "name": "Gurkovo",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kazanlak",
+    "stateCode": "24"
+  },
+  {
+    "name": "Maglizh",
+    "stateCode": "24"
+  },
+  {
+    "name": "Nikolaevo",
+    "stateCode": "24"
+  },
+  {
+    "name": "Obshtina Bratya Daskalovi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Obshtina Chirpan",
+    "stateCode": "24"
+  },
+  {
+    "name": "Obshtina Galabovo",
+    "stateCode": "24"
+  },
+  {
+    "name": "Obshtina Gurkovo",
+    "stateCode": "24"
+  },
+  {
+    "name": "Obshtina Kazanlŭk",
+    "stateCode": "24"
+  },
+  {
+    "name": "Obshtina Maglizh",
+    "stateCode": "24"
+  },
+  {
+    "name": "Obshtina Nikolaevo",
+    "stateCode": "24"
+  },
+  {
+    "name": "Obshtina Opan",
+    "stateCode": "24"
+  },
+  {
+    "name": "Obshtina Pavel Banya",
+    "stateCode": "24"
+  },
+  {
+    "name": "Obshtina Radnevo",
+    "stateCode": "24"
+  },
+  {
+    "name": "Obshtina Stara Zagora",
+    "stateCode": "24"
+  },
+  {
+    "name": "Pavel Banya",
+    "stateCode": "24"
+  },
+  {
+    "name": "Radnevo",
+    "stateCode": "24"
+  },
+  {
+    "name": "Shipka",
+    "stateCode": "24"
+  },
+  {
+    "name": "Stara Zagora",
+    "stateCode": "24"
+  },
+  {
+    "name": "Antonovo",
+    "stateCode": "25"
+  },
+  {
+    "name": "Obshtina Antonovo",
+    "stateCode": "25"
+  },
+  {
+    "name": "Obshtina Omurtag",
+    "stateCode": "25"
+  },
+  {
+    "name": "Obshtina Opaka",
+    "stateCode": "25"
+  },
+  {
+    "name": "Obshtina Popovo",
+    "stateCode": "25"
+  },
+  {
+    "name": "Obshtina Targovishte",
+    "stateCode": "25"
+  },
+  {
+    "name": "Omurtag",
+    "stateCode": "25"
+  },
+  {
+    "name": "Opaka",
+    "stateCode": "25"
+  },
+  {
+    "name": "Popovo",
+    "stateCode": "25"
+  },
+  {
+    "name": "Targovishte",
+    "stateCode": "25"
+  },
+  {
+    "name": "Dimitrovgrad",
+    "stateCode": "26"
+  },
+  {
+    "name": "Harmanli",
+    "stateCode": "26"
+  },
+  {
+    "name": "Haskovo",
+    "stateCode": "26"
+  },
+  {
+    "name": "Ivaylovgrad",
+    "stateCode": "26"
+  },
+  {
+    "name": "Lyubimets",
+    "stateCode": "26"
+  },
+  {
+    "name": "Madzharovo",
+    "stateCode": "26"
+  },
+  {
+    "name": "Mineralni Bani",
+    "stateCode": "26"
+  },
+  {
+    "name": "Obshtina Dimitrovgrad",
+    "stateCode": "26"
+  },
+  {
+    "name": "Obshtina Harmanli",
+    "stateCode": "26"
+  },
+  {
+    "name": "Obshtina Haskovo",
+    "stateCode": "26"
+  },
+  {
+    "name": "Obshtina Ivaylovgrad",
+    "stateCode": "26"
+  },
+  {
+    "name": "Obshtina Madzharovo",
+    "stateCode": "26"
+  },
+  {
+    "name": "Obshtina Mineralni Bani",
+    "stateCode": "26"
+  },
+  {
+    "name": "Obshtina Stambolovo",
+    "stateCode": "26"
+  },
+  {
+    "name": "Obshtina Svilengrad",
+    "stateCode": "26"
+  },
+  {
+    "name": "Obshtina Topolovgrad",
+    "stateCode": "26"
+  },
+  {
+    "name": "Simeonovgrad",
+    "stateCode": "26"
+  },
+  {
+    "name": "Svilengrad",
+    "stateCode": "26"
+  },
+  {
+    "name": "Topolovgrad",
+    "stateCode": "26"
+  },
+  {
+    "name": "Shumen",
+    "stateCode": "27"
+  },
+  {
+    "name": "Bolyarovo",
+    "stateCode": "28"
+  },
+  {
+    "name": "Elhovo",
+    "stateCode": "28"
+  },
+  {
+    "name": "Obshtina Bolyarovo",
+    "stateCode": "28"
+  },
+  {
+    "name": "Obshtina Elhovo",
+    "stateCode": "28"
+  },
+  {
+    "name": "Obshtina Straldzha",
+    "stateCode": "28"
+  },
+  {
+    "name": "Obshtina Tundzha",
+    "stateCode": "28"
+  },
+  {
+    "name": "Obshtina Yambol",
+    "stateCode": "28"
+  },
+  {
+    "name": "Straldzha",
+    "stateCode": "28"
+  },
+  {
+    "name": "Yambol",
+    "stateCode": "28"
+  }
+]

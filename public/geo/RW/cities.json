@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Kigali",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kibungo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Rwamagana",
+    "stateCode": "02"
+  },
+  {
+    "name": "Byumba",
+    "stateCode": "03"
+  },
+  {
+    "name": "Musanze",
+    "stateCode": "03"
+  },
+  {
+    "name": "Cyangugu",
+    "stateCode": "04"
+  },
+  {
+    "name": "Gisenyi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kibuye",
+    "stateCode": "04"
+  },
+  {
+    "name": "Butare",
+    "stateCode": "05"
+  },
+  {
+    "name": "Eglise Catholique, Centrale GIKO",
+    "stateCode": "05"
+  },
+  {
+    "name": "Gitarama",
+    "stateCode": "05"
+  },
+  {
+    "name": "Nzega",
+    "stateCode": "05"
+  }
+]

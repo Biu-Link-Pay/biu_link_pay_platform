@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Néma",
+    "stateCode": "01"
+  },
+  {
+    "name": "Aioun",
+    "stateCode": "02"
+  },
+  {
+    "name": "Barkéwol",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kiffa",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kaédi",
+    "stateCode": "04"
+  },
+  {
+    "name": "’Elb el Jmel",
+    "stateCode": "05"
+  },
+  {
+    "name": "Aleg",
+    "stateCode": "05"
+  },
+  {
+    "name": "Rosso",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tékane",
+    "stateCode": "06"
+  },
+  {
+    "name": "Atar",
+    "stateCode": "07"
+  },
+  {
+    "name": "Chingueṭṭi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Nouadhibou",
+    "stateCode": "08"
+  },
+  {
+    "name": "Sélibaby",
+    "stateCode": "10"
+  },
+  {
+    "name": "Zouerate",
+    "stateCode": "11"
+  },
+  {
+    "name": "Akjoujt",
+    "stateCode": "12"
+  }
+]

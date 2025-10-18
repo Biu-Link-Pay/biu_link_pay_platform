@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Grenville",
+    "stateCode": "01"
+  },
+  {
+    "name": "Saint David’s",
+    "stateCode": "02"
+  },
+  {
+    "name": "Saint George's",
+    "stateCode": "03"
+  },
+  {
+    "name": "Gouyave",
+    "stateCode": "04"
+  },
+  {
+    "name": "Victoria",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sauteurs",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hillsborough",
+    "stateCode": "10"
+  }
+]

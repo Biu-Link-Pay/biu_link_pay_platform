@@ -1,0 +1,286 @@
+[
+  {
+    "name": "Kalabo",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kaoma",
+    "stateCode": "01"
+  },
+  {
+    "name": "Limulunga",
+    "stateCode": "01"
+  },
+  {
+    "name": "Lukulu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mongu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Senanga",
+    "stateCode": "01"
+  },
+  {
+    "name": "Sesheke",
+    "stateCode": "01"
+  },
+  {
+    "name": "Chibombo",
+    "stateCode": "02"
+  },
+  {
+    "name": "Chibombo District",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kabwe",
+    "stateCode": "02"
+  },
+  {
+    "name": "Kapiri Mposhi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mkushi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Mumbwa",
+    "stateCode": "02"
+  },
+  {
+    "name": "Serenje",
+    "stateCode": "02"
+  },
+  {
+    "name": "Chadiza",
+    "stateCode": "03"
+  },
+  {
+    "name": "Chipata",
+    "stateCode": "03"
+  },
+  {
+    "name": "Lundazi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Nyimba",
+    "stateCode": "03"
+  },
+  {
+    "name": "Petauke",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kawambwa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mansa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mwense",
+    "stateCode": "04"
+  },
+  {
+    "name": "Nchelenge",
+    "stateCode": "04"
+  },
+  {
+    "name": "Samfya",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kaputa",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kasama",
+    "stateCode": "05"
+  },
+  {
+    "name": "Luwingu",
+    "stateCode": "05"
+  },
+  {
+    "name": "Mbala",
+    "stateCode": "05"
+  },
+  {
+    "name": "Mporokoso",
+    "stateCode": "05"
+  },
+  {
+    "name": "Mpulungu",
+    "stateCode": "05"
+  },
+  {
+    "name": "Mungwi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kabompo",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kalengwa",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kansanshi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kasempa",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mufumbwe",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mwinilunga",
+    "stateCode": "06"
+  },
+  {
+    "name": "Solwezi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Zambezi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Choma",
+    "stateCode": "07"
+  },
+  {
+    "name": "Gwembe",
+    "stateCode": "07"
+  },
+  {
+    "name": "Itezhi-Tezhi District",
+    "stateCode": "07"
+  },
+  {
+    "name": "Livingstone",
+    "stateCode": "07"
+  },
+  {
+    "name": "Maamba",
+    "stateCode": "07"
+  },
+  {
+    "name": "Mazabuka",
+    "stateCode": "07"
+  },
+  {
+    "name": "Monze",
+    "stateCode": "07"
+  },
+  {
+    "name": "Nakambala",
+    "stateCode": "07"
+  },
+  {
+    "name": "Namwala",
+    "stateCode": "07"
+  },
+  {
+    "name": "Siavonga",
+    "stateCode": "07"
+  },
+  {
+    "name": "Siavonga District",
+    "stateCode": "07"
+  },
+  {
+    "name": "Sinazongwe",
+    "stateCode": "07"
+  },
+  {
+    "name": "Chambishi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Chililabombwe",
+    "stateCode": "08"
+  },
+  {
+    "name": "Chingola",
+    "stateCode": "08"
+  },
+  {
+    "name": "Chingola District",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kalulushi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kataba",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kitwe",
+    "stateCode": "08"
+  },
+  {
+    "name": "Luanshya",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mpongwe",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mufulira",
+    "stateCode": "08"
+  },
+  {
+    "name": "Ndola",
+    "stateCode": "08"
+  },
+  {
+    "name": "Chongwe",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kafue",
+    "stateCode": "09"
+  },
+  {
+    "name": "Luangwa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lusaka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Chama",
+    "stateCode": "10"
+  },
+  {
+    "name": "Chinsali",
+    "stateCode": "10"
+  },
+  {
+    "name": "Isoka",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mpika",
+    "stateCode": "10"
+  },
+  {
+    "name": "Nakonde",
+    "stateCode": "10"
+  }
+]

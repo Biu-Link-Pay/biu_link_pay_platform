@@ -1,0 +1,2182 @@
+[
+  {
+    "name": "Arizona",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Atenas de San Cristóbal",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Corozal",
+    "stateCode": "AT"
+  },
+  {
+    "name": "El Pino",
+    "stateCode": "AT"
+  },
+  {
+    "name": "El Porvenir",
+    "stateCode": "AT"
+  },
+  {
+    "name": "El Triunfo de la Cruz",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Esparta",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Jutiapa",
+    "stateCode": "AT"
+  },
+  {
+    "name": "La Ceiba",
+    "stateCode": "AT"
+  },
+  {
+    "name": "La Masica",
+    "stateCode": "AT"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Mezapa",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Nueva Armenia",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Sambo Creek",
+    "stateCode": "AT"
+  },
+  {
+    "name": "San Antonio",
+    "stateCode": "AT"
+  },
+  {
+    "name": "San Francisco",
+    "stateCode": "AT"
+  },
+  {
+    "name": "San Juan Pueblo",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Santa Ana",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Tela",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Tornabé",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Apacilagua",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Choluteca",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Ciudad Choluteca",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Concepción de María",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Corpus",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Duyure",
+    "stateCode": "CH"
+  },
+  {
+    "name": "El Corpus",
+    "stateCode": "CH"
+  },
+  {
+    "name": "El Obraje",
+    "stateCode": "CH"
+  },
+  {
+    "name": "El Puente",
+    "stateCode": "CH"
+  },
+  {
+    "name": "El Triunfo",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Los Llanitos",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Marcovia",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Monjarás",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Morolica",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Namasigüe",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Orocuina",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Pespire",
+    "stateCode": "CH"
+  },
+  {
+    "name": "San Antonio de Flores",
+    "stateCode": "CH"
+  },
+  {
+    "name": "San Isidro",
+    "stateCode": "CH"
+  },
+  {
+    "name": "San Jerónimo",
+    "stateCode": "CH"
+  },
+  {
+    "name": "San José",
+    "stateCode": "CH"
+  },
+  {
+    "name": "San José de Las Conchas",
+    "stateCode": "CH"
+  },
+  {
+    "name": "San Marcos de Colón",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Santa Ana de Yusguare",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Santa Cruz",
+    "stateCode": "CH"
+  },
+  {
+    "name": "Balfate",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Bonito Oriental",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Corocito",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Cusuna",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Elíxir",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Francia",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Iriona",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Jericó",
+    "stateCode": "CL"
+  },
+  {
+    "name": "La Brea",
+    "stateCode": "CL"
+  },
+  {
+    "name": "La Esperanza",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Limón",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Municipio de Sabá",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Prieta",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Puerto Castilla",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Punta Piedra",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Quebrada de Arena",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Río Esteban",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Sabá",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Salamá",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Santa Fe",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Santa Rosa de Aguán",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Sonaguera",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Taujica",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Tocoa",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Trujillo",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Zamora",
+    "stateCode": "CL"
+  },
+  {
+    "name": "Aguas del Padre",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Ajuterique",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Cerro Blanco",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Comayagua",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Concepción de Guasistagua",
+    "stateCode": "CM"
+  },
+  {
+    "name": "El Agua Dulcita",
+    "stateCode": "CM"
+  },
+  {
+    "name": "El Porvenir",
+    "stateCode": "CM"
+  },
+  {
+    "name": "El Rancho",
+    "stateCode": "CM"
+  },
+  {
+    "name": "El Rincón",
+    "stateCode": "CM"
+  },
+  {
+    "name": "El Rosario",
+    "stateCode": "CM"
+  },
+  {
+    "name": "El Sauce",
+    "stateCode": "CM"
+  },
+  {
+    "name": "El Socorro",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Esquías",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Flores",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Humuya",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Jamalteca",
+    "stateCode": "CM"
+  },
+  {
+    "name": "La Libertad",
+    "stateCode": "CM"
+  },
+  {
+    "name": "La Trinidad",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Lamaní",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Las Lajas",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Lejamaní",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Meámbar",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Minas de Oro",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Ojos de Agua",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Potrerillos",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Río Bonito",
+    "stateCode": "CM"
+  },
+  {
+    "name": "San Antonio de la Cuesta",
+    "stateCode": "CM"
+  },
+  {
+    "name": "San Jerónimo",
+    "stateCode": "CM"
+  },
+  {
+    "name": "San José de Comayagua",
+    "stateCode": "CM"
+  },
+  {
+    "name": "San José del Potrero",
+    "stateCode": "CM"
+  },
+  {
+    "name": "San Luis",
+    "stateCode": "CM"
+  },
+  {
+    "name": "San Sebastián",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Siguatepeque",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Taulabé",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Valle de Ángeles",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Villa de San Antonio",
+    "stateCode": "CM"
+  },
+  {
+    "name": "Agua Caliente",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Buenos Aires",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Cabañas",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Chalmeca",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Concepción",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Concepción de la Barranca",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Copán",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Copán Ruinas",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Corquín",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Cucuyagua",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Dolores",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Dulce Nombre",
+    "stateCode": "CP"
+  },
+  {
+    "name": "El Corpus",
+    "stateCode": "CP"
+  },
+  {
+    "name": "El Ocotón",
+    "stateCode": "CP"
+  },
+  {
+    "name": "El Paraíso",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Florida",
+    "stateCode": "CP"
+  },
+  {
+    "name": "La Entrada",
+    "stateCode": "CP"
+  },
+  {
+    "name": "La Jigua",
+    "stateCode": "CP"
+  },
+  {
+    "name": "La Playona",
+    "stateCode": "CP"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "CP"
+  },
+  {
+    "name": "La Zumbadora",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Los Tangos",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Nueva Arcadia",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Ojos de Agua",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Pueblo Nuevo",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Quezailica",
+    "stateCode": "CP"
+  },
+  {
+    "name": "San Agustín",
+    "stateCode": "CP"
+  },
+  {
+    "name": "San Antonio",
+    "stateCode": "CP"
+  },
+  {
+    "name": "San Jerónimo",
+    "stateCode": "CP"
+  },
+  {
+    "name": "San Joaquín",
+    "stateCode": "CP"
+  },
+  {
+    "name": "San José",
+    "stateCode": "CP"
+  },
+  {
+    "name": "San José de Copán",
+    "stateCode": "CP"
+  },
+  {
+    "name": "San Juan de Opoa",
+    "stateCode": "CP"
+  },
+  {
+    "name": "San Juan de Planes",
+    "stateCode": "CP"
+  },
+  {
+    "name": "San Nicolás",
+    "stateCode": "CP"
+  },
+  {
+    "name": "San Pedro de Copán",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Santa Rita",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Santa Rita, Copan",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Santa Rosa de Copán",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Trinidad de Copán",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Veracruz",
+    "stateCode": "CP"
+  },
+  {
+    "name": "Agua Azul",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Agua Azul Rancho",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Armenta",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Baja Mar",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Baracoa",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Bejuco",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Cañaveral",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Casa Quemada",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Chivana",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Choloma",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Chotepe",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Cofradía",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Cuyamel",
+    "stateCode": "CR"
+  },
+  {
+    "name": "El Llano",
+    "stateCode": "CR"
+  },
+  {
+    "name": "El Marañón",
+    "stateCode": "CR"
+  },
+  {
+    "name": "El Milagro",
+    "stateCode": "CR"
+  },
+  {
+    "name": "El Olivar",
+    "stateCode": "CR"
+  },
+  {
+    "name": "El Perico",
+    "stateCode": "CR"
+  },
+  {
+    "name": "El Plan",
+    "stateCode": "CR"
+  },
+  {
+    "name": "El Porvenir",
+    "stateCode": "CR"
+  },
+  {
+    "name": "El Rancho",
+    "stateCode": "CR"
+  },
+  {
+    "name": "El Tigre",
+    "stateCode": "CR"
+  },
+  {
+    "name": "El Zapotal del Norte",
+    "stateCode": "CR"
+  },
+  {
+    "name": "La Guama",
+    "stateCode": "CR"
+  },
+  {
+    "name": "La Huesa",
+    "stateCode": "CR"
+  },
+  {
+    "name": "La Jutosa",
+    "stateCode": "CR"
+  },
+  {
+    "name": "La Lima",
+    "stateCode": "CR"
+  },
+  {
+    "name": "La Sabana",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Los Caminos",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Los Naranjos",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Monterrey",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Nuevo Chamelecón",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Omoa",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Oropéndolas",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Peña Blanca",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Pimienta",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Pimienta Vieja",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Potrerillos",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Pueblo Nuevo",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Puerto Alto",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Puerto Cortés",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Puerto Cortez",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Quebrada Seca",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Río Blanquito",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Río Chiquito",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Río Lindo",
+    "stateCode": "CR"
+  },
+  {
+    "name": "San Antonio de Cortés",
+    "stateCode": "CR"
+  },
+  {
+    "name": "San Buenaventura",
+    "stateCode": "CR"
+  },
+  {
+    "name": "San Francisco de Yojoa",
+    "stateCode": "CR"
+  },
+  {
+    "name": "San José del Boquerón",
+    "stateCode": "CR"
+  },
+  {
+    "name": "San Manuel",
+    "stateCode": "CR"
+  },
+  {
+    "name": "San Pedro Sula",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Santa Cruz de Yojoa",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Santa Elena",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Travesía",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Villanueva",
+    "stateCode": "CR"
+  },
+  {
+    "name": "Alauca",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Araulí",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Cuyalí",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Danlí",
+    "stateCode": "EP"
+  },
+  {
+    "name": "El Benque",
+    "stateCode": "EP"
+  },
+  {
+    "name": "El Chichicaste",
+    "stateCode": "EP"
+  },
+  {
+    "name": "El Obraje",
+    "stateCode": "EP"
+  },
+  {
+    "name": "El Paraíso",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Güinope",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Jacaleapa",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Jutiapa",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Las Ánimas",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Las Trojes",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Liure",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Morocelí",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Municipio de Texiguat",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Ojo de Agua",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Oropolí",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Potrerillos",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Quebrada Larga",
+    "stateCode": "EP"
+  },
+  {
+    "name": "San Antonio de Flores",
+    "stateCode": "EP"
+  },
+  {
+    "name": "San Diego",
+    "stateCode": "EP"
+  },
+  {
+    "name": "San Lucas",
+    "stateCode": "EP"
+  },
+  {
+    "name": "San Matías",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Santa Cruz",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Soledad",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Teupasenti",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Texíguat",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Trojes",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Vado Ancho",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Yauyupe",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Yuscarán",
+    "stateCode": "EP"
+  },
+  {
+    "name": "Agalteca",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Alubarén",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Cedros",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Cerro Grande",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Cofradía",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Curarén",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Distrito Central",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Chimbo",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Escanito",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Escaño de Tepale",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Guante",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Guantillo",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Guapinol",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Lolo",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Pedernal",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Porvenir",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Suyatal",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Tablón",
+    "stateCode": "FM"
+  },
+  {
+    "name": "El Terrero",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Guaimaca",
+    "stateCode": "FM"
+  },
+  {
+    "name": "La Ermita",
+    "stateCode": "FM"
+  },
+  {
+    "name": "La Libertad",
+    "stateCode": "FM"
+  },
+  {
+    "name": "La Venta",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Lepaterique",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Maraita",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Marale",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Mata de Plátano",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Mateo",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Nueva Armenia",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Ojojona",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Orica",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Quebradas",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Reitoca",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Río Abajo",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Sabanagrande",
+    "stateCode": "FM"
+  },
+  {
+    "name": "San Antonio de Oriente",
+    "stateCode": "FM"
+  },
+  {
+    "name": "San Buenaventura",
+    "stateCode": "FM"
+  },
+  {
+    "name": "San Ignacio",
+    "stateCode": "FM"
+  },
+  {
+    "name": "San Juan de Flores",
+    "stateCode": "FM"
+  },
+  {
+    "name": "San Miguelito",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Santa Ana",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Santa Lucía",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Talanga",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Támara",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Tatumbla",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Tegucigalpa",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Valle de Ángeles",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Vallecillo",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Villa de San Francisco",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Villa Nueva",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Yaguacire",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Zambrano",
+    "stateCode": "FM"
+  },
+  {
+    "name": "Ahuas",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Auas",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Auka",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Barra Patuca",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Brus Laguna",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Iralaya",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Juan Francisco Bulnes",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Paptalaya",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Puerto Lempira",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Villeda Morales",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Wampusirpi",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Wawina",
+    "stateCode": "GD"
+  },
+  {
+    "name": "Coxen Hole",
+    "stateCode": "IB"
+  },
+  {
+    "name": "French Harbor",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Guanaja",
+    "stateCode": "IB"
+  },
+  {
+    "name": "José Santos Guardiola",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Roatán",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Sandy Bay",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Savannah Bight",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Utila",
+    "stateCode": "IB"
+  },
+  {
+    "name": "Camasca",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Colomoncagua",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Concepción",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Dolores",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Intibucá",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Jesús de Otoro",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Jiquinlaca",
+    "stateCode": "IN"
+  },
+  {
+    "name": "La Esperanza",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Magdalena",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Masaguara",
+    "stateCode": "IN"
+  },
+  {
+    "name": "San Antonio",
+    "stateCode": "IN"
+  },
+  {
+    "name": "San Francisco de Opalaca",
+    "stateCode": "IN"
+  },
+  {
+    "name": "San Isidro",
+    "stateCode": "IN"
+  },
+  {
+    "name": "San Juan",
+    "stateCode": "IN"
+  },
+  {
+    "name": "San Marcos de la Sierra",
+    "stateCode": "IN"
+  },
+  {
+    "name": "San Miguelito",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Santa Lucía",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Yamaranguila",
+    "stateCode": "IN"
+  },
+  {
+    "name": "Belén",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Candelaria",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Cololaca",
+    "stateCode": "LE"
+  },
+  {
+    "name": "El Achiotal",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Erandique",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Gracias",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Gualcince",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Guarita",
+    "stateCode": "LE"
+  },
+  {
+    "name": "La Campa",
+    "stateCode": "LE"
+  },
+  {
+    "name": "La Iguala",
+    "stateCode": "LE"
+  },
+  {
+    "name": "La Libertad",
+    "stateCode": "LE"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "LE"
+  },
+  {
+    "name": "La Virtud",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Las Flores",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Las Tejeras",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Lepaera",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Mapulaca",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Piraera",
+    "stateCode": "LE"
+  },
+  {
+    "name": "San Andrés",
+    "stateCode": "LE"
+  },
+  {
+    "name": "San Francisco",
+    "stateCode": "LE"
+  },
+  {
+    "name": "San Juan Guarita",
+    "stateCode": "LE"
+  },
+  {
+    "name": "San Manuel Colohete",
+    "stateCode": "LE"
+  },
+  {
+    "name": "San Marcos de Caiquin",
+    "stateCode": "LE"
+  },
+  {
+    "name": "San Rafael",
+    "stateCode": "LE"
+  },
+  {
+    "name": "San Sebastián",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Santa Cruz",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Talgua",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Tambla",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Taragual",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Tomalá",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Valladolid",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Virginia",
+    "stateCode": "LE"
+  },
+  {
+    "name": "Aguanqueterique",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Cabañas",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Cane",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Chinacla",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Guajiquiro",
+    "stateCode": "LP"
+  },
+  {
+    "name": "La Paz",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Lauterique",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Los Planes",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Marcala",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Mercedes de Oriente",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Opatoro",
+    "stateCode": "LP"
+  },
+  {
+    "name": "San Antonio del Norte",
+    "stateCode": "LP"
+  },
+  {
+    "name": "San José",
+    "stateCode": "LP"
+  },
+  {
+    "name": "San Juan",
+    "stateCode": "LP"
+  },
+  {
+    "name": "San Pedro de Tutule",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Santa Ana",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Santa Elena",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Santa María",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Santiago Puringla",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Tepanguare",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Yarula",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Yarumela",
+    "stateCode": "LP"
+  },
+  {
+    "name": "Antigua Ocotepeque",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Belén Gualcho",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Concepción",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Dolores Merendón",
+    "stateCode": "OC"
+  },
+  {
+    "name": "El Tránsito",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Fraternidad",
+    "stateCode": "OC"
+  },
+  {
+    "name": "La Encarnación",
+    "stateCode": "OC"
+  },
+  {
+    "name": "La Labor",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Lucerna",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Mercedes",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Nueva Ocotepeque",
+    "stateCode": "OC"
+  },
+  {
+    "name": "San Fernando",
+    "stateCode": "OC"
+  },
+  {
+    "name": "San Francisco de Cones",
+    "stateCode": "OC"
+  },
+  {
+    "name": "San Francisco del Valle",
+    "stateCode": "OC"
+  },
+  {
+    "name": "San Jorge",
+    "stateCode": "OC"
+  },
+  {
+    "name": "San Marcos",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Santa Fe",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Santa Lucía",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Sensenti",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Sinuapa",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Yaruchel",
+    "stateCode": "OC"
+  },
+  {
+    "name": "Arimís",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Campamento",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Catacamas",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Concordia",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Dulce Nombre de Culmí",
+    "stateCode": "OL"
+  },
+  {
+    "name": "El Guayabito",
+    "stateCode": "OL"
+  },
+  {
+    "name": "El Rosario",
+    "stateCode": "OL"
+  },
+  {
+    "name": "El Rusio",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Esquipulas del Norte",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Gualaco",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Guarizama",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Guata",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Guayape",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Jano",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Juticalpa",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Jutiquile",
+    "stateCode": "OL"
+  },
+  {
+    "name": "La Concepción",
+    "stateCode": "OL"
+  },
+  {
+    "name": "La Estancia",
+    "stateCode": "OL"
+  },
+  {
+    "name": "La Guata",
+    "stateCode": "OL"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Laguna Seca",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Mangulile",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Manto",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Municipio de San Francisco de La Paz",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Patuca",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Punuare",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Salamá",
+    "stateCode": "OL"
+  },
+  {
+    "name": "San Esteban",
+    "stateCode": "OL"
+  },
+  {
+    "name": "San Francisco de Becerra",
+    "stateCode": "OL"
+  },
+  {
+    "name": "San Francisco de la Paz",
+    "stateCode": "OL"
+  },
+  {
+    "name": "San José de Río Tinto",
+    "stateCode": "OL"
+  },
+  {
+    "name": "San Nicolás",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Santa María del Real",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Silca",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Yocón",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Zopilotepe",
+    "stateCode": "OL"
+  },
+  {
+    "name": "Agualote",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Arada",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Atima",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Azacualpa",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Berlín",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Callejones",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Camalote",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Casa Quemada",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Ceguaca",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Chinda",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Concepción del Norte",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Concepción del Sur",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Correderos",
+    "stateCode": "SB"
+  },
+  {
+    "name": "El Ciruelo",
+    "stateCode": "SB"
+  },
+  {
+    "name": "El Corozal",
+    "stateCode": "SB"
+  },
+  {
+    "name": "El Mochito",
+    "stateCode": "SB"
+  },
+  {
+    "name": "El Níspero",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Guacamaya",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Gualala",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Gualjoco",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Ilama",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Joconal",
+    "stateCode": "SB"
+  },
+  {
+    "name": "La Flecha",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Laguna Verde",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Las Vegas",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Las Vegas, Santa Barbara",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Loma Alta",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Macuelizo",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Naco",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Naranjito",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Nueva Frontera",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Nueva Jalapa",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Nuevo Celilac",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Petoa",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Pinalejo",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Protección",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Quimistán",
+    "stateCode": "SB"
+  },
+  {
+    "name": "San Francisco de Ojuera",
+    "stateCode": "SB"
+  },
+  {
+    "name": "San José de Colinas",
+    "stateCode": "SB"
+  },
+  {
+    "name": "San José de Tarros",
+    "stateCode": "SB"
+  },
+  {
+    "name": "San Luis",
+    "stateCode": "SB"
+  },
+  {
+    "name": "San Luis de Planes",
+    "stateCode": "SB"
+  },
+  {
+    "name": "San Marcos",
+    "stateCode": "SB"
+  },
+  {
+    "name": "San Nicolás",
+    "stateCode": "SB"
+  },
+  {
+    "name": "San Pedro Zacapa",
+    "stateCode": "SB"
+  },
+  {
+    "name": "San Vicente Centenario",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Santa Bárbara",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Santa Rita",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Sula",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Tras Cerros",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Trinidad",
+    "stateCode": "SB"
+  },
+  {
+    "name": "Agua Fría",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Alianza",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Amapala",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Aramecina",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Caridad",
+    "stateCode": "VA"
+  },
+  {
+    "name": "El Cubolero",
+    "stateCode": "VA"
+  },
+  {
+    "name": "El Tular",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Goascorán",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Jícaro Galán",
+    "stateCode": "VA"
+  },
+  {
+    "name": "La Alianza",
+    "stateCode": "VA"
+  },
+  {
+    "name": "La Criba",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Langue",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Nacaome",
+    "stateCode": "VA"
+  },
+  {
+    "name": "San Francisco de Coray",
+    "stateCode": "VA"
+  },
+  {
+    "name": "San Lorenzo",
+    "stateCode": "VA"
+  },
+  {
+    "name": "Agua Blanca Sur",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Arenal",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Armenia",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Ayapa",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Bálsamo Oriental",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Carbajales",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Coyoles Central",
+    "stateCode": "YO"
+  },
+  {
+    "name": "El Bálsamo",
+    "stateCode": "YO"
+  },
+  {
+    "name": "El Juncal",
+    "stateCode": "YO"
+  },
+  {
+    "name": "El Negrito",
+    "stateCode": "YO"
+  },
+  {
+    "name": "El Ocote",
+    "stateCode": "YO"
+  },
+  {
+    "name": "El Progreso",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Guaimitas",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Jocón",
+    "stateCode": "YO"
+  },
+  {
+    "name": "La Estancia",
+    "stateCode": "YO"
+  },
+  {
+    "name": "La Guacamaya",
+    "stateCode": "YO"
+  },
+  {
+    "name": "La Mina",
+    "stateCode": "YO"
+  },
+  {
+    "name": "La Rosa",
+    "stateCode": "YO"
+  },
+  {
+    "name": "La Sarrosa",
+    "stateCode": "YO"
+  },
+  {
+    "name": "La Trinidad",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Las Vegas",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Lomitas",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Mojimán",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Morazán",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Nombre de Jesús",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Nueva Esperanza",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Ocote Paulino",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Olanchito",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Paujiles",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Punta Ocote",
+    "stateCode": "YO"
+  },
+  {
+    "name": "San Antonio",
+    "stateCode": "YO"
+  },
+  {
+    "name": "San José",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Santa Rita",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Subirana",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Sulaco",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Teguajinal",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Tepusteca",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Toyós",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Trojas",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Victoria",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Yorito",
+    "stateCode": "YO"
+  },
+  {
+    "name": "Yoro",
+    "stateCode": "YO"
+  }
+]

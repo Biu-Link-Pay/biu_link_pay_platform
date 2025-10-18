@@ -1,0 +1,294 @@
+[
+  {
+    "name": "Mbacké",
+    "stateCode": "DB"
+  },
+  {
+    "name": "Mbaké",
+    "stateCode": "DB"
+  },
+  {
+    "name": "Tiébo",
+    "stateCode": "DB"
+  },
+  {
+    "name": "Touba",
+    "stateCode": "DB"
+  },
+  {
+    "name": "Dakar",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Dakar Department",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Guédiawaye Department",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Mermoz Boabab",
+    "stateCode": "DK"
+  },
+  {
+    "name": "N’diareme limamoulaye",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Pikine",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Pikine Department",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Rufisque Department",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Diofior",
+    "stateCode": "FK"
+  },
+  {
+    "name": "Fatick Department",
+    "stateCode": "FK"
+  },
+  {
+    "name": "Foundiougne",
+    "stateCode": "FK"
+  },
+  {
+    "name": "Guinguinéo",
+    "stateCode": "FK"
+  },
+  {
+    "name": "Passi",
+    "stateCode": "FK"
+  },
+  {
+    "name": "Pourham",
+    "stateCode": "FK"
+  },
+  {
+    "name": "Sokone",
+    "stateCode": "FK"
+  },
+  {
+    "name": "Kaffrine",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Koungheul",
+    "stateCode": "KA"
+  },
+  {
+    "name": "Kolda",
+    "stateCode": "KD"
+  },
+  {
+    "name": "Kolda Department",
+    "stateCode": "KD"
+  },
+  {
+    "name": "Marsassoum",
+    "stateCode": "KD"
+  },
+  {
+    "name": "Vélingara",
+    "stateCode": "KD"
+  },
+  {
+    "name": "Département de Salémata",
+    "stateCode": "KE"
+  },
+  {
+    "name": "Kédougou",
+    "stateCode": "KE"
+  },
+  {
+    "name": "Kédougou Department",
+    "stateCode": "KE"
+  },
+  {
+    "name": "Saraya",
+    "stateCode": "KE"
+  },
+  {
+    "name": "Gandiaye",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Kaolack",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Ndofane",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Nioro du Rip",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Dara",
+    "stateCode": "LG"
+  },
+  {
+    "name": "Guéoul",
+    "stateCode": "LG"
+  },
+  {
+    "name": "Linguere Department",
+    "stateCode": "LG"
+  },
+  {
+    "name": "Louga",
+    "stateCode": "LG"
+  },
+  {
+    "name": "Ndibène Dahra",
+    "stateCode": "LG"
+  },
+  {
+    "name": "Diawara",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Kanel",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Matam",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Matam Department",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Ouro Sogui",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Ranérou",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Sémé",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Waoundé",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Goudomp Department",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Sédhiou",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Goléré",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Ndioum",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Polel Diaoubé",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Richard-Toll",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Rosso",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Saint-Louis",
+    "stateCode": "SL"
+  },
+  {
+    "name": "Tambacounda",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Tambacounda Department",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Joal-Fadiout",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Kayar",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Khombole",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Mbour",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Mékhé",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Nguékhokh",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Pout",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Thiès",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Thiès Nones",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Tiadiaye",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Tivaouane",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Warang",
+    "stateCode": "TH"
+  },
+  {
+    "name": "Adéane",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Bignona",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Oussouye",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Tionk Essil",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Ziguinchor",
+    "stateCode": "ZG"
+  }
+]

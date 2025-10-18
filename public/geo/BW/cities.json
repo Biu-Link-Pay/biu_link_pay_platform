@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Gobojango",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Gweta",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Kalamare",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Letlhakane",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Letsheng",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Maapi",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Machaneng",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mahalapye",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Makobeng",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Makwata",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mathakola",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mathambgwane",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mathathane",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Maunatlala",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mogapi",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Moijabana",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mookane",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mopipi",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Mosetse",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Nata",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Orapa",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Palapye",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Pilikwe",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Rakops",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Ramokgonami",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Ratholo",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Sefophe",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Serowe",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Sua",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Tamasane",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Tobane",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Tonota",
+    "stateCode": "CE"
+  },
+  {
+    "name": "Dekar",
+    "stateCode": "GH"
+  },
+  {
+    "name": "Ghanzi",
+    "stateCode": "GH"
+  },
+  {
+    "name": "Hukuntsi",
+    "stateCode": "KG"
+  },
+  {
+    "name": "Kang",
+    "stateCode": "KG"
+  },
+  {
+    "name": "Lehututu",
+    "stateCode": "KG"
+  },
+  {
+    "name": "Manyana",
+    "stateCode": "KG"
+  },
+  {
+    "name": "Tshabong",
+    "stateCode": "KG"
+  },
+  {
+    "name": "Werda",
+    "stateCode": "KG"
+  },
+  {
+    "name": "Bokaa",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Mmathubudukwane",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Mochudi",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Pilane",
+    "stateCode": "KL"
+  },
+  {
+    "name": "Botlhapatlou",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Dutlwe",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Gabane",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Gaphatshwe",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Khudumelapye",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Lenchwe Le Tau",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Letlhakeng",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Metsemotlhaba",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Mmopone",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Mogoditshane",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Molepolole",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Nkoyaphiri",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Thamaga",
+    "stateCode": "KW"
+  },
+  {
+    "name": "Dukwe",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Makaleng",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Masunga",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Sebina",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Maun",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Nokaneng",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Pandamatenga",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Sehithwa",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Shakawe",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Gaborone",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Janeng",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Kopong",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Otse",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Ramotswa",
+    "stateCode": "SE"
+  },
+  {
+    "name": "Kanye",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Khakhea",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Mosopa",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Sekoma",
+    "stateCode": "SO"
+  }
+]

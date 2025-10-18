@@ -1,0 +1,522 @@
+[
+  {
+    "name": "Ballsh",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bashkia Divjakë",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bashkia Fier",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bashkia Mallakastër",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bashkia Patos",
+    "stateCode": "04"
+  },
+  {
+    "name": "Divjakë",
+    "stateCode": "04"
+  },
+  {
+    "name": "Fier",
+    "stateCode": "04"
+  },
+  {
+    "name": "Fier-Çifçi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Lushnjë",
+    "stateCode": "04"
+  },
+  {
+    "name": "Patos",
+    "stateCode": "04"
+  },
+  {
+    "name": "Patos Fshat",
+    "stateCode": "04"
+  },
+  {
+    "name": "Roskovec",
+    "stateCode": "04"
+  },
+  {
+    "name": "Rrethi i Mallakastrës",
+    "stateCode": "04"
+  },
+  {
+    "name": "Bashkia Devoll",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bashkia Kolonjë",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bashkia Maliq",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bashkia Pustec",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bilisht",
+    "stateCode": "06"
+  },
+  {
+    "name": "Ersekë",
+    "stateCode": "06"
+  },
+  {
+    "name": "Korçë",
+    "stateCode": "06"
+  },
+  {
+    "name": "Leskovik",
+    "stateCode": "06"
+  },
+  {
+    "name": "Libonik",
+    "stateCode": "06"
+  },
+  {
+    "name": "Maliq",
+    "stateCode": "06"
+  },
+  {
+    "name": "Mborje",
+    "stateCode": "06"
+  },
+  {
+    "name": "Pogradec",
+    "stateCode": "06"
+  },
+  {
+    "name": "Rrethi i Devollit",
+    "stateCode": "06"
+  },
+  {
+    "name": "Rrethi i Kolonjës",
+    "stateCode": "06"
+  },
+  {
+    "name": "Velçan",
+    "stateCode": "06"
+  },
+  {
+    "name": "Voskopojë",
+    "stateCode": "06"
+  },
+  {
+    "name": "Bashkia Kurbin",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bashkia Lezhë",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bashkia Mirditë",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kurbnesh",
+    "stateCode": "08"
+  },
+  {
+    "name": "Laç",
+    "stateCode": "08"
+  },
+  {
+    "name": "Lezhë",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mamurras",
+    "stateCode": "08"
+  },
+  {
+    "name": "Milot",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rrëshen",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rrethi i Kurbinit",
+    "stateCode": "08"
+  },
+  {
+    "name": "Rubik",
+    "stateCode": "08"
+  },
+  {
+    "name": "Shëngjin",
+    "stateCode": "08"
+  },
+  {
+    "name": "Bashkia Bulqizë",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bashkia Klos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bashkia Mat",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bulqizë",
+    "stateCode": "09"
+  },
+  {
+    "name": "Burrel",
+    "stateCode": "09"
+  },
+  {
+    "name": "Klos",
+    "stateCode": "09"
+  },
+  {
+    "name": "Peshkopi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rrethi i Bulqizës",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rrethi i Dibrës",
+    "stateCode": "09"
+  },
+  {
+    "name": "Rrethi i Matit",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ulëz",
+    "stateCode": "09"
+  },
+  {
+    "name": "Bashkia Finiq",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bashkia Himarë",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bashkia Konispol",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bashkia Selenicë",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bashkia Vlorë",
+    "stateCode": "12"
+  },
+  {
+    "name": "Delvinë",
+    "stateCode": "12"
+  },
+  {
+    "name": "Himarë",
+    "stateCode": "12"
+  },
+  {
+    "name": "Konispol",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ksamil",
+    "stateCode": "12"
+  },
+  {
+    "name": "Orikum",
+    "stateCode": "12"
+  },
+  {
+    "name": "Rrethi i Delvinës",
+    "stateCode": "12"
+  },
+  {
+    "name": "Sarandë",
+    "stateCode": "12"
+  },
+  {
+    "name": "Selenicë",
+    "stateCode": "12"
+  },
+  {
+    "name": "Vlorë",
+    "stateCode": "12"
+  },
+  {
+    "name": "Banaj",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Bashkia Berat",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Bashkia Kuçovë",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Bashkia Poliçan",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Bashkia Skrapar",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Berat",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Çorovodë",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Kuçovë",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Poliçan",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Rrethi i Beratit",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Rrethi i Kuçovës",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Rrethi i Skraparit",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Ura Vajgurore",
+    "stateCode": "BR"
+  },
+  {
+    "name": "Bashkia Durrës",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Bashkia Krujë",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Bashkia Shijak",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Durrës",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Durrës District",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Fushë-Krujë",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Krujë",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Rrethi i Krujës",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Shijak",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Sukth",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Bashkia Dropull",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Bashkia Kelcyrë",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Bashkia Libohovë",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Bashkia Memaliaj",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Bashkia Përmet",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Bashkia Tepelenë",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Gjinkar",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Gjirokastër",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Këlcyrë",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Lazarat",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Libohovë",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Memaliaj",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Përmet",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Tepelenë",
+    "stateCode": "GJ"
+  },
+  {
+    "name": "Bajram Curri",
+    "stateCode": "KU"
+  },
+  {
+    "name": "Krumë",
+    "stateCode": "KU"
+  },
+  {
+    "name": "Kukës",
+    "stateCode": "KU"
+  },
+  {
+    "name": "Rrethi i Hasit",
+    "stateCode": "KU"
+  },
+  {
+    "name": "Rrethi i Kukësit",
+    "stateCode": "KU"
+  },
+  {
+    "name": "Bashkia Malësi e Madhe",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Bashkia Pukë",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Bashkia Vau i Dejës",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Fushë-Arrëz",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Koplik",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Pukë",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Rrethi i Malësia e Madhe",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Rrethi i Shkodrës",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Shkodër",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Vau i Dejës",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Vukatanë",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Bashkia Kavajë",
+    "stateCode": "TR"
+  },
+  {
+    "name": "Bashkia Vorë",
+    "stateCode": "TR"
+  },
+  {
+    "name": "Kamëz",
+    "stateCode": "TR"
+  },
+  {
+    "name": "Kavajë",
+    "stateCode": "TR"
+  },
+  {
+    "name": "Krrabë",
+    "stateCode": "TR"
+  },
+  {
+    "name": "Rrethi i Kavajës",
+    "stateCode": "TR"
+  },
+  {
+    "name": "Rrethi i Tiranës",
+    "stateCode": "TR"
+  },
+  {
+    "name": "Rrogozhinë",
+    "stateCode": "TR"
+  },
+  {
+    "name": "Sinaballaj",
+    "stateCode": "TR"
+  },
+  {
+    "name": "Tirana",
+    "stateCode": "TR"
+  },
+  {
+    "name": "Vorë",
+    "stateCode": "TR"
+  }
+]

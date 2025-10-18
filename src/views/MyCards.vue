@@ -655,7 +655,7 @@
       <!-- Transaction History Section -->
 
       <CardDetailDialog v-model:visible="showDetailDialog" :loading="detailLoading" :error="detailError"
-        :card-detail="cardDetail" @retry="retryCardDetail" />
+        :card-detail="cardDetail" @retry="retryCardDetail" @updated="onDetailUpdated" />
 
       <!-- Google Auth Dialog -->
       <GoogleAuthDialog ref="googleAuthDialogRef" v-model:visible="showGoogleAuthDialog" title="Security Verification"
@@ -667,7 +667,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onActivated, onUnmounted, watch } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useCardStore } from '@/stores/card'
 import { useToast } from 'primevue/usetoast'
@@ -828,6 +828,11 @@ const showDetailDialog = ref(false)
 const detailLoading = ref(false)
 const detailError = ref<string | null>(null)
 const cardDetail = ref<CardDetailResponse | null>(null)
+// Keep parent in sync when dialog updates address
+const onDetailUpdated = (updated: CardDetailResponse) => {
+  cardDetail.value = updated
+  cardStore.cacheCurrentCardDetail(updated)
+}
 
 // Execute actions after Google Auth verification
 const executeWithdrawAction = async (cardDetail: CardDetailResponse) => {
@@ -1747,34 +1752,23 @@ onMounted(async () => {
   }
 })
 
-// Refresh data when page is activated (e.g., returning from other pages)
-onActivated(async () => {
-  console.log('MyCards page activated, refreshing data...')
-  isComponentMounted.value = true
-
-  // Always fetch fresh card list data when page is activated
-  try {
-    await cardStore.fetchCardList()
-    console.log('Card list refreshed, length:', cardStore.cardList.length)
-
-    // If we have cards and we're on transaction tab, refresh transactions
-    if (cards.value.length > 0 && activeTab.value === 'transaction') {
-      console.log('Refreshing transactions...')
-      await fetchTransactions()
-
-      // Restart polling
-      startTransactionPolling()
+// Watch for route changes to handle card selection
+watch(() => route.query.cardNo, async (newCardNo, oldCardNo) => {
+  console.log('Route cardNo changed from', oldCardNo, 'to', newCardNo)
+  if (newCardNo && cards.value.length > 0) {
+    const targetCardIndex = cards.value.findIndex(card => card.cardNo === newCardNo)
+    if (targetCardIndex !== -1) {
+      console.log('Selecting card based on query parameter:', newCardNo, 'at index:', targetCardIndex)
+      currentCardIndex.value = targetCardIndex
+      // Clear the query parameter to avoid selecting the same card on refresh
+      router.replace({ name: 'MyCards' })
+    } else {
+      console.warn('Card not found with cardNo:', newCardNo)
+      // Clear the invalid query parameter
+      router.replace({ name: 'MyCards' })
     }
-  } catch (error) {
-    console.error('Error refreshing card list:', error)
-    toast.add({
-      severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to refresh card list',
-      life: 3000
-    })
   }
-})
+}, { immediate: true })
 
 // Cleanup when component unmounts
 onUnmounted(() => {

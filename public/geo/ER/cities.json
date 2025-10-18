@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Keren",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Assab",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Edd",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Adi Keyh",
+    "stateCode": "DU"
+  },
+  {
+    "name": "Dek’emhāre",
+    "stateCode": "DU"
+  },
+  {
+    "name": "Mendefera",
+    "stateCode": "DU"
+  },
+  {
+    "name": "Ak’ordat",
+    "stateCode": "GB"
+  },
+  {
+    "name": "Barentu",
+    "stateCode": "GB"
+  },
+  {
+    "name": "Teseney",
+    "stateCode": "GB"
+  },
+  {
+    "name": "Asmara",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Massawa",
+    "stateCode": "SK"
+  }
+]

@@ -1,0 +1,934 @@
+[
+  {
+    "name": "Banská Bystrica",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Banská Štiavnica",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Brezno",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Čierny Balog",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Detva",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Dudince",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Fiľakovo",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Hriňová",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Hrochoť,Slovakia",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Kováčová",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Kremnica",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Krupina",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Lučenec",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Nová Baňa",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Banská Bystrica",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Banská Štiavnica",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Brezno",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Detva",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Krupina",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Lučenec",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Poltár",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Revúca",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Veľký Krtíš",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Žarnovica",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Žiar nad Hronom",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Okres Zvolen",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Poltár",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Revúca",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Rimavská Sobota",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Svätý Anton",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Tisovec",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Veľký Krtíš",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Žarnovica",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Žiar nad Hronom",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Zvolen",
+    "stateCode": "BC"
+  },
+  {
+    "name": "Bratislava",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Bratislava - Vajnory",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Dunajská Lužná",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Ivanka pri Dunaji",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Malacky",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Marianka",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Modra",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Okres Bratislava I",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Okres Bratislava II",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Okres Bratislava III",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Okres Bratislava IV",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Okres Bratislava V",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Okres Malacky",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Okres Pezinok",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Okres Senec",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Pezinok",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Senec",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Stupava",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Svätý Jur",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Vinosady",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Čierna nad Tisou",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Dobšiná",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Gelnica",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Kavečany",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Košice",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Košice I",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Košice II",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Košice III",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Košice IV",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Krompachy",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Medzev",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Michalovce",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Moldava nad Bodvou",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Okres Gelnica",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Okres Kosice-okolie",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Okres Michalovce",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Okres Rožňava",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Okres Sobrance",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Okres Spišská Nová Ves",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Okres Trebišov",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Rožňava",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Sečovce",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Sobrance",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Spišská Nová Ves",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Strážske",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Trebišov",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Vinné",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Žehra",
+    "stateCode": "KI"
+  },
+  {
+    "name": "Hurbanovo",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Kolárovo",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Komárno",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Levice",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Nitra",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Nové Zámky",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Okres Komárno",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Okres Levice",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Okres Nitra",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Okres Nové Zámky",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Okres Šaľa",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Okres Topoľčany",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Okres Zlaté Moravce",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Šahy",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Šaľa",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Štúrovo",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Šurany",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Svodín",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Tlmače",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Topoľčany",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Vráble",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Želiezovce",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Zlaté Moravce",
+    "stateCode": "NI"
+  },
+  {
+    "name": "Bardejov",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Chlmec",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Giraltovce",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Humenné",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Kežmarok",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Levoča",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Lipany",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Ľubica",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Medzilaborce",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Nová Lesná",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Bardejov",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Humenné",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Kežmarok",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Levoča",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Medzilaborce",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Poprad",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Prešov",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Sabinov",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Snina",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Stará Ĺubovňa",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Stropkov",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Svidník",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Okres Vranov nad Topľou",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Podolínec",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Poprad",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Prešov",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Sabinov",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Snina",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Spišská Belá",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Spišské Podhradie",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Stará Ľubovňa",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Štrba",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Stropkov",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Svidník",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Svit",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Vranov nad Topľou",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Vrbov",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Vyšné Ružbachy",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Vysoké Tatry",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Ždiar",
+    "stateCode": "PV"
+  },
+  {
+    "name": "Dunajská Streda",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Gabčíkovo",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Galanta",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Gbely",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Hlohovec",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Holíč",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Leopoldov",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Okres Dunajská Streda",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Okres Galanta",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Okres Hlohovec",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Okres Piešťany",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Okres Senica",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Okres Skalica",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Okres Trnava",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Piešťany",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Šamorín",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Senica",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Skalica",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Sládkovičovo",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Smolenice",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Trnava",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Veľký Meder",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Vrbové",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Bánovce nad Bebravou",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Bojnice",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Brezová pod Bradlom",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Čachtice",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Dubnica nad Váhom",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Handlová",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Ilava",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Lehota pod Vtáčnikom",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Myjava",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Nemšová",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Nová Dubnica",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Nováky",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Nové Mesto nad Váhom",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Okres Bánovce nad Bebravou",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Okres Ilava",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Okres Myjava",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Okres Nové Mesto nad Váhom",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Okres Partizánske",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Okres Považská Bystrica",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Okres Prievidza",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Okres Púchov",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Okres Trenčín",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Partizánske",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Považská Bystrica",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Prievidza",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Púchov",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Stará Turá",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Trenčianske Teplice",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Trenčín",
+    "stateCode": "TC"
+  },
+  {
+    "name": "Bytča",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Čadca",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Dolný Kubín",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Hybe",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Krasňany",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Kysucké Nové Mesto",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Liptovský Hrádok",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Liptovský Mikuláš",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Lúčky",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Martin",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Námestovo",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Nižná",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Okres Bytča",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Okres Čadca",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Okres Dolný Kubín",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Okres Kysucké Nové Mesto",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Okres Liptovský Mikuláš",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Okres Martin",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Okres Namestovo",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Okres Ružomberok",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Okres Turčianske Teplice",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Okres Tvrdošín",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Okres Žilina",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Oravská Lesná",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Oravský Podzámok",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Pribylina",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Rajec",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Ružomberok",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Terchová",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Trstená",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Turčianske Teplice",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Turzovka",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Tvrdošín",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Vrútky",
+    "stateCode": "ZI"
+  },
+  {
+    "name": "Žilina",
+    "stateCode": "ZI"
+  }
+]

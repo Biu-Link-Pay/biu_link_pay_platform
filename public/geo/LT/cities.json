@@ -1,0 +1,518 @@
+[
+  {
+    "name": "Alytus",
+    "stateCode": "02"
+  },
+  {
+    "name": "Daugai",
+    "stateCode": "02"
+  },
+  {
+    "name": "Druskininkai",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lazdijai",
+    "stateCode": "02"
+  },
+  {
+    "name": "Simnas",
+    "stateCode": "02"
+  },
+  {
+    "name": "Varėna",
+    "stateCode": "02"
+  },
+  {
+    "name": "Veisiejai",
+    "stateCode": "02"
+  },
+  {
+    "name": "Akademija (Kaunas)",
+    "stateCode": "15"
+  },
+  {
+    "name": "Aleksotas",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ariogala",
+    "stateCode": "15"
+  },
+  {
+    "name": "Birštonas",
+    "stateCode": "15"
+  },
+  {
+    "name": "Dainava (Kaunas)",
+    "stateCode": "15"
+  },
+  {
+    "name": "Eiguliai",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ežerėlis",
+    "stateCode": "15"
+  },
+  {
+    "name": "Garliava",
+    "stateCode": "15"
+  },
+  {
+    "name": "Jieznas",
+    "stateCode": "15"
+  },
+  {
+    "name": "Jonava",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kaišiadorys",
+    "stateCode": "15"
+  },
+  {
+    "name": "Karmėlava",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kaunas",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kėdainiai",
+    "stateCode": "15"
+  },
+  {
+    "name": "Kulautuva",
+    "stateCode": "15"
+  },
+  {
+    "name": "Mastaiciai",
+    "stateCode": "15"
+  },
+  {
+    "name": "Prienai",
+    "stateCode": "15"
+  },
+  {
+    "name": "Ramučiai",
+    "stateCode": "15"
+  },
+  {
+    "name": "Raseiniai",
+    "stateCode": "15"
+  },
+  {
+    "name": "Sargėnai",
+    "stateCode": "15"
+  },
+  {
+    "name": "Šilainiai",
+    "stateCode": "15"
+  },
+  {
+    "name": "Vilkija",
+    "stateCode": "15"
+  },
+  {
+    "name": "Žiežmariai",
+    "stateCode": "15"
+  },
+  {
+    "name": "Gargždai",
+    "stateCode": "21"
+  },
+  {
+    "name": "Klaipėda",
+    "stateCode": "21"
+  },
+  {
+    "name": "Kretinga",
+    "stateCode": "21"
+  },
+  {
+    "name": "Neringa",
+    "stateCode": "21"
+  },
+  {
+    "name": "Nida",
+    "stateCode": "21"
+  },
+  {
+    "name": "Palanga",
+    "stateCode": "21"
+  },
+  {
+    "name": "Priekulė",
+    "stateCode": "21"
+  },
+  {
+    "name": "Rusnė",
+    "stateCode": "21"
+  },
+  {
+    "name": "Salantai",
+    "stateCode": "21"
+  },
+  {
+    "name": "Silute",
+    "stateCode": "21"
+  },
+  {
+    "name": "Skuodas",
+    "stateCode": "21"
+  },
+  {
+    "name": "Šventoji",
+    "stateCode": "21"
+  },
+  {
+    "name": "Žemaičių Naumiestis",
+    "stateCode": "21"
+  },
+  {
+    "name": "Gelgaudiškis",
+    "stateCode": "25"
+  },
+  {
+    "name": "Kalvarija",
+    "stateCode": "25"
+  },
+  {
+    "name": "Kalvarija Municipality",
+    "stateCode": "25"
+  },
+  {
+    "name": "Kazlų Rūda",
+    "stateCode": "25"
+  },
+  {
+    "name": "Kazlų Rūda Municipality",
+    "stateCode": "25"
+  },
+  {
+    "name": "Kudirkos Naumiestis",
+    "stateCode": "25"
+  },
+  {
+    "name": "Kybartai",
+    "stateCode": "25"
+  },
+  {
+    "name": "Marijampolė",
+    "stateCode": "25"
+  },
+  {
+    "name": "Marijampolė Municipality",
+    "stateCode": "25"
+  },
+  {
+    "name": "Sakiai",
+    "stateCode": "25"
+  },
+  {
+    "name": "Vilkaviskis",
+    "stateCode": "25"
+  },
+  {
+    "name": "Vilkaviškis District Municipality",
+    "stateCode": "25"
+  },
+  {
+    "name": "Virbalis",
+    "stateCode": "25"
+  },
+  {
+    "name": "Birzai",
+    "stateCode": "33"
+  },
+  {
+    "name": "Juodupė",
+    "stateCode": "33"
+  },
+  {
+    "name": "Kupiskis",
+    "stateCode": "33"
+  },
+  {
+    "name": "Obeliai",
+    "stateCode": "33"
+  },
+  {
+    "name": "Panevėžys",
+    "stateCode": "33"
+  },
+  {
+    "name": "Panevėžys City",
+    "stateCode": "33"
+  },
+  {
+    "name": "Panevėžys District Municipality",
+    "stateCode": "33"
+  },
+  {
+    "name": "Pasvalys",
+    "stateCode": "33"
+  },
+  {
+    "name": "Ramygala",
+    "stateCode": "33"
+  },
+  {
+    "name": "Rokiškis",
+    "stateCode": "33"
+  },
+  {
+    "name": "Vabalninkas",
+    "stateCode": "33"
+  },
+  {
+    "name": "Akmenė",
+    "stateCode": "43"
+  },
+  {
+    "name": "Joniškis",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kelmė",
+    "stateCode": "43"
+  },
+  {
+    "name": "Kuršėnai",
+    "stateCode": "43"
+  },
+  {
+    "name": "Linkuva",
+    "stateCode": "43"
+  },
+  {
+    "name": "Naujoji Akmene",
+    "stateCode": "43"
+  },
+  {
+    "name": "Pakruojis",
+    "stateCode": "43"
+  },
+  {
+    "name": "Radviliskis",
+    "stateCode": "43"
+  },
+  {
+    "name": "Šeduva",
+    "stateCode": "43"
+  },
+  {
+    "name": "Šiauliai",
+    "stateCode": "43"
+  },
+  {
+    "name": "Tytuvėnėliai",
+    "stateCode": "43"
+  },
+  {
+    "name": "Venta",
+    "stateCode": "43"
+  },
+  {
+    "name": "Žagarė",
+    "stateCode": "43"
+  },
+  {
+    "name": "Mazeikiai",
+    "stateCode": "51"
+  },
+  {
+    "name": "Plateliai",
+    "stateCode": "51"
+  },
+  {
+    "name": "Plunge",
+    "stateCode": "51"
+  },
+  {
+    "name": "Rietavas",
+    "stateCode": "51"
+  },
+  {
+    "name": "Seda",
+    "stateCode": "51"
+  },
+  {
+    "name": "Telsiai",
+    "stateCode": "51"
+  },
+  {
+    "name": "Varniai",
+    "stateCode": "51"
+  },
+  {
+    "name": "Viekšniai",
+    "stateCode": "51"
+  },
+  {
+    "name": "Aukstadvaris",
+    "stateCode": "57"
+  },
+  {
+    "name": "Baltoji Vokė",
+    "stateCode": "57"
+  },
+  {
+    "name": "Eišiškės",
+    "stateCode": "57"
+  },
+  {
+    "name": "Elektrėnai",
+    "stateCode": "57"
+  },
+  {
+    "name": "Fabijoniškės",
+    "stateCode": "57"
+  },
+  {
+    "name": "Grigiškės",
+    "stateCode": "57"
+  },
+  {
+    "name": "Justiniškės",
+    "stateCode": "57"
+  },
+  {
+    "name": "Lazdynai",
+    "stateCode": "57"
+  },
+  {
+    "name": "Lentvaris",
+    "stateCode": "57"
+  },
+  {
+    "name": "Naujamiestis",
+    "stateCode": "57"
+  },
+  {
+    "name": "Nemenčinė",
+    "stateCode": "57"
+  },
+  {
+    "name": "Pabradė",
+    "stateCode": "57"
+  },
+  {
+    "name": "Pašilaičiai",
+    "stateCode": "57"
+  },
+  {
+    "name": "Pilaitė",
+    "stateCode": "57"
+  },
+  {
+    "name": "Rasos",
+    "stateCode": "57"
+  },
+  {
+    "name": "Rūdiškės",
+    "stateCode": "57"
+  },
+  {
+    "name": "Šalčininkai",
+    "stateCode": "57"
+  },
+  {
+    "name": "Senieji Trakai",
+    "stateCode": "57"
+  },
+  {
+    "name": "Šeškinė",
+    "stateCode": "57"
+  },
+  {
+    "name": "Sirvintos",
+    "stateCode": "57"
+  },
+  {
+    "name": "Skaidiškės",
+    "stateCode": "57"
+  },
+  {
+    "name": "Švenčionėliai",
+    "stateCode": "57"
+  },
+  {
+    "name": "Svencionys",
+    "stateCode": "57"
+  },
+  {
+    "name": "Trakai",
+    "stateCode": "57"
+  },
+  {
+    "name": "Ukmerge",
+    "stateCode": "57"
+  },
+  {
+    "name": "Vievis",
+    "stateCode": "57"
+  },
+  {
+    "name": "Vilkpėdė",
+    "stateCode": "57"
+  },
+  {
+    "name": "Vilnius",
+    "stateCode": "57"
+  },
+  {
+    "name": "Vilnius District Municipality",
+    "stateCode": "57"
+  },
+  {
+    "name": "Būgai",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Jurbarkas",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Pagėgiai",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Šilalė",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Taurage",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Anyksciai",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Dūkštas",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Ignalina",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Moletai",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Utena",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Visaginas",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Zarasai",
+    "stateCode": "UT"
+  }
+]

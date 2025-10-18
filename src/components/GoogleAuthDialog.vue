@@ -1,12 +1,6 @@
 <template>
-  <Dialog 
-    v-model:visible="visible" 
-    modal 
-    :header="title"
-    :style="{ width: '400px' }"
-    :closable="true"
-    :close-on-escape="true"
-  >
+  <Dialog v-model:visible="visible" modal :header="title" :style="{ width: '400px' }" :closable="true"
+    :close-on-escape="true">
     <div class="space-y-6">
       <!-- Verification Code Input Interface -->
       <div class="space-y-4">
@@ -25,35 +19,19 @@
           <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
             Verification Code
           </label>
-          <InputText
-            v-model="authCode"
-            type="text"
-            placeholder="000000"
-            maxlength="6"
-            class="w-full text-center text-2xl font-mono tracking-widest"
-            @input="onCodeInput"
-            @keyup.enter="handleSubmit"
-          />
+          <InputText v-model="authCode" type="text" placeholder="000000" maxlength="6"
+            class="w-full text-center text-2xl font-mono tracking-widest" @input="onCodeInput"
+            @keyup.enter="handleSubmit" />
         </div>
       </div>
-    </div>
 
-    <!-- Footer Buttons -->
-    <template #footer>
-      <div class="flex justify-end space-x-3">
-        <Button 
-          label="Cancel" 
-          severity="secondary"
-          @click="handleCancel"
-        />
-        <Button 
-          label="Confirm" 
-          icon="pi pi-check"
-          :disabled="!authCode || authCode.length !== 6"
-          @click="handleSubmit"
-        />
+      <!-- Footer Buttons -->
+      <div class="flex justify-between space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+        <Button label="Cancel" severity="secondary" @click="handleCancel" class="flex-1" />
+        <Button label="Confirm" icon="pi pi-check" :disabled="!authCode || authCode.length !== 6" @click="handleSubmit"
+          class="flex-1" />
       </div>
-    </template>
+    </div>
   </Dialog>
 </template>
 
@@ -100,7 +78,7 @@ const handleSubmit = () => {
   if (!authCode.value || authCode.value.length !== 6) {
     return
   }
-  
+
   emit('submit', authCode.value, props.identifier)
 }
 

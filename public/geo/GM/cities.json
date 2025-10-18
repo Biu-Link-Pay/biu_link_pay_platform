@@ -1,0 +1,418 @@
+[
+  {
+    "name": "Bakau",
+    "stateCode": "B"
+  },
+  {
+    "name": "Banjul",
+    "stateCode": "B"
+  },
+  {
+    "name": "Kombo Saint Mary District",
+    "stateCode": "B"
+  },
+  {
+    "name": "Serekunda",
+    "stateCode": "B"
+  },
+  {
+    "name": "Baro Kunda",
+    "stateCode": "L"
+  },
+  {
+    "name": "Bureng",
+    "stateCode": "L"
+  },
+  {
+    "name": "Jali",
+    "stateCode": "L"
+  },
+  {
+    "name": "Jarra Central",
+    "stateCode": "L"
+  },
+  {
+    "name": "Jarra East",
+    "stateCode": "L"
+  },
+  {
+    "name": "Jarra West",
+    "stateCode": "L"
+  },
+  {
+    "name": "Jenoi",
+    "stateCode": "L"
+  },
+  {
+    "name": "Jifarong",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kaiaf",
+    "stateCode": "L"
+  },
+  {
+    "name": "Karantaba",
+    "stateCode": "L"
+  },
+  {
+    "name": "Keneba",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kiang Central",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kiang East",
+    "stateCode": "L"
+  },
+  {
+    "name": "Kiang West District",
+    "stateCode": "L"
+  },
+  {
+    "name": "Mansa Konko",
+    "stateCode": "L"
+  },
+  {
+    "name": "Nioro",
+    "stateCode": "L"
+  },
+  {
+    "name": "Sankwia",
+    "stateCode": "L"
+  },
+  {
+    "name": "Si Kunda",
+    "stateCode": "L"
+  },
+  {
+    "name": "Soma",
+    "stateCode": "L"
+  },
+  {
+    "name": "Sutukung",
+    "stateCode": "L"
+  },
+  {
+    "name": "Toniataba",
+    "stateCode": "L"
+  },
+  {
+    "name": "Wellingara Ba",
+    "stateCode": "L"
+  },
+  {
+    "name": "Bansang",
+    "stateCode": "M"
+  },
+  {
+    "name": "Brikama Nding",
+    "stateCode": "M"
+  },
+  {
+    "name": "Dankunku",
+    "stateCode": "M"
+  },
+  {
+    "name": "Denton",
+    "stateCode": "M"
+  },
+  {
+    "name": "Fulladu West",
+    "stateCode": "M"
+  },
+  {
+    "name": "Galleh Manda",
+    "stateCode": "M"
+  },
+  {
+    "name": "Georgetown",
+    "stateCode": "M"
+  },
+  {
+    "name": "Jakhaly",
+    "stateCode": "M"
+  },
+  {
+    "name": "Janjanbureh",
+    "stateCode": "M"
+  },
+  {
+    "name": "Jarreng",
+    "stateCode": "M"
+  },
+  {
+    "name": "Karantaba",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kass Wollof",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kuntaur",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kunting",
+    "stateCode": "M"
+  },
+  {
+    "name": "Lower Saloum",
+    "stateCode": "M"
+  },
+  {
+    "name": "Niamina East District",
+    "stateCode": "M"
+  },
+  {
+    "name": "Niamina West District",
+    "stateCode": "M"
+  },
+  {
+    "name": "Niani",
+    "stateCode": "M"
+  },
+  {
+    "name": "Nianija District",
+    "stateCode": "M"
+  },
+  {
+    "name": "Pateh Sam",
+    "stateCode": "M"
+  },
+  {
+    "name": "Sami",
+    "stateCode": "M"
+  },
+  {
+    "name": "Sami District",
+    "stateCode": "M"
+  },
+  {
+    "name": "Saruja",
+    "stateCode": "M"
+  },
+  {
+    "name": "Sukuta",
+    "stateCode": "M"
+  },
+  {
+    "name": "Upper Saloum",
+    "stateCode": "M"
+  },
+  {
+    "name": "Wassu",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bambali",
+    "stateCode": "N"
+  },
+  {
+    "name": "Barra",
+    "stateCode": "N"
+  },
+  {
+    "name": "Central Baddibu",
+    "stateCode": "N"
+  },
+  {
+    "name": "Chilla",
+    "stateCode": "N"
+  },
+  {
+    "name": "Daru Rilwan",
+    "stateCode": "N"
+  },
+  {
+    "name": "Essau",
+    "stateCode": "N"
+  },
+  {
+    "name": "Farafenni",
+    "stateCode": "N"
+  },
+  {
+    "name": "Gunjur",
+    "stateCode": "N"
+  },
+  {
+    "name": "Jokadu",
+    "stateCode": "N"
+  },
+  {
+    "name": "Katchang",
+    "stateCode": "N"
+  },
+  {
+    "name": "Kerewan",
+    "stateCode": "N"
+  },
+  {
+    "name": "Lamin",
+    "stateCode": "N"
+  },
+  {
+    "name": "Lower Baddibu District",
+    "stateCode": "N"
+  },
+  {
+    "name": "Lower Niumi District",
+    "stateCode": "N"
+  },
+  {
+    "name": "No Kunda",
+    "stateCode": "N"
+  },
+  {
+    "name": "Saba",
+    "stateCode": "N"
+  },
+  {
+    "name": "Sara Kunda",
+    "stateCode": "N"
+  },
+  {
+    "name": "Upper Baddibu",
+    "stateCode": "N"
+  },
+  {
+    "name": "Upper Niumi District",
+    "stateCode": "N"
+  },
+  {
+    "name": "Bakadagy",
+    "stateCode": "U"
+  },
+  {
+    "name": "Basse Santa Su",
+    "stateCode": "U"
+  },
+  {
+    "name": "Brifu",
+    "stateCode": "U"
+  },
+  {
+    "name": "Daba Kunda",
+    "stateCode": "U"
+  },
+  {
+    "name": "Demba Kunda",
+    "stateCode": "U"
+  },
+  {
+    "name": "Diabugu",
+    "stateCode": "U"
+  },
+  {
+    "name": "Diabugu Basilla",
+    "stateCode": "U"
+  },
+  {
+    "name": "Fulladu East",
+    "stateCode": "U"
+  },
+  {
+    "name": "Gunjur Kuta",
+    "stateCode": "U"
+  },
+  {
+    "name": "Kantora",
+    "stateCode": "U"
+  },
+  {
+    "name": "Koina",
+    "stateCode": "U"
+  },
+  {
+    "name": "Kumbija",
+    "stateCode": "U"
+  },
+  {
+    "name": "Nyamanari",
+    "stateCode": "U"
+  },
+  {
+    "name": "Perai",
+    "stateCode": "U"
+  },
+  {
+    "name": "Sabi",
+    "stateCode": "U"
+  },
+  {
+    "name": "Sandu",
+    "stateCode": "U"
+  },
+  {
+    "name": "Sudowol",
+    "stateCode": "U"
+  },
+  {
+    "name": "Sun Kunda",
+    "stateCode": "U"
+  },
+  {
+    "name": "Sutukoba",
+    "stateCode": "U"
+  },
+  {
+    "name": "Wuli",
+    "stateCode": "U"
+  },
+  {
+    "name": "Abuko",
+    "stateCode": "W"
+  },
+  {
+    "name": "Brikama",
+    "stateCode": "W"
+  },
+  {
+    "name": "Foni Bondali",
+    "stateCode": "W"
+  },
+  {
+    "name": "Foni Brefet",
+    "stateCode": "W"
+  },
+  {
+    "name": "Foni Jarrol",
+    "stateCode": "W"
+  },
+  {
+    "name": "Foni Kansala",
+    "stateCode": "W"
+  },
+  {
+    "name": "Gunjur",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kombo Central District",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kombo East District",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kombo North District",
+    "stateCode": "W"
+  },
+  {
+    "name": "Kombo South District",
+    "stateCode": "W"
+  },
+  {
+    "name": "Somita",
+    "stateCode": "W"
+  },
+  {
+    "name": "Sukuta",
+    "stateCode": "W"
+  }
+]

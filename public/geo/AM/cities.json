@@ -1,0 +1,1234 @@
+[
+  {
+    "name": "Agarakavan",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Aparan",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Aragats",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Arteni",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Ashnak",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Ashtarak",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Byurakan",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Hnaberd",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Karbi",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Kasakh",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Kosh",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Nor Yerznka",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Oshakan",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Sasunik",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Shenavan",
+    "stateCode": "AG"
+  },
+  {
+    "name": "T’alin",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Tsaghkahovit",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Ushi",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Voskevaz",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Zovuni",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Abovyan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Aralez",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Ararat",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Arevabuyr",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Arevshat",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Armash",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Artashat",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Avshar",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Aygavan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Aygepat",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Aygestan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Aygezard",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Bardzrashen",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Berk’anush",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Burastan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Byuravan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Dalar",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Darakert",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Dashtavan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Dimitrov",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Dvin",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Getazat",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Ghukasavan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Goravan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Hayanist",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Hovtashat",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Hovtashen",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Jrahovit",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Lusarrat",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Marmarashen",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Masis",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Mrganush",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Mrgavan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Mrgavet",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Nizami",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Norabats’",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Noramarg",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Norashen",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Noyakert",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Nshavan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Sayat’-Nova",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Shahumyan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Sis",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Sisavan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Surenavan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Vedi",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Verin Artashat",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Verin Dvin",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Vosketap’",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Vostan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Yeghegnavan",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Zangakatun",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Zorak",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Aghavnatun",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Aknalich",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Aknashen",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Alashkert",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Apaga",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Arak’s",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Arazap’",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Arbat’",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Arevashat",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Arevik",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Argavand",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Armavir",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Arshaluys",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Artimet",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Aygek",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Aygeshat",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Baghramyan",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Bambakashat",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Dalarik",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Doghs",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Gay",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Geghakert",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Geghanist",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Getashen",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Gmbet’",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Griboyedov",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Haykashen",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Hovtamej",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Janfida",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Khoronk’",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Lenughi",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Lukashin",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Margara",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Mayisyan",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Merdzavan",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Metsamor",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Mrgashat",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Musalerr",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Myasnikyan",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Nalbandyan",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Nor Armavir",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Norakert",
+    "stateCode": "AV"
+  },
+  {
+    "name": "P’shatavan",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Ptghunk’",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Sardarapat",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Shenavan",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Tandzut",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Taronik",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Tsaghkunk’",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Tsiatsan",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Vagharshapat",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Voskehat",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Yeghegnut",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Yeraskhahun",
+    "stateCode": "AV"
+  },
+  {
+    "name": "Arabkir",
+    "stateCode": "ER"
+  },
+  {
+    "name": "Argavand",
+    "stateCode": "ER"
+  },
+  {
+    "name": "Jrashen",
+    "stateCode": "ER"
+  },
+  {
+    "name": "K’anak’erravan",
+    "stateCode": "ER"
+  },
+  {
+    "name": "Vardadzor",
+    "stateCode": "ER"
+  },
+  {
+    "name": "Yerevan",
+    "stateCode": "ER"
+  },
+  {
+    "name": "Akunk’",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Astghadzor",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Chambarak",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Ddmashen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Drakhtik",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Dzoragyugh",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gagarin",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gandzak",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gavarr",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Geghamasar",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Geghamavan",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Karanlukh",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Karchaghbyur",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Lanjaghbyur",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Lchap’",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Lchashen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Lichk’",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Madina",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Martuni",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Mets Masrik",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Nerk’in Getashen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Noratus",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Sarukhan",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Sevan",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Tsovagyugh",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Tsovak",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Tsovasar",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Tsovazard",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Tsovinar",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Vaghashen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Vahan",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Vardenik",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Vardenis",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Varser",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Verin Getashen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Yeranos",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Abovyan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Aghavnadzor",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Akunk’",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Aramus",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Argel",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Arzakan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Arzni",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Balahovit",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Bjni",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Buzhakan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Byureghavan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Dzoraghbyur",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Fantan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Garrni",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Goght’",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Hrazdan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kaputan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Kotayk’",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Lerrnanist",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Mayakovski",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Meghradzor",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Mrgashen",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Nor Geghi",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Nor Gyugh",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Prroshyan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Ptghni",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Solak",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Tsaghkadzor",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Yeghvard",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Zarr",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Zoravan",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Zovaber",
+    "stateCode": "KT"
+  },
+  {
+    "name": "Agarak",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Akht’ala",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Alaverdi",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Arevashogh",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Bazum",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Chochkan",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Darpas",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Dsegh",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Fioletovo",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Gogaran",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Gugark’",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Gyulagarak",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Jrashen",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Lerrnants’k’",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Lerrnapat",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Lerrnavan",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Lorut",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Margahovit",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Mets Parni",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Metsavan",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Norashen",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Odzun",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Sarahart’",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Saramej",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Shahumyan",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Shirakamut",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Shnogh",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Spitak",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Step’anavan",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Tashir",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Tsaghkaber",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Urrut",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Vahagni",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Vanadzor",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Vardablur",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Yeghegnut",
+    "stateCode": "LO"
+  },
+  {
+    "name": "Akhuryan",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Amasia",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Anushavan",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Arevik",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Arevshat",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Arrap’i",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Azatan",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Basen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Dzit’hank’ov",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Gyumri",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Haykavan",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Horrom",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Kamo",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Lerrnakert",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Maralik",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Marmashen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Mayisyan",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Meghrashen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Mets Mant’ash",
+    "stateCode": "SH"
+  },
+  {
+    "name": "P’ok’r Mant’ash",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Pemzashen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Saratak",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Shirak",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Spandaryan",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Voskehask",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Yerazgavors",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Agarak",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Akner",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Angeghakot’",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Brrnakot’",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Dzorastan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Goris",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Hats’avan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Kapan",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Khndzoresk",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Meghri",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Shaghat",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Shinuhayr",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Tegh",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Verishen",
+    "stateCode": "SU"
+  },
+  {
+    "name": "Archis",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Artsvaberd",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Aygehovit",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Azatamut",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Bagratashen",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Berd",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Berdavan",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Dilijan",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Haghartsin",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Ijevan",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Khasht’arrak",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Mosesgegh",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Navur",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Noyemberyan",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Parravak’ar",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Sarigyugh",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Voskevan",
+    "stateCode": "TV"
+  },
+  {
+    "name": "Agarakadzor",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Aghavnadzor",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Areni",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Getap’",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Gladzor",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Jermuk",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Malishka",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Rrind",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Shatin",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Vayk’",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Vernashen",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Yeghegis",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Yeghegnadzor",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Zarrit’ap’",
+    "stateCode": "VD"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Maseru",
+    "stateCode": "A"
+  },
+  {
+    "name": "Nako",
+    "stateCode": "A"
+  },
+  {
+    "name": "Butha-Buthe",
+    "stateCode": "B"
+  },
+  {
+    "name": "Leribe",
+    "stateCode": "C"
+  },
+  {
+    "name": "Maputsoe",
+    "stateCode": "C"
+  },
+  {
+    "name": "Teyateyaneng",
+    "stateCode": "D"
+  },
+  {
+    "name": "Mafeteng",
+    "stateCode": "E"
+  },
+  {
+    "name": "Mohale’s Hoek",
+    "stateCode": "F"
+  },
+  {
+    "name": "Quthing",
+    "stateCode": "G"
+  },
+  {
+    "name": "Qacha’s Nek",
+    "stateCode": "H"
+  },
+  {
+    "name": "Mokhotlong",
+    "stateCode": "J"
+  },
+  {
+    "name": "Thaba-Tseka",
+    "stateCode": "K"
+  }
+]

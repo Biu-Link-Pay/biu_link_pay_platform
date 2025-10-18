@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Agadez",
+    "stateCode": "1"
+  },
+  {
+    "name": "Alaghsas",
+    "stateCode": "1"
+  },
+  {
+    "name": "Arlit",
+    "stateCode": "1"
+  },
+  {
+    "name": "Bilma",
+    "stateCode": "1"
+  },
+  {
+    "name": "Département de Bilma",
+    "stateCode": "1"
+  },
+  {
+    "name": "Département de Tchirozérine",
+    "stateCode": "1"
+  },
+  {
+    "name": "Département de Diffa",
+    "stateCode": "2"
+  },
+  {
+    "name": "Département de Maïné-Soroa",
+    "stateCode": "2"
+  },
+  {
+    "name": "Département de Nguigmi",
+    "stateCode": "2"
+  },
+  {
+    "name": "Diffa",
+    "stateCode": "2"
+  },
+  {
+    "name": "Maïné Soroa",
+    "stateCode": "2"
+  },
+  {
+    "name": "Nguigmi",
+    "stateCode": "2"
+  },
+  {
+    "name": "Boboye Department",
+    "stateCode": "3"
+  },
+  {
+    "name": "Département de Dogondoutchi",
+    "stateCode": "3"
+  },
+  {
+    "name": "Département de Dosso",
+    "stateCode": "3"
+  },
+  {
+    "name": "Département de Gaya",
+    "stateCode": "3"
+  },
+  {
+    "name": "Département de Loga",
+    "stateCode": "3"
+  },
+  {
+    "name": "Dogondoutchi",
+    "stateCode": "3"
+  },
+  {
+    "name": "Dosso",
+    "stateCode": "3"
+  },
+  {
+    "name": "Gaya",
+    "stateCode": "3"
+  },
+  {
+    "name": "Aguié",
+    "stateCode": "4"
+  },
+  {
+    "name": "Dakoro",
+    "stateCode": "4"
+  },
+  {
+    "name": "Département d’Aguié",
+    "stateCode": "4"
+  },
+  {
+    "name": "Département de Dakoro",
+    "stateCode": "4"
+  },
+  {
+    "name": "Département de Mayahi",
+    "stateCode": "4"
+  },
+  {
+    "name": "Département de Tessaoua",
+    "stateCode": "4"
+  },
+  {
+    "name": "Guidan Roumdji Department",
+    "stateCode": "4"
+  },
+  {
+    "name": "Madarounfa",
+    "stateCode": "4"
+  },
+  {
+    "name": "Maradi",
+    "stateCode": "4"
+  },
+  {
+    "name": "Mayahi",
+    "stateCode": "4"
+  },
+  {
+    "name": "Tessaoua",
+    "stateCode": "4"
+  },
+  {
+    "name": "Tibiri",
+    "stateCode": "4"
+  },
+  {
+    "name": "Abalak",
+    "stateCode": "5"
+  },
+  {
+    "name": "Birni N Konni",
+    "stateCode": "5"
+  },
+  {
+    "name": "Bouza",
+    "stateCode": "5"
+  },
+  {
+    "name": "Département d' Illéla",
+    "stateCode": "5"
+  },
+  {
+    "name": "Département de Birni Nkonni",
+    "stateCode": "5"
+  },
+  {
+    "name": "Département de Bouza",
+    "stateCode": "5"
+  },
+  {
+    "name": "Département de Keïta",
+    "stateCode": "5"
+  },
+  {
+    "name": "Département de Madaoua",
+    "stateCode": "5"
+  },
+  {
+    "name": "Département de Tahoua",
+    "stateCode": "5"
+  },
+  {
+    "name": "Département de Tchin-Tabaraden",
+    "stateCode": "5"
+  },
+  {
+    "name": "Illéla",
+    "stateCode": "5"
+  },
+  {
+    "name": "Keïta",
+    "stateCode": "5"
+  },
+  {
+    "name": "Madaoua",
+    "stateCode": "5"
+  },
+  {
+    "name": "Tahoua",
+    "stateCode": "5"
+  },
+  {
+    "name": "Tchintabaraden",
+    "stateCode": "5"
+  },
+  {
+    "name": "Ayorou",
+    "stateCode": "6"
+  },
+  {
+    "name": "Balleyara",
+    "stateCode": "6"
+  },
+  {
+    "name": "Département de Filingué",
+    "stateCode": "6"
+  },
+  {
+    "name": "Département de Ouallam",
+    "stateCode": "6"
+  },
+  {
+    "name": "Département de Say",
+    "stateCode": "6"
+  },
+  {
+    "name": "Filingué",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kollo",
+    "stateCode": "6"
+  },
+  {
+    "name": "Kollo Department",
+    "stateCode": "6"
+  },
+  {
+    "name": "Ouallam",
+    "stateCode": "6"
+  },
+  {
+    "name": "Say",
+    "stateCode": "6"
+  },
+  {
+    "name": "Téra",
+    "stateCode": "6"
+  },
+  {
+    "name": "Tera Department",
+    "stateCode": "6"
+  },
+  {
+    "name": "Tillabéri",
+    "stateCode": "6"
+  },
+  {
+    "name": "Tillaberi Department",
+    "stateCode": "6"
+  },
+  {
+    "name": "Département de Gouré",
+    "stateCode": "7"
+  },
+  {
+    "name": "Département de Kantché",
+    "stateCode": "7"
+  },
+  {
+    "name": "Département de Tânout",
+    "stateCode": "7"
+  },
+  {
+    "name": "Gouré",
+    "stateCode": "7"
+  },
+  {
+    "name": "Magaria",
+    "stateCode": "7"
+  },
+  {
+    "name": "Matamey",
+    "stateCode": "7"
+  },
+  {
+    "name": "Mirriah",
+    "stateCode": "7"
+  },
+  {
+    "name": "Tanout",
+    "stateCode": "7"
+  },
+  {
+    "name": "Zinder",
+    "stateCode": "7"
+  }
+]

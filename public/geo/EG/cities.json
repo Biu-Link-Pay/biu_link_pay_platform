@@ -1,0 +1,562 @@
+[
+  {
+    "name": "Alexandria",
+    "stateCode": "ALX"
+  },
+  {
+    "name": "Abu Simbel",
+    "stateCode": "ASN"
+  },
+  {
+    "name": "Aswan",
+    "stateCode": "ASN"
+  },
+  {
+    "name": "Idfū",
+    "stateCode": "ASN"
+  },
+  {
+    "name": "Kawm Umbū",
+    "stateCode": "ASN"
+  },
+  {
+    "name": "Abnūb",
+    "stateCode": "AST"
+  },
+  {
+    "name": "Abū Tīj",
+    "stateCode": "AST"
+  },
+  {
+    "name": "Al Badārī",
+    "stateCode": "AST"
+  },
+  {
+    "name": "Al Qūşīyah",
+    "stateCode": "AST"
+  },
+  {
+    "name": "Asyūţ",
+    "stateCode": "AST"
+  },
+  {
+    "name": "Dayrūţ",
+    "stateCode": "AST"
+  },
+  {
+    "name": "Manfalūţ",
+    "stateCode": "AST"
+  },
+  {
+    "name": "Al Quşayr",
+    "stateCode": "BA"
+  },
+  {
+    "name": "El Gouna",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Hurghada",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Makadi Bay",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Marsa Alam",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Ras Gharib",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Safaga",
+    "stateCode": "BA"
+  },
+  {
+    "name": "Abū al Maţāmīr",
+    "stateCode": "BH"
+  },
+  {
+    "name": "Ad Dilinjāt",
+    "stateCode": "BH"
+  },
+  {
+    "name": "Damanhūr",
+    "stateCode": "BH"
+  },
+  {
+    "name": "Ḩawsh ‘Īsá",
+    "stateCode": "BH"
+  },
+  {
+    "name": "Idkū",
+    "stateCode": "BH"
+  },
+  {
+    "name": "Kafr ad Dawwār",
+    "stateCode": "BH"
+  },
+  {
+    "name": "Kawm Ḩamādah",
+    "stateCode": "BH"
+  },
+  {
+    "name": "Rosetta",
+    "stateCode": "BH"
+  },
+  {
+    "name": "Al Fashn",
+    "stateCode": "BNS"
+  },
+  {
+    "name": "Banī Suwayf",
+    "stateCode": "BNS"
+  },
+  {
+    "name": "Būsh",
+    "stateCode": "BNS"
+  },
+  {
+    "name": "Sumusţā as Sulţānī",
+    "stateCode": "BNS"
+  },
+  {
+    "name": "Cairo",
+    "stateCode": "C"
+  },
+  {
+    "name": "Ḩalwān",
+    "stateCode": "C"
+  },
+  {
+    "name": "New Cairo",
+    "stateCode": "C"
+  },
+  {
+    "name": "‘Izbat al Burj",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Ajā",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Al Jammālīyah",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Al Manşūrah",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Al Manzalah",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Al Maţarīyah",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Bilqās",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Dikirnis",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Minyat an Naşr",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Shirbīn",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Ţalkhā",
+    "stateCode": "DK"
+  },
+  {
+    "name": "Az Zarqā",
+    "stateCode": "DT"
+  },
+  {
+    "name": "Damietta",
+    "stateCode": "DT"
+  },
+  {
+    "name": "Fāraskūr",
+    "stateCode": "DT"
+  },
+  {
+    "name": "Al Fayyūm",
+    "stateCode": "FYM"
+  },
+  {
+    "name": "Al Wāsiţah",
+    "stateCode": "FYM"
+  },
+  {
+    "name": "Ibshawāy",
+    "stateCode": "FYM"
+  },
+  {
+    "name": "Iţsā",
+    "stateCode": "FYM"
+  },
+  {
+    "name": "Ţāmiyah",
+    "stateCode": "FYM"
+  },
+  {
+    "name": "Al Maḩallah al Kubrá",
+    "stateCode": "GH"
+  },
+  {
+    "name": "Basyūn",
+    "stateCode": "GH"
+  },
+  {
+    "name": "Kafr az Zayyāt",
+    "stateCode": "GH"
+  },
+  {
+    "name": "Quţūr",
+    "stateCode": "GH"
+  },
+  {
+    "name": "Samannūd",
+    "stateCode": "GH"
+  },
+  {
+    "name": "Tanda",
+    "stateCode": "GH"
+  },
+  {
+    "name": "Zefta",
+    "stateCode": "GH"
+  },
+  {
+    "name": "Al ‘Ayyāţ",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Al Bawīţī",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Al Ḩawāmidīyah",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Aş Şaff",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Awsīm",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Giza",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Madīnat Sittah Uktūbar",
+    "stateCode": "GZ"
+  },
+  {
+    "name": "Ismailia",
+    "stateCode": "IS"
+  },
+  {
+    "name": "Dahab",
+    "stateCode": "JS"
+  },
+  {
+    "name": "El-Tor",
+    "stateCode": "JS"
+  },
+  {
+    "name": "Nuwaybi‘a",
+    "stateCode": "JS"
+  },
+  {
+    "name": "Saint Catherine",
+    "stateCode": "JS"
+  },
+  {
+    "name": "Sharm el-Sheikh",
+    "stateCode": "JS"
+  },
+  {
+    "name": "Al Khānkah",
+    "stateCode": "KB"
+  },
+  {
+    "name": "Al Qanāţir al Khayrīyah",
+    "stateCode": "KB"
+  },
+  {
+    "name": "Banhā",
+    "stateCode": "KB"
+  },
+  {
+    "name": "Qalyūb",
+    "stateCode": "KB"
+  },
+  {
+    "name": "Shibīn al Qanāṭir",
+    "stateCode": "KB"
+  },
+  {
+    "name": "Toukh",
+    "stateCode": "KB"
+  },
+  {
+    "name": "Al Ḩāmūl",
+    "stateCode": "KFS"
+  },
+  {
+    "name": "Disūq",
+    "stateCode": "KFS"
+  },
+  {
+    "name": "Fuwwah",
+    "stateCode": "KFS"
+  },
+  {
+    "name": "Kafr ash Shaykh",
+    "stateCode": "KFS"
+  },
+  {
+    "name": "Markaz Disūq",
+    "stateCode": "KFS"
+  },
+  {
+    "name": "Munshāt ‘Alī Āghā",
+    "stateCode": "KFS"
+  },
+  {
+    "name": "Sīdī Sālim",
+    "stateCode": "KFS"
+  },
+  {
+    "name": "Dishnā",
+    "stateCode": "KN"
+  },
+  {
+    "name": "Farshūţ",
+    "stateCode": "KN"
+  },
+  {
+    "name": "Isnā",
+    "stateCode": "KN"
+  },
+  {
+    "name": "Kousa",
+    "stateCode": "KN"
+  },
+  {
+    "name": "Naja' Ḥammādī",
+    "stateCode": "KN"
+  },
+  {
+    "name": "Qinā",
+    "stateCode": "KN"
+  },
+  {
+    "name": "Luxor",
+    "stateCode": "LX"
+  },
+  {
+    "name": "Markaz al Uqşur",
+    "stateCode": "LX"
+  },
+  {
+    "name": "Abū Qurqāş",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Al Minyā",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Banī Mazār",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Dayr Mawās",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Mallawī",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Maţāy",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Samālūţ",
+    "stateCode": "MN"
+  },
+  {
+    "name": "Al Bājūr",
+    "stateCode": "MNF"
+  },
+  {
+    "name": "Ash Shuhadā’",
+    "stateCode": "MNF"
+  },
+  {
+    "name": "Ashmūn",
+    "stateCode": "MNF"
+  },
+  {
+    "name": "Munūf",
+    "stateCode": "MNF"
+  },
+  {
+    "name": "Quwaysinā",
+    "stateCode": "MNF"
+  },
+  {
+    "name": "Shibīn al Kawm",
+    "stateCode": "MNF"
+  },
+  {
+    "name": "Talā",
+    "stateCode": "MNF"
+  },
+  {
+    "name": "Al ‘Alamayn",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Mersa Matruh",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Siwa Oasis",
+    "stateCode": "MT"
+  },
+  {
+    "name": "Port Said",
+    "stateCode": "PTS"
+  },
+  {
+    "name": "Akhmīm",
+    "stateCode": "SHG"
+  },
+  {
+    "name": "Al Balyanā",
+    "stateCode": "SHG"
+  },
+  {
+    "name": "Al Manshāh",
+    "stateCode": "SHG"
+  },
+  {
+    "name": "Jirjā",
+    "stateCode": "SHG"
+  },
+  {
+    "name": "Juhaynah",
+    "stateCode": "SHG"
+  },
+  {
+    "name": "Markaz Jirjā",
+    "stateCode": "SHG"
+  },
+  {
+    "name": "Markaz Sūhāj",
+    "stateCode": "SHG"
+  },
+  {
+    "name": "Sohag",
+    "stateCode": "SHG"
+  },
+  {
+    "name": "Ţahţā",
+    "stateCode": "SHG"
+  },
+  {
+    "name": "10th of Ramadan",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Al Qurein",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Awlad Saqr",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Bilbeis",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Diyarb Negm",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "El Husseiniya",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Faqous",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Hihya",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Kafr Saqr",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Markaz Abū Ḩammād",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Mashtoul El Souk",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Minya El Qamh",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "New Salhia",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Zagazig",
+    "stateCode": "SHR"
+  },
+  {
+    "name": "Arish",
+    "stateCode": "SIN"
+  },
+  {
+    "name": "Ain Sukhna",
+    "stateCode": "SUZ"
+  },
+  {
+    "name": "Suez",
+    "stateCode": "SUZ"
+  },
+  {
+    "name": "Al Khārijah",
+    "stateCode": "WAD"
+  },
+  {
+    "name": "Qaşr al Farāfirah",
+    "stateCode": "WAD"
+  }
+]

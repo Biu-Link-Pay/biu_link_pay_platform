@@ -1,0 +1,1198 @@
+[
+  {
+    "name": "Arusha",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kingori",
+    "stateCode": "01"
+  },
+  {
+    "name": "Kiratu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Longido",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mbuguni",
+    "stateCode": "01"
+  },
+  {
+    "name": "Merelani",
+    "stateCode": "01"
+  },
+  {
+    "name": "Meru",
+    "stateCode": "01"
+  },
+  {
+    "name": "Monduli",
+    "stateCode": "01"
+  },
+  {
+    "name": "Mto wa Mbu",
+    "stateCode": "01"
+  },
+  {
+    "name": "Namanga",
+    "stateCode": "01"
+  },
+  {
+    "name": "Ngorongoro",
+    "stateCode": "01"
+  },
+  {
+    "name": "Nkoaranga",
+    "stateCode": "01"
+  },
+  {
+    "name": "Poli",
+    "stateCode": "01"
+  },
+  {
+    "name": "Usa River",
+    "stateCode": "01"
+  },
+  {
+    "name": "Dar es Salaam",
+    "stateCode": "02"
+  },
+  {
+    "name": "Magomeni",
+    "stateCode": "02"
+  },
+  {
+    "name": "Dodoma",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kibakwe",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kisasa",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kondoa",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kongwa",
+    "stateCode": "03"
+  },
+  {
+    "name": "Mpwapwa",
+    "stateCode": "03"
+  },
+  {
+    "name": "Msanga",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ilula",
+    "stateCode": "04"
+  },
+  {
+    "name": "Iringa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Izazi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mafinga",
+    "stateCode": "04"
+  },
+  {
+    "name": "Makungu",
+    "stateCode": "04"
+  },
+  {
+    "name": "Malangali",
+    "stateCode": "04"
+  },
+  {
+    "name": "Biharamulo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bugarama",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bugene",
+    "stateCode": "05"
+  },
+  {
+    "name": "Bukoba",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kabanga",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kamachumu",
+    "stateCode": "05"
+  },
+  {
+    "name": "Katerero",
+    "stateCode": "05"
+  },
+  {
+    "name": "Katoro",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kyaka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ngara",
+    "stateCode": "05"
+  },
+  {
+    "name": "Nshamba",
+    "stateCode": "05"
+  },
+  {
+    "name": "Nsunga",
+    "stateCode": "05"
+  },
+  {
+    "name": "Nyakahanga",
+    "stateCode": "05"
+  },
+  {
+    "name": "Rulenge",
+    "stateCode": "05"
+  },
+  {
+    "name": "Konde",
+    "stateCode": "06"
+  },
+  {
+    "name": "Micheweni",
+    "stateCode": "06"
+  },
+  {
+    "name": "Wete",
+    "stateCode": "06"
+  },
+  {
+    "name": "Gamba",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kijini",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kiwengwa",
+    "stateCode": "07"
+  },
+  {
+    "name": "Mkokotoni",
+    "stateCode": "07"
+  },
+  {
+    "name": "Nungwi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kakonko",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kasulu",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kibondo",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kigoma",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mabamba",
+    "stateCode": "08"
+  },
+  {
+    "name": "Mwandiga",
+    "stateCode": "08"
+  },
+  {
+    "name": "Nguruka",
+    "stateCode": "08"
+  },
+  {
+    "name": "Uvinza",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hedaru",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kihurio",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kisiwani",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kwakoa",
+    "stateCode": "09"
+  },
+  {
+    "name": "Lembeni",
+    "stateCode": "09"
+  },
+  {
+    "name": "Makanya",
+    "stateCode": "09"
+  },
+  {
+    "name": "Moshi",
+    "stateCode": "09"
+  },
+  {
+    "name": "Mwembe",
+    "stateCode": "09"
+  },
+  {
+    "name": "Ndungu",
+    "stateCode": "09"
+  },
+  {
+    "name": "Same",
+    "stateCode": "09"
+  },
+  {
+    "name": "Chake Chake",
+    "stateCode": "10"
+  },
+  {
+    "name": "Mtambile",
+    "stateCode": "10"
+  },
+  {
+    "name": "Uwelini",
+    "stateCode": "10"
+  },
+  {
+    "name": "Koani",
+    "stateCode": "11"
+  },
+  {
+    "name": "Koani Ndogo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Mahonda",
+    "stateCode": "11"
+  },
+  {
+    "name": "Nganane",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sokoni",
+    "stateCode": "11"
+  },
+  {
+    "name": "Lindi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mbekenyera",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mingoyo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Mtama",
+    "stateCode": "12"
+  },
+  {
+    "name": "Nachingwea",
+    "stateCode": "12"
+  },
+  {
+    "name": "Nyangao",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ruangwa",
+    "stateCode": "12"
+  },
+  {
+    "name": "Bukonyo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Butiama",
+    "stateCode": "13"
+  },
+  {
+    "name": "Issenye",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kibara",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mugango",
+    "stateCode": "13"
+  },
+  {
+    "name": "Mugumu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Muriti",
+    "stateCode": "13"
+  },
+  {
+    "name": "Musoma",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nakatunguru",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nansio",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nyamuswa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Sirari",
+    "stateCode": "13"
+  },
+  {
+    "name": "Chimala",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hedaru",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ibaba",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ikama",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ikinga",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ikolo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ikuti",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ilembo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ipinda",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kabula",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kahe, Tanzania",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kandete",
+    "stateCode": "14"
+  },
+  {
+    "name": "Katumba",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kihurio",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kisiwani",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kiwira",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kwakoa",
+    "stateCode": "14"
+  },
+  {
+    "name": "Lembeni",
+    "stateCode": "14"
+  },
+  {
+    "name": "Lupata",
+    "stateCode": "14"
+  },
+  {
+    "name": "Lusungo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Machame",
+    "stateCode": "14"
+  },
+  {
+    "name": "Makanya",
+    "stateCode": "14"
+  },
+  {
+    "name": "Marangu",
+    "stateCode": "14"
+  },
+  {
+    "name": "Masukulu",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mbeya",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mlowo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Moshi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mpuguso",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mwansanga",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mwaya",
+    "stateCode": "14"
+  },
+  {
+    "name": "Mwembe",
+    "stateCode": "14"
+  },
+  {
+    "name": "Same",
+    "stateCode": "14"
+  },
+  {
+    "name": "Tukuyu",
+    "stateCode": "14"
+  },
+  {
+    "name": "Tunduma",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ugweno",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ulanga",
+    "stateCode": "14"
+  },
+  {
+    "name": "Zanzibar",
+    "stateCode": "15"
+  },
+  {
+    "name": "Geiro",
+    "stateCode": "16"
+  },
+  {
+    "name": "Ifakara",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kidatu",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kidodi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kilosa",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kimamba",
+    "stateCode": "16"
+  },
+  {
+    "name": "Kisanga",
+    "stateCode": "16"
+  },
+  {
+    "name": "Lupiro",
+    "stateCode": "16"
+  },
+  {
+    "name": "Magole",
+    "stateCode": "16"
+  },
+  {
+    "name": "Mahenge",
+    "stateCode": "16"
+  },
+  {
+    "name": "Malinyi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Mikumi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Mlimba",
+    "stateCode": "16"
+  },
+  {
+    "name": "Morogoro",
+    "stateCode": "16"
+  },
+  {
+    "name": "Msowero",
+    "stateCode": "16"
+  },
+  {
+    "name": "Mtimbira",
+    "stateCode": "16"
+  },
+  {
+    "name": "Mvomero District",
+    "stateCode": "16"
+  },
+  {
+    "name": "Ngerengere",
+    "stateCode": "16"
+  },
+  {
+    "name": "Chiungutwa",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kitama",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kitangari",
+    "stateCode": "17"
+  },
+  {
+    "name": "Luchingu",
+    "stateCode": "17"
+  },
+  {
+    "name": "Lukuledi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Lulindi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Madimba",
+    "stateCode": "17"
+  },
+  {
+    "name": "Mahuta",
+    "stateCode": "17"
+  },
+  {
+    "name": "Masasi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Masuguru",
+    "stateCode": "17"
+  },
+  {
+    "name": "Mtwara",
+    "stateCode": "17"
+  },
+  {
+    "name": "Namalenga",
+    "stateCode": "17"
+  },
+  {
+    "name": "Namikupa",
+    "stateCode": "17"
+  },
+  {
+    "name": "Nanganga",
+    "stateCode": "17"
+  },
+  {
+    "name": "Nangomba",
+    "stateCode": "17"
+  },
+  {
+    "name": "Nanhyanga",
+    "stateCode": "17"
+  },
+  {
+    "name": "Nanyamba",
+    "stateCode": "17"
+  },
+  {
+    "name": "Newala Kisimani",
+    "stateCode": "17"
+  },
+  {
+    "name": "Tandahimba",
+    "stateCode": "17"
+  },
+  {
+    "name": "Ilemela District",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kihangara",
+    "stateCode": "18"
+  },
+  {
+    "name": "Malya",
+    "stateCode": "18"
+  },
+  {
+    "name": "Misasi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Misungwi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Mwanza",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ngudu",
+    "stateCode": "18"
+  },
+  {
+    "name": "Nyanguge",
+    "stateCode": "18"
+  },
+  {
+    "name": "Usagara",
+    "stateCode": "18"
+  },
+  {
+    "name": "Bagamoyo",
+    "stateCode": "19"
+  },
+  {
+    "name": "Bungu",
+    "stateCode": "19"
+  },
+  {
+    "name": "Chalinze",
+    "stateCode": "19"
+  },
+  {
+    "name": "Ikwiriri",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kibaha",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kibiti",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kilindoni",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kisarawe",
+    "stateCode": "19"
+  },
+  {
+    "name": "Lugoba",
+    "stateCode": "19"
+  },
+  {
+    "name": "Maneromango",
+    "stateCode": "19"
+  },
+  {
+    "name": "Mbumi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Mkuranga",
+    "stateCode": "19"
+  },
+  {
+    "name": "Mlandizi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Mvomero",
+    "stateCode": "19"
+  },
+  {
+    "name": "Utete",
+    "stateCode": "19"
+  },
+  {
+    "name": "Vikindu",
+    "stateCode": "19"
+  },
+  {
+    "name": "Chala",
+    "stateCode": "20"
+  },
+  {
+    "name": "Kirando",
+    "stateCode": "20"
+  },
+  {
+    "name": "Laela",
+    "stateCode": "20"
+  },
+  {
+    "name": "Matai",
+    "stateCode": "20"
+  },
+  {
+    "name": "Namanyere",
+    "stateCode": "20"
+  },
+  {
+    "name": "Nkove",
+    "stateCode": "20"
+  },
+  {
+    "name": "Sumbawanga",
+    "stateCode": "20"
+  },
+  {
+    "name": "Kigonsera",
+    "stateCode": "21"
+  },
+  {
+    "name": "Liuli",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mahanje",
+    "stateCode": "21"
+  },
+  {
+    "name": "Maposeni",
+    "stateCode": "21"
+  },
+  {
+    "name": "Matiri",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mbamba Bay",
+    "stateCode": "21"
+  },
+  {
+    "name": "Mbinga",
+    "stateCode": "21"
+  },
+  {
+    "name": "Songea",
+    "stateCode": "21"
+  },
+  {
+    "name": "Tingi",
+    "stateCode": "21"
+  },
+  {
+    "name": "Isaka",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kahama",
+    "stateCode": "22"
+  },
+  {
+    "name": "Kishapu",
+    "stateCode": "22"
+  },
+  {
+    "name": "Mhango",
+    "stateCode": "22"
+  },
+  {
+    "name": "Mwadui",
+    "stateCode": "22"
+  },
+  {
+    "name": "Old Shinyanga",
+    "stateCode": "22"
+  },
+  {
+    "name": "Shinyanga",
+    "stateCode": "22"
+  },
+  {
+    "name": "Songwa",
+    "stateCode": "22"
+  },
+  {
+    "name": "Tinde",
+    "stateCode": "22"
+  },
+  {
+    "name": "Igugunu",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ikungi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ilongero",
+    "stateCode": "23"
+  },
+  {
+    "name": "Itigi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kilimatinde",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kintinku",
+    "stateCode": "23"
+  },
+  {
+    "name": "Kiomboi",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mgandu",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mtinko",
+    "stateCode": "23"
+  },
+  {
+    "name": "Mungaa",
+    "stateCode": "23"
+  },
+  {
+    "name": "Ndago",
+    "stateCode": "23"
+  },
+  {
+    "name": "Puma",
+    "stateCode": "23"
+  },
+  {
+    "name": "Sepuka",
+    "stateCode": "23"
+  },
+  {
+    "name": "Shelui",
+    "stateCode": "23"
+  },
+  {
+    "name": "Singida",
+    "stateCode": "23"
+  },
+  {
+    "name": "Bukene",
+    "stateCode": "24"
+  },
+  {
+    "name": "Igurubi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Kaliua",
+    "stateCode": "24"
+  },
+  {
+    "name": "Mabama",
+    "stateCode": "24"
+  },
+  {
+    "name": "Sikonge",
+    "stateCode": "24"
+  },
+  {
+    "name": "Tabora",
+    "stateCode": "24"
+  },
+  {
+    "name": "Tumbi",
+    "stateCode": "24"
+  },
+  {
+    "name": "Usoke",
+    "stateCode": "24"
+  },
+  {
+    "name": "Chanika",
+    "stateCode": "25"
+  },
+  {
+    "name": "Lushoto",
+    "stateCode": "25"
+  },
+  {
+    "name": "Magomeni",
+    "stateCode": "25"
+  },
+  {
+    "name": "Majengo",
+    "stateCode": "25"
+  },
+  {
+    "name": "Makuyuni",
+    "stateCode": "25"
+  },
+  {
+    "name": "Maramba",
+    "stateCode": "25"
+  },
+  {
+    "name": "Matui",
+    "stateCode": "25"
+  },
+  {
+    "name": "Mazinde",
+    "stateCode": "25"
+  },
+  {
+    "name": "Mlalo",
+    "stateCode": "25"
+  },
+  {
+    "name": "Muheza",
+    "stateCode": "25"
+  },
+  {
+    "name": "Mwanga",
+    "stateCode": "25"
+  },
+  {
+    "name": "Pangani",
+    "stateCode": "25"
+  },
+  {
+    "name": "Soni",
+    "stateCode": "25"
+  },
+  {
+    "name": "Tanga",
+    "stateCode": "25"
+  },
+  {
+    "name": "Babati",
+    "stateCode": "26"
+  },
+  {
+    "name": "Bashanet",
+    "stateCode": "26"
+  },
+  {
+    "name": "Basotu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Dareda",
+    "stateCode": "26"
+  },
+  {
+    "name": "Dongobesh",
+    "stateCode": "26"
+  },
+  {
+    "name": "Endasak",
+    "stateCode": "26"
+  },
+  {
+    "name": "Galappo",
+    "stateCode": "26"
+  },
+  {
+    "name": "Katesh",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kibaya",
+    "stateCode": "26"
+  },
+  {
+    "name": "Kirya",
+    "stateCode": "26"
+  },
+  {
+    "name": "Magugu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Mbulu",
+    "stateCode": "26"
+  },
+  {
+    "name": "Naberera",
+    "stateCode": "26"
+  },
+  {
+    "name": "Nangwa",
+    "stateCode": "26"
+  },
+  {
+    "name": "Buseresere",
+    "stateCode": "27"
+  },
+  {
+    "name": "Chato",
+    "stateCode": "27"
+  },
+  {
+    "name": "Geita",
+    "stateCode": "27"
+  },
+  {
+    "name": "Kasamwa",
+    "stateCode": "27"
+  },
+  {
+    "name": "Katoro",
+    "stateCode": "27"
+  },
+  {
+    "name": "Masumbwe",
+    "stateCode": "27"
+  },
+  {
+    "name": "Ushirombo",
+    "stateCode": "27"
+  },
+  {
+    "name": "Uyovu",
+    "stateCode": "27"
+  },
+  {
+    "name": "Inyonga",
+    "stateCode": "28"
+  },
+  {
+    "name": "Karema",
+    "stateCode": "28"
+  },
+  {
+    "name": "Mpanda",
+    "stateCode": "28"
+  },
+  {
+    "name": "Usevia",
+    "stateCode": "28"
+  },
+  {
+    "name": "Ilembula",
+    "stateCode": "29"
+  },
+  {
+    "name": "Makumbako",
+    "stateCode": "29"
+  },
+  {
+    "name": "Manda",
+    "stateCode": "29"
+  },
+  {
+    "name": "Matamba",
+    "stateCode": "29"
+  },
+  {
+    "name": "Mlangali",
+    "stateCode": "29"
+  },
+  {
+    "name": "Mtwango",
+    "stateCode": "29"
+  },
+  {
+    "name": "Njombe",
+    "stateCode": "29"
+  },
+  {
+    "name": "Bariadi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Kisesa",
+    "stateCode": "30"
+  },
+  {
+    "name": "Lalago",
+    "stateCode": "30"
+  },
+  {
+    "name": "Malampaka",
+    "stateCode": "30"
+  },
+  {
+    "name": "Maswa",
+    "stateCode": "30"
+  },
+  {
+    "name": "Matonga",
+    "stateCode": "30"
+  },
+  {
+    "name": "Nyakabindi",
+    "stateCode": "30"
+  },
+  {
+    "name": "Nyalikungu",
+    "stateCode": "30"
+  },
+  {
+    "name": "Somanda",
+    "stateCode": "30"
+  }
+]

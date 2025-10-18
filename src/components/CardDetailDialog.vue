@@ -101,10 +101,9 @@
         <!-- Readonly view -->
         <div v-if="!isEditing" class="space-y-1 text-sm text-gray-700 dark:text-gray-300">
           <div class="font-medium">{{ localDetail?.billingAddress }}</div>
-          <div>{{ localDetail?.billingCity }}, {{ getStateDisplay(localDetail?.billingCountry,
-            localDetail?.billingState) }} {{ localDetail?.billingPostalCode }}
-          </div>
-          <div>{{ localDetail?.billingCountry }}</div>
+          <div>{{ localDetail?.billingCity }}, {{ displayState || getStateDisplay(localDetail?.billingCountry,
+            localDetail?.billingState) }} {{ localDetail?.billingPostalCode }}</div>
+          <div>{{ displayCountry || localDetail?.billingCountry }}</div>
         </div>
 
         <!-- Edit form -->
@@ -163,6 +162,21 @@
           </div>
         </div>
       </div>
+
+      <!-- Security Reminder -->
+      <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4 mt-6">
+        <div class="flex items-center space-x-3">
+          <div
+            class="w-8 h-8 bg-amber-100 dark:bg-amber-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+            <i class="pi pi-shield text-amber-600 dark:text-amber-400 text-sm"></i>
+          </div>
+          <div>
+            <p class="text-sm font-medium text-amber-800 dark:text-amber-200">
+              Security Reminder: Please do not share, copy, or screenshot this information.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div v-else class="text-sm text-gray-500">
@@ -182,7 +196,8 @@ import { useClipboard } from '@vueuse/core'
 import { useToast } from 'primevue/usetoast'
 import { CardAPI } from '@/api/card'
 import type { CardHolderInfo as HolderInfo } from '@/api/card'
-import * as CSC from 'country-state-city'
+import { getCountries, getStatesOfCountry, getCitiesOfState, getCitiesOfCountry, tryGetStateDisplayFromCache, normalizeStateCode, getStateDisplayName, type CountryOption, type StateOption, type CityOption } from '@/services/geo'
+import { useCardStore } from '@/stores/card'
 
 interface Props {
   visible: boolean
@@ -195,6 +210,7 @@ const props = defineProps<Props>()
 const emit = defineEmits<{
   (e: 'update:visible', value: boolean): void
   (e: 'retry'): void
+  (e: 'updated', value: CardDetailResponse): void
 }>()
 
 const visible = computed(() => props.visible)
@@ -205,6 +221,15 @@ const onUpdateVisible = (value: boolean) => {
 }
 
 const { copy: copyToClipboard } = useClipboard()
+const cardStore = useCardStore()
+
+// Country/State/City data (declare early to avoid init-order issues)
+const countries = ref<CountryOption[]>([])
+// 初始化国家列表（静态 JSON）
+getCountries()
+  .then(list => { countries.value = list; return list })
+  .then(() => { refreshDisplayNames?.() })
+  .catch(() => { countries.value = [] })
 
 const formatCardNumber = (cardNo?: string) => {
   if (!cardNo) return 'N/A'
@@ -227,32 +252,51 @@ const formatBalance = (balance: number) => {
 
 // Local copy to reflect immediate address updates on success
 const localDetail = ref<CardDetailResponse | null>(null)
+const displayCountry = ref<string>('')
+const displayState = ref<string>('')
 
 watch(
   () => props.cardDetail,
   (val) => {
     localDetail.value = val ? { ...val } : null
+    refreshDisplayNames()
   },
   { immediate: true }
 )
+
+async function refreshDisplayNames() {
+  const countryCode = localDetail.value?.billingCountry || ''
+  const stateValue = localDetail.value?.billingState || ''
+  // country name: resolve via cached country list
+  if (countryCode) {
+    if (countries.value.length === 0) {
+      try { countries.value = await getCountries() } catch { }
+    }
+    const match = countries.value.find(c => (c.code || '').toUpperCase() === countryCode.toUpperCase())
+    displayCountry.value = match?.name || countryCode
+  } else {
+    displayCountry.value = ''
+  }
+  // state name
+  if (countryCode && stateValue) {
+    try {
+      const name = await getStateDisplayName(countryCode, stateValue)
+      displayState.value = name || stateValue
+    } catch {
+      displayState.value = stateValue
+    }
+  } else {
+    displayState.value = ''
+  }
+}
+
+watch(() => countries.value, () => { refreshDisplayNames() })
 
 // ----- Edit billing address -----
 const isEditing = ref(false)
 const saving = ref(false)
 // const canEdit = computed(() => isAddressUpdatable(props.cardDetail?.billingAddressUpdatable))
 
-// Country/State/City data
-const { Country, State, City } = CSC
-
-interface CountryOption { name: string; code: string }
-interface StateOption { name: string; isoCode: string }
-interface CityOption { name: string }
-
-const countries = ref<CountryOption[]>(
-  Country.getAllCountries()
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .map(c => ({ name: c.name, code: c.isoCode }))
-)
 const states = ref<StateOption[]>([])
 const cities = ref<CityOption[]>([])
 const selectedStateCode = ref<string | null>(null)
@@ -284,12 +328,14 @@ const loadCitiesForState = (countryCode?: string | null, stateIsoCode?: string |
     if (!preserveExisting) form.residentialCity = ''
     return
   }
-  const cityList = (City.getCitiesOfState(countryCode, stateIsoCode) || []).sort((a, b) => a.name.localeCompare(b.name))
-  cities.value = cityList.map(c => ({ name: c.name }))
-  if (preserveExisting && form.residentialCity) {
-    const matched = cityList.find(c => c.name === form.residentialCity)
-    if (matched) selectedCityName.value = matched.name
-  }
+  getCitiesOfState(countryCode || '', stateIsoCode || '').then(list => {
+    const cityList = list.slice().sort((a, b) => a.name.localeCompare(b.name))
+    cities.value = cityList.map(c => ({ name: c.name }))
+    if (preserveExisting && form.residentialCity) {
+      const matched = cityList.find(c => c.name === form.residentialCity)
+      if (matched) selectedCityName.value = matched.name
+    }
+  })
 }
 
 const loadCitiesForCountry = (countryCode?: string | null, preserveExisting = false) => {
@@ -299,12 +345,14 @@ const loadCitiesForCountry = (countryCode?: string | null, preserveExisting = fa
     if (!preserveExisting) form.residentialCity = ''
     return
   }
-  const cityList = (City.getCitiesOfCountry(countryCode) || []).sort((a, b) => a.name.localeCompare(b.name))
-  cities.value = cityList.map(c => ({ name: c.name }))
-  if (preserveExisting && form.residentialCity) {
-    const matched = cityList.find(c => c.name === form.residentialCity)
-    if (matched) selectedCityName.value = matched.name
-  }
+  getCitiesOfCountry(countryCode || '').then(list => {
+    const cityList = list.slice().sort((a, b) => a.name.localeCompare(b.name))
+    cities.value = cityList.map(c => ({ name: c.name }))
+    if (preserveExisting && form.residentialCity) {
+      const matched = cityList.find(c => c.name === form.residentialCity)
+      if (matched) selectedCityName.value = matched.name
+    }
+  })
 }
 
 const loadStatesForCountry = (countryCode?: string | null, preserveExisting = false) => {
@@ -315,19 +363,20 @@ const loadStatesForCountry = (countryCode?: string | null, preserveExisting = fa
     if (!preserveExisting) form.residentialState = ''
     return
   }
-  const stateList = (State.getStatesOfCountry(countryCode) || []).sort((a, b) => a.name.localeCompare(b.name))
-  if (stateList.length === 0) {
-    states.value = []
-    selectedStateCode.value = null
-    if (!preserveExisting) form.residentialState = ''
-    loadCitiesForCountry(countryCode, preserveExisting)
-    return
-  }
-  states.value = stateList.map(s => ({ name: s.name, isoCode: s.isoCode }))
-  if (preserveExisting && form.residentialState) {
-    const matched = stateList.find(s => s.name === form.residentialState)
-    if (matched) selectedStateCode.value = matched.isoCode
-  }
+  getStatesOfCountry(countryCode || '').then(stateList => {
+    if (stateList.length === 0) {
+      states.value = []
+      selectedStateCode.value = null
+      if (!preserveExisting) form.residentialState = ''
+      loadCitiesForCountry(countryCode, preserveExisting)
+      return
+    }
+    states.value = stateList.map(s => ({ name: s.name, isoCode: s.isoCode }))
+    if (preserveExisting && form.residentialState) {
+      const matched = stateList.find(s => s.name === form.residentialState)
+      if (matched) selectedStateCode.value = matched.isoCode
+    }
+  })
 }
 
 watch(() => form.residentialCountryCode, (newCode, oldCode) => {
@@ -352,7 +401,7 @@ watch(selectedCityName, (newCity) => {
   form.residentialCity = newCity || ''
 })
 
-const startEdit = () => {
+const startEdit = async () => {
   if (!props.cardDetail) return
   isEditing.value = true
   // Prefill
@@ -364,13 +413,13 @@ const startEdit = () => {
   // Initialize cascading selects
   loadStatesForCountry(form.residentialCountryCode, true)
   // Try set state/city selections from names
-  const stateList = State.getStatesOfCountry(form.residentialCountryCode) || []
+  const stateList = await getStatesOfCountry(form.residentialCountryCode)
   const trimmed = (form.residentialState || '').trim()
   const matchedByCode = stateList.find(s => s.isoCode.toUpperCase() === trimmed.toUpperCase())
   const matchedState = matchedByCode || stateList.find(s => s.name.trim() === trimmed)
   selectedStateCode.value = matchedState ? matchedState.isoCode : null
   if (selectedStateCode.value) {
-    const cityList = City.getCitiesOfState(form.residentialCountryCode, selectedStateCode.value) || []
+    const cityList = await getCitiesOfState(form.residentialCountryCode, selectedStateCode.value)
     cities.value = cityList.sort((a, b) => a.name.localeCompare(b.name)).map(c => ({ name: c.name }))
     const matchedCity = cityList.find(c => c.name.trim() === form.residentialCity.trim())
     selectedCityName.value = matchedCity ? matchedCity.name : null
@@ -419,11 +468,9 @@ const getStateDisplay = (countryCode?: string, stateValue?: string) => {
   if (!stateValue) return ''
   const code = (countryCode || '').toUpperCase()
   if (!code) return stateValue
-  const list = State.getStatesOfCountry(code) || []
-  const byCode = list.find(s => s.isoCode.toUpperCase() === stateValue.toUpperCase())
-  if (byCode) return byCode.name
-  const byName = list.find(s => s.name.trim().toLowerCase() === stateValue.trim().toLowerCase())
-  return byName?.name || stateValue
+  const cached = tryGetStateDisplayFromCache(code, stateValue)
+  if (cached && cached !== stateValue) return cached
+  return stateValue
 }
 
 const saveAddress = async () => {
@@ -435,13 +482,7 @@ const saveAddress = async () => {
     if (selectedStateCode.value) {
       stateToSend = selectedStateCode.value
     } else if (form.residentialCountryCode) {
-      const list = State.getStatesOfCountry(form.residentialCountryCode) || []
-      const byCode = list.find(s => s.isoCode.toUpperCase() === form.residentialState.trim().toUpperCase())
-      if (byCode) stateToSend = byCode.isoCode
-      else {
-        const byName = list.find(s => s.name.trim().toLowerCase() === form.residentialState.trim().toLowerCase())
-        if (byName) stateToSend = byName.isoCode
-      }
+      stateToSend = await normalizeStateCode(form.residentialCountryCode, form.residentialState)
     }
 
     const holderInfo: HolderInfo = {
@@ -458,6 +499,12 @@ const saveAddress = async () => {
         localDetail.value.billingCountry = form.residentialCountryCode
         localDetail.value.billingPostalCode = form.residentialPostalCode
         localDetail.value.billingState = form.residentialState
+        // 同步更新到 Pinia 缓存，避免下次读取旧缓存
+        cardStore.cacheCurrentCardDetail({ ...localDetail.value })
+        // 通知父级刷新或替换详情数据
+        emit('updated', { ...localDetail.value })
+        // 刷新显示名称
+        await refreshDisplayNames()
       }
       isEditing.value = false
     } else {

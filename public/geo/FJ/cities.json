@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Naitasiri Province",
+    "stateCode": "C"
+  },
+  {
+    "name": "Namosi Province",
+    "stateCode": "C"
+  },
+  {
+    "name": "Rewa Province",
+    "stateCode": "C"
+  },
+  {
+    "name": "Serua Province",
+    "stateCode": "C"
+  },
+  {
+    "name": "Suva",
+    "stateCode": "C"
+  },
+  {
+    "name": "Tailevu Province",
+    "stateCode": "C"
+  },
+  {
+    "name": "Kadavu Province",
+    "stateCode": "E"
+  },
+  {
+    "name": "Lau Province",
+    "stateCode": "E"
+  },
+  {
+    "name": "Levuka",
+    "stateCode": "E"
+  },
+  {
+    "name": "Lomaiviti Province",
+    "stateCode": "E"
+  },
+  {
+    "name": "Bua Province",
+    "stateCode": "N"
+  },
+  {
+    "name": "Cakaudrove Province",
+    "stateCode": "N"
+  },
+  {
+    "name": "Labasa",
+    "stateCode": "N"
+  },
+  {
+    "name": "Macuata Province",
+    "stateCode": "N"
+  },
+  {
+    "name": "Ba",
+    "stateCode": "W"
+  },
+  {
+    "name": "Ba Province",
+    "stateCode": "W"
+  },
+  {
+    "name": "Lautoka",
+    "stateCode": "W"
+  },
+  {
+    "name": "Nadi",
+    "stateCode": "W"
+  },
+  {
+    "name": "Nandronga and Navosa Province",
+    "stateCode": "W"
+  },
+  {
+    "name": "Ra Province",
+    "stateCode": "W"
+  }
+]

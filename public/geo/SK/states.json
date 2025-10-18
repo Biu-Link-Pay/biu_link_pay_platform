@@ -1,0 +1,34 @@
+[
+  {
+    "code": "BC",
+    "name": "Banská Bystrica Region"
+  },
+  {
+    "code": "BL",
+    "name": "Bratislava Region"
+  },
+  {
+    "code": "KI",
+    "name": "Košice Region"
+  },
+  {
+    "code": "NI",
+    "name": "Nitra Region"
+  },
+  {
+    "code": "PV",
+    "name": "Prešov Region"
+  },
+  {
+    "code": "TC",
+    "name": "Trenčín Region"
+  },
+  {
+    "code": "TA",
+    "name": "Trnava Region"
+  },
+  {
+    "code": "ZI",
+    "name": "Žilina Region"
+  }
+]

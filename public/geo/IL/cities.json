@@ -1,0 +1,602 @@
+[
+  {
+    "name": "‘En Boqeq",
+    "stateCode": "D"
+  },
+  {
+    "name": "Arad",
+    "stateCode": "D"
+  },
+  {
+    "name": "Ashdod",
+    "stateCode": "D"
+  },
+  {
+    "name": "Ashkelon",
+    "stateCode": "D"
+  },
+  {
+    "name": "Beersheba",
+    "stateCode": "D"
+  },
+  {
+    "name": "Dimona",
+    "stateCode": "D"
+  },
+  {
+    "name": "Eilat",
+    "stateCode": "D"
+  },
+  {
+    "name": "Lehavim",
+    "stateCode": "D"
+  },
+  {
+    "name": "Midreshet Ben-Gurion",
+    "stateCode": "D"
+  },
+  {
+    "name": "Mitzpe Ramon",
+    "stateCode": "D"
+  },
+  {
+    "name": "Netivot",
+    "stateCode": "D"
+  },
+  {
+    "name": "Ofaqim",
+    "stateCode": "D"
+  },
+  {
+    "name": "Qiryat Gat",
+    "stateCode": "D"
+  },
+  {
+    "name": "Rahat",
+    "stateCode": "D"
+  },
+  {
+    "name": "Sederot",
+    "stateCode": "D"
+  },
+  {
+    "name": "Yeroẖam",
+    "stateCode": "D"
+  },
+  {
+    "name": "Atlit",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Caesarea",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Daliyat al Karmel",
+    "stateCode": "HA"
+  },
+  {
+    "name": "El Fureidīs",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Hadera",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Haifa",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Ibṭīn",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Nesher",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Qiryat Ata",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Qiryat Bialik",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Qiryat Moẕqin",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Qiryat Yam",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Rekhasim",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Tirat Karmel",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Umm el Faḥm",
+    "stateCode": "HA"
+  },
+  {
+    "name": "Abū Ghaush",
+    "stateCode": "JM"
+  },
+  {
+    "name": "Bet Shemesh",
+    "stateCode": "JM"
+  },
+  {
+    "name": "Har Adar",
+    "stateCode": "JM"
+  },
+  {
+    "name": "Jerusalem",
+    "stateCode": "JM"
+  },
+  {
+    "name": "Mevasseret Ẕiyyon",
+    "stateCode": "JM"
+  },
+  {
+    "name": "Modiin Ilit",
+    "stateCode": "JM"
+  },
+  {
+    "name": "West Jerusalem",
+    "stateCode": "JM"
+  },
+  {
+    "name": "Ẕur Hadassa",
+    "stateCode": "JM"
+  },
+  {
+    "name": "Bet Dagan",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bet Yiẕẖaq",
+    "stateCode": "M"
+  },
+  {
+    "name": "Bnei Ayish",
+    "stateCode": "M"
+  },
+  {
+    "name": "Elyakhin",
+    "stateCode": "M"
+  },
+  {
+    "name": "Eṭ Ṭaiyiba",
+    "stateCode": "M"
+  },
+  {
+    "name": "Even Yehuda",
+    "stateCode": "M"
+  },
+  {
+    "name": "Gan Yavne",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ganei Tikva",
+    "stateCode": "M"
+  },
+  {
+    "name": "Gedera",
+    "stateCode": "M"
+  },
+  {
+    "name": "Hod HaSharon",
+    "stateCode": "M"
+  },
+  {
+    "name": "Jaljūlya",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kafr Qāsim",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kefar H̱abad",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kefar Yona",
+    "stateCode": "M"
+  },
+  {
+    "name": "Kfar Saba",
+    "stateCode": "M"
+  },
+  {
+    "name": "Lapid",
+    "stateCode": "M"
+  },
+  {
+    "name": "Lod",
+    "stateCode": "M"
+  },
+  {
+    "name": "Mazkeret Batya",
+    "stateCode": "M"
+  },
+  {
+    "name": "Modi‘in Makkabbim Re‘ut",
+    "stateCode": "M"
+  },
+  {
+    "name": "Neẖalim",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ness Ziona",
+    "stateCode": "M"
+  },
+  {
+    "name": "Netanya",
+    "stateCode": "M"
+  },
+  {
+    "name": "Nirit",
+    "stateCode": "M"
+  },
+  {
+    "name": "Nof Ayalon",
+    "stateCode": "M"
+  },
+  {
+    "name": "Nordiyya",
+    "stateCode": "M"
+  },
+  {
+    "name": "Pardesiyya",
+    "stateCode": "M"
+  },
+  {
+    "name": "Petaẖ Tiqwa",
+    "stateCode": "M"
+  },
+  {
+    "name": "Qalansuwa",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ra'anana",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ramla",
+    "stateCode": "M"
+  },
+  {
+    "name": "Reẖovot",
+    "stateCode": "M"
+  },
+  {
+    "name": "Rishon LeẔiyyon",
+    "stateCode": "M"
+  },
+  {
+    "name": "Rosh Ha‘Ayin",
+    "stateCode": "M"
+  },
+  {
+    "name": "Savyon",
+    "stateCode": "M"
+  },
+  {
+    "name": "Shoham",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tel Mond",
+    "stateCode": "M"
+  },
+  {
+    "name": "Tirah",
+    "stateCode": "M"
+  },
+  {
+    "name": "Yavné",
+    "stateCode": "M"
+  },
+  {
+    "name": "Yehud",
+    "stateCode": "M"
+  },
+  {
+    "name": "Ẕur Moshe",
+    "stateCode": "M"
+  },
+  {
+    "name": "Azor",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Bat Yam",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Bnei Brak",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Giv'at Shmuel",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Givatayim",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Herzliya",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Herzliya Pituah",
+    "stateCode": "TA"
+  },
+  {
+    "name": "H̱olon",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Jaffa",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Kefar Shemaryahu",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Or Yehuda",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Ramat Gan",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Ramat HaSharon",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Tel Aviv",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Yehud-Monosson",
+    "stateCode": "TA"
+  },
+  {
+    "name": "‘Eilabun",
+    "stateCode": "Z"
+  },
+  {
+    "name": "‘Uzeir",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Acre",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Afula",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Basmat Ṭab‘ūn",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Beit Jann",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Bet She’an",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Bīr el Maksūr",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Bu‘eina",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Buqei‘a",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Dabbūrīya",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Deir Ḥannā",
+    "stateCode": "Z"
+  },
+  {
+    "name": "El Mazra‘a",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Er Reina",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Esh Sheikh Dannūn",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Ḥurfeish",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Iksāl",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Jīsh",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Judeida Makr",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Kābūl",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Kafr Kammā",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Kafr Kannā",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Kafr Mandā",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Kafr Miṣr",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Karmi’el",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Kaukab Abū el Hījā",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Kefar Rosh HaNiqra",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Kefar Tavor",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Kefar Weradim",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Kfar Yasif",
+    "stateCode": "Z"
+  },
+  {
+    "name": "maalot Tarshīhā",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Maghār",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Metulla",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Mi‘ilyā",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Migdal Ha‘Emeq",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Nahariyya",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Naḥf",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Nazareth",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Nefat ‘Akko",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Nein",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Pasuta",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Qiryat Shemona",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Ramat Yishay",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Rosh Pinna",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Rumat Heib",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Safed",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Sājūr",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Sakhnīn",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Sallama",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Shelomi",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Shibli",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Sūlam",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Tamra",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Tiberias",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Timrat",
+    "stateCode": "Z"
+  },
+  {
+    "name": "Yavne’el",
+    "stateCode": "Z"
+  }
+]

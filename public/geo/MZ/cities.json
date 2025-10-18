@@ -1,0 +1,154 @@
+[
+  {
+    "name": "Cuamba",
+    "stateCode": "A"
+  },
+  {
+    "name": "Lichinga",
+    "stateCode": "A"
+  },
+  {
+    "name": "Mandimba",
+    "stateCode": "A"
+  },
+  {
+    "name": "Chimoio",
+    "stateCode": "B"
+  },
+  {
+    "name": "Chibuto",
+    "stateCode": "G"
+  },
+  {
+    "name": "Chokwé",
+    "stateCode": "G"
+  },
+  {
+    "name": "Macia",
+    "stateCode": "G"
+  },
+  {
+    "name": "Xai-Xai",
+    "stateCode": "G"
+  },
+  {
+    "name": "Inhambane",
+    "stateCode": "I"
+  },
+  {
+    "name": "Maxixe",
+    "stateCode": "I"
+  },
+  {
+    "name": "Boane District",
+    "stateCode": "L"
+  },
+  {
+    "name": "Concelho de Matola",
+    "stateCode": "L"
+  },
+  {
+    "name": "Magude District",
+    "stateCode": "L"
+  },
+  {
+    "name": "Manhica",
+    "stateCode": "L"
+  },
+  {
+    "name": "Marracuene District",
+    "stateCode": "L"
+  },
+  {
+    "name": "Matola",
+    "stateCode": "L"
+  },
+  {
+    "name": "Matutiune District",
+    "stateCode": "L"
+  },
+  {
+    "name": "Moamba District",
+    "stateCode": "L"
+  },
+  {
+    "name": "Namaacha District",
+    "stateCode": "L"
+  },
+  {
+    "name": "Ressano Garcia",
+    "stateCode": "L"
+  },
+  {
+    "name": "KaTembe",
+    "stateCode": "MPM"
+  },
+  {
+    "name": "Maputo",
+    "stateCode": "MPM"
+  },
+  {
+    "name": "António Enes",
+    "stateCode": "N"
+  },
+  {
+    "name": "Ilha de Moçambique",
+    "stateCode": "N"
+  },
+  {
+    "name": "Mutuáli",
+    "stateCode": "N"
+  },
+  {
+    "name": "Nacala",
+    "stateCode": "N"
+  },
+  {
+    "name": "Nampula",
+    "stateCode": "N"
+  },
+  {
+    "name": "Chiure",
+    "stateCode": "P"
+  },
+  {
+    "name": "Mocímboa",
+    "stateCode": "P"
+  },
+  {
+    "name": "Montepuez",
+    "stateCode": "P"
+  },
+  {
+    "name": "Pemba",
+    "stateCode": "P"
+  },
+  {
+    "name": "Alto Molócuè",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Chinde",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Quelimane",
+    "stateCode": "Q"
+  },
+  {
+    "name": "Beira",
+    "stateCode": "S"
+  },
+  {
+    "name": "Dondo",
+    "stateCode": "S"
+  },
+  {
+    "name": "Nhamatanda District",
+    "stateCode": "S"
+  },
+  {
+    "name": "Tete",
+    "stateCode": "T"
+  }
+]

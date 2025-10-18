@@ -1,0 +1,1386 @@
+[
+  {
+    "name": "Aysén",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Chile Chico",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Cisnes",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Cochrane",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Coyhaique",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Guaitecas",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Lago Verde",
+    "stateCode": "AI"
+  },
+  {
+    "name": "O'Higgins",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Río Ibáñez",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Tortel",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Antofagasta",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Calama",
+    "stateCode": "AN"
+  },
+  {
+    "name": "María Elena",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Mejillones",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Ollagüe",
+    "stateCode": "AN"
+  },
+  {
+    "name": "San Pedro de Atacama",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Sierra Gorda",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Taltal",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Tocopilla",
+    "stateCode": "AN"
+  },
+  {
+    "name": "Arica",
+    "stateCode": "AP"
+  },
+  {
+    "name": "Camarones",
+    "stateCode": "AP"
+  },
+  {
+    "name": "General Lagos",
+    "stateCode": "AP"
+  },
+  {
+    "name": "Putre",
+    "stateCode": "AP"
+  },
+  {
+    "name": "Angol",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Carahue",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Cholchol",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Collipulli",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Cunco",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Curacautín",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Curarrehue",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Ercilla",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Freire",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Galvarino",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Gorbea",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Lautaro",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Loncoche",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Lonquimay",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Los Sauces",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Lumaco",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Melipeuco",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Nueva Imperial",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Padre Las Casas",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Perquenco",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Pitrufquén",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Pucón",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Purén",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Renaico",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Saavedra",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Temuco",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Teodoro Schmidt",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Toltén",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Traiguén",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Victoria",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Vilcún",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Villarrica",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Alto del Carmen",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Caldera",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Chañaral",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Copiapó",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Diego de Almagro",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Freirina",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Huasco",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Tierra Amarilla",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Vallenar",
+    "stateCode": "AT"
+  },
+  {
+    "name": "Alto Biobío",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Antuco",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Arauco",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Cabrero",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Cañete",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Chiguayante",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Concepción",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Contulmo",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Coronel",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Curanilahue",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Florida",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Hualpén",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Hualqui",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Laja",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Lebu",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Los Álamos",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Los Ángeles",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Lota",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Mulchén",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Nacimiento",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Negrete",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Penco",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Quilaco",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Quilleco",
+    "stateCode": "BI"
+  },
+  {
+    "name": "San Pedro de la Paz",
+    "stateCode": "BI"
+  },
+  {
+    "name": "San Rosendo",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Santa Bárbara",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Santa Juana",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Talcahuano",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Tirúa",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Tomé",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Tucapel",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Yumbel",
+    "stateCode": "BI"
+  },
+  {
+    "name": "Andacollo",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Canela",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Combarbalá",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Coquimbo",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Illapel",
+    "stateCode": "CO"
+  },
+  {
+    "name": "La Higuera",
+    "stateCode": "CO"
+  },
+  {
+    "name": "La Serena",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Los Vilos",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Monte Patria",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Ovalle",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Paihuano",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Punitaqui",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Río Hurtado",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Salamanca",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Vicuña",
+    "stateCode": "CO"
+  },
+  {
+    "name": "Chépica",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Chimbarongo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Codegua",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Coínco",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Coltauco",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Doñihue",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Graneros",
+    "stateCode": "LI"
+  },
+  {
+    "name": "La Estrella",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Las Cabras",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Litueche",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Lolol",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Machalí",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Malloa",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Marchigüe",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Mostazal",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Nancagua",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Navidad",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Olivar",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Palmilla",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Paredones",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Peralillo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Peumo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Pichidegua",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Pichilemu",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Placilla",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Pumanque",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Quinta de Tilcoco",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Rancagua",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Rengo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Requínoa",
+    "stateCode": "LI"
+  },
+  {
+    "name": "San Fernando",
+    "stateCode": "LI"
+  },
+  {
+    "name": "San Vicente",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Santa Cruz",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Ancud",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Calbuco",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Castro",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Chaitén",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Chonchi",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Cochamó",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Curaco de Vélez",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Dalcahue",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Fresia",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Frutillar",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Futaleufú",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Hualaihué",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Llanquihue",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Los Muermos",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Maullín",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Osorno",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Palena",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Puerto Montt",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Puerto Octay",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Puerto Varas",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Puqueldón",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Purranque",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Puyehue",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Queilén",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Quellón",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Quemchi",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Quinchao",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Río Negro",
+    "stateCode": "LL"
+  },
+  {
+    "name": "San Juan de la Costa",
+    "stateCode": "LL"
+  },
+  {
+    "name": "San Pablo",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Corral",
+    "stateCode": "LR"
+  },
+  {
+    "name": "Futrono",
+    "stateCode": "LR"
+  },
+  {
+    "name": "La Unión",
+    "stateCode": "LR"
+  },
+  {
+    "name": "Lago Ranco",
+    "stateCode": "LR"
+  },
+  {
+    "name": "Lanco",
+    "stateCode": "LR"
+  },
+  {
+    "name": "Los Lagos",
+    "stateCode": "LR"
+  },
+  {
+    "name": "Máfil",
+    "stateCode": "LR"
+  },
+  {
+    "name": "Mariquina",
+    "stateCode": "LR"
+  },
+  {
+    "name": "Paillaco",
+    "stateCode": "LR"
+  },
+  {
+    "name": "Panguipulli",
+    "stateCode": "LR"
+  },
+  {
+    "name": "Río Bueno",
+    "stateCode": "LR"
+  },
+  {
+    "name": "Valdivia",
+    "stateCode": "LR"
+  },
+  {
+    "name": "Antártica",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Cabo de Hornos",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Laguna Blanca",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Natales",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Porvenir",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Primavera",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Punta Arenas",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Río Verde",
+    "stateCode": "MA"
+  },
+  {
+    "name": "San Gregorio",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Timaukel",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Torres del Paine",
+    "stateCode": "MA"
+  },
+  {
+    "name": "Cauquenes",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Chanco",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Colbún",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Constitución",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Curepto",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Curicó",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Empedrado",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Hualañé",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Licantén",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Linares",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Longaví",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Maule",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Molina",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Parral",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Pelarco",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Pelluhue",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Pencahue",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Rauco",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Retiro",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Río Claro",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Romeral",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Sagrada Familia",
+    "stateCode": "ML"
+  },
+  {
+    "name": "San Clemente",
+    "stateCode": "ML"
+  },
+  {
+    "name": "San Javier",
+    "stateCode": "ML"
+  },
+  {
+    "name": "San Rafael",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Talca",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Teno",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Vichuquén",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Villa Alegre",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Yerbas Buenas",
+    "stateCode": "ML"
+  },
+  {
+    "name": "Bulnes",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Chillán",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Chillán Viejo",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Cobquecura",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Coelemu",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Coihueco",
+    "stateCode": "NB"
+  },
+  {
+    "name": "El Carmen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Ninhue",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Ñiquén",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Pemuco",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Pinto",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Portezuelo",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Quillón",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Quirihue",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Ránquil",
+    "stateCode": "NB"
+  },
+  {
+    "name": "San Carlos",
+    "stateCode": "NB"
+  },
+  {
+    "name": "San Fabián",
+    "stateCode": "NB"
+  },
+  {
+    "name": "San Ignacio",
+    "stateCode": "NB"
+  },
+  {
+    "name": "San Nicolás",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Treguaco",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Yungay",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Alhué",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Buin",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Calera de Tango",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Cerrillos",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Cerro Navia",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Colina",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Conchalí",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Curacaví",
+    "stateCode": "RM"
+  },
+  {
+    "name": "El Bosque",
+    "stateCode": "RM"
+  },
+  {
+    "name": "El Monte",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Estación Central",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Huechuraba",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Independencia",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Isla de Maipo",
+    "stateCode": "RM"
+  },
+  {
+    "name": "La Cisterna",
+    "stateCode": "RM"
+  },
+  {
+    "name": "La Florida",
+    "stateCode": "RM"
+  },
+  {
+    "name": "La Granja",
+    "stateCode": "RM"
+  },
+  {
+    "name": "La Pintana",
+    "stateCode": "RM"
+  },
+  {
+    "name": "La Reina",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Lampa",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Las Condes",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Lo Barnechea",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Lo Espejo",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Lo Prado",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Macul",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Maipú",
+    "stateCode": "RM"
+  },
+  {
+    "name": "María Pinto",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Melipilla",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Ñuñoa",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Padre Hurtado",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Paine",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Pedro Aguirre Cerda",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Peñaflor",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Peñalolén",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Pirque",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Providencia",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Pudahuel",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Puente Alto",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Quilicura",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Quinta Normal",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Recoleta",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Renca",
+    "stateCode": "RM"
+  },
+  {
+    "name": "San Bernardo",
+    "stateCode": "RM"
+  },
+  {
+    "name": "San Joaquín",
+    "stateCode": "RM"
+  },
+  {
+    "name": "San José de Maipo",
+    "stateCode": "RM"
+  },
+  {
+    "name": "San Miguel",
+    "stateCode": "RM"
+  },
+  {
+    "name": "San Pedro",
+    "stateCode": "RM"
+  },
+  {
+    "name": "San Ramón",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Santiago",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Talagante",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Tiltil",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Vitacura",
+    "stateCode": "RM"
+  },
+  {
+    "name": "Alto Hospicio",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Camiña",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Colchane",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Huara",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Iquique",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Pica",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Pozo Almonte",
+    "stateCode": "TA"
+  },
+  {
+    "name": "Algarrobo",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Cabildo",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Calle Larga",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Cartagena",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Casablanca",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Catemu",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Concón",
+    "stateCode": "VS"
+  },
+  {
+    "name": "El Quisco",
+    "stateCode": "VS"
+  },
+  {
+    "name": "El Tabo",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Hijuelas",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Isla de Pascua",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Juan Fernández",
+    "stateCode": "VS"
+  },
+  {
+    "name": "La Calera",
+    "stateCode": "VS"
+  },
+  {
+    "name": "La Cruz",
+    "stateCode": "VS"
+  },
+  {
+    "name": "La Ligua",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Limache",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Llaillay",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Los Andes",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Nogales",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Olmué",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Panquehue",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Papudo",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Petorca",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Puchuncaví",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Putaendo",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Quillota",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Quilpué",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Quintero",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Rinconada",
+    "stateCode": "VS"
+  },
+  {
+    "name": "San Antonio",
+    "stateCode": "VS"
+  },
+  {
+    "name": "San Esteban",
+    "stateCode": "VS"
+  },
+  {
+    "name": "San Felipe",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Santa María",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Santo Domingo",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Valparaíso",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Villa Alemana",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Viña del Mar",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Zapallar",
+    "stateCode": "VS"
+  }
+]

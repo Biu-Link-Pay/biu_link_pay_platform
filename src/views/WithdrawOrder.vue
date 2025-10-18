@@ -112,7 +112,7 @@
                         <div>
                           <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
                           <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0
-                          }} crypto networks</div>
+                            }} crypto networks</div>
                         </div>
                       </div>
 
@@ -154,7 +154,7 @@
                             </div>
                             <div>
                               <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName
-                              }}</div>
+                                }}</div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                               <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
                                 Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
@@ -190,12 +190,16 @@
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
                     <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                    }}</span>
+                      }}</span>
                   </div>
                   <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                     <i class="pi pi-clock"></i>
                     <span>{{ countdown }}s</span>
                   </div>
+                </div>
+                <div v-if="exchangeRate?.cryptoDetail?.cryptoToUsdTRate"
+                  class="text-xs text-gray-600 dark:text-gray-400 mb-2">
+                  1 {{ cardInfo.cardCurrency }} ≈ {{ exchangeRate.cryptoDetail.cryptoToUsdTRate }} {{ selectedToken }}
                 </div>
                 <div class="flex items-center justify-between text-sm">
                   <span class="text-gray-700 dark:text-gray-300">Transaction Fee</span>
@@ -383,6 +387,10 @@
               <i class="pi pi-clock"></i>
               <span>{{ countdown }}s</span>
             </div>
+          </div>
+          <div v-if="exchangeRate?.cryptoDetail?.cryptoToUsdTRate"
+            class="text-xs text-gray-600 dark:text-gray-400 mt-2">
+            1 {{ cardInfo.cardCurrency }} ≈ {{ exchangeRate.cryptoDetail.cryptoToUsdTRate }} {{ selectedToken }}
           </div>
           <div class="flex items-center justify-between text-xs mt-2">
             <span class="text-gray-600 dark:text-gray-400">Transaction Fee</span>
@@ -785,29 +793,28 @@ const handleWithdraw = async () => {
     return
   }
 
-  // Validate withdrawal amount against payment method limits (in USD)
+  // Validate receive amount against payment method limits (in USD)
   if (selectedCrypto.value && !isDeleteAction.value) {
     const minLimit = selectedCrypto.value.minLimit || 0
     const maxLimit = selectedCrypto.value.maxLimit || Infinity
 
-    // Use receiveAmount (crypto amount in USD) for comparison
-    const usdAmount = receiveAmount.value || 0
-
-    if (usdAmount < minLimit) {
+    // Use receiveAmount (converted crypto amount) for comparison
+    const receiveUsdAmount = receiveAmount.value || 0
+    if (receiveUsdAmount < minLimit) {
       toast.add({
         severity: 'error',
         summary: 'Receive Amount Below Limit',
-        detail: `Your receive amount is $${usdAmount.toFixed(2)}, which is below the minimum limit of $${minLimit} for ${selectedCrypto.value.crypto.name} on ${selectedCrypto.value.network.name}. Please increase your withdrawal amount.`,
+        detail: `Your receive amount is ${receiveUsdAmount}, which is below the minimum limit of ${formatCurrency(minLimit)} for ${selectedCrypto.value.crypto.name} on ${selectedCrypto.value.network.name}. Please increase your withdrawal amount.`,
         life: 5000
       })
       return
     }
 
-    if (usdAmount > maxLimit) {
+    if (receiveUsdAmount > maxLimit) {
       toast.add({
         severity: 'error',
         summary: 'Receive Amount Exceeds Limit',
-        detail: `Your receive amount is $${usdAmount.toFixed(2)}, which exceeds the maximum limit of $${maxLimit} for ${selectedCrypto.value.crypto.name} on ${selectedCrypto.value.network.name}. Please reduce your withdrawal amount.`,
+        detail: `Your receive amount is ${receiveUsdAmount}, which exceeds the maximum limit of ${formatCurrency(maxLimit)} for ${selectedCrypto.value.crypto.name} on ${selectedCrypto.value.network.name}. Please reduce your withdrawal amount.`,
         life: 5000
       })
       return
@@ -817,7 +824,7 @@ const handleWithdraw = async () => {
       withdrawAmount: withdrawAmount.value,
       cardCurrency: cardInfo.value.cardCurrency,
       receiveAmount: receiveAmount.value,
-      usdAmount,
+      receiveUsdAmount,
       minLimit,
       maxLimit,
       crypto: selectedCrypto.value.crypto.name,

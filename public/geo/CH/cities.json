@@ -1,0 +1,6026 @@
+[
+  {
+    "name": "Aarau",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Aarburg",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Aristau",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Auw",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bad Zurzach",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Baden",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Berikon",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Besenbüren",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bezirk Aarau",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bezirk Baden",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bezirk Bremgarten",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bezirk Brugg",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bezirk Kulm",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bezirk Laufenburg",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bezirk Lenzburg",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bezirk Muri",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bezirk Rheinfelden",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bezirk Zofingen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bezirk Zurzach",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Birmenstorf",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Birr",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Boniswil",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Bremgarten",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Brittnau",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Brugg",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Buchs",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Buttwil",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Densbüren",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Dottikon",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Dürrenäsch",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Egliswil",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Ehrendingen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Eiken",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Endingen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Frick",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Gebenstorf",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Gipf-Oberfrick",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Gontenschwil",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Gränichen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Hägglingen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Hausen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Jonen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Kaiseraugst",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Kaisten",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Killwangen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Klingnau",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Koblenz",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Kölliken",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Künten",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Küttigen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Laufenburg",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Lauffohr (Brugg)",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Leibstadt",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Lenzburg",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Magden",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Meisterschwanden",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Mellingen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Menziken",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Merenschwand",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Möhlin",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Muhen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Mumpf",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Murgenthal",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Muri",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Neuenhof",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Niederlenz",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Niederrohrdorf",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Oberentfelden",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Oberlunkhofen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Oberrohrdorf",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Oberrüti",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Obersiggenthal",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Oftringen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Othmarsingen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Reinach",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Rheinfelden",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Rothrist",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Rudolfstetten",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Rupperswil",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Safenwil",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Sarmenstorf",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Schafisheim",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Schinznach Bad",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Schinznach Dorf",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Schöftland",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Schwaderloch",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Seengen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Seon",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Sins",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Spreitenbach",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Staffelbach",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Staufen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Stein",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Strengelbach",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Suhr",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Sulz",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Tegerfelden",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Teufenthal",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Turgi",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Uerkheim",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Unterkulm",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Unterlunkhofen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Untersiggenthal",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Veltheim",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Villigen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Villmergen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Villnachern",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Vordemwald",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Waltenschwil",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Wegenstetten",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Wettingen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Windisch",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Wittnau",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Wohlen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Wölflinswil",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Würenlingen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Würenlos",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Zofingen",
+    "stateCode": "AG"
+  },
+  {
+    "name": "Appenzell",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Gonten",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Haslen",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Oberegg",
+    "stateCode": "AI"
+  },
+  {
+    "name": "Bezirk Hinterland",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Bezirk Mittelland",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Bezirk Vorderland",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Bühler",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Gais",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Heiden",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Herisau",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Rehetobel",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Schwellbrunn",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Speicher",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Teufen",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Trogen",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Urnäsch",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Waldstatt",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Walzenhausen",
+    "stateCode": "AR"
+  },
+  {
+    "name": "Aarberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Aarwangen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Adelboden",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Aeschi b. Spiez",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Arch",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Attiswil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Bäriswil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Bätterkinden",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Beatenberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Bellmund",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Belp",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Bern",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Bern-Mittelland District",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Bévilard",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Biel/Bienne",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Biel/Bienne District",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Biglen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Blumenstein",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Bolligen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Boltigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Bönigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Bowil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Brienz",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Brügg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Buchholterberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Burgdorf",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Burgistein",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Corgémont",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Court",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Courtelary",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Därligen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Diemtigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Dürrenroth",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Eggiwil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Emmental District",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Eriswil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Erlach",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Erlenbach im Simmental",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Ersigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Evilard",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Ferenbalm",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Fraubrunnen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Frauenkappelen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Frutigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Frutigen-Niedersimmental District",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Grindelwald",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Grossaffoltern",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Gstaad",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Guggisberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Heimberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Heimiswil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Hermiswil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Herzogenbuchsee",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Hilterfingen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Hindelbank",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Huttwil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Ins",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Interlaken",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Interlaken-Oberhasli District",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Jegenstorf",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Jura bernois",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kallnach",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kandersteg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kappelen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kehrsatz",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kirchberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Kirchlindach",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Köniz",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Konolfingen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Koppigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Krauchthal",
+    "stateCode": "BE"
+  },
+  {
+    "name": "La Neuveville",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Langenthal",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Langnau",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Laupen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Lauperswil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Lauterbrunnen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Lengnau",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Lenk",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Leuzigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Linden",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Lotzwil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Lützelflüh",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Lyss",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Lyssach",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Madiswil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Malleray",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Matten",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Meinisberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Meiringen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Melchnau",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Moutier",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Mühleberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Mühlethurnen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Münchenbuchsee",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Münchenwiler",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Münsingen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Müntschemier",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Muri",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Nidau",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Niederbipp",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Oberaargau",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Oberbipp",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Oberburg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Oberdiessbach",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Obersimmental-Saanen District",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Orpund",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Orvin",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Péry",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Pieterlen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Radelfingen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Reconvilier",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Riggisberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Ringgenberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Roggwil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Rohrbach",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Rubigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Rüderswil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Rüeggisberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Rüschegg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Saanen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Saint-Imier",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Sankt Stephan",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Schüpfen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Seeberg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Seedorf",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Seeland District",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Seftigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Signau",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Sigriswil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Spiez",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Steffisburg",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Stettlen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Sumiswald",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Täuffelen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Tavannes",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Thierachern",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Thun",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Thun District",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Toffen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Trachselwald",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Tramelan",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Trub",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Trubschachen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Uetendorf",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Unterseen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Urtenen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Uttigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Utzenstorf",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Vechigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Walkringen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Wangen an der Aare",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Wattenwil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Wichtrach",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Wiedlisbach",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Wilderswil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Wimmis",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Wohlen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Worb",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Worben",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Wynau",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Wynigen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Wyssachen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Zäziwil",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Zollikofen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Zweisimmen",
+    "stateCode": "BE"
+  },
+  {
+    "name": "Aesch",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Allschwil",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Arisdorf",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Arlesheim",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Bezirk Arlesheim",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Bezirk Laufen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Bezirk Liestal",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Bezirk Sissach",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Bezirk Waldenburg",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Binningen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Birsfelden",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Bottmingen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Brislach",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Bubendorf",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Buus",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Diegten",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Ettingen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Frenkendorf",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Füllinsdorf",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Gelterkinden",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Grellingen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Hölstein",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Itingen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Langenbruck",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Läufelfingen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Laufen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Lausen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Liesberg",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Liestal",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Münchenstein",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Muttenz",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Oberdorf",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Oberwil",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Ormalingen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Pfeffingen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Pratteln",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Reigoldswil",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Röschenz",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Schönenbuch",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Seltisberg",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Sissach",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Therwil",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Wahlen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Waldenburg",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Zunzgen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Zwingen",
+    "stateCode": "BL"
+  },
+  {
+    "name": "Basel",
+    "stateCode": "BS"
+  },
+  {
+    "name": "Bettingen",
+    "stateCode": "BS"
+  },
+  {
+    "name": "Riehen",
+    "stateCode": "BS"
+  },
+  {
+    "name": "Alterswil",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Attalens",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Avry-sur-Matran",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Bas-Vully",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Belfaux",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Bösingen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Broc",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Broye District",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Bulle",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Charmey",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Châtel-Saint-Denis",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Corminboeuf",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Courgevaux",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Cugy",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Domdidier",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Düdingen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Ecublens",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Ependes",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Estavayer-le-Lac",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Flamatt",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Fribourg",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Giffers",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Givisiez",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Glâne District",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Grolley",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gruyère District",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gruyères",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Heitenried",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Kerzers",
+    "stateCode": "FR"
+  },
+  {
+    "name": "La Roche",
+    "stateCode": "FR"
+  },
+  {
+    "name": "La Tour-de-Trême",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Lake District",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Marly",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Marsens",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Mézières",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Murten/Morat",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Oberschrot",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Plaffeien",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Praroman",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Rechthalten",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Riaz",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Romont",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Rue",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Sâles",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Sankt Antoni",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Sarine District",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Schmitten",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Sense District",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Tafers",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Treyvaux",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Ueberstorf",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Veveyse District",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Villars-sur-Glâne",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Villaz-Saint-Pierre",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Vuadens",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Aire-la-Ville",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Anières",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Bellevue",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Bernex",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Carouge",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Chancy",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Chêne-Bougeries",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Chêne-Bourg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Confignon",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Corsier",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Dardagny",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Genève",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Jussy",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Lancy",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Le Grand-Saconnex",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Les Avanchets",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Meinier",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Meyrin",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Onex",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Plan-les-Ouates",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Puplinge",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Satigny",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Thônex",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Troinex",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Vandœuvres",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Vernier",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Versoix",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Veyrier",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Bilten",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Ennenda",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Glarus",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Linthal",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Luchsingen",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Mollis",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Näfels",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Netstal",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Niederurnen",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Oberurnen",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Schwanden",
+    "stateCode": "GL"
+  },
+  {
+    "name": "Arosa",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Arvigo",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Bonaduz",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Breíl",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Brusio",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Buseno",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Cauco",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Cazis",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Celerina",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Chur",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Churwalden",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Davos",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Disentis",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Domat",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Felsberg",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Flims",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Grüsch",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Hinterrhein",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Igis",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Ilanz",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Jenaz",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Klosters Serneus",
+    "stateCode": "GR"
+  },
+  {
+    "name": "La Punt Chamues-ch",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Laax",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Landquart",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Lenzerheide",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Luzein",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Maienfeld",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Malans",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Mesocco",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Pontresina",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Poschiavo",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Region Albula",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Region Bernina",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Region Engiadina Bassa / Val Müstair",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Region Imboden",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Region Landquart",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Region Maloja",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Region Moesa",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Region Plessur",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Region Prättigau / Davos",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Region Surselva",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Region Viamala",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Rhäzüns",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Samedan",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Scharans",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Schiers",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Scuol",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Silvaplana",
+    "stateCode": "GR"
+  },
+  {
+    "name": "St. Moritz",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Tamins",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Thusis",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Tiefencastel",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Trimmis",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Trun",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Untervaz",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Vals Platz",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Zernez",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Zizers",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Zuoz",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Alle",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Bassecourt",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Boncourt",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Courfaivre",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Courgenay",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Courrendlin",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Courroux",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Courtételle",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Delémont",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Delémont District",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Fontenais",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Franches-Montagnes District",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Glovelier",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Le Noirmont",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Les Bois",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Les Breuleux",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Porrentruy",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Porrentruy District",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Saignelégier",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Vicques",
+    "stateCode": "JU"
+  },
+  {
+    "name": "Adligenswil",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Altishofen",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Ballwil",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Beromünster",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Buchrain",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Büron",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Buttisholz",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Dagmersellen",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Ebikon",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Eich",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Emmen",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Entlebuch",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Entlebuch District",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Escholzmatt",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Ettiswil",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Flühli",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Geuensee",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Grosswangen",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Gunzwil",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Hasle",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Hildisrieden",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Hitzkirch",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Hochdorf",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Hochdorf District",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Hohenrain",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Horw",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Inwil",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Knutwil",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Kriens",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Littau",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Lucerne-Land District",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Lucerne-Stadt District",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Luthern",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Luzern",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Malters",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Mauensee",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Meggen",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Meierskappel",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Menznau",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Nebikon",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Neudorf",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Neuenkirch",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Nottwil",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Oberkirch",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Pfaffnau",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Reiden",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Römerswil",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Root",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Ruswil",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Schenkon",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Schötz",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Schüpfheim",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Schwarzenberg",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Sempach",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Sursee",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Sursee District",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Triengen",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Udligenswil",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Vitznau",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wauwil",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Weggis",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Werthenstein",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wikon",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Willisau",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Willisau District",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Wolhusen",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Zell",
+    "stateCode": "LU"
+  },
+  {
+    "name": "Auvernier",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Bevaix",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Boudry",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Boudry District",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Cernier",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Chézard-Saint-Martin",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Cornaux",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Cortaillod",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Couvet",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Dombresson",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Fleurier",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Fontainemelon",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Gorgier",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Grand-Savagnier",
+    "stateCode": "NE"
+  },
+  {
+    "name": "La Chaux-de-Fonds",
+    "stateCode": "NE"
+  },
+  {
+    "name": "La Chaux-de-Fonds District",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Le Landeron",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Le Locle",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Le Locle District",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Les Brenets",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Les Geneveys-sur-Coffrane",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Les Ponts-de-Martel",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Marin-Epagnier",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Neuchâtel",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Neuchâtel District",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Peseux",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Saint-Aubin-Sauges",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Saint-Blaise",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Travers",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Val-de-Ruz District",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Val-de-Travers District",
+    "stateCode": "NE"
+  },
+  {
+    "name": "Beckenried",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Buochs",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Dallenwil",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Emmetten",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Ennetbürgen",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Hergiswil",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Stans",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Stansstad",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Wolfenschiessen",
+    "stateCode": "NW"
+  },
+  {
+    "name": "Alpnach",
+    "stateCode": "OW"
+  },
+  {
+    "name": "Engelberg",
+    "stateCode": "OW"
+  },
+  {
+    "name": "Giswil",
+    "stateCode": "OW"
+  },
+  {
+    "name": "Kerns",
+    "stateCode": "OW"
+  },
+  {
+    "name": "Lungern",
+    "stateCode": "OW"
+  },
+  {
+    "name": "Sachseln",
+    "stateCode": "OW"
+  },
+  {
+    "name": "Sarnen",
+    "stateCode": "OW"
+  },
+  {
+    "name": "Altstätten",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Amden",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Andwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Au",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Bad Ragaz",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Balgach",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Benken",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Bronschhofen",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Buchs",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Bütschwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Degersheim",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Diepoldsau",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Ebnat-Kappel",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Eggersriet",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Eichberg",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Eschenbach",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Flawil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Flums",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Gams",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Ganterschwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Goldach",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Goldingen",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Gommiswald",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Gossau",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Grabs",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Haag (Rheintal)",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Häggenschwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Horn",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Jona",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Jonschwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kaltbrunn",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Kirchberg",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Krummenau",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Lichtensteig",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Lütisburg",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Mogelsberg",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Mörschwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Mosnang",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Muolen",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Niederbüren",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Niederhelfenschwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Oberhelfenschwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Oberriet",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Oberuzwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Quarten",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Rapperswil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Rebstein",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Rheineck",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Rorschach",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Rüthi",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Sankt Gallen",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Sankt Gallenkappel",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Sankt Margrethen",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Sankt Peterzell",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Sargans",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Schänis",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Schmerikon",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Sennwald",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Sevelen",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Thal",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Uznach",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Uzwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wahlkreis Rheintal",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wahlkreis Rorschach",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wahlkreis Sarganserland",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wahlkreis See-Gaster",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wahlkreis St. Gallen",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wahlkreis Toggenburg",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wahlkreis Werdenberg",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wahlkreis Wil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Waldkirch",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Walenstadt",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wattwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Weesen",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wildhaus",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Wittenbach",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Zuzwil",
+    "stateCode": "SG"
+  },
+  {
+    "name": "Beringen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Bezirk Oberklettgau",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Bezirk Reiat",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Bezirk Schaffhausen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Bezirk Schleitheim",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Bezirk Stein",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Bezirk Unterklettgau",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Hallau",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Löhningen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Neuhausen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Neunkirch",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Ramsen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Schaffhausen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Schleitheim",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Stein am Rhein",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Stetten",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Thayngen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Wilchingen",
+    "stateCode": "SH"
+  },
+  {
+    "name": "Balsthal",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bettlach",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bezirk Bucheggberg",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bezirk Dorneck",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bezirk Gäu",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bezirk Gösgen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bezirk Lebern",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bezirk Olten",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bezirk Solothurn",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bezirk Thal",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bezirk Thierstein",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Bezirk Wasseramt",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Biberist",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Breitenbach",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Büsserach",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Deitingen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Derendingen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Dornach",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Egerkingen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Erlinsbach",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Fulenbach",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Gerlafingen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Grenchen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Gunzgen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Hägendorf",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Himmelried",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Hochwald",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Kleinlützel",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Kriegstetten",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Langendorf",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Laupersdorf",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Lostorf",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Luterbach",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Matzendorf",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Messen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Niedergösgen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Nunningen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Oberbuchsiten",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Obergösgen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Oensingen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Olten",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Riedholz",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Rodersdorf",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Rohr",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Schönenwerd",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Selzach",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Solothurn",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Subingen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Trimbach",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Wangen",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Welschenrohr",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Wolfwil",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Zuchwil",
+    "stateCode": "SO"
+  },
+  {
+    "name": "Altendorf",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Arth",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Bäch",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Bezirk Einsiedeln",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Bezirk Gersau",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Bezirk Höfe",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Bezirk Küssnacht",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Bezirk March",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Bezirk Schwyz",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Einsiedeln",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Feusisberg",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Freienbach",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Gersau",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Goldau",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Ibach",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Ingenbohl",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Küssnacht",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Lachen",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Muotathal",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Pfäffikon",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Reichenburg",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Rothenthurm",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Sattel",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Schindellegi",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Schübelbach",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Schwyz",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Siebnen",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Steinen",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Tuggen",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Unteriberg",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Vorderthal",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Wollerau",
+    "stateCode": "SZ"
+  },
+  {
+    "name": "Aadorf",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Affeltrangen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Altnau",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Amriswil",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Arbon",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Arbon District",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Berg",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Bottighofen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Bürglen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Diessenhofen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Egnach",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Erlen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Ermatingen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Eschenz",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Eschlikon",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Fischingen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Frauenfeld",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Frauenfeld District",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Gachnang",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Gottlieben",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Güttingen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Homburg",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Hüttwilen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Kreuzlingen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Kreuzlingen District",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Langrickenbach",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Märstetten-Dorf",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Matzingen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Müllheim",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Münchwilen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Münchwilen District",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Münsterlingen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Pfyn",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Rickenbach bei Wil",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Roggwil",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Romanshorn",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Salmsach",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Sirnach",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Steckborn",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Stettfurt",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Sulgen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Tägerwilen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Thundorf",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Uttwil",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Wagenhausen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Wängi",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Weinfelden",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Weinfelden District",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Wigoltingen",
+    "stateCode": "TG"
+  },
+  {
+    "name": "Acquarossa",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Agno",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Airolo",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Arzo",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Ascona",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Balerna",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Bellinzona",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Bellinzona District",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Biasca",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Bioggio",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Blenio District",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Bodio",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Brissago",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Cadempino",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Cadenazzo",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Cadro",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Camorino",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Canobbio",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Caslano",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Castel San Pietro",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Cevio",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Chiasso",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Claro",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Comano",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Cugnasco",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Faido",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Giubiasco",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Gordola",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Gravesano",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Lavertezzo",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Leventina District",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Ligornetto",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Locarno",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Locarno District",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Lodrino",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Losone",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Lugano",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Lugano District",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Lumino",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Magadino",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Malvaglia",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Massagno",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Melano",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Melide",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Mendrisio",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Mendrisio District",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Minusio",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Montagnola",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Monte Carasso",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Morbio Inferiore",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Muralto",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Novazzano",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Pregassona",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Pura",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Riva San Vitale",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Riviera District",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Sementina",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Sorengo",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Stabio",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Tesserete",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Vallemaggia District",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Verscio",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Viganello",
+    "stateCode": "TI"
+  },
+  {
+    "name": "Altdorf",
+    "stateCode": "UR"
+  },
+  {
+    "name": "Andermatt",
+    "stateCode": "UR"
+  },
+  {
+    "name": "Attinghausen",
+    "stateCode": "UR"
+  },
+  {
+    "name": "Bauen",
+    "stateCode": "UR"
+  },
+  {
+    "name": "Bürglen",
+    "stateCode": "UR"
+  },
+  {
+    "name": "Erstfeld",
+    "stateCode": "UR"
+  },
+  {
+    "name": "Flüelen",
+    "stateCode": "UR"
+  },
+  {
+    "name": "Schattdorf",
+    "stateCode": "UR"
+  },
+  {
+    "name": "Seedorf",
+    "stateCode": "UR"
+  },
+  {
+    "name": "Silenen",
+    "stateCode": "UR"
+  },
+  {
+    "name": "Aigle",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Aigle District",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Apples",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Arzier",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Aubonne",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Avenches",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Ballens",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Bavois",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Begnins",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Belmont-sur-Lausanne",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Berolle",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Bex",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Bière",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Blécherette",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Blonay",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Bottens",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Broye-Vully District",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Bussigny",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Caux",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Chardonne",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Château-d'Oex",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Chavannes",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Chavannes-le-Veyron",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Chavornay",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Cheseaux",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Chevilly",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Chexbres",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Colombier",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Coppet",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Cossonay",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Crissier",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Cuarnens",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Cully",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Echallens",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Ecublens",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Epalinges",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Ferreyres",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Founex",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Froideville",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Genolier",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Gimel",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Gland",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Grancy",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Grandson",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Gros-de-Vaud District",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Gryon",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Jongny",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Jura-Nord vaudois District",
+    "stateCode": "VD"
+  },
+  {
+    "name": "La Sarraz",
+    "stateCode": "VD"
+  },
+  {
+    "name": "La Tour-de-Peilz",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Lausanne",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Lausanne District",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Lavaux-Oron District",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Le Chenit",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Le Mont-sur-Lausanne",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Le Vaud",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Leysin",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Lucens",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Lutry",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Mauraz",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Mollens",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Montagny",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Montreux",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Morges",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Morges District",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Moudon",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Nyon",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Nyon District",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Ollon",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Orbe",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Oron-la-Ville",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Ouest Lausannois District",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Pailly",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Palézieux",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Pampigny",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Paudex",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Payerne",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Penthalaz",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Penthéréaz",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Perroy",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Pompaples",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Prangins",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Préverenges",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Prilly",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Puidoux",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Pully",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Renens",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Riviera-Pays-d'Enhaut District",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Rolle",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Romanel-sur-Lausanne",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Saint-Cergue",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Saint-Livres",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Saint-Prex",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Sainte-Croix",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Saubraz",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Savigny",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Sottens",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Trélex",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Vallorbe",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Vevey",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Villars-sur-Ollon",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Villeneuve",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Vuarrens",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Yverdon-les-Bains",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Yvonand",
+    "stateCode": "VD"
+  },
+  {
+    "name": "Ardon",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Ayent",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Bagnes",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Baltschieder",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Basse-Nendaz",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Brig",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Brig District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Chalais",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Chamoson",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Champéry",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Charrat",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Chermignon-d’en Haut",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Chippis",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Collombey",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Conthey",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Conthey District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Entremont District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Evionnaz",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Evolène",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Fiesch",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Fully",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Gampel",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Goms District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Grächen",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Grimisuat",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Grône",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Hérémence",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Hérens District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Lens",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Leuk",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Leuk District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Leukerbad",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Leytron",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Martigny District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Martigny-Combe",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Martigny-Ville",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Montana",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Monthey",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Monthey District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Naters",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Orsières",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Randogne",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Raron",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Raron District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Riddes",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Saas-Fee",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Saas-Grund",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Saillon",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Saint-Léonard",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Saint-Maurice",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Saint-Maurice District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Salgesch",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Salvan",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Sankt Niklaus",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Savièse",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Saxon",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Sierre",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Sierre District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Sion District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Sitten",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Stalden",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Tanay",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Troistorrents",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Turtmann",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Varen",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Verbier",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Vernayaz",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Vétroz",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Vex",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Vionnaz",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Visp",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Visp District",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Visperterminen",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Vouvry",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Zermatt",
+    "stateCode": "VS"
+  },
+  {
+    "name": "Baar",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Cham",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Hünenberg",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Menzingen",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Rotkreuz",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Steinhausen",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Unterägeri",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Walchwil",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Zug",
+    "stateCode": "ZG"
+  },
+  {
+    "name": "Adliswil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Adliswil / Adliswil (Stadtkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Adliswil / Hündli-Zopf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Adliswil / Oberleimbach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Adliswil / Sonnenberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Adliswil / Sood",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Adliswil / Tal",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Aesch",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Affoltern / Hasenbüel",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Affoltern / Oberdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Affoltern / Sonnenberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Affoltern / Unterdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Affoltern am Albis",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Andelfingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Au",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Au / Mittel-Dorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Au / Unter-Dorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bachenbülach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bäretswil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bassersdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bauma",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Benglen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Affoltern",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Andelfingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Bülach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Dielsdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Dietikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Hinwil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Horgen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Meilen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Pfäffikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Uster",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Winterthur",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bezirk Zürich",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Binz",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Binzikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Birchwil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Birmensdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bonstetten",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Brütten",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Brüttisellen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bubikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bülach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bülach / Gstückt",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bülach / Seematt",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bülach / Soligänter",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dachsen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dällikon / Dällikon (Dorf)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dänikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dielsdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dietikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dietikon / Almend",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dietikon / Guggenbühl",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dietikon / Hofacker",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dietikon / Kreuzacker",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dietikon / Oberdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dietikon / Schönenwerd",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dietikon / Vorstadt",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dietlikon / Dietlikon (Dorf)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dietlikon / Eichwiesen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dübendorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dübendorf / Kunklerstrasse",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dübendorf / Sonnenberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dübendorf / Vogelquartier",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dübendorf / Wasserfurren",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dürnten",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Ebmatingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Effretikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Effretikon / Rappenhalde-Bannhalde",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Effretikon / Rikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Effretikon / Watt",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Egg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Elgg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Elgg / Städtchen und Umgebung",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Elsau-Räterschen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Elsau-Räterschen / Räterschen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Embrach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Embrach / Embrach (Dorfkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Embrach / Kellersacker",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Erlenbach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Erlenbach / links des Dorfbachs oberhalb Bahnlinie",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Erlenbach / rechts des Dorfbachs oberhalb Bahnlinie",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Esslingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Fällanden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Fehraltorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Feldmeilen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Feuerthalen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Flurlingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Freienstein",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gattikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Geroldswil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Glattbrugg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Glattbrugg / Rohr/Platten-Balsberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Glattbrugg / Wydacker/Bettacker/Lättenwiesen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Glattfelden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gockhausen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gossau",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Greifensee",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Greifensee / Müllerwis / Seilerwis",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Greifensee / Pfisterhölzli",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Grossacker/Opfikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Grüt",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gutenswil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hadlikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hausen am Albis / Hausen (Dorf)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hedingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hegnau",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hegnau / Dammboden-Grindel",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hegnau / Sunnebüel-Eich",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Henggart",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Herrliberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hettlingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hinteregg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hinwil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hittnau / Hittnau (Dorf)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hochfelden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hofstetten",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hombrechtikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Horgen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Horgen / Allmend",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Horgen / Horgen (Dorfkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Horgen / Oberdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Horgen / Scheller-Stockerstrasse",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Höri",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Illnau",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Illnau / Unter-Illnau",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kilchberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kilchberg / Bächler-Stocken",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kilchberg / Kilchberg (Dorfkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kindhausen / Kindhausen (Dorf)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kleinandelfingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kloten",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kloten / Balsberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kloten / Freienberg (Chanzler-Chlini Chaseren)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kloten / Geissberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kloten / Holberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kloten / Horainli",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kloten / Hostrass",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kloten / Kloten (Zentrum)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kloten / Rütlen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kloten / Spitz",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Knonau",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kollbrunn",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kollbrunn / Kollbrunn (Dorfkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Küsnacht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Küsnacht / Dorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Küsnacht / Goldbach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Küsnacht / Heslibach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Küsnacht / Itschnach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Küsnacht / Schiedhalden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Langnau / Langnau (Dorf)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Langnau / Vitaquartier",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Langnau am Albis",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Männedorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Männedorf / Ausserfeld",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Männedorf / Dorfkern",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Marthalen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Mattenbach (Kreis 7)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Mattenbach (Kreis 7) / Deutweg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Mattenbach (Kreis 7) / Endliker",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Mattenbach (Kreis 7) / Gutschick",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Meilen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Mettmenstetten",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Mönchaltorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Mönchaltorf / Dorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Mühlehalde",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Nänikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Nänikon / Nänikon (Dorfkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Neerach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Neftenbach / Dorf Neftenbach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Niederglatt",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Niederglatt / Niederglatt (Dorfkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Niederhasli",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Nürensdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberengstringen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberengstringen / Rauchacher",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberengstringen / Sonnenberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberengstringen / Zentrum",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberglatt",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberglatt / Bahnhofquartier",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberglatt / Oberglatt (Dorfkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Obermeilen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberrieden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberrieden / Berg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberrieden / Mitte",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberwinterthur (Kreis 2)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberwinterthur (Kreis 2) / Guggenbühl",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberwinterthur (Kreis 2) / Hegi",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberwinterthur (Kreis 2) / Talacker",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oberwinterthur (Kreis 2) / Zinzikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Obfelden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Obfelden / Oberlunnern",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Obfelden / Toussen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oetwil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Opfikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Otelfingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Ottenbach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Pfaffhausen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Pfäffikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Pfäffikon / Irgenhausen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Pfäffikon / Pfäffikon (Dorfkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Pfungen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rafz",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Regensdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Regensdorf / Feldblumen-Riedthofstrasse",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Regensdorf / Hofacher-Geeren",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Regensdorf / Obstgarten",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Richterswil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Richterswil / Burghalde",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Richterswil / Dorfkern",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Richterswil / Richterswil (Dorfkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rorbas",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rümlang",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rümlang / Rümlang (Dorfkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rüschlikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Russikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rüti",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rüti / Dorfzentrum, Südl. Teil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rüti / Oberdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rüti / Westlicher Dorfteil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Samstagern",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schachen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schlieren",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schlieren / Boden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schlieren / Engstingerquartier",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schlieren / Freiestrasse",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schlieren / Kamp",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schlieren / Spital",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schlieren / Zentrum",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schwerzenbach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schwerzenbach / Blatten",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schwerzenbach / Chimli",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Seen (Kreis 3)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Seen (Kreis 3) / Büelwiesen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Seen (Kreis 3) / Ganzenbühl",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Seen (Kreis 3) / Oberseen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Seen (Kreis 3) / Waldegg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Seen (Kreis 3) / Waser",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Seglingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Sellenbüren",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Seuzach / Seuzach (Dorf)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Seuzach Dorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Seuzach Dorf / Breite-Weid",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Sonnhalde",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Stadt Winterthur (Kreis 1)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Stadt Winterthur (Kreis 1) / Altstadt",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Stadt Winterthur (Kreis 1) / Brühlberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Stadt Winterthur (Kreis 1) / Heiligberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Stadt Winterthur (Kreis 1) / Lind",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Stadt Winterthur (Kreis 1) / Neuwiesen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Stadt Winterthur (Kreis 1) / Tössfeld",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Stäfa",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Steinmaur",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Sulz",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Tagelswangen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Tann",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Tann / Tann (Dorfkern)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Thalwil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Thalwil / Berg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Thalwil / Dorfkern",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Thalwil / Nord",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Thalwil / See",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Thalwil / Süd",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Töss (Kreis 4)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Töss (Kreis 4) / Eichliacker",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Töss (Kreis 4) / Schlosstal",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Töss (Kreis 4) / Vorder-Dättnau",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Turbenthal",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Uerikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Uetikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Uetikon / Grossdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Uhwiesen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Uitikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Unterengstringen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Urdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Urdorf / Bodenfeld",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Urdorf / Moos",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Urdorf / Oberurdorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Uster",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Uster / Gschwader",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Uster / Kirch-Uster",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Uster / Nieder-Uster",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Uster / Nossikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Uster / Ober-Uster",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Veltheim (Kreis 5)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Veltheim (Kreis 5) / Blumenau",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Veltheim (Kreis 5) / Rosenberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Volketswil / Volketswil (Dorf)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wädenswil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wädenswil / Boller-Giessen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wädenswil / Büelen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wädenswil / Dorf (Wädenswil)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wädenswil / Eichweid",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wädenswil / Hangenmoos",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wädenswil / Leihof-Mühlebach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wädenswil / Untermosen-Fuhr",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wald",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wallisellen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wallisellen / Rieden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wallisellen / Wallisellen-Ost",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wallisellen / Wallisellen-West",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wangen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Weiningen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Weisslingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wettswil / Ausser-Dorf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wettswil / Wettswil (Dorf)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wetzikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wetzikon / Kempten",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wetzikon / Ober-Wetzikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wetzikon / Robenhausen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wetzikon / Unter-Wetzikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wiesendangen / Wiesendangen (Dorf)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wila",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Winterthur",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wolfhausen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wülflingen (Kreis 6)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wülflingen (Kreis 6) / Härti",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wülflingen (Kreis 6) / Lindenplatz",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wülflingen (Kreis 6) / Niederfeld",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wülflingen (Kreis 6) / Oberfeld",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zollikerberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zollikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zumikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 1)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 1) / City",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 1) / Lindenhof",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 1) / Rathaus",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 10)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 10) / Höngg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 10) / Rütihof",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 10) / Wipkingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 11)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 11) / Affoltern",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 11) / Oerlikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 11) / Schwandenholz",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 11) / Seebach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 12)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 12) / Auzelg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 12) / Hirzenbach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 12) / Saatlen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 12) / Schwamendingen-Mitte",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 2)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 2) / Enge",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 2) / Mittel-Leimbach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 2) / Unter-Leimbach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 2) / Wollishofen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 3)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 3) / Alt-Wiedikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 3) / Friesenberg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 3) / Sihlfeld",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 4) / Aussersihl",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 4) / Hard",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 4) / Langstrasse",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 4) / Werd",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 5)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 5) / Escher-Wyss",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 5) / Gewerbeschule",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 6)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 6) / Oberstrass",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 6) / Unterstrass",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 7)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 7) / Fluntern",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 7) / Hirslanden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 7) / Hottingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 7) / Witikon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 8)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 8) / Mühlebach",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 8) / Seefeld",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 8) / Weinegg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 9)",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 9) / Albisrieden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zürich (Kreis 9) / Altstetten",
+    "stateCode": "ZH"
+  }
+]

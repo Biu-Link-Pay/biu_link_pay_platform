@@ -1,0 +1,6962 @@
+[
+  {
+    "name": "Aalden",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Angelslo",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Annen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Assen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Ballast",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Barger-Oosterveld",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Bargeres",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Beilen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Borger",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Coevorden",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Dalen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "De Loo",
+    "stateCode": "DR"
+  },
+  {
+    "name": "De Wijk",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Diever",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Dwingeloo",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Eelde",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Eext",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Emmen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Emmer-Compascuum",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Emmer-Erfscheidenveen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Emmerhout",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Emmermeer",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Emmerschans",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Exloo",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gasselte",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gasselternijveen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente Aa en Hunze",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente Assen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente Borger-Odoorn",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente Coevorden",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente De Wolden",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente Emmen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente Hoogeveen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente Meppel",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente Midden-Drenthe",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente Noordenveld",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente Tynaarlo",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gemeente Westerveld",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Gieten",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Havelte",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Hoogeveen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Klazienaveen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Koekange",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Krakeel",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Marsdijk",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Meppel",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Nieuw-Buinen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Nieuw-Dordrecht",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Nieuw-Roden",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Noordbarge",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Norg",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Odoorn",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Oosterhesselen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Paterswolde",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Peelo",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Peize",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Roden",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Rolde",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Ruinen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Ruinerwold",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Schoonebeek",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Schoonoord",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Sleen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Tweede Exloërmond",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Tynaarlo",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Uffelte",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Valthe",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Valthermond",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Veenoord",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Vledder",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Vries",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Weiteveen",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Westerbork",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Westlaren",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Wolfsbos",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Zuidlaren",
+    "stateCode": "DR"
+  },
+  {
+    "name": "Almere Stad",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Biddinghuizen",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Dronten",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Emmeloord",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Ens",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Gemeente Almere",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Gemeente Dronten",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Gemeente Lelystad",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Gemeente Noordoostpolder",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Gemeente Urk",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Gemeente Zeewolde",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Lelystad",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Urk",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Zeewolde",
+    "stateCode": "FL"
+  },
+  {
+    "name": "Akkrum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Aldeboarn",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Aldlân-Oost",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Appelscha",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Augustinusga",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Bakhuizen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Bakkeveen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Balk",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Beetsterzwaag",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Berltsum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Bilgaard",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Bolsward",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Boornbergum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Broeksterwâld",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Buitenpost",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Burdaard",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Burgum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Camminghaburen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Damwâld",
+    "stateCode": "FR"
+  },
+  {
+    "name": "De Domp",
+    "stateCode": "FR"
+  },
+  {
+    "name": "De Drait",
+    "stateCode": "FR"
+  },
+  {
+    "name": "De Fryske Marren",
+    "stateCode": "FR"
+  },
+  {
+    "name": "De Greiden",
+    "stateCode": "FR"
+  },
+  {
+    "name": "De Knipe",
+    "stateCode": "FR"
+  },
+  {
+    "name": "De Westereen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Dokkum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Donkerbroek",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Drachten",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Drachtstercompagnie",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Drogeham",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Dronryp",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Eastermar",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Echtenerbrug",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Feanwâlden",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Ferwert",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Franeker",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Garyp",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Achtkarspelen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Ameland",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Dantumadiel",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Harlingen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Heerenveen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Leeuwarden",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Ooststellingwerf",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Opsterland",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Schiermonnikoog",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Smallingerland",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Terschelling",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Tytsjerksteradiel",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Vlieland",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gemeente Weststellingwerf",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gorredijk",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Goutum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Grou",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Gytsjerk",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Hallum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Harkema",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Harlingen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Haulerwijk",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Heechterp",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Heeg",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Heerenveen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Hoek",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Hollum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Holwerd",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Huizum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Hurdegaryp",
+    "stateCode": "FR"
+  },
+  {
+    "name": "IJlst",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Jirnsum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Joure",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Jubbega",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Kollum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Kollumerzwaag",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Kootstertille",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Koudum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Langweer",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Leeuwarden",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Lemmer",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Makkum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Mantgum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Marrum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Marsum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Menaam",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Minnertsga",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Nes",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Nieuwehorne",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Noardburgum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Noordwolde",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Oentsjerk",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Oldeberkoop",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Oost-Vlieland",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Oosterwolde",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Opeinde",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Oppenhuizen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Oranjewoud",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Oudega",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Oudehaske",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Oudemirdum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Oudeschoot",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Rottevalle",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Scharnegoutum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Schiermonnikoog",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Sexbierum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Sint Annaparochie",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Sint Jacobiparochie",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Sint Nicolaasga",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Sintjohannesga",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Sneek",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Stadsfenne",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Stiens",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Sûdwest Fryslân",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Surhuisterveen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Ternaard",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Tijnje",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Tinga",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Twijzel",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Twijzelerheide",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Tytsjerk",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Tzummarum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Ureterp",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Waadhoeke",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Warga",
+    "stateCode": "FR"
+  },
+  {
+    "name": "West-Terschelling",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Westeinde",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Wijnjewoude",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Wirdum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Witmarsum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Wolvega",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Wommels",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Workum",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Woudsend",
+    "stateCode": "FR"
+  },
+  {
+    "name": "Zuiderburen",
+    "stateCode": "FR"
+  },
+  {
+    "name": "'s-Heerenberg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Aalst",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Aalten",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Afferden",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Alverna",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ammerzoden",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Andelst",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Angeren",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Angerlo",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Anklaar",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Apeldoorn",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Arnhem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Babberich",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Bakenberg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Barneveld",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Beek gem Montferland",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Beekbergen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Beesd",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Beltrum",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Bemmel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Bennekom",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Berg en Bos",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Berg en Dal",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Bergharen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Berkelland",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Beuningen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Beusichem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Binnenstad",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Borculo",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Brakel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Brakkenstein",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Bredevoort",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Bredeweg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Brinkhorst",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Bruchem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Brummelhof",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Brummen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Burgemeesterswijk",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Componistenkwartier",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Corlaer",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Culemborg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "De Bouwhof",
+    "stateCode": "GE"
+  },
+  {
+    "name": "De Haven",
+    "stateCode": "GE"
+  },
+  {
+    "name": "De Heeze",
+    "stateCode": "GE"
+  },
+  {
+    "name": "De Mheen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Deest",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Deil",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Dieren",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Doesburg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Doetinchem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Doornenburg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Doornspijk",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Doornsteeg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Doorwerth",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Driehuizen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Driel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Drumpt",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Druten",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Duiven",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ede",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ederveen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Eefde",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Eerbeek",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Eibergen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Elburg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Elden",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ellecom",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Elspeet",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Elst",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Emst",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Epe",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Epse",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ermelo",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Etten",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gameren",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Garderen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Geitenkamp",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Geldermalsen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Geldermalsen-West",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Aalten",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Apeldoorn",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Arnhem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Barneveld",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Berg en Dal",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Beuningen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Bronckhorst",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Brummen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Buren",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Culemborg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Doesburg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Doetinchem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Druten",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Duiven",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Ede",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Elburg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Epe",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Ermelo",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Harderwijk",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Hattem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Heerde",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Heumen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Lingewaard",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Lochem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Maasdriel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Montferland",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Neder-Betuwe",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Nijkerk",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Nijmegen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Nunspeet",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Oldebroek",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Overbetuwe",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Putten",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Renkum",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Rheden",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Rozendaal",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Scherpenzeel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Tiel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Voorst",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Wageningen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente West Maas en Waal",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Westervoort",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Wijchen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Winterswijk",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Zaltbommel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Zevenaar",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gemeente Zutphen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gendringen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gendt",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Giesbeek",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gorssel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Groesbeek",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Groessen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Gulden Bodem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Haaften",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Haalderen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Harderwijk",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Harskamp",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Hatert",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Hattem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Hattemerbroek",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Hedel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Heelsum",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Heerde",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Heerewaarden",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Hees",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Hengelo",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Hengstdal",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Herwijnen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Het Loo",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Heteren",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Heumen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Hoogkamp",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Horssen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Hummelo",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Hunnerberg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ingen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Keijenborg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Kerkdriel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Kerschoten",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Kesteren",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Kootwijkerbroek",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Laren",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Leesten",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Lent",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Leuth",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Lichtenvoorde",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Lienden",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Lindenholt",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Lobith",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Lochem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Loenen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Lunteren",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Malburgen West",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Matendonk",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Matendreef",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Matengaarde",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Matenhoeve",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Matenhorst",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Matenveld",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Maurik",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Meteren",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Nederhemert",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Nederhemert-Noord",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Nederwoud",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Neede",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Nijkerk",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Nijkerkerveen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Nijmegen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Nunspeet",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ochten",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Oldebroek",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ooij",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Oost Gelre",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Oostendorp",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Oosterbeek",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Oosterhout",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ooy",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ooyerhoek",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ophemert",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Opheusden",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Opijnen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Orden",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Otterlo",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Oude IJsselstreek",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Overasselt",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Pannerden",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Puiflijk",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Putten",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Renkum",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Rheden",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Rivierenkwartier",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Rossum",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Rozendaal",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ruurlo",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Scherpenzeel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Silvolde",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Sluisoord",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Spainkbos",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Sprengenbos",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Sprengenweg-Noord",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Sprenkelaar",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Staatsliedenkwartier",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Steenderen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Stegeslag",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Sterrenberg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Terborg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Terschuur",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Terwolde",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Tiel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Tolkamer",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Tricht",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Twello",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Uddel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Ugchelen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Vaassen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Valburg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Valendries",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Varsseveld",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Velp",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Vogelkwartier",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Voorst",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Voorthuizen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Vorden",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Vredenburg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Vuren",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Waardenburg",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Wageningen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Wapenveld",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Warnsveld",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Wekerom",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Welgelegen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "West Betuwe",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Westeneng",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Westenenk",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Westervoort",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Wijchen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Winkewijert",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Winterswijk",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Wisch",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Wolfheze",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Woudhuis",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Zaltbommel",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Zeddam",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Zelhem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Zetten",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Zevenaar",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Zevenhuizen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Zoelen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Zonnemaat",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Zuilichem",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Zutphen",
+    "stateCode": "GE"
+  },
+  {
+    "name": "Aduard",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Appingedam",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Baflo",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Bedum",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Bellingwolde",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Blijham",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Coendersborg",
+    "stateCode": "GR"
+  },
+  {
+    "name": "De Wijert",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Delfzijl",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Eenrum",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Eexta",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Farmsum",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gemeente  Oldambt",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gemeente Appingedam",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gemeente Delfzijl",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gemeente Groningen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gemeente Loppersum",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gemeente Pekela",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gemeente Stadskanaal",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Gemeente Veendam",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Glimmen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Grijpskerk",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Groningen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Grootegast",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Haren",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Harkstede",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Heiligerlee",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Helpman",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Hoogezand",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Korrewegwijk",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Leek",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Leens",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Loppersum",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Marum",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Meeden",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Middelstum",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Midden-Groningen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Midwolda",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Niekerk",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Nieuwe Pekela",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Nieuwolda",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Noordbroek",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Noordhorn",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Obergum",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Oldehove",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Ommelanderwijk",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Onstwedde",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Oosterhoogebrug",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Oosterpark",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Oude Pekela",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Reitdiep",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Sappemeer",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Scheemda",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Schildwolde",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Sellingen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Selwerd",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Siddeburen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Slochteren",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Spijk",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Stadskanaal",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Ten Boer",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Ter Apel",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Tuikwerd",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Uithuizen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Uithuizermeeden",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Ulrum",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Usquert",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Veendam",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Vlagtwedde",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Wagenborgen",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Warffum",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Westerlee",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Westerwolde",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Wildervank",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Winschoten",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Winsum",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Zoutkamp",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Zuidbroek",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Zuidhorn",
+    "stateCode": "GR"
+  },
+  {
+    "name": "Abdissenbosch",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Amby",
+    "stateCode": "LI"
+  },
+  {
+    "name": "America",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Amstenrade",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Arcen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Baarlo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Banholt",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Beegden",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Beek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Beersdal",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Beesel",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Belfort",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Berg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Beringe",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Biesland",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Bleijerheide",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Blitterswijck",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Bocholtz",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Borgharen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Born",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Brabander",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Brachterbeek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Broekhem",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Broeksittard",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Brukske",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Brunssum",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Buchten",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Budschop",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Bunde",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Chevremont",
+    "stateCode": "LI"
+  },
+  {
+    "name": "De Heeg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Doenrade",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Egchel",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Eijsden",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Eijsden-Margraten",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Einighausen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Elsloo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Geleen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Beek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Beesel",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Bergen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Brunssum",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Echt-Susteren",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Gennep",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Heerlen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Horst aan de Maas",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Kerkrade",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Leudal",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Maasgouw",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Maastricht",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Meerssen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Mook en Middelaar",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Nederweert",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Peel en Maas",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Roerdalen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Roermond",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Simpelveld",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Sittard-Geleen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Stein",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Vaals",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Venlo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Venray",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Voerendaal",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gemeente Weert",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gennep",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gracht",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Grashoek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Grevenbicht",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gronsveld",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gulpen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Gulpen-Wittem",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Guttecoven",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Haanrade",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Haelen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Heel",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Heer",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Heerlen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Hegelsom",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Heide",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Heijen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Heksenberg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Helden",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Herkenbosch",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Herten",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Heugem",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Heythuysen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Hoensbroek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Holtum",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Holz",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Hopel",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Houthem",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Hulsberg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Husken",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Kaalheide",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Kakert",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Keent",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Kelpen-Oler",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Kerensheide",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Kerkrade",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Kessel",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Klimmen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Koningsbosch",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Koningslust",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Kruisberg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Kunrade",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Landgraaf",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Lauradorp",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Leeuwen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Leuken",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Leunen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Lichtenberg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Limbricht",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Limmel",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Lindenheuvel",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Linne",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Lottum",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Maasbracht",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Maasbree",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Maastricht",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Malberg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Margraten",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Mariarade",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Mechelen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Meerlo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Meerssen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Meezenbroek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Meijel",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Melderslo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Melick",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Merkelbeek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Merselo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Merum",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Milsbeek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Moesel",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Montfort",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Mook",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Munstergeleen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Nederweert",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Neerbeek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Nieuw-Lotbroek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Nieuwdorp",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Nuth",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Obbicht",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Offenbeek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Oirlo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Oirsbeek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Oostrum",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Ophoven",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Ospel",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Ottersum",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Oud-Caberg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Overhoven",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Panningen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Passart",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Peij",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Posterholt",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Pottenberg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Puth",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Reuver",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Roermond",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Roosteren",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Rothem",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Scharn",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Schilberg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Schimmert",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Schinnen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Schinveld",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Sevenum",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Sibbe",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Simpelveld",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Sint Joost",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Sint Odiliënberg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Sittard",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Spaubeek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Spekholzerheide",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Stadbroek",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Stein",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Stramproy",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Tegelen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Terwinselen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Thorn",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Tienray",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Ubachsberg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Ulestraten",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Urmond",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Vaals",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Valkenburg",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Valkenburg aan de Geul",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Veltum",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Venlo",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Venray",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Vijlen",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Vlodrop",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Voerendaal",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Vrieheide",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Wanssum",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Waubach",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Weert",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Well",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Wellerlooi",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Wessem",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Wijlre",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Wijnandsrade",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Wolder",
+    "stateCode": "LI"
+  },
+  {
+    "name": "Ysselsteyn",
+    "stateCode": "LI"
+  },
+  {
+    "name": "'s Gravenmoer",
+    "stateCode": "NB"
+  },
+  {
+    "name": "'s-Hertogenbosch",
+    "stateCode": "NB"
+  },
+  {
+    "name": "'t Hofke",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Aalburg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Aalst",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Aarle-Rixtel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Abcoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Akert",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Almkerk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Alphen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Andel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Asten",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Baardwijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Baarle-Nassau",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Bakel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Bavel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Beek",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Beers",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Belcrum",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Bergeijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Bergen op Zoom",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Berghem",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Berlicum",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Besoijen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Best",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Besterd",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Biesdonk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Bitswijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Blaarthem",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Bladel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Boekel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Bosschenhoofd",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Boxmeer",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Boxtel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Brand",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Breda",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Breugel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Broekhoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Budel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Budel-Dorplein",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Budel-Schoot",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Chaam",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Coevering",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Cranendonck",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Cuijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "De Blaak",
+    "stateCode": "NB"
+  },
+  {
+    "name": "De Doornakkers",
+    "stateCode": "NB"
+  },
+  {
+    "name": "De Kruiskamp",
+    "stateCode": "NB"
+  },
+  {
+    "name": "De Reit",
+    "stateCode": "NB"
+  },
+  {
+    "name": "De Rompert",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Den Dungen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Deuteren",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Diessen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Dinteloord",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Dommelen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Dongen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Donk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Doonheide",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Dorst",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Duizel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Eckart",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Eerde",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Eerschot",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Eersel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Eindhoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Ekenrooi",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Elshout",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Enschot",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Erp",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Esch",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Fijnaart",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gageldonk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Geenhoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Geertruidenberg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Geffen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Geldrop",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente 's-Hertogenbosch",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Alphen-Chaam",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Asten",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Baarle-Nassau",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Bergen op Zoom",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Bernheze",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Best",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Bladel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Boekel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Boxmeer",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Boxtel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Breda",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Cranendonck",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Cuijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Deurne",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Dongen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Drimmelen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Eersel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Eindhoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Etten-Leur",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Geertruidenberg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Geldrop-Mierlo",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Gemert-Bakel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Gilze en Rijen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Goirle",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Grave",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Haaren",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Halderberge",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Heeze-Leende",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Helmond",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Heusden",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Hilvarenbeek",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Laarbeek",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Landerd",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Loon op Zand",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Mill en Sint Hubert",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Moerdijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Nuenen, Gerwen en Nederwetten",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Oirschot",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Oisterwijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Oosterhout",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Oss",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Reusel-De Mierden",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Rucphen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Sint Anthonis",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Sint-Michielsgestel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Someren",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Son en Breugel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Steenbergen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Tilburg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Uden",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Valkenswaard",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Veldhoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Vught",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Waalre",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Waalwijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Woensdrecht",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemeente Zundert",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemert",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gemonde",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Genderen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Genoenhuis",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gerwen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Giessen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Gilze",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Ginneken",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Goirle",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Grasrijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Grave",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Groenewoud",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Haaren",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Haarsteeg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Halsteren",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Handel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Hapert",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Haps",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Heerle",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Heesch",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Heesterakker",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Heeswijk-Dinther",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Heeze",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Helmond",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Helvoirt",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Herpen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Heusden",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Heusdenhout",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Hilvarenbeek",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Hoeven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Hoge Vucht",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Hooge Mierde",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Hooge Zwaluwe",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Hoogeloon",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Hoogerheide",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Huijbergen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Jagershoef",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kalsdonk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Klein-Zundert",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Klundert",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Korvel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Krooswijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Kruisland",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Lage Mierde",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Lakerlopen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Langenboom",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Leende",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Leest",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Lepelstraat",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Liempde",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Lierop",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Lieshout",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Liessel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Lievendaal",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Lith",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Loon op Zand",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Loosbroek",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Loven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Luyksgestel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Maarheeze",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Maaskantje",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Made",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Mariahout",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Meerhoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Meerveldhoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Megen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Meierijstad",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Melle",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Middelbeers",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Middelrode",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Mierlo",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Milheeze",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Moerdijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Molenhoek",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Muschberg en Geestenberg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Naastenbest",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Neerkant",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Nieuw-Vossemeer",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Nieuwkuijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Nijnsel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Nispen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Nistelrode",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Noordgeest",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Noordhoek",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Nuenen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Odiliapeel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Oerle",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Oirschot",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Oisterwijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Oosteind",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Oostelbeers",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Oosterhout",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Orthen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Oss",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Ossendrecht",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Oud Gastel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Overloon",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Princenhage",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Prinsenbeek",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Putte",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Quirijnstok",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Raam",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Raamsdonk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Raamsdonksveer",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Ravenstein",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Reek",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Reusel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Riethoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Rijen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Rijsbergen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Rijswijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Roosendaal",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Rucphen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Salderes",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Schaijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Schijndel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Schutsboom",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Sint Anthonis",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Sint Willebrord",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Sint-Michielsgestel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Sint-Oedenrode",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Soerendonk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Someren",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Someren-Eind",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Son",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Speelheide",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Sprundel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Stampersgat",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Standdaarbuiten",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Steenbergen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Steensel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Stepekolk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Terheijden",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Teteringen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Theereheide",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Tilburg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Tivoli",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Tongelre",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Uden",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Udenhout",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Ulvenhout",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Vaartbroek",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Valkenswaard",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Veen",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Veghel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Veldhoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Ven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Venhorst",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Villapark",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Vliedberg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Vlierden",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Vlokhoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Voldijn",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Volkel",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Vorstenbosch",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Vught",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Waalre",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Waalwijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Wagenberg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Wanroij",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Waspik",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Waterdonken",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Welberg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Werkendam",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Wernhout",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Westerhoven",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Wijbosch",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Wilhelminadorp",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Wisselaar",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Woensdrecht",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Woenselse Heide",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Woudrichem",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Wouw",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Zandberg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Zeeland",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Zeelst",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Zegge",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Zeilberg",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Zesgehuchten",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Zevenbergschen Hoek",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Zijtaart",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Zonderwijk",
+    "stateCode": "NB"
+  },
+  {
+    "name": "Zundert",
+    "stateCode": "NB"
+  },
+  {
+    "name": "'t Zand",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Aalsmeer",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Abbekerk",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Alkmaar",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Amstelveen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Amsterdam",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Amsterdam-Zuidoost",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Ankeveense Rade",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Avenhorn",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Bangert",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Bennebroek",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Berkhout",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Beverwijk",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Bijvanck",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Blaricum",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Bloemendaal",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Breezand",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Broek in Waterland",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Broek op Langedijk",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Bussum",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Callantsoog",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Castricum",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Commandeurs",
+    "stateCode": "NH"
+  },
+  {
+    "name": "De Glip",
+    "stateCode": "NH"
+  },
+  {
+    "name": "De Goorn",
+    "stateCode": "NH"
+  },
+  {
+    "name": "De Koog",
+    "stateCode": "NH"
+  },
+  {
+    "name": "De Maer",
+    "stateCode": "NH"
+  },
+  {
+    "name": "De Noord",
+    "stateCode": "NH"
+  },
+  {
+    "name": "De Rijp",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Den Burg",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Den Helder",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Den Oever",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Diemen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Dirkshorn",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Driemond",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Duivendrecht",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Edam",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Egmond aan Zee",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Egmond-Binnen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Enkhuizen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Aalsmeer",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Alkmaar",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Amstelveen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Amsterdam",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Beemster",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Bergen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Beverwijk",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Blaricum",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Bloemendaal",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Castricum",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Den Helder",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Diemen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Drechterland",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Edam-Volendam",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Enkhuizen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Haarlem",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Haarlemmermeer",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Heemskerk",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Heemstede",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Heerhugowaard",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Heiloo",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Hilversum",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Hollands Kroon",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Hoorn",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Huizen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Koggenland",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Landsmeer",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Langedijk",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Laren",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Medemblik",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Oostzaan",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Opmeer",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Ouder-Amstel",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Purmerend",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Schagen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Stede Broec",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Texel",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Uitgeest",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Uithoorn",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Velsen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Waterland",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Weesp",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Wijdemeren",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Wormerland",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Zaanstad",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gemeente Zandvoort",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Gooise Meren",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Haarlem",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Halfweg",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Harenkarspel",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Heemskerk",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Heemstede",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Heerhugowaard",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Heiloo",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Hem",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Hensbroek",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Hilversum",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Hilversumse Meent",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Hippolytushoef",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Hofgeest",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Hoofddorp",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Hoogwoud",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Hoorn",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Huizen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Ilpendam",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Kadoelen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Kerkelanden",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Kortenhoef",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Kudelstaart",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Landsmeer",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Langeheit",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Laren",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Limmen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Lisserbroek",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Lutjebroek",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Marken",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Medemblik",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Middenbeemster",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Middenmeer",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Midwoud",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Monnickendam",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Muiden",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Muiderberg",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Naarden",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Nieuw-Loosdrecht",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Nieuwe-Niedorp",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Noord-Scharwoude",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Obdam",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Onderdijk",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Oosteinde",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Oosterblokker",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Oosterzij",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Oosthuizen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Opmeer",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Opperdoes",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Oud-Loosdrecht",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Ouderkerk aan de Amstel",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Oudeschild",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Oudkarspel",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Overveen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Petten",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Purmerend",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Schagen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Schagerbrug",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Schermerhorn",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Sint Pancras",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Slootdorp",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Spierdijk",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Stompetoren",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Twisk",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Uitgeest",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Uithoorn",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Velsen-Zuid",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Vijfhuizen",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Vogelenzang",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Volendam",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Waarland",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Waterakkers",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Weesp",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Westwoud",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Wieringerwaard",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Wieringerwerf",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Wijdenes",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Wijk aan Zee",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Winkel",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Zaandam",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Zaandijk",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Zaanstad",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Zandvoort",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Zuid-Scharwoude",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Zwaagdijk-Oost",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Zwaanshoek",
+    "stateCode": "NH"
+  },
+  {
+    "name": "Almelo",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Baalder",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Berkum",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Blokzijl",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Borgele",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Borne",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Boskamp",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Brunnepe",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Dalfsen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "De Hoven",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Delden",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Den Ham",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Deventer",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Diepenheim",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Enschede",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Flevowijk",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Frankhuis",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Almelo",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Borne",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Dalfsen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Deventer",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Dinkelland",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Enschede",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Haaksbergen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Hardenberg",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Hellendoorn",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Hengelo",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Hof van Twente",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Kampen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Losser",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Oldenzaal",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Olst-Wijhe",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Ommen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Raalte",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Rijssen-Holten",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Staphorst",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Steenwijkerland",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Tubbergen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Twenterand",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Wierden",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Zwartewaterland",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Gemeente Zwolle",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Giethoorn",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Goor",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Grafhorst",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Haaksbergen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Haarle",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Hardenberg",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Hasselt",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Heino",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Hengelo",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Hengevelde",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Het Oostrik",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Kampen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Klein Driene",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Losser",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Magele",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Markelo",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Mekkelholt",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Nieuwoord",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Nijrees",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Oldemarkt",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Oldenzaal",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Olst",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Ommen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Oosterholt",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Oostermeenthe",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Ootmarsum",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Pathmos",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Pierik",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Raalte",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Rossum",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Schalkhaar",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Sint Jansklooster",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Staphorst",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Steenwijk",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Steenwijkerwold",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Tubbergen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Tuk",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Twekkelerveld",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Vollenhove",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Vriezenveen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Vroomshoop",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Westerhaar-Vriezenveensewijk",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Wierden",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Wijhe",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Woolde",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Wooldrik",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Zuid-Berghuizen",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Zwolle",
+    "stateCode": "OV"
+  },
+  {
+    "name": "Abcoude",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Amerongen",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Amersfoort",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Austerlitz",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Baambrugge",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Baarn",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Bosch en Duin",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Breukelen",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Bunnik",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Bunschoten",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Cothen",
+    "stateCode": "UT"
+  },
+  {
+    "name": "De Bilt",
+    "stateCode": "UT"
+  },
+  {
+    "name": "De Hagen",
+    "stateCode": "UT"
+  },
+  {
+    "name": "De Uithof",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Doorn",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Driebergen-Rijsenburg",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Amersfoort",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Baarn",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Bunnik",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Bunschoten",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente De Bilt",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente De Ronde Venen",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Eemnes",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Houten",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente IJsselstein",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Leusden",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Lopik",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Montfoort",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Nieuwegein",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Oudewater",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Renswoude",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Rhenen",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Soest",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Utrecht",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Utrechtse Heuvelrug",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Veenendaal",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Wijk bij Duurstede",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Woerden",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Woudenberg",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Gemeente Zeist",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Groenekan",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Hollandsche Rading",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Houten",
+    "stateCode": "UT"
+  },
+  {
+    "name": "IJsselstein",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Kedichem",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Kerckebosch",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Langenoord",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Leerdam",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Leersum",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Leusden",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Linschoten",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Lopik",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Lunetten",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Maarn",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Maarssen",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Maartensdijk",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Mijdrecht",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Montfoort",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Nieuwegein",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Nijenheim",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Odijk",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Oog in Al",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Oudewater",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Overberg",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Randenbroek",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Renswoude",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Rhenen",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Schoonrewoerd",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Soest",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Soestdijk",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Spakenburg",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Spechtenkamp",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Stichtse Vecht",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Utrecht",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Veenendaal",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Veldhuizen",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Vianen",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Vinkeveen",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Vleuten",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Vreeswijk",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Werkhoven",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Wijk bij Duurstede",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Wilnis",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Woerden",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Woudenberg",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Zeist",
+    "stateCode": "UT"
+  },
+  {
+    "name": "Aagtekerke",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Aardenburg",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Arnemuiden",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Axel",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Borssele",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Breskens",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Brouwershaven",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Bruinisse",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Colijnsplaat",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Dauwendaele",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Domburg",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Borsele",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Goes",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Hulst",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Kapelle",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Middelburg",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Noord-Beveland",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Reimerswaal",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Sluis",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Terneuzen",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Tholen",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Veere",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Gemeente Vlissingen",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Goes",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Griffioen",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Grijpskerke",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Haamstede",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Hulst",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "IJzendijke",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Kamperland",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Kapelle",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Klarenbeek",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Kloetinge",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Koewacht",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Koudekerke",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Lammerenburg",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Malta",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Meliskerke",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Middelburg",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Nieuw- en Sint Joosland",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Nieuwerkerk",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Oostburg",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Oosterland",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Oostkapelle",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Othene",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Oud-Vossemeer",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Poortvliet",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Renesse",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Sas van Gent",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Scharendijke",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Scherpenisse",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Schoondijke",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Schouwen-Duiveland",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Serooskerke",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Sint Laurens",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Sint Philipsland",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Sluis",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Sluiskil",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Stavenisse",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Terneuzen",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Tholen",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Vlissingen",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Waarde",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Wemeldinge",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "West-Souburg",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Westdorpe",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Westerzicht",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Westkapelle",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Wissenkerke",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Wolphaartsdijk",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Yerseke",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Zaamslag",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Zierikzee",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "Zoutelande",
+    "stateCode": "ZE"
+  },
+  {
+    "name": "'s-Gravenland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "'s-Gravenzande",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Adegeest",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Alblasserdam",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Alphen aan den Rijn",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Ammerstol",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Arkel",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Barendrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Benthuizen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bergschenhoek",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bergstoep",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Berkel en Rodenrijs",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Berkenwoude",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Binnenhof",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bleiswijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bleskensgraaf",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bloemendaal",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bloemhof",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bodegraven",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bodegraven-Reeuwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Bolnes",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Boskoop",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Boven-Hardinxveld",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Brielle",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Capelle aan den IJssel",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Capelle-West",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Carnisse",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "De Kieviet",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "De Lier",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "De Peulen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Delfshaven",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Delft",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dirksland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Dordrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Driebruggen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Driemanspolder",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Duindorp",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Duinzigt",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Essesteijn",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Feijenoord",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Alblasserdam",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Albrandswaard",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Alphen aan den Rijn",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Barendrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Brielle",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Capelle aan den IJssel",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Delft",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Den Haag",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Dordrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Goeree-Overflakkee",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Gorinchem",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Gouda",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Hardinxveld-Giessendam",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Hellevoetsluis",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Hendrik-Ido-Ambacht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Hillegom",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Kaag en Braassem",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Katwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Krimpen aan den IJssel",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Lansingerland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Leiden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Leiderdorp",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Leidschendam-Voorburg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Lisse",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Maassluis",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Midden-Delfland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Nieuwkoop",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Noordwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Oegstgeest",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Papendrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Pijnacker-Nootdorp",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Ridderkerk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Rijswijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Rotterdam",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Schiedam",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Sliedrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Teylingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Vlaardingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Voorschoten",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Waddinxveen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Wassenaar",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Westland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Westvoorne",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Zoetermeer",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Zoeterwoude",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Zuidplas",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gemeente Zwijndrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Giessenburg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Giessendam",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Goedereede",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gorinchem",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gouda",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gouderak",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Goudswaard",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Gouwsluis",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Groenswaard",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Groot IJsselmonde",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Groot-Ammers",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Haastrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Heerjansdam",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Heijplaat",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hellevoetsluis",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hendrik-Ido-Ambacht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hillegom",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hoek van Holland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hoge Mors",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Honselersdijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hoogblokland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Hoogmade",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Katendrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Katwijk aan den Rijn",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Katwijk aan Zee",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kerkehout",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kijkduin",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Klaaswaal",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kop van Zuid",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Krimpen aan den IJssel",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Krimpenerwaard",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Kwintsheul",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Leiden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Leiderdorp",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Leimuiden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Liesveld",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Lisse",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Lombardijen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Maasdijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Maasland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Maassluis",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Merenwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Middelharnis",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Middelsluis",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Mijnsheerenland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Monster",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Naaldwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Neder-Hardinxveld",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Nieuw-Beijerland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Nieuw-Lekkerland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Nieuwenhoorn",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Nieuwkoop",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Nieuwpoort",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Nieuwveen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Nissewaard",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Noord-Hofland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Noordeinde",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Noordeloos",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Noordwijk-Binnen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Noordwijkerhout",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Numansdorp",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oegstgeest",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Ommoord",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oostdorp",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oostvoorne",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oranjewijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oud-Beijerland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Ouddorp",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Oude Wetering",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Ouderkerk aan den IJssel",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Overschie",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Palenstein",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Papendrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Papenveer",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Pendrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Pernis",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Piershil",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Pijnacker",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Poeldijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Reeuwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rhoon",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Ridderkerk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rijnsaterwoude",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rijnsburg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rijpwetering",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rijsoord",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rijswijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rockanje",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Roelofarendsveen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rotterdam",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rozenburg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Rugge",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Sassenheim",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schelluinen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Scheveningen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schiebroek",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schiedam",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schipluiden",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Schoonhoven",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Sliedrecht",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Slikkerveer",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Spangen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Spijkenisse",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Spoorwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Statenkwartier",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Stein",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Stolwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Strijen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Strijp",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Terbregge",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "The Hague",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Tuindorp",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Valkenburg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Vierpolders",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Vlaardingen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Vlietwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Vogelwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Vondelwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Voorburg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Voorhout",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Voorschoten",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Vreewijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Waarder",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Waddinxveen",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Warmond",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Wassenaar",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Weerestein",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Weijpoort",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Westmaas",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Woubrugge",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Ypenburg",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zevenhoven",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zoetermeer",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zoeterwoude-Dorp",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zuid-Beijerland",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zuidwijk",
+    "stateCode": "ZH"
+  },
+  {
+    "name": "Zwijndrecht",
+    "stateCode": "ZH"
+  }
+]

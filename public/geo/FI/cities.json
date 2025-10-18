@@ -1,0 +1,1610 @@
+[
+  {
+    "name": "Imatra",
+    "stateCode": "02"
+  },
+  {
+    "name": "Joutseno",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lappeenranta",
+    "stateCode": "02"
+  },
+  {
+    "name": "Lemi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Luumäki",
+    "stateCode": "02"
+  },
+  {
+    "name": "Nuijamaa",
+    "stateCode": "02"
+  },
+  {
+    "name": "Parikkala",
+    "stateCode": "02"
+  },
+  {
+    "name": "Rautjärvi",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ruokolahti",
+    "stateCode": "02"
+  },
+  {
+    "name": "Saari",
+    "stateCode": "02"
+  },
+  {
+    "name": "Savitaipale",
+    "stateCode": "02"
+  },
+  {
+    "name": "Taipalsaari",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ylämaa",
+    "stateCode": "02"
+  },
+  {
+    "name": "Ähtäri",
+    "stateCode": "03"
+  },
+  {
+    "name": "Alahärmä",
+    "stateCode": "03"
+  },
+  {
+    "name": "Alajärvi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Alavus",
+    "stateCode": "03"
+  },
+  {
+    "name": "Evijärvi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ilmajoki",
+    "stateCode": "03"
+  },
+  {
+    "name": "Isojoki",
+    "stateCode": "03"
+  },
+  {
+    "name": "Jalasjärvi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Jurva",
+    "stateCode": "03"
+  },
+  {
+    "name": "Karijoki",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kauhajoki",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kauhava",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kortesjärvi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kuortane",
+    "stateCode": "03"
+  },
+  {
+    "name": "Kurikka",
+    "stateCode": "03"
+  },
+  {
+    "name": "Lappajärvi",
+    "stateCode": "03"
+  },
+  {
+    "name": "Lapua",
+    "stateCode": "03"
+  },
+  {
+    "name": "Lehtimäki",
+    "stateCode": "03"
+  },
+  {
+    "name": "Nurmo",
+    "stateCode": "03"
+  },
+  {
+    "name": "Seinäjoki",
+    "stateCode": "03"
+  },
+  {
+    "name": "Soini",
+    "stateCode": "03"
+  },
+  {
+    "name": "Teuva",
+    "stateCode": "03"
+  },
+  {
+    "name": "Töysä",
+    "stateCode": "03"
+  },
+  {
+    "name": "Vimpeli",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ylihärmä",
+    "stateCode": "03"
+  },
+  {
+    "name": "Ylistaro",
+    "stateCode": "03"
+  },
+  {
+    "name": "Enonkoski",
+    "stateCode": "04"
+  },
+  {
+    "name": "Haukivuori",
+    "stateCode": "04"
+  },
+  {
+    "name": "Heinävesi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Hirvensalmi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Jäppilä",
+    "stateCode": "04"
+  },
+  {
+    "name": "Joroinen",
+    "stateCode": "04"
+  },
+  {
+    "name": "Juva",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kangasniemi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Kerimäki",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mäntyharju",
+    "stateCode": "04"
+  },
+  {
+    "name": "Mikkeli",
+    "stateCode": "04"
+  },
+  {
+    "name": "Pertunmaa",
+    "stateCode": "04"
+  },
+  {
+    "name": "Pieksämäki",
+    "stateCode": "04"
+  },
+  {
+    "name": "Punkaharju",
+    "stateCode": "04"
+  },
+  {
+    "name": "Puumala",
+    "stateCode": "04"
+  },
+  {
+    "name": "Rantasalmi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Ristiina",
+    "stateCode": "04"
+  },
+  {
+    "name": "Savonlinna",
+    "stateCode": "04"
+  },
+  {
+    "name": "Savonranta",
+    "stateCode": "04"
+  },
+  {
+    "name": "Sulkava",
+    "stateCode": "04"
+  },
+  {
+    "name": "Virtasalmi",
+    "stateCode": "04"
+  },
+  {
+    "name": "Hyrynsalmi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kajaani",
+    "stateCode": "05"
+  },
+  {
+    "name": "Kuhmo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Paltamo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Puolanka",
+    "stateCode": "05"
+  },
+  {
+    "name": "Ristijärvi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Sotkamo",
+    "stateCode": "05"
+  },
+  {
+    "name": "Suomussalmi",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vaala",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vuokatti",
+    "stateCode": "05"
+  },
+  {
+    "name": "Vuolijoki",
+    "stateCode": "05"
+  },
+  {
+    "name": "Forssa",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hämeenlinna",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hauho",
+    "stateCode": "06"
+  },
+  {
+    "name": "Hausjärvi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Humppila",
+    "stateCode": "06"
+  },
+  {
+    "name": "Janakkala",
+    "stateCode": "06"
+  },
+  {
+    "name": "Jokioinen",
+    "stateCode": "06"
+  },
+  {
+    "name": "Kalvola",
+    "stateCode": "06"
+  },
+  {
+    "name": "Lammi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Loppi",
+    "stateCode": "06"
+  },
+  {
+    "name": "Renko",
+    "stateCode": "06"
+  },
+  {
+    "name": "Riihimäki",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tammela",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tervakoski",
+    "stateCode": "06"
+  },
+  {
+    "name": "Tuulos",
+    "stateCode": "06"
+  },
+  {
+    "name": "Ypäjä",
+    "stateCode": "06"
+  },
+  {
+    "name": "Halsua",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kälviä",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kannus",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kaustinen",
+    "stateCode": "07"
+  },
+  {
+    "name": "Kokkola",
+    "stateCode": "07"
+  },
+  {
+    "name": "Lestijärvi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Lohtaja",
+    "stateCode": "07"
+  },
+  {
+    "name": "Perho",
+    "stateCode": "07"
+  },
+  {
+    "name": "Toholampi",
+    "stateCode": "07"
+  },
+  {
+    "name": "Ullava",
+    "stateCode": "07"
+  },
+  {
+    "name": "Veteli",
+    "stateCode": "07"
+  },
+  {
+    "name": "Äänekoski",
+    "stateCode": "08"
+  },
+  {
+    "name": "Hankasalmi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Jämsä",
+    "stateCode": "08"
+  },
+  {
+    "name": "Jämsänkoski",
+    "stateCode": "08"
+  },
+  {
+    "name": "Joutsa",
+    "stateCode": "08"
+  },
+  {
+    "name": "Jyväskylä",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kannonkoski",
+    "stateCode": "08"
+  },
+  {
+    "name": "Karstula",
+    "stateCode": "08"
+  },
+  {
+    "name": "Keuruu",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kinnula",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kivijärvi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Konnevesi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Korpilahti",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kuhmoinen",
+    "stateCode": "08"
+  },
+  {
+    "name": "Kyyjärvi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Laukaa",
+    "stateCode": "08"
+  },
+  {
+    "name": "Leivonmäki",
+    "stateCode": "08"
+  },
+  {
+    "name": "Luhanka",
+    "stateCode": "08"
+  },
+  {
+    "name": "Multia",
+    "stateCode": "08"
+  },
+  {
+    "name": "Muurame",
+    "stateCode": "08"
+  },
+  {
+    "name": "Petäjävesi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Pihtipudas",
+    "stateCode": "08"
+  },
+  {
+    "name": "Pylkönmäki",
+    "stateCode": "08"
+  },
+  {
+    "name": "Saarijärvi",
+    "stateCode": "08"
+  },
+  {
+    "name": "Säynätsalo",
+    "stateCode": "08"
+  },
+  {
+    "name": "Sumiainen",
+    "stateCode": "08"
+  },
+  {
+    "name": "Suolahti",
+    "stateCode": "08"
+  },
+  {
+    "name": "Toivakka",
+    "stateCode": "08"
+  },
+  {
+    "name": "Uurainen",
+    "stateCode": "08"
+  },
+  {
+    "name": "Viitasaari",
+    "stateCode": "08"
+  },
+  {
+    "name": "Anjala",
+    "stateCode": "09"
+  },
+  {
+    "name": "Elimäki",
+    "stateCode": "09"
+  },
+  {
+    "name": "Hamina",
+    "stateCode": "09"
+  },
+  {
+    "name": "Iitti",
+    "stateCode": "09"
+  },
+  {
+    "name": "Jaala",
+    "stateCode": "09"
+  },
+  {
+    "name": "Karhula",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kotka",
+    "stateCode": "09"
+  },
+  {
+    "name": "Kouvola",
+    "stateCode": "09"
+  },
+  {
+    "name": "Miehikkälä",
+    "stateCode": "09"
+  },
+  {
+    "name": "Pyhtää",
+    "stateCode": "09"
+  },
+  {
+    "name": "Virojoki",
+    "stateCode": "09"
+  },
+  {
+    "name": "Iisalmi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Juankoski",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kaavi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kangaslampi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Karttula",
+    "stateCode": "11"
+  },
+  {
+    "name": "Keitele",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kiuruvesi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Kuopio",
+    "stateCode": "11"
+  },
+  {
+    "name": "Lapinlahti",
+    "stateCode": "11"
+  },
+  {
+    "name": "Leppävirta",
+    "stateCode": "11"
+  },
+  {
+    "name": "Maaninka",
+    "stateCode": "11"
+  },
+  {
+    "name": "Nilsiä",
+    "stateCode": "11"
+  },
+  {
+    "name": "Pielavesi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Rautalampi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Rautavaara",
+    "stateCode": "11"
+  },
+  {
+    "name": "Siilinjärvi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Sonkajärvi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Suonenjoki",
+    "stateCode": "11"
+  },
+  {
+    "name": "Tervo",
+    "stateCode": "11"
+  },
+  {
+    "name": "Tuusniemi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Varkaus",
+    "stateCode": "11"
+  },
+  {
+    "name": "Varpaisjärvi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vehmersalmi",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vesanto",
+    "stateCode": "11"
+  },
+  {
+    "name": "Vieremä",
+    "stateCode": "11"
+  },
+  {
+    "name": "Hietalahti",
+    "stateCode": "12"
+  },
+  {
+    "name": "Isokyrö",
+    "stateCode": "12"
+  },
+  {
+    "name": "Jakobstad",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kaskinen",
+    "stateCode": "12"
+  },
+  {
+    "name": "Korsholm",
+    "stateCode": "12"
+  },
+  {
+    "name": "Korsnäs",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kristinestad",
+    "stateCode": "12"
+  },
+  {
+    "name": "Kronoby",
+    "stateCode": "12"
+  },
+  {
+    "name": "Laihia",
+    "stateCode": "12"
+  },
+  {
+    "name": "Larsmo",
+    "stateCode": "12"
+  },
+  {
+    "name": "Malax",
+    "stateCode": "12"
+  },
+  {
+    "name": "Nykarleby",
+    "stateCode": "12"
+  },
+  {
+    "name": "Oravais",
+    "stateCode": "12"
+  },
+  {
+    "name": "Pedersöre",
+    "stateCode": "12"
+  },
+  {
+    "name": "Replot",
+    "stateCode": "12"
+  },
+  {
+    "name": "Ristinummi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Teeriniemi",
+    "stateCode": "12"
+  },
+  {
+    "name": "Vaasa",
+    "stateCode": "12"
+  },
+  {
+    "name": "Vähäkyrö",
+    "stateCode": "12"
+  },
+  {
+    "name": "Vörå",
+    "stateCode": "12"
+  },
+  {
+    "name": "Eno",
+    "stateCode": "13"
+  },
+  {
+    "name": "Ilomantsi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Joensuu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Juuka",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kesälahti",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kiihtelysvaara",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kitee",
+    "stateCode": "13"
+  },
+  {
+    "name": "Kontiolahti",
+    "stateCode": "13"
+  },
+  {
+    "name": "Lieksa",
+    "stateCode": "13"
+  },
+  {
+    "name": "Liperi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Nurmes",
+    "stateCode": "13"
+  },
+  {
+    "name": "Outokumpu",
+    "stateCode": "13"
+  },
+  {
+    "name": "Polvijärvi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Pyhäselkä",
+    "stateCode": "13"
+  },
+  {
+    "name": "Rääkkylä",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tohmajärvi",
+    "stateCode": "13"
+  },
+  {
+    "name": "Tuupovaara",
+    "stateCode": "13"
+  },
+  {
+    "name": "Valtimo",
+    "stateCode": "13"
+  },
+  {
+    "name": "Alavieska",
+    "stateCode": "14"
+  },
+  {
+    "name": "Haapajärvi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Haapavesi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Hailuoto",
+    "stateCode": "14"
+  },
+  {
+    "name": "Haukipudas",
+    "stateCode": "14"
+  },
+  {
+    "name": "Himanka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ii",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kalajoki",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kärsämäki",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kempele",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kestilä",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kiiminki",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kuivaniemi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Kuusamo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Liminka",
+    "stateCode": "14"
+  },
+  {
+    "name": "Lumijoki",
+    "stateCode": "14"
+  },
+  {
+    "name": "Merijärvi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Muhos",
+    "stateCode": "14"
+  },
+  {
+    "name": "Nivala",
+    "stateCode": "14"
+  },
+  {
+    "name": "Oulainen",
+    "stateCode": "14"
+  },
+  {
+    "name": "Oulu",
+    "stateCode": "14"
+  },
+  {
+    "name": "Oulunsalo",
+    "stateCode": "14"
+  },
+  {
+    "name": "Piippola",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pudasjärvi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pulkkila",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pyhäjärvi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pyhäjoki",
+    "stateCode": "14"
+  },
+  {
+    "name": "Pyhäntä",
+    "stateCode": "14"
+  },
+  {
+    "name": "Raahe",
+    "stateCode": "14"
+  },
+  {
+    "name": "Rantsila",
+    "stateCode": "14"
+  },
+  {
+    "name": "Reisjärvi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ruukki",
+    "stateCode": "14"
+  },
+  {
+    "name": "Sievi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Siikajoki",
+    "stateCode": "14"
+  },
+  {
+    "name": "Taivalkoski",
+    "stateCode": "14"
+  },
+  {
+    "name": "Tyrnävä",
+    "stateCode": "14"
+  },
+  {
+    "name": "Utajärvi",
+    "stateCode": "14"
+  },
+  {
+    "name": "Vihanti",
+    "stateCode": "14"
+  },
+  {
+    "name": "Yli-Ii",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ylikiiminki",
+    "stateCode": "14"
+  },
+  {
+    "name": "Ylivieska",
+    "stateCode": "14"
+  },
+  {
+    "name": "Artjärvi",
+    "stateCode": "16"
+  },
+  {
+    "name": "Asikkala",
+    "stateCode": "16"
+  },
+  {
+    "name": "Auttoinen",
+    "stateCode": "16"
+  },
+  {
+    "name": "Hämeenkoski",
+    "stateCode": "16"
+  },
+  {
+    "name": "Hartola",
+    "stateCode": "16"
+  },
+  {
+    "name": "Heinola",
+    "stateCode": "16"
+  },
+  {
+    "name": "Hollola",
+    "stateCode": "16"
+  },
+  {
+    "name": "Lahti",
+    "stateCode": "16"
+  },
+  {
+    "name": "Nastola",
+    "stateCode": "16"
+  },
+  {
+    "name": "Orimattila",
+    "stateCode": "16"
+  },
+  {
+    "name": "Padasjoki",
+    "stateCode": "16"
+  },
+  {
+    "name": "Sysmä",
+    "stateCode": "16"
+  },
+  {
+    "name": "Eura",
+    "stateCode": "17"
+  },
+  {
+    "name": "Eurajoki",
+    "stateCode": "17"
+  },
+  {
+    "name": "Harjavalta",
+    "stateCode": "17"
+  },
+  {
+    "name": "Huittinen",
+    "stateCode": "17"
+  },
+  {
+    "name": "Jämijärvi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kankaanpää",
+    "stateCode": "17"
+  },
+  {
+    "name": "Karvia",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kiukainen",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kokemäki",
+    "stateCode": "17"
+  },
+  {
+    "name": "Köyliö",
+    "stateCode": "17"
+  },
+  {
+    "name": "Kullaa",
+    "stateCode": "17"
+  },
+  {
+    "name": "Längelmäki",
+    "stateCode": "17"
+  },
+  {
+    "name": "Lappi",
+    "stateCode": "17"
+  },
+  {
+    "name": "Lavia",
+    "stateCode": "17"
+  },
+  {
+    "name": "Luvia",
+    "stateCode": "17"
+  },
+  {
+    "name": "Merikarvia",
+    "stateCode": "17"
+  },
+  {
+    "name": "Nakkila",
+    "stateCode": "17"
+  },
+  {
+    "name": "Noormarkku",
+    "stateCode": "17"
+  },
+  {
+    "name": "Pomarkku",
+    "stateCode": "17"
+  },
+  {
+    "name": "Pori",
+    "stateCode": "17"
+  },
+  {
+    "name": "Rauma",
+    "stateCode": "17"
+  },
+  {
+    "name": "Säkylä",
+    "stateCode": "17"
+  },
+  {
+    "name": "Siikainen",
+    "stateCode": "17"
+  },
+  {
+    "name": "Ulvila",
+    "stateCode": "17"
+  },
+  {
+    "name": "Vampula",
+    "stateCode": "17"
+  },
+  {
+    "name": "Askola",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ekenäs",
+    "stateCode": "18"
+  },
+  {
+    "name": "Espoo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Gumböle",
+    "stateCode": "18"
+  },
+  {
+    "name": "Hanko",
+    "stateCode": "18"
+  },
+  {
+    "name": "Helsinki",
+    "stateCode": "18"
+  },
+  {
+    "name": "Hyvinge",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ingå",
+    "stateCode": "18"
+  },
+  {
+    "name": "Järvenpää",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kaarela",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kallio",
+    "stateCode": "18"
+  },
+  {
+    "name": "Karis",
+    "stateCode": "18"
+  },
+  {
+    "name": "Karjalohja",
+    "stateCode": "18"
+  },
+  {
+    "name": "Karkkila",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kärkölä",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kauniainen",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kellokoski",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kerava",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kilo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Kirkkonummi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Koukkuniemi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Lapinjärvi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Lauttasaari",
+    "stateCode": "18"
+  },
+  {
+    "name": "Liljendal",
+    "stateCode": "18"
+  },
+  {
+    "name": "Lohja",
+    "stateCode": "18"
+  },
+  {
+    "name": "Lovisa",
+    "stateCode": "18"
+  },
+  {
+    "name": "Mäntsälä",
+    "stateCode": "18"
+  },
+  {
+    "name": "Mellunkylä",
+    "stateCode": "18"
+  },
+  {
+    "name": "Munkkiniemi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Myrskylä",
+    "stateCode": "18"
+  },
+  {
+    "name": "Nurmijärvi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Otaniemi",
+    "stateCode": "18"
+  },
+  {
+    "name": "Pernå",
+    "stateCode": "18"
+  },
+  {
+    "name": "Pohja",
+    "stateCode": "18"
+  },
+  {
+    "name": "Pornainen",
+    "stateCode": "18"
+  },
+  {
+    "name": "Porvoo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Pukkila",
+    "stateCode": "18"
+  },
+  {
+    "name": "Raaseporin",
+    "stateCode": "18"
+  },
+  {
+    "name": "Ruotsinpyhtää",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sammatti",
+    "stateCode": "18"
+  },
+  {
+    "name": "Sibbo",
+    "stateCode": "18"
+  },
+  {
+    "name": "Siuntio",
+    "stateCode": "18"
+  },
+  {
+    "name": "Tuusula",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vantaa",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vihti",
+    "stateCode": "18"
+  },
+  {
+    "name": "Vuosaari",
+    "stateCode": "18"
+  },
+  {
+    "name": "Alastaro",
+    "stateCode": "19"
+  },
+  {
+    "name": "Askainen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Aura",
+    "stateCode": "19"
+  },
+  {
+    "name": "Dragsfjärd",
+    "stateCode": "19"
+  },
+  {
+    "name": "Halikko",
+    "stateCode": "19"
+  },
+  {
+    "name": "Houtskär",
+    "stateCode": "19"
+  },
+  {
+    "name": "Iniö",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kaarina",
+    "stateCode": "19"
+  },
+  {
+    "name": "Karinainen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kiikala",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kimito",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kisko",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kustavi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Kuusjoki",
+    "stateCode": "19"
+  },
+  {
+    "name": "Laitila",
+    "stateCode": "19"
+  },
+  {
+    "name": "Lemu",
+    "stateCode": "19"
+  },
+  {
+    "name": "Lieto",
+    "stateCode": "19"
+  },
+  {
+    "name": "Marttila",
+    "stateCode": "19"
+  },
+  {
+    "name": "Masku",
+    "stateCode": "19"
+  },
+  {
+    "name": "Mellilä",
+    "stateCode": "19"
+  },
+  {
+    "name": "Merimasku",
+    "stateCode": "19"
+  },
+  {
+    "name": "Mietoinen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Muurla",
+    "stateCode": "19"
+  },
+  {
+    "name": "Mynämäki",
+    "stateCode": "19"
+  },
+  {
+    "name": "Naantali",
+    "stateCode": "19"
+  },
+  {
+    "name": "Nagu",
+    "stateCode": "19"
+  },
+  {
+    "name": "Nousiainen",
+    "stateCode": "19"
+  },
+  {
+    "name": "Oripää",
+    "stateCode": "19"
+  },
+  {
+    "name": "Paimio",
+    "stateCode": "19"
+  },
+  {
+    "name": "Pargas",
+    "stateCode": "19"
+  },
+  {
+    "name": "Perniö",
+    "stateCode": "19"
+  },
+  {
+    "name": "Pertteli",
+    "stateCode": "19"
+  },
+  {
+    "name": "Piikkiö",
+    "stateCode": "19"
+  },
+  {
+    "name": "Pöytyä",
+    "stateCode": "19"
+  },
+  {
+    "name": "Pyhäranta",
+    "stateCode": "19"
+  },
+  {
+    "name": "Raisio",
+    "stateCode": "19"
+  },
+  {
+    "name": "Rusko",
+    "stateCode": "19"
+  },
+  {
+    "name": "Rymättylä",
+    "stateCode": "19"
+  },
+  {
+    "name": "Salo",
+    "stateCode": "19"
+  },
+  {
+    "name": "Särkisalo",
+    "stateCode": "19"
+  },
+  {
+    "name": "Sauvo",
+    "stateCode": "19"
+  },
+  {
+    "name": "Somero",
+    "stateCode": "19"
+  },
+  {
+    "name": "Suomusjärvi",
+    "stateCode": "19"
+  },
+  {
+    "name": "Taivassalo",
+    "stateCode": "19"
+  },
+  {
+    "name": "Tarvasjoki",
+    "stateCode": "19"
+  },
+  {
+    "name": "Turku",
+    "stateCode": "19"
+  },
+  {
+    "name": "Uusikaupunki",
+    "stateCode": "19"
+  },
+  {
+    "name": "Vahto",
+    "stateCode": "19"
+  },
+  {
+    "name": "Väståboland",
+    "stateCode": "19"
+  },
+  {
+    "name": "Västanfjärd",
+    "stateCode": "19"
+  },
+  {
+    "name": "Vehmaa",
+    "stateCode": "19"
+  },
+  {
+    "name": "Velkua",
+    "stateCode": "19"
+  },
+  {
+    "name": "Yläne",
+    "stateCode": "19"
+  },
+  {
+    "name": "Enontekiö",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Inari",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Ivalo",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Kemi",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Kemijärvi",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Keminmaa",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Kittilä",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Kolari",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Muonio",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Pelkosenniemi",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Pello",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Posio",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Pyhäjärvi",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Ranua",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Rovaniemi",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Salla",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Savukoski",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Simo",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Sodankylä",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Tervola",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Tornio",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Utsjoki",
+    "stateCode": "LL"
+  },
+  {
+    "name": "Ylitornio",
+    "stateCode": "LL"
+  }
+]
