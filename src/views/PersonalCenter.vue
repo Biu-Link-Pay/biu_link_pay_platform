@@ -361,10 +361,10 @@
       </div>
 
       <!-- 操作按钮 -->
-      <div class="flex justify-end space-x-3">
-        <Button label="Cancel" severity="secondary" :disabled="bindLoading" @click="cancelBind" />
-        <Button label="Confirm Binding" icon="pi pi-check" :loading="bindLoading"
-          :disabled="!bindAuthCode || bindAuthCode.length !== 6" @click="confirmBind" />
+      <div class="flex justify-between space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+        <Button label="Cancel" severity="secondary" :disabled="bindLoading" @click="cancelBind" class="flex-1" />
+        <Button label="Confirm" icon="pi pi-check" :loading="bindLoading"
+          :disabled="!bindAuthCode || bindAuthCode.length !== 6" @click="confirmBind" class="flex-1" />
       </div>
     </div>
   </Dialog>
