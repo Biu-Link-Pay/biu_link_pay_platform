@@ -614,6 +614,14 @@ const goBack = () => {
 
 // Select payment method (matching PaymentMethodSelection.vue)
 const selectPayType = (payType: any) => {
+  // Check if the payment type has actually changed
+  if (selectedPayType.value?.name === payType.name) {
+    console.log('Payment type unchanged, skipping operations')
+    return
+  }
+
+  console.log('Payment type changed from', selectedPayType.value?.name, 'to', payType.name)
+
   selectedPayType.value = payType
   selectedToken.value = payType.name
 
@@ -643,6 +651,17 @@ const selectPayType = (payType: any) => {
 
 // Select crypto currency (matching PaymentMethodSelection.vue)
 const selectCrypto = (crypto: any) => {
+  // Check if the crypto selection has actually changed
+  const currentCryptoKey = selectedCrypto.value ? `${selectedCrypto.value.crypto.name}-${selectedCrypto.value.network.name}` : null
+  const newCryptoKey = `${crypto.crypto.name}-${crypto.network.name}`
+
+  if (currentCryptoKey === newCryptoKey) {
+    console.log('Crypto selection unchanged, skipping operations')
+    return
+  }
+
+  console.log('Crypto selection changed from', currentCryptoKey, 'to', newCryptoKey)
+
   selectedCrypto.value = crypto
   selectedNetwork.value = crypto.network.name || crypto.network.fullName
   selectedToken.value = crypto.crypto.name

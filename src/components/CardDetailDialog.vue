@@ -126,7 +126,7 @@
               <InputText v-else v-model="form.residentialState" placeholder="Enter state/province" class="w-full"
                 :class="{ 'p-invalid': errors.residentialState }" />
               <small v-if="errors.residentialState" class="text-red-500 text-xs mt-1">{{ errors.residentialState
-                }}</small>
+              }}</small>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">City</label>
@@ -136,7 +136,7 @@
               <InputText v-else v-model="form.residentialCity" placeholder="Enter city" class="w-full"
                 :class="{ 'p-invalid': errors.residentialCity }" />
               <small v-if="errors.residentialCity" class="text-red-500 text-xs mt-1">{{ errors.residentialCity
-                }}</small>
+              }}</small>
             </div>
           </div>
 
@@ -145,7 +145,7 @@
             <InputText v-model="form.residentialAddress" placeholder="Enter address" class="w-full"
               :class="{ 'p-invalid': errors.residentialAddress }" />
             <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
-              }}</small>
+            }}</small>
           </div>
 
           <div>
@@ -153,7 +153,7 @@
             <InputText v-model="form.residentialPostalCode" placeholder="Enter postal code" class="w-full"
               :class="{ 'p-invalid': errors.residentialPostalCode }" />
             <small v-if="errors.residentialPostalCode" class="text-red-500 text-xs mt-1">{{ errors.residentialPostalCode
-              }}</small>
+            }}</small>
           </div>
 
           <div class="mt-2 flex gap-3">
