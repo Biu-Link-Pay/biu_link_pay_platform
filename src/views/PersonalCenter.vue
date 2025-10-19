@@ -404,10 +404,10 @@
       </div>
 
       <!-- 操作按钮 -->
-      <div class="flex justify-end space-x-3">
-        <Button label="Cancel" severity="secondary" :disabled="unbindLoading" @click="cancelUnbind" />
-        <Button label="Confirm Unbind" icon="pi pi-times" severity="danger" :loading="unbindLoading"
-          :disabled="!unbindAuthCode || unbindAuthCode.length !== 6" @click="handleUnbindGoogleAuth" />
+      <div class="flex justify-between space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+        <Button label="Cancel" severity="secondary" :disabled="unbindLoading" @click="cancelUnbind" class="flex-1" />
+        <Button label="Confirm" icon="pi pi-times" severity="danger" :loading="unbindLoading"
+          :disabled="!unbindAuthCode || unbindAuthCode.length !== 6" @click="handleUnbindGoogleAuth" class="flex-1" />
       </div>
     </div>
   </Dialog>
