@@ -112,7 +112,7 @@
                         <div>
                           <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
                           <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0
-                            }} crypto networks</div>
+                          }} crypto networks</div>
                         </div>
                       </div>
 
@@ -154,7 +154,7 @@
                             </div>
                             <div>
                               <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName
-                                }}</div>
+                              }}</div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                               <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
                                 Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
@@ -190,7 +190,7 @@
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
                     <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                      }}</span>
+                    }}</span>
                   </div>
                   <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                     <i class="pi pi-clock"></i>
@@ -204,6 +204,22 @@
                 <div class="flex items-center justify-between text-sm">
                   <span class="text-gray-700 dark:text-gray-300">Transaction Fee</span>
                   <span class="text-gray-700 dark:text-gray-300">{{ networkFee }} {{ selectedToken }}</span>
+                </div>
+              </div>
+
+              <!-- Amount Limit Warning (Desktop) -->
+              <div v-if="selectedCrypto && !isReceiveAmountWithinLimit"
+                class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="w-10 h-10 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">Receive Amount Out of Range
+                    </h4>
+                    <p class="text-sm text-red-700 dark:text-red-300">{{ receiveLimitErrorMessage }}</p>
+                  </div>
                 </div>
               </div>
 
@@ -398,6 +414,21 @@
           </div>
         </div>
 
+        <!-- Amount Limit Warning (Mobile) -->
+        <div v-if="selectedCrypto && !isReceiveAmountWithinLimit"
+          class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+          <div class="flex items-center space-x-3">
+            <div
+              class="w-8 h-8 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+              <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">Receive Amount Out of Range</h4>
+              <p class="text-xs text-red-700 dark:text-red-300">{{ receiveLimitErrorMessage }}</p>
+            </div>
+          </div>
+        </div>
+
         <!-- Send To Address -->
         <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
           <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">
@@ -579,6 +610,38 @@ const isFormValid = computed(() => {
     withdrawAmount.value >= minimumBalance.value &&
     withdrawAmount.value <= balance.value &&
     withdrawAmount.value <= getMaxWithdrawAmount()
+})
+
+// Check if receive amount is within selected crypto's limit
+const isReceiveAmountWithinLimit = computed(() => {
+  if (!selectedCrypto.value) return true
+
+  // Use receiveAmount (converted crypto amount) for comparison
+  const receiveUsdAmount = receiveAmount.value || 0
+  if (isNaN(receiveUsdAmount)) return true
+
+  const minLimit = selectedCrypto.value.minLimit
+  const maxLimit = selectedCrypto.value.maxLimit
+  return receiveUsdAmount >= minLimit && receiveUsdAmount <= maxLimit
+})
+
+// Get receive amount limit error message
+const receiveLimitErrorMessage = computed(() => {
+  if (!selectedCrypto.value) return ''
+
+  const receiveUsdAmount = receiveAmount.value || 0
+  if (isNaN(receiveUsdAmount)) return ''
+
+  const minLimit = selectedCrypto.value.minLimit
+  const maxLimit = selectedCrypto.value.maxLimit
+
+  if (receiveUsdAmount < minLimit) {
+    return `Receive amount must be at least ${formatCurrency(minLimit)} for ${selectedCrypto.value.crypto.name}`
+  }
+  if (receiveUsdAmount > maxLimit) {
+    return `Receive amount exceeds maximum limit of ${formatCurrency(maxLimit)} for ${selectedCrypto.value.crypto.name}`
+  }
+  return ''
 })
 
 // Calculate maximum withdraw amount based on card balance
