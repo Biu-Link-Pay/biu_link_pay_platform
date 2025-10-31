@@ -936,6 +936,7 @@ const fetchTransactions = async (pageIndex = 0) => {
 
     if (response.success && response.model) {
       const newTransactions = response.model.content || []
+      const pageInfo = response.model.page
 
       // Replace data on each call to achieve true pagination
       transactions.value = newTransactions
@@ -944,8 +945,8 @@ const fetchTransactions = async (pageIndex = 0) => {
       // Update mobile pagination
       updateMobilePagination('transaction', transactions.value)
 
-      // Check if there are more pages
-      pagination.value.transaction.hasMore = newTransactions.length === pagination.value.transaction.pageSize
+      // Check if there are more pages based on page info
+      pagination.value.transaction.hasMore = pageInfo ? pageInfo.number < pageInfo.totalPages - 1 : false
     }
   } catch (error) {
     console.error('Error fetching transactions:', error)
@@ -971,6 +972,7 @@ const fetchRechargeOrders = async (pageNo = 0) => {
 
     if (response.success && response.model) {
       const newOrders = response.model.content || []
+      const pageInfo = response.model.page
 
       // Replace data on each call to achieve true pagination
       rechargeOrders.value = newOrders
@@ -979,8 +981,8 @@ const fetchRechargeOrders = async (pageNo = 0) => {
       // Update mobile pagination
       updateMobilePagination('recharge', rechargeOrders.value)
 
-      // Check if there are more pages
-      pagination.value.recharge.hasMore = newOrders.length === pagination.value.recharge.pageSize
+      // Check if there are more pages based on page info
+      pagination.value.recharge.hasMore = pageInfo ? pageInfo.number < pageInfo.totalPages - 1 : false
     }
   } catch (error) {
     console.error('Error fetching recharge orders:', error)
@@ -1006,6 +1008,7 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
 
     if (response.success && response.model) {
       const newOrders = response.model.content || []
+      const pageInfo = response.model.page
 
       // Replace data on each call to achieve true pagination
       withdrawOrders.value = newOrders
@@ -1014,8 +1017,8 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
       // Update mobile pagination
       updateMobilePagination('withdraw', withdrawOrders.value)
 
-      // Check if there are more pages
-      pagination.value.withdraw.hasMore = newOrders.length === pagination.value.withdraw.pageSize
+      // Check if there are more pages based on page info
+      pagination.value.withdraw.hasMore = pageInfo ? pageInfo.number < pageInfo.totalPages - 1 : false
     }
   } catch (error) {
     console.error('Error fetching withdraw orders:', error)
