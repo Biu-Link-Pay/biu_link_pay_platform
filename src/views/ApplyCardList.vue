@@ -145,7 +145,7 @@
 
       <div class="space-y-6">
         <!-- KYC SDK Container -->
-        <div v-if="showKycSDK" class="relative !mb-0 h-[calc(var(--app-vh,1vh)*100-200px)] w-full overflow-auto">
+        <div v-if="showKycSDK" class="relative !mb-0 h-[calc(var(--app-vh,1vh)*100-120px)] w-full overflow-auto">
           <div id="sumsub-websdk-container"
             class="h-full w-full rounded-lg border border-gray-200 dark:border-gray-700">
           </div>
