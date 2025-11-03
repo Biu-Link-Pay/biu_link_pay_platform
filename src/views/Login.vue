@@ -102,13 +102,13 @@
                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
                   Please enter verification code
                 </label>
-                <div class="flex space-x-3">
+                <div class="flex items-center gap-3">
                   <InputText v-model="form.code" type="text" placeholder="Enter 6-digit code" maxlength="6"
                     class="flex-1 text-base min-h-[48px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white text-center tracking-widest transition-all duration-200"
                     :class="{ 'border-red-500': errors.code }" :disabled="isLoading" />
                   <Button type="button" :label="countdown > 0 ? `${countdown}s` : 'Resend'"
                     :disabled="countdown > 0 || isLoading" severity="secondary"
-                    class="min-h-[48px] px-4 whitespace-nowrap" @click="resendCode" />
+                    class="min-h-[48px] px-4 whitespace-nowrap flex-shrink-0" @click="resendCode" />
                 </div>
                 <p v-if="errors.code" class="text-sm text-red-500">
                   {{ errors.code }}
