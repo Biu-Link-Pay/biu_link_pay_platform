@@ -150,16 +150,24 @@
           <!-- Card Limits Panel -->
           <div v-if="selectedCard"
             class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-            <div class="flex items-center space-x-3 mb-6">
-              <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
-                <i class="pi pi-shield text-blue-600 dark:text-blue-400 text-lg"></i>
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
+                  <i class="pi pi-shield text-blue-600 dark:text-blue-400 text-lg"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Transaction Limits</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Your card spending limits</p>
+                </div>
               </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Transaction Limits</h3>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Your card spending limits</p>
-              </div>
+              <button v-if="isMobile" type="button" @click="isLimitsExpanded = !isLimitsExpanded"
+                class="flex items-center justify-center w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 transition-colors"
+                :aria-expanded="isLimitsExpanded">
+                <i class="pi pi-chevron-down text-sm transition-transform transform"
+                  :class="{ 'rotate-180': isLimitsExpanded }"></i>
+              </button>
             </div>
-            <div class="space-y-4">
+            <div v-if="!isMobile || isLimitsExpanded" class="space-y-4 mt-6">
               <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center space-x-3">
@@ -827,6 +835,37 @@ const selectedCard = computed(() => {
   return cards.value[currentCardIndex.value] || cards.value[0]
 })
 
+const isLimitsExpanded = ref(true)
+const isMobileDevice = ref(false)
+
+const updateDeviceMode = () => {
+  if (typeof window === 'undefined') {
+    return
+  }
+  isMobileDevice.value = window.innerWidth < 768
+  if (!isMobileDevice.value) {
+    isLimitsExpanded.value = true
+  }
+}
+
+onMounted(() => {
+  if (typeof window === 'undefined') {
+    return
+  }
+  updateDeviceMode()
+  if (isMobileDevice.value) {
+    isLimitsExpanded.value = false
+  }
+  window.addEventListener('resize', updateDeviceMode)
+})
+
+onUnmounted(() => {
+  if (typeof window === 'undefined') {
+    return
+  }
+  window.removeEventListener('resize', updateDeviceMode)
+})
+
 const showDetailDialog = ref(false)
 const detailLoading = ref(false)
 const detailError = ref<string | null>(null)
@@ -899,9 +938,7 @@ const mobileRechargePages = ref<DepositOrderListItem[][]>([])
 const mobileWithdrawPages = ref<WithdrawOrderListItem[][]>([])
 
 // Check if mobile device
-const isMobile = computed(() => {
-  return window.innerWidth < 768
-})
+const isMobile = computed(() => isMobileDevice.value)
 
 // Drag and drop states
 const isDragging = ref(false)
