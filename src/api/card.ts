@@ -133,6 +133,7 @@ export interface CardListItem {
   maxOnPercent: string // Single transaction limit
   cardCurrency: string // Card currency
   cardScheme: string // Card scheme
+  cardBalance: number // Card balance
 }
 
 // Transaction record pagination query related types

@@ -62,9 +62,11 @@
                     <!-- Card Header -->
                     <!-- Card Details -->
                     <div v-if="selectedCard" class="space-y-5 text-sm">
-                      <div class="space-y-1 md:mt-14 mt-20 w-full flex justify-between items-center">
-                        <span></span>
-                        <span class="block text-sm md:text-base font-semibold text-white normal-case">
+                      <div class="md:mt-14 mt-20 w-full flex justify-end items-baseline gap-2">
+                        <span class="text-sm md:text-base font-bold text-white tabular-nums">
+                          {{ selectedCard.cardBalance }}
+                        </span>
+                        <span class="text-sm md:text-base font-medium text-white/90 normal-case">
                           {{ selectedCard.cardCurrency || 'N/A' }}
                         </span>
                       </div>
@@ -787,7 +789,8 @@ const cards = computed(() => {
     maxOnDaily: card.maxOnDaily,
     maxOnPercent: card.maxOnPercent,
     cardCurrency: card.cardCurrency,
-    cardScheme: card.cardScheme.toLowerCase() // Default card scheme since it's not available in CardListItem
+    cardScheme: card.cardScheme.toLowerCase(), // Default card scheme since it's not available in CardListItem
+    cardBalance: card.cardBalance
   }))
 })
 
