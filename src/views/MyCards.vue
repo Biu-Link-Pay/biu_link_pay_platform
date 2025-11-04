@@ -287,21 +287,25 @@
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div class="space-y-3 lg:space-y-4">
                           <div v-for="(transaction, index) in page" :key="index"
-                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl">
+                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors">
                             <div
-                              class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                              <i class="pi pi-minus text-gray-600 dark:text-gray-400 text-base lg:text-lg"></i>
+                              :class="['w-12 h-12 lg:w-14 lg:h-14 rounded-full flex items-center justify-center flex-shrink-0', getTransactionIconColor(transaction)]">
+                              <i :class="['pi', getTransactionIcon(transaction), 'text-base lg:text-lg']"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base truncate">
+                              <div
+                                class="font-medium text-gray-900 dark:text-white text-sm lg:text-base truncate mb-0.5">
                                 {{ transaction.merchantNameLocation || transaction.transactionType || '' }}
                               </div>
-                              <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                                {{ transaction.merchantLocation || '' }}
-                              </div>
-                              <div v-if="transaction.createTime"
-                                class="text-[11px] lg:text-xs text-gray-400 dark:text-gray-500 mt-0.5">
-                                {{ transaction.createTime }}
+                              <div class="flex items-center gap-2 flex-wrap">
+                                <span v-if="transaction.merchantLocation"
+                                  class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
+                                  {{ transaction.merchantLocation }}
+                                </span>
+                                <span v-if="transaction.createTime"
+                                  class="text-[11px] lg:text-xs text-gray-400 dark:text-gray-500">
+                                  {{ transaction.createTime }}
+                                </span>
                               </div>
                               <div v-if="transaction.feeDeductionAmount"
                                 class="text-xs text-orange-600 dark:text-orange-400 mt-1">
@@ -309,17 +313,18 @@
                                 }}
                               </div>
                               <div v-if="isFailedStatus(transaction.status) && transaction.msg"
-                                class="text-xs text-red-600 dark:text-red-400 mt-1">
+                                class="text-xs text-red-600 dark:text-red-400 mt-1 line-clamp-2">
                                 {{ transaction.msg }}
                               </div>
                             </div>
-                            <div class="text-right">
-                              <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
+                            <div class="text-right flex-shrink-0">
+                              <div
+                                :class="['font-semibold text-sm lg:text-base', getAmountColor(transaction.transactionAmount)]">
                                 {{ formatTransactionAmount(transaction.transactionAmount,
                                   transaction.transactionCurrency)
                                 }}
                               </div>
-                              <div class="text-xs lg:text-sm" :class="getStatusColor(transaction.status)">
+                              <div class="text-xs lg:text-sm mt-0.5" :class="getStatusColor(transaction.status)">
                                 {{ transaction.status }}
                               </div>
                             </div>
@@ -358,21 +363,24 @@
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div class="space-y-2 lg:space-y-3">
                           <div v-for="(transaction, index) in page" :key="index"
-                            class="flex items-center space-x-3 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700">
+                            class="flex items-center space-x-2.5 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700">
                             <div
-                              class="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-600 flex items-center justify-center">
-                              <i class="pi pi-minus text-gray-600 dark:text-gray-400 text-xs"></i>
+                              :class="['w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0', getTransactionIconColor(transaction)]">
+                              <i :class="['pi', getTransactionIcon(transaction), 'text-xs']"></i>
                             </div>
                             <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-xs truncate">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs truncate mb-0.5">
                                 {{ transaction.merchantNameLocation || transaction.transactionType || '' }}
                               </div>
-                              <div class="text-xs text-gray-500 dark:text-gray-400">
-                                {{ transaction.merchantLocation || '' }}
-                              </div>
-                              <div v-if="transaction.createTime"
-                                class="text-[11px] text-gray-400 dark:text-gray-500 mt-0.5">
-                                {{ transaction.createTime }}
+                              <div class="flex items-center gap-1.5 flex-wrap">
+                                <span v-if="transaction.merchantLocation"
+                                  class="text-xs text-gray-500 dark:text-gray-400">
+                                  {{ transaction.merchantLocation }}
+                                </span>
+                                <span v-if="transaction.createTime"
+                                  class="text-[11px] text-gray-400 dark:text-gray-500">
+                                  {{ transaction.createTime }}
+                                </span>
                               </div>
                               <div v-if="transaction.feeDeductionAmount"
                                 class="text-xs text-orange-600 dark:text-orange-400 mt-0.5">
@@ -380,17 +388,17 @@
                                 }}
                               </div>
                               <div v-if="isFailedStatus(transaction.status) && transaction.msg"
-                                class="text-xs text-red-600 dark:text-red-400 mt-0.5">
+                                class="text-xs text-red-600 dark:text-red-400 mt-0.5 line-clamp-2">
                                 {{ transaction.msg }}
                               </div>
                             </div>
-                            <div class="text-right">
-                              <div class="font-medium text-gray-900 dark:text-white text-xs">
+                            <div class="text-right flex-shrink-0">
+                              <div :class="['font-semibold text-xs', getAmountColor(transaction.transactionAmount)]">
                                 {{ formatTransactionAmount(transaction.transactionAmount,
                                   transaction.transactionCurrency)
                                 }}
                               </div>
-                              <div class="text-xs" :class="getStatusColor(transaction.status)">
+                              <div class="text-xs mt-0.5" :class="getStatusColor(transaction.status)">
                                 {{ transaction.status }}
                               </div>
                             </div>
@@ -846,6 +854,144 @@ const transactions = ref<TransactionListItem[]>([])
 const rechargeOrders = ref<DepositOrderListItem[]>([])
 const withdrawOrders = ref<WithdrawOrderListItem[]>([])
 
+// Mock data for testing different scenarios
+const useMockData = ref(false) // 设置为 true 来使用 mock 数据，设置为 false 使用真实 API
+
+const mockTransactions: TransactionListItem[] = [
+  // 成功的充值（正数金额）
+  {
+    status: 'succeed',
+    transactionType: 'recharge',
+    transactionAmount: 100.00,
+    transactionCurrency: 'USD',
+    merchantNameLocation: 'Deposit',
+    merchantLocation: '',
+    feeDeductionAmount: 0,
+    feeDeductionCurrency: 'USD',
+    cardId: 'card1',
+    createTime: '2024-01-15 10:30:25'
+  },
+  // 成功的消费 - 美团（负数金额，有手续费）
+  {
+    status: 'succeed',
+    transactionType: 'purchase',
+    transactionAmount: -34.49,
+    transactionCurrency: 'CNY',
+    merchantNameLocation: 'MEITUAN FOOD CN',
+    merchantLocation: 'CN',
+    feeDeductionAmount: 0.35,
+    feeDeductionCurrency: 'USD',
+    cardId: 'card1',
+    createTime: '2024-01-15 09:15:42'
+  },
+  // 成功的消费 - 支付宝（负数金额）
+  {
+    status: 'succeed',
+    transactionType: 'purchase',
+    transactionAmount: -50.00,
+    transactionCurrency: 'CNY',
+    merchantNameLocation: 'ALIPAY CN',
+    merchantLocation: 'CN',
+    feeDeductionAmount: 0,
+    feeDeductionCurrency: 'USD',
+    cardId: 'card1',
+    createTime: '2024-01-15 08:22:18'
+  },
+  // 失败的交易（带失败原因）
+  {
+    status: 'failed',
+    transactionType: 'purchase',
+    transactionAmount: -25.99,
+    transactionCurrency: 'USD',
+    merchantNameLocation: 'AMAZON US',
+    merchantLocation: 'US',
+    feeDeductionAmount: 0,
+    feeDeductionCurrency: 'USD',
+    cardId: 'card1',
+    createTime: '2024-01-15 07:45:33',
+    msg: 'Insufficient balance. Please recharge your card.'
+  },
+  // 处理中的交易
+  {
+    status: 'pending',
+    transactionType: 'purchase',
+    transactionAmount: -15.50,
+    transactionCurrency: 'EUR',
+    merchantNameLocation: 'NETFLIX EU',
+    merchantLocation: 'EU',
+    feeDeductionAmount: 0.10,
+    feeDeductionCurrency: 'EUR',
+    cardId: 'card1',
+    createTime: '2024-01-15 06:30:15'
+  },
+  // 成功的提现（负数金额）
+  {
+    status: 'succeed',
+    transactionType: 'withdraw',
+    transactionAmount: -200.00,
+    transactionCurrency: 'USD',
+    merchantNameLocation: 'Withdrawal',
+    merchantLocation: '',
+    feeDeductionAmount: 2.50,
+    feeDeductionCurrency: 'USD',
+    cardId: 'card1',
+    createTime: '2024-01-14 20:15:08'
+  },
+  // 成功的消费 - 其他商户（负数金额）
+  {
+    status: 'succeed',
+    transactionType: 'purchase',
+    transactionAmount: -12.99,
+    transactionCurrency: 'USD',
+    merchantNameLocation: 'APPLE.COM/BILL',
+    merchantLocation: 'US',
+    feeDeductionAmount: 0,
+    feeDeductionCurrency: 'USD',
+    cardId: 'card1',
+    createTime: '2024-01-14 18:45:22'
+  },
+  // 失败的充值（带失败原因）
+  {
+    status: 'failed',
+    transactionType: 'recharge',
+    transactionAmount: 50.00,
+    transactionCurrency: 'USD',
+    merchantNameLocation: 'Deposit',
+    merchantLocation: '',
+    feeDeductionAmount: 0,
+    feeDeductionCurrency: 'USD',
+    cardId: 'card1',
+    createTime: '2024-01-14 16:20:10',
+    msg: 'Payment gateway timeout. Please try again.'
+  },
+  // 成功的消费 - 零金额（可能是验证交易）
+  {
+    status: 'succeed',
+    transactionType: 'purchase',
+    transactionAmount: 0.00,
+    transactionCurrency: 'USD',
+    merchantNameLocation: 'VERIFICATION CHARGE',
+    merchantLocation: 'US',
+    feeDeductionAmount: 0,
+    feeDeductionCurrency: 'USD',
+    cardId: 'card1',
+    createTime: '2024-01-14 14:30:05'
+  },
+  // 成功的消费 - 大金额（负数）
+  {
+    status: 'succeed',
+    transactionType: 'purchase',
+    transactionAmount: -899.99,
+    transactionCurrency: 'USD',
+    merchantNameLocation: 'ELECTRONICS STORE',
+    merchantLocation: 'US',
+    feeDeductionAmount: 5.00,
+    feeDeductionCurrency: 'USD',
+    cardId: 'card1',
+    createTime: '2024-01-14 12:15:48'
+  }
+]
+
 // Current selected card
 const selectedCard = computed(() => {
   return cards.value[currentCardIndex.value] || cards.value[0]
@@ -974,6 +1120,33 @@ const paymentMethods = ref([
 
 // API functions
 const fetchTransactions = async (pageIndex = 0) => {
+  // Use mock data if enabled
+  if (useMockData.value) {
+    loading.value.transaction = true
+    try {
+      // Simulate API delay
+      await new Promise(resolve => setTimeout(resolve, 300))
+
+      // Return mock data
+      const startIndex = pageIndex * pagination.value.transaction.pageSize
+      const endIndex = startIndex + pagination.value.transaction.pageSize
+      const pageData = mockTransactions.slice(startIndex, endIndex)
+
+      transactions.value = pageData
+      pagination.value.transaction.pageIndex = pageIndex
+      pagination.value.transaction.hasMore = endIndex < mockTransactions.length
+
+      // Update mobile pagination
+      updateMobilePagination('transaction', transactions.value)
+    } catch (error) {
+      console.error('Error with mock transactions:', error)
+    } finally {
+      loading.value.transaction = false
+    }
+    return
+  }
+
+  // Real API call
   if (!selectedCard.value?.id) {
     console.log('No selected card ID available:', selectedCard.value)
     console.log('Cards available:', cards.value)
@@ -1498,6 +1671,46 @@ const getStatusColor = (status: string) => {
 const isFailedStatus = (status: string) => {
   const normalizedStatus = status?.toLowerCase() || ''
   return normalizedStatus === 'failed' || normalizedStatus === 'fail'
+}
+
+// Get transaction icon based on type
+const getTransactionIcon = (transaction: TransactionListItem) => {
+  const type = transaction.transactionType?.toLowerCase() || ''
+  const merchant = transaction.merchantNameLocation?.toLowerCase() || ''
+
+  if (type.includes('recharge') || type.includes('deposit')) {
+    return 'pi-arrow-down'
+  }
+  if (type.includes('withdraw') || type.includes('withdrawal')) {
+    return 'pi-arrow-up'
+  }
+  if (merchant.includes('alipay')) {
+    return 'pi-wallet'
+  }
+  if (merchant.includes('meituan') || merchant.includes('food')) {
+    return 'pi-shopping-cart'
+  }
+  return 'pi-minus'
+}
+
+// Get transaction icon color
+const getTransactionIconColor = (transaction: TransactionListItem) => {
+  const amount = transaction.transactionAmount || 0
+  if (amount > 0) {
+    return 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400'
+  }
+  return 'bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400'
+}
+
+// Get amount color class
+const getAmountColor = (amount: number) => {
+  if (amount > 0) {
+    return 'text-green-600 dark:text-green-400'
+  }
+  if (amount < 0) {
+    return 'text-red-600 dark:text-red-400'
+  }
+  return 'text-gray-900 dark:text-white'
 }
 
 const startDrag = (position: number) => {
