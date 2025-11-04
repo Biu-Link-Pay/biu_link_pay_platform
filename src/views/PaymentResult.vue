@@ -99,7 +99,7 @@
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
-                    }}</span>
+                      }}</span>
                     <button
                       @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
@@ -138,11 +138,12 @@
 
                 <!-- Withdraw: Address -->
                 <div v-if="orderType === 'withdraw' && withdrawAddress"
-                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
+                  class="flex justify-between items-center gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Address</span>
-                  <div class="flex items-center gap-2">
-                    <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
-                      withdrawAddress }}</span>
+                  <div class="flex items-center justify-end gap-2 flex-1 min-w-0">
+                    <span
+                      class="text-[11px] lg:text-xs font-medium text-gray-900 dark:text-white text-right break-all font-mono">{{
+                        withdrawAddress }}</span>
                     <button
                       @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: 'Success', detail: 'Address copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
@@ -212,9 +213,12 @@
                 <!-- Withdraw: Address -->
                 <div v-if="orderType === 'withdraw' && withdrawAddress" class="col-span-2">
                   <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Address</div>
-                  <div class="flex items-center gap-2">
-                    <div class="text-sm font-medium text-gray-900 dark:text-white break-all flex-1">{{ withdrawAddress
-                    }}</div>
+                  <div class="flex items-center justify-between gap-2">
+                    <div
+                      class="text-[11px] font-medium text-gray-900 dark:text-white break-all text-left font-mono flex-1 min-w-0">
+                      {{
+                        withdrawAddress
+                      }}</div>
                     <button
                       @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: 'Success', detail: 'Address copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
@@ -305,7 +309,7 @@
                   <i class="pi pi-clock text-lg lg:text-xl xl:text-xl"></i>
                   <span>Payment Timeout</span>
                 </div>
-                <div v-if="!isPaymentExpired"
+                <div v-if="paymentTime && !isPaymentExpired"
                   class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-orange-700 dark:text-orange-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-start gap-2 lg:gap-3">
                   <i class="pi pi-info-circle text-lg lg:text-xl xl:text-xl mt-0.5"></i>
                   <span>For security reasons, the payment page has expired. Please complete the payment promptly.</span>
