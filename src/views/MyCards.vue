@@ -589,7 +589,7 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
-                                {{ formatWithdrawAmount(order.usdAmount, order.orderCurrency) }}
+                                {{ formatWithdrawAmount(order.usdAmount, order.orderCurrency ?? null) }}
                               </div>
                               <div class="text-xs lg:text-sm" :class="getStatusColor(order.status)">
                                 {{ order.status }}
@@ -644,7 +644,7 @@
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-xs">
-                                {{ formatWithdrawAmount(order.usdAmount, order.orderCurrency) }}
+                                {{ formatWithdrawAmount(order.usdAmount, order.orderCurrency ?? null) }}
                               </div>
                               <div class="text-xs" :class="getStatusColor(order.status)">
                                 {{ order.status }}
@@ -1646,8 +1646,9 @@ const getCardBackgroundImage = (cardScheme: string | null) => {
 }
 
 // Status color helper
-const getStatusColor = (status: string) => {
-  switch (status?.toLowerCase()) {
+const getStatusColor = (status: string | undefined) => {
+  if (!status) return 'text-gray-600 dark:text-gray-400'
+  switch (status.toLowerCase()) {
     case 'succeed':
     case 'completed':
     case 'success':
