@@ -108,13 +108,14 @@ export interface CreateDepositOrderParams {
   cardPattern: string // 1:virtual card 2:physical card
   type: string // 1:apply card 2:recharge
   cardBin: string // Card BIN
-  payType: string // 1:binancePay, 2:wallet
+  payType: string // BINANCE, WALLET
   amount: number // Order amount
   orderCurrency: string // Order currency
   userCardId: string // User cardId, when type is 1, cardBin is required, when type is 2, userCardId is required
   token?: string // Token
   network?: string // Network
   address?: string // Address
+  cardNo?: string // Card number, required when type is 2 (recharge)
 }
 
 // Create deposit order response data
@@ -176,7 +177,10 @@ export interface DepositOrderListItem {
   networkFee: number // 网络费
   address: string // 地址
   createTime: string | null // 创建时间
-  status: string // 订单状态
+  currentTime: string | null // 当前时间
+  webUrl: string // 支付链接
+  cardNo: string // 卡号
+  status?: string // 订单状态（可选，API可能不返回）
 }
 
 // 分页信息
@@ -260,8 +264,9 @@ export interface WithdrawOrderListItem {
   address: string | null // 地址
   hashId: string | null // hashId
   createTime: string | null // 创建时间
-  status: string // 订单状态
-  orderCurrency: string | null // 订单币种
+  cardNo: string // 卡号
+  status?: string // 订单状态（可选，API可能不返回）
+  orderCurrency?: string | null // 订单币种（可选）
 }
 
 // 出金订单分页查询响应数据
@@ -289,6 +294,7 @@ export interface CreateWithdrawOrderParams {
   address: string // 地址
   delFlag: boolean // true=删卡，false=不删卡
   withdrawAmount: string // 提现金额
+  cardNo: string // 卡号
 }
 
 // 创建出金订单响应
@@ -386,7 +392,8 @@ export class OrderAPI {
       userCardId: params.userCardId,
       token: params.token,
       network: params.network,
-      address: params.address
+      address: params.address,
+      cardNo: params.cardNo
     })
     return response.data
   }
@@ -405,7 +412,8 @@ export class OrderAPI {
       network: params.network,
       address: params.address,
       delFlag: params.delFlag,
-      withdrawAmount: params.withdrawAmount
+      withdrawAmount: params.withdrawAmount,
+      cardNo: params.cardNo
     })
     return response.data
   }
