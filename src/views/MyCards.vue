@@ -299,10 +299,18 @@
                               <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
                                 {{ transaction.merchantLocation || '' }}
                               </div>
+                              <div v-if="transaction.createTime"
+                                class="text-[11px] lg:text-xs text-gray-400 dark:text-gray-500 mt-0.5">
+                                {{ transaction.createTime }}
+                              </div>
                               <div v-if="transaction.feeDeductionAmount"
                                 class="text-xs text-orange-600 dark:text-orange-400 mt-1">
                                 Fee: {{ transaction.feeDeductionAmount.toFixed(2) }} {{ transaction.feeDeductionCurrency
                                 }}
+                              </div>
+                              <div v-if="isFailedStatus(transaction.status) && transaction.msg"
+                                class="text-xs text-red-600 dark:text-red-400 mt-1">
+                                {{ transaction.msg }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -362,10 +370,18 @@
                               <div class="text-xs text-gray-500 dark:text-gray-400">
                                 {{ transaction.merchantLocation || '' }}
                               </div>
+                              <div v-if="transaction.createTime"
+                                class="text-[11px] text-gray-400 dark:text-gray-500 mt-0.5">
+                                {{ transaction.createTime }}
+                              </div>
                               <div v-if="transaction.feeDeductionAmount"
                                 class="text-xs text-orange-600 dark:text-orange-400 mt-0.5">
                                 Fee: {{ transaction.feeDeductionAmount.toFixed(2) }} {{ transaction.feeDeductionCurrency
                                 }}
+                              </div>
+                              <div v-if="isFailedStatus(transaction.status) && transaction.msg"
+                                class="text-xs text-red-600 dark:text-red-400 mt-0.5">
+                                {{ transaction.msg }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -434,8 +450,8 @@
                             <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
                               {{ order.num }}
                             </div>
-                            <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                              {{ formatDate(order.createTime || '') }}
+                            <div class="text-[11px] lg:text-xs text-gray-500 dark:text-gray-400">
+                              {{ order.createTime || '' }}
                             </div>
                           </div>
                           <div class="text-right">
@@ -490,8 +506,8 @@
                               <div class="font-medium text-gray-900 dark:text-white text-xs">
                                 {{ order.num }}
                               </div>
-                              <div class="text-xs text-gray-500 dark:text-gray-400">
-                                {{ formatDate(order.createTime || '') }}
+                              <div class="text-[11px] text-gray-500 dark:text-gray-400">
+                                {{ order.createTime || '' }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -559,8 +575,8 @@
                               <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
                                 {{ order.num || 'N/A' }}
                               </div>
-                              <div class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                                {{ formatDate(order.createTime || '') }}
+                              <div class="text-[11px] lg:text-xs text-gray-500 dark:text-gray-400">
+                                {{ order.createTime || '' }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -614,8 +630,8 @@
                               <div class="font-medium text-gray-900 dark:text-white text-xs">
                                 {{ order.num || 'N/A' }}
                               </div>
-                              <div class="text-xs text-gray-500 dark:text-gray-400">
-                                {{ formatDate(order.createTime || '') }}
+                              <div class="text-[11px] text-gray-500 dark:text-gray-400">
+                                {{ order.createTime || '' }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -1476,6 +1492,12 @@ const getStatusColor = (status: string) => {
     default:
       return 'text-gray-600 dark:text-gray-400'
   }
+}
+
+// Check if status is failed
+const isFailedStatus = (status: string) => {
+  const normalizedStatus = status?.toLowerCase() || ''
+  return normalizedStatus === 'failed' || normalizedStatus === 'fail'
 }
 
 const startDrag = (position: number) => {

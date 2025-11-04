@@ -311,6 +311,8 @@ export interface TransactionListItem {
   feeDeductionAmount: number // 手续费扣费金额
   feeDeductionCurrency: string // 手续费扣费币种
   cardId: string // 卡ID
+  createTime: string // 创建时间
+  msg?: string // 失败原因（失败状态时显示）
 }
 
 // 消费记录分页查询参数
