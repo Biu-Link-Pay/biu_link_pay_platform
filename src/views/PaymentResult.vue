@@ -162,6 +162,12 @@
                     transactionId }}</span>
                 </div>
 
+                <!-- Card Number -->
+                <div v-if="orderCardNo" class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Card Number</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo }}</span>
+                </div>
+
                 <!-- Created Time -->
                 <div class="flex justify-between items-center py-2 lg:py-3">
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Created Time</span>
@@ -232,6 +238,12 @@
                 <div v-if="orderStatus === 'SUCCESS'" class="col-span-2">
                   <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Transaction ID</div>
                   <div class="text-sm font-medium text-gray-900 dark:text-white break-all">{{ transactionId }}</div>
+                </div>
+
+                <!-- Card Number -->
+                <div v-if="orderCardNo" class="col-span-2">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Card Number</div>
+                  <div class="text-sm font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo }}</div>
                 </div>
 
                 <!-- Created Time -->
@@ -420,6 +432,7 @@ const withdrawToken = ref<string | null>('') // 出金币种
 const withdrawNetwork = ref<string | null>('') // 出金网络
 const withdrawUsdTAmount = ref<number | null>(null) // 出金USDT金额
 const withdrawNetworkFee = ref<number | null>(null) // 网络费
+const orderCardNo = ref<string | null>(null) // 订单卡号
 
 // UI state
 const refreshing = ref(false)
@@ -555,6 +568,10 @@ const fetchOrderStatus = async () => {
         withdrawNetwork.value = detail.network || null // 获取出金网络
         withdrawUsdTAmount.value = detail.usdTAmount || null // 获取USDT金额
         withdrawNetworkFee.value = detail.networkFee || null // 获取网络费
+        // 获取卡号，如果详情接口返回了则使用，否则保留路由传递的值
+        if (detail.cardNo) {
+          orderCardNo.value = detail.cardNo
+        }
 
         console.log('Withdraw order status updated:', {
           orderNumber: orderNumber.value,
@@ -587,6 +604,10 @@ const fetchOrderStatus = async () => {
         paymentTime.value = detail.createTime || null
         transactionId.value = detail.hashId || null
         errorReason.value = detail.errorMessage || null
+        // 获取卡号，如果详情接口返回了则使用，否则保留路由传递的值
+        if (detail.cardNo) {
+          orderCardNo.value = detail.cardNo
+        }
         // Update other fields if needed
         if (detail.amount) {
           orderAmount.value = parseFloat(detail.amount.toString())
@@ -785,6 +806,12 @@ onMounted(async () => {
   const status = route.query.status as string
   if (status && ['PENDING', 'SUCCESS', 'FAIL', 'CANCEL'].includes(status)) {
     orderStatus.value = status as any
+  }
+
+  // Get cardNo from route query if available (from order list)
+  const cardNo = route.query.cardNo as string
+  if (cardNo) {
+    orderCardNo.value = cardNo
   }
 
   // Start progress simulation for PENDING status

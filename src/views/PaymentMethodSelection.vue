@@ -773,7 +773,8 @@ const handleContinue = async () => {
       userCardId: isRecharge ? (cardStore.selectedCardBin?.cardId || '') : (route.query.userCardId as string || ''), // User cardId, when type is 1, cardBin is required, when type is 2, userCardId is required
       token: selectedCrypto.value.crypto.name, // token
       network: selectedCrypto.value.network.name, // Network
-      address: '' // Address, needs to be obtained based on actual business logic
+      address: '', // Address, needs to be obtained based on actual business logic
+      cardNo: isRecharge ? (cardStore.selectedCardBin?.cardNo || '') : undefined // Card number, required when type is 2 (recharge)
     })
 
     if (orderResponse.success && orderResponse.model) {

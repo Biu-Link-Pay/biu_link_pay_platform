@@ -1546,7 +1546,8 @@ const goToPaymentResult = (order: DepositOrderListItem) => {
       cryptoAmount: order.usdAmount.toString(),
       paymentMethod: 'Crypto Payment',
       type: 'deposit', // 入金订单
-      from: 'myCards' // 标识来源
+      from: 'myCards', // 标识来源
+      cardNo: order.cardNo || '' // 传递卡号
     }
   })
 }
@@ -1560,7 +1561,8 @@ const goToWithdrawResult = (order: WithdrawOrderListItem) => {
       status: order.status, // 使用订单实际状态
       amount: order.usdAmount?.toString() || '0',
       type: 'withdraw', // 出金订单
-      from: 'myCards' // 标识来源
+      from: 'myCards', // 标识来源
+      cardNo: order.cardNo || '' // 传递卡号
     }
   })
 }

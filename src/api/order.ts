@@ -154,6 +154,7 @@ export interface DepositOrderDetailItem {
   hashId?: string | null // 交易哈希
   errorMessage?: string | null // 错误信息
   expires?: number // 过期时间
+  cardNo?: string | null // 卡号（可选）
 }
 
 // 入金订单详情查询响应
@@ -231,6 +232,7 @@ export interface WithdrawOrderDetailItem {
   status: string // 订单状态 INIT：待支付，PENDING:处理中,SUCCESS：支付成功，FAIL：失败，CANCEL：已取消
   usdTAmount: number | null // usd金额
   orderCurrency: string | null // 订单币种
+  cardNo?: string | null // 卡号（可选）
 }
 
 // 出金订单详情查询响应

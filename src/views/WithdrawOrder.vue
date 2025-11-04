@@ -112,7 +112,7 @@
                         <div>
                           <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
                           <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0
-                          }} crypto networks</div>
+                            }} crypto networks</div>
                         </div>
                       </div>
 
@@ -154,7 +154,7 @@
                             </div>
                             <div>
                               <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName
-                              }}</div>
+                                }}</div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                               <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
                                 Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
@@ -190,7 +190,7 @@
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
                     <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                     <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                    }}</span>
+                      }}</span>
                   </div>
                   <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                     <i class="pi pi-clock"></i>
@@ -954,6 +954,10 @@ const handleWithdraw = async () => {
   isSubmitting.value = true
 
   try {
+    // Get masked cardNo from card list (脱敏的卡号)
+    const cardFromList = cardStore.cardList.find(card => card.cardId === cardInfo.value.cardId)
+    const maskedCardNo = cardFromList?.cardNo || cardInfo.value.cardNo || ''
+
     // Create withdraw order using OrderAPI with two-level selection data
     const response = await OrderAPI.createWithdrawOrder({
       cardPattern: '1', // 1:虚拟卡 2:实体卡 - assuming virtual card
@@ -963,7 +967,8 @@ const handleWithdraw = async () => {
       network: selectedCrypto.value.network.name, // Network
       address: recipientAddress.value,
       delFlag: isDeleteAction.value,
-      withdrawAmount: (isDeleteAction.value ? getMaxWithdrawAmount() : withdrawAmount.value).toString()
+      withdrawAmount: (isDeleteAction.value ? getMaxWithdrawAmount() : withdrawAmount.value).toString(),
+      cardNo: maskedCardNo // Use masked cardNo from card list (脱敏的卡号)
     })
 
     if (response.success) {
@@ -1329,6 +1334,11 @@ onMounted(async () => {
   console.log('WithdrawOrder mounted, starting initialization...')
 
   initializeCardInfo()
+
+  // 确保卡片列表已加载（用于获取脱敏的卡号）
+  if (cardStore.cardList.length === 0) {
+    await cardStore.fetchCardList({ silent: true })
+  }
 
   // 验证并加载卡片详情（从 Pinia store）
   const isValid = validateAndLoadCardDetails()
