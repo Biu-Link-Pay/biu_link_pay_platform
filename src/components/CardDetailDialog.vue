@@ -142,7 +142,7 @@
 
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-2">Address</label>
-            <InputText v-model="form.residentialAddress" placeholder="Enter address" class="w-full"
+            <InputText v-model="form.residentialAddress" placeholder="Enter address" class="w-full" maxlength="100"
               :class="{ 'p-invalid': errors.residentialAddress }" />
             <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
             }}</small>
@@ -151,7 +151,7 @@
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-2">Postal Code</label>
             <InputText v-model="form.residentialPostalCode" placeholder="Enter postal code" class="w-full"
-              :class="{ 'p-invalid': errors.residentialPostalCode }" />
+              maxlength="10" :class="{ 'p-invalid': errors.residentialPostalCode }" />
             <small v-if="errors.residentialPostalCode" class="text-red-500 text-xs mt-1">{{ errors.residentialPostalCode
             }}</small>
           </div>
