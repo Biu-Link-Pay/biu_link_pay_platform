@@ -100,7 +100,7 @@
 
         <!-- Readonly view -->
         <div v-if="!isEditing" class="space-y-1 text-sm text-gray-700 dark:text-gray-300">
-          <div class="font-medium">{{ localDetail?.billingAddress }}</div>
+          <div class="font-medium break-all whitespace-pre-wrap">{{ localDetail?.billingAddress }}</div>
           <div>{{ localDetail?.billingCity }}, {{ displayState || getStateDisplay(localDetail?.billingCountry,
             localDetail?.billingState) }} {{ localDetail?.billingPostalCode }}</div>
           <div>{{ displayCountry || localDetail?.billingCountry }}</div>
@@ -142,7 +142,7 @@
 
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-2">Address</label>
-            <InputText v-model="form.residentialAddress" placeholder="Enter address" class="w-full" maxlength="100"
+            <InputText v-model="form.residentialAddress" placeholder="Enter address" class="w-full"
               :class="{ 'p-invalid': errors.residentialAddress }" />
             <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
             }}</small>
@@ -151,7 +151,7 @@
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-2">Postal Code</label>
             <InputText v-model="form.residentialPostalCode" placeholder="Enter postal code" class="w-full"
-              maxlength="10" :class="{ 'p-invalid': errors.residentialPostalCode }" />
+              :class="{ 'p-invalid': errors.residentialPostalCode }" />
             <small v-if="errors.residentialPostalCode" class="text-red-500 text-xs mt-1">{{ errors.residentialPostalCode
             }}</small>
           </div>
@@ -452,13 +452,16 @@ const validate = () => {
   const address = form.residentialAddress.trim()
   const addressPattern = /^[\u4e00-\u9fa5A-Za-z0-9\s.,\-/]+$/
   if (!address) { errors.residentialAddress = 'Address is required'; ok = false }
+  else if (address.length > 100) { errors.residentialAddress = 'Address must be at most 100 characters'; ok = false }
   else if (!addressPattern.test(address)) {
     errors.residentialAddress = 'Only Chinese/English letters, numbers and . - , / are allowed'
     ok = false
   }
   if (!form.residentialCity.trim()) { errors.residentialCity = 'City is required'; ok = false }
   if (!form.residentialState.trim()) { errors.residentialState = 'State/Province is required'; ok = false }
-  if (!form.residentialPostalCode.trim()) { errors.residentialPostalCode = 'Postal code is required'; ok = false }
+  const postal = form.residentialPostalCode.trim()
+  if (!postal) { errors.residentialPostalCode = 'Postal code is required'; ok = false }
+  else if (postal.length > 10) { errors.residentialPostalCode = 'Postal code must be at most 10 characters'; ok = false }
   if (!form.residentialCountryCode) { errors.residentialCountryCode = 'Country is required'; ok = false }
   return ok
 }

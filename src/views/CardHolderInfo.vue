@@ -142,7 +142,7 @@
             <div>
               <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Address</label>
               <InputText v-model="form.residentialAddress" placeholder="Enter your address" class="w-full"
-                maxlength="100" :class="{ 'p-invalid': errors.residentialAddress }" />
+                :class="{ 'p-invalid': errors.residentialAddress }" />
               <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
                 }}</small>
             </div>
@@ -150,7 +150,7 @@
             <div>
               <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Postal Code</label>
               <InputText v-model="form.residentialPostalCode" placeholder="Enter postal code" class="w-full"
-                maxlength="10" :class="{ 'p-invalid': errors.residentialPostalCode }" />
+                :class="{ 'p-invalid': errors.residentialPostalCode }" />
               <small v-if="errors.residentialPostalCode" class="text-red-500 text-xs mt-1">{{
                 errors.residentialPostalCode }}</small>
             </div>
@@ -701,6 +701,9 @@ const saveAddress = async () => {
   if (!address) {
     addressErrors.residentialAddress = 'Address is required'
     isValid = false
+  } else if (address.length > 100) {
+    addressErrors.residentialAddress = 'Address must be at most 100 characters'
+    isValid = false
   } else if (!addressPattern.test(address)) {
     addressErrors.residentialAddress = 'Only Chinese/English letters, numbers and . - , / are allowed'
     isValid = false
@@ -716,8 +719,12 @@ const saveAddress = async () => {
     isValid = false
   }
 
-  if (!form.residentialPostalCode.trim()) {
+  const postal = form.residentialPostalCode.trim()
+  if (!postal) {
     addressErrors.residentialPostalCode = 'Postal code is required'
+    isValid = false
+  } else if (postal.length > 10) {
+    addressErrors.residentialPostalCode = 'Postal code must be at most 10 characters'
     isValid = false
   }
 
