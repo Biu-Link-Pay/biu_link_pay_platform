@@ -6,11 +6,10 @@
 
     <!-- Main Content -->
     <div
-      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-7xl xl:max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12 min-h-[calc(100vh-120px)] lg:flex lg:items-center lg:justify-center">
+      class="w-full max-w-full sm:max-w-md md:max-w-lg lg:max-w-7xl xl:max-w-8xl mx-auto py-6 sm:px-6 lg:px-8 lg:py-12 min-h-[calc(100vh-120px)] lg:flex lg:items-center lg:justify-center">
       <!-- Payment Result Card -->
-      <div
-        class="bg-white dark:bg-gray-800 rounded-3xl p-6 sm:p-8 lg:p-12 xl:p-16 shadow-2xl transition-all duration-300 hover:-translate-y-1 max-w-lg lg:max-w-none mx-auto relative overflow-hidden w-full"
-        :class="[cardAnimationClass]">
+      <div class="w-full mx-auto relative overflow-hidden transition-all duration-300 p-4 sm:p-6 lg:p-12 xl:p-16"
+        :class="[cardAnimationClass, 'lg:bg-white lg:dark:bg-gray-800 lg:rounded-3xl lg:shadow-2xl lg:hover:-translate-y-1']">
 
         <!-- Desktop Layout: Two Column -->
         <div class="lg:grid lg:grid-cols-2 lg:gap-12 xl:gap-16">
@@ -87,7 +86,7 @@
           <!-- Right Column: Order Information & Actions -->
           <div class="lg:flex lg:flex-col lg:justify-center">
             <!-- Order Information -->
-            <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 sm:p-6 lg:p-6 xl:p-8 mb-6 lg:mb-8">
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4 sm:p-6 lg:p-6 xl:p-8 mb-6 lg:mb-8">
               <h3 class="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white mb-4 lg:hidden">Order Details
               </h3>
 
@@ -163,9 +162,11 @@
                 </div>
 
                 <!-- Card Number -->
-                <div v-if="orderCardNo" class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
+                <div v-if="orderCardNo"
+                  class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Card Number</span>
-                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo }}</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo
+                  }}</span>
                 </div>
 
                 <!-- Created Time -->
@@ -194,9 +195,15 @@
 
                 <!-- Withdraw: Network -->
                 <div v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)" class="col-span-2">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Network</div>
-                  <div class="text-sm font-medium text-gray-900 dark:text-white">
-                    {{ withdrawNetwork ? `${withdrawNetwork}` : '' }}
+                  <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
+                    <span>Network</span>
+                    <span v-if="orderType === 'withdraw' && withdrawNetworkFee !== null" class="text-right">Network
+                      Fee</span>
+                  </div>
+                  <div class="flex items-center justify-between text-sm font-medium text-gray-900 dark:text-white">
+                    <span>{{ withdrawNetwork ? `${withdrawNetwork}` : '' }}</span>
+                    <span v-if="withdrawNetworkFee !== null" class="text-right">{{ withdrawNetworkFee.toFixed(2) }}
+                      USDT</span>
                   </div>
                 </div>
 
@@ -209,13 +216,6 @@
                 </div>
 
                 <!-- Withdraw: Network Fee -->
-                <div v-if="orderType === 'withdraw' && withdrawNetworkFee !== null">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Network Fee</div>
-                  <div class="text-sm font-medium text-gray-900 dark:text-white">
-                    {{ withdrawNetworkFee.toFixed(2) }} USDT
-                  </div>
-                </div>
-
                 <!-- Withdraw: Address -->
                 <div v-if="orderType === 'withdraw' && withdrawAddress" class="col-span-2">
                   <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Address</div>
@@ -294,13 +294,6 @@
                 <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 2 }">Verifying
                   Payment</span>
                 <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 3 }">Complete</span>
-              </div>
-            </div>
-
-            <!-- SUCCESS Status -->
-            <div v-if="orderStatus === 'SUCCESS'" class="mb-6 lg:mb-8">
-              <div class="relative h-16 lg:h-20 xl:h-24 overflow-hidden">
-                <div class="confetti" v-for="i in 6" :key="i" :style="{ '--delay': i * 0.1 + 's' }"></div>
               </div>
             </div>
 
@@ -843,48 +836,6 @@ onUnmounted(() => {
 @keyframes draw {
   to {
     stroke-dashoffset: 0;
-  }
-}
-
-/* Confetti Animation */
-.confetti {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: #f39c12;
-  animation: confetti-fall 2s ease-out forwards;
-  animation-delay: var(--delay);
-}
-
-.confetti:nth-child(2n) {
-  background: #e74c3c;
-}
-
-.confetti:nth-child(3n) {
-  background: #2ecc71;
-}
-
-.confetti:nth-child(4n) {
-  background: #3498db;
-}
-
-.confetti:nth-child(5n) {
-  background: #9b59b6;
-}
-
-.confetti:nth-child(6n) {
-  background: #f1c40f;
-}
-
-@keyframes confetti-fall {
-  0% {
-    transform: translateY(-100px) rotate(0deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(100px) rotate(360deg);
-    opacity: 0;
   }
 }
 
