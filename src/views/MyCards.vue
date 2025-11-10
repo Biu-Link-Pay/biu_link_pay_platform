@@ -298,10 +298,6 @@
                                 {{ transaction.merchantNameLocation || transaction.transactionType || '' }}
                               </div>
                               <div class="flex items-center gap-2 flex-wrap">
-                                <span v-if="transaction.merchantLocation"
-                                  class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
-                                  {{ transaction.merchantLocation }}
-                                </span>
                                 <span v-if="transaction.createTime"
                                   class="text-[11px] lg:text-xs text-gray-400 dark:text-gray-500">
                                   {{ transaction.createTime }}
@@ -373,10 +369,6 @@
                                 {{ transaction.merchantNameLocation || transaction.transactionType || '' }}
                               </div>
                               <div class="flex items-center gap-1.5 flex-wrap">
-                                <span v-if="transaction.merchantLocation"
-                                  class="text-xs text-gray-500 dark:text-gray-400">
-                                  {{ transaction.merchantLocation }}
-                                </span>
                                 <span v-if="transaction.createTime"
                                   class="text-[11px] text-gray-400 dark:text-gray-500">
                                   {{ transaction.createTime }}
