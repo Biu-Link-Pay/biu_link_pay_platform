@@ -22,6 +22,35 @@
           <ThemeToggle />
         </div>
 
+        <!-- Card reward points (desktop) -->
+        <div v-if="isLoggedIn"
+          class="hidden sm:flex items-center gap-3 px-3 py-2 rounded-2xl bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-100 dark:from-orange-400/20 dark:to-amber-400/10 dark:border-orange-400/40 shadow-sm">
+          <div
+            class="w-9 h-9 rounded-xl bg-white/80 dark:bg-white/10 flex items-center justify-center text-orange-500 dark:text-orange-200">
+            <i class="pi pi-star-fill text-sm"></i>
+          </div>
+          <div class="text-right leading-tight">
+            <p class="text-[11px] font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-200">
+              Card Points
+            </p>
+            <p :class="[
+              'text-base font-semibold text-gray-900 dark:text-white',
+              { 'animate-pulse text-orange-400/70 dark:text-orange-200/70': !hasCardRewardPoints }
+            ]">
+              {{ formattedCardRewardPoints }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Card reward points (mobile) -->
+        <div v-if="isLoggedIn"
+          class="sm:hidden flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-orange-50 border border-orange-100 dark:bg-orange-400/15 dark:border-orange-400/40 text-xs font-semibold text-orange-600 dark:text-orange-200">
+          <i class="pi pi-star-fill text-[10px]"></i>
+          <span :class="[{ 'animate-pulse opacity-70': !hasCardRewardPoints }]">
+            {{ formattedCardRewardPoints }}
+          </span>
+        </div>
+
         <slot name="actions">
           <!-- User avatar and menu -->
           <div v-if="isLoggedIn" class="relative">
@@ -97,7 +126,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useConfirm } from 'primevue/useconfirm'
@@ -148,6 +177,17 @@ const userName = computed(() => {
 })
 const userEmail = computed(() => userStore.user?.email || '')
 const userAvatar = computed(() => currentUser.value?.avatar)
+const hasCardRewardPoints = computed(() => userStore.user?.cardRewardPoints !== undefined)
+const cardRewardPoints = computed(() => userStore.cardRewardPoints)
+const formattedCardRewardPoints = computed(() => {
+  if (!hasCardRewardPoints.value) {
+    return '--'
+  }
+  return new Intl.NumberFormat(undefined, {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 2
+  }).format(cardRewardPoints.value)
+})
 
 // Mobile drawer removed; use the same floating menu as desktop
 
@@ -218,6 +258,16 @@ const handleLogout = async () => {
   }
 }
 
+const loadUserProfileIfNeeded = async () => {
+  if (!isLoggedIn.value) return
+  if (userStore.user?.cardRewardPoints !== undefined) return
+  try {
+    await userStore.fetchUserProfile()
+  } catch (error) {
+    console.error('Failed to fetch user profile for card points:', error)
+  }
+}
+
 // Click outside to close menu
 const handleClickOutside = (event: Event) => {
   const target = event.target as HTMLElement
@@ -235,11 +285,18 @@ const handleEscapeKey = (event: KeyboardEvent) => {
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
   document.addEventListener('keydown', handleEscapeKey)
+  loadUserProfileIfNeeded()
 })
 
 onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside)
   document.removeEventListener('keydown', handleEscapeKey)
+})
+
+watch(isLoggedIn, value => {
+  if (value) {
+    loadUserProfileIfNeeded()
+  }
 })
 
 // Logo click: navigate to MyCards if user has cards, else to ApplyCardList

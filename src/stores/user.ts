@@ -19,6 +19,7 @@ export interface UserDetails {
   kycStatus?: number
   firstName?: string
   googleAuthStatus?: number
+  cardRewardPoints?: number
 }
 
 export const useUserStore = defineStore('user', () => {
@@ -34,6 +35,7 @@ export const useUserStore = defineStore('user', () => {
   const userNum = computed(() => user.value?.userNum || '')
   const kycStatus = computed(() => user.value?.kycStatus || 0)
   const googleAuthStatus = computed(() => user.value?.googleAuthStatus || 0)
+  const cardRewardPoints = computed(() => user.value?.cardRewardPoints ?? 0)
 
   // Methods
 
@@ -68,7 +70,8 @@ export const useUserStore = defineStore('user', () => {
           email: profile.userEmail,
           firstName: profile.firstName,
           kycStatus: profile.kycStatus,
-          googleAuthStatus: profile.googleAuthStatus
+          googleAuthStatus: profile.googleAuthStatus,
+          cardRewardPoints: profile.cardRewardPoints
         }
 
         // Save to local storage
@@ -112,6 +115,7 @@ export const useUserStore = defineStore('user', () => {
     userNum,
     kycStatus,
     googleAuthStatus,
+    cardRewardPoints,
 
     // Methods
     logout,

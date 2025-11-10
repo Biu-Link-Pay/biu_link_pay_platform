@@ -287,7 +287,7 @@
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div class="space-y-3 lg:space-y-4">
                           <div v-for="(transaction, index) in page" :key="index"
-                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors">
+                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl transition-colors hover:bg-gray-50 dark:hover:bg-gray-700/50">
                             <div
                               :class="['w-12 h-12 lg:w-14 lg:h-14 rounded-full flex items-center justify-center flex-shrink-0', getTransactionIconColor(transaction)]">
                               <i :class="['pi', getTransactionIcon(transaction), 'text-base lg:text-lg']"></i>
@@ -302,6 +302,15 @@
                                   class="text-[11px] lg:text-xs text-gray-400 dark:text-gray-500">
                                   {{ transaction.createTime }}
                                 </span>
+                                <span v-if="isRefundTransaction(transaction)"
+                                  class="inline-flex items-center gap-1 text-[11px] lg:text-xs font-medium text-emerald-700 dark:text-emerald-300">
+                                  <i class="pi pi-refresh text-[10px]"></i>
+                                  Refund
+                                </span>
+                              </div>
+                              <div v-if="isRefundTransaction(transaction)"
+                                class="text-xs text-emerald-700 dark:text-emerald-300 mt-1">
+                                Refunded to your card balance
                               </div>
                               <div v-if="transaction.feeDeductionAmount"
                                 class="text-xs text-orange-600 dark:text-orange-400 mt-1">
@@ -315,7 +324,7 @@
                             </div>
                             <div class="text-right flex-shrink-0">
                               <div
-                                :class="['font-semibold text-sm lg:text-base', getAmountColor(transaction.transactionAmount)]">
+                                :class="['font-semibold text-sm lg:text-base', getTransactionAmountColor(transaction)]">
                                 {{ formatTransactionAmount(transaction.transactionAmount,
                                   transaction.transactionCurrency)
                                 }}
@@ -359,7 +368,7 @@
                         class="w-full flex-shrink-0 px-2 lg:px-4">
                         <div class="space-y-2 lg:space-y-3">
                           <div v-for="(transaction, index) in page" :key="index"
-                            class="flex items-center space-x-2.5 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700">
+                            class="flex items-center space-x-2.5 p-2.5 rounded-lg transition-colors bg-gray-50 dark:bg-gray-700">
                             <div
                               :class="['w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0', getTransactionIconColor(transaction)]">
                               <i :class="['pi', getTransactionIcon(transaction), 'text-xs']"></i>
@@ -373,6 +382,15 @@
                                   class="text-[11px] text-gray-400 dark:text-gray-500">
                                   {{ transaction.createTime }}
                                 </span>
+                                <span v-if="isRefundTransaction(transaction)"
+                                  class="inline-flex items-center gap-0.5 text-[10px] font-medium text-emerald-700 dark:text-emerald-300">
+                                  <i class="pi pi-refresh text-[9px]"></i>
+                                  Refund
+                                </span>
+                              </div>
+                              <div v-if="isRefundTransaction(transaction)"
+                                class="text-[11px] text-emerald-700 dark:text-emerald-300 mt-0.5">
+                                Returned to card balance
                               </div>
                               <div v-if="transaction.feeDeductionAmount"
                                 class="text-xs text-orange-600 dark:text-orange-400 mt-0.5">
@@ -385,7 +403,7 @@
                               </div>
                             </div>
                             <div class="text-right flex-shrink-0">
-                              <div :class="['font-semibold text-xs', getAmountColor(transaction.transactionAmount)]">
+                              <div :class="['font-semibold text-xs', getTransactionAmountColor(transaction)]">
                                 {{ formatTransactionAmount(transaction.transactionAmount,
                                   transaction.transactionCurrency)
                                 }}
@@ -968,6 +986,19 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
     createTime: '2024-01-14 14:30:05'
+  },
+  // 退款交易（正数金额）
+  {
+    status: 'succeed',
+    transactionType: 'refund',
+    transactionAmount: 45.67,
+    transactionCurrency: 'USD',
+    merchantNameLocation: 'REFUND - ELECTRONICS STORE',
+    merchantLocation: 'US',
+    feeDeductionAmount: 0,
+    feeDeductionCurrency: 'USD',
+    cardId: 'card1',
+    createTime: '2024-01-14 13:05:12'
   },
   // 成功的消费 - 大金额（负数）
   {
@@ -1668,11 +1699,19 @@ const isFailedStatus = (status: string) => {
   return normalizedStatus === 'failed' || normalizedStatus === 'fail'
 }
 
+const isRefundTransaction = (transaction: TransactionListItem) => {
+  const type = transaction.transactionType?.toLowerCase() || ''
+  return type === 'refund'
+}
+
 // Get transaction icon based on type
 const getTransactionIcon = (transaction: TransactionListItem) => {
   const type = transaction.transactionType?.toLowerCase() || ''
   const merchant = transaction.merchantNameLocation?.toLowerCase() || ''
 
+  if (isRefundTransaction(transaction)) {
+    return 'pi-refresh'
+  }
   if (type.includes('recharge') || type.includes('deposit')) {
     return 'pi-arrow-down'
   }
@@ -1690,6 +1729,9 @@ const getTransactionIcon = (transaction: TransactionListItem) => {
 
 // Get transaction icon color
 const getTransactionIconColor = (transaction: TransactionListItem) => {
+  if (isRefundTransaction(transaction)) {
+    return 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300'
+  }
   const amount = transaction.transactionAmount || 0
   if (amount > 0) {
     return 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400'
@@ -1706,6 +1748,13 @@ const getAmountColor = (amount: number) => {
     return 'text-red-600 dark:text-red-400'
   }
   return 'text-gray-900 dark:text-white'
+}
+
+const getTransactionAmountColor = (transaction: TransactionListItem) => {
+  if (isRefundTransaction(transaction)) {
+    return 'text-orange-600 dark:text-orange-300'
+  }
+  return getAmountColor(transaction.transactionAmount)
 }
 
 const startDrag = (position: number) => {

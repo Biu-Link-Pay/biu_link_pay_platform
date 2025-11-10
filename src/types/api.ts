@@ -42,6 +42,7 @@ export interface UserProfile {
   kycStatus: number // 0=未做kyc，1=kyc通过，2=kyc临时拒绝，3=kyc拒绝
   firstName: string
   googleAuthStatus: number // 0:未认证,1:已认证
+  cardRewardPoints: number // 卡奖励积分
 }
 
 export interface UserProfileParams {
