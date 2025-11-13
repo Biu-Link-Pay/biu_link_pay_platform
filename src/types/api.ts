@@ -11,6 +11,7 @@ export interface ApiResponse<T = any> {
 export interface LoginParams {
   email: string
   code: string
+  license: string
 }
 
 export interface LoginResponse {
@@ -43,6 +44,7 @@ export interface UserProfile {
   firstName: string
   googleAuthStatus: number // 0:未认证,1:已认证
   cardRewardPoints: number // 卡奖励积分
+  licenseUrl: string // 邀请链接
 }
 
 export interface UserProfileParams {

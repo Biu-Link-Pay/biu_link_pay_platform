@@ -39,7 +39,8 @@ export class AuthAPI {
     const response = await api.get('/card/consume/login', {
       params: {
         email: params.email,
-        code: params.code
+        code: params.code,
+        license: params.license
       }
     })
     return response.data

@@ -126,6 +126,29 @@
               </div>
             </div>
 
+            <!-- Invitation Link -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+              <div class="flex items-center justify-between gap-4">
+                <div class="flex items-center space-x-4">
+                  <div class="w-12 h-12 bg-amber-100 dark:bg-amber-900/20 rounded-lg flex items-center justify-center">
+                    <i class="pi pi-link text-amber-600 dark:text-amber-400 text-lg"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Invitation Link</h3>
+                    <p class="text-xs text-gray-600 dark:text-gray-300 font-mono break-all mt-1">
+                      {{ inviteLink || 'Invite link not available yet' }}
+                    </p>
+                  </div>
+                </div>
+                <button type="button"
+                  class="px-4 py-2 rounded-lg text-sm font-semibold border border-amber-200 dark:border-amber-400 text-amber-600 dark:text-amber-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 disabled:opacity-40 disabled:cursor-not-allowed"
+                  @click="copyInviteLink" :disabled="!hasInviteLink">
+                  Copy
+                </button>
+              </div>
+            </div>
+
             <!-- Safety Validation -->
             <!-- <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
                  @click="navigateToSafety">
@@ -269,6 +292,27 @@
               <span class="font-medium text-gray-900 dark:text-white">Privacy Policy</span>
             </div>
             <i class="pi pi-chevron-right text-gray-400"></i>
+          </div>
+
+          <!-- Invitation Link -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-amber-100 dark:bg-amber-900/20 flex items-center justify-center">
+                <i class="pi pi-link text-amber-600 dark:text-amber-400"></i>
+              </div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900 dark:text-white">Invitation Link</p>
+                <p class="text-[11px] text-gray-500 dark:text-gray-400 font-mono break-all mt-1">
+                  {{ inviteLink || 'Invite link not available yet' }}
+                </p>
+              </div>
+              <button type="button"
+                class="px-3 py-1.5 rounded-lg text-xs font-semibold border border-amber-200 dark:border-amber-400 text-amber-600 dark:text-amber-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 disabled:opacity-40 disabled:cursor-not-allowed"
+                @click="copyInviteLink" :disabled="!hasInviteLink">
+                Copy
+              </button>
+            </div>
           </div>
 
           <!-- Safety Validation -->
@@ -458,6 +502,8 @@ const maskedEmail = computed(() => {
   if (username.length <= 2) return email
   return `${username.slice(0, 2)}****@${domain}`
 })
+const inviteLink = computed(() => (userProfile.value?.licenseUrl || '').trim())
+const hasInviteLink = computed(() => inviteLink.value.length > 0)
 
 const kycStatus = computed(() => userProfile.value?.kycStatus ?? 0)
 
@@ -665,6 +711,27 @@ const copySecretKey = async () => {
       severity: 'error',
       summary: 'Copy Failed',
       detail: (error as any)?.message || 'Please copy the secret key manually',
+      life: 3000
+    })
+  }
+}
+
+const copyInviteLink = async () => {
+  if (!hasInviteLink.value) return
+  try {
+    await copyToClipboard(inviteLink.value)
+    toast.add({
+      severity: 'success',
+      summary: 'Copy Successful',
+      detail: 'Invitation link copied to clipboard',
+      life: 2000
+    })
+  } catch (error) {
+    console.error('Copy invite link failed:', error)
+    toast.add({
+      severity: 'error',
+      summary: 'Copy Failed',
+      detail: (error as any)?.message || 'Please copy the invitation link manually',
       life: 3000
     })
   }

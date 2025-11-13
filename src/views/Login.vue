@@ -118,6 +118,39 @@
                 </p>
               </div>
 
+              <!-- Invitation Code Toggle + Input -->
+              <div class="rounded-2xl border border-gray-200 dark:border-gray-700 p-4 space-y-4 bg-white/70 dark:bg-gray-800/60">
+                <div class="flex items-start justify-between">
+                  <div>
+                    <p class="text-sm font-semibold text-gray-900 dark:text-white">Use invitation code</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 max-w-xs">
+                      Optional — share referral rewards with the friend who invited you.
+                    </p>
+                  </div>
+                  <label class="relative inline-flex items-center cursor-pointer ml-4 shrink-0">
+                    <input type="checkbox" class="sr-only peer" v-model="inviteToggle" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-500 dark:peer-focus:ring-blue-400 rounded-full peer dark:bg-gray-600 peer-checked:bg-blue-600 transition-colors">
+                    </div>
+                    <div
+                      class="absolute left-0.5 top-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform peer-checked:translate-x-5">
+                    </div>
+                  </label>
+                </div>
+
+                <div v-if="inviteToggle" class="space-y-2 pt-2 border-t border-gray-100 dark:border-gray-700">
+                  <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                    Invitation code
+                  </label>
+                  <InputText v-model="form.inviteCode" type="text" placeholder="Enter invitation code"
+                    class="w-full text-base min-h-[48px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all duration-200"
+                    :disabled="isLoading" />
+                  <p class="text-xs text-gray-500 dark:text-gray-400">
+                    We’ll apply the code during login so both of you receive rewards.
+                  </p>
+                </div>
+              </div>
+
               <!-- Terms Agreement -->
               <div class="flex items-start space-x-3">
                 <Checkbox v-model="form.agreeTerms" :binary="true" class="mt-1 checkbox-enhanced"
@@ -138,6 +171,7 @@
               <p v-if="errors.agreeTerms" class="text-sm text-red-500">
                 {{ errors.agreeTerms }}
               </p>
+
               <!-- Submit Button -->
               <Button type="submit" :label="buttonText" :loading="isLoading" :disabled="!form.agreeTerms"
                 class="bottom-button-primary text-base font-medium transition-all duration-200" severity="primary" />
@@ -235,9 +269,11 @@ const services = ref([
 // Form data
 const form = ref({
   email: '',
+  inviteCode: '',
   code: '',
   agreeTerms: false
 })
+const inviteToggle = ref(false)
 
 // Form validation errors
 const errors = ref({
@@ -379,7 +415,8 @@ const login = async () => {
   try {
     const result = await authStore.login({
       email: form.value.email,
-      code: form.value.code
+      code: form.value.code,
+      license: form.value.inviteCode || ''
     })
 
     if (result.success) {
@@ -484,6 +521,7 @@ const handleBackClick = () => {
   showVerificationCode.value = false
   form.value = {
     email: '',
+    inviteCode: '',
     code: '',
     agreeTerms: false
   }
