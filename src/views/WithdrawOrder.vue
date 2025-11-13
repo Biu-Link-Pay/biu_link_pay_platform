@@ -1152,7 +1152,8 @@ const fetchExchangeRate = async () => {
       number: withdrawAmount.value.toString(),
       saleDirection: 'SELL', // 提现使用 SELL
       exchange: selectedPayType.value?.name.toUpperCase() === 'BINANCE' ? 'BINANCE' : 'WALLET', // 根据支付方式选择交易所
-      fiatUnit: selectedCurrency.value
+      fiatUnit: selectedCurrency.value,
+      cardRewardPoints: 0
     })
 
     if (response.success && response.model) {

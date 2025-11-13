@@ -302,6 +302,11 @@
                                   class="text-[11px] lg:text-xs text-gray-400 dark:text-gray-500">
                                   {{ transaction.createTime }}
                                 </span>
+                                <span v-if="hasRewardPoints(transaction.cardRewardPoints)"
+                                  class="inline-flex items-center gap-1 text-[11px] lg:text-xs font-semibold text-orange-600 dark:text-orange-300">
+                                  <i class="pi pi-star-fill text-[10px]"></i>
+                                  Card points {{ formatRewardPoints(transaction.cardRewardPoints) }}
+                                </span>
                                 <span v-if="isRefundTransaction(transaction)"
                                   class="inline-flex items-center gap-1 text-[11px] lg:text-xs font-medium text-emerald-700 dark:text-emerald-300">
                                   <i class="pi pi-refresh text-[10px]"></i>
@@ -381,6 +386,11 @@
                                 <span v-if="transaction.createTime"
                                   class="text-[11px] text-gray-400 dark:text-gray-500">
                                   {{ transaction.createTime }}
+                                </span>
+                                <span v-if="hasRewardPoints(transaction.cardRewardPoints)"
+                                  class="inline-flex items-center gap-0.5 text-[10px] font-semibold text-orange-600 dark:text-orange-300">
+                                  <i class="pi pi-star-fill text-[9px]"></i>
+                                  Card points {{ formatRewardPoints(transaction.cardRewardPoints) }}
                                 </span>
                                 <span v-if="isRefundTransaction(transaction)"
                                   class="inline-flex items-center gap-0.5 text-[10px] font-medium text-emerald-700 dark:text-emerald-300">
@@ -471,6 +481,10 @@
                             <div class="text-[11px] lg:text-xs text-gray-500 dark:text-gray-400">
                               {{ order.createTime || '' }}
                             </div>
+                            <div v-if="hasRewardPoints(order.cardRewardPoints)"
+                              class="text-[11px] lg:text-xs text-orange-500 dark:text-orange-300 font-semibold">
+                              Card points {{ formatRewardPoints(order.cardRewardPoints) }}
+                            </div>
                           </div>
                           <div class="text-right">
                             <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
@@ -526,6 +540,10 @@
                               </div>
                               <div class="text-[11px] text-gray-500 dark:text-gray-400">
                                 {{ order.createTime || '' }}
+                              </div>
+                              <div v-if="hasRewardPoints(order.cardRewardPoints)"
+                                class="text-[11px] text-orange-500 dark:text-orange-300 font-semibold">
+                                Card points {{ formatRewardPoints(order.cardRewardPoints) }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -596,6 +614,10 @@
                               <div class="text-[11px] lg:text-xs text-gray-500 dark:text-gray-400">
                                 {{ order.createTime || '' }}
                               </div>
+                              <div v-if="hasRewardPoints(order.cardRewardPoints)"
+                                class="text-[11px] lg:text-xs text-orange-500 dark:text-orange-300 font-semibold">
+                                Card points {{ formatRewardPoints(order.cardRewardPoints) }}
+                              </div>
                             </div>
                             <div class="text-right">
                               <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
@@ -650,6 +672,10 @@
                               </div>
                               <div class="text-[11px] text-gray-500 dark:text-gray-400">
                                 {{ order.createTime || '' }}
+                              </div>
+                              <div v-if="hasRewardPoints(order.cardRewardPoints)"
+                                class="text-[11px] text-orange-500 dark:text-orange-300 font-semibold">
+                                Card points {{ formatRewardPoints(order.cardRewardPoints) }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -879,7 +905,8 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionAmount: 0,
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
-    createTime: '2024-01-15 10:30:25'
+    createTime: '2024-01-15 10:30:25',
+    cardRewardPoints: 1500
   },
   // 成功的消费 - 美团（负数金额，有手续费）
   {
@@ -892,7 +919,8 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionAmount: 0.35,
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
-    createTime: '2024-01-15 09:15:42'
+    createTime: '2024-01-15 09:15:42',
+    cardRewardPoints: 0
   },
   // 成功的消费 - 支付宝（负数金额）
   {
@@ -905,7 +933,8 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionAmount: 0,
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
-    createTime: '2024-01-15 08:22:18'
+    createTime: '2024-01-15 08:22:18',
+    cardRewardPoints: 0
   },
   // 失败的交易（带失败原因）
   {
@@ -919,7 +948,8 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
     createTime: '2024-01-15 07:45:33',
-    msg: 'Insufficient balance. Please recharge your card.'
+    msg: 'Insufficient balance. Please recharge your card.',
+    cardRewardPoints: 0
   },
   // 处理中的交易
   {
@@ -932,7 +962,8 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionAmount: 0.10,
     feeDeductionCurrency: 'EUR',
     cardId: 'card1',
-    createTime: '2024-01-15 06:30:15'
+    createTime: '2024-01-15 06:30:15',
+    cardRewardPoints: 0
   },
   // 成功的提现（负数金额）
   {
@@ -945,7 +976,8 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionAmount: 2.50,
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
-    createTime: '2024-01-14 20:15:08'
+    createTime: '2024-01-14 20:15:08',
+    cardRewardPoints: 0
   },
   // 成功的消费 - 其他商户（负数金额）
   {
@@ -958,7 +990,8 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionAmount: 0,
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
-    createTime: '2024-01-14 18:45:22'
+    createTime: '2024-01-14 18:45:22',
+    cardRewardPoints: 0
   },
   // 失败的充值（带失败原因）
   {
@@ -972,7 +1005,8 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
     createTime: '2024-01-14 16:20:10',
-    msg: 'Payment gateway timeout. Please try again.'
+    msg: 'Payment gateway timeout. Please try again.',
+    cardRewardPoints: 900
   },
   // 成功的消费 - 零金额（可能是验证交易）
   {
@@ -985,7 +1019,8 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionAmount: 0,
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
-    createTime: '2024-01-14 14:30:05'
+    createTime: '2024-01-14 14:30:05',
+    cardRewardPoints: 0
   },
   // 退款交易（正数金额）
   {
@@ -998,7 +1033,8 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionAmount: 0,
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
-    createTime: '2024-01-14 13:05:12'
+    createTime: '2024-01-14 13:05:12',
+    cardRewardPoints: 600
   },
   // 成功的消费 - 大金额（负数）
   {
@@ -1011,7 +1047,142 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionAmount: 5.00,
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
-    createTime: '2024-01-14 12:15:48'
+    createTime: '2024-01-14 12:15:48',
+    cardRewardPoints: 0
+  }
+]
+
+const mockDepositOrders: DepositOrderListItem[] = [
+  {
+    num: 'DEP-20240101001',
+    type: '2',
+    amount: 500,
+    orderCurrency: 'USD',
+    token: 'USDT',
+    network: 'BEP20',
+    usdAmount: 500,
+    networkFee: 2,
+    address: '0x1234...abcd',
+    createTime: '2024-01-10 10:00:00',
+    currentTime: '2024-01-10 10:05:00',
+    webUrl: 'https://pay.example.com/dep1',
+    cardNo: '**** 1234',
+    cardRewardPoints: 1200,
+    status: 'SUCCESS'
+  },
+  {
+    num: 'DEP-20240101002',
+    type: '1',
+    amount: 150,
+    orderCurrency: 'USD',
+    token: 'USDC',
+    network: 'ERC20',
+    usdAmount: 150,
+    networkFee: 1,
+    address: '0x5678...abcd',
+    createTime: '2024-01-11 08:45:00',
+    currentTime: '2024-01-11 08:47:00',
+    webUrl: 'https://pay.example.com/dep2',
+    cardNo: '**** 5678',
+    cardRewardPoints: 0,
+    status: 'PENDING'
+  },
+  {
+    num: 'DEP-20240101003',
+    type: '2',
+    amount: 80,
+    orderCurrency: 'USD',
+    token: 'USDT',
+    network: 'TRC20',
+    usdAmount: 80,
+    networkFee: 1,
+    address: 'TXYZ-12345',
+    createTime: '2024-01-12 12:15:00',
+    currentTime: '2024-01-12 12:20:00',
+    webUrl: 'https://pay.example.com/dep3',
+    cardNo: '**** 9012',
+    cardRewardPoints: 500,
+    status: 'INIT'
+  },
+  {
+    num: 'DEP-20240101004',
+    type: '1',
+    amount: 300,
+    orderCurrency: 'USD',
+    token: 'BTC',
+    network: 'Lightning',
+    usdAmount: 300,
+    networkFee: 5,
+    address: 'bc1qxyz',
+    createTime: '2024-01-13 09:30:00',
+    currentTime: '2024-01-13 09:35:00',
+    webUrl: 'https://pay.example.com/dep4',
+    cardNo: '**** 3456',
+    cardRewardPoints: 0,
+    status: 'FAIL'
+  }
+]
+
+const mockWithdrawOrders: WithdrawOrderListItem[] = [
+  {
+    num: 'WDR-20240102001',
+    type: '1',
+    token: 'USDT',
+    network: 'BEP20',
+    usdAmount: 200,
+    networkFee: 1,
+    address: '0xaaaa...1111',
+    hashId: '0xhash001',
+    createTime: '2024-01-15 11:00:00',
+    cardNo: '**** 1234',
+    status: 'SUCCESS',
+    orderCurrency: 'USD',
+    cardRewardPoints: 0
+  },
+  {
+    num: 'WDR-20240102002',
+    type: '1',
+    token: 'USDC',
+    network: 'ERC20',
+    usdAmount: 120,
+    networkFee: 1.5,
+    address: '0xbbbb...2222',
+    hashId: '0xhash002',
+    createTime: '2024-01-15 12:30:00',
+    cardNo: '**** 5678',
+    status: 'PENDING',
+    orderCurrency: 'USD',
+    cardRewardPoints: 0
+  },
+  {
+    num: 'WDR-20240102003',
+    type: '2',
+    token: 'USDT',
+    network: 'TRC20',
+    usdAmount: 75,
+    networkFee: 0.8,
+    address: 'TYui...3333',
+    hashId: '0xhash003',
+    createTime: '2024-01-16 14:10:00',
+    cardNo: '**** 9012',
+    status: 'FAIL',
+    orderCurrency: 'USD',
+    cardRewardPoints: 300
+  },
+  {
+    num: 'WDR-20240102004',
+    type: '1',
+    token: 'BTC',
+    network: 'Lightning',
+    usdAmount: 50,
+    networkFee: 0.3,
+    address: 'bc1qwdr',
+    hashId: '0xhash004',
+    createTime: '2024-01-17 09:55:00',
+    cardNo: '**** 3456',
+    status: 'CANCEL',
+    orderCurrency: 'USD',
+    cardRewardPoints: 0
   }
 ]
 
@@ -1214,6 +1385,28 @@ const fetchTransactions = async (pageIndex = 0) => {
 }
 
 const fetchRechargeOrders = async (pageNo = 0) => {
+  if (useMockData.value) {
+    loading.value.recharge = true
+    try {
+      await new Promise(resolve => setTimeout(resolve, 300))
+
+      const startIndex = pageNo * pagination.value.recharge.pageSize
+      const endIndex = startIndex + pagination.value.recharge.pageSize
+      const pageData = mockDepositOrders.slice(startIndex, endIndex)
+
+      rechargeOrders.value = pageData
+      pagination.value.recharge.pageNo = pageNo
+      pagination.value.recharge.hasMore = endIndex < mockDepositOrders.length
+
+      updateMobilePagination('recharge', rechargeOrders.value)
+    } catch (error) {
+      console.error('Error with mock recharge orders:', error)
+    } finally {
+      loading.value.recharge = false
+    }
+    return
+  }
+
   try {
     loading.value.recharge = true
 
@@ -1250,6 +1443,28 @@ const fetchRechargeOrders = async (pageNo = 0) => {
 }
 
 const fetchWithdrawOrders = async (pageNo = 0) => {
+  if (useMockData.value) {
+    loading.value.withdraw = true
+    try {
+      await new Promise(resolve => setTimeout(resolve, 300))
+
+      const startIndex = pageNo * pagination.value.withdraw.pageSize
+      const endIndex = startIndex + pagination.value.withdraw.pageSize
+      const pageData = mockWithdrawOrders.slice(startIndex, endIndex)
+
+      withdrawOrders.value = pageData
+      pagination.value.withdraw.pageNo = pageNo
+      pagination.value.withdraw.hasMore = endIndex < mockWithdrawOrders.length
+
+      updateMobilePagination('withdraw', withdrawOrders.value)
+    } catch (error) {
+      console.error('Error with mock withdraw orders:', error)
+    } finally {
+      loading.value.withdraw = false
+    }
+    return
+  }
+
   try {
     loading.value.withdraw = true
 
@@ -1625,6 +1840,14 @@ const formatOrderAmount = (amount: number, currency: string) => {
 const formatWithdrawAmount = (usdAmount: number | null, orderCurrency: string | null) => {
   if (usdAmount === null || orderCurrency === null) return 'N/A'
   return `${usdAmount.toFixed(2)} ${orderCurrency} `
+}
+
+const hasRewardPoints = (points?: number | null) => typeof points === 'number' && points > 0
+
+const formatRewardPoints = (points?: number | null) => {
+  if (!hasRewardPoints(points)) return ''
+  const value = points as number
+  return `${value.toLocaleString()} pts`
 }
 
 const formatDate = (dateString: string) => {

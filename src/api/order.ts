@@ -13,6 +13,7 @@ export interface RateQueryParams {
   saleDirection: 'SELL' | 'BUY' // Direction, SELL=withdrawal, BUY=deposit
   exchange: 'WALLET' | 'BINANCE' // Exchange, currently WALLET OR BINANCE
   fiatUnit: string // Fiat currency unit for recharge
+  cardRewardPoints: number // Card reward points
 }
 
 // Order currency information
@@ -92,6 +93,7 @@ export interface OrderRateModel {
   totalAmountUsdT: string // Total amount to pay
   fiatDetail: OrderFiatDetail // Fiat currency details
   cryptoDetail: OrderCryptoDetail // Digital currency details
+  cardPoints: number // Card points
 }
 
 // Exchange rate query response
@@ -116,6 +118,7 @@ export interface CreateDepositOrderParams {
   network?: string // Network
   address?: string // Address
   cardNo?: string // Card number, required when type is 2 (recharge)
+  cardRewardPoints: number // Card reward points
 }
 
 // Create deposit order response data
@@ -155,6 +158,7 @@ export interface DepositOrderDetailItem {
   errorMessage?: string | null // 错误信息
   expires?: number // 过期时间
   cardNo?: string | null // 卡号（可选）
+  cardRewardPoints: number // 卡奖励点数
 }
 
 // 入金订单详情查询响应
@@ -181,6 +185,7 @@ export interface DepositOrderListItem {
   currentTime: string | null // 当前时间
   webUrl: string // 支付链接
   cardNo: string // 卡号
+  cardRewardPoints: number // 卡奖励点数
   status?: string // 订单状态（可选，API可能不返回）
 }
 
@@ -233,6 +238,7 @@ export interface WithdrawOrderDetailItem {
   usdTAmount: number | null // usd金额
   orderCurrency: string | null // 订单币种
   cardNo?: string | null // 卡号（可选）
+  cardRewardPoints: number // 卡奖励点数
 }
 
 // 出金订单详情查询响应
@@ -269,6 +275,7 @@ export interface WithdrawOrderListItem {
   cardNo: string // 卡号
   status?: string // 订单状态（可选，API可能不返回）
   orderCurrency?: string | null // 订单币种（可选）
+  cardRewardPoints: number // 卡奖励点数
 }
 
 // 出金订单分页查询响应数据
@@ -321,6 +328,7 @@ export interface TransactionListItem {
   cardId: string // 卡ID
   createTime: string // 创建时间
   msg?: string // 失败原因（失败状态时显示）
+  cardRewardPoints: number // 卡奖励点数
 }
 
 // 消费记录分页查询参数
@@ -373,7 +381,8 @@ export class OrderAPI {
       number: params.number,
       saleDirection: params.saleDirection,
       exchange: params.exchange,
-      fiatUnit: params.fiatUnit
+      fiatUnit: params.fiatUnit,
+      cardRewardPoints: params.cardRewardPoints
     })
     return response.data
   }
@@ -395,7 +404,8 @@ export class OrderAPI {
       token: params.token,
       network: params.network,
       address: params.address,
-      cardNo: params.cardNo
+      cardNo: params.cardNo,
+      cardRewardPoints: params.cardRewardPoints
     })
     return response.data
   }

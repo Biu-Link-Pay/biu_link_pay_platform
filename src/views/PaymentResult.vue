@@ -246,6 +246,14 @@
                   <div class="text-sm font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo }}</div>
                 </div>
 
+                <!-- Card Reward Points -->
+                <div v-if="orderRewardPoints" class="col-span-2">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Card Reward Points</div>
+                  <div class="text-sm font-semibold text-orange-600 dark:text-orange-300">
+                    {{ orderRewardPoints.toLocaleString() }} pts
+                  </div>
+                </div>
+
                 <!-- Created Time -->
                 <div class="col-span-2">
                   <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Created Time</div>
@@ -426,6 +434,7 @@ const withdrawNetwork = ref<string | null>('') // 出金网络
 const withdrawUsdTAmount = ref<number | null>(null) // 出金USDT金额
 const withdrawNetworkFee = ref<number | null>(null) // 网络费
 const orderCardNo = ref<string | null>(null) // 订单卡号
+const orderRewardPoints = ref<number | null>(null) // 卡奖励积分
 
 // UI state
 const refreshing = ref(false)
@@ -561,6 +570,7 @@ const fetchOrderStatus = async () => {
         withdrawNetwork.value = detail.network || null // 获取出金网络
         withdrawUsdTAmount.value = detail.usdTAmount || null // 获取USDT金额
         withdrawNetworkFee.value = detail.networkFee || null // 获取网络费
+        orderRewardPoints.value = detail.cardRewardPoints || null
         // 获取卡号，如果详情接口返回了则使用，否则保留路由传递的值
         if (detail.cardNo) {
           orderCardNo.value = detail.cardNo
@@ -597,6 +607,7 @@ const fetchOrderStatus = async () => {
         paymentTime.value = detail.createTime || null
         transactionId.value = detail.hashId || null
         errorReason.value = detail.errorMessage || null
+        orderRewardPoints.value = detail.cardRewardPoints || null
         // 获取卡号，如果详情接口返回了则使用，否则保留路由传递的值
         if (detail.cardNo) {
           orderCardNo.value = detail.cardNo
