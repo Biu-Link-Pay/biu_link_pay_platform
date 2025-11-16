@@ -304,6 +304,7 @@ export interface CreateWithdrawOrderParams {
   delFlag: boolean // true=删卡，false=不删卡
   withdrawAmount: string // 提现金额
   cardNo: string // 卡号
+  cardRewardPoints: number // 卡奖励点数
 }
 
 // 创建出金订单响应

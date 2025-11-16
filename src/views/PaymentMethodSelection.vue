@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Unified Header -->
-<AppHeader title="Payment Method" :show-title="true" />
+    <AppHeader title="Payment Method" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -135,7 +135,8 @@
           </div>
 
           <!-- Reward Points (Desktop, above You will receive) -->
-          <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-2xl p-6 shadow-lg space-y-4">
+          <div
+            class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-2xl p-6 shadow-lg space-y-3">
             <div class="flex flex-wrap items-center justify-between gap-3">
               <div>
                 <p class="text-sm font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
@@ -159,48 +160,25 @@
                 </span>
               </label>
             </div>
-            <div class="grid gap-4 md:grid-cols-[1.2fr_0.8fr]">
-              <div>
-                <div class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-300">
-                  <span>Points to use</span>
-                  <span class="text-xs text-gray-400 dark:text-gray-500">Max {{ maxUsablePoints.toLocaleString() }} pts</span>
-                </div>
-                <div class="mt-2 relative">
-                  <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
-                    :disabled="!applyRewardPoints || !canUseRewardPoints"
-                    class="w-full rounded-xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-900 px-4 py-3 text-base font-semibold text-gray-900 dark:text-white focus:ring-2 focus:ring-orange-400 focus:border-transparent disabled:opacity-60 disabled:cursor-not-allowed" />
-                  <span class="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-gray-500 dark:text-gray-400">
-                    pts
-                  </span>
-                </div>
-                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                  Enter points manually to redeem up to {{ formatCurrency(maxUsablePoints / 100) }}
-                </p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-600 dark:text-gray-300">
+              <div class="flex items-center gap-1.5">
+                <span>Use</span>
+                <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
+                  :disabled="!applyRewardPoints || !canUseRewardPoints"
+                  class="w-24 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
+                <span class="text-[11px] text-gray-500 dark:text-gray-400">pts</span>
               </div>
-              <div
-                class="rounded-xl bg-orange-50 dark:bg-orange-900/20 border border-orange-100 dark:border-orange-500/30 p-4 space-y-2">
-                <div class="flex items-center justify-between text-sm">
-                  <span class="text-gray-700 dark:text-gray-100">Discount value</span>
-                  <span class="font-semibold text-gray-900 dark:text-white">{{ formatCurrency(discountAmount) }}</span>
-                </div>
-                <div class="flex items-center justify-between text-sm">
-                  <span class="text-gray-700 dark:text-gray-100">Net amount</span>
-                  <span class="font-semibold text-blue-600 dark:text-blue-300">{{ formatCurrency(finalPayAmount) }}</span>
-                </div>
-                <div class="text-xs text-gray-500 dark:text-gray-400">
-                  Total savings {{ appliedRewardPoints.toLocaleString() }} pts ({{ formatCurrency(discountAmount) }})
-                </div>
-              </div>
+              <span class="text-[11px] text-gray-400 dark:text-gray-500">
+                Max {{ maxUsablePoints.toLocaleString() }} pts
+              </span>
             </div>
-            <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-              <button type="button" class="underline hover:text-orange-600" @click="setPointsUsage('none')"
-                :disabled="!applyRewardPoints">
-                Clear
-              </button>
-              <button type="button" class="underline hover:text-orange-600"
-                @click="setPointsUsage('max')" :disabled="!applyRewardPoints || maxUsablePoints === 0">
-                Use max
-              </button>
+            <div class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">
+              <span v-if="applyRewardPoints && canUseRewardPoints">
+                Using {{ appliedRewardPoints.toLocaleString() }} pts ({{ formatCurrency(discountAmount) }} off)
+              </span>
+              <span v-else>
+                You can use up to {{ maxUsablePoints.toLocaleString() }} pts
+              </span>
             </div>
           </div>
 
@@ -416,24 +394,24 @@
             </div>
           </div> -->
 
-          <!-- Reward Points (Mobile, above You will receive) -->
-          <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl p-4 shadow-sm space-y-3">
+          <!-- Reward Points (Mobile, simplified, above You will receive) -->
+          <div
+            class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl p-4 shadow-sm space-y-2">
             <div class="flex items-start justify-between gap-3">
               <div>
                 <p class="text-xs font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
                   Card Reward Points
                 </p>
                 <p class="text-xl font-bold text-gray-900 dark:text-white mt-1">
-                  {{ availableRewardPoints.toLocaleString() }}
+                  {{ availableRewardPoints.toLocaleString() }} pts
                 </p>
                 <p class="text-[11px] text-gray-500 dark:text-gray-400">
-                  ≈ {{ formatCurrency(availableRewardPoints / 100) }} (100 pts = 1 USD)
+                  100 pts = 1 USD
                 </p>
               </div>
               <label class="inline-flex items-center cursor-pointer">
                 <input type="checkbox" class="sr-only" v-model="applyRewardPoints" :disabled="!canUseRewardPoints" />
-                <span
-                  class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-200"
+                <span class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-200"
                   :class="applyRewardPoints && canUseRewardPoints ? 'bg-orange-500 dark:bg-orange-400' : ''">
                   <span
                     class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-200"
@@ -441,40 +419,25 @@
                 </span>
               </label>
             </div>
-            <div>
-              <div class="flex items-center justify-between text-xs text-gray-600 dark:text-gray-200">
-                <span>Points to use</span>
-                <span>Max {{ maxUsablePoints.toLocaleString() }} pts</span>
-              </div>
-              <div class="mt-2 relative">
+            <div class="mt-2 flex items-center justify-between text-[11px] text-gray-600 dark:text-gray-200">
+              <div class="flex items-center gap-1.5">
+                <span>Use</span>
                 <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
                   :disabled="!applyRewardPoints || !canUseRewardPoints"
-                  class="w-full rounded-lg border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-900 px-3 py-2 text-sm font-semibold text-gray-900 dark:text-white focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-60" />
-                <span class="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-gray-500 dark:text-gray-400">pts</span>
+                  class="w-20 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-[11px] font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
+                <span class="text-[10px] text-gray-500 dark:text-gray-400">pts</span>
               </div>
+              <span class="text-[10px] text-gray-400 dark:text-gray-500">
+                Max {{ maxUsablePoints.toLocaleString() }} pts
+              </span>
             </div>
-            <div
-              class="rounded-lg bg-orange-50 dark:bg-orange-900/20 border border-orange-100 dark:border-orange-500/30 p-3 space-y-1 text-xs">
-              <div class="flex items-center justify-between">
-                <span class="text-gray-600 dark:text-gray-200">Discount</span>
-                <span class="font-semibold text-gray-900 dark:text-white">{{ formatCurrency(discountAmount) }}</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-600 dark:text-gray-200">Net amount</span>
-                <span class="font-semibold text-blue-600 dark:text-blue-300">{{ formatCurrency(finalPayAmount) }}</span>
-              </div>
-              <div class="text-[11px] text-gray-500 dark:text-gray-400">
-                {{ appliedRewardPoints.toLocaleString() }} pts applied
-              </div>
-            </div>
-            <div class="flex items-center justify-between text-[11px] text-gray-500 dark:text-gray-400">
-              <button type="button" class="underline" @click="setPointsUsage('none')" :disabled="!applyRewardPoints">
-                Clear
-              </button>
-              <button type="button" class="underline" @click="setPointsUsage('max')"
-                :disabled="!applyRewardPoints || maxUsablePoints === 0">
-                Use max
-              </button>
+            <div class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">
+              <span v-if="applyRewardPoints && canUseRewardPoints">
+                Using {{ appliedRewardPoints.toLocaleString() }} pts ({{ formatCurrency(discountAmount) }} off)
+              </span>
+              <span v-else>
+                You can use up to {{ maxUsablePoints.toLocaleString() }} pts
+              </span>
             </div>
           </div>
 
@@ -489,7 +452,8 @@
                   <span class="text-xs font-bold text-gray-900 dark:text-white">{{ selectedCrypto.crypto.name }}</span>
                 </div>
                 <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
-                <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(finalPayAmount) }}</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(finalPayAmount)
+                }}</span>
               </div>
               <div v-if="countdown > 0" class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                 <i class="pi pi-clock"></i>
@@ -1051,6 +1015,11 @@ const handleContinue = async () => {
         expires: selectedPayType.value?.expires ?? null,
         cardRewardPointsUsed: appliedRewardPoints.value,
         cardRewardDiscount: discountAmount.value
+      })
+
+      // Refresh user profile to update card reward points
+      userStore.fetchUserProfile().catch(error => {
+        console.warn('Failed to refresh user profile after deposit order:', error)
       })
 
       // Navigate to crypto payment page

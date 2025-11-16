@@ -76,10 +76,16 @@
 
             <!-- Amount Display -->
             <div class="text-center lg:text-left mb-8 lg:mb-10">
-              <span
-                class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-600 dark:text-gray-400">$</span>
-              <span class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white">{{
-                formatCurrency(orderAmount) }}</span>
+              <div class="inline-flex items-baseline gap-2">
+                <span
+                  class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-600 dark:text-gray-400">$</span>
+                <span class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white">{{
+                  formatCurrency(orderAmount) }}</span>
+                <span v-if="orderRewardPoints"
+                  class="text-sm sm:text-base lg:text-lg font-semibold text-orange-500 dark:text-orange-300">
+                  (Use {{ orderRewardPoints.toLocaleString() }} pts)
+                </span>
+              </div>
             </div>
           </div>
 
@@ -123,6 +129,10 @@
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">USDT Amount</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
                     {{ withdrawUsdTAmount }} USDT
+                    <span v-if="orderRewardPoints"
+                      class="ml-1 text-xs lg:text-sm font-semibold text-orange-500 dark:text-orange-300">
+                      (Use {{ orderRewardPoints.toLocaleString() }} pts)
+                    </span>
                   </span>
                 </div>
 
@@ -212,6 +222,10 @@
                   <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">USDT Amount</div>
                   <div class="text-sm font-medium text-gray-900 dark:text-white">
                     {{ withdrawUsdTAmount }} USDT
+                    <span v-if="orderRewardPoints"
+                      class="ml-1 text-xs font-semibold text-orange-500 dark:text-orange-300">
+                      (Use {{ orderRewardPoints.toLocaleString() }} pts)
+                    </span>
                   </div>
                 </div>
 
@@ -244,14 +258,6 @@
                 <div v-if="orderCardNo" class="col-span-2">
                   <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Card Number</div>
                   <div class="text-sm font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo }}</div>
-                </div>
-
-                <!-- Card Reward Points -->
-                <div v-if="orderRewardPoints" class="col-span-2">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Card Reward Points</div>
-                  <div class="text-sm font-semibold text-orange-600 dark:text-orange-300">
-                    {{ orderRewardPoints.toLocaleString() }} pts
-                  </div>
                 </div>
 
                 <!-- Created Time -->

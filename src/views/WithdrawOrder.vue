@@ -179,6 +179,58 @@
                   <i class="pi pi-exclamation-triangle"></i>
                   <span>{{ rateError }}</span>
                 </div>
+
+                <!-- Reward Points (Desktop, above Exchange Rate Info) -->
+                <div v-if="availableRewardPoints > 0"
+                  class="mt-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 space-y-2">
+                  <div class="flex items-center justify-between gap-3">
+                    <div>
+                      <p class="text-xs font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
+                        Card Reward Points
+                      </p>
+                      <p class="text-lg font-bold text-gray-900 dark:text-white mt-1">
+                        {{ availableRewardPoints.toLocaleString() }} pts
+                      </p>
+                      <p class="text-[11px] text-gray-500 dark:text-gray-400">
+                        100 pts = 1 USD
+                      </p>
+                    </div>
+                    <!-- Switch style 对齐 PaymentMethodSelection.vue -->
+                    <label class="inline-flex items-center cursor-pointer">
+                      <span class="mr-2 text-xs font-medium text-gray-600 dark:text-gray-300">Use points</span>
+                      <input type="checkbox" class="sr-only" v-model="applyRewardPoints"
+                        :disabled="!canUseRewardPoints" />
+                      <span
+                        class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-200"
+                        :class="applyRewardPoints && canUseRewardPoints ? 'bg-orange-500 dark:bg-orange-400' : ''">
+                        <span
+                          class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-200"
+                          :class="applyRewardPoints && canUseRewardPoints ? 'translate-x-6' : ''"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="flex items-center justify-between text-[11px] text-gray-600 dark:text-gray-300">
+                    <div class="flex items-center gap-1.5">
+                      <span>Use</span>
+                      <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
+                        :disabled="!applyRewardPoints || !canUseRewardPoints"
+                        class="w-20 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-[11px] font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
+                      <span class="text-[10px] text-gray-500 dark:text-gray-400">pts</span>
+                    </div>
+                    <span class="text-[10px] text-gray-400 dark:text-gray-500">
+                      Max {{ maxUsablePoints.toLocaleString() }} pts
+                    </span>
+                  </div>
+                  <div class="text-[11px] text-gray-500 dark:text-gray-400">
+                    <span v-if="applyRewardPoints && canUseRewardPoints">
+                      Using {{ appliedRewardPoints.toLocaleString() }} pts (≈ {{ formatCurrency(discountAmount) }}
+                      value)
+                    </span>
+                    <span v-else>
+                      You can use up to {{ maxUsablePoints.toLocaleString() }} pts
+                    </span>
+                  </div>
+                </div>
               </div>
 
               <!-- Exchange Rate Info -->
@@ -387,6 +439,54 @@
           <span>{{ rateError }}</span>
         </div>
 
+        <!-- Reward Points (Mobile, above Exchange Rate Info) -->
+        <div v-if="availableRewardPoints > 0"
+          class="mt-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 space-y-2">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-[11px] font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
+                Card Reward Points
+              </p>
+              <p class="text-sm font-bold text-gray-900 dark:text-white mt-1">
+                {{ availableRewardPoints.toLocaleString() }} pts
+              </p>
+              <p class="text-[10px] text-gray-500 dark:text-gray-400">
+                100 pts = 1 USD
+              </p>
+            </div>
+            <!-- Switch style 对齐 PaymentMethodSelection.vue (mobile) -->
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only" v-model="applyRewardPoints" :disabled="!canUseRewardPoints" />
+              <span class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-200"
+                :class="applyRewardPoints && canUseRewardPoints ? 'bg-orange-500 dark:bg-orange-400' : ''">
+                <span
+                  class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-200"
+                  :class="applyRewardPoints && canUseRewardPoints ? 'translate-x-6' : ''"></span>
+              </span>
+            </label>
+          </div>
+          <div class="flex items-center justify-between text-[10px] text-gray-600 dark:text-gray-200">
+            <div class="flex items-center gap-1.5">
+              <span>Use</span>
+              <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
+                :disabled="!applyRewardPoints || !canUseRewardPoints"
+                class="w-20 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-[10px] font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
+              <span class="text-[10px] text-gray-500 dark:text-gray-400">pts</span>
+            </div>
+            <span class="text-[10px] text-gray-400 dark:text-gray-500">
+              Max {{ maxUsablePoints.toLocaleString() }} pts
+            </span>
+          </div>
+          <div class="text-[10px] text-gray-500 dark:text-gray-400">
+            <span v-if="applyRewardPoints && canUseRewardPoints">
+              Using {{ appliedRewardPoints.toLocaleString() }} pts (≈ {{ formatCurrency(discountAmount) }} value)
+            </span>
+            <span v-else>
+              You can use up to {{ maxUsablePoints.toLocaleString() }} pts
+            </span>
+          </div>
+        </div>
+
         <!-- Exchange Rate Info (Mobile) -->
         <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
           <div class="flex items-center justify-between">
@@ -496,12 +596,14 @@ import AppHeader from '@/components/AppHeader.vue'
 import CardInfoHeader from '@/components/CardInfoHeader.vue'
 import { OrderAPI } from '@/api/order'
 import { useCardStore } from '@/stores/card'
+import { useUserStore } from '@/stores/user'
 import Dialog from 'primevue/dialog'
 
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
 const cardStore = useCardStore()
+const userStore = useUserStore()
 
 // Card information from route query
 const cardInfo = ref({
@@ -528,6 +630,31 @@ const selectedCurrency = ref('USD')
 const selectedToken = ref('TPT')
 const selectedNetwork = ref('BNB Chain (BEP20)')
 const networkFee = ref(12)
+
+// Reward points (reuse logic from PaymentMethodSelection.vue，但出金不再受金额限制)
+const applyRewardPoints = ref(false)
+const pointsToUse = ref(0)
+const availableRewardPoints = computed(() => userStore.cardRewardPoints || 0)
+// 只要有积分就允许打开开关
+const canUseRewardPoints = computed(() => availableRewardPoints.value > 0)
+// 出金时可用积分上限就是现有积分总数
+const maxUsablePoints = computed(() => availableRewardPoints.value)
+const appliedRewardPoints = ref(0)
+const discountAmount = ref(0)
+
+const recalculateRewardPoints = () => {
+  const points = applyRewardPoints.value ? Math.min(pointsToUse.value, maxUsablePoints.value) : 0
+  appliedRewardPoints.value = points
+
+  const discount = points / 100
+  discountAmount.value = parseFloat(Math.min(discount, withdrawAmount.value).toFixed(2))
+}
+
+const triggerImmediateRateRefreshForWithdraw = () => {
+  if (!selectedCrypto.value || !selectedPayType.value) return
+  // 即使出金金额为 0，只要使用了积分也要请求汇率
+  fetchExchangeRate()
+}
 
 // Exchange rate data
 const exchangeRate = ref<any>(null)
@@ -605,11 +732,74 @@ const networks = ['BNB Chain (BEP20)', 'Ethereum (ERC20)', 'Polygon (MATIC)', 'A
 const isFormValid = computed(() => {
   const base = recipientAddress.value.length > 0 && selectedPayType.value !== null && selectedCrypto.value !== null
   if (isDeleteAction.value) return base
+
+  const hasFiatAmount = withdrawAmount.value > 0
+  const hasPoints = appliedRewardPoints.value > 0
+
+  // 仅使用卡积分提现：金额为 0 但有积分
+  if (!hasFiatAmount && hasPoints) {
+    return base
+  }
+
+  // 既没有金额也没有积分，不允许提交
+  if (!hasFiatAmount && !hasPoints) {
+    return false
+  }
+
+  // 有出金金额时，按照原有金额校验
   return base &&
-    withdrawAmount.value > 0 &&
     withdrawAmount.value >= minimumBalance.value &&
     withdrawAmount.value <= balance.value &&
     withdrawAmount.value <= getMaxWithdrawAmount()
+})
+
+// Reward points watchers (similar to PaymentMethodSelection.vue)
+watch(applyRewardPoints, (value) => {
+  if (!value) {
+    pointsToUse.value = 0
+    appliedRewardPoints.value = 0
+    discountAmount.value = 0
+  } else {
+    pointsToUse.value = maxUsablePoints.value
+    recalculateRewardPoints()
+  }
+  // 开启或关闭积分时都需要重新获取汇率，带上最新的积分参数
+  triggerImmediateRateRefreshForWithdraw()
+})
+
+watch(maxUsablePoints, (max) => {
+  if (!applyRewardPoints.value) {
+    pointsToUse.value = 0
+    appliedRewardPoints.value = 0
+    discountAmount.value = 0
+    return
+  }
+  if (max <= 0) {
+    pointsToUse.value = 0
+    applyRewardPoints.value = false
+    appliedRewardPoints.value = 0
+    discountAmount.value = 0
+    return
+  }
+  pointsToUse.value = Math.min(pointsToUse.value, max)
+  recalculateRewardPoints()
+  triggerImmediateRateRefreshForWithdraw()
+})
+
+watch(pointsToUse, (value) => {
+  if (!applyRewardPoints.value) return
+  if (value < 0) {
+    pointsToUse.value = 0
+  } else if (value > maxUsablePoints.value) {
+    pointsToUse.value = maxUsablePoints.value
+  }
+  recalculateRewardPoints()
+  triggerImmediateRateRefreshForWithdraw()
+})
+
+watch(availableRewardPoints, () => {
+  recalculateRewardPoints()
+  triggerImmediateRateRefreshForWithdraw()
 })
 
 // Check if receive amount is within selected crypto's limit
@@ -783,18 +973,26 @@ const validateForm = () => {
   }
 
   if (!isDeleteAction.value) {
-    if (withdrawAmount.value <= 0) {
-      errors.value.withdrawAmount = 'Amount must be greater than 0'
-    } else if (withdrawAmount.value < minimumBalance.value) {
-      errors.value.withdrawAmount = `Amount must be at least ${formatCurrency(minimumBalance.value)}`
-    } else if (withdrawAmount.value > balance.value) {
-      errors.value.withdrawAmount = 'Amount exceeds available balance'
-    } else if (withdrawAmount.value > getMaxWithdrawAmount()) {
-      errors.value.withdrawAmount = `Amount exceeds maximum withdraw limit of ${formatCurrency(getMaxWithdrawAmount())}`
-    } else if (cardInfo.value.maxOnDaily && withdrawAmount.value > cardInfo.value.maxOnDaily) {
-      errors.value.withdrawAmount = `Amount exceeds daily limit of ${formatCurrency(cardInfo.value.maxOnDaily)}`
-    } else if (cardInfo.value.maxOnPercent && withdrawAmount.value > cardInfo.value.maxOnPercent) {
-      errors.value.withdrawAmount = `Amount exceeds single transaction limit of ${formatCurrency(cardInfo.value.maxOnPercent)}`
+    const hasFiatAmount = withdrawAmount.value > 0
+    const hasPoints = appliedRewardPoints.value > 0
+
+    // 金额和积分都为 0，报错
+    if (!hasFiatAmount && !hasPoints) {
+      errors.value.withdrawAmount = 'Amount or points must be greater than 0'
+    }
+    // 仅当有出金金额时，才进行金额相关的校验
+    else if (hasFiatAmount) {
+      if (withdrawAmount.value < minimumBalance.value) {
+        errors.value.withdrawAmount = `Amount must be at least ${formatCurrency(minimumBalance.value)}`
+      } else if (withdrawAmount.value > balance.value) {
+        errors.value.withdrawAmount = 'Amount exceeds available balance'
+      } else if (withdrawAmount.value > getMaxWithdrawAmount()) {
+        errors.value.withdrawAmount = `Amount exceeds maximum withdraw limit of ${formatCurrency(getMaxWithdrawAmount())}`
+      } else if (cardInfo.value.maxOnDaily && withdrawAmount.value > cardInfo.value.maxOnDaily) {
+        errors.value.withdrawAmount = `Amount exceeds daily limit of ${formatCurrency(cardInfo.value.maxOnDaily)}`
+      } else if (cardInfo.value.maxOnPercent && withdrawAmount.value > cardInfo.value.maxOnPercent) {
+        errors.value.withdrawAmount = `Amount exceeds single transaction limit of ${formatCurrency(cardInfo.value.maxOnPercent)}`
+      }
     }
   }
 
@@ -968,7 +1166,8 @@ const handleWithdraw = async () => {
       address: recipientAddress.value,
       delFlag: isDeleteAction.value,
       withdrawAmount: (isDeleteAction.value ? getMaxWithdrawAmount() : withdrawAmount.value).toString(),
-      cardNo: maskedCardNo // Use masked cardNo from card list (脱敏的卡号)
+      cardNo: maskedCardNo, // Use masked cardNo from card list (脱敏的卡号)
+      cardRewardPoints: appliedRewardPoints.value
     })
 
     if (response.success) {
@@ -977,6 +1176,11 @@ const handleWithdraw = async () => {
         summary: 'Withdraw Order Created',
         detail: `Order #${response.model} has been submitted successfully`,
         life: 3000
+      })
+
+      // Refresh user profile to update card reward points after withdraw
+      userStore.fetchUserProfile().catch(error => {
+        console.warn('Failed to refresh user profile after withdraw order:', error)
       })
 
       // Navigate to payment result page with withdraw order details
@@ -1129,7 +1333,8 @@ watch(withdrawAmount, (newAmount, oldAmount) => {
 
 // Fetch exchange rate from API
 const fetchExchangeRate = async () => {
-  if (!selectedCrypto.value || !withdrawAmount.value || withdrawAmount.value <= 0) {
+  // 既可以根据提现金额计算汇率，也可以仅根据积分计算汇率（提现金额为 0）
+  if (!selectedCrypto.value || (!withdrawAmount.value && !appliedRewardPoints.value)) {
     return
   }
 
@@ -1146,6 +1351,8 @@ const fetchExchangeRate = async () => {
       payTypeName: selectedPayType.value?.name
     })
 
+    const requestedPoints = applyRewardPoints.value ? Math.min(pointsToUse.value, maxUsablePoints.value) : 0
+
     const response = await OrderAPI.getRate({
       cryptoUnit: selectedCrypto.value.crypto.name,
       network: selectedCrypto.value.network.name,
@@ -1153,7 +1360,7 @@ const fetchExchangeRate = async () => {
       saleDirection: 'SELL', // 提现使用 SELL
       exchange: selectedPayType.value?.name.toUpperCase() === 'BINANCE' ? 'BINANCE' : 'WALLET', // 根据支付方式选择交易所
       fiatUnit: selectedCurrency.value,
-      cardRewardPoints: 0
+      cardRewardPoints: requestedPoints
     })
 
     if (response.success && response.model) {
@@ -1227,30 +1434,21 @@ const stopRatePolling = () => {
 
 // Update receive amount based on exchange rate
 const updateReceiveAmount = () => {
-  if (!withdrawAmount.value || withdrawAmount.value <= 0) {
+  // 无汇率信息时直接清零
+  if (!exchangeRate.value || !exchangeRate.value.cryptoDetail) {
     receiveAmount.value = 0
     return
   }
 
-  if (exchangeRate.value && exchangeRate.value.cryptoDetail) {
-    // 使用真实汇率数据
-    const cryptoAmount = parseFloat(exchangeRate.value.cryptoDetail.cryptoAmount) || 0
-    receiveAmount.value = cryptoAmount
-    console.log('Receive amount updated with real rate:', {
-      withdrawAmount: withdrawAmount.value,
-      receiveAmount: receiveAmount.value,
-      rate: exchangeRate.value
-    })
-  } else {
-    // 使用默认汇率作为后备
-    const defaultRate = 101.4 // Mock exchange rate
-    receiveAmount.value = Math.floor(withdrawAmount.value * defaultRate)
-    console.log('Receive amount updated with default rate:', {
-      withdrawAmount: withdrawAmount.value,
-      receiveAmount: receiveAmount.value,
-      defaultRate
-    })
-  }
+  // 使用真实汇率数据（兼容出金金额为 0 但使用积分的场景）
+  const cryptoAmount = parseFloat(exchangeRate.value.cryptoDetail.cryptoAmount) || 0
+  receiveAmount.value = cryptoAmount
+  console.log('Receive amount updated with real rate:', {
+    withdrawAmount: withdrawAmount.value,
+    appliedRewardPoints: appliedRewardPoints.value,
+    receiveAmount: receiveAmount.value,
+    rate: exchangeRate.value
+  })
 }
 
 // Fetch payment methods from API
