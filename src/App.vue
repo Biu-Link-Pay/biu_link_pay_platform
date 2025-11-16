@@ -4,6 +4,7 @@
     <Toast />
     <ConfirmDialog />
     <CookieConsent />
+    <ContactUs />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import { useThemeStore } from '@/stores/theme'
 import Toast from 'primevue/toast'
 import ConfirmDialog from 'primevue/confirmdialog'
 import CookieConsent from '@/components/CookieConsent.vue'
+import ContactUs from '@/components/ContactUs.vue'
 
 // 初始化主题
 const themeStore = useThemeStore()
