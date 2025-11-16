@@ -20,7 +20,7 @@
       <div class="grid grid-cols-3 gap-4 mb-8">
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.applyFee || 0)
-          }}</div>
+            }}</div>
           <div class="text-sm text-gray-500 dark:text-gray-400">Apply fee</div>
         </div>
         <div class="text-center">
@@ -31,7 +31,7 @@
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.monthlyFee || 0)
-          }}</div>
+            }}</div>
           <div class="text-sm text-gray-500 dark:text-gray-400">Monthly Fee</div>
         </div>
       </div>
@@ -62,13 +62,32 @@
         <!-- Card BIN Selection -->
         <div v-else-if="cardBins.length > 0" class="space-y-4">
           <!-- Mobile: Card Carousel -->
-          <div class="md:hidden mt-20">
+          <div class="md:hidden mt-6">
+            <!-- Mobile Scheme Filter Buttons (simple, no extra layout) -->
+            <div v-if="cardSchemeOptions.length" class="mb-3 flex items-center space-x-2 overflow-x-auto">
+              <button type="button"
+                class="px-2.5 py-1 rounded-full border text-xs font-medium flex-shrink-0 transition-colors"
+                :class="!activeSchemeFilter
+                  ? 'bg-blue-600 text-white border-blue-600'
+                  : 'bg-white dark:bg-gray-900 text-blue-600 dark:text-blue-300 border-blue-200 dark:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/40'" @click="filterByScheme(null)">
+                All
+              </button>
+              <button v-for="scheme in cardSchemeOptions" :key="scheme" type="button"
+                class="px-2.5 py-1 rounded-full border text-xs font-medium flex-shrink-0 transition-colors"
+                :class="activeSchemeFilter === scheme
+                  ? 'bg-blue-600 text-white border-blue-600'
+                  : 'bg-white dark:bg-gray-900 text-blue-600 dark:text-blue-300 border-blue-200 dark:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/40'" @click="filterByScheme(scheme)">
+                {{ scheme }}
+              </button>
+            </div>
+
+            <!-- Mobile Card Carousel -->
             <div class="relative">
               <div class="overflow-hidden" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
                 @touchend="handleTouchEnd">
                 <div class="flex transition-transform duration-300 ease-in-out"
                   :style="{ transform: `translateX(-${currentBinIndex * 100}%)` }">
-                  <div v-for="(binInfo, index) in cardBins" :key="index" class="w-full flex-shrink-0 px-2">
+                  <div v-for="(binInfo, index) in filteredCardBins" :key="index" class="w-full flex-shrink-0 px-2">
                     <div class="rounded-xl p-6 text-white shadow-lg relative overflow-hidden" :style="{
                       backgroundImage: `url(${getCardBackgroundImage(binInfo.cardScheme)})`,
                       backgroundSize: 'cover',
@@ -91,7 +110,6 @@
                         <div class="space-y-1 mb-2 text-sm">
                           <!-- Card Type and Currency -->
                           <div class="mt-4 text-right">
-                            <!-- {{ binInfo.cardCurrency || 'USD' }} -->
                             {{ binInfo.countryName || 'N/A' }}
                           </div>
                           <!-- Card BIN -->
@@ -101,7 +119,6 @@
                             </div>
                             <div class="text-xs md:text-sm opacity-80">{{ binInfo.cardCurrency || 'USD' }}</div>
                           </div>
-                          <!-- Available Cards -->
                         </div>
                         <!-- Card Footer -->
                         <div class="flex items-center justify-between mt-4 sm:mt-10">
@@ -115,50 +132,14 @@
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Dots Indicator -->
-            <div class="flex justify-center mt-4 space-x-2">
-              <div v-for="(binInfo, index) in cardBins" :key="index" class="w-2 h-2 rounded-full transition-colors"
-                :class="currentBinIndex === index ? 'bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'"></div>
-            </div>
-
-            <!-- Mobile Card Details -->
-            <!-- <div class="mt-6">
-              <div
-                class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Card Details</h3>
-                <div class="grid grid-cols-1 gap-4 text-sm">
-                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                    <span class="text-gray-600 dark:text-gray-400">Card BIN:</span>
-                    <span class="font-medium text-gray-900 dark:text-white">{{ cardBins[currentBinIndex]?.cardBin || 'N/A' }}</span>
-                  </div>
-                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                    <span class="text-gray-600 dark:text-gray-400">Card Type:</span>
-                    <span class="font-medium text-gray-900 dark:text-white">{{ cardBins[currentBinIndex]?.cardType || 'N/A' }}</span>
-                  </div>
-                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                    <span class="text-gray-600 dark:text-gray-400">Card Scheme:</span>
-                    <span class="font-medium text-gray-900 dark:text-white">{{ cardBins[currentBinIndex]?.cardScheme || 'N/A' }}</span>
-                  </div>
-                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                    <span class="text-gray-600 dark:text-gray-400">Currency:</span>
-                    <span class="font-medium text-gray-900 dark:text-white">{{ cardBins[currentBinIndex]?.cardCurrency || 'USD' }}</span>
-                  </div>
-                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                    <span class="text-gray-600 dark:text-gray-400">Available Cards:</span>
-                    <span class="font-medium text-gray-900 dark:text-white">{{ cardBins[currentBinIndex]?.remainingAvailableCard || 'Unlimited' }}</span>
-                  </div>
-                  <div class="flex justify-between py-2 border-b border-gray-100 dark:border-gray-700">
-                    <span class="text-gray-600 dark:text-gray-400">Address Update:</span>
-                    <span class="font-medium"
-                      :class="cardBins[currentBinIndex]?.billingAddressUpdatable === 'true' ? 'text-green-600 dark:text-green-400' : 'text-gray-500 dark:text-gray-400'">
-                      {{ cardBins[currentBinIndex]?.billingAddressUpdatable === 'true' ? 'Supported' : 'Not Supported' }}
-                    </span>
-                  </div>
-                </div>
+              <!-- Dots Indicator -->
+              <div class="flex justify-center mt-4 space-x-2">
+                <div v-for="(binInfo, index) in filteredCardBins" :key="index"
+                  class="w-2 h-2 rounded-full transition-colors"
+                  :class="currentBinIndex === index ? 'bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'"></div>
               </div>
-            </div> -->
+            </div>
           </div>
 
           <!-- Desktop: Card Switcher Layout -->
@@ -173,6 +154,24 @@
                   </div>
                 </div>
 
+                <!-- Scheme Filter Buttons -->
+                <div v-if="cardSchemeOptions.length" class="flex items-center space-x-2">
+                  <span class="text-xs text-gray-500 dark:text-gray-400">Card Scheme</span>
+                  <button type="button" class="px-2.5 py-1 rounded-full border text-xs font-medium transition-colors"
+                    :class="!activeSchemeFilter
+                      ? 'bg-blue-600 text-white border-blue-600'
+                      : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700'"
+                    @click="filterByScheme(null)">
+                    All
+                  </button>
+                  <button v-for="scheme in cardSchemeOptions" :key="scheme" type="button"
+                    class="px-2.5 py-1 rounded-full border text-xs font-medium transition-colors"
+                    :class="activeSchemeFilter === scheme
+                      ? 'bg-blue-600 text-white border-blue-600'
+                      : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700'" @click="filterByScheme(scheme)">
+                    {{ scheme }}
+                  </button>
+                </div>
               </div>
 
               <!-- Card Carousel Container with Side Navigation -->
@@ -193,7 +192,7 @@
                     <!-- Card Carousel -->
                     <div class="flex transition-transform duration-300 ease-in-out"
                       :style="{ transform: `translateX(-${currentBinIndex * 100}%)` }">
-                      <div v-for="(binInfo, index) in cardBins" :key="index" class="w-full flex-shrink-0 px-4">
+                      <div v-for="(binInfo, index) in filteredCardBins" :key="index" class="w-full flex-shrink-0 px-4">
                         <div class="space-y-6 flex flex-col items-center">
                           <!-- Card Preview -->
                           <div
@@ -254,10 +253,10 @@
 
               <!-- Dots Indicator -->
               <div class="flex justify-center mt-6 space-x-2">
-                <button v-for="(binInfo, index) in cardBins" :key="index"
+                <button v-for="(binInfo, index) in filteredCardBins" :key="index"
                   class="w-3 h-3 rounded-full transition-all duration-200 hover:scale-110"
                   :class="currentBinIndex === index ? 'bg-blue-500' : 'bg-gray-300 hover:bg-gray-400'"
-                  @click="selectBin(index)" :title="`Go to card ${index + 1}`">
+                  @click="currentBinIndex = index" :title="`Go to card ${index + 1}`">
                 </button>
               </div>
             </div>
@@ -342,7 +341,6 @@ const cardStore = useCardStore()
 
 // Reactive data
 const currentBinIndex = ref(0)
-const selectedBinIndex = ref<number | null>(null)
 const binLoading = ref(false)
 const binError = ref<string | null>(null)
 
@@ -362,13 +360,41 @@ const selectedCard = computed<CardConfig | null>(() => {
 // Get card BIN list
 const cardBins = computed(() => cardStore.cardBins)
 
-// Selected BIN information
-const selectedBinInfo = computed<CardBin | null>(() => {
-  if (selectedBinIndex.value !== null && cardBins.value[selectedBinIndex.value]) {
-    return cardBins.value[selectedBinIndex.value]
+// Card scheme filter options (e.g. VISA / MASTERCARD)
+const activeSchemeFilter = ref<string | null>(null)
+const cardSchemeOptions = computed(() => {
+  const schemes = new Set<string>()
+  for (const bin of cardBins.value) {
+    const raw = (bin.cardScheme || '').toString().trim()
+    if (!raw) continue
+    const normalized = raw.toUpperCase()
+    schemes.add(normalized)
   }
-  return null
+  return Array.from(schemes)
 })
+
+// Filtered BIN list based on active scheme filter
+const filteredCardBins = computed(() => {
+  if (!activeSchemeFilter.value) return cardBins.value
+  const scheme = activeSchemeFilter.value.toLowerCase()
+  return cardBins.value.filter((bin) =>
+    (bin.cardScheme || '').toString().toLowerCase().includes(scheme),
+  )
+})
+
+// Selected BIN information（基于当前过滤后的列表）
+const selectedBinInfo = computed<CardBin | null>(() => {
+  if (!filteredCardBins.value.length) return null
+  const index = currentBinIndex.value
+  return filteredCardBins.value[index] || null
+})
+
+// Filter by card scheme: only show that scheme in carousel
+const filterByScheme = (scheme: string | null) => {
+  activeSchemeFilter.value = scheme
+  // 切换筛选类型时，从该类型的第一张卡片开始
+  currentBinIndex.value = 0
+}
 
 // Load card BIN information
 const loadCardBins = async () => {
@@ -386,7 +412,6 @@ const loadCardBins = async () => {
 
     if (result.success && cardStore.cardBins.length > 0) {
       // Select first BIN by default
-      selectedBinIndex.value = 0
       currentBinIndex.value = 0
     } else {
       binError.value = result.error || 'Failed to load card BINs'
@@ -398,34 +423,17 @@ const loadCardBins = async () => {
   }
 }
 
-// Select BIN
-const selectBin = (index: number | null) => {
-  if (index !== null && index >= 0 && index < cardBins.value.length) {
-    selectedBinIndex.value = index
-    currentBinIndex.value = index
-  }
-}
-
-// Handle dropdown selection change
-const handleSelectChange = () => {
-  if (selectedBinIndex.value !== null) {
-    selectBin(selectedBinIndex.value)
-  }
-}
-
 // Previous BIN
 const previousBin = () => {
   if (currentBinIndex.value > 0) {
     currentBinIndex.value--
-    selectedBinIndex.value = currentBinIndex.value
   }
 }
 
 // Next BIN
 const nextBin = () => {
-  if (currentBinIndex.value < cardBins.value.length - 1) {
+  if (currentBinIndex.value < filteredCardBins.value.length - 1) {
     currentBinIndex.value++
-    selectedBinIndex.value = currentBinIndex.value
   }
 }
 
@@ -536,11 +544,12 @@ const handleKeyDown = (event: KeyboardEvent) => {
       break
     case 'Home':
       event.preventDefault()
-      selectBin(0)
+      currentBinIndex.value = 0
       break
     case 'End':
       event.preventDefault()
-      selectBin(cardBins.value.length - 1)
+      if (filteredCardBins.value.length > 0)
+        currentBinIndex.value = filteredCardBins.value.length - 1
       break
   }
 }
