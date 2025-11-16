@@ -307,15 +307,14 @@
                                   <i class="pi pi-star-fill text-[10px]"></i>
                                   Card points {{ formatRewardPoints(transaction.cardRewardPoints) }}
                                 </span>
-                                <span v-if="isRefundTransaction(transaction)"
+
+                              </div>
+                              <div v-if="isRefundTransaction(transaction)">
+                                <span
                                   class="inline-flex items-center gap-1 text-[11px] lg:text-xs font-medium text-emerald-700 dark:text-emerald-300">
                                   <i class="pi pi-refresh text-[10px]"></i>
                                   Refund
                                 </span>
-                              </div>
-                              <div v-if="isRefundTransaction(transaction)"
-                                class="text-xs text-emerald-700 dark:text-emerald-300 mt-1">
-                                Refunded to your card balance
                               </div>
                               <div v-if="transaction.feeDeductionAmount"
                                 class="text-xs text-orange-600 dark:text-orange-400 mt-1">
@@ -891,7 +890,7 @@ const rechargeOrders = ref<DepositOrderListItem[]>([])
 const withdrawOrders = ref<WithdrawOrderListItem[]>([])
 
 // Mock data for testing different scenarios
-const useMockData = ref(false) // 设置为 true 来使用 mock 数据，设置为 false 使用真实 API
+const useMockData = ref(true) // 设置为 true 来使用 mock 数据，设置为 false 使用真实 API
 
 const mockTransactions: TransactionListItem[] = [
   // 成功的充值（正数金额）

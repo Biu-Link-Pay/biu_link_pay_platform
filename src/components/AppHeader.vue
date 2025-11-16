@@ -24,31 +24,41 @@
 
         <!-- Card reward points (desktop) -->
         <div v-if="isLoggedIn"
-          class="hidden sm:flex items-center gap-3 px-3 py-2 rounded-2xl bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-100 dark:from-orange-400/20 dark:to-amber-400/10 dark:border-orange-400/40 shadow-sm">
-          <div
-            class="w-9 h-9 rounded-xl bg-white/80 dark:bg-white/10 flex items-center justify-center text-orange-500 dark:text-orange-200">
-            <i class="pi pi-star-fill text-sm"></i>
+          class="card-points-desktop hidden sm:flex items-center gap-3 px-3 py-1.5 rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-400 shadow-sm text-white cursor-default">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center points-icon-animate">
+            <img :src="coinsIcon" alt="Card points" class="w-6 h-6 object-contain" />
           </div>
-          <div class="text-right leading-tight">
-            <p class="text-[11px] font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-200">
-              Card Points
-            </p>
+          <div class="flex items-center gap-1">
             <p :class="[
-              'text-base font-semibold text-gray-900 dark:text-white',
-              { 'animate-pulse text-orange-400/70 dark:text-orange-200/70': !hasCardRewardPoints }
+              'text-lg font-extrabold tracking-wide tabular-nums',
+              { 'animate-pulse opacity-70': !hasCardRewardPoints }
             ]">
               {{ formattedCardRewardPoints }}
             </p>
+            <span v-tooltip.bottom="{ value: '100 pts = 1 USD', class: 'points-tooltip' }"
+              class="inline-flex items-center justify-center w-4 h-4 rounded-full bg-white/25 text-[10px] font-bold leading-none cursor-pointer"
+              @click.stop="showPointsHint">
+              !
+            </span>
           </div>
         </div>
 
         <!-- Card reward points (mobile) -->
         <div v-if="isLoggedIn"
-          class="sm:hidden flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-orange-50 border border-orange-100 dark:bg-orange-400/15 dark:border-orange-400/40 text-xs font-semibold text-orange-600 dark:text-orange-200">
-          <i class="pi pi-star-fill text-[10px]"></i>
-          <span :class="[{ 'animate-pulse opacity-70': !hasCardRewardPoints }]">
-            {{ formattedCardRewardPoints }}
-          </span>
+          class="card-points-mobile sm:hidden flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-indigo-500 text-[11px] font-semibold text-white shadow-sm">
+          <div class="w-5 h-5 rounded-lg bg-white/15 flex items-center justify-center points-icon-animate">
+            <img :src="coinsIcon" alt="Card points" class="w-3.5 h-3.5 object-contain" />
+          </div>
+          <div class="flex items-center gap-0.5">
+            <span :class="[{ 'animate-pulse opacity-70': !hasCardRewardPoints }]">
+              {{ formattedCardRewardPoints }}
+            </span>
+            <span v-tooltip.bottom="{ value: '100 pts = 1 USD', class: 'points-tooltip' }"
+              class="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full bg-white/25 text-[9px] font-bold leading-none cursor-pointer"
+              @click.stop="showPointsHint">
+              !
+            </span>
+          </div>
         </div>
 
         <slot name="actions">
@@ -134,6 +144,7 @@ import { useAuthStore } from '@/stores/auth'
 import { useUserStore } from '@/stores/user'
 import { useCardStore } from '@/stores/card'
 import ThemeToggle from './ThemeToggle.vue'
+import coinsIcon from '@/assets/images/coins.png'
 
 interface Props {
   title?: string
@@ -188,6 +199,15 @@ const formattedCardRewardPoints = computed(() => {
     maximumFractionDigits: 2
   }).format(cardRewardPoints.value)
 })
+
+const showPointsHint = () => {
+  toast.add({
+    severity: 'info',
+    summary: 'Card Points',
+    detail: '100 pts = 1 USD',
+    life: 2500
+  })
+}
 
 // Mobile drawer removed; use the same floating menu as desktop
 
@@ -268,6 +288,27 @@ const loadUserProfileIfNeeded = async () => {
   }
 }
 
+// Poll card points every 60s to keep header data fresh
+let cardPointsTimer: number | null = null
+
+const startCardPointsPolling = () => {
+  if (cardPointsTimer || !isLoggedIn.value) return
+  cardPointsTimer = window.setInterval(async () => {
+    try {
+      await userStore.fetchUserProfile()
+    } catch (error) {
+      console.error('Failed to refresh user profile for card points:', error)
+    }
+  }, 60_000)
+}
+
+const stopCardPointsPolling = () => {
+  if (cardPointsTimer !== null) {
+    window.clearInterval(cardPointsTimer)
+    cardPointsTimer = null
+  }
+}
+
 // Click outside to close menu
 const handleClickOutside = (event: Event) => {
   const target = event.target as HTMLElement
@@ -286,16 +327,21 @@ onMounted(() => {
   document.addEventListener('click', handleClickOutside)
   document.addEventListener('keydown', handleEscapeKey)
   loadUserProfileIfNeeded()
+  startCardPointsPolling()
 })
 
 onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside)
   document.removeEventListener('keydown', handleEscapeKey)
+  stopCardPointsPolling()
 })
 
 watch(isLoggedIn, value => {
   if (value) {
     loadUserProfileIfNeeded()
+    startCardPointsPolling()
+  } else {
+    stopCardPointsPolling()
   }
 })
 
@@ -363,6 +409,42 @@ button:hover {
 
 .dark .shadow-lg {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Card points icon subtle scale animation */
+.points-icon-animate {
+  animation: pointsIconPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes pointsIconPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Custom tooltip style for card points */
+:deep(.p-tooltip.points-tooltip .p-tooltip-text) {
+  background: rgba(15, 23, 42, 0.95);
+  /* slate-900-ish with slight transparency */
+  color: #e5e7eb;
+  /* gray-200 */
+  border-radius: 9999px;
+  padding-inline: 0.75rem;
+  padding-block: 0.35rem;
+  font-size: 11px;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.35);
+}
+
+:deep(.p-tooltip.points-tooltip .p-tooltip-arrow) {
+  border-top-color: rgba(15, 23, 42, 0.95) !important;
+  border-bottom-color: rgba(15, 23, 42, 0.95) !important;
 }
 
 /* Mobile drawer transitions removed */
