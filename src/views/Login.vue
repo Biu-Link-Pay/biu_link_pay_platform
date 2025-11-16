@@ -118,39 +118,6 @@
                 </p>
               </div>
 
-              <!-- Invitation Code Toggle + Input -->
-              <div class="rounded-2xl border border-gray-200 dark:border-gray-700 p-4 space-y-4 bg-white/70 dark:bg-gray-800/60">
-                <div class="flex items-start justify-between">
-                  <div>
-                    <p class="text-sm font-semibold text-gray-900 dark:text-white">Use invitation code</p>
-                    <p class="text-xs text-gray-500 dark:text-gray-400 max-w-xs">
-                      Optional — share referral rewards with the friend who invited you.
-                    </p>
-                  </div>
-                  <label class="relative inline-flex items-center cursor-pointer ml-4 shrink-0">
-                    <input type="checkbox" class="sr-only peer" v-model="inviteToggle" />
-                    <div
-                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-500 dark:peer-focus:ring-blue-400 rounded-full peer dark:bg-gray-600 peer-checked:bg-blue-600 transition-colors">
-                    </div>
-                    <div
-                      class="absolute left-0.5 top-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform peer-checked:translate-x-5">
-                    </div>
-                  </label>
-                </div>
-
-                <div v-if="inviteToggle" class="space-y-2 pt-2 border-t border-gray-100 dark:border-gray-700">
-                  <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Invitation code
-                  </label>
-                  <InputText v-model="form.inviteCode" type="text" placeholder="Enter invitation code"
-                    class="w-full text-base min-h-[48px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all duration-200"
-                    :disabled="isLoading" />
-                  <p class="text-xs text-gray-500 dark:text-gray-400">
-                    We’ll apply the code during login so both of you receive rewards.
-                  </p>
-                </div>
-              </div>
-
               <!-- Terms Agreement -->
               <div class="flex items-start space-x-3">
                 <Checkbox v-model="form.agreeTerms" :binary="true" class="mt-1 checkbox-enhanced"
@@ -185,7 +152,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useAuthStore } from '@/stores/auth'
 import { useCardStore } from '@/stores/card'
@@ -194,6 +161,7 @@ import { AuthUtils, RouteUtils } from '@/utils/auth'
 import { getFingerprintId, getCachedFingerprintId } from '@/utils/fingerprint'
 
 const router = useRouter()
+const route = useRoute()
 const toast = useToast()
 const authStore = useAuthStore()
 const cardStore = useCardStore()
@@ -269,11 +237,9 @@ const services = ref([
 // Form data
 const form = ref({
   email: '',
-  inviteCode: '',
   code: '',
   agreeTerms: false
 })
-const inviteToggle = ref(false)
 
 // Form validation errors
 const errors = ref({
@@ -287,6 +253,7 @@ const isLoading = ref(false)
 const showVerificationCode = ref(false)
 const countdown = ref(0)
 const showMobileForm = ref(false) // 控制移动端是否显示表单
+const licenseFromUrl = ref('')
 
 // Countdown timer
 let countdownTimer: number | null = null
@@ -416,7 +383,7 @@ const login = async () => {
     const result = await authStore.login({
       email: form.value.email,
       code: form.value.code,
-      license: form.value.inviteCode || ''
+      license: licenseFromUrl.value || ''
     })
 
     if (result.success) {
@@ -521,7 +488,6 @@ const handleBackClick = () => {
   showVerificationCode.value = false
   form.value = {
     email: '',
-    inviteCode: '',
     code: '',
     agreeTerms: false
   }
@@ -540,11 +506,9 @@ const handleBackClick = () => {
 
 // Clean up timer when component unmounts
 onMounted(() => {
-  return () => {
-    if (countdownTimer) {
-      window.clearInterval(countdownTimer)
-    }
-  }
+  // 从路由 query 中读取 license（邀请码），例如 /login?license=888888
+  const license = route.query.license as string | undefined
+  licenseFromUrl.value = license || ''
 })
 </script>
 
