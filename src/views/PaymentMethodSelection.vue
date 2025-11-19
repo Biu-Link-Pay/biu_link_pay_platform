@@ -16,7 +16,7 @@
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
             <div class="relative px-10 py-12 text-center flex flex-col items-center space-y-4">
               <span class="text-sm uppercase tracking-widest text-white/80">Pay Amount</span>
-              <div class="text-5xl font-extrabold tracking-tight">{{ formatCurrency(payAmount) }}</div>
+              <div class="text-5xl font-extrabold tracking-tight">{{ formatCurrency(originalPayAmount) }}</div>
               <div v-if="discountAmount > 0" class="text-sm text-white/80">
                 <span class="line-through mr-2 opacity-75">{{ formatCurrency(payAmount) }}</span>
                 Used {{ formatCurrency(discountAmount) }} pts
@@ -145,7 +145,7 @@
                 <span class="font-bold text-gray-900 dark:text-white">{{ actualCryptoAmount }} {{
                   selectedCrypto.crypto.name }}</span>
                 <span class="text-gray-700 dark:text-gray-300">from</span>
-                <span class="font-bold text-gray-900 dark:text-white">{{ formatCurrency(finalPayAmount) }}</span>
+                <span class="font-bold text-gray-900 dark:text-white">{{ formatCurrency(originalPayAmount) }}</span>
               </div>
               <div v-if="countdown > 0" class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                 <i class="pi pi-clock"></i>
@@ -191,7 +191,7 @@
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
             <div class="relative px-6 py-8 text-center flex flex-col items-center space-y-3">
               <span class="text-sm uppercase tracking-widest text-white/80">Pay Amount</span>
-              <div class="text-4xl font-extrabold tracking-tight">{{ formatCurrency(payAmount) }}</div>
+              <div class="text-4xl font-extrabold tracking-tight">{{ formatCurrency(originalPayAmount) }}</div>
               <div v-if="discountAmount > 0" class="text-xs text-white/80">
                 <span class="line-through mr-1 opacity-70">{{ formatCurrency(payAmount) }}</span>
                 Used {{ formatCurrency(discountAmount) }} pts
@@ -361,8 +361,8 @@
                   <span class="text-xs font-bold text-gray-900 dark:text-white">{{ selectedCrypto.crypto.name }}</span>
                 </div>
                 <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
-                <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(finalPayAmount)
-                }}</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(originalPayAmount)
+                  }}</span>
               </div>
               <div v-if="countdown > 0" class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                 <i class="pi pi-clock"></i>
@@ -488,9 +488,12 @@ const currentCurrencySymbol = computed(() => {
 
 // Format currency
 const formatCurrency = (amount: number) => {
+  console.log(amount)
+  console.log(amount.toFixed(2))
   return `${currentCurrencySymbol.value}${amount.toFixed(2)}`
 }
 
+const originalPayAmount = ref(0)
 const availableRewardPoints = computed(() => userStore.cardRewardPoints || 0)
 const appliedRewardPoints = ref(0)
 const discountAmount = ref(0)
@@ -594,6 +597,7 @@ const queryRate = async () => {
 
     if (response.success && response.model) {
       rateResult.value = response.model
+      originalPayAmount.value = Number(response.model.number) || 0
       actualCryptoAmount.value = response.model.cryptoDetail?.totalAmountCrypto || ''
 
       const parsedCardPoints = Number(response.model.cardPoints)
