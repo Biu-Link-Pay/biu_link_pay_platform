@@ -1036,7 +1036,6 @@ const handleWithdraw = async () => {
     // Get masked cardNo from card list (脱敏的卡号)
     const cardFromList = cardStore.cardList.find(card => card.cardId === cardInfo.value.cardId)
     const maskedCardNo = cardFromList?.cardNo || cardInfo.value.cardNo || ''
-
     // Create withdraw order using OrderAPI with two-level selection data
     const response = await OrderAPI.createWithdrawOrder({
       cardPattern: '1', // 1:虚拟卡 2:实体卡 - assuming virtual card

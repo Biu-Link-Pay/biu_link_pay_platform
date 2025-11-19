@@ -426,7 +426,8 @@ export class OrderAPI {
       address: params.address,
       delFlag: params.delFlag,
       withdrawAmount: params.withdrawAmount,
-      cardNo: params.cardNo
+      cardNo: params.cardNo,
+      cardRewardPoints: params.cardRewardPoints
     })
     return response.data
   }

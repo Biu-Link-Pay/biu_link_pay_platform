@@ -41,10 +41,9 @@
     </div>
 
     <!-- Desktop slide-out panel -->
-    <div class="hidden md:flex fixed right-0 top-1/2 -translate-y-1/2 transform z-50"
-      @mouseenter="showPopover" @mouseleave="hidePopover">
-      <div class="contact-desktop-panel" :class="{ 'is-visible': isPopoverVisible }">
-        <div class="contact-panel-handle">
+    <div class="hidden md:flex fixed right-0 top-1/2 -translate-y-1/2 transform z-50">
+      <div class="contact-desktop-panel" :class="{ 'is-visible': isPopoverVisible }" @mouseleave="hidePopover">
+        <div class="contact-panel-handle" @mouseenter="showPopover">
           <i class="pi pi-envelope text-lg"></i>
           <span>Contact</span>
         </div>

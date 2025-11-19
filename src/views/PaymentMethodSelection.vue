@@ -16,10 +16,10 @@
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
             <div class="relative px-10 py-12 text-center flex flex-col items-center space-y-4">
               <span class="text-sm uppercase tracking-widest text-white/80">Pay Amount</span>
-              <div class="text-5xl font-extrabold tracking-tight">{{ formatCurrency(finalPayAmount) }}</div>
+              <div class="text-5xl font-extrabold tracking-tight">{{ formatCurrency(payAmount) }}</div>
               <div v-if="discountAmount > 0" class="text-sm text-white/80">
                 <span class="line-through mr-2 opacity-75">{{ formatCurrency(payAmount) }}</span>
-                Saved {{ formatCurrency(discountAmount) }} with points
+                Used {{ formatCurrency(discountAmount) }} pts
               </div>
               <div v-if="cardStore.selectedCardBin?.cardCurrency" class="text-sm text-white/80">
                 {{ cardStore.selectedCardBin?.cardCurrency }} total for your card
@@ -191,10 +191,10 @@
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
             <div class="relative px-6 py-8 text-center flex flex-col items-center space-y-3">
               <span class="text-sm uppercase tracking-widest text-white/80">Pay Amount</span>
-              <div class="text-4xl font-extrabold tracking-tight">{{ formatCurrency(finalPayAmount) }}</div>
+              <div class="text-4xl font-extrabold tracking-tight">{{ formatCurrency(payAmount) }}</div>
               <div v-if="discountAmount > 0" class="text-xs text-white/80">
                 <span class="line-through mr-1 opacity-70">{{ formatCurrency(payAmount) }}</span>
-                Saved {{ formatCurrency(discountAmount) }} with points
+                Used {{ formatCurrency(discountAmount) }} pts
               </div>
               <div v-if="cardStore.selectedCardBin?.cardCurrency" class="text-sm text-white/80">
                 {{ cardStore.selectedCardBin?.cardCurrency }} total for your card
@@ -857,7 +857,7 @@ const handleContinue = async () => {
       type: orderType, // 1: Card Application 2: Recharge
       cardBin: cardStore.selectedCardBin?.cardBin || '', // Get card bin from Pinia store
       payType: selectedPayType.value.name, // Payment method
-      amount: finalPayAmount.value, // Order amount
+      amount: payAmount.value, // Order amount
       orderCurrency: cardStore.selectedCardBin?.cardCurrency || 'USD', // Order currency
       userCardId: isRecharge ? (cardStore.selectedCardBin?.cardId || '') : (route.query.userCardId as string || ''), // User cardId, when type is 1, cardBin is required, when type is 2, userCardId is required
       token: selectedCrypto.value.crypto.name, // token
