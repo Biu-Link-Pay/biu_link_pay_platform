@@ -24,7 +24,7 @@
 
         <!-- Card reward points (desktop) -->
         <div v-if="isLoggedIn"
-          class="card-points-desktop hidden sm:flex items-center gap-3 px-3 py-1.5 rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-400 shadow-sm text-white cursor-default">
+          class="card-points-desktop hidden sm:flex items-center gap-1 px-3 py-1.5 rounded-2xl    text-gray-900 dark:text-white cursor-default">
           <div class="w-9 h-9 rounded-xl flex items-center justify-center points-icon-animate">
             <img :src="coinsIcon" alt="Card points" class="w-6 h-6 object-contain" />
           </div>
@@ -36,7 +36,7 @@
               {{ formattedCardRewardPoints }}
             </p>
             <span v-tooltip.bottom="{ value: '100 pts = 1 USD', class: 'points-tooltip' }"
-              class="inline-flex items-center justify-center w-4 h-4 rounded-full bg-white/25 text-[10px] font-bold leading-none cursor-pointer"
+              class="inline-flex items-center justify-center w-4 h-4 rounded-full dark:bg-white/25 bg-gray-900/25 text-[10px] font-bold leading-none cursor-pointer"
               @click.stop="showPointsHint">
               !
             </span>
@@ -45,16 +45,16 @@
 
         <!-- Card reward points (mobile) -->
         <div v-if="isLoggedIn"
-          class="card-points-mobile sm:hidden flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-indigo-500 text-[11px] font-semibold text-white shadow-sm">
-          <div class="w-5 h-5 rounded-lg bg-white/15 flex items-center justify-center points-icon-animate">
+          class="card-points-mobile sm:hidden flex items-center gap-0.5 px-2.5 py-1.5 rounded-xl text-[11px] font-semibold text-white ">
+          <div class="w-5 h-5 rounded-lg flex items-center justify-center points-icon-animate">
             <img :src="coinsIcon" alt="Card points" class="w-3.5 h-3.5 object-contain" />
           </div>
           <div class="flex items-center gap-0.5">
-            <span :class="[{ 'animate-pulse opacity-70': !hasCardRewardPoints }]">
+            <span :class="[{ 'animate-pulse opacity-70': !hasCardRewardPoints }]" class="text-gray-900 dark:text-white">
               {{ formattedCardRewardPoints }}
             </span>
             <span v-tooltip.bottom="{ value: '100 pts = 1 USD', class: 'points-tooltip' }"
-              class="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full bg-white/25 text-[9px] font-bold leading-none cursor-pointer"
+              class="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full dark:bg-white/25 bg-gray-900/25 text-[9px] font-bold leading-none cursor-pointer"
               @click.stop="showPointsHint">
               !
             </span>
