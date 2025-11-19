@@ -62,9 +62,10 @@
         <!-- Card BIN Selection -->
         <div v-else-if="cardBins.length > 0" class="space-y-4">
           <!-- Mobile: Card Carousel -->
-          <div class="md:hidden mt-6">
+          <div class="md:hidden mt-6 flex flex-col items-center">
             <!-- Mobile Scheme Filter Buttons (simple, no extra layout) -->
-            <div v-if="cardSchemeOptions.length" class="mb-3 flex items-center space-x-2 overflow-x-auto">
+            <div v-if="cardSchemeOptions.length"
+              class="mb-3 flex items-center justify-center space-x-2 overflow-x-auto">
               <button type="button"
                 class="px-2.5 py-1 rounded-full border text-xs font-medium flex-shrink-0 transition-colors"
                 :class="!activeSchemeFilter
@@ -82,7 +83,7 @@
             </div>
 
             <!-- Mobile Card Carousel -->
-            <div class="relative">
+            <div class="relative w-full max-w-xs sm:max-w-sm mx-auto">
               <div class="overflow-hidden" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
                 @touchend="handleTouchEnd">
                 <div class="flex transition-transform duration-300 ease-in-out"
@@ -150,7 +151,7 @@
                 <div class="flex items-center space-x-4">
                   <h2 class="text-xl font-semibold text-gray-900 dark:text-white">Select Card BIN</h2>
                   <div class="text-sm text-gray-500 dark:text-gray-400">
-                    {{ currentBinIndex + 1 }} of {{ cardBins.length }} cards
+                    {{ filteredCardBins.length ? currentBinIndex + 1 : 0 }} of {{ filteredCardBins.length }} cards
                   </div>
                 </div>
 
