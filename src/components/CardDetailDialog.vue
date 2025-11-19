@@ -84,7 +84,7 @@
       </div>
 
       <!-- Billing Address Section -->
-      <div class="bg-gray-50 dark:bg-gray-800/60 rounded-xl p-4">
+      <div v-if="hasBillingAddress" class="bg-gray-50 dark:bg-gray-800/60 rounded-xl p-4">
         <div class="flex items-center justify-between mb-3">
           <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 tracking-wide">Billing Address
           </div>
@@ -254,6 +254,31 @@ const formatBalance = (balance: number) => {
 const localDetail = ref<CardDetailResponse | null>(null)
 const displayCountry = ref<string>('')
 const displayState = ref<string>('')
+
+// 是否有可展示的账单地址信息：
+// 当 billingAddress、billingAddressUpdatable、billingCity、billingCountry、
+// billingPostalCode、billingState 这几个字段全部为空/空字符串/未定义时，不展示地址模块
+const hasBillingAddress = computed(() => {
+  const d = localDetail.value
+  if (!d)
+    return false
+
+  const fields = [
+    d.billingAddress,
+    d.billingAddressUpdatable,
+    d.billingCity,
+    d.billingCountry,
+    d.billingPostalCode,
+    d.billingState
+  ]
+
+  return fields.some((v) => {
+    if (v === null || v === undefined)
+      return false
+    const s = String(v).trim()
+    return s.length > 0
+  })
+})
 
 watch(
   () => props.cardDetail,

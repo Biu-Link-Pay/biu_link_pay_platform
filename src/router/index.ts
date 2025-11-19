@@ -107,6 +107,15 @@ const routes = [
     }
   },
   {
+    path: '/withdraw-settings',
+    name: 'WithdrawSettings',
+    component: () => import('@/views/WithdrawSettings.vue'),
+    meta: {
+      title: 'Withdraw Settings',
+      requiresAuth: true
+    }
+  },
+  {
     path: '/delete-card',
     name: 'DeleteCard',
     component: () => import('@/views/DeleteCard.vue'),

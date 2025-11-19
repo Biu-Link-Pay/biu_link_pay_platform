@@ -1238,7 +1238,7 @@ const executeWithdrawAction = async (cardDetail: CardDetailResponse) => {
   // Navigate to withdraw page with card information
   // Card details are already cached in Pinia store, no need to pass verification code
   router.push({
-    name: 'WithdrawOrder',
+    name: 'WithdrawSettings',
     query: {
       cardId: cardDetail.cardId,
       cardNo: cardDetail.cardNo,

@@ -104,7 +104,7 @@
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
-                      }}</span>
+                    }}</span>
                     <button
                       @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
@@ -176,7 +176,7 @@
                   class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Card Number</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo
-                  }}</span>
+                    }}</span>
                 </div>
 
                 <!-- Created Time -->
@@ -289,25 +289,6 @@
                     <i class="pi pi-lock"></i>
                   </div>
                 </div>
-              </div>
-
-              <div class="text-center lg:text-left my-6 lg:my-8">
-                <p class="text-blue-600 dark:text-blue-400 font-medium text-sm sm:text-base lg:text-base xl:text-lg">
-                  Secure payment verification in progress...</p>
-              </div>
-
-              <div class="bg-gray-200 dark:bg-gray-600 rounded-full h-2.5 lg:h-3 xl:h-4 mb-4 lg:mb-6 overflow-hidden">
-                <div
-                  class="h-full bg-gradient-to-r from-blue-500 to-green-500 rounded-full transition-all duration-500 ease-out"
-                  :style="{ width: progressWidth + '%' }"></div>
-              </div>
-
-              <div
-                class="flex justify-between text-xs sm:text-sm lg:text-sm xl:text-base text-gray-500 dark:text-gray-400">
-                <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 1 }">Connecting</span>
-                <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 2 }">Verifying
-                  Payment</span>
-                <span :class="{ 'text-blue-600 dark:text-blue-400 font-semibold': progressStep >= 3 }">Complete</span>
               </div>
             </div>
 

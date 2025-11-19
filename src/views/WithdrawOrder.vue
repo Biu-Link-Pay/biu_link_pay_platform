@@ -180,69 +180,27 @@
                   <span>{{ rateError }}</span>
                 </div>
 
-                <!-- Reward Points (Desktop, above Exchange Rate Info) -->
-                <div v-if="availableRewardPoints > 0"
-                  class="mt-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 space-y-2">
-                  <div class="flex items-center justify-between gap-3">
-                    <div>
-                      <p class="text-xs font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
-                        Card Reward Points
-                      </p>
-                      <p class="text-lg font-bold text-gray-900 dark:text-white mt-1">
-                        {{ availableRewardPoints.toLocaleString() }} pts
-                      </p>
-                      <p class="text-[11px] text-gray-500 dark:text-gray-400">
-                        100 pts = 1 USD
-                      </p>
-                    </div>
-                    <!-- Switch style 对齐 PaymentMethodSelection.vue -->
-                    <label class="inline-flex items-center cursor-pointer">
-                      <span class="mr-2 text-xs font-medium text-gray-600 dark:text-gray-300">Use points</span>
-                      <input type="checkbox" class="sr-only" v-model="applyRewardPoints"
-                        :disabled="!canUseRewardPoints" />
-                      <span
-                        class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-200"
-                        :class="applyRewardPoints && canUseRewardPoints ? 'bg-orange-500 dark:bg-orange-400' : ''">
-                        <span
-                          class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-200"
-                          :class="applyRewardPoints && canUseRewardPoints ? 'translate-x-6' : ''"></span>
-                      </span>
-                    </label>
-                  </div>
-                  <div class="flex items-center justify-between text-[11px] text-gray-600 dark:text-gray-300">
-                    <div class="flex items-center gap-1.5">
-                      <span>Use</span>
-                      <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
-                        :disabled="!applyRewardPoints || !canUseRewardPoints"
-                        class="w-20 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-[11px] font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
-                      <span class="text-[10px] text-gray-500 dark:text-gray-400">pts</span>
-                    </div>
-                    <span class="text-[10px] text-gray-400 dark:text-gray-500">
-                      Max {{ maxUsablePoints.toLocaleString() }} pts
-                    </span>
-                  </div>
-                  <div class="text-[11px] text-gray-500 dark:text-gray-400">
-                    <span v-if="applyRewardPoints && canUseRewardPoints">
-                      Using {{ appliedRewardPoints.toLocaleString() }} pts (≈ {{ formatCurrency(discountAmount) }}
-                      value)
-                    </span>
-                    <span v-else>
-                      You can use up to {{ maxUsablePoints.toLocaleString() }} pts
-                    </span>
-                  </div>
-                </div>
+                <!-- Reward Points UI removed: points are now configured on previous page -->
               </div>
 
               <!-- Exchange Rate Info -->
               <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4">
                 <div class="flex items-center justify-between mb-3">
-                  <div class="flex items-center space-x-2">
-                    <span class="text-sm text-gray-600 dark:text-gray-400">You will receive</span>
-                    <span class="text-base font-bold text-gray-900 dark:text-white">{{ receiveAmount }}</span>
-                    <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
-                    <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
-                    <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
+                  <div class="flex flex-col gap-1">
+                    <div class="flex flex-wrap items-center space-x-2">
+                      <span class="text-sm text-gray-600 dark:text-gray-400">You will receive</span>
+                      <span class="text-base font-bold text-gray-900 dark:text-white">{{ receiveAmount }}</span>
+                      <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
+                      <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
+                      <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
                       }}</span>
+                    </div>
+                    <div v-if="appliedRewardPoints > 0"
+                      class="text-xs text-gray-600 dark:text-gray-400 flex flex-wrap items-center gap-1">
+                      <span>including</span>
+                      <span class="font-semibold">{{ appliedRewardPoints.toLocaleString() }} pts</span>
+                      <span>(≈ {{ formatCurrency(discountAmount) }})</span>
+                    </div>
                   </div>
                   <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                     <i class="pi pi-clock"></i>
@@ -439,65 +397,28 @@
           <span>{{ rateError }}</span>
         </div>
 
-        <!-- Reward Points (Mobile, above Exchange Rate Info) -->
-        <div v-if="availableRewardPoints > 0"
-          class="mt-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 space-y-2">
-          <div class="flex items-start justify-between gap-3">
-            <div>
-              <p class="text-[11px] font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
-                Card Reward Points
-              </p>
-              <p class="text-sm font-bold text-gray-900 dark:text-white mt-1">
-                {{ availableRewardPoints.toLocaleString() }} pts
-              </p>
-              <p class="text-[10px] text-gray-500 dark:text-gray-400">
-                100 pts = 1 USD
-              </p>
-            </div>
-            <!-- Switch style 对齐 PaymentMethodSelection.vue (mobile) -->
-            <label class="inline-flex items-center cursor-pointer">
-              <input type="checkbox" class="sr-only" v-model="applyRewardPoints" :disabled="!canUseRewardPoints" />
-              <span class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-200"
-                :class="applyRewardPoints && canUseRewardPoints ? 'bg-orange-500 dark:bg-orange-400' : ''">
-                <span
-                  class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-200"
-                  :class="applyRewardPoints && canUseRewardPoints ? 'translate-x-6' : ''"></span>
-              </span>
-            </label>
-          </div>
-          <div class="flex items-center justify-between text-[10px] text-gray-600 dark:text-gray-200">
-            <div class="flex items-center gap-1.5">
-              <span>Use</span>
-              <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
-                :disabled="!applyRewardPoints || !canUseRewardPoints"
-                class="w-20 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-[10px] font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
-              <span class="text-[10px] text-gray-500 dark:text-gray-400">pts</span>
-            </div>
-            <span class="text-[10px] text-gray-400 dark:text-gray-500">
-              Max {{ maxUsablePoints.toLocaleString() }} pts
-            </span>
-          </div>
-          <div class="text-[10px] text-gray-500 dark:text-gray-400">
-            <span v-if="applyRewardPoints && canUseRewardPoints">
-              Using {{ appliedRewardPoints.toLocaleString() }} pts (≈ {{ formatCurrency(discountAmount) }} value)
-            </span>
-            <span v-else>
-              You can use up to {{ maxUsablePoints.toLocaleString() }} pts
-            </span>
-          </div>
-        </div>
+        <!-- Reward Points UI removed on mobile as well -->
 
         <!-- Exchange Rate Info (Mobile) -->
         <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
           <div class="flex items-center justify-between">
-            <div class="flex items-center space-x-1">
-              <span class="text-xs text-gray-600 dark:text-gray-400 whitespace-nowrap">You will receive</span>
-              <div class="flex">
-                <span class="text-xs font-bold text-gray-900 dark:text-white">{{ receiveAmount }}</span>
-                <span class="text-xs font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
+            <div class="flex flex-col gap-1">
+              <div class="flex items-center space-x-1">
+                <span class="text-xs text-gray-600 dark:text-gray-400 whitespace-nowrap">You will receive</span>
+                <div class="flex">
+                  <span class="text-xs font-bold text-gray-900 dark:text-white">{{ receiveAmount }}</span>
+                  <span class="text-xs font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
+                </div>
+                <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
+                <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
+                }}</span>
               </div>
-              <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
-              <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount) }}</span>
+              <div v-if="appliedRewardPoints > 0"
+                class="text-[10px] text-gray-600 dark:text-gray-400 flex flex-wrap items-center gap-1">
+                <span>including</span>
+                <span class="font-semibold">{{ appliedRewardPoints.toLocaleString() }} pts</span>
+                <span>(≈ {{ formatCurrency(discountAmount) }})</span>
+              </div>
             </div>
             <div class="flex items-center space-x-1 text-xs text-gray-500">
               <i class="pi pi-clock"></i>
@@ -631,23 +552,32 @@ const selectedToken = ref('TPT')
 const selectedNetwork = ref('BNB Chain (BEP20)')
 const networkFee = ref(12)
 
-// Reward points (reuse logic from PaymentMethodSelection.vue，但出金不再受金额限制)
-const applyRewardPoints = ref(false)
-const pointsToUse = ref(0)
-const availableRewardPoints = computed(() => userStore.cardRewardPoints || 0)
-// 只要有积分就允许打开开关
-const canUseRewardPoints = computed(() => availableRewardPoints.value > 0)
-// 出金时可用积分上限就是现有积分总数
-const maxUsablePoints = computed(() => availableRewardPoints.value)
+// Reward points: read-only, configured on WithdrawSettings page
 const appliedRewardPoints = ref(0)
-const discountAmount = ref(0)
+const discountAmount = computed(() => {
+  const value = appliedRewardPoints.value / 100
+  if (!Number.isFinite(value))
+    return 0
+  return parseFloat(value.toFixed(2))
+})
 
-const recalculateRewardPoints = () => {
-  const points = applyRewardPoints.value ? Math.min(pointsToUse.value, maxUsablePoints.value) : 0
-  appliedRewardPoints.value = points
+// Initialize withdraw amount & reward points from previous settings page
+const initializeFromRoute = () => {
+  const amountStr = route.query.amount as string
+  if (amountStr) {
+    const parsed = parseFloat(amountStr)
+    if (!Number.isNaN(parsed) && parsed >= 0) {
+      withdrawAmount.value = parsed
+    }
+  }
 
-  const discount = points / 100
-  discountAmount.value = parseFloat(Math.min(discount, withdrawAmount.value).toFixed(2))
+  const pointsParam = route.query.cardRewardPoints
+  if (pointsParam != null) {
+    const parsedPoints = Number(pointsParam)
+    if (Number.isFinite(parsedPoints) && parsedPoints > 0) {
+      appliedRewardPoints.value = parsedPoints
+    }
+  }
 }
 
 const triggerImmediateRateRefreshForWithdraw = () => {
@@ -751,55 +681,6 @@ const isFormValid = computed(() => {
     withdrawAmount.value >= minimumBalance.value &&
     withdrawAmount.value <= balance.value &&
     withdrawAmount.value <= getMaxWithdrawAmount()
-})
-
-// Reward points watchers (similar to PaymentMethodSelection.vue)
-watch(applyRewardPoints, (value) => {
-  if (!value) {
-    pointsToUse.value = 0
-    appliedRewardPoints.value = 0
-    discountAmount.value = 0
-  } else {
-    pointsToUse.value = maxUsablePoints.value
-    recalculateRewardPoints()
-  }
-  // 开启或关闭积分时都需要重新获取汇率，带上最新的积分参数
-  triggerImmediateRateRefreshForWithdraw()
-})
-
-watch(maxUsablePoints, (max) => {
-  if (!applyRewardPoints.value) {
-    pointsToUse.value = 0
-    appliedRewardPoints.value = 0
-    discountAmount.value = 0
-    return
-  }
-  if (max <= 0) {
-    pointsToUse.value = 0
-    applyRewardPoints.value = false
-    appliedRewardPoints.value = 0
-    discountAmount.value = 0
-    return
-  }
-  pointsToUse.value = Math.min(pointsToUse.value, max)
-  recalculateRewardPoints()
-  triggerImmediateRateRefreshForWithdraw()
-})
-
-watch(pointsToUse, (value) => {
-  if (!applyRewardPoints.value) return
-  if (value < 0) {
-    pointsToUse.value = 0
-  } else if (value > maxUsablePoints.value) {
-    pointsToUse.value = maxUsablePoints.value
-  }
-  recalculateRewardPoints()
-  triggerImmediateRateRefreshForWithdraw()
-})
-
-watch(availableRewardPoints, () => {
-  recalculateRewardPoints()
-  triggerImmediateRateRefreshForWithdraw()
 })
 
 // Check if receive amount is within selected crypto's limit
@@ -1351,7 +1232,7 @@ const fetchExchangeRate = async () => {
       payTypeName: selectedPayType.value?.name
     })
 
-    const requestedPoints = applyRewardPoints.value ? Math.min(pointsToUse.value, maxUsablePoints.value) : 0
+    const requestedPoints = appliedRewardPoints.value || 0
 
     const response = await OrderAPI.getRate({
       cryptoUnit: selectedCrypto.value.crypto.name,
@@ -1533,6 +1414,7 @@ onMounted(async () => {
   console.log('WithdrawOrder mounted, starting initialization...')
 
   initializeCardInfo()
+  initializeFromRoute()
 
   // 确保卡片列表已加载（用于获取脱敏的卡号）
   if (cardStore.cardList.length === 0) {
