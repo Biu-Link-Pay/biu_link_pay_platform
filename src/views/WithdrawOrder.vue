@@ -57,19 +57,12 @@
                   <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Withdraw amount</label>
                   <i class="pi pi-info-circle text-gray-400 text-sm"></i>
                 </div>
-                <div class="flex items-center space-x-3">
-                  <div class="flex-1">
-                    <InputText type="number" placeholder="0.00" class="w-full text-lg" :disabled="isDeleteAction"
-                      :class="{ 'p-invalid': errors.withdrawAmount }" :model-value="withdrawAmount.toString()"
-                      @update:model-value="(value: string | undefined) => {
-                        withdrawAmount = parseFloat(value || '0') || 0
-                      }" />
+                <div class="flex items-center justify-between">
+                  <div class="text-2xl font-semibold text-gray-900 dark:text-white">
+                    {{ formatCurrency(withdrawAmount) }}
                   </div>
-                  <Button label="Max" size="small" severity="secondary" @click="setMaxAmount"
-                    :disabled="isDeleteAction" />
                   <span class="text-gray-700 dark:text-gray-300 font-medium">{{ cardInfo.cardCurrency }}</span>
                 </div>
-                <small v-if="errors.withdrawAmount" class="text-red-500">{{ errors.withdrawAmount }}</small>
 
                 <!-- Amount Range Info (simplified) -->
                 <div class="mt-3 text-sm text-gray-600 dark:text-gray-400">
@@ -112,7 +105,7 @@
                         <div>
                           <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
                           <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0
-                            }} crypto networks</div>
+                          }} crypto networks</div>
                         </div>
                       </div>
 
@@ -154,7 +147,7 @@
                             </div>
                             <div>
                               <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName
-                                }}</div>
+                              }}</div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                               <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
                                 Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
@@ -193,7 +186,7 @@
                       <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
                       <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                       <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                      }}</span>
+                        }}</span>
                     </div>
                     <div v-if="appliedRewardPoints > 0"
                       class="text-xs text-gray-600 dark:text-gray-400 flex flex-wrap items-center gap-1">
@@ -278,18 +271,12 @@
             <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Withdraw amount</label>
             <i class="pi pi-info-circle text-gray-400 text-xs"></i>
           </div>
-          <div class="flex items-center space-x-2">
-            <div class="flex-1">
-              <InputText type="number" placeholder="0.00" class="w-full" :disabled="isDeleteAction"
-                :class="{ 'p-invalid': errors.withdrawAmount }" :model-value="withdrawAmount.toString()"
-                @update:model-value="(value: string | undefined) => {
-                  withdrawAmount = parseFloat(value || '0') || 0
-                }" />
+          <div class="flex items-center justify-between">
+            <div class="text-lg font-semibold text-gray-900 dark:text-white">
+              {{ formatCurrency(withdrawAmount) }}
             </div>
-            <Button label="Max" size="small" severity="secondary" @click="setMaxAmount" :disabled="isDeleteAction" />
             <span class="text-gray-700 dark:text-gray-300 font-medium">{{ cardInfo.cardCurrency }}</span>
           </div>
-          <small v-if="errors.withdrawAmount" class="text-red-500 text-xs">{{ errors.withdrawAmount }}</small>
         </div>
 
         <!-- Payment Methods Section -->
@@ -411,7 +398,7 @@
                 </div>
                 <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
                 <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                }}</span>
+                  }}</span>
               </div>
               <div v-if="appliedRewardPoints > 0"
                 class="text-[10px] text-gray-600 dark:text-gray-400 flex flex-wrap items-center gap-1">
@@ -734,11 +721,6 @@ const getMaxWithdrawAmount = () => {
 // Methods
 const formatCurrency = (amount: number) => {
   return `$${amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
-}
-
-const setMaxAmount = () => {
-  withdrawAmount.value = getMaxWithdrawAmount()
-  // watch 监听器会自动处理汇率获取
 }
 
 // Go back
