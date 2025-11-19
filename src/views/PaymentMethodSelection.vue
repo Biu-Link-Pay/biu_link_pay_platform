@@ -134,53 +134,7 @@
             </div>
           </div>
 
-          <!-- Reward Points (Desktop, above You will receive) -->
-          <div
-            class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-2xl p-6 shadow-lg space-y-3">
-            <div class="flex flex-wrap items-center justify-between gap-3">
-              <div>
-                <p class="text-sm font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
-                  Card Reward Points
-                </p>
-                <p class="text-2xl font-bold text-gray-900 dark:text-white mt-2">
-                  {{ availableRewardPoints.toLocaleString() }}
-                </p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">
-                  ≈ {{ formatCurrency(availableRewardPoints / 100) }} value (100 pts = 1 USD)
-                </p>
-              </div>
-              <label class="inline-flex items-center cursor-pointer ml-auto">
-                <span class="mr-3 text-sm font-medium text-gray-600 dark:text-gray-300">Use points</span>
-                <input type="checkbox" class="sr-only" v-model="applyRewardPoints" :disabled="!canUseRewardPoints" />
-                <span class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-200"
-                  :class="applyRewardPoints && canUseRewardPoints ? 'bg-orange-500 dark:bg-orange-400' : ''">
-                  <span
-                    class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-200"
-                    :class="applyRewardPoints && canUseRewardPoints ? 'translate-x-6' : ''"></span>
-                </span>
-              </label>
-            </div>
-            <div class="mt-3 flex items-center justify-between text-xs text-gray-600 dark:text-gray-300">
-              <div class="flex items-center gap-1.5">
-                <span>Use</span>
-                <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
-                  :disabled="!applyRewardPoints || !canUseRewardPoints"
-                  class="w-24 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
-                <span class="text-[11px] text-gray-500 dark:text-gray-400">pts</span>
-              </div>
-              <span class="text-[11px] text-gray-400 dark:text-gray-500">
-                Max {{ maxUsablePoints.toLocaleString() }} pts
-              </span>
-            </div>
-            <div class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">
-              <span v-if="applyRewardPoints && canUseRewardPoints">
-                Using {{ appliedRewardPoints.toLocaleString() }} pts ({{ formatCurrency(discountAmount) }} off)
-              </span>
-              <span v-else>
-                You can use up to {{ maxUsablePoints.toLocaleString() }} pts
-              </span>
-            </div>
-          </div>
+          <!-- Reward Points section removed: points are now selected on CardHolderInfo page -->
 
           <!-- Exchange Rate Info (Desktop) -->
           <div v-if="selectedCrypto && actualCryptoAmount"
@@ -394,52 +348,7 @@
             </div>
           </div> -->
 
-          <!-- Reward Points (Mobile, simplified, above You will receive) -->
-          <div
-            class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl p-4 shadow-sm space-y-2">
-            <div class="flex items-start justify-between gap-3">
-              <div>
-                <p class="text-xs font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
-                  Card Reward Points
-                </p>
-                <p class="text-xl font-bold text-gray-900 dark:text-white mt-1">
-                  {{ availableRewardPoints.toLocaleString() }} pts
-                </p>
-                <p class="text-[11px] text-gray-500 dark:text-gray-400">
-                  100 pts = 1 USD
-                </p>
-              </div>
-              <label class="inline-flex items-center cursor-pointer">
-                <input type="checkbox" class="sr-only" v-model="applyRewardPoints" :disabled="!canUseRewardPoints" />
-                <span class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-200"
-                  :class="applyRewardPoints && canUseRewardPoints ? 'bg-orange-500 dark:bg-orange-400' : ''">
-                  <span
-                    class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-200"
-                    :class="applyRewardPoints && canUseRewardPoints ? 'translate-x-6' : ''"></span>
-                </span>
-              </label>
-            </div>
-            <div class="mt-2 flex items-center justify-between text-[11px] text-gray-600 dark:text-gray-200">
-              <div class="flex items-center gap-1.5">
-                <span>Use</span>
-                <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
-                  :disabled="!applyRewardPoints || !canUseRewardPoints"
-                  class="w-20 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-[11px] font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
-                <span class="text-[10px] text-gray-500 dark:text-gray-400">pts</span>
-              </div>
-              <span class="text-[10px] text-gray-400 dark:text-gray-500">
-                Max {{ maxUsablePoints.toLocaleString() }} pts
-              </span>
-            </div>
-            <div class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">
-              <span v-if="applyRewardPoints && canUseRewardPoints">
-                Using {{ appliedRewardPoints.toLocaleString() }} pts ({{ formatCurrency(discountAmount) }} off)
-              </span>
-              <span v-else>
-                You can use up to {{ maxUsablePoints.toLocaleString() }} pts
-              </span>
-            </div>
-          </div>
+          <!-- Reward Points section removed on mobile as well -->
 
           <!-- Exchange Rate Info (Mobile) -->
           <div v-if="selectedCrypto && actualCryptoAmount"
@@ -540,8 +449,6 @@ const userStore = useUserStore()
 
 // Payment amount and order info
 const payAmount = ref(1000.00)
-const applyRewardPoints = ref(false)
-const pointsToUse = ref(0)
 
 // Selected payment method and crypto currency
 const selectedPayType = ref<OrderPayType | null>(null)
@@ -585,74 +492,25 @@ const formatCurrency = (amount: number) => {
 }
 
 const availableRewardPoints = computed(() => userStore.cardRewardPoints || 0)
-const canUseRewardPoints = computed(() => availableRewardPoints.value > 0 && payAmount.value > 0)
-const maxPointsBasedOnAmount = computed(() => Math.max(Math.floor(payAmount.value * 100), 0))
-const maxUsablePoints = computed(() => Math.min(availableRewardPoints.value, maxPointsBasedOnAmount.value))
 const appliedRewardPoints = ref(0)
 const discountAmount = ref(0)
 const finalPayAmount = ref(payAmount.value)
 
-const recalculateLocalAmounts = () => {
-  const points = applyRewardPoints.value ? Math.min(pointsToUse.value, maxUsablePoints.value) : 0
-  appliedRewardPoints.value = points
-
+const recalculateAmountsFromPoints = () => {
+  const base = payAmount.value
+  const points = appliedRewardPoints.value
   const discount = points / 100
-  discountAmount.value = parseFloat(Math.min(discount, payAmount.value).toFixed(2))
-
-  const amount = payAmount.value - discountAmount.value
-  finalPayAmount.value = amount > 0 ? parseFloat(amount.toFixed(2)) : 0
+  const effectiveDiscount = Math.min(discount, base)
+  discountAmount.value = parseFloat(effectiveDiscount.toFixed(2))
+  const final = base - effectiveDiscount
+  finalPayAmount.value = final > 0 ? parseFloat(final.toFixed(2)) : 0
 }
 
-watch(applyRewardPoints, value => {
-  if (!value) {
-    pointsToUse.value = 0
-  } else {
-    pointsToUse.value = maxUsablePoints.value
-  }
+watch([payAmount, appliedRewardPoints], () => {
+  recalculateAmountsFromPoints()
 })
 
-watch(maxUsablePoints, max => {
-  if (!applyRewardPoints.value) {
-    pointsToUse.value = 0
-    return
-  }
-  if (max <= 0) {
-    pointsToUse.value = 0
-    applyRewardPoints.value = false
-    return
-  }
-  pointsToUse.value = Math.min(pointsToUse.value, max)
-  recalculateLocalAmounts()
-  triggerImmediateRateRefresh()
-})
-
-watch(pointsToUse, value => {
-  if (!applyRewardPoints.value) return
-  if (value < 0) {
-    pointsToUse.value = 0
-  } else if (value > maxUsablePoints.value) {
-    pointsToUse.value = maxUsablePoints.value
-  }
-})
-
-watch(availableRewardPoints, () => {
-  recalculateLocalAmounts()
-  triggerImmediateRateRefresh()
-})
-
-const triggerImmediateRateRefresh = () => {
-  if (!selectedPayType.value || !selectedCrypto.value) {
-    return
-  }
-  queryRate()
-}
-
-watch([payAmount, applyRewardPoints, pointsToUse], () => {
-  recalculateLocalAmounts()
-  triggerImmediateRateRefresh()
-})
-
-recalculateLocalAmounts()
+recalculateAmountsFromPoints()
 
 // Check if payment amount is within selected crypto's limit
 const isAmountWithinLimit = computed(() => {
@@ -720,7 +578,7 @@ const queryRate = async () => {
     return
   }
 
-  const requestedPoints = applyRewardPoints.value ? Math.min(pointsToUse.value, maxUsablePoints.value) : 0
+  const requestedPoints = appliedRewardPoints.value
 
   try {
     rateLoading.value = true
@@ -743,7 +601,8 @@ const queryRate = async () => {
       appliedRewardPoints.value = appliedPoints
 
       const discount = appliedPoints / 100
-      discountAmount.value = parseFloat(Math.min(discount, payAmount.value).toFixed(2))
+      const effectiveDiscount = Math.min(discount, payAmount.value)
+      discountAmount.value = parseFloat(effectiveDiscount.toFixed(2))
 
       const totalFiatString = response.model.fiatDetail?.totalAmountFiat ?? ''
       const totalFiat = parseFloat(totalFiatString)
@@ -903,6 +762,25 @@ const loadPaymentMethods = async () => {
   }
 }
 
+// Initialize amount and card reward points from route
+const initializeFromRoute = () => {
+  const amount = route.query.amount as string
+  if (amount) {
+    const parsed = parseFloat(amount)
+    if (!Number.isNaN(parsed) && parsed > 0) {
+      payAmount.value = parsed
+    }
+  }
+
+  const pointsParam = route.query.cardRewardPoints
+  if (pointsParam != null) {
+    const parsedPoints = Number(pointsParam)
+    appliedRewardPoints.value = Number.isFinite(parsedPoints) && parsedPoints > 0 ? parsedPoints : 0
+  }
+
+  recalculateAmountsFromPoints()
+}
+
 // Handle continue
 const handleContinue = async () => {
   if (!selectedPayType.value) {
@@ -1052,16 +930,6 @@ const handleContinue = async () => {
   }
 }
 
-const setPointsUsage = (mode: 'max' | 'none') => {
-  if (!applyRewardPoints.value) return
-  if (mode === 'none') {
-    pointsToUse.value = 0
-    applyRewardPoints.value = false
-  } else {
-    pointsToUse.value = maxUsablePoints.value
-  }
-}
-
 // Go back to previous page
 const goBack = () => {
   router.back()
@@ -1069,11 +937,8 @@ const goBack = () => {
 
 // Initialize data from route params
 onMounted(async () => {
-  // Get amount from route query
-  const amount = route.query.amount as string
-  if (amount) {
-    payAmount.value = parseFloat(amount)
-  }
+  // Initialize payment amount & reward points from previous page
+  initializeFromRoute()
   // Load payment methods from API
   await loadPaymentMethods()
 })

@@ -185,6 +185,54 @@
               class="w-full py-2 px-4 rounded-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
               @click="form.rechargeAmount = amount.toString()" />
           </div>
+
+          <!-- Reward Points (moved from PaymentMethodSelection, 100 pts = 1 USD) -->
+          <div
+            class="mt-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl p-4 shadow-sm space-y-2">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
+                  Card Reward Points
+                </p>
+                <p class="text-xl font-bold text-gray-900 dark:text-white mt-1">
+                  {{ availableRewardPoints.toLocaleString() }} pts
+                </p>
+                <p class="text-[11px] text-gray-500 dark:text-gray-400">
+                  100 pts = 1 {{ cardStore.selectedCardBin?.cardCurrency || 'USD' }}
+                </p>
+              </div>
+              <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" class="sr-only" v-model="applyRewardPoints" :disabled="!canUseRewardPoints" />
+                <span class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-200"
+                  :class="applyRewardPoints && canUseRewardPoints ? 'bg-orange-500 dark:bg-orange-400' : ''">
+                  <span
+                    class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-200"
+                    :class="applyRewardPoints && canUseRewardPoints ? 'translate-x-6' : ''"></span>
+                </span>
+              </label>
+            </div>
+            <div class="mt-2 flex items-center justify-between text-[11px] text-gray-600 dark:text-gray-200">
+              <div class="flex items-center gap-1.5">
+                <span>Use</span>
+                <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
+                  :disabled="!applyRewardPoints || !canUseRewardPoints"
+                  class="w-20 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-[11px] font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
+                <span class="text-[10px] text-gray-500 dark:text-gray-400">pts</span>
+              </div>
+              <span class="text-[10px] text-gray-400 dark:text-gray-500">
+                Max {{ maxUsablePoints.toLocaleString() }} pts
+              </span>
+            </div>
+            <div class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">
+              <span v-if="applyRewardPoints && canUseRewardPoints && appliedRewardPoints > 0">
+                Using {{ appliedRewardPoints.toLocaleString() }} pts ({{ discountAmount }} {{ cardStore.selectedCardBin?.cardCurrency
+                || 'USD' }} off), pay {{ finalRechargeAmount }} {{ cardStore.selectedCardBin?.cardCurrency || 'USD' }}
+              </span>
+              <span v-else>
+                You can use up to {{ maxUsablePoints.toLocaleString() }} pts
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -192,8 +240,26 @@
       <div class="bottom-buttons-container relative md:static">
         <Button label="Back" icon="pi pi-arrow-left" severity="secondary"
           class="bottom-button-dual bottom-button-dual-secondary" @click="goBack" />
-        <Button :disabled="!canConfirm" :label="confirmButtonText" icon="pi pi-check" :loading="loading"
-          class="bottom-button-dual bottom-button-dual-primary" @click="handleConfirm" />
+        <Button :disabled="!canConfirm" icon="pi pi-check" :loading="loading"
+          class="bottom-button-dual bottom-button-dual-primary" @click="handleConfirm">
+          <template v-if="!canConfirm">
+            <span class="text-sm md:text-base">{{ confirmButtonText }}</span>
+          </template>
+          <template v-else>
+            <div class="flex items-center justify-center w-full gap-2">
+              <!-- 原价（有积分时才显示，灰色带删除线） -->
+              <span v-if="applyRewardPoints && appliedRewardPoints > 0"
+                class="text-xs md:text-sm text-white/70 line-through">
+                {{ currentCurrencySymbol }}{{ rechargeAmountNumber.toFixed(currentDecimals) }}
+              </span>
+              <!-- 实际支付金额（始终显示，白色加粗） -->
+              <span class="text-sm md:text-base font-semibold text-white">
+                {{ currentCurrencySymbol }}{{ (applyRewardPoints && appliedRewardPoints > 0 ? finalRechargeAmount :
+                  rechargeAmountNumber).toFixed(currentDecimals) }}
+              </span>
+            </div>
+          </template>
+        </Button>
       </div>
     </div>
   </div>
@@ -204,6 +270,7 @@ import { ref, reactive, computed, onMounted, watch, nextTick } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useCardStore } from '@/stores/card'
+import { useUserStore } from '@/stores/user'
 import { useAuthStore } from '@/stores/auth'
 import InputText from 'primevue/inputtext'
 import Button from 'primevue/button'
@@ -218,6 +285,7 @@ const router = useRouter()
 const route = useRoute()
 const toast = useToast()
 const cardStore = useCardStore()
+const userStore = useUserStore()
 const authStore = useAuthStore()
 // Has cards state
 const hasCards = computed(() => (cardStore.cardList?.length || 0) > 0)
@@ -548,6 +616,91 @@ const currentDecimals = computed(() => {
   return currencyDecimals[currency] ?? 2
 })
 
+// Reward points usage on recharge page (100 pts = 1 USD)
+const availableRewardPoints = computed(() => userStore.cardRewardPoints || 0)
+const applyRewardPoints = ref(false)
+const pointsToUse = ref(0)
+
+const rechargeAmountNumber = computed(() => {
+  const v = parseFloat(form.rechargeAmount)
+  return Number.isFinite(v) && v > 0 ? v : 0
+})
+
+const canUseRewardPoints = computed(() => availableRewardPoints.value > 0 && rechargeAmountNumber.value > 0)
+const maxPointsBasedOnAmount = computed(() => Math.max(Math.floor(rechargeAmountNumber.value * 100), 0))
+const maxUsablePoints = computed(() => Math.min(availableRewardPoints.value, maxPointsBasedOnAmount.value))
+
+const appliedRewardPoints = ref(0)
+const discountAmount = ref(0)
+const finalRechargeAmount = ref(0)
+
+const recalculatePointsUsage = () => {
+  const base = rechargeAmountNumber.value
+  if (base <= 0) {
+    appliedRewardPoints.value = 0
+    discountAmount.value = 0
+    finalRechargeAmount.value = 0
+    return
+  }
+
+  const points = applyRewardPoints.value ? Math.min(pointsToUse.value, maxUsablePoints.value) : 0
+  appliedRewardPoints.value = points
+
+  const rawDiscount = points / 100
+  const effectiveDiscount = Math.min(rawDiscount, base)
+  discountAmount.value = parseFloat(effectiveDiscount.toFixed(currentDecimals.value))
+
+  const finalAmount = base - effectiveDiscount
+  finalRechargeAmount.value = finalAmount > 0 ? parseFloat(finalAmount.toFixed(currentDecimals.value)) : 0
+}
+
+watch(applyRewardPoints, value => {
+  if (!value) {
+    pointsToUse.value = 0
+  } else {
+    pointsToUse.value = maxUsablePoints.value
+  }
+  recalculatePointsUsage()
+})
+
+watch(pointsToUse, value => {
+  if (!applyRewardPoints.value) return
+  if (value < 0) {
+    pointsToUse.value = 0
+  } else if (value > maxUsablePoints.value) {
+    pointsToUse.value = maxUsablePoints.value
+  }
+  recalculatePointsUsage()
+})
+
+watch(maxUsablePoints, max => {
+  if (!applyRewardPoints.value) {
+    pointsToUse.value = 0
+    appliedRewardPoints.value = 0
+    discountAmount.value = 0
+    finalRechargeAmount.value = rechargeAmountNumber.value
+    return
+  }
+
+  if (max <= 0) {
+    applyRewardPoints.value = false
+    pointsToUse.value = 0
+  } else if (pointsToUse.value > max) {
+    pointsToUse.value = max
+  }
+  recalculatePointsUsage()
+})
+
+watch(rechargeAmountNumber, () => {
+  recalculatePointsUsage()
+})
+
+watch(availableRewardPoints, () => {
+  recalculatePointsUsage()
+})
+
+recalculatePointsUsage()
+
 // Recharge section title text
 const rechargeSectionTitle = computed(() => {
   return route.query.action === 'recharge'
@@ -854,6 +1007,9 @@ const handleConfirm = async () => {
   loading.value = true
 
   try {
+    // 确保最新积分计算已应用
+    recalculatePointsUsage()
+
     // Handle recharge confirmation
     toast.add({
       severity: 'success',
@@ -867,6 +1023,7 @@ const handleConfirm = async () => {
       name: 'PaymentMethodSelection',
       query: {
         amount: form.rechargeAmount,
+        cardRewardPoints: appliedRewardPoints.value || 0,
         name: holder.value?.residentialAddress ? 'John Tan' : 'New User',
         action: route.query.action || 'apply' // Pass operation type: recharge or apply
       }
