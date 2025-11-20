@@ -58,15 +58,13 @@
                 </div>
                 <div class="flex items-center justify-between">
                   <div class="text-2xl font-semibold text-gray-900 dark:text-white">
-                    {{ formatCurrency(withdrawAmount) }}
+                    {{ formatCurrency(totalWithdrawAmount) }}
+                    <span v-if="appliedRewardPoints > 0"
+                      class="ml-2 text-base font-semibold text-orange-500 dark:text-orange-400">
+                      (Use {{ appliedRewardPoints.toLocaleString() }} pts)
+                    </span>
                   </div>
                   <span class="text-gray-700 dark:text-gray-300 font-medium">{{ cardInfo.cardCurrency }}</span>
-                </div>
-
-                <!-- Amount Range Info (simplified) -->
-                <div class="mt-3 text-sm text-gray-600 dark:text-gray-400">
-                  Withdraw amount {{ minimumBalance }} - {{ getMaxWithdrawAmount() }} {{ selectedCurrency.toLowerCase()
-                  }}
                 </div>
               </div>
 
@@ -103,7 +101,7 @@
                         <div>
                           <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
                           <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0
-                            }} crypto networks</div>
+                          }} crypto networks</div>
                         </div>
                       </div>
 
@@ -145,7 +143,7 @@
                             </div>
                             <div>
                               <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName
-                                }}</div>
+                              }}</div>
                               <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                               <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
                                 Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
@@ -184,10 +182,10 @@
                       <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedToken }}</span>
                       <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                       <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                      }}</span>
+                        }}</span>
                     </div>
                     <div v-if="appliedRewardPoints > 0"
-                      class="text-xs text-gray-600 dark:text-gray-400 flex flex-wrap items-center gap-1">
+                      class="text-xs text-red-600 dark:text-red-400 flex flex-wrap items-center gap-1 font-semibold">
                       <span>including</span>
                       <span class="font-semibold">{{ appliedRewardPoints.toLocaleString() }} pts</span>
                       <span>(≈ {{ formatCurrency(discountAmount) }})</span>
@@ -258,11 +256,6 @@
       <div class="md:hidden space-y-4 pb-32">
         <CardInfoHeader :card-no="cardInfo.cardNo" :balance="balance" :loading="!cardDetail" />
 
-        <!-- Amount Range Info (simplified, mobile) -->
-        <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-3 text-xs text-gray-700 dark:text-gray-300">
-          Withdraw amount {{ minimumBalance }} - {{ getMaxWithdrawAmount() }} {{ selectedCurrency.toLowerCase() }}
-        </div>
-
         <!-- Withdraw Amount -->
         <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
           <div class="flex items-center space-x-2 mb-3">
@@ -270,7 +263,11 @@
           </div>
           <div class="flex items-center justify-between">
             <div class="text-lg font-semibold text-gray-900 dark:text-white">
-              {{ formatCurrency(withdrawAmount) }}
+              {{ formatCurrency(totalWithdrawAmount) }}
+              <span v-if="appliedRewardPoints > 0"
+                class="ml-1 text-xs font-semibold text-orange-500 dark:text-orange-400">
+                (Use {{ appliedRewardPoints.toLocaleString() }} pts)
+              </span>
             </div>
             <span class="text-gray-700 dark:text-gray-300 font-medium">{{ cardInfo.cardCurrency }}</span>
           </div>
@@ -395,10 +392,10 @@
                 </div>
                 <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
                 <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                }}</span>
+                  }}</span>
               </div>
               <div v-if="appliedRewardPoints > 0"
-                class="text-[10px] text-gray-600 dark:text-gray-400 flex flex-wrap items-center gap-1">
+                class="text-[10px] text-red-600 dark:text-red-400 flex flex-wrap items-center gap-1 font-semibold">
                 <span>including</span>
                 <span class="font-semibold">{{ appliedRewardPoints.toLocaleString() }} pts</span>
                 <span>(≈ {{ formatCurrency(discountAmount) }})</span>
@@ -543,6 +540,13 @@ const discountAmount = computed(() => {
   if (!Number.isFinite(value))
     return 0
   return parseFloat(value.toFixed(2))
+})
+
+// 实际总出金额度 = 现金出金金额 + 等值积分金额
+const totalWithdrawAmount = computed(() => {
+  const base = withdrawAmount.value || 0
+  const bonus = discountAmount.value || 0
+  return base + bonus
 })
 
 // Initialize withdraw amount & reward points from previous settings page
@@ -1337,18 +1341,10 @@ const fetchPaymentMethods = async () => {
           selectedNetwork.value = response.model.payTypes[0].cryptoNetworks[0].network.name || response.model.payTypes[0].cryptoNetworks[0].network.fullName
           console.log('Auto-selected crypto network:', response.model.payTypes[0].cryptoNetworks[0].crypto.name)
 
-          // 自动选择后，使用最小金额获取汇率，让用户看到实时汇率信息
-          if (minimumBalance.value > 0) {
-            console.log('Auto-fetching exchange rate with minimum balance:', minimumBalance.value)
-            // 临时设置最小金额来获取汇率
-            const originalAmount = withdrawAmount.value
-            withdrawAmount.value = minimumBalance.value
-            fetchExchangeRate().finally(() => {
-              // 恢复原始金额
-              withdrawAmount.value = originalAmount
-              console.log('Exchange rate fetched, restored original amount:', originalAmount)
-            })
-          }
+          // 自动选择后，根据当前金额/积分状态获取一次实时汇率
+          // - 如果金额 > 0 或 使用了积分，会正常请求汇率
+          // - 如果金额和积分都为 0，则不请求，避免构造虚假的最小金额
+          triggerImmediateRateRefreshForWithdraw()
         } else {
           console.log('No crypto networks available for selected payment method')
         }
