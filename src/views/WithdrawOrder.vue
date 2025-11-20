@@ -184,12 +184,6 @@
                       <span class="text-base font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
                         }}</span>
                     </div>
-                    <div v-if="appliedRewardPoints > 0"
-                      class="text-xs text-red-600 dark:text-red-400 flex flex-wrap items-center gap-1 font-semibold">
-                      <span>including</span>
-                      <span class="font-semibold">{{ appliedRewardPoints.toLocaleString() }} pts</span>
-                      <span>(≈ {{ formatCurrency(discountAmount) }})</span>
-                    </div>
                   </div>
                   <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                     <i class="pi pi-clock"></i>
@@ -393,12 +387,6 @@
                 <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
                 <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
                   }}</span>
-              </div>
-              <div v-if="appliedRewardPoints > 0"
-                class="text-[10px] text-red-600 dark:text-red-400 flex flex-wrap items-center gap-1 font-semibold">
-                <span>including</span>
-                <span class="font-semibold">{{ appliedRewardPoints.toLocaleString() }} pts</span>
-                <span>(≈ {{ formatCurrency(discountAmount) }})</span>
               </div>
             </div>
             <div class="flex items-center space-x-1 text-xs text-gray-500">
