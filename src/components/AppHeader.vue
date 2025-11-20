@@ -16,7 +16,7 @@
         </div>
       </div>
 
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center">
         <!-- Theme toggle button -->
         <div data-theme-toggle>
           <ThemeToggle />
