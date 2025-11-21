@@ -105,6 +105,22 @@
   </div>
 </template>
 
+<script lang="ts">
+import type { ComponentPublicInstance } from 'vue'
+
+export default {
+  name: 'WithdrawSettings',
+  beforeRouteEnter(to, from, next) {
+    next((vm: ComponentPublicInstance) => {
+      // 如果不是从 WithdrawOrder 返回的，则重置页面
+      if (from.name !== 'WithdrawOrder' && (vm as any).initPage) {
+        ;(vm as any).initPage()
+      }
+    })
+  }
+}
+</script>
+
 <script setup lang="ts">
 import { ref, computed, watch, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
@@ -440,7 +456,14 @@ const goBack = () => {
   router.push({ name: 'MyCards' })
 }
 
-onMounted(() => {
+// Initialize page
+const initPage = () => {
+  // Reset state
+  applyRewardPoints.value = false
+  pointsToUse.value = 0
+  withdrawAmountInput.value = ''
+  errors.value.withdrawAmount = ''
+  
   initializeCardInfo()
   const ok = validateAndLoadCardDetails()
   if (!ok) return
@@ -448,5 +471,14 @@ onMounted(() => {
   // Initialize default amount as minimum
   const decimals = currentDecimals.value
   withdrawAmountInput.value = minimumBalance.value.toFixed(decimals)
+}
+
+// Expose initPage
+defineExpose({
+  initPage
+})
+
+onMounted(() => {
+  initPage()
 })
 </script>

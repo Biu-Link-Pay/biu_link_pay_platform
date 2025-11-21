@@ -1,6 +1,11 @@
 <template>
   <div id="app" class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
-    <router-view />
+    <router-view v-slot="{ Component, route }">
+      <keep-alive>
+        <component :is="Component" v-if="route.meta.keepAlive" :key="route.path" />
+      </keep-alive>
+      <component :is="Component" v-if="!route.meta.keepAlive" :key="route.path" />
+    </router-view>
     <Toast />
     <ConfirmDialog />
     <CookieConsent />

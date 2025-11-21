@@ -225,8 +225,9 @@
             </div>
             <div class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">
               <span v-if="applyRewardPoints && canUseRewardPoints && appliedRewardPoints > 0">
-                Using {{ appliedRewardPoints.toLocaleString() }} pts ({{ discountAmount }} {{ cardStore.selectedCardBin?.cardCurrency
-                || 'USD' }} off), pay {{ finalRechargeAmount }} {{ cardStore.selectedCardBin?.cardCurrency || 'USD' }}
+                Using {{ appliedRewardPoints.toLocaleString() }} pts ({{ discountAmount }} {{
+                  cardStore.selectedCardBin?.cardCurrency
+                  || 'USD' }} off), pay {{ finalRechargeAmount }} {{ cardStore.selectedCardBin?.cardCurrency || 'USD' }}
               </span>
               <span v-else>
                 You can use up to {{ maxUsablePoints.toLocaleString() }} pts
@@ -264,6 +265,22 @@
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import type { ComponentPublicInstance } from 'vue'
+
+export default {
+  name: 'CardHolderInfo',
+  beforeRouteEnter(to, from, next) {
+    next((vm: ComponentPublicInstance) => {
+      // 如果不是从 PaymentMethodSelection 返回的，则重置页面
+      if (from.name !== 'PaymentMethodSelection' && (vm as any).initPage) {
+        ; (vm as any).initPage()
+      }
+    })
+  }
+}
+</script>
 
 <script setup lang="ts">
 import { ref, reactive, computed, onMounted, watch, nextTick } from 'vue'
@@ -1076,14 +1093,31 @@ const validateRechargeAmount = () => {
     })
   }
 }
-// Initialize: query holder and card info
-onMounted(async () => {
+// Initialize page data
+const initPage = async () => {
+  // Reset form
+  form.residentialAddress = ''
+  form.residentialCity = ''
+  form.residentialCountryCode = 'US'
+  form.residentialPostalCode = ''
+  form.residentialState = ''
+  form.rechargeAmount = ''
+
+  // Reset state
+  selectedStateCode.value = null
+  selectedCityName.value = null
+  isEditing.value = false
+  applyRewardPoints.value = false
+  pointsToUse.value = 0
+
   // Set default recharge amount based on action type
   form.rechargeAmount = minAmount.value.toString()
 
   // 初始化国家列表（静态 JSON）
   try {
-    countries.value = await getCountries()
+    if (countries.value.length === 0) {
+      countries.value = await getCountries()
+    }
   } catch (e) {
     countries.value = []
   }
@@ -1095,5 +1129,15 @@ onMounted(async () => {
   } catch (error) {
     console.warn('Failed to fetch card list:', error)
   }
+}
+
+// Expose initPage for beforeRouteEnter
+defineExpose({
+  initPage
+})
+
+// Initialize: query holder and card info
+onMounted(() => {
+  initPage()
 })
 </script>

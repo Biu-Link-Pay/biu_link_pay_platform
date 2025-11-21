@@ -40,7 +40,8 @@ const routes = [
     component: () => import('@/views/CardHolderInfo.vue'),
     meta: {
       title: 'Card Holder Information',
-      requiresAuth: true
+      requiresAuth: true,
+      keepAlive: true
     }
   },
   {
@@ -112,7 +113,8 @@ const routes = [
     component: () => import('@/views/WithdrawSettings.vue'),
     meta: {
       title: 'Withdraw Settings',
-      requiresAuth: true
+      requiresAuth: true,
+      keepAlive: true
     }
   },
   {
