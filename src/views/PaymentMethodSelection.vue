@@ -19,7 +19,7 @@
               <div class="text-5xl font-extrabold tracking-tight">{{ formatCurrency(originalPayAmount) }}</div>
               <div v-if="discountAmount > 0" class="text-sm text-white/80">
                 <span class="line-through mr-2 opacity-75">{{ formatCurrency(payAmount) }}</span>
-                Used {{ formatCurrency(discountAmount) }} pts
+                Used {{ appliedRewardPoints.toLocaleString() }} pts
               </div>
               <div v-if="cardStore.selectedCardBin?.cardCurrency" class="text-sm text-white/80">
                 {{ cardStore.selectedCardBin?.cardCurrency }} total for your card
@@ -194,7 +194,7 @@
               <div class="text-4xl font-extrabold tracking-tight">{{ formatCurrency(originalPayAmount) }}</div>
               <div v-if="discountAmount > 0" class="text-xs text-white/80">
                 <span class="line-through mr-1 opacity-70">{{ formatCurrency(payAmount) }}</span>
-                Used {{ formatCurrency(discountAmount) }} pts
+                Used {{ appliedRewardPoints.toLocaleString() }} pts
               </div>
               <div v-if="cardStore.selectedCardBin?.cardCurrency" class="text-sm text-white/80">
                 {{ cardStore.selectedCardBin?.cardCurrency }} total for your card

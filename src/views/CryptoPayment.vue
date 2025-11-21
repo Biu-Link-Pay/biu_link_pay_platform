@@ -32,7 +32,13 @@
                 <!-- Order Amount -->
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
                   <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Order amount</div>
-                  <div class="text-lg font-bold text-gray-900 dark:text-white">{{ formatCurrency(orderAmount) }}</div>
+                  <div class="text-lg font-bold text-gray-900 dark:text-white">
+                    {{ formatCurrency(orderAmount) }}
+                    <span v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
+                      class="text-sm font-normal text-gray-500 dark:text-gray-400 ml-1">
+                      (Used {{ cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() }} pts)
+                    </span>
+                  </div>
                 </div>
 
                 <!-- You need to pay -->
@@ -289,7 +295,13 @@
             <!-- Order Amount -->
             <div class="flex items-center justify-between">
               <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order amount</span>
-              <span class="text-lg font-bold text-gray-900 dark:text-white">{{ formatCurrency(orderAmount) }}</span>
+              <span class="text-lg font-bold text-gray-900 dark:text-white text-right">
+                {{ formatCurrency(orderAmount) }}
+                <div v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
+                  class="text-xs font-normal text-gray-500 dark:text-gray-400">
+                  (Used {{ cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() }} pts)
+                </div>
+              </span>
             </div>
 
             <!-- You need to pay -->
