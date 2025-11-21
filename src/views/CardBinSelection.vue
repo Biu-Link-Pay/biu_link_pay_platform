@@ -65,16 +65,16 @@
           <div class="md:hidden mt-6 flex flex-col items-center">
             <!-- Mobile Scheme Filter Buttons (simple, no extra layout) -->
             <div v-if="cardSchemeOptions.length"
-              class="mb-3 flex items-center justify-center space-x-2 overflow-x-auto">
+              class="mb-3 flex items-center justify-center space-x-2 overflow-x-auto pb-1">
               <button type="button"
-                class="px-2.5 py-1 rounded-full border text-xs font-medium flex-shrink-0 transition-colors"
+                class="px-3.5 py-1.5 rounded-full border text-xs font-medium flex-shrink-0 transition-colors"
                 :class="!activeSchemeFilter
                   ? 'bg-blue-600 text-white border-blue-600'
                   : 'bg-white dark:bg-gray-900 text-blue-600 dark:text-blue-300 border-blue-200 dark:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/40'" @click="filterByScheme(null)">
                 All
               </button>
               <button v-for="scheme in cardSchemeOptions" :key="scheme" type="button"
-                class="px-2.5 py-1 rounded-full border text-xs font-medium flex-shrink-0 transition-colors"
+                class="px-3.5 py-1.5 rounded-full border text-xs font-medium flex-shrink-0 transition-colors"
                 :class="activeSchemeFilter === scheme
                   ? 'bg-blue-600 text-white border-blue-600'
                   : 'bg-white dark:bg-gray-900 text-blue-600 dark:text-blue-300 border-blue-200 dark:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/40'" @click="filterByScheme(scheme)">
@@ -273,37 +273,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Card Limit Information -->
-      <!-- <div v-if="selectedCard" class="mb-8">
-        <div
-          class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 md:p-6 shadow-sm">
-          <h3 class="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-4">Card Limits</h3>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div class="flex flex-col">
-              <span
-                class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap mb-1">Max
-                Monthly</span>
-              <span class="text-base md:text-lg font-semibold text-gray-900 dark:text-white">{{
-                formatCurrency(selectedCard.maxOnMonthly) }}</span>
-            </div>
-            <div class="flex flex-col">
-              <span
-                class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap mb-1">Max
-                Daily</span>
-              <span class="text-base md:text-lg font-semibold text-gray-900 dark:text-white">{{
-                formatCurrency(selectedCard.maxOnDaily) }}</span>
-            </div>
-            <div class="flex flex-col">
-              <span
-                class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap mb-1">Max
-                Percent</span>
-              <span class="text-base md:text-lg font-semibold text-gray-900 dark:text-white">{{
-                formatPercentage(selectedCard.maxOnPercent) }}</span>
-            </div>
-          </div>
-        </div>
-      </div> -->
 
       <!-- Action Buttons -->
       <div class="bottom-buttons-container relative md:static">
