@@ -302,11 +302,6 @@
                                   class="text-[11px] lg:text-xs text-gray-400 dark:text-gray-500">
                                   {{ transaction.createTime }}
                                 </span>
-                                <span v-if="hasRewardPoints(transaction.cardRewardPoints)"
-                                  class="inline-flex items-center gap-1 text-[11px] lg:text-xs font-semibold text-orange-600 dark:text-orange-300">
-                                  <i class="pi pi-star-fill text-[10px]"></i>
-                                  Earn {{ formatRewardPoints(transaction.cardRewardPoints) }}
-                                </span>
 
                               </div>
                               <div v-if="isRefundTransaction(transaction)">
@@ -324,6 +319,10 @@
                               <div v-if="isFailedStatus(transaction.status) && transaction.msg"
                                 class="text-xs text-red-600 dark:text-red-400 mt-1 line-clamp-2">
                                 {{ transaction.msg }}
+                              </div>
+                              <div v-if="hasRewardPoints(transaction.cardRewardPoints)"
+                                class="text-[11px] lg:text-xs font-semibold text-orange-600 dark:text-orange-300 mt-1">
+                                Earn {{ formatRewardPoints(transaction.cardRewardPoints) }}
                               </div>
                             </div>
                             <div class="text-right flex-shrink-0">
@@ -386,11 +385,6 @@
                                   class="text-[11px] text-gray-400 dark:text-gray-500">
                                   {{ transaction.createTime }}
                                 </span>
-                                <span v-if="hasRewardPoints(transaction.cardRewardPoints)"
-                                  class="inline-flex items-center gap-0.5 text-[10px] font-semibold text-orange-600 dark:text-orange-300">
-                                  <i class="pi pi-star-fill text-[9px]"></i>
-                                  Earn {{ formatRewardPoints(transaction.cardRewardPoints) }}
-                                </span>
                                 <span v-if="isRefundTransaction(transaction)"
                                   class="inline-flex items-center gap-0.5 text-[10px] font-medium text-emerald-700 dark:text-emerald-300">
                                   <i class="pi pi-refresh text-[9px]"></i>
@@ -409,6 +403,10 @@
                               <div v-if="isFailedStatus(transaction.status) && transaction.msg"
                                 class="text-xs text-red-600 dark:text-red-400 mt-0.5 line-clamp-2">
                                 {{ transaction.msg }}
+                              </div>
+                              <div v-if="hasRewardPoints(transaction.cardRewardPoints)"
+                                class="text-[10px] font-semibold text-orange-600 dark:text-orange-300 mt-0.5">
+                                Earn {{ formatRewardPoints(transaction.cardRewardPoints) }}
                               </div>
                             </div>
                             <div class="text-right flex-shrink-0">
@@ -890,7 +888,7 @@ const rechargeOrders = ref<DepositOrderListItem[]>([])
 const withdrawOrders = ref<WithdrawOrderListItem[]>([])
 
 // Mock data for testing different scenarios
-const useMockData = ref(false) // 设置为 true 来使用 mock 数据，设置为 false 使用真实 API
+const useMockData = ref(true) // 设置为 true 来使用 mock 数据，设置为 false 使用真实 API
 
 const mockTransactions: TransactionListItem[] = [
   // 成功的充值（正数金额）
