@@ -321,7 +321,7 @@
                                 {{ transaction.msg }}
                               </div>
                               <div v-if="hasRewardPoints(transaction.cardRewardPoints)"
-                                class="text-[11px] lg:text-xs font-semibold text-orange-600 dark:text-orange-300 mt-1">
+                                class="text-[11px] lg:text-xs text-orange-600 dark:text-orange-300 mt-1">
                                 Earn {{ formatRewardPoints(transaction.cardRewardPoints) }}
                               </div>
                             </div>
@@ -405,7 +405,7 @@
                                 {{ transaction.msg }}
                               </div>
                               <div v-if="hasRewardPoints(transaction.cardRewardPoints)"
-                                class="text-[10px] font-semibold text-orange-600 dark:text-orange-300 mt-0.5">
+                                class="text-[10px] text-orange-600 dark:text-orange-300 mt-0.5">
                                 Earn {{ formatRewardPoints(transaction.cardRewardPoints) }}
                               </div>
                             </div>

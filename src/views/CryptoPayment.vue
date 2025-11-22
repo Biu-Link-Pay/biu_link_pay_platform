@@ -298,7 +298,7 @@
               <span class="text-lg font-bold text-gray-900 dark:text-white text-right">
                 {{ formatCurrency(orderAmount) }}
                 <div v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
-                  class="text-xs font-normal text-gray-500 dark:text-gray-400">
+                  class="text-xs font-normal text-orange-500 dark:text-gray-400">
                   (Used {{ cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() }} pts)
                 </div>
               </span>
