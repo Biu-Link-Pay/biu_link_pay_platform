@@ -644,7 +644,12 @@ const rechargeAmountNumber = computed(() => {
 })
 
 const canUseRewardPoints = computed(() => availableRewardPoints.value > 0 && rechargeAmountNumber.value > 0)
-const maxPointsBasedOnAmount = computed(() => Math.max(Math.floor(rechargeAmountNumber.value * 100), 0))
+const maxPointsBasedOnAmount = computed(() => {
+  const amount = rechargeAmountNumber.value
+  // Ensure at least 1 unit is paid (max points allowed = (amount - 1) * 100)
+  const maxDiscount = Math.max(0, amount - 1)
+  return Math.max(Math.floor(maxDiscount * 100), 0)
+})
 const maxUsablePoints = computed(() => Math.min(availableRewardPoints.value, maxPointsBasedOnAmount.value))
 
 const appliedRewardPoints = ref(0)
