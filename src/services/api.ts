@@ -3,6 +3,11 @@ import type { ApiResponse } from '@/types/api'
 import { getCachedFingerprintId, getFingerprintId } from '@/utils/fingerprint'
 import { useAuthStore } from '@/stores/auth'
 
+// 是否正在刷新 token 的标记
+let isRefreshing = false
+// 重试队列，每一项是一个函数
+let requests: ((token: string) => void)[] = []
+
 // 创建 axios 实例
 const api: AxiosInstance = axios.create({
   baseURL: 'https://api.biulinkpay.online', // 正式环境 API 基础 URL
@@ -122,7 +127,24 @@ api.interceptors.response.use(
 
           // 未授权，尝试刷新 token
           if (!error.config._retry) {
+            // 如果正在刷新，将请求加入队列，等待刷新完成
+            if (isRefreshing) {
+              return new Promise((resolve) => {
+                requests.push((token) => {
+                  if (error.config.headers) {
+                    error.config.headers.token = token
+                    error.config.headers.refresh_token = localStorage.getItem('refreshToken')
+                  }
+                  // 标记为已重试，防止无限循环
+                  error.config._retry = true
+                  resolve(api.request(error.config))
+                })
+              })
+            }
+
             error.config._retry = true
+            isRefreshing = true // 开启刷新锁
+
             try {
               console.log('检测到401错误，尝试刷新token...')
 
@@ -131,6 +153,12 @@ api.interceptors.response.use(
               await authStore.refreshAuthToken()
 
               console.log('Token刷新成功，重新发送请求')
+              const newToken = authStore.token || ''
+
+              // 1. 执行队列中的请求
+              requests.forEach((cb) => cb(newToken))
+              // 2. 清空队列
+              requests = []
 
               // 更新请求头中的token
               if (error.config.headers) {
@@ -142,6 +170,9 @@ api.interceptors.response.use(
               return api.request(error.config)
             } catch (refreshError) {
               console.error('刷新 token 失败:', refreshError)
+
+              // 刷新失败，清空队列（后续会跳转登录）
+              requests = []
 
               // 刷新失败，直接清空认证状态并跳转到登录页
               const authStore = useAuthStore()
@@ -161,6 +192,8 @@ api.interceptors.response.use(
               if (typeof window !== 'undefined') {
                 window.location.href = '/login'
               }
+            } finally {
+              isRefreshing = false // 释放刷新锁
             }
           } else {
             // 已经重试过，仍然401，直接清空认证状态并跳转登录
