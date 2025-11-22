@@ -888,7 +888,7 @@ const rechargeOrders = ref<DepositOrderListItem[]>([])
 const withdrawOrders = ref<WithdrawOrderListItem[]>([])
 
 // Mock data for testing different scenarios
-const useMockData = ref(true) // 设置为 true 来使用 mock 数据，设置为 false 使用真实 API
+const useMockData = ref(false) // 设置为 true 来使用 mock 数据，设置为 false 使用真实 API
 
 const mockTransactions: TransactionListItem[] = [
   // 成功的充值（正数金额）
