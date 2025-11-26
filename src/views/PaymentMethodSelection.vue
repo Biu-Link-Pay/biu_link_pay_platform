@@ -906,7 +906,7 @@ const handleContinue = async () => {
 
       // Navigate to crypto payment page
       setTimeout(() => {
-        router.push({
+        router.replace({
           name: 'CryptoPayment',
           query: {
             orderNum: orderResponse.model.orderNum
