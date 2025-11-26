@@ -75,6 +75,27 @@ api.interceptors.request.use(
   }
 )
 
+// 清空认证信息并跳转登录页的辅助函数
+const clearAuthAndRedirectToLogin = () => {
+  const authStore = useAuthStore()
+
+  // 清空认证状态
+  authStore.isAuthenticated = false
+  authStore.user = null
+  authStore.token = null
+  authStore.refreshToken = null
+
+  // 清除本地存储
+  localStorage.removeItem('token')
+  localStorage.removeItem('refreshToken')
+  localStorage.removeItem('user')
+
+  // 跳转到登录页
+  if (typeof window !== 'undefined') {
+    window.location.href = '/login'
+  }
+}
+
 // 响应拦截器
 api.interceptors.response.use(
   (response: AxiosResponse) => {
@@ -84,6 +105,13 @@ api.interceptors.response.use(
     // 检查业务状态码
     const data = response.data as ApiResponse
     if (data && data.code !== '0' && data.error) {
+      // 检查是否是 token 未找到的错误 (4040002)
+      if (data.code === '4040002' || (data.msg && data.msg.toLowerCase().includes("token") && data.msg.toLowerCase().includes("not found"))) {
+        console.error('Token未找到错误，跳转登录页:', data.msg)
+        clearAuthAndRedirectToLogin()
+        return Promise.reject(new Error(data.msg))
+      }
+
       console.error('业务错误:', data.msg)
       return Promise.reject(new Error(data.msg))
     }
@@ -97,6 +125,19 @@ api.interceptors.response.use(
     // 处理常见错误状态码
     if (error.response) {
       const { status } = error.response
+
+      // 检查业务错误码，处理 token 未找到的情况
+      const responseData = error.response.data as ApiResponse | undefined
+      if (responseData && responseData.error) {
+        // 检查是否是 token 未找到的错误 (4040002)
+        if (responseData.code === '4040002' || (responseData.msg && responseData.msg.toLowerCase().includes("token") && responseData.msg.toLowerCase().includes("not found"))) {
+          console.error('Token未找到错误，跳转登录页:', responseData.msg)
+          clearAuthAndRedirectToLogin()
+          error.message = responseData.msg || 'Token not found'
+          return Promise.reject(error)
+        }
+      }
+
       switch (status) {
         case 401:
           // 检查是否是刷新token请求本身返回401
@@ -105,23 +146,7 @@ api.interceptors.response.use(
           if (isRefreshTokenRequest) {
             // 刷新token请求本身返回401，直接清空token信息并跳转登录页
             console.error('刷新token请求返回401，直接跳转登录页')
-            const authStore = useAuthStore()
-
-            // 直接清空认证状态，不调用logout接口
-            authStore.isAuthenticated = false
-            authStore.user = null
-            authStore.token = null
-            authStore.refreshToken = null
-
-            // 清除本地存储
-            localStorage.removeItem('token')
-            localStorage.removeItem('refreshToken')
-            localStorage.removeItem('user')
-
-            // 跳转到登录页
-            if (typeof window !== 'undefined') {
-              window.location.href = '/login'
-            }
+            clearAuthAndRedirectToLogin()
             break
           }
 
@@ -175,46 +200,14 @@ api.interceptors.response.use(
               requests = []
 
               // 刷新失败，直接清空认证状态并跳转到登录页
-              const authStore = useAuthStore()
-
-              // 直接清空认证状态，不调用logout接口
-              authStore.isAuthenticated = false
-              authStore.user = null
-              authStore.token = null
-              authStore.refreshToken = null
-
-              // 清除本地存储
-              localStorage.removeItem('token')
-              localStorage.removeItem('refreshToken')
-              localStorage.removeItem('user')
-
-              // 跳转到登录页
-              if (typeof window !== 'undefined') {
-                window.location.href = '/login'
-              }
+              clearAuthAndRedirectToLogin()
             } finally {
               isRefreshing = false // 释放刷新锁
             }
           } else {
             // 已经重试过，仍然401，直接清空认证状态并跳转登录
             console.error('Token刷新后仍然401，跳转登录页')
-            const authStore = useAuthStore()
-
-            // 直接清空认证状态，不调用logout接口
-            authStore.isAuthenticated = false
-            authStore.user = null
-            authStore.token = null
-            authStore.refreshToken = null
-
-            // 清除本地存储
-            localStorage.removeItem('token')
-            localStorage.removeItem('refreshToken')
-            localStorage.removeItem('user')
-
-            // 跳转到登录页
-            if (typeof window !== 'undefined') {
-              window.location.href = '/login'
-            }
+            clearAuthAndRedirectToLogin()
           }
           break
         case 403:
