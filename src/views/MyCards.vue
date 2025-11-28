@@ -1498,8 +1498,8 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
 }
 
 
-// Copy to clipboard using vueuse
-const { copy: copyToClipboard } = useClipboard()
+// Copy to clipboard using vueuse with legacy support for Huawei browser compatibility
+const { copy: copyToClipboard } = useClipboard({ legacy: true })
 
 // Balance related functions
 const formatBalance = (balance: number) => {

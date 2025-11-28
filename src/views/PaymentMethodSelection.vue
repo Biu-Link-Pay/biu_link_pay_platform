@@ -362,7 +362,7 @@
                 </div>
                 <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
                 <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(originalPayAmount)
-                  }}</span>
+                }}</span>
               </div>
               <div v-if="countdown > 0" class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                 <i class="pi pi-clock"></i>

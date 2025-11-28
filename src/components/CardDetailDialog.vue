@@ -220,7 +220,8 @@ const onUpdateVisible = (value: boolean) => {
   emit('update:visible', value)
 }
 
-const { copy: copyToClipboard } = useClipboard()
+// Copy to clipboard with legacy support for Huawei browser compatibility
+const { copy: copyToClipboard } = useClipboard({ legacy: true })
 const cardStore = useCardStore()
 
 // Country/State/City data (declare early to avoid init-order issues)

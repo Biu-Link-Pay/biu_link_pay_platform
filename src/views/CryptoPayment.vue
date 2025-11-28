@@ -723,8 +723,8 @@ const getCryptoIcon = (crypto: string) => {
   }
 }
 
-// Copy to clipboard using vueuse
-const { copy: copyToClipboard } = useClipboard()
+// Copy to clipboard using vueuse with legacy support for Huawei browser compatibility
+const { copy: copyToClipboard } = useClipboard({ legacy: true })
 
 
 // Start countdown timer

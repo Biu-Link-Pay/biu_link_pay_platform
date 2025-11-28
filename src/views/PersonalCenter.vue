@@ -707,7 +707,8 @@ const onBindCodeInput = (event: Event) => {
   bindAuthCode.value = value.slice(0, 6) // 最多6位
 }
 
-const { copy: copyToClipboard } = useClipboard()
+// Copy to clipboard with legacy support for Huawei browser compatibility
+const { copy: copyToClipboard } = useClipboard({ legacy: true })
 
 const copySecretKey = async () => {
   try {

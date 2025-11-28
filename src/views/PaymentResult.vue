@@ -433,8 +433,8 @@ let pollingInterval: NodeJS.Timeout | null = null
 const isMounted = ref(false)
 const isFromMyCards = ref(false) // 标识是否从 MyCards 页面进入
 
-// Copy to clipboard function
-const { copy: copyToClipboard } = useClipboard()
+// Copy to clipboard function with legacy support for Huawei browser compatibility
+const { copy: copyToClipboard } = useClipboard({ legacy: true })
 
 
 const statusIconClass = computed(() => {
