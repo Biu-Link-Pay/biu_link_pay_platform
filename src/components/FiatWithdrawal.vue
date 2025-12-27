@@ -107,7 +107,7 @@
                   <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                   <span class="text-base font-bold text-gray-900 dark:text-white">{{
                     formatCurrency(withdrawAmount)
-                  }}</span>
+                    }}</span>
                 </div>
               </div>
               <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
@@ -121,7 +121,7 @@
             <div class="flex items-center justify-between text-sm">
               <span class="text-gray-700 dark:text-gray-300">Transaction Fee</span>
               <span class="text-gray-700 dark:text-gray-300">{{ formatCurrency(feeAmount) }} {{ selectedFiatCurrency
-              }}</span>
+                }}</span>
             </div>
           </div>
 
@@ -198,12 +198,12 @@
                     <div class="flex items-center space-x-2">
                       <span class="text-gray-600 dark:text-gray-400">Card Number:</span>
                       <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || 'N/A'
-                      }}</span>
+                        }}</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <span class="text-gray-600 dark:text-gray-400">Contact ID:</span>
                       <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.contactId || 'N/A'
-                      }}</span>
+                        }}</span>
                     </div>
                   </div>
                 </div>
@@ -465,7 +465,7 @@
               </div>
               <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
               <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-              }}</span>
+                }}</span>
             </div>
           </div>
           <div class="flex items-center space-x-1 text-xs text-gray-500">
@@ -479,7 +479,7 @@
         <div class="flex items-center justify-between text-xs mt-2">
           <span class="text-gray-600 dark:text-gray-400">Transaction Fee</span>
           <span class="text-gray-600 dark:text-gray-400">{{ formatCurrency(feeAmount) }} {{ selectedFiatCurrency
-          }}</span>
+            }}</span>
         </div>
       </div>
 
