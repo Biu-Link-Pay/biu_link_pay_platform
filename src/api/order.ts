@@ -435,7 +435,7 @@ export interface FiatPaymentMethodsModel {
 export interface FiatPaymentMethodsResponse {
   code: string
   msg: string
-  model: FiatPaymentMethodsModel
+  model: FiatPaymentMethodsModel[] // 返回数组，每个元素包含 methodType 和 fiatPaymentMethod
   success: boolean
   error: boolean
 }
@@ -455,7 +455,7 @@ export interface BankQueryModel {
 export interface BankQueryResponse {
   code: string
   msg: string
-  model: BankQueryModel
+  model: BankQueryModel[] // 数组形式，每个元素包含某个国家的银行列表
   success: boolean
   error: boolean
 }

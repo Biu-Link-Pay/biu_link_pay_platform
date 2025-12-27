@@ -174,7 +174,7 @@ export interface SaveRecipientParams {
   reservedPhoneNumber: string // 手机号，带区号
   recipientLocation: string // 收款人位置
   recipientProvince: string // 收款人省份
-  recipientCity: string // 收款人城市
+  recipientCity: string | null // 收款人城市（可选）
   recipientAddress: string // 收款人地址
   bankAccountNumber: string // 银行账号
   swiftCode: string // swiftCode

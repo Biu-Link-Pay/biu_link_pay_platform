@@ -5,7 +5,9 @@
     "src/**/*",
     "src/**/*.vue",
     "src/components/CardDetailDialog.vue",
-    "src/components/CardInfoHeader.vue"
+    "src/components/CardInfoHeader.vue",
+    "src/components/CryptoWithdrawal.vue",
+    "src/components/FiatWithdrawal.vue"
   ],
   "exclude": [
     "src/**/__tests__/*"
