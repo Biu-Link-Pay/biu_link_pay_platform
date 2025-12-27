@@ -165,6 +165,55 @@ export interface CardTransactionListResponse {
   }
 }
 
+// Recipient (收款人) related types
+// Save recipient request parameters
+export interface SaveRecipientParams {
+  bankName: string // 银行名称
+  bankLocation: string // 银行位置
+  currency: string // 币种
+  reservedPhoneNumber: string // 手机号，带区号
+  recipientLocation: string // 收款人位置
+  recipientProvince: string // 收款人省份
+  recipientCity: string // 收款人城市
+  recipientAddress: string // 收款人地址
+  bankAccountNumber: string // 银行账号
+  swiftCode: string // swiftCode
+}
+
+// Save recipient response
+export interface SaveRecipientResponse {
+  code: string
+  msg: string
+  model: null
+  success: boolean
+  error: boolean
+}
+
+// Query recipient response data
+export interface QueryRecipientModel {
+  id: string
+  contactId: string
+  cardNumber: string // 银行卡号
+}
+
+// Query recipient response
+export interface QueryRecipientResponse {
+  code: string
+  msg: string
+  model: QueryRecipientModel
+  success: boolean
+  error: boolean
+}
+
+// Delete recipient response
+export interface DeleteRecipientResponse {
+  code: string
+  msg: string
+  model: null
+  success: boolean
+  error: boolean
+}
+
 // Note: token, refresh_token, and fingerprint-id are automatically added by request interceptor
 
 /**
@@ -256,6 +305,45 @@ export class CardAPI {
     const response = await api.post('/card/consume/operator/queryTransactionList', params)
     return response.data
   }
+
+  /**
+   * Save recipient information
+   * @param params Recipient information parameters
+   * @returns Promise<SaveRecipientResponse>
+   */
+  static async saveRecipient(params: SaveRecipientParams): Promise<SaveRecipientResponse> {
+    const response = await api.post<SaveRecipientResponse>('/card/consume/operator/saveRecipient', {
+      bankName: params.bankName,
+      bankLocation: params.bankLocation,
+      currency: params.currency,
+      reservedPhoneNumber: params.reservedPhoneNumber,
+      recipientLocation: params.recipientLocation,
+      recipientProvince: params.recipientProvince,
+      recipientCity: params.recipientCity,
+      recipientAddress: params.recipientAddress,
+      bankAccountNumber: params.bankAccountNumber,
+      swiftCode: params.swiftCode
+    })
+    return response.data
+  }
+
+  /**
+   * Query recipient information
+   * @returns Promise<QueryRecipientResponse>
+   */
+  static async queryRecipient(): Promise<QueryRecipientResponse> {
+    const response = await api.post<QueryRecipientResponse>('/card/consume/operator/queryRecipient', {})
+    return response.data
+  }
+
+  /**
+   * Delete recipient information
+   * @returns Promise<DeleteRecipientResponse>
+   */
+  static async deleteRecipient(): Promise<DeleteRecipientResponse> {
+    const response = await api.post<DeleteRecipientResponse>('/card/consume/operator/deleteRecipient', {})
+    return response.data
+  }
 }
 
 // Export individual functions for easy use
@@ -267,5 +355,8 @@ export const {
   updateCardHolder,
   queryCardDetail,
   queryCardList,
-  queryTransactionList
+  queryTransactionList,
+  saveRecipient,
+  queryRecipient,
+  deleteRecipient
 } = CardAPI

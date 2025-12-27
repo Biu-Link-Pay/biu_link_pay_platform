@@ -1,6 +1,6 @@
 <template>
-  <!-- Floating contact entry (hidden on login page) -->
-  <div v-if="!isLoginPage">
+  <!-- Floating contact entry -->
+  <div>
     <!-- Mobile overlay background -->
     <transition name="contact-fade">
       <div v-if="isMobilePanelOpen" class="fixed inset-0 bg-black/40 md:hidden z-40" @click="closeMobilePanel"></div>
@@ -66,16 +66,10 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, onUnmounted } from 'vue'
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
+import { ref, onUnmounted } from 'vue'
 
 // Contact emails
 const contactEmails = ['support@biulinkpay.com', 'support@biulinkpay.org']
-
-// Check if current page is login page
-const isLoginPage = computed(() => route.name === 'Login')
 
 // Popover visibility state
 const isPopoverVisible = ref(false)

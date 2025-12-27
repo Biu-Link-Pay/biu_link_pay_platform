@@ -102,13 +102,14 @@
                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
                   Please enter verification code
                 </label>
-                <div class="flex items-center gap-3">
+                <div class="flex items-center gap-2 sm:gap-3 min-w-0">
                   <InputText v-model="form.code" type="text" placeholder="Enter 6-digit code" maxlength="6"
-                    class="flex-1 text-base min-h-[48px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white text-center tracking-widest transition-all duration-200"
+                    class="flex-1 min-w-0 text-base min-h-[48px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white text-center tracking-widest transition-all duration-200"
                     :class="{ 'border-red-500': errors.code }" :disabled="isLoading" />
                   <Button type="button" :label="countdown > 0 ? `${countdown}s` : 'Resend'"
                     :disabled="countdown > 0 || isLoading" severity="secondary"
-                    class="min-h-[48px] px-4 whitespace-nowrap flex-shrink-0" @click="resendCode" />
+                    class="min-h-[48px] px-3 sm:px-4 whitespace-nowrap sm:min-w-[110px]"
+                    @click="resendCode" />
                 </div>
                 <p v-if="errors.code" class="text-sm text-red-500">
                   {{ errors.code }}
@@ -151,7 +152,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useAuthStore } from '@/stores/auth'
@@ -254,6 +255,7 @@ const showVerificationCode = ref(false)
 const countdown = ref(0)
 const showMobileForm = ref(false) // 控制移动端是否显示表单
 const licenseFromUrl = ref('')
+const countdownEndTime = ref<number | null>(null)
 
 // Countdown timer
 let countdownTimer: number | null = null
@@ -312,14 +314,31 @@ const validateTerms = () => {
 
 // Countdown functionality
 const startCountdown = () => {
-  countdown.value = 60
-  countdownTimer = window.setInterval(() => {
-    countdown.value--
-    if (countdown.value <= 0) {
-      window.clearInterval(countdownTimer!)
-      countdownTimer = null
-    }
-  }, 1000)
+  const durationSeconds = 60
+  countdownEndTime.value = Date.now() + durationSeconds * 1000
+  updateCountdown()
+  clearCountdownTimer()
+  countdownTimer = window.setInterval(updateCountdown, 300)
+}
+
+const updateCountdown = () => {
+  if (!countdownEndTime.value) return
+
+  const remainingMs = countdownEndTime.value - Date.now()
+  const remainingSeconds = Math.max(0, Math.ceil(remainingMs / 1000))
+  countdown.value = remainingSeconds
+
+  if (remainingMs <= 0) {
+    clearCountdownTimer()
+    countdownEndTime.value = null
+  }
+}
+
+const clearCountdownTimer = () => {
+  if (countdownTimer) {
+    window.clearInterval(countdownTimer)
+    countdownTimer = null
+  }
 }
 
 // Send verification code
@@ -497,10 +516,8 @@ const handleBackClick = () => {
     agreeTerms: ''
   }
   // Clear countdown timer
-  if (countdownTimer) {
-    window.clearInterval(countdownTimer)
-    countdownTimer = null
-  }
+  clearCountdownTimer()
+  countdownEndTime.value = null
   countdown.value = 0
 }
 
@@ -509,6 +526,23 @@ onMounted(() => {
   // 从路由 query 中读取 license（邀请码），例如 /login?license=888888
   const license = route.query.license as string | undefined
   licenseFromUrl.value = license || ''
+
+  document.addEventListener('visibilitychange', handleVisibilityChange)
+})
+
+const handleVisibilityChange = () => {
+  if (!document.hidden) {
+    updateCountdown()
+    // Restart interval if needed when returning to the page
+    if (countdownEndTime.value && !countdownTimer) {
+      countdownTimer = window.setInterval(updateCountdown, 300)
+    }
+  }
+}
+
+onBeforeUnmount(() => {
+  clearCountdownTimer()
+  document.removeEventListener('visibilitychange', handleVisibilityChange)
 })
 </script>
 

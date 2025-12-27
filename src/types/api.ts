@@ -45,6 +45,7 @@ export interface UserProfile {
   googleAuthStatus: number // 0:未认证,1:已认证
   cardRewardPoints: number // 卡奖励积分
   licenseUrl: string // 邀请链接
+  country2: string // 国家2位代码
 }
 
 export interface UserProfileParams {

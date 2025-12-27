@@ -305,6 +305,9 @@ export interface CreateWithdrawOrderParams {
   withdrawAmount: string // 提现金额
   cardNo: string // 卡号
   cardRewardPoints: number // 卡奖励点数
+  payType: string // 支付类型,如果提现法币，填写法币支付方式，提现数币，添加WALLET 或者BINANCE
+  orderCurrency: string // 订单币种，如果提现法币，填写法币单位，如果是数币，默认USD
+  customParam: string // 提现法币相关参数
 }
 
 // 创建出金订单响应
@@ -350,6 +353,109 @@ export interface TransactionListResponse {
   code: string
   msg: string
   model: TransactionListModel
+  success: boolean
+  error: boolean
+}
+
+// 查询法币汇率请求参数
+export interface FiatRateParams {
+  number: string // 数量
+  saleDirection: 'SELL' | 'BUY' // 方向，SELL=出金，BUY=入金
+  fiatUnit: string // 充值的法币单位
+  cardRewardPoints: number // 卡积分
+}
+
+// 源币种信息
+export interface FiatRateSource {
+  currency: string // 币种
+  amount: number // 金额
+}
+
+// 目标币种信息
+export interface FiatRateTarget {
+  currency: string // 币种
+  rate: number // 汇率
+  amount: number // 金额
+}
+
+// 费明细
+export interface FiatRateFeeDetail {
+  feeRatio: number // 费率
+  fixedFee: number // 固定手续费
+  amount: number // 手续费金额
+}
+
+// 查询法币汇率响应数据
+export interface FiatRateModel {
+  source: FiatRateSource // 源币种信息
+  target: FiatRateTarget // 目标币种信息
+  feeDetail: FiatRateFeeDetail // 费明细
+  cardPoints: string // 卡积分
+}
+
+// 查询法币汇率响应
+export interface FiatRateResponse {
+  code: string
+  msg: string
+  model: FiatRateModel
+  success: boolean
+  error: boolean
+}
+
+// 法币支付方式字段
+export interface FiatPaymentMethodField {
+  name: string // 名称
+  label: string // 展示名称
+  required: boolean // 必填true，非必填false
+  type: string // 传值类型
+  options: null | any // 可选项
+  placeholder: string // 展示信息
+}
+
+// 法币支付方式项
+export interface FiatPaymentMethodItem {
+  methodCode: string // 支付方式code
+  methodName: string // 支付方式名称
+  minLimit: number // 最小限额
+  maxLimit: number // 最大限额
+  logoUrl: string // logo
+  remark: null | string // 备注
+  expireTime: number // 过期时间
+  type: string // IN=入金，OUT=出金
+  fields: FiatPaymentMethodField[] // 参数传值
+}
+
+// 查询法币支付方式响应数据
+export interface FiatPaymentMethodsModel {
+  methodType: string // 支付方式类型
+  fiatPaymentMethod: FiatPaymentMethodItem[] // 法币支付方式
+}
+
+// 查询法币支付方式响应
+export interface FiatPaymentMethodsResponse {
+  code: string
+  msg: string
+  model: FiatPaymentMethodsModel
+  success: boolean
+  error: boolean
+}
+
+// 查询法币支付方式请求参数
+export interface FiatPaymentMethodsParams {
+  orderType: 'IN' | 'OUT' // IN=入金，OUT=出金
+}
+
+// 银行信息查询响应数据
+export interface BankQueryModel {
+  bankName: string[] // 银行名称
+  countryCode: string // 国家code
+}
+
+// 银行信息查询响应
+export interface BankQueryResponse {
+  code: string
+  msg: string
+  model: BankQueryModel
   success: boolean
   error: boolean
 }
@@ -427,7 +533,10 @@ export class OrderAPI {
       delFlag: params.delFlag,
       withdrawAmount: params.withdrawAmount,
       cardNo: params.cardNo,
-      cardRewardPoints: params.cardRewardPoints
+      cardRewardPoints: params.cardRewardPoints,
+      payType: params.payType,
+      orderCurrency: params.orderCurrency,
+      customParam: params.customParam
     })
     return response.data
   }
@@ -508,6 +617,44 @@ export class OrderAPI {
         cardId: params.cardId
       }
     })
+    return response.data
+  }
+
+  /**
+   * Query fiat currency exchange rate
+   * @param params Query parameters
+   * @returns Fiat currency exchange rate information
+   */
+  static async getFiatRate(params: FiatRateParams): Promise<FiatRateResponse> {
+    const response = await api.post<FiatRateResponse>('/card/consume/common/fiatRate', {
+      number: params.number,
+      saleDirection: params.saleDirection,
+      fiatUnit: params.fiatUnit,
+      cardRewardPoints: params.cardRewardPoints
+    })
+    return response.data
+  }
+
+  /**
+   * Query fiat payment methods
+   * @param params Query parameters
+   * @returns Fiat payment methods list
+   */
+  static async getFiatPaymentMethods(params: FiatPaymentMethodsParams): Promise<FiatPaymentMethodsResponse> {
+    const response = await api.get<FiatPaymentMethodsResponse>('/card/consume/common/fiatPaymentMethods', {
+      params: {
+        orderType: params.orderType
+      }
+    })
+    return response.data
+  }
+
+  /**
+   * Query bank information
+   * @returns Bank information
+   */
+  static async getBankQuery(): Promise<BankQueryResponse> {
+    const response = await api.get<BankQueryResponse>('/card/consume/common/bankQuery')
     return response.data
   }
 }
