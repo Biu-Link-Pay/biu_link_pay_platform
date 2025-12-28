@@ -363,6 +363,7 @@ export interface FiatRateParams {
   saleDirection: 'SELL' | 'BUY' // 方向，SELL=出金，BUY=入金
   fiatUnit: string // 充值的法币单位
   cardRewardPoints: number // 卡积分
+  methodCode: string // 支付方式
 }
 
 // 源币种信息
@@ -418,6 +419,8 @@ export interface FiatPaymentMethodItem {
   methodName: string // 支付方式名称
   minLimit: number // 最小限额
   maxLimit: number // 最大限额
+  fixedFee: number // 固定手续费
+  feeRatio: number // 手续费率
   logoUrl: string // logo
   remark: null | string // 备注
   expireTime: number // 过期时间
@@ -630,7 +633,8 @@ export class OrderAPI {
       number: params.number,
       saleDirection: params.saleDirection,
       fiatUnit: params.fiatUnit,
-      cardRewardPoints: params.cardRewardPoints
+      cardRewardPoints: params.cardRewardPoints,
+      methodCode: params.methodCode
     })
     return response.data
   }

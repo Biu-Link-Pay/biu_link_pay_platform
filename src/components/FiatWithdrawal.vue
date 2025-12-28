@@ -50,39 +50,67 @@
               <span class="text-gray-600 dark:text-gray-400">Loading payment methods...</span>
             </div>
 
-            <!-- Payment Methods Grid -->
+            <!-- Payment Methods Grid (Grouped by methodType) -->
             <div v-else class="space-y-4">
-              <div v-for="paymentMethod in paymentMethods" :key="paymentMethod.methodCode"
-                class="border border-gray-200 dark:border-gray-600 rounded-xl p-5 cursor-pointer transition-all duration-200"
-                :class="selectedPaymentMethod?.methodCode === paymentMethod.methodCode
-                  ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-300 dark:border-blue-600 shadow-md ring-2 ring-blue-100 dark:ring-blue-800/60'
-                  : 'hover:bg-gray-50 dark:hover:bg-gray-600 hover:shadow-sm'"
-                @click="selectPaymentMethod(paymentMethod)">
-                <div class="flex flex-col gap-4">
-                  <div class="flex items-center space-x-4">
-                    <div
-                      class="w-14 h-14 rounded-xl flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
-                      <img v-if="paymentMethod.logoUrl" :src="paymentMethod.logoUrl" :alt="paymentMethod.methodName"
-                        class="w-full h-full object-cover" />
-                      <div v-else class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
-                        <span class="text-white font-bold text-lg">{{ paymentMethod.methodName.charAt(0) }}</span>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ paymentMethod.methodName }}
-                      </div>
-                      <div class="text-sm text-gray-500 dark:text-gray-400">
-                        Limit: {{ formatCurrency(paymentMethod.minLimit) }} - {{ formatCurrency(paymentMethod.maxLimit)
-                        }}
-                      </div>
-                    </div>
+              <div v-for="group in paymentMethodGroups" :key="group.methodType"
+                class="border border-gray-200 dark:border-gray-600 rounded-xl overflow-hidden">
+                <!-- Group Header -->
+                <div class="bg-gray-100 dark:bg-gray-700 px-5 py-3 flex items-center justify-between cursor-pointer"
+                  @click="toggleGroup(group.methodType)">
+                  <div class="flex items-center space-x-3">
+                    <i class="pi pi-chevron-down text-gray-600 dark:text-gray-300 transition-transform duration-200"
+                      :class="{ 'rotate-180': expandedGroups[group.methodType] }"></i>
+                    <h4 class="text-base font-semibold text-gray-900 dark:text-white">
+                      {{ formatMethodType(group.methodType) }}
+                    </h4>
+                    <span class="text-xs text-gray-500 dark:text-gray-400">
+                      ({{ group.fiatPaymentMethod?.length || 0 }})
+                    </span>
                   </div>
-
-                  <div v-if="selectedPaymentMethod?.methodCode === paymentMethod.methodCode"
-                    class="flex items-center gap-3 text-blue-600 self-start">
-                    <span class="text-sm font-medium">Currently selected</span>
-                    <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center">
-                      <i class="pi pi-check text-white text-xs"></i>
+                </div>
+                <!-- Group Content -->
+                <div v-show="expandedGroups[group.methodType]" class="p-4 space-y-3">
+                  <div v-for="paymentMethod in group.fiatPaymentMethod" :key="paymentMethod.methodCode"
+                    class="border border-gray-200 dark:border-gray-600 rounded-lg p-4 cursor-pointer transition-all duration-200"
+                    :class="selectedPaymentMethod?.methodCode === paymentMethod.methodCode
+                      ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-300 dark:border-blue-600 shadow-md ring-2 ring-blue-100 dark:ring-blue-800/60'
+                      : 'hover:bg-gray-50 dark:hover:bg-gray-600 hover:shadow-sm'"
+                    @click="selectPaymentMethod(paymentMethod)">
+                    <div class="flex flex-col gap-3">
+                      <div class="flex items-center space-x-4">
+                        <div
+                          class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
+                          <img v-if="paymentMethod.logoUrl" :src="paymentMethod.logoUrl" :alt="paymentMethod.methodName"
+                            class="w-full h-full object-cover" />
+                          <div v-else
+                            class="w-full h-full bg-gray-400 dark:bg-gray-500 flex items-center justify-center">
+                            <span class="text-white font-bold">{{ paymentMethod.methodName.charAt(0) }}</span>
+                          </div>
+                        </div>
+                        <div class="flex-1">
+                          <div class="font-semibold text-gray-900 dark:text-white">{{ paymentMethod.methodName }}
+                          </div>
+                          <div class="text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                            <div>
+                              Limit: {{ formatCurrency(paymentMethod.minLimit) }} - {{
+                                formatCurrency(paymentMethod.maxLimit)
+                              }}
+                            </div>
+                            <div class="flex items-center space-x-3">
+                              <span v-if="paymentMethod.fixedFee > 0">
+                                Fixed Fee: {{ formatCurrency(paymentMethod.fixedFee) }}
+                              </span>
+                              <span v-if="paymentMethod.feeRatio > 0">
+                                Fee Ratio: {{ (paymentMethod.feeRatio * 100).toFixed(2) }}%
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div v-if="selectedPaymentMethod?.methodCode === paymentMethod.methodCode"
+                          class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                          <i class="pi pi-check text-white text-xs"></i>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -107,7 +135,7 @@
                   <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                   <span class="text-base font-bold text-gray-900 dark:text-white">{{
                     formatCurrency(withdrawAmount)
-                    }}</span>
+                  }}</span>
                 </div>
               </div>
               <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
@@ -118,10 +146,21 @@
             <div v-if="fiatRate?.target?.rate" class="text-xs text-gray-600 dark:text-gray-400 mb-2">
               1 {{ cardInfo.cardCurrency }} ≈ {{ fiatRate.target.rate }} {{ selectedFiatCurrency }}
             </div>
+            <!-- Fee Details -->
+            <div v-if="fiatRate?.feeDetail" class="space-y-1 text-xs text-gray-600 dark:text-gray-400 mb-2">
+              <div class="flex items-center justify-between">
+                <span>Fee Ratio:</span>
+                <span>{{ (fiatRate.feeDetail.feeRatio * 100).toFixed(2) }}%</span>
+              </div>
+              <div v-if="fiatRate.feeDetail.fixedFee > 0" class="flex items-center justify-between">
+                <span>Fixed Fee:</span>
+                <span>{{ formatCurrency(fiatRate.feeDetail.fixedFee) }} {{ selectedFiatCurrency }}</span>
+              </div>
+            </div>
             <div class="flex items-center justify-between text-sm">
               <span class="text-gray-700 dark:text-gray-300">Transaction Fee</span>
               <span class="text-gray-700 dark:text-gray-300">{{ formatCurrency(feeAmount) }} {{ selectedFiatCurrency
-                }}</span>
+              }}</span>
             </div>
           </div>
 
@@ -186,7 +225,7 @@
             </div>
 
             <!-- Recipient Display (if exists) -->
-            <div v-else-if="recipientInfo && !isEditingRecipient"
+            <div v-else-if="recipientInfo"
               class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6 border border-gray-200 dark:border-gray-600">
               <div class="flex items-start justify-between">
                 <div class="flex-1">
@@ -198,31 +237,29 @@
                     <div class="flex items-center space-x-2">
                       <span class="text-gray-600 dark:text-gray-400">Card Number:</span>
                       <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || 'N/A'
-                        }}</span>
+                      }}</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <span class="text-gray-600 dark:text-gray-400">Contact ID:</span>
                       <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.contactId || 'N/A'
-                        }}</span>
+                      }}</span>
                     </div>
                   </div>
                 </div>
                 <div class="flex items-center space-x-2 ml-4">
-                  <Button label="Edit" icon="pi pi-pencil" severity="secondary" size="small"
-                    @click="startEditRecipient" />
                   <Button label="Delete" icon="pi pi-trash" severity="danger" size="small"
                     @click="handleDeleteRecipient" />
                 </div>
               </div>
             </div>
 
-            <!-- Recipient Form (if empty or editing) -->
-            <div v-else
+            <!-- Recipient Form (if empty and not loading) -->
+            <div v-else-if="!recipientLoading && !recipientInfo"
               class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6 border border-gray-200 dark:border-gray-600 space-y-4">
               <div class="flex items-center space-x-2 mb-4">
                 <i class="pi pi-user-plus text-blue-600 dark:text-blue-400"></i>
                 <h4 class="text-base font-semibold text-gray-900 dark:text-white">
-                  {{ recipientInfo ? 'Edit Recipient' : 'Add Recipient' }}
+                  Add Recipient
                 </h4>
               </div>
 
@@ -353,8 +390,6 @@
               </div>
 
               <div class="flex items-center space-x-3 pt-4">
-                <Button v-if="recipientInfo" label="Cancel" icon="pi pi-times" severity="secondary" size="small"
-                  @click="cancelEditRecipient" />
                 <Button label="Save Recipient" icon="pi pi-check" size="small" :loading="savingRecipient"
                   @click="handleSaveRecipient" />
               </div>
@@ -411,36 +446,69 @@
           <span class="ml-2 text-gray-600 dark:text-gray-400">Loading payment methods...</span>
         </div>
 
-        <!-- Payment Methods Options -->
+        <!-- Payment Methods Options (Grouped by methodType) -->
         <div v-else class="space-y-3">
-          <div v-for="paymentMethod in paymentMethods" :key="paymentMethod.methodCode"
-            class="border border-gray-200 dark:border-gray-600 rounded-lg p-4 cursor-pointer transition-all duration-200"
-            :class="selectedPaymentMethod?.methodCode === paymentMethod.methodCode ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-300 dark:border-blue-600 shadow-md' : 'hover:bg-gray-50 dark:hover:bg-gray-700 hover:shadow-sm'"
-            @click="selectPaymentMethod(paymentMethod)">
-
-            <!-- Payment Method Header -->
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center space-x-3">
-                <div
-                  class="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
-                  <img v-if="paymentMethod.logoUrl" :src="paymentMethod.logoUrl" :alt="paymentMethod.methodName"
-                    class="w-full h-full object-cover" />
-                  <div v-else class="w-full h-full bg-gray-400 flex items-center justify-center">
-                    <span class="text-white font-bold text-lg">{{ paymentMethod.methodName.charAt(0) }}</span>
-                  </div>
-                </div>
-                <div>
-                  <div class="font-semibold text-gray-900 dark:text-white">{{ paymentMethod.methodName }}</div>
-                  <div class="text-sm text-gray-500 dark:text-gray-400">
-                    Limit: {{ formatCurrency(paymentMethod.minLimit) }} - {{ formatCurrency(paymentMethod.maxLimit) }}
-                  </div>
-                </div>
+          <div v-for="group in paymentMethodGroups" :key="group.methodType"
+            class="border border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden">
+            <!-- Group Header -->
+            <div class="bg-gray-100 dark:bg-gray-700 px-4 py-2.5 flex items-center justify-between cursor-pointer"
+              @click="toggleGroup(group.methodType)">
+              <div class="flex items-center space-x-2">
+                <i class="pi pi-chevron-down text-gray-600 dark:text-gray-300 text-xs transition-transform duration-200"
+                  :class="{ 'rotate-180': expandedGroups[group.methodType] }"></i>
+                <h4 class="text-sm font-semibold text-gray-900 dark:text-white">
+                  {{ formatMethodType(group.methodType) }}
+                </h4>
+                <span class="text-xs text-gray-500 dark:text-gray-400">
+                  ({{ group.fiatPaymentMethod?.length || 0 }})
+                </span>
               </div>
+            </div>
+            <!-- Group Content -->
+            <div v-show="expandedGroups[group.methodType]" class="p-3 space-y-2">
+              <div v-for="paymentMethod in group.fiatPaymentMethod" :key="paymentMethod.methodCode"
+                class="border border-gray-200 dark:border-gray-600 rounded-lg p-3 cursor-pointer transition-all duration-200"
+                :class="selectedPaymentMethod?.methodCode === paymentMethod.methodCode ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-300 dark:border-blue-600 shadow-md' : 'hover:bg-gray-50 dark:hover:bg-gray-700 hover:shadow-sm'"
+                @click="selectPaymentMethod(paymentMethod)">
 
-              <!-- Selection Indicator -->
-              <div v-if="selectedPaymentMethod?.methodCode === paymentMethod.methodCode"
-                class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
-                <i class="pi pi-check text-white text-xs"></i>
+                <!-- Payment Method Header -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-3 flex-1">
+                    <div
+                      class="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden bg-gray-100 dark:bg-gray-600">
+                      <img v-if="paymentMethod.logoUrl" :src="paymentMethod.logoUrl" :alt="paymentMethod.methodName"
+                        class="w-full h-full object-cover" />
+                      <div v-else class="w-full h-full bg-gray-400 flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">{{ paymentMethod.methodName.charAt(0) }}</span>
+                      </div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="font-semibold text-gray-900 dark:text-white text-sm">{{ paymentMethod.methodName }}
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400 space-y-0.5">
+                        <div>
+                          Limit: {{ formatCurrency(paymentMethod.minLimit) }} - {{
+                            formatCurrency(paymentMethod.maxLimit)
+                          }}
+                        </div>
+                        <div class="flex items-center space-x-2 flex-wrap">
+                          <span v-if="paymentMethod.fixedFee > 0">
+                            Fixed: {{ formatCurrency(paymentMethod.fixedFee) }}
+                          </span>
+                          <span v-if="paymentMethod.feeRatio > 0">
+                            Rate: {{ (paymentMethod.feeRatio * 100).toFixed(2) }}%
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Selection Indicator -->
+                  <div v-if="selectedPaymentMethod?.methodCode === paymentMethod.methodCode"
+                    class="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center ml-2 flex-shrink-0">
+                    <i class="pi pi-check text-white text-xs"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -465,7 +533,7 @@
               </div>
               <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
               <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                }}</span>
+              }}</span>
             </div>
           </div>
           <div class="flex items-center space-x-1 text-xs text-gray-500">
@@ -476,10 +544,21 @@
         <div v-if="fiatRate?.target?.rate" class="text-xs text-gray-600 dark:text-gray-400 mt-2">
           1 {{ cardInfo.cardCurrency }} ≈ {{ fiatRate.target.rate }} {{ selectedFiatCurrency }}
         </div>
+        <!-- Fee Details (Mobile) -->
+        <div v-if="fiatRate?.feeDetail" class="space-y-1 text-xs text-gray-600 dark:text-gray-400 mt-2">
+          <div class="flex items-center justify-between">
+            <span>Fee Ratio:</span>
+            <span>{{ (fiatRate.feeDetail.feeRatio * 100).toFixed(2) }}%</span>
+          </div>
+          <div v-if="fiatRate.feeDetail.fixedFee > 0" class="flex items-center justify-between">
+            <span>Fixed Fee:</span>
+            <span>{{ formatCurrency(fiatRate.feeDetail.fixedFee) }} {{ selectedFiatCurrency }}</span>
+          </div>
+        </div>
         <div class="flex items-center justify-between text-xs mt-2">
           <span class="text-gray-600 dark:text-gray-400">Transaction Fee</span>
           <span class="text-gray-600 dark:text-gray-400">{{ formatCurrency(feeAmount) }} {{ selectedFiatCurrency
-            }}</span>
+          }}</span>
         </div>
       </div>
 
@@ -541,7 +620,7 @@
         </div>
 
         <!-- Recipient Display (if exists) -->
-        <div v-else-if="recipientInfo && !isEditingRecipient"
+        <div v-else-if="recipientInfo"
           class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
           <div class="flex items-start justify-between">
             <div class="flex-1">
@@ -561,21 +640,19 @@
               </div>
             </div>
             <div class="flex flex-col space-y-2 ml-3">
-              <Button label="Edit" icon="pi pi-pencil" severity="secondary" size="small" class="text-xs"
-                @click="startEditRecipient" />
               <Button label="Delete" icon="pi pi-trash" severity="danger" size="small" class="text-xs"
                 @click="handleDeleteRecipient" />
             </div>
           </div>
         </div>
 
-        <!-- Recipient Form (if empty or editing) -->
-        <div v-else
+        <!-- Recipient Form (if empty and not loading) -->
+        <div v-else-if="!recipientLoading && !recipientInfo"
           class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4 border border-gray-200 dark:border-gray-600 space-y-3">
           <div class="flex items-center space-x-2 mb-3">
             <i class="pi pi-user-plus text-blue-600 dark:text-blue-400 text-sm"></i>
             <h4 class="text-sm font-semibold text-gray-900 dark:text-white">
-              {{ recipientInfo ? 'Edit Recipient' : 'Add Recipient' }}
+              Add Recipient
             </h4>
           </div>
 
@@ -706,8 +783,6 @@
           </div>
 
           <div class="flex items-center space-x-2 pt-3">
-            <Button v-if="recipientInfo" label="Cancel" icon="pi pi-times" severity="secondary" size="small"
-              class="flex-1 text-xs" @click="cancelEditRecipient" />
             <Button label="Save Recipient" icon="pi pi-check" size="small" class="flex-1 text-xs"
               :loading="savingRecipient" @click="handleSaveRecipient" />
           </div>
@@ -732,7 +807,7 @@ import { useConfirm } from 'primevue/useconfirm'
 import InputText from 'primevue/inputtext'
 import Button from 'primevue/button'
 import Dropdown from 'primevue/dropdown'
-import { OrderAPI, type FiatPaymentMethodItem, type FiatRateModel } from '@/api/order'
+import { OrderAPI, type FiatPaymentMethodItem, type FiatRateModel, type FiatPaymentMethodsModel } from '@/api/order'
 import { CardAPI, type QueryRecipientModel, type SaveRecipientParams } from '@/api/card'
 import { getStatesOfCountry, getCitiesOfState, getCitiesOfCountry, type StateOption, type CityOption } from '@/services/geo'
 import { useCardStore } from '@/stores/card'
@@ -767,9 +842,11 @@ const userStore = useUserStore()
 // Form submission state
 const isSubmitting = ref(false)
 
-// Payment methods from API
-const paymentMethods = ref<FiatPaymentMethodItem[]>([])
+// Payment methods from API (grouped by methodType)
+const paymentMethodGroups = ref<FiatPaymentMethodsModel[]>([])
 const loading = ref(false)
+// Expanded groups state
+const expandedGroups = ref<Record<string, boolean>>({})
 
 // Selected payment method
 const selectedPaymentMethod = ref<FiatPaymentMethodItem | null>(null)
@@ -811,8 +888,7 @@ const feeAmount = ref(0)
 
 // Recipient information
 const recipientInfo = ref<QueryRecipientModel | null>(null)
-const recipientLoading = ref(false)
-const isEditingRecipient = ref(false)
+const recipientLoading = ref(true) // Start with true to prevent showing form before fetch completes
 const savingRecipient = ref(false)
 
 // Bank names from API
@@ -1052,6 +1128,22 @@ const formatCurrency = (amount: number) => {
   return `$${amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 }
 
+// Format method type for display
+const formatMethodType = (methodType: string): string => {
+  const typeMap: Record<string, string> = {
+    'BANK_TRANSFER': 'Bank Transfer',
+    'WALLET': 'Wallet',
+    'CREDIT_CARD': 'Credit Card',
+    'DEBIT_CARD': 'Debit Card'
+  }
+  return typeMap[methodType] || methodType.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+}
+
+// Toggle group expansion
+const toggleGroup = (methodType: string) => {
+  expandedGroups.value[methodType] = !expandedGroups.value[methodType]
+}
+
 // Initialize payment method fields
 const initializePaymentMethodFields = (paymentMethod: FiatPaymentMethodItem) => {
   // Clear previous fields
@@ -1195,7 +1287,8 @@ const fetchFiatRate = async () => {
       number: props.withdrawAmount.toString(),
       saleDirection: 'SELL', // Withdrawal uses SELL
       fiatUnit: selectedFiatCurrency.value,
-      cardRewardPoints: requestedPoints
+      cardRewardPoints: requestedPoints,
+      methodCode: selectedPaymentMethod.value.methodCode
     })
 
     if (response.success && response.model) {
@@ -1267,28 +1360,33 @@ const fetchPaymentMethods = async () => {
     })
 
     loading.value = false
+    console.log('Fiat payment methods API response:', response)
     if (response.success && response.model && Array.isArray(response.model)) {
-      // model 是数组，需要合并所有 methodType 下的 fiatPaymentMethod
-      const allPaymentMethods: FiatPaymentMethodItem[] = []
-      response.model.forEach((item) => {
-        if (item.fiatPaymentMethod && Array.isArray(item.fiatPaymentMethod)) {
-          allPaymentMethods.push(...item.fiatPaymentMethod)
+      // 保留分组结构
+      paymentMethodGroups.value = response.model
+      console.log('Fiat payment methods loaded:', paymentMethodGroups.value.length, 'groups:', paymentMethodGroups.value)
+
+      // Initialize expanded groups (expand all by default)
+      paymentMethodGroups.value.forEach(group => {
+        if (group.methodType) {
+          expandedGroups.value[group.methodType] = true
         }
       })
 
-      paymentMethods.value = allPaymentMethods
-      console.log('Fiat payment methods loaded:', allPaymentMethods)
-
       // Auto-select first payment method if available
-      if (allPaymentMethods.length > 0) {
-        selectedPaymentMethod.value = allPaymentMethods[0]
+      const firstGroup = paymentMethodGroups.value.find(group =>
+        group.fiatPaymentMethod && group.fiatPaymentMethod.length > 0
+      )
+      if (firstGroup && firstGroup.fiatPaymentMethod && firstGroup.fiatPaymentMethod.length > 0) {
+        const firstMethod = firstGroup.fiatPaymentMethod[0]
+        selectedPaymentMethod.value = firstMethod
         // For fiat withdrawal, fiatUnit should be the target currency
         // Default to HKD for Hong Kong
         selectedFiatCurrency.value = 'HKD'
-        console.log('Auto-selected payment method:', allPaymentMethods[0].methodName)
+        console.log('Auto-selected payment method:', firstMethod.methodName)
 
         // Initialize dynamic fields for the auto-selected payment method
-        initializePaymentMethodFields(allPaymentMethods[0])
+        initializePaymentMethodFields(firstMethod)
 
         // Trigger immediate rate refresh
         triggerImmediateRateRefresh()
@@ -1386,21 +1484,9 @@ const fetchBankInfo = async () => {
   }
 }
 
-// Start editing recipient
-const startEditRecipient = () => {
-  isEditingRecipient.value = true
-  // If recipient exists, populate form with existing data
-  // Note: QueryRecipientModel only has id, contactId, cardNumber
-  // Other fields need to be entered manually or fetched from another endpoint
-  if (recipientInfo.value) {
-    // Only populate fields that are available from query response
-    // Other fields will need to be entered by user
-  }
-}
 
-// Cancel editing recipient
-const cancelEditRecipient = () => {
-  isEditingRecipient.value = false
+// Reset recipient form
+const resetRecipientForm = () => {
   // Reset form
   Object.keys(recipientForm).forEach(key => {
     recipientForm[key as keyof SaveRecipientParams] = '' as any
@@ -1409,14 +1495,16 @@ const cancelEditRecipient = () => {
     recipientErrors[key as keyof typeof recipientErrors] = ''
   })
   // Reset location selections to default (Hong Kong)
+  selectedCountryCode.value = 'HK'
+  recipientForm.recipientLocation = 'HK'
   selectedStateCode.value = null
   selectedCityName.value = null
-  states.value = []
-  cities.value = []
-  recipientForm.recipientLocation = 'HK'
-  // Reset phone number
+  recipientForm.recipientProvince = ''
+  recipientForm.recipientCity = ''
+  recipientForm.bankName = ''
   selectedPhoneAreaCode.value = '+852'
   phoneNumber.value = ''
+  recipientForm.reservedPhoneNumber = ''
 }
 
 // Validate recipient form
@@ -1548,10 +1636,9 @@ const handleSaveRecipient = async () => {
 
       // Refresh recipient information
       await fetchRecipient()
-      isEditingRecipient.value = false
 
       // Reset form
-      cancelEditRecipient()
+      resetRecipientForm()
     } else {
       throw new Error(response.msg || 'Failed to save recipient')
     }
@@ -1595,10 +1682,9 @@ const handleDeleteRecipient = () => {
 
           // Clear recipient info
           recipientInfo.value = null
-          isEditingRecipient.value = false
 
           // Reset form
-          cancelEditRecipient()
+          resetRecipientForm()
         } else {
           throw new Error(response.msg || 'Failed to delete recipient')
         }
@@ -1709,17 +1795,21 @@ onMounted(async () => {
   // Initialize location data (countries, states, cities) with default HK
   await initializeLocationData()
 
-  // Fetch bank information first
+  // Fetch bank information first (needed for recipient form)
   await fetchBankInfo()
 
-  // Fetch recipient information
-  await fetchRecipient()
-
-  // Fetch payment methods
-  await fetchPaymentMethods()
-  if (selectedPaymentMethod.value) {
-    startRatePolling()
-  }
+  // Fetch recipient information and payment methods in parallel (they don't depend on each other)
+  Promise.all([
+    fetchRecipient(),
+    fetchPaymentMethods()
+  ]).then(() => {
+    // Start rate polling after payment methods are loaded
+    if (selectedPaymentMethod.value) {
+      startRatePolling()
+    }
+  }).catch(error => {
+    console.error('Error during parallel initialization:', error)
+  })
 })
 
 // Go back
