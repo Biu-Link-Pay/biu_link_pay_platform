@@ -38,6 +38,18 @@
             </div>
           </div>
 
+          <!-- Fiat Currency Selection -->
+          <div class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6">
+            <div class="flex items-center space-x-2 mb-4">
+              <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Fiat Currency</label>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-center md:space-x-3 space-y-3 md:space-y-0">
+              <Dropdown v-model="selectedFiatCurrency" :options="fiatCurrencyOptions" option-label="label" disabled
+                option-value="value" placeholder="Select currency" class="w-full md:w-96" filter show-clear />
+              <span class="text-sm text-gray-600 dark:text-gray-400">Select the currency you want to receive</span>
+            </div>
+          </div>
+
           <!-- Receive Amount Section -->
           <div class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6">
             <div class="flex items-center space-x-2 mb-4">
@@ -135,7 +147,7 @@
                   <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                   <span class="text-base font-bold text-gray-900 dark:text-white">{{
                     formatCurrency(withdrawAmount)
-                    }}</span>
+                  }}</span>
                 </div>
               </div>
               <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
@@ -239,12 +251,12 @@
                     <div class="flex items-center space-x-2">
                       <span class="text-gray-600 dark:text-gray-400">Card Number:</span>
                       <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || 'N/A'
-                        }}</span>
+                      }}</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <span class="text-gray-600 dark:text-gray-400">Contact ID:</span>
                       <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.contactId || 'N/A'
-                        }}</span>
+                      }}</span>
                     </div>
                   </div>
                 </div>
@@ -293,6 +305,16 @@
           </div>
           <span class="text-gray-700 dark:text-gray-300 font-medium">{{ cardInfo.cardCurrency }}</span>
         </div>
+      </div>
+
+      <!-- Fiat Currency Selection (Mobile) -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
+        <div class="flex items-center space-x-2 mb-3">
+          <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Fiat Currency</label>
+        </div>
+        <Dropdown v-model="selectedFiatCurrency" :options="fiatCurrencyOptions" option-label="label" disabled
+          option-value="value" placeholder="Select currency" class="w-full" filter show-clear />
+        <p class="text-xs text-gray-600 dark:text-gray-400 mt-2">Select the currency you want to receive</p>
       </div>
 
       <!-- Payment Methods Section -->
@@ -403,7 +425,7 @@
               </div>
               <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
               <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                }}</span>
+              }}</span>
             </div>
           </div>
           <div class="flex items-center space-x-1 text-xs text-gray-500">
@@ -595,6 +617,20 @@ const selectedPaymentMethod = ref<FiatPaymentMethodItem | null>(null)
 // Default to HKD for Hong Kong
 const selectedFiatCurrency = ref('HKD')
 
+// Fiat currency options
+const fiatCurrencyOptions = [
+  { label: 'HKD - Hong Kong Dollar', value: 'HKD' },
+  { label: 'USD - US Dollar', value: 'USD' },
+  { label: 'EUR - Euro', value: 'EUR' },
+  { label: 'GBP - British Pound', value: 'GBP' },
+  { label: 'CNY - Chinese Yuan', value: 'CNY' },
+  { label: 'JPY - Japanese Yen', value: 'JPY' },
+  { label: 'SGD - Singapore Dollar', value: 'SGD' },
+  { label: 'AUD - Australian Dollar', value: 'AUD' },
+  { label: 'CAD - Canadian Dollar', value: 'CAD' },
+  { label: 'CHF - Swiss Franc', value: 'CHF' }
+]
+
 // Reward points
 const discountAmount = computed(() => {
   const value = props.appliedRewardPoints / 100
@@ -716,9 +752,6 @@ const selectPaymentMethod = (paymentMethod: FiatPaymentMethodItem) => {
   console.log('Payment method changed from', selectedPaymentMethod.value?.methodCode, 'to', paymentMethod.methodCode)
 
   selectedPaymentMethod.value = paymentMethod
-  // For fiat withdrawal, fiatUnit should be the target currency
-  // Default to HKD for Hong Kong
-  selectedFiatCurrency.value = 'HKD'
 
   // Initialize dynamic fields for the selected payment method
   initializePaymentMethodFields(paymentMethod)
@@ -821,10 +854,8 @@ const fetchFiatRate = async () => {
         feeAmount.value = response.model.feeDetail.amount || 0
       }
 
-      // Update selected fiat currency from response if available
-      if (response.model.target?.currency) {
-        selectedFiatCurrency.value = response.model.target.currency
-      }
+      // Note: We keep the user-selected currency, don't override it from response
+      // The response currency should match the selected currency
     } else {
       throw new Error(response.msg || 'Failed to get fiat rate')
     }
@@ -898,9 +929,6 @@ const fetchPaymentMethods = async () => {
       if (firstGroup && firstGroup.fiatPaymentMethod && firstGroup.fiatPaymentMethod.length > 0) {
         const firstMethod = firstGroup.fiatPaymentMethod[0]
         selectedPaymentMethod.value = firstMethod
-        // For fiat withdrawal, fiatUnit should be the target currency
-        // Default to HKD for Hong Kong
-        selectedFiatCurrency.value = 'HKD'
         console.log('Auto-selected payment method:', firstMethod.methodName)
 
         // Initialize dynamic fields for the auto-selected payment method
@@ -943,6 +971,21 @@ watch(() => props.withdrawAmount, (newAmount, oldAmount) => {
     console.log('Amount changed, fetching new fiat rate...', {
       oldAmount,
       newAmount,
+      appliedRewardPoints: props.appliedRewardPoints
+    })
+    // restart polling to refresh immediately
+    stopRatePolling()
+    startRatePolling()
+  }
+})
+
+// Watch for fiat currency changes to fetch new exchange rate
+watch(selectedFiatCurrency, (newCurrency, oldCurrency) => {
+  if (selectedPaymentMethod.value && newCurrency !== oldCurrency && (props.withdrawAmount > 0 || props.appliedRewardPoints > 0)) {
+    console.log('Fiat currency changed, fetching new fiat rate...', {
+      oldCurrency,
+      newCurrency,
+      withdrawAmount: props.withdrawAmount,
       appliedRewardPoints: props.appliedRewardPoints
     })
     // restart polling to refresh immediately
