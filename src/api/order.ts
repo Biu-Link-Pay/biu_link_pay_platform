@@ -384,6 +384,7 @@ export interface FiatRateFeeDetail {
   feeRatio: number // 费率
   fixedFee: number // 固定手续费
   amount: number // 手续费金额
+  currency: string // 手续费币种
 }
 
 // 查询法币汇率响应数据
