@@ -9,8 +9,8 @@
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Bank Name <span class="text-red-500">*</span>
             </label>
-            <Dropdown v-model="recipientForm.bankName" :options="bankNames" placeholder="Select bank"
-              class="w-full" filter show-clear :class="{ 'p-invalid': recipientErrors.bankName }" />
+            <Dropdown v-model="recipientForm.bankName" :options="bankNames" placeholder="Select bank" class="w-full"
+              filter show-clear :class="{ 'p-invalid': recipientErrors.bankName }" />
             <small v-if="recipientErrors.bankName" class="text-red-500 text-xs mt-1">{{
               recipientErrors.bankName }}</small>
           </div>
@@ -45,7 +45,12 @@
             <div class="flex gap-2">
               <Dropdown v-model="selectedPhoneAreaCode" :options="phoneAreaCodes" option-label="label"
                 option-value="value" placeholder="Code" class="w-32" filter show-clear
-                :class="{ 'p-invalid': recipientErrors.phoneAreaCode }" />
+                :class="{ 'p-invalid': recipientErrors.phoneAreaCode }">
+                <template #value="slotProps">
+                  <span v-if="slotProps.value">{{ slotProps.value }}</span>
+                  <span v-else>Code</span>
+                </template>
+              </Dropdown>
               <InputText v-model="phoneNumber" placeholder="Enter phone number" class="flex-1"
                 :class="{ 'p-invalid': recipientErrors.reservedPhoneNumber }" />
             </div>
@@ -60,8 +65,7 @@
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Country <span class="text-red-500">*</span>
             </label>
-            <InputText :value="'Hong Kong'" readonly
-              class="w-full bg-gray-100 dark:bg-gray-700 cursor-not-allowed"
+            <InputText :value="'Hong Kong'" readonly class="w-full bg-gray-100 dark:bg-gray-700 cursor-not-allowed"
               :class="{ 'p-invalid': recipientErrors.recipientLocation }" />
             <small v-if="recipientErrors.recipientLocation" class="text-red-500 text-xs mt-1">{{
               recipientErrors.recipientLocation }}</small>
@@ -75,8 +79,8 @@
             <Dropdown v-if="hasStateOptions" v-model="selectedStateCode" :options="states" option-label="name"
               option-value="isoCode" placeholder="Select state or province" class="w-full" filter show-clear
               :class="{ 'p-invalid': recipientErrors.recipientProvince }" />
-            <InputText v-else v-model="recipientForm.recipientProvince" placeholder="Enter province"
-              class="w-full" :class="{ 'p-invalid': recipientErrors.recipientProvince }" />
+            <InputText v-else v-model="recipientForm.recipientProvince" placeholder="Enter province" class="w-full"
+              :class="{ 'p-invalid': recipientErrors.recipientProvince }" />
             <small v-if="recipientErrors.recipientProvince" class="text-red-500 text-xs mt-1">{{
               recipientErrors.recipientProvince }}</small>
           </div>
@@ -111,8 +115,8 @@
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Bank Account Number <span class="text-red-500">*</span>
             </label>
-            <InputText v-model="recipientForm.bankAccountNumber" placeholder="Enter bank account number"
-              class="w-full" :class="{ 'p-invalid': recipientErrors.bankAccountNumber }" />
+            <InputText v-model="recipientForm.bankAccountNumber" placeholder="Enter bank account number" class="w-full"
+              :class="{ 'p-invalid': recipientErrors.bankAccountNumber }" />
             <small v-if="recipientErrors.bankAccountNumber" class="text-red-500 text-xs mt-1">{{
               recipientErrors.bankAccountNumber }}</small>
           </div>
@@ -669,4 +673,3 @@ watch(() => props.visible, (newValue) => {
   }
 })
 </script>
-
