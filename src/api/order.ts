@@ -412,6 +412,8 @@ export interface FiatPaymentMethodField {
   type: string // 传值类型
   options: null | any // 可选项
   placeholder: string // 展示信息
+  maxLength: string // 最大长度
+  minLength: string // 最小长度
 }
 
 // 法币支付方式项

@@ -210,6 +210,8 @@
                 <!-- Text Input -->
                 <InputText v-if="field.type === 'text'" v-model="paymentMethodFields[field.name]"
                   :placeholder="field.placeholder" class="w-full"
+                  :maxlength="field.maxLength ? parseInt(field.maxLength) : undefined"
+                  :minlength="field.minLength ? parseInt(field.minLength) : undefined"
                   :class="{ 'p-invalid': paymentMethodFieldErrors[field.name] }" />
                 <!-- Select Dropdown -->
                 <Dropdown
@@ -218,6 +220,8 @@
                   class="w-full" filter show-clear :class="{ 'p-invalid': paymentMethodFieldErrors[field.name] }" />
                 <!-- Fallback to InputText if type is unknown -->
                 <InputText v-else v-model="paymentMethodFields[field.name]" :placeholder="field.placeholder"
+                  :maxlength="field.maxLength ? parseInt(field.maxLength) : undefined"
+                  :minlength="field.minLength ? parseInt(field.minLength) : undefined"
                   class="w-full" :class="{ 'p-invalid': paymentMethodFieldErrors[field.name] }" />
                 <small v-if="paymentMethodFieldErrors[field.name]" class="text-red-500 text-xs mt-1">
                   {{ paymentMethodFieldErrors[field.name] }}
@@ -486,6 +490,8 @@
             <!-- Text Input -->
             <InputText v-if="field.type === 'text'" v-model="paymentMethodFields[field.name]"
               :placeholder="field.placeholder" class="w-full text-sm"
+              :maxlength="field.maxLength ? parseInt(field.maxLength) : undefined"
+              :minlength="field.minLength ? parseInt(field.minLength) : undefined"
               :class="{ 'p-invalid': paymentMethodFieldErrors[field.name] }" />
             <!-- Select Dropdown -->
             <Dropdown v-else-if="field.type === 'select' && Array.isArray(field.options) && field.options.length > 0"
@@ -493,6 +499,8 @@
               class="w-full text-sm" filter show-clear :class="{ 'p-invalid': paymentMethodFieldErrors[field.name] }" />
             <!-- Fallback to InputText if type is unknown -->
             <InputText v-else v-model="paymentMethodFields[field.name]" :placeholder="field.placeholder"
+              :maxlength="field.maxLength ? parseInt(field.maxLength) : undefined"
+              :minlength="field.minLength ? parseInt(field.minLength) : undefined"
               class="w-full text-sm" :class="{ 'p-invalid': paymentMethodFieldErrors[field.name] }" />
             <small v-if="paymentMethodFieldErrors[field.name]" class="text-red-500 text-xs mt-1">
               {{ paymentMethodFieldErrors[field.name] }}
@@ -726,17 +734,38 @@ const validatePaymentMethodFields = (): boolean => {
   let isValid = true
   selectedPaymentMethod.value.fields.forEach(field => {
     const value = paymentMethodFields[field.name]
+    const valueStr = typeof value === 'string' ? value.trim() : ''
+    
     // Check if required field is empty
     if (field.required) {
-      if (value === undefined || value === null || value === '' || (typeof value === 'string' && value.trim() === '')) {
+      if (value === undefined || value === null || value === '' || valueStr === '') {
         paymentMethodFieldErrors[field.name] = `${field.label} is required`
         isValid = false
-      } else {
-        paymentMethodFieldErrors[field.name] = ''
+        return
       }
-    } else {
-      paymentMethodFieldErrors[field.name] = ''
     }
+    
+    // Check minLength
+    if (field.minLength && valueStr !== '') {
+      const minLength = parseInt(field.minLength)
+      if (!isNaN(minLength) && valueStr.length < minLength) {
+        paymentMethodFieldErrors[field.name] = `${field.label} must be at least ${minLength} characters`
+        isValid = false
+        return
+      }
+    }
+    
+    // Check maxLength
+    if (field.maxLength && valueStr !== '') {
+      const maxLength = parseInt(field.maxLength)
+      if (!isNaN(maxLength) && valueStr.length > maxLength) {
+        paymentMethodFieldErrors[field.name] = `${field.label} must not exceed ${maxLength} characters`
+        isValid = false
+        return
+      }
+    }
+    
+    paymentMethodFieldErrors[field.name] = ''
   })
 
   return isValid
