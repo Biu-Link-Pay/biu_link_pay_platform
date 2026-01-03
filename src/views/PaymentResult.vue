@@ -104,7 +104,7 @@
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
-                    }}</span>
+                      }}</span>
                     <button
                       @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
@@ -176,7 +176,7 @@
                   class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Card Number</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo
-                    }}</span>
+                  }}</span>
                 </div>
 
                 <!-- Created Time -->
@@ -295,9 +295,9 @@
             <!-- FAIL Status -->
             <div v-if="orderStatus === 'FAIL'" class="mb-6 lg:mb-8">
               <div
-                class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded-r-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-red-700 dark:text-red-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-center gap-2 lg:gap-3">
-                <i class="pi pi-exclamation-circle text-lg lg:text-xl xl:text-xl"></i>
-                <span>{{ errorReason }}</span>
+                class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded-r-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-red-700 dark:text-red-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-start gap-2 lg:gap-3">
+                <i class="pi pi-exclamation-circle text-lg lg:text-xl xl:text-xl mt-0.5 flex-shrink-0"></i>
+                <span class="flex-1">{{ errorReason || '' }}</span>
               </div>
             </div>
 
@@ -558,6 +558,7 @@ const fetchOrderStatus = async () => {
         withdrawUsdTAmount.value = detail.usdTAmount || null // 获取USDT金额
         withdrawNetworkFee.value = detail.networkFee || null // 获取网络费
         orderRewardPoints.value = detail.cardRewardPoints || null
+        errorReason.value = detail.failReason || null // 获取失败原因
         // 获取卡号，如果详情接口返回了则使用，否则保留路由传递的值
         if (detail.cardNo) {
           orderCardNo.value = detail.cardNo

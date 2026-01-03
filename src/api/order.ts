@@ -239,6 +239,7 @@ export interface WithdrawOrderDetailItem {
   orderCurrency: string | null // 订单币种
   cardNo?: string | null // 卡号（可选）
   cardRewardPoints: number // 卡奖励点数
+  failReason: string | null // 失败原因
 }
 
 // 出金订单详情查询响应
