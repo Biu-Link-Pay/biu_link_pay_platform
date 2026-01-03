@@ -104,7 +104,7 @@
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
-                      }}</span>
+                    }}</span>
                     <button
                       @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
@@ -176,7 +176,7 @@
                   class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Card Number</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo
-                  }}</span>
+                    }}</span>
                 </div>
 
                 <!-- Created Time -->
@@ -359,11 +359,6 @@
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-credit-card"></i>
                   <span>Change Payment Method</span>
-                </button>
-                <button @click="cancelOrder"
-                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-red-600 hover:bg-red-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                  <i class="pi pi-times"></i>
-                  <span>Cancel Order</span>
                 </button>
               </template>
 
@@ -727,22 +722,60 @@ const goHome = () => {
 }
 
 const retryPayment = () => {
-  router.push({
-    name: 'PaymentMethodSelection',
-    query: {
-      orderNum: orderNumber.value,
-      retry: 'true'
+  if (orderType.value === 'withdraw') {
+    // 法币出金订单，如果有 cardId 则跳转到出金页面，否则跳转到 MyCards
+    const cardId = route.query.cardId as string
+    const cardNo = orderCardNo.value || route.query.cardNo as string
+    if (cardId && cardNo) {
+      router.push({
+        name: 'WithdrawOrder',
+        query: {
+          cardId: cardId,
+          cardNo: cardNo
+        }
+      })
+    } else {
+      // 如果没有 cardId，跳转到 MyCards 页面
+      router.push({ name: 'MyCards' })
     }
-  })
+  } else {
+    // 入金订单，跳转到支付方式选择页面
+    router.push({
+      name: 'PaymentMethodSelection',
+      query: {
+        orderNum: orderNumber.value,
+        retry: 'true'
+      }
+    })
+  }
 }
 
 const changePaymentMethod = () => {
-  router.push({
-    name: 'PaymentMethodSelection',
-    query: {
-      orderNum: orderNumber.value
+  if (orderType.value === 'withdraw') {
+    // 法币出金订单，如果有 cardId 则跳转到出金页面，否则跳转到 MyCards
+    const cardId = route.query.cardId as string
+    const cardNo = orderCardNo.value || route.query.cardNo as string
+    if (cardId && cardNo) {
+      router.push({
+        name: 'WithdrawOrder',
+        query: {
+          cardId: cardId,
+          cardNo: cardNo
+        }
+      })
+    } else {
+      // 如果没有 cardId，跳转到 MyCards 页面
+      router.push({ name: 'MyCards' })
     }
-  })
+  } else {
+    // 入金订单，跳转到支付方式选择页面
+    router.push({
+      name: 'PaymentMethodSelection',
+      query: {
+        orderNum: orderNumber.value
+      }
+    })
+  }
 }
 
 const cancelOrder = () => {
