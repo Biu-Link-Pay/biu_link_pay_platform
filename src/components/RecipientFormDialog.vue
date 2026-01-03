@@ -9,8 +9,18 @@
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Bank Name <span class="text-red-500">*</span>
             </label>
-            <Dropdown v-model="recipientForm.bankName" :options="bankNames" placeholder="Select bank" class="w-full"
-              filter show-clear :class="{ 'p-invalid': recipientErrors.bankName }" />
+            <div ref="bankDropdownWrapper" class="w-full bank-dropdown-wrapper">
+              <Dropdown v-model="recipientForm.bankName" :options="bankNames" placeholder="Select bank"
+                class="w-full bank-dropdown" filter show-clear :class="{ 'p-invalid': recipientErrors.bankName }"
+                :panelStyle="bankDropdownPanelStyle">
+                <template #option="slotProps">
+                  <div class="truncate bank-option">{{ slotProps.option }}</div>
+                </template>
+                <template #value="slotProps">
+                  <div class="truncate w-full">{{ slotProps.value || 'Select bank' }}</div>
+                </template>
+              </Dropdown>
+            </div>
             <small v-if="recipientErrors.bankName" class="text-red-500 text-xs mt-1">{{
               recipientErrors.bankName }}</small>
           </div>
@@ -169,6 +179,20 @@ const emit = defineEmits<{
 }>()
 
 const toast = useToast()
+
+// Bank dropdown wrapper ref
+const bankDropdownWrapper = ref<HTMLElement | null>(null)
+
+// Bank dropdown panel style
+const bankDropdownPanelStyle = computed(() => {
+  if (!bankDropdownWrapper.value) return {}
+  const width = bankDropdownWrapper.value.offsetWidth
+  return {
+    width: `${width}px`,
+    maxWidth: `${width}px`,
+    minWidth: '0'
+  }
+})
 
 // Dialog visibility
 const visible = computed({
@@ -673,3 +697,49 @@ watch(() => props.visible, (newValue) => {
   }
 })
 </script>
+
+<style scoped>
+.bank-dropdown-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+:deep(.bank-dropdown-wrapper .p-dropdown-panel) {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box;
+}
+
+:deep(.bank-dropdown-wrapper .p-dropdown-items-wrapper) {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+}
+
+:deep(.bank-dropdown-wrapper .p-dropdown-items) {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+:deep(.bank-dropdown-wrapper .p-dropdown-items .p-dropdown-item) {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+:deep(.bank-dropdown-wrapper .bank-option) {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+</style>
