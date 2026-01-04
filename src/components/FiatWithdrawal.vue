@@ -147,7 +147,7 @@
                   <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                   <span class="text-base font-bold text-gray-900 dark:text-white">{{
                     formatCurrency(withdrawAmount)
-                  }}</span>
+                    }}</span>
                 </div>
               </div>
               <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
@@ -221,8 +221,8 @@
                 <!-- Fallback to InputText if type is unknown -->
                 <InputText v-else v-model="paymentMethodFields[field.name]" :placeholder="field.placeholder"
                   :maxlength="field.maxLength ? parseInt(field.maxLength) : undefined"
-                  :minlength="field.minLength ? parseInt(field.minLength) : undefined"
-                  class="w-full" :class="{ 'p-invalid': paymentMethodFieldErrors[field.name] }" />
+                  :minlength="field.minLength ? parseInt(field.minLength) : undefined" class="w-full"
+                  :class="{ 'p-invalid': paymentMethodFieldErrors[field.name] }" />
                 <small v-if="paymentMethodFieldErrors[field.name]" class="text-red-500 text-xs mt-1">
                   {{ paymentMethodFieldErrors[field.name] }}
                 </small>
@@ -255,12 +255,12 @@
                     <div class="flex items-center space-x-2">
                       <span class="text-gray-600 dark:text-gray-400">Card Number:</span>
                       <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || 'N/A'
-                      }}</span>
+                        }}</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <span class="text-gray-600 dark:text-gray-400">Contact ID:</span>
                       <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.contactId || 'N/A'
-                      }}</span>
+                        }}</span>
                     </div>
                   </div>
                 </div>
@@ -429,7 +429,7 @@
               </div>
               <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
               <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-              }}</span>
+                }}</span>
             </div>
           </div>
           <div class="flex items-center space-x-1 text-xs text-gray-500">
@@ -500,8 +500,8 @@
             <!-- Fallback to InputText if type is unknown -->
             <InputText v-else v-model="paymentMethodFields[field.name]" :placeholder="field.placeholder"
               :maxlength="field.maxLength ? parseInt(field.maxLength) : undefined"
-              :minlength="field.minLength ? parseInt(field.minLength) : undefined"
-              class="w-full text-sm" :class="{ 'p-invalid': paymentMethodFieldErrors[field.name] }" />
+              :minlength="field.minLength ? parseInt(field.minLength) : undefined" class="w-full text-sm"
+              :class="{ 'p-invalid': paymentMethodFieldErrors[field.name] }" />
             <small v-if="paymentMethodFieldErrors[field.name]" class="text-red-500 text-xs mt-1">
               {{ paymentMethodFieldErrors[field.name] }}
             </small>
@@ -735,7 +735,7 @@ const validatePaymentMethodFields = (): boolean => {
   selectedPaymentMethod.value.fields.forEach(field => {
     const value = paymentMethodFields[field.name]
     const valueStr = typeof value === 'string' ? value.trim() : ''
-    
+
     // Check if required field is empty
     if (field.required) {
       if (value === undefined || value === null || value === '' || valueStr === '') {
@@ -744,7 +744,7 @@ const validatePaymentMethodFields = (): boolean => {
         return
       }
     }
-    
+
     // Check minLength
     if (field.minLength && valueStr !== '') {
       const minLength = parseInt(field.minLength)
@@ -754,7 +754,7 @@ const validatePaymentMethodFields = (): boolean => {
         return
       }
     }
-    
+
     // Check maxLength
     if (field.maxLength && valueStr !== '') {
       const maxLength = parseInt(field.maxLength)
@@ -764,7 +764,7 @@ const validatePaymentMethodFields = (): boolean => {
         return
       }
     }
-    
+
     paymentMethodFieldErrors[field.name] = ''
   })
 
@@ -1268,7 +1268,7 @@ const handleWithdraw = async () => {
       cardPattern: '1',
       type: '1',
       cardId: props.cardInfo.cardId,
-      token: selectedPaymentMethod.value.methodCode, // Use payment method code as token
+      token: selectedFiatCurrency.value, // 法币出金，传法币币种（如 HKD）
       network: selectedPaymentMethod.value.methodName, // Use payment method name as network
       address: recipientInfo.value.contactId, // Use contactId as address
       delFlag: props.isDeleteAction,
