@@ -50,6 +50,53 @@
             </div>
           </div>
 
+          <!-- Recipient Information Section -->
+          <div>
+            <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">
+              Recipient Information
+            </label>
+
+            <!-- Loading State -->
+            <div v-if="recipientLoading" class="flex items-center justify-center py-8">
+              <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
+              <span class="ml-2 text-gray-600 dark:text-gray-400">Loading recipient information...</span>
+            </div>
+
+            <!-- Recipient Display (if exists) -->
+            <div v-else-if="recipientInfo"
+              class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6 border border-gray-200 dark:border-gray-600">
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <div class="flex items-center space-x-2 mb-4">
+                    <i class="pi pi-user text-blue-600 dark:text-blue-400"></i>
+                    <h4 class="text-base font-semibold text-gray-900 dark:text-white">Saved Recipient</h4>
+                  </div>
+                  <div class="text-sm">
+                    <div class="flex items-center space-x-2">
+                      <span class="text-gray-600 dark:text-gray-400">Card Number:</span>
+                      <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || 'N/A'
+                        }}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-2 ml-4">
+                  <Button label="Delete" icon="pi pi-trash" severity="danger" size="small"
+                    @click="handleDeleteRecipient" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Add Recipient Button (if empty and not loading) -->
+            <div v-else-if="!recipientLoading && !recipientInfo"
+              class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6 border border-gray-200 dark:border-gray-600">
+              <div class="flex flex-col items-center justify-center py-8">
+                <i class="pi pi-user-plus text-4xl text-gray-400 dark:text-gray-500 mb-4"></i>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">No recipient information found</p>
+                <Button label="Add Recipient" icon="pi pi-plus" @click="showRecipientDialog = true" />
+              </div>
+            </div>
+          </div>
+
           <!-- Receive Amount Section -->
           <div class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6">
             <div class="flex items-center space-x-2 mb-4">
@@ -229,58 +276,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Recipient Information Section -->
-          <div>
-            <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">
-              Recipient Information
-            </label>
-
-            <!-- Loading State -->
-            <div v-if="recipientLoading" class="flex items-center justify-center py-8">
-              <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
-              <span class="ml-2 text-gray-600 dark:text-gray-400">Loading recipient information...</span>
-            </div>
-
-            <!-- Recipient Display (if exists) -->
-            <div v-else-if="recipientInfo"
-              class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6 border border-gray-200 dark:border-gray-600">
-              <div class="flex items-start justify-between">
-                <div class="flex-1">
-                  <div class="flex items-center space-x-2 mb-4">
-                    <i class="pi pi-user text-blue-600 dark:text-blue-400"></i>
-                    <h4 class="text-base font-semibold text-gray-900 dark:text-white">Saved Recipient</h4>
-                  </div>
-                  <div class="space-y-2 text-sm">
-                    <div class="flex items-center space-x-2">
-                      <span class="text-gray-600 dark:text-gray-400">Card Number:</span>
-                      <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || 'N/A'
-                        }}</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                      <span class="text-gray-600 dark:text-gray-400">Contact ID:</span>
-                      <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.contactId || 'N/A'
-                        }}</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex items-center space-x-2 ml-4">
-                  <Button label="Delete" icon="pi pi-trash" severity="danger" size="small"
-                    @click="handleDeleteRecipient" />
-                </div>
-              </div>
-            </div>
-
-            <!-- Add Recipient Button (if empty and not loading) -->
-            <div v-else-if="!recipientLoading && !recipientInfo"
-              class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6 border border-gray-200 dark:border-gray-600">
-              <div class="flex flex-col items-center justify-center py-8">
-                <i class="pi pi-user-plus text-4xl text-gray-400 dark:text-gray-500 mb-4"></i>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">No recipient information found</p>
-                <Button label="Add Recipient" icon="pi pi-plus" @click="showRecipientDialog = true" />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -319,6 +314,52 @@
         <Dropdown v-model="selectedFiatCurrency" :options="fiatCurrencyOptions" option-label="label" disabled
           option-value="value" placeholder="Select currency" class="w-full" filter show-clear />
         <p class="text-xs text-gray-600 dark:text-gray-400 mt-2">Select the currency you want to receive</p>
+      </div>
+
+      <!-- Recipient Information Section (Mobile) -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
+        <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">
+          Recipient Information
+        </label>
+
+        <!-- Loading State -->
+        <div v-if="recipientLoading" class="flex items-center justify-center py-8">
+          <i class="pi pi-spin pi-spinner text-xl text-blue-600 dark:text-blue-400"></i>
+          <span class="ml-2 text-xs text-gray-600 dark:text-gray-400">Loading...</span>
+        </div>
+
+        <!-- Recipient Display (if exists) -->
+        <div v-else-if="recipientInfo"
+          class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
+          <div class="flex items-start justify-between">
+            <div class="flex-1">
+              <div class="flex items-center space-x-2 mb-3">
+                <i class="pi pi-user text-blue-600 dark:text-blue-400 text-sm"></i>
+                <h4 class="text-sm font-semibold text-gray-900 dark:text-white">Saved Recipient</h4>
+              </div>
+              <div class="text-xs">
+                <div class="flex items-center space-x-2">
+                  <span class="text-gray-600 dark:text-gray-400">Card Number:</span>
+                  <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || 'N/A' }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-2 ml-3">
+              <Button label="Delete" icon="pi pi-trash" severity="danger" size="small" class="text-xs"
+                @click="handleDeleteRecipient" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Add Recipient Button (if empty and not loading) -->
+        <div v-else-if="!recipientLoading && !recipientInfo"
+          class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
+          <div class="flex flex-col items-center justify-center py-6">
+            <i class="pi pi-user-plus text-3xl text-gray-400 dark:text-gray-500 mb-3"></i>
+            <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">No recipient information found</p>
+            <Button label="Add Recipient" icon="pi pi-plus" size="small" @click="showRecipientDialog = true" />
+          </div>
+        </div>
       </div>
 
       <!-- Payment Methods Section -->
@@ -505,56 +546,6 @@
             <small v-if="paymentMethodFieldErrors[field.name]" class="text-red-500 text-xs mt-1">
               {{ paymentMethodFieldErrors[field.name] }}
             </small>
-          </div>
-        </div>
-      </div>
-
-      <!-- Recipient Information Section (Mobile) -->
-      <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
-        <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">
-          Recipient Information
-        </label>
-
-        <!-- Loading State -->
-        <div v-if="recipientLoading" class="flex items-center justify-center py-8">
-          <i class="pi pi-spin pi-spinner text-xl text-blue-600 dark:text-blue-400"></i>
-          <span class="ml-2 text-xs text-gray-600 dark:text-gray-400">Loading...</span>
-        </div>
-
-        <!-- Recipient Display (if exists) -->
-        <div v-else-if="recipientInfo"
-          class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
-          <div class="flex items-start justify-between">
-            <div class="flex-1">
-              <div class="flex items-center space-x-2 mb-3">
-                <i class="pi pi-user text-blue-600 dark:text-blue-400 text-sm"></i>
-                <h4 class="text-sm font-semibold text-gray-900 dark:text-white">Saved Recipient</h4>
-              </div>
-              <div class="space-y-1 text-xs">
-                <div class="flex items-center space-x-2">
-                  <span class="text-gray-600 dark:text-gray-400">Card:</span>
-                  <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || 'N/A' }}</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                  <span class="text-gray-600 dark:text-gray-400">Contact ID:</span>
-                  <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.contactId || 'N/A' }}</span>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col space-y-2 ml-3">
-              <Button label="Delete" icon="pi pi-trash" severity="danger" size="small" class="text-xs"
-                @click="handleDeleteRecipient" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Add Recipient Button (if empty and not loading) -->
-        <div v-else-if="!recipientLoading && !recipientInfo"
-          class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
-          <div class="flex flex-col items-center justify-center py-6">
-            <i class="pi pi-user-plus text-3xl text-gray-400 dark:text-gray-500 mb-3"></i>
-            <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">No recipient information found</p>
-            <Button label="Add Recipient" icon="pi pi-plus" size="small" @click="showRecipientDialog = true" />
           </div>
         </div>
       </div>
@@ -1268,15 +1259,14 @@ const handleWithdraw = async () => {
       cardPattern: '1',
       type: '1',
       cardId: props.cardInfo.cardId,
-      token: selectedFiatCurrency.value, // 法币出金，传法币币种（如 HKD）
+      token: selectedFiatCurrency.value, // 法币出金传法币单位（如 HKD），数币出金传数币单位（如 USDT）
       network: selectedPaymentMethod.value.methodName, // Use payment method name as network
-      address: recipientInfo.value.contactId, // Use contactId as address
+      address: '', // Use contactId as address
       delFlag: props.isDeleteAction,
       withdrawAmount: (props.isDeleteAction ? props.balance : props.withdrawAmount).toString(),
       cardNo: maskedCardNo,
       cardRewardPoints: props.appliedRewardPoints,
       payType: selectedPaymentMethod.value.methodCode, // Fiat payment method code
-      orderCurrency: selectedFiatCurrency.value, // Fiat currency (e.g., HKD)
       customParam: customParam
     })
 

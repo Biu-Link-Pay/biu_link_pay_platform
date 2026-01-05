@@ -307,7 +307,6 @@ export interface CreateWithdrawOrderParams {
   cardNo: string // 卡号
   cardRewardPoints: number // 卡奖励点数
   payType: string // 支付类型,如果提现法币，填写法币支付方式，提现数币，添加WALLET 或者BINANCE
-  orderCurrency: string // 订单币种，如果提现法币，填写法币单位，如果是数币，默认USD
   customParam: string // 提现法币相关参数
 }
 
@@ -542,7 +541,6 @@ export class OrderAPI {
       cardNo: params.cardNo,
       cardRewardPoints: params.cardRewardPoints,
       payType: params.payType,
-      orderCurrency: params.orderCurrency,
       customParam: params.customParam
     })
     return response.data

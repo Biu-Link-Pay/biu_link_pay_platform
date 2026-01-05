@@ -100,10 +100,10 @@
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               City
             </label>
-            <Dropdown v-if="hasCityOptions" v-model="selectedCityName" :options="cities" option-label="name"
+            <Dropdown disabled v-if="hasCityOptions" v-model="selectedCityName" :options="cities" option-label="name"
               option-value="name" placeholder="Select city" class="w-full" filter show-clear
               :class="{ 'p-invalid': recipientErrors.recipientCity }" />
-            <InputText v-else v-model="recipientForm.recipientCity" placeholder="Enter city" class="w-full"
+            <InputText disabled v-else v-model="recipientForm.recipientCity" placeholder="Enter city" class="w-full"
               :class="{ 'p-invalid': recipientErrors.recipientCity }" />
             <small v-if="recipientErrors.recipientCity" class="text-red-500 text-xs mt-1">{{
               recipientErrors.recipientCity }}</small>
