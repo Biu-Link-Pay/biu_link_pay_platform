@@ -75,7 +75,7 @@
                     <div class="flex items-center space-x-2">
                       <span class="text-gray-600 dark:text-gray-400">Card Number:</span>
                       <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || 'N/A'
-                        }}</span>
+                      }}</span>
                     </div>
                   </div>
                 </div>
@@ -194,7 +194,7 @@
                   <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                   <span class="text-base font-bold text-gray-900 dark:text-white">{{
                     formatCurrency(withdrawAmount)
-                    }}</span>
+                  }}</span>
                 </div>
               </div>
               <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
@@ -206,17 +206,6 @@
               1 {{ cardInfo.cardCurrency }} ≈ {{ fiatRate.target.rate }} {{ selectedFiatCurrency }}
             </div>
             <!-- Fee Details -->
-            <div v-if="fiatRate?.feeDetail" class="space-y-1 text-xs text-gray-600 dark:text-gray-400 mb-2">
-              <div class="flex items-center justify-between">
-                <span>Fee Ratio:</span>
-                <span>{{ (fiatRate.feeDetail.feeRatio * 100).toFixed(2) }}%</span>
-              </div>
-              <div v-if="fiatRate.feeDetail.fixedFee > 0" class="flex items-center justify-between">
-                <span>Fixed Fee:</span>
-                <span>{{ formatCurrency(fiatRate.feeDetail.fixedFee) }} {{ fiatRate.feeDetail.currency ||
-                  selectedFiatCurrency }}</span>
-              </div>
-            </div>
             <div class="flex items-center justify-between text-sm">
               <span class="text-gray-700 dark:text-gray-300">Transaction Fee</span>
               <span class="text-gray-700 dark:text-gray-300">
@@ -470,7 +459,7 @@
               </div>
               <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
               <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                }}</span>
+              }}</span>
             </div>
           </div>
           <div class="flex items-center space-x-1 text-xs text-gray-500">
@@ -482,17 +471,6 @@
           1 {{ cardInfo.cardCurrency }} ≈ {{ fiatRate.target.rate }} {{ selectedFiatCurrency }}
         </div>
         <!-- Fee Details (Mobile) -->
-        <div v-if="fiatRate?.feeDetail" class="space-y-1 text-xs text-gray-600 dark:text-gray-400 mt-2">
-          <div class="flex items-center justify-between">
-            <span>Fee Ratio:</span>
-            <span>{{ (fiatRate.feeDetail.feeRatio * 100).toFixed(2) }}%</span>
-          </div>
-          <div v-if="fiatRate.feeDetail.fixedFee > 0" class="flex items-center justify-between">
-            <span>Fixed Fee:</span>
-            <span>{{ formatCurrency(fiatRate.feeDetail.fixedFee) }} {{ fiatRate.feeDetail.currency ||
-              selectedFiatCurrency }}</span>
-          </div>
-        </div>
         <div class="flex items-center justify-between text-xs mt-2">
           <span class="text-gray-600 dark:text-gray-400">Transaction Fee</span>
           <span class="text-gray-600 dark:text-gray-400">
