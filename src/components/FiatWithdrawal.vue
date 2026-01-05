@@ -38,10 +38,10 @@
             </div>
           </div>
 
-          <!-- Fiat Currency Selection -->
+          <!-- Choose Fiat Currency Selection -->
           <div class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6">
             <div class="flex items-center space-x-2 mb-4">
-              <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Fiat Currency</label>
+              <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Choose Fiat Currency</label>
             </div>
             <div class="flex flex-col md:flex-row md:items-center md:space-x-3 space-y-3 md:space-y-0">
               <Dropdown v-model="selectedFiatCurrency" :options="fiatCurrencyOptions" option-label="label" disabled
@@ -295,10 +295,10 @@
         </div>
       </div>
 
-      <!-- Fiat Currency Selection (Mobile) -->
+      <!-- Choose Fiat Currency Selection (Mobile) -->
       <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
         <div class="flex items-center space-x-2 mb-3">
-          <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Fiat Currency</label>
+          <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Choose Fiat Currency</label>
         </div>
         <Dropdown v-model="selectedFiatCurrency" :options="fiatCurrencyOptions" option-label="label" disabled
           option-value="value" placeholder="Select currency" class="w-full" filter show-clear />
