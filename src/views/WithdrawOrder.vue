@@ -7,7 +7,7 @@
     <div
       class="w-full max-w-2xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
       <!-- Desktop Layout -->
-      <div class="hidden md:block">
+      <div v-if="isDesktopView">
         <div class="max-w-4xl xl:max-w-5xl mx-auto space-y-8">
           <CardInfoHeader :card-no="cardInfo.cardNo" :balance="balance" :loading="!cardDetail" />
 
@@ -40,7 +40,7 @@
       </div>
 
       <!-- Mobile Layout -->
-      <div class="md:hidden space-y-4 pb-32">
+      <div v-else class="space-y-4 pb-32">
         <CardInfoHeader :card-no="cardInfo.cardNo" :balance="balance" :loading="!cardDetail" />
 
         <!-- Tab Buttons -->
@@ -77,6 +77,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useMediaQuery } from '@vueuse/core'
 import AppHeader from '@/components/AppHeader.vue'
 import CardInfoHeader from '@/components/CardInfoHeader.vue'
 import CryptoWithdrawal from '@/components/CryptoWithdrawal.vue'
@@ -90,6 +91,9 @@ const cardStore = useCardStore()
 
 // Tab state
 const activeTab = ref<'crypto' | 'fiat'>('crypto')
+
+// Render exactly one layout to avoid double-mounting child components
+const isDesktopView = useMediaQuery('(min-width: 768px)')
 
 // Tab definitions
 const tabs = [

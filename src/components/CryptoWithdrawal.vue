@@ -601,8 +601,8 @@ const selectPayType = (payType: any) => {
     selectedCrypto.value = payType.cryptoNetworks[0]
     selectedNetwork.value = payType.cryptoNetworks[0].network.name || payType.cryptoNetworks[0].network.fullName
 
-    console.log('Payment type changed, fetching exchange rate...')
-    fetchExchangeRate()
+    // Note: startRatePolling() will fetch immediately; avoid duplicate fetch here
+    console.log('Payment type changed, restarting rate polling...')
   } else {
     selectedCrypto.value = null
     selectedNetwork.value = ''
@@ -1048,7 +1048,7 @@ const fetchPaymentMethods = async () => {
           selectedNetwork.value = response.model.payTypes[0].cryptoNetworks[0].network.name || response.model.payTypes[0].cryptoNetworks[0].network.fullName
           console.log('Auto-selected crypto network:', response.model.payTypes[0].cryptoNetworks[0].crypto.name)
 
-          triggerImmediateRateRefreshForWithdraw()
+          // Note: rate polling will do the first fetch immediately; avoid duplicate fetch on init
         } else {
           console.log('No crypto networks available for selected payment method')
         }

@@ -954,8 +954,7 @@ const fetchPaymentMethods = async () => {
         // Initialize dynamic fields for the auto-selected payment method
         initializePaymentMethodFields(firstMethod)
 
-        // Trigger immediate rate refresh
-        triggerImmediateRateRefresh()
+        // Note: rate polling will do the first fetch immediately; avoid duplicate fetch on init
       } else {
         console.log('No fiat payment methods available')
       }
@@ -975,12 +974,6 @@ const fetchPaymentMethods = async () => {
   } finally {
     loading.value = false
   }
-}
-
-const triggerImmediateRateRefresh = () => {
-  if (!selectedPaymentMethod.value) return
-  // 即使出金金额为 0，只要使用了积分也要请求汇率
-  fetchFiatRate()
 }
 
 // Watch for amount changes to fetch new exchange rate
