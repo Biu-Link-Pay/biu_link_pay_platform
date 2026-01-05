@@ -829,7 +829,6 @@ const handleWithdraw = async () => {
       cardNo: maskedCardNo,
       cardRewardPoints: props.appliedRewardPoints,
       payType: payTypeValue,
-      orderCurrency: 'USD',
       customParam: ''
     })
 
