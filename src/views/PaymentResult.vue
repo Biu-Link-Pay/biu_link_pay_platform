@@ -393,10 +393,13 @@ import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI } from '@/api/order'
 import { useClipboard } from '@vueuse/core'
+import { useCardStore } from '@/stores/card'
+import { CardAPI } from '@/api/card'
 
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
+const cardStore = useCardStore()
 
 // Order data
 const orderNumber = ref('')
@@ -746,21 +749,61 @@ const retryPayment = () => {
   }
 }
 
-const changePaymentMethod = () => {
+const changePaymentMethod = async () => {
   if (orderType.value === 'withdraw') {
-    // 法币出金订单，如果有 cardId 则跳转到出金页面，否则跳转到 MyCards
-    const cardId = route.query.cardId as string
-    const cardNo = orderCardNo.value || route.query.cardNo as string
-    if (cardId && cardNo) {
-      router.push({
-        name: 'WithdrawOrder',
-        query: {
-          cardId: cardId,
-          cardNo: cardNo
+    // 出金订单失败时，跳转到 withdraw-settings 页面重新选择支付方式
+    let cardId = route.query.cardId as string
+    let cardNo = orderCardNo.value || route.query.cardNo as string
+
+    // 如果没有 cardId 但有 cardNo，尝试从 cardStore 中查找对应的 cardId
+    if (!cardId && cardNo) {
+      // 如果 cardStore 为空，先获取卡片列表
+      if (cardStore.cardList.length === 0) {
+        try {
+          await cardStore.fetchCardList({ silent: true })
+        } catch (error) {
+          console.error('Failed to fetch card list:', error)
         }
+      }
+
+      // 从 cardStore 中查找对应的 cardId（使用脱敏卡号匹配）
+      const matchedCard = cardStore.cardList.find(card => card.cardNo === cardNo)
+      if (matchedCard) {
+        cardId = matchedCard.cardId
+        // 使用 cardList 中的 cardNo（脱敏格式）
+        cardNo = matchedCard.cardNo
+      }
+    }
+
+    // 如果找到了 cardId，检查缓存中是否有对应的卡片详情
+    if (cardId) {
+      // 先检查缓存中是否已有对应的卡片详情
+      const cachedCardDetail = cardStore.getCachedCurrentCardDetail()
+
+      // 如果缓存中有对应的卡片详情，且 cardId 匹配，必须使用缓存中的完整 cardNo 跳转
+      // 因为 WithdrawSettings 会验证 route.query.cardNo 必须与缓存中的 cardNo 完全匹配
+      if (cachedCardDetail && cachedCardDetail.cardId === cardId) {
+        router.push({
+          name: 'WithdrawSettings',
+          query: {
+            cardId: cardId,
+            cardNo: cachedCardDetail.cardNo // 使用缓存中的完整 cardNo，确保验证通过
+          }
+        })
+        return
+      }
+
+      // 如果缓存中没有对应的卡片详情，跳转到 MyCards 页面
+      // 因为 WithdrawSettings 需要缓存中有对应的卡片详情才能通过验证
+      toast.add({
+        severity: 'warn',
+        summary: 'Info',
+        detail: 'Please select the card from My Cards page first',
+        life: 3000
       })
+      router.push({ name: 'MyCards' })
     } else {
-      // 如果没有 cardId，跳转到 MyCards 页面
+      // 如果没有 cardId 或 cardNo，跳转到 MyCards 页面
       router.push({ name: 'MyCards' })
     }
   } else {
