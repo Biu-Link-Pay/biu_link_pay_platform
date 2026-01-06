@@ -351,11 +351,6 @@
 
               <!-- FAIL Actions -->
               <template v-if="orderStatus === 'FAIL'">
-                <button @click="retryPayment"
-                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                  <i class="pi pi-refresh"></i>
-                  <span>Retry Payment</span>
-                </button>
                 <button @click="changePaymentMethod"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-credit-card"></i>

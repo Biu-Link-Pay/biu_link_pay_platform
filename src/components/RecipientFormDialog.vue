@@ -30,7 +30,7 @@
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Bank Location <span class="text-red-500">*</span>
             </label>
-            <InputText v-model="recipientForm.bankLocation" placeholder="Enter bank location" class="w-full"
+            <InputText v-model="recipientForm.bankLocation" placeholder="Enter bank location" class="w-full" disabled
               :class="{ 'p-invalid': recipientErrors.bankLocation }" />
             <small v-if="recipientErrors.bankLocation" class="text-red-500 text-xs mt-1">{{
               recipientErrors.bankLocation }}</small>
@@ -499,6 +499,8 @@ const initializeLocationData = async () => {
     // Country is fixed to Hong Kong
     selectedCountryCode.value = 'HK'
     recipientForm.recipientLocation = 'HK'
+    // Auto-set bank location based on country
+    recipientForm.bankLocation = 'HK'
 
     // Load Hong Kong states/cities
     await loadStatesForCountry('HK', false)
@@ -519,6 +521,8 @@ const resetRecipientForm = () => {
   // Reset location selections to default (Hong Kong)
   selectedCountryCode.value = 'HK'
   recipientForm.recipientLocation = 'HK'
+  // Auto-set bank location based on country
+  recipientForm.bankLocation = 'HK'
   selectedStateCode.value = null
   selectedCityName.value = null
   recipientForm.recipientProvince = ''
