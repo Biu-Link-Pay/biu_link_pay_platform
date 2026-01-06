@@ -14,7 +14,7 @@
                 class="w-full bank-dropdown" filter show-clear :class="{ 'p-invalid': recipientErrors.bankName }"
                 :panelStyle="bankDropdownPanelStyle">
                 <template #option="slotProps">
-                  <div class="truncate bank-option">{{ slotProps.option }}</div>
+                  <div class="truncate bank-option text-xs">{{ slotProps.option }}</div>
                 </template>
                 <template #value="slotProps">
                   <div class="truncate w-full">{{ slotProps.value || 'Select bank' }}</div>
@@ -741,5 +741,14 @@ watch(() => props.visible, (newValue) => {
   white-space: nowrap !important;
   display: block !important;
   box-sizing: border-box !important;
+  font-size: 0.75rem !important;
+  /* 12px - 缩小字体 */
+  line-height: 1.5rem !important;
+}
+
+:deep(.bank-dropdown-wrapper .p-dropdown-label) {
+  font-size: 0.75rem !important;
+  /* 12px - 缩小显示值的字体 */
+  line-height: 1.5rem !important;
 }
 </style>
