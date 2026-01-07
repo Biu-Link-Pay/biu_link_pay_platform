@@ -104,7 +104,7 @@
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
-                      }}</span>
+                    }}</span>
                     <button
                       @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
@@ -177,7 +177,7 @@
                   class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
                   <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Card Number</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo
-                  }}</span>
+                    }}</span>
                 </div>
 
                 <!-- Created Time -->
@@ -331,7 +331,7 @@
                 <button @click="goBack"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-arrow-left"></i>
-                  <span>Back to Payment</span>
+                  <span>{{ isFromMyCards ? 'Back to My Cards' : 'Back to Payment' }}</span>
                 </button>
               </template>
 
@@ -351,10 +351,10 @@
 
               <!-- FAIL Actions -->
               <template v-if="orderStatus === 'FAIL'">
-                <button @click="changePaymentMethod"
+                <button @click="goBack"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-credit-card"></i>
-                  <span>Change Payment Method</span>
+                  <span>{{ isFromMyCards ? 'Back to My Cards' : 'Change Payment Method' }}</span>
                 </button>
               </template>
 
@@ -749,73 +749,73 @@ const retryPayment = () => {
   }
 }
 
-const changePaymentMethod = async () => {
-  if (orderType.value === 'withdraw') {
-    // 出金订单失败时，跳转到 withdraw-settings 页面重新选择支付方式
-    let cardId = route.query.cardId as string
-    let cardNo = orderCardNo.value || route.query.cardNo as string
+// const changePaymentMethod = async () => {
+//   if (orderType.value === 'withdraw') {
+//     // 出金订单失败时，跳转到 withdraw-settings 页面重新选择支付方式
+//     let cardId = route.query.cardId as string
+//     let cardNo = orderCardNo.value || route.query.cardNo as string
 
-    // 如果没有 cardId 但有 cardNo，尝试从 cardStore 中查找对应的 cardId
-    if (!cardId && cardNo) {
-      // 如果 cardStore 为空，先获取卡片列表
-      if (cardStore.cardList.length === 0) {
-        try {
-          await cardStore.fetchCardList({ silent: true })
-        } catch (error) {
-          console.error('Failed to fetch card list:', error)
-        }
-      }
+//     // 如果没有 cardId 但有 cardNo，尝试从 cardStore 中查找对应的 cardId
+//     if (!cardId && cardNo) {
+//       // 如果 cardStore 为空，先获取卡片列表
+//       if (cardStore.cardList.length === 0) {
+//         try {
+//           await cardStore.fetchCardList({ silent: true })
+//         } catch (error) {
+//           console.error('Failed to fetch card list:', error)
+//         }
+//       }
 
-      // 从 cardStore 中查找对应的 cardId（使用脱敏卡号匹配）
-      const matchedCard = cardStore.cardList.find(card => card.cardNo === cardNo)
-      if (matchedCard) {
-        cardId = matchedCard.cardId
-        // 使用 cardList 中的 cardNo（脱敏格式）
-        cardNo = matchedCard.cardNo
-      }
-    }
+//       // 从 cardStore 中查找对应的 cardId（使用脱敏卡号匹配）
+//       const matchedCard = cardStore.cardList.find(card => card.cardNo === cardNo)
+//       if (matchedCard) {
+//         cardId = matchedCard.cardId
+//         // 使用 cardList 中的 cardNo（脱敏格式）
+//         cardNo = matchedCard.cardNo
+//       }
+//     }
 
-    // 如果找到了 cardId，检查缓存中是否有对应的卡片详情
-    if (cardId) {
-      // 先检查缓存中是否已有对应的卡片详情
-      const cachedCardDetail = cardStore.getCachedCurrentCardDetail()
+//     // 如果找到了 cardId，检查缓存中是否有对应的卡片详情
+//     if (cardId) {
+//       // 先检查缓存中是否已有对应的卡片详情
+//       const cachedCardDetail = cardStore.getCachedCurrentCardDetail()
 
-      // 如果缓存中有对应的卡片详情，且 cardId 匹配，必须使用缓存中的完整 cardNo 跳转
-      // 因为 WithdrawSettings 会验证 route.query.cardNo 必须与缓存中的 cardNo 完全匹配
-      if (cachedCardDetail && cachedCardDetail.cardId === cardId) {
-        router.push({
-          name: 'WithdrawSettings',
-          query: {
-            cardId: cardId,
-            cardNo: cachedCardDetail.cardNo // 使用缓存中的完整 cardNo，确保验证通过
-          }
-        })
-        return
-      }
+//       // 如果缓存中有对应的卡片详情，且 cardId 匹配，必须使用缓存中的完整 cardNo 跳转
+//       // 因为 WithdrawSettings 会验证 route.query.cardNo 必须与缓存中的 cardNo 完全匹配
+//       if (cachedCardDetail && cachedCardDetail.cardId === cardId) {
+//         router.push({
+//           name: 'WithdrawSettings',
+//           query: {
+//             cardId: cardId,
+//             cardNo: cachedCardDetail.cardNo // 使用缓存中的完整 cardNo，确保验证通过
+//           }
+//         })
+//         return
+//       }
 
-      // 如果缓存中没有对应的卡片详情，跳转到 MyCards 页面
-      // 因为 WithdrawSettings 需要缓存中有对应的卡片详情才能通过验证
-      toast.add({
-        severity: 'warn',
-        summary: 'Info',
-        detail: 'Please select the card from My Cards page first',
-        life: 3000
-      })
-      router.push({ name: 'MyCards' })
-    } else {
-      // 如果没有 cardId 或 cardNo，跳转到 MyCards 页面
-      router.push({ name: 'MyCards' })
-    }
-  } else {
-    // 入金订单，跳转到支付方式选择页面
-    router.push({
-      name: 'PaymentMethodSelection',
-      query: {
-        orderNum: orderNumber.value
-      }
-    })
-  }
-}
+//       // 如果缓存中没有对应的卡片详情，跳转到 MyCards 页面
+//       // 因为 WithdrawSettings 需要缓存中有对应的卡片详情才能通过验证
+//       toast.add({
+//         severity: 'warn',
+//         summary: 'Info',
+//         detail: 'Please select the card from My Cards page first',
+//         life: 3000
+//       })
+//       router.push({ name: 'MyCards' })
+//     } else {
+//       // 如果没有 cardId 或 cardNo，跳转到 MyCards 页面
+//       router.push({ name: 'MyCards' })
+//     }
+//   } else {
+//     // 入金订单，跳转到支付方式选择页面
+//     router.push({
+//       name: 'PaymentMethodSelection',
+//       query: {
+//         orderNum: orderNumber.value
+//       }
+//     })
+//   }
+// }
 
 const cancelOrder = () => {
   toast.add({
