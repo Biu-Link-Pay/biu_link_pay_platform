@@ -46,7 +46,6 @@
             <div class="flex flex-col md:flex-row md:items-center md:space-x-3 space-y-3 md:space-y-0">
               <Dropdown v-model="selectedFiatCurrency" :options="fiatCurrencyOptions" option-label="label" disabled
                 option-value="value" placeholder="Select currency" class="w-full md:w-96" filter show-clear />
-              <span class="text-sm text-gray-600 dark:text-gray-400">Select the currency you want to receive</span>
             </div>
           </div>
 
@@ -302,7 +301,6 @@
         </div>
         <Dropdown v-model="selectedFiatCurrency" :options="fiatCurrencyOptions" option-label="label" disabled
           option-value="value" placeholder="Select currency" class="w-full" filter show-clear />
-        <p class="text-xs text-gray-600 dark:text-gray-400 mt-2">Select the currency you want to receive</p>
       </div>
 
       <!-- Recipient Information Section (Mobile) -->
