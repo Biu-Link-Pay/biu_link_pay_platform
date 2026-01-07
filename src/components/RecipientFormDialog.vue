@@ -41,8 +41,8 @@
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Currency <span class="text-red-500">*</span>
             </label>
-            <InputText v-model="recipientForm.currency" placeholder="Enter currency (e.g., USD)" class="w-full"
-              :class="{ 'p-invalid': recipientErrors.currency }" />
+            <Dropdown v-model="recipientForm.currency" :options="currencyOptions" placeholder="Select currency"
+              class="w-full" filter show-clear :class="{ 'p-invalid': recipientErrors.currency }" />
             <small v-if="recipientErrors.currency" class="text-red-500 text-xs mt-1">{{
               recipientErrors.currency }}</small>
           </div>
@@ -208,6 +208,9 @@ const phoneAreaCodes = ref<Array<{ label: string; value: string }>>([])
 const selectedPhoneAreaCode = ref<string>('+852') // Default to Hong Kong
 const phoneNumber = ref<string>('')
 
+// Currency options
+const currencyOptions = ref<string[]>(['HKD'])
+
 // Location data for address input
 const states = ref<StateOption[]>([])
 const cities = ref<CityOption[]>([])
@@ -219,7 +222,7 @@ const selectedCityName = ref<string | null>(null)
 const recipientForm = reactive<SaveRecipientParams>({
   bankName: '',
   bankLocation: '',
-  currency: '',
+  currency: 'HKD', // Default to HKD
   reservedPhoneNumber: '',
   recipientLocation: '',
   recipientProvince: '',
@@ -528,6 +531,7 @@ const resetRecipientForm = () => {
   recipientForm.recipientProvince = ''
   recipientForm.recipientCity = ''
   recipientForm.bankName = ''
+  recipientForm.currency = 'HKD' // Default to HKD
   selectedPhoneAreaCode.value = '+852'
   phoneNumber.value = ''
   recipientForm.reservedPhoneNumber = ''
