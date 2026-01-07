@@ -765,28 +765,28 @@ const selectPaymentMethod = (paymentMethod: FiatPaymentMethodItem) => {
 const isReceiveAmountWithinLimit = computed(() => {
   if (!selectedPaymentMethod.value) return true
 
-  const receiveUsdAmount = receiveAmount.value || 0
-  if (isNaN(receiveUsdAmount)) return true
+  const withdrawUsdAmount = totalWithdrawAmount.value || 0
+  if (isNaN(withdrawUsdAmount)) return true
 
   const minLimit = selectedPaymentMethod.value.minLimit
   const maxLimit = selectedPaymentMethod.value.maxLimit
-  return receiveUsdAmount >= minLimit && receiveUsdAmount <= maxLimit
+  return withdrawUsdAmount >= minLimit && withdrawUsdAmount <= maxLimit
 })
 
 // Get receive amount limit error message
 const receiveLimitErrorMessage = computed(() => {
   if (!selectedPaymentMethod.value) return ''
 
-  const receiveUsdAmount = receiveAmount.value || 0
-  if (isNaN(receiveUsdAmount)) return ''
+  const withdrawUsdAmount = totalWithdrawAmount.value || 0
+  if (isNaN(withdrawUsdAmount)) return ''
 
   const minLimit = selectedPaymentMethod.value.minLimit
   const maxLimit = selectedPaymentMethod.value.maxLimit
 
-  if (receiveUsdAmount < minLimit) {
+  if (withdrawUsdAmount < minLimit) {
     return `Receive amount must be at least ${formatCurrency(minLimit)} for ${selectedPaymentMethod.value.methodName}`
   }
-  if (receiveUsdAmount > maxLimit) {
+  if (withdrawUsdAmount > maxLimit) {
     return `Receive amount exceeds maximum limit of ${formatCurrency(maxLimit)} for ${selectedPaymentMethod.value.methodName}`
   }
   return ''
@@ -1253,7 +1253,7 @@ const handleWithdraw = async () => {
         console.warn('Failed to refresh user profile after withdraw order:', error)
       })
 
-      router.push({
+      router.replace({
         name: 'PaymentResult',
         query: {
           orderNum: response.model,

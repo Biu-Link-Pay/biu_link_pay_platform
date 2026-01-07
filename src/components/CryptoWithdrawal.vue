@@ -70,7 +70,7 @@
                     <div>
                       <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
                       <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks?.length || 0
-                        }} crypto networks</div>
+                      }} crypto networks</div>
                     </div>
                   </div>
 
@@ -111,7 +111,7 @@
                         </div>
                         <div>
                           <div class="text-sm font-medium text-gray-900 dark:text-white">{{ crypto.crypto.fullName
-                            }}</div>
+                          }}</div>
                           <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}
                           </div>
                           <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
@@ -151,7 +151,7 @@
                   <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
                   <span class="text-base font-bold text-gray-900 dark:text-white">{{
                     formatCurrency(withdrawAmount)
-                    }}</span>
+                  }}</span>
                 </div>
               </div>
               <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
@@ -350,7 +350,7 @@
               </div>
               <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
               <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
-                }}</span>
+              }}</span>
             </div>
           </div>
           <div class="flex items-center space-x-1 text-xs text-gray-500">
@@ -844,7 +844,7 @@ const handleWithdraw = async () => {
         console.warn('Failed to refresh user profile after withdraw order:', error)
       })
 
-      router.push({
+      router.replace({
         name: 'PaymentResult',
         query: {
           orderNum: response.model,

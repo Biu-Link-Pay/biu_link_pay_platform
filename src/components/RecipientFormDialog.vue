@@ -25,8 +25,8 @@
               recipientErrors.bankName }}</small>
           </div>
 
-          <!-- Bank Location -->
-          <div>
+          <!-- Bank Location (Hidden but still in form data) -->
+          <div class="hidden">
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Bank Location <span class="text-red-500">*</span>
             </label>
