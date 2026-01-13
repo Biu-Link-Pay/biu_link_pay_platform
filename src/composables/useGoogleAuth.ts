@@ -2,6 +2,7 @@ import { ref } from 'vue'
 import { useToast } from 'primevue/usetoast'
 import { AuthAPI } from '@/api/auth'
 import { useAuthStore } from '@/stores/auth'
+import { i18n } from '@/i18n'
 
 export interface GoogleAuthOptions {
   title?: string
@@ -12,6 +13,7 @@ export interface GoogleAuthOptions {
 export function useGoogleAuth() {
   const toast = useToast()
   const authStore = useAuthStore()
+  const t = i18n.global.t
 
   const showDialog = ref(false)
   const loading = ref(false)
@@ -23,7 +25,7 @@ export function useGoogleAuth() {
    */
   const showAuthDialog = (opts: GoogleAuthOptions = {}) => {
     options.value = {
-      title: 'Google Auth Verification',
+      title: t('Google Auth Verification'),
       ...opts
     }
     showDialog.value = true
@@ -64,28 +66,28 @@ export function useGoogleAuth() {
       if (response.success && response.model) {
         toast.add({
           severity: 'success',
-          summary: 'Verification Successful',
-          detail: 'Google Auth verification passed',
+          summary: t('Verification Successful'),
+          detail: t('Google Auth verification passed'),
           life: 3000
         })
         return true
       } else {
         toast.add({
           severity: 'error',
-          summary: 'Verification Failed',
-          detail: response.msg || 'Incorrect verification code',
+          summary: t('Verification Failed'),
+          detail: response.msg || t('Incorrect verification code'),
           life: 3000
         })
         return false
       }
     } catch (error) {
       console.error('Verify auth code error:', error)
-      toast.add({
-        severity: 'error',
-        summary: 'Verification Failed',
-        detail: (error as any)?.message || 'Network error, please try again',
-        life: 3000
-      })
+    toast.add({
+      severity: 'error',
+      summary: t('Verification Failed'),
+      detail: (error as any)?.message || t('Network error, please try again'),
+      life: 3000
+    })
       return false
     }
   }
@@ -144,8 +146,8 @@ export function useGoogleAuth() {
     if (!isBound) {
       toast.add({
         severity: 'warn',
-        summary: 'Google Auth Not Bound',
-        detail: 'Please bind Google Authenticator first',
+        summary: t('Google Auth Not Bound'),
+        detail: t('Please bind Google Authenticator first'),
         life: 3000
       })
       return null

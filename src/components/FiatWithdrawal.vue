@@ -10,13 +10,13 @@
               <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-base"></i>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Withdrawal Details</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">Configure your withdrawal settings</p>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">{{ $t('Withdrawal Details') }}</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">{{ $t('Configure your withdrawal settings') }}</p>
             </div>
           </div>
           <span class="inline-flex items-center text-xs font-medium uppercase tracking-wide text-blue-600">
             <span class="w-2 h-2 mr-2 rounded-full bg-blue-500 animate-pulse"></span>
-            {{ cardInfo.cardCurrency }} available
+            {{ $t('{currency} available', { currency: cardInfo.cardCurrency }) }}
           </span>
         </div>
 
@@ -24,14 +24,14 @@
           <!-- Withdraw Amount Section -->
           <div class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6">
             <div class="flex items-center space-x-2 mb-4">
-              <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Withdraw amount</label>
+              <label class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ $t('Withdraw amount') }}</label>
             </div>
             <div class="flex items-center justify-between">
               <div class="text-2xl font-semibold text-gray-900 dark:text-white">
                 {{ formatCurrency(totalWithdrawAmount) }}
                 <span v-if="appliedRewardPoints > 0"
                   class="ml-2 text-base font-semibold text-orange-500 dark:text-orange-400">
-                  (Use {{ appliedRewardPoints.toLocaleString() }} pts)
+                  {{ $t('(Use {points} pts)', { points: appliedRewardPoints.toLocaleString() }) }}
                 </span>
               </div>
               <span class="text-gray-700 dark:text-gray-300 font-medium">{{ cardInfo.cardCurrency }}</span>
@@ -41,24 +41,24 @@
           <!-- Choose Fiat Currency Selection -->
           <div class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6">
             <div class="flex items-center space-x-2 mb-4">
-              <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Choose Fiat Currency</label>
+              <label class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ $t('Choose Fiat Currency') }}</label>
             </div>
             <div class="flex flex-col md:flex-row md:items-center md:space-x-3 space-y-3 md:space-y-0">
               <Dropdown v-model="selectedFiatCurrency" :options="fiatCurrencyOptions" option-label="label" disabled
-                option-value="value" placeholder="Select currency" class="w-full md:w-96" filter show-clear />
+                option-value="value" :placeholder="$t('Select currency')" class="w-full md:w-96" filter show-clear />
             </div>
           </div>
 
           <!-- Recipient Information Section -->
           <div>
             <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">
-              Recipient Information
+              {{ $t('Recipient Information') }}
             </label>
 
             <!-- Loading State -->
             <div v-if="recipientLoading" class="flex items-center justify-center py-8">
               <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
-              <span class="ml-2 text-gray-600 dark:text-gray-400">Loading recipient information...</span>
+              <span class="ml-2 text-gray-600 dark:text-gray-400">{{ $t('Loading recipient information...') }}</span>
             </div>
 
             <!-- Recipient Display (if exists) -->
@@ -68,18 +68,18 @@
                 <div class="flex-1">
                   <div class="flex items-center space-x-2 mb-4">
                     <i class="pi pi-user text-blue-600 dark:text-blue-400"></i>
-                    <h4 class="text-base font-semibold text-gray-900 dark:text-white">Saved Recipient</h4>
+                    <h4 class="text-base font-semibold text-gray-900 dark:text-white">{{ $t('Saved Recipient') }}</h4>
                   </div>
                   <div class="text-sm">
                     <div class="flex items-center space-x-2">
-                      <span class="text-gray-600 dark:text-gray-400">Card Number:</span>
-                      <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || 'N/A'
+                      <span class="text-gray-600 dark:text-gray-400">{{ $t('Card Number:') }}</span>
+                      <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || $t('N/A')
                       }}</span>
                     </div>
                   </div>
                 </div>
                 <div class="flex items-center space-x-2 ml-4">
-                  <Button label="Delete" icon="pi pi-trash" severity="danger" size="small"
+                  <Button :label="$t('Delete')" icon="pi pi-trash" severity="danger" size="small"
                     @click="handleDeleteRecipient" />
                 </div>
               </div>
@@ -90,8 +90,8 @@
               class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6 border border-gray-200 dark:border-gray-600">
               <div class="flex flex-col items-center justify-center py-8">
                 <i class="pi pi-user-plus text-4xl text-gray-400 dark:text-gray-500 mb-4"></i>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">No recipient information found</p>
-                <Button label="Add Recipient" icon="pi pi-plus" @click="showRecipientDialog = true" />
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">{{ $t('No recipient information found') }}</p>
+                <Button :label="$t('Add Recipient')" icon="pi pi-plus" @click="showRecipientDialog = true" />
               </div>
             </div>
           </div>
@@ -99,13 +99,13 @@
           <!-- Receive Amount Section -->
           <div class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6">
             <div class="flex items-center space-x-2 mb-4">
-              <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Receive amount</label>
+              <label class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ $t('Receive amount') }}</label>
             </div>
 
             <!-- Loading State -->
             <div v-if="loading" class="flex flex-col items-center justify-center gap-3 py-8 text-center">
               <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
-              <span class="text-gray-600 dark:text-gray-400">Loading payment methods...</span>
+              <span class="text-gray-600 dark:text-gray-400">{{ $t('Loading payment methods...') }}</span>
             </div>
 
             <!-- Payment Methods Grid (Grouped by methodType) -->
@@ -150,16 +150,14 @@
                           </div>
                           <div class="text-sm text-gray-500 dark:text-gray-400 space-y-1">
                             <div>
-                              Limit: {{ formatCurrency(paymentMethod.minLimit) }} - {{
-                                formatCurrency(paymentMethod.maxLimit)
-                              }}
+                              {{ $t('Limit: {min} - {max}', { min: formatCurrency(paymentMethod.minLimit), max: formatCurrency(paymentMethod.maxLimit) }) }}
                             </div>
                             <div class="flex items-center space-x-3">
                               <span v-if="paymentMethod.fixedFee > 0">
-                                Fixed Fee: {{ formatCurrency(paymentMethod.fixedFee) }}
+                                {{ $t('Fixed Fee: {fee}', { fee: formatCurrency(paymentMethod.fixedFee) }) }}
                               </span>
                               <span v-if="paymentMethod.feeRatio > 0">
-                                Fee Ratio: {{ (paymentMethod.feeRatio * 100).toFixed(2) }}%
+                                {{ $t('Fee Ratio: {ratio}%', { ratio: (paymentMethod.feeRatio * 100).toFixed(2) }) }}
                               </span>
                             </div>
                           </div>
@@ -187,10 +185,10 @@
             <div class="flex items-center justify-between mb-3">
               <div class="flex flex-col gap-1">
                 <div class="flex flex-wrap items-center space-x-2">
-                  <span class="text-sm text-gray-600 dark:text-gray-400">You will receive</span>
+                  <span class="text-sm text-gray-600 dark:text-gray-400">{{ $t('You will receive') }}</span>
                   <span class="text-base font-bold text-gray-900 dark:text-white">{{ receiveAmount }}</span>
                   <span class="text-base font-bold text-gray-900 dark:text-white">{{ selectedFiatCurrency }}</span>
-                  <span class="text-sm text-gray-600 dark:text-gray-400">from</span>
+                  <span class="text-sm text-gray-600 dark:text-gray-400">{{ $t('from') }}</span>
                   <span class="text-base font-bold text-gray-900 dark:text-white">{{
                     formatCurrency(withdrawAmount)
                   }}</span>
@@ -198,15 +196,15 @@
               </div>
               <div class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                 <i class="pi pi-clock"></i>
-                <span>{{ countdown }}s</span>
+                <span>{{ $t('{count}s', { count: countdown }) }}</span>
               </div>
             </div>
             <div v-if="fiatRate?.target?.rate" class="text-xs text-gray-600 dark:text-gray-400 mb-2">
-              1 {{ cardInfo.cardCurrency }} ≈ {{ fiatRate.target.rate }} {{ selectedFiatCurrency }}
+              {{ $t('1 {currency} ≈ {rate} {unit}', { currency: cardInfo.cardCurrency, rate: fiatRate.target.rate, unit: selectedFiatCurrency }) }}
             </div>
             <!-- Fee Details -->
             <div class="flex items-center justify-between text-sm">
-              <span class="text-gray-700 dark:text-gray-300">Transaction Fee</span>
+              <span class="text-gray-700 dark:text-gray-300">{{ $t('Transaction Fee') }}</span>
               <span class="text-gray-700 dark:text-gray-300">
                 {{ formatCurrency(feeAmount) }} {{ fiatRate?.feeDetail?.currency || selectedFiatCurrency }}
               </span>
@@ -222,7 +220,8 @@
                 <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-lg"></i>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">Receive Amount Out of Range
+                <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">
+                  {{ $t('Receive Amount Out of Range') }}
                 </h4>
                 <p class="text-sm text-red-700 dark:text-red-300">{{ receiveLimitErrorMessage }}</p>
               </div>
@@ -234,7 +233,7 @@
             class="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6 border border-gray-200 dark:border-gray-600">
             <div class="flex items-center space-x-2 mb-4">
               <i class="pi pi-cog text-blue-600 dark:text-blue-400"></i>
-              <h4 class="text-base font-semibold text-gray-900 dark:text-white">Payment Method Details</h4>
+              <h4 class="text-base font-semibold text-gray-900 dark:text-white">{{ $t('Payment Method Details') }}</h4>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div v-for="field in selectedPaymentMethod.fields" :key="field.name">
@@ -269,8 +268,9 @@
 
       <!-- Action Buttons -->
       <div class="flex space-x-4">
-        <Button label="Back" icon="pi pi-arrow-left" severity="secondary" class="flex-1" size="large" @click="goBack" />
-        <Button label="Withdraw" icon="pi pi-send" class="flex-1" size="large" :disabled="!isFormValid"
+        <Button :label="$t('Back')" icon="pi pi-arrow-left" severity="secondary" class="flex-1" size="large"
+          @click="goBack" />
+        <Button :label="$t('Withdraw')" icon="pi pi-send" class="flex-1" size="large" :disabled="!isFormValid"
           :loading="isSubmitting" @click="handleWithdraw" />
       </div>
     </div>
@@ -280,14 +280,14 @@
       <!-- Withdraw Amount -->
       <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
         <div class="flex items-center space-x-2 mb-3">
-          <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Withdraw amount</label>
+          <label class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ $t('Withdraw amount') }}</label>
         </div>
         <div class="flex items-center justify-between">
           <div class="text-lg font-semibold text-gray-900 dark:text-white">
             {{ formatCurrency(totalWithdrawAmount) }}
             <span v-if="appliedRewardPoints > 0"
               class="ml-1 text-xs font-semibold text-orange-500 dark:text-orange-400">
-              (Use {{ appliedRewardPoints.toLocaleString() }} pts)
+              {{ $t('(Use {points} pts)', { points: appliedRewardPoints.toLocaleString() }) }}
             </span>
           </div>
           <span class="text-gray-700 dark:text-gray-300 font-medium">{{ cardInfo.cardCurrency }}</span>
@@ -297,22 +297,22 @@
       <!-- Choose Fiat Currency Selection (Mobile) -->
       <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
         <div class="flex items-center space-x-2 mb-3">
-          <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Choose Fiat Currency</label>
+          <label class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ $t('Choose Fiat Currency') }}</label>
         </div>
         <Dropdown v-model="selectedFiatCurrency" :options="fiatCurrencyOptions" option-label="label" disabled
-          option-value="value" placeholder="Select currency" class="w-full" filter show-clear />
+          option-value="value" :placeholder="$t('Select currency')" class="w-full" filter show-clear />
       </div>
 
       <!-- Recipient Information Section (Mobile) -->
       <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
         <label class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3 block">
-          Recipient Information
+          {{ $t('Recipient Information') }}
         </label>
 
         <!-- Loading State -->
         <div v-if="recipientLoading" class="flex items-center justify-center py-8">
           <i class="pi pi-spin pi-spinner text-xl text-blue-600 dark:text-blue-400"></i>
-          <span class="ml-2 text-xs text-gray-600 dark:text-gray-400">Loading...</span>
+          <span class="ml-2 text-xs text-gray-600 dark:text-gray-400">{{ $t('Loading...') }}</span>
         </div>
 
         <!-- Recipient Display (if exists) -->
@@ -322,17 +322,17 @@
             <div class="flex-1">
               <div class="flex items-center space-x-2 mb-3">
                 <i class="pi pi-user text-blue-600 dark:text-blue-400 text-sm"></i>
-                <h4 class="text-sm font-semibold text-gray-900 dark:text-white">Saved Recipient</h4>
+                <h4 class="text-sm font-semibold text-gray-900 dark:text-white">{{ $t('Saved Recipient') }}</h4>
               </div>
               <div class="text-xs">
                 <div class="flex items-center space-x-2">
-                  <span class="text-gray-600 dark:text-gray-400">Card Number:</span>
-                  <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || 'N/A' }}</span>
+                  <span class="text-gray-600 dark:text-gray-400">{{ $t('Card Number:') }}</span>
+                  <span class="font-medium text-gray-900 dark:text-white">{{ recipientInfo.cardNumber || $t('N/A') }}</span>
                 </div>
               </div>
             </div>
             <div class="flex flex-col space-y-2 ml-3">
-              <Button label="Delete" icon="pi pi-trash" severity="danger" size="small" class="text-xs"
+              <Button :label="$t('Delete')" icon="pi pi-trash" severity="danger" size="small" class="text-xs"
                 @click="handleDeleteRecipient" />
             </div>
           </div>
@@ -343,8 +343,8 @@
           class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
           <div class="flex flex-col items-center justify-center py-6">
             <i class="pi pi-user-plus text-3xl text-gray-400 dark:text-gray-500 mb-3"></i>
-            <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">No recipient information found</p>
-            <Button label="Add Recipient" icon="pi pi-plus" size="small" @click="showRecipientDialog = true" />
+            <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">{{ $t('No recipient information found') }}</p>
+            <Button :label="$t('Add Recipient')" icon="pi pi-plus" size="small" @click="showRecipientDialog = true" />
           </div>
         </div>
       </div>
@@ -358,7 +358,7 @@
               <i class="pi pi-credit-card text-blue-600 text-sm"></i>
             </div>
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Payment Method</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ $t('Payment Method') }}</h3>
             </div>
           </div>
           <div v-if="selectedPaymentMethod" class="w-4 h-4 bg-blue-600 rounded-full"></div>
@@ -367,7 +367,7 @@
         <!-- Loading State -->
         <div v-if="loading" class="flex justify-center items-center py-8">
           <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
-          <span class="ml-2 text-gray-600 dark:text-gray-400">Loading payment methods...</span>
+          <span class="ml-2 text-gray-600 dark:text-gray-400">{{ $t('Loading payment methods...') }}</span>
         </div>
 
         <!-- Payment Methods Options (Grouped by methodType) -->
@@ -411,16 +411,14 @@
                       </div>
                       <div class="text-xs text-gray-500 dark:text-gray-400 space-y-0.5">
                         <div>
-                          Limit: {{ formatCurrency(paymentMethod.minLimit) }} - {{
-                            formatCurrency(paymentMethod.maxLimit)
-                          }}
+                          {{ $t('Limit: {min} - {max}', { min: formatCurrency(paymentMethod.minLimit), max: formatCurrency(paymentMethod.maxLimit) }) }}
                         </div>
                         <div class="flex items-center space-x-2 flex-wrap">
                           <span v-if="paymentMethod.fixedFee > 0">
-                            Fixed: {{ formatCurrency(paymentMethod.fixedFee) }}
+                            {{ $t('Fixed: {fee}', { fee: formatCurrency(paymentMethod.fixedFee) }) }}
                           </span>
                           <span v-if="paymentMethod.feeRatio > 0">
-                            Rate: {{ (paymentMethod.feeRatio * 100).toFixed(2) }}%
+                            {{ $t('Rate: {ratio}%', { ratio: (paymentMethod.feeRatio * 100).toFixed(2) }) }}
                           </span>
                         </div>
                       </div>
@@ -450,27 +448,27 @@
         <div class="flex items-center justify-between">
           <div class="flex flex-col gap-1">
             <div class="flex items-center space-x-1">
-              <span class="text-xs text-gray-600 dark:text-gray-400 whitespace-nowrap">You will receive</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400 whitespace-nowrap">{{ $t('You will receive') }}</span>
               <div class="flex">
                 <span class="text-xs font-bold text-gray-900 dark:text-white">{{ receiveAmount }}</span>
                 <span class="text-xs font-bold text-gray-900 dark:text-white">{{ selectedFiatCurrency }}</span>
               </div>
-              <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400">{{ $t('from') }}</span>
               <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(withdrawAmount)
               }}</span>
             </div>
           </div>
           <div class="flex items-center space-x-1 text-xs text-gray-500">
             <i class="pi pi-clock"></i>
-            <span>{{ countdown }}s</span>
+            <span>{{ $t('{count}s', { count: countdown }) }}</span>
           </div>
         </div>
         <div v-if="fiatRate?.target?.rate" class="text-xs text-gray-600 dark:text-gray-400 mt-2">
-          1 {{ cardInfo.cardCurrency }} ≈ {{ fiatRate.target.rate }} {{ selectedFiatCurrency }}
+          {{ $t('1 {currency} ≈ {rate} {unit}', { currency: cardInfo.cardCurrency, rate: fiatRate.target.rate, unit: selectedFiatCurrency }) }}
         </div>
         <!-- Fee Details (Mobile) -->
         <div class="flex items-center justify-between text-xs mt-2">
-          <span class="text-gray-600 dark:text-gray-400">Transaction Fee</span>
+          <span class="text-gray-600 dark:text-gray-400">{{ $t('Transaction Fee') }}</span>
           <span class="text-gray-600 dark:text-gray-400">
             {{ formatCurrency(feeAmount) }} {{ fiatRate?.feeDetail?.currency || selectedFiatCurrency }}
           </span>
@@ -485,7 +483,9 @@
             <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400"></i>
           </div>
           <div>
-            <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">Receive Amount Out of Range</h4>
+            <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">
+              {{ $t('Receive Amount Out of Range') }}
+            </h4>
             <p class="text-xs text-red-700 dark:text-red-300">{{ receiveLimitErrorMessage }}</p>
           </div>
         </div>
@@ -496,7 +496,7 @@
         class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-200 dark:border-gray-700">
         <div class="flex items-center space-x-2 mb-3">
           <i class="pi pi-cog text-blue-600 dark:text-blue-400 text-sm"></i>
-          <h4 class="text-sm font-semibold text-gray-900 dark:text-white">Payment Method Details</h4>
+          <h4 class="text-sm font-semibold text-gray-900 dark:text-white">{{ $t('Payment Method Details') }}</h4>
         </div>
         <div class="space-y-3">
           <div v-for="field in selectedPaymentMethod.fields" :key="field.name">
@@ -528,8 +528,9 @@
 
       <!-- Action Buttons -->
       <div class="flex space-x-3">
-        <Button label="Back" icon="pi pi-arrow-left" severity="secondary" class="flex-1" size="large" @click="goBack" />
-        <Button label="Withdraw" icon="pi pi-send" class="flex-1" size="large" :disabled="!isFormValid"
+        <Button :label="$t('Back')" icon="pi pi-arrow-left" severity="secondary" class="flex-1" size="large"
+          @click="goBack" />
+        <Button :label="$t('Withdraw')" icon="pi pi-send" class="flex-1" size="large" :disabled="!isFormValid"
           :loading="isSubmitting" @click="handleWithdraw" />
       </div>
     </div>
@@ -543,6 +544,7 @@
 import { ref, computed, watch, onMounted, onUnmounted, reactive } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useI18n } from 'vue-i18n'
 import { useConfirm } from 'primevue/useconfirm'
 import InputText from 'primevue/inputtext'
 import Button from 'primevue/button'
@@ -574,6 +576,7 @@ const props = defineProps<Props>()
 const router = useRouter()
 const toast = useToast()
 const confirm = useConfirm()
+const { t } = useI18n({ useScope: 'global' })
 const cardStore = useCardStore()
 const userStore = useUserStore()
 
@@ -660,10 +663,10 @@ const formatCurrency = (amount: number) => {
 // Format method type for display
 const formatMethodType = (methodType: string): string => {
   const typeMap: Record<string, string> = {
-    'BANK_TRANSFER': 'Bank Transfer',
-    'WALLET': 'Wallet',
-    'CREDIT_CARD': 'Credit Card',
-    'DEBIT_CARD': 'Debit Card'
+    'BANK_TRANSFER': t('Bank Transfer'),
+    'WALLET': t('Wallet'),
+    'CREDIT_CARD': t('Credit Card'),
+    'DEBIT_CARD': t('Debit Card')
   }
   return typeMap[methodType] || methodType.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
 }
@@ -706,7 +709,7 @@ const validatePaymentMethodFields = (): boolean => {
     // Check if required field is empty
     if (field.required) {
       if (value === undefined || value === null || value === '' || valueStr === '') {
-        paymentMethodFieldErrors[field.name] = `${field.label} is required`
+        paymentMethodFieldErrors[field.name] = t('{field} is required', { field: field.label })
         isValid = false
         return
       }
@@ -716,7 +719,10 @@ const validatePaymentMethodFields = (): boolean => {
     if (field.minLength && valueStr !== '') {
       const minLength = parseInt(field.minLength)
       if (!isNaN(minLength) && valueStr.length < minLength) {
-        paymentMethodFieldErrors[field.name] = `${field.label} must be at least ${minLength} characters`
+        paymentMethodFieldErrors[field.name] = t('{field} must be at least {min} characters', {
+          field: field.label,
+          min: minLength
+        })
         isValid = false
         return
       }
@@ -726,7 +732,10 @@ const validatePaymentMethodFields = (): boolean => {
     if (field.maxLength && valueStr !== '') {
       const maxLength = parseInt(field.maxLength)
       if (!isNaN(maxLength) && valueStr.length > maxLength) {
-        paymentMethodFieldErrors[field.name] = `${field.label} must not exceed ${maxLength} characters`
+        paymentMethodFieldErrors[field.name] = t('{field} must not exceed {max} characters', {
+          field: field.label,
+          max: maxLength
+        })
         isValid = false
         return
       }
@@ -782,10 +791,16 @@ const receiveLimitErrorMessage = computed(() => {
   const maxLimit = selectedPaymentMethod.value.maxLimit
 
   if (withdrawUsdAmount < minLimit) {
-    return `Receive amount must be at least ${formatCurrency(minLimit)} for ${selectedPaymentMethod.value.methodName}`
+    return t('Receive amount must be at least {amount} for {method}', {
+      amount: formatCurrency(minLimit),
+      method: selectedPaymentMethod.value.methodName
+    })
   }
   if (withdrawUsdAmount > maxLimit) {
-    return `Receive amount exceeds maximum limit of ${formatCurrency(maxLimit)} for ${selectedPaymentMethod.value.methodName}`
+    return t('Receive amount exceeds maximum limit of {amount} for {method}', {
+      amount: formatCurrency(maxLimit),
+      method: selectedPaymentMethod.value.methodName
+    })
   }
   return ''
 })
@@ -853,11 +868,11 @@ const fetchFiatRate = async () => {
       // Note: We keep the user-selected currency, don't override it from response
       // The response currency should match the selected currency
     } else {
-      throw new Error(response.msg || 'Failed to get fiat rate')
-    }
-  } catch (error) {
-    console.error('Error fetching fiat rate:', error)
-    rateError.value = (error as any)?.message || 'Failed to get fiat rate'
+      throw new Error(response.msg || t('Failed to get fiat rate'))
+  }
+} catch (error) {
+  console.error('Error fetching fiat rate:', error)
+  rateError.value = (error as any)?.message || t('Failed to get fiat rate')
 
     fiatRate.value = null
     receiveAmount.value = 0
@@ -936,15 +951,15 @@ const fetchPaymentMethods = async () => {
       }
     } else {
       console.warn('No fiat payment methods returned from API')
-      throw new Error(response.msg || 'No fiat payment methods available')
+      throw new Error(response.msg || t('No fiat payment methods available'))
     }
   } catch (error) {
     loading.value = false
     console.error('Error fetching fiat payment methods:', error)
     toast.add({
       severity: 'warn',
-      summary: 'Warning',
-      detail: (error as any)?.message || 'Failed to load payment methods',
+      summary: t('Warning'),
+      detail: (error as any)?.message || t('Failed to load payment methods'),
       life: 3000
     })
   } finally {
@@ -1040,12 +1055,12 @@ const handleDeleteRecipient = () => {
   if (!recipientInfo.value) return
 
   confirm.require({
-    message: 'Are you sure you want to delete this recipient? This action cannot be undone.',
-    header: 'Delete Recipient',
+    message: t('Are you sure you want to delete this recipient? This action cannot be undone.'),
+    header: t('Delete Recipient'),
     icon: 'pi pi-exclamation-triangle',
     rejectClass: 'p-button-secondary p-button-outlined',
-    rejectLabel: 'Cancel',
-    acceptLabel: 'Delete',
+    rejectLabel: t('Cancel'),
+    acceptLabel: t('Delete'),
     accept: async () => {
       try {
         console.log('Deleting recipient information...')
@@ -1055,22 +1070,22 @@ const handleDeleteRecipient = () => {
         if (response.success) {
           toast.add({
             severity: 'success',
-            summary: 'Success',
-            detail: 'Recipient information deleted successfully',
+            summary: t('Success'),
+            detail: t('Recipient information deleted successfully'),
             life: 3000
           })
 
           // Clear recipient info
           recipientInfo.value = null
         } else {
-          throw new Error(response.msg || 'Failed to delete recipient')
+          throw new Error(response.msg || t('Failed to delete recipient'))
         }
       } catch (error) {
         console.error('Error deleting recipient:', error)
         toast.add({
           severity: 'error',
-          summary: 'Error',
-          detail: (error as any)?.message || 'Failed to delete recipient information',
+          summary: t('Error'),
+          detail: (error as any)?.message || t('Failed to delete recipient information'),
           life: 3000
         })
       }
@@ -1153,8 +1168,8 @@ const handleWithdraw = async () => {
   if (!isFormValid.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Validation Error',
-      detail: 'Please complete all required fields and ensure recipient information is saved',
+      summary: t('Validation Error'),
+      detail: t('Please complete all required fields and ensure recipient information is saved'),
       life: 3000
     })
     return
@@ -1163,8 +1178,8 @@ const handleWithdraw = async () => {
   if (!props.cardInfo.cardId) {
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: 'Card information is missing. Please go back and try again.',
+      summary: t('Error'),
+      detail: t('Card information is missing. Please go back and try again.'),
       life: 3000
     })
     return
@@ -1173,8 +1188,8 @@ const handleWithdraw = async () => {
   if (!selectedPaymentMethod.value) {
     toast.add({
       severity: 'error',
-      summary: 'Selection Error',
-      detail: 'Please select a payment method.',
+      summary: t('Selection Error'),
+      detail: t('Please select a payment method.'),
       life: 3000
     })
     return
@@ -1183,8 +1198,8 @@ const handleWithdraw = async () => {
   if (!recipientInfo.value) {
     toast.add({
       severity: 'error',
-      summary: 'Recipient Required',
-      detail: 'Please save recipient information first.',
+      summary: t('Recipient Required'),
+      detail: t('Please save recipient information first.'),
       life: 3000
     })
     return
@@ -1193,8 +1208,8 @@ const handleWithdraw = async () => {
   if (!isReceiveAmountWithinLimit.value) {
     toast.add({
       severity: 'error',
-      summary: 'Amount Out of Range',
-      detail: receiveLimitErrorMessage.value || 'Receive amount is out of the allowed range',
+      summary: t('Amount Out of Range'),
+      detail: receiveLimitErrorMessage.value || t('Receive amount is out of the allowed range'),
       life: 5000
     })
     return
@@ -1242,8 +1257,8 @@ const handleWithdraw = async () => {
     if (response.success) {
       toast.add({
         severity: 'success',
-        summary: 'Withdraw Order Created',
-        detail: `Order #${response.model} has been submitted successfully`,
+        summary: t('Withdraw Order Created'),
+        detail: t('Order #{order} has been submitted successfully', { order: response.model }),
         life: 3000
       })
 
@@ -1264,14 +1279,14 @@ const handleWithdraw = async () => {
         }
       })
     } else {
-      throw new Error(response.msg || 'Failed to create withdraw order')
+      throw new Error(response.msg || t('Failed to create withdraw order'))
     }
   } catch (error) {
     console.error('Withdraw error:', error)
     toast.add({
       severity: 'error',
-      summary: 'Withdraw Failed',
-      detail: (error as any)?.message || 'Failed to create withdraw order. Please try again.',
+      summary: t('Withdraw Failed'),
+      detail: (error as any)?.message || t('Failed to create withdraw order. Please try again.'),
       life: 3000
     })
   } finally {

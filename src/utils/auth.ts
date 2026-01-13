@@ -1,4 +1,5 @@
 import type { UserInfo } from '@/types/api'
+import { i18n } from '@/i18n'
 
 // Token related utility functions
 export const TokenUtils = {
@@ -191,29 +192,31 @@ export const RouteUtils = {
 
 // Error handling utility functions
 export const ErrorUtils = {
+  t: i18n.global.t,
   /**
    * Handle authentication related errors
    */
   handleAuthError(error: any): string {
+    const t = ErrorUtils.t
     if (error.response) {
       const { status, data } = error.response
 
       switch (status) {
         case 401:
-          return 'Login expired, please login again'
+          return t('Login expired, please login again')
         case 403:
-          return 'No permission to access this resource'
+          return t('No permission to access this resource')
         case 404:
-          return 'Requested resource does not exist'
+          return t('Requested resource does not exist')
         case 500:
-          return 'Internal server error, please try again later'
+          return t('Internal server error, please try again later')
         default:
-          return data?.msg || `Request failed (${status})`
+          return data?.msg || t('Request failed ({status})', { status })
       }
     } else if (error.request) {
-      return 'Network connection failed, please check network settings'
+      return t('Network connection failed, please check network settings')
     } else {
-      return error.message || 'Unknown error'
+      return error.message || t('Unknown error')
     }
   },
 
@@ -233,6 +236,6 @@ export const ErrorUtils = {
       return error.response.data.msg
     }
 
-    return 'Operation failed, please try again later'
+    return ErrorUtils.t('Operation failed, please try again later')
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Navigation Header -->
-    <AppHeader title="Apply for a Card" :show-title="true" />
+    <AppHeader :title="$t('Apply for a Card')" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -12,7 +12,7 @@
           <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
             <i class="pi pi-credit-card text-white text-sm"></i>
           </div>
-          <p class="text-sm text-gray-700 dark:text-gray-300">New Virtual Cards Added to Your List</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">{{ $t('New Virtual Cards Added to Your List') }}</p>
         </div>
       </div>
 
@@ -21,18 +21,18 @@
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.applyFee || 0)
             }}</div>
-          <div class="text-sm text-gray-500 dark:text-gray-400">Apply fee</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">{{ $t('Apply fee') }}</div>
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatRechargeFee(selectedCard?.rechargeFee
             ||
             0) }}</div>
-          <div class="text-sm text-gray-500 dark:text-gray-400">Recharge fee</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">{{ $t('Recharge fee') }}</div>
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.monthlyFee || 0)
             }}</div>
-          <div class="text-sm text-gray-500 dark:text-gray-400">Monthly Fee</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">{{ $t('Monthly Fee') }}</div>
         </div>
       </div>
 
@@ -42,7 +42,7 @@
         <div v-if="binLoading" class="flex justify-center py-12">
           <div class="flex items-center space-x-3">
             <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
-            <span class="text-gray-600 dark:text-gray-400">Loading card BINs...</span>
+            <span class="text-gray-600 dark:text-gray-400">{{ $t('Loading card BINs...') }}</span>
           </div>
         </div>
 
@@ -54,7 +54,7 @@
             <button
               class="mt-3 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium"
               @click="loadCardBins">
-              Try Again
+              {{ $t('Try Again') }}
             </button>
           </div>
         </div>
@@ -71,7 +71,7 @@
                 :class="!activeSchemeFilter
                   ? 'bg-blue-600 text-white border-blue-600'
                   : 'bg-white dark:bg-gray-900 text-blue-600 dark:text-blue-300 border-blue-200 dark:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/40'" @click="filterByScheme(null)">
-                All
+                {{ $t('All') }}
               </button>
               <button v-for="scheme in cardSchemeOptions" :key="scheme" type="button"
                 class="px-3.5 py-1.5 rounded-full border text-xs font-medium flex-shrink-0 transition-colors"
@@ -111,7 +111,7 @@
                         <div class="space-y-1 mb-2 text-sm">
                           <!-- Card Type and Currency -->
                           <div class="mt-4 text-right">
-                            {{ binInfo.countryName || 'N/A' }}
+                            {{ binInfo.countryName || $t('N/A') }}
                           </div>
                           <!-- Card BIN -->
                           <div class="flex justify-between items-center">
@@ -123,9 +123,9 @@
                         </div>
                         <!-- Card Footer -->
                         <div class="flex items-center justify-between mt-4 sm:mt-10">
-                          <div class="text-xs opacity-60 mb-1">Available Cards</div>
+                          <div class="text-xs opacity-60 mb-1">{{ $t('Available Cards') }}</div>
                           <div class="text-sm md:text-base font-semibold">
-                            {{ binInfo.remainingAvailableCard || 'Unlimited' }}
+                            {{ binInfo.remainingAvailableCard || $t('Unlimited') }}
                           </div>
                         </div>
                       </div>
@@ -149,21 +149,24 @@
               <!-- Card Selection Header -->
               <div class="flex items-center justify-between mb-8">
                 <div class="flex items-center space-x-4">
-                  <h2 class="text-xl font-semibold text-gray-900 dark:text-white">Select Card BIN</h2>
+                  <h2 class="text-xl font-semibold text-gray-900 dark:text-white">{{ $t('Select Card BIN') }}</h2>
                   <div class="text-sm text-gray-500 dark:text-gray-400">
-                    {{ filteredCardBins.length ? currentBinIndex + 1 : 0 }} of {{ filteredCardBins.length }} cards
+                    {{ $t('{current} of {total} cards', {
+                      current: filteredCardBins.length ? currentBinIndex + 1 : 0,
+                      total: filteredCardBins.length
+                    }) }}
                   </div>
                 </div>
 
                 <!-- Scheme Filter Buttons -->
                 <div v-if="cardSchemeOptions.length" class="flex items-center space-x-2">
-                  <span class="text-xs text-gray-500 dark:text-gray-400">Card Scheme</span>
+                  <span class="text-xs text-gray-500 dark:text-gray-400">{{ $t('Card Scheme') }}</span>
                   <button type="button" class="px-2.5 py-1 rounded-full border text-xs font-medium transition-colors"
                     :class="!activeSchemeFilter
                       ? 'bg-blue-600 text-white border-blue-600'
                       : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700'"
                     @click="filterByScheme(null)">
-                    All
+                    {{ $t('All') }}
                   </button>
                   <button v-for="scheme in cardSchemeOptions" :key="scheme" type="button"
                     class="px-2.5 py-1 rounded-full border text-xs font-medium transition-colors"
@@ -180,7 +183,7 @@
                 <!-- Left Navigation Button -->
                 <button :disabled="currentBinIndex === 0"
                   class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 flex items-center justify-center"
-                  @click="previousBin" title="Previous card">
+                  @click="previousBin" :title="$t('Previous card')">
                   <i class="pi pi-chevron-left text-gray-600 dark:text-gray-400 text-lg"></i>
                 </button>
 
@@ -215,7 +218,7 @@
                                 <div class="flex items-center space-x-2">
                                 </div>
                                 <div class="text-right">
-                                  <div class="text-xs md:text-sm opacity-80">{{ binInfo.countryName || 'N/A' }}</div>
+                                  <div class="text-xs md:text-sm opacity-80">{{ binInfo.countryName || $t('N/A') }}</div>
 
                                   <!-- <div class="text-xs md:text-sm opacity-80">{{ binInfo.cardCurrency || 'USD' }}</div> -->
                                 </div>
@@ -231,9 +234,9 @@
 
                               <!-- Bottom section -->
                               <div class="flex justify-between items-center mt-2">
-                                <div class="text-xs opacity-60 mb-1">Available Cards</div>
+                                <div class="text-xs opacity-60 mb-1">{{ $t('Available Cards') }}</div>
                                 <div class="text-sm md:text-base font-semibold">
-                                  {{ binInfo.remainingAvailableCard || 'Unlimited' }}
+                                  {{ binInfo.remainingAvailableCard || $t('Unlimited') }}
                                 </div>
                               </div>
                             </div>
@@ -247,7 +250,7 @@
                 <!-- Right Navigation Button -->
                 <button :disabled="currentBinIndex === cardBins.length - 1"
                   class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 flex items-center justify-center"
-                  @click="nextBin" title="Next card">
+                  @click="nextBin" :title="$t('Next card')">
                   <i class="pi pi-chevron-right text-gray-600 dark:text-gray-400 text-lg"></i>
                 </button>
               </div>
@@ -257,7 +260,7 @@
                 <button v-for="(binInfo, index) in filteredCardBins" :key="index"
                   class="w-3 h-3 rounded-full transition-all duration-200 hover:scale-110"
                   :class="currentBinIndex === index ? 'bg-blue-500' : 'bg-gray-300 hover:bg-gray-400'"
-                  @click="currentBinIndex = index" :title="`Go to card ${index + 1}`">
+                  @click="currentBinIndex = index" :title="$t('Go to card {count}', { count: index + 1 })">
                 </button>
               </div>
             </div>
@@ -268,8 +271,8 @@
         <div v-else class="text-center py-12">
           <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
             <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-4xl mb-4"></i>
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">No Card BINs Available</h3>
-            <p class="text-gray-600 dark:text-gray-400">No card BIN information found for this card type.</p>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">{{ $t('No Card BINs Available') }}</h3>
+            <p class="text-gray-600 dark:text-gray-400">{{ $t('No card BIN information found for this card type.') }}</p>
           </div>
         </div>
       </div>
@@ -280,15 +283,15 @@
         <button class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
           @click="goBack">
           <i class="pi pi-arrow-left"></i>
-          <span>Back</span>
+          <span>{{ $t('Back') }}</span>
         </button>
 
         <!-- Order Button -->
         <button :disabled="!selectedBinInfo || binLoading" class="bottom-button-dual bottom-button-dual-primary"
           @click="orderCard">
-          <span v-if="binLoading">Loading...</span>
-          <span v-else-if="selectedBinInfo">Order {{ selectedBinInfo.cardType || 'Card' }}</span>
-          <span v-else>Select a Card BIN</span>
+          <span v-if="binLoading">{{ $t('Loading...') }}</span>
+          <span v-else-if="selectedBinInfo">{{ $t('Order {type} Card', { type: selectedBinInfo.cardType || $t('Card') }) }}</span>
+          <span v-else>{{ $t('Select a Card BIN') }}</span>
         </button>
       </div>
     </div>
@@ -299,6 +302,7 @@
 import { ref, computed, onMounted, nextTick } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useI18n } from 'vue-i18n'
 import { useCardStore } from '@/stores/card'
 import AppHeader from '@/components/AppHeader.vue'
 import CardBinItem from '@/components/CardBinItem.vue'
@@ -308,6 +312,7 @@ const router = useRouter()
 const route = useRoute()
 const toast = useToast()
 const cardStore = useCardStore()
+const { t } = useI18n()
 
 // Reactive data
 const currentBinIndex = ref(0)
@@ -369,7 +374,7 @@ const filterByScheme = (scheme: string | null) => {
 // Load card BIN information
 const loadCardBins = async () => {
   if (!selectedCard.value) {
-    binError.value = 'No card selected'
+    binError.value = t('No card selected')
     return
   }
 
@@ -384,10 +389,10 @@ const loadCardBins = async () => {
       // Select first BIN by default
       currentBinIndex.value = 0
     } else {
-      binError.value = result.error || 'Failed to load card BINs'
+      binError.value = result.error || t('Failed to load card BINs')
     }
   } catch (error) {
-    binError.value = (error as any)?.message || 'Failed to load card BINs'
+    binError.value = (error as any)?.message || t('Failed to load card BINs')
   } finally {
     binLoading.value = false
   }
@@ -546,8 +551,8 @@ const orderCard = () => {
   } else {
     toast.add({
       severity: 'warn',
-      summary: 'Selection Required',
-      detail: 'Please select a card BIN before proceeding',
+      summary: t('Selection Required'),
+      detail: t('Please select a card BIN before proceeding'),
       life: 3000
     })
   }

@@ -5,7 +5,7 @@
       <div class="flex items-center space-x-4">
         <div
           class="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden cursor-pointer hover:opacity-90"
-          role="button" aria-label="Go to cards" title="Go to cards" @click="onLogoClick">
+          role="button" :aria-label="$t('Go to cards')" :title="$t('Go to cards')" @click="onLogoClick">
           <img src="https://static.biulinkpay.online/logo/biu_blue.png" alt="BiuLinkPay"
             class="w-full h-full object-contain" />
         </div>
@@ -22,11 +22,28 @@
           <ThemeToggle />
         </div>
 
+        <!-- Language switcher -->
+        <div class="ml-3">
+          <label class="sr-only" for="locale-select">{{ $t('Language') }}</label>
+          <div class="relative">
+            <select
+              id="locale-select"
+              v-model="locale"
+              class="appearance-none text-sm font-medium bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-gray-600 rounded-full pl-3 pr-8 py-1.5 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              :aria-label="$t('Language')">
+              <option value="en">{{ $t('English') }}</option>
+              <option value="zh-TW">{{ $t('Traditional Chinese') }}</option>
+            </select>
+            <i
+              class="pi pi-angle-down pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-gray-500 dark:text-gray-400"></i>
+          </div>
+        </div>
+
         <!-- Card reward points (desktop) -->
         <div v-if="isLoggedIn"
           class="card-points-desktop hidden sm:flex items-center gap-1 px-3 py-1.5 rounded-2xl    text-gray-900 dark:text-white cursor-default">
           <div class="w-9 h-9 rounded-xl flex items-center justify-center points-icon-animate">
-            <img :src="coinsIcon" alt="Card points" class="w-6 h-6 object-contain" />
+            <img :src="coinsIcon" :alt="$t('Card Points')" class="w-6 h-6 object-contain" />
           </div>
           <div class="flex items-center gap-1">
             <p :class="[
@@ -35,7 +52,7 @@
             ]">
               {{ formattedCardRewardPoints }}
             </p>
-            <span v-tooltip.bottom="{ value: '100 pts = 1 USD', class: 'points-tooltip' }"
+            <span v-tooltip.bottom="{ value: $t('100 pts = 1 USD'), class: 'points-tooltip' }"
               class="inline-flex items-center justify-center w-4 h-4 rounded-full dark:bg-white/25 bg-gray-900/25 text-[10px] font-bold leading-none cursor-pointer"
               @click.stop="showPointsHint">
               !
@@ -47,13 +64,13 @@
         <div v-if="isLoggedIn"
           class="card-points-mobile sm:hidden flex items-center gap-0.5 px-2.5 py-1.5 rounded-xl text-[11px] font-semibold text-white ">
           <div class="w-5 h-5 rounded-lg flex items-center justify-center points-icon-animate">
-            <img :src="coinsIcon" alt="Card points" class="w-3.5 h-3.5 object-contain" />
+            <img :src="coinsIcon" :alt="$t('Card Points')" class="w-3.5 h-3.5 object-contain" />
           </div>
           <div class="flex items-center gap-0.5">
             <span :class="[{ 'animate-pulse opacity-70': !hasCardRewardPoints }]" class="text-gray-900 dark:text-white">
               {{ formattedCardRewardPoints }}
             </span>
-            <span v-tooltip.bottom="{ value: '100 pts = 1 USD', class: 'points-tooltip' }"
+            <span v-tooltip.bottom="{ value: $t('100 pts = 1 USD'), class: 'points-tooltip' }"
               class="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full dark:bg-white/25 bg-gray-900/25 text-[9px] font-bold leading-none cursor-pointer"
               @click.stop="showPointsHint">
               !
@@ -105,27 +122,27 @@
                 class="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center space-x-2"
                 @click="goToMyCards">
                 <i class="pi pi-credit-card text-gray-500"></i>
-                <span>My Cards</span>
+                <span>{{ $t('My Cards') }}</span>
               </button>
 
               <button
                 class="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center space-x-2"
                 @click="goToProfile">
                 <i class="pi pi-user text-gray-500"></i>
-                <span>Profile</span>
+                <span>{{ $t('Profile') }}</span>
               </button>
 
               <button
                 class="w-full px-4 py-2 text-left text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors flex items-center space-x-2"
                 @click="confirmLogout">
                 <i class="pi pi-sign-out text-red-500"></i>
-                <span>Logout</span>
+                <span>{{ $t('Logout') }}</span>
               </button>
             </div>
           </div>
 
           <!-- Show login button when not logged in -->
-          <Button v-else-if="showLogin" label="Login" text class="text-gray-600 hover:text-gray-900"
+          <Button v-else-if="showLogin" :label="$t('Login')" text class="text-gray-600 hover:text-gray-900"
             @click="goToLogin" />
         </slot>
       </div>
@@ -140,11 +157,14 @@ import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useConfirm } from 'primevue/useconfirm'
+import { useI18n } from 'vue-i18n'
 import { useAuthStore } from '@/stores/auth'
 import { useUserStore } from '@/stores/user'
 import { useCardStore } from '@/stores/card'
 import ThemeToggle from './ThemeToggle.vue'
 import coinsIcon from '@/assets/images/coins.png'
+import { setLocalePreference } from '@/i18n'
+import type { SupportedLocale } from '@/i18n/locales'
 
 interface Props {
   title?: string
@@ -161,6 +181,7 @@ const props = withDefaults(defineProps<Props>(), {
 const router = useRouter()
 const toast = useToast()
 const confirm = useConfirm()
+const { locale, t } = useI18n({ useScope: 'global' })
 const authStore = useAuthStore()
 const userStore = useUserStore()
 const cardStore = useCardStore()
@@ -203,8 +224,8 @@ const formattedCardRewardPoints = computed(() => {
 const showPointsHint = () => {
   toast.add({
     severity: 'info',
-    summary: 'Card Points',
-    detail: '100 pts = 1 USD',
+    summary: t('Card Points'),
+    detail: t('100 pts = 1 USD'),
     life: 2500
   })
 }
@@ -238,11 +259,11 @@ const confirmLogout = () => {
   console.log('Showing logout confirmation dialog')
   showUserMenu.value = false
   confirm.require({
-    message: 'Are you sure you want to logout?',
-    header: 'Confirm Logout',
+    message: t('Are you sure you want to logout?'),
+    header: t('Confirm Logout'),
     icon: 'pi pi-exclamation-triangle',
-    rejectLabel: 'Cancel',
-    acceptLabel: 'Confirm',
+    rejectLabel: t('Cancel'),
+    acceptLabel: t('Confirm'),
     accept: () => {
       console.log('User confirmed logout')
       handleLogout()
@@ -262,8 +283,8 @@ const handleLogout = async () => {
 
     toast.add({
       severity: 'success',
-      summary: 'Logged Out',
-      detail: 'You have been logged out successfully',
+      summary: t('Logged Out'),
+      detail: t('You have been logged out successfully'),
       life: 3000
     })
     router.push('/login')
@@ -271,12 +292,23 @@ const handleLogout = async () => {
     console.error('Logout failed:', error)
     toast.add({
       severity: 'error',
-      summary: 'Logout Failed',
-      detail: (error as any)?.message || 'Failed to logout. Please try again.',
+      summary: t('Logout Failed'),
+      detail: (error as any)?.message || t('Failed to logout. Please try again.'),
       life: 3000
     })
   }
 }
+
+const applyLocaleChange = () => {
+  const selected = locale.value
+  if (selected === 'en' || selected === 'zh-TW') {
+    setLocalePreference(selected as SupportedLocale)
+  }
+}
+
+watch(locale, () => {
+  applyLocaleChange()
+})
 
 const loadUserProfileIfNeeded = async () => {
   if (!isLoggedIn.value) return

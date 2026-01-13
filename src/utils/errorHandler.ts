@@ -1,10 +1,12 @@
 import { useToast } from 'primevue/usetoast'
+import { i18n } from '@/i18n'
 
 /**
  * 错误处理工具函数
  */
 export function useErrorHandler() {
   const toast = useToast()
+  const t = i18n.global.t
 
   /**
    * 处理错误
@@ -20,7 +22,7 @@ export function useErrorHandler() {
     } = {}
   ) => {
     const {
-      fallbackMessage = '操作失败，请稍后重试',
+      fallbackMessage = t('Operation failed, please try again later'),
       showToast = true,
       logError = true
     } = options
@@ -47,7 +49,7 @@ export function useErrorHandler() {
     if (showToast) {
       toast.add({
         severity: 'error',
-        summary: 'Error',
+        summary: t('Error'),
         detail: errorMessage,
         life: 5000
       })
@@ -70,7 +72,7 @@ export function useErrorHandler() {
   ) => {
     const {
       showToast = true,
-      title = 'Success'
+      title = t('Success')
     } = options
 
     // 显示成功提示
@@ -100,7 +102,7 @@ export function useErrorHandler() {
   ) => {
     const {
       showToast = true,
-      title = 'Warning'
+      title = t('Warning')
     } = options
 
     // 显示警告提示
@@ -130,7 +132,7 @@ export function useErrorHandler() {
   ) => {
     const {
       showToast = true,
-      title = 'Info'
+      title = t('Info')
     } = options
 
     // 显示信息提示

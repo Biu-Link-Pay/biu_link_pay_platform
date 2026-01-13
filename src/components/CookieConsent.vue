@@ -4,12 +4,12 @@
     <div class="bg-white shadow-sm border border-black/5 rounded-[14px] w-full max-w-[360px] ml-auto">
       <div class="flex flex-row p-5 gap-5 items-start">
         <p class="m-0 p-0 text-[16px] leading-[1.2em] text-gray-700 flex-1">
-          We use cookies to personalize content, run ads, and analyze traffic.
+          {{ $t('We use cookies to personalize content, run ads, and analyze traffic.') }}
         </p>
         <div class="flex items-center justify-center">
           <button type="button" @click="dismiss"
             class="appearance-none outline-none border-0 px-3 py-2 rounded-lg bg-gray-100 text-gray-700 text-[16px] leading-none cursor-pointer hover:bg-gray-200 active:scale-[0.98] transition">
-            Okay
+            {{ $t('Okay') }}
           </button>
         </div>
       </div>

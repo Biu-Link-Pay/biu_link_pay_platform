@@ -7,10 +7,11 @@
           <div class="mb-6">
             <i class="pi pi-exclamation-triangle text-6xl text-orange-500 mb-4"></i>
             <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">404</h1>
-            <p class="text-gray-600 dark:text-gray-400 mb-8">Sorry, page not found</p>
+            <p class="text-gray-600 dark:text-gray-400 mb-8">{{ $t('Sorry, page not found') }}</p>
           </div>
 
-          <Button label="Back to Home" icon="pi pi-home" @click="$router.push('/')" class="w-full" size="large" />
+          <Button :label="$t('Back to Home')" icon="pi pi-home" @click="$router.push('/')" class="w-full"
+            size="large" />
         </div>
       </template>
     </Card>

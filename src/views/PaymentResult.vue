@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
 
     <!-- Unified Header -->
-    <AppHeader title="Payment Result" :show-title="true" />
+    <AppHeader :title="$t('Payment Result')" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -83,7 +83,7 @@
                   formatCurrency(orderAmount) }}</span>
                 <span v-if="orderRewardPoints"
                   class="text-sm sm:text-base lg:text-lg font-semibold text-orange-500 dark:text-orange-300">
-                  (Use {{ orderRewardPoints.toLocaleString() }} pts)
+                  {{ $t('(Use {points} pts)', { points: orderRewardPoints.toLocaleString() }) }}
                 </span>
               </div>
             </div>
@@ -93,7 +93,8 @@
           <div class="lg:flex lg:flex-col lg:justify-center">
             <!-- Order Information -->
             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4 sm:p-6 lg:p-6 xl:p-8 mb-6 lg:mb-8">
-              <h3 class="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white mb-4 lg:hidden">Order Details
+              <h3 class="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white mb-4 lg:hidden">
+                {{ $t('Order Details') }}
               </h3>
 
               <!-- Desktop: Traditional List Layout -->
@@ -101,14 +102,14 @@
                 <!-- Order Number -->
                 <div
                   class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">{{ $t('Order Number') }}</span>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
                     }}</span>
                     <button
-                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('Success'), detail: t('Order number copied to clipboard'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
-                      title="Copy order number">
+                      :title="$t('Copy order number')">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
                   </div>
@@ -117,7 +118,7 @@
                 <!-- Withdraw: Network -->
                 <div v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)"
                   class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Network</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ $t('Network') }}</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
                     {{ withdrawNetwork ? `${withdrawNetwork}` : '' }}
                   </span>
@@ -126,13 +127,14 @@
                 <!-- Withdraw: USDT Amount -->
                 <div v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null"
                   class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Withdraw
-                    Amount</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">
+                    {{ $t('Withdraw Amount') }}
+                  </span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
                     {{ withdrawUsdTAmount }} {{ withdrawToken || 'USDT' }}
                     <span v-if="orderRewardPoints"
                       class="ml-1 text-xs lg:text-sm font-semibold text-orange-500 dark:text-orange-300">
-                      (Use {{ orderRewardPoints.toLocaleString() }} pts)
+                      {{ $t('(Use {points} pts)', { points: orderRewardPoints.toLocaleString() }) }}
                     </span>
                   </span>
                 </div>
@@ -140,7 +142,7 @@
                 <!-- Withdraw: Network Fee -->
                 <div v-if="orderType === 'withdraw' && withdrawNetworkFee !== null"
                   class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Network Fee</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ $t('Network Fee') }}</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
                     {{ withdrawNetworkFee.toFixed(2) }} {{ withdrawToken || 'USDT' }}
                   </span>
@@ -149,15 +151,15 @@
                 <!-- Withdraw: Address -->
                 <div v-if="orderType === 'withdraw' && withdrawAddress"
                   class="flex justify-between items-center gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Address</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ $t('Address') }}</span>
                   <div class="flex items-center justify-end gap-2 flex-1 min-w-0">
                     <span
                       class="text-[11px] lg:text-xs font-medium text-gray-900 dark:text-white text-right break-all font-mono">{{
                         withdrawAddress }}</span>
                     <button
-                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: 'Success', detail: 'Address copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: t('Success'), detail: t('Address copied to clipboard'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                      title="Copy address">
+                      :title="$t('Copy address')">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
                   </div>
@@ -166,8 +168,9 @@
                 <!-- Transaction ID -->
                 <div v-if="orderStatus === 'SUCCESS'"
                   class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Transaction
-                    ID</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">
+                    {{ $t('Transaction ID') }}
+                  </span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
                     transactionId }}</span>
                 </div>
@@ -175,14 +178,14 @@
                 <!-- Card Number -->
                 <div v-if="orderCardNo"
                   class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Card Number</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">{{ $t('Card Number') }}</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo
                     }}</span>
                 </div>
 
                 <!-- Created Time -->
                 <div class="flex justify-between items-center py-2 lg:py-3">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Created Time</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">{{ $t('Created Time') }}</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ paymentTime }}</span>
                 </div>
               </div>
@@ -191,14 +194,14 @@
               <div class="lg:hidden grid grid-cols-2 gap-4">
                 <!-- Order Number -->
                 <div class="col-span-2 pb-3 border-b border-gray-200 dark:border-gray-600">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Order Number</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">{{ $t('Order Number') }}</div>
                   <div class="flex items-center gap-2">
                     <div class="text-sm font-medium text-gray-900 dark:text-white break-all flex-1">{{ orderNumber }}
                     </div>
                     <button
-                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('Success'), detail: t('Order number copied to clipboard'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                      title="Copy">
+                      :title="$t('Copy')">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
                   </div>
@@ -207,9 +210,9 @@
                 <!-- Withdraw: Network -->
                 <div v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)" class="col-span-2">
                   <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
-                    <span>Network</span>
-                    <span v-if="orderType === 'withdraw' && withdrawNetworkFee !== null" class="text-right">Network
-                      Fee</span>
+                    <span>{{ $t('Network') }}</span>
+                    <span v-if="orderType === 'withdraw' && withdrawNetworkFee !== null" class="text-right">{{
+                      $t('Network Fee') }}</span>
                   </div>
                   <div class="flex items-center justify-between text-sm font-medium text-gray-900 dark:text-white">
                     <span>{{ withdrawNetwork ? `${withdrawNetwork}` : '' }}</span>
@@ -220,12 +223,12 @@
 
                 <!-- Withdraw: USDT Amount -->
                 <div v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Withdraw Amount</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">{{ $t('Withdraw Amount') }}</div>
                   <div class="text-sm font-medium text-gray-900 dark:text-white">
                     {{ withdrawUsdTAmount }} {{ withdrawToken || 'USDT' }}
                     <span v-if="orderRewardPoints"
                       class="ml-1 text-xs font-semibold text-orange-500 dark:text-orange-300">
-                      (Use {{ orderRewardPoints.toLocaleString() }} pts)
+                      {{ $t('(Use {points} pts)', { points: orderRewardPoints.toLocaleString() }) }}
                     </span>
                   </div>
                 </div>
@@ -233,7 +236,7 @@
                 <!-- Withdraw: Network Fee -->
                 <!-- Withdraw: Address -->
                 <div v-if="orderType === 'withdraw' && withdrawAddress" class="col-span-2">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Address</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">{{ $t('Address') }}</div>
                   <div class="flex items-center justify-between gap-2">
                     <div
                       class="text-[11px] font-medium text-gray-900 dark:text-white break-all text-left font-mono flex-1 min-w-0">
@@ -241,9 +244,9 @@
                         withdrawAddress
                       }}</div>
                     <button
-                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: 'Success', detail: 'Address copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: t('Success'), detail: t('Address copied to clipboard'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                      title="Copy">
+                      :title="$t('Copy')">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
                   </div>
@@ -251,19 +254,19 @@
 
                 <!-- Transaction ID -->
                 <div v-if="orderStatus === 'SUCCESS'" class="col-span-2">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Transaction ID</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">{{ $t('Transaction ID') }}</div>
                   <div class="text-sm font-medium text-gray-900 dark:text-white break-all">{{ transactionId }}</div>
                 </div>
 
                 <!-- Card Number -->
                 <div v-if="orderCardNo" class="col-span-2">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Card Number</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">{{ $t('Card Number') }}</div>
                   <div class="text-sm font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo }}</div>
                 </div>
 
                 <!-- Created Time -->
                 <div class="col-span-2">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Created Time</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">{{ $t('Created Time') }}</div>
                   <div class="text-sm font-medium text-gray-900 dark:text-white">{{ paymentTime }}</div>
                 </div>
               </div>
@@ -308,12 +311,12 @@
                 <div
                   class="inline-flex items-center gap-2 lg:gap-3 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-base xl:text-lg animate-pulse">
                   <i class="pi pi-clock text-lg lg:text-xl xl:text-xl"></i>
-                  <span>Payment Timeout</span>
+                  <span>{{ $t('Payment Timeout') }}</span>
                 </div>
                 <div v-if="paymentTime && !isPaymentExpired"
                   class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-orange-700 dark:text-orange-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-start gap-2 lg:gap-3">
                   <i class="pi pi-info-circle text-lg lg:text-xl xl:text-xl mt-0.5"></i>
-                  <span>For security reasons, the payment page has expired. Please complete the payment promptly.</span>
+                  <span>{{ $t('For security reasons, the payment page has expired. Please complete the payment promptly.') }}</span>
                 </div>
               </div>
             </div>
@@ -326,12 +329,12 @@
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">
                   <i v-if="refreshing" class="pi pi-spin pi-spinner"></i>
                   <i v-else class="pi pi-refresh"></i>
-                  <span>{{ refreshing ? 'Refreshing...' : 'Refresh Status' }}</span>
+                  <span>{{ refreshing ? $t('Refreshing...') : $t('Refresh Status') }}</span>
                 </button>
                 <button @click="goBack"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-arrow-left"></i>
-                  <span>{{ isFromMyCards ? 'Back to My Cards' : 'Back to Payment' }}</span>
+                  <span>{{ isFromMyCards ? $t('Back to My Cards') : $t('Back to Payment') }}</span>
                 </button>
               </template>
 
@@ -340,12 +343,12 @@
                 <!-- <button @click="viewOrder"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                   <i class="pi pi-eye"></i>
-                  <span>View Order</span>
+                  <span>{{ $t('View Order') }}</span>
                 </button> -->
                 <button @click="goHome"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-credit-card"></i>
-                  <span>My Cards</span>
+                  <span>{{ $t('My Cards') }}</span>
                 </button>
               </template>
 
@@ -354,7 +357,7 @@
                 <button @click="goBack"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-credit-card"></i>
-                  <span>{{ isFromMyCards ? 'Back to My Cards' : 'Change Payment Method' }}</span>
+                  <span>{{ isFromMyCards ? $t('Back to My Cards') : $t('Change Payment Method') }}</span>
                 </button>
               </template>
 
@@ -363,21 +366,21 @@
                 <button @click="createNewOrder"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                   <i class="pi pi-plus"></i>
-                  <span>Create New Order</span>
+                  <span>{{ $t('Create New Order') }}</span>
                 </button>
                 <button @click="goHome"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-credit-card"></i>
-                  <span>My Cards</span>
+                  <span>{{ $t('My Cards') }}</span>
                 </button>
               </template>
             </div>
 
             <!-- Support Information -->
             <div class="text-center lg:text-left text-sm lg:text-base xl:text-lg text-gray-500 dark:text-gray-400">
-              <p>Need help? <a href="mailto:support@biulinkpay.org"
-                  class="text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-200">Contact
-                  Support</a></p>
+              <p>{{ $t('Need help?') }} <a href="mailto:support@biulinkpay.org"
+                  class="text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-200">{{
+                    $t('Contact Support') }}</a></p>
             </div>
           </div>
         </div>
@@ -390,6 +393,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useI18n } from 'vue-i18n'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI } from '@/api/order'
 import { useClipboard } from '@vueuse/core'
@@ -399,6 +403,7 @@ import { CardAPI } from '@/api/card'
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
+const { t } = useI18n({ useScope: 'global' })
 const cardStore = useCardStore()
 
 // Order data
@@ -463,11 +468,11 @@ const iconAnimationClass = computed(() => {
 
 const statusTitle = computed(() => {
   switch (orderStatus.value) {
-    case 'PENDING': return 'Payment Processing'
-    case 'SUCCESS': return 'Payment Successful'
-    case 'FAIL': return 'Payment Failed'
-    case 'CANCEL': return 'Payment Cancelled'
-    default: return 'Payment Processing'
+    case 'PENDING': return t('Payment Processing')
+    case 'SUCCESS': return t('Payment Successful')
+    case 'FAIL': return t('Payment Failed')
+    case 'CANCEL': return t('Payment Cancelled')
+    default: return t('Payment Processing')
   }
 })
 
@@ -483,11 +488,11 @@ const statusTitleClass = computed(() => {
 
 const statusDescription = computed(() => {
   switch (orderStatus.value) {
-    case 'PENDING': return 'Please wait while we process your payment'
-    case 'SUCCESS': return 'Thank you for your purchase! Your payment has been confirmed'
-    case 'FAIL': return 'Sorry, your payment could not be completed. Please try again'
-    case 'CANCEL': return 'This payment has been cancelled'
-    default: return 'Please wait while we process your payment'
+    case 'PENDING': return t('Please wait while we process your payment')
+    case 'SUCCESS': return t('Thank you for your purchase! Your payment has been confirmed')
+    case 'FAIL': return t('Sorry, your payment could not be completed. Please try again')
+    case 'CANCEL': return t('This payment has been cancelled')
+    default: return t('Please wait while we process your payment')
   }
 })
 
@@ -571,8 +576,8 @@ const fetchOrderStatus = async () => {
           if (!isFromMyCards.value) {
             toast.add({
               severity: orderStatus.value === 'SUCCESS' ? 'success' : 'warn',
-              summary: 'Status Updated',
-              detail: `Order status changed to ${orderStatus.value}`,
+              summary: t('Status Updated'),
+              detail: t('Order status changed to {status}', { status: orderStatus.value }),
               life: 3000
             })
           }
@@ -631,8 +636,8 @@ const handleStatusChange = (status: string) => {
     case 'SUCCESS':
       toast.add({
         severity: 'success',
-        summary: 'Payment Successful',
-        detail: 'Your payment has been confirmed successfully!',
+        summary: t('Payment Successful'),
+        detail: t('Your payment has been confirmed successfully!'),
         life: 5000
       })
       stopPolling()
@@ -640,8 +645,8 @@ const handleStatusChange = (status: string) => {
     case 'FAIL':
       toast.add({
         severity: 'error',
-        summary: 'Payment Failed',
-        detail: 'Your payment could not be completed. Please try again.',
+        summary: t('Payment Failed'),
+        detail: t('Your payment could not be completed. Please try again.'),
         life: 5000
       })
       stopPolling()
@@ -649,8 +654,8 @@ const handleStatusChange = (status: string) => {
     case 'CANCEL':
       toast.add({
         severity: 'warn',
-        summary: 'Payment Cancelled',
-        detail: 'This payment has been cancelled.',
+        summary: t('Payment Cancelled'),
+        detail: t('This payment has been cancelled.'),
         life: 5000
       })
       stopPolling()
@@ -687,15 +692,15 @@ const refreshPayment = async () => {
     await fetchOrderStatus()
     toast.add({
       severity: 'info',
-      summary: 'Status Refreshed',
-      detail: 'Payment status has been updated',
+      summary: t('Status Refreshed'),
+      detail: t('Payment status has been updated'),
       life: 3000
     })
   } catch (error) {
     toast.add({
       severity: 'error',
-      summary: 'Refresh Failed',
-      detail: (error as any)?.message || 'Failed to refresh payment status',
+      summary: t('Refresh Failed'),
+      detail: (error as any)?.message || t('Failed to refresh payment status'),
       life: 3000
     })
   } finally {
@@ -820,8 +825,8 @@ const retryPayment = () => {
 const cancelOrder = () => {
   toast.add({
     severity: 'info',
-    summary: 'Order Cancelled',
-    detail: 'Your order has been cancelled',
+    summary: t('Order Cancelled'),
+    detail: t('Your order has been cancelled'),
     life: 3000
   })
   // Navigate back to my cards page

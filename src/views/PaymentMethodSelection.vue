@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Unified Header -->
-    <AppHeader title="Payment Method" :show-title="true" />
+    <AppHeader :title="$t('Payment Method')" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -15,19 +15,19 @@
             <div class="absolute -top-16 -right-20 w-56 h-56 bg-white/15 blur-3xl rounded-full"></div>
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
             <div class="relative px-10 py-12 text-center flex flex-col items-center space-y-4">
-              <span class="text-sm uppercase tracking-widest text-white/80">Pay Amount</span>
+              <span class="text-sm uppercase tracking-widest text-white/80">{{ $t('Pay Amount') }}</span>
               <div class="text-5xl font-extrabold tracking-tight">{{ formatCurrency(originalPayAmount) }}</div>
               <div v-if="discountAmount > 0" class="text-sm text-white/80">
                 <span class="line-through mr-2 opacity-75">{{ formatCurrency(payAmount) }}</span>
-                Used {{ appliedRewardPoints.toLocaleString() }} pts
+                {{ $t('Used {points} pts', { points: appliedRewardPoints.toLocaleString() }) }}
               </div>
               <div v-if="cardStore.selectedCardBin?.cardCurrency" class="text-sm text-white/80">
-                {{ cardStore.selectedCardBin?.cardCurrency }} total for your card
+                {{ $t('{currency} total for your card', { currency: cardStore.selectedCardBin?.cardCurrency }) }}
               </div>
               <div
                 class="mt-6 inline-flex items-center px-4 py-2 rounded-full text-sm text-white/90 bg-white/15 backdrop-blur-sm">
                 <i class="pi pi-shield mr-2 text-white/90"></i>
-                Secure crypto payment powered by {{ selectedPayType?.name || 'our partners' }}
+                {{ $t('Secure crypto payment powered by {provider}', { provider: selectedPayType?.name || $t('our partners') }) }}
               </div>
             </div>
           </div>
@@ -40,19 +40,19 @@
                   <i class="pi pi-credit-card text-blue-600 dark:text-blue-400 text-base"></i>
                 </div>
                 <div>
-                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Select Payment Method</h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">Choose a provider and network to continue</p>
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">{{ $t('Select Payment Method') }}</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">{{ $t('Choose a provider and network to continue') }}</p>
                 </div>
               </div>
               <span class="inline-flex items-center text-xs font-medium uppercase tracking-wide text-blue-600">
                 <span class="w-2 h-2 mr-2 rounded-full bg-blue-500 animate-pulse"></span>
-                {{ paymentMethods.length }} available
+                {{ $t('{count} available', { count: paymentMethods.length }) }}
               </span>
             </div>
 
             <div v-if="loading" class="flex flex-col items-center justify-center gap-3 py-12 text-center">
               <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
-              <span class="text-gray-600 dark:text-gray-400">Loading payment methods...</span>
+              <span class="text-gray-600 dark:text-gray-400">{{ $t('Loading payment methods...') }}</span>
             </div>
 
             <div v-else class="space-y-4">
@@ -72,14 +72,15 @@
                     </div>
                     <div>
                       <div class="font-semibold text-gray-900 dark:text-white text-lg">{{ payType.name }}</div>
-                      <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks.length }} crypto
-                        options</div>
+                      <div class="text-sm text-gray-500 dark:text-gray-400">
+                        {{ $t('{count} crypto options', { count: payType.cryptoNetworks.length }) }}
+                      </div>
                     </div>
                   </div>
 
                   <div v-if="selectedPayType?.name === payType.name"
                     class="flex items-center gap-3 text-blue-600 self-start">
-                    <span class="text-sm font-medium">Currently selected</span>
+                    <span class="text-sm font-medium">{{ $t('Currently selected') }}</span>
                     <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center">
                       <i class="pi pi-check text-white text-xs"></i>
                     </div>
@@ -90,10 +91,12 @@
                   class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
                   <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-3">
                     <span
-                      class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">Available
-                      Networks</span>
-                    <span class="text-xs text-gray-500 dark:text-gray-400">Selected: {{ selectedCrypto ?
-                      selectedCrypto.crypto.name + '-' + selectedCrypto.network.name : 'None' }}</span>
+                      class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">{{ $t('Available Networks') }}</span>
+                    <span class="text-xs text-gray-500 dark:text-gray-400">
+                      {{ $t('Selected: {value}', {
+                        value: selectedCrypto ? selectedCrypto.crypto.name + '-' + selectedCrypto.network.name : $t('None')
+                      }) }}
+                    </span>
                   </div>
                   <div class="grid grid-cols-1 gap-3">
                     <div v-for="crypto in payType.cryptoNetworks" :key="crypto.crypto.name + '-' + crypto.network.name"
@@ -116,7 +119,7 @@
                           </div>
                           <div class="text-xs text-gray-500 dark:text-gray-400">{{ crypto.network.fullName }}</div>
                           <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
-                            Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
+                            {{ $t('Limit: ${min} - ${max}', { min: crypto.minLimit, max: crypto.maxLimit }) }}
                           </div>
                         </div>
                       </div>
@@ -141,23 +144,26 @@
             class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg p-4">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center space-x-2">
-                <span class="text-gray-700 dark:text-gray-300">You will receive</span>
+                <span class="text-gray-700 dark:text-gray-300">{{ $t('You will receive') }}</span>
                 <span class="font-bold text-gray-900 dark:text-white">{{ actualCryptoAmount }} {{
                   selectedCrypto.crypto.name }}</span>
-                <span class="text-gray-700 dark:text-gray-300">from</span>
+                <span class="text-gray-700 dark:text-gray-300">{{ $t('from') }}</span>
                 <span class="font-bold text-gray-900 dark:text-white">{{ formatCurrency(originalPayAmount) }}</span>
               </div>
               <div v-if="countdown > 0" class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                 <i class="pi pi-clock"></i>
-                <span>{{ countdown }}s</span>
+                <span>{{ $t('{count}s', { count: countdown }) }}</span>
               </div>
             </div>
             <div v-if="rateResult?.cryptoDetail?.cryptoToUsdTRate" class="text-xs text-gray-600 dark:text-gray-400">
-              1 {{ cardStore.selectedCardBin?.cardCurrency || 'USD' }} ≈ {{ rateResult.cryptoDetail.cryptoToUsdTRate
-              }} {{ selectedCrypto?.crypto.name }}
+              {{ $t('1 {currency} ≈ {rate} {unit}', {
+                currency: cardStore.selectedCardBin?.cardCurrency || 'USD',
+                rate: rateResult.cryptoDetail.cryptoToUsdTRate,
+                unit: selectedCrypto?.crypto.name
+              }) }}
             </div>
             <div class="flex items-center justify-between text-sm">
-              <span class="text-gray-700 dark:text-gray-300">Transaction Fee</span>
+              <span class="text-gray-700 dark:text-gray-300">{{ $t('Transaction Fee') }}</span>
               <span class="text-gray-700 dark:text-gray-300">
                 {{ rateResult?.cryptoDetail?.cryptoFee || '0' }} {{ selectedCrypto.crypto.name }}
               </span>
@@ -173,7 +179,7 @@
                 <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-lg"></i>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">Payment Amount Out of Range</h4>
+                <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">{{ $t('Payment Amount Out of Range') }}</h4>
                 <p class="text-sm text-red-700 dark:text-red-300">{{ limitErrorMessage }}</p>
               </div>
             </div>
@@ -190,19 +196,19 @@
             <div class="absolute -top-16 -right-20 w-56 h-56 bg-white/15 blur-3xl rounded-full"></div>
             <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-white/10 blur-3xl rounded-full"></div>
             <div class="relative px-6 py-8 text-center flex flex-col items-center space-y-3">
-              <span class="text-sm uppercase tracking-widest text-white/80">Pay Amount</span>
+              <span class="text-sm uppercase tracking-widest text-white/80">{{ $t('Pay Amount') }}</span>
               <div class="text-4xl font-extrabold tracking-tight">{{ formatCurrency(originalPayAmount) }}</div>
               <div v-if="discountAmount > 0" class="text-xs text-white/80">
                 <span class="line-through mr-1 opacity-70">{{ formatCurrency(payAmount) }}</span>
-                Used {{ appliedRewardPoints.toLocaleString() }} pts
+                {{ $t('Used {points} pts', { points: appliedRewardPoints.toLocaleString() }) }}
               </div>
               <div v-if="cardStore.selectedCardBin?.cardCurrency" class="text-sm text-white/80">
-                {{ cardStore.selectedCardBin?.cardCurrency }} total for your card
+                {{ $t('{currency} total for your card', { currency: cardStore.selectedCardBin?.cardCurrency }) }}
               </div>
               <div
                 class="mt-4 inline-flex items-center px-3 py-2 rounded-full text-xs text-white/90 bg-white/15 backdrop-blur-sm">
                 <i class="pi pi-shield mr-2 text-white/90"></i>
-                Secure crypto payment powered by {{ selectedPayType?.name || 'our partners' }}
+                {{ $t('Secure crypto payment powered by {provider}', { provider: selectedPayType?.name || $t('our partners') }) }}
               </div>
             </div>
           </div>
@@ -216,7 +222,7 @@
                   <i class="pi pi-credit-card text-blue-600 text-sm"></i>
                 </div>
                 <div>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Select Payment Method</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ $t('Select Payment Method') }}</h3>
                 </div>
               </div>
               <div class="w-4 h-4 bg-blue-600 rounded-full"></div>
@@ -225,7 +231,7 @@
             <!-- Loading State -->
             <div v-if="loading" class="flex justify-center items-center py-8">
               <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
-              <span class="ml-2 text-gray-600 dark:text-gray-400">Loading payment methods...</span>
+              <span class="ml-2 text-gray-600 dark:text-gray-400">{{ $t('Loading payment methods...') }}</span>
             </div>
 
             <!-- Payment Methods Options -->
@@ -248,8 +254,9 @@
                     </div>
                     <div>
                       <div class="font-semibold text-gray-900 dark:text-white">{{ payType.name }}</div>
-                      <div class="text-sm text-gray-500 dark:text-gray-400">{{ payType.cryptoNetworks.length }} crypto
-                        options</div>
+                      <div class="text-sm text-gray-500 dark:text-gray-400">
+                        {{ $t('{count} crypto options', { count: payType.cryptoNetworks.length }) }}
+                      </div>
                     </div>
                   </div>
 
@@ -264,8 +271,9 @@
                 <div v-if="selectedPayType?.name === payType.name"
                   class="mt-3 pt-3 border-t border-gray-200 dark:border-gray-600">
                   <div class="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                    Selected: {{ selectedCrypto ? `${selectedCrypto.crypto.name}-${selectedCrypto.network.name}` :
-                      'None' }}
+                    {{ $t('Selected: {value}', {
+                      value: selectedCrypto ? `${selectedCrypto.crypto.name}-${selectedCrypto.network.name}` : $t('None')
+                    }) }}
                   </div>
                   <div class="space-y-2">
                     <div v-for="crypto in payType.cryptoNetworks" :key="`${crypto.crypto.name}-${crypto.network.name}`"
@@ -289,7 +297,7 @@
                           <div class="text-sm text-gray-500 dark:text-gray-400">{{ crypto.crypto.fullName }}</div>
                           <div class="text-xs text-gray-400 dark:text-gray-500">{{ crypto.network.fullName }}</div>
                           <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">
-                            Limit: ${{ crypto.minLimit }} - ${{ crypto.maxLimit }}
+                            {{ $t('Limit: ${min} - ${max}', { min: crypto.minLimit, max: crypto.maxLimit }) }}
                           </div>
                         </div>
                       </div>
@@ -311,7 +319,7 @@
 
           <!-- Selected Crypto Details -->
           <!-- <div v-if="selectedCrypto" class="mt-6 bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-            <h4 class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Payment Details</h4>
+            <h4 class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{{ $t('Payment Details') }}</h4>
             <div class="space-y-2 text-sm">
               <div class="flex justify-between">
                 <span class="text-gray-600 dark:text-gray-400"> {{ cardStore.selectedCardBin?.cardCurrency }}
@@ -319,30 +327,30 @@
                 <span class="font-medium text-gray-900 dark:text-white">{{ formatCurrency(finalPayAmount) }}</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Currency:</span>
+                <span class="text-gray-600 dark:text-gray-400">{{ $t('Currency:') }}</span>
                 <span class="font-medium text-gray-900 dark:text-white">{{ selectedCrypto.crypto.name }}</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Network:</span>
+                <span class="text-gray-600 dark:text-gray-400">{{ $t('Network') }}:</span>
                 <span class="font-medium text-gray-900 dark:text-white">{{ selectedCrypto.network.fullName }}</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Crypto Amount:</span>
+                <span class="text-gray-600 dark:text-gray-400">{{ $t('Crypto Amount') }}:</span>
                 <span class="font-medium text-blue-600 dark:text-blue-400">
                   <span v-if="rateLoading" class="flex items-center space-x-1">
                     <i class="pi pi-spin pi-spinner text-xs"></i>
-                    <span>Loading...</span>
+                    <span>{{ $t('Loading...') }}</span>
                   </span>
                   <span v-else-if="actualCryptoAmount">{{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}</span>
                   <span v-else>-</span>
                 </span>
               </div>
               <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Min Limit:</span>
+                <span class="text-gray-600 dark:text-gray-400">{{ $t('Min Limit') }}:</span>
                 <span class="font-medium text-gray-900 dark:text-white">${{ selectedCrypto.minLimit }}</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Max Limit:</span>
+                <span class="text-gray-600 dark:text-gray-400">{{ $t('Max Limit') }}:</span>
                 <span class="font-medium text-gray-900 dark:text-white">${{ selectedCrypto.maxLimit }}</span>
               </div>
             </div>
@@ -355,27 +363,30 @@
             class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg p-4">
             <div class="flex items-center justify-between">
               <div class="flex items-center space-x-1">
-                <span class="text-xs text-gray-600 dark:text-gray-400">You will receive</span>
+                <span class="text-xs text-gray-600 dark:text-gray-400">{{ $t('You will receive') }}</span>
                 <div class="flex">
                   <span class="text-xs font-bold text-gray-900 dark:text-white">{{ actualCryptoAmount }}</span>
                   <span class="text-xs font-bold text-gray-900 dark:text-white">{{ selectedCrypto.crypto.name }}</span>
                 </div>
-                <span class="text-xs text-gray-600 dark:text-gray-400">from</span>
+                <span class="text-xs text-gray-600 dark:text-gray-400">{{ $t('from') }}</span>
                 <span class="text-xs font-bold text-gray-900 dark:text-white">{{ formatCurrency(originalPayAmount)
                 }}</span>
               </div>
               <div v-if="countdown > 0" class="flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-400">
                 <i class="pi pi-clock"></i>
-                <span>{{ countdown }}s</span>
+                <span>{{ $t('{count}s', { count: countdown }) }}</span>
               </div>
             </div>
             <div v-if="rateResult?.cryptoDetail?.cryptoToUsdTRate"
               class="text-xs text-gray-600 dark:text-gray-400 mt-2">
-              1 {{ cardStore.selectedCardBin?.cardCurrency || 'USD' }} ≈ {{ rateResult.cryptoDetail.cryptoToUsdTRate }}
-              {{ selectedCrypto?.crypto.name }}
+              {{ $t('1 {currency} ≈ {rate} {unit}', {
+                currency: cardStore.selectedCardBin?.cardCurrency || 'USD',
+                rate: rateResult.cryptoDetail.cryptoToUsdTRate,
+                unit: selectedCrypto?.crypto.name
+              }) }}
             </div>
             <div class="flex items-center justify-between text-xs mt-2">
-              <span class="text-gray-600 dark:text-gray-400">Transaction Fee</span>
+              <span class="text-gray-600 dark:text-gray-400">{{ $t('Transaction Fee') }}</span>
               <span class="text-gray-600 dark:text-gray-400">
                 {{ rateResult?.cryptoDetail?.cryptoFee || '0' }} {{ selectedCrypto.crypto.name }}
               </span>
@@ -391,7 +402,7 @@
                 <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400"></i>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">Amount Out of Range</h4>
+                <h4 class="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">{{ $t('Amount Out of Range') }}</h4>
                 <p class="text-xs text-red-700 dark:text-red-300">{{ limitErrorMessage }}</p>
               </div>
             </div>
@@ -406,7 +417,7 @@
         <button class="bottom-button-dual bottom-button-dual-secondary flex items-center justify-center space-x-2"
           @click="goBack">
           <i class="pi pi-arrow-left"></i>
-          <span>Back</span>
+          <span>{{ $t('Back') }}</span>
         </button>
 
         <!-- Continue Button -->
@@ -414,18 +425,22 @@
           class="bottom-button-dual bottom-button-dual-primary" @click="handleContinue">
           <span v-if="creatingOrder" class="flex items-center space-x-2">
             <i class="pi pi-spin pi-spinner text-sm"></i>
-            <span>Creating...</span>
+            <span>{{ $t('Creating...') }}</span>
           </span>
           <span v-else-if="rateLoading" class="flex items-center space-x-2">
             <i class="pi pi-spin pi-spinner text-sm"></i>
-            <span>Loading rate...</span>
+            <span>{{ $t('Loading rate...') }}</span>
           </span>
-          <span v-else-if="!selectedPayType">Select Payment</span>
-          <span v-else-if="!selectedCrypto">Select Crypto</span>
+          <span v-else-if="!selectedPayType">{{ $t('Select Payment') }}</span>
+          <span v-else-if="!selectedCrypto">{{ $t('Select Crypto') }}</span>
           <span v-else-if="!isAmountWithinLimit">{{ limitErrorMessage }}</span>
-          <span v-else-if="!actualCryptoAmount">Loading payment amount...</span>
-          <span v-else>Pay {{ actualCryptoAmount }} {{ selectedCrypto.crypto.name }}<span v-if="countdown > 0"
-              class="text-xs opacity-75"> ({{ countdown }}s)</span></span>
+          <span v-else-if="!actualCryptoAmount">{{ $t('Loading payment amount...') }}</span>
+          <span v-else>
+            {{ $t('Pay {amount} {token}', { amount: actualCryptoAmount, token: selectedCrypto.crypto.name }) }}
+            <span v-if="countdown > 0" class="text-xs opacity-75">
+              ({{ $t('{count}s', { count: countdown }) }})
+            </span>
+          </span>
         </button>
       </div>
     </div>
@@ -436,6 +451,7 @@
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useI18n } from 'vue-i18n'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI, type OrderPayType, type OrderCryptoNetwork } from '@/api/order'
 import { useCardStore } from '@/stores/card'
@@ -446,6 +462,7 @@ const route = useRoute()
 const toast = useToast()
 const cardStore = useCardStore()
 const userStore = useUserStore()
+const { t } = useI18n()
 
 // Payment amount and order info
 const payAmount = ref(1000.00)
@@ -538,10 +555,16 @@ const limitErrorMessage = computed(() => {
   const maxLimit = selectedCrypto.value.maxLimit
 
   if (paymentAmount < minLimit) {
-    return `Payment amount must be at least ${minLimit} ${selectedCrypto.value.crypto.name}`
+    return t('Payment amount must be at least {amount} {token}', {
+      amount: minLimit,
+      token: selectedCrypto.value.crypto.name
+    })
   }
   if (paymentAmount > maxLimit) {
-    return `Payment amount exceeds maximum limit of ${maxLimit} ${selectedCrypto.value.crypto.name}`
+    return t('Payment amount exceeds maximum limit of {amount} {token}', {
+      amount: maxLimit,
+      token: selectedCrypto.value.crypto.name
+    })
   }
   return ''
 })
@@ -619,8 +642,8 @@ const queryRate = async () => {
     } else {
       toast.add({
         severity: 'error',
-        summary: 'Rate Query Failed',
-        detail: response.msg || 'Failed to get exchange rate',
+        summary: t('Rate Query Failed'),
+        detail: response.msg || t('Failed to get exchange rate'),
         life: 3000
       })
     }
@@ -628,8 +651,8 @@ const queryRate = async () => {
     console.error('Error querying rate:', error)
     toast.add({
       severity: 'error',
-      summary: 'Rate Query Error',
-      detail: (error as any)?.message || 'Failed to get exchange rate',
+      summary: t('Rate Query Error'),
+      detail: (error as any)?.message || t('Failed to get exchange rate'),
       life: 3000
     })
   } finally {
@@ -757,8 +780,8 @@ const loadPaymentMethods = async () => {
     console.error('Error loading payment methods:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to load payment methods',
+      summary: t('Error'),
+      detail: (error as any)?.message || t('Failed to load payment methods'),
       life: 3000
     })
   } finally {
@@ -790,8 +813,8 @@ const handleContinue = async () => {
   if (!selectedPayType.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Selection Required',
-      detail: 'Please select a payment method',
+      summary: t('Selection Required'),
+      detail: t('Please select a payment method'),
       life: 3000
     })
     return
@@ -800,8 +823,8 @@ const handleContinue = async () => {
   if (!selectedCrypto.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Selection Required',
-      detail: 'Please select a cryptocurrency',
+      summary: t('Selection Required'),
+      detail: t('Please select a cryptocurrency'),
       life: 3000
     })
     return
@@ -810,7 +833,7 @@ const handleContinue = async () => {
   if (!isAmountWithinLimit.value) {
     toast.add({
       severity: 'error',
-      summary: 'Amount Limit Exceeded',
+      summary: t('Amount Limit Exceeded'),
       detail: limitErrorMessage.value,
       life: 5000
     })
@@ -820,8 +843,8 @@ const handleContinue = async () => {
   if (!actualCryptoAmount.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Rate Loading',
-      detail: 'Please wait for the exchange rate to load',
+      summary: t('Rate Loading'),
+      detail: t('Please wait for the exchange rate to load'),
       life: 3000
     })
     return
@@ -830,8 +853,8 @@ const handleContinue = async () => {
   if (finalPayAmount.value <= 0) {
     toast.add({
       severity: 'warn',
-      summary: 'Invalid Amount',
-      detail: 'Payment amount must be greater than 0 after applying points',
+      summary: t('Invalid Amount'),
+      detail: t('Payment amount must be greater than 0 after applying points'),
       life: 3000
     })
     return
@@ -847,8 +870,8 @@ const handleContinue = async () => {
     // Show loading toast
     toast.add({
       severity: 'info',
-      summary: 'Creating Order',
-      detail: 'Creating deposit order...',
+      summary: t('Creating Order'),
+      detail: t('Creating deposit order...'),
       life: 3000
     })
     // Determine if it's card application or recharge operation
@@ -875,8 +898,8 @@ const handleContinue = async () => {
       // Success toast
       toast.add({
         severity: 'success',
-        summary: 'Order Created',
-        detail: `Order ${orderResponse.model.orderNum} created successfully`,
+        summary: t('Order Created'),
+        detail: t('Order {order} created successfully', { order: orderResponse.model.orderNum }),
         life: 3000
       })
 
@@ -893,7 +916,7 @@ const handleContinue = async () => {
         network: selectedCrypto.value!.network.name,
         payType: selectedPayType.value!.name,
         cryptoAmount: actualCryptoAmount.value,
-        name: route.query.name || 'John Tan',
+        name: route.query.name || t('John Tan'),
         expires: selectedPayType.value?.expires ?? null,
         cardRewardPointsUsed: appliedRewardPoints.value,
         cardRewardDiscount: discountAmount.value
@@ -916,8 +939,8 @@ const handleContinue = async () => {
     } else {
       toast.add({
         severity: 'error',
-        summary: 'Order Creation Failed',
-        detail: orderResponse.msg || 'Failed to create deposit order',
+        summary: t('Order Creation Failed'),
+        detail: orderResponse.msg || t('Failed to create deposit order'),
         life: 5000
       })
     }
@@ -925,8 +948,8 @@ const handleContinue = async () => {
     console.error('Error creating deposit order:', error)
     toast.add({
       severity: 'error',
-      summary: 'Order Creation Error',
-      detail: (error as any)?.message || 'Failed to create deposit order',
+      summary: t('Order Creation Error'),
+      detail: (error as any)?.message || t('Failed to create deposit order'),
       life: 5000
     })
   } finally {

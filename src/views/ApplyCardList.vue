@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-white dark:bg-gray-900 overflow-y-auto md:bg-gray-50 "
     :style="{ minHeight: `calc(var(--app-vh, 1vh) * 100)` }">
     <!-- Navigation Header -->
-    <AppHeader title="Apply Card" :show-title="true" />
+    <AppHeader :title="$t('Apply Card')" :show-title="true" />
 
     <!-- Main Content -->
     <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto py-6">
@@ -10,7 +10,7 @@
       <div v-if="loading" class="flex justify-center py-20">
         <div class="flex items-center space-x-3">
           <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-          <span class="text-gray-600 dark:text-gray-400">Loading card configurations...</span>
+          <span class="text-gray-600 dark:text-gray-400">{{ $t('Loading card configurations...') }}</span>
         </div>
       </div>
 
@@ -19,9 +19,9 @@
         <div
           class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-8 w-full max-w-md mx-auto">
           <i class="pi pi-exclamation-triangle text-red-500 text-4xl mb-4"></i>
-          <h3 class="text-lg font-semibold text-red-800 dark:text-red-400 mb-2">Loading Failed</h3>
+          <h3 class="text-lg font-semibold text-red-800 dark:text-red-400 mb-2">{{ $t('Loading Failed') }}</h3>
           <p class="text-red-600 dark:text-red-400 mb-6">{{ error }}</p>
-          <Button label="Retry" icon="pi pi-refresh" severity="secondary" @click="fetchCardConfigs" />
+          <Button :label="$t('Retry')" icon="pi pi-refresh" severity="secondary" @click="fetchCardConfigs" />
         </div>
       </div>
 
@@ -34,13 +34,13 @@
               <!-- Stats row -->
               <div class="grid grid-cols-2 gap-3 text-center">
                 <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">Recharge Fee</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400">{{ $t('Recharge Fee') }}</div>
                   <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
                     {{ formatRechargeFee(currentCard?.rechargeFee) }}
                   </div>
                 </div>
                 <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">Monthly Fee</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400">{{ $t('Monthly Fee') }}</div>
                   <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
                     {{ formatMoney(currentCard?.monthlyFee) }}
                   </div>
@@ -84,7 +84,7 @@
           <!-- Title + brands -->
           <div class="text-center mt-6">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              {{ currentCard?.cardPattern === 1 ? 'Virtual Card' : 'Physical Card' }}
+              {{ currentCard?.cardPattern === 1 ? $t('Virtual Card') : $t('Physical Card') }}
             </h3>
           </div>
 
@@ -95,7 +95,7 @@
               <div class="flex items-center space-x-2">
                 <i class="pi pi-exclamation-triangle text-yellow-600 dark:text-yellow-400"></i>
                 <span class="text-sm text-yellow-800 dark:text-yellow-200">
-                  You have reached the maximum limit of {{ currentCard.applyNumber }} cards
+                  {{ $t('You have reached the maximum limit of {count} cards', { count: currentCard.applyNumber }) }}
                 </span>
               </div>
             </div>
@@ -103,7 +103,9 @@
 
           <!-- Primary action -->
           <div class="px-4 mt-4">
-            <Button :label="currentCard?.cardPattern === 1 ? 'Order a Virtual Card' : 'Order a Physical Card'"
+            <Button :label="currentCard?.cardPattern === 1
+              ? $t('Order a {type} Card', { type: $t('Virtual') })
+              : $t('Order a {type} Card', { type: $t('Physical') })"
               severity="primary" class="w-full"
               :disabled="currentCard?.cardPattern !== 1 || (currentCard && hasReachedMaxCards(currentCard))"
               @click="currentCard && orderCard(currentCard)" />
@@ -125,8 +127,8 @@
       <div v-else class="text-center py-20">
         <div class="bg-gray-50 rounded-lg p-12 w-full max-w-md mx-auto">
           <i class="pi pi-credit-card text-gray-400 text-5xl mb-6"></i>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">No Cards Available</h3>
-          <p class="text-gray-600">No card configurations found.</p>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ $t('No Cards Available') }}</h3>
+          <p class="text-gray-600">{{ $t('No card configurations found.') }}</p>
         </div>
       </div>
     </div>
@@ -137,7 +139,7 @@
       class="kyc-dialog-fullscreen">
       <template #header>
         <div class="flex items-center justify-between w-full">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">KYC Identity Verification</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ $t('KYC Identity Verification') }}</h3>
           <Button icon="pi pi-times" text rounded severity="secondary" @click="closeKycDialog"
             class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" />
         </div>
@@ -159,6 +161,7 @@
 import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useI18n } from 'vue-i18n'
 import { useCardStore } from '@/stores/card'
 import { useAuthStore } from '@/stores/auth'
 import { useUserStore } from '@/stores/user'
@@ -174,6 +177,7 @@ const cardStore = useCardStore()
 const authStore = useAuthStore()
 const userStore = useUserStore()
 const { handleError, handleSuccess } = useErrorHandler()
+const { t } = useI18n()
 
 // Reactive data
 const selectedCard = ref<CardConfig | null>(null)
@@ -222,8 +226,8 @@ const fetchCardConfigs = async () => {
   } else {
     toast.add({
       severity: 'error',
-      summary: 'Load Failed',
-      detail: result.error || 'Failed to load card configurations',
+      summary: t('Load Failed'),
+      detail: result.error || t('Failed to load card configurations'),
       life: 3000
     })
   }
@@ -239,8 +243,8 @@ const selectCard = (card: CardConfig) => {
   }
   toast.add({
     severity: 'info',
-    summary: 'Card Selected',
-    detail: `Selected ${card.cardName}`,
+    summary: t('Card Selected'),
+    detail: t('Selected {name}', { name: card.cardName }),
     life: 2000
   })
 }
@@ -445,8 +449,8 @@ const orderCard = async (card: CardConfig) => {
   if (card.status !== 1) {
     toast.add({
       severity: 'warn',
-      summary: 'Not Available',
-      detail: `${card.cardName} is currently not available`,
+      summary: t('Not Available'),
+      detail: t('{name} is currently not available', { name: card.cardName }),
       life: 3000
     })
     return
@@ -456,8 +460,8 @@ const orderCard = async (card: CardConfig) => {
   if (hasReachedMaxCards(card)) {
     toast.add({
       severity: 'warn',
-      summary: 'Card Limit Reached',
-      detail: `You have reached the maximum limit of ${card.applyNumber} cards`,
+      summary: t('Card Limit Reached'),
+      detail: t('You have reached the maximum limit of {count} cards', { count: card.applyNumber }),
       life: 5000
     })
     return
@@ -500,21 +504,21 @@ const checkKycAndNavigate = async (card: CardConfig) => {
 
       case 3: // KYC rejected
         console.log('KYC rejected, showing error message')
-        handleError('KYC verification was rejected. Please contact support for more information.', {
-          fallbackMessage: 'KYC verification was rejected. Please contact support for more information.'
+        handleError(t('KYC verification was rejected. Please contact support for more information.'), {
+          fallbackMessage: t('KYC verification was rejected. Please contact support for more information.')
         })
         break
 
       default:
         console.log('Unknown KYC status:', kycStatus)
-        handleError('Unknown KYC status, please try again.', {
-          fallbackMessage: 'Unknown KYC status, please try again.'
+        handleError(t('Unknown KYC status, please try again.'), {
+          fallbackMessage: t('Unknown KYC status, please try again.')
         })
     }
   } catch (error) {
     console.error('Error checking KYC status:', error)
     handleError(error, {
-      fallbackMessage: 'Failed to check KYC status, please try again.'
+      fallbackMessage: t('Failed to check KYC status, please try again.')
     })
   }
 }
@@ -534,8 +538,8 @@ const navigateToCardBinSelection = (card: CardConfig) => {
 const activateCard = (card: CardConfig) => {
   toast.add({
     severity: 'success',
-    summary: 'Card Activated',
-    detail: `${card.cardName} has been successfully activated`,
+    summary: t('Card Activated'),
+    detail: t('{card} has been successfully activated', { card: card.cardName }),
     life: 3000
   })
 }
@@ -559,7 +563,7 @@ const launchKycSDK = async () => {
   } catch (error) {
     console.error('Failed to launch KYC SDK:', error)
     handleError(error, {
-      fallbackMessage: 'Failed to start KYC verification, please try again.'
+      fallbackMessage: t('Failed to start KYC verification, please try again.')
     })
   }
 }
@@ -570,8 +574,8 @@ const initializeSumsubSDK = () => {
     // Check if snsWebSdk is available
     if (typeof (window as any).snsWebSdk === 'undefined') {
       console.error('snsWebSdk is not loaded')
-      handleError('KYC verification component is not loaded. Please refresh the page and try again.', {
-        fallbackMessage: 'KYC verification component is not loaded. Please refresh the page and try again.'
+      handleError(t('KYC verification component is not loaded. Please refresh the page and try again.'), {
+        fallbackMessage: t('KYC verification component is not loaded. Please refresh the page and try again.')
       })
       return
     }
@@ -591,19 +595,19 @@ const initializeSumsubSDK = () => {
       })
       .on('idCheck.onError', (error: any) => {
         console.error('Sumsub SDK error:', error)
-        handleError('An error occurred during KYC verification', {
-          fallbackMessage: 'An error occurred during KYC verification, please try again.'
+        handleError(t('An error occurred during KYC verification'), {
+          fallbackMessage: t('An error occurred during KYC verification, please try again.')
         })
       })
       .build()
 
     snsWebSdkInstance.launch('#sumsub-websdk-container')
 
-    handleSuccess('Please follow the instructions to complete identity verification.')
+    handleSuccess(t('Please follow the instructions to complete identity verification.'))
   } catch (error) {
     console.error('Failed to initialize Sumsub SDK:', error)
-    handleError('Failed to initialize KYC verification', {
-      fallbackMessage: 'Failed to initialize KYC verification, please try again.'
+    handleError(t('Failed to initialize KYC verification'), {
+      fallbackMessage: t('Failed to initialize KYC verification, please try again.')
     })
   }
 }
@@ -647,7 +651,7 @@ const startKycPolling = () => {
           console.error('Failed to update user profile after KYC approval:', error)
         }
 
-        handleSuccess('KYC verification approved. You can now apply for a card.')
+        handleSuccess(t('KYC verification approved. You can now apply for a card.'))
 
         // Clear pending card
         pendingCard.value = null
@@ -655,8 +659,8 @@ const startKycPolling = () => {
         // KYC rejected
         stopKycPolling()
         showKycDialog.value = false
-        handleError('KYC verification was rejected. Please contact support for more information.', {
-          fallbackMessage: 'KYC verification was rejected. Please contact support for more information.'
+        handleError(t('KYC verification was rejected. Please contact support for more information.'), {
+          fallbackMessage: t('KYC verification was rejected. Please contact support for more information.')
         })
         pendingCard.value = null
       } else {

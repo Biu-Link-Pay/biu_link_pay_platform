@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Unified Header -->
-    <AppHeader title="Withdraw" :show-title="true" />
+    <AppHeader :title="$t('Withdraw')" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -14,16 +14,17 @@
         <!-- Withdraw Amount Section -->
         <div>
           <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-6">
-            Withdraw amount
+            {{ $t('Withdraw amount') }}
           </h2>
           <div class="mb-3 text-xs text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-800/60 rounded-lg p-3">
-            Available {{ formatCurrency(balance) }} · Limit {{ formatCurrency(minimumBalance) }} -
-            {{ formatCurrency(getMaxWithdrawAmount()) }} {{ cardInfo.cardCurrency }}
+            {{ $t('Available') }} {{ formatCurrency(balance) }} · {{ $t('Limit') }}
+            {{ formatCurrency(minimumBalance) }} - {{ formatCurrency(getMaxWithdrawAmount()) }}
+            {{ cardInfo.cardCurrency }}
           </div>
 
           <div class="mb-4">
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Withdraw amount
+              {{ $t('Withdraw amount') }}
             </label>
             <div class="flex items-center gap-2">
               <InputText v-model="withdrawAmountInput" type="text" :placeholder="minimumBalance.toString()" class="w-32"
@@ -31,7 +32,7 @@
               <span class="text-gray-600 dark:text-gray-400">
                 {{ cardInfo.cardCurrency }}
               </span>
-              <Button label="Max" size="small" severity="secondary" @click="setMaxAmount" />
+              <Button :label="$t('Max')" size="small" severity="secondary" @click="setMaxAmount" />
             </div>
             <small v-if="errors.withdrawAmount" class="text-red-500 text-xs mt-1">
               {{ errors.withdrawAmount }}
@@ -47,13 +48,13 @@
           <div class="flex items-start justify-between gap-3">
             <div>
               <p class="text-xs font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
-                Card Reward Points
+                {{ $t('Card Reward Points') }}
               </p>
               <p class="text-xl font-bold text-gray-900 dark:text-white mt-1">
-                {{ availableRewardPoints.toLocaleString() }} pts
+                {{ availableRewardPoints.toLocaleString() }} {{ $t('pts') }}
               </p>
               <p class="text-[11px] text-gray-500 dark:text-gray-400">
-                100 pts = 1 {{ cardInfo.cardCurrency || 'USD' }}
+                {{ $t('100 pts = 1 {currency}', { currency: cardInfo.cardCurrency || 'USD' }) }}
               </p>
             </div>
             <label class="inline-flex items-center cursor-pointer">
@@ -68,23 +69,25 @@
           </div>
           <div class="mt-2 flex items-center justify-between text-[11px] text-gray-600 dark:text-gray-200">
             <div class="flex items-center gap-1.5">
-              <span>Use</span>
+              <span>{{ $t('Use') }}</span>
               <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
                 :disabled="!applyRewardPoints || !canUseRewardPoints"
                 class="w-20 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-[11px] font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
-              <span class="text-[10px] text-gray-500 dark:text-gray-400">pts</span>
+              <span class="text-[10px] text-gray-500 dark:text-gray-400">{{ $t('pts') }}</span>
             </div>
             <span class="text-[10px] text-gray-400 dark:text-gray-500">
-              Max {{ maxUsablePoints.toLocaleString() }} pts
+              {{ $t('Max {points} pts', { points: maxUsablePoints.toLocaleString() }) }}
             </span>
           </div>
           <div class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">
             <span v-if="applyRewardPoints && canUseRewardPoints && appliedRewardPoints > 0">
-              Using {{ appliedRewardPoints.toLocaleString() }} pts (≈
-              {{ formatCurrency(discountAmount) }} value)
+              {{ $t('Using {points} pts (≈ {value} value)', {
+                points: appliedRewardPoints.toLocaleString(),
+                value: formatCurrency(discountAmount)
+              }) }}
             </span>
             <span v-else>
-              You can use up to {{ maxUsablePoints.toLocaleString() }} pts
+              {{ $t('You can use up to {points} pts', { points: maxUsablePoints.toLocaleString() }) }}
             </span>
           </div>
         </div>
@@ -92,7 +95,7 @@
 
       <!-- Action Buttons -->
       <div class="bottom-buttons-container relative md:static mt-10">
-        <Button label="Back" icon="pi pi-arrow-left" severity="secondary"
+        <Button :label="$t('Back')" icon="pi pi-arrow-left" severity="secondary"
           class="bottom-button-dual bottom-button-dual-secondary" @click="goBack" />
         <Button :disabled="!canContinue" icon="pi pi-arrow-right" :loading="loading"
           class="bottom-button-dual bottom-button-dual-primary" @click="handleContinue">
@@ -127,6 +130,7 @@ import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import InputText from 'primevue/inputtext'
 import Button from 'primevue/button'
+import { useI18n } from 'vue-i18n'
 import AppHeader from '@/components/AppHeader.vue'
 import CardInfoHeader from '@/components/CardInfoHeader.vue'
 import { useCardStore } from '@/stores/card'
@@ -137,6 +141,7 @@ const route = useRoute()
 const toast = useToast()
 const cardStore = useCardStore()
 const userStore = useUserStore()
+const { t } = useI18n()
 
 // Card information from route query
 const cardInfo = ref({
@@ -256,15 +261,20 @@ const buttonLabel = computed(() => {
   const hasPoints = pointsValue > 0
 
   if (!hasFiat && !hasPoints)
-    return 'Continue'
+    return t('Continue')
 
   if (hasFiat && hasPoints)
-    return `${formatCurrency(fiat)} + ${formatCurrency(pointsValue)} in points`
+    return t('{fiat} + {points} in points', {
+      fiat: formatCurrency(fiat),
+      points: formatCurrency(pointsValue)
+    })
 
   if (hasFiat)
     return formatCurrency(fiat)
 
-  return `${formatCurrency(pointsValue)} in points`
+  return t('{amount} in points', {
+    amount: formatCurrency(pointsValue)
+  })
 })
 
 // Get maximum withdraw amount (reuse logic from WithdrawOrder.vue)
@@ -302,8 +312,8 @@ const validateAndLoadCardDetails = () => {
   if (!cachedCardDetail) {
     toast.add({
       severity: 'error',
-      summary: '验证失败',
-      detail: '未经过安全验证，请返回重新操作',
+      summary: t('Validation Failed'),
+      detail: t('Please complete verification and try again.'),
       life: 3000
     })
     router.push('/my-cards')
@@ -316,8 +326,8 @@ const validateAndLoadCardDetails = () => {
   if (!routeCardNo || !cachedCardNo || routeCardNo !== cachedCardNo) {
     toast.add({
       severity: 'error',
-      summary: '验证失败',
-      detail: '卡片信息不匹配，请返回重新操作',
+      summary: t('Validation Failed'),
+      detail: t('Card information mismatch. Please try again.'),
       life: 3000
     })
     router.push('/my-cards')
@@ -330,8 +340,8 @@ const validateAndLoadCardDetails = () => {
   if (!routeCardId || !cachedCardId || routeCardId !== cachedCardId) {
     toast.add({
       severity: 'error',
-      summary: '验证失败',
-      detail: '卡片信息不匹配，请返回重新操作',
+      summary: t('Validation Failed'),
+      detail: t('Card information mismatch. Please try again.'),
       life: 3000
     })
     router.push('/my-cards')
@@ -389,21 +399,25 @@ const validateAmountAndPoints = () => {
   const hasPoints = appliedRewardPoints.value > 0
 
   if (!hasFiatAmount && !hasPoints) {
-    errors.value.withdrawAmount = 'Amount or points must be greater than 0'
+    errors.value.withdrawAmount = t('Amount or points must be greater than 0')
     return false
   }
 
   if (hasFiatAmount) {
     if (amount < minimumBalance.value) {
-      errors.value.withdrawAmount = `Amount must be at least ${formatCurrency(minimumBalance.value)}`
+      errors.value.withdrawAmount = t('Amount must be at least {amount}', {
+        amount: formatCurrency(minimumBalance.value)
+      })
       return false
     }
     if (amount > balance.value) {
-      errors.value.withdrawAmount = 'Amount exceeds available balance'
+      errors.value.withdrawAmount = t('Amount exceeds available balance')
       return false
     }
     if (amount > getMaxWithdrawAmount()) {
-      errors.value.withdrawAmount = `Amount exceeds maximum withdraw limit of ${formatCurrency(getMaxWithdrawAmount())}`
+      errors.value.withdrawAmount = t('Amount exceeds maximum withdraw limit of {amount}', {
+        amount: formatCurrency(getMaxWithdrawAmount())
+      })
       return false
     }
   }
@@ -420,8 +434,8 @@ const handleContinue = async () => {
   if (!validateAmountAndPoints()) {
     toast.add({
       severity: 'error',
-      summary: 'Validation Error',
-      detail: errors.value.withdrawAmount || 'Please check your withdraw amount and points',
+      summary: t('Validation Error'),
+      detail: errors.value.withdrawAmount || t('Please check your withdraw amount and points'),
       life: 3000
     })
     return
@@ -431,8 +445,10 @@ const handleContinue = async () => {
   try {
     toast.add({
       severity: 'success',
-      summary: 'Confirmed',
-      detail: `Withdraw amount ${formatCurrency(withdrawAmountNumber.value)} confirmed`,
+      summary: t('Confirmed'),
+      detail: t('Withdraw amount {amount} confirmed', {
+        amount: formatCurrency(withdrawAmountNumber.value)
+      }),
       life: 2000
     })
 

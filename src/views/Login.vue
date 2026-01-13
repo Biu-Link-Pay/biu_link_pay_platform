@@ -44,16 +44,16 @@
             <!-- Welcome Text -->
             <div class="text-center">
               <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-                Welcome to BiulinkPay
+                {{ $t('Welcome to BiulinkPay') }}
               </h2>
               <p class="text-base text-gray-600 dark:text-gray-400 px-4">
-                Your global virtual card solution for seamless payments
+                {{ $t('Your global virtual card solution for seamless payments') }}
               </p>
             </div>
 
             <!-- Login Button -->
             <div class="w-full px-4">
-              <Button label="Get Started" icon="pi pi-arrow-right" iconPos="right" class="w-full" size="large"
+              <Button :label="$t('Get Started')" icon="pi pi-arrow-right" iconPos="right" class="w-full" size="large"
                 severity="primary" @click="showMobileForm = true" />
             </div>
           </div>
@@ -73,7 +73,7 @@
               </button>
               <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white"
                 :class="{ 'ml-2': showMobileForm && isMobile }">
-                Login with Email
+                {{ $t('Login with Email') }}
               </h1>
               <div v-if="showMobileForm && isMobile" class="w-10"></div>
             </div>
@@ -83,10 +83,10 @@
               <!-- Email Input -->
               <div class="space-y-2">
                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                  Please enter your email address
+                  {{ $t('Please enter your email address') }}
                 </label>
                 <div class="relative">
-                  <InputText v-model="form.email" type="email" placeholder="example@email.com"
+                  <InputText v-model="form.email" type="email" :placeholder="$t('example@email.com')"
                     class="w-full text-base min-h-[48px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all duration-200"
                     :class="{ 'border-red-500': errors.email }" :disabled="isLoading" />
                   <i v-if="errors.email"
@@ -100,13 +100,13 @@
               <!-- Verification Code Input -->
               <div v-if="showVerificationCode" class="space-y-2">
                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                  Please enter verification code
+                  {{ $t('Please enter verification code') }}
                 </label>
                 <div class="flex items-center gap-2 sm:gap-3 min-w-0">
-                  <InputText v-model="form.code" type="text" placeholder="Enter 6-digit code" maxlength="6"
+                  <InputText v-model="form.code" type="text" :placeholder="$t('Enter 6-digit code')" maxlength="6"
                     class="flex-1 min-w-0 text-base min-h-[48px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white text-center tracking-widest transition-all duration-200"
                     :class="{ 'border-red-500': errors.code }" :disabled="isLoading" />
-                  <Button type="button" :label="countdown > 0 ? `${countdown}s` : 'Resend'"
+                  <Button type="button" :label="resendLabel"
                     :disabled="countdown > 0 || isLoading" severity="secondary"
                     class="min-h-[48px] px-3 sm:px-4 whitespace-nowrap sm:min-w-[110px]"
                     @click="resendCode" />
@@ -115,7 +115,7 @@
                   {{ errors.code }}
                 </p>
                 <p class="text-sm text-gray-500 dark:text-gray-400">
-                  Verification code sent to {{ form.email }}
+                  {{ $t('Verification code sent to {email}', { email: form.email }) }}
                 </p>
               </div>
 
@@ -124,15 +124,15 @@
                 <Checkbox v-model="form.agreeTerms" :binary="true" class="mt-1 checkbox-enhanced"
                   :disabled="isLoading" />
                 <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  I have read and agree to BiuLinkPay
+                  {{ $t('I have read and agree to BiuLinkPay') }}
                   <a href="https://static.biulinkpay.online/compliance/TermsOfService.html" target="_blank"
                     rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">
-                    Terms of service
+                    {{ $t('Terms of service') }}
                   </a>
-                  and
+                  {{ $t('and') }}
                   <a href="https://static.biulinkpay.online/compliance/PrivacyPolicy.html" target="_blank"
                     rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">
-                    Privacy Policy
+                    {{ $t('Privacy Policy') }}
                   </a>
                 </p>
               </div>
@@ -155,6 +155,7 @@
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useI18n } from 'vue-i18n'
 import { useAuthStore } from '@/stores/auth'
 import { useCardStore } from '@/stores/card'
 import { useUserStore } from '@/stores/user'
@@ -164,6 +165,7 @@ import { getFingerprintId, getCachedFingerprintId } from '@/utils/fingerprint'
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
+const { t } = useI18n({ useScope: 'global' })
 const authStore = useAuthStore()
 const cardStore = useCardStore()
 const userStore = useUserStore()
@@ -270,18 +272,25 @@ const isMobile = computed(() => {
 
 const buttonText = computed(() => {
   if (isLoading.value) {
-    return showVerificationCode.value ? 'Signing in...' : 'Sending...'
+    return showVerificationCode.value ? t('Signing in...') : t('Sending...')
   }
-  return showVerificationCode.value ? 'Sign In' : 'Send Code'
+  return showVerificationCode.value ? t('Sign In') : t('Send Code')
+})
+
+const resendLabel = computed(() => {
+  if (countdown.value > 0) {
+    return t('{count}s', { count: countdown.value })
+  }
+  return t('Resend')
 })
 
 // Form validation
 const validateEmail = () => {
   if (!form.value.email) {
-    errors.value.email = 'Please enter email address'
+    errors.value.email = t('Please enter email address')
     return false
   } else if (!AuthUtils.isValidEmail(form.value.email)) {
-    errors.value.email = 'Please enter a valid email address'
+    errors.value.email = t('Please enter a valid email address')
     return false
   } else {
     errors.value.email = ''
@@ -291,10 +300,10 @@ const validateEmail = () => {
 
 const validateCode = () => {
   if (!form.value.code) {
-    errors.value.code = 'Please enter verification code'
+    errors.value.code = t('Please enter verification code')
     return false
   } else if (!AuthUtils.isValidCode(form.value.code)) {
-    errors.value.code = 'Please enter 6-digit verification code'
+    errors.value.code = t('Please enter 6-digit verification code')
     return false
   } else {
     errors.value.code = ''
@@ -304,7 +313,7 @@ const validateCode = () => {
 
 const validateTerms = () => {
   if (!form.value.agreeTerms) {
-    errors.value.agreeTerms = 'Please agree to the terms and conditions'
+    errors.value.agreeTerms = t('Please agree to the terms and conditions')
     return false
   } else {
     errors.value.agreeTerms = ''
@@ -357,14 +366,14 @@ const sendCode = async () => {
       startCountdown()
       toast.add({
         severity: 'success',
-        summary: 'Code Sent',
+        summary: t('Code Sent'),
         detail: result.message,
         life: 3000
       })
     } else {
       toast.add({
         severity: 'error',
-        summary: 'Send Failed',
+        summary: t('Send Failed'),
         detail: result.message,
         life: 3000
       })
@@ -372,8 +381,8 @@ const sendCode = async () => {
   } catch (error) {
     toast.add({
       severity: 'error',
-      summary: 'Send Failed',
-      detail: (error as any)?.message || 'Network error, please try again later',
+      summary: t('Send Failed'),
+      detail: (error as any)?.message || t('Network error, please try again later'),
       life: 3000
     })
   } finally {
@@ -408,7 +417,7 @@ const login = async () => {
     if (result.success) {
       toast.add({
         severity: 'success',
-        summary: 'Login Successful',
+        summary: t('Login Successful'),
         detail: result.message,
         life: 3000
       })
@@ -422,7 +431,7 @@ const login = async () => {
     } else {
       toast.add({
         severity: 'error',
-        summary: 'Login Failed',
+        summary: t('Login Failed'),
         detail: result.message,
         life: 3000
       })
@@ -430,8 +439,8 @@ const login = async () => {
   } catch (error) {
     toast.add({
       severity: 'error',
-      summary: 'Login Failed',
-      detail: (error as any)?.message || 'Network error, please try again later',
+      summary: t('Login Failed'),
+      detail: (error as any)?.message || t('Network error, please try again later'),
       life: 3000
     })
   } finally {

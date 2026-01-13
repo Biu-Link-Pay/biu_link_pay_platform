@@ -2,6 +2,7 @@ import axios, { type AxiosInstance, type AxiosRequestConfig, type AxiosResponse,
 import type { ApiResponse } from '@/types/api'
 import { getCachedFingerprintId, getFingerprintId } from '@/utils/fingerprint'
 import { useAuthStore } from '@/stores/auth'
+import { i18n } from '@/i18n'
 
 // 是否正在刷新 token 的标记
 let isRefreshing = false
@@ -16,6 +17,8 @@ const api: AxiosInstance = axios.create({
     'Content-Type': 'application/json',
   },
 })
+
+const t = i18n.global.t
 
 // 请求拦截器
 api.interceptors.request.use(
@@ -211,26 +214,26 @@ api.interceptors.response.use(
           }
           break
         case 403:
-          error.message = 'Access denied'
+          error.message = t('Access denied')
           break
         case 404:
-          error.message = 'Resource not found'
+          error.message = t('Resource not found')
           break
         case 500:
-          error.message = 'Internal server error'
+          error.message = t('Internal server error')
           break
         case 502:
-          error.message = 'The system is updating. Please try again later'
+          error.message = t('The system is updating. Please try again later')
           break
         default:
-          error.message = `Request failed with status ${status}`
+          error.message = t('Request failed with status {status}', { status })
       }
     } else if (error.request) {
       // 请求已发出，但没有收到响应
-      error.message = 'The system is updating. Please try again later'
+      error.message = t('The system is updating. Please try again later')
     } else {
       // 发生了一些问题，触发了错误
-      error.message = `Request configuration error: ${error.message}`
+      error.message = t('Request configuration error: {message}', { message: error.message })
     }
 
     return Promise.reject(error)

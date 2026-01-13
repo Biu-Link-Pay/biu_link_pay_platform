@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { AuthAPI } from '@/api/auth'
+import { i18n } from '@/i18n'
 
 export interface User {
   id: number
@@ -23,13 +24,14 @@ export interface UserDetails {
 }
 
 export const useUserStore = defineStore('user', () => {
+  const t = i18n.global.t
   // State
   const user = ref<UserDetails | null>(null)
   const isLoggedIn = ref(false)
   const loading = ref(false)
 
   // Computed properties
-  const userName = computed(() => user.value?.name || user.value?.firstName || 'Guest')
+  const userName = computed(() => user.value?.name || user.value?.firstName || t('Guest'))
   const userEmail = computed(() => user.value?.email || '')
   const userAvatar = computed(() => user.value?.avatar || '')
   const userNum = computed(() => user.value?.userNum || '')
@@ -79,13 +81,13 @@ export const useUserStore = defineStore('user', () => {
 
         return { success: true, data: profile }
       } else {
-        return { success: false, message: response.msg || 'Failed to get user profile' }
+        return { success: false, message: response.msg || t('Failed to get user profile') }
       }
     } catch (error) {
       console.error('Failed to get user profile:', error)
       return {
         success: false,
-        message: (error as any)?.message || 'Failed to get user profile'
+        message: (error as any)?.message || t('Failed to get user profile')
       }
     } finally {
       loading.value = false

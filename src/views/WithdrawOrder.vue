@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Unified Header -->
-    <AppHeader title="Withdraw" :show-title="true" />
+    <AppHeader :title="$t('Withdraw')" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -78,6 +78,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useMediaQuery } from '@vueuse/core'
+import { useI18n } from 'vue-i18n'
 import AppHeader from '@/components/AppHeader.vue'
 import CardInfoHeader from '@/components/CardInfoHeader.vue'
 import CryptoWithdrawal from '@/components/CryptoWithdrawal.vue'
@@ -87,6 +88,7 @@ import { useCardStore } from '@/stores/card'
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
+const { t } = useI18n({ useScope: 'global' })
 const cardStore = useCardStore()
 
 // Tab state
@@ -96,10 +98,10 @@ const activeTab = ref<'crypto' | 'fiat'>('crypto')
 const isDesktopView = useMediaQuery('(min-width: 768px)')
 
 // Tab definitions
-const tabs = [
-  { key: 'crypto' as const, label: 'Crypto Withdrawal' },
-  { key: 'fiat' as const, label: 'Fiat Withdrawal' }
-]
+const tabs = computed(() => ([
+  { key: 'crypto' as const, label: t('Crypto Withdrawal') },
+  { key: 'fiat' as const, label: t('Fiat Withdrawal') }
+]))
 
 // Card information from route query
 const cardInfo = ref({
@@ -177,8 +179,8 @@ const validateAndLoadCardDetails = () => {
     console.warn('No cached card detail found, redirecting to MyCards')
     toast.add({
       severity: 'error',
-      summary: '验证失败',
-      detail: '未经过安全验证，请返回重新操作',
+      summary: t('Verification Failed'),
+      detail: t('Please complete verification and try again.'),
       life: 3000
     })
     router.push('/my-cards')
@@ -193,8 +195,8 @@ const validateAndLoadCardDetails = () => {
     console.warn('Card number mismatch:', { routeCardNo, cachedCardNo })
     toast.add({
       severity: 'error',
-      summary: '验证失败',
-      detail: '卡片信息不匹配，请返回重新操作',
+      summary: t('Verification Failed'),
+      detail: t('Card information mismatch. Please try again.'),
       life: 3000
     })
     router.push('/my-cards')
@@ -209,8 +211,8 @@ const validateAndLoadCardDetails = () => {
     console.warn('Card ID mismatch:', { routeCardId, cachedCardId })
     toast.add({
       severity: 'error',
-      summary: '验证失败',
-      detail: '卡片信息不匹配，请返回重新操作',
+      summary: t('Verification Failed'),
+      detail: t('Card information mismatch. Please try again.'),
       life: 3000
     })
     router.push('/my-cards')

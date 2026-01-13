@@ -1,5 +1,5 @@
 <template>
-  <Dialog v-model:visible="visible" modal :header="'Add Recipient'" :style="{ width: '90vw', maxWidth: '800px' }"
+  <Dialog v-model:visible="visible" modal :header="$t('Add Recipient')" :style="{ width: '90vw', maxWidth: '800px' }"
     :closable="true" @hide="handleClose">
     <template #default>
       <div class="space-y-4">
@@ -7,17 +7,17 @@
           <!-- Bank Name -->
           <div>
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Bank Name <span class="text-red-500">*</span>
+              {{ $t('Bank Name') }} <span class="text-red-500">*</span>
             </label>
             <div ref="bankDropdownWrapper" class="w-full bank-dropdown-wrapper">
-              <Dropdown v-model="recipientForm.bankName" :options="bankNames" placeholder="Select bank"
+              <Dropdown v-model="recipientForm.bankName" :options="bankNames" :placeholder="$t('Select bank')"
                 class="w-full bank-dropdown" filter show-clear :class="{ 'p-invalid': recipientErrors.bankName }"
                 :panelStyle="bankDropdownPanelStyle">
                 <template #option="slotProps">
                   <div class="truncate bank-option text-xs">{{ slotProps.option }}</div>
                 </template>
                 <template #value="slotProps">
-                  <div class="truncate w-full">{{ slotProps.value || 'Select bank' }}</div>
+                  <div class="truncate w-full">{{ slotProps.value || $t('Select bank') }}</div>
                 </template>
               </Dropdown>
             </div>
@@ -28,9 +28,9 @@
           <!-- Bank Location (Hidden but still in form data) -->
           <div class="hidden">
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Bank Location <span class="text-red-500">*</span>
+              {{ $t('Bank Location') }} <span class="text-red-500">*</span>
             </label>
-            <InputText v-model="recipientForm.bankLocation" placeholder="Enter bank location" class="w-full" disabled
+            <InputText v-model="recipientForm.bankLocation" :placeholder="$t('Enter bank location')" class="w-full" disabled
               :class="{ 'p-invalid': recipientErrors.bankLocation }" />
             <small v-if="recipientErrors.bankLocation" class="text-red-500 text-xs mt-1">{{
               recipientErrors.bankLocation }}</small>
@@ -39,9 +39,9 @@
           <!-- Currency -->
           <div>
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Currency <span class="text-red-500">*</span>
+              {{ $t('Currency') }} <span class="text-red-500">*</span>
             </label>
-            <Dropdown v-model="recipientForm.currency" :options="currencyOptions" placeholder="Select currency"
+            <Dropdown v-model="recipientForm.currency" :options="currencyOptions" :placeholder="$t('Select currency')"
               class="w-full" filter show-clear :class="{ 'p-invalid': recipientErrors.currency }" />
             <small v-if="recipientErrors.currency" class="text-red-500 text-xs mt-1">{{
               recipientErrors.currency }}</small>
@@ -50,18 +50,18 @@
           <!-- Phone Number -->
           <div>
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Phone Number <span class="text-red-500">*</span>
+              {{ $t('Phone Number') }} <span class="text-red-500">*</span>
             </label>
             <div class="flex gap-2">
               <Dropdown v-model="selectedPhoneAreaCode" :options="phoneAreaCodes" option-label="label"
-                option-value="value" placeholder="Code" class="w-32" filter show-clear
+                option-value="value" :placeholder="$t('Code')" class="w-32" filter show-clear
                 :class="{ 'p-invalid': recipientErrors.phoneAreaCode }">
                 <template #value="slotProps">
                   <span v-if="slotProps.value">{{ slotProps.value }}</span>
-                  <span v-else>Code</span>
+                  <span v-else>{{ $t('Code') }}</span>
                 </template>
               </Dropdown>
-              <InputText v-model="phoneNumber" placeholder="Enter phone number" class="flex-1"
+              <InputText v-model="phoneNumber" :placeholder="$t('Enter phone number')" class="flex-1"
                 :class="{ 'p-invalid': recipientErrors.reservedPhoneNumber }" />
             </div>
             <small v-if="recipientErrors.phoneAreaCode || recipientErrors.reservedPhoneNumber"
@@ -73,9 +73,9 @@
           <!-- Country (Fixed to Hong Kong) -->
           <div>
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Country <span class="text-red-500">*</span>
+              {{ $t('Country') }} <span class="text-red-500">*</span>
             </label>
-            <InputText :value="'Hong Kong'" readonly class="w-full bg-gray-100 dark:bg-gray-700 cursor-not-allowed"
+            <InputText :value="$t('Hong Kong')" readonly class="w-full bg-gray-100 dark:bg-gray-700 cursor-not-allowed"
               :class="{ 'p-invalid': recipientErrors.recipientLocation }" />
             <small v-if="recipientErrors.recipientLocation" class="text-red-500 text-xs mt-1">{{
               recipientErrors.recipientLocation }}</small>
@@ -84,12 +84,12 @@
           <!-- Recipient Province/State -->
           <div>
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Province/State <span class="text-red-500">*</span>
+              {{ $t('Province/State') }} <span class="text-red-500">*</span>
             </label>
             <Dropdown v-if="hasStateOptions" v-model="selectedStateCode" :options="states" option-label="name"
-              option-value="isoCode" placeholder="Select state or province" class="w-full" filter show-clear
+              option-value="isoCode" :placeholder="$t('Select state or province')" class="w-full" filter show-clear
               :class="{ 'p-invalid': recipientErrors.recipientProvince }" />
-            <InputText v-else v-model="recipientForm.recipientProvince" placeholder="Enter province" class="w-full"
+            <InputText v-else v-model="recipientForm.recipientProvince" :placeholder="$t('Enter province')" class="w-full"
               :class="{ 'p-invalid': recipientErrors.recipientProvince }" />
             <small v-if="recipientErrors.recipientProvince" class="text-red-500 text-xs mt-1">{{
               recipientErrors.recipientProvince }}</small>
@@ -98,12 +98,12 @@
           <!-- Recipient City -->
           <div>
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              City
+              {{ $t('City') }}
             </label>
             <Dropdown disabled v-if="hasCityOptions" v-model="selectedCityName" :options="cities" option-label="name"
-              option-value="name" placeholder="Select city" class="w-full" filter show-clear
+              option-value="name" :placeholder="$t('Select city')" class="w-full" filter show-clear
               :class="{ 'p-invalid': recipientErrors.recipientCity }" />
-            <InputText disabled v-else v-model="recipientForm.recipientCity" placeholder="Enter city" class="w-full"
+            <InputText disabled v-else v-model="recipientForm.recipientCity" :placeholder="$t('Enter city')" class="w-full"
               :class="{ 'p-invalid': recipientErrors.recipientCity }" />
             <small v-if="recipientErrors.recipientCity" class="text-red-500 text-xs mt-1">{{
               recipientErrors.recipientCity }}</small>
@@ -112,9 +112,9 @@
           <!-- Recipient Address -->
           <div>
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Recipient Address <span class="text-red-500">*</span>
+              {{ $t('Recipient Address') }} <span class="text-red-500">*</span>
             </label>
-            <InputText v-model="recipientForm.recipientAddress" placeholder="Enter address" class="w-full"
+            <InputText v-model="recipientForm.recipientAddress" :placeholder="$t('Enter address')" class="w-full"
               :class="{ 'p-invalid': recipientErrors.recipientAddress }" />
             <small v-if="recipientErrors.recipientAddress" class="text-red-500 text-xs mt-1">{{
               recipientErrors.recipientAddress }}</small>
@@ -123,9 +123,9 @@
           <!-- Bank Account Number -->
           <div>
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Bank Account Number <span class="text-red-500">*</span>
+              {{ $t('Bank Account Number') }} <span class="text-red-500">*</span>
             </label>
-            <InputText v-model="recipientForm.bankAccountNumber" placeholder="Enter bank account number" class="w-full"
+            <InputText v-model="recipientForm.bankAccountNumber" :placeholder="$t('Enter bank account number')" class="w-full"
               :class="{ 'p-invalid': recipientErrors.bankAccountNumber }" />
             <small v-if="recipientErrors.bankAccountNumber" class="text-red-500 text-xs mt-1">{{
               recipientErrors.bankAccountNumber }}</small>
@@ -134,9 +134,9 @@
           <!-- SWIFT Code -->
           <div>
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              SWIFT Code <span class="text-red-500">*</span>
+              {{ $t('SWIFT Code') }} <span class="text-red-500">*</span>
             </label>
-            <InputText v-model="recipientForm.swiftCode" placeholder="Enter SWIFT code" class="w-full"
+            <InputText v-model="recipientForm.swiftCode" :placeholder="$t('Enter SWIFT code')" class="w-full"
               :class="{ 'p-invalid': recipientErrors.swiftCode }" />
             <small v-if="recipientErrors.swiftCode" class="text-red-500 text-xs mt-1">{{
               recipientErrors.swiftCode }}</small>
@@ -146,8 +146,8 @@
     </template>
     <template #footer>
       <div class="flex items-center justify-end gap-2">
-        <Button label="Cancel" icon="pi pi-times" severity="secondary" @click="handleClose" />
-        <Button label="Save Recipient" icon="pi pi-check" :loading="savingRecipient" @click="handleSave" />
+        <Button :label="$t('Cancel')" icon="pi pi-times" severity="secondary" @click="handleClose" />
+        <Button :label="$t('Save Recipient')" icon="pi pi-check" :loading="savingRecipient" @click="handleSave" />
       </div>
     </template>
   </Dialog>
@@ -160,6 +160,7 @@ import Dialog from 'primevue/dialog'
 import InputText from 'primevue/inputtext'
 import Button from 'primevue/button'
 import Dropdown from 'primevue/dropdown'
+import { useI18n } from 'vue-i18n'
 import { CardAPI, type SaveRecipientParams } from '@/api/card'
 import { OrderAPI } from '@/api/order'
 import { getStatesOfCountry, getCitiesOfState, getCitiesOfCountry, type StateOption, type CityOption } from '@/services/geo'
@@ -179,6 +180,7 @@ const emit = defineEmits<{
 }>()
 
 const toast = useToast()
+const { t } = useI18n()
 
 // Bank dropdown wrapper ref
 const bankDropdownWrapper = ref<HTMLElement | null>(null)
@@ -546,27 +548,27 @@ const validateRecipientForm = () => {
   let isValid = true
 
   if (!recipientForm.bankName) {
-    recipientErrors.bankName = 'Bank name is required'
+    recipientErrors.bankName = t('Bank name is required')
     isValid = false
   }
 
   if (!recipientForm.bankLocation) {
-    recipientErrors.bankLocation = 'Bank location is required'
+    recipientErrors.bankLocation = t('Bank location is required')
     isValid = false
   }
 
   if (!recipientForm.currency) {
-    recipientErrors.currency = 'Currency is required'
+    recipientErrors.currency = t('Currency is required')
     isValid = false
   }
 
   if (!selectedPhoneAreaCode.value) {
-    recipientErrors.phoneAreaCode = 'Phone area code is required'
+    recipientErrors.phoneAreaCode = t('Phone area code is required')
     isValid = false
   }
 
   if (!phoneNumber.value || phoneNumber.value.trim() === '') {
-    recipientErrors.reservedPhoneNumber = 'Phone number is required'
+    recipientErrors.reservedPhoneNumber = t('Phone number is required')
     isValid = false
   } else {
     // Save only phone number without area code
@@ -574,7 +576,7 @@ const validateRecipientForm = () => {
   }
 
   if (!selectedCountryCode.value) {
-    recipientErrors.recipientLocation = 'Country is required'
+    recipientErrors.recipientLocation = t('Country is required')
     isValid = false
   } else {
     recipientForm.recipientLocation = selectedCountryCode.value
@@ -583,7 +585,7 @@ const validateRecipientForm = () => {
   if (hasStateOptions.value) {
     // If using dropdown, format as {countryCode}_{stateCode}
     if (!selectedStateCode.value) {
-      recipientErrors.recipientProvince = 'Province/State is required'
+      recipientErrors.recipientProvince = t('Province/State is required')
       isValid = false
     } else {
       recipientForm.recipientProvince = `${selectedCountryCode.value}_${selectedStateCode.value}`
@@ -591,7 +593,7 @@ const validateRecipientForm = () => {
   } else {
     // If manually entering, ensure format is {countryCode}_{value}
     if (!recipientForm.recipientProvince || recipientForm.recipientProvince.trim() === '') {
-      recipientErrors.recipientProvince = 'Province/State is required'
+      recipientErrors.recipientProvince = t('Province/State is required')
       isValid = false
     } else {
       // If not already in format, prepend country code
@@ -612,17 +614,17 @@ const validateRecipientForm = () => {
   }
 
   if (!recipientForm.recipientAddress) {
-    recipientErrors.recipientAddress = 'Recipient address is required'
+    recipientErrors.recipientAddress = t('Recipient address is required')
     isValid = false
   }
 
   if (!recipientForm.bankAccountNumber) {
-    recipientErrors.bankAccountNumber = 'Bank account number is required'
+    recipientErrors.bankAccountNumber = t('Bank account number is required')
     isValid = false
   }
 
   if (!recipientForm.swiftCode) {
-    recipientErrors.swiftCode = 'SWIFT code is required'
+    recipientErrors.swiftCode = t('SWIFT code is required')
     isValid = false
   }
 
@@ -634,8 +636,8 @@ const handleSave = async () => {
   if (!validateRecipientForm()) {
     toast.add({
       severity: 'warn',
-      summary: 'Validation Error',
-      detail: 'Please fill in all required fields',
+      summary: t('Validation Error'),
+      detail: t('Please fill in all required fields'),
       life: 3000
     })
     return
@@ -659,8 +661,8 @@ const handleSave = async () => {
     if (response.success) {
       toast.add({
         severity: 'success',
-        summary: 'Success',
-        detail: 'Recipient information saved successfully',
+        summary: t('Success'),
+        detail: t('Recipient information saved successfully'),
         life: 3000
       })
 
@@ -671,14 +673,14 @@ const handleSave = async () => {
       visible.value = false
       emit('saved')
     } else {
-      throw new Error(response.msg || 'Failed to save recipient')
+      throw new Error(response.msg || t('Failed to save recipient'))
     }
   } catch (error) {
     console.error('Error saving recipient:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to save recipient information',
+      summary: t('Error'),
+      detail: (error as any)?.message || t('Failed to save recipient information'),
       life: 3000
     })
   } finally {

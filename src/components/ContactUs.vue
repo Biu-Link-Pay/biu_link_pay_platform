@@ -13,10 +13,10 @@
           class="contact-mobile-panel w-72 bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-4">
           <div class="flex items-center justify-between mb-3">
             <div>
-              <p class="text-sm font-semibold text-gray-900 dark:text-white">Contact Us</p>
-              <p class="text-xs text-gray-500 dark:text-gray-400">Please contact us via email:</p>
+              <p class="text-sm font-semibold text-gray-900 dark:text-white">{{ $t('Contact Us') }}</p>
+              <p class="text-xs text-gray-500 dark:text-gray-400">{{ $t('Please contact us via email:') }}</p>
             </div>
-            <button class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200" aria-label="Close"
+            <button class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200" :aria-label="$t('Close')"
               @click="closeMobilePanel">
               <i class="pi pi-times text-sm"></i>
             </button>
@@ -35,7 +35,7 @@
 
       <button
         class="w-14 h-14 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95"
-        aria-label="Contact Us" @click="toggleMobilePanel">
+        :aria-label="$t('Contact Us')" @click="toggleMobilePanel">
         <i class="pi pi-envelope text-xl"></i>
       </button>
     </div>
@@ -45,11 +45,11 @@
       <div class="contact-desktop-panel pointer-events-auto" :class="{ 'is-visible': isPopoverVisible }" @mouseleave="hidePopover">
         <div class="contact-panel-handle" @mouseenter="showPopover">
           <i class="pi pi-envelope text-lg"></i>
-          <span>Contact</span>
+          <span>{{ $t('Contact') }}</span>
         </div>
         <div class="contact-panel-body bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700">
-          <p class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Contact Us</p>
-          <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">Please contact us via email:</p>
+          <p class="text-sm font-semibold text-gray-900 dark:text-white mb-2">{{ $t('Contact Us') }}</p>
+          <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">{{ $t('Please contact us via email:') }}</p>
           <div class="space-y-2">
             <a v-for="email in contactEmails" :key="email" :href="`mailto:${email}`"
               class="flex items-center space-x-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer group">

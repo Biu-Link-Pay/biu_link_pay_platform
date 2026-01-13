@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Unified Header -->
-    <AppHeader title="Crypto Payment" :show-title="true" />
+    <AppHeader :title="$t('Crypto Payment')" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -13,17 +13,17 @@
           <div class="space-y-6">
             <!-- Order Information -->
             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Order Information</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">{{ $t('Order Information') }}</h3>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Order Number -->
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Order NO.</div>
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">{{ $t('Order NO.') }}</div>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
                     <button
-                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('Success'), detail: t('Order number copied to clipboard'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
-                      title="Copy order number">
+                      :title="$t('Copy order number')">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
                   </div>
@@ -31,19 +31,21 @@
 
                 <!-- Order Amount -->
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Order amount</div>
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">{{ $t('Order amount') }}</div>
                   <div class="text-lg font-bold text-gray-900 dark:text-white">
                     {{ formatCurrency(orderAmount) }}
                     <span v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
                       class="text-sm font-normal text-orange-500 dark:text-gray-400 ml-1">
-                      (Used {{ cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() }} pts)
+                      {{ $t('(Used {points} pts)', {
+                        points: cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString()
+                      }) }}
                     </span>
                   </div>
                 </div>
 
                 <!-- You need to pay -->
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">You need to pay</div>
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">{{ $t('You need to pay') }}</div>
                   <div class="flex items-center space-x-2">
                     <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
                     }}</span>
@@ -52,9 +54,9 @@
                       <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
                     </div>
                     <button
-                      @click="() => { copyToClipboard(cryptoAmount); toast.add({ severity: 'success', summary: 'Success', detail: 'Amount copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(cryptoAmount); toast.add({ severity: 'success', summary: t('Success'), detail: t('Amount copied to clipboard'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
-                      title="Copy amount">
+                      :title="$t('Copy amount')">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
                   </div>
@@ -70,9 +72,8 @@
                   <i class="pi pi-exclamation-triangle text-white text-xs"></i>
                 </div>
                 <div class="text-sm text-orange-800 dark:text-orange-200">
-                  <span class="font-semibold">DON'T forget to add the Network Fee</span> when transferring, so as not to
-                  fail
-                  due to insufficient transfer amount.
+                  <span class="font-semibold">{{ $t('Do not forget to add the Network Fee') }}</span>
+                  {{ $t('when transferring, so as not to fail due to insufficient transfer amount.') }}
                 </div>
               </div>
               <div class="flex items-start space-x-3 mt-2">
@@ -80,8 +81,8 @@
                   <i class="pi pi-info-circle text-white text-xs"></i>
                 </div>
                 <div class="text-sm text-orange-800 dark:text-orange-200">
-                  <span class="font-semibold">For security reasons, the payment page has expired.</span> Please complete
-                  the payment promptly.
+                  <span class="font-semibold">{{ $t('Payment Timeout') }}</span>
+                  {{ $t('For security reasons, the payment page has expired. Please complete the payment promptly.') }}
                 </div>
               </div>
             </div>
@@ -95,7 +96,7 @@
               <div class="space-y-6">
                 <!-- Section Header -->
                 <div class="flex items-center justify-between">
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Payment Information</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ $t('Payment Information') }}</h3>
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-clock text-sm"></i>
                     <div class="flex items-center space-x-1">
@@ -121,23 +122,23 @@
                   <!-- Network Type -->
                   <div
                     class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                    <div class="text-sm font-medium text-blue-800 dark:text-blue-200 mb-2">Network Type</div>
+                    <div class="text-sm font-medium text-blue-800 dark:text-blue-200 mb-2">{{ $t('Network Type') }}</div>
                     <div class="text-lg font-semibold text-blue-900 dark:text-blue-100">
-                      {{ selectedCrypto }}({{ selectedNetwork }}) only
+                      {{ $t('{crypto}({network}) only', { crypto: selectedCrypto, network: selectedNetwork }) }}
                     </div>
                   </div>
 
                   <!-- Payment Address -->
                   <div class="space-y-2">
-                    <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Payment Address:</div>
+                    <div class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ $t('Payment Address') }}:</div>
                     <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
                       <div class="flex items-center justify-between">
                         <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress
                         }}</span>
                         <button
-                          @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: 'Success', detail: 'Wallet address copied to clipboard', life: 2000 }) }"
+                          @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: t('Success'), detail: t('Wallet address copied to clipboard'), life: 2000 }) }"
                           class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                          title="Copy address">
+                          :title="$t('Copy address')">
                           <i class="pi pi-copy text-gray-500 text-sm"></i>
                         </button>
                       </div>
@@ -150,13 +151,13 @@
                   <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
                     <div class="w-48 h-48 flex items-center justify-center">
                       <img v-if="cardStore.currentOrder?.qrcodeLink" :src="cardStore.currentOrder.qrcodeLink"
-                        alt="Payment QR Code" class="w-full h-full object-contain rounded"
+                        :alt="$t('Payment QR Code')" class="w-full h-full object-contain rounded"
                         @error="qrCodeError = true" />
                       <div v-else
                         class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
                         <div class="text-center">
                           <div class="text-4xl mb-2">📱</div>
-                          <div class="text-xs text-gray-500 dark:text-gray-400">QR Code</div>
+                          <div class="text-xs text-gray-500 dark:text-gray-400">{{ $t('QR Code') }}</div>
                           <div class="text-xs text-gray-400 dark:text-gray-500 mt-1">{{ walletAddress.slice(0, 8) }}...
                           </div>
                         </div>
@@ -165,7 +166,7 @@
                         class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
                         <div class="text-center text-red-500">
                           <i class="pi pi-exclamation-triangle text-2xl mb-2"></i>
-                          <div class="text-sm">Failed to load QR Code</div>
+                          <div class="text-sm">{{ $t('Failed to load QR Code') }}</div>
                         </div>
                       </div>
                     </div>
@@ -183,19 +184,22 @@
                     class="w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <i class="pi pi-check text-green-600 dark:text-green-400 text-2xl"></i>
                   </div>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Successful!</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">{{ $t('Payment Successful!') }}</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Your payment of {{ cryptoAmount }} {{ selectedCrypto }} has been confirmed.
+                    {{ $t('Your payment of {amount} {token} has been confirmed.', {
+                      amount: cryptoAmount,
+                      token: selectedCrypto
+                    }) }}
                   </p>
                 </div>
                 <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
                   <div class="text-sm text-green-800 dark:text-green-200">
-                    <div class="font-medium mb-3">Transaction Details:</div>
+                    <div class="font-medium mb-3">{{ $t('Transaction Details:') }}</div>
                     <div class="grid grid-cols-2 gap-4 text-xs">
-                      <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                      <div>Currency: {{ selectedCrypto }}</div>
-                      <div>Network: {{ selectedNetwork }}</div>
-                      <div>Order: {{ orderNumber }}</div>
+                      <div>{{ $t('Amount') }}: {{ formatCurrency(orderAmount) }}</div>
+                      <div>{{ $t('Currency') }}: {{ selectedCrypto }}</div>
+                      <div>{{ $t('Network') }}: {{ selectedNetwork }}</div>
+                      <div>{{ $t('Order') }}: {{ orderNumber }}</div>
                     </div>
                   </div>
                 </div>
@@ -211,18 +215,18 @@
                     class="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <i class="pi pi-times text-red-600 dark:text-red-400 text-2xl"></i>
                   </div>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Failed</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">{{ $t('Payment Failed') }}</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Your payment could not be processed. Please try again.
+                    {{ $t('Your payment could not be processed. Please try again.') }}
                   </p>
                 </div>
                 <div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-4">
                   <div class="text-sm text-red-800 dark:text-red-200">
-                    <div class="font-medium mb-3">Order Details:</div>
+                    <div class="font-medium mb-3">{{ $t('Order Details') }}:</div>
                     <div class="grid grid-cols-2 gap-4 text-xs">
-                      <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                      <div>Currency: {{ selectedCrypto }}</div>
-                      <div>Order: {{ orderNumber }}</div>
+                      <div>{{ $t('Amount') }}: {{ formatCurrency(orderAmount) }}</div>
+                      <div>{{ $t('Currency') }}: {{ selectedCrypto }}</div>
+                      <div>{{ $t('Order') }}: {{ orderNumber }}</div>
                     </div>
                   </div>
                 </div>
@@ -238,18 +242,18 @@
                     class="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
                     <i class="pi pi-ban text-gray-600 dark:text-gray-400 text-2xl"></i>
                   </div>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Cancelled</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">{{ $t('Payment Cancelled') }}</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
-                    This payment has been cancelled.
+                    {{ $t('This payment has been cancelled.') }}
                   </p>
                 </div>
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
                   <div class="text-sm text-gray-800 dark:text-gray-200">
-                    <div class="font-medium mb-3">Order Details:</div>
+                    <div class="font-medium mb-3">{{ $t('Order Details') }}:</div>
                     <div class="grid grid-cols-2 gap-4 text-xs">
-                      <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                      <div>Currency: {{ selectedCrypto }}</div>
-                      <div>Order: {{ orderNumber }}</div>
+                      <div>{{ $t('Amount') }}: {{ formatCurrency(orderAmount) }}</div>
+                      <div>{{ $t('Currency') }}: {{ selectedCrypto }}</div>
+                      <div>{{ $t('Order') }}: {{ orderNumber }}</div>
                     </div>
                   </div>
                 </div>
@@ -267,7 +271,8 @@
                 <i class="pi pi-check text-white text-xs"></i>
               </div>
               <div class="text-sm text-green-800 dark:text-green-200">
-                <span class="font-semibold">Payment Detected!</span> We are processing your payment...
+                <span class="font-semibold">{{ $t('Payment Detected!') }}</span>
+                {{ $t('We are processing your payment...') }}
               </div>
             </div>
           </div>
@@ -281,12 +286,12 @@
           <div class="space-y-4">
             <!-- Order Number -->
             <div class="flex items-center justify-between">
-              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order NO.</span>
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ $t('Order NO.') }}</span>
               <div class="flex items-center space-x-2">
                 <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
                 <button @click="copyToClipboard(orderNumber)"
                   class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
-                  title="Copy order number">
+                  :title="$t('Copy order number')">
                   <i class="pi pi-copy text-gray-500 text-xs"></i>
                 </button>
               </div>
@@ -294,19 +299,21 @@
 
             <!-- Order Amount -->
             <div class="flex items-center justify-between">
-              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order amount</span>
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ $t('Order amount') }}</span>
               <span class="text-lg font-bold text-gray-900 dark:text-white text-right">
                 {{ formatCurrency(orderAmount) }}
                 <div v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
                   class="text-xs font-normal text-orange-500 dark:text-gray-400">
-                  (Used {{ cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() }} pts)
+                  {{ $t('(Used {points} pts)', {
+                    points: cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString()
+                  }) }}
                 </div>
               </span>
             </div>
 
             <!-- You need to pay -->
             <div class="flex items-center justify-between">
-              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">You need to pay</span>
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ $t('You need to pay') }}</span>
               <div class="flex items-center space-x-2">
                 <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
                 }}</span>
@@ -315,7 +322,8 @@
                   <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
                 </div>
                 <button @click="copyToClipboard(cryptoAmount)"
-                  class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors" title="Copy amount">
+                  class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
+                  :title="$t('Copy amount')">
                   <i class="pi pi-copy text-gray-500 text-xs"></i>
                 </button>
               </div>
@@ -330,9 +338,8 @@
               <i class="pi pi-exclamation-triangle text-white text-xs"></i>
             </div>
             <div class="text-sm text-orange-800 dark:text-orange-200">
-              <span class="font-semibold">DON'T forget to add the Network Fee</span> when transferring, so as not to
-              fail
-              due to insufficient transfer amount.
+              <span class="font-semibold">{{ $t('Do not forget to add the Network Fee') }}</span>
+              {{ $t('when transferring, so as not to fail due to insufficient transfer amount.') }}
             </div>
           </div>
           <div class="flex items-start space-x-3 mt-2">
@@ -340,8 +347,8 @@
               <i class="pi pi-info-circle text-white text-xs"></i>
             </div>
             <div class="text-sm text-orange-800 dark:text-orange-200">
-              <span class="font-semibold">For security reasons, the payment page has expired.</span> Please complete the
-              payment promptly.
+              <span class="font-semibold">{{ $t('Payment Timeout') }}</span>
+              {{ $t('For security reasons, the payment page has expired. Please complete the payment promptly.') }}
             </div>
           </div>
         </div>
@@ -351,7 +358,7 @@
           <div class="space-y-4">
             <!-- Section Header -->
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Payment Information</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ $t('Payment Information') }}</h3>
               <div class="flex items-center space-x-2">
                 <i class="pi pi-clock text-sm"></i>
                 <div class="flex items-center space-x-1">
@@ -376,20 +383,20 @@
             <!-- Network Type -->
             <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
               <div class="text-sm font-medium text-blue-800 dark:text-blue-200">
-                {{ selectedCrypto }}({{ selectedNetwork }}) only
+                {{ $t('{crypto}({network}) only', { crypto: selectedCrypto, network: selectedNetwork }) }}
               </div>
             </div>
 
             <!-- Payment Address -->
             <div class="space-y-2">
-              <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Payment Address:</div>
+              <div class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ $t('Payment Address') }}:</div>
               <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 border border-gray-200 dark:border-gray-600">
                 <div class="flex items-center justify-between">
                   <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>
                   <button
-                    @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: 'Success', detail: 'Wallet address copied to clipboard', life: 2000 }) }"
+                    @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: t('Success'), detail: t('Wallet address copied to clipboard'), life: 2000 }) }"
                     class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                    title="Copy address">
+                    :title="$t('Copy address')">
                     <i class="pi pi-copy text-gray-500 text-sm"></i>
                   </button>
                 </div>
@@ -401,12 +408,12 @@
               <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
                 <div class="w-48 h-48 flex items-center justify-center">
                   <img v-if="cardStore.currentOrder?.qrcodeLink" :src="cardStore.currentOrder.qrcodeLink"
-                    alt="Payment QR Code" class="w-full h-full object-contain rounded" @error="qrCodeError = true" />
+                    :alt="$t('Payment QR Code')" class="w-full h-full object-contain rounded" @error="qrCodeError = true" />
                   <div v-else
                     class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
                     <div class="text-center">
                       <div class="text-4xl mb-2">📱</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">QR Code</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">{{ $t('QR Code') }}</div>
                       <div class="text-xs text-gray-400 dark:text-gray-500 mt-1">{{ walletAddress.slice(0, 8) }}...
                       </div>
                     </div>
@@ -415,7 +422,7 @@
                     class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
                     <div class="text-center text-red-500">
                       <i class="pi pi-exclamation-triangle text-2xl mb-2"></i>
-                      <div class="text-sm">Failed to load QR Code</div>
+                      <div class="text-sm">{{ $t('Failed to load QR Code') }}</div>
                     </div>
                   </div>
                 </div>
@@ -433,19 +440,22 @@
               <i class="pi pi-check text-green-600 dark:text-green-400 text-2xl"></i>
             </div>
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Successful!</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">{{ $t('Payment Successful!') }}</h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
-                Your payment of {{ cryptoAmount }} {{ selectedCrypto }} has been confirmed.
+                {{ $t('Your payment of {amount} {token} has been confirmed.', {
+                  amount: cryptoAmount,
+                  token: selectedCrypto
+                }) }}
               </p>
             </div>
             <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
               <div class="text-sm text-green-800 dark:text-green-200">
-                <div class="font-medium mb-1">Transaction Details:</div>
+                <div class="font-medium mb-1">{{ $t('Transaction Details:') }}</div>
                 <div class="space-y-1 text-xs">
-                  <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                  <div>Currency: {{ selectedCrypto }}</div>
-                  <div>Network: {{ selectedNetwork }}</div>
-                  <div>Order: {{ orderNumber }}</div>
+                  <div>{{ $t('Amount') }}: {{ formatCurrency(orderAmount) }}</div>
+                  <div>{{ $t('Currency') }}: {{ selectedCrypto }}</div>
+                  <div>{{ $t('Network') }}: {{ selectedNetwork }}</div>
+                  <div>{{ $t('Order') }}: {{ orderNumber }}</div>
                 </div>
               </div>
             </div>
@@ -460,18 +470,18 @@
               <i class="pi pi-times text-red-600 dark:text-red-400 text-2xl"></i>
             </div>
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Failed</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">{{ $t('Payment Failed') }}</h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
-                Your payment could not be processed. Please try again.
+                {{ $t('Your payment could not be processed. Please try again.') }}
               </p>
             </div>
             <div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-4">
               <div class="text-sm text-red-800 dark:text-red-200">
-                <div class="font-medium mb-1">Order Details:</div>
+                <div class="font-medium mb-1">{{ $t('Order Details') }}:</div>
                 <div class="space-y-1 text-xs">
-                  <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                  <div>Currency: {{ selectedCrypto }}</div>
-                  <div>Order: {{ orderNumber }}</div>
+                  <div>{{ $t('Amount') }}: {{ formatCurrency(orderAmount) }}</div>
+                  <div>{{ $t('Currency') }}: {{ selectedCrypto }}</div>
+                  <div>{{ $t('Order') }}: {{ orderNumber }}</div>
                 </div>
               </div>
             </div>
@@ -486,18 +496,18 @@
               <i class="pi pi-ban text-gray-600 dark:text-gray-400 text-2xl"></i>
             </div>
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Cancelled</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">{{ $t('Payment Cancelled') }}</h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
-                This payment has been cancelled.
+                {{ $t('This payment has been cancelled.') }}
               </p>
             </div>
             <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
               <div class="text-sm text-gray-800 dark:text-gray-200">
-                <div class="font-medium mb-1">Order Details:</div>
+                <div class="font-medium mb-1">{{ $t('Order Details') }}:</div>
                 <div class="space-y-1 text-xs">
-                  <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                  <div>Currency: {{ selectedCrypto }}</div>
-                  <div>Order: {{ orderNumber }}</div>
+                  <div>{{ $t('Amount') }}: {{ formatCurrency(orderAmount) }}</div>
+                  <div>{{ $t('Currency') }}: {{ selectedCrypto }}</div>
+                  <div>{{ $t('Order') }}: {{ orderNumber }}</div>
                 </div>
               </div>
             </div>
@@ -511,7 +521,8 @@
                 <i class="pi pi-check text-white text-xs"></i>
               </div>
               <div class="text-sm text-green-800 dark:text-green-200">
-                <span class="font-semibold">Payment Detected!</span> We are processing your payment...
+                <span class="font-semibold">{{ $t('Payment Detected!') }}</span>
+                {{ $t('We are processing your payment...') }}
               </div>
             </div>
           </div>
@@ -523,7 +534,7 @@
         <!-- Back Button -->
         <button @click="goBack" class="bottom-button-dual bottom-button-dual-secondary">
           <i class="pi pi-arrow-left"></i>
-          Back
+          {{ $t('Back') }}
         </button>
 
         <!-- Refresh Button -->
@@ -531,7 +542,7 @@
           class="bottom-button-dual bottom-button-dual-primary flex items-center justify-center space-x-2">
           <i v-if="refreshing" class="pi pi-spin pi-spinner text-sm"></i>
           <i v-else class="pi pi-refresh text-sm"></i>
-          <span>{{ refreshing ? 'Refreshing...' : 'Refresh' }}</span>
+          <span>{{ refreshing ? $t('Refreshing...') : $t('Refresh') }}</span>
         </button>
       </div>
     </div>
@@ -542,6 +553,7 @@
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useI18n } from 'vue-i18n'
 import AppHeader from '@/components/AppHeader.vue'
 import { useCardStore } from '@/stores/card'
 import { OrderAPI, type DepositOrderDetailItem } from '@/api/order'
@@ -551,6 +563,7 @@ const router = useRouter()
 const route = useRoute()
 const toast = useToast()
 const cardStore = useCardStore()
+const { t } = useI18n()
 
 // Payment data
 const orderNumber = ref('76782112321321047696')
@@ -668,12 +681,12 @@ const isOrderCancelled = computed(() => orderStatus.value === 'CANCEL')
 // Order status display
 const orderStatusText = computed(() => {
   switch (orderStatus.value) {
-    case 'INIT': return 'Waiting for Payment'
-    case 'PENDING': return 'Processing'
-    case 'SUCCESS': return 'Payment Success'
-    case 'FAIL': return 'Payment Failed'
-    case 'CANCEL': return 'Cancelled'
-    default: return 'Unknown Status'
+    case 'INIT': return t('Waiting for Payment')
+    case 'PENDING': return t('Processing')
+    case 'SUCCESS': return t('Payment Success')
+    case 'FAIL': return t('Payment Failed')
+    case 'CANCEL': return t('Cancelled')
+    default: return t('Unknown Status')
   }
 })
 
@@ -771,8 +784,8 @@ const startCountdown = (initialSeconds?: number) => {
       if (isMounted.value && toast) {
         toast.add({
           severity: 'warn',
-          summary: 'Payment Expired',
-          detail: 'Payment time has expired. Please refresh to get a new payment address.',
+          summary: t('Payment Expired'),
+          detail: t('Payment time has expired. Please refresh to get a new payment address.'),
           life: 5000
         })
       }
@@ -971,15 +984,15 @@ const refreshPayment = async () => {
 
     toast.add({
       severity: 'success',
-      summary: 'Payment Refreshed',
-      detail: 'Payment details have been refreshed',
+      summary: t('Payment Refreshed'),
+      detail: t('Payment details have been refreshed'),
       life: 3000
     })
   } catch (error) {
     toast.add({
       severity: 'error',
-      summary: 'Refresh Failed',
-      detail: (error as any)?.message || 'Failed to refresh payment details',
+      summary: t('Refresh Failed'),
+      detail: (error as any)?.message || t('Failed to refresh payment details'),
       life: 3000
     })
   } finally {

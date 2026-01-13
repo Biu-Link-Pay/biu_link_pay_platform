@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Unified Header -->
-    <AppHeader title="Card Holder" :show-title="true" />
+    <AppHeader :title="$t('Card Holder')" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -13,7 +13,7 @@
           <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
             <i class="pi pi-id-card text-white text-sm"></i>
           </div>
-          <p class="text-sm text-gray-700 dark:text-gray-300">Manage your billing address for the card holder.</p>
+          <p class="text-sm text-gray-700 dark:text-gray-300">{{ $t('Manage your billing address for the card holder.') }}</p>
         </div>
       </div>
 
@@ -32,9 +32,8 @@
                 <i class="pi pi-map-marker text-blue-600 dark:text-blue-400 text-lg"></i>
               </div>
               <div>
-                <h4 class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Billing Address
-                </h4>
-                <p class="text-xs text-gray-400 dark:text-gray-500">Primary address for card transactions</p>
+                <h4 class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">{{ $t('Billing Address') }}</h4>
+                <p class="text-xs text-gray-400 dark:text-gray-500">{{ $t('Primary address for card transactions') }}</p>
               </div>
             </div>
 
@@ -46,7 +45,7 @@
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-globe text-sm text-blue-600 dark:text-blue-400"></i>
                     <span
-                      class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Country</span>
+                      class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">{{ $t('Country') }}</span>
                   </div>
                   <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{
                     getCountryName(holder.residentialCountryCode) }}</p>
@@ -54,8 +53,7 @@
                 <div class="space-y-1">
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-tag text-sm text-blue-600 dark:text-blue-400"></i>
-                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Postal
-                      Code</span>
+                    <span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">{{ $t('Postal Code') }}</span>
                   </div>
                   <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialPostalCode
                     }}</p>
@@ -68,7 +66,7 @@
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-building text-sm text-blue-600 dark:text-blue-400"></i>
                     <span
-                      class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">State/Province</span>
+                      class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">{{ $t('State/Province') }}</span>
                   </div>
                   <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{
                     getStateDisplay(holder.residentialCountryCode, holder.residentialState) }}
@@ -78,7 +76,7 @@
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-home text-sm text-blue-600 dark:text-blue-400"></i>
                     <span
-                      class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">City</span>
+                      class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">{{ $t('City') }}</span>
                   </div>
                   <p class="text-base font-semibold text-gray-900 dark:text-white ml-6">{{ holder.residentialCity }}</p>
                 </div>
@@ -89,7 +87,7 @@
                 <div class="flex items-center space-x-2">
                   <i class="pi pi-map text-sm text-blue-600 dark:text-blue-400"></i>
                   <span
-                    class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Address</span>
+                    class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">{{ $t('Address') }}</span>
                 </div>
                 <p class="text-base font-semibold text-gray-900 dark:text-white ml-6 leading-relaxed">{{
                   holder.residentialAddress }}</p>
@@ -98,19 +96,19 @@
 
             <!-- Action Button -->
             <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700 text-right">
-              <Button label="Edit Address" icon="pi pi-pencil" @click="startEdit" />
+              <Button :label="$t('Edit Address')" icon="pi pi-pencil" @click="startEdit" />
             </div>
           </div>
         </div>
 
         <!-- Edit form -->
         <div v-if="!hasCards && isEditing">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Billing Address</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">{{ $t('Billing Address') }}</h3>
           <div class="space-y-4">
             <div>
-              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Country</label>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{{ $t('Country') }}</label>
               <Dropdown v-model="form.residentialCountryCode" :options="countries" option-label="name"
-                option-value="code" placeholder="Select country" class="w-full" filter show-clear
+                option-value="code" :placeholder="$t('Select country')" class="w-full" filter show-clear
                 :class="{ 'p-invalid': errors.residentialCountryCode }" />
               <small v-if="errors.residentialCountryCode" class="text-red-500 text-xs mt-1">{{
                 errors.residentialCountryCode }}</small>
@@ -118,21 +116,21 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">State/Province</label>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{{ $t('State/Province') }}</label>
                 <Dropdown v-if="hasStateOptions" v-model="selectedStateCode" :options="states" option-label="name"
-                  option-value="isoCode" placeholder="Select state or province" class="w-full" filter show-clear
+                  option-value="isoCode" :placeholder="$t('Select state or province')" class="w-full" filter show-clear
                   :class="{ 'p-invalid': errors.residentialState }" />
-                <InputText v-else v-model="form.residentialState" placeholder="Enter state/province" class="w-full"
+                <InputText v-else v-model="form.residentialState" :placeholder="$t('Enter state/province')" class="w-full"
                   :class="{ 'p-invalid': errors.residentialState }" />
                 <small v-if="errors.residentialState" class="text-red-500 text-xs mt-1">{{ errors.residentialState
                 }}</small>
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">City</label>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{{ $t('City') }}</label>
                 <Dropdown v-if="hasCityOptions" v-model="selectedCityName" :options="cities" option-label="name"
-                  option-value="name" placeholder="Select city" class="w-full" filter show-clear
+                  option-value="name" :placeholder="$t('Select city')" class="w-full" filter show-clear
                   :class="{ 'p-invalid': errors.residentialCity }" />
-                <InputText v-else v-model="form.residentialCity" placeholder="Enter city" class="w-full"
+                <InputText v-else v-model="form.residentialCity" :placeholder="$t('Enter city')" class="w-full"
                   :class="{ 'p-invalid': errors.residentialCity }" />
                 <small v-if="errors.residentialCity" class="text-red-500 text-xs mt-1">{{ errors.residentialCity
                   }}</small>
@@ -140,25 +138,25 @@
             </div>
 
             <div>
-              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Address</label>
-              <InputText v-model="form.residentialAddress" placeholder="Enter your address" class="w-full"
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{{ $t('Address') }}</label>
+              <InputText v-model="form.residentialAddress" :placeholder="$t('Enter your address')" class="w-full"
                 :class="{ 'p-invalid': errors.residentialAddress }" />
               <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
                 }}</small>
             </div>
 
             <div>
-              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Postal Code</label>
-              <InputText v-model="form.residentialPostalCode" placeholder="Enter postal code" class="w-full"
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{{ $t('Postal Code') }}</label>
+              <InputText v-model="form.residentialPostalCode" :placeholder="$t('Enter postal code')" class="w-full"
                 :class="{ 'p-invalid': errors.residentialPostalCode }" />
               <small v-if="errors.residentialPostalCode" class="text-red-500 text-xs mt-1">{{
                 errors.residentialPostalCode }}</small>
             </div>
             <!-- Edit form buttons -->
             <div class="mt-6 flex gap-3">
-              <Button v-if="holder" label="Cancel" icon="pi pi-times" severity="secondary" class="flex-1"
+              <Button v-if="holder" :label="$t('Cancel')" icon="pi pi-times" severity="secondary" class="flex-1"
                 @click="cancelEdit" />
-              <Button :label="holder ? 'Update' : 'Save'" icon="pi pi-check" :loading="loading"
+              <Button :label="holder ? $t('Update') : $t('Save')" icon="pi pi-check" :loading="loading"
                 :class="holder ? 'flex-1' : 'w-full'" severity="primary" @click="saveAddress" />
             </div>
           </div>
@@ -168,7 +166,7 @@
         <div>
           <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-6">{{ rechargeSectionTitle }}</h2>
           <div class="mb-4">
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Recharge amount</label>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{{ $t('Recharge amount') }}</label>
             <div class="flex items-center gap-2">
               <InputText v-model="form.rechargeAmount" type="text" :placeholder="minAmount.toString()" class="w-32"
                 :class="{ 'p-invalid': errors.rechargeAmount }" @blur="validateRechargeAmount" />
@@ -192,13 +190,13 @@
             <div class="flex items-start justify-between gap-3">
               <div>
                 <p class="text-xs font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
-                  Card Reward Points
+                  {{ $t('Card Reward Points') }}
                 </p>
                 <p class="text-xl font-bold text-gray-900 dark:text-white mt-1">
-                  {{ availableRewardPoints.toLocaleString() }} pts
+                  {{ availableRewardPoints.toLocaleString() }} {{ $t('pts') }}
                 </p>
                 <p class="text-[11px] text-gray-500 dark:text-gray-400">
-                  100 pts = 1 {{ cardStore.selectedCardBin?.cardCurrency || 'USD' }}
+                  {{ $t('100 pts = 1 {currency}', { currency: cardStore.selectedCardBin?.cardCurrency || 'USD' }) }}
                 </p>
               </div>
               <label class="inline-flex items-center cursor-pointer">
@@ -213,24 +211,27 @@
             </div>
             <div class="mt-2 flex items-center justify-between text-[11px] text-gray-600 dark:text-gray-200">
               <div class="flex items-center gap-1.5">
-                <span>Use</span>
+                <span>{{ $t('Use') }}</span>
                 <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
                   :disabled="!applyRewardPoints || !canUseRewardPoints"
                   class="w-20 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-[11px] font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
-                <span class="text-[10px] text-gray-500 dark:text-gray-400">pts</span>
+                <span class="text-[10px] text-gray-500 dark:text-gray-400">{{ $t('pts') }}</span>
               </div>
               <span class="text-[10px] text-gray-400 dark:text-gray-500">
-                Max {{ maxUsablePoints.toLocaleString() }} pts
+                {{ $t('Max {points} pts', { points: maxUsablePoints.toLocaleString() }) }}
               </span>
             </div>
             <div class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">
               <span v-if="applyRewardPoints && canUseRewardPoints && appliedRewardPoints > 0">
-                Using {{ appliedRewardPoints.toLocaleString() }} pts ({{ discountAmount }} {{
-                  cardStore.selectedCardBin?.cardCurrency
-                  || 'USD' }} off), pay {{ finalRechargeAmount }} {{ cardStore.selectedCardBin?.cardCurrency || 'USD' }}
+                {{ $t('Using {points} pts ({amount} {currency} off), pay {pay} {currency}', {
+                  points: appliedRewardPoints.toLocaleString(),
+                  amount: discountAmount,
+                  pay: finalRechargeAmount,
+                  currency: cardStore.selectedCardBin?.cardCurrency || 'USD'
+                }) }}
               </span>
               <span v-else>
-                You can use up to {{ maxUsablePoints.toLocaleString() }} pts
+                {{ $t('You can use up to {points} pts', { points: maxUsablePoints.toLocaleString() }) }}
               </span>
             </div>
           </div>
@@ -239,7 +240,7 @@
 
       <!-- Action Buttons -->
       <div class="bottom-buttons-container relative md:static">
-        <Button label="Back" icon="pi pi-arrow-left" severity="secondary"
+        <Button :label="$t('Back')" icon="pi pi-arrow-left" severity="secondary"
           class="bottom-button-dual bottom-button-dual-secondary" @click="goBack" />
         <Button :disabled="!canConfirm" icon="pi pi-check" :loading="loading"
           class="bottom-button-dual bottom-button-dual-primary" @click="handleConfirm">
@@ -286,6 +287,7 @@ export default {
 import { ref, reactive, computed, onMounted, watch, nextTick } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useI18n } from 'vue-i18n'
 import { useCardStore } from '@/stores/card'
 import { useUserStore } from '@/stores/user'
 import { useAuthStore } from '@/stores/auth'
@@ -304,6 +306,7 @@ const toast = useToast()
 const cardStore = useCardStore()
 const userStore = useUserStore()
 const authStore = useAuthStore()
+const { t } = useI18n()
 // Has cards state
 const hasCards = computed(() => (cardStore.cardList?.length || 0) > 0)
 
@@ -605,11 +608,11 @@ const canConfirm = computed(() => {
 
 const confirmButtonText = computed(() => {
   if (isEditing.value) {
-    return 'Save Address First'
+    return t('Save Address First')
   } else if (!holder.value) {
-    return 'Add Address First'
+    return t('Add Address First')
   } else {
-    return 'Confirm'
+    return t('Confirm')
   }
 })
 
@@ -726,7 +729,8 @@ recalculatePointsUsage()
 // Recharge section title text
 const rechargeSectionTitle = computed(() => {
   return route.query.action === 'recharge'
-    ? 'Add funds anytime to keep your virtual card ready for payments.' : 'Please complete your first Recharge'
+    ? t('Add funds anytime to keep your virtual card ready for payments.')
+    : t('Please complete your first Recharge')
 })
 
 // Sanitize amount string to limited decimals without float errors
@@ -767,7 +771,7 @@ const validateForm = () => {
   // Only validate recharge amount since address validation is handled separately
   const rechargeAmount = parseFloat(form.rechargeAmount)
   if (!form.rechargeAmount || isNaN(rechargeAmount) || rechargeAmount <= 0) {
-    errors.rechargeAmount = 'Please enter a valid recharge amount'
+    errors.rechargeAmount = t('Please enter a valid recharge amount')
     isValid = false
   }
 
@@ -874,37 +878,37 @@ const saveAddress = async () => {
   const address = form.residentialAddress.trim()
   const addressPattern = /^[\u4e00-\u9fa5A-Za-z0-9\s.,\-/]+$/
   if (!address) {
-    addressErrors.residentialAddress = 'Address is required'
+    addressErrors.residentialAddress = t('Address is required')
     isValid = false
   } else if (address.length > 100) {
-    addressErrors.residentialAddress = 'Address must be at most 100 characters'
+    addressErrors.residentialAddress = t('Address must be at most 100 characters')
     isValid = false
   } else if (!addressPattern.test(address)) {
-    addressErrors.residentialAddress = 'Only Chinese/English letters, numbers and . - , / are allowed'
+    addressErrors.residentialAddress = t('Only Chinese/English letters, numbers and . - , / are allowed')
     isValid = false
   }
 
   if (!form.residentialCity.trim()) {
-    addressErrors.residentialCity = 'City is required'
+    addressErrors.residentialCity = t('City is required')
     isValid = false
   }
 
   if (!form.residentialState.trim()) {
-    addressErrors.residentialState = 'State/Province is required'
+    addressErrors.residentialState = t('State/Province is required')
     isValid = false
   }
 
   const postal = form.residentialPostalCode.trim()
   if (!postal) {
-    addressErrors.residentialPostalCode = 'Postal code is required'
+    addressErrors.residentialPostalCode = t('Postal code is required')
     isValid = false
   } else if (postal.length > 10) {
-    addressErrors.residentialPostalCode = 'Postal code must be at most 10 characters'
+    addressErrors.residentialPostalCode = t('Postal code must be at most 10 characters')
     isValid = false
   }
 
   if (!form.residentialCountryCode) {
-    addressErrors.residentialCountryCode = 'Country is required'
+    addressErrors.residentialCountryCode = t('Country is required')
     isValid = false
   }
 
@@ -917,8 +921,8 @@ const saveAddress = async () => {
   if (!isValid) {
     toast.add({
       severity: 'error',
-      summary: 'Validation Error',
-      detail: 'Please fill in all required address fields',
+      summary: t('Validation Error'),
+      detail: t('Please fill in all required address fields'),
       life: 3000
     })
     return
@@ -960,8 +964,8 @@ const saveAddress = async () => {
     if (ok) {
       toast.add({
         severity: 'success',
-        summary: 'Saved',
-        detail: 'Billing address saved successfully',
+        summary: t('Saved'),
+        detail: t('Billing address saved successfully'),
         life: 3000
       })
       // 清理详情缓存，避免后续详情页读取旧数据
@@ -972,8 +976,8 @@ const saveAddress = async () => {
     } else {
       toast.add({
         severity: 'error',
-        summary: 'Save Failed',
-        detail: (response as any)?.msg || 'Failed to save your billing address. Please try again.',
+        summary: t('Save Failed'),
+        detail: (response as any)?.msg || t('Failed to save your billing address. Please try again.'),
         life: 3000
       })
     }
@@ -981,8 +985,8 @@ const saveAddress = async () => {
     console.error('Error saving billing address:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'An unexpected error occurred. Please try again.',
+      summary: t('Error'),
+      detail: (error as any)?.message || t('An unexpected error occurred. Please try again.'),
       life: 3000
     })
   } finally {
@@ -997,15 +1001,15 @@ const handleConfirm = async () => {
     if (isEditing.value) {
       toast.add({
         severity: 'warn',
-        summary: 'Please save address first',
-        detail: 'You need to save your billing address before confirming',
+        summary: t('Please save address first'),
+        detail: t('You need to save your billing address before confirming'),
         life: 3000
       })
     } else if (!holder.value) {
       toast.add({
         severity: 'warn',
-        summary: 'Please add address first',
-        detail: 'You need to add your billing address before confirming',
+        summary: t('Please add address first'),
+        detail: t('You need to add your billing address before confirming'),
         life: 3000
       })
     }
@@ -1019,8 +1023,8 @@ const handleConfirm = async () => {
   if (!form.rechargeAmount || Number.isNaN(minor) || minor <= 0) {
     toast.add({
       severity: 'error',
-      summary: 'Validation Error',
-      detail: 'Please enter a valid recharge amount',
+      summary: t('Validation Error'),
+      detail: t('Please enter a valid recharge amount'),
       life: 3000
     })
     return
@@ -1035,8 +1039,10 @@ const handleConfirm = async () => {
     // Handle recharge confirmation
     toast.add({
       severity: 'success',
-      summary: 'Confirmed',
-      detail: `Recharge amount $${form.rechargeAmount} confirmed successfully`,
+      summary: t('Confirmed'),
+      detail: t('Recharge amount {amount} confirmed successfully', {
+        amount: `${currentCurrencySymbol.value}${form.rechargeAmount}`
+      }),
       life: 3000
     })
 
@@ -1046,7 +1052,7 @@ const handleConfirm = async () => {
       query: {
         amount: form.rechargeAmount,
         cardRewardPoints: appliedRewardPoints.value || 0,
-        name: holder.value?.residentialAddress ? 'John Tan' : 'New User',
+        name: holder.value?.residentialAddress ? t('John Tan') : t('New User'),
         action: route.query.action || 'apply' // Pass operation type: recharge or apply
       }
     })
@@ -1054,8 +1060,8 @@ const handleConfirm = async () => {
     console.error('Error confirming recharge:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'An unexpected error occurred. Please try again.',
+      summary: t('Error'),
+      detail: (error as any)?.message || t('An unexpected error occurred. Please try again.'),
       life: 3000
     })
   } finally {
@@ -1092,8 +1098,8 @@ const validateRechargeAmount = () => {
     form.rechargeAmount = minAmount.value.toString()
     toast.add({
       severity: 'info',
-      summary: 'Amount Adjusted',
-      detail: `Minimum recharge amount is ${minAmount.value}`,
+      summary: t('Amount Adjusted'),
+      detail: t('Minimum recharge amount is {amount}', { amount: minAmount.value }),
       life: 2000
     })
   }

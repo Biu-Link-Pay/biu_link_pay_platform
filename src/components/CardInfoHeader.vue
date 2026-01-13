@@ -1,6 +1,8 @@
 <template>
   <div class="w-full mb-6 md:mb-8">
-    <h3 class="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-3 md:mb-4">Your Card</h3>
+    <h3 class="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-3 md:mb-4">
+      {{ $t('Your Card') }}
+    </h3>
     <div
       class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg md:rounded-xl p-4 md:p-6 shadow-sm">
       <div class="flex items-center justify-between">
@@ -13,7 +15,7 @@
             </div>
           </div>
           <div v-if="balance !== undefined">
-            <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400">Balance</div>
+            <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400">{{ $t('Balance') }}</div>
             <div v-if="loading" class="text-base md:text-lg font-bold text-gray-900 dark:text-white">
               <i class="pi pi-spin pi-spinner text-sm"></i>
             </div>
@@ -23,7 +25,7 @@
           </div>
         </div>
         <div class="text-right">
-          <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400 mb-1">Card Number</div>
+          <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400 mb-1">{{ $t('Card Number') }}</div>
           <div class="text-base md:text-lg font-mono font-semibold text-gray-900 dark:text-white">
             **** {{ maskedCardNumber }}
           </div>

@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { AuthAPI } from '@/api/auth'
+import { i18n } from '@/i18n'
 import type {
   AuthState,
   UserInfo,
@@ -11,6 +12,7 @@ import type {
 } from '@/types/api'
 
 export const useAuthStore = defineStore('auth', () => {
+  const t = i18n.global.t
   // State
   const isAuthenticated = ref(false)
   const user = ref<UserInfo | null>(null)
@@ -64,15 +66,15 @@ export const useAuthStore = defineStore('auth', () => {
     try {
       const response: ApiResponse<null> = await AuthAPI.sendEmail(params)
       if (response.success) {
-        return { success: true, message: 'Verification code sent successfully' }
+        return { success: true, message: t('Verification code sent successfully') }
       } else {
-        return { success: false, message: response.msg || 'Send failed' }
+        return { success: false, message: response.msg || t('Send Failed') }
       }
     } catch (error) {
       console.error('Failed to send email verification code:', error)
       return {
         success: false,
-        message: (error as any)?.message || 'Send failed'
+        message: (error as any)?.message || t('Send Failed')
       }
     } finally {
       loading.value = false
@@ -95,15 +97,15 @@ export const useAuthStore = defineStore('auth', () => {
         localStorage.setItem('token', response.model.token)
         localStorage.setItem('refreshToken', response.model.refreshToken)
 
-        return { success: true, message: 'Login successful' }
+        return { success: true, message: t('Login Successful') }
       } else {
-        return { success: false, message: response.msg || 'Login failed' }
+        return { success: false, message: response.msg || t('Login Failed') }
       }
     } catch (error) {
       console.error('Login failed:', error)
       return {
         success: false,
-        message: (error as any)?.message || 'Login failed'
+        message: (error as any)?.message || t('Login Failed')
       }
     } finally {
       loading.value = false
@@ -113,7 +115,7 @@ export const useAuthStore = defineStore('auth', () => {
   // Refresh token
   const refreshAuthToken = async () => {
     if (!refreshToken.value) {
-      throw new Error('No refresh token')
+      throw new Error(t('No refresh token'))
     }
 
     try {
@@ -131,7 +133,7 @@ export const useAuthStore = defineStore('auth', () => {
 
         return true
       } else {
-        throw new Error(response.msg || 'Token refresh failed')
+        throw new Error(response.msg || t('Token refresh failed'))
       }
     } catch (error) {
       console.error('Token refresh failed:', error)
@@ -207,7 +209,7 @@ export const useAuthStore = defineStore('auth', () => {
   // Get KYC access token
   const getKycAccessToken = async (): Promise<string> => {
     if (!token.value || !refreshToken.value) {
-      throw new Error('User not logged in')
+      throw new Error(t('User not logged in'))
     }
 
     try {
@@ -216,7 +218,7 @@ export const useAuthStore = defineStore('auth', () => {
       if (response.success && response.model) {
         return response.model
       } else {
-        throw new Error(response.msg || 'Failed to get KYC access token')
+        throw new Error(response.msg || t('Failed to get KYC access token'))
       }
     } catch (error) {
       console.error('Failed to get KYC access token:', error)
@@ -227,7 +229,7 @@ export const useAuthStore = defineStore('auth', () => {
   // Check KYC status
   const checkKycStatus = async (): Promise<number> => {
     if (!token.value || !refreshToken.value) {
-      throw new Error('User not logged in')
+      throw new Error(t('User not logged in'))
     }
 
     try {
@@ -243,7 +245,7 @@ export const useAuthStore = defineStore('auth', () => {
 
         return response.model
       } else {
-        throw new Error(response.msg || 'Failed to check KYC status')
+        throw new Error(response.msg || t('Failed to check KYC status'))
       }
     } catch (error) {
       console.error('Failed to check KYC status:', error)

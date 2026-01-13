@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Navigation Header -->
-    <AppHeader title="Delete Card" :show-title="true" />
+    <AppHeader :title="$t('Delete Card')" :show-title="true" />
 
     <!-- Main Content -->
     <div class="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
@@ -12,8 +12,8 @@
             <i class="pi pi-trash text-red-600 dark:text-red-400 text-lg"></i>
           </div>
           <div>
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Delete Virtual Card</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">This action cannot be undone</p>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ $t('Delete Virtual Card') }}</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">{{ $t('This action cannot be undone') }}</p>
           </div>
         </div>
 
@@ -21,14 +21,16 @@
         <div v-if="cardInfo" class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Card
-                Number</div>
+              <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">
+                {{ $t('Card Number') }}
+              </div>
               <div class="text-base font-mono text-gray-900 dark:text-white">
                 {{ formatCardNumber(cardInfo.cardNo) }}
               </div>
             </div>
             <div>
-              <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Currency
+              <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">
+                {{ $t('Currency') }}
               </div>
               <div class="text-base font-semibold text-gray-900 dark:text-white">
                 {{ cardInfo.cardCurrency }}
@@ -46,16 +48,16 @@
             <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-sm"></i>
           </div>
           <div class="flex-1">
-            <h4 class="text-base font-semibold text-red-800 dark:text-red-300 mb-2">Warning</h4>
+            <h4 class="text-base font-semibold text-red-800 dark:text-red-300 mb-2">{{ $t('Warning') }}</h4>
             <div class="text-sm text-red-700 dark:text-red-400 space-y-2">
-              <p>Deleting this virtual card will:</p>
+              <p>{{ $t('Deleting this virtual card will:') }}</p>
               <ul class="list-disc list-inside space-y-1 ml-4">
-                <li>Permanently remove the card from your account</li>
-                <li>Cancel any pending transactions</li>
-                <li>Make the card number unusable for future transactions</li>
-                <li>Not affect your remaining balance (if any)</li>
+                <li>{{ $t('Permanently remove the card from your account') }}</li>
+                <li>{{ $t('Cancel any pending transactions') }}</li>
+                <li>{{ $t('Make the card number unusable for future transactions') }}</li>
+                <li>{{ $t('Not affect your remaining balance (if any)') }}</li>
               </ul>
-              <p class="font-medium mt-3">This action cannot be undone.</p>
+              <p class="font-medium mt-3">{{ $t('This action cannot be undone.') }}</p>
             </div>
           </div>
         </div>
@@ -67,7 +69,7 @@
         <button @click="goBack"
           class="flex-1 sm:flex-none px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
           <i class="pi pi-arrow-left mr-2"></i>
-          Cancel
+          {{ $t('Cancel') }}
         </button>
 
         <!-- Delete Button -->
@@ -75,7 +77,7 @@
           class="flex-1 sm:flex-none px-6 py-3 bg-red-600 hover:bg-red-700 disabled:bg-red-400 text-white font-medium rounded-lg transition-colors flex items-center justify-center">
           <i v-if="loading" class="pi pi-spin pi-spinner mr-2"></i>
           <i v-else class="pi pi-trash mr-2"></i>
-          {{ loading ? 'Deleting...' : 'Delete Card' }}
+          {{ loading ? $t('Deleting...') : $t('Delete Card') }}
         </button>
       </div>
     </div>
@@ -86,11 +88,13 @@
 import { ref, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useI18n } from 'vue-i18n'
 import AppHeader from '@/components/AppHeader.vue'
 
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
+const { t } = useI18n({ useScope: 'global' })
 
 // Component state
 const loading = ref(false)
@@ -102,9 +106,9 @@ const cardInfo = ref<{
 
 // Utility functions
 const formatCardNumber = (cardNo?: string) => {
-  if (!cardNo) return 'N/A'
+  if (!cardNo) return t('N/A')
   const digits = cardNo.replace(/\D/g, '')
-  if (!digits) return 'N/A'
+  if (!digits) return t('N/A')
   return digits.replace(/(.{4})/g, '$1 ').trim()
 }
 
@@ -118,8 +122,8 @@ const confirmDelete = async () => {
   if (!cardInfo.value) {
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: 'No card information available',
+      summary: t('Error'),
+      detail: t('No card information available'),
       life: 3000
     })
     return
@@ -137,8 +141,8 @@ const confirmDelete = async () => {
     // Show success message
     toast.add({
       severity: 'success',
-      summary: 'Success',
-      detail: 'Card deleted successfully',
+      summary: t('Success'),
+      detail: t('Card deleted successfully'),
       life: 3000
     })
 
@@ -149,8 +153,8 @@ const confirmDelete = async () => {
     console.error('Error deleting card:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to delete card. Please try again.',
+      summary: t('Error'),
+      detail: (error as any)?.message || t('Failed to delete card. Please try again.'),
       life: 3000
     })
   } finally {
@@ -174,8 +178,8 @@ onMounted(() => {
   } else {
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: 'Invalid card information',
+      summary: t('Error'),
+      detail: t('Invalid card information'),
       life: 3000
     })
     router.push({ name: 'MyCards' })

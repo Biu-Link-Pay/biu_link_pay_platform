@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { CardAPI } from '@/api/card'
 import { useAuthStore } from '@/stores/auth'
+import { i18n } from '@/i18n'
 import type { ApiResponse } from '@/types/api'
 import type {
   CardConfig,
@@ -13,6 +14,7 @@ import type {
 } from '@/api/card'
 
 export const useCardStore = defineStore('card', () => {
+  const t = i18n.global.t
   // State
   const cardConfigs = ref<CardConfig[]>([
     // Test data
@@ -118,10 +120,10 @@ export const useCardStore = defineStore('card', () => {
         cardConfigs.value = response.model
         return { success: true, data: response.model }
       } else {
-        throw new Error(response.msg || 'Failed to get card configuration')
+        throw new Error(response.msg || t('Failed to get card configuration'))
       }
     } catch (err) {
-      error.value = err instanceof Error ? err.message : 'Failed to get card configuration'
+      error.value = err instanceof Error ? err.message : t('Failed to get card configuration')
       console.error('Failed to get card configuration:', err)
       return {
         success: false,
@@ -144,10 +146,10 @@ export const useCardStore = defineStore('card', () => {
         cardBins.value = response.model
         return { success: true, data: response.model }
       } else {
-        throw new Error(response.msg || 'Failed to query card BIN')
+        throw new Error(response.msg || t('Failed to query card BIN'))
       }
     } catch (err) {
-      error.value = err instanceof Error ? err.message : 'Failed to query card BIN'
+      error.value = err instanceof Error ? err.message : t('Failed to query card BIN')
       console.error('Failed to query card BIN:', err)
       return {
         success: false,
@@ -167,12 +169,12 @@ export const useCardStore = defineStore('card', () => {
       const response: ApiResponse<null> = await CardAPI.saveCardHolder(holderInfo)
 
       if (response.success) {
-        return { success: true, message: 'Cardholder info saved successfully' }
+        return { success: true, message: t('Cardholder info saved successfully') }
       } else {
-        throw new Error(response.msg || 'Failed to save cardholder info')
+        throw new Error(response.msg || t('Failed to save cardholder info'))
       }
     } catch (err) {
-      error.value = err instanceof Error ? err.message : 'Failed to save cardholder info'
+      error.value = err instanceof Error ? err.message : t('Failed to save cardholder info')
       console.error('Failed to save cardholder info:', err)
       return {
         success: false,
@@ -195,10 +197,10 @@ export const useCardStore = defineStore('card', () => {
         cardList.value = response.model
         return { success: true, data: response.model }
       } else {
-        throw new Error(response.msg || 'Failed to get card list')
+        throw new Error(response.msg || t('Failed to get card list'))
       }
     } catch (err) {
-      const message = err instanceof Error ? err.message : 'Failed to get card list'
+      const message = err instanceof Error ? err.message : t('Failed to get card list')
       if (!options?.silent) {
         error.value = message
         console.error('Failed to get card list:', err)

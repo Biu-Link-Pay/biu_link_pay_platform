@@ -5,6 +5,7 @@ import { useAuthStore } from '@/stores/auth'
 import { useErrorHandler } from '@/utils/errorHandler'
 import Button from 'primevue/button'
 import Toast from 'primevue/toast'
+import { useI18n } from 'vue-i18n'
 
 // Page metadata
 defineOptions({
@@ -16,6 +17,7 @@ const authStore = useAuthStore()
 const route = useRoute()
 const router = useRouter()
 const { handleError, handleSuccess } = useErrorHandler()
+const { t, locale } = useI18n()
 
 const kycAccessToken = ref('')
 const showKycSDK = ref(false)
@@ -37,9 +39,10 @@ async function launchKycSDK(): Promise<void> {
 
     // 直接调用 Sumsub SDK
     if (typeof window !== 'undefined' && (window as any).snsWebSdk) {
+      const sdkLang = locale.value.startsWith('zh') ? 'zh' : 'en'
       const snsWebSdkInstance = (window as any).snsWebSdk
         .init(token, () => getNewAccessToken())
-        .withConf({ lang: 'zh' })
+        .withConf({ lang: sdkLang })
         .withOptions({ addViewportTag: false, adaptIframeHeight: true })
         .on('idCheck.onStepCompleted', (payload: any) => {
           console.log('onStepCompleted', payload)
@@ -51,15 +54,15 @@ async function launchKycSDK(): Promise<void> {
 
       snsWebSdkInstance.launch('#sumsub-websdk-container')
 
-      handleSuccess('请按照提示完成身份验证流程')
+      handleSuccess(t('Please follow the instructions to complete identity verification.'))
     } else {
-      throw new Error('Sumsub SDK 未加载')
+      throw new Error(t('Sumsub SDK is not loaded'))
     }
   } catch (error) {
     console.error('启动 KYC SDK 失败:', error)
     showKycSDK.value = false
     handleError(error, {
-      fallbackMessage: '无法启动 KYC 验证组件，请重试'
+      fallbackMessage: t('Failed to start KYC verification, please try again.')
     })
   }
 }
@@ -93,7 +96,7 @@ function startKycPolling(): void {
       if (result === 1) {
         // KYC 通过，跳转到卡bin页面
         stopKycPolling()
-        handleSuccess('恭喜！您的身份验证已通过，正在跳转到卡bin页面...')
+        handleSuccess(t('KYC verification approved. Redirecting to card BIN selection...'))
         
         setTimeout(async () => {
           const returnTo = route.query.returnTo as string
@@ -103,8 +106,8 @@ function startKycPolling(): void {
       } else if (result === 3) {
         // KYC 被拒绝，返回申请卡片页面
         stopKycPolling()
-        handleError('KYC 验证被拒绝，正在返回申请卡片页面...', {
-          fallbackMessage: 'KYC 验证被拒绝，请联系客服获取更多信息'
+        handleError(t('KYC verification was rejected. Returning to apply card page...'), {
+          fallbackMessage: t('KYC verification was rejected. Please contact support for more information.')
         })
         
         setTimeout(async () => {
@@ -134,7 +137,7 @@ async function recheckKycStatus(): Promise<void> {
     const result = await authStore.checkKycStatus()
 
     if (result === 1) {
-      handleSuccess('恭喜！您的身份验证已通过，正在跳转...')
+      handleSuccess(t('KYC verification approved. Redirecting...'))
 
       // 延迟跳转
       setTimeout(async () => {
@@ -148,8 +151,8 @@ async function recheckKycStatus(): Promise<void> {
       await launchKycSDK()
     } else if (result === 3) {
       // 如果 KYC 状态是 3（被拒绝），返回申请卡片页面
-      handleError('KYC 验证被拒绝，正在返回申请卡片页面...', {
-        fallbackMessage: 'KYC 验证被拒绝，请联系客服获取更多信息'
+      handleError(t('KYC verification was rejected. Returning to apply card page...'), {
+        fallbackMessage: t('KYC verification was rejected. Please contact support for more information.')
       })
       
       setTimeout(async () => {
@@ -209,7 +212,7 @@ onMounted(async () => {
 watch(() => authStore.kycStatus, async (newStatus) => {
   if (newStatus === 1) {
     // KYC 已通过，显示成功消息并跳转
-    handleSuccess('恭喜！您的身份验证已通过，正在跳转到仪表板...')
+    handleSuccess(t('KYC verification approved. Redirecting to dashboard...'))
 
     // 延迟跳转让用户看到成功消息
     setTimeout(async () => {
@@ -236,9 +239,9 @@ watch(() => authStore.kycStatus, async (newStatus) => {
           <div class="flex items-start">
             <i class="pi pi-info-circle text-blue-600 dark:text-blue-400 mt-1 mr-3"></i>
             <div>
-              <h3 class="font-semibold text-blue-900 dark:text-blue-100 mb-2">KYC 未完成</h3>
+              <h3 class="font-semibold text-blue-900 dark:text-blue-100 mb-2">{{ $t('KYC Not Completed') }}</h3>
               <p class="text-blue-800 dark:text-blue-200 text-sm">
-                请完成您的身份验证以访问系统。KYC 验证将自动开始。
+                {{ $t('Please complete your identity verification to access the system. KYC will start automatically.') }}
               </p>
             </div>
           </div>
@@ -251,9 +254,9 @@ watch(() => authStore.kycStatus, async (newStatus) => {
           <div class="flex items-start">
             <i class="pi pi-exclamation-triangle text-yellow-600 dark:text-yellow-400 mt-1 mr-3"></i>
             <div>
-              <h3 class="font-semibold text-yellow-900 dark:text-yellow-100 mb-2">KYC 暂时被拒绝</h3>
+              <h3 class="font-semibold text-yellow-900 dark:text-yellow-100 mb-2">{{ $t('KYC Temporarily Rejected') }}</h3>
               <p class="text-yellow-800 dark:text-yellow-200 text-sm">
-                您的 KYC 验证暂时被拒绝。您可以重新申请验证。KYC 验证将自动开始。
+                {{ $t('Your KYC verification was temporarily rejected. You can reapply. KYC will start automatically.') }}
               </p>
             </div>
           </div>
@@ -266,9 +269,9 @@ watch(() => authStore.kycStatus, async (newStatus) => {
           <div class="flex items-start">
             <i class="pi pi-times-circle text-red-600 dark:text-red-400 mt-1 mr-3"></i>
             <div>
-              <h3 class="font-semibold text-red-900 dark:text-red-100 mb-2">KYC 被拒绝</h3>
+              <h3 class="font-semibold text-red-900 dark:text-red-100 mb-2">{{ $t('KYC Rejected') }}</h3>
               <p class="text-red-800 dark:text-red-200 text-sm">
-                您的 KYC 验证被拒绝。请联系客服获取更多信息。
+                {{ $t('Your KYC verification was rejected. Please contact support for more information.') }}
               </p>
             </div>
           </div>
@@ -279,7 +282,7 @@ watch(() => authStore.kycStatus, async (newStatus) => {
           <div class="inline-flex items-center px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
             <i class="pi pi-spin pi-spinner text-blue-600 dark:text-blue-400 mr-2"></i>
             <span class="text-blue-800 dark:text-blue-200 text-sm">
-              正在自动检查 KYC 状态...
+              {{ $t('Automatically checking KYC status...') }}
             </span>
           </div>
         </div>
@@ -287,7 +290,7 @@ watch(() => authStore.kycStatus, async (newStatus) => {
         <!-- KYC 操作按钮 -->
         <div class="flex justify-center mt-6 space-x-4">
           <Button
-            label="重新检查 KYC 状态"
+            :label="$t('Recheck KYC Status')"
             icon="pi pi-refresh"
             class="min-h-[48px] text-base font-medium"
             severity="secondary"
@@ -295,7 +298,7 @@ watch(() => authStore.kycStatus, async (newStatus) => {
           />
           <Button
             v-if="isPolling"
-            label="停止轮询"
+            :label="$t('Stop Polling')"
             icon="pi pi-pause"
             class="min-h-[48px] text-base font-medium"
             severity="warning"
@@ -303,14 +306,14 @@ watch(() => authStore.kycStatus, async (newStatus) => {
           />
           <Button
             v-else
-            label="开始轮询"
+            :label="$t('Start Polling')"
             icon="pi pi-play"
             class="min-h-[48px] text-base font-medium"
             severity="success"
             @click="startKycPolling"
           />
           <Button
-            label="返回登录"
+            :label="$t('Back to Login')"
             icon="pi pi-arrow-left"
             class="min-h-[48px] text-base font-medium"
             severity="secondary"

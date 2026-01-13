@@ -17,23 +17,23 @@
         <div class="text-lg font-bold text-gray-900 dark:text-white mb-1">
           {{ binInfo.cardBin || '**** ****' }}
         </div>
-        <div class="text-xs text-gray-500 dark:text-gray-400">Card BIN</div>
+        <div class="text-xs text-gray-500 dark:text-gray-400">{{ $t('Card BIN') }}</div>
       </div>
 
       <!-- Card Details -->
       <div class="space-y-2">
         <div class="flex justify-between items-center">
-          <span class="text-xs text-gray-500 dark:text-gray-400">Type:</span>
-          <span class="text-xs font-medium text-gray-900 dark:text-white">{{ binInfo.cardType || 'N/A' }}</span>
+          <span class="text-xs text-gray-500 dark:text-gray-400">{{ $t('Type:') }}</span>
+          <span class="text-xs font-medium text-gray-900 dark:text-white">{{ binInfo.cardType || $t('N/A') }}</span>
         </div>
 
         <div class="flex justify-between items-center">
-          <span class="text-xs text-gray-500 dark:text-gray-400">Scheme:</span>
-          <span class="text-xs font-medium text-gray-900 dark:text-white">{{ binInfo.cardScheme || 'N/A' }}</span>
+          <span class="text-xs text-gray-500 dark:text-gray-400">{{ $t('Scheme:') }}</span>
+          <span class="text-xs font-medium text-gray-900 dark:text-white">{{ binInfo.cardScheme || $t('N/A') }}</span>
         </div>
 
         <div class="flex justify-between items-center">
-          <span class="text-xs text-gray-500 dark:text-gray-400">Currency:</span>
+          <span class="text-xs text-gray-500 dark:text-gray-400">{{ $t('Currency:') }}</span>
           <span class="text-xs font-medium text-gray-900 dark:text-white">{{ binInfo.cardCurrency || 'USD' }}</span>
         </div>
       </div>
@@ -41,7 +41,7 @@
       <!-- Availability -->
       <div class="pt-2 border-t border-gray-100 dark:border-gray-700">
         <div class="flex justify-between items-center">
-          <span class="text-xs text-gray-500 dark:text-gray-400">Available:</span>
+          <span class="text-xs text-gray-500 dark:text-gray-400">{{ $t('Available:') }}</span>
           <span class="text-xs font-medium" :class="getAvailabilityClass()">
             {{ getAvailabilityText() }}
           </span>
@@ -51,16 +51,16 @@
       <!-- Features -->
       <div class="pt-2 border-t border-gray-100">
         <div class="flex items-center justify-between">
-          <span class="text-xs text-gray-500 dark:text-gray-400">Features:</span>
+          <span class="text-xs text-gray-500 dark:text-gray-400">{{ $t('Features:') }}</span>
           <div class="flex space-x-1">
             <div v-if="binInfo.billingAddressUpdatable === 'true'"
               class="w-4 h-4 bg-green-100 rounded-full flex items-center justify-center"
-              title="Address Update Supported">
+              :title="$t('Address Update Supported')">
               <i class="pi pi-home text-green-600 text-xs"></i>
             </div>
             <div v-if="binInfo.expiryDateCustomization === 'true'"
               class="w-4 h-4 bg-blue-100 rounded-full flex items-center justify-center"
-              title="Expiry Date Customization">
+              :title="$t('Expiry Date Customization')">
               <i class="pi pi-calendar text-blue-600 text-xs"></i>
             </div>
           </div>
@@ -75,6 +75,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import type { CardBin } from '@/api/card'
 
 // Define props
@@ -84,6 +85,7 @@ interface Props {
 }
 
 const props = defineProps<Props>()
+const { t } = useI18n({ useScope: 'global' })
 
 // Define emits
 const emit = defineEmits<{
@@ -94,9 +96,9 @@ const emit = defineEmits<{
 const getAvailabilityText = () => {
   const available = props.binInfo.remainingAvailableCard
   if (available === null || available === undefined) {
-    return 'Unlimited'
+    return t('Unlimited')
   }
-  return available > 0 ? available.toString() : 'Out of Stock'
+  return available > 0 ? available.toString() : t('Out of Stock')
 }
 
 // Get availability style classes
