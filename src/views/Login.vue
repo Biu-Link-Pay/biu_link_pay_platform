@@ -10,7 +10,6 @@
         BiulinkPay
       </span>
     </div>
-
     <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-6xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[600px]">
         <!-- Left showcase area (Desktop) -->
@@ -75,7 +74,17 @@
                 :class="{ 'ml-2': showMobileForm && isMobile }">
                 {{ $t('Login with Email') }}
               </h1>
-              <div v-if="showMobileForm && isMobile" class="w-10"></div>
+              <div class="flex items-center gap-2" :class="{ 'w-10': showMobileForm && isMobile }">
+                <!-- Language toggle -->
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center min-w-[44px] h-8 px-2 rounded-full border border-gray-200 bg-gray-50 text-gray-700 text-xs font-semibold shadow-sm hover:bg-white transition-colors dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100"
+                  :aria-label="t('Language')"
+                  :title="t('Language')"
+                  @click="toggleLocale">
+                  {{ localeToggleLabel }}
+                </button>
+              </div>
             </div>
 
             <!-- Login Form -->
@@ -161,11 +170,13 @@ import { useCardStore } from '@/stores/card'
 import { useUserStore } from '@/stores/user'
 import { AuthUtils, RouteUtils } from '@/utils/auth'
 import { getFingerprintId, getCachedFingerprintId } from '@/utils/fingerprint'
+import { setLocalePreference } from '@/i18n'
+import type { SupportedLocale } from '@/i18n/locales'
 
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
-const { t } = useI18n({ useScope: 'global' })
+const { t, locale } = useI18n({ useScope: 'global' })
 const authStore = useAuthStore()
 const cardStore = useCardStore()
 const userStore = useUserStore()
@@ -283,6 +294,13 @@ const resendLabel = computed(() => {
   }
   return t('Resend')
 })
+
+const localeToggleLabel = computed(() => (locale.value === 'en' ? '繁' : 'EN'))
+
+const toggleLocale = () => {
+  const nextLocale: SupportedLocale = locale.value === 'en' ? 'zh-TW' : 'en'
+  setLocalePreference(nextLocale)
+}
 
 // Form validation
 const validateEmail = () => {

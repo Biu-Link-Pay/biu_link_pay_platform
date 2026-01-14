@@ -22,21 +22,16 @@
           <ThemeToggle />
         </div>
 
-        <!-- Language switcher -->
+        <!-- Language toggle -->
         <div class="ml-3">
-          <label class="sr-only" for="locale-select">{{ $t('Language') }}</label>
-          <div class="relative">
-            <select
-              id="locale-select"
-              v-model="locale"
-              class="appearance-none text-sm font-medium bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-gray-600 rounded-full pl-3 pr-8 py-1.5 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              :aria-label="$t('Language')">
-              <option value="en">{{ $t('English') }}</option>
-              <option value="zh-TW">{{ $t('Traditional Chinese') }}</option>
-            </select>
-            <i
-              class="pi pi-angle-down pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-gray-500 dark:text-gray-400"></i>
-          </div>
+          <button
+            type="button"
+            class="inline-flex items-center justify-center min-w-[44px] h-8 px-2 rounded-full border border-gray-200 bg-gray-50 text-gray-700 text-xs font-semibold shadow-sm hover:bg-white transition-colors dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100"
+            :aria-label="$t('Language')"
+            :title="$t('Language')"
+            @click="toggleLocale">
+            {{ localeToggleLabel }}
+          </button>
         </div>
 
         <!-- Card reward points (desktop) -->
@@ -221,6 +216,13 @@ const formattedCardRewardPoints = computed(() => {
   }).format(cardRewardPoints.value)
 })
 
+const localeToggleLabel = computed(() => (locale.value === 'en' ? '繁' : 'EN'))
+
+const toggleLocale = () => {
+  const nextLocale: SupportedLocale = locale.value === 'en' ? 'zh-TW' : 'en'
+  setLocalePreference(nextLocale)
+}
+
 const showPointsHint = () => {
   toast.add({
     severity: 'info',
@@ -298,17 +300,6 @@ const handleLogout = async () => {
     })
   }
 }
-
-const applyLocaleChange = () => {
-  const selected = locale.value
-  if (selected === 'en' || selected === 'zh-TW') {
-    setLocalePreference(selected as SupportedLocale)
-  }
-}
-
-watch(locale, () => {
-  applyLocaleChange()
-})
 
 const loadUserProfileIfNeeded = async () => {
   if (!isLoggedIn.value) return
