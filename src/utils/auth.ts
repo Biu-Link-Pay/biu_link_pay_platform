@@ -191,7 +191,11 @@ export const RouteUtils = {
 }
 
 // Error handling utility functions
-export const ErrorUtils = {
+export const ErrorUtils: {
+  t: typeof i18n.global.t
+  handleAuthError: (error: any) => string
+  formatApiError: (error: any) => string
+} = {
   t: i18n.global.t,
   /**
    * Handle authentication related errors
