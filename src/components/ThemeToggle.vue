@@ -41,6 +41,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { storeToRefs } from 'pinia'
 import { useI18n } from 'vue-i18n'
 import { useThemeStore } from '@/stores/theme'
 
@@ -48,8 +49,8 @@ const themeStore = useThemeStore()
 const showDropdown = ref(false)
 const { t } = useI18n({ useScope: 'global' })
 
-// Destructure store methods
-const { currentTheme, setTheme, toggleTheme, getThemeIcon } = themeStore
+const { currentTheme } = storeToRefs(themeStore)
+const { setTheme, toggleTheme, getThemeIcon } = themeStore
 
 const currentThemeLabel = computed(() => {
   switch (currentTheme.value) {
