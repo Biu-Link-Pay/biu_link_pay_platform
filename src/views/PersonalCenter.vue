@@ -503,7 +503,7 @@ const unbindLoading = ref(false)
 
 // Computed properties
 const maskedEmail = computed(() => {
-  if (!userProfile.value?.userEmail) return t('sh****@example.com')
+  if (!userProfile.value?.userEmail) return 'sh****@example.com'
   const email = userProfile.value.userEmail
   const [username, domain] = email.split('@')
   if (username.length <= 2) return email

@@ -286,7 +286,7 @@ const zhTW = {
   'Warning': '警告',
   'Withdraw': '提現',
   'and': '以及',
-  'sh****@example.com': 'sh****@example.com',
+  'sh****@example.com': "sh****{'@'}example.com",
   '{count}s': '{count} 秒',
   'Withdrawal Details': '提現詳情',
   'Configure your withdrawal settings': '設定您的提現資訊',
@@ -620,7 +620,7 @@ const zhTW = {
   'Manage your referral settings': '管理您的推薦設定',
   'Card Activated': '卡片已啟用',
   '{card} has been successfully activated': '{card} 已成功啟用',
-  'example@email.com': 'example@email.com',
+  'example@email.com': "example{'@'}email.com",
   '(Used {points} pts)': '（使用 {points} 點）',
   'All': '全部',
   'Confirmed': '已確認',
@@ -639,7 +639,10 @@ const zhTW = {
 }
 
 export const messages = {
-  en: {},
+  en: {
+    'example@email.com': "example{'@'}email.com",
+    'sh****@example.com': "sh****{'@'}example.com"
+  },
   'zh-TW': zhTW
 }
 
