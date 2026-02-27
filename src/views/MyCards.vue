@@ -1061,6 +1061,7 @@ const mockDepositOrders: DepositOrderListItem[] = [
     webUrl: 'https://pay.example.com/dep1',
     cardNo: '**** 1234',
     cardRewardPoints: 1200,
+    cryptoAmount: 1000,
     status: 'SUCCESS'
   },
   {
@@ -1078,6 +1079,7 @@ const mockDepositOrders: DepositOrderListItem[] = [
     webUrl: 'https://pay.example.com/dep2',
     cardNo: '**** 5678',
     cardRewardPoints: 0,
+    cryptoAmount: 150,
     status: 'PENDING'
   },
   {
@@ -1095,6 +1097,7 @@ const mockDepositOrders: DepositOrderListItem[] = [
     webUrl: 'https://pay.example.com/dep3',
     cardNo: '**** 9012',
     cardRewardPoints: 500,
+    cryptoAmount: 80,
     status: 'INIT'
   },
   {
@@ -1112,6 +1115,7 @@ const mockDepositOrders: DepositOrderListItem[] = [
     webUrl: 'https://pay.example.com/dep4',
     cardNo: '**** 3456',
     cardRewardPoints: 0,
+    cryptoAmount: 300,
     status: 'FAIL'
   }
 ]
@@ -1779,7 +1783,7 @@ const goToPaymentResult = (order: DepositOrderListItem) => {
       amount: order.amount.toString(),
       currency: order.token,
       network: order.network,
-      cryptoAmount: order.usdAmount.toString(),
+      cryptoAmount: order.cryptoAmount,
       paymentMethod: 'Crypto Payment',
       type: 'deposit', // Deposit order
       from: 'myCards', // Source identifier

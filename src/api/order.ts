@@ -176,6 +176,7 @@ export interface DepositOrderListItem {
   num: string // 订单号
   type: string // 1:办卡 2:充值
   amount: number // 订单金额
+  cryptoAmount: number // 数字货币金额
   orderCurrency: string // 订单币种
   token: string // 币种
   network: string // 网络
