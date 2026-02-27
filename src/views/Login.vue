@@ -3,7 +3,7 @@
     class="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-indigo-200 dark:from-gray-800 dark:via-blue-800 dark:to-purple-800 flex items-center justify-center p-4">
     <!-- Logo -->
     <div class="absolute left-4 top-4 lg:left-8 lg:top-8 z-10 flex items-center gap-2">
-      <img src="https://static.biulinkpay.online/logo/biu_blue.png" alt="BiulinkPay" class="w-10 lg:w-12"
+      <img src="https://static.biulinkpay.com/logo/biu_blue.png" alt="BiulinkPay" class="w-10 lg:w-12"
         loading="eager" />
       <span class="text-[#007cc3] text-xl lg:text-2xl font-bold"
         style="font-family: Alimama ShuHeiTi, Alimama ShuHeiTi;">
@@ -108,8 +108,7 @@
                     :class="{ 'border-red-500': errors.code }" :disabled="isLoading" />
                   <Button type="button" :label="countdown > 0 ? `${countdown}s` : 'Resend'"
                     :disabled="countdown > 0 || isLoading" severity="secondary"
-                    class="min-h-[48px] px-3 sm:px-4 whitespace-nowrap sm:min-w-[110px]"
-                    @click="resendCode" />
+                    class="min-h-[48px] px-3 sm:px-4 whitespace-nowrap sm:min-w-[110px]" @click="resendCode" />
                 </div>
                 <p v-if="errors.code" class="text-sm text-red-500">
                   {{ errors.code }}
@@ -125,12 +124,12 @@
                   :disabled="isLoading" />
                 <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                   I have read and agree to BiuLinkPay
-                  <a href="https://static.biulinkpay.online/compliance/TermsOfService.html" target="_blank"
+                  <a href="https://static.biulinkpay.com/compliance/TermsOfService.html" target="_blank"
                     rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">
                     Terms of service
                   </a>
                   and
-                  <a href="https://static.biulinkpay.online/compliance/PrivacyPolicy.html" target="_blank"
+                  <a href="https://static.biulinkpay.com/compliance/PrivacyPolicy.html" target="_blank"
                     rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">
                     Privacy Policy
                   </a>
@@ -172,63 +171,63 @@ const userStore = useUserStore()
 const services = ref([
   {
     name: 'PayPal',
-    image: 'https://static.biulinkpay.online/images/paypal.png',
+    image: 'https://static.biulinkpay.com/images/paypal.png',
     // 移动端：围绕中心卡片分布
     position: 'top-1/5 right-1/6 lg:top-1/5 lg:left-1/5',
     size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14',
   },
   {
     name: 'YouTube',
-    image: 'https://static.biulinkpay.online/images/youtube.png',
+    image: 'https://static.biulinkpay.com/images/youtube.png',
     // 移动端：围绕中心卡片分布
     position: 'top-1/6 left-1/8 lg:top-1/4 lg:left-7/10',
     size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14',
   },
   {
     name: 'TikTok',
-    image: 'https://static.biulinkpay.online/images/tiktok.png',
+    image: 'https://static.biulinkpay.com/images/tiktok.png',
     // 移动端：围绕中心卡片分布
     position: 'top-1/8 left-1/2 lg:top-1/2 lg:left-0',
     size: 'w-16 h-16 sm:w-16 sm:h-16 lg:w-20 lg:h-20',
   },
   {
     name: 'Apple',
-    image: 'https://static.biulinkpay.online/images/apple.png',
+    image: 'https://static.biulinkpay.com/images/apple.png',
     // 移动端：围绕中心卡片分布
     position: 'top-1/2 right-1/10 lg:top-2/5 lg:left-2/5',
     size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14',
   },
   {
     name: 'eBay',
-    image: 'https://static.biulinkpay.online/images/ebay.png',
+    image: 'https://static.biulinkpay.com/images/ebay.png',
     // 移动端：围绕中心卡片分布
     position: 'bottom-1/5 right-1/6 lg:top-[42%] lg:left-7/8',
     size: 'w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12',
   },
   {
     name: 'ChatGPT',
-    image: 'https://static.biulinkpay.online/images/chatgpt.png',
+    image: 'https://static.biulinkpay.com/images/chatgpt.png',
     // 移动端：围绕中心卡片分布
     position: 'bottom-[5%] right-1/5 lg:top-[62%] lg:left-[56%]',
     size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14',
   },
   {
     name: 'Facebook',
-    image: 'https://static.biulinkpay.online/images/facebook.png',
+    image: 'https://static.biulinkpay.com/images/facebook.png',
     // 移动端：围绕中心卡片分布
     position: 'bottom-1/5 left-1/6 lg:top-[75%] lg:left-[10%]',
     size: 'w-12 h-12 sm:w-14 sm:h-14 lg:w-20 lg:h-20',
   },
   {
     name: 'Google',
-    image: 'https://static.biulinkpay.online/images/google.png',
+    image: 'https://static.biulinkpay.com/images/google.png',
     // 移动端：围绕中心卡片分布
     position: 'top-1/2 left-1/10 lg:top-[55%] lg:left-[90%]',
     size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14',
   },
   {
     name: 'Amazon',
-    image: 'https://static.biulinkpay.online/images/amazon.png',
+    image: 'https://static.biulinkpay.com/images/amazon.png',
     // 移动端：围绕中心卡片分布
     position: 'bottom-1/10 left-1/8 lg:top-[75%] lg:left-[95%]',
     size: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-20 lg:h-20',

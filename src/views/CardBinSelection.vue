@@ -20,7 +20,7 @@
       <div class="grid grid-cols-3 gap-4 mb-8">
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.applyFee || 0)
-            }}</div>
+          }}</div>
           <div class="text-sm text-gray-500 dark:text-gray-400">Apply fee</div>
         </div>
         <div class="text-center">
@@ -31,7 +31,7 @@
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedCard?.monthlyFee || 0)
-            }}</div>
+          }}</div>
           <div class="text-sm text-gray-500 dark:text-gray-400">Monthly Fee</div>
         </div>
       </div>
@@ -593,7 +593,7 @@ const getCardBackgroundImage = (cardScheme: string | null) => {
 
   if (!cardScheme) {
     console.log('No card scheme, using default Mastercard')
-    return 'https://static.biulinkpay.online/images/master.png' // Default to Mastercard
+    return 'https://static.biulinkpay.com/images/master.png' // Default to Mastercard
   }
 
   const scheme = cardScheme.toLowerCase()
@@ -601,17 +601,17 @@ const getCardBackgroundImage = (cardScheme: string | null) => {
 
   if (scheme.includes('master') || scheme.includes('mastercard')) {
     console.log('Using Mastercard background')
-    return 'https://static.biulinkpay.online/images/master.png'
+    return 'https://static.biulinkpay.com/images/master.png'
   } else if (scheme.includes('visa')) {
     console.log('Using Visa background')
-    return 'https://static.biulinkpay.online/images/visa.png'
+    return 'https://static.biulinkpay.com/images/visa.png'
   } else if (scheme.includes('discover')) {
     console.log('Using Discover background')
-    return 'https://static.biulinkpay.online/images/discover.png'
+    return 'https://static.biulinkpay.com/images/discover.png'
   } else {
     console.log('Unknown scheme, using default Mastercard')
     // Default to Mastercard for unknown schemes
-    return 'https://static.biulinkpay.online/images/master.png'
+    return 'https://static.biulinkpay.com/images/master.png'
   }
 }
 

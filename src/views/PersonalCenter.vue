@@ -511,7 +511,7 @@ const inviteLink = computed(() => {
   // If backend returns full link, use directly
   if (raw.startsWith('http://') || raw.startsWith('https://')) return raw
   // Else treat as invite code, build full invite link
-  const base = 'https://card.biulinkpay.online'
+  const base = 'https://card.biulinkpay.com'
   // Avoid duplicate path concatenation
   if (raw.includes('/') || raw.includes('?')) return `${base}${raw.startsWith('/') ? '' : '/'}${raw}`
   return `${base}/login?license=${encodeURIComponent(raw)}`
@@ -651,11 +651,11 @@ const navigateToLanguage = () => {
 }
 
 const navigateToTerms = () => {
-  window.open('https://static.biulinkpay.online/compliance/TermsOfService.html', '_blank', 'noopener,noreferrer')
+  window.open('https://static.biulinkpay.com/compliance/TermsOfService.html', '_blank', 'noopener,noreferrer')
 }
 
 const navigateToPrivacy = () => {
-  window.open('https://static.biulinkpay.online/compliance/PrivacyPolicy.html', '_blank', 'noopener,noreferrer')
+  window.open('https://static.biulinkpay.com/compliance/PrivacyPolicy.html', '_blank', 'noopener,noreferrer')
 }
 
 const navigateToSafety = () => {

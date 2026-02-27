@@ -1212,6 +1212,12 @@ const handleWithdraw = async () => {
 
 // Execute withdraw after 2FA submit
 const submitWithdrawOrder = async (faCode: string) => {
+  if (!recipientInfo.value || !selectedPaymentMethod.value) {
+    toast.add({ severity: 'error', summary: 'Error', detail: 'Missing required information. Please go back and try again.', life: 3000 })
+    isSubmitting.value = false
+    return
+  }
+
   isSubmitting.value = true
 
   try {

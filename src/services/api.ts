@@ -10,7 +10,7 @@ let requests: ((token: string) => void)[] = []
 
 // 创建 axios 实例
 const api: AxiosInstance = axios.create({
-  baseURL: 'https://api.biulinkpay.online', // 正式环境 API 基础 URL
+  baseURL: 'https://api.biulinkpay.com', // 正式环境 API 基础 URL
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',

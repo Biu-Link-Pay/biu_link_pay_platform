@@ -6,7 +6,7 @@
         <div
           class="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden cursor-pointer hover:opacity-90"
           role="button" aria-label="Go to cards" title="Go to cards" @click="onLogoClick">
-          <img src="https://static.biulinkpay.online/logo/biu_blue.png" alt="BiuLinkPay"
+          <img src="https://static.biulinkpay.com/logo/biu_blue.png" alt="BiuLinkPay"
             class="w-full h-full object-contain" />
         </div>
         <div v-if="showTitle" class="hidden sm:block">
