@@ -159,6 +159,7 @@ export interface DepositOrderDetailItem {
   expires?: number // 过期时间
   cardNo?: string | null // 卡号（可选）
   cardRewardPoints: number // 卡奖励点数
+  cryptoAmount: number // 数字货币金额
 }
 
 // 入金订单详情查询响应
@@ -308,6 +309,7 @@ export interface CreateWithdrawOrderParams {
   cardRewardPoints: number // 卡奖励点数
   payType: string // 支付类型,如果提现法币，填写法币支付方式，提现数币，添加WALLET 或者BINANCE
   customParam: string // 提现法币相关参数
+  faCode: string // 2fa码
 }
 
 // 创建出金订单响应

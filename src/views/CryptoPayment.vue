@@ -33,7 +33,7 @@
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
                   <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Order amount</div>
                   <div class="text-lg font-bold text-gray-900 dark:text-white">
-                    {{ formatCurrency(orderAmount) }}
+                    {{ displayOrderAmount }}
                     <span v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
                       class="text-sm font-normal text-orange-500 dark:text-gray-400 ml-1">
                       (Used {{ cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() }} pts)
@@ -45,14 +45,14 @@
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
                   <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">You need to pay</div>
                   <div class="flex items-center space-x-2">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">{{ displayPaymentCryptoAmount }} {{ displayPaymentToken
                     }}</span>
                     <div class="w-6 h-6 rounded-full flex items-center justify-center"
-                      :class="getCryptoIconBg(selectedCrypto)">
-                      <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
+                      :class="getCryptoIconBg(displayPaymentToken)">
+                      <span class="text-white font-bold text-xs">{{ getCryptoIcon(displayPaymentToken) }}</span>
                     </div>
                     <button
-                      @click="() => { copyToClipboard(cryptoAmount); toast.add({ severity: 'success', summary: 'Success', detail: 'Amount copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(String(displayPaymentCryptoAmount)); toast.add({ severity: 'success', summary: 'Success', detail: 'Amount copied to clipboard', life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
                       title="Copy amount">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
@@ -123,7 +123,7 @@
                     class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
                     <div class="text-sm font-medium text-blue-800 dark:text-blue-200 mb-2">Network Type</div>
                     <div class="text-lg font-semibold text-blue-900 dark:text-blue-100">
-                      {{ selectedCrypto }}({{ selectedNetwork }}) only
+                      {{ displayPaymentToken }}({{ displayNetwork }}) only
                     </div>
                   </div>
 
@@ -185,16 +185,16 @@
                   </div>
                   <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Successful!</h3>
                   <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Your payment of {{ cryptoAmount }} {{ selectedCrypto }} has been confirmed.
+                    Your payment of {{ displayPaymentCryptoAmount }} {{ displayPaymentToken }} has been confirmed.
                   </p>
                 </div>
                 <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
                   <div class="text-sm text-green-800 dark:text-green-200">
                     <div class="font-medium mb-3">Transaction Details:</div>
                     <div class="grid grid-cols-2 gap-4 text-xs">
-                      <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                      <div>Currency: {{ selectedCrypto }}</div>
-                      <div>Network: {{ selectedNetwork }}</div>
+                      <div>Amount: {{ displayOrderAmount }}</div>
+                      <div>Currency: {{ displayPaymentToken }}</div>
+                      <div>Network: {{ displayNetwork }}</div>
                       <div>Order: {{ orderNumber }}</div>
                     </div>
                   </div>
@@ -220,8 +220,8 @@
                   <div class="text-sm text-red-800 dark:text-red-200">
                     <div class="font-medium mb-3">Order Details:</div>
                     <div class="grid grid-cols-2 gap-4 text-xs">
-                      <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                      <div>Currency: {{ selectedCrypto }}</div>
+                      <div>Amount: {{ displayOrderAmount }}</div>
+                      <div>Currency: {{ displayPaymentToken }}</div>
                       <div>Order: {{ orderNumber }}</div>
                     </div>
                   </div>
@@ -247,8 +247,8 @@
                   <div class="text-sm text-gray-800 dark:text-gray-200">
                     <div class="font-medium mb-3">Order Details:</div>
                     <div class="grid grid-cols-2 gap-4 text-xs">
-                      <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                      <div>Currency: {{ selectedCrypto }}</div>
+                      <div>Amount: {{ displayOrderAmount }}</div>
+                      <div>Currency: {{ displayPaymentToken }}</div>
                       <div>Order: {{ orderNumber }}</div>
                     </div>
                   </div>
@@ -296,7 +296,7 @@
             <div class="flex items-center justify-between">
               <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order amount</span>
               <span class="text-lg font-bold text-gray-900 dark:text-white text-right">
-                {{ formatCurrency(orderAmount) }}
+                {{ displayOrderAmount }}
                 <div v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
                   class="text-xs font-normal text-orange-500 dark:text-gray-400">
                   (Used {{ cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() }} pts)
@@ -308,13 +308,13 @@
             <div class="flex items-center justify-between">
               <span class="text-sm font-medium text-gray-600 dark:text-gray-400">You need to pay</span>
               <div class="flex items-center space-x-2">
-                <span class="text-lg font-bold text-gray-900 dark:text-white">{{ cryptoAmount }} {{ selectedCrypto
+                <span class="text-lg font-bold text-gray-900 dark:text-white">{{ displayPaymentCryptoAmount }} {{ displayPaymentToken
                 }}</span>
                 <div class="w-6 h-6 rounded-full flex items-center justify-center"
-                  :class="getCryptoIconBg(selectedCrypto)">
-                  <span class="text-white font-bold text-xs">{{ getCryptoIcon(selectedCrypto) }}</span>
+                  :class="getCryptoIconBg(displayPaymentToken)">
+                  <span class="text-white font-bold text-xs">{{ getCryptoIcon(displayPaymentToken) }}</span>
                 </div>
-                <button @click="copyToClipboard(cryptoAmount)"
+                <button @click="copyToClipboard(String(displayPaymentCryptoAmount))"
                   class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors" title="Copy amount">
                   <i class="pi pi-copy text-gray-500 text-xs"></i>
                 </button>
@@ -376,7 +376,7 @@
             <!-- Network Type -->
             <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
               <div class="text-sm font-medium text-blue-800 dark:text-blue-200">
-                {{ selectedCrypto }}({{ selectedNetwork }}) only
+                {{ displayPaymentToken }}({{ displayNetwork }}) only
               </div>
             </div>
 
@@ -435,16 +435,16 @@
             <div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Successful!</h3>
               <p class="text-sm text-gray-600 dark:text-gray-400">
-                Your payment of {{ cryptoAmount }} {{ selectedCrypto }} has been confirmed.
+                Your payment of {{ displayPaymentCryptoAmount }} {{ displayPaymentToken }} has been confirmed.
               </p>
             </div>
             <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
               <div class="text-sm text-green-800 dark:text-green-200">
                 <div class="font-medium mb-1">Transaction Details:</div>
                 <div class="space-y-1 text-xs">
-                  <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                  <div>Currency: {{ selectedCrypto }}</div>
-                  <div>Network: {{ selectedNetwork }}</div>
+                  <div>Amount: {{ displayOrderAmount }}</div>
+                  <div>Currency: {{ displayPaymentToken }}</div>
+                  <div>Network: {{ displayNetwork }}</div>
                   <div>Order: {{ orderNumber }}</div>
                 </div>
               </div>
@@ -469,8 +469,8 @@
               <div class="text-sm text-red-800 dark:text-red-200">
                 <div class="font-medium mb-1">Order Details:</div>
                 <div class="space-y-1 text-xs">
-                  <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                  <div>Currency: {{ selectedCrypto }}</div>
+                  <div>Amount: {{ displayOrderAmount }}</div>
+                  <div>Currency: {{ displayPaymentToken }}</div>
                   <div>Order: {{ orderNumber }}</div>
                 </div>
               </div>
@@ -495,8 +495,8 @@
               <div class="text-sm text-gray-800 dark:text-gray-200">
                 <div class="font-medium mb-1">Order Details:</div>
                 <div class="space-y-1 text-xs">
-                  <div>Amount: {{ formatCurrency(orderAmount) }}</div>
-                  <div>Currency: {{ selectedCrypto }}</div>
+                  <div>Amount: {{ displayOrderAmount }}</div>
+                  <div>Currency: {{ displayPaymentToken }}</div>
                   <div>Order: {{ orderNumber }}</div>
                 </div>
               </div>
@@ -647,10 +647,51 @@ const currentCurrencySymbol = computed(() => {
   return currencySymbols[currency] || '$'
 })
 
+// Format amount with optional currency (for use with API orderDetail)
+const formatCurrencyWithCurrency = (amount: number, currency?: string) => {
+  const symbol = currency ? (currencySymbols[currency] || '$') : currentCurrencySymbol.value
+  return `${symbol}${amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+}
+
 // Computed properties
 const formatCurrency = (amount: number) => {
   return `${currentCurrencySymbol.value}${amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 }
+
+// Order amount: 优先使用接口返回值 amount + orderCurrency
+const displayOrderAmount = computed(() => {
+  const d = orderDetail.value
+  if (d && d.amount != null && d.orderCurrency) {
+    return formatCurrencyWithCurrency(d.amount, d.orderCurrency)
+  }
+  return formatCurrency(orderAmount.value)
+})
+
+// 支付金额: 优先使用接口返回值 cryptoAmount + token
+const displayPaymentCryptoAmount = computed(() => {
+  const d = orderDetail.value
+  if (d && d.cryptoAmount != null) {
+    return d.cryptoAmount
+  }
+  return parseFloat(String(cryptoAmount.value)) || 0
+})
+
+const displayPaymentToken = computed(() => {
+  const d = orderDetail.value
+  if (d && d.token) {
+    return d.token
+  }
+  return selectedCrypto.value
+})
+
+// Network: 优先使用接口返回值
+const displayNetwork = computed(() => {
+  const d = orderDetail.value
+  if (d && d.network) {
+    return d.network
+  }
+  return selectedNetwork.value
+})
 
 const formatTime = (seconds: number) => {
   const hours = Math.floor(seconds / 3600)
@@ -888,17 +929,18 @@ const handleOrderStatusChange = (status: string) => {
   if (['SUCCESS', 'FAIL', 'CANCEL', 'PENDING'].includes(status)) {
     stopPolling()
 
-    // Navigate to payment result page with the current status
+    // Navigate to payment result page with the current status (优先使用接口返回值)
     if (isMounted.value) {
+      const d = orderDetail.value
       router.push({
         name: 'PaymentResult',
         query: {
           orderNum: orderNumber.value,
           status: status,
-          amount: orderAmount.value.toString(),
-          currency: selectedCrypto.value,
-          network: selectedNetwork.value,
-          cryptoAmount: cryptoAmount.value,
+          amount: (d?.amount != null ? d.amount : orderAmount.value).toString(),
+          currency: d?.token ?? selectedCrypto.value,
+          network: d?.network ?? selectedNetwork.value,
+          cryptoAmount: (d?.cryptoAmount != null ? d.cryptoAmount : parseFloat(String(cryptoAmount.value))).toString(),
           paymentMethod: cardStore.currentOrder?.payType || 'Crypto Payment'
         }
       })
