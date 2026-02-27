@@ -112,7 +112,7 @@ export default {
   name: 'WithdrawSettings',
   beforeRouteEnter(to, from, next) {
     next((vm: ComponentPublicInstance) => {
-      // 如果不是从 WithdrawOrder 返回的，则重置页面
+      // Reset page if not returning from WithdrawOrder
       if (from.name !== 'WithdrawOrder' && (vm as any).initPage) {
         ;(vm as any).initPage()
       }
@@ -295,7 +295,7 @@ const initializeCardInfo = () => {
   }
 }
 
-// 提现：从 route 加载卡信息（不再依赖 cache，卡列表数据由 MyCards 通过 route 传递）
+// Load card info from route (no cache; card list data passed from MyCards via route)
 const validateAndLoadCardDetails = () => {
   const routeCardId = route.query.cardId as string
   const routeCardNo = route.query.cardNo as string
@@ -304,15 +304,15 @@ const validateAndLoadCardDetails = () => {
   if (!routeCardId || !routeCardNo) {
     toast.add({
       severity: 'error',
-      summary: '参数错误',
-      detail: '缺少卡片信息，请返回重新操作',
+      summary: 'Invalid Parameters',
+      detail: 'Missing card information. Please go back and try again.',
       life: 3000
     })
     router.push('/my-cards')
     return false
   }
 
-  // 优先使用 route 中的 cardBalance（来自 MyCards 卡列表）
+  // Prefer cardBalance from route (from MyCards card list)
   const balanceFromRoute = parseFloat(routeCardBalance)
   if (Number.isFinite(balanceFromRoute)) {
     balance.value = balanceFromRoute
@@ -326,7 +326,7 @@ const validateAndLoadCardDetails = () => {
     return true
   }
 
-  // 兼容：若 route 无 cardBalance，尝试从 cardStore.cardList 获取
+  // Fallback: if route has no cardBalance, try cardStore.cardList
   const cardFromList = cardStore.cardList.find(c => c.cardId === routeCardId)
   if (cardFromList && cardFromList.cardNo === routeCardNo) {
     balance.value = parseFloat(String(cardFromList.cardBalance ?? 0)) || 0
@@ -350,8 +350,8 @@ const validateAndLoadCardDetails = () => {
 
   toast.add({
     severity: 'error',
-    summary: '参数错误',
-    detail: '无法获取卡片信息，请返回重新操作',
+    summary: 'Invalid Parameters',
+    detail: 'Unable to get card information. Please go back and try again.',
     life: 3000
   })
   router.push('/my-cards')

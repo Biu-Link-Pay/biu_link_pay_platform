@@ -407,7 +407,7 @@
         </div>
       </div>
 
-      <!-- 操作按钮 -->
+      <!-- Action Buttons -->
       <div class="flex justify-between space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
         <Button label="Cancel" severity="secondary" :disabled="bindLoading" @click="cancelBind" class="flex-1" />
         <Button label="Confirm" icon="pi pi-check" :loading="bindLoading"
@@ -420,7 +420,7 @@
   <Dialog v-model:visible="showGoogleAuthUnbindDialog" modal header="Unbind Google Authenticator"
     :style="{ width: '400px' }" :closable="!unbindLoading" :close-on-escape="!unbindLoading">
     <div class="space-y-6">
-      <!-- 警告图标和消息 -->
+      <!-- Warning icon and message -->
       <div class="text-center space-y-4">
         <div class="w-16 h-16 mx-auto bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center">
           <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-2xl"></i>
@@ -450,7 +450,7 @@
         </div>
       </div>
 
-      <!-- 操作按钮 -->
+      <!-- Action Buttons -->
       <div class="flex justify-between space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
         <Button label="Cancel" severity="secondary" :disabled="unbindLoading" @click="cancelUnbind" class="flex-1" />
         <Button label="Confirm" icon="pi pi-times" severity="danger" :loading="unbindLoading"
@@ -508,11 +508,11 @@ const maskedEmail = computed(() => {
 const inviteLink = computed(() => {
   const raw = (userProfile.value?.licenseUrl || '').trim()
   if (!raw) return ''
-  // 如果后端已经返回完整链接，直接使用
+  // If backend returns full link, use directly
   if (raw.startsWith('http://') || raw.startsWith('https://')) return raw
-  // 否则视为邀请码，拼接为完整邀请链接
+  // Else treat as invite code, build full invite link
   const base = 'https://card.biulinkpay.online'
-  // 避免重复拼接已带路径的情况
+  // Avoid duplicate path concatenation
   if (raw.includes('/') || raw.includes('?')) return `${base}${raw.startsWith('/') ? '' : '/'}${raw}`
   return `${base}/login?license=${encodeURIComponent(raw)}`
 })
@@ -569,7 +569,7 @@ const fetchUserProfile = async () => {
     if (response.success && response.model) {
       userProfile.value = response.model
 
-      // 同时更新 Pinia 用户详情
+      // Also update Pinia user profile
       const profile = response.model
       userStore.updateProfile({
         userNum: profile.userNum,
@@ -605,16 +605,16 @@ const fetchUserProfile = async () => {
 // Navigation methods
 const navigateToGoogleAuth = async () => {
   if (googleAuthStatus.value === 1) {
-    // 已绑定，显示解绑对话框
+    // Already bound, show unbind dialog
     showGoogleAuthUnbindDialog.value = true
   } else {
-    // 未绑定，开始绑定流程
+    // Not bound, start bind flow
     try {
       loading.value = true
       const response = await AuthAPI.googleAuthGeneral()
 
       if (response.success && response.model) {
-        // 显示绑定弹框
+        // Show bind dialog
         showGoogleAuthBindDialog.value = true
         bindSecretKey.value = response.model.secretKey
         bindQrCode.value = response.model.qrCode
@@ -703,8 +703,8 @@ const handleLogout = async () => {
 // Google Auth binding methods
 const onBindCodeInput = (event: Event) => {
   const target = event.target as HTMLInputElement
-  const value = target.value.replace(/\D/g, '') // 只保留数字
-  bindAuthCode.value = value.slice(0, 6) // 最多6位
+  const value = target.value.replace(/\D/g, '') // Digits only
+  bindAuthCode.value = value.slice(0, 6) // Max 6 digits
 }
 
 // Copy to clipboard with legacy support for Huawei browser compatibility
@@ -772,11 +772,11 @@ const confirmBind = async () => {
   try {
     bindLoading.value = true
 
-    // 验证验证码
+    // Verify code
     const response = await AuthAPI.googleAuthValid(bindAuthCode.value, bindSecretKey.value)
 
     if (response.success && response.model) {
-      // 验证成功，刷新用户信息
+      // Verification success, refresh user info
       await fetchUserProfile()
 
       toast.add({
@@ -829,7 +829,7 @@ const handleUnbindGoogleAuth = async () => {
     const response = await AuthAPI.googleAuthUnbind(unbindAuthCode.value)
 
     if (response.success && response.model) {
-      // 解绑成功，刷新用户信息
+      // Unbind success, refresh user info
       await fetchUserProfile()
 
       toast.add({
@@ -865,8 +865,8 @@ const handleUnbindGoogleAuth = async () => {
 // Unbind dialog methods
 const onUnbindCodeInput = (event: Event) => {
   const target = event.target as HTMLInputElement
-  const value = target.value.replace(/\D/g, '') // 只保留数字
-  unbindAuthCode.value = value.slice(0, 6) // 最多6位
+  const value = target.value.replace(/\D/g, '') // Digits only
+  unbindAuthCode.value = value.slice(0, 6) // Max 6 digits
 }
 
 const cancelUnbind = () => {

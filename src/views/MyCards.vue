@@ -799,7 +799,7 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
       showGoogleAuthDialog.value = false
       googleAuthDialogRef.value?.resetCode()
 
-      // 仅详情需要在此处验证，提现/删卡已改为在 WithdrawOrder 提交时验证
+      // Only details requires verification here; withdraw/delete are verified on submit in WithdrawOrder
       if (identifier === 'details') {
         await executeDetailsAction(response.model)
       }
@@ -884,10 +884,10 @@ const rechargeOrders = ref<DepositOrderListItem[]>([])
 const withdrawOrders = ref<WithdrawOrderListItem[]>([])
 
 // Mock data for testing different scenarios
-const useMockData = ref(false) // 设置为 true 来使用 mock 数据，设置为 false 使用真实 API
+const useMockData = ref(false) // Set true for mock data, false for real API
 
 const mockTransactions: TransactionListItem[] = [
-  // 成功的充值（正数金额）
+  // Successful recharge (positive amount)
   {
     status: 'succeed',
     transactionType: 'recharge',
@@ -901,7 +901,7 @@ const mockTransactions: TransactionListItem[] = [
     createTime: '2024-01-15 10:30:25',
     cardRewardPoints: 1500
   },
-  // 成功的消费 - 美团（负数金额，有手续费）
+  // Successful purchase - Meituan (negative amount, with fee)
   {
     status: 'succeed',
     transactionType: 'purchase',
@@ -915,7 +915,7 @@ const mockTransactions: TransactionListItem[] = [
     createTime: '2024-01-15 09:15:42',
     cardRewardPoints: 0
   },
-  // 成功的消费 - 支付宝（负数金额）
+  // Successful purchase - Alipay (negative amount)
   {
     status: 'succeed',
     transactionType: 'purchase',
@@ -929,7 +929,7 @@ const mockTransactions: TransactionListItem[] = [
     createTime: '2024-01-15 08:22:18',
     cardRewardPoints: 0
   },
-  // 失败的交易（带失败原因）
+  // Failed transaction (with failure reason)
   {
     status: 'failed',
     transactionType: 'purchase',
@@ -944,7 +944,7 @@ const mockTransactions: TransactionListItem[] = [
     msg: 'Insufficient balance. Please recharge your card.',
     cardRewardPoints: 0
   },
-  // 处理中的交易
+  // Pending transaction
   {
     status: 'pending',
     transactionType: 'purchase',
@@ -958,7 +958,7 @@ const mockTransactions: TransactionListItem[] = [
     createTime: '2024-01-15 06:30:15',
     cardRewardPoints: 0
   },
-  // 成功的提现（负数金额）
+  // Successful withdraw (negative amount)
   {
     status: 'succeed',
     transactionType: 'withdraw',
@@ -972,7 +972,7 @@ const mockTransactions: TransactionListItem[] = [
     createTime: '2024-01-14 20:15:08',
     cardRewardPoints: 0
   },
-  // 成功的消费 - 其他商户（负数金额）
+  // Successful purchase - other merchant (negative amount)
   {
     status: 'succeed',
     transactionType: 'purchase',
@@ -986,7 +986,7 @@ const mockTransactions: TransactionListItem[] = [
     createTime: '2024-01-14 18:45:22',
     cardRewardPoints: 0
   },
-  // 失败的充值（带失败原因）
+  // Failed recharge (with failure reason)
   {
     status: 'failed',
     transactionType: 'recharge',
@@ -1001,7 +1001,7 @@ const mockTransactions: TransactionListItem[] = [
     msg: 'Payment gateway timeout. Please try again.',
     cardRewardPoints: 900
   },
-  // 成功的消费 - 零金额（可能是验证交易）
+  // Successful purchase - zero amount (possibly verification)
   {
     status: 'succeed',
     transactionType: 'purchase',
@@ -1015,7 +1015,7 @@ const mockTransactions: TransactionListItem[] = [
     createTime: '2024-01-14 14:30:05',
     cardRewardPoints: 0
   },
-  // 退款交易（正数金额）
+  // Refund transaction (positive amount)
   {
     status: 'succeed',
     transactionType: 'refund',
@@ -1029,7 +1029,7 @@ const mockTransactions: TransactionListItem[] = [
     createTime: '2024-01-14 13:05:12',
     cardRewardPoints: 600
   },
-  // 成功的消费 - 大金额（负数）
+  // Successful purchase - large amount (negative)
   {
     status: 'succeed',
     transactionType: 'purchase',
@@ -1225,7 +1225,7 @@ const onDetailUpdated = (updated: CardDetailResponse) => {
   cardStore.cacheCurrentCardDetail(updated)
 }
 
-// Execute withdraw action (使用卡列表数据，不再依赖 2FA+queryCardDetail)
+// Execute withdraw action (use card list data, no 2FA+queryCardDetail)
 const executeWithdrawAction = async (card: { id: string; cardNo: string; cardCurrency: string; cardBalance: number; maxOnDaily?: string | number; maxOnMonthly?: string | number; maxOnPercent?: string | number }) => {
   console.log('Executing withdraw operation, card from list:', card)
 
@@ -1256,7 +1256,7 @@ const executeDetailsAction = async (cardDetailData: CardDetailResponse) => {
   cardDetail.value = cardDetailData
 }
 
-// Execute delete action (使用卡列表数据，与提现一致，不再依赖 2FA+queryCardDetail)
+// Execute delete action (use card list data, same as withdraw, no 2FA+queryCardDetail)
 const executeDeleteAction = async (card: { id: string; cardNo: string; cardCurrency: string; cardBalance: number; maxOnDaily?: string | number; maxOnMonthly?: string | number; maxOnPercent?: string | number }) => {
   console.log('Executing delete operation, card from list:', card)
 
@@ -1264,7 +1264,7 @@ const executeDeleteAction = async (card: { id: string; cardNo: string; cardCurre
   const maxOnMonthly = typeof card.maxOnMonthly === 'string' ? parseFloat(card.maxOnMonthly) : (card.maxOnMonthly ?? 0)
   const maxOnPercent = typeof card.maxOnPercent === 'string' ? parseFloat(card.maxOnPercent) : (card.maxOnPercent ?? 0)
 
-  // 删卡直接进入 WithdrawOrder（跳过 WithdrawSettings）
+  // Delete goes directly to WithdrawOrder (skip WithdrawSettings)
   router.push({
     name: 'WithdrawOrder',
     query: {
@@ -1570,7 +1570,7 @@ const goToWithdraw = async () => {
     return
   }
 
-  // 提现不再在此处验证 2FA，直接跳转；2FA 在 WithdrawOrder 提交时验证
+  // Withdraw: no 2FA here, redirect directly; 2FA verified on submit in WithdrawOrder
   await executeWithdrawAction(selectedCard.value)
 }
 
@@ -1681,7 +1681,7 @@ const goToDeleteCard = async () => {
     return
   }
 
-  // 删卡与提现一致，不再在此处验证 2FA，直接跳转；2FA 在 WithdrawOrder 提交时验证
+  // Delete: same as withdraw, no 2FA here, redirect directly; 2FA verified on submit in WithdrawOrder
   await executeDeleteAction(selectedCard.value)
 }
 
@@ -1755,7 +1755,7 @@ const goToPaymentResult = (order: DepositOrderListItem) => {
   const statusUpper = (order.status || '').toString().toUpperCase()
 
   if (statusUpper === 'INIT') {
-    // 订单待支付，跳转到加密支付页
+    // Order pending payment, navigate to crypto payment page
     router.push({
       name: 'CryptoPayment',
       query: {
@@ -1770,20 +1770,20 @@ const goToPaymentResult = (order: DepositOrderListItem) => {
     return
   }
 
-  // 其他状态走结果页
+  // Other statuses go to result page
   router.push({
     name: 'PaymentResult',
     query: {
       orderNum: order.num,
-      status: order.status, // 使用订单实际状态
+      status: order.status, // Use actual order status
       amount: order.amount.toString(),
       currency: order.token,
       network: order.network,
       cryptoAmount: order.usdAmount.toString(),
       paymentMethod: 'Crypto Payment',
-      type: 'deposit', // 入金订单
-      from: 'myCards', // 标识来源
-      cardNo: order.cardNo || '' // 传递卡号
+      type: 'deposit', // Deposit order
+      from: 'myCards', // Source identifier
+      cardNo: order.cardNo || '' // Pass card number
     }
   })
 }
@@ -1794,11 +1794,11 @@ const goToWithdrawResult = (order: WithdrawOrderListItem) => {
     name: 'PaymentResult',
     query: {
       orderNum: order.num,
-      status: order.status, // 使用订单实际状态
+      status: order.status, // Use actual order status
       amount: order.usdAmount?.toString() || '0',
-      type: 'withdraw', // 出金订单
-      from: 'myCards', // 标识来源
-      cardNo: order.cardNo || '' // 传递卡号
+      type: 'withdraw', // Withdraw order
+      from: 'myCards', // Source identifier
+      cardNo: order.cardNo || '' // Pass card number
     }
   })
 }

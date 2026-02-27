@@ -408,7 +408,7 @@
     </div>
   </div>
 
-  <!-- 2FA Verification Dialog (提现/删卡需验证) -->
+  <!-- 2FA Verification Dialog (required for withdraw/delete) -->
   <GoogleAuthDialog ref="googleAuthDialogRef" v-model:visible="showGoogleAuthDialog" title="Security Verification"
     identifier="withdraw" :loading="isSubmitting" @submit="onGoogleAuthSubmit" @cancel="onGoogleAuthCancel" />
 </template>
@@ -817,11 +817,11 @@ const handleWithdraw = async () => {
     }
   }
 
-  // 提现/删卡需 2FA 验证
+  // 2FA required for withdraw/delete
   showGoogleAuthDialog.value = true
 }
 
-// 2FA 提交后执行出金
+// Execute withdraw after 2FA submit
 const submitWithdrawOrder = async (faCode: string) => {
   isSubmitting.value = true
 

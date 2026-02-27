@@ -20,7 +20,7 @@ export function useErrorHandler() {
     } = {}
   ) => {
     const {
-      fallbackMessage = '操作失败，请稍后重试',
+      fallbackMessage = 'Operation failed. Please try again later.',
       showToast = true,
       logError = true
     } = options

@@ -168,7 +168,7 @@ const initializeCardInfo = () => {
   }
 }
 
-// Validate and get card details: 提现与删卡均从 route 或 cardList 取数（不依赖 cache）
+// Validate and load card details: both withdraw and delete get data from route or cardList (no cache)
 const validateAndLoadCardDetails = () => {
   const routeCardId = route.query.cardId as string
   const routeCardNo = route.query.cardNo as string
@@ -177,15 +177,15 @@ const validateAndLoadCardDetails = () => {
   if (!routeCardId || !routeCardNo) {
     toast.add({
       severity: 'error',
-      summary: '参数错误',
-      detail: '缺少卡片信息，请返回重新操作',
+      summary: 'Invalid Parameters',
+      detail: 'Missing card information. Please go back and try again.',
       life: 3000
     })
     router.push('/my-cards')
     return false
   }
 
-  // 提现与删卡统一从 route 或 cardList 取数
+  // Both withdraw and delete get data from route or cardList
   const balanceFromRoute = parseFloat(routeCardBalance)
   if (Number.isFinite(balanceFromRoute)) {
     balance.value = balanceFromRoute
@@ -221,8 +221,8 @@ const validateAndLoadCardDetails = () => {
 
   toast.add({
     severity: 'error',
-    summary: '参数错误',
-    detail: '无法获取卡片信息，请返回重新操作',
+    summary: 'Invalid Parameters',
+    detail: 'Unable to get card information. Please go back and try again.',
     life: 3000
   })
   router.push('/my-cards')
@@ -236,16 +236,16 @@ onMounted(async () => {
   initializeCardInfo()
   initializeFromRoute()
 
-  // 确保卡片列表已加载（用于获取脱敏的卡号）
+  // Ensure card list is loaded (for masked card number)
   if (cardStore.cardList.length === 0) {
     await cardStore.fetchCardList({ silent: true })
   }
 
-  // 验证并加载卡片详情（从 route 或 cardList）
+  // Validate and load card details from route or cardList
   const isValid = validateAndLoadCardDetails()
   console.log('Card validation result:', isValid)
 
-  // 只有验证通过才继续
+  // Continue only if validation passes
   if (isValid) {
     // If delete action, set amount to maximum upfront
     if (isDeleteAction.value) {

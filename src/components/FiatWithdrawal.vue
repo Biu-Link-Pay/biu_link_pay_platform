@@ -538,7 +538,7 @@
   <!-- Recipient Form Dialog -->
   <RecipientFormDialog v-model:visible="showRecipientDialog" :bank-names="bankNames" @saved="handleRecipientSaved" />
 
-  <!-- 2FA Verification Dialog (提现/删卡需验证) -->
+  <!-- 2FA Verification Dialog (required for withdraw/delete) -->
   <GoogleAuthDialog ref="googleAuthDialogRef" v-model:visible="showGoogleAuthDialog" title="Security Verification"
     identifier="withdraw" :loading="isSubmitting" @submit="onGoogleAuthSubmit" @cancel="onGoogleAuthCancel" />
 </template>
@@ -814,7 +814,7 @@ const startCountdown = () => {
 
 // Fetch fiat rate from API
 const fetchFiatRate = async () => {
-  // 既可以根据提现金额计算汇率，也可以仅根据积分计算汇率（提现金额为 0）
+  // Can calc rate by withdraw amount or points only (when withdraw amount is 0)
   if (!selectedPaymentMethod.value || (!props.withdrawAmount && !props.appliedRewardPoints)) {
     console.log('Skipping fiat rate fetch:', {
       hasPaymentMethod: !!selectedPaymentMethod.value,
@@ -914,7 +914,7 @@ const fetchPaymentMethods = async () => {
     loading.value = false
     console.log('Fiat payment methods API response:', response)
     if (response.success && response.model && Array.isArray(response.model)) {
-      // 保留分组结构
+      // Keep group structure
       paymentMethodGroups.value = response.model
       console.log('Fiat payment methods loaded:', paymentMethodGroups.value.length, 'groups:', paymentMethodGroups.value)
 
@@ -961,8 +961,7 @@ const fetchPaymentMethods = async () => {
 
 // Watch for amount changes to fetch new exchange rate
 watch(() => props.withdrawAmount, (newAmount, oldAmount) => {
-  // 当金额变化且大于0时，重新获取汇率
-  // 或者即使金额为 0，只要使用了积分也要请求汇率
+  // When amount changes and > 0, refetch rate; or when amount is 0 but points used, also request rate
   if (selectedPaymentMethod.value && newAmount !== oldAmount && (newAmount > 0 || props.appliedRewardPoints > 0)) {
     console.log('Amount changed, fetching new fiat rate...', {
       oldAmount,
@@ -1207,11 +1206,11 @@ const handleWithdraw = async () => {
     return
   }
 
-  // 提现/删卡需 2FA 验证
+  // 2FA required for withdraw/delete
   showGoogleAuthDialog.value = true
 }
 
-// 2FA 提交后执行出金
+// Execute withdraw after 2FA submit
 const submitWithdrawOrder = async (faCode: string) => {
   isSubmitting.value = true
 

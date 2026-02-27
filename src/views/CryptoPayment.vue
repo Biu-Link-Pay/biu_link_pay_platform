@@ -658,7 +658,7 @@ const formatCurrency = (amount: number) => {
   return `${currentCurrencySymbol.value}${amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 }
 
-// Order amount: 优先使用接口返回值 amount + orderCurrency
+// Order amount: prefer API amount + orderCurrency
 const displayOrderAmount = computed(() => {
   const d = orderDetail.value
   if (d && d.amount != null && d.orderCurrency) {
@@ -667,7 +667,7 @@ const displayOrderAmount = computed(() => {
   return formatCurrency(orderAmount.value)
 })
 
-// 支付金额: 优先使用接口返回值 cryptoAmount + token
+// Payment amount: prefer API cryptoAmount + token
 const displayPaymentCryptoAmount = computed(() => {
   const d = orderDetail.value
   if (d && d.cryptoAmount != null) {
@@ -684,7 +684,7 @@ const displayPaymentToken = computed(() => {
   return selectedCrypto.value
 })
 
-// Network: 优先使用接口返回值
+// Network: prefer API value
 const displayNetwork = computed(() => {
   const d = orderDetail.value
   if (d && d.network) {
@@ -864,38 +864,38 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
         const createTime = new Date(detail.createTime).getTime()
         const serverCurrentTime = new Date(detail.currentTime).getTime()
 
-        // 优先使用接口返回的expires字段
+        // Prefer API expires field
         let remainingSeconds = 0
 
         if (detail.expires) {
-          // 如果expires是时间戳（大于1e12表示毫秒时间戳）
+          // If expires is timestamp (>1e12 means milliseconds)
           if (detail.expires > 1e12) {
             const expiresTimestamp = detail.expires
             const remainingMs = expiresTimestamp - serverCurrentTime
             remainingSeconds = Math.max(0, Math.floor(remainingMs / 1000))
           } else {
-            // 如果expires是秒数，计算从创建时间开始的剩余时间
+            // If expires is seconds, calc remaining time from create time
             const totalDurationMs = detail.expires * 1000
             const elapsedMs = serverCurrentTime - createTime
             const remainingMs = Math.max(0, totalDurationMs - elapsedMs)
             remainingSeconds = Math.floor(remainingMs / 1000)
           }
         } else {
-          // 如果没有expires字段，使用默认的15分钟
+          // If no expires, use default 15 min
           const totalDurationMs = 15 * 60 * 1000 // Default 15 minutes
           const elapsedMs = serverCurrentTime - createTime
           const remainingMs = Math.max(0, totalDurationMs - elapsedMs)
           remainingSeconds = Math.floor(remainingMs / 1000)
         }
 
-        // 确保倒计时不会超过expires时间
+        // Ensure countdown does not exceed expires
         if (detail.expires && detail.expires <= 1e12) {
-          // 如果expires是秒数，确保剩余时间不超过expires
+          // If expires is seconds, ensure remaining <= expires
           const maxRemainingSeconds = detail.expires
           remainingSeconds = Math.min(remainingSeconds, maxRemainingSeconds)
         }
 
-        // 更新倒计时
+        // Update countdown
         countdown.value = remainingSeconds
         defaultCountdownSeconds.value = remainingSeconds
 
@@ -929,7 +929,7 @@ const handleOrderStatusChange = (status: string) => {
   if (['SUCCESS', 'FAIL', 'CANCEL', 'PENDING'].includes(status)) {
     stopPolling()
 
-    // Navigate to payment result page with the current status (优先使用接口返回值)
+    // Navigate to payment result page (prefer API values)
     if (isMounted.value) {
       const d = orderDetail.value
       router.push({
@@ -1040,7 +1040,7 @@ const autoOpenPaymentAddress = () => {
   const isMobile = window.innerWidth < 768
 
 
-  // 移动端：优先使用 deeplink，没有则使用 webUrl
+  // Mobile: prefer deeplink, else webUrl
   if (isMobile) {
     if (order.deeplink) {
       console.log('Opening deeplink on mobile:', order.deeplink)
@@ -1052,7 +1052,7 @@ const autoOpenPaymentAddress = () => {
       return
     }
   } else {
-    // 桌面端：直接使用 webUrl
+    // Desktop: use webUrl directly
     if (order.webUrl) {
       console.log('Opening webUrl on desktop:', order.webUrl)
       window.open(order.webUrl, '_blank')

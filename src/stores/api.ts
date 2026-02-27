@@ -28,7 +28,7 @@ export const useApiStore = defineStore('api', () => {
       const response = await apiService.getPosts()
       data.value = response.data
     } catch (err) {
-      error.value = err instanceof Error ? err.message : '获取数据失败'
+      error.value = err instanceof Error ? err.message : 'Failed to fetch data'
       console.error('API Error:', err)
     } finally {
       loading.value = false
@@ -50,7 +50,7 @@ export const useApiStore = defineStore('api', () => {
       
       data.value = [mockData]
     } catch (err) {
-      error.value = err instanceof Error ? err.message : '获取数据失败'
+      error.value = err instanceof Error ? err.message : 'Failed to fetch data'
       console.error('API Error:', err)
     } finally {
       loading.value = false

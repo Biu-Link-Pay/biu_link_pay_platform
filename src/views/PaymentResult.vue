@@ -408,14 +408,14 @@ const orderStatus = ref<'PENDING' | 'SUCCESS' | 'FAIL' | 'CANCEL'>('PENDING')
 const paymentTime = ref<string | null>('')
 const transactionId = ref<string | null>('')
 const errorReason = ref<string | null>('')
-const orderType = ref<'deposit' | 'withdraw'>('deposit') // 订单类型：入金或出金
-const withdrawAddress = ref<string | null>('') // 出金地址
-const withdrawToken = ref<string | null>('') // 出金币种
-const withdrawNetwork = ref<string | null>('') // 出金网络
-const withdrawUsdTAmount = ref<number | null>(null) // 出金USDT金额
-const withdrawNetworkFee = ref<number | null>(null) // 网络费
-const orderCardNo = ref<string | null>(null) // 订单卡号
-const orderRewardPoints = ref<number | null>(null) // 卡奖励积分
+const orderType = ref<'deposit' | 'withdraw'>('deposit') // Order type: deposit or withdraw
+const withdrawAddress = ref<string | null>('') // Withdraw address
+const withdrawToken = ref<string | null>('') // Withdraw token
+const withdrawNetwork = ref<string | null>('') // Withdraw network
+const withdrawUsdTAmount = ref<number | null>(null) // Withdraw USDT amount
+const withdrawNetworkFee = ref<number | null>(null) // Network fee
+const orderCardNo = ref<string | null>(null) // Order card number
+const orderRewardPoints = ref<number | null>(null) // Card reward points
 
 // UI state
 const refreshing = ref(false)
@@ -425,7 +425,7 @@ const progressStep = ref(0)
 // Polling for PENDING status
 let pollingInterval: NodeJS.Timeout | null = null
 const isMounted = ref(false)
-const isFromMyCards = ref(false) // 标识是否从 MyCards 页面进入
+const isFromMyCards = ref(false) // Whether navigated from MyCards
 
 // Copy to clipboard function with legacy support for Huawei browser compatibility
 const { copy: copyToClipboard } = useClipboard({ legacy: true })
@@ -535,25 +535,25 @@ const fetchOrderStatus = async () => {
   if (!orderNumber.value) return
 
   try {
-    // 根据订单类型调用不同的 API
+    // Call different API by order type
     if (orderType.value === 'withdraw') {
-      // 出金订单
+      // Withdraw order
       const response = await OrderAPI.getWithdrawOrderDetail({ num: orderNumber.value.toString() })
 
       if (response.success && response.model) {
-        const detail = response.model // 出金订单详情返回数组，取第一个
+        const detail = response.model // Withdraw order detail, take first
         const previousStatus = orderStatus.value
         orderStatus.value = detail.status as any
         paymentTime.value = detail.createTime || null
         transactionId.value = detail.hashId || null
-        withdrawAddress.value = detail.address || null // 获取出金地址
-        withdrawToken.value = detail.token || null // 获取出金币种
-        withdrawNetwork.value = detail.network || null // 获取出金网络
-        withdrawUsdTAmount.value = detail.usdTAmount || null // 获取USDT金额
-        withdrawNetworkFee.value = detail.networkFee || null // 获取网络费
+        withdrawAddress.value = detail.address || null
+        withdrawToken.value = detail.token || null
+        withdrawNetwork.value = detail.network || null
+        withdrawUsdTAmount.value = detail.usdTAmount || null
+        withdrawNetworkFee.value = detail.networkFee || null
         orderRewardPoints.value = detail.cardRewardPoints || null
-        errorReason.value = detail.failReason || null // 获取失败原因
-        // 获取卡号，如果详情接口返回了则使用，否则保留路由传递的值
+        errorReason.value = detail.failReason || null
+        // Use cardNo from API if returned, else keep route value
         if (detail.cardNo) {
           orderCardNo.value = detail.cardNo
         }
@@ -567,7 +567,7 @@ const fetchOrderStatus = async () => {
 
         if (previousStatus === 'PENDING' && orderStatus.value !== 'PENDING') {
           stopPolling()
-          // 只有不是从 MyCards 页面进入时才显示提示
+          // Only show toast when not from MyCards
           if (!isFromMyCards.value) {
             toast.add({
               severity: orderStatus.value === 'SUCCESS' ? 'success' : 'warn',
@@ -579,7 +579,7 @@ const fetchOrderStatus = async () => {
         }
       }
     } else {
-      // 入金订单
+      // Deposit order
       const response = await OrderAPI.getDepositOrderDetail({ num: orderNumber.value.toString() })
 
       if (response.success && response.model) {
@@ -590,7 +590,7 @@ const fetchOrderStatus = async () => {
         transactionId.value = detail.hashId || null
         errorReason.value = detail.errorMessage || null
         orderRewardPoints.value = detail.cardRewardPoints || null
-        // 获取卡号，如果详情接口返回了则使用，否则保留路由传递的值
+        // Use cardNo from API if returned, else keep route value
         if (detail.cardNo) {
           orderCardNo.value = detail.cardNo
         }
@@ -619,7 +619,7 @@ const fetchOrderStatus = async () => {
 
 // Handle status change
 const handleStatusChange = (status: string) => {
-  // 只有不是从 MyCards 页面进入时才显示状态变更提示
+  // Only show status change toast when not from MyCards
   if (isFromMyCards.value) {
     if (status !== 'PENDING') {
       stopPolling()
@@ -722,7 +722,7 @@ const goHome = () => {
 
 const retryPayment = () => {
   if (orderType.value === 'withdraw') {
-    // 法币出金订单，如果有 cardId 则跳转到出金页面，否则跳转到 MyCards
+    // Fiat withdraw order: if cardId exists go to withdraw page, else MyCards
     const cardId = route.query.cardId as string
     const cardNo = orderCardNo.value || route.query.cardNo as string
     if (cardId && cardNo) {
@@ -734,7 +734,7 @@ const retryPayment = () => {
         }
       })
     } else {
-      // 如果没有 cardId，跳转到 MyCards 页面
+      // If no cardId, go to MyCards
       router.push({ name: 'MyCards' })
     }
   } else {
@@ -848,10 +848,10 @@ onMounted(async () => {
   const type = route.query.type as string
   if (type === 'withdraw') {
     orderType.value = 'withdraw'
-    console.log('Order type: withdraw (出金订单)')
+    console.log('Order type: withdraw (withdraw order)')
   } else {
     orderType.value = 'deposit'
-    console.log('Order type: deposit (入金订单)')
+    console.log('Order type: deposit (deposit order)')
   }
 
   // Check if coming from MyCards page
