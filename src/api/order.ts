@@ -543,7 +543,8 @@ export class OrderAPI {
       cardNo: params.cardNo,
       cardRewardPoints: params.cardRewardPoints,
       payType: params.payType,
-      customParam: params.customParam
+      customParam: params.customParam,
+      faCode: params.faCode
     })
     return response.data
   }

@@ -799,13 +799,9 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
       showGoogleAuthDialog.value = false
       googleAuthDialogRef.value?.resetCode()
 
-      // Execute subsequent operations based on identifier
-      if (identifier === 'withdraw') {
-        await executeWithdrawAction(response.model)
-      } else if (identifier === 'details') {
+      // 仅详情需要在此处验证，提现/删卡已改为在 WithdrawOrder 提交时验证
+      if (identifier === 'details') {
         await executeDetailsAction(response.model)
-      } else if (identifier === 'delete') {
-        await executeDeleteAction(response.model)
       }
 
       // Reset pending action
@@ -1229,20 +1225,25 @@ const onDetailUpdated = (updated: CardDetailResponse) => {
   cardStore.cacheCurrentCardDetail(updated)
 }
 
-// Execute actions after Google Auth verification
-const executeWithdrawAction = async (cardDetail: CardDetailResponse) => {
-  console.log('Executing withdraw operation, card details:', cardDetail)
+// Execute withdraw action (使用卡列表数据，不再依赖 2FA+queryCardDetail)
+const executeWithdrawAction = async (card: { id: string; cardNo: string; cardCurrency: string; cardBalance: number; maxOnDaily?: string | number; maxOnMonthly?: string | number; maxOnPercent?: string | number }) => {
+  console.log('Executing withdraw operation, card from list:', card)
 
-  // Navigate to withdraw page with card information
-  // Card details are already cached in Pinia store, no need to pass verification code
+  const maxOnDaily = typeof card.maxOnDaily === 'string' ? parseFloat(card.maxOnDaily) : (card.maxOnDaily ?? 0)
+  const maxOnMonthly = typeof card.maxOnMonthly === 'string' ? parseFloat(card.maxOnMonthly) : (card.maxOnMonthly ?? 0)
+  const maxOnPercent = typeof card.maxOnPercent === 'string' ? parseFloat(card.maxOnPercent) : (card.maxOnPercent ?? 0)
+
   router.push({
     name: 'WithdrawSettings',
     query: {
-      cardId: cardDetail.cardId,
-      cardNo: cardDetail.cardNo,
-      cardCurrency: cardDetail.cardCurrency,
+      cardId: card.id,
+      cardNo: card.cardNo,
+      cardCurrency: card.cardCurrency,
+      cardBalance: String(card.cardBalance ?? 0),
+      maxOnDaily: String(maxOnDaily),
+      maxOnMonthly: String(maxOnMonthly),
+      maxOnPercent: String(maxOnPercent),
       action: 'withdraw'
-      // No need to pass faCode anymore as verification is completed
     }
   })
 }
@@ -1255,18 +1256,26 @@ const executeDetailsAction = async (cardDetailData: CardDetailResponse) => {
   cardDetail.value = cardDetailData
 }
 
-const executeDeleteAction = async (cardDetail: CardDetailResponse) => {
-  console.log('Executing delete operation, card details:', cardDetail)
+// Execute delete action (使用卡列表数据，与提现一致，不再依赖 2FA+queryCardDetail)
+const executeDeleteAction = async (card: { id: string; cardNo: string; cardCurrency: string; cardBalance: number; maxOnDaily?: string | number; maxOnMonthly?: string | number; maxOnPercent?: string | number }) => {
+  console.log('Executing delete operation, card from list:', card)
 
-  // Navigate to WithdrawOrder with delete action
+  const maxOnDaily = typeof card.maxOnDaily === 'string' ? parseFloat(card.maxOnDaily) : (card.maxOnDaily ?? 0)
+  const maxOnMonthly = typeof card.maxOnMonthly === 'string' ? parseFloat(card.maxOnMonthly) : (card.maxOnMonthly ?? 0)
+  const maxOnPercent = typeof card.maxOnPercent === 'string' ? parseFloat(card.maxOnPercent) : (card.maxOnPercent ?? 0)
+
+  // 删卡直接进入 WithdrawOrder（跳过 WithdrawSettings）
   router.push({
     name: 'WithdrawOrder',
     query: {
-      cardId: cardDetail.cardId,
-      cardNo: cardDetail.cardNo,
-      cardCurrency: cardDetail.cardCurrency,
+      cardId: card.id,
+      cardNo: card.cardNo,
+      cardCurrency: card.cardCurrency,
+      cardBalance: String(card.cardBalance ?? 0),
+      maxOnDaily: String(maxOnDaily),
+      maxOnMonthly: String(maxOnMonthly),
+      maxOnPercent: String(maxOnPercent),
       action: 'delete'
-      // No need to pass faCode anymore as verification is completed
     }
   })
 }
@@ -1550,7 +1559,6 @@ const goToWithdraw = async () => {
     return
   }
 
-  // Require Google Auth binding
   if (!isGoogleAuthBound.value) {
     toast.add({
       severity: 'warn',
@@ -1562,11 +1570,8 @@ const goToWithdraw = async () => {
     return
   }
 
-  // Set pending action and show Google Auth dialog
-  console.log('Setting pending action to withdraw and showing dialog')
-  pendingAction.value = 'withdraw'
-  showGoogleAuthDialog.value = true
-  console.log('showGoogleAuthDialog.value:', showGoogleAuthDialog.value)
+  // 提现不再在此处验证 2FA，直接跳转；2FA 在 WithdrawOrder 提交时验证
+  await executeWithdrawAction(selectedCard.value)
 }
 
 const handleCardDetailError = (message: string) => {
@@ -1665,7 +1670,6 @@ const goToDeleteCard = async () => {
     return
   }
 
-  // Require Google Auth binding
   if (!isGoogleAuthBound.value) {
     toast.add({
       severity: 'warn',
@@ -1677,11 +1681,8 @@ const goToDeleteCard = async () => {
     return
   }
 
-  // Set pending action and show Google Auth dialog
-  console.log('Setting pending action to delete and showing dialog')
-  pendingAction.value = 'delete'
-  showGoogleAuthDialog.value = true
-  console.log('showGoogleAuthDialog.value:', showGoogleAuthDialog.value)
+  // 删卡与提现一致，不再在此处验证 2FA，直接跳转；2FA 在 WithdrawOrder 提交时验证
+  await executeDeleteAction(selectedCard.value)
 }
 
 const retryCardDetail = async () => {

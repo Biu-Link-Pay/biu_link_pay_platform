@@ -168,82 +168,65 @@ const initializeCardInfo = () => {
   }
 }
 
-// Validate and get card details from Pinia store
+// Validate and get card details: 提现与删卡均从 route 或 cardList 取数（不依赖 cache）
 const validateAndLoadCardDetails = () => {
-  // 从 Pinia store 获取缓存的当前卡片详情
-  const cachedCardDetail = cardStore.getCachedCurrentCardDetail()
-
-  if (!cachedCardDetail) {
-    console.warn('No cached card detail found, redirecting to MyCards')
-    toast.add({
-      severity: 'error',
-      summary: '验证失败',
-      detail: '未经过安全验证，请返回重新操作',
-      life: 3000
-    })
-    router.push('/my-cards')
-    return false
-  }
-
-  // 验证路由参数中的卡号是否与缓存的卡片详情匹配
-  const routeCardNo = route.query.cardNo as string
-  const cachedCardNo = cachedCardDetail.cardNo
-
-  if (!routeCardNo || !cachedCardNo || routeCardNo !== cachedCardNo) {
-    console.warn('Card number mismatch:', { routeCardNo, cachedCardNo })
-    toast.add({
-      severity: 'error',
-      summary: '验证失败',
-      detail: '卡片信息不匹配，请返回重新操作',
-      life: 3000
-    })
-    router.push('/my-cards')
-    return false
-  }
-
-  // 验证卡片 ID 是否匹配
   const routeCardId = route.query.cardId as string
-  const cachedCardId = cachedCardDetail.cardId
+  const routeCardNo = route.query.cardNo as string
+  const routeCardBalance = route.query.cardBalance as string
 
-  if (!routeCardId || !cachedCardId || routeCardId !== cachedCardId) {
-    console.warn('Card ID mismatch:', { routeCardId, cachedCardId })
+  if (!routeCardId || !routeCardNo) {
     toast.add({
       severity: 'error',
-      summary: '验证失败',
-      detail: '卡片信息不匹配，请返回重新操作',
+      summary: '参数错误',
+      detail: '缺少卡片信息，请返回重新操作',
       life: 3000
     })
     router.push('/my-cards')
     return false
   }
 
-  // 验证通过，设置卡片详情
-  cardDetail.value = cachedCardDetail
-
-  // 从缓存的卡片详情中提取余额信息 (使用 cardBalance 字段)
-  const cardBalance = (cachedCardDetail as any).cardBalance || 0
-  balance.value = parseFloat(cardBalance.toString()) || 0
-
-  // 更新卡片信息为缓存中的详细信息
-  cardInfo.value = {
-    cardId: cachedCardDetail.cardId,
-    cardNo: cachedCardDetail.cardNo,
-    cardCurrency: cachedCardDetail.cardCurrency,
-    maxOnDaily: cardInfo.value.maxOnDaily, // 保留路由中的限制信息
-    maxOnMonthly: cardInfo.value.maxOnMonthly,
-    maxOnPercent: cardInfo.value.maxOnPercent
+  // 提现与删卡统一从 route 或 cardList 取数
+  const balanceFromRoute = parseFloat(routeCardBalance)
+  if (Number.isFinite(balanceFromRoute)) {
+    balance.value = balanceFromRoute
+    cardDetail.value = {
+      cardId: routeCardId,
+      cardNo: routeCardNo,
+      cardCurrency: (route.query.cardCurrency as string) || 'USD',
+      cardBalance: balance.value
+    }
+    return true
   }
 
-  console.log('Card details loaded from cache:', {
-    cardId: cachedCardDetail.cardId,
-    cardNo: cachedCardDetail.cardNo,
-    cardBalance: cardBalance,
-    balance: balance.value,
-    currency: cachedCardDetail.cardCurrency,
-    maxWithdrawAmount: getMaxWithdrawAmount()
-  })
+  const cardFromList = cardStore.cardList.find(c => c.cardId === routeCardId)
+  if (cardFromList && cardFromList.cardNo === routeCardNo) {
+    balance.value = parseFloat(String(cardFromList.cardBalance ?? 0)) || 0
+    cardDetail.value = {
+      cardId: cardFromList.cardId,
+      cardNo: cardFromList.cardNo,
+      cardCurrency: cardFromList.cardCurrency,
+      cardBalance: balance.value
+    }
+    cardInfo.value = {
+      ...cardInfo.value,
+      cardId: cardFromList.cardId,
+      cardNo: cardFromList.cardNo,
+      cardCurrency: cardFromList.cardCurrency,
+      maxOnDaily: parseFloat(String(cardFromList.maxOnDaily ?? 0)) || 0,
+      maxOnMonthly: parseFloat(String(cardFromList.maxOnMonthly ?? 0)) || 0,
+      maxOnPercent: parseFloat(String(cardFromList.maxOnPercent ?? 0)) || 0
+    }
+    return true
+  }
 
-  return true
+  toast.add({
+    severity: 'error',
+    summary: '参数错误',
+    detail: '无法获取卡片信息，请返回重新操作',
+    life: 3000
+  })
+  router.push('/my-cards')
+  return false
 }
 
 // Initialize on mount
@@ -258,7 +241,7 @@ onMounted(async () => {
     await cardStore.fetchCardList({ silent: true })
   }
 
-  // 验证并加载卡片详情（从 Pinia store）
+  // 验证并加载卡片详情（从 route 或 cardList）
   const isValid = validateAndLoadCardDetails()
   console.log('Card validation result:', isValid)
 

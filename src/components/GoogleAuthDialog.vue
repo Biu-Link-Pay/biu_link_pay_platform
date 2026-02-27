@@ -27,9 +27,9 @@
 
       <!-- Footer Buttons -->
       <div class="flex justify-between space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
-        <Button label="Cancel" severity="secondary" @click="handleCancel" class="flex-1" />
-        <Button label="Confirm" icon="pi pi-check" :disabled="!authCode || authCode.length !== 6" @click="handleSubmit"
-          class="flex-1" />
+        <Button label="Cancel" severity="secondary" :disabled="props.loading" @click="handleCancel" class="flex-1" />
+        <Button label="Confirm" icon="pi pi-check" :loading="props.loading" :disabled="!authCode || authCode.length !== 6 || props.loading"
+          @click="handleSubmit" class="flex-1" />
       </div>
     </div>
   </Dialog>
@@ -45,11 +45,13 @@ interface Props {
   visible: boolean
   title?: string
   identifier?: string
+  loading?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
   title: 'Google Auth Verification',
-  identifier: 'default'
+  identifier: 'default',
+  loading: false
 })
 
 const emit = defineEmits<{
@@ -75,7 +77,7 @@ const onCodeInput = (event: Event) => {
 }
 
 const handleSubmit = () => {
-  if (!authCode.value || authCode.value.length !== 6) {
+  if (!authCode.value || authCode.value.length !== 6 || props.loading) {
     return
   }
 

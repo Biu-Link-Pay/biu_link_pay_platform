@@ -407,6 +407,10 @@
       </div>
     </div>
   </div>
+
+  <!-- 2FA Verification Dialog (提现/删卡需验证) -->
+  <GoogleAuthDialog ref="googleAuthDialogRef" v-model:visible="showGoogleAuthDialog" title="Security Verification"
+    identifier="withdraw" :loading="isSubmitting" @submit="onGoogleAuthSubmit" @cancel="onGoogleAuthCancel" />
 </template>
 
 <script setup lang="ts">
@@ -418,6 +422,7 @@ import Button from 'primevue/button'
 import { OrderAPI } from '@/api/order'
 import { useCardStore } from '@/stores/card'
 import { useUserStore } from '@/stores/user'
+import GoogleAuthDialog from './GoogleAuthDialog.vue'
 
 interface Props {
   cardInfo: {
@@ -495,6 +500,8 @@ const selectedCrypto = ref<any>(null)
 
 // UI state
 const isSubmitting = ref(false)
+const showGoogleAuthDialog = ref(false)
+const googleAuthDialogRef = ref<InstanceType<typeof GoogleAuthDialog> | null>(null)
 
 // Form validation
 const errors = ref({
@@ -810,6 +817,12 @@ const handleWithdraw = async () => {
     }
   }
 
+  // 提现/删卡需 2FA 验证
+  showGoogleAuthDialog.value = true
+}
+
+// 2FA 提交后执行出金
+const submitWithdrawOrder = async (faCode: string) => {
   isSubmitting.value = true
 
   try {
@@ -821,18 +834,22 @@ const handleWithdraw = async () => {
       cardPattern: '1',
       type: '1',
       cardId: props.cardInfo.cardId,
-      token: selectedCrypto.value.crypto.name,
-      network: selectedCrypto.value.network.name,
+      token: selectedCrypto.value!.crypto.name,
+      network: selectedCrypto.value!.network.name,
       address: recipientAddress.value,
       delFlag: props.isDeleteAction,
       withdrawAmount: (props.isDeleteAction ? getMaxWithdrawAmount() : props.withdrawAmount).toString(),
       cardNo: maskedCardNo,
       cardRewardPoints: props.appliedRewardPoints,
       payType: payTypeValue,
-      customParam: ''
+      customParam: '',
+      faCode
     })
 
     if (response.success) {
+      showGoogleAuthDialog.value = false
+      googleAuthDialogRef.value?.resetCode()
+
       toast.add({
         severity: 'success',
         summary: 'Withdraw Order Created',
@@ -861,6 +878,7 @@ const handleWithdraw = async () => {
     }
   } catch (error) {
     console.error('Withdraw error:', error)
+    googleAuthDialogRef.value?.resetCode()
     toast.add({
       severity: 'error',
       summary: 'Withdraw Failed',
@@ -870,6 +888,15 @@ const handleWithdraw = async () => {
   } finally {
     isSubmitting.value = false
   }
+}
+
+const onGoogleAuthSubmit = async (code: string) => {
+  await submitWithdrawOrder(code)
+}
+
+const onGoogleAuthCancel = () => {
+  showGoogleAuthDialog.value = false
+  googleAuthDialogRef.value?.resetCode()
 }
 
 // Watch for address changes to validate in real-time

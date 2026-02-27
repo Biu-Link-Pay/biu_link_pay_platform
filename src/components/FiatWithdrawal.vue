@@ -537,6 +537,10 @@
 
   <!-- Recipient Form Dialog -->
   <RecipientFormDialog v-model:visible="showRecipientDialog" :bank-names="bankNames" @saved="handleRecipientSaved" />
+
+  <!-- 2FA Verification Dialog (提现/删卡需验证) -->
+  <GoogleAuthDialog ref="googleAuthDialogRef" v-model:visible="showGoogleAuthDialog" title="Security Verification"
+    identifier="withdraw" :loading="isSubmitting" @submit="onGoogleAuthSubmit" @cancel="onGoogleAuthCancel" />
 </template>
 
 <script setup lang="ts">
@@ -552,6 +556,7 @@ import { CardAPI, type QueryRecipientModel } from '@/api/card'
 import { useCardStore } from '@/stores/card'
 import { useUserStore } from '@/stores/user'
 import RecipientFormDialog from './RecipientFormDialog.vue'
+import GoogleAuthDialog from './GoogleAuthDialog.vue'
 
 interface Props {
   cardInfo: {
@@ -579,6 +584,8 @@ const userStore = useUserStore()
 
 // Form submission state
 const isSubmitting = ref(false)
+const showGoogleAuthDialog = ref(false)
+const googleAuthDialogRef = ref<InstanceType<typeof GoogleAuthDialog> | null>(null)
 
 // Payment methods from API (grouped by methodType)
 const paymentMethodGroups = ref<FiatPaymentMethodsModel[]>([])
@@ -1200,6 +1207,12 @@ const handleWithdraw = async () => {
     return
   }
 
+  // 提现/删卡需 2FA 验证
+  showGoogleAuthDialog.value = true
+}
+
+// 2FA 提交后执行出金
+const submitWithdrawOrder = async (faCode: string) => {
   isSubmitting.value = true
 
   try {
@@ -1213,8 +1226,8 @@ const handleWithdraw = async () => {
     }
 
     // Add payment method fields to customParam
-    if (selectedPaymentMethod.value.fields && Array.isArray(selectedPaymentMethod.value.fields)) {
-      selectedPaymentMethod.value.fields.forEach(field => {
+    if (selectedPaymentMethod.value?.fields && Array.isArray(selectedPaymentMethod.value.fields)) {
+      selectedPaymentMethod.value.fields.forEach((field: any) => {
         const value = paymentMethodFields[field.name]
         if (value !== undefined && value !== null && value !== '') {
           customParamData[field.name] = value
@@ -1228,18 +1241,22 @@ const handleWithdraw = async () => {
       cardPattern: '1',
       type: '1',
       cardId: props.cardInfo.cardId,
-      token: selectedFiatCurrency.value, // 法币出金传法币单位（如 HKD），数币出金传数币单位（如 USDT）
-      network: selectedPaymentMethod.value.methodName, // Use payment method name as network
-      address: '', // Use contactId as address
+      token: selectedFiatCurrency.value,
+      network: selectedPaymentMethod.value!.methodName,
+      address: '',
       delFlag: props.isDeleteAction,
       withdrawAmount: (props.isDeleteAction ? props.balance : props.withdrawAmount).toString(),
       cardNo: maskedCardNo,
       cardRewardPoints: props.appliedRewardPoints,
-      payType: selectedPaymentMethod.value.methodCode, // Fiat payment method code
-      customParam: customParam
+      payType: selectedPaymentMethod.value!.methodCode,
+      customParam: customParam,
+      faCode
     })
 
     if (response.success) {
+      showGoogleAuthDialog.value = false
+      googleAuthDialogRef.value?.resetCode()
+
       toast.add({
         severity: 'success',
         summary: 'Withdraw Order Created',
@@ -1258,8 +1275,8 @@ const handleWithdraw = async () => {
           status: 'PENDING',
           amount: props.withdrawAmount.toString(),
           currency: selectedFiatCurrency.value,
-          network: selectedPaymentMethod.value.methodName,
-          address: recipientInfo.value.contactId,
+          network: selectedPaymentMethod.value!.methodName,
+          address: recipientInfo.value!.contactId,
           type: 'withdraw'
         }
       })
@@ -1268,6 +1285,7 @@ const handleWithdraw = async () => {
     }
   } catch (error) {
     console.error('Withdraw error:', error)
+    googleAuthDialogRef.value?.resetCode()
     toast.add({
       severity: 'error',
       summary: 'Withdraw Failed',
@@ -1277,6 +1295,15 @@ const handleWithdraw = async () => {
   } finally {
     isSubmitting.value = false
   }
+}
+
+const onGoogleAuthSubmit = async (code: string) => {
+  await submitWithdrawOrder(code)
+}
+
+const onGoogleAuthCancel = () => {
+  showGoogleAuthDialog.value = false
+  googleAuthDialogRef.value?.resetCode()
 }
 
 // Clean up

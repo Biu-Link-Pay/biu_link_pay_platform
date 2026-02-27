@@ -285,8 +285,8 @@ const initializeCardInfo = () => {
   if (route.query.cardId) {
     cardInfo.value = {
       cardId: route.query.cardId as string,
-      cardNo: route.query.cardNo as string || '',
-      cardCurrency: route.query.cardCurrency as string || 'USD',
+      cardNo: (route.query.cardNo as string) || '',
+      cardCurrency: (route.query.cardCurrency as string) || 'USD',
       maxOnDaily: parseFloat(route.query.maxOnDaily as string) || 0,
       maxOnMonthly: parseFloat(route.query.maxOnMonthly as string) || 0,
       maxOnPercent: parseFloat(route.query.maxOnPercent as string) || 0
@@ -295,63 +295,67 @@ const initializeCardInfo = () => {
   }
 }
 
-// Load card detail from cache (same verification logic as WithdrawOrder.vue, simplified)
+// 提现：从 route 加载卡信息（不再依赖 cache，卡列表数据由 MyCards 通过 route 传递）
 const validateAndLoadCardDetails = () => {
-  const cachedCardDetail = cardStore.getCachedCurrentCardDetail()
-
-  if (!cachedCardDetail) {
-    toast.add({
-      severity: 'error',
-      summary: '验证失败',
-      detail: '未经过安全验证，请返回重新操作',
-      life: 3000
-    })
-    router.push('/my-cards')
-    return false
-  }
-
-  const routeCardNo = route.query.cardNo as string
-  const cachedCardNo = cachedCardDetail.cardNo
-
-  if (!routeCardNo || !cachedCardNo || routeCardNo !== cachedCardNo) {
-    toast.add({
-      severity: 'error',
-      summary: '验证失败',
-      detail: '卡片信息不匹配，请返回重新操作',
-      life: 3000
-    })
-    router.push('/my-cards')
-    return false
-  }
-
   const routeCardId = route.query.cardId as string
-  const cachedCardId = cachedCardDetail.cardId
+  const routeCardNo = route.query.cardNo as string
+  const routeCardBalance = route.query.cardBalance as string
 
-  if (!routeCardId || !cachedCardId || routeCardId !== cachedCardId) {
+  if (!routeCardId || !routeCardNo) {
     toast.add({
       severity: 'error',
-      summary: '验证失败',
-      detail: '卡片信息不匹配，请返回重新操作',
+      summary: '参数错误',
+      detail: '缺少卡片信息，请返回重新操作',
       life: 3000
     })
     router.push('/my-cards')
     return false
   }
 
-  cardDetail.value = cachedCardDetail
-  const cardBalance = (cachedCardDetail as any).cardBalance || 0
-  balance.value = parseFloat(cardBalance.toString()) || 0
-
-  cardInfo.value = {
-    cardId: cachedCardDetail.cardId,
-    cardNo: cachedCardDetail.cardNo,
-    cardCurrency: cachedCardDetail.cardCurrency,
-    maxOnDaily: cardInfo.value.maxOnDaily,
-    maxOnMonthly: cardInfo.value.maxOnMonthly,
-    maxOnPercent: cardInfo.value.maxOnPercent
+  // 优先使用 route 中的 cardBalance（来自 MyCards 卡列表）
+  const balanceFromRoute = parseFloat(routeCardBalance)
+  if (Number.isFinite(balanceFromRoute)) {
+    balance.value = balanceFromRoute
+    cardDetail.value = {
+      cardId: routeCardId,
+      cardNo: routeCardNo,
+      cardCurrency: (route.query.cardCurrency as string) || 'USD',
+      cardBalance: balance.value
+    }
+    initializeCardInfo()
+    return true
   }
 
-  return true
+  // 兼容：若 route 无 cardBalance，尝试从 cardStore.cardList 获取
+  const cardFromList = cardStore.cardList.find(c => c.cardId === routeCardId)
+  if (cardFromList && cardFromList.cardNo === routeCardNo) {
+    balance.value = parseFloat(String(cardFromList.cardBalance ?? 0)) || 0
+    cardDetail.value = {
+      cardId: cardFromList.cardId,
+      cardNo: cardFromList.cardNo,
+      cardCurrency: cardFromList.cardCurrency,
+      cardBalance: balance.value
+    }
+    cardInfo.value = {
+      ...cardInfo.value,
+      cardId: cardFromList.cardId,
+      cardNo: cardFromList.cardNo,
+      cardCurrency: cardFromList.cardCurrency,
+      maxOnDaily: parseFloat(String(cardFromList.maxOnDaily ?? 0)) || 0,
+      maxOnMonthly: parseFloat(String(cardFromList.maxOnMonthly ?? 0)) || 0,
+      maxOnPercent: parseFloat(String(cardFromList.maxOnPercent ?? 0)) || 0
+    }
+    return true
+  }
+
+  toast.add({
+    severity: 'error',
+    summary: '参数错误',
+    detail: '无法获取卡片信息，请返回重新操作',
+    life: 3000
+  })
+  router.push('/my-cards')
+  return false
 }
 
 // Amount helpers
@@ -442,6 +446,10 @@ const handleContinue = async () => {
         cardId: cardInfo.value.cardId,
         cardNo: cardInfo.value.cardNo,
         cardCurrency: cardInfo.value.cardCurrency,
+        cardBalance: balance.value.toString(),
+        maxOnDaily: cardInfo.value.maxOnDaily.toString(),
+        maxOnMonthly: cardInfo.value.maxOnMonthly.toString(),
+        maxOnPercent: cardInfo.value.maxOnPercent.toString(),
         action: route.query.action || 'withdraw',
         amount: withdrawAmountNumber.value.toString(),
         cardRewardPoints: appliedRewardPoints.value || 0
