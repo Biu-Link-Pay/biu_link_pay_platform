@@ -1,151 +1,20 @@
-<template>
-  <nav
-    class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-6 py-4 transition-colors duration-200">
-    <div class="flex justify-between items-center">
-      <div class="flex items-center space-x-4">
-        <div
-          class="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden cursor-pointer hover:opacity-90"
-          role="button" aria-label="Go to cards" title="Go to cards" @click="onLogoClick">
-          <img src="https://static.biulinkpay.com/logo/biu_blue.png" alt="BiuLinkPay"
-            class="w-full h-full object-contain" />
-        </div>
-        <div v-if="showTitle" class="hidden sm:block">
-          <h1 class="text-xl font-semibold text-gray-900 dark:text-white">
-            {{ title }}
-          </h1>
-        </div>
-      </div>
-
-      <div class="flex items-center">
-        <!-- Theme toggle button -->
-        <div data-theme-toggle>
-          <ThemeToggle />
-        </div>
-
-        <!-- Card reward points (desktop) -->
-        <div v-if="isLoggedIn"
-          class="card-points-desktop hidden sm:flex items-center gap-1 px-3 py-1.5 rounded-2xl    text-gray-900 dark:text-white cursor-default">
-          <div class="w-9 h-9 rounded-xl flex items-center justify-center points-icon-animate">
-            <img :src="coinsIcon" alt="Card points" class="w-6 h-6 object-contain" />
-          </div>
-          <div class="flex items-center gap-1">
-            <p :class="[
-              'text-lg font-extrabold tracking-wide tabular-nums',
-              { 'animate-pulse opacity-70': !hasCardRewardPoints }
-            ]">
-              {{ formattedCardRewardPoints }}
-            </p>
-            <span v-tooltip.bottom="{ value: '100 pts = 1 USD', class: 'points-tooltip' }"
-              class="inline-flex items-center justify-center w-4 h-4 rounded-full dark:bg-white/25 bg-gray-900/25 text-[10px] font-bold leading-none cursor-pointer"
-              @click.stop="showPointsHint">
-              !
-            </span>
-          </div>
-        </div>
-
-        <!-- Card reward points (mobile) -->
-        <div v-if="isLoggedIn"
-          class="card-points-mobile sm:hidden flex items-center gap-0.5 px-2.5 py-1.5 rounded-xl text-[11px] font-semibold text-white ">
-          <div class="w-5 h-5 rounded-lg flex items-center justify-center points-icon-animate">
-            <img :src="coinsIcon" alt="Card points" class="w-3.5 h-3.5 object-contain" />
-          </div>
-          <div class="flex items-center gap-0.5">
-            <span :class="[{ 'animate-pulse opacity-70': !hasCardRewardPoints }]" class="text-gray-900 dark:text-white">
-              {{ formattedCardRewardPoints }}
-            </span>
-            <span v-tooltip.bottom="{ value: '100 pts = 1 USD', class: 'points-tooltip' }"
-              class="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full dark:bg-white/25 bg-gray-900/25 text-[9px] font-bold leading-none cursor-pointer"
-              @click.stop="showPointsHint">
-              !
-            </span>
-          </div>
-        </div>
-
-        <slot name="actions">
-          <!-- User avatar and menu -->
-          <div v-if="isLoggedIn" class="relative">
-            <!-- PC: Avatar + Username + Floating Menu -->
-            <div
-              class="hidden md:flex items-center space-x-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg px-3 py-2 transition-colors"
-              @click="toggleUserMenu">
-              <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-600">
-                <img v-if="userAvatar" :src="userAvatar" :alt="userName" class="w-full h-full object-cover" />
-                <div v-else
-                  class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white text-sm font-medium">
-                  {{ userName.charAt(0).toUpperCase() }}
-                </div>
-              </div>
-              <span class="text-sm font-medium text-gray-700 dark:text-gray-300">
-                {{ userName }}
-              </span>
-              <i class="pi pi-chevron-down text-xs text-gray-500 transition-transform"
-                :class="{ 'rotate-180': showUserMenu }"></i>
-            </div>
-
-            <!-- Mobile: Avatar toggles floating menu same as desktop -->
-            <div class="md:hidden w-8 h-8 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-600 cursor-pointer"
-              @click="toggleUserMenu">
-              <img v-if="userAvatar" :src="userAvatar" :alt="userName" class="w-full h-full object-cover" />
-              <div v-else
-                class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white text-sm font-medium">
-                {{ userName.charAt(0).toUpperCase() }}
-              </div>
-            </div>
-
-            <!-- PC user menu floating box -->
-            <div v-if="showUserMenu"
-              class="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50"
-              @click.stop>
-              <div class="px-4 py-2 border-b border-gray-100 dark:border-gray-700">
-                <p class="text-sm font-medium text-gray-900 dark:text-white">{{ userName }}</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">{{ userEmail }}</p>
-              </div>
-
-              <button
-                class="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center space-x-2"
-                @click="goToMyCards">
-                <i class="pi pi-credit-card text-gray-500"></i>
-                <span>My Cards</span>
-              </button>
-
-              <button
-                class="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center space-x-2"
-                @click="goToProfile">
-                <i class="pi pi-user text-gray-500"></i>
-                <span>Profile</span>
-              </button>
-
-              <button
-                class="w-full px-4 py-2 text-left text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors flex items-center space-x-2"
-                @click="confirmLogout">
-                <i class="pi pi-sign-out text-red-500"></i>
-                <span>Logout</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Show login button when not logged in -->
-          <Button v-else-if="showLogin" label="Login" text class="text-gray-600 hover:text-gray-900"
-            @click="goToLogin" />
-        </slot>
-      </div>
-    </div>
-  </nav>
-
-
-</template>
-
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
-import { useRouter } from 'vue-router'
-import { useI18n } from 'vue-i18n'
-import { useToast } from 'primevue/usetoast'
 import { useConfirm } from 'primevue/useconfirm'
-import { useAuthStore } from '@/stores/auth'
-import { useUserStore } from '@/stores/user'
-import { useCardStore } from '@/stores/card'
-import ThemeToggle from './ThemeToggle.vue'
+import { useToast } from 'primevue/usetoast'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 import coinsIcon from '@/assets/images/coins.png'
+import { useAuthStore } from '@/stores/auth'
+import { useCardStore } from '@/stores/card'
+import { useUserStore } from '@/stores/user'
+import ThemeToggle from './ThemeToggle.vue'
+
+const _props = withDefaults(defineProps<Props>(), {
+  title: '',
+  showTitle: false,
+  showLogin: true,
+})
 
 const { t } = useI18n()
 
@@ -154,12 +23,6 @@ interface Props {
   showTitle?: boolean
   showLogin?: boolean
 }
-
-const props = withDefaults(defineProps<Props>(), {
-  title: '',
-  showTitle: false,
-  showLogin: true
-})
 
 const router = useRouter()
 const toast = useToast()
@@ -199,45 +62,45 @@ const formattedCardRewardPoints = computed(() => {
   }
   return new Intl.NumberFormat(undefined, {
     minimumFractionDigits: 0,
-    maximumFractionDigits: 2
+    maximumFractionDigits: 2,
   }).format(cardRewardPoints.value)
 })
 
-const showPointsHint = () => {
+function showPointsHint() {
   toast.add({
     severity: 'info',
     summary: t('header.cardPoints'),
     detail: t('header.pointsHint'),
-    life: 2500
+    life: 2500,
   })
 }
 
 // Mobile drawer removed; use the same floating menu as desktop
 
 // Toggle user menu
-const toggleUserMenu = () => {
+function toggleUserMenu() {
   showUserMenu.value = !showUserMenu.value
 }
 
 // Navigate to my cards
-const goToMyCards = () => {
+function goToMyCards() {
   showUserMenu.value = false
   router.push('/my-cards')
 }
 
 // Navigate to profile
-const goToProfile = () => {
+function goToProfile() {
   showUserMenu.value = false
   router.push('/personal-center')
 }
 
 // Navigate to login page
-const goToLogin = () => {
+function goToLogin() {
   router.push('/login')
 }
 
 // Confirm logout
-const confirmLogout = () => {
+function confirmLogout() {
   console.log('Showing logout confirmation dialog')
   showUserMenu.value = false
   confirm.require({
@@ -252,12 +115,12 @@ const confirmLogout = () => {
     },
     reject: () => {
       console.log('User cancelled logout')
-    }
+    },
   })
 }
 
 // Logout handling
-const handleLogout = async () => {
+async function handleLogout() {
   try {
     console.log('Starting logout process...')
     await authStore.logout()
@@ -267,26 +130,30 @@ const handleLogout = async () => {
       severity: 'success',
       summary: t('common.success'),
       detail: t('header.loggedOut'),
-      life: 3000
+      life: 3000,
     })
     router.push('/login')
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Logout failed:', error)
     toast.add({
       severity: 'error',
       summary: t('header.logoutFailedTitle'),
       detail: (error as any)?.message || t('header.logoutFailed'),
-      life: 3000
+      life: 3000,
     })
   }
 }
 
-const loadUserProfileIfNeeded = async () => {
-  if (!isLoggedIn.value) return
-  if (userStore.user?.cardRewardPoints !== undefined) return
+async function loadUserProfileIfNeeded() {
+  if (!isLoggedIn.value)
+    return
+  if (userStore.user?.cardRewardPoints !== undefined)
+    return
   try {
     await userStore.fetchUserProfile()
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Failed to fetch user profile for card points:', error)
   }
 }
@@ -294,18 +161,20 @@ const loadUserProfileIfNeeded = async () => {
 // Poll card points every 60s to keep header data fresh
 let cardPointsTimer: number | null = null
 
-const startCardPointsPolling = () => {
-  if (cardPointsTimer || !isLoggedIn.value) return
+function startCardPointsPolling() {
+  if (cardPointsTimer || !isLoggedIn.value)
+    return
   cardPointsTimer = window.setInterval(async () => {
     try {
       await userStore.fetchUserProfile()
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Failed to refresh user profile for card points:', error)
     }
   }, 60_000)
 }
 
-const stopCardPointsPolling = () => {
+function stopCardPointsPolling() {
   if (cardPointsTimer !== null) {
     window.clearInterval(cardPointsTimer)
     cardPointsTimer = null
@@ -313,7 +182,7 @@ const stopCardPointsPolling = () => {
 }
 
 // Click outside to close menu
-const handleClickOutside = (event: Event) => {
+function handleClickOutside(event: Event) {
   const target = event.target as HTMLElement
   // Check if clicked on user menu area, not theme toggle button
   if (!target.closest('.relative') && !target.closest('[data-theme-toggle]')) {
@@ -321,8 +190,9 @@ const handleClickOutside = (event: Event) => {
   }
 }
 
-const handleEscapeKey = (event: KeyboardEvent) => {
-  if (event.key === 'Escape') showUserMenu.value = false
+function handleEscapeKey(event: KeyboardEvent) {
+  if (event.key === 'Escape')
+    showUserMenu.value = false
 }
 
 // Lifecycle
@@ -339,21 +209,23 @@ onUnmounted(() => {
   stopCardPointsPolling()
 })
 
-watch(isLoggedIn, value => {
+watch(isLoggedIn, (value) => {
   if (value) {
     loadUserProfileIfNeeded()
     startCardPointsPolling()
-  } else {
+  }
+  else {
     stopCardPointsPolling()
   }
 })
 
 // Logo click: navigate to MyCards if user has cards, else to ApplyCardList
-const onLogoClick = async () => {
+async function onLogoClick() {
   try {
     // 在导航判断时静默获取，避免在 apply-card 页面展示错误
     await cardStore.fetchCardList({ silent: true })
-  } catch (e) {
+  }
+  catch {
     // 静默模式下忽略错误；路由守卫处理鉴权
   }
 
@@ -361,6 +233,174 @@ const onLogoClick = async () => {
   router.push({ name: hasCards ? 'MyCards' : 'ApplyCardList' })
 }
 </script>
+
+<template>
+  <nav
+    class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-6 py-4 transition-colors duration-200"
+  >
+    <div class="flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <div
+          class="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden cursor-pointer hover:opacity-90"
+          role="button" :aria-label="t('header.goToCards')" :title="t('header.goToCards')" @click="onLogoClick"
+        >
+          <img
+            src="https://static.biulinkpay.com/logo/biu_blue.png" alt="BiuLinkPay"
+            class="w-full h-full object-contain"
+          >
+        </div>
+        <div v-if="showTitle" class="hidden sm:block">
+          <h1 class="text-xl font-semibold text-gray-900 dark:text-white">
+            {{ title }}
+          </h1>
+        </div>
+      </div>
+
+      <div class="flex items-center">
+        <!-- Theme toggle button -->
+        <div data-theme-toggle>
+          <ThemeToggle />
+        </div>
+
+        <!-- Card reward points (desktop) -->
+        <div
+          v-if="isLoggedIn"
+          class="card-points-desktop hidden sm:flex items-center gap-1 px-3 py-1.5 rounded-2xl    text-gray-900 dark:text-white cursor-default"
+        >
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center points-icon-animate">
+            <img :src="coinsIcon" alt="Card points" class="w-6 h-6 object-contain">
+          </div>
+          <div class="flex items-center gap-1">
+            <p
+              class="text-lg font-extrabold tracking-wide tabular-nums" :class="[
+                { 'animate-pulse opacity-70': !hasCardRewardPoints },
+              ]"
+            >
+              {{ formattedCardRewardPoints }}
+            </p>
+            <span
+              v-tooltip.bottom="{ value: t('header.pointsHint'), class: 'points-tooltip' }"
+              class="inline-flex items-center justify-center w-4 h-4 rounded-full dark:bg-white/25 bg-gray-900/25 text-[10px] font-bold leading-none cursor-pointer"
+              @click.stop="showPointsHint"
+            >
+              !
+            </span>
+          </div>
+        </div>
+
+        <!-- Card reward points (mobile) -->
+        <div
+          v-if="isLoggedIn"
+          class="card-points-mobile sm:hidden flex items-center gap-0.5 px-2.5 py-1.5 rounded-xl text-[11px] font-semibold text-white "
+        >
+          <div class="w-5 h-5 rounded-lg flex items-center justify-center points-icon-animate">
+            <img :src="coinsIcon" alt="Card points" class="w-3.5 h-3.5 object-contain">
+          </div>
+          <div class="flex items-center gap-0.5">
+            <span :class="[{ 'animate-pulse opacity-70': !hasCardRewardPoints }]" class="text-gray-900 dark:text-white">
+              {{ formattedCardRewardPoints }}
+            </span>
+            <span
+              v-tooltip.bottom="{ value: t('header.pointsHint'), class: 'points-tooltip' }"
+              class="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full dark:bg-white/25 bg-gray-900/25 text-[9px] font-bold leading-none cursor-pointer"
+              @click.stop="showPointsHint"
+            >
+              !
+            </span>
+          </div>
+        </div>
+
+        <slot name="actions">
+          <!-- User avatar and menu -->
+          <div v-if="isLoggedIn" class="relative">
+            <!-- PC: Avatar + Username + Floating Menu -->
+            <div
+              class="hidden md:flex items-center space-x-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg px-3 py-2 transition-colors"
+              @click="toggleUserMenu"
+            >
+              <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-600">
+                <img v-if="userAvatar" :src="userAvatar" :alt="userName" class="w-full h-full object-cover">
+                <div
+                  v-else
+                  class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white text-sm font-medium"
+                >
+                  {{ userName.charAt(0).toUpperCase() }}
+                </div>
+              </div>
+              <span class="text-sm font-medium text-gray-700 dark:text-gray-300">
+                {{ userName }}
+              </span>
+              <i
+                class="pi pi-chevron-down text-xs text-gray-500 transition-transform"
+                :class="{ 'rotate-180': showUserMenu }"
+              />
+            </div>
+
+            <!-- Mobile: Avatar toggles floating menu same as desktop -->
+            <div
+              class="md:hidden w-8 h-8 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-600 cursor-pointer"
+              @click="toggleUserMenu"
+            >
+              <img v-if="userAvatar" :src="userAvatar" :alt="userName" class="w-full h-full object-cover">
+              <div
+                v-else
+                class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white text-sm font-medium"
+              >
+                {{ userName.charAt(0).toUpperCase() }}
+              </div>
+            </div>
+
+            <!-- PC user menu floating box -->
+            <div
+              v-if="showUserMenu"
+              class="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50"
+              @click.stop
+            >
+              <div class="px-4 py-2 border-b border-gray-100 dark:border-gray-700">
+                <p class="text-sm font-medium text-gray-900 dark:text-white">
+                  {{ userName }}
+                </p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">
+                  {{ userEmail }}
+                </p>
+              </div>
+
+              <button
+                class="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center space-x-2"
+                @click="goToMyCards"
+              >
+                <i class="pi pi-credit-card text-gray-500" />
+                <span>{{ t('header.myCards') }}</span>
+              </button>
+
+              <button
+                class="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center space-x-2"
+                @click="goToProfile"
+              >
+                <i class="pi pi-user text-gray-500" />
+                <span>{{ t('header.profile') }}</span>
+              </button>
+
+              <button
+                class="w-full px-4 py-2 text-left text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors flex items-center space-x-2"
+                @click="confirmLogout"
+              >
+                <i class="pi pi-sign-out text-red-500" />
+                <span>{{ t('header.logout') }}</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Show login button when not logged in -->
+          <Button
+            v-else-if="showLogin" :label="t('header.login')" text class="text-gray-600 hover:text-gray-900"
+            @click="goToLogin"
+          />
+        </slot>
+      </div>
+    </div>
+  </nav>
+</template>
 
 <style scoped>
 /* Responsive design */

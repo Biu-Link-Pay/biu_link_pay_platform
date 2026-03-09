@@ -2,19 +2,22 @@
 
 declare module '*.vue' {
   import type { DefineComponent } from 'vue'
-  const component: DefineComponent<{}, {}, any>
+
+  const component: DefineComponent<object, object, any>
   export default component
 }
 
 // Shim for newly added SFC to satisfy TS project includes in tooling
 declare module '@/components/CardDetailDialog.vue' {
   import type { DefineComponent } from 'vue'
-  const component: DefineComponent<{}, {}, any>
+
+  const component: DefineComponent<object, object, any>
   export default component
 }
 
 declare module '@/components/CardInfoHeader.vue' {
   import type { DefineComponent } from 'vue'
-  const component: DefineComponent<{}, {}, any>
+
+  const component: DefineComponent<object, object, any>
   export default component
 }

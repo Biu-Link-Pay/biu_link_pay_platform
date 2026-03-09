@@ -1,6 +1,5 @@
-import { definePreset } from '@primeuix/themes';
-import { colorScheme, list } from '@primeuix/themes/aura/autocomplete';
-import Lara from '@primeuix/themes/lara';
+import { definePreset } from '@primeuix/themes'
+import Lara from '@primeuix/themes/lara'
 
 const MyPreset = definePreset(Lara, {
   semantic: {
@@ -15,38 +14,38 @@ const MyPreset = definePreset(Lara, {
       700: '{blue.700}',
       800: '{blue.800}',
       900: '{blue.900}',
-      950: '{blue.950}'
+      950: '{blue.950}',
     },
     colorScheme: {
       light: {
         content: {
-          background: '#fff'
+          background: '#fff',
         },
         formField: {
           background: '#f9f9f9',
-          borderColor: '#00000000'
+          borderColor: '#00000000',
         },
         overlay: {
           modal: {
-            background: "#fff"
-          }
-        }
+            background: '#fff',
+          },
+        },
       },
       dark: {
         content: {
-          background: '#15171c'
+          background: '#15171c',
         },
         formField: {
           background: '#1b1c22',
-          borderColor: '#00000000'
+          borderColor: '#00000000',
         },
         overlay: {
           modal: {
-            background: "#0d0e12"
-          }
-        }
-      }
-    }
+            background: '#0d0e12',
+          },
+        },
+      },
+    },
   },
   components: {
     checkbox: {
@@ -54,37 +53,37 @@ const MyPreset = definePreset(Lara, {
         light: {
           root: {
             background: '#ffffff',
-            borderColor: '#d1d5db'
+            borderColor: '#d1d5db',
           },
         },
         dark: {
           root: {
             background: '#1f2937',
-            borderColor: '#4b5563'
+            borderColor: '#4b5563',
           },
-        }
-      }
+        },
+      },
     },
     datatable: {
       colorScheme: {
         light: {
           headerCell: {
-            background: '#fff'
+            background: '#fff',
           },
           row: {
-            background: '#fff'
-          }
+            background: '#fff',
+          },
         },
         dark: {
           headerCell: {
-            background: '#15171c'
+            background: '#15171c',
           },
           row: {
-            background: '#15171c'
-          }
-        }
-      }
-    }
-  }
-});
-export default MyPreset; 
+            background: '#15171c',
+          },
+        },
+      },
+    },
+  },
+})
+export default MyPreset

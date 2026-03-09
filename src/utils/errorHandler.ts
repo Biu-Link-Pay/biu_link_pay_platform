@@ -19,12 +19,12 @@ export function useErrorHandler() {
       fallbackMessage?: string
       showToast?: boolean
       logError?: boolean
-    } = {}
+    } = {},
   ) => {
     const {
       fallbackMessage = t('common.operationFailed'),
       showToast = true,
-      logError = true
+      logError = true,
     } = options
 
     // 记录错误日志
@@ -37,11 +37,14 @@ export function useErrorHandler() {
 
     if (typeof error === 'string') {
       errorMessage = error
-    } else if (error?.message) {
+    }
+    else if (error?.message) {
       errorMessage = error.message
-    } else if (error?.response?.data?.msg) {
+    }
+    else if (error?.response?.data?.msg) {
       errorMessage = error.response.data.msg
-    } else if (error?.response?.data?.message) {
+    }
+    else if (error?.response?.data?.message) {
       errorMessage = error.response.data.message
     }
 
@@ -51,7 +54,7 @@ export function useErrorHandler() {
         severity: 'error',
         summary: t('common.error'),
         detail: errorMessage,
-        life: 5000
+        life: 5000,
       })
     }
 
@@ -68,11 +71,11 @@ export function useErrorHandler() {
     options: {
       showToast?: boolean
       title?: string
-    } = {}
+    } = {},
   ) => {
     const {
       showToast = true,
-      title = t('common.success')
+      title = t('common.success'),
     } = options
 
     // 显示成功提示
@@ -81,7 +84,7 @@ export function useErrorHandler() {
         severity: 'success',
         summary: title,
         detail: message,
-        life: 3000
+        life: 3000,
       })
     }
 
@@ -98,11 +101,11 @@ export function useErrorHandler() {
     options: {
       showToast?: boolean
       title?: string
-    } = {}
+    } = {},
   ) => {
     const {
       showToast = true,
-      title = t('common.warning')
+      title = t('common.warning'),
     } = options
 
     // 显示警告提示
@@ -111,7 +114,7 @@ export function useErrorHandler() {
         severity: 'warn',
         summary: title,
         detail: message,
-        life: 4000
+        life: 4000,
       })
     }
 
@@ -128,11 +131,11 @@ export function useErrorHandler() {
     options: {
       showToast?: boolean
       title?: string
-    } = {}
+    } = {},
   ) => {
     const {
       showToast = true,
-      title = t('common.info')
+      title = t('common.info'),
     } = options
 
     // 显示信息提示
@@ -141,7 +144,7 @@ export function useErrorHandler() {
         severity: 'info',
         summary: title,
         detail: message,
-        life: 3000
+        life: 3000,
       })
     }
 
@@ -152,6 +155,6 @@ export function useErrorHandler() {
     handleError,
     handleSuccess,
     handleWarning,
-    handleInfo
+    handleInfo,
   }
 }

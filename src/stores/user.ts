@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
+import { computed, ref } from 'vue'
 import { AuthAPI } from '@/api/auth'
 
 export interface User {
@@ -71,23 +71,26 @@ export const useUserStore = defineStore('user', () => {
           firstName: profile.firstName,
           kycStatus: profile.kycStatus,
           googleAuthStatus: profile.googleAuthStatus,
-          cardRewardPoints: profile.cardRewardPoints
+          cardRewardPoints: profile.cardRewardPoints,
         }
 
         // Save to local storage
         localStorage.setItem('userDetails', JSON.stringify(user.value))
 
         return { success: true, data: profile }
-      } else {
+      }
+      else {
         return { success: false, message: response.msg || 'Failed to get user profile' }
       }
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Failed to get user profile:', error)
       return {
         success: false,
-        message: (error as any)?.message || 'Failed to get user profile'
+        message: (error as any)?.message || 'Failed to get user profile',
       }
-    } finally {
+    }
+    finally {
       loading.value = false
     }
   }
@@ -121,6 +124,6 @@ export const useUserStore = defineStore('user', () => {
     logout,
     updateProfile,
     fetchUserProfile,
-    initializeAuth
+    initializeAuth,
   }
 })

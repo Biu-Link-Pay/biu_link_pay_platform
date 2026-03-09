@@ -1,15 +1,15 @@
 {
   "name": "vue-starter",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "build:analyze": "vue-tsc && vite build --mode analyze",
     "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "lint:check": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
+    "lint": "eslint . --fix",
+    "lint:check": "eslint .",
     "type-check": "vue-tsc --noEmit",
     "clean": "rm -rf dist node_modules/.vite",
     "clean:all": "rm -rf dist node_modules pnpm-lock.yaml",
@@ -35,11 +35,13 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^7.7.0",
     "@tailwindcss/postcss": "^4.1.13",
     "@types/node": "^20.10.5",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/tsconfig": "^0.7.0",
     "autoprefixer": "^10.4.16",
+    "eslint": "^10.0.3",
     "rollup-plugin-visualizer": "^6.0.4",
     "tailwindcss-primeui": "^0.6.1",
     "terser": "^5.44.0",

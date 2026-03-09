@@ -45,7 +45,7 @@ export const TokenUtils = {
     const token = this.getToken()
     const refreshToken = this.getRefreshToken()
     return !!(token && refreshToken)
-  }
+  },
 }
 
 // User information related utility functions
@@ -58,7 +58,8 @@ export const UserUtils = {
     if (userStr) {
       try {
         return JSON.parse(userStr)
-      } catch (error) {
+      }
+      catch (error) {
         console.error('Failed to parse user information:', error)
         return null
       }
@@ -89,7 +90,7 @@ export const UserUtils = {
       const updatedUser = { ...currentUser, ...updates }
       this.setUserInfo(updatedUser)
     }
-  }
+  },
 }
 
 // Authentication state check utility functions
@@ -121,7 +122,7 @@ export const AuthUtils = {
    * Validate email format
    */
   isValidEmail(email: string): boolean {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    const emailRegex = /^[^\s@]+@[^\s@][^\s.@]*\.[^\s@]+$/
     return emailRegex.test(email)
   },
 
@@ -147,7 +148,7 @@ export const AuthUtils = {
       : username
 
     return `${maskedUsername}@${domain}`
-  }
+  },
 }
 
 // Route guard utility functions
@@ -186,7 +187,7 @@ export const RouteUtils = {
    */
   clearRedirectPath(): void {
     sessionStorage.removeItem('redirectPath')
-  }
+  },
 }
 
 // Error handling utility functions
@@ -210,9 +211,11 @@ export const ErrorUtils = {
         default:
           return data?.msg || `Request failed (${status})`
       }
-    } else if (error.request) {
+    }
+    else if (error.request) {
       return 'Network connection failed, please check network settings'
-    } else {
+    }
+    else {
       return error.message || 'Unknown error'
     }
   },
@@ -234,5 +237,5 @@ export const ErrorUtils = {
     }
 
     return 'Operation failed, please try again later'
-  }
+  },
 }

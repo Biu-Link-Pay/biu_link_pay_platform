@@ -1,3 +1,55 @@
+<script setup lang="ts">
+import type { CardConfig } from '@/api/card'
+import { computed } from 'vue'
+
+import { useI18n } from 'vue-i18n'
+
+const props = defineProps<Props>()
+
+// Define emits
+const _emit = defineEmits<{
+  select: [card: Props['card']]
+  order: [card: Props['card']]
+  activate: [card: Props['card']]
+}>()
+
+const { t } = useI18n()
+
+// Define props
+interface Props {
+  card: CardConfig
+  selected: boolean
+  hasReachedMaxCards: boolean
+}
+
+// Computed properties (reserved for future use)
+const _statusClasses = computed(() => {
+  switch (props.card.status) {
+    case 1: // Enabled
+      return 'bg-green-100 text-green-800'
+    case 2: // Disabled
+      return 'bg-red-100 text-red-800'
+    default:
+      return 'bg-gray-100 text-gray-800'
+  }
+})
+
+const _statusIcon = computed(() => {
+  switch (props.card.status) {
+    case 1: // Enabled
+      return 'pi pi-check-circle'
+    case 2: // Disabled
+      return 'pi pi-times-circle'
+    default:
+      return 'pi pi-info-circle'
+  }
+})
+
+const _cardTypeText = computed(() => {
+  return props.card.cardPattern === 1 ? 'Virtual Card' : 'Physical Card'
+})
+</script>
+
 <template>
   <Card class="relative overflow-hidden transition-all duration-300 hover:shadow-lg">
     <template #content>
@@ -5,19 +57,26 @@
         <!-- Card Header -->
         <div class="flex items-start justify-between mb-4">
           <div class="flex-1">
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">{{ card.cardName }}</h3>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">
+              {{ card.cardName }}
+            </h3>
           </div>
           <div class="text-right">
-            <div class="text-2xl font-bold text-gray-900 dark:text-white">${{ card.applyFee }}</div>
-            <div class="text-sm text-gray-500 dark:text-gray-400">Apply Fee</div>
+            <div class="text-2xl font-bold text-gray-900 dark:text-white">
+              ${{ card.applyFee }}
+            </div>
+            <div class="text-sm text-gray-500 dark:text-gray-400">
+              Apply Fee
+            </div>
           </div>
         </div>
 
         <!-- Card Image -->
         <div class="mb-4">
           <div
-            class="w-full rounded-3xl bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
-            <img :src="card.cardPicture || ''" :alt="card.cardName" class="w-full h-auto object-contain" />
+            class="w-full rounded-3xl bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center"
+          >
+            <img :src="card.cardPicture || ''" :alt="card.cardName" class="w-full h-auto object-contain">
           </div>
         </div>
 
@@ -30,13 +89,15 @@
             <div class="mt-4 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 xl:grid-cols-3">
               <div class="flex flex-col">
                 <span
-                  class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap">Monthly
+                  class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap"
+                >Monthly
                   Fee</span>
                 <span class="text-base font-semibold text-gray-900 dark:text-white">${{ card.monthlyFee }}</span>
               </div>
               <div class="flex flex-col">
                 <span
-                  class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap">Recharge
+                  class="text-xs font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 whitespace-nowrap"
+                >Recharge
                   Fee</span>
                 <span class="text-base font-semibold text-gray-900 dark:text-white">{{ card.rechargeFee }}%</span>
               </div>
@@ -47,9 +108,10 @@
         <!-- Card Limit Info -->
         <div v-if="hasReachedMaxCards" class="mb-4">
           <div
-            class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-3">
+            class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-3"
+          >
             <div class="flex items-center space-x-2">
-              <i class="pi pi-exclamation-triangle text-yellow-600 dark:text-yellow-400"></i>
+              <i class="pi pi-exclamation-triangle text-yellow-600 dark:text-yellow-400" />
               <span class="text-sm text-yellow-800 dark:text-yellow-200">
                 You have reached the maximum limit of {{ card.applyNumber }} cards
               </span>
@@ -60,65 +122,13 @@
         <!-- Action Buttons -->
         <div class="space-y-3">
           <div class="flex space-x-2">
-            <Button :label="card.cardPattern === 1 ? t('cardItem.orderVirtualCard') : t('cardItem.orderPhysicalCard')" severity="primary"
-              class="flex-1" :disabled="card.cardPattern !== 1 || hasReachedMaxCards" @click="$emit('order', card)" />
+            <Button
+              :label="card.cardPattern === 1 ? t('cardItem.orderVirtualCard') : t('cardItem.orderPhysicalCard')" severity="primary"
+              class="flex-1" :disabled="card.cardPattern !== 1 || hasReachedMaxCards" @click="$emit('order', card)"
+            />
           </div>
         </div>
       </div>
     </template>
   </Card>
 </template>
-
-<script setup lang="ts">
-import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
-
-import type { CardConfig } from '@/api/card'
-
-const { t } = useI18n()
-
-// Define props
-interface Props {
-  card: CardConfig
-  selected: boolean
-  hasReachedMaxCards: boolean
-}
-
-const props = defineProps<Props>()
-
-// Define emits
-const emit = defineEmits<{
-  select: [card: Props['card']]
-  order: [card: Props['card']]
-  activate: [card: Props['card']]
-}>()
-
-// Computed properties
-const statusClasses = computed(() => {
-  switch (props.card.status) {
-    case 1: // Enabled
-      return 'bg-green-100 text-green-800'
-    case 2: // Disabled
-      return 'bg-red-100 text-red-800'
-    default:
-      return 'bg-gray-100 text-gray-800'
-  }
-})
-
-const statusIcon = computed(() => {
-  switch (props.card.status) {
-    case 1: // Enabled
-      return 'pi pi-check-circle'
-    case 2: // Disabled
-      return 'pi pi-times-circle'
-    default:
-      return 'pi pi-info-circle'
-  }
-})
-
-
-const cardTypeText = computed(() => {
-  return props.card.cardPattern === 1 ? 'Virtual Card' : 'Physical Card'
-})
-
-</script>

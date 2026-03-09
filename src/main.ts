@@ -1,35 +1,35 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import i18n from './i18n'
-import PrimeVue from 'primevue/config'
-import ToastService from 'primevue/toastservice'
-import ConfirmationService from 'primevue/confirmationservice'
-import MyPreset from '@/theme/preset';
-import 'primeicons/primeicons.css';
-import router from './router'
 import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
-
 // PrimeVue Components
 import Button from 'primevue/button'
 import Card from 'primevue/card'
-import InputText from 'primevue/inputtext'
 import Checkbox from 'primevue/checkbox'
-import Toast from 'primevue/toast'
+import PrimeVue from 'primevue/config'
+import ConfirmationService from 'primevue/confirmationservice'
 import ConfirmDialog from 'primevue/confirmdialog'
-import Tooltip from 'primevue/tooltip'
+import InputText from 'primevue/inputtext'
+import Toast from 'primevue/toast'
+import ToastService from 'primevue/toastservice'
 
+import Tooltip from 'primevue/tooltip'
+import { createApp } from 'vue'
+import { useThemeStore } from '@/stores/theme'
+import { useUserStore } from '@/stores/user'
+import MyPreset from '@/theme/preset'
+import { getFingerprintId } from '@/utils/fingerprint'
+import App from './App.vue'
+
+import i18n from './i18n'
+import router from './router'
+import 'primeicons/primeicons.css'
 import './assets/styles/main.css'
 import './styles/button-styles.css'
 import './styles/layout-styles.css'
-import { getFingerprintId } from '@/utils/fingerprint'
-import { useThemeStore } from '@/stores/theme'
-import { useUserStore } from '@/stores/user'
 
 // 初始化指纹识别
-getFingerprintId().then(fingerprintId => {
+getFingerprintId().then((fingerprintId) => {
   console.log('Fingerprint ID initialized:', fingerprintId)
-}).catch(error => {
+}).catch((error) => {
   console.warn('Failed to initialize fingerprint:', error)
 })
 
@@ -65,8 +65,8 @@ app.use(PrimeVue, {
       darkModeSelector: '.dark',
       cssLayer: {
         name: 'primevue',
-        order: 'theme, base, primevue'
-      }
+        order: 'theme, base, primevue',
+      },
     },
   },
 })

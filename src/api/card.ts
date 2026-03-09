@@ -237,8 +237,8 @@ export class CardAPI {
   static async queryCardBin(params: QueryCardBinParams): Promise<ApiResponse<CardBin[]>> {
     const response = await api.get('/card/consume/operator/queryCardBin', {
       params: {
-        cardFormFactor: params.cardFormFactor
-      }
+        cardFormFactor: params.cardFormFactor,
+      },
     })
     return response.data
   }
@@ -281,8 +281,8 @@ export class CardAPI {
     const response = await api.get('/card/consume/operator/queryCardDetailInfo', {
       params: {
         cardId: params.cardId,
-        faCode: params.faCode
-      }
+        faCode: params.faCode,
+      },
     })
     return response.data
   }
@@ -322,7 +322,7 @@ export class CardAPI {
       recipientCity: params.recipientCity,
       recipientAddress: params.recipientAddress,
       bankAccountNumber: params.bankAccountNumber,
-      swiftCode: params.swiftCode
+      swiftCode: params.swiftCode,
     })
     return response.data
   }
@@ -358,5 +358,5 @@ export const {
   queryTransactionList,
   saveRecipient,
   queryRecipient,
-  deleteRecipient
+  deleteRecipient,
 } = CardAPI

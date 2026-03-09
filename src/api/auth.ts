@@ -1,14 +1,13 @@
-import type { 
-  ApiResponse, 
-  LoginParams, 
-  LoginResponse, 
-  RefreshTokenParams, 
+import type {
+  ApiResponse,
+  GoogleAuthGeneralResponse,
+  LoginParams,
+  LoginResponse,
+  LogoutParams,
+  RefreshTokenParams,
   RefreshTokenResponse,
   SendEmailParams,
-  LogoutParams,
   UserProfile,
-  UserProfileParams,
-  GoogleAuthGeneralResponse
 } from '@/types/api'
 import { api } from '@/services/api'
 
@@ -24,8 +23,8 @@ export class AuthAPI {
   static async sendEmail(params: SendEmailParams): Promise<ApiResponse<null>> {
     const response = await api.get('/card/consume/login/sendEmail', {
       params: {
-        email: params.email
-      }
+        email: params.email,
+      },
     })
     return response.data
   }
@@ -40,8 +39,8 @@ export class AuthAPI {
       params: {
         email: params.email,
         code: params.code,
-        license: params.license
-      }
+        license: params.license,
+      },
     })
     return response.data
   }
@@ -54,8 +53,8 @@ export class AuthAPI {
   static async refreshToken(params: RefreshTokenParams): Promise<ApiResponse<RefreshTokenResponse>> {
     const response = await api.get('/card/consume/login/refresh', {
       headers: {
-        'refresh_token': params.refresh_token
-      }
+        refresh_token: params.refresh_token,
+      },
     })
     return response.data
   }
@@ -68,8 +67,8 @@ export class AuthAPI {
   static async logout(params: LogoutParams): Promise<ApiResponse<null>> {
     const response = await api.get('/card/consume/login/out', {
       headers: {
-        'refresh_token': params.refresh_token
-      }
+        refresh_token: params.refresh_token,
+      },
     })
     return response.data
   }
@@ -118,8 +117,8 @@ export class AuthAPI {
   static async googleAuthCode(secret: string): Promise<ApiResponse<string>> {
     const response = await api.get('/card/consume/common/googleAuthCode', {
       params: {
-        secret
-      }
+        secret,
+      },
     })
     return response.data
   }
@@ -134,8 +133,8 @@ export class AuthAPI {
     const response = await api.get('/card/consume/common/googleAuthValid', {
       params: {
         code,
-        secret
-      }
+        secret,
+      },
     })
     return response.data
   }
@@ -157,8 +156,8 @@ export class AuthAPI {
   static async googleAuthUnbind(code: string): Promise<ApiResponse<boolean>> {
     const response = await api.get('/card/consume/common/googleAuthUnbind', {
       params: {
-        code
-      }
+        code,
+      },
     })
     return response.data
   }
@@ -177,5 +176,5 @@ export const {
   googleAuthCode,
   googleAuthValid,
   googleAuthResult,
-  googleAuthUnbind
+  googleAuthUnbind,
 } = AuthAPI

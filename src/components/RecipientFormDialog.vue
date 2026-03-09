@@ -1,171 +1,16 @@
-<template>
-  <Dialog v-model:visible="visible" modal :header="'Add Recipient'" :style="{ width: '90vw', maxWidth: '800px' }"
-    :closable="true" @hide="handleClose">
-    <template #default>
-      <div class="space-y-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <!-- Bank Name -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Bank Name <span class="text-red-500">*</span>
-            </label>
-            <div ref="bankDropdownWrapper" class="w-full bank-dropdown-wrapper">
-              <Dropdown v-model="recipientForm.bankName" :options="bankNames" placeholder="Select bank"
-                class="w-full bank-dropdown" filter show-clear :class="{ 'p-invalid': recipientErrors.bankName }"
-                :panelStyle="bankDropdownPanelStyle">
-                <template #option="slotProps">
-                  <div class="truncate bank-option text-xs">{{ slotProps.option }}</div>
-                </template>
-                <template #value="slotProps">
-                  <div class="truncate w-full">{{ slotProps.value || 'Select bank' }}</div>
-                </template>
-              </Dropdown>
-            </div>
-            <small v-if="recipientErrors.bankName" class="text-red-500 text-xs mt-1">{{
-              recipientErrors.bankName }}</small>
-          </div>
-
-          <!-- Bank Location (Hidden but still in form data) -->
-          <div class="hidden">
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Bank Location <span class="text-red-500">*</span>
-            </label>
-            <InputText v-model="recipientForm.bankLocation" placeholder="Enter bank location" class="w-full" disabled
-              :class="{ 'p-invalid': recipientErrors.bankLocation }" />
-            <small v-if="recipientErrors.bankLocation" class="text-red-500 text-xs mt-1">{{
-              recipientErrors.bankLocation }}</small>
-          </div>
-
-          <!-- Currency -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Currency <span class="text-red-500">*</span>
-            </label>
-            <Dropdown v-model="recipientForm.currency" :options="currencyOptions" placeholder="Select currency"
-              class="w-full" filter show-clear :class="{ 'p-invalid': recipientErrors.currency }" />
-            <small v-if="recipientErrors.currency" class="text-red-500 text-xs mt-1">{{
-              recipientErrors.currency }}</small>
-          </div>
-
-          <!-- Phone Number -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Phone Number <span class="text-red-500">*</span>
-            </label>
-            <div class="flex gap-2">
-              <Dropdown v-model="selectedPhoneAreaCode" :options="phoneAreaCodes" option-label="label"
-                option-value="value" placeholder="Code" class="w-32" filter show-clear
-                :class="{ 'p-invalid': recipientErrors.phoneAreaCode }">
-                <template #value="slotProps">
-                  <span v-if="slotProps.value">{{ slotProps.value }}</span>
-                  <span v-else>Code</span>
-                </template>
-              </Dropdown>
-              <InputText v-model="phoneNumber" placeholder="Enter phone number" class="flex-1"
-                :class="{ 'p-invalid': recipientErrors.reservedPhoneNumber }" />
-            </div>
-            <small v-if="recipientErrors.phoneAreaCode || recipientErrors.reservedPhoneNumber"
-              class="text-red-500 text-xs mt-1">
-              {{ recipientErrors.phoneAreaCode || recipientErrors.reservedPhoneNumber }}
-            </small>
-          </div>
-
-          <!-- Country (Fixed to Hong Kong) -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Country <span class="text-red-500">*</span>
-            </label>
-            <InputText :value="'Hong Kong'" readonly class="w-full bg-gray-100 dark:bg-gray-700 cursor-not-allowed"
-              :class="{ 'p-invalid': recipientErrors.recipientLocation }" />
-            <small v-if="recipientErrors.recipientLocation" class="text-red-500 text-xs mt-1">{{
-              recipientErrors.recipientLocation }}</small>
-          </div>
-
-          <!-- Recipient Province/State -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Province/State <span class="text-red-500">*</span>
-            </label>
-            <Dropdown v-if="hasStateOptions" v-model="selectedStateCode" :options="states" option-label="name"
-              option-value="isoCode" placeholder="Select state or province" class="w-full" filter show-clear
-              :class="{ 'p-invalid': recipientErrors.recipientProvince }" />
-            <InputText v-else v-model="recipientForm.recipientProvince" placeholder="Enter province" class="w-full"
-              :class="{ 'p-invalid': recipientErrors.recipientProvince }" />
-            <small v-if="recipientErrors.recipientProvince" class="text-red-500 text-xs mt-1">{{
-              recipientErrors.recipientProvince }}</small>
-          </div>
-
-          <!-- Recipient City -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              City
-            </label>
-            <Dropdown disabled v-if="hasCityOptions" v-model="selectedCityName" :options="cities" option-label="name"
-              option-value="name" placeholder="Select city" class="w-full" filter show-clear
-              :class="{ 'p-invalid': recipientErrors.recipientCity }" />
-            <InputText disabled v-else v-model="recipientForm.recipientCity" placeholder="Enter city" class="w-full"
-              :class="{ 'p-invalid': recipientErrors.recipientCity }" />
-            <small v-if="recipientErrors.recipientCity" class="text-red-500 text-xs mt-1">{{
-              recipientErrors.recipientCity }}</small>
-          </div>
-
-          <!-- Recipient Address -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Recipient Address <span class="text-red-500">*</span>
-            </label>
-            <InputText v-model="recipientForm.recipientAddress" placeholder="Enter address" class="w-full"
-              :class="{ 'p-invalid': recipientErrors.recipientAddress }" />
-            <small v-if="recipientErrors.recipientAddress" class="text-red-500 text-xs mt-1">{{
-              recipientErrors.recipientAddress }}</small>
-          </div>
-
-          <!-- Bank Account Number -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Bank Account Number <span class="text-red-500">*</span>
-            </label>
-            <InputText v-model="recipientForm.bankAccountNumber" placeholder="Enter bank account number" class="w-full"
-              :class="{ 'p-invalid': recipientErrors.bankAccountNumber }" />
-            <small v-if="recipientErrors.bankAccountNumber" class="text-red-500 text-xs mt-1">{{
-              recipientErrors.bankAccountNumber }}</small>
-          </div>
-
-          <!-- SWIFT Code -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              SWIFT Code <span class="text-red-500">*</span>
-            </label>
-            <InputText v-model="recipientForm.swiftCode" placeholder="Enter SWIFT code" class="w-full"
-              :class="{ 'p-invalid': recipientErrors.swiftCode }" />
-            <small v-if="recipientErrors.swiftCode" class="text-red-500 text-xs mt-1">{{
-              recipientErrors.swiftCode }}</small>
-          </div>
-        </div>
-      </div>
-    </template>
-    <template #footer>
-      <div class="flex items-center justify-end gap-2">
-        <Button label="Cancel" icon="pi pi-times" severity="secondary" @click="handleClose" />
-        <Button label="Save Recipient" icon="pi pi-check" :loading="savingRecipient" @click="handleSave" />
-      </div>
-    </template>
-  </Dialog>
-</template>
-
 <script setup lang="ts">
-import { ref, computed, watch, reactive, onMounted } from 'vue'
-import { useI18n } from 'vue-i18n'
-import { useToast } from 'primevue/usetoast'
-import Dialog from 'primevue/dialog'
-import InputText from 'primevue/inputtext'
-import Button from 'primevue/button'
-import Dropdown from 'primevue/dropdown'
-import { CardAPI, type SaveRecipientParams } from '@/api/card'
-import { OrderAPI } from '@/api/order'
-import { getStatesOfCountry, getCitiesOfState, getCitiesOfCountry, type StateOption, type CityOption } from '@/services/geo'
+import type { SaveRecipientParams } from '@/api/card'
+import type { CityOption, StateOption } from '@/services/geo'
 import { getCountryCallingCode } from 'libphonenumber-js'
-import { getCountries as getGeoCountries } from '@/services/geo'
+import Button from 'primevue/button'
+import Dialog from 'primevue/dialog'
+import Dropdown from 'primevue/dropdown'
+import InputText from 'primevue/inputtext'
+import { useToast } from 'primevue/usetoast'
+import { computed, onMounted, reactive, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { CardAPI } from '@/api/card'
+import { getCitiesOfCountry, getCitiesOfState, getCountries as getGeoCountries, getStatesOfCountry } from '@/services/geo'
 
 interface Props {
   visible: boolean
@@ -187,26 +32,27 @@ const bankDropdownWrapper = ref<HTMLElement | null>(null)
 
 // Bank dropdown panel style
 const bankDropdownPanelStyle = computed(() => {
-  if (!bankDropdownWrapper.value) return {}
+  if (!bankDropdownWrapper.value)
+    return {}
   const width = bankDropdownWrapper.value.offsetWidth
   return {
     width: `${width}px`,
     maxWidth: `${width}px`,
-    minWidth: '0'
+    minWidth: '0',
   }
 })
 
 // Dialog visibility
 const visible = computed({
   get: () => props.visible,
-  set: (value) => emit('update:visible', value)
+  set: value => emit('update:visible', value),
 })
 
 // Saving state
 const savingRecipient = ref(false)
 
 // Phone number data
-const phoneAreaCodes = ref<Array<{ label: string; value: string }>>([])
+const phoneAreaCodes = ref<Array<{ label: string, value: string }>>([])
 const selectedPhoneAreaCode = ref<string>('+852') // Default to Hong Kong
 const phoneNumber = ref<string>('')
 
@@ -231,7 +77,7 @@ const recipientForm = reactive<SaveRecipientParams>({
   recipientCity: '',
   recipientAddress: '',
   bankAccountNumber: '',
-  swiftCode: ''
+  swiftCode: '',
 })
 
 // Recipient form validation errors
@@ -246,7 +92,7 @@ const recipientErrors = reactive({
   recipientCity: '',
   recipientAddress: '',
   bankAccountNumber: '',
-  swiftCode: ''
+  swiftCode: '',
 })
 
 // Computed properties for location options
@@ -254,11 +100,7 @@ const hasStateOptions = computed(() => states.value.length > 0)
 const hasCityOptions = computed(() => cities.value.length > 0)
 
 // Helper functions for cascading location selects
-const loadCitiesForState = async (
-  countryCode: string | null | undefined,
-  stateIsoCode: string | null | undefined,
-  preserveExisting = false
-) => {
+async function loadCitiesForState(countryCode: string | null | undefined, stateIsoCode: string | null | undefined, preserveExisting = false) {
   if (!countryCode || !stateIsoCode) {
     cities.value = []
     selectedCityName.value = null
@@ -270,11 +112,11 @@ const loadCitiesForState = async (
 
   try {
     const list = await getCitiesOfState(countryCode, stateIsoCode)
-    const cityList = list.slice().sort((a, b) => a.name.localeCompare(b.name))
-    cities.value = cityList.map(city => ({ name: city.name }))
+    const cityList = [...list].sort((a: CityOption, b: CityOption) => a.name.localeCompare(b.name))
+    cities.value = cityList.map((city: CityOption) => ({ name: city.name }))
 
     if (preserveExisting && recipientForm.recipientCity) {
-      const matchedCity = cityList.find(city => city.name === recipientForm.recipientCity)
+      const matchedCity = cityList.find((city: CityOption) => city.name === recipientForm.recipientCity)
       if (matchedCity) {
         selectedCityName.value = matchedCity.name
         return
@@ -283,7 +125,8 @@ const loadCitiesForState = async (
 
     selectedCityName.value = null
     recipientForm.recipientCity = ''
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error loading cities for state:', error)
     cities.value = []
     selectedCityName.value = null
@@ -293,10 +136,7 @@ const loadCitiesForState = async (
   }
 }
 
-const loadCitiesForCountry = async (
-  countryCode: string | null | undefined,
-  preserveExisting = false
-) => {
+async function loadCitiesForCountry(countryCode: string | null | undefined, preserveExisting = false) {
   if (!countryCode) {
     cities.value = []
     selectedCityName.value = null
@@ -308,11 +148,11 @@ const loadCitiesForCountry = async (
 
   try {
     const list = await getCitiesOfCountry(countryCode)
-    const cityList = list.slice().sort((a, b) => a.name.localeCompare(b.name))
-    cities.value = cityList.map(city => ({ name: city.name }))
+    const cityList = [...list].sort((a: CityOption, b: CityOption) => a.name.localeCompare(b.name))
+    cities.value = cityList.map((city: CityOption) => ({ name: city.name }))
 
     if (preserveExisting && recipientForm.recipientCity) {
-      const matchedCity = cityList.find(city => city.name === recipientForm.recipientCity)
+      const matchedCity = cityList.find((city: CityOption) => city.name === recipientForm.recipientCity)
       if (matchedCity) {
         selectedCityName.value = matchedCity.name
         return
@@ -321,7 +161,8 @@ const loadCitiesForCountry = async (
 
     selectedCityName.value = null
     recipientForm.recipientCity = ''
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error loading cities for country:', error)
     cities.value = []
     selectedCityName.value = null
@@ -331,7 +172,7 @@ const loadCitiesForCountry = async (
   }
 }
 
-const loadStatesForCountry = async (countryCode: string | null | undefined, preserveExisting = false) => {
+async function loadStatesForCountry(countryCode: string | null | undefined, preserveExisting = false) {
   if (!countryCode) {
     states.value = []
     selectedStateCode.value = null
@@ -388,7 +229,8 @@ const loadStatesForCountry = async (countryCode: string | null | undefined, pres
     selectedStateCode.value = null
     recipientForm.recipientProvince = ''
     await loadCitiesForState(countryCode, undefined, false)
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error loading states for country:', error)
     states.value = []
     selectedStateCode.value = null
@@ -411,7 +253,8 @@ watch(
       recipientForm.recipientProvince = ''
       if (states.value.length === 0) {
         await loadCitiesForCountry(selectedCountryCode.value, !oldCode)
-      } else {
+      }
+      else {
         await loadCitiesForState(selectedCountryCode.value, undefined, false)
       }
       return
@@ -422,24 +265,24 @@ watch(
     const stateCode = stateEntry?.isoCode || newCode
     recipientForm.recipientProvince = `${selectedCountryCode.value}_${stateCode}`
     await loadCitiesForState(selectedCountryCode.value, newCode, !oldCode)
-  }
+  },
 )
 
 // Watch for city changes
 watch(
   selectedCityName,
-  newCity => {
+  (newCity) => {
     recipientForm.recipientCity = newCity || ''
-  }
+  },
 )
 
 // Initialize phone area codes using library
-const initializePhoneAreaCodes = async () => {
+async function initializePhoneAreaCodes() {
   try {
     // Get all countries from geo service
     const countries = await getGeoCountries()
-    const areaCodeList: Array<{ label: string; value: string }> = []
-    const callingCodeMap = new Map<string, { name: string; code: string }>()
+    const areaCodeList: Array<{ label: string, value: string }> = []
+    const callingCodeMap = new Map<string, { name: string, code: string }>()
 
     // Get calling code for each country using libphonenumber-js
     for (const country of countries) {
@@ -451,34 +294,38 @@ const initializePhoneAreaCodes = async () => {
           if (!callingCodeMap.has(code) || country.code === 'HK') {
             callingCodeMap.set(code, {
               name: country.name,
-              code: country.code
+              code: country.code,
             })
           }
         }
-      } catch (error) {
+      }
+      catch {
         // Skip countries without calling code
         console.warn(`No calling code for ${country.code}: ${country.name}`)
       }
     }
 
     // Build area code list
-    callingCodeMap.forEach(({ name, code: countryCode }, callingCode) => {
+    callingCodeMap.forEach(({ name, code: _countryCode }, callingCode) => {
       areaCodeList.push({
         label: `${name} (${callingCode})`,
-        value: callingCode
+        value: callingCode,
       })
     })
 
     // Sort by country name, put Hong Kong first
     areaCodeList.sort((a, b) => {
-      if (a.value === '+852') return -1
-      if (b.value === '+852') return 1
+      if (a.value === '+852')
+        return -1
+      if (b.value === '+852')
+        return 1
       return a.label.localeCompare(b.label)
     })
 
     phoneAreaCodes.value = areaCodeList
     console.log('Phone area codes initialized from library:', areaCodeList.length, 'codes')
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error initializing phone area codes:', error)
     // Fallback to common area codes
     phoneAreaCodes.value = [
@@ -493,13 +340,13 @@ const initializePhoneAreaCodes = async () => {
       { label: 'Canada (+1)', value: '+1' },
       { label: 'Taiwan (+886)', value: '+886' },
       { label: 'Malaysia (+60)', value: '+60' },
-      { label: 'Thailand (+66)', value: '+66' }
+      { label: 'Thailand (+66)', value: '+66' },
     ]
   }
 }
 
 // Initialize location data (Hong Kong only)
-const initializeLocationData = async () => {
+async function initializeLocationData() {
   try {
     // Country is fixed to Hong Kong
     selectedCountryCode.value = 'HK'
@@ -509,18 +356,19 @@ const initializeLocationData = async () => {
 
     // Load Hong Kong states/cities
     await loadStatesForCountry('HK', false)
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error initializing location data:', error)
   }
 }
 
 // Reset recipient form
-const resetRecipientForm = () => {
+function resetRecipientForm() {
   // Reset form
-  Object.keys(recipientForm).forEach(key => {
+  Object.keys(recipientForm).forEach((key) => {
     recipientForm[key as keyof SaveRecipientParams] = '' as any
   })
-  Object.keys(recipientErrors).forEach(key => {
+  Object.keys(recipientErrors).forEach((key) => {
     recipientErrors[key as keyof typeof recipientErrors] = ''
   })
   // Reset location selections to default (Hong Kong)
@@ -540,8 +388,8 @@ const resetRecipientForm = () => {
 }
 
 // Validate recipient form
-const validateRecipientForm = () => {
-  Object.keys(recipientErrors).forEach(key => {
+function validateRecipientForm() {
+  Object.keys(recipientErrors).forEach((key) => {
     recipientErrors[key as keyof typeof recipientErrors] = ''
   })
 
@@ -570,7 +418,8 @@ const validateRecipientForm = () => {
   if (!phoneNumber.value || phoneNumber.value.trim() === '') {
     recipientErrors.reservedPhoneNumber = 'Phone number is required'
     isValid = false
-  } else {
+  }
+  else {
     // Save only phone number without area code
     recipientForm.reservedPhoneNumber = phoneNumber.value.trim()
   }
@@ -578,7 +427,8 @@ const validateRecipientForm = () => {
   if (!selectedCountryCode.value) {
     recipientErrors.recipientLocation = 'Country is required'
     isValid = false
-  } else {
+  }
+  else {
     recipientForm.recipientLocation = selectedCountryCode.value
   }
 
@@ -587,20 +437,24 @@ const validateRecipientForm = () => {
     if (!selectedStateCode.value) {
       recipientErrors.recipientProvince = 'Province/State is required'
       isValid = false
-    } else {
+    }
+    else {
       recipientForm.recipientProvince = `${selectedCountryCode.value}_${selectedStateCode.value}`
     }
-  } else {
+  }
+  else {
     // If manually entering, ensure format is {countryCode}_{value}
     if (!recipientForm.recipientProvince || recipientForm.recipientProvince.trim() === '') {
       recipientErrors.recipientProvince = 'Province/State is required'
       isValid = false
-    } else {
+    }
+    else {
       // If not already in format, prepend country code
       const provinceValue = recipientForm.recipientProvince.trim()
       if (!provinceValue.includes('_')) {
         recipientForm.recipientProvince = `${selectedCountryCode.value}_${provinceValue}`
-      } else if (!provinceValue.startsWith(`${selectedCountryCode.value}_`)) {
+      }
+      else if (!provinceValue.startsWith(`${selectedCountryCode.value}_`)) {
         // If has underscore but wrong country code, fix it
         const parts = provinceValue.split('_')
         recipientForm.recipientProvince = `${selectedCountryCode.value}_${parts.slice(1).join('_')}`
@@ -632,13 +486,13 @@ const validateRecipientForm = () => {
 }
 
 // Save recipient
-const handleSave = async () => {
+async function handleSave() {
   if (!validateRecipientForm()) {
     toast.add({
       severity: 'warn',
       summary: t('common.validationError'),
       detail: t('recipientForm.fillRequiredFields'),
-      life: 3000
+      life: 3000,
     })
     return
   }
@@ -651,7 +505,7 @@ const handleSave = async () => {
       ...recipientForm,
       recipientCity: recipientForm.recipientCity && recipientForm.recipientCity.trim() !== ''
         ? recipientForm.recipientCity.trim()
-        : null
+        : null,
     }
 
     console.log('Saving recipient information...', submitData)
@@ -663,7 +517,7 @@ const handleSave = async () => {
         severity: 'success',
         summary: t('common.success'),
         detail: t('recipientForm.savedSuccess'),
-        life: 3000
+        life: 3000,
       })
 
       // Reset form
@@ -672,24 +526,27 @@ const handleSave = async () => {
       // Close dialog and emit saved event
       visible.value = false
       emit('saved')
-    } else {
+    }
+    else {
       throw new Error(response.msg || 'Failed to save recipient')
     }
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error saving recipient:', error)
     toast.add({
       severity: 'error',
       summary: t('common.error'),
       detail: (error as any)?.message || t('recipientForm.saveFailed'),
-      life: 3000
+      life: 3000,
     })
-  } finally {
+  }
+  finally {
     savingRecipient.value = false
   }
 }
 
 // Handle dialog close
-const handleClose = () => {
+function handleClose() {
   resetRecipientForm()
   visible.value = false
 }
@@ -707,6 +564,195 @@ watch(() => props.visible, (newValue) => {
   }
 })
 </script>
+
+<template>
+  <Dialog
+    v-model:visible="visible" modal :header="t('withdraw.addRecipient')" :style="{ width: '90vw', maxWidth: '800px' }"
+    :closable="true" @hide="handleClose"
+  >
+    <template #default>
+      <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Bank Name -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              {{ t('recipientForm.bankName') }} <span class="text-red-500">*</span>
+            </label>
+            <div ref="bankDropdownWrapper" class="w-full bank-dropdown-wrapper">
+              <Dropdown
+                v-model="recipientForm.bankName" :options="bankNames" :placeholder="t('recipientForm.selectBank')"
+                class="w-full bank-dropdown" filter show-clear :class="{ 'p-invalid': recipientErrors.bankName }"
+                :panel-style="bankDropdownPanelStyle"
+              >
+                <template #option="slotProps">
+                  <div class="truncate bank-option text-xs">
+                    {{ slotProps.option }}
+                  </div>
+                </template>
+                <template #value="slotProps">
+                  <div class="truncate w-full">
+                    {{ slotProps.value || t('recipientForm.selectBank') }}
+                  </div>
+                </template>
+              </Dropdown>
+            </div>
+            <small v-if="recipientErrors.bankName" class="text-red-500 text-xs mt-1">{{
+              recipientErrors.bankName }}</small>
+          </div>
+
+          <!-- Bank Location (Hidden but still in form data) -->
+          <div class="hidden">
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              {{ t('recipientForm.bankLocation') }} <span class="text-red-500">*</span>
+            </label>
+            <InputText
+              v-model="recipientForm.bankLocation" :placeholder="t('recipientForm.enterBankLocation')" class="w-full" disabled
+              :class="{ 'p-invalid': recipientErrors.bankLocation }"
+            />
+            <small v-if="recipientErrors.bankLocation" class="text-red-500 text-xs mt-1">{{
+              recipientErrors.bankLocation }}</small>
+          </div>
+
+          <!-- Currency -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              {{ t('recipientForm.currency') }} <span class="text-red-500">*</span>
+            </label>
+            <Dropdown
+              v-model="recipientForm.currency" :options="currencyOptions" placeholder="Select currency"
+              class="w-full" filter show-clear :class="{ 'p-invalid': recipientErrors.currency }"
+            />
+            <small v-if="recipientErrors.currency" class="text-red-500 text-xs mt-1">{{
+              recipientErrors.currency }}</small>
+          </div>
+
+          <!-- Phone Number -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              {{ t('recipientForm.phoneNumber') }} <span class="text-red-500">*</span>
+            </label>
+            <div class="flex gap-2">
+              <Dropdown
+                v-model="selectedPhoneAreaCode" :options="phoneAreaCodes" option-label="label"
+                option-value="value" :placeholder="t('recipientForm.code')" class="w-32" filter show-clear
+                :class="{ 'p-invalid': recipientErrors.phoneAreaCode }"
+              >
+                <template #value="slotProps">
+                  <span v-if="slotProps.value">{{ slotProps.value }}</span>
+                  <span v-else>{{ t('recipientForm.code') }}</span>
+                </template>
+              </Dropdown>
+              <InputText
+                v-model="phoneNumber" :placeholder="t('recipientForm.enterPhoneNumber')" class="flex-1"
+                :class="{ 'p-invalid': recipientErrors.reservedPhoneNumber }"
+              />
+            </div>
+            <small
+              v-if="recipientErrors.phoneAreaCode || recipientErrors.reservedPhoneNumber"
+              class="text-red-500 text-xs mt-1"
+            >
+              {{ recipientErrors.phoneAreaCode || recipientErrors.reservedPhoneNumber }}
+            </small>
+          </div>
+
+          <!-- Country (Fixed to Hong Kong) -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              {{ t('recipientForm.country') }} <span class="text-red-500">*</span>
+            </label>
+            <InputText
+              value="Hong Kong" readonly class="w-full bg-gray-100 dark:bg-gray-700 cursor-not-allowed"
+              :class="{ 'p-invalid': recipientErrors.recipientLocation }"
+            />
+            <small v-if="recipientErrors.recipientLocation" class="text-red-500 text-xs mt-1">{{
+              recipientErrors.recipientLocation }}</small>
+          </div>
+
+          <!-- Recipient Province/State -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              {{ t('recipientForm.provinceState') }} <span class="text-red-500">*</span>
+            </label>
+            <Dropdown
+              v-if="hasStateOptions" v-model="selectedStateCode" :options="states" option-label="name"
+              option-value="isoCode" :placeholder="t('recipientForm.selectStateOrProvince')" class="w-full" filter show-clear
+              :class="{ 'p-invalid': recipientErrors.recipientProvince }"
+            />
+            <InputText
+              v-else v-model="recipientForm.recipientProvince" :placeholder="t('recipientForm.enterProvince')" class="w-full"
+              :class="{ 'p-invalid': recipientErrors.recipientProvince }"
+            />
+            <small v-if="recipientErrors.recipientProvince" class="text-red-500 text-xs mt-1">{{
+              recipientErrors.recipientProvince }}</small>
+          </div>
+
+          <!-- Recipient City -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              {{ t('recipientForm.city') }}
+            </label>
+            <Dropdown
+              v-if="hasCityOptions" v-model="selectedCityName" disabled :options="cities" option-label="name"
+              option-value="name" :placeholder="t('recipientForm.selectCity')" class="w-full" filter show-clear
+              :class="{ 'p-invalid': recipientErrors.recipientCity }"
+            />
+            <InputText
+              v-else v-model="recipientForm.recipientCity" disabled :placeholder="t('recipientForm.enterCity')" class="w-full"
+              :class="{ 'p-invalid': recipientErrors.recipientCity }"
+            />
+            <small v-if="recipientErrors.recipientCity" class="text-red-500 text-xs mt-1">{{
+              recipientErrors.recipientCity }}</small>
+          </div>
+
+          <!-- Recipient Address -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              {{ t('recipientForm.recipientAddress') }} <span class="text-red-500">*</span>
+            </label>
+            <InputText
+              v-model="recipientForm.recipientAddress" :placeholder="t('recipientForm.enterAddress')" class="w-full"
+              :class="{ 'p-invalid': recipientErrors.recipientAddress }"
+            />
+            <small v-if="recipientErrors.recipientAddress" class="text-red-500 text-xs mt-1">{{
+              recipientErrors.recipientAddress }}</small>
+          </div>
+
+          <!-- Bank Account Number -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              {{ t('recipientForm.bankAccountNumber') }} <span class="text-red-500">*</span>
+            </label>
+            <InputText
+              v-model="recipientForm.bankAccountNumber" :placeholder="t('recipientForm.enterBankAccountNumber')" class="w-full"
+              :class="{ 'p-invalid': recipientErrors.bankAccountNumber }"
+            />
+            <small v-if="recipientErrors.bankAccountNumber" class="text-red-500 text-xs mt-1">{{
+              recipientErrors.bankAccountNumber }}</small>
+          </div>
+
+          <!-- SWIFT Code -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              {{ t('recipientForm.swiftCode') }} <span class="text-red-500">*</span>
+            </label>
+            <InputText
+              v-model="recipientForm.swiftCode" :placeholder="t('recipientForm.enterSwiftCode')" class="w-full"
+              :class="{ 'p-invalid': recipientErrors.swiftCode }"
+            />
+            <small v-if="recipientErrors.swiftCode" class="text-red-500 text-xs mt-1">{{
+              recipientErrors.swiftCode }}</small>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template #footer>
+      <div class="flex items-center justify-end gap-2">
+        <Button :label="t('common.cancel')" icon="pi pi-times" severity="secondary" @click="handleClose" />
+        <Button :label="t('recipientForm.saveRecipient')" icon="pi pi-check" :loading="savingRecipient" @click="handleSave" />
+      </div>
+    </template>
+  </Dialog>
+</template>
 
 <style scoped>
 .bank-dropdown-wrapper {

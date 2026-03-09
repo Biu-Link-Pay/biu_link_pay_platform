@@ -1,72 +1,5 @@
-<template>
-  <!-- Floating contact entry -->
-  <div>
-    <!-- Mobile overlay background -->
-    <transition name="contact-fade">
-      <div v-if="isMobilePanelOpen" class="fixed inset-0 bg-black/40 md:hidden z-40" @click="closeMobilePanel"></div>
-    </transition>
-
-    <!-- Mobile button and panel -->
-    <div class="md:hidden fixed right-4 bottom-24 z-50 flex flex-col items-end space-y-3">
-      <transition name="mobile-panel">
-        <div v-if="isMobilePanelOpen"
-          class="contact-mobile-panel w-72 bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-4">
-          <div class="flex items-center justify-between mb-3">
-            <div>
-              <p class="text-sm font-semibold text-gray-900 dark:text-white">{{ t('contactUs.contactUs') }}</p>
-              <p class="text-xs text-gray-500 dark:text-gray-400">{{ t('contactUs.contactUsDesc') }}</p>
-            </div>
-            <button class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200" :aria-label="t('contactUs.close')"
-              @click="closeMobilePanel">
-              <i class="pi pi-times text-sm"></i>
-            </button>
-          </div>
-          <div class="space-y-2">
-            <a v-for="email in contactEmails" :key="email" :href="`mailto:${email}`"
-              class="flex items-center space-x-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer group">
-              <i class="pi pi-envelope text-gray-500 dark:text-gray-400 flex-shrink-0 text-xs"></i>
-              <span class="text-xs font-medium text-gray-900 dark:text-white break-all flex-1">{{ email }}</span>
-              <i
-                class="pi pi-external-link text-xs text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors flex-shrink-0"></i>
-            </a>
-          </div>
-        </div>
-      </transition>
-
-      <button
-        class="w-14 h-14 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95"
-        :aria-label="t('contactUs.contactUs')" @click="toggleMobilePanel">
-        <i class="pi pi-envelope text-xl"></i>
-      </button>
-    </div>
-
-    <!-- Desktop slide-out panel -->
-    <div class="hidden md:flex fixed right-0 top-1/2 -translate-y-1/2 transform z-50 pointer-events-none">
-      <div class="contact-desktop-panel pointer-events-auto" :class="{ 'is-visible': isPopoverVisible }" @mouseleave="hidePopover">
-        <div class="contact-panel-handle" @mouseenter="showPopover">
-          <i class="pi pi-envelope text-lg"></i>
-          <span>{{ t('contactUs.contact') }}</span>
-        </div>
-        <div class="contact-panel-body bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700">
-          <p class="text-sm font-semibold text-gray-900 dark:text-white mb-2">{{ t('contactUs.contactUs') }}</p>
-          <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">{{ t('contactUs.contactUsDesc') }}</p>
-          <div class="space-y-2">
-            <a v-for="email in contactEmails" :key="email" :href="`mailto:${email}`"
-              class="flex items-center space-x-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer group">
-              <i class="pi pi-envelope text-gray-500 dark:text-gray-400 flex-shrink-0 text-xs"></i>
-              <span class="text-xs font-medium text-gray-900 dark:text-white break-all flex-1">{{ email }}</span>
-              <i
-                class="pi pi-external-link text-xs text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors flex-shrink-0"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
-import { ref, onUnmounted } from 'vue'
+import { onUnmounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
@@ -80,7 +13,7 @@ const isMobilePanelOpen = ref(false)
 let hideTimer: ReturnType<typeof setTimeout> | null = null
 
 // Show popover
-const showPopover = () => {
+function showPopover() {
   // Clear any pending hide timer
   if (hideTimer) {
     clearTimeout(hideTimer)
@@ -90,7 +23,7 @@ const showPopover = () => {
 }
 
 // Hide popover with delay
-const hidePopover = () => {
+function hidePopover() {
   // Clear any existing timer
   if (hideTimer) {
     clearTimeout(hideTimer)
@@ -103,11 +36,11 @@ const hidePopover = () => {
 }
 
 // Mobile panel controls
-const toggleMobilePanel = () => {
+function toggleMobilePanel() {
   isMobilePanelOpen.value = !isMobilePanelOpen.value
 }
 
-const closeMobilePanel = () => {
+function closeMobilePanel() {
   isMobilePanelOpen.value = false
 }
 
@@ -118,6 +51,92 @@ onUnmounted(() => {
   }
 })
 </script>
+
+<template>
+  <!-- Floating contact entry -->
+  <div>
+    <!-- Mobile overlay background -->
+    <transition name="contact-fade">
+      <div v-if="isMobilePanelOpen" class="fixed inset-0 bg-black/40 md:hidden z-40" @click="closeMobilePanel" />
+    </transition>
+
+    <!-- Mobile button and panel -->
+    <div class="md:hidden fixed right-4 bottom-24 z-50 flex flex-col items-end space-y-3">
+      <transition name="mobile-panel">
+        <div
+          v-if="isMobilePanelOpen"
+          class="contact-mobile-panel w-72 bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-4"
+        >
+          <div class="flex items-center justify-between mb-3">
+            <div>
+              <p class="text-sm font-semibold text-gray-900 dark:text-white">
+                {{ t('contactUs.contactUs') }}
+              </p>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                {{ t('contactUs.contactUsDesc') }}
+              </p>
+            </div>
+            <button
+              class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200" :aria-label="t('contactUs.close')"
+              @click="closeMobilePanel"
+            >
+              <i class="pi pi-times text-sm" />
+            </button>
+          </div>
+          <div class="space-y-2">
+            <a
+              v-for="email in contactEmails" :key="email" :href="`mailto:${email}`"
+              class="flex items-center space-x-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer group"
+            >
+              <i class="pi pi-envelope text-gray-500 dark:text-gray-400 flex-shrink-0 text-xs" />
+              <span class="text-xs font-medium text-gray-900 dark:text-white break-all flex-1">{{ email }}</span>
+              <i
+                class="pi pi-external-link text-xs text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors flex-shrink-0"
+              />
+            </a>
+          </div>
+        </div>
+      </transition>
+
+      <button
+        class="w-14 h-14 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95"
+        :aria-label="t('contactUs.contactUs')" @click="toggleMobilePanel"
+      >
+        <i class="pi pi-envelope text-xl" />
+      </button>
+    </div>
+
+    <!-- Desktop slide-out panel -->
+    <div class="hidden md:flex fixed right-0 top-1/2 -translate-y-1/2 transform z-50 pointer-events-none">
+      <div class="contact-desktop-panel pointer-events-auto" :class="{ 'is-visible': isPopoverVisible }" @mouseleave="hidePopover">
+        <div class="contact-panel-handle" @mouseenter="showPopover">
+          <i class="pi pi-envelope text-lg" />
+          <span>{{ t('contactUs.contact') }}</span>
+        </div>
+        <div class="contact-panel-body bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700">
+          <p class="text-sm font-semibold text-gray-900 dark:text-white mb-2">
+            {{ t('contactUs.contactUs') }}
+          </p>
+          <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">
+            {{ t('contactUs.contactUsDesc') }}
+          </p>
+          <div class="space-y-2">
+            <a
+              v-for="email in contactEmails" :key="email" :href="`mailto:${email}`"
+              class="flex items-center space-x-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer group"
+            >
+              <i class="pi pi-envelope text-gray-500 dark:text-gray-400 flex-shrink-0 text-xs" />
+              <span class="text-xs font-medium text-gray-900 dark:text-white break-all flex-1">{{ email }}</span>
+              <i
+                class="pi pi-external-link text-xs text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors flex-shrink-0"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 
 <style scoped>
 .contact-desktop-panel {

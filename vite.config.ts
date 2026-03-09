@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import { fileURLToPath } from 'url'
-import { dirname, resolve } from 'path'
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
-import vueDevTools from 'vite-plugin-vue-devtools'
+import vue from '@vitejs/plugin-vue'
 import { visualizer } from 'rollup-plugin-visualizer'
+import { defineConfig } from 'vite'
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -27,8 +27,8 @@ export default defineConfig(({ mode }) => ({
   ].filter(Boolean),
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src')
-    }
+      '@': resolve(__dirname, 'src'),
+    },
   },
   build: {
     minify: 'terser',

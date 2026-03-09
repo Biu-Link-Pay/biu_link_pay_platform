@@ -1,7 +1,8 @@
-import axios, { type AxiosInstance, type AxiosRequestConfig, type AxiosResponse, type InternalAxiosRequestConfig } from 'axios'
+import type { AxiosInstance, AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
 import type { ApiResponse } from '@/types/api'
-import { getCachedFingerprintId, getFingerprintId } from '@/utils/fingerprint'
+import axios from 'axios'
 import { useAuthStore } from '@/stores/auth'
+import { getCachedFingerprintId, getFingerprintId } from '@/utils/fingerprint'
 
 // 是否正在刷新 token 的标记
 let isRefreshing = false
@@ -33,9 +34,9 @@ api.interceptors.request.use(
       config.headers.refresh_token = `${refreshToken}`
     }
     // 添加 fingerprint-id（除了登录相关的请求）
-    const isLoginRequest = config.url?.includes('/login') ||
-      config.url?.includes('/sendEmailCode') ||
-      config.url?.includes('/refreshToken')
+    const isLoginRequest = config.url?.includes('/login')
+      || config.url?.includes('/sendEmailCode')
+      || config.url?.includes('/refreshToken')
 
     if (!isLoginRequest && config.headers) {
       // 尝试获取缓存的指纹ID
@@ -45,7 +46,8 @@ api.interceptors.request.use(
       if (!fingerprintId) {
         try {
           fingerprintId = await getFingerprintId()
-        } catch (error) {
+        }
+        catch (error) {
           console.warn('Failed to get fingerprint ID:', error)
         }
       }
@@ -56,13 +58,13 @@ api.interceptors.request.use(
       }
     }
     if (!isLoginRequest && (!config.headers.token && !config.headers.refresh_token)) {
-      window.location.href = '/login';
+      window.location.href = '/login'
     }
     if (config.method === 'get' && !config.data) {
       // 对于没有 data 和 params 的 GET 请求，添加时间戳防止缓存
       config.params = {
         ...config.params,
-        _t: Date.now()
+        _t: Date.now(),
       }
     }
 
@@ -72,11 +74,11 @@ api.interceptors.request.use(
     // 对请求错误做些什么
     console.error('请求错误:', error)
     return Promise.reject(error)
-  }
+  },
 )
 
 // 清空认证信息并跳转登录页的辅助函数
-const clearAuthAndRedirectToLogin = () => {
+function clearAuthAndRedirectToLogin() {
   const authStore = useAuthStore()
 
   // 清空认证状态
@@ -106,7 +108,7 @@ api.interceptors.response.use(
     const data = response.data as ApiResponse
     if (data && data.code !== '0' && data.error) {
       // 检查是否是 token 未找到的错误 (4040002)
-      if (data.code === '4040002' || (data.msg && data.msg.toLowerCase().includes("token") && data.msg.toLowerCase().includes("not found"))) {
+      if (data.code === '4040002' || (data.msg && data.msg.toLowerCase().includes('token') && data.msg.toLowerCase().includes('not found'))) {
         console.error('Token未找到错误，跳转登录页:', data.msg)
         clearAuthAndRedirectToLogin()
         return Promise.reject(new Error(data.msg))
@@ -130,7 +132,7 @@ api.interceptors.response.use(
       const responseData = error.response.data as ApiResponse | undefined
       if (responseData && responseData.error) {
         // 检查是否是 token 未找到的错误 (4040002)
-        if (responseData.code === '4040002' || (responseData.msg && responseData.msg.toLowerCase().includes("token") && responseData.msg.toLowerCase().includes("not found"))) {
+        if (responseData.code === '4040002' || (responseData.msg && responseData.msg.toLowerCase().includes('token') && responseData.msg.toLowerCase().includes('not found'))) {
           console.error('Token未找到错误，跳转登录页:', responseData.msg)
           clearAuthAndRedirectToLogin()
           error.message = responseData.msg || 'Token not found'
@@ -139,17 +141,14 @@ api.interceptors.response.use(
       }
 
       switch (status) {
-        case 401:
-          // 检查是否是刷新token请求本身返回401
+        case 401: {
           const isRefreshTokenRequest = error.config?.url?.includes('/card/consume/login/refresh')
-
           if (isRefreshTokenRequest) {
             // 刷新token请求本身返回401，直接清空token信息并跳转登录页
             console.error('刷新token请求返回401，直接跳转登录页')
             clearAuthAndRedirectToLogin()
             break
           }
-
           // 未授权，尝试刷新 token
           if (!error.config._retry) {
             // 如果正在刷新，将请求加入队列，等待刷新完成
@@ -181,7 +180,7 @@ api.interceptors.response.use(
               const newToken = authStore.token || ''
 
               // 1. 执行队列中的请求
-              requests.forEach((cb) => cb(newToken))
+              requests.forEach(cb => cb(newToken))
               // 2. 清空队列
               requests = []
 
@@ -193,7 +192,8 @@ api.interceptors.response.use(
 
               // 重新发送原始请求
               return api.request(error.config)
-            } catch (refreshError) {
+            }
+            catch (refreshError) {
               console.error('刷新 token 失败:', refreshError)
 
               // 刷新失败，清空队列（后续会跳转登录）
@@ -201,15 +201,17 @@ api.interceptors.response.use(
 
               // 刷新失败，直接清空认证状态并跳转到登录页
               clearAuthAndRedirectToLogin()
-            } finally {
+            }
+            finally {
               isRefreshing = false // 释放刷新锁
             }
-          } else {
-            // 已经重试过，仍然401，直接清空认证状态并跳转登录
+          }
+          else {
             console.error('Token刷新后仍然401，跳转登录页')
             clearAuthAndRedirectToLogin()
           }
           break
+        }
         case 403:
           error.message = 'Access denied'
           break
@@ -225,16 +227,18 @@ api.interceptors.response.use(
         default:
           error.message = `Request failed with status ${status}`
       }
-    } else if (error.request) {
+    }
+    else if (error.request) {
       // 请求已发出，但没有收到响应
       error.message = 'The system is updating. Please try again later'
-    } else {
+    }
+    else {
       // 发生了一些问题，触发了错误
       error.message = `Request configuration error: ${error.message}`
     }
 
     return Promise.reject(error)
-  }
+  },
 )
 
 // API 服务类
@@ -250,12 +254,12 @@ export class ApiService {
   }
 
   // 创建文章
-  async createPost(data: { title: string; body: string; userId: number }) {
+  async createPost(data: { title: string, body: string, userId: number }) {
     return api.post('/posts', data)
   }
 
   // 更新文章
-  async updatePost(id: number, data: { title: string; body: string }) {
+  async updatePost(id: number, data: { title: string, body: string }) {
     return api.put(`/posts/${id}`, data)
   }
 

@@ -1,5 +1,5 @@
 // 格式化日期
-export const formatDate = (date: string | Date, format: string = 'YYYY-MM-DD HH:mm:ss'): string => {
+export function formatDate(date: string | Date, format: string = 'YYYY-MM-DD HH:mm:ss'): string {
   const d = new Date(date)
 
   const year = d.getFullYear()
@@ -19,10 +19,7 @@ export const formatDate = (date: string | Date, format: string = 'YYYY-MM-DD HH:
 }
 
 // 防抖函数
-export const debounce = <T extends (...args: any[]) => any>(
-  func: T,
-  wait: number
-): ((...args: Parameters<T>) => void) => {
+export function debounce<T extends (...args: any[]) => any>(func: T, wait: number): ((...args: Parameters<T>) => void) {
   let timeout: NodeJS.Timeout | null = null
 
   return (...args: Parameters<T>) => {
@@ -37,10 +34,7 @@ export const debounce = <T extends (...args: any[]) => any>(
 }
 
 // 节流函数
-export const throttle = <T extends (...args: any[]) => any>(
-  func: T,
-  limit: number
-): ((...args: Parameters<T>) => void) => {
+export function throttle<T extends (...args: any[]) => any>(func: T, limit: number): ((...args: Parameters<T>) => void) {
   let inThrottle: boolean
 
   return (...args: Parameters<T>) => {
@@ -53,7 +47,7 @@ export const throttle = <T extends (...args: any[]) => any>(
 }
 
 // 深拷贝
-export const deepClone = <T>(obj: T): T => {
+export function deepClone<T>(obj: T): T {
   if (obj === null || typeof obj !== 'object') {
     return obj
   }
@@ -62,14 +56,14 @@ export const deepClone = <T>(obj: T): T => {
     return new Date(obj.getTime()) as T
   }
 
-  if (obj instanceof Array) {
+  if (Array.isArray(obj)) {
     return obj.map(item => deepClone(item)) as T
   }
 
   if (typeof obj === 'object') {
     const clonedObj = {} as T
     for (const key in obj) {
-      if (obj.hasOwnProperty(key)) {
+      if (Object.prototype.hasOwnProperty.call(obj, key)) {
         clonedObj[key] = deepClone(obj[key])
       }
     }
@@ -80,7 +74,7 @@ export const deepClone = <T>(obj: T): T => {
 }
 
 // 生成随机字符串
-export const generateRandomString = (length: number = 8): string => {
+export function generateRandomString(length: number = 8): string {
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
   let result = ''
 
@@ -92,46 +86,47 @@ export const generateRandomString = (length: number = 8): string => {
 }
 
 // 验证邮箱格式
-export const isValidEmail = (email: string): boolean => {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+export function isValidEmail(email: string): boolean {
+  const emailRegex = /^[^\s@]+@[^\s@][^\s.@]*\.[^\s@]+$/
   return emailRegex.test(email)
 }
 
 // 验证手机号格式（中国大陆）
-export const isValidPhone = (phone: string): boolean => {
+export function isValidPhone(phone: string): boolean {
   const phoneRegex = /^1[3-9]\d{9}$/
   return phoneRegex.test(phone)
 }
 
 // 格式化文件大小
-export const formatFileSize = (bytes: number): string => {
-  if (bytes === 0) return '0 Bytes'
+export function formatFileSize(bytes: number): string {
+  if (bytes === 0)
+    return '0 Bytes'
 
   const k = 1024
   const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB']
   const i = Math.floor(Math.log(bytes) / Math.log(k))
 
-  return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i]
+  return `${Number.parseFloat((bytes / k ** i).toFixed(2))} ${sizes[i]}`
 }
 
 // 获取文件扩展名
-export const getFileExtension = (filename: string): string => {
+export function getFileExtension(filename: string): string {
   return filename.slice((filename.lastIndexOf('.') - 1 >>> 0) + 2)
 }
 
 // 生成唯一 ID
-export const generateId = (): string => {
+export function generateId(): string {
   return Date.now().toString(36) + Math.random().toString(36).substr(2)
 }
 
 // 数组去重
-export const uniqueArray = <T>(array: T[], key?: keyof T): T[] => {
+export function uniqueArray<T>(array: T[], key?: keyof T): T[] {
   if (!key) {
     return [...new Set(array)]
   }
 
   const seen = new Set()
-  return array.filter(item => {
+  return array.filter((item) => {
     const value = item[key]
     if (seen.has(value)) {
       return false
@@ -142,10 +137,10 @@ export const uniqueArray = <T>(array: T[], key?: keyof T): T[] => {
 }
 
 // 对象转 URL 查询参数
-export const objectToQueryString = (obj: Record<string, any>): string => {
+export function objectToQueryString(obj: Record<string, any>): string {
   const params = new URLSearchParams()
 
-  Object.keys(obj).forEach(key => {
+  Object.keys(obj).forEach((key) => {
     const value = obj[key]
     if (value !== null && value !== undefined && value !== '') {
       params.append(key, String(value))
@@ -156,7 +151,7 @@ export const objectToQueryString = (obj: Record<string, any>): string => {
 }
 
 // 从 URL 查询参数获取对象
-export const queryStringToObject = (queryString: string): Record<string, string> => {
+export function queryStringToObject(queryString: string): Record<string, string> {
   const params = new URLSearchParams(queryString)
   const obj: Record<string, string> = {}
 
@@ -168,17 +163,17 @@ export const queryStringToObject = (queryString: string): Record<string, string>
 }
 
 // 首字母大写
-export const capitalize = (str: string): string => {
+export function capitalize(str: string): string {
   return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
 }
 
 // 驼峰转横线
-export const camelToKebab = (str: string): string => {
+export function camelToKebab(str: string): string {
   return str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase()
 }
 
 // 横线转驼峰
-export const kebabToCamel = (str: string): string => {
+export function kebabToCamel(str: string): string {
   return str.replace(/-([a-z])/g, (match, letter) => letter.toUpperCase())
 }
 

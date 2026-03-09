@@ -39,9 +39,10 @@ export class FingerprintUtils {
         localStorage.setItem('fingerprint-id', this.fingerprintId)
         return this.fingerprintId
       }
-      
+
       throw new Error('Failed to generate fingerprint ID')
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Failed to get fingerprint:', error)
 
       // 如果获取失败，尝试从localStorage获取

@@ -5,7 +5,7 @@ import { setupRouterGuards } from './guards'
 const routes = [
   {
     path: '/',
-    redirect: '/apply-card'
+    redirect: '/apply-card',
   },
   {
     path: '/login',
@@ -13,8 +13,8 @@ const routes = [
     component: Login,
     meta: {
       title: 'Login',
-      requiresAuth: false
-    }
+      requiresAuth: false,
+    },
   },
   {
     path: '/apply-card',
@@ -22,8 +22,8 @@ const routes = [
     component: () => import('@/views/ApplyCardList.vue'),
     meta: {
       title: 'Apply Card',
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: '/card-bin-selection',
@@ -31,8 +31,8 @@ const routes = [
     component: () => import('@/views/CardBinSelection.vue'),
     meta: {
       title: 'Select Card BIN',
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: '/card-holder-info',
@@ -41,8 +41,8 @@ const routes = [
     meta: {
       title: 'Card Holder Information',
       requiresAuth: true,
-      keepAlive: true
-    }
+      keepAlive: true,
+    },
   },
   {
     path: '/payment-method-selection',
@@ -50,8 +50,8 @@ const routes = [
     component: () => import('@/views/PaymentMethodSelection.vue'),
     meta: {
       title: 'Payment Method Selection',
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: '/crypto-payment',
@@ -59,8 +59,8 @@ const routes = [
     component: () => import('@/views/CryptoPayment.vue'),
     meta: {
       title: 'Crypto Payment',
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: '/my-cards',
@@ -68,8 +68,8 @@ const routes = [
     component: () => import('@/views/MyCards.vue'),
     meta: {
       title: 'My Cards',
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: '/payment-result',
@@ -77,8 +77,8 @@ const routes = [
     component: () => import('@/views/PaymentResult.vue'),
     meta: {
       title: 'Payment Result',
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: '/kyc-verification',
@@ -86,8 +86,8 @@ const routes = [
     component: () => import('@/views/KycVerification.vue'),
     meta: {
       title: 'KYC Verification',
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: '/personal-center',
@@ -95,8 +95,8 @@ const routes = [
     component: () => import('@/views/PersonalCenter.vue'),
     meta: {
       title: 'Personal Center',
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: '/withdraw',
@@ -104,8 +104,8 @@ const routes = [
     component: () => import('@/views/WithdrawOrder.vue'),
     meta: {
       title: 'Withdraw',
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: '/withdraw-settings',
@@ -114,8 +114,8 @@ const routes = [
     meta: {
       title: 'Withdraw Settings',
       requiresAuth: true,
-      keepAlive: true
-    }
+      keepAlive: true,
+    },
   },
   {
     path: '/delete-card',
@@ -123,8 +123,8 @@ const routes = [
     component: () => import('@/views/DeleteCard.vue'),
     meta: {
       title: 'Delete Card',
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: '/:pathMatch(.*)*',
@@ -132,14 +132,14 @@ const routes = [
     component: () => import('@/views/NotFound.vue'),
     meta: {
       title: 'Page Not Found',
-      requiresAuth: false
-    }
-  }
+      requiresAuth: false,
+    },
+  },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
 })
 
 // 设置路由守卫

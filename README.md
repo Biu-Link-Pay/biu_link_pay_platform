@@ -190,32 +190,6 @@ export const apiService = {
 ### 组件使用
 
 ```vue
-<template>
-  <div class="p-6">
-    <Card class="mb-4">
-      <template #content>
-        <div class="text-center">
-          <h2 class="text-2xl font-bold mb-4">计数器示例</h2>
-          <Button 
-            @click="increment" 
-            icon="pi pi-plus"
-            :label="`计数: ${count}`"
-            class="mb-4"
-          />
-          <div class="mt-4">
-            <Message 
-              v-if="showMessage"
-              severity="success" 
-              :closable="false"
-              text="计数器已更新！"
-            />
-          </div>
-        </div>
-      </template>
-    </Card>
-  </div>
-</template>
-
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useCounterStore } from '@/stores/counter'
@@ -225,7 +199,7 @@ const showMessage = ref(false)
 
 const count = computed(() => counterStore.count)
 
-const increment = () => {
+function increment() {
   counterStore.increment()
   showMessage.value = true
   setTimeout(() => {
@@ -233,6 +207,34 @@ const increment = () => {
   }, 2000)
 }
 </script>
+
+<template>
+  <div class="p-6">
+    <Card class="mb-4">
+      <template #content>
+        <div class="text-center">
+          <h2 class="text-2xl font-bold mb-4">
+            计数器示例
+          </h2>
+          <Button
+            icon="pi pi-plus"
+            :label="`计数: ${count}`"
+            class="mb-4"
+            @click="increment"
+          />
+          <div class="mt-4">
+            <Message
+              v-if="showMessage"
+              severity="success"
+              :closable="false"
+              text="计数器已更新！"
+            />
+          </div>
+        </div>
+      </template>
+    </Card>
+  </div>
+</template>
 ```
 
 ## 🤝 贡献指南

@@ -1,165 +1,12 @@
-<template>
-  <div
-    class="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-indigo-200 dark:from-gray-800 dark:via-blue-800 dark:to-purple-800 flex items-center justify-center p-4">
-    <!-- Logo -->
-    <div class="absolute left-4 top-4 lg:left-8 lg:top-8 z-10 flex items-center gap-2">
-      <img src="https://static.biulinkpay.com/logo/biu_blue.png" alt="BiulinkPay" class="w-10 lg:w-12"
-        loading="eager" />
-      <span class="text-[#007cc3] text-xl lg:text-2xl font-bold"
-        style="font-family: Alimama ShuHeiTi, Alimama ShuHeiTi;">
-        BiulinkPay
-      </span>
-    </div>
-
-    <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-6xl mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[600px]">
-        <!-- Left showcase area (Desktop) -->
-        <div class="hidden lg:block lg:pr-8 relative h-full">
-          <!-- Service Logo Area -->
-          <div class="relative h-full">
-            <!-- Service Logo -->
-            <img v-for="(service, index) in services" :key="index" :src="service.image" :alt="service.name"
-              class="absolute hover:opacity-100 transition-all duration-500 ease-out service-logo"
-              :class="[service.size, service.position, `surf-animation-${index}`]" :style="{
-                opacity: 1,
-              }" />
-          </div>
-        </div>
-
-        <!-- Mobile: Welcome Screen (Step 1) -->
-        <div v-if="!showMobileForm"
-          class="lg:hidden w-full flex flex-col items-center justify-between min-h-[600px] px-6 py-8">
-          <!-- Service Logo Area -->
-          <div class="relative w-full flex-1 flex items-center justify-center max-h-[450px]">
-            <!-- Service Logo -->
-            <img v-for="(service, index) in services" :key="index" :src="service.image" :alt="service.name"
-              class="absolute hover:opacity-100 transition-all duration-500 ease-out service-logo"
-              :class="[service.size, service.position, `surf-animation-${index}`]" :style="{
-                opacity: 1,
-              }" />
-          </div>
-
-          <!-- Welcome Text & Button Container -->
-          <div class="w-full space-y-6">
-            <!-- Welcome Text -->
-            <div class="text-center">
-              <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-                {{ t('login.welcome') }}
-              </h2>
-              <p class="text-base text-gray-600 dark:text-gray-400 px-4">
-                {{ t('login.welcomeDesc') }}
-              </p>
-            </div>
-
-            <!-- Login Button -->
-            <div class="w-full px-4">
-              <Button :label="t('login.getStarted')" icon="pi pi-arrow-right" iconPos="right" class="w-full" size="large"
-                severity="primary" @click="showMobileForm = true" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Right content area (Desktop + Mobile Step 2) -->
-        <div v-if="showMobileForm || !isMobile" class="w-full lg:pl-8" :class="{ 'lg:block': !isMobile }">
-          <!-- Login form -->
-          <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 lg:p-10 w-full max-w-md mx-auto lg:mx-0">
-            <!-- Title and Back Button -->
-            <div class="flex items-center justify-between mb-8">
-              <!-- Back button (Mobile only) -->
-              <button v-if="showMobileForm && isMobile" @click="handleBackClick"
-                class="lg:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                type="button">
-                <i class="pi pi-arrow-left text-gray-700 dark:text-gray-300"></i>
-              </button>
-              <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white"
-                :class="{ 'ml-2': showMobileForm && isMobile }">
-                {{ t('login.loginWithEmail') }}
-              </h1>
-              <div v-if="showMobileForm && isMobile" class="w-10"></div>
-            </div>
-
-            <!-- Login Form -->
-            <form class="space-y-8" @submit.prevent="handleSubmit">
-              <!-- Email Input -->
-              <div class="space-y-2">
-                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                  {{ t('login.pleaseEnterEmail') }}
-                </label>
-                <div class="relative">
-                  <InputText v-model="form.email" type="email" :placeholder="t('login.emailPlaceholder')"
-                    class="w-full text-base min-h-[48px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all duration-200"
-                    :class="{ 'border-red-500': errors.email }" :disabled="isLoading" />
-                  <i v-if="errors.email"
-                    class="pi pi-exclamation-triangle absolute right-3 top-1/2 transform -translate-y-1/2 text-red-500"></i>
-                </div>
-                <p v-if="errors.email" class="text-sm text-red-500">
-                  {{ errors.email }}
-                </p>
-              </div>
-
-              <!-- Verification Code Input -->
-              <div v-if="showVerificationCode" class="space-y-2">
-                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                  {{ t('login.pleaseEnterCode') }}
-                </label>
-                <div class="flex items-center gap-2 sm:gap-3 min-w-0">
-                  <InputText v-model="form.code" type="text" :placeholder="t('login.codePlaceholder')" maxlength="6"
-                    class="flex-1 min-w-0 text-base min-h-[48px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white text-center tracking-widest transition-all duration-200"
-                    :class="{ 'border-red-500': errors.code }" :disabled="isLoading" />
-                  <Button type="button" :label="countdown > 0 ? `${countdown}s` : t('login.resend')"
-                    :disabled="countdown > 0 || isLoading" severity="secondary"
-                    class="min-h-[48px] px-3 sm:px-4 whitespace-nowrap sm:min-w-[110px]" @click="resendCode" />
-                </div>
-                <p v-if="errors.code" class="text-sm text-red-500">
-                  {{ errors.code }}
-                </p>
-                <p class="text-sm text-gray-500 dark:text-gray-400">
-                  {{ t('login.verificationCodeSent', { email: form.email }) }}
-                </p>
-              </div>
-
-              <!-- Terms Agreement -->
-              <div class="flex items-start space-x-3">
-                <Checkbox v-model="form.agreeTerms" :binary="true" class="mt-1 checkbox-enhanced"
-                  :disabled="isLoading" />
-                <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  I have read and agree to BiuLinkPay
-                  <a href="https://static.biulinkpay.com/compliance/TermsOfService.html" target="_blank"
-                    rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">
-                    Terms of service
-                  </a>
-                  and
-                  <a href="https://static.biulinkpay.com/compliance/PrivacyPolicy.html" target="_blank"
-                    rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">
-                    Privacy Policy
-                  </a>
-                </p>
-              </div>
-              <p v-if="errors.agreeTerms" class="text-sm text-red-500">
-                {{ errors.agreeTerms }}
-              </p>
-
-              <!-- Submit Button -->
-              <Button type="submit" :label="buttonText" :loading="isLoading" :disabled="!form.agreeTerms"
-                class="bottom-button-primary text-base font-medium transition-all duration-200" severity="primary" />
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import { useCardStore } from '@/stores/card'
 import { useUserStore } from '@/stores/user'
-import { AuthUtils, RouteUtils } from '@/utils/auth'
-import { getFingerprintId, getCachedFingerprintId } from '@/utils/fingerprint'
+import { AuthUtils } from '@/utils/auth'
 
 const { t } = useI18n()
 const router = useRouter()
@@ -240,14 +87,14 @@ const services = ref([
 const form = ref({
   email: '',
   code: '',
-  agreeTerms: false
+  agreeTerms: false,
 })
 
 // Form validation errors
 const errors = ref({
   email: '',
   code: '',
-  agreeTerms: ''
+  agreeTerms: '',
 })
 
 // State
@@ -271,50 +118,55 @@ const isMobile = computed(() => {
 
 const buttonText = computed(() => {
   if (isLoading.value) {
-    return showVerificationCode.value ? 'Signing in...' : 'Sending...'
+    return showVerificationCode.value ? t('login.signingIn') : t('login.sending')
   }
-  return showVerificationCode.value ? 'Sign In' : 'Send Code'
+  return showVerificationCode.value ? t('login.signIn') : t('login.sendCode')
 })
 
 // Form validation
-const validateEmail = () => {
+function validateEmail() {
   if (!form.value.email) {
-    errors.value.email = 'Please enter email address'
+    errors.value.email = t('login.enterEmailAddress')
     return false
-  } else if (!AuthUtils.isValidEmail(form.value.email)) {
-    errors.value.email = 'Please enter a valid email address'
+  }
+  else if (!AuthUtils.isValidEmail(form.value.email)) {
+    errors.value.email = t('login.enterValidEmail')
     return false
-  } else {
+  }
+  else {
     errors.value.email = ''
     return true
   }
 }
 
-const validateCode = () => {
+function validateCode() {
   if (!form.value.code) {
-    errors.value.code = 'Please enter verification code'
+    errors.value.code = t('login.enterVerificationCode')
     return false
-  } else if (!AuthUtils.isValidCode(form.value.code)) {
-    errors.value.code = 'Please enter 6-digit verification code'
+  }
+  else if (!AuthUtils.isValidCode(form.value.code)) {
+    errors.value.code = t('login.enter6DigitCode')
     return false
-  } else {
+  }
+  else {
     errors.value.code = ''
     return true
   }
 }
 
-const validateTerms = () => {
+function validateTerms() {
   if (!form.value.agreeTerms) {
-    errors.value.agreeTerms = 'Please agree to the terms and conditions'
+    errors.value.agreeTerms = t('login.agreeToTerms')
     return false
-  } else {
+  }
+  else {
     errors.value.agreeTerms = ''
     return true
   }
 }
 
 // Countdown functionality
-const startCountdown = () => {
+function startCountdown() {
   const durationSeconds = 60
   countdownEndTime.value = Date.now() + durationSeconds * 1000
   updateCountdown()
@@ -322,8 +174,9 @@ const startCountdown = () => {
   countdownTimer = window.setInterval(updateCountdown, 300)
 }
 
-const updateCountdown = () => {
-  if (!countdownEndTime.value) return
+function updateCountdown() {
+  if (!countdownEndTime.value)
+    return
 
   const remainingMs = countdownEndTime.value - Date.now()
   const remainingSeconds = Math.max(0, Math.ceil(remainingMs / 1000))
@@ -335,7 +188,7 @@ const updateCountdown = () => {
   }
 }
 
-const clearCountdownTimer = () => {
+function clearCountdownTimer() {
   if (countdownTimer) {
     window.clearInterval(countdownTimer)
     countdownTimer = null
@@ -343,7 +196,7 @@ const clearCountdownTimer = () => {
 }
 
 // Send verification code
-const sendCode = async () => {
+async function sendCode() {
   if (!validateEmail()) {
     return
   }
@@ -360,31 +213,35 @@ const sendCode = async () => {
         severity: 'success',
         summary: t('login.codeSent'),
         detail: result.message,
-        life: 3000
+        life: 3000,
       })
-    } else {
+    }
+    else {
       toast.add({
         severity: 'error',
         summary: t('login.sendFailed'),
         detail: result.message,
-        life: 3000
+        life: 3000,
       })
     }
-  } catch (error) {
+  }
+  catch (error) {
     toast.add({
       severity: 'error',
       summary: t('login.sendFailed'),
       detail: (error as any)?.message || t('login.networkError'),
-      life: 3000
+      life: 3000,
     })
-  } finally {
+  }
+  finally {
     isLoading.value = false
   }
 }
 
 // Resend code
-const resendCode = async () => {
-  if (countdown.value > 0) return
+async function resendCode() {
+  if (countdown.value > 0)
+    return
   // 重新获取验证码前清空验证码输入与错误提示
   form.value.code = ''
   errors.value.code = ''
@@ -392,7 +249,7 @@ const resendCode = async () => {
 }
 
 // Login handling
-const login = async () => {
+async function login() {
   if (!validateCode() || !validateTerms()) {
     return
   }
@@ -403,7 +260,7 @@ const login = async () => {
     const result = await authStore.login({
       email: form.value.email,
       code: form.value.code,
-      license: licenseFromUrl.value || ''
+      license: licenseFromUrl.value || '',
     })
 
     if (result.success) {
@@ -411,7 +268,7 @@ const login = async () => {
         severity: 'success',
         summary: t('login.loginSuccess'),
         detail: result.message,
-        life: 3000
+        life: 3000,
       })
 
       // Clear card store cache to prevent showing previous user's data
@@ -420,28 +277,31 @@ const login = async () => {
 
       // Fetch user profile details after successful login
       await fetchUserProfileAndRedirect()
-    } else {
+    }
+    else {
       toast.add({
         severity: 'error',
         summary: t('login.loginFailed'),
         detail: result.message,
-        life: 3000
+        life: 3000,
       })
     }
-  } catch (error) {
+  }
+  catch (error) {
     toast.add({
       severity: 'error',
       summary: t('login.loginFailed'),
       detail: (error as any)?.message || t('login.networkError'),
-      life: 3000
+      life: 3000,
     })
-  } finally {
+  }
+  finally {
     isLoading.value = false
   }
 }
 
 // Fetch user profile and then check card list
-const fetchUserProfileAndRedirect = async () => {
+async function fetchUserProfileAndRedirect() {
   try {
     // First, fetch user profile details
     console.log('Fetching user profile details...')
@@ -449,14 +309,16 @@ const fetchUserProfileAndRedirect = async () => {
 
     if (profileResult.success) {
       console.log('User profile fetched successfully:', profileResult.data)
-    } else {
+    }
+    else {
       console.warn('Failed to fetch user profile:', profileResult.message)
       // Continue with navigation even if profile fetch fails
     }
 
     // Then check card list and decide navigation
     await checkCardListAndRedirect()
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error fetching user profile:', error)
     // Continue with card list check even if profile fetch fails
     await checkCardListAndRedirect()
@@ -464,7 +326,7 @@ const fetchUserProfileAndRedirect = async () => {
 }
 
 // Check card list and decide navigation
-const checkCardListAndRedirect = async () => {
+async function checkCardListAndRedirect() {
   try {
     // Get card list
     const result = await cardStore.fetchCardList()
@@ -475,17 +337,20 @@ const checkCardListAndRedirect = async () => {
         // Has cards, navigate to my cards page
         console.log('User has cards, redirecting to MyCards')
         router.push('/my-cards')
-      } else {
+      }
+      else {
         // No cards, navigate to apply card page
         console.log('User has no cards, redirecting to ApplyCardList')
         router.push('/apply-card')
       }
-    } else {
+    }
+    else {
       // Failed to get card list, default to apply card page
       console.log('Failed to fetch card list, redirecting to ApplyCardList')
       router.push('/apply-card')
     }
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error checking card list:', error)
     // On error, default to apply card page
     router.push('/apply-card')
@@ -493,28 +358,29 @@ const checkCardListAndRedirect = async () => {
 }
 
 // Handle form submit
-const handleSubmit = async () => {
+async function handleSubmit() {
   if (showVerificationCode.value) {
     await login()
-  } else {
+  }
+  else {
     await sendCode()
   }
 }
 
 // Handle back button click (mobile)
-const handleBackClick = () => {
+function handleBackClick() {
   showMobileForm.value = false
   // Reset form state
   showVerificationCode.value = false
   form.value = {
     email: '',
     code: '',
-    agreeTerms: false
+    agreeTerms: false,
   }
   errors.value = {
     email: '',
     code: '',
-    agreeTerms: ''
+    agreeTerms: '',
   }
   // Clear countdown timer
   clearCountdownTimer()
@@ -531,7 +397,7 @@ onMounted(() => {
   document.addEventListener('visibilitychange', handleVisibilityChange)
 })
 
-const handleVisibilityChange = () => {
+function handleVisibilityChange() {
   if (!document.hidden) {
     updateCountdown()
     // Restart interval if needed when returning to the page
@@ -546,6 +412,191 @@ onBeforeUnmount(() => {
   document.removeEventListener('visibilitychange', handleVisibilityChange)
 })
 </script>
+
+<template>
+  <div
+    class="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-indigo-200 dark:from-gray-800 dark:via-blue-800 dark:to-purple-800 flex items-center justify-center p-4"
+  >
+    <!-- Logo -->
+    <div class="absolute left-4 top-4 lg:left-8 lg:top-8 z-10 flex items-center gap-2">
+      <img
+        src="https://static.biulinkpay.com/logo/biu_blue.png" alt="BiulinkPay" class="w-10 lg:w-12"
+        loading="eager"
+      >
+      <span
+        class="text-[#007cc3] text-xl lg:text-2xl font-bold"
+        style="font-family: Alimama ShuHeiTi, Alimama ShuHeiTi;"
+      >
+        BiulinkPay
+      </span>
+    </div>
+
+    <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[600px]">
+        <!-- Left showcase area (Desktop) -->
+        <div class="hidden lg:block lg:pr-8 relative h-full">
+          <!-- Service Logo Area -->
+          <div class="relative h-full">
+            <!-- Service Logo -->
+            <img
+              v-for="(service, index) in services" :key="index" :src="service.image" :alt="service.name"
+              class="absolute hover:opacity-100 transition-all duration-500 ease-out service-logo"
+              :class="[service.size, service.position, `surf-animation-${index}`]" :style="{
+                opacity: 1,
+              }"
+            >
+          </div>
+        </div>
+
+        <!-- Mobile: Welcome Screen (Step 1) -->
+        <div
+          v-if="!showMobileForm"
+          class="lg:hidden w-full flex flex-col items-center justify-between min-h-[600px] px-6 py-8"
+        >
+          <!-- Service Logo Area -->
+          <div class="relative w-full flex-1 flex items-center justify-center max-h-[450px]">
+            <!-- Service Logo -->
+            <img
+              v-for="(service, index) in services" :key="index" :src="service.image" :alt="service.name"
+              class="absolute hover:opacity-100 transition-all duration-500 ease-out service-logo"
+              :class="[service.size, service.position, `surf-animation-${index}`]" :style="{
+                opacity: 1,
+              }"
+            >
+          </div>
+
+          <!-- Welcome Text & Button Container -->
+          <div class="w-full space-y-6">
+            <!-- Welcome Text -->
+            <div class="text-center">
+              <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-3">
+                {{ t('login.welcome') }}
+              </h2>
+              <p class="text-base text-gray-600 dark:text-gray-400 px-4">
+                {{ t('login.welcomeDesc') }}
+              </p>
+            </div>
+
+            <!-- Login Button -->
+            <div class="w-full px-4">
+              <Button
+                :label="t('login.getStarted')" icon="pi pi-arrow-right" icon-pos="right" class="w-full" size="large"
+                severity="primary" @click="showMobileForm = true"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right content area (Desktop + Mobile Step 2) -->
+        <div v-if="showMobileForm || !isMobile" class="w-full lg:pl-8" :class="{ 'lg:block': !isMobile }">
+          <!-- Login form -->
+          <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 lg:p-10 w-full max-w-md mx-auto lg:mx-0">
+            <!-- Title and Back Button -->
+            <div class="flex items-center justify-between mb-8">
+              <!-- Back button (Mobile only) -->
+              <button
+                v-if="showMobileForm && isMobile" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                type="button"
+                @click="handleBackClick"
+              >
+                <i class="pi pi-arrow-left text-gray-700 dark:text-gray-300" />
+              </button>
+              <h1
+                class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white"
+                :class="{ 'ml-2': showMobileForm && isMobile }"
+              >
+                {{ t('login.loginWithEmail') }}
+              </h1>
+              <div v-if="showMobileForm && isMobile" class="w-10" />
+            </div>
+
+            <!-- Login Form -->
+            <form class="space-y-8" @submit.prevent="handleSubmit">
+              <!-- Email Input -->
+              <div class="space-y-2">
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                  {{ t('login.pleaseEnterEmail') }}
+                </label>
+                <div class="relative">
+                  <InputText
+                    v-model="form.email" type="email" :placeholder="t('login.emailPlaceholder')"
+                    class="w-full text-base min-h-[48px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all duration-200"
+                    :class="{ 'border-red-500': errors.email }" :disabled="isLoading"
+                  />
+                  <i
+                    v-if="errors.email"
+                    class="pi pi-exclamation-triangle absolute right-3 top-1/2 transform -translate-y-1/2 text-red-500"
+                  />
+                </div>
+                <p v-if="errors.email" class="text-sm text-red-500">
+                  {{ errors.email }}
+                </p>
+              </div>
+
+              <!-- Verification Code Input -->
+              <div v-if="showVerificationCode" class="space-y-2">
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                  {{ t('login.pleaseEnterCode') }}
+                </label>
+                <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+                  <InputText
+                    v-model="form.code" type="text" :placeholder="t('login.codePlaceholder')" maxlength="6"
+                    class="flex-1 min-w-0 text-base min-h-[48px] px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white text-center tracking-widest transition-all duration-200"
+                    :class="{ 'border-red-500': errors.code }" :disabled="isLoading"
+                  />
+                  <Button
+                    type="button" :label="countdown > 0 ? `${countdown}s` : t('login.resend')"
+                    :disabled="countdown > 0 || isLoading" severity="secondary"
+                    class="min-h-[48px] px-3 sm:px-4 whitespace-nowrap sm:min-w-[110px]" @click="resendCode"
+                  />
+                </div>
+                <p v-if="errors.code" class="text-sm text-red-500">
+                  {{ errors.code }}
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  {{ t('login.verificationCodeSent', { email: form.email }) }}
+                </p>
+              </div>
+
+              <!-- Terms Agreement -->
+              <div class="flex items-start space-x-3">
+                <Checkbox
+                  v-model="form.agreeTerms" :binary="true" class="mt-1 checkbox-enhanced"
+                  :disabled="isLoading"
+                />
+                <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  {{ t('login.iAgreeTo') }}
+                  <a
+                    href="https://static.biulinkpay.com/compliance/TermsOfService.html" target="_blank"
+                    rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    {{ t('login.termsOfServiceLink') }}
+                  </a>
+                  {{ t('login.and') }}
+                  <a
+                    href="https://static.biulinkpay.com/compliance/PrivacyPolicy.html" target="_blank"
+                    rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    {{ t('login.privacyPolicyLink') }}
+                  </a>
+                </p>
+              </div>
+              <p v-if="errors.agreeTerms" class="text-sm text-red-500">
+                {{ errors.agreeTerms }}
+              </p>
+
+              <!-- Submit Button -->
+              <Button
+                type="submit" :label="buttonText" :loading="isLoading" :disabled="!form.agreeTerms"
+                class="bottom-button-primary text-base font-medium transition-all duration-200" severity="primary"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 
 <style scoped>
 /* Custom styles */
@@ -658,7 +709,6 @@ onBeforeUnmount(() => {
     padding: 1rem;
   }
 }
-
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {

@@ -1,549 +1,13 @@
-<template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
-    <!-- Unified Header -->
-    <AppHeader :title="t('cryptoPayment.title')" :show-title="true" />
-
-    <!-- Main Content -->
-    <div
-      class="w-full max-w-2xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
-      <!-- Desktop Layout -->
-      <div class="hidden md:block">
-        <div class="space-y-8">
-          <!-- Left Column: Order Information -->
-          <div class="space-y-6">
-            <!-- Order Information -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">{{ t('cryptoPayment.orderInfo') }}</h3>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Order Number -->
-                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">{{ t('cryptoPayment.orderNo') }}</div>
-                  <div class="flex items-center space-x-2">
-                    <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
-                    <button
-                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.orderNumberCopied'), life: 2000 }) }"
-                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
-                      :title="t('cryptoPayment.copyOrderNumber')">
-                      <i class="pi pi-copy text-gray-500 text-xs"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Order Amount -->
-                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">{{ t('payment.orderAmount') }}</div>
-                  <div class="text-lg font-bold text-gray-900 dark:text-white">
-                    {{ displayOrderAmount }}
-                    <span v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
-                      class="text-sm font-normal text-orange-500 dark:text-gray-400 ml-1">
-                      {{ t('cryptoPayment.usedPts', { pts: cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() ?? '0' }) }}
-                    </span>
-                  </div>
-                </div>
-
-                <!-- You need to pay -->
-                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">{{ t('payment.youNeedToPay') }}</div>
-                  <div class="flex items-center space-x-2">
-                    <span class="text-lg font-bold text-gray-900 dark:text-white">{{ displayPaymentCryptoAmount }} {{ displayPaymentToken
-                    }}</span>
-                    <div class="w-6 h-6 rounded-full flex items-center justify-center"
-                      :class="getCryptoIconBg(displayPaymentToken)">
-                      <span class="text-white font-bold text-xs">{{ getCryptoIcon(displayPaymentToken) }}</span>
-                    </div>
-                    <button
-                      @click="() => { copyToClipboard(String(displayPaymentCryptoAmount)); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.amountCopied'), life: 2000 }) }"
-                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
-                      :title="t('cryptoPayment.copyAmount')">
-                      <i class="pi pi-copy text-gray-500 text-xs"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Network Fee Warning -->
-            <div
-              class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
-              <div class="flex items-start space-x-3">
-                <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <i class="pi pi-exclamation-triangle text-white text-xs"></i>
-                </div>
-                <div class="text-sm text-orange-800 dark:text-orange-200">
-                  {{ t('cryptoPayment.networkFeeWarning') }}
-                </div>
-              </div>
-              <div class="flex items-start space-x-3 mt-2">
-                <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <i class="pi pi-info-circle text-white text-xs"></i>
-                </div>
-                <div class="text-sm text-orange-800 dark:text-orange-200">
-                  {{ t('cryptoPayment.expiryWarning') }}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Column: Payment Information -->
-          <div class="space-y-6">
-            <!-- Payment Information Section -->
-            <div v-if="isOrderPending"
-              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <div class="space-y-6">
-                <!-- Section Header -->
-                <div class="flex items-center justify-between">
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ t('cryptoPayment.paymentInfo') }}</h3>
-                  <div class="flex items-center space-x-2">
-                    <i class="pi pi-clock text-sm"></i>
-                    <div class="flex items-center space-x-1">
-                      <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
-                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{
-                          formatTime(countdown).split(':')[0] }}</span>
-                      </div>
-                      <span class="text-gray-600 dark:text-gray-400 font-bold">:</span>
-                      <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
-                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{
-                          formatTime(countdown).split(':')[1] }}</span>
-                      </div>
-                      <span class="text-gray-600 dark:text-gray-400 font-bold">:</span>
-                      <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
-                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{
-                          formatTime(countdown).split(':')[2] }}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                  <!-- Network Type -->
-                  <div
-                    class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                    <div class="text-sm font-medium text-blue-800 dark:text-blue-200 mb-2">{{ t('cryptoPayment.networkType') }}</div>
-                    <div class="text-lg font-semibold text-blue-900 dark:text-blue-100">
-                      {{ displayPaymentToken }}({{ displayNetwork }}) only
-                    </div>
-                  </div>
-
-                  <!-- Payment Address -->
-                  <div class="space-y-2">
-                    <div class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ t('cryptoPayment.paymentAddress') }}:</div>
-                    <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
-                      <div class="flex items-center justify-between">
-                        <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress
-                        }}</span>
-                        <button
-                          @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.walletAddressCopied'), life: 2000 }) }"
-                          class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                          :title="t('cryptoPayment.copyAddress')">
-                          <i class="pi pi-copy text-gray-500 text-sm"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- QR Code -->
-                <!-- <div class="flex justify-center">
-                  <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
-                    <div class="w-48 h-48 flex items-center justify-center">
-                      <img v-if="cardStore.currentOrder?.qrcodeLink" :src="cardStore.currentOrder.qrcodeLink"
-                        alt="Payment QR Code" class="w-full h-full object-contain rounded"
-                        @error="qrCodeError = true" />
-                      <div v-else
-                        class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
-                        <div class="text-center">
-                          <div class="text-4xl mb-2">📱</div>
-                          <div class="text-xs text-gray-500 dark:text-gray-400">QR Code</div>
-                          <div class="text-xs text-gray-400 dark:text-gray-500 mt-1">{{ walletAddress.slice(0, 8) }}...
-                          </div>
-                        </div>
-                      </div>
-                      <div v-if="qrCodeError"
-                        class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
-                        <div class="text-center text-red-500">
-                          <i class="pi pi-exclamation-triangle text-2xl mb-2"></i>
-                          <div class="text-sm">Failed to load QR Code</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-            </div>
-
-            <!-- Success Status Content -->
-            <div v-else-if="isOrderSuccess"
-              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <div class="space-y-6">
-                <div class="text-center">
-                  <div
-                    class="w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="pi pi-check text-green-600 dark:text-green-400 text-2xl"></i>
-                  </div>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Successful!</h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Your payment of {{ displayPaymentCryptoAmount }} {{ displayPaymentToken }} has been confirmed.
-                  </p>
-                </div>
-                <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
-                  <div class="text-sm text-green-800 dark:text-green-200">
-                    <div class="font-medium mb-3">Transaction Details:</div>
-                    <div class="grid grid-cols-2 gap-4 text-xs">
-                      <div>Amount: {{ displayOrderAmount }}</div>
-                      <div>Currency: {{ displayPaymentToken }}</div>
-                      <div>Network: {{ displayNetwork }}</div>
-                      <div>Order: {{ orderNumber }}</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Failed Status Content -->
-            <div v-else-if="isOrderFailed"
-              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <div class="space-y-6">
-                <div class="text-center">
-                  <div
-                    class="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="pi pi-times text-red-600 dark:text-red-400 text-2xl"></i>
-                  </div>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Failed</h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Your payment could not be processed. Please try again.
-                  </p>
-                </div>
-                <div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-4">
-                  <div class="text-sm text-red-800 dark:text-red-200">
-                    <div class="font-medium mb-3">Order Details:</div>
-                    <div class="grid grid-cols-2 gap-4 text-xs">
-                      <div>Amount: {{ displayOrderAmount }}</div>
-                      <div>Currency: {{ displayPaymentToken }}</div>
-                      <div>Order: {{ orderNumber }}</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Cancelled Status Content -->
-            <div v-else-if="isOrderCancelled"
-              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <div class="space-y-6">
-                <div class="text-center">
-                  <div
-                    class="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="pi pi-ban text-gray-600 dark:text-gray-400 text-2xl"></i>
-                  </div>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Cancelled</h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">
-                    This payment has been cancelled.
-                  </p>
-                </div>
-                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div class="text-sm text-gray-800 dark:text-gray-200">
-                    <div class="font-medium mb-3">Order Details:</div>
-                    <div class="grid grid-cols-2 gap-4 text-xs">
-                      <div>Amount: {{ displayOrderAmount }}</div>
-                      <div>Currency: {{ displayPaymentToken }}</div>
-                      <div>Order: {{ orderNumber }}</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Payment Status - Desktop (Legacy) -->
-        <div v-if="paymentStatus && !orderDetail" class="mt-6">
-          <div
-            class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4 max-w-md mx-auto">
-            <div class="flex items-center space-x-3">
-              <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-                <i class="pi pi-check text-white text-xs"></i>
-              </div>
-              <div class="text-sm text-green-800 dark:text-green-200">
-                <span class="font-semibold">Payment Detected!</span> We are processing your payment...
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Layout -->
-      <div class="md:hidden space-y-6 pb-32">
-        <!-- Order Information -->
-        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-          <div class="space-y-4">
-            <!-- Order Number -->
-            <div class="flex items-center justify-between">
-              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order NO.</span>
-              <div class="flex items-center space-x-2">
-                <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
-                <button @click="copyToClipboard(orderNumber)"
-                  class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
-                  :title="t('cryptoPayment.copyOrderNumber')">
-                  <i class="pi pi-copy text-gray-500 text-xs"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- Order Amount -->
-            <div class="flex items-center justify-between">
-              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order amount</span>
-              <span class="text-lg font-bold text-gray-900 dark:text-white text-right">
-                {{ displayOrderAmount }}
-                <div v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
-                  class="text-xs font-normal text-orange-500 dark:text-gray-400">
-                  (Used {{ cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() }} pts)
-                </div>
-              </span>
-            </div>
-
-            <!-- You need to pay -->
-            <div class="flex items-center justify-between">
-              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">You need to pay</span>
-              <div class="flex items-center space-x-2">
-                <span class="text-lg font-bold text-gray-900 dark:text-white">{{ displayPaymentCryptoAmount }} {{ displayPaymentToken
-                }}</span>
-                <div class="w-6 h-6 rounded-full flex items-center justify-center"
-                  :class="getCryptoIconBg(displayPaymentToken)">
-                  <span class="text-white font-bold text-xs">{{ getCryptoIcon(displayPaymentToken) }}</span>
-                </div>
-                <button @click="copyToClipboard(String(displayPaymentCryptoAmount))"
-                  class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors" title="Copy amount">
-                  <i class="pi pi-copy text-gray-500 text-xs"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Network Fee Warning -->
-        <div class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
-          <div class="flex items-start space-x-3">
-            <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-              <i class="pi pi-exclamation-triangle text-white text-xs"></i>
-            </div>
-            <div class="text-sm text-orange-800 dark:text-orange-200">
-              <span class="font-semibold">DON'T forget to add the Network Fee</span> when transferring, so as not to
-              fail
-              due to insufficient transfer amount.
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 mt-2">
-            <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-              <i class="pi pi-info-circle text-white text-xs"></i>
-            </div>
-            <div class="text-sm text-orange-800 dark:text-orange-200">
-              <span class="font-semibold">For security reasons, the payment page has expired.</span> Please complete the
-              payment promptly.
-            </div>
-          </div>
-        </div>
-        <!-- Payment Information Section -->
-        <div v-if="isOrderPending"
-          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-          <div class="space-y-4">
-            <!-- Section Header -->
-            <div class="flex items-center justify-between">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Payment Information</h3>
-              <div class="flex items-center space-x-2">
-                <i class="pi pi-clock text-sm"></i>
-                <div class="flex items-center space-x-1">
-                  <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
-                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{
-                      formatTime(countdown).split(':')[0] }}</span>
-                  </div>
-                  <span class="text-gray-600 dark:text-gray-400 font-bold text-sm">:</span>
-                  <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
-                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{
-                      formatTime(countdown).split(':')[1] }}</span>
-                  </div>
-                  <span class="text-gray-600 dark:text-gray-400 font-bold text-sm">:</span>
-                  <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
-                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{
-                      formatTime(countdown).split(':')[2] }}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Network Type -->
-            <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
-              <div class="text-sm font-medium text-blue-800 dark:text-blue-200">
-                {{ displayPaymentToken }}({{ displayNetwork }}) only
-              </div>
-            </div>
-
-            <!-- Payment Address -->
-            <div class="space-y-2">
-              <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Payment Address:</div>
-              <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 border border-gray-200 dark:border-gray-600">
-                <div class="flex items-center justify-between">
-                  <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>
-                  <button
-                    @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.walletAddressCopied'), life: 2000 }) }"
-                    class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                    title="Copy address">
-                    <i class="pi pi-copy text-gray-500 text-sm"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- QR Code -->
-            <!-- <div class="flex justify-center">
-              <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
-                <div class="w-48 h-48 flex items-center justify-center">
-                  <img v-if="cardStore.currentOrder?.qrcodeLink" :src="cardStore.currentOrder.qrcodeLink"
-                    alt="Payment QR Code" class="w-full h-full object-contain rounded" @error="qrCodeError = true" />
-                  <div v-else
-                    class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
-                    <div class="text-center">
-                      <div class="text-4xl mb-2">📱</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">QR Code</div>
-                      <div class="text-xs text-gray-400 dark:text-gray-500 mt-1">{{ walletAddress.slice(0, 8) }}...
-                      </div>
-                    </div>
-                  </div>
-                  <div v-if="qrCodeError"
-                    class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
-                    <div class="text-center text-red-500">
-                      <i class="pi pi-exclamation-triangle text-2xl mb-2"></i>
-                      <div class="text-sm">Failed to load QR Code</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-          </div>
-        </div>
-
-        <!-- Success Status Content - Mobile -->
-        <div v-else-if="isOrderSuccess"
-          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-          <div class="text-center space-y-4">
-            <div
-              class="w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto">
-              <i class="pi pi-check text-green-600 dark:text-green-400 text-2xl"></i>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Successful!</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400">
-                Your payment of {{ displayPaymentCryptoAmount }} {{ displayPaymentToken }} has been confirmed.
-              </p>
-            </div>
-            <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
-              <div class="text-sm text-green-800 dark:text-green-200">
-                <div class="font-medium mb-1">Transaction Details:</div>
-                <div class="space-y-1 text-xs">
-                  <div>Amount: {{ displayOrderAmount }}</div>
-                  <div>Currency: {{ displayPaymentToken }}</div>
-                  <div>Network: {{ displayNetwork }}</div>
-                  <div>Order: {{ orderNumber }}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Failed Status Content - Mobile -->
-        <div v-else-if="isOrderFailed"
-          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-          <div class="text-center space-y-4">
-            <div class="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto">
-              <i class="pi pi-times text-red-600 dark:text-red-400 text-2xl"></i>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Failed</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400">
-                Your payment could not be processed. Please try again.
-              </p>
-            </div>
-            <div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-4">
-              <div class="text-sm text-red-800 dark:text-red-200">
-                <div class="font-medium mb-1">Order Details:</div>
-                <div class="space-y-1 text-xs">
-                  <div>Amount: {{ displayOrderAmount }}</div>
-                  <div>Currency: {{ displayPaymentToken }}</div>
-                  <div>Order: {{ orderNumber }}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cancelled Status Content - Mobile -->
-        <div v-else-if="isOrderCancelled"
-          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-          <div class="text-center space-y-4">
-            <div class="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto">
-              <i class="pi pi-ban text-gray-600 dark:text-gray-400 text-2xl"></i>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Payment Cancelled</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400">
-                This payment has been cancelled.
-              </p>
-            </div>
-            <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-              <div class="text-sm text-gray-800 dark:text-gray-200">
-                <div class="font-medium mb-1">Order Details:</div>
-                <div class="space-y-1 text-xs">
-                  <div>Amount: {{ displayOrderAmount }}</div>
-                  <div>Currency: {{ displayPaymentToken }}</div>
-                  <div>Order: {{ orderNumber }}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Payment Status (Legacy) -->
-        <div v-if="paymentStatus && !orderDetail">
-          <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
-            <div class="flex items-center space-x-3">
-              <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-                <i class="pi pi-check text-white text-xs"></i>
-              </div>
-              <div class="text-sm text-green-800 dark:text-green-200">
-                <span class="font-semibold">Payment Detected!</span> We are processing your payment...
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Action Buttons -->
-      <div class="bottom-buttons-container">
-        <!-- Back Button -->
-        <button @click="goBack" class="bottom-button-dual bottom-button-dual-secondary">
-          <i class="pi pi-arrow-left"></i>
-          Back
-        </button>
-
-        <!-- Refresh Button -->
-        <button @click="refreshPayment" :disabled="refreshing"
-          class="bottom-button-dual bottom-button-dual-primary flex items-center justify-center space-x-2">
-          <i v-if="refreshing" class="pi pi-spin pi-spinner text-sm"></i>
-          <i v-else class="pi pi-refresh text-sm"></i>
-          <span>{{ refreshing ? 'Refreshing...' : 'Refresh' }}</span>
-        </button>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
+import type { DepositOrderDetailItem } from '@/api/order'
+import { useClipboard } from '@vueuse/core'
 import { useToast } from 'primevue/usetoast'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
+import { OrderAPI } from '@/api/order'
 import AppHeader from '@/components/AppHeader.vue'
 import { useCardStore } from '@/stores/card'
-import { OrderAPI, type DepositOrderDetailItem } from '@/api/order'
-import { useClipboard } from '@vueuse/core'
 
 const { t } = useI18n()
 const router = useRouter()
@@ -582,7 +46,7 @@ let countdownInterval: NodeJS.Timeout | null = null
 
 const FALLBACK_COUNTDOWN_SECONDS = 1461
 
-const parseExpirationSeconds = (value: unknown): number | null => {
+function parseExpirationSeconds(value: unknown): number | null {
   const parsed = Number(value)
   if (!Number.isFinite(parsed) || parsed <= 0) {
     return null
@@ -608,7 +72,7 @@ const parseExpirationSeconds = (value: unknown): number | null => {
   return Math.floor(parsed)
 }
 
-const applyExpirationSeconds = (value?: unknown) => {
+function applyExpirationSeconds(value?: unknown) {
   const parsed = parseExpirationSeconds(value)
   defaultCountdownSeconds.value = parsed ?? FALLBACK_COUNTDOWN_SECONDS
   countdown.value = defaultCountdownSeconds.value
@@ -616,28 +80,28 @@ const applyExpirationSeconds = (value?: unknown) => {
 
 watch(
   () => cardStore.currentOrder?.expires,
-  newExpires => {
+  (newExpires) => {
     if (newExpires === undefined || newExpires === null) {
       return
     }
 
     applyExpirationSeconds(newExpires)
     startCountdown()
-  }
+  },
 )
 
 // Currency symbol mapping
 const currencySymbols: Record<string, string> = {
-  'USD': '$',
-  'EUR': '€',
-  'CNH': '¥',
-  'GBP': '£',
-  'JPY': '¥',
-  'CAD': 'C$',
-  'AUD': 'A$',
-  'CHF': 'CHF',
-  'SGD': 'S$',
-  'HKD': 'HK$'
+  USD: '$',
+  EUR: '€',
+  CNH: '¥',
+  GBP: '£',
+  JPY: '¥',
+  CAD: 'C$',
+  AUD: 'A$',
+  CHF: 'CHF',
+  SGD: 'S$',
+  HKD: 'HK$',
 }
 
 // Get current currency symbol
@@ -647,13 +111,13 @@ const currentCurrencySymbol = computed(() => {
 })
 
 // Format amount with optional currency (for use with API orderDetail)
-const formatCurrencyWithCurrency = (amount: number, currency?: string) => {
+function formatCurrencyWithCurrency(amount: number, currency?: string) {
   const symbol = currency ? (currencySymbols[currency] || '$') : currentCurrencySymbol.value
   return `${symbol}${amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 }
 
 // Computed properties
-const formatCurrency = (amount: number) => {
+function formatCurrency(amount: number) {
   return `${currentCurrencySymbol.value}${amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 }
 
@@ -672,7 +136,7 @@ const displayPaymentCryptoAmount = computed(() => {
   if (d && d.cryptoAmount != null) {
     return d.cryptoAmount
   }
-  return parseFloat(String(cryptoAmount.value)) || 0
+  return Number.parseFloat(String(cryptoAmount.value)) || 0
 })
 
 const displayPaymentToken = computed(() => {
@@ -692,7 +156,7 @@ const displayNetwork = computed(() => {
   return selectedNetwork.value
 })
 
-const formatTime = (seconds: number) => {
+function formatTime(seconds: number) {
   const hours = Math.floor(seconds / 3600)
   const minutes = Math.floor((seconds % 3600) / 60)
   const secs = seconds % 60
@@ -706,7 +170,7 @@ const isOrderFailed = computed(() => orderStatus.value === 'FAIL')
 const isOrderCancelled = computed(() => orderStatus.value === 'CANCEL')
 
 // Order status display
-const orderStatusText = computed(() => {
+const _orderStatusText = computed(() => {
   switch (orderStatus.value) {
     case 'INIT': return 'Waiting for Payment'
     case 'PENDING': return 'Processing'
@@ -717,7 +181,7 @@ const orderStatusText = computed(() => {
   }
 })
 
-const orderStatusColor = computed(() => {
+const _orderStatusColor = computed(() => {
   switch (orderStatus.value) {
     case 'INIT': return 'text-yellow-600'
     case 'PENDING': return 'text-blue-600'
@@ -728,7 +192,7 @@ const orderStatusColor = computed(() => {
   }
 })
 
-const orderStatusBg = computed(() => {
+const _orderStatusBg = computed(() => {
   switch (orderStatus.value) {
     case 'INIT': return 'bg-yellow-50 border-yellow-200'
     case 'PENDING': return 'bg-blue-50 border-blue-200'
@@ -740,7 +204,7 @@ const orderStatusBg = computed(() => {
 })
 
 // Get crypto icon background color
-const getCryptoIconBg = (crypto: string) => {
+function getCryptoIconBg(crypto: string) {
   switch (crypto) {
     case 'BTC': return 'bg-orange-500'
     case 'ETH': return 'bg-blue-500'
@@ -752,7 +216,7 @@ const getCryptoIconBg = (crypto: string) => {
 }
 
 // Get crypto icon
-const getCryptoIcon = (crypto: string) => {
+function getCryptoIcon(crypto: string) {
   switch (crypto) {
     case 'BTC': return '₿'
     case 'ETH': return 'Ξ'
@@ -766,9 +230,8 @@ const getCryptoIcon = (crypto: string) => {
 // Copy to clipboard using vueuse with legacy support for Huawei browser compatibility
 const { copy: copyToClipboard } = useClipboard({ legacy: true })
 
-
 // Start countdown timer
-const startCountdown = (initialSeconds?: number) => {
+function startCountdown(initialSeconds?: number) {
   // Clear existing timer if any
   if (countdownInterval) {
     clearInterval(countdownInterval)
@@ -801,7 +264,8 @@ const startCountdown = (initialSeconds?: number) => {
 
     if (countdown.value > 0) {
       countdown.value--
-    } else {
+    }
+    else {
       // Time expired
       if (countdownInterval) {
         clearInterval(countdownInterval)
@@ -813,7 +277,7 @@ const startCountdown = (initialSeconds?: number) => {
           severity: 'warn',
           summary: t('payment.paymentExpiredTitle'),
           detail: t('payment.paymentExpired'),
-          life: 5000
+          life: 5000,
         })
       }
     }
@@ -821,21 +285,22 @@ const startCountdown = (initialSeconds?: number) => {
 }
 
 // Connect wallet
-const connectWallet = () => {
+function _connectWallet() {
   // Use the same auto-open payment address logic
   autoOpenPaymentAddress()
 }
 
 // Go back
-const goBack = () => {
+function goBack() {
   router.back()
 }
 
 // Fetch order detail
-const fetchOrderDetail = async (isInitialLoad = false) => {
+async function fetchOrderDetail(isInitialLoad = false) {
   // Use order number from route query if available, otherwise use current orderNumber
   const orderNum = (route.query.orderNum as string) || orderNumber.value
-  if (!orderNum) return
+  if (!orderNum)
+    return
 
   try {
     const response = await OrderAPI.getDepositOrderDetail({ num: orderNum })
@@ -852,7 +317,7 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
       if (cardStore.currentOrder) {
         const updatedOrder = {
           ...cardStore.currentOrder,
-          orderNum: orderNum,
+          orderNum,
           webUrl: detail.webUrl,
         }
         cardStore.setCurrentOrder(updatedOrder)
@@ -872,14 +337,16 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
             const expiresTimestamp = detail.expires
             const remainingMs = expiresTimestamp - serverCurrentTime
             remainingSeconds = Math.max(0, Math.floor(remainingMs / 1000))
-          } else {
+          }
+          else {
             // If expires is seconds, calc remaining time from create time
             const totalDurationMs = detail.expires * 1000
             const elapsedMs = serverCurrentTime - createTime
             const remainingMs = Math.max(0, totalDurationMs - elapsedMs)
             remainingSeconds = Math.floor(remainingMs / 1000)
           }
-        } else {
+        }
+        else {
           // If no expires, use default 15 min
           const totalDurationMs = 15 * 60 * 1000 // Default 15 minutes
           const elapsedMs = serverCurrentTime - createTime
@@ -902,7 +369,7 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
           createTime: new Date(createTime).toISOString(),
           serverCurrentTime: new Date(serverCurrentTime).toISOString(),
           expires: detail.expires,
-          remainingSeconds
+          remainingSeconds,
         })
       }
 
@@ -914,15 +381,17 @@ const fetchOrderDetail = async (isInitialLoad = false) => {
         handleOrderStatusChange(detail.status)
       }
     }
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error fetching order detail:', error)
   }
 }
 
 // Handle order status change
-const handleOrderStatusChange = (status: string) => {
+function handleOrderStatusChange(status: string) {
   // Only handle status changes if component is still mounted
-  if (!isMounted.value) return
+  if (!isMounted.value)
+    return
 
   // Check if status is one of the final states that should redirect to payment result page
   if (['SUCCESS', 'FAIL', 'CANCEL', 'PENDING'].includes(status)) {
@@ -935,21 +404,22 @@ const handleOrderStatusChange = (status: string) => {
         name: 'PaymentResult',
         query: {
           orderNum: orderNumber.value,
-          status: status,
+          status,
           amount: (d?.amount != null ? d.amount : orderAmount.value).toString(),
           currency: d?.token ?? selectedCrypto.value,
           network: d?.network ?? selectedNetwork.value,
-          cryptoAmount: (d?.cryptoAmount != null ? d.cryptoAmount : parseFloat(String(cryptoAmount.value))).toString(),
-          paymentMethod: cardStore.currentOrder?.payType || 'Crypto Payment'
-        }
+          cryptoAmount: (d?.cryptoAmount != null ? d.cryptoAmount : Number.parseFloat(String(cryptoAmount.value))).toString(),
+          paymentMethod: cardStore.currentOrder?.payType || 'Crypto Payment',
+        },
       })
     }
   }
 }
 
 // Start polling order detail
-const startPolling = () => {
-  if (pollingInterval.value) return
+function startPolling() {
+  if (pollingInterval.value)
+    return
 
   pollingInterval.value = setInterval(async () => {
     // Check if component is still mounted
@@ -974,7 +444,7 @@ const startPolling = () => {
 }
 
 // Stop polling
-const stopPolling = () => {
+function stopPolling() {
   pollingEnabled.value = false
   if (pollingInterval.value) {
     clearInterval(pollingInterval.value)
@@ -983,7 +453,7 @@ const stopPolling = () => {
 }
 
 // Refresh payment
-const refreshPayment = async () => {
+async function refreshPayment() {
   refreshing.value = true
 
   try {
@@ -1014,22 +484,24 @@ const refreshPayment = async () => {
       severity: 'success',
       summary: t('payment.paymentRefreshedTitle'),
       detail: t('payment.paymentRefreshed'),
-      life: 3000
+      life: 3000,
     })
-  } catch (error) {
+  }
+  catch (error) {
     toast.add({
       severity: 'error',
       summary: t('payment.refreshFailedTitle'),
       detail: (error as any)?.message || t('payment.refreshFailed'),
-      life: 3000
+      life: 3000,
     })
-  } finally {
+  }
+  finally {
     refreshing.value = false
   }
 }
 
 // Auto open payment address
-const autoOpenPaymentAddress = () => {
+function autoOpenPaymentAddress() {
   if (!cardStore.currentOrder) {
     console.log('No current order in store, skipping auto open')
     return
@@ -1038,19 +510,20 @@ const autoOpenPaymentAddress = () => {
   const order = cardStore.currentOrder
   const isMobile = window.innerWidth < 768
 
-
   // Mobile: prefer deeplink, else webUrl
   if (isMobile) {
     if (order.deeplink) {
       console.log('Opening deeplink on mobile:', order.deeplink)
       window.open(order.deeplink, '_blank')
       return
-    } else if (order.webUrl) {
+    }
+    else if (order.webUrl) {
       console.log('No deeplink available, opening webUrl on mobile:', order.webUrl)
       window.open(order.webUrl, '_blank')
       return
     }
-  } else {
+  }
+  else {
     // Desktop: use webUrl directly
     if (order.webUrl) {
       console.log('Opening webUrl on desktop:', order.webUrl)
@@ -1066,14 +539,14 @@ const autoOpenPaymentAddress = () => {
 onMounted(async () => {
   isMounted.value = true
 
-  let expiresSource: unknown = undefined
+  let expiresSource: unknown
 
   // Get payment data from Pinia store
   if (cardStore.currentOrder) {
     const order = cardStore.currentOrder
     // Use order number from route query if available, otherwise use store
     orderNumber.value = (route.query.orderNum as string) || order.orderNum || '76782112321321047696'
-    orderAmount.value = parseFloat(order.amount) || 1000.00
+    orderAmount.value = Number.parseFloat(order.amount) || 1000.00
     orderCurrency.value = order.orderCurrency || cardStore.selectedCardBin?.cardCurrency || 'USD'
     selectedCrypto.value = order.currency || 'ETH'
     selectedNetwork.value = order.network || 'ERC20'
@@ -1081,7 +554,8 @@ onMounted(async () => {
     walletAddress.value = order.address || order.webUrl || '0xe688b84b23f322a994A53dbF8E15FA82CDB71127'
 
     expiresSource = order.expires ?? route.query.expires
-  } else {
+  }
+  else {
     // Fallback to route params if no order in store
     const orderNum = route.query.orderNum as string
     if (orderNum) {
@@ -1090,7 +564,7 @@ onMounted(async () => {
 
     const amount = route.query.amount as string
     if (amount) {
-      orderAmount.value = parseFloat(amount)
+      orderAmount.value = Number.parseFloat(amount)
     }
 
     const currency = route.query.currency as string
@@ -1129,7 +603,6 @@ onMounted(async () => {
   startPolling()
 })
 
-
 // Cleanup on unmount
 onUnmounted(() => {
   isMounted.value = false
@@ -1141,3 +614,624 @@ onUnmounted(() => {
   stopPolling()
 })
 </script>
+
+<template>
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <!-- Unified Header -->
+    <AppHeader :title="t('cryptoPayment.title')" :show-title="true" />
+
+    <!-- Main Content -->
+    <div
+      class="w-full max-w-2xl sm:max-w-4xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8"
+    >
+      <!-- Desktop Layout -->
+      <div class="hidden md:block">
+        <div class="space-y-8">
+          <!-- Left Column: Order Information -->
+          <div class="space-y-6">
+            <!-- Order Information -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                {{ t('cryptoPayment.orderInfo') }}
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Order Number -->
+                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+                    {{ t('cryptoPayment.orderNo') }}
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
+                    <button
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
+                      :title="t('cryptoPayment.copyOrderNumber')"
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.orderNumberCopied'), life: 2000 }) }"
+                    >
+                      <i class="pi pi-copy text-gray-500 text-xs" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Order Amount -->
+                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+                    {{ t('payment.orderAmount') }}
+                  </div>
+                  <div class="text-lg font-bold text-gray-900 dark:text-white">
+                    {{ displayOrderAmount }}
+                    <span
+                      v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
+                      class="text-sm font-normal text-orange-500 dark:text-gray-400 ml-1"
+                    >
+                      {{ t('cryptoPayment.usedPts', { pts: cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() ?? '0' }) }}
+                    </span>
+                  </div>
+                </div>
+
+                <!-- You need to pay -->
+                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+                    {{ t('payment.youNeedToPay') }}
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="text-lg font-bold text-gray-900 dark:text-white">{{ displayPaymentCryptoAmount }} {{ displayPaymentToken
+                    }}</span>
+                    <div
+                      class="w-6 h-6 rounded-full flex items-center justify-center"
+                      :class="getCryptoIconBg(displayPaymentToken)"
+                    >
+                      <span class="text-white font-bold text-xs">{{ getCryptoIcon(displayPaymentToken) }}</span>
+                    </div>
+                    <button
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
+                      :title="t('cryptoPayment.copyAmount')"
+                      @click="() => { copyToClipboard(String(displayPaymentCryptoAmount)); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.amountCopied'), life: 2000 }) }"
+                    >
+                      <i class="pi pi-copy text-gray-500 text-xs" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Network Fee Warning -->
+            <div
+              class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4"
+            >
+              <div class="flex items-start space-x-3">
+                <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="pi pi-exclamation-triangle text-white text-xs" />
+                </div>
+                <div class="text-sm text-orange-800 dark:text-orange-200">
+                  {{ t('cryptoPayment.networkFeeWarning') }}
+                </div>
+              </div>
+              <div class="flex items-start space-x-3 mt-2">
+                <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="pi pi-info-circle text-white text-xs" />
+                </div>
+                <div class="text-sm text-orange-800 dark:text-orange-200">
+                  {{ t('cryptoPayment.expiryWarning') }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Payment Information -->
+          <div class="space-y-6">
+            <!-- Payment Information Section -->
+            <div
+              v-if="isOrderPending"
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700"
+            >
+              <div class="space-y-6">
+                <!-- Section Header -->
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                    {{ t('cryptoPayment.paymentInfo') }}
+                  </h3>
+                  <div class="flex items-center space-x-2">
+                    <i class="pi pi-clock text-sm" />
+                    <div class="flex items-center space-x-1">
+                      <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
+                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{
+                          formatTime(countdown).split(':')[0] }}</span>
+                      </div>
+                      <span class="text-gray-600 dark:text-gray-400 font-bold">:</span>
+                      <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
+                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{
+                          formatTime(countdown).split(':')[1] }}</span>
+                      </div>
+                      <span class="text-gray-600 dark:text-gray-400 font-bold">:</span>
+                      <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-3 py-1">
+                        <span class="text-sm font-bold text-gray-800 dark:text-gray-200">{{
+                          formatTime(countdown).split(':')[2] }}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <!-- Network Type -->
+                  <div
+                    class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4"
+                  >
+                    <div class="text-sm font-medium text-blue-800 dark:text-blue-200 mb-2">
+                      {{ t('cryptoPayment.networkType') }}
+                    </div>
+                    <div class="text-lg font-semibold text-blue-900 dark:text-blue-100">
+                      {{ displayPaymentToken }}({{ displayNetwork }}) only
+                    </div>
+                  </div>
+
+                  <!-- Payment Address -->
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium text-gray-600 dark:text-gray-400">
+                      {{ t('cryptoPayment.paymentAddress') }}:
+                    </div>
+                    <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress
+                        }}</span>
+                        <button
+                          class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                          :title="t('cryptoPayment.copyAddress')"
+                          @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.walletAddressCopied'), life: 2000 }) }"
+                        >
+                          <i class="pi pi-copy text-gray-500 text-sm" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- QR Code -->
+                <!-- <div class="flex justify-center">
+                  <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
+                    <div class="w-48 h-48 flex items-center justify-center">
+                      <img v-if="cardStore.currentOrder?.qrcodeLink" :src="cardStore.currentOrder.qrcodeLink"
+                        alt="Payment QR Code" class="w-full h-full object-contain rounded"
+                        @error="qrCodeError = true" />
+                      <div v-else
+                        class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-4xl mb-2">📱</div>
+                          <div class="text-xs text-gray-500 dark:text-gray-400">QR Code</div>
+                          <div class="text-xs text-gray-400 dark:text-gray-500 mt-1">{{ walletAddress.slice(0, 8) }}...
+                          </div>
+                        </div>
+                      </div>
+                      <div v-if="qrCodeError"
+                        class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
+                        <div class="text-center text-red-500">
+                          <i class="pi pi-exclamation-triangle text-2xl mb-2"></i>
+                          <div class="text-sm">Failed to load QR Code</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+
+            <!-- Success Status Content -->
+            <div
+              v-else-if="isOrderSuccess"
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700"
+            >
+              <div class="space-y-6">
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto mb-4"
+                  >
+                    <i class="pi pi-check text-green-600 dark:text-green-400 text-2xl" />
+                  </div>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    Payment Successful!
+                  </h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Your payment of {{ displayPaymentCryptoAmount }} {{ displayPaymentToken }} has been confirmed.
+                  </p>
+                </div>
+                <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
+                  <div class="text-sm text-green-800 dark:text-green-200">
+                    <div class="font-medium mb-3">
+                      Transaction Details:
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-xs">
+                      <div>Amount: {{ displayOrderAmount }}</div>
+                      <div>Currency: {{ displayPaymentToken }}</div>
+                      <div>Network: {{ displayNetwork }}</div>
+                      <div>Order: {{ orderNumber }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Failed Status Content -->
+            <div
+              v-else-if="isOrderFailed"
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700"
+            >
+              <div class="space-y-6">
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto mb-4"
+                  >
+                    <i class="pi pi-times text-red-600 dark:text-red-400 text-2xl" />
+                  </div>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    Payment Failed
+                  </h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Your payment could not be processed. Please try again.
+                  </p>
+                </div>
+                <div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-4">
+                  <div class="text-sm text-red-800 dark:text-red-200">
+                    <div class="font-medium mb-3">
+                      Order Details:
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-xs">
+                      <div>Amount: {{ displayOrderAmount }}</div>
+                      <div>Currency: {{ displayPaymentToken }}</div>
+                      <div>Order: {{ orderNumber }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cancelled Status Content -->
+            <div
+              v-else-if="isOrderCancelled"
+              class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700"
+            >
+              <div class="space-y-6">
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4"
+                  >
+                    <i class="pi pi-ban text-gray-600 dark:text-gray-400 text-2xl" />
+                  </div>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    Payment Cancelled
+                  </h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    This payment has been cancelled.
+                  </p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                  <div class="text-sm text-gray-800 dark:text-gray-200">
+                    <div class="font-medium mb-3">
+                      Order Details:
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-xs">
+                      <div>Amount: {{ displayOrderAmount }}</div>
+                      <div>Currency: {{ displayPaymentToken }}</div>
+                      <div>Order: {{ orderNumber }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Status - Desktop (Legacy) -->
+        <div v-if="paymentStatus && !orderDetail" class="mt-6">
+          <div
+            class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4 max-w-md mx-auto"
+          >
+            <div class="flex items-center space-x-3">
+              <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                <i class="pi pi-check text-white text-xs" />
+              </div>
+              <div class="text-sm text-green-800 dark:text-green-200">
+                <span class="font-semibold">Payment Detected!</span> We are processing your payment...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Layout -->
+      <div class="md:hidden space-y-6 pb-32">
+        <!-- Order Information -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+          <div class="space-y-4">
+            <!-- Order Number -->
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order NO.</span>
+              <div class="flex items-center space-x-2">
+                <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
+                <button
+                  class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
+                  :title="t('cryptoPayment.copyOrderNumber')"
+                  @click="copyToClipboard(orderNumber)"
+                >
+                  <i class="pi pi-copy text-gray-500 text-xs" />
+                </button>
+              </div>
+            </div>
+
+            <!-- Order Amount -->
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Order amount</span>
+              <span class="text-lg font-bold text-gray-900 dark:text-white text-right">
+                {{ displayOrderAmount }}
+                <div
+                  v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
+                  class="text-xs font-normal text-orange-500 dark:text-gray-400"
+                >
+                  (Used {{ cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() }} pts)
+                </div>
+              </span>
+            </div>
+
+            <!-- You need to pay -->
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400">You need to pay</span>
+              <div class="flex items-center space-x-2">
+                <span class="text-lg font-bold text-gray-900 dark:text-white">{{ displayPaymentCryptoAmount }} {{ displayPaymentToken
+                }}</span>
+                <div
+                  class="w-6 h-6 rounded-full flex items-center justify-center"
+                  :class="getCryptoIconBg(displayPaymentToken)"
+                >
+                  <span class="text-white font-bold text-xs">{{ getCryptoIcon(displayPaymentToken) }}</span>
+                </div>
+                <button
+                  class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
+                  title="Copy amount" @click="copyToClipboard(String(displayPaymentCryptoAmount))"
+                >
+                  <i class="pi pi-copy text-gray-500 text-xs" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Network Fee Warning -->
+        <div class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
+          <div class="flex items-start space-x-3">
+            <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="pi pi-exclamation-triangle text-white text-xs" />
+            </div>
+            <div class="text-sm text-orange-800 dark:text-orange-200">
+              <span class="font-semibold">DON'T forget to add the Network Fee</span> when transferring, so as not to
+              fail
+              due to insufficient transfer amount.
+            </div>
+          </div>
+          <div class="flex items-start space-x-3 mt-2">
+            <div class="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="pi pi-info-circle text-white text-xs" />
+            </div>
+            <div class="text-sm text-orange-800 dark:text-orange-200">
+              <span class="font-semibold">For security reasons, the payment page has expired.</span> Please complete the
+              payment promptly.
+            </div>
+          </div>
+        </div>
+        <!-- Payment Information Section -->
+        <div
+          v-if="isOrderPending"
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700"
+        >
+          <div class="space-y-4">
+            <!-- Section Header -->
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                Payment Information
+              </h3>
+              <div class="flex items-center space-x-2">
+                <i class="pi pi-clock text-sm" />
+                <div class="flex items-center space-x-1">
+                  <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
+                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{
+                      formatTime(countdown).split(':')[0] }}</span>
+                  </div>
+                  <span class="text-gray-600 dark:text-gray-400 font-bold text-sm">:</span>
+                  <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
+                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{
+                      formatTime(countdown).split(':')[1] }}</span>
+                  </div>
+                  <span class="text-gray-600 dark:text-gray-400 font-bold text-sm">:</span>
+                  <div class="bg-gray-100 dark:bg-gray-600 rounded-lg px-2 py-1">
+                    <span class="text-xs font-bold text-gray-800 dark:text-gray-200">{{
+                      formatTime(countdown).split(':')[2] }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Network Type -->
+            <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
+              <div class="text-sm font-medium text-blue-800 dark:text-blue-200">
+                {{ displayPaymentToken }}({{ displayNetwork }}) only
+              </div>
+            </div>
+
+            <!-- Payment Address -->
+            <div class="space-y-2">
+              <div class="text-sm font-medium text-gray-600 dark:text-gray-400">
+                Payment Address:
+              </div>
+              <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 border border-gray-200 dark:border-gray-600">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>
+                  <button
+                    class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                    title="Copy address"
+                    @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.walletAddressCopied'), life: 2000 }) }"
+                  >
+                    <i class="pi pi-copy text-gray-500 text-sm" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- QR Code -->
+            <!-- <div class="flex justify-center">
+              <div class="bg-white p-4 rounded-lg border border-gray-200 dark:border-gray-600">
+                <div class="w-48 h-48 flex items-center justify-center">
+                  <img v-if="cardStore.currentOrder?.qrcodeLink" :src="cardStore.currentOrder.qrcodeLink"
+                    alt="Payment QR Code" class="w-full h-full object-contain rounded" @error="qrCodeError = true" />
+                  <div v-else
+                    class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
+                    <div class="text-center">
+                      <div class="text-4xl mb-2">📱</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">QR Code</div>
+                      <div class="text-xs text-gray-400 dark:text-gray-500 mt-1">{{ walletAddress.slice(0, 8) }}...
+                      </div>
+                    </div>
+                  </div>
+                  <div v-if="qrCodeError"
+                    class="w-full h-full bg-gray-100 dark:bg-gray-600 rounded flex items-center justify-center">
+                    <div class="text-center text-red-500">
+                      <i class="pi pi-exclamation-triangle text-2xl mb-2"></i>
+                      <div class="text-sm">Failed to load QR Code</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Success Status Content - Mobile -->
+        <div
+          v-else-if="isOrderSuccess"
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700"
+        >
+          <div class="text-center space-y-4">
+            <div
+              class="w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto"
+            >
+              <i class="pi pi-check text-green-600 dark:text-green-400 text-2xl" />
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                Payment Successful!
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Your payment of {{ displayPaymentCryptoAmount }} {{ displayPaymentToken }} has been confirmed.
+              </p>
+            </div>
+            <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
+              <div class="text-sm text-green-800 dark:text-green-200">
+                <div class="font-medium mb-1">
+                  Transaction Details:
+                </div>
+                <div class="space-y-1 text-xs">
+                  <div>Amount: {{ displayOrderAmount }}</div>
+                  <div>Currency: {{ displayPaymentToken }}</div>
+                  <div>Network: {{ displayNetwork }}</div>
+                  <div>Order: {{ orderNumber }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Failed Status Content - Mobile -->
+        <div
+          v-else-if="isOrderFailed"
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700"
+        >
+          <div class="text-center space-y-4">
+            <div class="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto">
+              <i class="pi pi-times text-red-600 dark:text-red-400 text-2xl" />
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                Payment Failed
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                Your payment could not be processed. Please try again.
+              </p>
+            </div>
+            <div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-4">
+              <div class="text-sm text-red-800 dark:text-red-200">
+                <div class="font-medium mb-1">
+                  Order Details:
+                </div>
+                <div class="space-y-1 text-xs">
+                  <div>Amount: {{ displayOrderAmount }}</div>
+                  <div>Currency: {{ displayPaymentToken }}</div>
+                  <div>Order: {{ orderNumber }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cancelled Status Content - Mobile -->
+        <div
+          v-else-if="isOrderCancelled"
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700"
+        >
+          <div class="text-center space-y-4">
+            <div class="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto">
+              <i class="pi pi-ban text-gray-600 dark:text-gray-400 text-2xl" />
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                Payment Cancelled
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                This payment has been cancelled.
+              </p>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+              <div class="text-sm text-gray-800 dark:text-gray-200">
+                <div class="font-medium mb-1">
+                  Order Details:
+                </div>
+                <div class="space-y-1 text-xs">
+                  <div>Amount: {{ displayOrderAmount }}</div>
+                  <div>Currency: {{ displayPaymentToken }}</div>
+                  <div>Order: {{ orderNumber }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Payment Status (Legacy) -->
+        <div v-if="paymentStatus && !orderDetail">
+          <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                <i class="pi pi-check text-white text-xs" />
+              </div>
+              <div class="text-sm text-green-800 dark:text-green-200">
+                <span class="font-semibold">Payment Detected!</span> We are processing your payment...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="bottom-buttons-container">
+        <!-- Back Button -->
+        <button class="bottom-button-dual bottom-button-dual-secondary" @click="goBack">
+          <i class="pi pi-arrow-left" />
+          Back
+        </button>
+
+        <!-- Refresh Button -->
+        <button
+          :disabled="refreshing" class="bottom-button-dual bottom-button-dual-primary flex items-center justify-center space-x-2"
+          @click="refreshPayment"
+        >
+          <i v-if="refreshing" class="pi pi-spin pi-spinner text-sm" />
+          <i v-else class="pi pi-refresh text-sm" />
+          <span>{{ refreshing ? 'Refreshing...' : 'Refresh' }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</template>

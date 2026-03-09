@@ -1,6 +1,6 @@
+import { useToast } from 'primevue/usetoast'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useToast } from 'primevue/usetoast'
 import { AuthAPI } from '@/api/auth'
 import { useAuthStore } from '@/stores/auth'
 
@@ -13,7 +13,7 @@ export interface GoogleAuthOptions {
 export function useGoogleAuth() {
   const { t } = useI18n()
   const toast = useToast()
-  const authStore = useAuthStore()
+  const _authStore = useAuthStore()
 
   const showDialog = ref(false)
   const loading = ref(false)
@@ -26,7 +26,7 @@ export function useGoogleAuth() {
   const showAuthDialog = (opts: GoogleAuthOptions = {}) => {
     options.value = {
       title: 'Google Auth Verification',
-      ...opts
+      ...opts,
     }
     showDialog.value = true
   }
@@ -47,7 +47,8 @@ export function useGoogleAuth() {
       const response = await AuthAPI.googleAuthResult()
 
       return response.success && response.model === 1
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Check auth status error:', error)
       return false
     }
@@ -68,25 +69,27 @@ export function useGoogleAuth() {
           severity: 'success',
           summary: t('googleAuth.verificationSuccessful'),
           detail: t('googleAuth.verificationPassed'),
-          life: 3000
+          life: 3000,
         })
         return true
-      } else {
+      }
+      else {
         toast.add({
           severity: 'error',
           summary: t('googleAuth.verificationFailed'),
           detail: response.msg || t('googleAuth.incorrectCode'),
-          life: 3000
+          life: 3000,
         })
         return false
       }
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Verify auth code error:', error)
       toast.add({
         severity: 'error',
         summary: t('googleAuth.verificationFailed'),
         detail: (error as any)?.message || t('googleAuth.networkErrorRetry'),
-        life: 3000
+        life: 3000,
       })
       return false
     }
@@ -105,7 +108,8 @@ export function useGoogleAuth() {
         return response.model
       }
       return null
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Get current code error:', error)
       return null
     }
@@ -122,11 +126,12 @@ export function useGoogleAuth() {
       if (response.success && response.model) {
         return {
           secretKey: response.model.secretKey,
-          qrCode: response.model.qrCode
+          qrCode: response.model.qrCode,
         }
       }
       return null
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Generate auth key error:', error)
       return null
     }
@@ -139,7 +144,7 @@ export function useGoogleAuth() {
    */
   const executeWithAuth = async <T>(
     operation: () => Promise<T> | T,
-    opts: GoogleAuthOptions = {}
+    opts: GoogleAuthOptions = {},
   ): Promise<T | null> => {
     // Check if bound
     const isBound = await checkAuthStatus()
@@ -148,7 +153,7 @@ export function useGoogleAuth() {
         severity: 'warn',
         summary: t('googleAuth.notBound'),
         detail: t('googleAuth.pleaseBindFirst'),
-        life: 3000
+        life: 3000,
       })
       return null
     }
@@ -162,17 +167,19 @@ export function useGoogleAuth() {
             try {
               const operationResult = await operation()
               resolve(operationResult)
-            } catch (error) {
+            }
+            catch (error) {
               console.error('Operation error:', error)
               resolve(null)
             }
-          } else {
+          }
+          else {
             resolve(null)
           }
         },
         onCancel: () => {
           resolve(null)
-        }
+        },
       })
     })
   }
@@ -187,6 +194,6 @@ export function useGoogleAuth() {
     verifyAuthCode,
     getCurrentCode,
     generateAuthKey,
-    executeWithAuth
+    executeWithAuth,
   }
 }

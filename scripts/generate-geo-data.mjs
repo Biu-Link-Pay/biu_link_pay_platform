@@ -3,11 +3,11 @@
 // Generate per-country geo data using country-state-city API (safer than reading raw assets)
 // Output directory: public/geo/
 
-import { writeFile, mkdir, rm } from 'fs/promises'
-import { existsSync } from 'fs'
-import path from 'path'
-import process from 'process'
-import { Country, State, City } from 'country-state-city'
+import { existsSync } from 'node:fs'
+import { mkdir, rm, writeFile } from 'node:fs/promises'
+import path from 'node:path'
+import process from 'node:process'
+import { City, Country, State } from 'country-state-city'
 
 async function ensureDir(dir) {
   if (!existsSync(dir)) {
@@ -30,9 +30,7 @@ async function main() {
   await ensureDir(outRoot)
 
   const countries = Country.getAllCountries()
-  const countryList = countries
-    .slice()
-    .sort(sortByName)
+  const countryList = countries.toSorted(sortByName)
     .map(c => ({ code: c.isoCode, name: c.name }))
   await writeFile(path.join(outRoot, 'countries.json'), JSON.stringify(countryList, null, 2), 'utf8')
 
@@ -51,10 +49,7 @@ async function main() {
       longitude: c.longitude ?? null,
     }
 
-    const states = (State.getStatesOfCountry(code) || [])
-      .slice()
-      .sort(sortByName)
-      .map(s => ({ code: s.isoCode, name: s.name }))
+    const states = State.getStatesOfCountry(code) || [].toSorted(sortByName).map(s => ({ code: s.isoCode, name: s.name }))
 
     // Prefer aggregating by states, fallback to country-level lookup if no states
     /** @type {{ name:string, stateCode:string }[]} */
@@ -87,9 +82,7 @@ async function main() {
   console.log(`Countries: ${countryList.length}`)
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error('Failed to generate geo data:', err)
   process.exit(1)
 })
-
-

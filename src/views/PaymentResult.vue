@@ -1,405 +1,18 @@
-<template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
-
-    <!-- Unified Header -->
-    <AppHeader :title="t('paymentResult.title')" :show-title="true" />
-
-    <!-- Main Content -->
-    <div
-      class="w-full max-w-full sm:max-w-md md:max-w-lg lg:max-w-7xl xl:max-w-8xl mx-auto py-6 sm:px-6 lg:px-8 lg:py-12 min-h-[calc(100vh-120px)] lg:flex lg:items-center lg:justify-center">
-      <!-- Payment Result Card -->
-      <div class="w-full mx-auto relative overflow-hidden transition-all duration-300 p-4 sm:p-6 lg:p-12 xl:p-16"
-        :class="[cardAnimationClass, 'lg:bg-white lg:dark:bg-gray-800 lg:rounded-3xl lg:shadow-2xl lg:hover:-translate-y-1']">
-
-        <!-- Desktop Layout: Two Column -->
-        <div class="lg:grid lg:grid-cols-2 lg:gap-12 xl:gap-16">
-          <!-- Left Column: Status & Amount -->
-          <div class="lg:flex lg:flex-col lg:justify-center">
-            <!-- Status Icon -->
-            <div v-if="orderStatus !== 'PENDING'"
-              class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 rounded-full mx-auto lg:mx-0 mb-6 lg:mb-8 flex items-center justify-center relative"
-              :class="statusIconClass">
-              <div
-                class="w-full h-full flex items-center justify-center text-white text-2xl sm:text-3xl lg:text-4xl xl:text-5xl"
-                :class="iconAnimationClass">
-                <!-- SUCCESS: Animated checkmark -->
-                <div v-if="orderStatus === 'SUCCESS'" class="w-full h-full flex items-center justify-center">
-                  <svg width="40" height="40" viewBox="0 0 40 40"
-                    class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14">
-                    <path class="checkmark-path" fill="none" stroke="currentColor" stroke-width="4"
-                      stroke-linecap="round" d="M10,20 l7,7 l13,-13" />
-                  </svg>
-                </div>
-
-                <!-- FAIL: Shaking X icon -->
-                <div v-else-if="orderStatus === 'FAIL'" class="w-full h-full flex items-center justify-center">
-                  <i class="pi pi-times"></i>
-                </div>
-
-                <!-- CANCEL: Pulsing ban icon -->
-                <div v-else-if="orderStatus === 'CANCEL'"
-                  class="w-full h-full flex items-center justify-center relative">
-                  <i class="pi pi-ban"></i>
-                  <div
-                    class="absolute -top-1 -right-1 w-6 h-6 sm:w-7 sm:h-7 bg-red-500 rounded-full text-white flex items-center justify-center text-xs sm:text-sm font-bold animate-bounce">
-                    !</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PENDING Status Icon (Desktop) -->
-            <div v-if="orderStatus === 'PENDING'"
-              class="hidden lg:block w-24 lg:h-24 xl:w-28 xl:h-28 rounded-full mx-auto lg:mx-0 mb-6 lg:mb-8 flex items-center justify-center relative"
-              :class="statusIconClass">
-              <div
-                class="w-full h-full flex items-center justify-center text-white text-2xl sm:text-3xl lg:text-4xl xl:text-5xl"
-                :class="iconAnimationClass">
-                <!-- PENDING: Rotating loader with lock icon -->
-                <div class="relative w-full h-full">
-                  <div class="w-full h-full border-4 border-white/20 border-t-white rounded-full animate-spin"></div>
-                </div>
-              </div>
-              <div
-                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-xl sm:text-2xl lg:text-3xl xl:text-4xl">
-                <i class="pi pi-lock"></i>
-              </div>
-            </div>
-
-            <!-- Status Title -->
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-center lg:text-left mb-3 lg:mb-4"
-              :class="statusTitleClass">{{ statusTitle }}</h2>
-
-            <!-- Status Description -->
-            <p
-              class="text-gray-600 dark:text-gray-400 text-center lg:text-left mb-6 lg:mb-8 leading-relaxed text-sm sm:text-base lg:text-lg">
-              {{ statusDescription }}</p>
-
-            <!-- Amount Display -->
-            <div class="text-center lg:text-left mb-8 lg:mb-10">
-              <div class="inline-flex items-baseline gap-2">
-                <span
-                  class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-600 dark:text-gray-400">$</span>
-                <span class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white">{{
-                  formatCurrency(orderAmount) }}</span>
-                <span v-if="orderRewardPoints"
-                  class="text-sm sm:text-base lg:text-lg font-semibold text-orange-500 dark:text-orange-300">
-                  {{ t('paymentResult.usePts', { pts: orderRewardPoints.toLocaleString() }) }}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Column: Order Information & Actions -->
-          <div class="lg:flex lg:flex-col lg:justify-center">
-            <!-- Order Information -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4 sm:p-6 lg:p-6 xl:p-8 mb-6 lg:mb-8">
-              <h3 class="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white mb-4 lg:hidden">{{ t('paymentResult.orderDetails') }}
-              </h3>
-
-              <!-- Desktop: Traditional List Layout -->
-              <div class="hidden lg:block space-y-3 lg:space-y-4">
-                <!-- Order Number -->
-                <div
-                  class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">{{ t('paymentResult.orderNumber') }}</span>
-                  <div class="flex items-center space-x-2">
-                    <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
-                    }}</span>
-                    <button
-                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.orderNumberCopied'), life: 2000 }) }"
-                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
-                      :title="t('paymentResult.copyOrderNumber')">
-                      <i class="pi pi-copy text-gray-500 text-xs"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Withdraw: Network -->
-                <div v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)"
-                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.network') }}</span>
-                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
-                    {{ withdrawNetwork ? `${withdrawNetwork}` : '' }}
-                  </span>
-                </div>
-
-                <!-- Withdraw: USDT Amount -->
-                <div v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null"
-                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.withdrawAmount') }}</span>
-                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
-                    {{ withdrawUsdTAmount }} {{ withdrawToken || 'USDT' }}
-                    <span v-if="orderRewardPoints"
-                      class="ml-1 text-xs lg:text-sm font-semibold text-orange-500 dark:text-orange-300">
-                      {{ t('paymentResult.usePts', { pts: orderRewardPoints.toLocaleString() }) }}
-                    </span>
-                  </span>
-                </div>
-
-                <!-- Withdraw: Network Fee -->
-                <div v-if="orderType === 'withdraw' && withdrawNetworkFee !== null"
-                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.networkFee') }}</span>
-                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
-                    {{ withdrawNetworkFee.toFixed(2) }} {{ withdrawToken || 'USDT' }}
-                  </span>
-                </div>
-
-                <!-- Withdraw: Address -->
-                <div v-if="orderType === 'withdraw' && withdrawAddress"
-                  class="flex justify-between items-center gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.address') }}</span>
-                  <div class="flex items-center justify-end gap-2 flex-1 min-w-0">
-                    <span
-                      class="text-[11px] lg:text-xs font-medium text-gray-900 dark:text-white text-right break-all font-mono">{{
-                        withdrawAddress }}</span>
-                    <button
-                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.addressCopied'), life: 2000 }) }"
-                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                      :title="t('paymentResult.copyAddress')">
-                      <i class="pi pi-copy text-gray-500 text-xs"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Transaction ID -->
-                <div v-if="orderStatus === 'SUCCESS'"
-                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Transaction
-                    ID</span>
-                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
-                    transactionId }}</span>
-                </div>
-
-                <!-- Card Number -->
-                <div v-if="orderCardNo"
-                  class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Card Number</span>
-                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo
-                    }}</span>
-                </div>
-
-                <!-- Created Time -->
-                <div class="flex justify-between items-center py-2 lg:py-3">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Created Time</span>
-                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ paymentTime }}</span>
-                </div>
-              </div>
-
-              <!-- Mobile: Two Column Grid Layout -->
-              <div class="lg:hidden grid grid-cols-2 gap-4">
-                <!-- Order Number -->
-                <div class="col-span-2 pb-3 border-b border-gray-200 dark:border-gray-600">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Order Number</div>
-                  <div class="flex items-center gap-2">
-                    <div class="text-sm font-medium text-gray-900 dark:text-white break-all flex-1">{{ orderNumber }}
-                    </div>
-                    <button
-                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.orderNumberCopied'), life: 2000 }) }"
-                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                      title="Copy">
-                      <i class="pi pi-copy text-gray-500 text-xs"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Withdraw: Network -->
-                <div v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)" class="col-span-2">
-                  <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
-                    <span>Network</span>
-                    <span v-if="orderType === 'withdraw' && withdrawNetworkFee !== null" class="text-right">Network
-                      Fee</span>
-                  </div>
-                  <div class="flex items-center justify-between text-sm font-medium text-gray-900 dark:text-white">
-                    <span>{{ withdrawNetwork ? `${withdrawNetwork}` : '' }}</span>
-                    <span v-if="withdrawNetworkFee !== null" class="text-right">{{ withdrawNetworkFee.toFixed(2) }}
-                      {{ withdrawToken || 'USDT' }}</span>
-                  </div>
-                </div>
-
-                <!-- Withdraw: USDT Amount -->
-                <div v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Withdraw Amount</div>
-                  <div class="text-sm font-medium text-gray-900 dark:text-white">
-                    {{ withdrawUsdTAmount }} {{ withdrawToken || 'USDT' }}
-                    <span v-if="orderRewardPoints"
-                      class="ml-1 text-xs font-semibold text-orange-500 dark:text-orange-300">
-                      {{ t('paymentResult.usePts', { pts: orderRewardPoints.toLocaleString() }) }}
-                    </span>
-                  </div>
-                </div>
-
-                <!-- Withdraw: Network Fee -->
-                <!-- Withdraw: Address -->
-                <div v-if="orderType === 'withdraw' && withdrawAddress" class="col-span-2">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Address</div>
-                  <div class="flex items-center justify-between gap-2">
-                    <div
-                      class="text-[11px] font-medium text-gray-900 dark:text-white break-all text-left font-mono flex-1 min-w-0">
-                      {{
-                        withdrawAddress
-                      }}</div>
-                    <button
-                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.addressCopied'), life: 2000 }) }"
-                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                      title="Copy">
-                      <i class="pi pi-copy text-gray-500 text-xs"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Transaction ID -->
-                <div v-if="orderStatus === 'SUCCESS'" class="col-span-2">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Transaction ID</div>
-                  <div class="text-sm font-medium text-gray-900 dark:text-white break-all">{{ transactionId }}</div>
-                </div>
-
-                <!-- Card Number -->
-                <div v-if="orderCardNo" class="col-span-2">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Card Number</div>
-                  <div class="text-sm font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo }}</div>
-                </div>
-
-                <!-- Created Time -->
-                <div class="col-span-2">
-                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">Created Time</div>
-                  <div class="text-sm font-medium text-gray-900 dark:text-white">{{ paymentTime }}</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Status Specific Content -->
-            <!-- PENDING Status -->
-            <div v-if="orderStatus === 'PENDING'" class="mb-6 lg:mb-8">
-              <!-- Mobile: Show icon and progress -->
-              <div class="lg:hidden">
-                <div
-                  class="w-16 h-16 sm:w-20 sm:h-20 rounded-full mx-auto mb-6 flex items-center justify-center relative"
-                  :class="statusIconClass">
-                  <div class="w-full h-full flex items-center justify-center text-white text-2xl sm:text-3xl"
-                    :class="iconAnimationClass">
-                    <!-- PENDING: Rotating loader with lock icon -->
-                    <div class="relative w-full h-full">
-                      <div class="w-full h-full border-4 border-white/20 border-t-white rounded-full animate-spin">
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-xl sm:text-2xl">
-                    <i class="pi pi-lock"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAIL Status -->
-            <div v-if="orderStatus === 'FAIL'" class="mb-6 lg:mb-8">
-              <div
-                class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded-r-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-red-700 dark:text-red-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-start gap-2 lg:gap-3">
-                <i class="pi pi-exclamation-circle text-lg lg:text-xl xl:text-xl mt-0.5 flex-shrink-0"></i>
-                <span class="flex-1">{{ errorReason || '' }}</span>
-              </div>
-            </div>
-
-            <!-- CANCEL Status -->
-            <div v-if="orderStatus === 'CANCEL'" class="mb-6 lg:mb-8">
-              <div class="text-center lg:text-left space-y-4 lg:space-y-6">
-                <div
-                  class="inline-flex items-center gap-2 lg:gap-3 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-base xl:text-lg animate-pulse">
-                  <i class="pi pi-clock text-lg lg:text-xl xl:text-xl"></i>
-                  <span>{{ t('paymentResult.paymentTimeout') }}</span>
-                </div>
-                <div v-if="paymentTime && !isPaymentExpired"
-                  class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-orange-700 dark:text-orange-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-start gap-2 lg:gap-3">
-                  <i class="pi pi-info-circle text-lg lg:text-xl xl:text-xl mt-0.5"></i>
-                  <span>{{ t('paymentResult.paymentExpiredDesc') }}</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="space-y-3 lg:space-y-3 xl:space-y-4 mb-6 lg:mb-8">
-              <!-- PENDING Actions -->
-              <template v-if="orderStatus === 'PENDING'">
-                <button @click="refreshPayment" :disabled="refreshing"
-                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">
-                  <i v-if="refreshing" class="pi pi-spin pi-spinner"></i>
-                  <i v-else class="pi pi-refresh"></i>
-                  <span>{{ refreshing ? t('paymentResult.refreshing') : t('paymentResult.refreshStatus') }}</span>
-                </button>
-                <button @click="goBack"
-                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
-                  <i class="pi pi-arrow-left"></i>
-                  <span>{{ isFromMyCards ? t('paymentResult.backToMyCards') : t('paymentResult.backToPayment') }}</span>
-                </button>
-              </template>
-
-              <!-- SUCCESS Actions -->
-              <template v-if="orderStatus === 'SUCCESS'">
-                <!-- <button @click="viewOrder"
-                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                  <i class="pi pi-eye"></i>
-                  <span>View Order</span>
-                </button> -->
-                <button @click="goHome"
-                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
-                  <i class="pi pi-credit-card"></i>
-                  <span>{{ t('paymentResult.myCards') }}</span>
-                </button>
-              </template>
-
-              <!-- FAIL Actions -->
-              <template v-if="orderStatus === 'FAIL'">
-                <button @click="goBack"
-                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
-                  <i class="pi pi-credit-card"></i>
-                  <span>{{ isFromMyCards ? t('paymentResult.backToMyCards') : t('paymentResult.changePaymentMethod') }}</span>
-                </button>
-              </template>
-
-              <!-- CANCEL Actions -->
-              <template v-if="orderStatus === 'CANCEL'">
-                <button @click="createNewOrder"
-                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                  <i class="pi pi-plus"></i>
-                  <span>{{ t('paymentResult.createNewOrder') }}</span>
-                </button>
-                <button @click="goHome"
-                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
-                  <i class="pi pi-credit-card"></i>
-                  <span>{{ t('paymentResult.myCards') }}</span>
-                </button>
-              </template>
-            </div>
-
-            <!-- Support Information -->
-            <div class="text-center lg:text-left text-sm lg:text-base xl:text-lg text-gray-500 dark:text-gray-400">
-              <p>{{ t('paymentResult.needHelp') }} <a href="mailto:support@biulinkpay.org"
-                  class="text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-200">{{ t('paymentResult.contactSupport') }}</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
-import { useToast } from 'primevue/usetoast'
-import AppHeader from '@/components/AppHeader.vue'
-import { OrderAPI } from '@/api/order'
 import { useClipboard } from '@vueuse/core'
+import { useToast } from 'primevue/usetoast'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
+import { OrderAPI } from '@/api/order'
+import AppHeader from '@/components/AppHeader.vue'
 import { useCardStore } from '@/stores/card'
-import { CardAPI } from '@/api/card'
 
 const { t } = useI18n()
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
-const cardStore = useCardStore()
+const _cardStore = useCardStore()
 
 // Order data
 const orderNumber = ref('')
@@ -429,7 +42,6 @@ const isFromMyCards = ref(false) // Whether navigated from MyCards
 
 // Copy to clipboard function with legacy support for Huawei browser compatibility
 const { copy: copyToClipboard } = useClipboard({ legacy: true })
-
 
 const statusIconClass = computed(() => {
   switch (orderStatus.value) {
@@ -492,47 +104,53 @@ const statusDescription = computed(() => {
 })
 
 // Format currency
-const formatCurrency = (amount: number) => {
+function formatCurrency(amount: number) {
   return amount.toLocaleString('en-US', {
     minimumFractionDigits: 2,
-    maximumFractionDigits: 2
+    maximumFractionDigits: 2,
   })
 }
 
 // Check if payment is expired (15 minutes)
 const isPaymentExpired = computed(() => {
-  if (!paymentTime.value) return false
+  if (!paymentTime.value)
+    return false
 
   const createTime = new Date(paymentTime.value).getTime()
-  const currentTime = new Date().getTime()
+  const currentTime = Date.now()
   const fifteenMinutes = 15 * 60 * 1000 // 15 minutes in milliseconds
 
   return (currentTime - createTime) >= fifteenMinutes
 })
 
 // Simulate progress for PENDING status
-const simulateProgress = () => {
-  if (orderStatus.value !== 'PENDING') return
+function simulateProgress() {
+  if (orderStatus.value !== 'PENDING')
+    return
 
   const interval = setInterval(() => {
     if (progressWidth.value < 100) {
       progressWidth.value += Math.random() * 10
       if (progressWidth.value >= 33 && progressStep.value < 1) {
         progressStep.value = 1
-      } else if (progressWidth.value >= 66 && progressStep.value < 2) {
+      }
+      else if (progressWidth.value >= 66 && progressStep.value < 2) {
         progressStep.value = 2
-      } else if (progressWidth.value >= 100 && progressStep.value < 3) {
+      }
+      else if (progressWidth.value >= 100 && progressStep.value < 3) {
         progressStep.value = 3
       }
-    } else {
+    }
+    else {
       clearInterval(interval)
     }
   }, 500)
 }
 
 // Fetch order status
-const fetchOrderStatus = async () => {
-  if (!orderNumber.value) return
+async function fetchOrderStatus() {
+  if (!orderNumber.value)
+    return
 
   try {
     // Call different API by order type
@@ -562,7 +180,7 @@ const fetchOrderStatus = async () => {
           orderNumber: orderNumber.value,
           previousStatus,
           newStatus: orderStatus.value,
-          detail
+          detail,
         })
 
         if (previousStatus === 'PENDING' && orderStatus.value !== 'PENDING') {
@@ -573,12 +191,13 @@ const fetchOrderStatus = async () => {
               severity: orderStatus.value === 'SUCCESS' ? 'success' : 'warn',
               summary: t('paymentResult.statusUpdated'),
               detail: t('payment.statusUpdated', { status: orderStatus.value }),
-              life: 3000
+              life: 3000,
             })
           }
         }
       }
-    } else {
+    }
+    else {
       // Deposit order
       const response = await OrderAPI.getDepositOrderDetail({ num: orderNumber.value.toString() })
 
@@ -596,14 +215,14 @@ const fetchOrderStatus = async () => {
         }
         // Update other fields if needed
         if (detail.amount) {
-          orderAmount.value = parseFloat(detail.amount.toString())
+          orderAmount.value = Number.parseFloat(detail.amount.toString())
         }
 
         console.log('Deposit order status updated:', {
           orderNumber: orderNumber.value,
           previousStatus,
           newStatus: orderStatus.value,
-          detail
+          detail,
         })
 
         // Handle status change
@@ -612,13 +231,14 @@ const fetchOrderStatus = async () => {
         }
       }
     }
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error fetching order status:', error)
   }
 }
 
 // Handle status change
-const handleStatusChange = (status: string) => {
+function handleStatusChange(status: string) {
   // Only show status change toast when not from MyCards
   if (isFromMyCards.value) {
     if (status !== 'PENDING') {
@@ -633,7 +253,7 @@ const handleStatusChange = (status: string) => {
         severity: 'success',
         summary: t('payment.paymentSuccessfulTitle'),
         detail: t('payment.paymentSuccessful'),
-        life: 5000
+        life: 5000,
       })
       stopPolling()
       break
@@ -642,7 +262,7 @@ const handleStatusChange = (status: string) => {
         severity: 'error',
         summary: t('payment.paymentFailedTitle'),
         detail: t('payment.paymentFailed'),
-        life: 5000
+        life: 5000,
       })
       stopPolling()
       break
@@ -651,7 +271,7 @@ const handleStatusChange = (status: string) => {
         severity: 'warn',
         summary: t('payment.paymentCancelledTitle'),
         detail: t('payment.paymentCancelled'),
-        life: 5000
+        life: 5000,
       })
       stopPolling()
       break
@@ -659,8 +279,9 @@ const handleStatusChange = (status: string) => {
 }
 
 // Start polling for PENDING status
-const startPolling = () => {
-  if (pollingInterval) return
+function startPolling() {
+  if (pollingInterval)
+    return
 
   pollingInterval = setInterval(async () => {
     if (!isMounted.value || orderStatus.value !== 'PENDING') {
@@ -673,7 +294,7 @@ const startPolling = () => {
 }
 
 // Stop polling
-const stopPolling = () => {
+function stopPolling() {
   if (pollingInterval) {
     clearInterval(pollingInterval)
     pollingInterval = null
@@ -681,7 +302,7 @@ const stopPolling = () => {
 }
 
 // Action handlers
-const refreshPayment = async () => {
+async function refreshPayment() {
   refreshing.value = true
   try {
     await fetchOrderStatus()
@@ -689,38 +310,40 @@ const refreshPayment = async () => {
       severity: 'info',
       summary: t('payment.statusRefreshedTitle'),
       detail: t('payment.statusRefreshed'),
-      life: 3000
+      life: 3000,
     })
-  } catch (error) {
+  }
+  catch (error) {
     toast.add({
       severity: 'error',
       summary: t('payment.refreshFailedTitle'),
       detail: (error as any)?.message || t('payment.refreshFailedStatus'),
-      life: 3000
+      life: 3000,
     })
-  } finally {
+  }
+  finally {
     refreshing.value = false
   }
 }
 
-const goBack = () => {
+function goBack() {
   router.back()
 }
 
-const viewOrder = () => {
+function _viewOrder() {
   router.push({
     name: 'MyCards',
     query: {
-      orderNum: orderNumber.value
-    }
+      orderNum: orderNumber.value,
+    },
   })
 }
 
-const goHome = () => {
+function goHome() {
   router.push({ name: 'MyCards' })
 }
 
-const retryPayment = () => {
+function _retryPayment() {
   if (orderType.value === 'withdraw') {
     // Fiat withdraw order: if cardId exists go to withdraw page, else MyCards
     const cardId = route.query.cardId as string
@@ -729,22 +352,24 @@ const retryPayment = () => {
       router.push({
         name: 'WithdrawOrder',
         query: {
-          cardId: cardId,
-          cardNo: cardNo
-        }
+          cardId,
+          cardNo,
+        },
       })
-    } else {
+    }
+    else {
       // If no cardId, go to MyCards
       router.push({ name: 'MyCards' })
     }
-  } else {
+  }
+  else {
     // 入金订单，跳转到支付方式选择页面
     router.push({
       name: 'PaymentMethodSelection',
       query: {
         orderNum: orderNumber.value,
-        retry: 'true'
-      }
+        retry: 'true',
+      },
     })
   }
 }
@@ -817,12 +442,12 @@ const retryPayment = () => {
 //   }
 // }
 
-const cancelOrder = () => {
+function _cancelOrder() {
   toast.add({
     severity: 'info',
     summary: t('payment.orderCancelledTitle'),
     detail: t('payment.orderCancelled'),
-    life: 3000
+    life: 3000,
   })
   // Navigate back to my cards page
   setTimeout(() => {
@@ -830,7 +455,7 @@ const cancelOrder = () => {
   }, 2000)
 }
 
-const createNewOrder = () => {
+function createNewOrder() {
   router.push({ name: 'ApplyCardList' })
 }
 
@@ -849,7 +474,8 @@ onMounted(async () => {
   if (type === 'withdraw') {
     orderType.value = 'withdraw'
     console.log('Order type: withdraw (withdraw order)')
-  } else {
+  }
+  else {
     orderType.value = 'deposit'
     console.log('Order type: deposit (deposit order)')
   }
@@ -864,7 +490,7 @@ onMounted(async () => {
   // Get other data from route or set defaults
   const amount = route.query.amount as string
   if (amount) {
-    orderAmount.value = parseFloat(amount)
+    orderAmount.value = Number.parseFloat(amount)
   }
 
   const status = route.query.status as string
@@ -894,6 +520,484 @@ onUnmounted(() => {
   stopPolling()
 })
 </script>
+
+<template>
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <!-- Unified Header -->
+    <AppHeader :title="t('paymentResult.title')" :show-title="true" />
+
+    <!-- Main Content -->
+    <div
+      class="w-full max-w-full sm:max-w-md md:max-w-lg lg:max-w-7xl xl:max-w-8xl mx-auto py-6 sm:px-6 lg:px-8 lg:py-12 min-h-[calc(100vh-120px)] lg:flex lg:items-center lg:justify-center"
+    >
+      <!-- Payment Result Card -->
+      <div
+        class="w-full mx-auto relative overflow-hidden transition-all duration-300 p-4 sm:p-6 lg:p-12 xl:p-16 lg:bg-white lg:dark:bg-gray-800 lg:rounded-3xl lg:shadow-2xl lg:hover:-translate-y-1"
+        :class="[cardAnimationClass]"
+      >
+        <!-- Desktop Layout: Two Column -->
+        <div class="lg:grid lg:grid-cols-2 lg:gap-12 xl:gap-16">
+          <!-- Left Column: Status & Amount -->
+          <div class="lg:flex lg:flex-col lg:justify-center">
+            <!-- Status Icon -->
+            <div
+              v-if="orderStatus !== 'PENDING'"
+              class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 rounded-full mx-auto lg:mx-0 mb-6 lg:mb-8 flex items-center justify-center relative"
+              :class="statusIconClass"
+            >
+              <div
+                class="w-full h-full flex items-center justify-center text-white text-2xl sm:text-3xl lg:text-4xl xl:text-5xl"
+                :class="iconAnimationClass"
+              >
+                <!-- SUCCESS: Animated checkmark -->
+                <div v-if="orderStatus === 'SUCCESS'" class="w-full h-full flex items-center justify-center">
+                  <svg
+                    width="40" height="40" viewBox="0 0 40 40"
+                    class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14"
+                  >
+                    <path
+                      class="checkmark-path" fill="none" stroke="currentColor" stroke-width="4"
+                      stroke-linecap="round" d="M10,20 l7,7 l13,-13"
+                    />
+                  </svg>
+                </div>
+
+                <!-- FAIL: Shaking X icon -->
+                <div v-else-if="orderStatus === 'FAIL'" class="w-full h-full flex items-center justify-center">
+                  <i class="pi pi-times" />
+                </div>
+
+                <!-- CANCEL: Pulsing ban icon -->
+                <div
+                  v-else-if="orderStatus === 'CANCEL'"
+                  class="w-full h-full flex items-center justify-center relative"
+                >
+                  <i class="pi pi-ban" />
+                  <div
+                    class="absolute -top-1 -right-1 w-6 h-6 sm:w-7 sm:h-7 bg-red-500 rounded-full text-white flex items-center justify-center text-xs sm:text-sm font-bold animate-bounce"
+                  >
+                    !
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PENDING Status Icon (Desktop) -->
+            <div
+              v-if="orderStatus === 'PENDING'"
+              class="hidden lg:block w-24 lg:h-24 xl:w-28 xl:h-28 rounded-full mx-auto lg:mx-0 mb-6 lg:mb-8 flex items-center justify-center relative"
+              :class="statusIconClass"
+            >
+              <div
+                class="w-full h-full flex items-center justify-center text-white text-2xl sm:text-3xl lg:text-4xl xl:text-5xl"
+                :class="iconAnimationClass"
+              >
+                <!-- PENDING: Rotating loader with lock icon -->
+                <div class="relative w-full h-full">
+                  <div class="w-full h-full border-4 border-white/20 border-t-white rounded-full animate-spin" />
+                </div>
+              </div>
+              <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-xl sm:text-2xl lg:text-3xl xl:text-4xl"
+              >
+                <i class="pi pi-lock" />
+              </div>
+            </div>
+
+            <!-- Status Title -->
+            <h2
+              class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-center lg:text-left mb-3 lg:mb-4"
+              :class="statusTitleClass"
+            >
+              {{ statusTitle }}
+            </h2>
+
+            <!-- Status Description -->
+            <p
+              class="text-gray-600 dark:text-gray-400 text-center lg:text-left mb-6 lg:mb-8 leading-relaxed text-sm sm:text-base lg:text-lg"
+            >
+              {{ statusDescription }}
+            </p>
+
+            <!-- Amount Display -->
+            <div class="text-center lg:text-left mb-8 lg:mb-10">
+              <div class="inline-flex items-baseline gap-2">
+                <span
+                  class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-600 dark:text-gray-400"
+                >$</span>
+                <span class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white">{{
+                  formatCurrency(orderAmount) }}</span>
+                <span
+                  v-if="orderRewardPoints"
+                  class="text-sm sm:text-base lg:text-lg font-semibold text-orange-500 dark:text-orange-300"
+                >
+                  {{ t('paymentResult.usePts', { pts: orderRewardPoints.toLocaleString() }) }}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Order Information & Actions -->
+          <div class="lg:flex lg:flex-col lg:justify-center">
+            <!-- Order Information -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4 sm:p-6 lg:p-6 xl:p-8 mb-6 lg:mb-8">
+              <h3 class="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white mb-4 lg:hidden">
+                {{ t('paymentResult.orderDetails') }}
+              </h3>
+
+              <!-- Desktop: Traditional List Layout -->
+              <div class="hidden lg:block space-y-3 lg:space-y-4">
+                <!-- Order Number -->
+                <div
+                  class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600"
+                >
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">{{ t('paymentResult.orderNumber') }}</span>
+                  <div class="flex items-center space-x-2">
+                    <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
+                    }}</span>
+                    <button
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
+                      :title="t('paymentResult.copyOrderNumber')"
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.orderNumberCopied'), life: 2000 }) }"
+                    >
+                      <i class="pi pi-copy text-gray-500 text-xs" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Withdraw: Network -->
+                <div
+                  v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)"
+                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600"
+                >
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.network') }}</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
+                    {{ withdrawNetwork ? `${withdrawNetwork}` : '' }}
+                  </span>
+                </div>
+
+                <!-- Withdraw: USDT Amount -->
+                <div
+                  v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null"
+                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600"
+                >
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.withdrawAmount') }}</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
+                    {{ withdrawUsdTAmount }} {{ withdrawToken || 'USDT' }}
+                    <span
+                      v-if="orderRewardPoints"
+                      class="ml-1 text-xs lg:text-sm font-semibold text-orange-500 dark:text-orange-300"
+                    >
+                      {{ t('paymentResult.usePts', { pts: orderRewardPoints.toLocaleString() }) }}
+                    </span>
+                  </span>
+                </div>
+
+                <!-- Withdraw: Network Fee -->
+                <div
+                  v-if="orderType === 'withdraw' && withdrawNetworkFee !== null"
+                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600"
+                >
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.networkFee') }}</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
+                    {{ withdrawNetworkFee.toFixed(2) }} {{ withdrawToken || 'USDT' }}
+                  </span>
+                </div>
+
+                <!-- Withdraw: Address -->
+                <div
+                  v-if="orderType === 'withdraw' && withdrawAddress"
+                  class="flex justify-between items-center gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600"
+                >
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.address') }}</span>
+                  <div class="flex items-center justify-end gap-2 flex-1 min-w-0">
+                    <span
+                      class="text-[11px] lg:text-xs font-medium text-gray-900 dark:text-white text-right break-all font-mono"
+                    >{{
+                      withdrawAddress }}</span>
+                    <button
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                      :title="t('paymentResult.copyAddress')"
+                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.addressCopied'), life: 2000 }) }"
+                    >
+                      <i class="pi pi-copy text-gray-500 text-xs" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Transaction ID -->
+                <div
+                  v-if="orderStatus === 'SUCCESS'"
+                  class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600"
+                >
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Transaction
+                    ID</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right break-all">{{
+                    transactionId }}</span>
+                </div>
+
+                <!-- Card Number -->
+                <div
+                  v-if="orderCardNo"
+                  class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600"
+                >
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Card Number</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white font-mono">{{ orderCardNo
+                  }}</span>
+                </div>
+
+                <!-- Created Time -->
+                <div class="flex justify-between items-center py-2 lg:py-3">
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Created Time</span>
+                  <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ paymentTime }}</span>
+                </div>
+              </div>
+
+              <!-- Mobile: Two Column Grid Layout -->
+              <div class="lg:hidden grid grid-cols-2 gap-4">
+                <!-- Order Number -->
+                <div class="col-span-2 pb-3 border-b border-gray-200 dark:border-gray-600">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">
+                    Order Number
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="text-sm font-medium text-gray-900 dark:text-white break-all flex-1">
+                      {{ orderNumber }}
+                    </div>
+                    <button
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                      title="Copy"
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.orderNumberCopied'), life: 2000 }) }"
+                    >
+                      <i class="pi pi-copy text-gray-500 text-xs" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Withdraw: Network -->
+                <div v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)" class="col-span-2">
+                  <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
+                    <span>Network</span>
+                    <span v-if="orderType === 'withdraw' && withdrawNetworkFee !== null" class="text-right">Network
+                      Fee</span>
+                  </div>
+                  <div class="flex items-center justify-between text-sm font-medium text-gray-900 dark:text-white">
+                    <span>{{ withdrawNetwork ? `${withdrawNetwork}` : '' }}</span>
+                    <span v-if="withdrawNetworkFee !== null" class="text-right">{{ withdrawNetworkFee.toFixed(2) }}
+                      {{ withdrawToken || 'USDT' }}</span>
+                  </div>
+                </div>
+
+                <!-- Withdraw: USDT Amount -->
+                <div v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">
+                    Withdraw Amount
+                  </div>
+                  <div class="text-sm font-medium text-gray-900 dark:text-white">
+                    {{ withdrawUsdTAmount }} {{ withdrawToken || 'USDT' }}
+                    <span
+                      v-if="orderRewardPoints"
+                      class="ml-1 text-xs font-semibold text-orange-500 dark:text-orange-300"
+                    >
+                      {{ t('paymentResult.usePts', { pts: orderRewardPoints.toLocaleString() }) }}
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Withdraw: Network Fee -->
+                <!-- Withdraw: Address -->
+                <div v-if="orderType === 'withdraw' && withdrawAddress" class="col-span-2">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">
+                    Address
+                  </div>
+                  <div class="flex items-center justify-between gap-2">
+                    <div
+                      class="text-[11px] font-medium text-gray-900 dark:text-white break-all text-left font-mono flex-1 min-w-0"
+                    >
+                      {{
+                        withdrawAddress
+                      }}
+                    </div>
+                    <button
+                      class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
+                      title="Copy"
+                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.addressCopied'), life: 2000 }) }"
+                    >
+                      <i class="pi pi-copy text-gray-500 text-xs" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Transaction ID -->
+                <div v-if="orderStatus === 'SUCCESS'" class="col-span-2">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">
+                    Transaction ID
+                  </div>
+                  <div class="text-sm font-medium text-gray-900 dark:text-white break-all">
+                    {{ transactionId }}
+                  </div>
+                </div>
+
+                <!-- Card Number -->
+                <div v-if="orderCardNo" class="col-span-2">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">
+                    Card Number
+                  </div>
+                  <div class="text-sm font-medium text-gray-900 dark:text-white font-mono">
+                    {{ orderCardNo }}
+                  </div>
+                </div>
+
+                <!-- Created Time -->
+                <div class="col-span-2">
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mb-1">
+                    Created Time
+                  </div>
+                  <div class="text-sm font-medium text-gray-900 dark:text-white">
+                    {{ paymentTime }}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Status Specific Content -->
+            <!-- PENDING Status -->
+            <div v-if="orderStatus === 'PENDING'" class="mb-6 lg:mb-8">
+              <!-- Mobile: Show icon and progress -->
+              <div class="lg:hidden">
+                <div
+                  class="w-16 h-16 sm:w-20 sm:h-20 rounded-full mx-auto mb-6 flex items-center justify-center relative"
+                  :class="statusIconClass"
+                >
+                  <div
+                    class="w-full h-full flex items-center justify-center text-white text-2xl sm:text-3xl"
+                    :class="iconAnimationClass"
+                  >
+                    <!-- PENDING: Rotating loader with lock icon -->
+                    <div class="relative w-full h-full">
+                      <div class="w-full h-full border-4 border-white/20 border-t-white rounded-full animate-spin" />
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-xl sm:text-2xl"
+                  >
+                    <i class="pi pi-lock" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAIL Status -->
+            <div v-if="orderStatus === 'FAIL'" class="mb-6 lg:mb-8">
+              <div
+                class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded-r-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-red-700 dark:text-red-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-start gap-2 lg:gap-3"
+              >
+                <i class="pi pi-exclamation-circle text-lg lg:text-xl xl:text-xl mt-0.5 flex-shrink-0" />
+                <span class="flex-1">{{ errorReason || '' }}</span>
+              </div>
+            </div>
+
+            <!-- CANCEL Status -->
+            <div v-if="orderStatus === 'CANCEL'" class="mb-6 lg:mb-8">
+              <div class="text-center lg:text-left space-y-4 lg:space-y-6">
+                <div
+                  class="inline-flex items-center gap-2 lg:gap-3 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-base xl:text-lg animate-pulse"
+                >
+                  <i class="pi pi-clock text-lg lg:text-xl xl:text-xl" />
+                  <span>{{ t('paymentResult.paymentTimeout') }}</span>
+                </div>
+                <div
+                  v-if="paymentTime && !isPaymentExpired"
+                  class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-orange-700 dark:text-orange-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-start gap-2 lg:gap-3"
+                >
+                  <i class="pi pi-info-circle text-lg lg:text-xl xl:text-xl mt-0.5" />
+                  <span>{{ t('paymentResult.paymentExpiredDesc') }}</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="space-y-3 lg:space-y-3 xl:space-y-4 mb-6 lg:mb-8">
+              <!-- PENDING Actions -->
+              <template v-if="orderStatus === 'PENDING'">
+                <button
+                  :disabled="refreshing" class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  @click="refreshPayment"
+                >
+                  <i v-if="refreshing" class="pi pi-spin pi-spinner" />
+                  <i v-else class="pi pi-refresh" />
+                  <span>{{ refreshing ? t('paymentResult.refreshing') : t('paymentResult.refreshStatus') }}</span>
+                </button>
+                <button
+                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg"
+                  @click="goBack"
+                >
+                  <i class="pi pi-arrow-left" />
+                  <span>{{ isFromMyCards ? t('paymentResult.backToMyCards') : t('paymentResult.backToPayment') }}</span>
+                </button>
+              </template>
+
+              <!-- SUCCESS Actions -->
+              <template v-if="orderStatus === 'SUCCESS'">
+                <!-- <button @click="viewOrder"
+                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                  <i class="pi pi-eye"></i>
+                  <span>View Order</span>
+                </button> -->
+                <button
+                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg"
+                  @click="goHome"
+                >
+                  <i class="pi pi-credit-card" />
+                  <span>{{ t('paymentResult.myCards') }}</span>
+                </button>
+              </template>
+
+              <!-- FAIL Actions -->
+              <template v-if="orderStatus === 'FAIL'">
+                <button
+                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg"
+                  @click="goBack"
+                >
+                  <i class="pi pi-credit-card" />
+                  <span>{{ isFromMyCards ? t('paymentResult.backToMyCards') : t('paymentResult.changePaymentMethod') }}</span>
+                </button>
+              </template>
+
+              <!-- CANCEL Actions -->
+              <template v-if="orderStatus === 'CANCEL'">
+                <button
+                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  @click="createNewOrder"
+                >
+                  <i class="pi pi-plus" />
+                  <span>{{ t('paymentResult.createNewOrder') }}</span>
+                </button>
+                <button
+                  class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg"
+                  @click="goHome"
+                >
+                  <i class="pi pi-credit-card" />
+                  <span>{{ t('paymentResult.myCards') }}</span>
+                </button>
+              </template>
+            </div>
+
+            <!-- Support Information -->
+            <div class="text-center lg:text-left text-sm lg:text-base xl:text-lg text-gray-500 dark:text-gray-400">
+              <p>
+                {{ t('paymentResult.needHelp') }} <a
+                  href="mailto:support@biulinkpay.org"
+                  class="text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-200"
+                >{{ t('paymentResult.contactSupport') }}</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 
 <style scoped>
 /* Success Checkmark Animation */

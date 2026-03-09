@@ -1,133 +1,13 @@
-<template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
-    <!-- Unified Header -->
-    <AppHeader title="Withdraw" :show-title="true" />
-
-    <!-- Main Content -->
-    <div
-      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8 pb-24 md:pb-6 lg:pb-8">
-      <!-- Card Information -->
-      <CardInfoHeader :card-no="cardInfo.cardNo" :balance="balance" :loading="!cardDetail" />
-
-      <!-- Content -->
-      <div class="mt-6 space-y-8">
-        <!-- Withdraw Amount Section -->
-        <div>
-          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-6">
-            Withdraw amount
-          </h2>
-          <div class="mb-3 text-xs text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-800/60 rounded-lg p-3">
-            Available {{ formatCurrency(balance) }} · Limit {{ formatCurrency(minimumBalance) }} -
-            {{ formatCurrency(getMaxWithdrawAmount()) }} {{ cardInfo.cardCurrency }}
-          </div>
-
-          <div class="mb-4">
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Withdraw amount
-            </label>
-            <div class="flex items-center gap-2">
-              <InputText v-model="withdrawAmountInput" type="text" :placeholder="minimumBalance.toString()" class="w-32"
-                :class="{ 'p-invalid': errors.withdrawAmount }" @blur="handleAmountBlur" />
-              <span class="text-gray-600 dark:text-gray-400">
-                {{ cardInfo.cardCurrency }}
-              </span>
-              <Button label="Max" size="small" severity="secondary" @click="setMaxAmount" />
-            </div>
-            <small v-if="errors.withdrawAmount" class="text-red-500 text-xs mt-1">
-              {{ errors.withdrawAmount }}
-            </small>
-          </div>
-
-          <!-- Quick Amount Buttons (removed as per latest requirement) -->
-        </div>
-
-        <!-- Reward Points -->
-        <div v-if="availableRewardPoints > 0"
-          class="mt-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl p-4 shadow-sm space-y-2">
-          <div class="flex items-start justify-between gap-3">
-            <div>
-              <p class="text-xs font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
-                Card Reward Points
-              </p>
-              <p class="text-xl font-bold text-gray-900 dark:text-white mt-1">
-                {{ availableRewardPoints.toLocaleString() }} pts
-              </p>
-              <p class="text-[11px] text-gray-500 dark:text-gray-400">
-                100 pts = 1 {{ cardInfo.cardCurrency || 'USD' }}
-              </p>
-            </div>
-            <label class="inline-flex items-center cursor-pointer">
-              <input type="checkbox" class="sr-only" v-model="applyRewardPoints" :disabled="!canUseRewardPoints" />
-              <span class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-200"
-                :class="applyRewardPoints && canUseRewardPoints ? 'bg-orange-500 dark:bg-orange-400' : ''">
-                <span
-                  class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-200"
-                  :class="applyRewardPoints && canUseRewardPoints ? 'translate-x-6' : ''"></span>
-              </span>
-            </label>
-          </div>
-          <div class="mt-2 flex items-center justify-between text-[11px] text-gray-600 dark:text-gray-200">
-            <div class="flex items-center gap-1.5">
-              <span>Use</span>
-              <input type="number" min="0" :max="maxUsablePoints" step="1" v-model.number="pointsToUse"
-                :disabled="!applyRewardPoints || !canUseRewardPoints"
-                class="w-20 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-[11px] font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50" />
-              <span class="text-[10px] text-gray-500 dark:text-gray-400">pts</span>
-            </div>
-            <span class="text-[10px] text-gray-400 dark:text-gray-500">
-              Max {{ maxUsablePoints.toLocaleString() }} pts
-            </span>
-          </div>
-          <div class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">
-            <span v-if="applyRewardPoints && canUseRewardPoints && appliedRewardPoints > 0">
-              Using {{ appliedRewardPoints.toLocaleString() }} pts (≈
-              {{ formatCurrency(discountAmount) }} value)
-            </span>
-            <span v-else>
-              You can use up to {{ maxUsablePoints.toLocaleString() }} pts
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Action Buttons -->
-      <div class="bottom-buttons-container relative md:static mt-10">
-        <Button label="Back" icon="pi pi-arrow-left" severity="secondary"
-          class="bottom-button-dual bottom-button-dual-secondary" @click="goBack" />
-        <Button :disabled="!canContinue" icon="pi pi-arrow-right" :loading="loading"
-          class="bottom-button-dual bottom-button-dual-primary" @click="handleContinue">
-          <span class="text-sm md:text-base">
-            {{ buttonLabel }}
-          </span>
-        </Button>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script lang="ts">
-import type { ComponentPublicInstance } from 'vue'
-
-export default {
-  name: 'WithdrawSettings',
-  beforeRouteEnter(to, from, next) {
-    next((vm: ComponentPublicInstance) => {
-      // Reset page if not returning from WithdrawOrder
-      if (from.name !== 'WithdrawOrder' && (vm as any).initPage) {
-        ;(vm as any).initPage()
-      }
-    })
-  }
-}
 </script>
 
 <script setup lang="ts">
-import { ref, computed, watch, onMounted } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
-import { useToast } from 'primevue/usetoast'
-import InputText from 'primevue/inputtext'
 import Button from 'primevue/button'
+import InputText from 'primevue/inputtext'
+import { useToast } from 'primevue/usetoast'
+import { computed, onMounted, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
 import CardInfoHeader from '@/components/CardInfoHeader.vue'
 import { useCardStore } from '@/stores/card'
@@ -147,7 +27,7 @@ const cardInfo = ref({
   cardCurrency: 'USD',
   maxOnDaily: 0,
   maxOnMonthly: 0,
-  maxOnPercent: 0
+  maxOnPercent: 0,
 })
 
 // Card detail & balance from cache
@@ -158,13 +38,13 @@ const minimumBalance = ref(1.0)
 // Amount input (string) and parsed number
 const withdrawAmountInput = ref('')
 const withdrawAmountNumber = computed(() => {
-  const v = parseFloat(withdrawAmountInput.value)
+  const v = Number.parseFloat(withdrawAmountInput.value)
   return Number.isFinite(v) && v > 0 ? v : 0
 })
 
 // Errors
 const errors = ref({
-  withdrawAmount: ''
+  withdrawAmount: '',
 })
 
 // Currency symbol mapping (reuse with other pages)
@@ -178,7 +58,7 @@ const currencySymbols: Record<string, string> = {
   AUD: 'A$',
   CHF: 'CHF',
   SGD: 'S$',
-  HKD: 'HK$'
+  HKD: 'HK$',
 }
 
 const currentCurrencySymbol = computed(() => {
@@ -188,14 +68,14 @@ const currentCurrencySymbol = computed(() => {
 
 // Decimal precision per currency (default 2, JPY 0)
 const currencyDecimals: Record<string, number> = {
-  JPY: 0
+  JPY: 0,
 }
 const currentDecimals = computed(() => {
   const currency = cardInfo.value.cardCurrency || 'USD'
   return currencyDecimals[currency] ?? 2
 })
 
-const formatCurrency = (amount: number) => {
+function formatCurrency(amount: number) {
   const decimals = currentDecimals.value
   return `${currentCurrencySymbol.value}${amount.toFixed(decimals)}`
 }
@@ -210,11 +90,11 @@ const maxUsablePoints = computed(() => availableRewardPoints.value)
 const appliedRewardPoints = ref(0)
 const discountAmount = ref(0)
 
-const recalculateRewardPoints = () => {
+function recalculateRewardPoints() {
   const points = applyRewardPoints.value ? Math.min(pointsToUse.value, maxUsablePoints.value) : 0
   appliedRewardPoints.value = points
   const discount = points / 100
-  discountAmount.value = parseFloat(discount.toFixed(currentDecimals.value))
+  discountAmount.value = Number.parseFloat(discount.toFixed(currentDecimals.value))
 }
 
 watch(applyRewardPoints, (value) => {
@@ -222,17 +102,20 @@ watch(applyRewardPoints, (value) => {
     pointsToUse.value = 0
     appliedRewardPoints.value = 0
     discountAmount.value = 0
-  } else {
+  }
+  else {
     pointsToUse.value = maxUsablePoints.value
     recalculateRewardPoints()
   }
 })
 
 watch(pointsToUse, (value) => {
-  if (!applyRewardPoints.value) return
+  if (!applyRewardPoints.value)
+    return
   if (value < 0) {
     pointsToUse.value = 0
-  } else if (value > maxUsablePoints.value) {
+  }
+  else if (value > maxUsablePoints.value) {
     pointsToUse.value = maxUsablePoints.value
   }
   recalculateRewardPoints()
@@ -270,11 +153,12 @@ const buttonLabel = computed(() => {
 })
 
 // Get maximum withdraw amount (reuse logic from WithdrawOrder.vue)
-const getMaxWithdrawAmount = () => {
-  if (!cardDetail.value) return balance.value
+function getMaxWithdrawAmount() {
+  if (!cardDetail.value)
+    return balance.value
 
   const cardBalance = (cardDetail.value as any).cardBalance || 0
-  const availableBalance = parseFloat(cardBalance.toString()) || 0
+  const availableBalance = Number.parseFloat(cardBalance.toString()) || 0
 
   const maxDaily = cardInfo.value.maxOnDaily || availableBalance
   const maxPercent = cardInfo.value.maxOnPercent || availableBalance
@@ -283,22 +167,22 @@ const getMaxWithdrawAmount = () => {
 }
 
 // Initialize card info from route
-const initializeCardInfo = () => {
+function initializeCardInfo() {
   if (route.query.cardId) {
     cardInfo.value = {
       cardId: route.query.cardId as string,
       cardNo: (route.query.cardNo as string) || '',
       cardCurrency: (route.query.cardCurrency as string) || 'USD',
-      maxOnDaily: parseFloat(route.query.maxOnDaily as string) || 0,
-      maxOnMonthly: parseFloat(route.query.maxOnMonthly as string) || 0,
-      maxOnPercent: parseFloat(route.query.maxOnPercent as string) || 0
+      maxOnDaily: Number.parseFloat(route.query.maxOnDaily as string) || 0,
+      maxOnMonthly: Number.parseFloat(route.query.maxOnMonthly as string) || 0,
+      maxOnPercent: Number.parseFloat(route.query.maxOnPercent as string) || 0,
     }
     minimumBalance.value = 1.0
   }
 }
 
 // Load card info from route (no cache; card list data passed from MyCards via route)
-const validateAndLoadCardDetails = () => {
+function validateAndLoadCardDetails() {
   const routeCardId = route.query.cardId as string
   const routeCardNo = route.query.cardNo as string
   const routeCardBalance = route.query.cardBalance as string
@@ -308,21 +192,21 @@ const validateAndLoadCardDetails = () => {
       severity: 'error',
       summary: t('withdraw.invalidParams'),
       detail: t('withdraw.missingCardInfo'),
-      life: 3000
+      life: 3000,
     })
     router.push('/my-cards')
     return false
   }
 
   // Prefer cardBalance from route (from MyCards card list)
-  const balanceFromRoute = parseFloat(routeCardBalance)
+  const balanceFromRoute = Number.parseFloat(routeCardBalance)
   if (Number.isFinite(balanceFromRoute)) {
     balance.value = balanceFromRoute
     cardDetail.value = {
       cardId: routeCardId,
       cardNo: routeCardNo,
       cardCurrency: (route.query.cardCurrency as string) || 'USD',
-      cardBalance: balance.value
+      cardBalance: balance.value,
     }
     initializeCardInfo()
     return true
@@ -331,21 +215,21 @@ const validateAndLoadCardDetails = () => {
   // Fallback: if route has no cardBalance, try cardStore.cardList
   const cardFromList = cardStore.cardList.find(c => c.cardId === routeCardId)
   if (cardFromList && cardFromList.cardNo === routeCardNo) {
-    balance.value = parseFloat(String(cardFromList.cardBalance ?? 0)) || 0
+    balance.value = Number.parseFloat(String(cardFromList.cardBalance ?? 0)) || 0
     cardDetail.value = {
       cardId: cardFromList.cardId,
       cardNo: cardFromList.cardNo,
       cardCurrency: cardFromList.cardCurrency,
-      cardBalance: balance.value
+      cardBalance: balance.value,
     }
     cardInfo.value = {
       ...cardInfo.value,
       cardId: cardFromList.cardId,
       cardNo: cardFromList.cardNo,
       cardCurrency: cardFromList.cardCurrency,
-      maxOnDaily: parseFloat(String(cardFromList.maxOnDaily ?? 0)) || 0,
-      maxOnMonthly: parseFloat(String(cardFromList.maxOnMonthly ?? 0)) || 0,
-      maxOnPercent: parseFloat(String(cardFromList.maxOnPercent ?? 0)) || 0
+      maxOnDaily: Number.parseFloat(String(cardFromList.maxOnDaily ?? 0)) || 0,
+      maxOnMonthly: Number.parseFloat(String(cardFromList.maxOnMonthly ?? 0)) || 0,
+      maxOnPercent: Number.parseFloat(String(cardFromList.maxOnPercent ?? 0)) || 0,
     }
     return true
   }
@@ -354,40 +238,43 @@ const validateAndLoadCardDetails = () => {
     severity: 'error',
     summary: t('withdraw.invalidParams'),
     detail: t('withdraw.cannotGetCardInfo'),
-    life: 3000
+    life: 3000,
   })
   router.push('/my-cards')
   return false
 }
 
 // Amount helpers
-const sanitizeAmountString = (value: string): string => {
+function sanitizeAmountString(value: string): string {
   const decimals = currentDecimals.value
   const raw = (value || '').toString().trim().replace(/[^\d.]/g, '')
-  if (!raw) return ''
+  if (!raw)
+    return ''
   const firstDot = raw.indexOf('.')
-  let normalized = firstDot >= 0
+  const normalized = firstDot >= 0
     ? raw.slice(0, firstDot + 1) + raw.slice(firstDot + 1).replace(/\./g, '')
     : raw
   let [intPart, fracPart = ''] = normalized.split('.')
   intPart = intPart.replace(/^0+(?=\d)/, '') || '0'
-  if (decimals <= 0) return intPart
-  if (fracPart) fracPart = fracPart.slice(0, decimals)
+  if (decimals <= 0)
+    return intPart
+  if (fracPart)
+    fracPart = fracPart.slice(0, decimals)
   return fracPart ? `${intPart}.${fracPart}` : intPart
 }
 
-const handleAmountBlur = () => {
+function handleAmountBlur() {
   withdrawAmountInput.value = sanitizeAmountString(withdrawAmountInput.value)
 }
 
-const setMaxAmount = () => {
+function setMaxAmount() {
   const decimals = currentDecimals.value
   const max = getMaxWithdrawAmount()
   withdrawAmountInput.value = max.toFixed(decimals)
 }
 
 // Validate before continue
-const validateAmountAndPoints = () => {
+function validateAmountAndPoints() {
   errors.value.withdrawAmount = ''
 
   const amount = withdrawAmountNumber.value
@@ -419,7 +306,7 @@ const validateAmountAndPoints = () => {
 
 const loading = ref(false)
 
-const handleContinue = async () => {
+async function handleContinue() {
   handleAmountBlur()
   recalculateRewardPoints()
 
@@ -428,7 +315,7 @@ const handleContinue = async () => {
       severity: 'error',
       summary: t('withdraw.validationError'),
       detail: errors.value.withdrawAmount || t('withdraw.checkWithdrawAmount'),
-      life: 3000
+      life: 3000,
     })
     return
   }
@@ -439,7 +326,7 @@ const handleContinue = async () => {
       severity: 'success',
       summary: t('withdraw.confirmed'),
       detail: t('withdraw.withdrawAmountConfirmed', { amount: formatCurrency(withdrawAmountNumber.value) }),
-      life: 2000
+      life: 2000,
     })
 
     router.push({
@@ -454,29 +341,31 @@ const handleContinue = async () => {
         maxOnPercent: cardInfo.value.maxOnPercent.toString(),
         action: route.query.action || 'withdraw',
         amount: withdrawAmountNumber.value.toString(),
-        cardRewardPoints: appliedRewardPoints.value || 0
-      }
+        cardRewardPoints: appliedRewardPoints.value || 0,
+      },
     })
-  } finally {
+  }
+  finally {
     loading.value = false
   }
 }
 
-const goBack = () => {
+function goBack() {
   router.push({ name: 'MyCards' })
 }
 
 // Initialize page
-const initPage = () => {
+function initPage() {
   // Reset state
   applyRewardPoints.value = false
   pointsToUse.value = 0
   withdrawAmountInput.value = ''
   errors.value.withdrawAmount = ''
-  
+
   initializeCardInfo()
   const ok = validateAndLoadCardDetails()
-  if (!ok) return
+  if (!ok)
+    return
 
   // Initialize default amount as minimum
   const decimals = currentDecimals.value
@@ -485,10 +374,130 @@ const initPage = () => {
 
 // Expose initPage
 defineExpose({
-  initPage
+  initPage,
 })
 
 onMounted(() => {
   initPage()
 })
 </script>
+
+<template>
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <!-- Unified Header -->
+    <AppHeader title="Withdraw" :show-title="true" />
+
+    <!-- Main Content -->
+    <div
+      class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8 pb-24 md:pb-6 lg:pb-8"
+    >
+      <!-- Card Information -->
+      <CardInfoHeader :card-no="cardInfo.cardNo" :balance="balance" :loading="!cardDetail" />
+
+      <!-- Content -->
+      <div class="mt-6 space-y-8">
+        <!-- Withdraw Amount Section -->
+        <div>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-6">
+            {{ t('withdraw.withdrawAmount') }}
+          </h2>
+          <div class="mb-3 text-xs text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-800/60 rounded-lg p-3">
+            {{ t('withdraw.available') }} {{ formatCurrency(balance) }} · {{ t('withdraw.limit') }} {{ formatCurrency(minimumBalance) }} -
+            {{ formatCurrency(getMaxWithdrawAmount()) }} {{ cardInfo.cardCurrency }}
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              {{ t('withdraw.withdrawAmount') }}
+            </label>
+            <div class="flex items-center gap-2">
+              <InputText
+                v-model="withdrawAmountInput" type="text" :placeholder="minimumBalance.toString()" class="w-32"
+                :class="{ 'p-invalid': errors.withdrawAmount }" @blur="handleAmountBlur"
+              />
+              <span class="text-gray-600 dark:text-gray-400">
+                {{ cardInfo.cardCurrency }}
+              </span>
+              <Button :label="t('withdraw.max')" size="small" severity="secondary" @click="setMaxAmount" />
+            </div>
+            <small v-if="errors.withdrawAmount" class="text-red-500 text-xs mt-1">
+              {{ errors.withdrawAmount }}
+            </small>
+          </div>
+
+          <!-- Quick Amount Buttons (removed as per latest requirement) -->
+        </div>
+
+        <!-- Reward Points -->
+        <div
+          v-if="availableRewardPoints > 0"
+          class="mt-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl p-4 shadow-sm space-y-2"
+        >
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-wide text-orange-500 dark:text-orange-300">
+                {{ t('withdraw.cardRewardPoints') }}
+              </p>
+              <p class="text-xl font-bold text-gray-900 dark:text-white mt-1">
+                {{ t('cards.pointsWithUnit', { n: availableRewardPoints.toLocaleString() }) }}
+              </p>
+              <p class="text-[11px] text-gray-500 dark:text-gray-400">
+                {{ t('withdraw.ptsToFiatRate', { pts: 100, currency: cardInfo.cardCurrency || 'USD' }) }}
+              </p>
+            </div>
+            <label class="inline-flex items-center cursor-pointer">
+              <input v-model="applyRewardPoints" type="checkbox" class="sr-only" :disabled="!canUseRewardPoints">
+              <span
+                class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition-colors duration-200"
+                :class="applyRewardPoints && canUseRewardPoints ? 'bg-orange-500 dark:bg-orange-400' : ''"
+              >
+                <span
+                  class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-200"
+                  :class="applyRewardPoints && canUseRewardPoints ? 'translate-x-6' : ''"
+                />
+              </span>
+            </label>
+          </div>
+          <div class="mt-2 flex items-center justify-between text-[11px] text-gray-600 dark:text-gray-200">
+            <div class="flex items-center gap-1.5">
+              <span>{{ t('withdraw.use') }}</span>
+              <input
+                v-model.number="pointsToUse" type="number" min="0" :max="maxUsablePoints" step="1"
+                :disabled="!applyRewardPoints || !canUseRewardPoints"
+                class="w-20 px-2 py-1 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-[11px] font-semibold focus:outline-none focus:ring-1 focus:ring-orange-400 focus:border-transparent disabled:opacity-50"
+              >
+              <span class="text-[10px] text-gray-500 dark:text-gray-400">{{ t('withdraw.pts') }}</span>
+            </div>
+            <span class="text-[10px] text-gray-400 dark:text-gray-500">
+              {{ t('withdraw.maxPts', { n: maxUsablePoints.toLocaleString() }) }}
+            </span>
+          </div>
+          <div class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">
+            <span v-if="applyRewardPoints && canUseRewardPoints && appliedRewardPoints > 0">
+              {{ t('withdraw.usingPts', { n: appliedRewardPoints.toLocaleString(), amount: formatCurrency(discountAmount) }) }}
+            </span>
+            <span v-else>
+              {{ t('withdraw.canUsePts', { n: maxUsablePoints.toLocaleString() }) }}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="bottom-buttons-container relative md:static mt-10">
+        <Button
+          :label="t('common.back')" icon="pi pi-arrow-left" severity="secondary"
+          class="bottom-button-dual bottom-button-dual-secondary" @click="goBack"
+        />
+        <Button
+          :disabled="!canContinue" icon="pi pi-arrow-right" :loading="loading"
+          class="bottom-button-dual bottom-button-dual-primary" @click="handleContinue"
+        >
+          <span class="text-sm md:text-base">
+            {{ buttonLabel }}
+          </span>
+        </Button>
+      </div>
+    </div>
+  </div>
+</template>

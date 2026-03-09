@@ -1,16 +1,16 @@
-import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
-import { CardAPI } from '@/api/card'
-import { useAuthStore } from '@/stores/auth'
-import type { ApiResponse } from '@/types/api'
 import type {
-  CardConfig,
   CardBin,
-  QueryCardBinParams,
+  CardConfig,
+  CardDetailResponse,
   CardHolderInfo,
   CardListItem,
-  CardDetailResponse
+  QueryCardBinParams,
 } from '@/api/card'
+import type { ApiResponse } from '@/types/api'
+import { defineStore } from 'pinia'
+import { computed, ref } from 'vue'
+import { CardAPI } from '@/api/card'
+import { useAuthStore } from '@/stores/auth'
 
 export const useCardStore = defineStore('card', () => {
   // State
@@ -28,7 +28,7 @@ export const useCardStore = defineStore('card', () => {
       maxOnPercent: 500,
       status: 1, // Enabled
       cardPicture: null,
-      applyNumber: 3 // Maximum number of cards user can apply for
+      applyNumber: 3, // Maximum number of cards user can apply for
     },
     {
       cardPattern: 2,
@@ -42,7 +42,7 @@ export const useCardStore = defineStore('card', () => {
       maxOnPercent: 1000,
       status: 1, // Enabled
       cardPicture: null,
-      applyNumber: 2 // Maximum number of cards user can apply for
+      applyNumber: 2, // Maximum number of cards user can apply for
     },
     {
       cardPattern: 1,
@@ -56,8 +56,8 @@ export const useCardStore = defineStore('card', () => {
       maxOnPercent: 750,
       status: 2, // Disabled
       cardPicture: null,
-      applyNumber: 1 // Maximum number of cards user can apply for
-    }
+      applyNumber: 1, // Maximum number of cards user can apply for
+    },
   ])
   const cardBins = ref<CardBin[]>([])
   const cardList = ref<CardListItem[]>([])
@@ -76,19 +76,19 @@ export const useCardStore = defineStore('card', () => {
 
   // Computed properties
   const availableCards = computed(() =>
-    cardConfigs.value.filter(card => card.status === 1)
+    cardConfigs.value.filter(card => card.status === 1),
   )
 
   const virtualCards = computed(() =>
-    cardConfigs.value.filter(card => card.cardPattern === 1)
+    cardConfigs.value.filter(card => card.cardPattern === 1),
   )
 
   const physicalCards = computed(() =>
-    cardConfigs.value.filter(card => card.cardPattern === 2)
+    cardConfigs.value.filter(card => card.cardPattern === 2),
   )
 
   const enabledCards = computed(() =>
-    cardConfigs.value.filter(card => card.status === 1)
+    cardConfigs.value.filter(card => card.status === 1),
   )
 
   const hasCards = computed(() => cardList.value.length > 0)
@@ -102,7 +102,7 @@ export const useCardStore = defineStore('card', () => {
     return {
       token,
       'fingerprint-id': 'default-fingerprint-id', // Can be obtained from device fingerprint
-      refresh_token: refreshToken
+      'refresh_token': refreshToken,
     }
   }
 
@@ -117,17 +117,20 @@ export const useCardStore = defineStore('card', () => {
       if (response.success && response.model) {
         cardConfigs.value = response.model
         return { success: true, data: response.model }
-      } else {
+      }
+      else {
         throw new Error(response.msg || 'Failed to get card configuration')
       }
-    } catch (err) {
+    }
+    catch (err) {
       error.value = err instanceof Error ? err.message : 'Failed to get card configuration'
       console.error('Failed to get card configuration:', err)
       return {
         success: false,
-        error: error.value
+        error: error.value,
       }
-    } finally {
+    }
+    finally {
       loading.value = false
     }
   }
@@ -143,17 +146,20 @@ export const useCardStore = defineStore('card', () => {
       if (response.success && response.model) {
         cardBins.value = response.model
         return { success: true, data: response.model }
-      } else {
+      }
+      else {
         throw new Error(response.msg || 'Failed to query card BIN')
       }
-    } catch (err) {
+    }
+    catch (err) {
       error.value = err instanceof Error ? err.message : 'Failed to query card BIN'
       console.error('Failed to query card BIN:', err)
       return {
         success: false,
-        error: error.value
+        error: error.value,
       }
-    } finally {
+    }
+    finally {
       loading.value = false
     }
   }
@@ -168,17 +174,20 @@ export const useCardStore = defineStore('card', () => {
 
       if (response.success) {
         return { success: true, message: 'Cardholder info saved successfully' }
-      } else {
+      }
+      else {
         throw new Error(response.msg || 'Failed to save cardholder info')
       }
-    } catch (err) {
+    }
+    catch (err) {
       error.value = err instanceof Error ? err.message : 'Failed to save cardholder info'
       console.error('Failed to save cardholder info:', err)
       return {
         success: false,
-        error: error.value
+        error: error.value,
       }
-    } finally {
+    }
+    finally {
       loading.value = false
     }
   }
@@ -194,10 +203,12 @@ export const useCardStore = defineStore('card', () => {
       if (response.success && response.model) {
         cardList.value = response.model
         return { success: true, data: response.model }
-      } else {
+      }
+      else {
         throw new Error(response.msg || 'Failed to get card list')
       }
-    } catch (err) {
+    }
+    catch (err) {
       const message = err instanceof Error ? err.message : 'Failed to get card list'
       if (!options?.silent) {
         error.value = message
@@ -205,9 +216,10 @@ export const useCardStore = defineStore('card', () => {
       }
       return {
         success: false,
-        error: message
+        error: message,
       }
-    } finally {
+    }
+    finally {
       loading.value = false
     }
   }
@@ -333,11 +345,11 @@ export const useCardStore = defineStore('card', () => {
     getRequestHeaders,
     cacheCurrentCardDetail,
     getCachedCurrentCardDetail,
-    clearCurrentCardDetailCache
+    clearCurrentCardDetailCache,
   }
 }, {
   persist: {
     key: 'card-store',
-    storage: localStorage
-  }
+    storage: localStorage,
+  },
 })

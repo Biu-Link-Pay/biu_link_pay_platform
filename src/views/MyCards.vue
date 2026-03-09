@@ -1,756 +1,18 @@
-<template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
-    <!-- Navigation Header -->
-    <AppHeader :title="t('cards.virtualCards')" :show-title="true" />
-
-    <!-- Main Content -->
-    <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
-      <!-- Empty State -->
-      <div v-if="cards.length === 0" class="text-center py-12">
-        <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
-          <div
-            class="w-20 h-20 mx-auto mb-6 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
-            <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-3xl"></i>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">{{ t('cards.noVirtualCards') }}</h3>
-          <p class="text-gray-600 dark:text-gray-400 mb-6">{{ t('cards.noVirtualCardsDesc') }}</p>
-          <button @click="goToApplyCard"
-            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-            <i class="pi pi-plus mr-2"></i>
-            {{ t('cards.applyVirtualCard') }}
-          </button>
-        </div>
-      </div>
-
-      <!-- Cards Display with Features -->
-      <div v-else class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-20 mb-8">
-        <!-- Left Side: Card Display -->
-        <div class="space-y-6 order-1 lg:order-1">
-          <!-- Card Display Area with Navigation -->
-          <div class="flex items-center justify-center gap-3 md:gap-6">
-            <!-- Left Navigation Button - Hidden on mobile -->
-            <button v-if="cards.length > 1" @click="previousCard" :disabled="currentCardIndex === 0"
-              class="hidden md:flex flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 items-center justify-center"
-              :title="t('cards.previousCard')">
-              <i class="pi pi-chevron-left text-gray-600 dark:text-gray-400 text-sm md:text-lg"></i>
-            </button>
-
-            <!-- Card Container -->
-            <div class="flex-1 max-w-xs md:max-w-sm relative overflow-hidden md:flex-1">
-              <Transition :name="cardTransitionName" mode="out-in">
-                <div v-if="selectedCard" :key="selectedCard.id || selectedCard.cardNo || currentCardIndex"
-                  class="rounded-xl p-4 md:p-6 text-white shadow-lg cursor-grab active:cursor-grabbing relative overflow-hidden"
-                  :style="{
-                    backgroundImage: `url(${getCardBackgroundImage(selectedCard.cardScheme)})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    aspectRatio: '1035/582',
-                    maxWidth: '400px',
-                    width: '100%'
-                  }" @mousedown="handleMouseDown" @mousemove="handleMouseMove" @mouseup="handleMouseUp"
-                  @mouseleave="handleMouseUp" @wheel="handleWheel" @keydown="handleKeyDown"
-                  @touchstart.passive="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd"
-                  @touchcancel="handleTouchEnd" tabindex="0" style="outline: none;">
-
-                  <!-- Semi-transparent overlay for better text readability -->
-                  <div class="absolute inset-0 bg-black/20 rounded-xl"></div>
-
-                  <!-- Card content -->
-                  <div class="relative z-10 h-full flex flex-col justify-between">
-                    <!-- Card Header -->
-                    <!-- Card Details -->
-                    <div v-if="selectedCard" class="space-y-5 text-sm">
-                      <div class="md:mt-14 mt-20 w-full flex justify-end items-baseline gap-2">
-                        <span class="text-sm md:text-base font-bold text-white tabular-nums">
-                          {{ selectedCard.cardBalance }}
-                        </span>
-                        <span class="text-sm md:text-base font-medium text-white/90 normal-case">
-                          {{ selectedCard.cardCurrency || 'N/A' }}
-                        </span>
-                      </div>
-                      <!-- Card Number -->
-                      <div class="text-lg md:text-xl font-mono tracking-[0.35em]">
-                        {{ selectedCard.cardNo }}
-                      </div>
-
-                      <!-- Card Info -->
-
-                    </div>
-                  </div>
-                </div>
-              </Transition>
-            </div>
-
-            <!-- Right Navigation Button - Hidden on mobile -->
-            <button v-if="cards.length > 1" @click="nextCard" :disabled="currentCardIndex === cards.length - 1"
-              class="hidden md:flex flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 items-center justify-center"
-              :title="t('cards.nextCard')">
-              <i class="pi pi-chevron-right text-gray-600 dark:text-gray-400 text-sm md:text-lg"></i>
-            </button>
-          </div>
-
-          <!-- Navigation Dots for Multiple Cards -->
-          <div v-if="cards.length > 1" class="flex justify-center mt-4 space-x-2">
-            <button v-for="(card, index) in cards" :key="index" @click="selectCard(index)"
-              class="w-3 h-3 rounded-full transition-colors duration-200"
-              :class="index === currentCardIndex ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'">
-            </button>
-          </div>
-
-          <!-- Action Buttons Row -->
-          <div class="flex justify-center mt-6 space-x-4 md:space-x-6">
-            <!-- Recharge Button -->
-            <div class="flex flex-col items-center">
-              <button @click="goToRecharge"
-                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
-                <i class="pi pi-arrow-down text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
-              </button>
-              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.recharge') }}</span>
-            </div>
-
-            <!-- Withdraw Button -->
-            <div class="flex flex-col items-center">
-              <button @click="goToWithdraw"
-                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
-                <i class="pi pi-arrow-up text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
-              </button>
-              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.withdraw') }}</span>
-            </div>
-
-            <!-- Details Button -->
-            <div class="flex flex-col items-center">
-              <button @click="goToDetails"
-                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
-                <i class="pi pi-calendar text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
-              </button>
-              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.details') }}</span>
-            </div>
-
-            <!-- Delete Card Button -->
-            <div class="flex flex-col items-center">
-              <button @click="goToDeleteCard"
-                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-red-50 dark:hover:bg-red-900/20 hover:border-red-200 dark:hover:border-red-800 transition-colors flex items-center justify-center mb-2">
-                <i class="pi pi-trash text-red-600 dark:text-red-400 text-base md:text-lg"></i>
-              </button>
-              <span class="text-xs text-red-600 dark:text-red-400 font-medium">{{ t('common.delete') }}</span>
-            </div>
-
-            <!-- Add Card Button -->
-            <div class="flex flex-col items-center">
-              <button @click="goToApplyCard"
-                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
-                <i class="pi pi-plus text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
-              </button>
-              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.addCard') }}</span>
-            </div>
-          </div>
-
-          <!-- Card Limits Panel -->
-          <div v-if="selectedCard"
-            class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-            <div class="flex items-center justify-between gap-3">
-              <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
-                  <i class="pi pi-shield text-blue-600 dark:text-blue-400 text-lg"></i>
-                </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ t('cards.transactionLimits') }}
-                  </h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">{{ t('cards.transactionLimitsDesc') }}</p>
-                </div>
-              </div>
-              <button v-if="isMobile" type="button" @click="isLimitsExpanded = !isLimitsExpanded"
-                class="flex items-center justify-center w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 transition-colors"
-                :aria-expanded="isLimitsExpanded">
-                <i class="pi pi-chevron-down text-sm transition-transform transform"
-                  :class="{ 'rotate-180': isLimitsExpanded }"></i>
-              </button>
-            </div>
-            <div v-if="!isMobile || isLimitsExpanded" class="space-y-4 mt-6">
-              <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center">
-                      <i class="pi pi-calendar text-green-600 dark:text-green-400 text-sm"></i>
-                    </div>
-                    <div>
-                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ t('cards.dailyLimit') }}
-                      </div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">{{ t('cards.dailyLimitDesc') }}</div>
-                    </div>
-                  </div>
-                  <div class="text-right">
-                    <div class="text-lg font-bold text-gray-900 dark:text-white">
-                      {{ selectedCard.maxOnDaily != null ? `$${selectedCard.maxOnDaily}` : t('cards.noLimit') }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
-                      <i class="pi pi-calendar-plus text-blue-600 dark:text-blue-400 text-sm"></i>
-                    </div>
-                    <div>
-                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ t('cards.monthlyLimit') }}
-                      </div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">{{ t('cards.monthlyLimitDesc') }}</div>
-                    </div>
-                  </div>
-                  <div class="text-right">
-                    <div class="text-lg font-bold text-gray-900 dark:text-white">
-                      {{ selectedCard.maxOnMonthly != null ? `$${selectedCard.maxOnMonthly}` : t('cards.noLimit') }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center space-x-3">
-                    <div
-                      class="w-8 h-8 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center">
-                      <i class="pi pi-credit-card text-orange-600 dark:text-orange-400 text-sm"></i>
-                    </div>
-                    <div>
-                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ t('cards.singleTransaction')
-                        }}</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">{{ t('cards.singleTransactionDesc') }}</div>
-                    </div>
-                  </div>
-                  <div class="text-right">
-                    <div class="text-lg font-bold text-gray-900 dark:text-white">
-                      {{ selectedCard.maxOnPercent != null ? `$${selectedCard.maxOnPercent}` : t('cards.noLimit') }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Side: Features and Actions -->
-        <div class="space-y-8 order-2 lg:order-2">
-          <!-- Features Section -->
-          <div v-if="cards.length > 0"
-            class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm w-full border border-gray-200 dark:border-gray-700">
-            <!-- Tabs -->
-            <div
-              class="flex flex-wrap gap-2 md:gap-4 border-b border-gray-200 dark:border-gray-700 px-2 md:px-3 lg:px-4">
-              <button v-for="tab in tabs" :key="tab.key" @click="handleTabChange(tab.key)"
-                class="flex-1 basis-0 px-3 py-2 text-center text-sm md:text-base lg:text-base font-semibold transition-colors md:px-4 md:py-3 lg:px-6 lg:py-3 rounded-t-md"
-                :class="activeTab === tab.key
-                  ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
-                  : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'">
-                {{ tab.label }}
-              </button>
-            </div>
-
-            <!-- Transaction List -->
-            <div class="p-3 md:p-4 lg:p-5">
-              <!-- No Cards State -->
-              <div v-if="cards.length === 0" class="text-center py-8">
-                <div
-                  class="w-16 h-16 mx-auto mb-4 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
-                  <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-2xl"></i>
-                </div>
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-2">{{ t('cards.noCards') }}</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                  <span v-if="activeTab === 'transaction'">{{ t('cards.applyCardFirstTransaction') }}</span>
-                  <span v-else-if="activeTab === 'recharge'">{{ t('cards.applyCardFirstRecharge') }}</span>
-                  <span v-else-if="activeTab === 'withdraw'">{{ t('cards.applyCardFirstWithdraw') }}</span>
-                  <span v-else>{{ t('cards.applyCardFirst') }}</span>
-                </p>
-                <button @click="goToApplyCard"
-                  class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-                  <i class="pi pi-plus mr-2"></i>
-                  {{ t('cards.applyCard') }}
-                </button>
-              </div>
-
-              <!-- Transaction Tab -->
-              <div v-else-if="activeTab === 'transaction'" class="space-y-4 lg:space-y-6">
-                <!-- Loading State -->
-                <div v-if="loading.transaction" class="flex justify-center py-6">
-                  <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
-                </div>
-
-                <!-- Desktop: Swipe Pagination -->
-                <div v-else-if="transactions.length > 0 && !isMobile" class="space-y-3 lg:space-y-4">
-                  <div class="relative overflow-hidden">
-                    <div class="flex transition-transform duration-300"
-                      :style="{ transform: `translateX(-${mobilePagination.transaction.currentPage * 100}%)` }">
-                      <div v-for="(page, pageIndex) in mobileTransactionPages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2 lg:px-4">
-                        <div class="space-y-3 lg:space-y-4">
-                          <div v-for="(transaction, index) in page" :key="index"
-                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl transition-colors hover:bg-gray-50 dark:hover:bg-gray-700/50">
-                            <div
-                              :class="['w-12 h-12 lg:w-14 lg:h-14 rounded-full flex items-center justify-center flex-shrink-0', getTransactionIconColor(transaction)]">
-                              <i :class="['pi', getTransactionIcon(transaction), 'text-base lg:text-lg']"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                              <div
-                                class="font-medium text-gray-900 dark:text-white text-sm lg:text-base truncate mb-0.5">
-                                {{ transaction.merchantNameLocation || transaction.transactionType || '' }}
-                              </div>
-                              <div class="flex items-center gap-2 flex-wrap">
-                                <span v-if="transaction.createTime"
-                                  class="text-[11px] lg:text-xs text-gray-400 dark:text-gray-500">
-                                  {{ transaction.createTime }}
-                                </span>
-
-                              </div>
-                              <div v-if="isRefundTransaction(transaction)">
-                                <span
-                                  class="inline-flex items-center gap-1 text-[11px] lg:text-xs font-medium text-emerald-700 dark:text-emerald-300">
-                                  <i class="pi pi-refresh text-[10px]"></i>
-                                  {{ t('cards.refund') }}
-                                </span>
-                              </div>
-                              <div v-if="transaction.feeDeductionAmount"
-                                class="text-xs text-orange-600 dark:text-orange-400 mt-1">
-                                {{ t('cards.feeLabel', {
-                                  amount: transaction.feeDeductionAmount.toFixed(2), currency:
-                                transaction.feeDeductionCurrency }) }}
-                              </div>
-                              <div v-if="isFailedStatus(transaction.status) && transaction.msg"
-                                class="text-xs text-red-600 dark:text-red-400 mt-1 line-clamp-2">
-                                {{ transaction.msg }}
-                              </div>
-                              <div v-if="hasRewardPoints(transaction.cardRewardPoints)"
-                                class="text-[11px] lg:text-xs text-orange-600 dark:text-orange-300 mt-1">
-                                {{ t('cards.earnPoints', { points: formatRewardPoints(transaction.cardRewardPoints) })
-                                }}
-                              </div>
-                            </div>
-                            <div class="text-right flex-shrink-0">
-                              <div
-                                :class="['font-semibold text-sm lg:text-base', getTransactionAmountColor(transaction)]">
-                                {{ formatTransactionAmount(transaction.transactionAmount,
-                                  transaction.transactionCurrency)
-                                }}
-                              </div>
-                              <div class="text-xs lg:text-sm mt-0.5" :class="getStatusColor(transaction.status)">
-                                {{ transaction.status }}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Desktop Navigation -->
-                  <div class="flex items-center justify-between mt-4 px-2">
-                    <button @click="prevDesktopPage('transaction')"
-                      :disabled="pagination.transaction.pageIndex === 0 || loading.transaction"
-                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
-                      <i
-                        class="pi pi-chevron-left text-xs group-hover:transform group-hover:-translate-x-0.5 transition-transform"></i>
-                      <span>{{ t('common.previous') }}</span>
-                    </button>
-
-                    <button @click="nextDesktopPage('transaction')"
-                      :disabled="!pagination.transaction.hasMore || loading.transaction"
-                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
-                      <span>{{ t('common.next') }}</span>
-                      <i
-                        class="pi pi-chevron-right text-xs group-hover:transform group-hover:translate-x-0.5 transition-transform"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Mobile: Swipe Pagination -->
-                <div v-else-if="transactions.length > 0 && isMobile" class="space-y-3 lg:space-y-4">
-                  <div class="relative overflow-hidden">
-                    <div class="flex transition-transform duration-300"
-                      :style="{ transform: `translateX(-${mobilePagination.transaction.currentPage * 100}%)` }">
-                      <div v-for="(page, pageIndex) in mobileTransactionPages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2 lg:px-4">
-                        <div class="space-y-2 lg:space-y-3">
-                          <div v-for="(transaction, index) in page" :key="index"
-                            class="flex items-center space-x-2.5 p-2.5 rounded-lg transition-colors bg-gray-50 dark:bg-gray-700">
-                            <div
-                              :class="['w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0', getTransactionIconColor(transaction)]">
-                              <i :class="['pi', getTransactionIcon(transaction), 'text-xs']"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-xs truncate mb-0.5">
-                                {{ transaction.merchantNameLocation || transaction.transactionType || '' }}
-                              </div>
-                              <div class="flex items-center gap-1.5 flex-wrap">
-                                <span v-if="transaction.createTime"
-                                  class="text-[11px] text-gray-400 dark:text-gray-500">
-                                  {{ transaction.createTime }}
-                                </span>
-                                <span v-if="isRefundTransaction(transaction)"
-                                  class="inline-flex items-center gap-0.5 text-[10px] font-medium text-emerald-700 dark:text-emerald-300">
-                                  <i class="pi pi-refresh text-[9px]"></i>
-                                  {{ t('cards.refund') }}
-                                </span>
-                              </div>
-                              <div v-if="isRefundTransaction(transaction)"
-                                class="text-[11px] text-emerald-700 dark:text-emerald-300 mt-0.5">
-                                {{ t('cards.returnedToBalance') }}
-                              </div>
-                              <div v-if="transaction.feeDeductionAmount"
-                                class="text-xs text-orange-600 dark:text-orange-400 mt-0.5">
-                                {{ t('cards.feeLabel', {
-                                  amount: transaction.feeDeductionAmount.toFixed(2), currency:
-                                transaction.feeDeductionCurrency }) }}
-                              </div>
-                              <div v-if="isFailedStatus(transaction.status) && transaction.msg"
-                                class="text-xs text-red-600 dark:text-red-400 mt-0.5 line-clamp-2">
-                                {{ transaction.msg }}
-                              </div>
-                              <div v-if="hasRewardPoints(transaction.cardRewardPoints)"
-                                class="text-[10px] text-orange-600 dark:text-orange-300 mt-0.5">
-                                {{ t('cards.earnPoints', { points: formatRewardPoints(transaction.cardRewardPoints) })
-                                }}
-                              </div>
-                            </div>
-                            <div class="text-right flex-shrink-0">
-                              <div :class="['font-semibold text-xs', getTransactionAmountColor(transaction)]">
-                                {{ formatTransactionAmount(transaction.transactionAmount,
-                                  transaction.transactionCurrency)
-                                }}
-                              </div>
-                              <div class="text-xs mt-0.5" :class="getStatusColor(transaction.status)">
-                                {{ transaction.status }}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Mobile Navigation -->
-                  <div class="flex items-center justify-between mt-3 px-1">
-                    <button @click="prevDesktopPage('transaction')"
-                      :disabled="pagination.transaction.pageIndex === 0 || loading.transaction"
-                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
-                      <i class="pi pi-chevron-left text-[10px]"></i>
-                      <span>{{ t('common.prev') }}</span>
-                    </button>
-
-                    <button @click="nextDesktopPage('transaction')"
-                      :disabled="!pagination.transaction.hasMore || loading.transaction"
-                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
-                      <span>{{ t('common.next') }}</span>
-                      <i class="pi pi-chevron-right text-[10px]"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Empty State -->
-                <div v-else class="text-center py-6">
-                  <i class="pi pi-list text-gray-400 dark:text-gray-500 text-3xl mb-4"></i>
-                  <p class="text-gray-500 dark:text-gray-400 text-sm">{{ t('cards.noTransactionHistory') }}</p>
-                </div>
-              </div>
-
-              <!-- Recharge Tab -->
-              <div v-else-if="activeTab === 'recharge'" class="space-y-3 lg:space-y-4">
-                <!-- Loading State -->
-                <div v-if="loading.recharge" class="flex justify-center py-6">
-                  <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
-                </div>
-
-                <!-- Desktop: Swipe Pagination -->
-                <div v-else-if="rechargeOrders.length > 0 && !isMobile" class="space-y-2 lg:space-y-3">
-                  <div class="relative overflow-hidden">
-                    <div class="flex transition-transform duration-300"
-                      :style="{ transform: `translateX(-${mobilePagination.recharge.currentPage * 100}%)` }">
-                      <div v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2 lg:px-4">
-                        <div v-for="(order, index) in page" :key="index"
-                          class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors cursor-pointer"
-                          @click="goToPaymentResult(order)">
-                          <div
-                            class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
-                            <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-base lg:text-lg"></i>
-                          </div>
-                          <div class="flex-1 min-w-0">
-                            <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
-                              {{ order.num }}
-                            </div>
-                            <div class="text-[11px] lg:text-xs text-gray-500 dark:text-gray-400">
-                              {{ order.createTime || '' }}
-                            </div>
-                            <div v-if="hasRewardPoints(order.cardRewardPoints)"
-                              class="text-[11px] lg:text-xs text-orange-500 dark:text-orange-300 font-semibold">
-                              {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
-                            </div>
-                          </div>
-                          <div class="text-right">
-                            <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
-                              {{ formatOrderAmount(order.amount, order.orderCurrency) }}
-                            </div>
-                            <div class="text-xs lg:text-sm" :class="getStatusColor(order.status)">
-                              {{ order.status }}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Desktop Navigation -->
-                  <div class="flex items-center justify-between mt-4 px-2">
-                    <button @click="prevDesktopPage('recharge')"
-                      :disabled="pagination.recharge.pageNo === 0 || loading.recharge"
-                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
-                      <i
-                        class="pi pi-chevron-left text-xs group-hover:transform group-hover:-translate-x-0.5 transition-transform"></i>
-                      <span>{{ t('common.previous') }}</span>
-                    </button>
-
-                    <button @click="nextDesktopPage('recharge')"
-                      :disabled="!pagination.recharge.hasMore || loading.recharge"
-                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
-                      <span>{{ t('common.next') }}</span>
-                      <i
-                        class="pi pi-chevron-right text-xs group-hover:transform group-hover:translate-x-0.5 transition-transform"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Mobile: Swipe Pagination -->
-                <div v-else-if="rechargeOrders.length > 0 && isMobile" class="space-y-2 lg:space-y-3">
-                  <div class="relative overflow-hidden">
-                    <div class="flex transition-transform duration-300"
-                      :style="{ transform: `translateX(-${mobilePagination.recharge.currentPage * 100}%)` }">
-                      <div v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2 lg:px-4">
-                        <div class="space-y-2 lg:space-y-3">
-                          <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-3 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
-                            @click="goToPaymentResult(order)">
-                            <div
-                              class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
-                              <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-sm"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-xs">
-                                {{ order.num }}
-                              </div>
-                              <div class="text-[11px] text-gray-500 dark:text-gray-400">
-                                {{ order.createTime || '' }}
-                              </div>
-                              <div v-if="hasRewardPoints(order.cardRewardPoints)"
-                                class="text-[11px] text-orange-500 dark:text-orange-300 font-semibold">
-                                {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
-                              </div>
-                            </div>
-                            <div class="text-right">
-                              <div class="font-medium text-gray-900 dark:text-white text-xs">
-                                {{ formatOrderAmount(order.amount, order.orderCurrency) }}
-                              </div>
-                              <div class="text-xs" :class="getStatusColor(order.status)">
-                                {{ order.status }}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Mobile Navigation -->
-                  <div class="flex items-center justify-between mt-3 px-1">
-                    <button @click="prevDesktopPage('recharge')"
-                      :disabled="pagination.recharge.pageNo === 0 || loading.recharge"
-                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
-                      <i class="pi pi-chevron-left text-[10px]"></i>
-                      <span>{{ t('common.prev') }}</span>
-                    </button>
-
-                    <button @click="nextDesktopPage('recharge')"
-                      :disabled="!pagination.recharge.hasMore || loading.recharge"
-                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
-                      <span>{{ t('common.next') }}</span>
-                      <i class="pi pi-chevron-right text-[10px]"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Empty State -->
-                <div v-else class="text-center py-6">
-                  <i class="pi pi-arrow-up text-gray-400 dark:text-gray-500 text-3xl mb-4"></i>
-                  <p class="text-gray-500 dark:text-gray-400 text-sm">{{ t('cards.noRechargeHistory') }}</p>
-                </div>
-              </div>
-
-              <!-- Withdraw Tab -->
-              <div v-else-if="activeTab === 'withdraw'" class="space-y-3 lg:space-y-4">
-                <!-- Loading State -->
-                <div v-if="loading.withdraw" class="flex justify-center py-6">
-                  <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400"></i>
-                </div>
-
-                <!-- Desktop: Swipe Pagination -->
-                <div v-else-if="withdrawOrders.length > 0 && !isMobile" class="space-y-3 lg:space-y-4">
-                  <div class="relative overflow-hidden">
-                    <div class="flex transition-transform duration-300"
-                      :style="{ transform: `translateX(-${mobilePagination.withdraw.currentPage * 100}%)` }">
-                      <div v-for="(page, pageIndex) in mobileWithdrawPages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2 lg:px-4">
-                        <div class="space-y-3 lg:space-y-4">
-                          <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors cursor-pointer"
-                            @click="goToWithdrawResult(order)">
-                            <div
-                              class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
-                              <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-base lg:text-lg"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
-                                {{ order.num || 'N/A' }}
-                              </div>
-                              <div class="text-[11px] lg:text-xs text-gray-500 dark:text-gray-400">
-                                {{ order.createTime || '' }}
-                              </div>
-                              <div v-if="hasRewardPoints(order.cardRewardPoints)"
-                                class="text-[11px] lg:text-xs text-orange-500 dark:text-orange-300 font-semibold">
-                                {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
-                              </div>
-                            </div>
-                            <div class="text-right">
-                              <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
-                                {{ formatWithdrawAmount(order.usdAmount, order.orderCurrency ?? null) }}
-                              </div>
-                              <div class="text-xs lg:text-sm" :class="getStatusColor(order.status)">
-                                {{ order.status }}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Desktop Navigation -->
-                  <div class="flex items-center justify-between">
-                    <button @click="prevDesktopPage('withdraw')"
-                      :disabled="pagination.withdraw.pageNo === 0 || loading.withdraw"
-                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <i class="pi pi-chevron-left text-sm"></i>
-                      <span class="text-sm">{{ t('common.previous') }}</span>
-                    </button>
-
-                    <button @click="nextDesktopPage('withdraw')"
-                      :disabled="!pagination.withdraw.hasMore || loading.withdraw"
-                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <span class="text-sm">{{ t('common.next') }}</span>
-                      <i class="pi pi-chevron-right text-sm"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Mobile: Swipe Pagination -->
-                <div v-else-if="withdrawOrders.length > 0 && isMobile" class="space-y-3 lg:space-y-4">
-                  <div class="relative overflow-hidden">
-                    <div class="flex transition-transform duration-300"
-                      :style="{ transform: `translateX(-${mobilePagination.withdraw.currentPage * 100}%)` }">
-                      <div v-for="(page, pageIndex) in mobileWithdrawPages" :key="pageIndex"
-                        class="w-full flex-shrink-0 px-2 lg:px-4">
-                        <div class="space-y-2 lg:space-y-3">
-                          <div v-for="(order, index) in page" :key="index"
-                            class="flex items-center space-x-3 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
-                            @click="goToWithdrawResult(order)">
-                            <div
-                              class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
-                              <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-sm"></i>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                              <div class="font-medium text-gray-900 dark:text-white text-xs">
-                                {{ order.num || 'N/A' }}
-                              </div>
-                              <div class="text-[11px] text-gray-500 dark:text-gray-400">
-                                {{ order.createTime || '' }}
-                              </div>
-                              <div v-if="hasRewardPoints(order.cardRewardPoints)"
-                                class="text-[11px] text-orange-500 dark:text-orange-300 font-semibold">
-                                {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
-                              </div>
-                            </div>
-                            <div class="text-right">
-                              <div class="font-medium text-gray-900 dark:text-white text-xs">
-                                {{ formatWithdrawAmount(order.usdAmount, order.orderCurrency ?? null) }}
-                              </div>
-                              <div class="text-xs" :class="getStatusColor(order.status)">
-                                {{ order.status }}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Mobile Navigation -->
-                  <div class="flex items-center justify-between">
-                    <button @click="prevDesktopPage('withdraw')"
-                      :disabled="pagination.withdraw.pageNo === 0 || loading.withdraw"
-                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <i class="pi pi-chevron-left text-xs"></i>
-                      <span class="text-xs">{{ t('common.previous') }}</span>
-                    </button>
-                    <button @click="nextDesktopPage('withdraw')"
-                      :disabled="!pagination.withdraw.hasMore || loading.withdraw"
-                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <span class="text-xs">{{ t('common.next') }}</span>
-                      <i class="pi pi-chevron-right text-xs"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Empty State -->
-                <div v-else class="text-center py-6">
-                  <i class="pi pi-arrow-down text-gray-400 dark:text-gray-500 text-3xl mb-4"></i>
-                  <p class="text-gray-500 dark:text-gray-400 text-sm">{{ t('cards.noWithdrawHistory') }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <!-- Transaction History Section -->
-
-      <CardDetailDialog v-model:visible="showDetailDialog" :loading="detailLoading" :error="detailError"
-        :card-detail="cardDetail" @retry="retryCardDetail" @updated="onDetailUpdated" />
-
-      <!-- Google Auth Dialog -->
-      <GoogleAuthDialog ref="googleAuthDialogRef" v-model:visible="showGoogleAuthDialog"
-        :title="t('cards.securityVerification')" :identifier="pendingAction || 'default'" @submit="onGoogleAuthSubmit"
-        @cancel="onGoogleAuthCancel" />
-
-
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
-import { useCardStore } from '@/stores/card'
+import type { CardDetailResponse } from '@/api/card'
+import type { DepositOrderListItem, TransactionListItem, WithdrawOrderListItem } from '@/api/order'
+import { useClipboard } from '@vueuse/core'
 import { useToast } from 'primevue/usetoast'
-import { useUserStore } from '@/stores/user'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
+import { CardAPI } from '@/api/card'
+import { OrderAPI } from '@/api/order'
 import AppHeader from '@/components/AppHeader.vue'
 import CardDetailDialog from '@/components/CardDetailDialog.vue'
 import GoogleAuthDialog from '@/components/GoogleAuthDialog.vue'
-import { CardAPI, type CardDetailResponse } from '@/api/card'
-import { OrderAPI, type TransactionListItem, type DepositOrderListItem, type WithdrawOrderListItem, type WithdrawOrderPageResponse } from '@/api/order'
-import { useClipboard } from '@vueuse/core'
+import { useCardStore } from '@/stores/card'
+import { useUserStore } from '@/stores/user'
 
 const { t } = useI18n()
 const router = useRouter()
@@ -774,9 +36,8 @@ const isGoogleAuthBound = computed(() => userStore.googleAuthStatus === 1)
 let transactionPollingInterval: NodeJS.Timeout | null = null
 const isComponentMounted = ref(false)
 
-
 // Google Auth callbacks
-const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<void> => {
+async function onGoogleAuthSubmit(code: string, identifier: string): Promise<void> {
   console.log('Google Auth submit:', code, 'identifier:', identifier)
 
   if (!selectedCard.value?.id) {
@@ -784,7 +45,7 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
       severity: 'error',
       summary: t('common.error'),
       detail: t('cards.selectCardFirst'),
-      life: 3000
+      life: 3000,
     })
     return
   }
@@ -794,7 +55,7 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
     console.log('Verifying code, calling card detail API...')
     const response = await CardAPI.queryCardDetail({
       cardId: selectedCard.value.id,
-      faCode: code
+      faCode: code,
     })
 
     if (response.success && response.model) {
@@ -819,15 +80,15 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
         severity: 'success',
         summary: t('cards.verificationSuccessTitle'),
         detail: t('cards.verificationSuccess'),
-        life: 3000
+        life: 3000,
       })
-
-    } else {
+    }
+    else {
       // Verification failed
       throw new Error(response.msg || 'Invalid verification code')
     }
-
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Verification failed:', error)
 
     // If verification fails, reset code but don't close dialog, let user retry
@@ -837,12 +98,12 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
       severity: 'error',
       summary: t('cards.verificationFailedTitle'),
       detail: (error as any)?.message || t('cards.verificationFailed'),
-      life: 3000
+      life: 3000,
     })
   }
 }
 
-const onGoogleAuthCancel = (identifier: string): void => {
+function onGoogleAuthCancel(identifier: string): void {
   console.log('Google Auth cancelled for:', identifier)
   showGoogleAuthDialog.value = false
   pendingAction.value = null
@@ -858,7 +119,7 @@ const cards = computed(() => {
     maxOnPercent: card.maxOnPercent,
     cardCurrency: card.cardCurrency,
     cardScheme: card.cardScheme.toLowerCase(), // Default card scheme since it's not available in CardListItem
-    cardBalance: card.cardBalance
+    cardBalance: card.cardBalance,
   }))
 })
 
@@ -866,7 +127,7 @@ const cards = computed(() => {
 const tabs = computed(() => [
   { key: 'transaction', label: t('cards.transaction') },
   { key: 'recharge', label: t('cards.recharge') },
-  { key: 'withdraw', label: t('cards.withdraw') }
+  { key: 'withdraw', label: t('cards.withdraw') },
 ])
 
 const activeTab = ref('transaction')
@@ -875,14 +136,14 @@ const activeTab = ref('transaction')
 const loading = ref({
   transaction: false,
   recharge: false,
-  withdraw: false
+  withdraw: false,
 })
 
 // Pagination states
 const pagination = ref({
   transaction: { pageIndex: 0, pageSize: 5, hasMore: true },
   recharge: { pageNo: 0, pageSize: 5, hasMore: true },
-  withdraw: { pageNo: 0, pageSize: 5, hasMore: true }
+  withdraw: { pageNo: 0, pageSize: 5, hasMore: true },
 })
 
 // Data arrays
@@ -906,7 +167,7 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
     createTime: '2024-01-15 10:30:25',
-    cardRewardPoints: 1500
+    cardRewardPoints: 1500,
   },
   // Successful purchase - Meituan (negative amount, with fee)
   {
@@ -920,7 +181,7 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
     createTime: '2024-01-15 09:15:42',
-    cardRewardPoints: 0
+    cardRewardPoints: 0,
   },
   // Successful purchase - Alipay (negative amount)
   {
@@ -934,7 +195,7 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
     createTime: '2024-01-15 08:22:18',
-    cardRewardPoints: 0
+    cardRewardPoints: 0,
   },
   // Failed transaction (with failure reason)
   {
@@ -949,7 +210,7 @@ const mockTransactions: TransactionListItem[] = [
     cardId: 'card1',
     createTime: '2024-01-15 07:45:33',
     msg: 'Insufficient balance. Please recharge your card.',
-    cardRewardPoints: 0
+    cardRewardPoints: 0,
   },
   // Pending transaction
   {
@@ -963,7 +224,7 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'EUR',
     cardId: 'card1',
     createTime: '2024-01-15 06:30:15',
-    cardRewardPoints: 0
+    cardRewardPoints: 0,
   },
   // Successful withdraw (negative amount)
   {
@@ -977,7 +238,7 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
     createTime: '2024-01-14 20:15:08',
-    cardRewardPoints: 0
+    cardRewardPoints: 0,
   },
   // Successful purchase - other merchant (negative amount)
   {
@@ -991,7 +252,7 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
     createTime: '2024-01-14 18:45:22',
-    cardRewardPoints: 0
+    cardRewardPoints: 0,
   },
   // Failed recharge (with failure reason)
   {
@@ -1006,7 +267,7 @@ const mockTransactions: TransactionListItem[] = [
     cardId: 'card1',
     createTime: '2024-01-14 16:20:10',
     msg: 'Payment gateway timeout. Please try again.',
-    cardRewardPoints: 900
+    cardRewardPoints: 900,
   },
   // Successful purchase - zero amount (possibly verification)
   {
@@ -1020,7 +281,7 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
     createTime: '2024-01-14 14:30:05',
-    cardRewardPoints: 0
+    cardRewardPoints: 0,
   },
   // Refund transaction (positive amount)
   {
@@ -1034,7 +295,7 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
     createTime: '2024-01-14 13:05:12',
-    cardRewardPoints: 600
+    cardRewardPoints: 600,
   },
   // Successful purchase - large amount (negative)
   {
@@ -1048,8 +309,8 @@ const mockTransactions: TransactionListItem[] = [
     feeDeductionCurrency: 'USD',
     cardId: 'card1',
     createTime: '2024-01-14 12:15:48',
-    cardRewardPoints: 0
-  }
+    cardRewardPoints: 0,
+  },
 ]
 
 const mockDepositOrders: DepositOrderListItem[] = [
@@ -1069,7 +330,7 @@ const mockDepositOrders: DepositOrderListItem[] = [
     cardNo: '**** 1234',
     cardRewardPoints: 1200,
     cryptoAmount: 1000,
-    status: 'SUCCESS'
+    status: 'SUCCESS',
   },
   {
     num: 'DEP-20240101002',
@@ -1087,7 +348,7 @@ const mockDepositOrders: DepositOrderListItem[] = [
     cardNo: '**** 5678',
     cardRewardPoints: 0,
     cryptoAmount: 150,
-    status: 'PENDING'
+    status: 'PENDING',
   },
   {
     num: 'DEP-20240101003',
@@ -1105,7 +366,7 @@ const mockDepositOrders: DepositOrderListItem[] = [
     cardNo: '**** 9012',
     cardRewardPoints: 500,
     cryptoAmount: 80,
-    status: 'INIT'
+    status: 'INIT',
   },
   {
     num: 'DEP-20240101004',
@@ -1123,8 +384,8 @@ const mockDepositOrders: DepositOrderListItem[] = [
     cardNo: '**** 3456',
     cardRewardPoints: 0,
     cryptoAmount: 300,
-    status: 'FAIL'
-  }
+    status: 'FAIL',
+  },
 ]
 
 const mockWithdrawOrders: WithdrawOrderListItem[] = [
@@ -1141,7 +402,7 @@ const mockWithdrawOrders: WithdrawOrderListItem[] = [
     cardNo: '**** 1234',
     status: 'SUCCESS',
     orderCurrency: 'USD',
-    cardRewardPoints: 0
+    cardRewardPoints: 0,
   },
   {
     num: 'WDR-20240102002',
@@ -1156,7 +417,7 @@ const mockWithdrawOrders: WithdrawOrderListItem[] = [
     cardNo: '**** 5678',
     status: 'PENDING',
     orderCurrency: 'USD',
-    cardRewardPoints: 0
+    cardRewardPoints: 0,
   },
   {
     num: 'WDR-20240102003',
@@ -1171,7 +432,7 @@ const mockWithdrawOrders: WithdrawOrderListItem[] = [
     cardNo: '**** 9012',
     status: 'FAIL',
     orderCurrency: 'USD',
-    cardRewardPoints: 300
+    cardRewardPoints: 300,
   },
   {
     num: 'WDR-20240102004',
@@ -1186,8 +447,8 @@ const mockWithdrawOrders: WithdrawOrderListItem[] = [
     cardNo: '**** 3456',
     status: 'CANCEL',
     orderCurrency: 'USD',
-    cardRewardPoints: 0
-  }
+    cardRewardPoints: 0,
+  },
 ]
 
 // Current selected card
@@ -1198,7 +459,7 @@ const selectedCard = computed(() => {
 const isLimitsExpanded = ref(true)
 const isMobileDevice = ref(false)
 
-const updateDeviceMode = () => {
+function updateDeviceMode() {
   if (typeof window === 'undefined') {
     return
   }
@@ -1231,13 +492,13 @@ const detailLoading = ref(false)
 const detailError = ref<string | null>(null)
 const cardDetail = ref<CardDetailResponse | null>(null)
 // Keep parent in sync when dialog updates address
-const onDetailUpdated = (updated: CardDetailResponse) => {
+function onDetailUpdated(updated: CardDetailResponse) {
   cardDetail.value = updated
   cardStore.cacheCurrentCardDetail(updated)
 }
 
 // Execute withdraw action (use card list data, no 2FA+queryCardDetail)
-const executeWithdrawAction = async (card: { id: string; cardNo: string; cardCurrency: string; cardBalance: number; maxOnDaily?: string | number; maxOnMonthly?: string | number; maxOnPercent?: string | number }) => {
+async function executeWithdrawAction(card: { id: string, cardNo: string, cardCurrency: string, cardBalance: number, maxOnDaily?: string | number, maxOnMonthly?: string | number, maxOnPercent?: string | number }) {
   console.log('Executing withdraw operation, card from list:', card)
 
   const maxOnDaily = typeof card.maxOnDaily === 'string' ? parseFloat(card.maxOnDaily) : (card.maxOnDaily ?? 0)
@@ -1254,12 +515,12 @@ const executeWithdrawAction = async (card: { id: string; cardNo: string; cardCur
       maxOnDaily: String(maxOnDaily),
       maxOnMonthly: String(maxOnMonthly),
       maxOnPercent: String(maxOnPercent),
-      action: 'withdraw'
-    }
+      action: 'withdraw',
+    },
   })
 }
 
-const executeDetailsAction = async (cardDetailData: CardDetailResponse) => {
+async function executeDetailsAction(cardDetailData: CardDetailResponse) {
   console.log('Displaying card details:', cardDetailData)
 
   // Directly use cached card details to show detail dialog
@@ -1268,7 +529,7 @@ const executeDetailsAction = async (cardDetailData: CardDetailResponse) => {
 }
 
 // Execute delete action (use card list data, same as withdraw, no 2FA+queryCardDetail)
-const executeDeleteAction = async (card: { id: string; cardNo: string; cardCurrency: string; cardBalance: number; maxOnDaily?: string | number; maxOnMonthly?: string | number; maxOnPercent?: string | number }) => {
+async function executeDeleteAction(card: { id: string, cardNo: string, cardCurrency: string, cardBalance: number, maxOnDaily?: string | number, maxOnMonthly?: string | number, maxOnPercent?: string | number }) {
   console.log('Executing delete operation, card from list:', card)
 
   const maxOnDaily = typeof card.maxOnDaily === 'string' ? parseFloat(card.maxOnDaily) : (card.maxOnDaily ?? 0)
@@ -1286,23 +547,22 @@ const executeDeleteAction = async (card: { id: string; cardNo: string; cardCurre
       maxOnDaily: String(maxOnDaily),
       maxOnMonthly: String(maxOnMonthly),
       maxOnPercent: String(maxOnPercent),
-      action: 'delete'
-    }
+      action: 'delete',
+    },
   })
 }
-
 
 // Card transition animation state
 const transitionDirection = ref<'next' | 'prev'>('next')
 const cardTransitionName = computed(() =>
-  transitionDirection.value === 'next' ? 'card-slide-left' : 'card-slide-right'
+  transitionDirection.value === 'next' ? 'card-slide-left' : 'card-slide-right',
 )
 
 // Mobile swipe pagination states
 const mobilePagination = ref({
   transaction: { currentPage: 0, totalPages: 0, itemsPerPage: 5 }, // Changed to 5, consistent with API pageSize
   recharge: { currentPage: 0, totalPages: 0, itemsPerPage: 5 }, // Changed to 5, consistent with API pageSize
-  withdraw: { currentPage: 0, totalPages: 0, itemsPerPage: 5 } // Changed to 5, consistent with API pageSize
+  withdraw: { currentPage: 0, totalPages: 0, itemsPerPage: 5 }, // Changed to 5, consistent with API pageSize
 })
 
 // Mobile swipe data
@@ -1319,18 +579,18 @@ const startX = ref(0)
 const currentX = ref(0)
 const dragThreshold = 50 // Minimum drag distance to trigger card switch
 
-// Payment methods
-const paymentMethods = ref([
+// Payment methods (reserved for future use)
+const _paymentMethods = ref([
   { name: 'WeChat Pay', icon: 'pi pi-wechat', supported: false },
   { name: 'OpenAI', icon: 'pi pi-openai', supported: true },
   { name: 'Apple Pay', icon: 'pi pi-apple', supported: true },
   { name: 'Alipay', icon: 'pi pi-alipay', supported: false },
   { name: 'ChatGPT Plus', icon: 'pi pi-chatgpt', supported: true },
-  { name: 'Apple Music', icon: 'pi pi-music', supported: true }
+  { name: 'Apple Music', icon: 'pi pi-music', supported: true },
 ])
 
 // API functions
-const fetchTransactions = async (pageIndex = 0) => {
+async function fetchTransactions(pageIndex = 0) {
   // Use mock data if enabled
   if (useMockData.value) {
     loading.value.transaction = true
@@ -1349,9 +609,11 @@ const fetchTransactions = async (pageIndex = 0) => {
 
       // Update mobile pagination
       updateMobilePagination('transaction', transactions.value)
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Error with mock transactions:', error)
-    } finally {
+    }
+    finally {
       loading.value.transaction = false
     }
     return
@@ -1371,7 +633,7 @@ const fetchTransactions = async (pageIndex = 0) => {
     const response = await OrderAPI.getTransactionList({
       pageIndex: pageIndex.toString(),
       pageSize: pagination.value.transaction.pageSize.toString(),
-      cardId: selectedCard.value.id
+      cardId: selectedCard.value.id,
     })
 
     if (response.success && response.model) {
@@ -1388,20 +650,22 @@ const fetchTransactions = async (pageIndex = 0) => {
       // Check if there are more pages based on page info
       pagination.value.transaction.hasMore = pageInfo ? pageInfo.number < pageInfo.totalPages - 1 : false
     }
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error fetching transactions:', error)
     toast.add({
       severity: 'error',
       summary: t('common.error'),
       detail: (error as any)?.message || t('cards.loadTransactionFailed'),
-      life: 3000
+      life: 3000,
     })
-  } finally {
+  }
+  finally {
     loading.value.transaction = false
   }
 }
 
-const fetchRechargeOrders = async (pageNo = 0) => {
+async function fetchRechargeOrders(pageNo = 0) {
   if (useMockData.value) {
     loading.value.recharge = true
     try {
@@ -1416,9 +680,11 @@ const fetchRechargeOrders = async (pageNo = 0) => {
       pagination.value.recharge.hasMore = endIndex < mockDepositOrders.length
 
       updateMobilePagination('recharge', rechargeOrders.value)
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Error with mock recharge orders:', error)
-    } finally {
+    }
+    finally {
       loading.value.recharge = false
     }
     return
@@ -1429,7 +695,7 @@ const fetchRechargeOrders = async (pageNo = 0) => {
 
     const response = await OrderAPI.getDepositOrderPage({
       pageNo,
-      pageSize: pagination.value.recharge.pageSize
+      pageSize: pagination.value.recharge.pageSize,
     })
 
     if (response.success && response.model) {
@@ -1446,20 +712,22 @@ const fetchRechargeOrders = async (pageNo = 0) => {
       // Check if there are more pages based on page info
       pagination.value.recharge.hasMore = pageInfo ? pageInfo.number < pageInfo.totalPages - 1 : false
     }
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error fetching recharge orders:', error)
     toast.add({
       severity: 'error',
       summary: t('common.error'),
       detail: (error as any)?.message || t('cards.loadRechargeFailed'),
-      life: 3000
+      life: 3000,
     })
-  } finally {
+  }
+  finally {
     loading.value.recharge = false
   }
 }
 
-const fetchWithdrawOrders = async (pageNo = 0) => {
+async function fetchWithdrawOrders(pageNo = 0) {
   if (useMockData.value) {
     loading.value.withdraw = true
     try {
@@ -1474,9 +742,11 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
       pagination.value.withdraw.hasMore = endIndex < mockWithdrawOrders.length
 
       updateMobilePagination('withdraw', withdrawOrders.value)
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Error with mock withdraw orders:', error)
-    } finally {
+    }
+    finally {
       loading.value.withdraw = false
     }
     return
@@ -1487,7 +757,7 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
 
     const response = await OrderAPI.getWithdrawOrderPage({
       pageNo,
-      pageSize: pagination.value.withdraw.pageSize
+      pageSize: pagination.value.withdraw.pageSize,
     })
 
     if (response.success && response.model) {
@@ -1504,38 +774,38 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
       // Check if there are more pages based on page info
       pagination.value.withdraw.hasMore = pageInfo ? pageInfo.number < pageInfo.totalPages - 1 : false
     }
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error fetching withdraw orders:', error)
     toast.add({
       severity: 'error',
       summary: t('common.error'),
       detail: (error as any)?.message || t('cards.loadWithdrawFailed'),
-      life: 3000
+      life: 3000,
     })
-  } finally {
+  }
+  finally {
     loading.value.withdraw = false
   }
 }
 
-
 // Copy to clipboard using vueuse with legacy support for Huawei browser compatibility
-const { copy: copyToClipboard } = useClipboard({ legacy: true })
+const { copy: _copyToClipboard } = useClipboard({ legacy: true })
 
 // Balance related functions
-const formatBalance = (balance: number) => {
+function _formatBalance(balance: number) {
   return balance.toFixed(2)
 }
 
-
 // Card navigation
-const previousCard = () => {
+function previousCard() {
   if (currentCardIndex.value > 0) {
     transitionDirection.value = 'prev'
     currentCardIndex.value--
   }
 }
 
-const nextCard = () => {
+function nextCard() {
   if (currentCardIndex.value < cards.value.length - 1) {
     transitionDirection.value = 'next'
     currentCardIndex.value++
@@ -1543,7 +813,7 @@ const nextCard = () => {
 }
 
 // Select card
-const selectCard = (index: number) => {
+function selectCard(index: number) {
   if (index === currentCardIndex.value) {
     return
   }
@@ -1553,11 +823,11 @@ const selectCard = (index: number) => {
 }
 
 // Navigation functions
-const goToApplyCard = () => {
+function goToApplyCard() {
   router.push('/apply-card')
 }
 
-const goToWithdraw = async () => {
+async function goToWithdraw() {
   console.log('goToWithdraw called')
 
   if (!selectedCard.value?.id) {
@@ -1565,7 +835,7 @@ const goToWithdraw = async () => {
       severity: 'warn',
       summary: t('common.warning'),
       detail: t('cards.selectCardFirst'),
-      life: 3000
+      life: 3000,
     })
     return
   }
@@ -1575,7 +845,7 @@ const goToWithdraw = async () => {
       severity: 'warn',
       summary: t('cards.securityVerification'),
       detail: t('cards.bindGoogleAuthFirst'),
-      life: 3000
+      life: 3000,
     })
     router.push({ name: 'PersonalCenter' })
     return
@@ -1585,17 +855,17 @@ const goToWithdraw = async () => {
   await executeWithdrawAction(selectedCard.value)
 }
 
-const handleCardDetailError = (message: string) => {
+function handleCardDetailError(message: string) {
   detailError.value = message
   toast.add({
     severity: 'error',
     summary: t('common.error'),
     detail: message,
-    life: 3000
+    life: 3000,
   })
 }
 
-const loadCardDetail = async (cardId: string, faCode: string = '') => {
+async function loadCardDetail(cardId: string, faCode: string = '') {
   detailLoading.value = true
   detailError.value = null
   cardDetail.value = null
@@ -1622,21 +892,24 @@ const loadCardDetail = async (cardId: string, faCode: string = '') => {
       // Cache current card details
       cardStore.cacheCurrentCardDetail(response.model)
       cardDetail.value = response.model
-    } else {
+    }
+    else {
       // Throw error for upper level handling
       throw new Error(response.msg || 'Failed to load card details')
     }
-  } catch (error) {
+  }
+  catch (error) {
     const message = (error as any)?.message || 'Failed to load card details'
     handleCardDetailError(message)
     // Re-throw error for upper level handling
     throw error
-  } finally {
+  }
+  finally {
     detailLoading.value = false
   }
 }
 
-const goToDetails = async () => {
+async function goToDetails() {
   console.log('goToDetails called')
 
   if (!selectedCard.value?.id) {
@@ -1644,7 +917,7 @@ const goToDetails = async () => {
       severity: 'warn',
       summary: t('common.warning'),
       detail: t('cards.selectCardFirst'),
-      life: 3000
+      life: 3000,
     })
     return
   }
@@ -1655,7 +928,7 @@ const goToDetails = async () => {
       severity: 'warn',
       summary: t('cards.securityVerification'),
       detail: t('cards.bindGoogleAuthFirst'),
-      life: 3000
+      life: 3000,
     })
     router.push({ name: 'PersonalCenter' })
     return
@@ -1668,7 +941,7 @@ const goToDetails = async () => {
   console.log('showGoogleAuthDialog.value:', showGoogleAuthDialog.value)
 }
 
-const goToDeleteCard = async () => {
+async function goToDeleteCard() {
   console.log('goToDeleteCard called')
 
   if (!selectedCard.value?.id) {
@@ -1676,7 +949,7 @@ const goToDeleteCard = async () => {
       severity: 'warn',
       summary: t('common.warning'),
       detail: t('cards.selectCardFirst'),
-      life: 3000
+      life: 3000,
     })
     return
   }
@@ -1686,7 +959,7 @@ const goToDeleteCard = async () => {
       severity: 'warn',
       summary: t('cards.securityVerification'),
       detail: t('cards.bindGoogleAuthFirst'),
-      life: 3000
+      life: 3000,
     })
     router.push({ name: 'PersonalCenter' })
     return
@@ -1696,7 +969,7 @@ const goToDeleteCard = async () => {
   await executeDeleteAction(selectedCard.value)
 }
 
-const retryCardDetail = async () => {
+async function retryCardDetail() {
   if (!selectedCard.value?.id) {
     return
   }
@@ -1704,7 +977,7 @@ const retryCardDetail = async () => {
   await loadCardDetail(selectedCard.value.id, '')
 }
 
-watch(showDetailDialog, visible => {
+watch(showDetailDialog, (visible) => {
   if (!visible) {
     detailLoading.value = false
     detailError.value = null
@@ -1714,20 +987,20 @@ watch(showDetailDialog, visible => {
 
 watch(
   () => selectedCard.value?.id,
-  newId => {
+  (newId) => {
     if (showDetailDialog.value && newId) {
       loadCardDetail(newId, '')
     }
-  }
+  },
 )
 
-const goToRecharge = () => {
+function goToRecharge() {
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'warn',
       summary: t('common.warning'),
       detail: t('cards.selectCardFirst'),
-      life: 3000
+      life: 3000,
     })
     return
   }
@@ -1745,7 +1018,7 @@ const goToRecharge = () => {
     remainingAvailableCard: 0,
     availableCard: 0,
     cardFormFactor: 'virtual_card',
-    cardId: selectedCard.value?.id || '' // Add cardId for recharge
+    cardId: selectedCard.value?.id || '', // Add cardId for recharge
   }
 
   // Set to Pinia store
@@ -1756,13 +1029,13 @@ const goToRecharge = () => {
   router.push({
     name: 'CardHolderInfo',
     query: {
-      action: 'recharge'
-    }
+      action: 'recharge',
+    },
   })
 }
 
 // Navigate to payment result page
-const goToPaymentResult = (order: DepositOrderListItem) => {
+function goToPaymentResult(order: DepositOrderListItem) {
   const statusUpper = (order.status || '').toString().toUpperCase()
 
   if (statusUpper === 'INIT') {
@@ -1775,8 +1048,8 @@ const goToPaymentResult = (order: DepositOrderListItem) => {
         currency: (order as any).token || '',
         network: (order as any).network || '',
         cryptoAmount: (order as any).usdAmount?.toString?.() || '',
-        from: 'myCards'
-      }
+        from: 'myCards',
+      },
     })
     return
   }
@@ -1794,13 +1067,13 @@ const goToPaymentResult = (order: DepositOrderListItem) => {
       paymentMethod: 'Crypto Payment',
       type: 'deposit', // Deposit order
       from: 'myCards', // Source identifier
-      cardNo: order.cardNo || '' // Pass card number
-    }
+      cardNo: order.cardNo || '', // Pass card number
+    },
   })
 }
 
 // Navigate to withdraw result page
-const goToWithdrawResult = (order: WithdrawOrderListItem) => {
+function goToWithdrawResult(order: WithdrawOrderListItem) {
   router.push({
     name: 'PaymentResult',
     query: {
@@ -1809,21 +1082,22 @@ const goToWithdrawResult = (order: WithdrawOrderListItem) => {
       amount: order.usdAmount?.toString() || '0',
       type: 'withdraw', // Withdraw order
       from: 'myCards', // Source identifier
-      cardNo: order.cardNo || '' // Pass card number
-    }
+      cardNo: order.cardNo || '', // Pass card number
+    },
   })
 }
 
-
 // Data formatters
-const formatCardNumber = (cardNo?: string) => {
-  if (!cardNo) return 'N/A'
+function _formatCardNumber(cardNo?: string) {
+  if (!cardNo)
+    return 'N/A'
   const digits = cardNo.replace(/\D/g, '')
-  if (!digits) return 'N/A'
+  if (!digits)
+    return 'N/A'
   return digits.replace(/(.{4})/g, '$1 ').trim()
 }
 
-const isAddressUpdatable = (value?: string | null) => {
+function _isAddressUpdatable(value?: string | null) {
   if (!value) {
     return false
   }
@@ -1831,36 +1105,41 @@ const isAddressUpdatable = (value?: string | null) => {
   return normalized === 'y' || normalized === 'true' || normalized === '1'
 }
 
-const cardLastFour = (cardNo?: string) => {
-  if (!cardNo) return 'N/A'
+function _cardLastFour(cardNo?: string) {
+  if (!cardNo)
+    return 'N/A'
   const digits = cardNo.replace(/\D/g, '')
-  if (!digits) return 'N/A'
+  if (!digits)
+    return 'N/A'
   return digits.length <= 4 ? digits : digits.slice(-4)
 }
 
-const formatTransactionAmount = (amount: number, currency: string) => {
-  return `${amount.toFixed(2)} ${currency}`
+function formatTransactionAmount(amount: number, currency: string) {
+  return t('common.amountWithCurrency', { amount: amount.toFixed(2), currency })
 }
 
-const formatOrderAmount = (amount: number, currency: string) => {
-  return `${amount.toFixed(2)} ${currency}`
+function formatOrderAmount(amount: number, currency: string) {
+  return t('common.amountWithCurrency', { amount: amount.toFixed(2), currency })
 }
 
-const formatWithdrawAmount = (usdAmount: number | null, orderCurrency: string | null) => {
-  if (usdAmount === null || orderCurrency === null) return 'N/A'
-  return `${usdAmount.toFixed(2)} ${orderCurrency} `
+function formatWithdrawAmount(usdAmount: number | null, orderCurrency: string | null) {
+  if (usdAmount === null || orderCurrency === null)
+    return t('common.na')
+  return t('common.amountWithCurrency', { amount: usdAmount.toFixed(2), currency: orderCurrency })
 }
 
 const hasRewardPoints = (points?: number | null) => typeof points === 'number' && points > 0
 
-const formatRewardPoints = (points?: number | null) => {
-  if (!hasRewardPoints(points)) return ''
+function formatRewardPoints(points?: number | null) {
+  if (!hasRewardPoints(points))
+    return ''
   const value = points as number
-  return `${value.toLocaleString()} pts`
+  return t('cards.pointsWithUnit', { n: value.toLocaleString() })
 }
 
-const formatDate = (dateString: string) => {
-  if (!dateString) return ''
+function _formatDate(dateString: string) {
+  if (!dateString)
+    return ''
   const date = new Date(dateString)
   return date.toLocaleString('en-US', {
     year: 'numeric',
@@ -1868,12 +1147,12 @@ const formatDate = (dateString: string) => {
     day: '2-digit',
     hour: '2-digit',
     minute: '2-digit',
-    second: '2-digit'
+    second: '2-digit',
   })
 }
 
 // Get card background image based on card scheme
-const getCardBackgroundImage = (cardScheme: string | null) => {
+function getCardBackgroundImage(cardScheme: string | null) {
   console.log('Card Scheme:', cardScheme) // Debug log
 
   if (!cardScheme) {
@@ -1887,13 +1166,16 @@ const getCardBackgroundImage = (cardScheme: string | null) => {
   if (scheme.includes('master') || scheme.includes('mastercard')) {
     console.log('Using Mastercard background')
     return 'https://static.biulinkpay.com/images/master.png'
-  } else if (scheme.includes('visa')) {
+  }
+  else if (scheme.includes('visa')) {
     console.log('Using Visa background')
     return 'https://static.biulinkpay.com/images/visa.png'
-  } else if (scheme.includes('discover')) {
+  }
+  else if (scheme.includes('discover')) {
     console.log('Using Discover background')
     return 'https://static.biulinkpay.com/images/discover.png'
-  } else {
+  }
+  else {
     console.log('Unknown scheme, using default Mastercard')
     // Default to Mastercard for unknown schemes
     return 'https://static.biulinkpay.com/images/master.png'
@@ -1901,8 +1183,9 @@ const getCardBackgroundImage = (cardScheme: string | null) => {
 }
 
 // Status color helper
-const getStatusColor = (status: string | undefined) => {
-  if (!status) return 'text-gray-600 dark:text-gray-400'
+function getStatusColor(status: string | undefined) {
+  if (!status)
+    return 'text-gray-600 dark:text-gray-400'
   switch (status.toLowerCase()) {
     case 'succeed':
     case 'completed':
@@ -1926,18 +1209,18 @@ const getStatusColor = (status: string | undefined) => {
 }
 
 // Check if status is failed
-const isFailedStatus = (status: string) => {
+function isFailedStatus(status: string) {
   const normalizedStatus = status?.toLowerCase() || ''
   return normalizedStatus === 'failed' || normalizedStatus === 'fail'
 }
 
-const isRefundTransaction = (transaction: TransactionListItem) => {
+function isRefundTransaction(transaction: TransactionListItem) {
   const type = transaction.transactionType?.toLowerCase() || ''
   return type === 'refund'
 }
 
 // Get transaction icon based on type
-const getTransactionIcon = (transaction: TransactionListItem) => {
+function getTransactionIcon(transaction: TransactionListItem) {
   const type = transaction.transactionType?.toLowerCase() || ''
   const merchant = transaction.merchantNameLocation?.toLowerCase() || ''
 
@@ -1960,7 +1243,7 @@ const getTransactionIcon = (transaction: TransactionListItem) => {
 }
 
 // Get transaction icon color
-const getTransactionIconColor = (transaction: TransactionListItem) => {
+function getTransactionIconColor(transaction: TransactionListItem) {
   if (isRefundTransaction(transaction)) {
     return 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300'
   }
@@ -1972,7 +1255,7 @@ const getTransactionIconColor = (transaction: TransactionListItem) => {
 }
 
 // Get amount color class
-const getAmountColor = (amount: number) => {
+function getAmountColor(amount: number) {
   if (amount > 0) {
     return 'text-green-600 dark:text-green-400'
   }
@@ -1982,26 +1265,28 @@ const getAmountColor = (amount: number) => {
   return 'text-gray-900 dark:text-white'
 }
 
-const getTransactionAmountColor = (transaction: TransactionListItem) => {
+function getTransactionAmountColor(transaction: TransactionListItem) {
   if (isRefundTransaction(transaction)) {
     return 'text-orange-600 dark:text-orange-300'
   }
   return getAmountColor(transaction.transactionAmount)
 }
 
-const startDrag = (position: number) => {
+function startDrag(position: number) {
   isDragging.value = true
   startX.value = position
   currentX.value = position
 }
 
-const updateDrag = (position: number) => {
-  if (!isDragging.value) return
+function updateDrag(position: number) {
+  if (!isDragging.value)
+    return
   currentX.value = position
 }
 
-const endDrag = () => {
-  if (!isDragging.value) return
+function endDrag() {
+  if (!isDragging.value)
+    return
 
   const deltaX = startX.value - currentX.value
 
@@ -2010,7 +1295,8 @@ const endDrag = () => {
     if (deltaX > 0) {
       // Swipe left, show next card
       nextCard()
-    } else {
+    }
+    else {
       // Swipe right, show previous card
       previousCard()
     }
@@ -2022,14 +1308,14 @@ const endDrag = () => {
 }
 
 // Drag and drop handlers
-const handleMouseDown = (event: MouseEvent) => {
+function handleMouseDown(event: MouseEvent) {
   startDrag(event.clientX)
 
   // Prevent text selection
   event.preventDefault()
 }
 
-const handleMouseMove = (event: MouseEvent) => {
+function handleMouseMove(event: MouseEvent) {
   updateDrag(event.clientX)
 
   if (isDragging.value) {
@@ -2037,17 +1323,19 @@ const handleMouseMove = (event: MouseEvent) => {
   }
 }
 
-const handleMouseUp = () => {
+function handleMouseUp() {
   endDrag()
 }
 
-const handleTouchStart = (event: TouchEvent) => {
-  if (event.touches.length === 0) return
+function handleTouchStart(event: TouchEvent) {
+  if (event.touches.length === 0)
+    return
   startDrag(event.touches[0].clientX)
 }
 
-const handleTouchMove = (event: TouchEvent) => {
-  if (event.touches.length === 0) return
+function handleTouchMove(event: TouchEvent) {
+  if (event.touches.length === 0)
+    return
   updateDrag(event.touches[0].clientX)
 
   if (isDragging.value && event.cancelable) {
@@ -2055,25 +1343,26 @@ const handleTouchMove = (event: TouchEvent) => {
   }
 }
 
-const handleTouchEnd = () => {
+function handleTouchEnd() {
   endDrag()
 }
 
 // Mouse wheel handler
-const handleWheel = (event: WheelEvent) => {
+function handleWheel(event: WheelEvent) {
   event.preventDefault()
 
   if (event.deltaY > 0) {
     // Scroll down, show next card
     nextCard()
-  } else {
+  }
+  else {
     // Scroll up, show previous card
     previousCard()
   }
 }
 
 // Keyboard navigation handler
-const handleKeyDown = (event: KeyboardEvent) => {
+function handleKeyDown(event: KeyboardEvent) {
   switch (event.key) {
     case 'ArrowLeft':
       event.preventDefault()
@@ -2087,7 +1376,7 @@ const handleKeyDown = (event: KeyboardEvent) => {
 }
 
 // Mobile pagination functions
-const createMobilePages = <T>(items: T[], itemsPerPage: number): T[][] => {
+function createMobilePages<T>(items: T[], itemsPerPage: number): T[][] {
   const pages: T[][] = []
   for (let i = 0; i < items.length; i += itemsPerPage) {
     pages.push(items.slice(i, i + itemsPerPage))
@@ -2095,7 +1384,7 @@ const createMobilePages = <T>(items: T[], itemsPerPage: number): T[][] => {
   return pages
 }
 
-const updateMobilePagination = (tabKey: string, items: any[]) => {
+function updateMobilePagination(tabKey: string, items: any[]) {
   const itemsPerPage = mobilePagination.value[tabKey as keyof typeof mobilePagination.value].itemsPerPage
   const pages = createMobilePages(items, itemsPerPage)
 
@@ -2116,14 +1405,14 @@ const updateMobilePagination = (tabKey: string, items: any[]) => {
 }
 
 // Mobile swipe navigation
-const nextMobilePage = (tabKey: string) => {
+function _nextMobilePage(tabKey: string) {
   const pagination = mobilePagination.value[tabKey as keyof typeof mobilePagination.value]
   if (pagination.currentPage < pagination.totalPages - 1) {
     pagination.currentPage++
   }
 }
 
-const prevMobilePage = (tabKey: string) => {
+function _prevMobilePage(tabKey: string) {
   const pagination = mobilePagination.value[tabKey as keyof typeof mobilePagination.value]
   if (pagination.currentPage > 0) {
     pagination.currentPage--
@@ -2131,7 +1420,7 @@ const prevMobilePage = (tabKey: string) => {
 }
 
 // Desktop pagination navigation - directly call API
-const nextDesktopPage = (tabKey: string) => {
+function nextDesktopPage(tabKey: string) {
   switch (tabKey) {
     case 'transaction':
       if (pagination.value.transaction.hasMore && !loading.value.transaction) {
@@ -2154,7 +1443,7 @@ const nextDesktopPage = (tabKey: string) => {
   }
 }
 
-const prevDesktopPage = (tabKey: string) => {
+function prevDesktopPage(tabKey: string) {
   switch (tabKey) {
     case 'transaction':
       if (pagination.value.transaction.pageIndex > 0 && !loading.value.transaction) {
@@ -2180,7 +1469,7 @@ const prevDesktopPage = (tabKey: string) => {
 // Load more functions - removed, using Previous/Next buttons for pagination
 
 // Tab change handler
-const handleTabChange = (tabKey: string) => {
+function handleTabChange(tabKey: string) {
   console.log('Tab changed to:', tabKey)
   activeTab.value = tabKey
 
@@ -2202,7 +1491,7 @@ const handleTabChange = (tabKey: string) => {
 }
 
 // Start polling for transaction list
-const startTransactionPolling = () => {
+function startTransactionPolling() {
   // Clear existing interval if any
   stopTransactionPolling()
 
@@ -2221,7 +1510,7 @@ const startTransactionPolling = () => {
 }
 
 // Stop polling for transaction list
-const stopTransactionPolling = () => {
+function stopTransactionPolling() {
   if (transactionPollingInterval) {
     clearInterval(transactionPollingInterval)
     transactionPollingInterval = null
@@ -2243,7 +1532,6 @@ watch(currentCardIndex, () => {
     // Restart polling
     startTransactionPolling()
   }
-
 })
 
 // Watch for tab changes to control polling
@@ -2251,7 +1539,8 @@ watch(activeTab, (newTab) => {
   if (newTab === 'transaction' && cards.value.length > 0) {
     // Start polling when switching to transaction tab
     startTransactionPolling()
-  } else {
+  }
+  else {
     // Stop polling when switching away from transaction tab
     stopTransactionPolling()
   }
@@ -2267,13 +1556,14 @@ onMounted(async () => {
   try {
     await cardStore.fetchCardList()
     console.log('Card list fetched, length:', cardStore.cardList.length)
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error fetching card list:', error)
     toast.add({
       severity: 'error',
       summary: t('common.error'),
       detail: (error as any)?.message || t('cards.loadCardsFailed'),
-      life: 3000
+      life: 3000,
     })
   }
 
@@ -2287,7 +1577,8 @@ onMounted(async () => {
     if (activeTab.value === 'transaction') {
       startTransactionPolling()
     }
-  } else {
+  }
+  else {
     console.log('No cards available, skipping transaction fetch')
   }
 
@@ -2298,7 +1589,7 @@ onMounted(async () => {
       severity: 'success',
       summary: t('cards.paymentSuccess'),
       detail: message,
-      life: 5000
+      life: 5000,
     })
 
     // Clear query parameters to avoid duplicate display on page refresh
@@ -2316,7 +1607,8 @@ watch(() => route.query.cardNo, async (newCardNo, oldCardNo) => {
       currentCardIndex.value = targetCardIndex
       // Clear the query parameter to avoid selecting the same card on refresh
       router.replace({ name: 'MyCards' })
-    } else {
+    }
+    else {
       console.warn('Card not found with cardNo:', newCardNo)
       // Clear the invalid query parameter
       router.replace({ name: 'MyCards' })
@@ -2331,6 +1623,906 @@ onUnmounted(() => {
   stopTransactionPolling()
 })
 </script>
+
+<template>
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <!-- Navigation Header -->
+    <AppHeader :title="t('cards.virtualCards')" :show-title="true" />
+
+    <!-- Main Content -->
+    <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+      <!-- Empty State -->
+      <div v-if="cards.length === 0" class="text-center py-12">
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-sm border border-gray-200 dark:border-gray-700">
+          <div
+            class="w-20 h-20 mx-auto mb-6 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center"
+          >
+            <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-3xl" />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+            {{ t('cards.noVirtualCards') }}
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            {{ t('cards.noVirtualCardsDesc') }}
+          </p>
+          <button
+            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+            @click="goToApplyCard"
+          >
+            <i class="pi pi-plus mr-2" />
+            {{ t('cards.applyVirtualCard') }}
+          </button>
+        </div>
+      </div>
+
+      <!-- Cards Display with Features -->
+      <div v-else class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-20 mb-8">
+        <!-- Left Side: Card Display -->
+        <div class="space-y-6 order-1 lg:order-1">
+          <!-- Card Display Area with Navigation -->
+          <div class="flex items-center justify-center gap-3 md:gap-6">
+            <!-- Left Navigation Button - Hidden on mobile -->
+            <button
+              v-if="cards.length > 1" :disabled="currentCardIndex === 0" class="hidden md:flex flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 items-center justify-center"
+              :title="t('cards.previousCard')"
+              @click="previousCard"
+            >
+              <i class="pi pi-chevron-left text-gray-600 dark:text-gray-400 text-sm md:text-lg" />
+            </button>
+
+            <!-- Card Container -->
+            <div class="flex-1 max-w-xs md:max-w-sm relative overflow-hidden md:flex-1">
+              <Transition :name="cardTransitionName" mode="out-in">
+                <div
+                  v-if="selectedCard" :key="selectedCard.id || selectedCard.cardNo || currentCardIndex"
+                  class="rounded-xl p-4 md:p-6 text-white shadow-lg cursor-grab active:cursor-grabbing relative overflow-hidden"
+                  :style="{
+                    backgroundImage: `url(${getCardBackgroundImage(selectedCard.cardScheme)})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    aspectRatio: '1035/582',
+                    maxWidth: '400px',
+                    width: '100%',
+                  }" tabindex="0" style="outline: none;" @mousedown="handleMouseDown"
+                  @mousemove="handleMouseMove" @mouseup="handleMouseUp" @mouseleave="handleMouseUp"
+                  @wheel="handleWheel" @keydown="handleKeyDown" @touchstart.passive="handleTouchStart"
+                  @touchmove="handleTouchMove" @touchend="handleTouchEnd" @touchcancel="handleTouchEnd"
+                >
+                  <!-- Semi-transparent overlay for better text readability -->
+                  <div class="absolute inset-0 bg-black/20 rounded-xl" />
+
+                  <!-- Card content -->
+                  <div class="relative z-10 h-full flex flex-col justify-between">
+                    <!-- Card Header -->
+                    <!-- Card Details -->
+                    <div v-if="selectedCard" class="space-y-5 text-sm">
+                      <div class="md:mt-14 mt-20 w-full flex justify-end items-baseline gap-2">
+                        <span class="text-sm md:text-base font-bold text-white tabular-nums">
+                          {{ selectedCard.cardBalance }}
+                        </span>
+                        <span class="text-sm md:text-base font-medium text-white/90 normal-case">
+                          {{ selectedCard.cardCurrency || 'N/A' }}
+                        </span>
+                      </div>
+                      <!-- Card Number -->
+                      <div class="text-lg md:text-xl font-mono tracking-[0.35em]">
+                        {{ selectedCard.cardNo }}
+                      </div>
+
+                      <!-- Card Info -->
+                    </div>
+                  </div>
+                </div>
+              </Transition>
+            </div>
+
+            <!-- Right Navigation Button - Hidden on mobile -->
+            <button
+              v-if="cards.length > 1" :disabled="currentCardIndex === cards.length - 1" class="hidden md:flex flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 items-center justify-center"
+              :title="t('cards.nextCard')"
+              @click="nextCard"
+            >
+              <i class="pi pi-chevron-right text-gray-600 dark:text-gray-400 text-sm md:text-lg" />
+            </button>
+          </div>
+
+          <!-- Navigation Dots for Multiple Cards -->
+          <div v-if="cards.length > 1" class="flex justify-center mt-4 space-x-2">
+            <button
+              v-for="(card, index) in cards" :key="index" class="w-3 h-3 rounded-full transition-colors duration-200"
+              :class="index === currentCardIndex ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'"
+              @click="selectCard(index)"
+            />
+          </div>
+
+          <!-- Action Buttons Row -->
+          <div class="flex justify-center mt-6 space-x-4 md:space-x-6">
+            <!-- Recharge Button -->
+            <div class="flex flex-col items-center">
+              <button
+                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2"
+                @click="goToRecharge"
+              >
+                <i class="pi pi-arrow-down text-gray-600 dark:text-gray-400 text-base md:text-lg" />
+              </button>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.recharge') }}</span>
+            </div>
+
+            <!-- Withdraw Button -->
+            <div class="flex flex-col items-center">
+              <button
+                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2"
+                @click="goToWithdraw"
+              >
+                <i class="pi pi-arrow-up text-gray-600 dark:text-gray-400 text-base md:text-lg" />
+              </button>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.withdraw') }}</span>
+            </div>
+
+            <!-- Details Button -->
+            <div class="flex flex-col items-center">
+              <button
+                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2"
+                @click="goToDetails"
+              >
+                <i class="pi pi-calendar text-gray-600 dark:text-gray-400 text-base md:text-lg" />
+              </button>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.details') }}</span>
+            </div>
+
+            <!-- Delete Card Button -->
+            <div class="flex flex-col items-center">
+              <button
+                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-red-50 dark:hover:bg-red-900/20 hover:border-red-200 dark:hover:border-red-800 transition-colors flex items-center justify-center mb-2"
+                @click="goToDeleteCard"
+              >
+                <i class="pi pi-trash text-red-600 dark:text-red-400 text-base md:text-lg" />
+              </button>
+              <span class="text-xs text-red-600 dark:text-red-400 font-medium">{{ t('common.delete') }}</span>
+            </div>
+
+            <!-- Add Card Button -->
+            <div class="flex flex-col items-center">
+              <button
+                class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2"
+                @click="goToApplyCard"
+              >
+                <i class="pi pi-plus text-gray-600 dark:text-gray-400 text-base md:text-lg" />
+              </button>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.addCard') }}</span>
+            </div>
+          </div>
+
+          <!-- Card Limits Panel -->
+          <div
+            v-if="selectedCard"
+            class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700"
+          >
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
+                  <i class="pi pi-shield text-blue-600 dark:text-blue-400 text-lg" />
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                    {{ t('cards.transactionLimits') }}
+                  </h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">
+                    {{ t('cards.transactionLimitsDesc') }}
+                  </p>
+                </div>
+              </div>
+              <button
+                v-if="isMobile" type="button" class="flex items-center justify-center w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 transition-colors"
+                :aria-expanded="isLimitsExpanded"
+                @click="isLimitsExpanded = !isLimitsExpanded"
+              >
+                <i
+                  class="pi pi-chevron-down text-sm transition-transform transform"
+                  :class="{ 'rotate-180': isLimitsExpanded }"
+                />
+              </button>
+            </div>
+            <div v-if="!isMobile || isLimitsExpanded" class="space-y-4 mt-6">
+              <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center">
+                      <i class="pi pi-calendar text-green-600 dark:text-green-400 text-sm" />
+                    </div>
+                    <div>
+                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">
+                        {{ t('cards.dailyLimit') }}
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        {{ t('cards.dailyLimitDesc') }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-lg font-bold text-gray-900 dark:text-white">
+                      {{ selectedCard.maxOnDaily != null ? `$${selectedCard.maxOnDaily}` : t('cards.noLimit') }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
+                      <i class="pi pi-calendar-plus text-blue-600 dark:text-blue-400 text-sm" />
+                    </div>
+                    <div>
+                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">
+                        {{ t('cards.monthlyLimit') }}
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        {{ t('cards.monthlyLimitDesc') }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-lg font-bold text-gray-900 dark:text-white">
+                      {{ selectedCard.maxOnMonthly != null ? `$${selectedCard.maxOnMonthly}` : t('cards.noLimit') }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div
+                      class="w-8 h-8 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center"
+                    >
+                      <i class="pi pi-credit-card text-orange-600 dark:text-orange-400 text-sm" />
+                    </div>
+                    <div>
+                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">
+                        {{ t('cards.singleTransaction')
+                        }}
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">
+                        {{ t('cards.singleTransactionDesc') }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-lg font-bold text-gray-900 dark:text-white">
+                      {{ selectedCard.maxOnPercent != null ? `$${selectedCard.maxOnPercent}` : t('cards.noLimit') }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Features and Actions -->
+        <div class="space-y-8 order-2 lg:order-2">
+          <!-- Features Section -->
+          <div
+            v-if="cards.length > 0"
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm w-full border border-gray-200 dark:border-gray-700"
+          >
+            <!-- Tabs -->
+            <div
+              class="flex flex-wrap gap-2 md:gap-4 border-b border-gray-200 dark:border-gray-700 px-2 md:px-3 lg:px-4"
+            >
+              <button
+                v-for="tab in tabs" :key="tab.key" class="flex-1 basis-0 px-3 py-2 text-center text-sm md:text-base lg:text-base font-semibold transition-colors md:px-4 md:py-3 lg:px-6 lg:py-3 rounded-t-md"
+                :class="activeTab === tab.key
+                  ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
+                  : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'"
+                @click="handleTabChange(tab.key)"
+              >
+                {{ tab.label }}
+              </button>
+            </div>
+
+            <!-- Transaction List -->
+            <div class="p-3 md:p-4 lg:p-5">
+              <!-- No Cards State -->
+              <div v-if="cards.length === 0" class="text-center py-8">
+                <div
+                  class="w-16 h-16 mx-auto mb-4 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center"
+                >
+                  <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-2xl" />
+                </div>
+                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-2">
+                  {{ t('cards.noCards') }}
+                </h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                  <span v-if="activeTab === 'transaction'">{{ t('cards.applyCardFirstTransaction') }}</span>
+                  <span v-else-if="activeTab === 'recharge'">{{ t('cards.applyCardFirstRecharge') }}</span>
+                  <span v-else-if="activeTab === 'withdraw'">{{ t('cards.applyCardFirstWithdraw') }}</span>
+                  <span v-else>{{ t('cards.applyCardFirst') }}</span>
+                </p>
+                <button
+                  class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+                  @click="goToApplyCard"
+                >
+                  <i class="pi pi-plus mr-2" />
+                  {{ t('cards.applyCard') }}
+                </button>
+              </div>
+
+              <!-- Transaction Tab -->
+              <div v-else-if="activeTab === 'transaction'" class="space-y-4 lg:space-y-6">
+                <!-- Loading State -->
+                <div v-if="loading.transaction" class="flex justify-center py-6">
+                  <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400" />
+                </div>
+
+                <!-- Desktop: Swipe Pagination -->
+                <div v-else-if="transactions.length > 0 && !isMobile" class="space-y-3 lg:space-y-4">
+                  <div class="relative overflow-hidden">
+                    <div
+                      class="flex transition-transform duration-300"
+                      :style="{ transform: `translateX(-${mobilePagination.transaction.currentPage * 100}%)` }"
+                    >
+                      <div
+                        v-for="(page, pageIndex) in mobileTransactionPages" :key="pageIndex"
+                        class="w-full flex-shrink-0 px-2 lg:px-4"
+                      >
+                        <div class="space-y-3 lg:space-y-4">
+                          <div
+                            v-for="(transaction, index) in page" :key="index"
+                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl transition-colors hover:bg-gray-50 dark:hover:bg-gray-700/50"
+                          >
+                            <div
+                              class="w-12 h-12 lg:w-14 lg:h-14 rounded-full flex items-center justify-center flex-shrink-0" :class="[getTransactionIconColor(transaction)]"
+                            >
+                              <i class="pi text-base lg:text-lg" :class="[getTransactionIcon(transaction)]" />
+                            </div>
+                            <div class="flex-1 min-w-0">
+                              <div
+                                class="font-medium text-gray-900 dark:text-white text-sm lg:text-base truncate mb-0.5"
+                              >
+                                {{ transaction.merchantNameLocation || transaction.transactionType || '' }}
+                              </div>
+                              <div class="flex items-center gap-2 flex-wrap">
+                                <span
+                                  v-if="transaction.createTime"
+                                  class="text-[11px] lg:text-xs text-gray-400 dark:text-gray-500"
+                                >
+                                  {{ transaction.createTime }}
+                                </span>
+                              </div>
+                              <div v-if="isRefundTransaction(transaction)">
+                                <span
+                                  class="inline-flex items-center gap-1 text-[11px] lg:text-xs font-medium text-emerald-700 dark:text-emerald-300"
+                                >
+                                  <i class="pi pi-refresh text-[10px]" />
+                                  {{ t('cards.refund') }}
+                                </span>
+                              </div>
+                              <div
+                                v-if="transaction.feeDeductionAmount"
+                                class="text-xs text-orange-600 dark:text-orange-400 mt-1"
+                              >
+                                {{ t('cards.feeLabel', {
+                                  amount: transaction.feeDeductionAmount.toFixed(2),
+                                  currency:
+                                    transaction.feeDeductionCurrency }) }}
+                              </div>
+                              <div
+                                v-if="isFailedStatus(transaction.status) && transaction.msg"
+                                class="text-xs text-red-600 dark:text-red-400 mt-1 line-clamp-2"
+                              >
+                                {{ transaction.msg }}
+                              </div>
+                              <div
+                                v-if="hasRewardPoints(transaction.cardRewardPoints)"
+                                class="text-[11px] lg:text-xs text-orange-600 dark:text-orange-300 mt-1"
+                              >
+                                {{ t('cards.earnPoints', { points: formatRewardPoints(transaction.cardRewardPoints) })
+                                }}
+                              </div>
+                            </div>
+                            <div class="text-right flex-shrink-0">
+                              <div
+                                class="font-semibold text-sm lg:text-base" :class="[getTransactionAmountColor(transaction)]"
+                              >
+                                {{ formatTransactionAmount(transaction.transactionAmount,
+                                                           transaction.transactionCurrency)
+                                }}
+                              </div>
+                              <div class="text-xs lg:text-sm mt-0.5" :class="getStatusColor(transaction.status)">
+                                {{ transaction.status }}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Desktop Navigation -->
+                  <div class="flex items-center justify-between mt-4 px-2">
+                    <button
+                      :disabled="pagination.transaction.pageIndex === 0 || loading.transaction"
+                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200"
+                      @click="prevDesktopPage('transaction')"
+                    >
+                      <i
+                        class="pi pi-chevron-left text-xs group-hover:transform group-hover:-translate-x-0.5 transition-transform"
+                      />
+                      <span>{{ t('common.previous') }}</span>
+                    </button>
+
+                    <button
+                      :disabled="!pagination.transaction.hasMore || loading.transaction"
+                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200"
+                      @click="nextDesktopPage('transaction')"
+                    >
+                      <span>{{ t('common.next') }}</span>
+                      <i
+                        class="pi pi-chevron-right text-xs group-hover:transform group-hover:translate-x-0.5 transition-transform"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Mobile: Swipe Pagination -->
+                <div v-else-if="transactions.length > 0 && isMobile" class="space-y-3 lg:space-y-4">
+                  <div class="relative overflow-hidden">
+                    <div
+                      class="flex transition-transform duration-300"
+                      :style="{ transform: `translateX(-${mobilePagination.transaction.currentPage * 100}%)` }"
+                    >
+                      <div
+                        v-for="(page, pageIndex) in mobileTransactionPages" :key="pageIndex"
+                        class="w-full flex-shrink-0 px-2 lg:px-4"
+                      >
+                        <div class="space-y-2 lg:space-y-3">
+                          <div
+                            v-for="(transaction, index) in page" :key="index"
+                            class="flex items-center space-x-2.5 p-2.5 rounded-lg transition-colors bg-gray-50 dark:bg-gray-700"
+                          >
+                            <div
+                              class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" :class="[getTransactionIconColor(transaction)]"
+                            >
+                              <i class="pi text-xs" :class="[getTransactionIcon(transaction)]" />
+                            </div>
+                            <div class="flex-1 min-w-0">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs truncate mb-0.5">
+                                {{ transaction.merchantNameLocation || transaction.transactionType || '' }}
+                              </div>
+                              <div class="flex items-center gap-1.5 flex-wrap">
+                                <span
+                                  v-if="transaction.createTime"
+                                  class="text-[11px] text-gray-400 dark:text-gray-500"
+                                >
+                                  {{ transaction.createTime }}
+                                </span>
+                                <span
+                                  v-if="isRefundTransaction(transaction)"
+                                  class="inline-flex items-center gap-0.5 text-[10px] font-medium text-emerald-700 dark:text-emerald-300"
+                                >
+                                  <i class="pi pi-refresh text-[9px]" />
+                                  {{ t('cards.refund') }}
+                                </span>
+                              </div>
+                              <div
+                                v-if="isRefundTransaction(transaction)"
+                                class="text-[11px] text-emerald-700 dark:text-emerald-300 mt-0.5"
+                              >
+                                {{ t('cards.returnedToBalance') }}
+                              </div>
+                              <div
+                                v-if="transaction.feeDeductionAmount"
+                                class="text-xs text-orange-600 dark:text-orange-400 mt-0.5"
+                              >
+                                {{ t('cards.feeLabel', {
+                                  amount: transaction.feeDeductionAmount.toFixed(2),
+                                  currency:
+                                    transaction.feeDeductionCurrency }) }}
+                              </div>
+                              <div
+                                v-if="isFailedStatus(transaction.status) && transaction.msg"
+                                class="text-xs text-red-600 dark:text-red-400 mt-0.5 line-clamp-2"
+                              >
+                                {{ transaction.msg }}
+                              </div>
+                              <div
+                                v-if="hasRewardPoints(transaction.cardRewardPoints)"
+                                class="text-[10px] text-orange-600 dark:text-orange-300 mt-0.5"
+                              >
+                                {{ t('cards.earnPoints', { points: formatRewardPoints(transaction.cardRewardPoints) })
+                                }}
+                              </div>
+                            </div>
+                            <div class="text-right flex-shrink-0">
+                              <div class="font-semibold text-xs" :class="[getTransactionAmountColor(transaction)]">
+                                {{ formatTransactionAmount(transaction.transactionAmount,
+                                                           transaction.transactionCurrency)
+                                }}
+                              </div>
+                              <div class="text-xs mt-0.5" :class="getStatusColor(transaction.status)">
+                                {{ transaction.status }}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Mobile Navigation -->
+                  <div class="flex items-center justify-between mt-3 px-1">
+                    <button
+                      :disabled="pagination.transaction.pageIndex === 0 || loading.transaction"
+                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150"
+                      @click="prevDesktopPage('transaction')"
+                    >
+                      <i class="pi pi-chevron-left text-[10px]" />
+                      <span>{{ t('common.prev') }}</span>
+                    </button>
+
+                    <button
+                      :disabled="!pagination.transaction.hasMore || loading.transaction"
+                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150"
+                      @click="nextDesktopPage('transaction')"
+                    >
+                      <span>{{ t('common.next') }}</span>
+                      <i class="pi pi-chevron-right text-[10px]" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Empty State -->
+                <div v-else class="text-center py-6">
+                  <i class="pi pi-list text-gray-400 dark:text-gray-500 text-3xl mb-4" />
+                  <p class="text-gray-500 dark:text-gray-400 text-sm">
+                    {{ t('cards.noTransactionHistory') }}
+                  </p>
+                </div>
+              </div>
+
+              <!-- Recharge Tab -->
+              <div v-else-if="activeTab === 'recharge'" class="space-y-3 lg:space-y-4">
+                <!-- Loading State -->
+                <div v-if="loading.recharge" class="flex justify-center py-6">
+                  <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400" />
+                </div>
+
+                <!-- Desktop: Swipe Pagination -->
+                <div v-else-if="rechargeOrders.length > 0 && !isMobile" class="space-y-2 lg:space-y-3">
+                  <div class="relative overflow-hidden">
+                    <div
+                      class="flex transition-transform duration-300"
+                      :style="{ transform: `translateX(-${mobilePagination.recharge.currentPage * 100}%)` }"
+                    >
+                      <div
+                        v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
+                        class="w-full flex-shrink-0 px-2 lg:px-4"
+                      >
+                        <div
+                          v-for="(order, index) in page" :key="index"
+                          class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors cursor-pointer"
+                          @click="goToPaymentResult(order)"
+                        >
+                          <div
+                            class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center"
+                          >
+                            <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-base lg:text-lg" />
+                          </div>
+                          <div class="flex-1 min-w-0">
+                            <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
+                              {{ order.num }}
+                            </div>
+                            <div class="text-[11px] lg:text-xs text-gray-500 dark:text-gray-400">
+                              {{ order.createTime || '' }}
+                            </div>
+                            <div
+                              v-if="hasRewardPoints(order.cardRewardPoints)"
+                              class="text-[11px] lg:text-xs text-orange-500 dark:text-orange-300 font-semibold"
+                            >
+                              {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
+                              {{ formatOrderAmount(order.amount, order.orderCurrency) }}
+                            </div>
+                            <div class="text-xs lg:text-sm" :class="getStatusColor(order.status)">
+                              {{ order.status }}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Desktop Navigation -->
+                  <div class="flex items-center justify-between mt-4 px-2">
+                    <button
+                      :disabled="pagination.recharge.pageNo === 0 || loading.recharge"
+                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200"
+                      @click="prevDesktopPage('recharge')"
+                    >
+                      <i
+                        class="pi pi-chevron-left text-xs group-hover:transform group-hover:-translate-x-0.5 transition-transform"
+                      />
+                      <span>{{ t('common.previous') }}</span>
+                    </button>
+
+                    <button
+                      :disabled="!pagination.recharge.hasMore || loading.recharge"
+                      class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200"
+                      @click="nextDesktopPage('recharge')"
+                    >
+                      <span>{{ t('common.next') }}</span>
+                      <i
+                        class="pi pi-chevron-right text-xs group-hover:transform group-hover:translate-x-0.5 transition-transform"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Mobile: Swipe Pagination -->
+                <div v-else-if="rechargeOrders.length > 0 && isMobile" class="space-y-2 lg:space-y-3">
+                  <div class="relative overflow-hidden">
+                    <div
+                      class="flex transition-transform duration-300"
+                      :style="{ transform: `translateX(-${mobilePagination.recharge.currentPage * 100}%)` }"
+                    >
+                      <div
+                        v-for="(page, pageIndex) in mobileRechargePages" :key="pageIndex"
+                        class="w-full flex-shrink-0 px-2 lg:px-4"
+                      >
+                        <div class="space-y-2 lg:space-y-3">
+                          <div
+                            v-for="(order, index) in page" :key="index"
+                            class="flex items-center space-x-3 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                            @click="goToPaymentResult(order)"
+                          >
+                            <div
+                              class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center"
+                            >
+                              <i class="pi pi-arrow-up text-blue-600 dark:text-blue-400 text-sm" />
+                            </div>
+                            <div class="flex-1 min-w-0">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs">
+                                {{ order.num }}
+                              </div>
+                              <div class="text-[11px] text-gray-500 dark:text-gray-400">
+                                {{ order.createTime || '' }}
+                              </div>
+                              <div
+                                v-if="hasRewardPoints(order.cardRewardPoints)"
+                                class="text-[11px] text-orange-500 dark:text-orange-300 font-semibold"
+                              >
+                                {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
+                              </div>
+                            </div>
+                            <div class="text-right">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs">
+                                {{ formatOrderAmount(order.amount, order.orderCurrency) }}
+                              </div>
+                              <div class="text-xs" :class="getStatusColor(order.status)">
+                                {{ order.status }}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Mobile Navigation -->
+                  <div class="flex items-center justify-between mt-3 px-1">
+                    <button
+                      :disabled="pagination.recharge.pageNo === 0 || loading.recharge"
+                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150"
+                      @click="prevDesktopPage('recharge')"
+                    >
+                      <i class="pi pi-chevron-left text-[10px]" />
+                      <span>{{ t('common.prev') }}</span>
+                    </button>
+
+                    <button
+                      :disabled="!pagination.recharge.hasMore || loading.recharge"
+                      class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150"
+                      @click="nextDesktopPage('recharge')"
+                    >
+                      <span>{{ t('common.next') }}</span>
+                      <i class="pi pi-chevron-right text-[10px]" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Empty State -->
+                <div v-else class="text-center py-6">
+                  <i class="pi pi-arrow-up text-gray-400 dark:text-gray-500 text-3xl mb-4" />
+                  <p class="text-gray-500 dark:text-gray-400 text-sm">
+                    {{ t('cards.noRechargeHistory') }}
+                  </p>
+                </div>
+              </div>
+
+              <!-- Withdraw Tab -->
+              <div v-else-if="activeTab === 'withdraw'" class="space-y-3 lg:space-y-4">
+                <!-- Loading State -->
+                <div v-if="loading.withdraw" class="flex justify-center py-6">
+                  <i class="pi pi-spin pi-spinner text-2xl text-blue-600 dark:text-blue-400" />
+                </div>
+
+                <!-- Desktop: Swipe Pagination -->
+                <div v-else-if="withdrawOrders.length > 0 && !isMobile" class="space-y-3 lg:space-y-4">
+                  <div class="relative overflow-hidden">
+                    <div
+                      class="flex transition-transform duration-300"
+                      :style="{ transform: `translateX(-${mobilePagination.withdraw.currentPage * 100}%)` }"
+                    >
+                      <div
+                        v-for="(page, pageIndex) in mobileWithdrawPages" :key="pageIndex"
+                        class="w-full flex-shrink-0 px-2 lg:px-4"
+                      >
+                        <div class="space-y-3 lg:space-y-4">
+                          <div
+                            v-for="(order, index) in page" :key="index"
+                            class="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 lg:p-5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors cursor-pointer"
+                            @click="goToWithdrawResult(order)"
+                          >
+                            <div
+                              class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center"
+                            >
+                              <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-base lg:text-lg" />
+                            </div>
+                            <div class="flex-1 min-w-0">
+                              <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
+                                {{ order.num || 'N/A' }}
+                              </div>
+                              <div class="text-[11px] lg:text-xs text-gray-500 dark:text-gray-400">
+                                {{ order.createTime || '' }}
+                              </div>
+                              <div
+                                v-if="hasRewardPoints(order.cardRewardPoints)"
+                                class="text-[11px] lg:text-xs text-orange-500 dark:text-orange-300 font-semibold"
+                              >
+                                {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
+                              </div>
+                            </div>
+                            <div class="text-right">
+                              <div class="font-medium text-gray-900 dark:text-white text-sm lg:text-base">
+                                {{ formatWithdrawAmount(order.usdAmount, order.orderCurrency ?? null) }}
+                              </div>
+                              <div class="text-xs lg:text-sm" :class="getStatusColor(order.status)">
+                                {{ order.status }}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Desktop Navigation -->
+                  <div class="flex items-center justify-between">
+                    <button
+                      :disabled="pagination.withdraw.pageNo === 0 || loading.withdraw"
+                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                      @click="prevDesktopPage('withdraw')"
+                    >
+                      <i class="pi pi-chevron-left text-sm" />
+                      <span class="text-sm">{{ t('common.previous') }}</span>
+                    </button>
+
+                    <button
+                      :disabled="!pagination.withdraw.hasMore || loading.withdraw"
+                      class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                      @click="nextDesktopPage('withdraw')"
+                    >
+                      <span class="text-sm">{{ t('common.next') }}</span>
+                      <i class="pi pi-chevron-right text-sm" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Mobile: Swipe Pagination -->
+                <div v-else-if="withdrawOrders.length > 0 && isMobile" class="space-y-3 lg:space-y-4">
+                  <div class="relative overflow-hidden">
+                    <div
+                      class="flex transition-transform duration-300"
+                      :style="{ transform: `translateX(-${mobilePagination.withdraw.currentPage * 100}%)` }"
+                    >
+                      <div
+                        v-for="(page, pageIndex) in mobileWithdrawPages" :key="pageIndex"
+                        class="w-full flex-shrink-0 px-2 lg:px-4"
+                      >
+                        <div class="space-y-2 lg:space-y-3">
+                          <div
+                            v-for="(order, index) in page" :key="index"
+                            class="flex items-center space-x-3 p-2.5 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                            @click="goToWithdrawResult(order)"
+                          >
+                            <div
+                              class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center"
+                            >
+                              <i class="pi pi-arrow-down text-green-600 dark:text-green-400 text-sm" />
+                            </div>
+                            <div class="flex-1 min-w-0">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs">
+                                {{ order.num || 'N/A' }}
+                              </div>
+                              <div class="text-[11px] text-gray-500 dark:text-gray-400">
+                                {{ order.createTime || '' }}
+                              </div>
+                              <div
+                                v-if="hasRewardPoints(order.cardRewardPoints)"
+                                class="text-[11px] text-orange-500 dark:text-orange-300 font-semibold"
+                              >
+                                {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
+                              </div>
+                            </div>
+                            <div class="text-right">
+                              <div class="font-medium text-gray-900 dark:text-white text-xs">
+                                {{ formatWithdrawAmount(order.usdAmount, order.orderCurrency ?? null) }}
+                              </div>
+                              <div class="text-xs" :class="getStatusColor(order.status)">
+                                {{ order.status }}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Mobile Navigation -->
+                  <div class="flex items-center justify-between">
+                    <button
+                      :disabled="pagination.withdraw.pageNo === 0 || loading.withdraw"
+                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                      @click="prevDesktopPage('withdraw')"
+                    >
+                      <i class="pi pi-chevron-left text-xs" />
+                      <span class="text-xs">{{ t('common.previous') }}</span>
+                    </button>
+                    <button
+                      :disabled="!pagination.withdraw.hasMore || loading.withdraw"
+                      class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                      @click="nextDesktopPage('withdraw')"
+                    >
+                      <span class="text-xs">{{ t('common.next') }}</span>
+                      <i class="pi pi-chevron-right text-xs" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Empty State -->
+                <div v-else class="text-center py-6">
+                  <i class="pi pi-arrow-down text-gray-400 dark:text-gray-500 text-3xl mb-4" />
+                  <p class="text-gray-500 dark:text-gray-400 text-sm">
+                    {{ t('cards.noWithdrawHistory') }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transaction History Section -->
+
+      <CardDetailDialog
+        v-model:visible="showDetailDialog" :loading="detailLoading" :error="detailError"
+        :card-detail="cardDetail" @retry="retryCardDetail" @updated="onDetailUpdated"
+      />
+
+      <!-- Google Auth Dialog -->
+      <GoogleAuthDialog
+        ref="googleAuthDialogRef" v-model:visible="showGoogleAuthDialog"
+        :title="t('cards.securityVerification')" :identifier="pendingAction || 'default'" @submit="onGoogleAuthSubmit"
+        @cancel="onGoogleAuthCancel"
+      />
+    </div>
+  </div>
+</template>
 
 <style scoped>
 /* Card carousel styles */
@@ -2396,7 +2588,6 @@ onUnmounted(() => {
     padding-right: 1rem;
   }
 }
-
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {

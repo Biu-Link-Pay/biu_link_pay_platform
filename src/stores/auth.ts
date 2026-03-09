@@ -1,14 +1,13 @@
-import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
-import { AuthAPI } from '@/api/auth'
 import type {
-  AuthState,
-  UserInfo,
-  LoginParams,
-  SendEmailParams,
   ApiResponse,
-  LoginResponse
+  LoginParams,
+  LoginResponse,
+  SendEmailParams,
+  UserInfo,
 } from '@/types/api'
+import { defineStore } from 'pinia'
+import { computed, ref } from 'vue'
+import { AuthAPI } from '@/api/auth'
 
 export const useAuthStore = defineStore('auth', () => {
   // State
@@ -51,7 +50,7 @@ export const useAuthStore = defineStore('auth', () => {
 
     // Restore KYC status
     if (savedKycStatus) {
-      kycStatus.value = parseInt(savedKycStatus)
+      kycStatus.value = Number.parseInt(savedKycStatus)
     }
     if (savedKycChecked) {
       kycChecked.value = savedKycChecked === 'true'
@@ -65,16 +64,19 @@ export const useAuthStore = defineStore('auth', () => {
       const response: ApiResponse<null> = await AuthAPI.sendEmail(params)
       if (response.success) {
         return { success: true, message: 'Verification code sent successfully' }
-      } else {
+      }
+      else {
         return { success: false, message: response.msg || 'Send failed' }
       }
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Failed to send email verification code:', error)
       return {
         success: false,
-        message: (error as any)?.message || 'Send failed'
+        message: (error as any)?.message || 'Send failed',
       }
-    } finally {
+    }
+    finally {
       loading.value = false
     }
   }
@@ -96,16 +98,52 @@ export const useAuthStore = defineStore('auth', () => {
         localStorage.setItem('refreshToken', response.model.refreshToken)
 
         return { success: true, message: 'Login successful' }
-      } else {
+      }
+      else {
         return { success: false, message: response.msg || 'Login failed' }
       }
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Login failed:', error)
       return {
         success: false,
-        message: (error as any)?.message || 'Login failed'
+        message: (error as any)?.message || 'Login failed',
       }
-    } finally {
+    }
+    finally {
+      loading.value = false
+    }
+  }
+
+  // User logout
+  const logout = async (): Promise<void> => {
+    loading.value = true
+    try {
+      if (refreshToken.value) {
+        await AuthAPI.logout({ refresh_token: refreshToken.value })
+      }
+    }
+    catch {
+      // 即使API调用失败，也要清除本地状态
+    }
+    finally {
+      isAuthenticated.value = false
+      user.value = null
+      token.value = null
+      refreshToken.value = null
+      localStorage.removeItem('token')
+      localStorage.removeItem('refreshToken')
+      localStorage.removeItem('user')
+      localStorage.removeItem('kycStatus')
+      localStorage.removeItem('kycChecked')
+      try {
+        const { useCardStore } = await import('./card')
+        const cardStore = useCardStore()
+        cardStore.reset()
+      }
+      catch {
+        // ignore
+      }
       loading.value = false
     }
   }
@@ -118,7 +156,7 @@ export const useAuthStore = defineStore('auth', () => {
 
     try {
       const response: ApiResponse<LoginResponse> = await AuthAPI.refreshToken({
-        refresh_token: refreshToken.value
+        refresh_token: refreshToken.value,
       })
 
       if (response.success && response.model) {
@@ -130,62 +168,16 @@ export const useAuthStore = defineStore('auth', () => {
         localStorage.setItem('refreshToken', response.model.refreshToken)
 
         return true
-      } else {
+      }
+      else {
         throw new Error(response.msg || 'Token refresh failed')
       }
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Token refresh failed:', error)
       // Refresh failed, clear authentication state
       logout()
       throw error
-    }
-  }
-
-  // User logout
-  const logout = async (): Promise<void> => {
-    loading.value = true
-    try {
-      console.log('开始登出，当前token:', !!token.value)
-
-      // If refresh token exists, call logout API
-      if (refreshToken.value) {
-        console.log('调用登出API...')
-        await AuthAPI.logout({ refresh_token: refreshToken.value })
-        console.log('登出API调用成功')
-      } else {
-        console.log('没有refresh token，跳过API调用')
-      }
-    } catch (error) {
-      console.error('Logout request failed:', error)
-      // 即使API调用失败，也要清除本地状态
-    } finally {
-      console.log('清除认证状态...')
-
-      // Clear all authentication info
-      isAuthenticated.value = false
-      user.value = null
-      token.value = null
-      refreshToken.value = null
-
-      // Clear local storage
-      localStorage.removeItem('token')
-      localStorage.removeItem('refreshToken')
-      localStorage.removeItem('user')
-      localStorage.removeItem('kycStatus')
-      localStorage.removeItem('kycChecked')
-
-      // Clear card store cache
-      try {
-        const { useCardStore } = await import('./card')
-        const cardStore = useCardStore()
-        cardStore.reset()
-        console.log('Card store cache cleared on logout')
-      } catch (error) {
-        console.warn('Failed to clear card store on logout:', error)
-      }
-
-      loading.value = false
-      console.log('登出完成')
     }
   }
 
@@ -215,10 +207,12 @@ export const useAuthStore = defineStore('auth', () => {
 
       if (response.success && response.model) {
         return response.model
-      } else {
+      }
+      else {
         throw new Error(response.msg || 'Failed to get KYC access token')
       }
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Failed to get KYC access token:', error)
       throw error
     }
@@ -242,15 +236,16 @@ export const useAuthStore = defineStore('auth', () => {
         localStorage.setItem('kycChecked', 'true')
 
         return response.model
-      } else {
+      }
+      else {
         throw new Error(response.msg || 'Failed to check KYC status')
       }
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Failed to check KYC status:', error)
       throw error
     }
   }
-
 
   return {
     // State
@@ -278,11 +273,11 @@ export const useAuthStore = defineStore('auth', () => {
     updateUserInfo,
     isTokenExpired,
     getKycAccessToken,
-    checkKycStatus
+    checkKycStatus,
   }
 }, {
   persist: {
     key: 'auth-store',
-    storage: localStorage
-  }
+    storage: localStorage,
+  },
 })

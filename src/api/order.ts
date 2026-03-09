@@ -479,8 +479,8 @@ export class OrderAPI {
   static async getPaymentMethods(params: PaymentMethodsQueryParams): Promise<OrderPaymentMethodsResponse> {
     const response = await api.get<OrderPaymentMethodsResponse>('/card/consume/common/paymentMethods', {
       params: {
-        orderType: params.orderType
-      }
+        orderType: params.orderType,
+      },
     })
     return response.data
   }
@@ -498,7 +498,7 @@ export class OrderAPI {
       saleDirection: params.saleDirection,
       exchange: params.exchange,
       fiatUnit: params.fiatUnit,
-      cardRewardPoints: params.cardRewardPoints
+      cardRewardPoints: params.cardRewardPoints,
     })
     return response.data
   }
@@ -521,7 +521,7 @@ export class OrderAPI {
       network: params.network,
       address: params.address,
       cardNo: params.cardNo,
-      cardRewardPoints: params.cardRewardPoints
+      cardRewardPoints: params.cardRewardPoints,
     })
     return response.data
   }
@@ -545,7 +545,7 @@ export class OrderAPI {
       cardRewardPoints: params.cardRewardPoints,
       payType: params.payType,
       customParam: params.customParam,
-      faCode: params.faCode
+      faCode: params.faCode,
     })
     return response.data
   }
@@ -558,8 +558,8 @@ export class OrderAPI {
   static async getDepositOrderDetail(params: DepositOrderDetailParams): Promise<DepositOrderDetailResponse> {
     const response = await api.get<DepositOrderDetailResponse>('/card/consume/order/queryDepositOrder', {
       params: {
-        num: params.num
-      }
+        num: params.num,
+      },
     })
     return response.data
   }
@@ -573,8 +573,8 @@ export class OrderAPI {
     const response = await api.get<DepositOrderPageResponse>('/card/consume/order/queryPageDepositOrder', {
       params: {
         pageNo: params.pageNo,
-        pageSize: params.pageSize
-      }
+        pageSize: params.pageSize,
+      },
     })
     return response.data
   }
@@ -587,8 +587,8 @@ export class OrderAPI {
   static async getWithdrawOrderDetail(params: WithdrawOrderDetailParams): Promise<WithdrawOrderDetailResponse> {
     const response = await api.get<WithdrawOrderDetailResponse>('/card/consume/order/queryWithdrawOrder', {
       params: {
-        num: params.num
-      }
+        num: params.num,
+      },
     })
     return response.data
   }
@@ -602,8 +602,8 @@ export class OrderAPI {
     const response = await api.get<WithdrawOrderPageResponse>('/card/consume/order/queryPageWithdrawOrder', {
       params: {
         pageNo: params.pageNo,
-        pageSize: params.pageSize
-      }
+        pageSize: params.pageSize,
+      },
     })
     return response.data
   }
@@ -618,13 +618,13 @@ export class OrderAPI {
       method: 'GET',
       url: '/card/consume/operator/queryTransactionList',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
       params: {
         pageIndex: params.pageIndex,
         pageSize: params.pageSize,
-        cardId: params.cardId
-      }
+        cardId: params.cardId,
+      },
     })
     return response.data
   }
@@ -640,7 +640,7 @@ export class OrderAPI {
       saleDirection: params.saleDirection,
       fiatUnit: params.fiatUnit,
       cardRewardPoints: params.cardRewardPoints,
-      methodCode: params.methodCode
+      methodCode: params.methodCode,
     })
     return response.data
   }
@@ -653,8 +653,8 @@ export class OrderAPI {
   static async getFiatPaymentMethods(params: FiatPaymentMethodsParams): Promise<FiatPaymentMethodsResponse> {
     const response = await api.get<FiatPaymentMethodsResponse>('/card/consume/common/fiatPaymentMethods', {
       params: {
-        orderType: params.orderType
-      }
+        orderType: params.orderType,
+      },
     })
     return response.data
   }

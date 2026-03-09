@@ -13,25 +13,12 @@ export const useThemeStore = defineStore('theme', () => {
   // 系统主题检测
   const systemTheme = ref<'light' | 'dark'>('light')
 
-  // 初始化主题
-  const initTheme = () => {
-    // 从 localStorage 读取保存的主题
-    const savedTheme = localStorage.getItem('theme') as Theme
-    if (savedTheme && ['light', 'dark', 'system'].includes(savedTheme)) {
-      currentTheme.value = savedTheme
+  // 更新 PrimeVue 主题
+  const updatePrimeVueTheme = (_theme: 'light' | 'dark') => {
+    const primeVueConfig = document.querySelector('script[data-primevue-config]')
+    if (primeVueConfig) {
+      // PrimeVue 主题切换逻辑
     }
-
-    // 检测系统主题
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    systemTheme.value = mediaQuery.matches ? 'dark' : 'light'
-
-    // 监听系统主题变化
-    mediaQuery.addEventListener('change', (e) => {
-      systemTheme.value = e.matches ? 'dark' : 'light'
-    })
-
-    // 应用主题
-    applyTheme()
   }
 
   // 应用主题
@@ -40,7 +27,8 @@ export const useThemeStore = defineStore('theme', () => {
 
     if (currentTheme.value === 'system') {
       themeToApply = systemTheme.value
-    } else {
+    }
+    else {
       themeToApply = currentTheme.value
     }
 
@@ -51,27 +39,29 @@ export const useThemeStore = defineStore('theme', () => {
     const html = document.documentElement
     if (themeToApply === 'dark') {
       html.classList.add('dark')
-    } else {
+    }
+    else {
       html.classList.remove('dark')
     }
 
-    // 更新 PrimeVue 主题
     updatePrimeVueTheme(themeToApply)
-    
-    // 强制触发重新渲染
-    setTimeout(() => {
-      console.log('Theme applied, HTML classes:', html.className)
-    }, 0)
   }
 
-  // 更新 PrimeVue 主题
-  const updatePrimeVueTheme = (theme: 'light' | 'dark') => {
-    // PrimeVue 主题切换
-    const primeVueConfig = document.querySelector('script[data-primevue-config]')
-    if (primeVueConfig) {
-      // 这里可以添加 PrimeVue 主题切换逻辑
-      console.log('PrimeVue theme updated to:', theme)
+  // 初始化主题
+  const initTheme = () => {
+    const savedTheme = localStorage.getItem('theme') as Theme
+    if (savedTheme && ['light', 'dark', 'system'].includes(savedTheme)) {
+      currentTheme.value = savedTheme
     }
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    systemTheme.value = mediaQuery.matches ? 'dark' : 'light'
+
+    mediaQuery.addEventListener('change', (e) => {
+      systemTheme.value = e.matches ? 'dark' : 'light'
+    })
+
+    applyTheme()
   }
 
   // 设置主题
@@ -87,7 +77,8 @@ export const useThemeStore = defineStore('theme', () => {
     console.log('Toggle theme called, current theme:', currentTheme.value)
     if (currentTheme.value === 'light') {
       setTheme('dark')
-    } else {
+    }
+    else {
       setTheme('light')
     }
   }
@@ -131,11 +122,11 @@ export const useThemeStore = defineStore('theme', () => {
     setTheme,
     toggleTheme,
     getThemeIcon,
-    getThemeLabel
+    getThemeLabel,
   }
 }, {
   persist: {
     key: 'theme-store',
-    storage: localStorage
-  }
+    storage: localStorage,
+  },
 })

@@ -32,32 +32,35 @@ export function setupRouterGuards(router: Router) {
             await authStore.refreshAuthToken()
             console.log('Token refreshed successfully')
             next()
-          } catch (error) {
+          }
+          catch (error) {
             console.error('Token refresh failed:', error)
             // 刷新失败，跳转到登录页
             RouteUtils.saveRedirectPath(to.fullPath)
             next({
               path: '/login',
-              query: { redirect: to.fullPath }
+              query: { redirect: to.fullPath },
             })
-            return
           }
-        } else {
+        }
+        else {
           // KYC验证现在通过dialog进行，不再需要路由跳转
           // 允许用户访问所有页面，KYC验证在具体功能中处理
           console.log('User authenticated, allowing access to all pages')
           next()
         }
-      } else {
+      }
+      else {
         console.log('User not authenticated, redirecting to login')
         // 未登录，保存当前路径并跳转到登录页
         RouteUtils.saveRedirectPath(to.fullPath)
         next({
           path: '/login',
-          query: { redirect: to.fullPath }
+          query: { redirect: to.fullPath },
         })
       }
-    } else {
+    }
+    else {
       // 不需要认证的路由
       console.log('Route does not require authentication:', to.path)
 
@@ -67,7 +70,8 @@ export function setupRouterGuards(router: Router) {
         const redirectPath = RouteUtils.getSavedRedirectPath() || '/'
         RouteUtils.clearRedirectPath()
         next(redirectPath)
-      } else {
+      }
+      else {
         next()
       }
     }

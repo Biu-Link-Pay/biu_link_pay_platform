@@ -1,173 +1,16 @@
-<template>
-  <div class="min-h-screen bg-white dark:bg-gray-900 overflow-y-auto md:bg-gray-50 "
-    :style="{ minHeight: `calc(var(--app-vh, 1vh) * 100)` }">
-    <!-- Navigation Header -->
-    <AppHeader :title="t('applyCardList.title')" :show-title="true" />
-
-    <!-- Main Content -->
-    <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto py-6">
-      <!-- Loading State -->
-      <div v-if="loading" class="flex justify-center py-20">
-        <div class="flex items-center space-x-3">
-          <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-          <span class="text-gray-600 dark:text-gray-400">{{ t('applyCardList.loadingConfigs') }}</span>
-        </div>
-      </div>
-
-      <!-- Error State -->
-      <div v-else-if="error" class="text-center py-20">
-        <div
-          class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-8 w-full max-w-md mx-auto">
-          <i class="pi pi-exclamation-triangle text-red-500 text-4xl mb-4"></i>
-          <h3 class="text-lg font-semibold text-red-800 dark:text-red-400 mb-2">{{ t('applyCardList.loadingFailed') }}</h3>
-          <p class="text-red-600 dark:text-red-400 mb-6">{{ error }}</p>
-          <Button :label="t('applyCardList.retry')" icon="pi pi-refresh" severity="secondary" @click="fetchCardConfigs" />
-        </div>
-      </div>
-
-      <!-- Card Selection -->
-      <div v-else-if="cardConfigs.length > 0">
-        <!-- Mobile: New compact panel style -->
-        <div class="md:hidden">
-          <div class="px-4">
-            <div class="bg-white dark:bg-gray-900 p-4">
-              <!-- Stats row -->
-              <div class="grid grid-cols-2 gap-3 text-center">
-                <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">{{ t('applyCardList.rechargeFee') }}</div>
-                  <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
-                    {{ formatRechargeFee(currentCard?.rechargeFee) }}
-                  </div>
-                </div>
-                <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">{{ t('applyCardList.monthlyFee') }}</div>
-                  <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
-                    {{ formatMoney(currentCard?.monthlyFee) }}
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card slider with preview effect -->
-              <div class="mt-6 relative overflow-x-hidden">
-                <div class="overflow-x-hidden" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
-                  @touchend="handleTouchEnd">
-                  <div class="relative flex items-center justify-center overflow-x-hidden"
-                    style="perspective: 1000px; min-height: 320px;">
-                    <div v-for="(card, index) in cardConfigs" :key="index"
-                      class="absolute top-0 left-1/2 transition-all duration-500 ease-out" :style="getCardStyle(index)">
-                      <div class="rounded-2xl overflow-hidden bg-img" :style="{
-                        aspectRatio: '9/16',
-                        width: '45vw',
-                        maxWidth: '180px'
-                      }">
-                        <img v-if="card.cardPicture" :src="card.cardPicture" alt="" class="rot-img" draggable="false" />
-                        <div v-else
-                          class="h-full w-full flex items-center justify-center text-gray-500 dark:text-gray-400 text-sm">
-                          {{ card.cardName }}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Dots -->
-                <div class="flex justify-center mt-6 space-x-2">
-                  <button v-for="(card, index) in cardConfigs" :key="index"
-                    class="w-8 h-1 rounded-full transition-colors"
-                    :class="currentCardIndex === index ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'"
-                    @click="selectCardByIndex(index)"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Title + brands -->
-          <div class="text-center mt-6">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              {{ currentCard?.cardPattern === 1 ? t('applyCardList.virtualCard') : t('applyCardList.physicalCard') }}
-            </h3>
-          </div>
-
-          <!-- Card limit info -->
-          <div v-if="currentCard && hasReachedMaxCards(currentCard)" class="px-4 mt-4">
-            <div
-              class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-3 mb-4">
-              <div class="flex items-center space-x-2">
-                <i class="pi pi-exclamation-triangle text-yellow-600 dark:text-yellow-400"></i>
-                <span class="text-sm text-yellow-800 dark:text-yellow-200">
-                  {{ t('applyCardList.maxCardsReached', { n: currentCard.applyNumber }) }}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Primary action -->
-          <div class="px-4 mt-4">
-            <Button :label="currentCard?.cardPattern === 1 ? t('cardItem.orderVirtualCard') : t('cardItem.orderPhysicalCard')"
-              severity="primary" class="w-full"
-              :disabled="currentCard?.cardPattern !== 1 || (currentCard && hasReachedMaxCards(currentCard))"
-              @click="currentCard && orderCard(currentCard)" />
-          </div>
-        </div>
-
-        <!-- Desktop: Grid Layout -->
-        <div class="hidden md:grid md:grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
-          <div v-for="card in cardConfigs" :key="card.cardName"
-            class="card-hover-container transition-all duration-300 ease-in-out hover:scale-102 hover:shadow-lg hover:-translate-y-1">
-            <CardItem :card="card" :selected="selectedCard?.cardName === card.cardName"
-              :has-reached-max-cards="hasReachedMaxCards(card)" @select="selectCard" @order="orderCard"
-              @activate="activateCard" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Empty State -->
-      <div v-else class="text-center py-20">
-        <div class="bg-gray-50 rounded-lg p-12 w-full max-w-md mx-auto">
-          <i class="pi pi-credit-card text-gray-400 text-5xl mb-6"></i>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ t('applyCardList.noCardsAvailable') }}</h3>
-          <p class="text-gray-600">{{ t('applyCardList.noCardsDesc') }}</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- KYC Verification Dialog -->
-    <Dialog v-model:visible="showKycDialog" modal :closable="false"
-      :style="{ width: '100vw', height: 'calc(var(--app-vh, 1vh) * 100)', maxWidth: 'none', maxHeight: 'none' }"
-      class="kyc-dialog-fullscreen">
-      <template #header>
-        <div class="flex items-center justify-between w-full">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ t('applyCardList.kycTitle') }}</h3>
-          <Button icon="pi pi-times" text rounded severity="secondary" @click="closeKycDialog"
-            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" />
-        </div>
-      </template>
-
-      <div class="space-y-6">
-        <!-- KYC SDK Container -->
-        <div v-if="showKycSDK" class="relative !mb-0 h-[calc(var(--app-vh,1vh)*100-120px)] w-full overflow-auto">
-          <div id="sumsub-websdk-container"
-            class="h-full w-full rounded-lg border border-gray-200 dark:border-gray-700">
-          </div>
-        </div>
-      </div>
-    </Dialog>
-  </div>
-</template>
-
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
-import { useRouter } from 'vue-router'
+import type { CardConfig } from '@/api/card'
+import Dialog from 'primevue/dialog'
 import { useToast } from 'primevue/usetoast'
-import { useCardStore } from '@/stores/card'
-import { useAuthStore } from '@/stores/auth'
-import { useUserStore } from '@/stores/user'
-import { useErrorHandler } from '@/utils/errorHandler'
+import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
 import CardItem from '@/components/CardItem.vue'
-import Dialog from 'primevue/dialog'
-import type { CardConfig } from '@/api/card'
+import { useAuthStore } from '@/stores/auth'
+import { useCardStore } from '@/stores/card'
+import { useUserStore } from '@/stores/user'
+import { useErrorHandler } from '@/utils/errorHandler'
 
 const { t } = useI18n()
 const router = useRouter()
@@ -205,13 +48,13 @@ const error = computed(() => cardStore.error)
 const cardConfigs = computed(() => cardStore.enabledCards)
 
 // Check if user has reached the maximum number of cards for a specific card configuration
-const hasReachedMaxCards = (cardConfig: CardConfig) => {
+function hasReachedMaxCards(cardConfig: CardConfig) {
   const userCardCount = cardStore.cardList.length
   return userCardCount >= cardConfig.applyNumber
 }
 
 // Get card configuration
-const fetchCardConfigs = async () => {
+async function fetchCardConfigs() {
   const result = await cardStore.fetchCardConfigs()
 
   if (result.success) {
@@ -221,18 +64,19 @@ const fetchCardConfigs = async () => {
     //   detail: 'Card configurations loaded successfully',
     //   life: 2000
     // })
-  } else {
+  }
+  else {
     toast.add({
       severity: 'error',
       summary: t('applyCardList.loadingFailed'),
       detail: result.error || t('applyCardList.loadFailed'),
-      life: 3000
+      life: 3000,
     })
   }
 }
 
 // Select card
-const selectCard = (card: CardConfig) => {
+function selectCard(card: CardConfig) {
   selectedCard.value = card
   // Find the index of the selected card in mobile carousel
   const cardIndex = cardConfigs.value.findIndex(c => c.cardName === card.cardName)
@@ -243,27 +87,30 @@ const selectCard = (card: CardConfig) => {
     severity: 'info',
     summary: t('applyCardList.cardSelected'),
     detail: t('applyCardList.selectedCard', { name: card.cardName }),
-    life: 2000
+    life: 2000,
   })
 }
 
 const currentCard = computed(() => cardConfigs.value[currentCardIndex.value])
 
-const formatMoney = (val?: number) => {
-  if (val === undefined || val === null) return '—'
+function formatMoney(val?: number) {
+  if (val === undefined || val === null)
+    return '—'
   return `${val} USD`
 }
-const formatRechargeFee = (val?: number) => {
-  if (val === undefined || val === null) return '—'
+function formatRechargeFee(val?: number) {
+  if (val === undefined || val === null)
+    return '—'
   return `${val}%`
 }
-const formatNumber = (val?: number) => {
-  if (val === undefined || val === null) return '—'
-  return val.toLocaleString('en-US') + ' USD'
+function _formatNumber(val?: number) {
+  if (val === undefined || val === null)
+    return '—'
+  return `${val.toLocaleString('en-US')} USD`
 }
 
 // Get card style for carousel with preview effect
-const getCardStyle = (index: number) => {
+function getCardStyle(index: number) {
   const diff = index - currentCardIndex.value
   const isActive = diff === 0
 
@@ -284,12 +131,14 @@ const getCardStyle = (index: number) => {
     // Use animating rotation if flipping, otherwise use stored rotation (initialized to -180 for first flip)
     if (isFlipping.value && index === currentCardIndex.value) {
       rotateY = animatingRotation.value
-    } else {
+    }
+    else {
       // Default to -180 (back) for cards that haven't been flipped yet
       rotateY = cardFlipRotations.value[index] ?? -180
     }
     zIndex = 10
-  } else if (diff === 1) {
+  }
+  else if (diff === 1) {
     // Next card - right side, smaller, always at back (-180)
     translateX = 'calc(-50% + 85%)'
     translateZ = '-100px'
@@ -297,7 +146,8 @@ const getCardStyle = (index: number) => {
     opacity = 0.5
     rotateY = -180
     zIndex = 5
-  } else if (diff === -1) {
+  }
+  else if (diff === -1) {
     // Previous card - left side, smaller, always at back (-180)
     translateX = 'calc(-50% - 85%)'
     translateZ = '-100px'
@@ -305,7 +155,8 @@ const getCardStyle = (index: number) => {
     opacity = 0.5
     rotateY = -180
     zIndex = 5
-  } else {
+  }
+  else {
     // Hidden cards
     translateX = diff > 0 ? 'calc(-50% + 200%)' : 'calc(-50% - 200%)'
     translateZ = '-200px'
@@ -319,13 +170,14 @@ const getCardStyle = (index: number) => {
     transform: `translateX(${translateX}) translateZ(${translateZ}) scale(${scale}) rotateY(${rotateY}deg)`,
     opacity: opacity.toString(),
     zIndex: zIndex.toString(),
-    pointerEvents: (isActive ? 'auto' : 'none') as 'auto' | 'none'
+    pointerEvents: (isActive ? 'auto' : 'none') as 'auto' | 'none',
   }
 }
 
 // Trigger card flip animation for current card (180 degree flip from back to front)
-const triggerCardFlip = () => {
-  if (isFlipping.value) return
+function triggerCardFlip() {
+  if (isFlipping.value)
+    return
 
   isFlipping.value = true
   const cardIndex = currentCardIndex.value
@@ -343,16 +195,17 @@ const triggerCardFlip = () => {
     const progress = Math.min(elapsed / duration, 1)
 
     // Ease out cubic
-    const easeProgress = 1 - Math.pow(1 - progress, 3)
+    const easeProgress = 1 - (1 - progress) ** 3
     animatingRotation.value = startRotation + ((targetRotation - startRotation) * easeProgress)
 
     if (progress < 1) {
       requestAnimationFrame(animate)
-    } else {
+    }
+    else {
       // Set final rotation value to front (0)
       cardFlipRotations.value = {
         ...cardFlipRotations.value,
-        [cardIndex]: targetRotation
+        [cardIndex]: targetRotation,
       }
       animatingRotation.value = targetRotation
       isFlipping.value = false
@@ -363,14 +216,15 @@ const triggerCardFlip = () => {
 }
 
 // Select card by index with animation
-const selectCardByIndex = (index: number) => {
-  if (index === currentCardIndex.value) return
+function selectCardByIndex(index: number) {
+  if (index === currentCardIndex.value)
+    return
 
   // Reset previous card back to -180 (back side) when leaving
   const prevIndex = currentCardIndex.value
   cardFlipRotations.value = {
     ...cardFlipRotations.value,
-    [prevIndex]: -180
+    [prevIndex]: -180,
   }
 
   // Switch to new card
@@ -382,7 +236,7 @@ const selectCardByIndex = (index: number) => {
 }
 
 // Touch event handlers for mobile
-const handleTouchStart = (event: TouchEvent) => {
+function handleTouchStart(event: TouchEvent) {
   // Check if touch is on a button or interactive element
   const target = event.target as HTMLElement
   if (target.closest('button') || target.closest('[role="button"]') || target.closest('a')) {
@@ -397,15 +251,17 @@ const handleTouchStart = (event: TouchEvent) => {
   }
 }
 
-const handleTouchMove = (event: TouchEvent) => {
-  if (!isDragging.value || event.touches.length !== 1) return
+function handleTouchMove(event: TouchEvent) {
+  if (!isDragging.value || event.touches.length !== 1)
+    return
 
   currentX.value = event.touches[0].clientX
   event.preventDefault()
 }
 
-const handleTouchEnd = () => {
-  if (!isDragging.value) return
+function handleTouchEnd() {
+  if (!isDragging.value)
+    return
 
   const deltaX = startX.value - currentX.value
 
@@ -419,7 +275,8 @@ const handleTouchEnd = () => {
         currentCardIndex.value++
         selectedCard.value = cardConfigs.value[currentCardIndex.value]
       }
-    } else {
+    }
+    else {
       // Swipe right, show previous card
       if (currentCardIndex.value > 0) {
         shouldSwitch = true
@@ -439,9 +296,8 @@ const handleTouchEnd = () => {
   currentX.value = 0
 }
 
-
 // Order card
-const orderCard = async (card: CardConfig) => {
+async function orderCard(card: CardConfig) {
   console.log('Order card clicked:', card)
 
   if (card.status !== 1) {
@@ -449,7 +305,7 @@ const orderCard = async (card: CardConfig) => {
       severity: 'warn',
       summary: t('applyCardList.notAvailable'),
       detail: t('applyCardList.cardNotAvailable', { name: card.cardName }),
-      life: 3000
+      life: 3000,
     })
     return
   }
@@ -460,7 +316,7 @@ const orderCard = async (card: CardConfig) => {
       severity: 'warn',
       summary: t('applyCardList.cardLimitReached'),
       detail: t('applyCardList.cardLimitReachedDesc', { n: card.applyNumber }),
-      life: 5000
+      life: 5000,
     })
     return
   }
@@ -472,7 +328,8 @@ const orderCard = async (card: CardConfig) => {
     // No cards, need to check KYC status first
     console.log('User has no cards, checking KYC status...')
     await checkKycAndNavigate(card)
-  } else {
+  }
+  else {
     // Has cards, navigate directly to BIN selection
     console.log('User has cards, navigating directly to CardBinSelection')
     navigateToCardBinSelection(card)
@@ -480,7 +337,7 @@ const orderCard = async (card: CardConfig) => {
 }
 
 // Check KYC status and navigate accordingly
-const checkKycAndNavigate = async (card: CardConfig) => {
+async function checkKycAndNavigate(card: CardConfig) {
   try {
     // Check KYC status
     const kycStatus = await authStore.checkKycStatus()
@@ -503,47 +360,48 @@ const checkKycAndNavigate = async (card: CardConfig) => {
       case 3: // KYC rejected
         console.log('KYC rejected, showing error message')
         handleError('KYC verification was rejected. Please contact support for more information.', {
-          fallbackMessage: 'KYC verification was rejected. Please contact support for more information.'
+          fallbackMessage: 'KYC verification was rejected. Please contact support for more information.',
         })
         break
 
       default:
         console.log('Unknown KYC status:', kycStatus)
         handleError('Unknown KYC status, please try again.', {
-          fallbackMessage: 'Unknown KYC status, please try again.'
+          fallbackMessage: 'Unknown KYC status, please try again.',
         })
     }
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error checking KYC status:', error)
     handleError(error, {
-      fallbackMessage: 'Failed to check KYC status, please try again.'
+      fallbackMessage: 'Failed to check KYC status, please try again.',
     })
   }
 }
 
 // Navigate to card BIN selection page
-const navigateToCardBinSelection = (card: CardConfig) => {
+function navigateToCardBinSelection(card: CardConfig) {
   console.log('Navigating to CardBinSelection with card:', card.cardName)
   router.push({
     name: 'CardBinSelection',
     query: {
-      cardName: card.cardName
-    }
+      cardName: card.cardName,
+    },
   })
 }
 
 // Activate card
-const activateCard = (card: CardConfig) => {
+function activateCard(card: CardConfig) {
   toast.add({
     severity: 'success',
     summary: t('applyCardList.cardActivated'),
     detail: t('applyCardList.cardActivatedDesc', { name: card.cardName }),
-    life: 3000
+    life: 3000,
   })
 }
 
 // Launch KYC SDK
-const launchKycSDK = async () => {
+async function launchKycSDK() {
   try {
     console.log('Launching KYC SDK...')
 
@@ -558,22 +416,23 @@ const launchKycSDK = async () => {
 
     // Start polling for KYC status
     startKycPolling()
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Failed to launch KYC SDK:', error)
     handleError(error, {
-      fallbackMessage: 'Failed to start KYC verification, please try again.'
+      fallbackMessage: 'Failed to start KYC verification, please try again.',
     })
   }
 }
 
 // Initialize Sumsub SDK
-const initializeSumsubSDK = () => {
+function initializeSumsubSDK() {
   try {
     // Check if snsWebSdk is available
     if (typeof (window as any).snsWebSdk === 'undefined') {
       console.error('snsWebSdk is not loaded')
       handleError('KYC verification component is not loaded. Please refresh the page and try again.', {
-        fallbackMessage: 'KYC verification component is not loaded. Please refresh the page and try again.'
+        fallbackMessage: 'KYC verification component is not loaded. Please refresh the page and try again.',
       })
       return
     }
@@ -581,56 +440,54 @@ const initializeSumsubSDK = () => {
     console.log('Initializing Sumsub SDK with token:', kycAccessToken.value)
 
     // Use the same initialization method as KycVerification.vue
-    const snsWebSdkInstance = (window as any).snsWebSdk
-      .init(kycAccessToken.value, () => getNewAccessToken())
-      .withConf({ lang: 'en' })
-      .withOptions({
-        adaptIframeHeight: true,
-        scrollIntoView: true,
+    const snsWebSdkInstance = (window as any).snsWebSdk.init(kycAccessToken.value, () => getNewAccessToken()).withConf({ lang: 'en' }).withOptions({
+      adaptIframeHeight: true,
+      scrollIntoView: true,
+    }).on('idCheck.onStepCompleted', (payload: any) => {
+      console.log('onStepCompleted', payload)
+    }).on('idCheck.onError', (error: any) => {
+      console.error('Sumsub SDK error:', error)
+      handleError('An error occurred during KYC verification', {
+        fallbackMessage: 'An error occurred during KYC verification, please try again.',
       })
-      .on('idCheck.onStepCompleted', (payload: any) => {
-        console.log('onStepCompleted', payload)
-      })
-      .on('idCheck.onError', (error: any) => {
-        console.error('Sumsub SDK error:', error)
-        handleError('An error occurred during KYC verification', {
-          fallbackMessage: 'An error occurred during KYC verification, please try again.'
-        })
-      })
-      .build()
+    }).build()
 
     snsWebSdkInstance.launch('#sumsub-websdk-container')
 
     handleSuccess('Please follow the instructions to complete identity verification.')
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Failed to initialize Sumsub SDK:', error)
     handleError('Failed to initialize KYC verification', {
-      fallbackMessage: 'Failed to initialize KYC verification, please try again.'
+      fallbackMessage: 'Failed to initialize KYC verification, please try again.',
     })
   }
 }
 
 // Get new access token (for token refresh)
-const getNewAccessToken = async (): Promise<string> => {
+async function getNewAccessToken(): Promise<string> {
   try {
     const newToken = await authStore.getKycAccessToken()
     kycAccessToken.value = newToken
     return newToken
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Token refresh failed:', error)
     throw error
   }
 }
 
 // Start KYC polling
-const startKycPolling = () => {
-  if (isKycPolling.value) return
+function startKycPolling() {
+  if (isKycPolling.value)
+    return
 
   isKycPolling.value = true
   console.log('Starting KYC status polling')
 
   const pollKycStatus = async () => {
-    if (!isKycPolling.value) return
+    if (!isKycPolling.value)
+      return
 
     try {
       const result = await authStore.checkKycStatus()
@@ -645,7 +502,8 @@ const startKycPolling = () => {
         try {
           await userStore.fetchUserProfile()
           console.log('User profile updated after KYC approval')
-        } catch (error) {
+        }
+        catch (error) {
           console.error('Failed to update user profile after KYC approval:', error)
         }
 
@@ -653,19 +511,22 @@ const startKycPolling = () => {
 
         // Clear pending card
         pendingCard.value = null
-      } else if (result === 3) {
+      }
+      else if (result === 3) {
         // KYC rejected
         stopKycPolling()
         showKycDialog.value = false
         handleError('KYC verification was rejected. Please contact support for more information.', {
-          fallbackMessage: 'KYC verification was rejected. Please contact support for more information.'
+          fallbackMessage: 'KYC verification was rejected. Please contact support for more information.',
         })
         pendingCard.value = null
-      } else {
+      }
+      else {
         // Status 0 and 2 continue polling after a delay
         setTimeout(pollKycStatus, 1000) // Wait 5 seconds before next poll
       }
-    } catch (error) {
+    }
+    catch (error) {
       console.error('KYC polling error:', error)
       // On error, wait before retrying
       setTimeout(pollKycStatus, 1000) // Wait 5 seconds before retry
@@ -677,26 +538,25 @@ const startKycPolling = () => {
 }
 
 // Stop KYC polling
-const stopKycPolling = () => {
+function stopKycPolling() {
   isKycPolling.value = false
   console.log('KYC polling stopped')
 }
 
 // Viewport height fix for mobile browsers
-const setAppViewportHeight = () => {
+function setAppViewportHeight() {
   const vhUnit = window.innerHeight * 0.01
   document.documentElement.style.setProperty('--app-vh', `${vhUnit}px`)
 }
 
 const handleResize = () => setAppViewportHeight()
-const handleOrientationChange = () => {
+function handleOrientationChange() {
   // Delay to wait for address bar/UI to settle
   setTimeout(setAppViewportHeight, 200)
 }
 
-
 // Close KYC dialog
-const closeKycDialog = () => {
+function closeKycDialog() {
   showKycDialog.value = false
   showKycSDK.value = false
   stopKycPolling()
@@ -705,7 +565,6 @@ const closeKycDialog = () => {
 }
 
 // Removed watch on authStore.kycStatus to avoid duplicate handling with polling
-
 
 // Clean up on unmount
 onUnmounted(() => {
@@ -726,7 +585,8 @@ onMounted(async () => {
   // Ensure card list is up to date for limit calculations
   try {
     await cardStore.fetchCardList({ silent: true })
-  } catch (error) {
+  }
+  catch (error) {
     console.warn('Failed to fetch card list:', error)
   }
 
@@ -738,6 +598,204 @@ onMounted(async () => {
   })
 })
 </script>
+
+<template>
+  <div
+    class="min-h-screen bg-white dark:bg-gray-900 overflow-y-auto md:bg-gray-50 "
+    :style="{ minHeight: `calc(var(--app-vh, 1vh) * 100)` }"
+  >
+    <!-- Navigation Header -->
+    <AppHeader :title="t('applyCardList.title')" :show-title="true" />
+
+    <!-- Main Content -->
+    <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto py-6">
+      <!-- Loading State -->
+      <div v-if="loading" class="flex justify-center py-20">
+        <div class="flex items-center space-x-3">
+          <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600" />
+          <span class="text-gray-600 dark:text-gray-400">{{ t('applyCardList.loadingConfigs') }}</span>
+        </div>
+      </div>
+
+      <!-- Error State -->
+      <div v-else-if="error" class="text-center py-20">
+        <div
+          class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-8 w-full max-w-md mx-auto"
+        >
+          <i class="pi pi-exclamation-triangle text-red-500 text-4xl mb-4" />
+          <h3 class="text-lg font-semibold text-red-800 dark:text-red-400 mb-2">
+            {{ t('applyCardList.loadingFailed') }}
+          </h3>
+          <p class="text-red-600 dark:text-red-400 mb-6">
+            {{ error }}
+          </p>
+          <Button :label="t('applyCardList.retry')" icon="pi pi-refresh" severity="secondary" @click="fetchCardConfigs" />
+        </div>
+      </div>
+
+      <!-- Card Selection -->
+      <div v-else-if="cardConfigs.length > 0">
+        <!-- Mobile: New compact panel style -->
+        <div class="md:hidden">
+          <div class="px-4">
+            <div class="bg-white dark:bg-gray-900 p-4">
+              <!-- Stats row -->
+              <div class="grid grid-cols-2 gap-3 text-center">
+                <div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400">
+                    {{ t('applyCardList.rechargeFee') }}
+                  </div>
+                  <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
+                    {{ formatRechargeFee(currentCard?.rechargeFee) }}
+                  </div>
+                </div>
+                <div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400">
+                    {{ t('applyCardList.monthlyFee') }}
+                  </div>
+                  <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
+                    {{ formatMoney(currentCard?.monthlyFee) }}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card slider with preview effect -->
+              <div class="mt-6 relative overflow-x-hidden">
+                <div
+                  class="overflow-x-hidden" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
+                  @touchend="handleTouchEnd"
+                >
+                  <div
+                    class="relative flex items-center justify-center overflow-x-hidden"
+                    style="perspective: 1000px; min-height: 320px;"
+                  >
+                    <div
+                      v-for="(card, index) in cardConfigs" :key="index"
+                      class="absolute top-0 left-1/2 transition-all duration-500 ease-out" :style="getCardStyle(index)"
+                    >
+                      <div
+                        class="rounded-2xl overflow-hidden bg-img" :style="{
+                          aspectRatio: '9/16',
+                          width: '45vw',
+                          maxWidth: '180px',
+                        }"
+                      >
+                        <img v-if="card.cardPicture" :src="card.cardPicture" alt="" class="rot-img" draggable="false">
+                        <div
+                          v-else
+                          class="h-full w-full flex items-center justify-center text-gray-500 dark:text-gray-400 text-sm"
+                        >
+                          {{ card.cardName }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dots -->
+                <div class="flex justify-center mt-6 space-x-2">
+                  <button
+                    v-for="(card, index) in cardConfigs" :key="index"
+                    class="w-8 h-1 rounded-full transition-colors"
+                    :class="currentCardIndex === index ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'"
+                    @click="selectCardByIndex(index)"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Title + brands -->
+          <div class="text-center mt-6">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              {{ currentCard?.cardPattern === 1 ? t('applyCardList.virtualCard') : t('applyCardList.physicalCard') }}
+            </h3>
+          </div>
+
+          <!-- Card limit info -->
+          <div v-if="currentCard && hasReachedMaxCards(currentCard)" class="px-4 mt-4">
+            <div
+              class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-3 mb-4"
+            >
+              <div class="flex items-center space-x-2">
+                <i class="pi pi-exclamation-triangle text-yellow-600 dark:text-yellow-400" />
+                <span class="text-sm text-yellow-800 dark:text-yellow-200">
+                  {{ t('applyCardList.maxCardsReached', { n: currentCard.applyNumber }) }}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Primary action -->
+          <div class="px-4 mt-4">
+            <Button
+              :label="currentCard?.cardPattern === 1 ? t('cardItem.orderVirtualCard') : t('cardItem.orderPhysicalCard')"
+              severity="primary" class="w-full"
+              :disabled="currentCard?.cardPattern !== 1 || (currentCard && hasReachedMaxCards(currentCard))"
+              @click="currentCard && orderCard(currentCard)"
+            />
+          </div>
+        </div>
+
+        <!-- Desktop: Grid Layout -->
+        <div class="hidden md:grid md:grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
+          <div
+            v-for="card in cardConfigs" :key="card.cardName"
+            class="card-hover-container transition-all duration-300 ease-in-out hover:scale-102 hover:shadow-lg hover:-translate-y-1"
+          >
+            <CardItem
+              :card="card" :selected="selectedCard?.cardName === card.cardName"
+              :has-reached-max-cards="hasReachedMaxCards(card)" @select="selectCard" @order="orderCard"
+              @activate="activateCard"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div v-else class="text-center py-20">
+        <div class="bg-gray-50 rounded-lg p-12 w-full max-w-md mx-auto">
+          <i class="pi pi-credit-card text-gray-400 text-5xl mb-6" />
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">
+            {{ t('applyCardList.noCardsAvailable') }}
+          </h3>
+          <p class="text-gray-600">
+            {{ t('applyCardList.noCardsDesc') }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- KYC Verification Dialog -->
+    <Dialog
+      v-model:visible="showKycDialog" modal :closable="false"
+      :style="{ width: '100vw', height: 'calc(var(--app-vh, 1vh) * 100)', maxWidth: 'none', maxHeight: 'none' }"
+      class="kyc-dialog-fullscreen"
+    >
+      <template #header>
+        <div class="flex items-center justify-between w-full">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+            {{ t('applyCardList.kycTitle') }}
+          </h3>
+          <Button
+            icon="pi pi-times" text rounded severity="secondary" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+            @click="closeKycDialog"
+          />
+        </div>
+      </template>
+
+      <div class="space-y-6">
+        <!-- KYC SDK Container -->
+        <div v-if="showKycSDK" class="relative !mb-0 h-[calc(var(--app-vh,1vh)*100-120px)] w-full overflow-auto">
+          <div
+            id="sumsub-websdk-container"
+            class="h-full w-full rounded-lg border border-gray-200 dark:border-gray-700"
+          />
+        </div>
+      </div>
+    </Dialog>
+  </div>
+</template>
 
 <style scoped>
 /* Mobile card container */
