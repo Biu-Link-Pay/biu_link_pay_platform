@@ -5,19 +5,25 @@ import zhTW from '@/locales/zh-TW'
 /**
  * Detect browser locale: use Traditional Chinese (zh-TW) only when
  * browser language is zh-TW, zh-HK, or zh-Hant. All others use English.
+ * 使用 try-catch 防止在非浏览器环境（如 build 阶段）访问 navigator 时报错
  */
 function getBrowserLocale(): string {
-  const lang = navigator.language || (navigator.languages && navigator.languages[0]) || 'en'
-  const lower = lang.toLowerCase()
+  try {
+    const lang = (typeof navigator !== 'undefined' && (navigator.language || (navigator.languages?.[0]))) || 'en'
+    const lower = String(lang).toLowerCase()
 
-  // Traditional Chinese: zh-TW, zh-HK, zh-Hant, zh-Hant-TW, zh-Hant-HK, etc.
-  if (lower.startsWith('zh')) {
-    if (lower.includes('tw') || lower.includes('hk') || lower.includes('hant')) {
-      return 'zh-TW'
+    // Traditional Chinese: zh-TW, zh-HK, zh-Hant, zh-Hant-TW, zh-Hant-HK, etc.
+    if (lower.startsWith('zh')) {
+      if (lower.includes('tw') || lower.includes('hk') || lower.includes('hant')) {
+        return 'zh-TW'
+      }
     }
-  }
 
-  return 'en'
+    return 'en'
+  }
+  catch {
+    return 'en'
+  }
 }
 
 const i18n = createI18n({

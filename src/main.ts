@@ -74,4 +74,7 @@ app.use(ToastService)
 app.use(ConfirmationService)
 app.directive('tooltip', Tooltip)
 
-app.mount('#app')
+// 等待路由完成初始导航后再挂载，避免 build 部署后 router-view 显示空白
+router.isReady().then(() => {
+  app.mount('#app')
+})

@@ -17,10 +17,12 @@ onMounted(() => {
 <template>
   <div id="app" class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
     <router-view v-slot="{ Component, route }">
-      <keep-alive>
-        <component :is="Component" v-if="route.meta.keepAlive" :key="route.path" />
-      </keep-alive>
-      <component :is="Component" v-if="!route.meta.keepAlive" :key="route.path" />
+      <template v-if="Component">
+        <keep-alive>
+          <component :is="Component" v-if="route?.meta?.keepAlive" :key="route?.path" />
+        </keep-alive>
+        <component :is="Component" v-if="!route?.meta?.keepAlive" :key="route?.path" />
+      </template>
     </router-view>
     <Toast />
     <ConfirmDialog />
