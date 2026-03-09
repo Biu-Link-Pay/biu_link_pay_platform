@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Unified Header -->
-    <AppHeader title="Crypto Payment" :show-title="true" />
+    <AppHeader :title="t('cryptoPayment.title')" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -13,17 +13,17 @@
           <div class="space-y-6">
             <!-- Order Information -->
             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Order Information</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">{{ t('cryptoPayment.orderInfo') }}</h3>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Order Number -->
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Order NO.</div>
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">{{ t('cryptoPayment.orderNo') }}</div>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
                     <button
-                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.orderNumberCopied'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
-                      title="Copy order number">
+                      :title="t('cryptoPayment.copyOrderNumber')">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
                   </div>
@@ -31,19 +31,19 @@
 
                 <!-- Order Amount -->
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Order amount</div>
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">{{ t('payment.orderAmount') }}</div>
                   <div class="text-lg font-bold text-gray-900 dark:text-white">
                     {{ displayOrderAmount }}
                     <span v-if="cardStore.currentOrder?.cardRewardPointsUsed > 0"
                       class="text-sm font-normal text-orange-500 dark:text-gray-400 ml-1">
-                      (Used {{ cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() }} pts)
+                      {{ t('cryptoPayment.usedPts', { pts: cardStore.currentOrder?.cardRewardPointsUsed?.toLocaleString() ?? '0' }) }}
                     </span>
                   </div>
                 </div>
 
                 <!-- You need to pay -->
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">You need to pay</div>
+                  <div class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">{{ t('payment.youNeedToPay') }}</div>
                   <div class="flex items-center space-x-2">
                     <span class="text-lg font-bold text-gray-900 dark:text-white">{{ displayPaymentCryptoAmount }} {{ displayPaymentToken
                     }}</span>
@@ -52,9 +52,9 @@
                       <span class="text-white font-bold text-xs">{{ getCryptoIcon(displayPaymentToken) }}</span>
                     </div>
                     <button
-                      @click="() => { copyToClipboard(String(displayPaymentCryptoAmount)); toast.add({ severity: 'success', summary: 'Success', detail: 'Amount copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(String(displayPaymentCryptoAmount)); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.amountCopied'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
-                      title="Copy amount">
+                      :title="t('cryptoPayment.copyAmount')">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
                   </div>
@@ -70,9 +70,7 @@
                   <i class="pi pi-exclamation-triangle text-white text-xs"></i>
                 </div>
                 <div class="text-sm text-orange-800 dark:text-orange-200">
-                  <span class="font-semibold">DON'T forget to add the Network Fee</span> when transferring, so as not to
-                  fail
-                  due to insufficient transfer amount.
+                  {{ t('cryptoPayment.networkFeeWarning') }}
                 </div>
               </div>
               <div class="flex items-start space-x-3 mt-2">
@@ -80,8 +78,7 @@
                   <i class="pi pi-info-circle text-white text-xs"></i>
                 </div>
                 <div class="text-sm text-orange-800 dark:text-orange-200">
-                  <span class="font-semibold">For security reasons, the payment page has expired.</span> Please complete
-                  the payment promptly.
+                  {{ t('cryptoPayment.expiryWarning') }}
                 </div>
               </div>
             </div>
@@ -95,7 +92,7 @@
               <div class="space-y-6">
                 <!-- Section Header -->
                 <div class="flex items-center justify-between">
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Payment Information</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ t('cryptoPayment.paymentInfo') }}</h3>
                   <div class="flex items-center space-x-2">
                     <i class="pi pi-clock text-sm"></i>
                     <div class="flex items-center space-x-1">
@@ -121,7 +118,7 @@
                   <!-- Network Type -->
                   <div
                     class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                    <div class="text-sm font-medium text-blue-800 dark:text-blue-200 mb-2">Network Type</div>
+                    <div class="text-sm font-medium text-blue-800 dark:text-blue-200 mb-2">{{ t('cryptoPayment.networkType') }}</div>
                     <div class="text-lg font-semibold text-blue-900 dark:text-blue-100">
                       {{ displayPaymentToken }}({{ displayNetwork }}) only
                     </div>
@@ -129,15 +126,15 @@
 
                   <!-- Payment Address -->
                   <div class="space-y-2">
-                    <div class="text-sm font-medium text-gray-600 dark:text-gray-400">Payment Address:</div>
+                    <div class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ t('cryptoPayment.paymentAddress') }}:</div>
                     <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
                       <div class="flex items-center justify-between">
                         <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress
                         }}</span>
                         <button
-                          @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: 'Success', detail: 'Wallet address copied to clipboard', life: 2000 }) }"
+                          @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.walletAddressCopied'), life: 2000 }) }"
                           class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                          title="Copy address">
+                          :title="t('cryptoPayment.copyAddress')">
                           <i class="pi pi-copy text-gray-500 text-sm"></i>
                         </button>
                       </div>
@@ -286,7 +283,7 @@
                 <span class="text-sm font-mono text-gray-900 dark:text-white">{{ orderNumber }}</span>
                 <button @click="copyToClipboard(orderNumber)"
                   class="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
-                  title="Copy order number">
+                  :title="t('cryptoPayment.copyOrderNumber')">
                   <i class="pi pi-copy text-gray-500 text-xs"></i>
                 </button>
               </div>
@@ -387,7 +384,7 @@
                 <div class="flex items-center justify-between">
                   <span class="text-sm font-mono text-gray-900 dark:text-white break-all">{{ walletAddress }}</span>
                   <button
-                    @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: 'Success', detail: 'Wallet address copied to clipboard', life: 2000 }) }"
+                    @click="() => { copyToClipboard(walletAddress); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.walletAddressCopied'), life: 2000 }) }"
                     class="ml-2 p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
                     title="Copy address">
                     <i class="pi pi-copy text-gray-500 text-sm"></i>
@@ -541,12 +538,14 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { useCardStore } from '@/stores/card'
 import { OrderAPI, type DepositOrderDetailItem } from '@/api/order'
 import { useClipboard } from '@vueuse/core'
 
+const { t } = useI18n()
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
@@ -812,8 +811,8 @@ const startCountdown = (initialSeconds?: number) => {
       if (isMounted.value && toast) {
         toast.add({
           severity: 'warn',
-          summary: 'Payment Expired',
-          detail: 'Payment time has expired. Please refresh to get a new payment address.',
+          summary: t('payment.paymentExpiredTitle'),
+          detail: t('payment.paymentExpired'),
           life: 5000
         })
       }
@@ -1013,15 +1012,15 @@ const refreshPayment = async () => {
 
     toast.add({
       severity: 'success',
-      summary: 'Payment Refreshed',
-      detail: 'Payment details have been refreshed',
+      summary: t('payment.paymentRefreshedTitle'),
+      detail: t('payment.paymentRefreshed'),
       life: 3000
     })
   } catch (error) {
     toast.add({
       severity: 'error',
-      summary: 'Refresh Failed',
-      detail: (error as any)?.message || 'Failed to refresh payment details',
+      summary: t('payment.refreshFailedTitle'),
+      detail: (error as any)?.message || t('payment.refreshFailed'),
       life: 3000
     })
   } finally {

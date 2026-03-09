@@ -124,6 +124,7 @@ export default {
 <script setup lang="ts">
 import { ref, computed, watch, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
 import InputText from 'primevue/inputtext'
 import Button from 'primevue/button'
@@ -134,6 +135,7 @@ import { useUserStore } from '@/stores/user'
 
 const router = useRouter()
 const route = useRoute()
+const { t } = useI18n()
 const toast = useToast()
 const cardStore = useCardStore()
 const userStore = useUserStore()
@@ -304,8 +306,8 @@ const validateAndLoadCardDetails = () => {
   if (!routeCardId || !routeCardNo) {
     toast.add({
       severity: 'error',
-      summary: 'Invalid Parameters',
-      detail: 'Missing card information. Please go back and try again.',
+      summary: t('withdraw.invalidParams'),
+      detail: t('withdraw.missingCardInfo'),
       life: 3000
     })
     router.push('/my-cards')
@@ -350,8 +352,8 @@ const validateAndLoadCardDetails = () => {
 
   toast.add({
     severity: 'error',
-    summary: 'Invalid Parameters',
-    detail: 'Unable to get card information. Please go back and try again.',
+    summary: t('withdraw.invalidParams'),
+    detail: t('withdraw.cannotGetCardInfo'),
     life: 3000
   })
   router.push('/my-cards')
@@ -424,8 +426,8 @@ const handleContinue = async () => {
   if (!validateAmountAndPoints()) {
     toast.add({
       severity: 'error',
-      summary: 'Validation Error',
-      detail: errors.value.withdrawAmount || 'Please check your withdraw amount and points',
+      summary: t('withdraw.validationError'),
+      detail: errors.value.withdrawAmount || t('withdraw.checkWithdrawAmount'),
       life: 3000
     })
     return
@@ -435,8 +437,8 @@ const handleContinue = async () => {
   try {
     toast.add({
       severity: 'success',
-      summary: 'Confirmed',
-      detail: `Withdraw amount ${formatCurrency(withdrawAmountNumber.value)} confirmed`,
+      summary: t('withdraw.confirmed'),
+      detail: t('withdraw.withdrawAmountConfirmed', { amount: formatCurrency(withdrawAmountNumber.value) }),
       life: 2000
     })
 

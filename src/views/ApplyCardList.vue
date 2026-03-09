@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-white dark:bg-gray-900 overflow-y-auto md:bg-gray-50 "
     :style="{ minHeight: `calc(var(--app-vh, 1vh) * 100)` }">
     <!-- Navigation Header -->
-    <AppHeader title="Apply Card" :show-title="true" />
+    <AppHeader :title="t('applyCardList.title')" :show-title="true" />
 
     <!-- Main Content -->
     <div class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-7xl mx-auto py-6">
@@ -10,7 +10,7 @@
       <div v-if="loading" class="flex justify-center py-20">
         <div class="flex items-center space-x-3">
           <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-          <span class="text-gray-600 dark:text-gray-400">Loading card configurations...</span>
+          <span class="text-gray-600 dark:text-gray-400">{{ t('applyCardList.loadingConfigs') }}</span>
         </div>
       </div>
 
@@ -19,9 +19,9 @@
         <div
           class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-8 w-full max-w-md mx-auto">
           <i class="pi pi-exclamation-triangle text-red-500 text-4xl mb-4"></i>
-          <h3 class="text-lg font-semibold text-red-800 dark:text-red-400 mb-2">Loading Failed</h3>
+          <h3 class="text-lg font-semibold text-red-800 dark:text-red-400 mb-2">{{ t('applyCardList.loadingFailed') }}</h3>
           <p class="text-red-600 dark:text-red-400 mb-6">{{ error }}</p>
-          <Button label="Retry" icon="pi pi-refresh" severity="secondary" @click="fetchCardConfigs" />
+          <Button :label="t('applyCardList.retry')" icon="pi pi-refresh" severity="secondary" @click="fetchCardConfigs" />
         </div>
       </div>
 
@@ -34,13 +34,13 @@
               <!-- Stats row -->
               <div class="grid grid-cols-2 gap-3 text-center">
                 <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">Recharge Fee</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400">{{ t('applyCardList.rechargeFee') }}</div>
                   <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
                     {{ formatRechargeFee(currentCard?.rechargeFee) }}
                   </div>
                 </div>
                 <div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">Monthly Fee</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400">{{ t('applyCardList.monthlyFee') }}</div>
                   <div class="text-base font-semibold text-gray-900 dark:text-white mt-1">
                     {{ formatMoney(currentCard?.monthlyFee) }}
                   </div>
@@ -84,7 +84,7 @@
           <!-- Title + brands -->
           <div class="text-center mt-6">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              {{ currentCard?.cardPattern === 1 ? 'Virtual Card' : 'Physical Card' }}
+              {{ currentCard?.cardPattern === 1 ? t('applyCardList.virtualCard') : t('applyCardList.physicalCard') }}
             </h3>
           </div>
 
@@ -95,7 +95,7 @@
               <div class="flex items-center space-x-2">
                 <i class="pi pi-exclamation-triangle text-yellow-600 dark:text-yellow-400"></i>
                 <span class="text-sm text-yellow-800 dark:text-yellow-200">
-                  You have reached the maximum limit of {{ currentCard.applyNumber }} cards
+                  {{ t('applyCardList.maxCardsReached', { n: currentCard.applyNumber }) }}
                 </span>
               </div>
             </div>
@@ -103,7 +103,7 @@
 
           <!-- Primary action -->
           <div class="px-4 mt-4">
-            <Button :label="currentCard?.cardPattern === 1 ? 'Order a Virtual Card' : 'Order a Physical Card'"
+            <Button :label="currentCard?.cardPattern === 1 ? t('cardItem.orderVirtualCard') : t('cardItem.orderPhysicalCard')"
               severity="primary" class="w-full"
               :disabled="currentCard?.cardPattern !== 1 || (currentCard && hasReachedMaxCards(currentCard))"
               @click="currentCard && orderCard(currentCard)" />
@@ -125,8 +125,8 @@
       <div v-else class="text-center py-20">
         <div class="bg-gray-50 rounded-lg p-12 w-full max-w-md mx-auto">
           <i class="pi pi-credit-card text-gray-400 text-5xl mb-6"></i>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">No Cards Available</h3>
-          <p class="text-gray-600">No card configurations found.</p>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ t('applyCardList.noCardsAvailable') }}</h3>
+          <p class="text-gray-600">{{ t('applyCardList.noCardsDesc') }}</p>
         </div>
       </div>
     </div>
@@ -137,7 +137,7 @@
       class="kyc-dialog-fullscreen">
       <template #header>
         <div class="flex items-center justify-between w-full">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">KYC Identity Verification</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ t('applyCardList.kycTitle') }}</h3>
           <Button icon="pi pi-times" text rounded severity="secondary" @click="closeKycDialog"
             class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" />
         </div>
@@ -163,11 +163,13 @@ import { useCardStore } from '@/stores/card'
 import { useAuthStore } from '@/stores/auth'
 import { useUserStore } from '@/stores/user'
 import { useErrorHandler } from '@/utils/errorHandler'
+import { useI18n } from 'vue-i18n'
 import AppHeader from '@/components/AppHeader.vue'
 import CardItem from '@/components/CardItem.vue'
 import Dialog from 'primevue/dialog'
 import type { CardConfig } from '@/api/card'
 
+const { t } = useI18n()
 const router = useRouter()
 const toast = useToast()
 const cardStore = useCardStore()
@@ -222,8 +224,8 @@ const fetchCardConfigs = async () => {
   } else {
     toast.add({
       severity: 'error',
-      summary: 'Load Failed',
-      detail: result.error || 'Failed to load card configurations',
+      summary: t('applyCardList.loadingFailed'),
+      detail: result.error || t('applyCardList.loadFailed'),
       life: 3000
     })
   }
@@ -239,8 +241,8 @@ const selectCard = (card: CardConfig) => {
   }
   toast.add({
     severity: 'info',
-    summary: 'Card Selected',
-    detail: `Selected ${card.cardName}`,
+    summary: t('applyCardList.cardSelected'),
+    detail: t('applyCardList.selectedCard', { name: card.cardName }),
     life: 2000
   })
 }
@@ -445,8 +447,8 @@ const orderCard = async (card: CardConfig) => {
   if (card.status !== 1) {
     toast.add({
       severity: 'warn',
-      summary: 'Not Available',
-      detail: `${card.cardName} is currently not available`,
+      summary: t('applyCardList.notAvailable'),
+      detail: t('applyCardList.cardNotAvailable', { name: card.cardName }),
       life: 3000
     })
     return
@@ -456,8 +458,8 @@ const orderCard = async (card: CardConfig) => {
   if (hasReachedMaxCards(card)) {
     toast.add({
       severity: 'warn',
-      summary: 'Card Limit Reached',
-      detail: `You have reached the maximum limit of ${card.applyNumber} cards`,
+      summary: t('applyCardList.cardLimitReached'),
+      detail: t('applyCardList.cardLimitReachedDesc', { n: card.applyNumber }),
       life: 5000
     })
     return
@@ -534,8 +536,8 @@ const navigateToCardBinSelection = (card: CardConfig) => {
 const activateCard = (card: CardConfig) => {
   toast.add({
     severity: 'success',
-    summary: 'Card Activated',
-    detail: `${card.cardName} has been successfully activated`,
+    summary: t('applyCardList.cardActivated'),
+    detail: t('applyCardList.cardActivatedDesc', { name: card.cardName }),
     life: 3000
   })
 }

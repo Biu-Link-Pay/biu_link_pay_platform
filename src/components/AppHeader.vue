@@ -138,6 +138,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
 import { useConfirm } from 'primevue/useconfirm'
 import { useAuthStore } from '@/stores/auth'
@@ -145,6 +146,8 @@ import { useUserStore } from '@/stores/user'
 import { useCardStore } from '@/stores/card'
 import ThemeToggle from './ThemeToggle.vue'
 import coinsIcon from '@/assets/images/coins.png'
+
+const { t } = useI18n()
 
 interface Props {
   title?: string
@@ -203,8 +206,8 @@ const formattedCardRewardPoints = computed(() => {
 const showPointsHint = () => {
   toast.add({
     severity: 'info',
-    summary: 'Card Points',
-    detail: '100 pts = 1 USD',
+    summary: t('header.cardPoints'),
+    detail: t('header.pointsHint'),
     life: 2500
   })
 }
@@ -238,11 +241,11 @@ const confirmLogout = () => {
   console.log('Showing logout confirmation dialog')
   showUserMenu.value = false
   confirm.require({
-    message: 'Are you sure you want to logout?',
-    header: 'Confirm Logout',
+    message: t('header.confirmLogoutMessage'),
+    header: t('header.confirmLogout'),
     icon: 'pi pi-exclamation-triangle',
-    rejectLabel: 'Cancel',
-    acceptLabel: 'Confirm',
+    rejectLabel: t('common.cancel'),
+    acceptLabel: t('common.confirm'),
     accept: () => {
       console.log('User confirmed logout')
       handleLogout()
@@ -262,8 +265,8 @@ const handleLogout = async () => {
 
     toast.add({
       severity: 'success',
-      summary: 'Logged Out',
-      detail: 'You have been logged out successfully',
+      summary: t('common.success'),
+      detail: t('header.loggedOut'),
       life: 3000
     })
     router.push('/login')
@@ -271,8 +274,8 @@ const handleLogout = async () => {
     console.error('Logout failed:', error)
     toast.add({
       severity: 'error',
-      summary: 'Logout Failed',
-      detail: (error as any)?.message || 'Failed to logout. Please try again.',
+      summary: t('header.logoutFailedTitle'),
+      detail: (error as any)?.message || t('header.logoutFailed'),
       life: 3000
     })
   }

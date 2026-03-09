@@ -435,6 +435,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI, type OrderPayType, type OrderCryptoNetwork } from '@/api/order'
@@ -443,6 +444,7 @@ import { useUserStore } from '@/stores/user'
 
 const router = useRouter()
 const route = useRoute()
+const { t } = useI18n()
 const toast = useToast()
 const cardStore = useCardStore()
 const userStore = useUserStore()
@@ -538,10 +540,16 @@ const limitErrorMessage = computed(() => {
   const maxLimit = selectedCrypto.value.maxLimit
 
   if (paymentAmount < minLimit) {
-    return `Payment amount must be at least ${minLimit} ${selectedCrypto.value.crypto.name}`
+    return t('paymentMethodSelection.amountBelowMin', {
+      min: minLimit,
+      currency: selectedCrypto.value.crypto.name
+    })
   }
   if (paymentAmount > maxLimit) {
-    return `Payment amount exceeds maximum limit of ${maxLimit} ${selectedCrypto.value.crypto.name}`
+    return t('paymentMethodSelection.amountExceedsMax', {
+      max: maxLimit,
+      currency: selectedCrypto.value.crypto.name
+    })
   }
   return ''
 })
@@ -619,8 +627,8 @@ const queryRate = async () => {
     } else {
       toast.add({
         severity: 'error',
-        summary: 'Rate Query Failed',
-        detail: response.msg || 'Failed to get exchange rate',
+        summary: t('paymentMethodSelection.rateQueryFailed'),
+        detail: response.msg || t('paymentMethodSelection.rateQueryFailedDetail'),
         life: 3000
       })
     }
@@ -628,8 +636,8 @@ const queryRate = async () => {
     console.error('Error querying rate:', error)
     toast.add({
       severity: 'error',
-      summary: 'Rate Query Error',
-      detail: (error as any)?.message || 'Failed to get exchange rate',
+      summary: t('paymentMethodSelection.rateQueryError'),
+      detail: (error as any)?.message || t('paymentMethodSelection.rateQueryFailedDetail'),
       life: 3000
     })
   } finally {
@@ -757,8 +765,8 @@ const loadPaymentMethods = async () => {
     console.error('Error loading payment methods:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to load payment methods',
+      summary: t('common.error'),
+      detail: (error as any)?.message || t('paymentMethodSelection.loadPaymentMethodsFailed'),
       life: 3000
     })
   } finally {
@@ -790,8 +798,8 @@ const handleContinue = async () => {
   if (!selectedPayType.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Selection Required',
-      detail: 'Please select a payment method',
+      summary: t('paymentMethodSelection.selectionRequired'),
+      detail: t('paymentMethodSelection.selectPaymentMethod'),
       life: 3000
     })
     return
@@ -800,8 +808,8 @@ const handleContinue = async () => {
   if (!selectedCrypto.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Selection Required',
-      detail: 'Please select a cryptocurrency',
+      summary: t('paymentMethodSelection.selectionRequired'),
+      detail: t('paymentMethodSelection.selectCryptocurrency'),
       life: 3000
     })
     return
@@ -810,7 +818,7 @@ const handleContinue = async () => {
   if (!isAmountWithinLimit.value) {
     toast.add({
       severity: 'error',
-      summary: 'Amount Limit Exceeded',
+      summary: t('paymentMethodSelection.amountLimitExceeded'),
       detail: limitErrorMessage.value,
       life: 5000
     })
@@ -820,8 +828,8 @@ const handleContinue = async () => {
   if (!actualCryptoAmount.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Rate Loading',
-      detail: 'Please wait for the exchange rate to load',
+      summary: t('paymentMethodSelection.rateLoading'),
+      detail: t('paymentMethodSelection.waitForRate'),
       life: 3000
     })
     return
@@ -830,8 +838,8 @@ const handleContinue = async () => {
   if (finalPayAmount.value <= 0) {
     toast.add({
       severity: 'warn',
-      summary: 'Invalid Amount',
-      detail: 'Payment amount must be greater than 0 after applying points',
+      summary: t('paymentMethodSelection.invalidAmount'),
+      detail: t('paymentMethodSelection.amountMustBeGreaterThanZero'),
       life: 3000
     })
     return
@@ -847,8 +855,8 @@ const handleContinue = async () => {
     // Show loading toast
     toast.add({
       severity: 'info',
-      summary: 'Creating Order',
-      detail: 'Creating deposit order...',
+      summary: t('paymentMethodSelection.creatingOrder'),
+      detail: t('paymentMethodSelection.creatingDepositOrder'),
       life: 3000
     })
     // Determine if it's card application or recharge operation
@@ -875,8 +883,8 @@ const handleContinue = async () => {
       // Success toast
       toast.add({
         severity: 'success',
-        summary: 'Order Created',
-        detail: `Order ${orderResponse.model.orderNum} created successfully`,
+        summary: t('paymentMethodSelection.orderCreated'),
+        detail: t('paymentMethodSelection.orderCreatedDetail', { orderNum: orderResponse.model.orderNum }),
         life: 3000
       })
 
@@ -916,8 +924,8 @@ const handleContinue = async () => {
     } else {
       toast.add({
         severity: 'error',
-        summary: 'Order Creation Failed',
-        detail: orderResponse.msg || 'Failed to create deposit order',
+        summary: t('paymentMethodSelection.orderCreationFailed'),
+        detail: orderResponse.msg || t('paymentMethodSelection.createOrderFailed'),
         life: 5000
       })
     }
@@ -925,8 +933,8 @@ const handleContinue = async () => {
     console.error('Error creating deposit order:', error)
     toast.add({
       severity: 'error',
-      summary: 'Order Creation Error',
-      detail: (error as any)?.message || 'Failed to create deposit order',
+      summary: t('paymentMethodSelection.orderCreationError'),
+      detail: (error as any)?.message || t('paymentMethodSelection.createOrderFailed'),
       life: 5000
     })
   } finally {

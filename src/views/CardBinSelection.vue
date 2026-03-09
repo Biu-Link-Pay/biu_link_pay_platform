@@ -298,12 +298,14 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, nextTick } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
 import { useCardStore } from '@/stores/card'
 import AppHeader from '@/components/AppHeader.vue'
 import CardBinItem from '@/components/CardBinItem.vue'
 import type { CardConfig, CardBin } from '@/api/card'
 
+const { t } = useI18n()
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
@@ -546,8 +548,8 @@ const orderCard = () => {
   } else {
     toast.add({
       severity: 'warn',
-      summary: 'Selection Required',
-      detail: 'Please select a card BIN before proceeding',
+      summary: t('cardBin.selectionRequired'),
+      detail: t('cardBin.selectCardBinFirst'),
       life: 3000
     })
   }

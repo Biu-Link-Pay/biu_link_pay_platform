@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Navigation Header -->
-    <AppHeader title="Virtual Cards" :show-title="true" />
+    <AppHeader :title="t('cards.virtualCards')" :show-title="true" />
 
     <!-- Main Content -->
     <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
@@ -12,13 +12,12 @@
             class="w-20 h-20 mx-auto mb-6 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
             <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-3xl"></i>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">No Virtual Cards</h3>
-          <p class="text-gray-600 dark:text-gray-400 mb-6">You haven't applied for any virtual cards yet. Click the
-            button below to apply for your first card</p>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">{{ t('cards.noVirtualCards') }}</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-6">{{ t('cards.noVirtualCardsDesc') }}</p>
           <button @click="goToApplyCard"
             class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
             <i class="pi pi-plus mr-2"></i>
-            Apply Virtual Card
+            {{ t('cards.applyVirtualCard') }}
           </button>
         </div>
       </div>
@@ -32,7 +31,7 @@
             <!-- Left Navigation Button - Hidden on mobile -->
             <button v-if="cards.length > 1" @click="previousCard" :disabled="currentCardIndex === 0"
               class="hidden md:flex flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 items-center justify-center"
-              title="Previous card">
+              :title="t('cards.previousCard')">
               <i class="pi pi-chevron-left text-gray-600 dark:text-gray-400 text-sm md:text-lg"></i>
             </button>
 
@@ -86,7 +85,7 @@
             <!-- Right Navigation Button - Hidden on mobile -->
             <button v-if="cards.length > 1" @click="nextCard" :disabled="currentCardIndex === cards.length - 1"
               class="hidden md:flex flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 items-center justify-center"
-              title="Next card">
+              :title="t('cards.nextCard')">
               <i class="pi pi-chevron-right text-gray-600 dark:text-gray-400 text-sm md:text-lg"></i>
             </button>
           </div>
@@ -107,7 +106,7 @@
                 class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
                 <i class="pi pi-arrow-down text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
               </button>
-              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">Recharge</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.recharge') }}</span>
             </div>
 
             <!-- Withdraw Button -->
@@ -116,7 +115,7 @@
                 class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
                 <i class="pi pi-arrow-up text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
               </button>
-              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">Withdraw</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.withdraw') }}</span>
             </div>
 
             <!-- Details Button -->
@@ -125,7 +124,7 @@
                 class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
                 <i class="pi pi-calendar text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
               </button>
-              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">Details</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.details') }}</span>
             </div>
 
             <!-- Delete Card Button -->
@@ -134,7 +133,7 @@
                 class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-red-50 dark:hover:bg-red-900/20 hover:border-red-200 dark:hover:border-red-800 transition-colors flex items-center justify-center mb-2">
                 <i class="pi pi-trash text-red-600 dark:text-red-400 text-base md:text-lg"></i>
               </button>
-              <span class="text-xs text-red-600 dark:text-red-400 font-medium">Delete</span>
+              <span class="text-xs text-red-600 dark:text-red-400 font-medium">{{ t('common.delete') }}</span>
             </div>
 
             <!-- Add Card Button -->
@@ -143,7 +142,7 @@
                 class="w-12 h-12 md:w-14 md:h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center mb-2">
                 <i class="pi pi-plus text-gray-600 dark:text-gray-400 text-base md:text-lg"></i>
               </button>
-              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">Add Card</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400 font-medium">{{ t('cards.addCard') }}</span>
             </div>
           </div>
 
@@ -156,8 +155,9 @@
                   <i class="pi pi-shield text-blue-600 dark:text-blue-400 text-lg"></i>
                 </div>
                 <div>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Transaction Limits</h3>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">Your card spending limits</p>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ t('cards.transactionLimits') }}
+                  </h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">{{ t('cards.transactionLimitsDesc') }}</p>
                 </div>
               </div>
               <button v-if="isMobile" type="button" @click="isLimitsExpanded = !isLimitsExpanded"
@@ -175,13 +175,14 @@
                       <i class="pi pi-calendar text-green-600 dark:text-green-400 text-sm"></i>
                     </div>
                     <div>
-                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">Daily Limit</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">Maximum per day</div>
+                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ t('cards.dailyLimit') }}
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">{{ t('cards.dailyLimitDesc') }}</div>
                     </div>
                   </div>
                   <div class="text-right">
                     <div class="text-lg font-bold text-gray-900 dark:text-white">
-                      {{ selectedCard.maxOnDaily != null ? `$${selectedCard.maxOnDaily}` : 'NO LIMIT' }}
+                      {{ selectedCard.maxOnDaily != null ? `$${selectedCard.maxOnDaily}` : t('cards.noLimit') }}
                     </div>
                   </div>
                 </div>
@@ -194,13 +195,14 @@
                       <i class="pi pi-calendar-plus text-blue-600 dark:text-blue-400 text-sm"></i>
                     </div>
                     <div>
-                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">Monthly Limit</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">Maximum per month</div>
+                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ t('cards.monthlyLimit') }}
+                      </div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">{{ t('cards.monthlyLimitDesc') }}</div>
                     </div>
                   </div>
                   <div class="text-right">
                     <div class="text-lg font-bold text-gray-900 dark:text-white">
-                      {{ selectedCard.maxOnMonthly != null ? `$${selectedCard.maxOnMonthly}` : 'NO LIMIT' }}
+                      {{ selectedCard.maxOnMonthly != null ? `$${selectedCard.maxOnMonthly}` : t('cards.noLimit') }}
                     </div>
                   </div>
                 </div>
@@ -214,13 +216,14 @@
                       <i class="pi pi-credit-card text-orange-600 dark:text-orange-400 text-sm"></i>
                     </div>
                     <div>
-                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">Single Transaction</div>
-                      <div class="text-xs text-gray-500 dark:text-gray-400">Maximum per transaction</div>
+                      <div class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ t('cards.singleTransaction')
+                        }}</div>
+                      <div class="text-xs text-gray-500 dark:text-gray-400">{{ t('cards.singleTransactionDesc') }}</div>
                     </div>
                   </div>
                   <div class="text-right">
                     <div class="text-lg font-bold text-gray-900 dark:text-white">
-                      {{ selectedCard.maxOnPercent != null ? `$${selectedCard.maxOnPercent}` : 'NO LIMIT' }}
+                      {{ selectedCard.maxOnPercent != null ? `$${selectedCard.maxOnPercent}` : t('cards.noLimit') }}
                     </div>
                   </div>
                 </div>
@@ -254,20 +257,17 @@
                   class="w-16 h-16 mx-auto mb-4 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
                   <i class="pi pi-credit-card text-gray-400 dark:text-gray-500 text-2xl"></i>
                 </div>
-                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-2">No Cards</h3>
+                <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-2">{{ t('cards.noCards') }}</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                  <span v-if="activeTab === 'transaction'">Please apply for a virtual card first to view transaction
-                    history</span>
-                  <span v-else-if="activeTab === 'recharge'">Please apply for a virtual card first to view deposit
-                    orders</span>
-                  <span v-else-if="activeTab === 'withdraw'">Please apply for a virtual card first to view withdrawal
-                    orders</span>
-                  <span v-else>Please apply for a virtual card first to view related information</span>
+                  <span v-if="activeTab === 'transaction'">{{ t('cards.applyCardFirstTransaction') }}</span>
+                  <span v-else-if="activeTab === 'recharge'">{{ t('cards.applyCardFirstRecharge') }}</span>
+                  <span v-else-if="activeTab === 'withdraw'">{{ t('cards.applyCardFirstWithdraw') }}</span>
+                  <span v-else>{{ t('cards.applyCardFirst') }}</span>
                 </p>
                 <button @click="goToApplyCard"
                   class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
                   <i class="pi pi-plus mr-2"></i>
-                  Apply Card
+                  {{ t('cards.applyCard') }}
                 </button>
               </div>
 
@@ -308,13 +308,14 @@
                                 <span
                                   class="inline-flex items-center gap-1 text-[11px] lg:text-xs font-medium text-emerald-700 dark:text-emerald-300">
                                   <i class="pi pi-refresh text-[10px]"></i>
-                                  Refund
+                                  {{ t('cards.refund') }}
                                 </span>
                               </div>
                               <div v-if="transaction.feeDeductionAmount"
                                 class="text-xs text-orange-600 dark:text-orange-400 mt-1">
-                                Fee: {{ transaction.feeDeductionAmount.toFixed(2) }} {{ transaction.feeDeductionCurrency
-                                }}
+                                {{ t('cards.feeLabel', {
+                                  amount: transaction.feeDeductionAmount.toFixed(2), currency:
+                                transaction.feeDeductionCurrency }) }}
                               </div>
                               <div v-if="isFailedStatus(transaction.status) && transaction.msg"
                                 class="text-xs text-red-600 dark:text-red-400 mt-1 line-clamp-2">
@@ -322,7 +323,8 @@
                               </div>
                               <div v-if="hasRewardPoints(transaction.cardRewardPoints)"
                                 class="text-[11px] lg:text-xs text-orange-600 dark:text-orange-300 mt-1">
-                                Earn {{ formatRewardPoints(transaction.cardRewardPoints) }}
+                                {{ t('cards.earnPoints', { points: formatRewardPoints(transaction.cardRewardPoints) })
+                                }}
                               </div>
                             </div>
                             <div class="text-right flex-shrink-0">
@@ -349,13 +351,13 @@
                       class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
                       <i
                         class="pi pi-chevron-left text-xs group-hover:transform group-hover:-translate-x-0.5 transition-transform"></i>
-                      <span>Previous</span>
+                      <span>{{ t('common.previous') }}</span>
                     </button>
 
                     <button @click="nextDesktopPage('transaction')"
                       :disabled="!pagination.transaction.hasMore || loading.transaction"
                       class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
-                      <span>Next</span>
+                      <span>{{ t('common.next') }}</span>
                       <i
                         class="pi pi-chevron-right text-xs group-hover:transform group-hover:translate-x-0.5 transition-transform"></i>
                     </button>
@@ -388,17 +390,18 @@
                                 <span v-if="isRefundTransaction(transaction)"
                                   class="inline-flex items-center gap-0.5 text-[10px] font-medium text-emerald-700 dark:text-emerald-300">
                                   <i class="pi pi-refresh text-[9px]"></i>
-                                  Refund
+                                  {{ t('cards.refund') }}
                                 </span>
                               </div>
                               <div v-if="isRefundTransaction(transaction)"
                                 class="text-[11px] text-emerald-700 dark:text-emerald-300 mt-0.5">
-                                Returned to card balance
+                                {{ t('cards.returnedToBalance') }}
                               </div>
                               <div v-if="transaction.feeDeductionAmount"
                                 class="text-xs text-orange-600 dark:text-orange-400 mt-0.5">
-                                Fee: {{ transaction.feeDeductionAmount.toFixed(2) }} {{ transaction.feeDeductionCurrency
-                                }}
+                                {{ t('cards.feeLabel', {
+                                  amount: transaction.feeDeductionAmount.toFixed(2), currency:
+                                transaction.feeDeductionCurrency }) }}
                               </div>
                               <div v-if="isFailedStatus(transaction.status) && transaction.msg"
                                 class="text-xs text-red-600 dark:text-red-400 mt-0.5 line-clamp-2">
@@ -406,7 +409,8 @@
                               </div>
                               <div v-if="hasRewardPoints(transaction.cardRewardPoints)"
                                 class="text-[10px] text-orange-600 dark:text-orange-300 mt-0.5">
-                                Earn {{ formatRewardPoints(transaction.cardRewardPoints) }}
+                                {{ t('cards.earnPoints', { points: formatRewardPoints(transaction.cardRewardPoints) })
+                                }}
                               </div>
                             </div>
                             <div class="text-right flex-shrink-0">
@@ -431,13 +435,13 @@
                       :disabled="pagination.transaction.pageIndex === 0 || loading.transaction"
                       class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
                       <i class="pi pi-chevron-left text-[10px]"></i>
-                      <span>Prev</span>
+                      <span>{{ t('common.prev') }}</span>
                     </button>
 
                     <button @click="nextDesktopPage('transaction')"
                       :disabled="!pagination.transaction.hasMore || loading.transaction"
                       class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
-                      <span>Next</span>
+                      <span>{{ t('common.next') }}</span>
                       <i class="pi pi-chevron-right text-[10px]"></i>
                     </button>
                   </div>
@@ -446,7 +450,7 @@
                 <!-- Empty State -->
                 <div v-else class="text-center py-6">
                   <i class="pi pi-list text-gray-400 dark:text-gray-500 text-3xl mb-4"></i>
-                  <p class="text-gray-500 dark:text-gray-400 text-sm">No transaction history</p>
+                  <p class="text-gray-500 dark:text-gray-400 text-sm">{{ t('cards.noTransactionHistory') }}</p>
                 </div>
               </div>
 
@@ -480,7 +484,7 @@
                             </div>
                             <div v-if="hasRewardPoints(order.cardRewardPoints)"
                               class="text-[11px] lg:text-xs text-orange-500 dark:text-orange-300 font-semibold">
-                              Use {{ formatRewardPoints(order.cardRewardPoints) }}
+                              {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
                             </div>
                           </div>
                           <div class="text-right">
@@ -503,13 +507,13 @@
                       class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
                       <i
                         class="pi pi-chevron-left text-xs group-hover:transform group-hover:-translate-x-0.5 transition-transform"></i>
-                      <span>Previous</span>
+                      <span>{{ t('common.previous') }}</span>
                     </button>
 
                     <button @click="nextDesktopPage('recharge')"
                       :disabled="!pagination.recharge.hasMore || loading.recharge"
                       class="group flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium text-sm bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gray-200 dark:disabled:hover:border-gray-600 disabled:hover:shadow-none transition-all duration-200">
-                      <span>Next</span>
+                      <span>{{ t('common.next') }}</span>
                       <i
                         class="pi pi-chevron-right text-xs group-hover:transform group-hover:translate-x-0.5 transition-transform"></i>
                     </button>
@@ -540,7 +544,7 @@
                               </div>
                               <div v-if="hasRewardPoints(order.cardRewardPoints)"
                                 class="text-[11px] text-orange-500 dark:text-orange-300 font-semibold">
-                                Use {{ formatRewardPoints(order.cardRewardPoints) }}
+                                {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -563,13 +567,13 @@
                       :disabled="pagination.recharge.pageNo === 0 || loading.recharge"
                       class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
                       <i class="pi pi-chevron-left text-[10px]"></i>
-                      <span>Prev</span>
+                      <span>{{ t('common.prev') }}</span>
                     </button>
 
                     <button @click="nextDesktopPage('recharge')"
                       :disabled="!pagination.recharge.hasMore || loading.recharge"
                       class="group flex items-center gap-1.5 px-3 py-2 rounded-lg font-medium text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 active:border-blue-500 dark:active:border-blue-400 active:text-blue-600 dark:active:text-blue-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-150">
-                      <span>Next</span>
+                      <span>{{ t('common.next') }}</span>
                       <i class="pi pi-chevron-right text-[10px]"></i>
                     </button>
                   </div>
@@ -578,7 +582,7 @@
                 <!-- Empty State -->
                 <div v-else class="text-center py-6">
                   <i class="pi pi-arrow-up text-gray-400 dark:text-gray-500 text-3xl mb-4"></i>
-                  <p class="text-gray-500 dark:text-gray-400 text-sm">No recharge history</p>
+                  <p class="text-gray-500 dark:text-gray-400 text-sm">{{ t('cards.noRechargeHistory') }}</p>
                 </div>
               </div>
 
@@ -613,7 +617,7 @@
                               </div>
                               <div v-if="hasRewardPoints(order.cardRewardPoints)"
                                 class="text-[11px] lg:text-xs text-orange-500 dark:text-orange-300 font-semibold">
-                                Use {{ formatRewardPoints(order.cardRewardPoints) }}
+                                {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -636,13 +640,13 @@
                       :disabled="pagination.withdraw.pageNo === 0 || loading.withdraw"
                       class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
                       <i class="pi pi-chevron-left text-sm"></i>
-                      <span class="text-sm">Previous</span>
+                      <span class="text-sm">{{ t('common.previous') }}</span>
                     </button>
 
                     <button @click="nextDesktopPage('withdraw')"
                       :disabled="!pagination.withdraw.hasMore || loading.withdraw"
                       class="flex items-center space-x-1 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                      <span class="text-sm">Next</span>
+                      <span class="text-sm">{{ t('common.next') }}</span>
                       <i class="pi pi-chevron-right text-sm"></i>
                     </button>
                   </div>
@@ -672,7 +676,7 @@
                               </div>
                               <div v-if="hasRewardPoints(order.cardRewardPoints)"
                                 class="text-[11px] text-orange-500 dark:text-orange-300 font-semibold">
-                                Use {{ formatRewardPoints(order.cardRewardPoints) }}
+                                {{ t('cards.usePoints', { points: formatRewardPoints(order.cardRewardPoints) }) }}
                               </div>
                             </div>
                             <div class="text-right">
@@ -695,12 +699,12 @@
                       :disabled="pagination.withdraw.pageNo === 0 || loading.withdraw"
                       class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
                       <i class="pi pi-chevron-left text-xs"></i>
-                      <span class="text-xs">Previous</span>
+                      <span class="text-xs">{{ t('common.previous') }}</span>
                     </button>
                     <button @click="nextDesktopPage('withdraw')"
                       :disabled="!pagination.withdraw.hasMore || loading.withdraw"
                       class="flex items-center space-x-1 px-2 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                      <span class="text-xs">Next</span>
+                      <span class="text-xs">{{ t('common.next') }}</span>
                       <i class="pi pi-chevron-right text-xs"></i>
                     </button>
                   </div>
@@ -709,7 +713,7 @@
                 <!-- Empty State -->
                 <div v-else class="text-center py-6">
                   <i class="pi pi-arrow-down text-gray-400 dark:text-gray-500 text-3xl mb-4"></i>
-                  <p class="text-gray-500 dark:text-gray-400 text-sm">No withdraw history</p>
+                  <p class="text-gray-500 dark:text-gray-400 text-sm">{{ t('cards.noWithdrawHistory') }}</p>
                 </div>
               </div>
             </div>
@@ -725,8 +729,9 @@
         :card-detail="cardDetail" @retry="retryCardDetail" @updated="onDetailUpdated" />
 
       <!-- Google Auth Dialog -->
-      <GoogleAuthDialog ref="googleAuthDialogRef" v-model:visible="showGoogleAuthDialog" title="Security Verification"
-        :identifier="pendingAction || 'default'" @submit="onGoogleAuthSubmit" @cancel="onGoogleAuthCancel" />
+      <GoogleAuthDialog ref="googleAuthDialogRef" v-model:visible="showGoogleAuthDialog"
+        :title="t('cards.securityVerification')" :identifier="pendingAction || 'default'" @submit="onGoogleAuthSubmit"
+        @cancel="onGoogleAuthCancel" />
 
 
     </div>
@@ -736,6 +741,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useCardStore } from '@/stores/card'
 import { useToast } from 'primevue/usetoast'
 import { useUserStore } from '@/stores/user'
@@ -746,6 +752,7 @@ import { CardAPI, type CardDetailResponse } from '@/api/card'
 import { OrderAPI, type TransactionListItem, type DepositOrderListItem, type WithdrawOrderListItem, type WithdrawOrderPageResponse } from '@/api/order'
 import { useClipboard } from '@vueuse/core'
 
+const { t } = useI18n()
 const router = useRouter()
 const route = useRoute()
 const cardStore = useCardStore()
@@ -775,8 +782,8 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: 'Please select a card first',
+      summary: t('common.error'),
+      detail: t('cards.selectCardFirst'),
       life: 3000
     })
     return
@@ -810,8 +817,8 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
       // Show success message
       toast.add({
         severity: 'success',
-        summary: 'Verification Successful',
-        detail: 'Google Auth verification passed, operation completed',
+        summary: t('cards.verificationSuccessTitle'),
+        detail: t('cards.verificationSuccess'),
         life: 3000
       })
 
@@ -828,8 +835,8 @@ const onGoogleAuthSubmit = async (code: string, identifier: string): Promise<voi
 
     toast.add({
       severity: 'error',
-      summary: 'Verification Failed',
-      detail: (error as any)?.message || 'Invalid verification code, please try again',
+      summary: t('cards.verificationFailedTitle'),
+      detail: (error as any)?.message || t('cards.verificationFailed'),
       life: 3000
     })
   }
@@ -855,11 +862,11 @@ const cards = computed(() => {
   }))
 })
 
-// Tabs
-const tabs = ref([
-  { key: 'transaction', label: 'Transaction' },
-  { key: 'recharge', label: 'Recharge' },
-  { key: 'withdraw', label: 'Withdraw' }
+// Tabs (computed for i18n)
+const tabs = computed(() => [
+  { key: 'transaction', label: t('cards.transaction') },
+  { key: 'recharge', label: t('cards.recharge') },
+  { key: 'withdraw', label: t('cards.withdraw') }
 ])
 
 const activeTab = ref('transaction')
@@ -1385,8 +1392,8 @@ const fetchTransactions = async (pageIndex = 0) => {
     console.error('Error fetching transactions:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to load transaction history',
+      summary: t('common.error'),
+      detail: (error as any)?.message || t('cards.loadTransactionFailed'),
       life: 3000
     })
   } finally {
@@ -1443,8 +1450,8 @@ const fetchRechargeOrders = async (pageNo = 0) => {
     console.error('Error fetching recharge orders:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to load recharge history',
+      summary: t('common.error'),
+      detail: (error as any)?.message || t('cards.loadRechargeFailed'),
       life: 3000
     })
   } finally {
@@ -1501,8 +1508,8 @@ const fetchWithdrawOrders = async (pageNo = 0) => {
     console.error('Error fetching withdraw orders:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to load withdraw history',
+      summary: t('common.error'),
+      detail: (error as any)?.message || t('cards.loadWithdrawFailed'),
       life: 3000
     })
   } finally {
@@ -1556,8 +1563,8 @@ const goToWithdraw = async () => {
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'warn',
-      summary: 'Warning',
-      detail: 'Please select a card first',
+      summary: t('common.warning'),
+      detail: t('cards.selectCardFirst'),
       life: 3000
     })
     return
@@ -1566,8 +1573,8 @@ const goToWithdraw = async () => {
   if (!isGoogleAuthBound.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Security Verification',
-      detail: 'Please bind Google Authenticator in Personal Center first',
+      summary: t('cards.securityVerification'),
+      detail: t('cards.bindGoogleAuthFirst'),
       life: 3000
     })
     router.push({ name: 'PersonalCenter' })
@@ -1582,7 +1589,7 @@ const handleCardDetailError = (message: string) => {
   detailError.value = message
   toast.add({
     severity: 'error',
-    summary: 'Error',
+    summary: t('common.error'),
     detail: message,
     life: 3000
   })
@@ -1635,8 +1642,8 @@ const goToDetails = async () => {
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'warn',
-      summary: 'Warning',
-      detail: 'Please select a card first',
+      summary: t('common.warning'),
+      detail: t('cards.selectCardFirst'),
       life: 3000
     })
     return
@@ -1646,8 +1653,8 @@ const goToDetails = async () => {
   if (!isGoogleAuthBound.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Security Verification',
-      detail: 'Please bind Google Authenticator in Personal Center first',
+      summary: t('cards.securityVerification'),
+      detail: t('cards.bindGoogleAuthFirst'),
       life: 3000
     })
     router.push({ name: 'PersonalCenter' })
@@ -1667,8 +1674,8 @@ const goToDeleteCard = async () => {
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'warn',
-      summary: 'Warning',
-      detail: 'Please select a card first',
+      summary: t('common.warning'),
+      detail: t('cards.selectCardFirst'),
       life: 3000
     })
     return
@@ -1677,8 +1684,8 @@ const goToDeleteCard = async () => {
   if (!isGoogleAuthBound.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Security Verification',
-      detail: 'Please bind Google Authenticator in Personal Center first',
+      summary: t('cards.securityVerification'),
+      detail: t('cards.bindGoogleAuthFirst'),
       life: 3000
     })
     router.push({ name: 'PersonalCenter' })
@@ -1718,8 +1725,8 @@ const goToRecharge = () => {
   if (!selectedCard.value?.id) {
     toast.add({
       severity: 'warn',
-      summary: 'Warning',
-      detail: 'Please select a card first',
+      summary: t('common.warning'),
+      detail: t('cards.selectCardFirst'),
       life: 3000
     })
     return
@@ -2264,8 +2271,8 @@ onMounted(async () => {
     console.error('Error fetching card list:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to load card list',
+      summary: t('common.error'),
+      detail: (error as any)?.message || t('cards.loadCardsFailed'),
       life: 3000
     })
   }
@@ -2286,10 +2293,10 @@ onMounted(async () => {
 
   // Check if there are payment success query parameters
   if (route.query.success === 'true') {
-    const message = route.query.message as string || 'Payment completed successfully'
+    const message = route.query.message as string || t('cards.paymentCompletedSuccessfully')
     toast.add({
       severity: 'success',
-      summary: 'Payment Success',
+      summary: t('cards.paymentSuccess'),
       detail: message,
       life: 5000
     })

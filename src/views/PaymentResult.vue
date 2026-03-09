@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
 
     <!-- Unified Header -->
-    <AppHeader title="Payment Result" :show-title="true" />
+    <AppHeader :title="t('paymentResult.title')" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -83,7 +83,7 @@
                   formatCurrency(orderAmount) }}</span>
                 <span v-if="orderRewardPoints"
                   class="text-sm sm:text-base lg:text-lg font-semibold text-orange-500 dark:text-orange-300">
-                  (Use {{ orderRewardPoints.toLocaleString() }} pts)
+                  {{ t('paymentResult.usePts', { pts: orderRewardPoints.toLocaleString() }) }}
                 </span>
               </div>
             </div>
@@ -93,7 +93,7 @@
           <div class="lg:flex lg:flex-col lg:justify-center">
             <!-- Order Information -->
             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4 sm:p-6 lg:p-6 xl:p-8 mb-6 lg:mb-8">
-              <h3 class="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white mb-4 lg:hidden">Order Details
+              <h3 class="text-lg lg:text-xl font-semibold text-gray-900 dark:text-white mb-4 lg:hidden">{{ t('paymentResult.orderDetails') }}
               </h3>
 
               <!-- Desktop: Traditional List Layout -->
@@ -101,14 +101,14 @@
                 <!-- Order Number -->
                 <div
                   class="flex justify-between items-center py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">Order Number</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400">{{ t('paymentResult.orderNumber') }}</span>
                   <div class="flex items-center space-x-2">
                     <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white">{{ orderNumber
                     }}</span>
                     <button
-                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.orderNumberCopied'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors"
-                      title="Copy order number">
+                      :title="t('paymentResult.copyOrderNumber')">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
                   </div>
@@ -117,7 +117,7 @@
                 <!-- Withdraw: Network -->
                 <div v-if="orderType === 'withdraw' && (withdrawToken || withdrawNetwork)"
                   class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Network</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.network') }}</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
                     {{ withdrawNetwork ? `${withdrawNetwork}` : '' }}
                   </span>
@@ -126,13 +126,12 @@
                 <!-- Withdraw: USDT Amount -->
                 <div v-if="orderType === 'withdraw' && withdrawUsdTAmount !== null"
                   class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Withdraw
-                    Amount</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.withdrawAmount') }}</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
                     {{ withdrawUsdTAmount }} {{ withdrawToken || 'USDT' }}
                     <span v-if="orderRewardPoints"
                       class="ml-1 text-xs lg:text-sm font-semibold text-orange-500 dark:text-orange-300">
-                      (Use {{ orderRewardPoints.toLocaleString() }} pts)
+                      {{ t('paymentResult.usePts', { pts: orderRewardPoints.toLocaleString() }) }}
                     </span>
                   </span>
                 </div>
@@ -140,7 +139,7 @@
                 <!-- Withdraw: Network Fee -->
                 <div v-if="orderType === 'withdraw' && withdrawNetworkFee !== null"
                   class="flex justify-between items-start gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Network Fee</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.networkFee') }}</span>
                   <span class="text-sm lg:text-base font-medium text-gray-900 dark:text-white text-right">
                     {{ withdrawNetworkFee.toFixed(2) }} {{ withdrawToken || 'USDT' }}
                   </span>
@@ -149,15 +148,15 @@
                 <!-- Withdraw: Address -->
                 <div v-if="orderType === 'withdraw' && withdrawAddress"
                   class="flex justify-between items-center gap-3 py-2 lg:py-3 border-b border-gray-200 dark:border-gray-600">
-                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">Address</span>
+                  <span class="text-sm lg:text-base text-gray-600 dark:text-gray-400 flex-shrink-0">{{ t('paymentResult.address') }}</span>
                   <div class="flex items-center justify-end gap-2 flex-1 min-w-0">
                     <span
                       class="text-[11px] lg:text-xs font-medium text-gray-900 dark:text-white text-right break-all font-mono">{{
                         withdrawAddress }}</span>
                     <button
-                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: 'Success', detail: 'Address copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.addressCopied'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
-                      title="Copy address">
+                      :title="t('paymentResult.copyAddress')">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
                     </button>
                   </div>
@@ -196,7 +195,7 @@
                     <div class="text-sm font-medium text-gray-900 dark:text-white break-all flex-1">{{ orderNumber }}
                     </div>
                     <button
-                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: 'Success', detail: 'Order number copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(orderNumber); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.orderNumberCopied'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
                       title="Copy">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
@@ -225,7 +224,7 @@
                     {{ withdrawUsdTAmount }} {{ withdrawToken || 'USDT' }}
                     <span v-if="orderRewardPoints"
                       class="ml-1 text-xs font-semibold text-orange-500 dark:text-orange-300">
-                      (Use {{ orderRewardPoints.toLocaleString() }} pts)
+                      {{ t('paymentResult.usePts', { pts: orderRewardPoints.toLocaleString() }) }}
                     </span>
                   </div>
                 </div>
@@ -241,7 +240,7 @@
                         withdrawAddress
                       }}</div>
                     <button
-                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: 'Success', detail: 'Address copied to clipboard', life: 2000 }) }"
+                      @click="() => { copyToClipboard(withdrawAddress || ''); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.addressCopied'), life: 2000 }) }"
                       class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors flex-shrink-0"
                       title="Copy">
                       <i class="pi pi-copy text-gray-500 text-xs"></i>
@@ -308,12 +307,12 @@
                 <div
                   class="inline-flex items-center gap-2 lg:gap-3 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 px-4 py-2 lg:px-6 lg:py-3 xl:px-8 xl:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-base xl:text-lg animate-pulse">
                   <i class="pi pi-clock text-lg lg:text-xl xl:text-xl"></i>
-                  <span>Payment Timeout</span>
+                  <span>{{ t('paymentResult.paymentTimeout') }}</span>
                 </div>
                 <div v-if="paymentTime && !isPaymentExpired"
                   class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-3 sm:p-4 lg:p-4 xl:p-6 text-orange-700 dark:text-orange-300 text-sm sm:text-base lg:text-base xl:text-lg flex items-start gap-2 lg:gap-3">
                   <i class="pi pi-info-circle text-lg lg:text-xl xl:text-xl mt-0.5"></i>
-                  <span>For security reasons, the payment page has expired. Please complete the payment promptly.</span>
+                  <span>{{ t('paymentResult.paymentExpiredDesc') }}</span>
                 </div>
               </div>
             </div>
@@ -326,12 +325,12 @@
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">
                   <i v-if="refreshing" class="pi pi-spin pi-spinner"></i>
                   <i v-else class="pi pi-refresh"></i>
-                  <span>{{ refreshing ? 'Refreshing...' : 'Refresh Status' }}</span>
+                  <span>{{ refreshing ? t('paymentResult.refreshing') : t('paymentResult.refreshStatus') }}</span>
                 </button>
                 <button @click="goBack"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-arrow-left"></i>
-                  <span>{{ isFromMyCards ? 'Back to My Cards' : 'Back to Payment' }}</span>
+                  <span>{{ isFromMyCards ? t('paymentResult.backToMyCards') : t('paymentResult.backToPayment') }}</span>
                 </button>
               </template>
 
@@ -345,7 +344,7 @@
                 <button @click="goHome"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-credit-card"></i>
-                  <span>My Cards</span>
+                  <span>{{ t('paymentResult.myCards') }}</span>
                 </button>
               </template>
 
@@ -354,7 +353,7 @@
                 <button @click="goBack"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-credit-card"></i>
-                  <span>{{ isFromMyCards ? 'Back to My Cards' : 'Change Payment Method' }}</span>
+                  <span>{{ isFromMyCards ? t('paymentResult.backToMyCards') : t('paymentResult.changePaymentMethod') }}</span>
                 </button>
               </template>
 
@@ -363,21 +362,20 @@
                 <button @click="createNewOrder"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                   <i class="pi pi-plus"></i>
-                  <span>Create New Order</span>
+                  <span>{{ t('paymentResult.createNewOrder') }}</span>
                 </button>
                 <button @click="goHome"
                   class="w-full py-3 px-6 lg:py-3 lg:px-6 xl:py-4 xl:px-8 rounded-xl font-semibold text-sm sm:text-base lg:text-base xl:text-lg transition-all duration-200 flex items-center justify-center gap-2 lg:gap-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-lg">
                   <i class="pi pi-credit-card"></i>
-                  <span>My Cards</span>
+                  <span>{{ t('paymentResult.myCards') }}</span>
                 </button>
               </template>
             </div>
 
             <!-- Support Information -->
             <div class="text-center lg:text-left text-sm lg:text-base xl:text-lg text-gray-500 dark:text-gray-400">
-              <p>Need help? <a href="mailto:support@biulinkpay.org"
-                  class="text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-200">Contact
-                  Support</a></p>
+              <p>{{ t('paymentResult.needHelp') }} <a href="mailto:support@biulinkpay.org"
+                  class="text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-200">{{ t('paymentResult.contactSupport') }}</a></p>
             </div>
           </div>
         </div>
@@ -389,6 +387,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
 import AppHeader from '@/components/AppHeader.vue'
 import { OrderAPI } from '@/api/order'
@@ -396,6 +395,7 @@ import { useClipboard } from '@vueuse/core'
 import { useCardStore } from '@/stores/card'
 import { CardAPI } from '@/api/card'
 
+const { t } = useI18n()
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
@@ -463,11 +463,11 @@ const iconAnimationClass = computed(() => {
 
 const statusTitle = computed(() => {
   switch (orderStatus.value) {
-    case 'PENDING': return 'Payment Processing'
-    case 'SUCCESS': return 'Payment Successful'
-    case 'FAIL': return 'Payment Failed'
-    case 'CANCEL': return 'Payment Cancelled'
-    default: return 'Payment Processing'
+    case 'PENDING': return t('paymentResult.paymentProcessing')
+    case 'SUCCESS': return t('paymentResult.paymentSuccessful')
+    case 'FAIL': return t('paymentResult.paymentFailed')
+    case 'CANCEL': return t('paymentResult.paymentCancelled')
+    default: return t('paymentResult.paymentProcessing')
   }
 })
 
@@ -483,11 +483,11 @@ const statusTitleClass = computed(() => {
 
 const statusDescription = computed(() => {
   switch (orderStatus.value) {
-    case 'PENDING': return 'Please wait while we process your payment'
-    case 'SUCCESS': return 'Thank you for your purchase! Your payment has been confirmed'
-    case 'FAIL': return 'Sorry, your payment could not be completed. Please try again'
-    case 'CANCEL': return 'This payment has been cancelled'
-    default: return 'Please wait while we process your payment'
+    case 'PENDING': return t('paymentResult.statusProcessing')
+    case 'SUCCESS': return t('paymentResult.statusSuccess')
+    case 'FAIL': return t('paymentResult.statusFail')
+    case 'CANCEL': return t('paymentResult.statusCancelled')
+    default: return t('paymentResult.statusProcessing')
   }
 })
 
@@ -571,8 +571,8 @@ const fetchOrderStatus = async () => {
           if (!isFromMyCards.value) {
             toast.add({
               severity: orderStatus.value === 'SUCCESS' ? 'success' : 'warn',
-              summary: 'Status Updated',
-              detail: `Order status changed to ${orderStatus.value}`,
+              summary: t('paymentResult.statusUpdated'),
+              detail: t('payment.statusUpdated', { status: orderStatus.value }),
               life: 3000
             })
           }
@@ -631,8 +631,8 @@ const handleStatusChange = (status: string) => {
     case 'SUCCESS':
       toast.add({
         severity: 'success',
-        summary: 'Payment Successful',
-        detail: 'Your payment has been confirmed successfully!',
+        summary: t('payment.paymentSuccessfulTitle'),
+        detail: t('payment.paymentSuccessful'),
         life: 5000
       })
       stopPolling()
@@ -640,8 +640,8 @@ const handleStatusChange = (status: string) => {
     case 'FAIL':
       toast.add({
         severity: 'error',
-        summary: 'Payment Failed',
-        detail: 'Your payment could not be completed. Please try again.',
+        summary: t('payment.paymentFailedTitle'),
+        detail: t('payment.paymentFailed'),
         life: 5000
       })
       stopPolling()
@@ -649,8 +649,8 @@ const handleStatusChange = (status: string) => {
     case 'CANCEL':
       toast.add({
         severity: 'warn',
-        summary: 'Payment Cancelled',
-        detail: 'This payment has been cancelled.',
+        summary: t('payment.paymentCancelledTitle'),
+        detail: t('payment.paymentCancelled'),
         life: 5000
       })
       stopPolling()
@@ -687,15 +687,15 @@ const refreshPayment = async () => {
     await fetchOrderStatus()
     toast.add({
       severity: 'info',
-      summary: 'Status Refreshed',
-      detail: 'Payment status has been updated',
+      summary: t('payment.statusRefreshedTitle'),
+      detail: t('payment.statusRefreshed'),
       life: 3000
     })
   } catch (error) {
     toast.add({
       severity: 'error',
-      summary: 'Refresh Failed',
-      detail: (error as any)?.message || 'Failed to refresh payment status',
+      summary: t('payment.refreshFailedTitle'),
+      detail: (error as any)?.message || t('payment.refreshFailedStatus'),
       life: 3000
     })
   } finally {
@@ -820,8 +820,8 @@ const retryPayment = () => {
 const cancelOrder = () => {
   toast.add({
     severity: 'info',
-    summary: 'Order Cancelled',
-    detail: 'Your order has been cancelled',
+    summary: t('payment.orderCancelledTitle'),
+    detail: t('payment.orderCancelled'),
     life: 3000
   })
   // Navigate back to my cards page

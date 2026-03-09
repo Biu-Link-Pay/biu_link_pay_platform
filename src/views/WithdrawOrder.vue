@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Unified Header -->
-    <AppHeader title="Withdraw" :show-title="true" />
+    <AppHeader :title="t('withdraw.title')" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -75,6 +75,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 import { useMediaQuery } from '@vueuse/core'
@@ -84,6 +85,7 @@ import CryptoWithdrawal from '@/components/CryptoWithdrawal.vue'
 import FiatWithdrawal from '@/components/FiatWithdrawal.vue'
 import { useCardStore } from '@/stores/card'
 
+const { t } = useI18n()
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
@@ -96,10 +98,10 @@ const activeTab = ref<'crypto' | 'fiat'>('crypto')
 const isDesktopView = useMediaQuery('(min-width: 768px)')
 
 // Tab definitions
-const tabs = [
-  { key: 'crypto' as const, label: 'Crypto Withdrawal' },
-  { key: 'fiat' as const, label: 'Fiat Withdrawal' }
-]
+const tabs = computed(() => [
+  { key: 'crypto' as const, label: t('withdraw.cryptoWithdrawal') },
+  { key: 'fiat' as const, label: t('withdraw.fiatWithdrawal') }
+])
 
 // Card information from route query
 const cardInfo = ref({
@@ -177,8 +179,8 @@ const validateAndLoadCardDetails = () => {
   if (!routeCardId || !routeCardNo) {
     toast.add({
       severity: 'error',
-      summary: 'Invalid Parameters',
-      detail: 'Missing card information. Please go back and try again.',
+      summary: t('withdraw.invalidParams'),
+      detail: t('withdraw.missingCardInfo'),
       life: 3000
     })
     router.push('/my-cards')
@@ -221,8 +223,8 @@ const validateAndLoadCardDetails = () => {
 
   toast.add({
     severity: 'error',
-    summary: 'Invalid Parameters',
-    detail: 'Unable to get card information. Please go back and try again.',
+    summary: t('withdraw.invalidParams'),
+    detail: t('withdraw.cannotGetCardInfo'),
     life: 3000
   })
   router.push('/my-cards')

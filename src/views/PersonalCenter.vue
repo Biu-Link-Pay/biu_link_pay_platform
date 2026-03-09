@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Unified Header -->
-    <AppHeader title="Personal Center" :show-title="true" />
+    <AppHeader :title="t('personalCenter.title')" :show-title="true" />
 
     <!-- Main Content -->
     <div
@@ -20,18 +20,18 @@
 
               <!-- User Info -->
               <div class="flex-1">
-                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">{{ userProfile?.firstName || 'User' }}
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">{{ userProfile?.firstName || t('personalCenter.user') }}
                 </h2>
                 <div class="space-y-3">
                   <!-- Email -->
                   <div class="flex items-center justify-between">
-                    <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Email</span>
+                    <span class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ t('personalCenter.email') }}</span>
                     <span class="text-sm text-gray-900 dark:text-white">{{ maskedEmail }}</span>
                   </div>
 
                   <!-- KYC Status -->
                   <div class="flex items-center justify-between">
-                    <span class="text-sm font-medium text-gray-600 dark:text-gray-400">KYC</span>
+                    <span class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ t('personalCenter.kyc') }}</span>
                     <div class="flex items-center space-x-2">
                       <i v-if="kycStatus === 1" class="pi pi-check text-green-500"></i>
                       <i v-else-if="kycStatus === 2" class="pi pi-exclamation-triangle text-yellow-500"></i>
@@ -57,8 +57,8 @@
                     <i class="pi pi-google text-blue-600 dark:text-blue-400 text-lg"></i>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 dark:text-white">Google Authentication</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Manage your Google account binding</p>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">{{ t('personalCenter.googleAuth') }}</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">{{ t('personalCenter.googleAuthDesc') }}</p>
                   </div>
                 </div>
                 <div class="flex items-center space-x-2">
@@ -99,8 +99,8 @@
                     <i class="pi pi-file text-purple-600 dark:text-purple-400 text-lg"></i>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 dark:text-white">Terms of Service</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Read our terms and conditions</p>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">{{ t('personalCenter.termsOfService') }}</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">{{ t('personalCenter.termsDesc') }}</p>
                   </div>
                 </div>
                 <i class="pi pi-chevron-right text-gray-400"></i>
@@ -118,8 +118,8 @@
                     <i class="pi pi-shield text-indigo-600 dark:text-indigo-400 text-lg"></i>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 dark:text-white">Privacy Policy</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Learn about our privacy practices</p>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">{{ t('personalCenter.privacyPolicy') }}</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">{{ t('personalCenter.privacyDesc') }}</p>
                   </div>
                 </div>
                 <i class="pi pi-chevron-right text-gray-400"></i>
@@ -136,7 +136,7 @@
                     <i class="pi pi-link text-amber-600 dark:text-amber-400 text-lg"></i>
                   </div>
                   <div class="flex-1 min-w-0">
-                    <h3 class="font-semibold text-gray-900 dark:text-white">Invitation Link</h3>
+                    <h3 class="font-semibold text-gray-900 dark:text-white">{{ t('personalCenter.invitationLink') }}</h3>
                     <p class="text-xs text-gray-600 dark:text-gray-300 font-mono break-all mt-1">
                       {{ inviteLink || '' }}
                     </p>
@@ -144,7 +144,7 @@
                 </div>
                 <button type="button"
                   class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                  @click="copyInviteLink" :disabled="!hasInviteLink" title="Copy invitation link">
+                  @click="copyInviteLink" :disabled="!hasInviteLink" :title="t('personalCenter.copyInviteLink')">
                   <i class="pi pi-copy text-gray-500 text-xs"></i>
                 </button>
               </div>
@@ -194,8 +194,8 @@
                   <i class="pi pi-sign-out text-red-600 dark:text-red-400 text-lg"></i>
                 </div>
                 <div class="text-center">
-                  <h3 class="font-semibold text-red-600 dark:text-red-400">Log Out</h3>
-                  <p class="text-sm text-red-500 dark:text-red-500">Sign out of your account</p>
+                  <h3 class="font-semibold text-red-600 dark:text-red-400">{{ t('personalCenter.logOut') }}</h3>
+                  <p class="text-sm text-red-500 dark:text-red-500">{{ t('personalCenter.signOutDesc') }}</p>
                 </div>
               </div>
             </button>
@@ -212,20 +212,20 @@
               <i class="pi pi-user text-white text-xl"></i>
             </div>
             <div>
-              <h2 class="text-xl font-bold text-gray-900 dark:text-white">{{ userProfile?.firstName || 'User' }}</h2>
+              <h2 class="text-xl font-bold text-gray-900 dark:text-white">{{ userProfile?.firstName || t('personalCenter.user') }}</h2>
               <p class="text-sm text-gray-600 dark:text-gray-400">{{ maskedEmail }}</p>
             </div>
           </div>
 
           <!-- Email -->
           <div class="flex items-center justify-between py-3 border-b border-gray-200 dark:border-gray-700">
-            <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Email</span>
+            <span class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ t('personalCenter.email') }}</span>
             <span class="text-sm text-gray-900 dark:text-white">{{ maskedEmail }}</span>
           </div>
 
           <!-- KYC Status -->
           <div class="flex items-center justify-between py-3">
-            <span class="text-sm font-medium text-gray-600 dark:text-gray-400">KYC</span>
+            <span class="text-sm font-medium text-gray-600 dark:text-gray-400">{{ t('personalCenter.kyc') }}</span>
             <div class="flex items-center space-x-2">
               <i v-if="kycStatus === 1" class="pi pi-check text-green-500"></i>
               <i v-else-if="kycStatus === 2" class="pi pi-exclamation-triangle text-yellow-500"></i>
@@ -246,7 +246,7 @@
               <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/20 rounded-lg flex items-center justify-center">
                 <i class="pi pi-google text-blue-600 dark:text-blue-400"></i>
               </div>
-              <span class="font-medium text-gray-900 dark:text-white">Google Authentication</span>
+              <span class="font-medium text-gray-900 dark:text-white">{{ t('personalCenter.googleAuth') }}</span>
             </div>
             <div class="flex items-center space-x-2">
               <span :class="googleAuthStatusClass">{{ googleAuthStatusText }}</span>
@@ -312,7 +312,7 @@
               </div>
               <button type="button"
                 class="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 rounded transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                @click="copyInviteLink" :disabled="!hasInviteLink" title="Copy invitation link">
+                @click="copyInviteLink" :disabled="!hasInviteLink" :title="t('personalCenter.copyInviteLink')">
                 <i class="pi pi-copy text-gray-500 text-xs"></i>
               </button>
             </div>
@@ -394,14 +394,14 @@
       <!-- Step 2: Enter Verification Code -->
       <div class="space-y-4">
         <div class="text-center">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Step 2: Enter Verification Code</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ t('googleAuth.verificationCode') }}</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            Enter the 6-digit verification code from Google Authenticator
+            {{ t('googleAuth.enterCode') }}
           </p>
         </div>
 
         <div class="flex justify-center">
-          <InputText v-model="bindAuthCode" placeholder="Enter 6-digit code" maxlength="6"
+          <InputText v-model="bindAuthCode" :placeholder="t('personalCenter.enterCode')" maxlength="6"
             class="w-48 text-center text-lg font-mono tracking-widest" :disabled="bindLoading"
             @input="onBindCodeInput" />
         </div>
@@ -409,15 +409,15 @@
 
       <!-- Action Buttons -->
       <div class="flex justify-between space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
-        <Button label="Cancel" severity="secondary" :disabled="bindLoading" @click="cancelBind" class="flex-1" />
-        <Button label="Confirm" icon="pi pi-check" :loading="bindLoading"
+<Button :label="t('common.cancel')" severity="secondary" :disabled="bindLoading" @click="cancelBind" class="flex-1" />
+                <Button :label="t('common.confirm')" icon="pi pi-check" :loading="bindLoading"
           :disabled="!bindAuthCode || bindAuthCode.length !== 6" @click="confirmBind" class="flex-1" />
       </div>
     </div>
   </Dialog>
 
   <!-- Google Auth Unbind Dialog -->
-  <Dialog v-model:visible="showGoogleAuthUnbindDialog" modal header="Unbind Google Authenticator"
+  <Dialog v-model:visible="showGoogleAuthUnbindDialog" modal :header="t('personalCenter.unbindGoogleAuth')"
     :style="{ width: '400px' }" :closable="!unbindLoading" :close-on-escape="!unbindLoading">
     <div class="space-y-6">
       <!-- Warning icon and message -->
@@ -426,10 +426,9 @@
           <i class="pi pi-exclamation-triangle text-red-600 dark:text-red-400 text-2xl"></i>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Confirm Unbind</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ t('personalCenter.confirmUnbind') }}</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-            After unbinding, you will not be able to use Google Authenticator for two-factor authentication. Are you
-            sure you want to continue?
+            {{ t('personalCenter.unbindWarning') }}
           </p>
         </div>
       </div>
@@ -437,14 +436,14 @@
       <!-- Enter Verification Code -->
       <div class="space-y-4">
         <div class="text-center">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Enter Verification Code</h3>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ t('googleAuth.enterCode') }}</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            Please enter the 6-digit verification code from Google Authenticator
+            {{ t('googleAuth.enterCode') }}
           </p>
         </div>
 
         <div class="flex justify-center">
-          <InputText v-model="unbindAuthCode" placeholder="Enter 6-digit code" maxlength="6"
+          <InputText v-model="unbindAuthCode" :placeholder="t('personalCenter.enterCode')" maxlength="6"
             class="w-48 text-center text-lg font-mono tracking-widest" :disabled="unbindLoading"
             @input="onUnbindCodeInput" />
         </div>
@@ -452,8 +451,8 @@
 
       <!-- Action Buttons -->
       <div class="flex justify-between space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
-        <Button label="Cancel" severity="secondary" :disabled="unbindLoading" @click="cancelUnbind" class="flex-1" />
-        <Button label="Confirm" icon="pi pi-times" severity="danger" :loading="unbindLoading"
+        <Button :label="t('common.cancel')" severity="secondary" :disabled="unbindLoading" @click="cancelUnbind" class="flex-1" />
+        <Button :label="t('common.confirm')" icon="pi pi-times" severity="danger" :loading="unbindLoading"
           :disabled="!unbindAuthCode || unbindAuthCode.length !== 6" @click="handleUnbindGoogleAuth" class="flex-1" />
       </div>
     </div>
@@ -463,6 +462,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
 import { useConfirm } from 'primevue/useconfirm'
 import { useClipboard } from '@vueuse/core'
@@ -475,6 +475,7 @@ import { useUserStore } from '@/stores/user'
 import { AuthAPI } from '@/api/auth'
 import type { UserProfile } from '@/types/api'
 
+const { t } = useI18n()
 const router = useRouter()
 const toast = useToast()
 const confirm = useConfirm()
@@ -522,10 +523,10 @@ const kycStatus = computed(() => userProfile.value?.kycStatus ?? 0)
 
 const kycStatusText = computed(() => {
   switch (kycStatus.value) {
-    case 1: return 'Approved'
-    case 2: return 'Temporarily Rejected'
-    case 3: return 'Rejected'
-    default: return 'Not Completed'
+    case 1: return t('personalCenter.kycStatusApproved')
+    case 2: return t('personalCenter.kycStatusTemporarilyRejected')
+    case 3: return t('personalCenter.kycStatusRejected')
+    default: return t('personalCenter.kycStatusNotCompleted')
   }
 })
 
@@ -543,8 +544,8 @@ const googleAuthStatus = computed(() => userProfile.value?.googleAuthStatus ?? 0
 
 const googleAuthStatusText = computed(() => {
   switch (googleAuthStatus.value) {
-    case 1: return 'Connected'
-    default: return 'Not Connected'
+    case 1: return t('personalCenter.googleAuthBound')
+    default: return t('personalCenter.googleAuthNotBound')
   }
 })
 
@@ -584,8 +585,8 @@ const fetchUserProfile = async () => {
       console.error('Failed to fetch user profile:', response.msg)
       toast.add({
         severity: 'error',
-        summary: 'Error',
-        detail: 'Failed to load user profile',
+        summary: t('common.error'),
+        detail: t('personalCenter.loadProfileFailed'),
         life: 3000
       })
     }
@@ -593,8 +594,8 @@ const fetchUserProfile = async () => {
     console.error('Error fetching user profile:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to load user profile',
+      summary: t('common.error'),
+      detail: (error as any)?.message || t('personalCenter.loadProfileFailed'),
       life: 3000
     })
   } finally {
@@ -621,8 +622,8 @@ const navigateToGoogleAuth = async () => {
       } else {
         toast.add({
           severity: 'error',
-          summary: 'Binding Failed',
-          detail: response.msg || 'Failed to get binding information',
+          summary: t('personalCenter.bindingFailedTitle'),
+          detail: response.msg || t('personalCenter.bindingFailed'),
           life: 3000
         })
       }
@@ -630,8 +631,8 @@ const navigateToGoogleAuth = async () => {
       console.error('Google Auth bind error:', error)
       toast.add({
         severity: 'error',
-        summary: 'Binding Failed',
-        detail: (error as any)?.message || 'Network error, please try again later',
+        summary: t('personalCenter.bindingFailedTitle'),
+        detail: (error as any)?.message || t('login.networkError'),
         life: 3000
       })
     } finally {
@@ -644,8 +645,8 @@ const navigateToLanguage = () => {
   // TODO: Implement navigation to language settings
   toast.add({
     severity: 'info',
-    summary: 'Coming Soon',
-    detail: 'Language settings page is under development',
+    summary: t('personalCenter.comingSoon'),
+    detail: t('personalCenter.languageUnderDev'),
     life: 3000
   })
 }
@@ -662,8 +663,8 @@ const navigateToSafety = () => {
   // TODO: Implement navigation to safety validation
   toast.add({
     severity: 'info',
-    summary: 'Coming Soon',
-    detail: 'Safety validation page is under development',
+    summary: t('personalCenter.comingSoon'),
+    detail: t('personalCenter.safetyUnderDev'),
     life: 3000
   })
 }
@@ -672,8 +673,8 @@ const navigateToReferral = () => {
   // TODO: Implement navigation to referral code
   toast.add({
     severity: 'info',
-    summary: 'Coming Soon',
-    detail: 'Referral code page is under development',
+    summary: t('personalCenter.comingSoon'),
+    detail: t('personalCenter.referralUnderDev'),
     life: 3000
   })
 }
@@ -684,8 +685,8 @@ const handleLogout = async () => {
     await authStore.logout()
     toast.add({
       severity: 'success',
-      summary: 'Logged Out',
-      detail: 'You have been successfully logged out',
+      summary: t('personalCenter.loggedOutTitle'),
+      detail: t('personalCenter.loggedOut'),
       life: 3000
     })
     router.push('/login')
@@ -693,8 +694,8 @@ const handleLogout = async () => {
     console.error('Logout error:', error)
     toast.add({
       severity: 'error',
-      summary: 'Logout Failed',
-      detail: (error as any)?.message || 'Failed to logout. Please try again.',
+      summary: t('personalCenter.logoutFailedTitle'),
+      detail: (error as any)?.message || t('header.logoutFailed'),
       life: 3000
     })
   }
@@ -715,16 +716,16 @@ const copySecretKey = async () => {
     await copyToClipboard(bindSecretKey.value)
     toast.add({
       severity: 'success',
-      summary: 'Copy Successful',
-      detail: 'Secret key copied to clipboard',
+      summary: t('personalCenter.copySuccessTitle'),
+      detail: t('personalCenter.copySecretSuccess'),
       life: 2000
     })
   } catch (error) {
     console.error('Copy failed:', error)
     toast.add({
       severity: 'error',
-      summary: 'Copy Failed',
-      detail: (error as any)?.message || 'Please copy the secret key manually',
+      summary: t('personalCenter.copyFailedTitle'),
+      detail: (error as any)?.message || t('personalCenter.copySecretFailed'),
       life: 3000
     })
   }
@@ -736,16 +737,16 @@ const copyInviteLink = async () => {
     await copyToClipboard(inviteLink.value)
     toast.add({
       severity: 'success',
-      summary: 'Copy Successful',
-      detail: 'Invitation link copied to clipboard',
+      summary: t('personalCenter.copySuccessTitle'),
+      detail: t('personalCenter.copyLinkSuccess'),
       life: 2000
     })
   } catch (error) {
     console.error('Copy invite link failed:', error)
     toast.add({
       severity: 'error',
-      summary: 'Copy Failed',
-      detail: (error as any)?.message || 'Please copy the invitation link manually',
+      summary: t('personalCenter.copyFailedTitle'),
+      detail: (error as any)?.message || t('personalCenter.copyLinkFailed'),
       life: 3000
     })
   }
@@ -762,8 +763,8 @@ const confirmBind = async () => {
   if (!bindAuthCode.value || bindAuthCode.value.length !== 6) {
     toast.add({
       severity: 'warn',
-      summary: 'Invalid Code',
-      detail: 'Please enter a 6-digit verification code',
+      summary: t('personalCenter.invalidCodeTitle'),
+      detail: t('personalCenter.invalidCode'),
       life: 3000
     })
     return
@@ -781,8 +782,8 @@ const confirmBind = async () => {
 
       toast.add({
         severity: 'success',
-        summary: 'Binding Successful',
-        detail: 'Google Authenticator bound successfully',
+        summary: t('personalCenter.bindingSuccessTitle'),
+        detail: t('personalCenter.bindingSuccess'),
         life: 3000
       })
 
@@ -793,8 +794,8 @@ const confirmBind = async () => {
     } else {
       toast.add({
         severity: 'error',
-        summary: 'Verification Failed',
-        detail: response.msg || 'Invalid verification code, please try again',
+        summary: t('personalCenter.verificationFailedTitle'),
+        detail: response.msg || t('personalCenter.unbindFailed'),
         life: 3000
       })
     }
@@ -802,8 +803,8 @@ const confirmBind = async () => {
     console.error('Google Auth bind error:', error)
     toast.add({
       severity: 'error',
-      summary: 'Binding Failed',
-      detail: (error as any)?.message || 'Network error, please try again later',
+      summary: t('personalCenter.bindingFailedTitle'),
+      detail: (error as any)?.message || t('login.networkError'),
       life: 3000
     })
   } finally {
@@ -816,8 +817,8 @@ const handleUnbindGoogleAuth = async () => {
   if (!unbindAuthCode.value || unbindAuthCode.value.length !== 6) {
     toast.add({
       severity: 'warn',
-      summary: 'Invalid Code',
-      detail: 'Please enter a 6-digit verification code',
+      summary: t('personalCenter.invalidCodeTitle'),
+      detail: t('personalCenter.invalidCode'),
       life: 3000
     })
     return
@@ -834,8 +835,8 @@ const handleUnbindGoogleAuth = async () => {
 
       toast.add({
         severity: 'success',
-        summary: 'Unbind Successful',
-        detail: 'Google Authenticator unbound successfully',
+        summary: t('personalCenter.unbindSuccessTitle'),
+        detail: t('personalCenter.unbindSuccess'),
         life: 3000
       })
 
@@ -844,8 +845,8 @@ const handleUnbindGoogleAuth = async () => {
     } else {
       toast.add({
         severity: 'error',
-        summary: 'Unbind Failed',
-        detail: response.msg || 'Invalid verification code, please try again',
+        summary: t('personalCenter.unbindFailedTitle'),
+        detail: response.msg || t('personalCenter.unbindFailed'),
         life: 3000
       })
     }
@@ -853,8 +854,8 @@ const handleUnbindGoogleAuth = async () => {
     console.error('Google Auth unbind error:', error)
     toast.add({
       severity: 'error',
-      summary: 'Unbind Failed',
-      detail: (error as any)?.message || 'Network error, please try again later',
+      summary: t('personalCenter.unbindFailedTitle'),
+      detail: (error as any)?.message || t('login.networkError'),
       life: 3000
     })
   } finally {

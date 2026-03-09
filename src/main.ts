@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import i18n from './i18n'
 import PrimeVue from 'primevue/config'
 import ToastService from 'primevue/toastservice'
 import ConfirmationService from 'primevue/confirmationservice'
@@ -47,6 +48,7 @@ app.component('ConfirmDialog', ConfirmDialog)
 
 app.use(pinia)
 app.use(router)
+app.use(i18n)
 
 // 初始化主题
 const themeStore = useThemeStore()

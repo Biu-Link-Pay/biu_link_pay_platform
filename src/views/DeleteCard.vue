@@ -86,8 +86,10 @@
 import { ref, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
+import { useI18n } from 'vue-i18n'
 import AppHeader from '@/components/AppHeader.vue'
 
+const { t } = useI18n()
 const router = useRouter()
 const route = useRoute()
 const toast = useToast()
@@ -118,8 +120,8 @@ const confirmDelete = async () => {
   if (!cardInfo.value) {
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: 'No card information available',
+      summary: t('common.error'),
+      detail: t('deleteCard.noCardInfo'),
       life: 3000
     })
     return
@@ -137,8 +139,8 @@ const confirmDelete = async () => {
     // Show success message
     toast.add({
       severity: 'success',
-      summary: 'Success',
-      detail: 'Card deleted successfully',
+      summary: t('common.success'),
+      detail: t('deleteCard.deleteSuccess'),
       life: 3000
     })
 
@@ -149,8 +151,8 @@ const confirmDelete = async () => {
     console.error('Error deleting card:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to delete card. Please try again.',
+      summary: t('common.error'),
+      detail: (error as any)?.message || t('deleteCard.deleteFailed'),
       life: 3000
     })
   } finally {
@@ -174,8 +176,8 @@ onMounted(() => {
   } else {
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: 'Invalid card information',
+      summary: t('common.error'),
+      detail: t('deleteCard.invalidCardInfo'),
       life: 3000
     })
     router.push({ name: 'MyCards' })

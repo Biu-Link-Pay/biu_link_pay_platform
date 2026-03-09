@@ -416,6 +416,7 @@
 <script setup lang="ts">
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
 import InputText from 'primevue/inputtext'
 import Button from 'primevue/button'
@@ -444,6 +445,7 @@ const props = defineProps<Props>()
 
 const router = useRouter()
 const route = useRoute()
+const { t } = useI18n()
 const toast = useToast()
 const cardStore = useCardStore()
 const userStore = useUserStore()
@@ -715,8 +717,8 @@ const handleWithdraw = async () => {
   if (!props.isDeleteAction && !isFormValid.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Validation Error',
-      detail: 'Please check the form and try again',
+      summary: t('withdraw.validationError'),
+      detail: t('withdraw.checkFormAndRetry'),
       life: 3000
     })
     return
@@ -725,8 +727,8 @@ const handleWithdraw = async () => {
   if (!props.cardInfo.cardId) {
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: 'Card information is missing. Please go back and try again.',
+      summary: t('common.error'),
+      detail: t('withdraw.cardInfoMissing'),
       life: 3000
     })
     return
@@ -735,8 +737,8 @@ const handleWithdraw = async () => {
   if (!selectedPayType.value) {
     toast.add({
       severity: 'error',
-      summary: 'Selection Error',
-      detail: 'Please select a payment type.',
+      summary: t('withdraw.selectionError'),
+      detail: t('withdraw.selectPaymentType'),
       life: 3000
     })
     return
@@ -745,8 +747,8 @@ const handleWithdraw = async () => {
   if (!selectedCrypto.value) {
     toast.add({
       severity: 'error',
-      summary: 'Selection Error',
-      detail: 'Please select a crypto network.',
+      summary: t('withdraw.selectionError'),
+      detail: t('withdraw.selectCryptoNetwork'),
       life: 3000
     })
     return
@@ -755,8 +757,8 @@ const handleWithdraw = async () => {
   if (!recipientAddress.value) {
     toast.add({
       severity: 'error',
-      summary: 'Address Required',
-      detail: 'Please enter a recipient address.',
+      summary: t('withdraw.addressRequiredTitle'),
+      detail: t('withdraw.addressRequired'),
       life: 3000
     })
     return
@@ -770,8 +772,13 @@ const handleWithdraw = async () => {
     if (receiveUsdAmount < minLimit) {
       toast.add({
         severity: 'error',
-        summary: 'Receive Amount Below Limit',
-        detail: `Your receive amount is ${receiveUsdAmount}, which is below the minimum limit of ${formatCurrency(minLimit)} for ${selectedCrypto.value.crypto.name} on ${selectedCrypto.value.network.name}. Please increase your withdrawal amount.`,
+        summary: t('withdraw.receiveAmountBelowLimitTitle'),
+        detail: t('withdraw.receiveAmountBelowLimit', {
+          amount: receiveUsdAmount,
+          min: formatCurrency(minLimit),
+          crypto: selectedCrypto.value.crypto.name,
+          network: selectedCrypto.value.network.name
+        }),
         life: 5000
       })
       return
@@ -780,8 +787,13 @@ const handleWithdraw = async () => {
     if (receiveUsdAmount > maxLimit) {
       toast.add({
         severity: 'error',
-        summary: 'Receive Amount Exceeds Limit',
-        detail: `Your receive amount is ${receiveUsdAmount}, which exceeds the maximum limit of ${formatCurrency(maxLimit)} for ${selectedCrypto.value.crypto.name} on ${selectedCrypto.value.network.name}. Please reduce your withdrawal amount.`,
+        summary: t('withdraw.receiveAmountExceedsLimitTitle'),
+        detail: t('withdraw.receiveAmountExceedsLimit', {
+          amount: receiveUsdAmount,
+          max: formatCurrency(maxLimit),
+          crypto: selectedCrypto.value.crypto.name,
+          network: selectedCrypto.value.network.name
+        }),
         life: 5000
       })
       return
@@ -799,8 +811,10 @@ const handleWithdraw = async () => {
       })
       toast.add({
         severity: 'error',
-        summary: 'Invalid Address Format',
-        detail: `The address format is invalid for ${selectedCrypto.value.network.fullName || selectedCrypto.value.network.name}. Please check and try again.`,
+        summary: t('withdraw.invalidAddressFormatTitle'),
+        detail: t('withdraw.invalidAddressFormat', {
+          network: selectedCrypto.value.network.fullName || selectedCrypto.value.network.name
+        }),
         life: 5000
       })
       return
@@ -809,8 +823,8 @@ const handleWithdraw = async () => {
     if (recipientAddress.value.length < 10) {
       toast.add({
         severity: 'error',
-        summary: 'Invalid Address',
-        detail: 'The address format appears to be invalid. Please check and try again.',
+        summary: t('withdraw.invalidAddressTitle'),
+        detail: t('withdraw.invalidAddress'),
         life: 3000
       })
       return
@@ -852,8 +866,8 @@ const submitWithdrawOrder = async (faCode: string) => {
 
       toast.add({
         severity: 'success',
-        summary: 'Withdraw Order Created',
-        detail: `Order #${response.model} has been submitted successfully`,
+        summary: t('withdraw.withdrawOrderCreated'),
+        detail: t('withdraw.orderSubmittedSuccess', { orderNum: response.model }),
         life: 3000
       })
 
@@ -881,8 +895,8 @@ const submitWithdrawOrder = async (faCode: string) => {
     googleAuthDialogRef.value?.resetCode()
     toast.add({
       severity: 'error',
-      summary: 'Withdraw Failed',
-      detail: (error as any)?.message || 'Failed to create withdraw order. Please try again.',
+      summary: t('withdraw.withdrawFailedTitle'),
+      detail: (error as any)?.message || t('withdraw.withdrawFailed'),
       life: 3000
     })
   } finally {
@@ -1091,8 +1105,8 @@ const fetchPaymentMethods = async () => {
     console.error('Error fetching payment methods:', error)
     toast.add({
       severity: 'warn',
-      summary: 'Warning',
-      detail: (error as any)?.message || 'Failed to load payment methods, using defaults',
+      summary: t('common.warning'),
+      detail: (error as any)?.message || t('withdraw.loadPaymentMethodsWarning'),
       life: 3000
     })
 

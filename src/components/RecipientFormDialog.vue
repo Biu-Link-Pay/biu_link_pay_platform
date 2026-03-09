@@ -155,6 +155,7 @@
 
 <script setup lang="ts">
 import { ref, computed, watch, reactive, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
 import Dialog from 'primevue/dialog'
 import InputText from 'primevue/inputtext'
@@ -178,6 +179,7 @@ const emit = defineEmits<{
   'saved': []
 }>()
 
+const { t } = useI18n()
 const toast = useToast()
 
 // Bank dropdown wrapper ref
@@ -634,8 +636,8 @@ const handleSave = async () => {
   if (!validateRecipientForm()) {
     toast.add({
       severity: 'warn',
-      summary: 'Validation Error',
-      detail: 'Please fill in all required fields',
+      summary: t('common.validationError'),
+      detail: t('recipientForm.fillRequiredFields'),
       life: 3000
     })
     return
@@ -659,8 +661,8 @@ const handleSave = async () => {
     if (response.success) {
       toast.add({
         severity: 'success',
-        summary: 'Success',
-        detail: 'Recipient information saved successfully',
+        summary: t('common.success'),
+        detail: t('recipientForm.savedSuccess'),
         life: 3000
       })
 
@@ -677,8 +679,8 @@ const handleSave = async () => {
     console.error('Error saving recipient:', error)
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: (error as any)?.message || 'Failed to save recipient information',
+      summary: t('common.error'),
+      detail: (error as any)?.message || t('recipientForm.saveFailed'),
       life: 3000
     })
   } finally {

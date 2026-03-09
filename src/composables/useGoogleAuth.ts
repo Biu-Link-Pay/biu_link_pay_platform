@@ -1,4 +1,5 @@
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
 import { AuthAPI } from '@/api/auth'
 import { useAuthStore } from '@/stores/auth'
@@ -10,6 +11,7 @@ export interface GoogleAuthOptions {
 }
 
 export function useGoogleAuth() {
+  const { t } = useI18n()
   const toast = useToast()
   const authStore = useAuthStore()
 
@@ -64,16 +66,16 @@ export function useGoogleAuth() {
       if (response.success && response.model) {
         toast.add({
           severity: 'success',
-          summary: 'Verification Successful',
-          detail: 'Google Auth verification passed',
+          summary: t('googleAuth.verificationSuccessful'),
+          detail: t('googleAuth.verificationPassed'),
           life: 3000
         })
         return true
       } else {
         toast.add({
           severity: 'error',
-          summary: 'Verification Failed',
-          detail: response.msg || 'Incorrect verification code',
+          summary: t('googleAuth.verificationFailed'),
+          detail: response.msg || t('googleAuth.incorrectCode'),
           life: 3000
         })
         return false
@@ -82,8 +84,8 @@ export function useGoogleAuth() {
       console.error('Verify auth code error:', error)
       toast.add({
         severity: 'error',
-        summary: 'Verification Failed',
-        detail: (error as any)?.message || 'Network error, please try again',
+        summary: t('googleAuth.verificationFailed'),
+        detail: (error as any)?.message || t('googleAuth.networkErrorRetry'),
         life: 3000
       })
       return false
@@ -144,8 +146,8 @@ export function useGoogleAuth() {
     if (!isBound) {
       toast.add({
         severity: 'warn',
-        summary: 'Google Auth Not Bound',
-        detail: 'Please bind Google Authenticator first',
+        summary: t('googleAuth.notBound'),
+        detail: t('googleAuth.pleaseBindFirst'),
         life: 3000
       })
       return null

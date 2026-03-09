@@ -1,11 +1,11 @@
 <template>
-  <Dialog :visible="visible" modal header="Card Details" :style="{ width: '90vw', maxWidth: '600px' }"
+  <Dialog :visible="visible" modal :header="t('cardDetail.title')" :style="{ width: '90vw', maxWidth: '600px' }"
     :breakpoints="{ '960px': '75vw', '640px': '95vw' }" :draggable="false" class="card-detail-dialog"
     @update:visible="onUpdateVisible">
     <div v-if="loading" class="flex justify-center py-12">
       <div class="text-center">
         <i class="pi pi-spin pi-spinner text-3xl text-blue-600 mb-3"></i>
-        <p class="text-sm text-gray-600">Loading card details...</p>
+        <p class="text-sm text-gray-600">{{ t('cardDetail.loading') }}</p>
       </div>
     </div>
 
@@ -18,7 +18,7 @@
         class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
         :disabled="loading">
         <i class="pi pi-refresh mr-2"></i>
-        Retry
+        {{ t('cardDetail.retry') }}
       </button>
     </div>
 
@@ -27,11 +27,11 @@
       <div
         class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-4 border border-blue-200 dark:border-gray-700">
         <div class="flex items-center justify-between mb-3">
-          <div class="text-xs font-semibold uppercase text-blue-600 dark:text-blue-400 tracking-wide">Card Number</div>
+          <div class="text-xs font-semibold uppercase text-blue-600 dark:text-blue-400 tracking-wide">{{ t('cardDetail.cardNumber') }}</div>
           <button
-            @click="() => { copyToClipboard(formatCardNumber(cardDetail?.cardNo)); toast.add({ severity: 'success', summary: 'Success', detail: 'Card number copied to clipboard', life: 2000 }) }"
+            @click="() => { copyToClipboard(formatCardNumber(cardDetail?.cardNo)); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.cardNumberCopied'), life: 2000 }) }"
             class="p-1.5 hover:bg-blue-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
-            title="Copy card number">
+            :title="t('cardDetail.copyCardNumber')">
             <i class="pi pi-copy text-blue-600 dark:text-blue-400 text-sm"></i>
           </button>
         </div>
@@ -44,8 +44,7 @@
       <div
         class="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-4 border border-green-200 dark:border-gray-700">
         <div class="mb-3">
-          <div class="text-xs font-semibold uppercase text-green-600 dark:text-green-400 tracking-wide">Available
-            Balance</div>
+          <div class="text-xs font-semibold uppercase text-green-600 dark:text-green-400 tracking-wide">{{ t('cardDetail.availableBalance') }}</div>
         </div>
         <div class="text-2xl font-bold text-gray-900 dark:text-white">
           {{ formatBalance(cardDetail.cardBalance) }} {{ cardDetail.cardCurrency }}
@@ -55,28 +54,25 @@
       <!-- Card Information Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="bg-gray-50 dark:bg-gray-800/60 rounded-lg p-4">
-          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Cardholder
-          </div>
+          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">{{ t('cardDetail.cardholder') }}</div>
           <div class="text-base font-semibold text-gray-900 dark:text-white">
             {{ cardDetail.firstName }} {{ cardDetail.lastName }}
           </div>
         </div>
         <div class="bg-gray-50 dark:bg-gray-800/60 rounded-lg p-4">
-          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Currency
-          </div>
+          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">{{ t('cardDetail.currency') }}</div>
           <div class="text-base font-semibold text-gray-900 dark:text-white">
             {{ cardDetail.cardCurrency }}
           </div>
         </div>
         <div class="bg-gray-50 dark:bg-gray-800/60 rounded-lg p-4">
-          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">Expiration
-          </div>
+          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">{{ t('cardDetail.expiration') }}</div>
           <div class="text-base font-semibold text-gray-900 dark:text-white">
             {{ cardDetail.expirationDate }}
           </div>
         </div>
         <div class="bg-gray-50 dark:bg-gray-800/60 rounded-lg p-4">
-          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">CVV</div>
+          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2 tracking-wide">{{ t('cardDetail.cvv') }}</div>
           <div class="text-base font-semibold text-gray-900 dark:text-white">
             {{ cardDetail.cvv }}
           </div>
@@ -86,15 +82,14 @@
       <!-- Billing Address Section -->
       <div v-if="hasBillingAddress" class="bg-gray-50 dark:bg-gray-800/60 rounded-xl p-4">
         <div class="flex items-center justify-between mb-3">
-          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 tracking-wide">Billing Address
-          </div>
+          <div class="text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 tracking-wide">{{ t('cardDetail.billingAddress') }}</div>
           <div class="flex items-center gap-2">
             <button
-              @click="() => { copyToClipboard(`${localDetail?.billingAddress || ''}, ${localDetail?.billingCity || ''}, ${localDetail?.billingState || ''} ${localDetail?.billingPostalCode || ''}, ${localDetail?.billingCountry || ''}`); toast.add({ severity: 'success', summary: 'Success', detail: 'Address copied to clipboard', life: 2000 }) }"
-              class="p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors" title="Copy address">
+              @click="() => { copyToClipboard(`${localDetail?.billingAddress || ''}, ${localDetail?.billingCity || ''}, ${localDetail?.billingState || ''} ${localDetail?.billingPostalCode || ''}, ${localDetail?.billingCountry || ''}`); toast.add({ severity: 'success', summary: t('common.success'), detail: t('common.addressCopied'), life: 2000 }) }"
+              class="p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors" :title="t('cardDetail.copyAddress')">
               <i class="pi pi-copy text-gray-600 dark:text-gray-300 text-sm"></i>
             </button>
-            <Button label="Edit" icon="pi pi-pencil" size="small" @click="startEdit" />
+            <Button :label="t('cardDetail.edit')" icon="pi pi-pencil" size="small" @click="startEdit" />
           </div>
         </div>
 
@@ -109,9 +104,9 @@
         <!-- Edit form -->
         <div v-else class="space-y-4">
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-2">Country</label>
+            <label class="block text-sm font-medium text-gray-700 mb-2">{{ t('cardDetail.country') }}</label>
             <Dropdown v-model="form.residentialCountryCode" :options="countries" option-label="name" option-value="code"
-              placeholder="Select country" class="w-full" filter show-clear
+              :placeholder="t('cardDetail.selectCountry')" class="w-full" filter show-clear
               :class="{ 'p-invalid': errors.residentialCountryCode }" />
             <small v-if="errors.residentialCountryCode" class="text-red-500 text-xs mt-1">{{
               errors.residentialCountryCode }}</small>
@@ -119,21 +114,21 @@
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">State/Province</label>
+              <label class="block text-sm font-medium text-gray-700 mb-2">{{ t('cardDetail.stateProvince') }}</label>
               <Dropdown v-if="hasStateOptions" v-model="selectedStateCode" :options="states" option-label="name"
-                option-value="isoCode" placeholder="Select state or province" class="w-full" filter show-clear
+                option-value="isoCode" :placeholder="t('cardDetail.selectState')" class="w-full" filter show-clear
                 :class="{ 'p-invalid': errors.residentialState }" />
-              <InputText v-else v-model="form.residentialState" placeholder="Enter state/province" class="w-full"
+              <InputText v-else v-model="form.residentialState" :placeholder="t('cardDetail.enterState')" class="w-full"
                 :class="{ 'p-invalid': errors.residentialState }" />
               <small v-if="errors.residentialState" class="text-red-500 text-xs mt-1">{{ errors.residentialState
               }}</small>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">City</label>
+              <label class="block text-sm font-medium text-gray-700 mb-2">{{ t('cardDetail.city') }}</label>
               <Dropdown v-if="hasCityOptions" v-model="selectedCityName" :options="cities" option-label="name"
-                option-value="name" placeholder="Select city" class="w-full" filter show-clear
+                option-value="name" :placeholder="t('cardDetail.selectCity')" class="w-full" filter show-clear
                 :class="{ 'p-invalid': errors.residentialCity }" />
-              <InputText v-else v-model="form.residentialCity" placeholder="Enter city" class="w-full"
+              <InputText v-else v-model="form.residentialCity" :placeholder="t('cardDetail.enterCity')" class="w-full"
                 :class="{ 'p-invalid': errors.residentialCity }" />
               <small v-if="errors.residentialCity" class="text-red-500 text-xs mt-1">{{ errors.residentialCity
               }}</small>
@@ -141,24 +136,24 @@
           </div>
 
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-2">Address</label>
-            <InputText v-model="form.residentialAddress" placeholder="Enter address" class="w-full"
+            <label class="block text-sm font-medium text-gray-700 mb-2">{{ t('cardDetail.address') }}</label>
+            <InputText v-model="form.residentialAddress" :placeholder="t('cardDetail.enterAddress')" class="w-full"
               :class="{ 'p-invalid': errors.residentialAddress }" />
             <small v-if="errors.residentialAddress" class="text-red-500 text-xs mt-1">{{ errors.residentialAddress
             }}</small>
           </div>
 
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-2">Postal Code</label>
-            <InputText v-model="form.residentialPostalCode" placeholder="Enter postal code" class="w-full"
+            <label class="block text-sm font-medium text-gray-700 mb-2">{{ t('cardDetail.postalCode') }}</label>
+            <InputText v-model="form.residentialPostalCode" :placeholder="t('cardDetail.enterPostalCode')" class="w-full"
               :class="{ 'p-invalid': errors.residentialPostalCode }" />
             <small v-if="errors.residentialPostalCode" class="text-red-500 text-xs mt-1">{{ errors.residentialPostalCode
             }}</small>
           </div>
 
           <div class="mt-2 flex gap-3">
-            <Button label="Cancel" icon="pi pi-times" severity="secondary" class="flex-1" @click="cancelEdit" />
-            <Button label="Save" icon="pi pi-check" class="flex-1" :loading="saving" @click="saveAddress" />
+            <Button :label="t('common.cancel')" icon="pi pi-times" severity="secondary" class="flex-1" @click="cancelEdit" />
+            <Button :label="t('cardDetail.save')" icon="pi pi-check" class="flex-1" :loading="saving" @click="saveAddress" />
           </div>
         </div>
       </div>
@@ -172,7 +167,7 @@
           </div>
           <div>
             <p class="text-sm font-medium text-amber-800 dark:text-amber-200">
-              Security Reminder: Please do not share, copy, or screenshot this information.
+              {{ t('cardDetail.securityReminder') }}
             </p>
           </div>
         </div>
@@ -180,7 +175,7 @@
     </div>
 
     <div v-else class="text-sm text-gray-500">
-      No card details available.
+      {{ t('cardDetail.noDetails') }}
     </div>
   </Dialog>
 </template>
@@ -198,6 +193,9 @@ import { CardAPI } from '@/api/card'
 import type { CardHolderInfo as HolderInfo } from '@/api/card'
 import { getCountries, getStatesOfCountry, getCitiesOfState, getCitiesOfCountry, tryGetStateDisplayFromCache, normalizeStateCode, getStateDisplayName, type CountryOption, type StateOption, type CityOption } from '@/services/geo'
 import { useCardStore } from '@/stores/card'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 interface Props {
   visible: boolean
@@ -520,7 +518,7 @@ const saveAddress = async () => {
     }
     const resp = await CardAPI.updateCardHolder(holderInfo)
     if (resp && (resp as any).success) {
-      toast.add({ severity: 'success', summary: 'Saved', detail: 'Billing address saved successfully', life: 3000 })
+      toast.add({ severity: 'success', summary: t('cardDetail.saved'), detail: t('cardHolder.addressSaved'), life: 3000 })
       // Update local display immediately
       if (localDetail.value) {
         localDetail.value.billingAddress = form.residentialAddress
@@ -537,11 +535,11 @@ const saveAddress = async () => {
       }
       isEditing.value = false
     } else {
-      toast.add({ severity: 'error', summary: 'Save Failed', detail: (resp as any)?.msg || 'Failed to save billing address', life: 3000 })
+      toast.add({ severity: 'error', summary: t('cardDetail.saveFailed'), detail: (resp as any)?.msg || t('cardHolder.saveFailed'), life: 3000 })
     }
   } catch (error) {
     console.error('Failed to save billing address:', error)
-    toast.add({ severity: 'error', summary: 'Error', detail: (error as any)?.message || 'An unexpected error occurred. Please try again.', life: 3000 })
+    toast.add({ severity: 'error', summary: t('common.error'), detail: (error as any)?.message || t('common.unexpectedError'), life: 3000 })
   } finally {
     saving.value = false
   }

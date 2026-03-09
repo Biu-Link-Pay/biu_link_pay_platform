@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useAuthStore } from '@/stores/auth'
 import { useErrorHandler } from '@/utils/errorHandler'
 import Button from 'primevue/button'
@@ -12,6 +13,7 @@ defineOptions({
 })
 
 // Reactive data
+const { t } = useI18n()
 const authStore = useAuthStore()
 const route = useRoute()
 const router = useRouter()
@@ -287,7 +289,7 @@ watch(() => authStore.kycStatus, async (newStatus) => {
         <!-- KYC action buttons -->
         <div class="flex justify-center mt-6 space-x-4">
           <Button
-            label="Recheck KYC Status"
+            :label="t('kyc.recheckStatus')"
             icon="pi pi-refresh"
             class="min-h-[48px] text-base font-medium"
             severity="secondary"
@@ -295,7 +297,7 @@ watch(() => authStore.kycStatus, async (newStatus) => {
           />
           <Button
             v-if="isPolling"
-            label="Stop Polling"
+            :label="t('kyc.stopPolling')"
             icon="pi pi-pause"
             class="min-h-[48px] text-base font-medium"
             severity="warning"
@@ -303,14 +305,14 @@ watch(() => authStore.kycStatus, async (newStatus) => {
           />
           <Button
             v-else
-            label="Start Polling"
+            :label="t('kyc.startPolling')"
             icon="pi pi-play"
             class="min-h-[48px] text-base font-medium"
             severity="success"
             @click="startKycPolling"
           />
           <Button
-            label="Back to Login"
+            :label="t('kyc.backToLogin')"
             icon="pi pi-arrow-left"
             class="min-h-[48px] text-base font-medium"
             severity="secondary"

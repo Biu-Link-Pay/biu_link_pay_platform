@@ -60,7 +60,7 @@
         <!-- Action Buttons -->
         <div class="space-y-3">
           <div class="flex space-x-2">
-            <Button :label="`Order a ${card.cardPattern === 1 ? 'Virtual' : 'Physical'} Card`" severity="primary"
+            <Button :label="card.cardPattern === 1 ? t('cardItem.orderVirtualCard') : t('cardItem.orderPhysicalCard')" severity="primary"
               class="flex-1" :disabled="card.cardPattern !== 1 || hasReachedMaxCards" @click="$emit('order', card)" />
           </div>
         </div>
@@ -71,8 +71,11 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 import type { CardConfig } from '@/api/card'
+
+const { t } = useI18n()
 
 // Define props
 interface Props {

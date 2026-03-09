@@ -546,6 +546,7 @@
 <script setup lang="ts">
 import { ref, computed, watch, onMounted, onUnmounted, reactive } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import { useToast } from 'primevue/usetoast'
 import { useConfirm } from 'primevue/useconfirm'
 import InputText from 'primevue/inputtext'
@@ -577,6 +578,7 @@ interface Props {
 const props = defineProps<Props>()
 
 const router = useRouter()
+const { t } = useI18n()
 const toast = useToast()
 const confirm = useConfirm()
 const cardStore = useCardStore()
@@ -950,8 +952,8 @@ const fetchPaymentMethods = async () => {
     console.error('Error fetching fiat payment methods:', error)
     toast.add({
       severity: 'warn',
-      summary: 'Warning',
-      detail: (error as any)?.message || 'Failed to load payment methods',
+      summary: t('common.warning'),
+      detail: (error as any)?.message || t('withdraw.loadPaymentMethodsFailed'),
       life: 3000
     })
   } finally {
@@ -1061,8 +1063,8 @@ const handleDeleteRecipient = () => {
         if (response.success) {
           toast.add({
             severity: 'success',
-            summary: 'Success',
-            detail: 'Recipient information deleted successfully',
+            summary: t('common.success'),
+            detail: t('withdraw.recipientDeletedSuccess'),
             life: 3000
           })
 
@@ -1075,8 +1077,8 @@ const handleDeleteRecipient = () => {
         console.error('Error deleting recipient:', error)
         toast.add({
           severity: 'error',
-          summary: 'Error',
-          detail: (error as any)?.message || 'Failed to delete recipient information',
+          summary: t('common.error'),
+          detail: (error as any)?.message || t('withdraw.deleteRecipientFailed'),
           life: 3000
         })
       }
@@ -1159,8 +1161,8 @@ const handleWithdraw = async () => {
   if (!isFormValid.value) {
     toast.add({
       severity: 'warn',
-      summary: 'Validation Error',
-      detail: 'Please complete all required fields and ensure recipient information is saved',
+      summary: t('withdraw.validationError'),
+      detail: t('withdraw.completeRequiredFields'),
       life: 3000
     })
     return
@@ -1169,8 +1171,8 @@ const handleWithdraw = async () => {
   if (!props.cardInfo.cardId) {
     toast.add({
       severity: 'error',
-      summary: 'Error',
-      detail: 'Card information is missing. Please go back and try again.',
+      summary: t('common.error'),
+      detail: t('withdraw.cardInfoMissing'),
       life: 3000
     })
     return
@@ -1179,8 +1181,8 @@ const handleWithdraw = async () => {
   if (!selectedPaymentMethod.value) {
     toast.add({
       severity: 'error',
-      summary: 'Selection Error',
-      detail: 'Please select a payment method.',
+      summary: t('withdraw.selectionError'),
+      detail: t('withdraw.selectPaymentMethod'),
       life: 3000
     })
     return
@@ -1189,8 +1191,8 @@ const handleWithdraw = async () => {
   if (!recipientInfo.value) {
     toast.add({
       severity: 'error',
-      summary: 'Recipient Required',
-      detail: 'Please save recipient information first.',
+      summary: t('withdraw.recipientRequiredTitle'),
+      detail: t('withdraw.recipientRequired'),
       life: 3000
     })
     return
@@ -1199,8 +1201,8 @@ const handleWithdraw = async () => {
   if (!isReceiveAmountWithinLimit.value) {
     toast.add({
       severity: 'error',
-      summary: 'Amount Out of Range',
-      detail: receiveLimitErrorMessage.value || 'Receive amount is out of the allowed range',
+      summary: t('withdraw.amountOutOfRangeTitle'),
+      detail: receiveLimitErrorMessage.value || t('withdraw.amountOutOfRange'),
       life: 5000
     })
     return
@@ -1213,7 +1215,7 @@ const handleWithdraw = async () => {
 // Execute withdraw after 2FA submit
 const submitWithdrawOrder = async (faCode: string) => {
   if (!recipientInfo.value || !selectedPaymentMethod.value) {
-    toast.add({ severity: 'error', summary: 'Error', detail: 'Missing required information. Please go back and try again.', life: 3000 })
+    toast.add({ severity: 'error', summary: t('common.error'), detail: t('withdraw.missingRequiredInfo'), life: 3000 })
     isSubmitting.value = false
     return
   }
@@ -1264,8 +1266,8 @@ const submitWithdrawOrder = async (faCode: string) => {
 
       toast.add({
         severity: 'success',
-        summary: 'Withdraw Order Created',
-        detail: `Order #${response.model} has been submitted successfully`,
+        summary: t('withdraw.withdrawOrderCreated'),
+        detail: t('withdraw.orderSubmittedSuccess', { orderNum: response.model }),
         life: 3000
       })
 
@@ -1293,8 +1295,8 @@ const submitWithdrawOrder = async (faCode: string) => {
     googleAuthDialogRef.value?.resetCode()
     toast.add({
       severity: 'error',
-      summary: 'Withdraw Failed',
-      detail: (error as any)?.message || 'Failed to create withdraw order. Please try again.',
+      summary: t('withdraw.withdrawFailedTitle'),
+      detail: (error as any)?.message || t('withdraw.withdrawFailed'),
       life: 3000
     })
   } finally {
