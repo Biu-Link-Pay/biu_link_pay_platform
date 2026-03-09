@@ -40,7 +40,7 @@ export default defineConfig(({ mode }) => ({
     minify: 'terser',
     terserOptions: {
       compress: {
-        // 生产环境移除 console.log
+        // 生产环境移除 console
         drop_console: true,
         drop_debugger: true,
       },
